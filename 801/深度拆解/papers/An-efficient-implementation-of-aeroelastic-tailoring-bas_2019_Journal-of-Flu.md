@@ -159,7 +159,7 @@ Gap 的逻辑链如下：
 
 ### 11.x 章节结构与章节名分析（补充）
 
-> 自动分析说明：以下基于 `jmps/文本/txt/An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+> 自动分析说明：以下基于 `801/文本/txt/An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
 
 - 识别到的章节/小节数量：13
 - 结构类型判断：接近标准 IMRaD，但带有 JMPS 常见的理论/模型/验证扩展。
@@ -339,3 +339,223 @@ Gap 的逻辑链如下：
 ## 19. 最终浓缩
 
 本文提出一种面向复合材料机翼气动弹性剪裁的快速评估方法：先为基准结构建立 CFD-based POD/ROM，再用结构动力学重分析获得修改结构模态与基准模态之间的变换矩阵，从而快速更新广义气动力模型和气动弹性方程。AGARD 445.6 标准翼验证了基准模型可信，三种复合材料改型验证了近似方法在频率、广义气动力、响应和颤振速度上的精度。文章最强的价值不在单一公式，而在把高保真 CFD ROM 的一次性建模成本转化为可复用资产，使大量剪裁候选方案的气动弹性评估从数百天级缩短到约一天级。
+
+<!-- REAUDIT-2026-05-26 START -->
+
+## 20. 复核增强：严格抽取、翻译、引文与句型
+
+> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.txt` 与 `801/文本/metadata/An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
+
+### 20.1 严格章节树（按 PDF/metadata TOC）
+
+- L2 p.1: Introduction （背景/领域定位）
+- L2 p.3: Overview of traditional direct evaluation method （方法/模型）
+  - L3 p.3: Mechanical model of composite laminates （方法/模型）
+  - L3 p.4: CFD-based reduced order model for aeroelastic system （方法/模型）
+- L2 p.5: Approximate aeroelastic characteristics evaluation method （方法/模型）
+  - L3 p.5: Structural dynamic reanalysis method （方法/模型）
+  - L3 p.7: Aeroelastic characteristics evaluation method for modified structure （方法/模型）
+- L2 p.8: Numerical results and discussion （结果/讨论/验证）
+  - L3 p.8: POD/ROM solver validation （结果/讨论/验证）
+  - L3 p.9: Accuracy evaluation of the structural dynamic reanalysis model （方法/模型）
+  - L3 p.10: Accuracy evaluation of the aeroelastic characteristics evaluation method （方法/模型）
+  - L3 p.12: Efficiency evaluation of the aeroelastic characteristics evaluation method （方法/模型）
+- L2 p.16: Conclusions （结论）
+- L2 p.16: Acknowledgments （对象/问题/模块）
+- L2 p.16: References （参考文献）
+
+### 20.2 章节名功能分析
+
+| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
+| --- | ---: | ---: | --- | --- |
+| Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Overview of traditional direct evaluation method | 3 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Mechanical model of composite laminates | 3 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| CFD-based reduced order model for aeroelastic system | 4 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Approximate aeroelastic characteristics evaluation method | 5 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Structural dynamic reanalysis method | 5 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Aeroelastic characteristics evaluation method for modified structure | 7 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Numerical results and discussion | 8 | 2 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| POD/ROM solver validation | 8 | 3 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Accuracy evaluation of the structural dynamic reanalysis model | 9 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Accuracy evaluation of the aeroelastic characteristics evaluation method | 10 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Efficiency evaluation of the aeroelastic characteristics evaluation method | 12 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Conclusions | 16 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Acknowledgments | 16 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| References | 16 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
+
+### 20.3 摘要完整摘录（本地证据）
+
+抽取状态：成功
+
+> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.4 摘要中文翻译
+
+> 航空航天业当前和未来的趋势利用轻质材料提供的潜在优势，这些材料可以定制以在加载时实现所需的机械特性。对于飞机设计来说，对于任何可能的结构修改，需要重新计算空气动力场对基础结构特性的依赖性，这阻碍了气动弹性剪裁的部署。为了在这个方向上取得进展，这项工作提出了一种基于快速计算流体动力学的气动弹性工具，该工具是围绕空气动力学降阶模型构建的，该模型通过使用结构动力学再分析方法针对结构的任何修改进行更新。气动弹性剪裁工具在 AGARD 445.6 机翼的跨音速流中进行了演示，并使用复合材料进行了适当修改。结果发现，当结构从基线模型修改时，所提出的方法可以为气动弹性响应和稳定性提供准确的工程预测。 © 2018 Elsevier Ltd. 保留所有权利。
+
+### 20.5 结论完整摘录（本地证据）
+
+结论章节识别：Conclusions；状态：独立结论章节
+
+> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.6 结论中文翻译
+
+> 。良好的一致性初步表明所提出的近似气动弹性特性评估方法可以准确地捕获与全局结构参数变化相对应的广义非定常气动响应。为了进一步证明近似气动弹性特性评估方法的准确性，对不同自由流动压力下三种不同结构参数变化情况下的两种典型气动弹性结构时间响应（衰减和发散）进行了比较，如图 2 和 2 所示。 8-10。气动弹性响应分别通过直接气动弹性特性评估方法和近似气动弹性特性评估方法获得。可以看出，在所有三种不同的结构修改情况下，发散和收敛的气动弹性时间响应都很好地一致。再次表明，该近似气动弹性特性评估方法对于改进型AGARD 445.6机翼在复合材料结构参数变化范围非常大的情况下的气动弹性响应预测具有良好的准确性，而无需重构一套与新结构模型相对应的新POD/ROMs基础。两种方法预测的不同案例研究的颤振速度如表 3 所示。
+> 
+> 结果表明，不同方法预测的颤振速度具有很好的一致性。虽然这两种方法得到的颤振速度存在一定偏差，但最大差异仍小于2%。应该注意的是
+> 
+> 参数 颤振速度 (m/s) 误差 (%) 直接法 近似法
+> 
+> 型号 A 208 209 0.481 型号 B 249.5 245 1.804 型号 C 203 207 1.970
+> 
+> 可以看出模型A和C的颤振速度非常接近。原因在于，虽然模型A和C的堆叠顺序中各层角度的比例不同，但它们的频率和模型形状基本相同，如表2所示，模型A和C的前四种模式的MAC值为0.9972、0.9977、0.9993、0.9994。所有上述比较结果表明，所提出的近似气动弹性特性评估方法即使在参数变化较大的情况下，也可以捕获广义位移响应并以良好的精度预测颤振边界速度，从而对应于全局结构参数的巨大变化。 4.4.
+> 
+> 气动弹性特性评估方法的效率评估
+> 
+> 我们的目标是提出一种新的适用于跨音速气动弹性剪裁的近似气动弹性特性评估方法，因此计算效率是该方法评估气动弹性剪裁过程中气动弹性稳定性的最重要标准之一。所有这些模拟均在配备 Intel R⃝Core(TM) i7-2600 CPU（3.40 GHz，8 核，但仅使用一个核）和 16 GB RAM 的 Windows 7 系统 PC 上执行。表4列出了三个案例研究的直接和提出的近似气动弹性特性评估方法的计算成本。假设将直接和提出的近似气动弹性特性评估方法应用于结构参数将改变1000次的气动弹性剪裁过程，并输入20个自由流动压力值来搜索每个固定结构模型的颤振点和气动弹性响应。直接评估方法的计算成本为 16 h × 1000 + 1.78 s × 20 × 1000 = 16009.72 h，约为 667 天。
+> 
+> 然而，所提出的近似气动弹性特性评估方法的计算成本仅为16 h×1 + 0.74 s × 1000 + 1.82 s × 20 × 1000 = 26.31 h，大约只有一天多一点。 D.Li、C.Gong、A.D.Ronch 等。 / 流体与结构杂志 84 (2019) 182–198 193
+> 
+> 194 D. Li、C. Kong、A.D. Ronch 等人。 / 流体与结构杂志 84 (2019) 182–198
+> 
+> 对于这三个案例研究，直接评估方法需要对新的 POD/ROM 进行 3 次重构。然而，如果没有最昂贵、耗时的重建过程，所提出方法的计算成本为
+> 
+> 明显减少，特别是在构建了原始结构的POD/ROM之后。示范案例表明
+> 
+> 表明所提出的近似气动弹性特性评估方法计算效率非常高，
+> 
+> 适用于全局结构变化较大的跨音速气动弹性剪裁。 D.Li、C.Gong、A.D.Ronch 等。 / 流体与结构杂志 84 (2019) 182–198 195
+> 
+> 196 D.Li、C.Gong、A.D.Ronch 等人。 / 流体与结构杂志 84 (2019) 182–198
+> 
+> 评价方法 处理CPU时间
+> 
+> 直接
+> 
+> 大约
+> 
+> 5.
+> 
+> 结论
+> 
+> 在复合材料结构的气动弹性剪裁中，复合材料结构模型的参数要经过多次变化才能实现设计目标，而包括POD/ROM在内的标准气动弹性ROM无法考虑气动弹性系统的任何变化，因此不适合气动弹性剪裁。需要扩展现有的基于 CFD 的 POD/ROM，以快速评估复合材料结构的气动弹性特性，并在气动弹性剪裁中考虑全局结构参数变化。本文提出了一种新的近似气动弹性特性评估方法，通过将近似结构动力再分析算法结合到基于CFD的标准POD/ROM构建程序中，快速评估与全局复合结构参数变化相对应的气动弹性响应。通过改进的AGARD 445.6气动弹性机翼模型论证和评估了近似气动弹性特性评估方法的可行性和准确性。首先，利用AGARD 445.6标准气动弹性机翼模型验证了POD/ROM求解器的精度。当复合材料结构在全局水平进行修改时，还使用改进的 AGARD 445.6 气动弹性机翼模型评估了扩展 Kirsch 组合结构再分析方法的准确性。
+> 
+> 然后，通过比较直接气动弹性特性评估方法和近似气动弹性特性评估方法在三种不同情况下获得的响应（包括不同自由蒸汽速度下的广义气动力和广义位移）来评估该方法的准确性。数值结果的良好一致性表明，当复合材料结构在整体水平上进行修改时，即使发生较大变化，所提出的近似气动弹性特性评估方法也可以捕获跨音速气动弹性剪裁中的气动弹性特性。所提出的近似气动弹性特性评估方法的优点之一是不仅可以高精度评估气动弹性剪裁中的气动弹性特性，而且可以降低计算成本。该方法为评估结构发生较大变化的气动弹性剪裁中的气动弹性特性提供了潜在的强大工具。
+
+### 20.7 论文逻辑脉络复核
+
+- 提出的问题：For aircraft design, the deployment of aeroelastic tailoring is hindered by the need to re-compute, for any possible modification of the structure, the dependence of the aerodynamic field on the underlying structural properties. For aircraft design, the deployment of aeroelastic tailoring is hindered by the need to re-compute, for any possible modification of the structure, the dependence of the aerodynamic field on the underlying structural properties. Efficiency evaluation of the aeroelastic characteristics evaluation method Our objective is to propose a new approximate aeroelastic characteristics evaluation method which is suitable for transonic aeroelastic tailoring, so the computational efficiency is one of the most important criteria of the proposed method for assess the aeroelastic stability in aeroelastic tailoring process.
+- 旧方法/已有研究不足：Aeroelastic tailoring has been applied to improve aeroelastic characteristics in the aircraft structural design process over the past few decades. However the computational cost of the proposed approximate aeroelastic characteristics evaluation method is only 16 h × 1 + 0.74 s × 1000 + 1.82 s × 20 × 1000 = 26.31 h about which is only little more than one day. However, without the most expensive time-consuming reconstruction procedure, the computational cost of the proposed method is reduced obviously, especially after the POD/ROM for original structure was constructed.
+- 本文解决方式：To make progress in this direction, the work presents a rapid computational fluid dynamics based aeroelastic tool which is built around a reduced order model for the aerodynamics that is updated for any modification of the structure by using the structural dynamics reanalysis method. It was found that the proposed method provides accurate engineering predictions for the aeroelastic response and stability when the structure is modified from the baseline model. © 2018 Elsevier Ltd. To make progress in this direction, the work presents a rapid computational fluid dynamics based aeroelastic tool which is built around a reduced order model for the aerodynamics that is updated for any modification of the structure by using the structural dynamics reanalysis method.
+- 学术/工程增量：Current and future trends in the aerospace industry leverage on the potential benefits provided by lightweight materials that can be tailored to realize desired mechanical characteristics when loaded. The aeroelastic tailoring tool is demonstrated in transonic flow for the AGARD 445.6 wing, suitably modified with composite materials. It was found that the proposed method provides accurate engineering predictions for the aeroelastic response and stability when the structure is modified from the baseline model. © 2018 Elsevier Ltd.
+- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
+
+### 20.8 引文分析补全
+
+- 全文引用簇数量（估计）：0
+- Introduction 引用簇数量（估计）：0
+- References 条目数（解析）：101
+- 可识别年份条目数：57
+- 近五年/近年文献（2021+）数量：0
+- 经典文献（2010年前）数量：29
+- 同刊引用数量（按 subject 粗略匹配）：1
+- 高频来源期刊（粗略）：Composite Structures(2)；Journal of Fluids and Structures(1)
+- 引用簇样例：未识别
+
+带引用的 gap/转折句样例：
+
+- 未在 Introduction 中自动识别到带引用的 gap 句；需人工复核文献转折段。
+
+References 解析样例（前12条）：
+
+- 2001. Fast exact linear and non-linear structural reanalysis and the Sherman–Morrison–Woodbury formulas.
+Internat. J. Numer. Methods Engrg. 50, 1587–
+- 1606. Alyanak, E.J., Pendleton, E.,
+- 2017. Aeroelastic tailoring and active aeroelastic wing impact on a lambda wing configuration. J. Aircr. 54, 11–
+- 19. Amsallem, D., Farhat, C., Lieu, T.,
+- 2007. Aeroelastic analysis of F-16 and F −18/A configurations using adapted CFD-based reduced-order models. AIAA Pap.
+2364, 23–
+- 26. Bekemeyer, P., Timme, S.,
+- 2017. Reduced Order Transonic Aeroelastic Gust Response Simulation of Large Aircraft. In: 35th AIAA Applied Aerodynamics
+Conference, p.
+- 4361. Beliveau, J.-G., Cogan, S., Lallement, G., Ayer, F.,
+- 1996. Iterative least-squares calculation for modal eigenvector sensitivity. AIAA J. 34, 385–
+- 391. Cesnik, C.E., Hodges, D.H., Patil, M.J.,
+- 1996. Aeroelastic analysis of composite wings. In: Proceedings of the 37th Structures, Structural Dynamics, and Materials
+Conference, pp. 18-
+- 19. Chen, S.H., Song, D.T., Ma, A.J.,
+
+### 20.9 常用词、词类、语态与时态
+
+- 高频词：aeroelastic(131)；structural(68)；characteristics(50)；evaluation(47)；approximate(47)；structure(45)；composite(42)；tailoring(41)；pod(38)；wing(30)；rom(29)；structures(27)；computational(24)；modified(24)；ply(24)；direct(24)；generalized(23)；modeshapes(23)；transonic(22)；global(21)
+- 高频名词化/学术名词：characteristics(50)；evaluation(47)；structure(45)；stiffness(13)；variation(11)；sequence(10)；modification(8)；section(7)；equation(7)；fraction(7)；displacement(6)；direction(5)；performance(5)；pressure(5)；condition(5)
+- 高频学术动词：demonstrated(9)；presented(5)；predicted(4)；compared(2)；predict(2)；propose(2)；indicated(2)；validated(2)；indicate(2)；demonstrate(1)
+- 高频形容词：aeroelastic(131)；structural(68)；computational(24)；transonic(22)；global(21)；journal(18)；dynamic(18)；aerodynamic(17)；modal(13)；local(10)；original(10)；table(10)；efficient(6)；mechanical(6)；displacement(6)
+- 高频副词：ply(24)；respectively(9)；only(8)；commonly(4)；generally(4)；rapidly(4)；significantly(3)；accurately(3)；firstly(3)；finally(3)；successfully(2)；unfortunately(2)；suitably(1)；increasingly(1)；simultaneously(1)
+- 高频二词短语：aeroelastic characteristics(44)；aeroelastic tailoring(40)；characteristics evaluation(32)；approximate aeroelastic(28)；pod rom(18)；journal fluids(17)；fluids structures(17)；page gong(15)；gong ronch(15)；ronch journal(15)；composite structure(14)；structural parameter(13)
+- 高频三词短语：aeroelastic characteristics evaluation(32)；approximate aeroelastic characteristics(28)；journal fluids structures(17)；page gong ronch(15)；gong ronch journal(15)；ronch journal fluids(15)；extended kirsch combined(10)；aeroelastic tailoring process(9)；structural parameter variation(8)；fluids structures fig(8)；cfd-based pod rom(7)；structural dynamic reanalysis(7)
+- 被动语态估计：83；`we + 动作动词` 主动句估计：1
+- 一般现在时线索：172；一般过去时线索：348；现在完成时线索：2；情态动词线索：34
+
+章节词频：
+
+- Abstract: aeroelastic(4)；structure(3)；materials(2)；when(2)；tailoring(2)；any(2)；modification(2)；structural(2)
+- Introduction: aeroelastic(36)；tailoring(15)；transonic(14)；structural(13)；composite(12)；aircraft(11)；roms(11)；rom(10)
+- Conclusion: aeroelastic(42)；characteristics(20)；evaluation(20)；approximate(18)；structural(12)；tailoring(10)；responses(8)；accuracy(8)
+
+### 20.10 句型库扩充（每类多句）
+
+#### 背景句
+- 原句/结构：One of the important aspects of aeroelastic tailoring is to assess aeroelastic characteristics such as divergence and flutter for composite wing in the subsonic, transonic and supersonic flight regimes.
+  可迁移模板：One of the important aspects of aeroelastic tailoring is to assess aeroelastic characteristics such as divergence and flutter for composite wing in the subsonic, transonic and supersonic flight regimes.
+- 原句/结构：Therefore, it is particularly important to analyze and assess the transonic aeroelastic characteristics of aircraft.
+  可迁移模板：Therefore, it is particularly important to analyze and assess the transonic aeroelastic characteristics of aircraft.
+- 原句/结构：Efficiency evaluation of the aeroelastic characteristics evaluation method Our objective is to propose a new approximate aeroelastic characteristics evaluation method which is suitable for transonic aeroelastic tailoring, so the computational efficiency is one of the most important criteria of the proposed method for assess the aeroelastic stability in aeroelastic tailoring process.
+  可迁移模板：Efficiency evaluation of the aeroelastic characteristics evaluation method Our objective is to propose a new approximate aeroelastic characteristics evaluation method which is suitable for transonic aeroelastic tailoring, so the computational efficiency is one of the most important criteria of the proposed method for assess the aeroelastic stability in aeroelastic tailoring process.
+#### Gap句
+- 原句/结构：However, these full order models (FOMs), including finite element analysis (FEA) and CFD, require large computer memories and have high computational cost, making these methods impractical for routine use.
+  可迁移模板：However, these full order models (FOMs), including finite element analysis (METHOD) and METHOD, require large computer memories and have high computational cost, making these methods impractical for routine use.
+- 原句/结构：However, the majority of previous work is only adequate for a fixed flight condition and a given structural model, i.e. changes to flight conditions (Mach number, angle of attack, etc.) and structural parameters (mass, etc.) are excluded.
+  可迁移模板：However, the majority of previous work is only adequate for a fixed flight condition and a given structural model, i.e. changes to flight conditions (Mach number, angle of attack, etc.) and structural parameters (mass, etc.) are excluded.
+- 原句/结构：However, few studies has considered the aeroelastic response for variations in the structural parameters within a ROM.
+  可迁移模板：However, few studies has considered the aeroelastic response for variations in the structural parameters within a METHOD.
+#### 方法句
+- 原句/结构：To make progress in this direction, the work presents a rapid computational fluid dynamics based aeroelastic tool which is built around a reduced order model for the aerodynamics that is updated for any modification of the structure by using the structural dynamics reanalysis method.
+  可迁移模板：To make progress in this direction, the work presents a rapid computational fluid dynamics based aeroelastic tool which is built around a reduced order model for the aerodynamics that is updated for any modification of the structure by using the structural dynamics reanalysis method.
+- 原句/结构：It was found that the proposed method provides accurate engineering predictions for the aeroelastic response and stability when the structure is modified from the baseline model. © 2018 Elsevier Ltd.
+  可迁移模板：It was found that the proposed method provides accurate engineering predictions for the aeroelastic response and stability when the structure is modified from the baseline model. © XElsevier Ltd.
+- 原句/结构：To make progress in this direction, the work presents a rapid computational fluid dynamics based aeroelastic tool which is built around a reduced order model for the aerodynamics that is updated for any modification of the structure by using the structural dynamics reanalysis method.
+  可迁移模板：To make progress in this direction, the work presents a rapid computational fluid dynamics based aeroelastic tool which is built around a reduced order model for the aerodynamics that is updated for any modification of the structure by using the structural dynamics reanalysis method.
+#### 结果句
+- 原句/结构：The aeroelastic tailoring tool is demonstrated in transonic flow for the AGARD 445.6 wing, suitably modified with composite materials.
+  可迁移模板：The aeroelastic tailoring tool is demonstrated in transonic flow for the METHOD Xwing, suitably modified with composite materials.
+- 原句/结构：The aeroelastic tailoring tool is demonstrated in transonic flow for the AGARD 445.6 wing, suitably modified with composite materials.
+  可迁移模板：The aeroelastic tailoring tool is demonstrated in transonic flow for the METHOD Xwing, suitably modified with composite materials.
+- 原句/结构：Sherrer et al. (Sherrer et al., 1981) demonstrated that aeroelastic tailoring can be used to increase the divergence speed of a composite forward swept wing through low-speed wind tunnel tests.
+  可迁移模板：Sherrer et al. (Sherrer et al., X) demonstrated that aeroelastic tailoring can be used to increase the divergence speed of a composite forward swept wing through low-speed wind tunnel tests.
+#### 贡献句
+- 原句/结构：Current and future trends in the aerospace industry leverage on the potential benefits provided by lightweight materials that can be tailored to realize desired mechanical characteristics when loaded.
+  可迁移模板：Current and future trends in the aerospace industry leverage on the potential benefits provided by lightweight materials that can be tailored to realize desired mechanical characteristics when loaded.
+- 原句/结构：It was found that the proposed method provides accurate engineering predictions for the aeroelastic response and stability when the structure is modified from the baseline model. © 2018 Elsevier Ltd.
+  可迁移模板：It was found that the proposed method provides accurate engineering predictions for the aeroelastic response and stability when the structure is modified from the baseline model. © XElsevier Ltd.
+- 原句/结构：Journal of Fluids and Structures 84 (2019) 182–198 Contents lists available at ScienceDirect Journal of Fluids and Structures journal homepage: www.elsevier.com/locate/jfs Current and future trends in the aerospace industry leverage on the potential benefits provided by lightweight materials that can be tailored to realize desired mechanical characteristics when loaded.
+  可迁移模板：Journal of Fluids and Structures X(X) X–XContents lists available at ScienceDirect Journal of Fluids and Structures journal homepage: www.elsevier.com/locate/jfs Current and future trends in the aerospace industry leverage on the potential benefits provided by lightweight materials that can be tailored to realize desired mechanical characteristics when loaded.
+#### 限制/边界句
+- 原句/结构：Current and future trends in the aerospace industry leverage on the potential benefits provided by lightweight materials that can be tailored to realize desired mechanical characteristics when loaded.
+  可迁移模板：Current and future trends in the aerospace industry leverage on the potential benefits provided by lightweight materials that can be tailored to realize desired mechanical characteristics when loaded.
+- 原句/结构：Journal of Fluids and Structures 84 (2019) 182–198 Contents lists available at ScienceDirect Journal of Fluids and Structures journal homepage: www.elsevier.com/locate/jfs Current and future trends in the aerospace industry leverage on the potential benefits provided by lightweight materials that can be tailored to realize desired mechanical characteristics when loaded.
+  可迁移模板：Journal of Fluids and Structures X(X) X–XContents lists available at ScienceDirect Journal of Fluids and Structures journal homepage: www.elsevier.com/locate/jfs Current and future trends in the aerospace industry leverage on the potential benefits provided by lightweight materials that can be tailored to realize desired mechanical characteristics when loaded.
+- 原句/结构：System identification and proper orthogonal decomposition (POD) are the two most commonly used ROMs for nonlinear aeroelastic analysis.
+  可迁移模板：System identification and proper orthogonal decomposition (METHOD) are the two most commonly used ROMs for nonlinear aeroelastic analysis.
+
+### 20.11 抽取失败与人工复核提示
+
+- 摘要抽取：正常
+- 结论抽取：正常
+- 引文解析：正常
+- 章节树：正常
+- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
+
+<!-- REAUDIT-2026-05-26 END -->

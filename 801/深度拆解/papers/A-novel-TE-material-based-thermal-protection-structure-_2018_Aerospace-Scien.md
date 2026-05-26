@@ -138,7 +138,7 @@ Introduction 的文献组织有四组：
 
 ### 11.x 章节结构与章节名分析（补充）
 
-> 自动分析说明：以下基于 `jmps/文本/txt/A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+> 自动分析说明：以下基于 `801/文本/txt/A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
 
 - 识别到的章节/小节数量：10
 - 结构类型判断：接近标准 IMRaD，但带有 JMPS 常见的理论/模型/验证扩展。
@@ -294,3 +294,201 @@ Gap 句：
 1. 把“低效”写成系统 gap，而不是只说材料性能不足。
 2. 用典型轨迹和典型点把应用场景钉牢。
 3. 在结论中用参数表说明主动冷却、温度和电输出的权衡。
+
+<!-- REAUDIT-2026-05-26 START -->
+
+## 20. 复核增强：严格抽取、翻译、引文与句型
+
+> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien.txt` 与 `801/文本/metadata/A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
+
+### 20.1 严格章节树（按 PDF/metadata TOC）
+
+- L2 p.1: 1 Introduction （背景/领域定位）
+- L2 p.2: 2 The vehicle, trajectory and aerodynamic heat （对象/问题/模块）
+  - L3 p.2: 2.1 The vehicle and trajectory （对象/问题/模块）
+  - L3 p.3: 2.2 Aerodynamic heat （对象/问题/模块）
+- L2 p.3: 3 The multi-functional TPS structure （对象/问题/模块）
+  - L3 p.4: 3.1 The choosing of p-type material （对象/问题/模块）
+  - L3 p.4: 3.2 Fabrication of n-type material and its TE properties （对象/问题/模块）
+  - L3 p.5: 3.3 Physical properties of other materials （对象/问题/模块）
+- L2 p.5: 4 Numerical model （方法/模型）
+  - L3 p.5: 4.1 Governing and constitutive equations （对象/问题/模块）
+  - L3 p.6: 4.2 The unit cell model and its mesh （方法/模型）
+  - L3 p.6: 4.3 The boundary and initial conditions （对象/问题/模块）
+  - L3 p.7: 4.4 Interfaces between different materials （对象/问题/模块）
+- L2 p.8: 5 Results and discussions （结果/讨论/验证）
+  - L3 p.8: 5.1 Thermo-mechanical performance （对象/问题/模块）
+  - L3 p.10: 5.2 Thermoelectric performance （对象/问题/模块）
+  - L3 p.11: 5.3 Thermoelectric conversion efﬁciency （对象/问题/模块）
+- L2 p.11: Conclusions （结论）
+- L2 p.12: Conﬂict of interest statement （对象/问题/模块）
+- L2 p.12: Acknowledgements （对象/问题/模块）
+- L2 p.12: References （参考文献）
+
+### 20.2 章节名功能分析
+
+| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
+| --- | ---: | ---: | --- | --- |
+| 1 Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2 The vehicle, trajectory and aerodynamic heat | 2 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2.1 The vehicle and trajectory | 2 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2.2 Aerodynamic heat | 3 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3 The multi-functional TPS structure | 3 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.1 The choosing of p-type material | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.2 Fabrication of n-type material and its TE properties | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.3 Physical properties of other materials | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4 Numerical model | 5 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.1 Governing and constitutive equations | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.2 The unit cell model and its mesh | 6 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.3 The boundary and initial conditions | 6 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.4 Interfaces between different materials | 7 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5 Results and discussions | 8 | 2 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5.1 Thermo-mechanical performance | 8 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5.2 Thermoelectric performance | 10 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5.3 Thermoelectric conversion efﬁciency | 11 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Conclusions | 11 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Conﬂict of interest statement | 12 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Acknowledgements | 12 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| References | 12 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
+
+### 20.3 摘要完整摘录（本地证据）
+
+抽取状态：成功
+
+> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.4 摘要中文翻译
+
+> 文章历史记录： 2017年11月21日收到 2018年1月15日以修订形式收到 2018年3月17日接受 2018年3月21日在线提供
+> 
+> 传统的高超声速飞行器热防护系统（TPS）通常仅用于热防护目的，效率较低。本文提出了一种基于热电材料的多功能TPS结构概念，并基于特定车辆和典型轨迹开发了其机械热电性能的评估方法。结构中的热电模块可以将一定量的空气动力热转化为电能。该模块由基于固相反​​应方法制备的n型Sr0.9La0.1TiO3化合物和广泛使用的p型Ca3Co4O9组成。针对具有典型弹道曲线的特定高超声速飞行器，通过工程化算法计算气动热，基于晶胞模型分析结构的非定常机械热电特性，最终评估热电转换效率。结果表明，多功能TPS结构在高超声速飞行器上具有显着的应用潜力。 © 2018 Elsevier Masson SAS。版权所有。
+
+### 20.5 结论完整摘录（本地证据）
+
+结论章节识别：Conclusions；状态：独立结论章节
+
+> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.6 结论中文翻译
+
+> 在这项工作中，提出了一种基于热电材料的多功能TPS结构并开发了相关的评估方法。结构中的TE模块可以将一定量的气动热转化为电能。 TE电偶由Ca3Co4O9基p型材料和Sr0.9La0.1TiO3基n型化合物组成，通过固相反应方法制备。基于晶胞模型研究了该结构的机械热电性能。基于具有典型弹道曲线的典型可重复使用运载火箭，采用工程化方法计算气动热，并作为数值模拟的输入边界条件。这项工作中开发的模拟方法可用于分析高超声速飞行器的其他轨迹。结果显示了一些结论：
+> 
+> 对流系数(W/(m2·K))
+> 
+> 晶胞（单个 p-n 耦合）
+> 
+> 10 0.0182 0.00317 2.33 0.406 2.63 0.237 50 0.0189 0.00483 2.42 0.618 2.79 0.400 100 0.0195 0.00591 2.50 0.756 3.39 0.499 300 0.0209 0.00713 2.68 0.913 4.09 0.607
+> 
+> 1. 在基于平移对称性建立的晶胞模型的热机械研究中，周期性边界条件对于获得合理的结果至关重要。 2.
+> 
+> 对于本文提出的TPS结构，如果底部下方提供系数为10、50、100和300 W/(m2 K)的对流换热，则在研究的轨迹持续时间内，底部表面的最高温度分别为639、497、431和364 K，这提供了
+
+### 20.7 论文逻辑脉络复核
+
+- 提出的问题：Thus, a reliable and efficient thermal protection system (TPS) is essential to ensure the safety of the vehicle. In the thermal-mechanical studies of a unit cell model that formulated based on translational symmetries, the periodic boundary condition is essential to obtaining reasonable results. 2.
+- 旧方法/已有研究不足：需结合 Introduction 的文献转折句复核。
+- 本文解决方式：In this paper, a thermoelectric material based multifunctional TPS structure concept is proposed and the evaluation approach of its mechanicalthermoelectric performance is developed based on a specific vehicle and a typical trajectory. The module consists of n-type Sr0.9La0.1TiO3 compound which is fabricated based on the solid state reaction method, and the widely used p-type Ca3Co4O9. For a specific hypersonic flight vehicle with a typical trajectory curve, the aerodynamic heat is calculated by an engineering-based algorithm, the unsteady mechanical-thermoelectric characteristics of the structure is then analyzed based on a unit cell model and the thermoelectric conversion efficiency is finally evaluated.
+- 学术/工程增量：For the TPS structure proposed in this work, if a convection heat transfer with coefficients of 10, 50, 100 and 300 W/(m2 K) are provided under the bottom, in the studied trajectory duration the highest temperature of the bottom surface is 639, 497, 431 and 364 K, respectively, and this provide
+- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
+
+### 20.8 引文分析补全
+
+- 全文引用簇数量（估计）：61
+- Introduction 引用簇数量（估计）：10
+- References 条目数（解析）：41
+- 可识别年份条目数：44
+- 近五年/近年文献（2021+）数量：0
+- 经典文献（2010年前）数量：14
+- 同刊引用数量（按 subject 粗略匹配）：0
+- 高频来源期刊（粗略）：Aerospace Science and Technology(2)
+- 引用簇样例：[9], [10], [4], [11,12], [11], [20], [21], [22], [23], [28], [24], [29]
+
+带引用的 gap/转折句样例：
+
+- For the application of flight vehicles, to the authors’ knowledge, the relevant researches are limited: Li and Wang [23] developed an integrated TE module with regenerative cooling system, and analyzed its performance based on the exergy analysis theory; Cheng et al. [24] developed a multi-stage TE module considering the suitable temperature of TE material, and analyzed its thermal protection performance.
+
+References 解析样例（前12条）：
+
+- [1] B. Behrens, M. Müller, Technologies for thermal protection systems applied on re-usable launcher, Acta Astronaut. 55 (3–9) (2004) 529–536.
+- [2] F. Gori, S. Corasaniti, W.M. Worek, W.J. Minkowycz, Theoretical prediction of thermal conductivity for thermal protection systems, Appl. Therm. Eng. 49 (2012) 124–130.
+- [3] Y. Rong, Y. Wei, R. Zhan, Research on thermal protection by opposing jet and transpiration for high speed vehicle, Aerosp. Sci. Technol. 48 (Supplement C) (2016) 322–327.
+- [4] D. Knight, H. Yan, A.G. Panaras, A. Zheltovodov, Advances in CFD prediction of shock wave turbulent boundary layer interactions, Prog. Aerosp. Sci. 39 (2) (2003) 121–184.
+- [5] D. Knight, J. Longo, D. Drikakis, D. Gaitonde, A. Lani, I. Nompelis, B. Reimann, L. Walpot, Assessment of CFD capability for prediction of hypersonic shock interactions, Prog. Aerosp. Sci. 48 (Supplement C) (2012) 8–26.
+- [6] Y. Kerboua, A.A. Lakis, Numerical model to analyze the aerodynamic behavior of a combined conical–cylindrical shell, Aerosp. Sci. Technol. 58 (Supplement C) (2016) 601–617.
+- [7] P. Panagiotou, P. Kaparos, C. Salpingidou, K. Yakinthos, Aerodynamic design of a MALE UAV, Aerosp. Sci. Technol. 50 (Supplement C) (2016) 127–138.
+- [8] P.D. Bravo-Mosquera, L. Botero-Bolivar, D. Acevedo-Giraldo, H.D. Cerón-Muñoz, Aerodynamic design analysis of a UAV for superficial research of volcanic environments, Aerosp. Sci. Technol. 70 (Supplement C) (2017) 600–614.
+- [9] C.D. Engel, S.C. Praharaj, MINIVER Upgrade for the AVID System. Vol. 1: LANMIN User’s Manual, Nasa Cr, 1983.
+- [10] E.V. Zoby, K. Sutton, Approximate convective-heating equations for hypersonic flows, J. Spacecr. Rockets 18 (1) (1981)
+- 64.
+C.-L. Gong et al. / Aerospace Science and Technology 77 (2018) 458–470 469
+Output power (W) TE conversion efficiency (%)
+TPS structure (128 p–n couples)
+Maximum Average Maximum Average Maximum Average
+- [11] Y. Ma, B. Xu, M. Chen, R. He, W. Wen, T. Cheng, D. Fang, Optimization design of built-up thermal protection system based on validation of corrugated core homogenization, Appl. Therm. Eng. 115 (2017) 491–500.
+
+### 20.9 常用词、词类、语态与时态
+
+- 高频词：heat(53)；structure(40)；temperature(36)；fig(36)；material(34)；tps(32)；work(32)；aerodynamic(29)；thermal(27)；vehicle(26)；materials(26)；surface(23)；boundary(23)；layer(22)；coe(22)；cient(20)；its(19)；will(19)；conditions(16)；respectively(16)
+- 高频名词化/学术名词：structure(40)；temperature(36)；performance(14)；science(11)；conductivity(9)；calculation(8)；protection(7)；condition(7)；evaluation(6)；expansion(6)；radiation(5)；high-temperature(5)；insulation(5)；ture(5)；difference(5)
+- 高频学术动词：developed(8)；indicate(1)；predict(1)；develop(1)；indicated(1)；validate(1)
+- 高频形容词：material(34)；aerodynamic(29)；thermal(27)；boundary(23)；cient(20)；electric(13)；convective(10)；typical(9)；thermoelectric(7)；numerical(7)；hypersonic(6)；mechanical-thermoelectric(6)；multi-functional(6)；potential(6)；additional(5)
+- 高频副词：respectively(16)；only(5)；widely(3)；mainly(3)；carefully(2)；closely(2)；directly(2)；separately(2)；tively(2)；usually(1)；supply(1)；nally(1)；especially(1)；partly(1)；relatively(1)
+- 高频二词短语：aerodynamic heat(24)；coe cient(17)；tps structure(14)；aerospace science(10)；science technology(10)；unit cell(10)；boundary conditions(9)；page gong(8)；gong aerospace(8)；bottom surface(8)；convective coe(8)；seebeck coe(7)
+- 高频三词短语：aerospace science technology(10)；page gong aerospace(8)；gong aerospace science(8)；science technology fig(6)；seebeck coe cient(6)；multi-functional tps structure(4)；convective coe cient(4)；while bottom surface(4)；hypersonic ight vehicles(3)；work aerodynamic heat(3)；dahlem buck modi(3)；buck modi newtonian(3)
+- 被动语态估计：99；`we + 动作动词` 主动句估计：0
+- 一般现在时线索：204；一般过去时线索：245；现在完成时线索：0；情态动词线索：56
+
+章节词频：
+
+- Abstract: structure(4)；tps(3)；hypersonic(3)；flight(3)；thermoelectric(3)；received(2)；march(2)；thermal(2)
+- Introduction: heat(14)；tps(14)；material(14)；aerodynamic(11)；vehicle(9)；developed(9)；structure(8)；its(8)
+- Conclusion: structure(4)；work(3)；heat(3)；unit(3)；cell(3)；material(2)；tps(2)；approach(2)
+
+### 20.10 句型库扩充（每类多句）
+
+#### 背景句
+- 原句/结构：Thus, a reliable and efficient thermal protection system (TPS) is essential to ensure the safety of the vehicle.
+  可迁移模板：Thus, a reliable and efficient thermal protection system (METHOD) is essential to ensure the safety of the vehicle.
+- 原句/结构：In the thermal-mechanical studies of a unit cell model that formulated based on translational symmetries, the periodic boundary condition is essential to obtaining reasonable results. 2.
+  可迁移模板：In the thermal-mechanical studies of a unit cell model that formulated based on translational symmetries, the periodic boundary condition is essential to obtaining reasonable results. X.
+#### Gap句
+- 原句/结构：At present, the numerical method still has some challenges, such as the high requirement * Corresponding author.
+  可迁移模板：At present, the numerical method still has some challenges, such as the high requirement * Corresponding author.
+- 原句/结构：However, they are much more efficient.
+  可迁移模板：However, they are much more efficient.
+- 原句/结构：However, it is not applicable to a reusable vehicle due to its changing configuration during the flight mission.
+  可迁移模板：However, it is not applicable to a reusable vehicle due to its changing configuration during the flight mission.
+#### 方法句
+- 原句/结构：In this paper, a thermoelectric material based multifunctional TPS structure concept is proposed and the evaluation approach of its mechanicalthermoelectric performance is developed based on a specific vehicle and a typical trajectory.
+  可迁移模板：In this paper, a thermoelectric material based multifunctional METHOD structure concept is proposed and the evaluation approach of its mechanicalthermoelectric performance is developed based on a specific vehicle and a typical trajectory.
+- 原句/结构：The module consists of n-type Sr0.9La0.1TiO3 compound which is fabricated based on the solid state reaction method, and the widely used p-type Ca3Co4O9.
+  可迁移模板：The module consists of n-type Sr0.XLa0.XTiO3 compound which is fabricated based on the solid state reaction method, and the widely used p-type Ca3Co4O9.
+- 原句/结构：For a specific hypersonic flight vehicle with a typical trajectory curve, the aerodynamic heat is calculated by an engineering-based algorithm, the unsteady mechanical-thermoelectric characteristics of the structure is then analyzed based on a unit cell model and the thermoelectric conversion efficiency is finally evaluated.
+  可迁移模板：For a specific Y with a typical trajectory curve, the aerodynamic heat is calculated by an engineering-based algorithm, the unsteady mechanical-thermoelectric characteristics of the structure is then analyzed based on a unit cell model and the thermoelectric conversion efficiency is finally evaluated.
+#### 结果句
+- 原句/结构：The results indicate that the multifunctional TPS structure has significant application potentials on the hypersonic flight vehicles. © 2018 Elsevier Masson SAS.
+  可迁移模板：The results indicate that the multifunctional METHOD structure has significant application potentials on the Y. © XElsevier Masson METHOD.
+- 原句/结构：The results indicate that the multifunctional TPS structure has significant application potentials on the hypersonic flight vehicles. © 2018 Elsevier Masson SAS.
+  可迁移模板：The results indicate that the multifunctional METHOD structure has significant application potentials on the Y. © XElsevier Masson METHOD.
+- 原句/结构：The results show some conclusions: Convective coefficient (W/(m2 K)) Unit cell (single p–n couple) 10 0.0182 0.00317 2.33 0.406 2.63 0.237 50 0.0189 0.00483 2.42 0.618 2.79 0.400 100 0.0195 0.00591 2.50 0.756 3.39 0.499 300 0.0209 0.00713 2.68 0.913 4.09 0.607 1.
+  可迁移模板：The results show some conclusions: Convective coefficient (W/(m2 K)) Unit cell (single p–n couple) METHOD.
+#### 贡献句
+- 原句/结构：For the TPS structure proposed in this work, if a convection heat transfer with coefficients of 10, 50, 100 and 300 W/(m2 K) are provided under the bottom, in the studied trajectory duration the highest temperature of the bottom surface is 639, 497, 431 and 364 K, respectively, and this provide
+  可迁移模板：For the METHOD structure proposed in this work, if a convection heat transfer with coefficients of X, X, Xand METHOD/(m2 K) are provided under the bottom, in the studied trajectory duration the highest temperature of the bottom surface is X, X, Xand METHOD, respectively, and this provide
+#### 限制/边界句
+- 原句/结构：Article history: Received 21 November 2017 Received in revised form 15 January 2018 Accepted 17 March 2018 Available online 21 March 2018 The traditional thermal protection system (TPS) of hypersonic flight vehicles is usually designed for thermal protection purpose only with low efficiency.
+  可迁移模板：Article history: Received XNovember XReceived in revised form XJanuary XAccepted XMarch XAvailable online XMarch XThe traditional thermal protection system (METHOD) of Y is usually designed for thermal protection purpose only with low efficiency.
+- 原句/结构：For a supersonic vehicle, at some specific locations of leading edge, the temperature may reach to a value of higher than 1800 K [1–3].
+  可迁移模板：For a supersonic vehicle, at some specific locations of leading edge, the temperature may reach to a value of higher than METHOD [X–X].
+- 原句/结构：The traditional thermal protection system (TPS) of hypersonic flight vehicles is usually designed for thermal protection purpose only with low efficiency.
+  可迁移模板：The traditional thermal protection system (METHOD) of Y is usually designed for thermal protection purpose only with low efficiency.
+
+### 20.11 抽取失败与人工复核提示
+
+- 摘要抽取：正常
+- 结论抽取：正常
+- 引文解析：正常
+- 章节树：正常
+- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
+
+<!-- REAUDIT-2026-05-26 END -->

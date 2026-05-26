@@ -10,6 +10,12 @@ aei/_extracted/1-s2.0-*-main.md
 aei/_extracted/1-s2.0-*-main.json
 aei/_extracted/index.json
 
+# Reaudit working evidence/cache can include extracted copyrighted passages.
+**/深度拆解/extracted_evidence/
+**/深度拆解/_translation_cache.json
+**/深度拆解/_translate_*.log
+**/深度拆解/local_full_reports/
+
 # Local/editor/runtime noise.
 .DS_Store
 Thumbs.db

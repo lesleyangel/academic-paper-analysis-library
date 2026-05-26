@@ -112,7 +112,7 @@ Introduction 先把轨迹优化放进 guidance/control 背景，再缩小到 SCP
 
 ### 11.x 章节结构与章节名分析（补充）
 
-> 自动分析说明：以下基于 `jmps/文本/txt/hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+> 自动分析说明：以下基于 `801/文本/txt/hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
 
 - 识别到的章节/小节数量：15
 - 结构类型判断：接近标准 IMRaD，但带有 JMPS 常见的理论/模型/验证扩展。
@@ -251,3 +251,208 @@ Introduction 先把轨迹优化放进 guidance/control 背景，再缩小到 SCP
 ## 19. 最终浓缩
 
 这篇论文把 SCP 再入轨迹优化的贡献从“凸化”扩展到“离散 + 迭代”。它提出 hp-adaptive RPD-SCP 三阶段算法，用约束松弛稳住初期、自适应网格降低离散误差、正则化加速末期收敛。最强证据是 CAV-H 中 2.377 s 的求解时间和与 dense/GPOPS-II 接近的精度；主要复核点是多算例泛化、参数敏感性和对比设置公平性。
+
+<!-- REAUDIT-2026-05-26 START -->
+
+## 20. 复核增强：严格抽取、翻译、引文与句型
+
+> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.txt` 与 `801/文本/metadata/hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
+
+### 20.1 严格章节树（按 PDF/metadata TOC）
+
+- L2 p.1: 1 Introduction （背景/领域定位）
+- L2 p.2: 2 Problem formulation （方法/模型）
+  - L3 p.2: 2.1 Motion equations （对象/问题/模块）
+  - L3 p.3: 2.2 Choice of control variable （对象/问题/模块）
+  - L3 p.4: 2.3 Optimal control problem （对象/问题/模块）
+- L2 p.4: 3 Convexification and discretization （对象/问题/模块）
+  - L3 p.4: 3.1 Convexification （对象/问题/模块）
+  - L3 p.5: 3.2 Discretization and approximation （对象/问题/模块）
+  - L3 p.6: 3.3 Convex optimization subproblem （对象/问题/模块）
+- L2 p.7: 4 Iterative algorithm （对象/问题/模块）
+  - L3 p.7: 4.1 Differential error and state curvature （对象/问题/模块）
+  - L3 p.8: 4.2 hp-Adaptive RPD （对象/问题/模块）
+  - L3 p.8: 4.3 Iteration process （对象/问题/模块）
+- L2 p.10: 5 Numerical simulations and discussion （结果/讨论/验证）
+  - L3 p.10: 5.1 Solve by the proposed algorithm （对象/问题/模块）
+  - L3 p.11: 5.2 Convergence analysis of the proposed algorithm （对象/问题/模块）
+  - L3 p.13: 5.3 Comparison with other algorithms （对象/问题/模块）
+- L2 p.15: 6 Conclusions （结论）
+- L2 p.15: Declaration of competing interest （对象/问题/模块）
+- L2 p.15: Data availability （对象/问题/模块）
+- L2 p.15: Acknowledgements （对象/问题/模块）
+- L2 p.15: References （参考文献）
+
+### 20.2 章节名功能分析
+
+| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
+| --- | ---: | ---: | --- | --- |
+| 1 Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2 Problem formulation | 2 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2.1 Motion equations | 2 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2.2 Choice of control variable | 3 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2.3 Optimal control problem | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3 Convexification and discretization | 4 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.1 Convexification | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.2 Discretization and approximation | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.3 Convex optimization subproblem | 6 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4 Iterative algorithm | 7 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.1 Differential error and state curvature | 7 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.2 hp-Adaptive RPD | 8 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.3 Iteration process | 8 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5 Numerical simulations and discussion | 10 | 2 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5.1 Solve by the proposed algorithm | 10 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5.2 Convergence analysis of the proposed algorithm | 11 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5.3 Comparison with other algorithms | 13 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 6 Conclusions | 15 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Declaration of competing interest | 15 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Data availability | 15 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Acknowledgements | 15 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| References | 15 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
+
+### 20.3 摘要完整摘录（本地证据）
+
+抽取状态：成功
+
+> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.4 摘要中文翻译
+
+> 文章历史： 接收日期 2022年8月7日 收到修订版 2022年9月12日 接受日期 2022年9月18日 在线发布 2022年9月23日 詹兴群传播
+> 
+> 顺序凸规划（SCP）方法已被开发来解决再入轨迹优化问题。由于过于简化的离散化和迭代，现有SCP方法的准确性和效率可以进一步提高。本文提出了一种基于hpadaptive Radau伪谱离散化(RPD)的SCP算法。在该算法中，根据子问题的特点将迭代过程分为三个阶段。第一阶段应用约束松弛技术以确保迭代稳定。在第二阶段，离散点的数量和位置将根据离散化误差和状态曲率自适应更新。在最后阶段，通过多次迭代来减少线性化误差而不更新网格，并利用正则化技术来提高该过程的收敛速度。通过一个典型的重入示例对所提出的算法进行了验证和检验。在结果精度相当甚至更高的情况下，与其他 SCP 方法相比，CPU 时间减少了 40%-70%，仅为 GPOPS-II 的二十分之一。 © 2022 Elsevier Masson SAS。
+> 
+> 版权所有。
+
+### 20.5 结论完整摘录（本地证据）
+
+结论章节识别：6 Conclusions；状态：独立结论章节
+
+> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.6 结论中文翻译
+
+> 6. 结论
+> 
+> 基于SCP的轨迹优化在航空航天领域得到广泛应用。 SCP的核心是凸化技术，
+> 特别是关于非凸控制约束的无损凸化技术。不过由于SCP属于直接法
+> 从本质上来说，离散化也是影响求解精度和效率的关键因素。主要贡献为
+> 本文在离散化和迭代方面改进了现有的SCP方法，提出了hp自适应RPD的SCP。 hp自适应RPD的应用使得迭代过程中子问题的规模逐渐增大，从而提高了
+> 整体解决效率。更重要的是，可以用更少的资源获得尽可能高精度的最优轨迹。
+> 通过合理的网格更新离散化点。此外，还使用了约束松弛和正则化技术
+> 分别在迭代开始和结束时，使所提出的算法对初始值不敏感，并在
+> 结束。与其他方法相比，本文提出的算法具有很强的竞争力。虽然本文在优化目标中加入了正则化项来提高迭代的收敛速度
+> 过程中，其线性收敛特性没有改变。
+> 
+> 此外，还使用了约束松弛和正则化技术
+> 分别在迭代开始和结束时，使所提出的算法对初始值不敏感，并在
+> 结束。与其他方法相比，本文提出的算法具有很强的竞争力。虽然本文在优化目标中加入了正则化项来提高迭代的收敛速度
+> 过程中，其线性收敛特性没有改变。在未来的工作中，我们希望利用非线性函数的 Hessian 矩阵作为
+> 正则化项的权重，这可能会进一步提高算法的性能。
+
+### 20.7 论文逻辑脉络复核
+
+- 提出的问题：Considering the high flight safety requirements and unpredictable flight states, improving the performance of trajectory optimization, including stability, computational efficiency, and result accuracy, is very important [4–6]. However, since SCP belongs to the direct method category, essentially, discretization is also a crucial factor affecting the accuracy of the solution and the eﬃciency. More importantly, the optimal trajectory with as high precision as possible can be obtained with fewer discretized points through reasonable mesh updating.
+- 旧方法/已有研究不足：However, since SCP belongs to the direct method category, essentially, discretization is also a crucial factor affecting the accuracy of the solution and the eﬃciency. More importantly, the optimal trajectory with as high precision as possible can be obtained with fewer discretized points through reasonable mesh updating.
+- 本文解决方式：Article history: Received 7 August 2022 Received in revised form 12 September 2022 Accepted 18 September 2022 Available online 23 September 2022 Communicated by Xingqun Zhan Sequential convex programming (SCP) methods have been developed to solve reentry trajectory optimization problems. Due to the oversimplified discretization and iteration, the accuracy and efficiency of the existing SCP methods can be further improved. In this paper, a SCP algorithm based on the hpadaptive Radau pseudospectral discretization (RPD) is proposed.
+- 学术/工程增量：Due to the oversimplified discretization and iteration, the accuracy and efficiency of the existing SCP methods can be further improved. In the last stage, the linearization error is reduced by several iterations without updating mesh, and the regularization technique is utilized to improve the convergence rate of this process. Due to the oversimplified discretization and iteration, the accuracy and efficiency of the existing SCP methods can be further improved.
+- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
+
+### 20.8 引文分析补全
+
+- 全文引用簇数量（估计）：61
+- Introduction 引用簇数量（估计）：9
+- References 条目数（解析）：39
+- 可识别年份条目数：55
+- 近五年/近年文献（2021+）数量：8
+- 经典文献（2010年前）数量：9
+- 同刊引用数量（按 subject 粗略匹配）：0
+- 高频来源期刊（粗略）：Aerospace Science and Technology(1)
+- 引用簇样例：[1], [2,3], [7], [14], [15], [16], [17], [18,19], [20,21], [17], [22], [28]
+
+带引用的 gap/转折句样例：
+
+- 未在 Introduction 中自动识别到带引用的 gap 句；需人工复核文献转折段。
+
+References 解析样例（前12条）：
+
+- 11. Maximum residual history in different algorithms.
+Trajectory optimization based on SCP is widely used in the aerospace community. The core of SCP is the convexification technology, especially the lossless convexification technology about non-convex control constraints. However, since SCP belongs to the direct method category, essentially, discretization is also a crucial factor affecting the accuracy of the solution and the efficiency. The main contribution of this paper is to improve the existing SCP method in terms of discretization and iteration, and the SCP with hp-adaptive RPD is proposed. The application of hp-adaptive RPD makes the scale of the subproblem in the iteration process gradually increase, thus improving the solving efficiency on the whole. More importantly, the optimal trajectory with as high precision as possible can be obtained with fewer discretized points through reasonable mesh updating. In addition, constraint relaxation and regularization techniques are used at the beginning and end of iteration, respectively, to make the proposed algorithm insensitive to initial values and achieve fast convergence at the end. Compared with other methods, the algorithm proposed in this paper has strong competitiveness.
+Although the regularization term is added to the optimization objective in this paper to improve the convergence rate of the iteration process, its linear convergence property is not changed. In future work, we want to utilize the Hessian matrix of nonlinear functions as the weight of the regularization item, which may boost the algorithm’s performance even more.
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+The present work was partially supported by the Defense Industrial Technology Development Program (Grant No. JCKY2020204B016).
+- [1] B. Tian, W. Fan, R. Su, Q. Zong, Real-time trajectory and attitude coordination control for reusable launch vehicle in reentry phase, IEEE Trans. Ind. Electron. 62 (3) (2015) 1639–1650, https://doi .org /10 .1109 /TIE .2014 .2341553.
+- [2] A.V. Rao, A survey of numerical methods for optimal control, Adv. Astronaut. Sci. 135 (1) (2010) 497–528, https://www.webofscience .com /wos /alldb /full -record /WOS : 000280501900030.
+- [3] R. Chai, A. Savvaris, A. Tsourdos, S. Chai, Y. Xia, A review of optimization techniques in spacecraft flight trajectory design, Prog. Aerosp. Sci. 109 (2019) 100543, https:// doi .org /10 .1016 /j .paerosci .2019 .05 .003.
+- [4] K.D. Mease, J. Kremer, Shuttle entry guidance revisited using nonlinear geometric methods, J. Guid. Control Dyn. 17 (6) (1994) 1350–1356, https://doi .org /10 .2514 /3 . 21355.
+- [5] A. Caruso, A.A. Quarta, G. Mengali, M. Ceriotti, Shape-based approach for solar sail trajectory optimization, Aerosp. Sci. Technol. 107 (2020) 106363, https://doi .org /10 . 1016 /j .ast .2020 .106363.
+- [6] Y. Zheng, X. Fu, M. Xu, Q. Li, M. Lin, Ascent trajectory design of small-lift launch vehicle using hierarchical optimization, Aerosp. Sci. Technol. 107 (2020) 106285, https:// doi .org /10 .1016 /j .ast .2020 .106285.
+- [7] K. Mease, P. Teufel, H. Schoenenberger, D. Chen, S. Bharadwaj, Re-entry trajectory planning for a reusable launch vehicle, in: 24th Atmospheric Flight Mechanics Conference, Portland, OR, U.S.A., 1999.
+- [8] D.A. Benson, G.T. Huntington, T.P. Thorvaldsen, A.V. Rao, Direct trajectory optimization and costate estimation via an orthogonal collocation method, J. Guid. Control Dyn. 29 (6) (2006) 1435–1440, https://doi .org /10 .2514 /1.20478.
+- [9] S. Kameswaran, L.T. Biegler, Convergence rates for direct transcription of optimal control problems using collocation at Radau points, Comput. Optim. Appl. 41 (1) (2008) 81–126, https://doi .org /10 .1007 /s10589 -007 -9098 -9.
+- [10] D. Garg, et al., A unified framework for the numerical solution of optimal control problems using pseudospectral methods, Automatica 46 (11) (2010) 1843–1851, https:// doi .org /10 .1016 /j .automatica .2010 .06 .048.
+- [11] P. Lu, Entry guidance and trajectory control for reusable launch vehicle, J. Guid. Control Dyn. 20 (1) (1997) 143–149, https://doi .org /10 .2514 /2 .
+
+### 20.9 常用词、词类、语态与时态
+
+- 高频词：trajectory(17)；optimization(15)；error(11)；scp(10)；discretization(7)；control(7)；programming(6)；reentry(6)；algorithm(6)；aerospace(5)；sequential(5)；convex(5)；cient(5)；technology(4)；problems(4)；accuracy(4)；radau(4)；pseudospectral(4)；number(4)；state(4)
+- 高频名词化/学术名词：optimization(15)；discretization(7)；reference(4)；science(3)；iteration(3)；curvature(3)；linearization(3)；guidance(3)；regularization(2)；performance(2)；cation(2)；motion(2)；equation(2)；destination(2)；extraction(1)
+- 高频学术动词：developed(1)；validated(1)；compared(1)
+- 高频形容词：sequential(5)；cient(5)；pseudospectral(4)；optimal(4)；differential(4)；dimensionless(3)；available(2)；hp-adaptive(2)；recent(2)；cial(2)；lossless(2)；polytechnical(1)；adaptive(1)；stable(1)；several(1)
+- 高频副词：only(2)；adaptively(1)；especially(1)；gradually(1)；apply(1)；precisely(1)；directly(1)；ciently(1)
+- 高频二词短语：trajectory optimization(11)；sequential convex(5)；convex programming(5)；radau pseudospectral(4)；coe cient(4)；aerospace science(3)；science technology(3)；optimization problems(3)；discretization error(3)；linearization error(3)；reentry trajectory(2)；pseudospectral discretization(2)
+- 高频三词短语：sequential convex programming(5)；aerospace science technology(3)；radau pseudospectral discretization(2)；elsevier masson sas(2)；masson sas all(2)；sas all rights(2)；all rights reserved(2)；trajectory optimization problems(2)；lossless convexi cation(2)；form state control(2)；discrete motion equation(2)；source pdf hp-adaptive-rpd-based-sequential-convex-programming-(1)
+- 被动语态估计：17；`we + 动作动词` 主动句估计：0
+- 一般现在时线索：18；一般过去时线索：46；现在完成时线索：0；情态动词线索：3
+
+章节词频：
+
+- Abstract: scp(4)；september(3)；discretization(3)；iteration(3)；algorithm(3)；stage(3)；received(2)；reentry(2)
+- Introduction: trajectory(15)；optimization(11)；scp(8)；algorithm(6)；control(6)；discretization(5)；programming(4)；reentry(4)
+- Conclusion: scp(5)；iteration(4)；regularization(3)；algorithm(3)；convergence(3)；trajectory(2)；optimization(2)；convexi(2)
+
+### 20.10 句型库扩充（每类多句）
+
+#### 背景句
+- 原句/结构：Trajectory optimization plays a key role with regard to improved guidance and control for the reusable vehicle, especially in the reentry phase [1].
+  可迁移模板：Trajectory optimization plays a key role with regard to improved guidance and control for the reusable vehicle, especially in the reentry phase [X].
+- 原句/结构：Considering the high flight safety requirements and unpredictable flight states, improving the performance of trajectory optimization, including stability, computational efficiency, and result accuracy, is very important [4–6].
+  可迁移模板：Considering the high flight safety requirements and unpredictable flight states, improving the performance of trajectory optimization, including stability, computational efficiency, and result accuracy, is very important [X–X].
+- 原句/结构：The rapid generation of an accurate reference trajectory plays a crucial role in guidance effects and flight safety [11–13].
+  可迁移模板：The rapid generation of an accurate reference trajectory plays a crucial role in guidance effects and flight safety [X–X].
+#### Gap句
+- 原句/结构：However, since SCP belongs to the direct method category, essentially, discretization is also a crucial factor affecting the accuracy of the solution and the eﬃciency.
+  可迁移模板：However, since METHOD belongs to the direct method category, essentially, discretization is also a crucial factor affecting the accuracy of the solution and the eﬃciency.
+#### 方法句
+- 原句/结构：Article history: Received 7 August 2022 Received in revised form 12 September 2022 Accepted 18 September 2022 Available online 23 September 2022 Communicated by Xingqun Zhan Sequential convex programming (SCP) methods have been developed to solve reentry trajectory optimization problems.
+  可迁移模板：Article history: Received XAugust XReceived in revised form XSeptember XAccepted XSeptember XAvailable online XSeptember XCommunicated by Xingqun Zhan Sequential convex programming (METHOD) methods have been developed to solve reentry trajectory optimization problems.
+- 原句/结构：Due to the oversimplified discretization and iteration, the accuracy and efficiency of the existing SCP methods can be further improved.
+  可迁移模板：Due to the oversimplified discretization and iteration, the accuracy and efficiency of the existing METHOD methods can be further improved.
+- 原句/结构：In this paper, a SCP algorithm based on the hpadaptive Radau pseudospectral discretization (RPD) is proposed.
+  可迁移模板：In this paper, a METHOD algorithm based on the hpadaptive Radau pseudospectral discretization (METHOD) is proposed.
+#### 结果句
+- 原句/结构：With comparable or even higher results accuracy, the CPU time reduced by 40%-70% when compared to other SCP methods, and is only twentieth of that of GPOPS-II. © 2022 Elsevier Masson SAS.
+  可迁移模板：With comparable or even higher results accuracy, the METHOD time reduced by X-X when compared to other METHOD methods, and is only twentieth of that of METHOD. © XElsevier Masson METHOD.
+- 原句/结构：With comparable or even higher results accuracy, the CPU time reduced by 40%-70% when compared to other SCP methods, and is only twentieth of that of GPOPS-II. © 2022 Elsevier Masson SAS.
+  可迁移模板：With comparable or even higher results accuracy, the METHOD time reduced by X-X when compared to other METHOD methods, and is only twentieth of that of METHOD. © XElsevier Masson METHOD.
+- 原句/结构：In addition, constraint relaxation and regularization techniques are used at the beginning and end of iteration, respectively, to make the proposed algorithm insensitive to initial values and achieve fast convergence at the end.
+  可迁移模板：In addition, constraint relaxation and regularization techniques are used at the beginning and end of iteration, respectively, to make the proposed algorithm insensitive to initial values and achieve fast convergence at the end.
+#### 贡献句
+- 未在抽取文本中稳定识别，需人工从对应章节补充。
+#### 限制/边界句
+- 原句/结构：With comparable or even higher results accuracy, the CPU time reduced by 40%-70% when compared to other SCP methods, and is only twentieth of that of GPOPS-II. © 2022 Elsevier Masson SAS.
+  可迁移模板：With comparable or even higher results accuracy, the METHOD time reduced by X-X when compared to other METHOD methods, and is only twentieth of that of METHOD. © XElsevier Masson METHOD.
+- 原句/结构：With comparable or even higher results accuracy, the CPU time reduced by 40%-70% when compared to other SCP methods, and is only twentieth of that of GPOPS-II. © 2022 Elsevier Masson SAS.
+  可迁移模板：With comparable or even higher results accuracy, the METHOD time reduced by X-X when compared to other METHOD methods, and is only twentieth of that of METHOD. © XElsevier Masson METHOD.
+- 原句/结构：In future work, we want to utilize the Hessian matrix of nonlinear functions as the weight of the regularization item, which may boost the algorithm’s performance even more.
+  可迁移模板：In future work, we want to utilize the Hessian matrix of nonlinear functions as the weight of the regularization item, which may boost the algorithm’s performance even more.
+
+### 20.11 抽取失败与人工复核提示
+
+- 摘要抽取：正常
+- 结论抽取：正常
+- 引文解析：正常
+- 章节树：正常
+- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
+
+<!-- REAUDIT-2026-05-26 END -->

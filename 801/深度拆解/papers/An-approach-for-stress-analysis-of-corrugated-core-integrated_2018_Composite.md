@@ -96,7 +96,7 @@
 
 ### 11.x 章节结构与章节名分析（补充）
 
-> 自动分析说明：以下基于 `jmps/文本/txt/An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+> 自动分析说明：以下基于 `801/文本/txt/An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
 
 - 识别到的章节/小节数量：11
 - 结构类型判断：非严格 IMRaD，更像按模型、机制或结果模块组织。
@@ -216,3 +216,218 @@ Introduction 前半段承担工程背景和 ITPS 价值，随后密集综述 3D 
 ## 19. 最终浓缩
 
 这篇论文的核心是：用等效夹层板获得 ITPS 全局响应，再用结构力学把离散波纹芯和面板的实际应力恢复出来，从而在比 3D FEM 更经济的框架下支持热-机械强度初步设计。最值得学的是 gap 的精确收束和 stress recovery 的分部件推导；最大风险是局部应力集中、边缘效应和误差统计不足，图像细节需要 PDF 图像复核。
+
+<!-- REAUDIT-2026-05-26 START -->
+
+## 20. 复核增强：严格抽取、翻译、引文与句型
+
+> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite.txt` 与 `801/文本/metadata/An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
+
+### 20.1 严格章节树（按 PDF/metadata TOC）
+
+- L2 p.1: Introduction （背景/领域定位）
+- L2 p.2: Homogenization method （方法/模型）
+  - L3 p.2: Reduced temperature fields （对象/问题/模块）
+  - L3 p.3: Equivalent elastic properties （对象/问题/模块）
+  - L3 p.4: Equivalent coefficients of thermal expansion （对象/问题/模块）
+- L2 p.4: Layerwise theory （对象/问题/模块）
+  - L3 p.4: Strain-displacement relations （对象/问题/模块）
+  - L3 p.5: Stress-strain relations （对象/问题/模块）
+  - L3 p.5: Finite element formulation （方法/模型）
+  - L3 p.6: Application cases （结果/讨论/验证）
+- L2 p.6: Prediction of stress （对象/问题/模块）
+  - L3 p.6: Stress calculation in corrugated webs of ITPS （对象/问题/模块）
+    - L4 p.6: Normal strain in the mid-plane of corrugated webs （对象/问题/模块）
+    - L4 p.6: Curvature in corrugated webs induced by global bending moment （对象/问题/模块）
+    - L4 p.8: Curvature in corrugated webs induced by transverse shear force （对象/问题/模块）
+    - L4 p.8: Shear strain in corrugated webs （对象/问题/模块）
+    - L4 p.8: Constitutive relationship in corrugated webs （对象/问题/模块）
+  - L3 p.8: Stress calculation in bottom and top face sheets of ITPS （对象/问题/模块）
+    - L4 p.8: Normal strain in the mid-plane of bottom and top face sheets （对象/问题/模块）
+    - L4 p.8: Curvature in bottom face sheets （对象/问题/模块）
+    - L4 p.9: Curvature in top face sheets （对象/问题/模块）
+    - L4 p.10: Shear strain in bottom and top face sheets （对象/问题/模块）
+    - L4 p.10: Constitutive relationship in bottom and top face sheets （对象/问题/模块）
+- L2 p.13: Numerical examples （对象/问题/模块）
+  - L3 p.13: Stress distributions of ITPS subjected to uniform transverse pressure （对象/问题/模块）
+  - L3 p.15: Stress distributions of ITPS subjected to thermal loads （对象/问题/模块）
+  - L3 p.17: Stress distributions of ITPS subjected to uniform transverse pressure and thermal loads （对象/问题/模块）
+- L2 p.19: Conclusions （结论）
+- L2 p.24: Acknowledgements （对象/问题/模块）
+- L2 p.24: Appendix A （附录）
+- L2 p.24: Appendix B （附录）
+- L2 p.25: Appendix C （附录）
+- L2 p.25: Appendix D （附录）
+- L2 p.25: Appendix E （附录）
+- L2 p.26: References （参考文献）
+
+### 20.2 章节名功能分析
+
+| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
+| --- | ---: | ---: | --- | --- |
+| Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Homogenization method | 2 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Reduced temperature fields | 2 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Equivalent elastic properties | 3 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Equivalent coefficients of thermal expansion | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Layerwise theory | 4 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Strain-displacement relations | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Stress-strain relations | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Finite element formulation | 5 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Application cases | 6 | 3 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Prediction of stress | 6 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Stress calculation in corrugated webs of ITPS | 6 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Normal strain in the mid-plane of corrugated webs | 6 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Curvature in corrugated webs induced by global bending moment | 6 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Curvature in corrugated webs induced by transverse shear force | 8 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Shear strain in corrugated webs | 8 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Constitutive relationship in corrugated webs | 8 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Stress calculation in bottom and top face sheets of ITPS | 8 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Normal strain in the mid-plane of bottom and top face sheets | 8 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Curvature in bottom face sheets | 8 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Curvature in top face sheets | 9 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Shear strain in bottom and top face sheets | 10 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Constitutive relationship in bottom and top face sheets | 10 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Numerical examples | 13 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Stress distributions of ITPS subjected to uniform transverse pressure | 13 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Stress distributions of ITPS subjected to thermal loads | 15 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Stress distributions of ITPS subjected to uniform transverse pressure and thermal loads | 17 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Conclusions | 19 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Acknowledgements | 24 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix A | 24 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix B | 24 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix C | 25 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix D | 25 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix E | 25 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| References | 26 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
+
+### 20.3 摘要完整摘录（本地证据）
+
+抽取状态：成功
+
+> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.4 摘要中文翻译
+
+> 采用我们之前研究中引入的等效夹层模型来预测梯形波纹芯集成热保护系统（ITPS）在热载荷和机械载荷下的应力分布（Gu et al., 2017）。提出了基于高阶分层理论和结构力学原理的应力预测方法，该方法考虑了随温度变化的材料特性和板材曲率的影响。对于ITPS的顶面板，在应力预测中考虑了面外压力引起的局部位移。对于ITPS的底面板，通过将面板视为具有适当位移兼容性的梁，也考虑了波纹腹板引起的局部位移。通过与三维（3D）有限元分析结果的比较，验证了该方法的准确性。事实证明，所提出的方法所需的计算量显着减少，并且与有限元结果非常吻合。
+
+### 20.5 结论完整摘录（本地证据）
+
+结论章节识别：Conclusions；状态：独立结论章节
+
+> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.6 结论中文翻译
+
+> 本文研究了梯形波纹芯 ITPS 面板在热载荷和机械载荷下的应力分析。本文采用了我们之前的研究[1]中介绍的具有温度相关材料特性的等效刚度方法和等效夹层板的C0高阶分层理论。将等效夹层模型与结构力学原理相结合，得到了夹层结构中的法向剪应力和面内剪应力。
+> 
+> 分别计算波纹腹板、顶面板和底面板。在应力预测中考虑了局部变形引起的应力。通过本方法获得的结果与FEM结果之间的比较表明，本方法对于承受热载荷和机械载荷的ITPS面板的应力给出了可接受的结果。另外，本方法更加简单和准确，可以为预测ITPS面板的应力分布提供进一步的经济性。 C.龚等人。复合结构185 (2018) 1–26
+> 
+> C.龚等人。复合结构185 (2018) 1–26
+> 
+> C.龚等人。复合结构185 (2018) 1–26
+> 
+> C.龚等人。复合结构185 (2018) 1–26
+> 
+> C.龚等人。复合结构185 (2018) 1–26
+
+### 20.7 论文逻辑脉络复核
+
+- 提出的问题：It has been shown that the proposed method requires significantly less computational effort and agrees well with the finite element results. The characteristic of fully reusable is the key feature for the future vehicle, hence a precise and rapidly stress analysis of the ITPS under thermal and mechanical loads is important in the reliable design.
+- 旧方法/已有研究不足：需结合 Introduction 的文献转折句复核。
+- 本文解决方式：The stress distributions in trapezoidal corrugated-core integrated thermal protection system (ITPS) under thermal and mechanical loads are predicted by employing the equivalent sandwich model introduced in our previous study (Gu et al., 2017). The method for prediction of stress based on high-order layerwise theory and the principle of structural mechanics is presented, which considers the effects of temperature-dependent material properties and curvature in sheets. The accuracy of the proposed method is verified by comparison with the results by three-dimensional (3D) finite element analysis.
+- 学术/工程增量：Because the traditional TPS is unable to satisfy the requirements, the integrated thermal protection system (ITPS) concept has been developed to meet these goals, which provides an integrated structural component for thermo-mechanical load bearing and thermal protection function [4].
+- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
+
+### 20.8 引文分析补全
+
+- 全文引用簇数量（估计）：70
+- Introduction 引用簇数量（估计）：3
+- References 条目数（解析）：28
+- 可识别年份条目数：29
+- 近五年/近年文献（2021+）数量：1
+- 经典文献（2010年前）数量：16
+- 同刊引用数量（按 subject 粗略匹配）：0
+- 高频来源期刊（粗略）：未识别
+- 引用簇样例：[5], [6], [2], [7], [3], [8], [9], [4], [10,11], [12], [13], [14]
+
+带引用的 gap/转折句样例：
+
+- This means that the TPS not only withstands serious temperature induced by aero-heating during launch and re-entry process, but also should be required to be lightweight, easily maintained and fully reusable [3].
+
+References 解析样例（前12条）：
+
+- [1] Gu Liangxian, Wang Yifan, Shi Shengbo, Dai Cunxi. An approach for bending and transient dynamic analysis of integrated thermal protection system with temperature-dependent material properties. Compos Struct 2017;159:128–43.
+- [2] Blosser ML. Development of advanced metallic thermal-protection-system prototype hardware. J Spacecraft Rockets 2004;41(2):183–94.
+- [3] Martinez OA, Sankar BV, Haftka RT. Micromechanical analysis of composite corrugated-core sandwich panels for integral thermal protection systems. AIAA J 2007;45(9):2323–36.
+- [4] Martinez OA, Bapanapalli SK, Sankar BV. Micromechanical analysis of composite truss-core sandwich panels for integral thermal protection systems. In: 47th AIAA/ ASME/ASCE/AHS/ASC Structures, structural dynamics, and materials conference, Newport, Rhode Island, May. 1–4, 2006.
+- [5] Bapanapalli SK. Analysis and design of corrugated-core sandwich panels for thermal protection system of space vehicles. In: 47th AIAA Structures, Structural Dynamics and Materials Conference, Newport, Rhode Island, May 1–4, 2006.
+- [6] Sharma A. Multi-fidelity design of an integrated thermal protection system for spacecraft reentry. In: 49th AIAA Structures, Structural Dynamics and Materials Conference, Schaumburg, April 7–10; 2008.
+- [7] Rajesh KB. Bending, vibration and vibro-acoustic analysis of composite sandwich plates with corrugated core. University of Michigan-Dearborn; 2014. [Ph.D. thesis].
+- [8] Ravishankar B, Sankar BV, Haftka RT. Homogenization of integrated thermal protection system with rigid insulation bars. In: 47th AIAA/ASME/ASCE/AHS/ASC Structures, structural dynamics, and materials conference, Orlando, Florida, April. 12–15; 2010.
+- [9] Seydel EB. Schubknickversuchemit Wellblechtafeln, Jahrbuch d. Deutsch. Versuchsanstalltfür Luftfahrt. E.V. München und Berlin; 1931. p. 233–35.
+- [10] McFarland DE. An investigation of the static stability of corrugated rectangular plates loaded in pure shear [PhD. thesis]. KS: University of Kansas, Lawrence; 1967.
+- [11] Mang AH, Girya-Vallabhan VC, Smith HJ. Finite element analysis of doubly corrugated shells. J Struct Div ASCE 1976;102:2033–50.
+- [12] Briassoulis D. Equivalent orthotropic properties of corrugated sheets. Comput Struct 1986;23(2):129–38.
+
+### 20.9 常用词、词类、语态与时态
+
+- 高频词：face(111)；corrugated(100)；bottom(81)；top(76)；stresses(73)；sheets(72)；itps(70)；normal(69)；fig(61)；stress(53)；webs(53)；temperature(50)；sheet(48)；sin(47)；subjected(45)；equivalent(40)；shear(40)；distribution(39)；panel(37)；mid-plane(36)
+- 高频名词化/学术名词：temperature(50)；distribution(39)；pressure(30)；displacement(29)；curvature(27)；element(26)；section(16)；deformation(12)；direction(12)；moment(12)；thickness(11)；y-direction(10)；prediction(8)；homogenization(8)；x-direction(7)
+- 高频学术动词：derived(13)；presented(10)；developed(7)；predict(7)；predicted(2)；propose(1)；develop(1)；compared(1)
+- 高频形容词：normal(69)；equivalent(40)；thermal(30)；displacement(29)；element(26)；local(17)；trapezoidal(15)；material(15)；moment(12)；mechanical(11)；structural(10)；temperature-dependent(10)；strain-displacement(7)；unable(6)；elastic(6)
+- 高频副词：respectively(27)；only(8)；accurately(8)；simply(3)；currently(2)；easily(2)；fully(2)；cantly(1)；rapidly(1)；greatly(1)；globally(1)；tively(1)；spectively(1)；ectively(1)；consequently(1)
+- 高频二词短语：face sheets(64)；top face(53)；corrugated webs(50)；normal stresses(49)；face sheet(42)；bottom face(42)；fig normal(28)；composite structures(27)；page gong(25)；gong composite(25)；corrugated core(24)；temperature distribution(22)
+- 高频三词短语：fig normal stresses(28)；top face sheets(26)；top face sheet(25)；page gong composite(25)；gong composite structures(25)；bottom face sheets(24)；face sheet subjected(22)；bottom face sheet(17)；normal stresses mid-plane(16)；mid-plane corrugated webs(15)；composite structures fig(15)；sheet subjected pressure(14)
+- 被动语态估计：135；`we + 动作动词` 主动句估计：0
+- 一般现在时线索：241；一般过去时线索：447；现在完成时线索：1；情态动词线索：42
+
+章节词频：
+
+- Abstract: stress(3)；itps(3)；sheet(3)；displacement(3)；thermal(2)；prediction(2)；face(2)；local(2)
+- Introduction: itps(7)；thermal(6)；stress(6)；protection(4)；future(3)；system(3)；tps(3)；integrated(3)
+- Conclusion: stress(5)；gong(5)；composite(5)；structures(5)；itps(3)；panel(3)；equivalent(3)；corrugated(2)
+
+### 20.10 句型库扩充（每类多句）
+
+#### 背景句
+- 原句/结构：It has been shown that the proposed method requires significantly less computational effort and agrees well with the finite element results.
+  可迁移模板：It has been shown that the proposed method requires significantly less computational effort and agrees well with the finite element results.
+- 原句/结构：The characteristic of fully reusable is the key feature for the future vehicle, hence a precise and rapidly stress analysis of the ITPS under thermal and mechanical loads is important in the reliable design.
+  可迁移模板：The characteristic of fully reusable is the key feature for the future vehicle, hence a precise and rapidly stress analysis of the METHOD under thermal and mechanical loads is important in the reliable design.
+#### Gap句
+- 未在抽取文本中稳定识别，需人工从对应章节补充。
+#### 方法句
+- 原句/结构：The stress distributions in trapezoidal corrugated-core integrated thermal protection system (ITPS) under thermal and mechanical loads are predicted by employing the equivalent sandwich model introduced in our previous study (Gu et al., 2017).
+  可迁移模板：The stress distributions in trapezoidal corrugated-core integrated thermal protection system (METHOD) under thermal and mechanical loads are predicted by employing the equivalent sandwich model introduced in our previous study (Gu et al., X).
+- 原句/结构：The method for prediction of stress based on high-order layerwise theory and the principle of structural mechanics is presented, which considers the effects of temperature-dependent material properties and curvature in sheets.
+  可迁移模板：The method for prediction of stress based on high-order layerwise theory and the principle of structural mechanics is presented, which considers the effects of temperature-dependent material properties and curvature in sheets.
+- 原句/结构：The accuracy of the proposed method is verified by comparison with the results by three-dimensional (3D) finite element analysis.
+  可迁移模板：The accuracy of the proposed method is verified by comparison with the results by three-dimensional (METHOD) finite element analysis.
+#### 结果句
+- 原句/结构：The accuracy of the proposed method is verified by comparison with the results by three-dimensional (3D) finite element analysis.
+  可迁移模板：The accuracy of the proposed method is verified by comparison with the results by three-dimensional (METHOD) finite element analysis.
+- 原句/结构：It has been shown that the proposed method requires significantly less computational effort and agrees well with the finite element results.
+  可迁移模板：It has been shown that the proposed method requires significantly less computational effort and agrees well with the finite element results.
+- 原句/结构：The comparisons between the results obtained by the present method and the FEM results have shown that the present method gives acceptable results for stress of ITPS panel subjected to thermal and mechanical loads.
+  可迁移模板：The comparisons between the results obtained by the present method and the METHOD results have shown that the present method gives acceptable results for stress of METHOD panel subjected to thermal and mechanical loads.
+#### 贡献句
+- 原句/结构：Because the traditional TPS is unable to satisfy the requirements, the integrated thermal protection system (ITPS) concept has been developed to meet these goals, which provides an integrated structural component for thermo-mechanical load bearing and thermal protection function [4].
+  可迁移模板：Because the traditional METHOD is unable to satisfy the requirements, the integrated thermal protection system (METHOD) concept has been developed to meet these goals, which provides an integrated structural component for thermo-mechanical load bearing and thermal protection function [X].
+#### 限制/边界句
+- 原句/结构：The technology development conducts the future launch vehicle to be durable, operable and cost effective [2].
+  可迁移模板：The technology development conducts the future launch vehicle to be durable, operable and cost effective [X].
+- 原句/结构：Future space vehicles require more advanced thermal protection system (TPS) than the one currently used.
+  可迁移模板：Future space vehicles require more advanced thermal protection system (METHOD) than the one currently used.
+- 原句/结构：This means that the TPS not only withstands serious temperature induced by aero-heating during launch and re-entry process, but also should be required to be lightweight, easily maintained and fully reusable [3].
+  可迁移模板：This means that the METHOD not only withstands serious temperature induced by aero-heating during launch and re-entry process, but also should be required to be lightweight, easily maintained and fully reusable [X].
+
+### 20.11 抽取失败与人工复核提示
+
+- 摘要抽取：正常
+- 结论抽取：正常
+- 引文解析：正常
+- 章节树：正常
+- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
+
+<!-- REAUDIT-2026-05-26 END -->

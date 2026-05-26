@@ -110,7 +110,7 @@ Introduction 从能源危机和热电材料大背景切入，再缩小到 SrTiO3
 
 ### 11.x 章节结构与章节名分析（补充）
 
-> 自动分析说明：以下基于 `jmps/文本/txt/Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+> 自动分析说明：以下基于 `801/文本/txt/Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
 
 - 识别到的章节/小节数量：3
 - 结构类型判断：非严格 IMRaD，更像按模型、机制或结果模块组织。
@@ -235,3 +235,182 @@ Discussion 中引用用于机制解释，例如 A 位缺位补偿、Raman 峰、
 ## 19. 最终浓缩
 
 这篇论文证明非等摩尔高熵 CSBL 钙钛矿陶瓷中，热电性能不是构型熵越高越好，而是在 L19 的适中构型熵处获得最佳结构-性能平衡。最值得学习的是多表征证据如何服务一个非单调机制；主要复核点是图像细节、氧空位定量、孔隙/晶粒统计和文献 ZT 对比公平性。
+
+<!-- REAUDIT-2026-05-26 START -->
+
+## 20. 复核增强：严格抽取、翻译、引文与句型
+
+> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al.txt` 与 `801/文本/metadata/Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
+
+### 20.1 严格章节树（按 PDF/metadata TOC）
+
+- L2 p.1: 1 Introduction （背景/领域定位）
+- L2 p.2: 2 Material and methods （方法/模型）
+- L2 p.2: 3 Result and discussion （结果/讨论/验证）
+  - L3 p.2: 3.1 Microstructure of CSBL ceramics （对象/问题/模块）
+  - L3 p.5: 3.2 Electrical and thermal transport properties of CSBL ceramics （对象/问题/模块）
+- L2 p.9: 4 Conclusion （结论）
+- L2 p.10: CRediT authorship contribution statement （对象/问题/模块）
+- L2 p.11: Declaration of Competing Interest （对象/问题/模块）
+- L2 p.11: Data Availability （对象/问题/模块）
+- L2 p.11: Acknowledgements （对象/问题/模块）
+- L2 p.11: Appendix A Supporting information （附录）
+- L2 p.11: References （参考文献）
+
+### 20.2 章节名功能分析
+
+| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
+| --- | ---: | ---: | --- | --- |
+| 1 Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2 Material and methods | 2 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3 Result and discussion | 2 | 2 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.1 Microstructure of CSBL ceramics | 2 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.2 Electrical and thermal transport properties of CSBL ceramics | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4 Conclusion | 9 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| CRediT authorship contribution statement | 10 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Declaration of Competing Interest | 11 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Data Availability | 11 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Acknowledgements | 11 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix A Supporting information | 11 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| References | 11 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
+
+### 20.3 摘要完整摘录（本地证据）
+
+抽取状态：成功
+
+> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.4 摘要中文翻译
+
+> 熵工程已成为优化SrTiO3基热电材料性能的重要手段。然而，构型熵与热电性质之间的关系目前尚不清楚。本工作中，非等摩尔高熵热电陶瓷[Ca(1-x)/3Sr(1-x)/3Ba(1-x)/
+> 
+> 通过放电等离子烧结制备3Lax]TiO3 (0.10 ≤x ≤0.40)。并研究了成分和构型熵对材料微观结构和热电性能的影响。研究表明，高熵效应深刻改变了材料的微观结构。晶粒尺寸随着构型熵的增加而减小，多种阳离子的相互作用导致晶格畸变，烧结和退火过程会导致氧空位的产生，从而显着影响热电性能。当镧含量为0.19时获得最高的ZT（0.20）（ΔSConf=11.483 J/mol/K）。该工作为利用高熵设计优化材料的热电性能提供了理论和实验基础。
+
+### 20.5 结论完整摘录（本地证据）
+
+结论章节识别：4 Conclusion；状态：独立结论章节
+
+> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.6 结论中文翻译
+
+> 在这项工作中，非等摩尔高熵[Ca(1-x)/3Sr(1-x)/3Ba(1-x)/
+> 
+> 制备了3Lax]TiO3热电陶瓷(x=0.10–0.40)。组分陶瓷的主相具有立方钙钛矿结构，晶粒尺寸随着构型的增加而趋于减小。
+> 
+> 熵。陶瓷内的元素符合设计比例且分布均匀。高熵设计导致陶瓷内存在高密度缺陷和应力场。陶瓷的对称性降低，[TiO6]八面体发生拉伸和扭转，这种微观结构无序实现了声子的宽带散射，降低了材料的热导率。 SPS和还原气氛中的感应退火产生了高浓度的氧空位，从而实现了陶瓷的半导电性，并有助于材料的高导电性。 x=0.19（ΔSConf=11.483 J/mol/K）的陶瓷实现了优异的功率因数（444.43 μW/
+> 
+> Z.魏等人。合金与化合物学报1006（2024）176328
+> 
+> m/K2）和 1073 K 时的热导率（2.13 W/m/K），导致最高 ZT 值 0.20。
+> 
+> 可以发现，利用熵工程优化材料的热电性能时，不必一味追求高构型熵，而是寻找最合适的构型熵。
+
+### 20.7 论文逻辑脉络复核
+
+- 提出的问题：Entropy engineering has emerged as an important means of optimizing the properties of SrTiO3-based thermo electric materials. Nevertheless, the interconnectivity and constraints of each thermoelectric parameter render the achievement of the optimal ZT value a challenging endeavor. Journal of Alloys and Compounds 1006 (2024) 176328 Contents lists available at ScienceDirect Journal of Alloys and Compounds journal homepage: www.elsevier.com/locate/jalcom Entropy engineering has emerged as an important means of optimizing the properties of SrTiO3-based thermo electric materials.
+- 旧方法/已有研究不足：However, the relationship between configurational entropy and thermoelectric properties is currently unclear. However, its high κ limits its application in the thermoelectric * Corresponding author. However, the relationship between configurational entropy and thermoelectric properties is currently unclear.
+- 本文解决方式：As human society and civilization continue to develop, the impact of the energy shortage is becoming increasingly significant. The use of fossil fuels, nuclear decay and other traditional methods of obtaining energy results in a significant loss of energy in the form of heat, which in turn exacerbates the energy crisis [1].
+- 学术/工程增量：It is revealed that high entropy effect profoundly modified the microstructure of the material. This work provides theoretical and experimental bases for optimizing the thermoelectric properties of the materials by using high entropy design. Nevertheless, the interconnectivity and constraints of each thermoelectric parameter render the achievement of the optimal ZT value a challenging endeavor.
+- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
+
+### 20.8 引文分析补全
+
+- 全文引用簇数量（估计）：78
+- Introduction 引用簇数量（估计）：9
+- References 条目数（解析）：45
+- 可识别年份条目数：69
+- 近五年/近年文献（2021+）数量：34
+- 经典文献（2010年前）数量：8
+- 同刊引用数量（按 subject 粗略匹配）：2
+- 高频来源期刊（粗略）：Journal of Alloys and Compounds(2)
+- 引用簇样例：[4,5], [10], [11], [1], [2], [12], [3], [13], [14], [16], [17], [15]
+
+带引用的 gap/转折句样例：
+
+- 未在 Introduction 中自动识别到带引用的 gap 句；需人工复核文献转折段。
+
+References 解析样例（前12条）：
+
+- 176328.
+Z. Wei et al. Journal of Alloys and Compounds 1006 (2024) 176328
+Fig.
+- 11. Thermoelectric performance of CSBL ceramics, (a) ZT variation curve with temperature; (b) The variation curve of S and σ with configuration entropy; (c) The variation curve of ZT with configuration entropy;(d) Comparison of ZT between L19 ceramics and previously published high-entropy SrTiO3-based ceramics.
+References
+- [1] M. Mukherjee, A. Srivastava, A. Singh, Recent advances in designing thermoelectric materials, J. Mater. Chem. C. 10 (35) (2022) 12524–12555, https:// doi.org/10.1039/D2TC02448A.
+- [2] Y.B. Zhu, D. Ekren, J.Y. Cao, X.D. Liu, S.R. Mudd, R. Boston, X.Q. Xia, Y. Li, I. A. Kinloch, D.J. Lewis, R. Freer, Effect of graphene oxide and carbon black on the thermoelectric performance of niobium doped strontium titanate, J. Alloy. Compd. 988 (2024) 10, https://doi.org/10.1016/j.jallcom.2024.174242.
+- [3] X.J. Li, S. Gao, Q. Chen, X. Fan, D.Y. Zhou, W.T. Ji, Y.Q. Chen, Y.W. Zhang, H. A. Ma, X.P. Jia, High pressure and Ti promote oxygen vacancies in perovskites for enhanced thermoelectric performance, J. Alloy. Compd. 922 (2022) 8, https://doi. org/10.1016/j.jallcom.2022.166247.
+- [4] A.V. Kovalevsky, A.A. Yaremchenko, S. Populoh, P. Thiel, D.P. Fagg, A. Weidenkaff, J.R. Frade, Towards a high thermoelectric performance in rareearth substituted SrTiO3: effects provided by strongly-reducing sintering conditions, Phys. Chem. Chem. Phys. 16 (48) (2014) 26946–26954, https://doi. org/10.1039/c4cp04127e.
+- [5] K. Singsoog, T. Seetawan, A. Vora-Ud, C. Thanachayanont, Theoretical enhancement of thermoelectric properties of Sr1-xLaxTiO3, Integr. Ferroelectr. 155 (1) (2014) 111–118, https://doi.org/10.1080/10584587.2014.905364.
+- [6] P. Dey, S.S. Jana, F. Anjum, T. Bhattacharya, T. Maiti, Effect of semiconductor to metal transition on thermoelectric performance in oxide nanocomposites of SrTi0.85Nb0.15O3 with graphene oxide, Appl. Mater. Today 21 (2020) 9, https://doi. org/10.1016/j.apmt.2020.100869.
+- [7] X.P. Feng, Y.C. Fan, N. Nomura, K. Kikuchi, L.J. Wang, W. Jiang, A. Kawasaki, Graphene promoted oxygen vacancies in perovskite for enhanced thermoelectric properties, Carbon 112 (2017) 169–176, https://doi.org/10.1016/j. carbon.2016.11.012.
+- [8] Y. Lin, C. Norman, D. Srivastava, F. Azough, L. Wang, M. Robbins, K. Simpson, R. Freer, I.A. Kinloch, Thermoelectric power generation from lanthanum strontium titanium oxide at room temperature through the addition of graphene, ACS Appl. Mater. Interfaces 7 (29) (2015) 15898–15908, https://doi.org/10.1021/ acsami.5b03522.
+- [9] G.H. Zheng, Z.X. Dai, H.B. Li, H.Q. Wang, Y.Q. Li, X.F. Xu, B.T. Huang, Y.Q. Ma, G. Li, Improving the thermoelectric properties of Sr0.9La0.1TiO3 by Ag addition, J. Low. Temp. Phys. 174 (3-4) (2014) 128–135, https://doi.org/10.1007/s10909013-0965-8.
+- [10] S.R. Popuri, A.J.M. Scott, R.A. Downie, M.A. Hall, E. Suard, R. Decourt, M. Pollet, J.W.G. Bos, Glass-like thermal conductivity in SrTiO3 thermoelectrics induced by
+A-site vacancies, RSC Adv. 4 (64) (2014) 33720–33723, https://doi.org/10.1039/ c4ra06871h.
+
+### 20.9 常用词、词类、语态与时态
+
+- 高频词：ceramics(75)；entropy(42)；high(38)；fig(35)；thermoelectric(29)；annealing(27)；lattice(23)；perovskite(21)；due(21)；temperature(21)；csbl(21)；after(21)；properties(19)；conductivity(19)；thermal(18)；samples(18)；tio(17)；energy(17)；materials(16)；structure(16)
+- 高频名词化/学术名词：ceramics(75)；temperature(21)；conductivity(19)；structure(16)；configuration(14)；concentration(10)；microstructure(9)；density(9)；distortion(9)；composition(8)；activation(8)；variation(8)；diffraction(7)；reduction(6)；position(6)
+- 高频学术动词：indicated(3)；compared(3)；presented(2)；showed(2)；indicate(2)；revealed(1)；develop(1)；demonstrated(1)；predicted(1)；derived(1)；optimize(1)
+- 高频形容词：thermoelectric(29)；thermal(18)；ceramic(14)；total(14)；journal(13)；material(12)；configurational(10)；constant(10)；table(9)；component(8)；atomic(8)；structural(7)；cubic(7)；crystal(7)；chemical(6)
+- 高频副词：mainly(6)；respectively(6)；only(4)；extremely(4)；initially(3)；finally(2)；generally(2)；dramatically(2)；currently(1)；profoundly(1)；significantly(1)；increasingly(1)；directly(1)；typically(1)；successfully(1)
+- 高频二词短语：after annealing(16)；csbl ceramics(15)；high entropy(14)；configuration entropy(13)；journal alloys(12)；alloys compounds(12)；thermal conductivity(11)；thermoelectric properties(10)；page wei(10)；wei journal(10)；perovskite structure(9)；compounds fig(9)
+- 高频三词短语：journal alloys compounds(12)；page wei journal(10)；wei journal alloys(10)；alloys compounds fig(9)；annealing after annealing(7)；after annealing after(6)；high entropy design(5)；cubic perovskite structure(5)；before after annealing(5)；thermoelectric properties materials(4)；each component sample(4)；work non-equimolar high-entropy(3)
+- 被动语态估计：64；`we + 动作动词` 主动句估计：0
+- 一般现在时线索：134；一般过去时线索：196；现在完成时线索：3；情态动词线索：17
+
+章节词频：
+
+- Abstract: entropy(6)；properties(5)；thermoelectric(5)；materials(3)；configurational(3)；optimizing(2)；work(2)；sintering(2)
+- Introduction: thermoelectric(18)；high(14)；entropy(14)；materials(10)；properties(10)；energy(8)；sintering(7)；ceramics(6)
+- Conclusion: ceramics(4)；entropy(4)；conductivity(3)；high(3)；high-entropy(2)；tio(2)；thermoelectric(2)；within(2)
+
+### 20.10 句型库扩充（每类多句）
+
+#### 背景句
+- 原句/结构：Entropy engineering has emerged as an important means of optimizing the properties of SrTiO3-based thermo electric materials.
+  可迁移模板：Entropy engineering has emerged as an important means of optimizing the properties of SrTiO3-based thermo electric materials.
+- 原句/结构：Journal of Alloys and Compounds 1006 (2024) 176328 Contents lists available at ScienceDirect Journal of Alloys and Compounds journal homepage: www.elsevier.com/locate/jalcom Entropy engineering has emerged as an important means of optimizing the properties of SrTiO3-based thermo electric materials.
+  可迁移模板：Journal of Alloys and Compounds X(X) XContents lists available at ScienceDirect Journal of Alloys and Compounds journal homepage: www.elsevier.com/locate/jalcom Entropy engineering has emerged as an important means of optimizing the properties of SrTiO3-based thermo electric materials.
+#### Gap句
+- 原句/结构：However, the relationship between configurational entropy and thermoelectric properties is currently unclear.
+  可迁移模板：However, the relationship between configurational entropy and thermoelectric properties is currently unclear.
+- 原句/结构：However, its high κ limits its application in the thermoelectric * Corresponding author.
+  可迁移模板：However, its high κ limits its application in the thermoelectric * Corresponding author.
+- 原句/结构：However, the relationship between configurational entropy and thermoelectric properties is currently unclear.
+  可迁移模板：However, the relationship between configurational entropy and thermoelectric properties is currently unclear.
+#### 方法句
+- 原句/结构：As human society and civilization continue to develop, the impact of the energy shortage is becoming increasingly significant.
+  可迁移模板：As human society and civilization continue to develop, the impact of the energy shortage is becoming increasingly significant.
+- 原句/结构：The use of fossil fuels, nuclear decay and other traditional methods of obtaining energy results in a significant loss of energy in the form of heat, which in turn exacerbates the energy crisis [1].
+  可迁移模板：The use of fossil fuels, nuclear decay and other traditional methods of obtaining energy results in a significant loss of energy in the form of heat, which in turn exacerbates the energy crisis [X].
+- 原句/结构：The common methods to enhance the thermoelectric properties of SrTiO3-based materials mainly include ion doping [4,5], second-phase composite [6–9] and defect engineering [10], etc.
+  可迁移模板：The common methods to enhance the thermoelectric properties of SrTiO3-based materials mainly include ion doping [X,X], second-phase composite [X–X] and defect engineering [X], etc.
+#### 结果句
+- 原句/结构：The use of fossil fuels, nuclear decay and other traditional methods of obtaining energy results in a significant loss of energy in the form of heat, which in turn exacerbates the energy crisis [1].
+  可迁移模板：The use of fossil fuels, nuclear decay and other traditional methods of obtaining energy results in a significant loss of energy in the form of heat, which in turn exacerbates the energy crisis [X].
+- 原句/结构：Nevertheless, the interconnectivity and constraints of each thermoelectric parameter render the achievement of the optimal ZT value a challenging endeavor.
+  可迁移模板：Nevertheless, the interconnectivity and constraints of each thermoelectric parameter render the achievement of the optimal METHOD value a challenging endeavor.
+- 原句/结构：However, recent studies have demonstrated that the thermoelectric properties of materials do not exhibit a straightforward linear relationship with configurational entropy.
+  可迁移模板：However, recent studies have demonstrated that the thermoelectric properties of materials do not exhibit a straightforward linear relationship with configurational entropy.
+#### 贡献句
+- 原句/结构：It is revealed that high entropy effect profoundly modified the microstructure of the material.
+  可迁移模板：It is revealed that high entropy effect profoundly modified the microstructure of the material.
+- 原句/结构：This work provides theoretical and experimental bases for optimizing the thermoelectric properties of the materials by using high entropy design.
+  可迁移模板：This work provides theoretical and experimental bases for optimizing the thermoelectric properties of the materials by using high entropy design.
+- 原句/结构：It is revealed that high entropy effect profoundly modified the microstructure of the material.
+  可迁移模板：It is revealed that high entropy effect profoundly modified the microstructure of the material.
+#### 限制/边界句
+- 未在抽取文本中稳定识别，需人工从对应章节补充。
+
+### 20.11 抽取失败与人工复核提示
+
+- 摘要抽取：正常
+- 结论抽取：正常
+- 引文解析：正常
+- 章节树：正常
+- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
+
+<!-- REAUDIT-2026-05-26 END -->

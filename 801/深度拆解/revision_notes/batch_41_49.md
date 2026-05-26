@@ -1,0 +1,148 @@
+# 801 深度拆解复核笔记：batch 41-49
+
+说明：本笔记只依据 `801/文本/txt/*.txt`、`801/文本/metadata/*.json` 和现有 `801/深度拆解/papers/*.md` 复核；未修改正式报告。References 年份结构受双栏串栏与 DOI/页码干扰，仅作整合时的参考统计。
+
+## 41 The-innovation-of-an-aerodynamic-heat-harvest-TEG-consider_2025_Applied-Ther
+
+**metadata/toc 核查**：metadata 完整，有题名、作者、期刊、DOI、关键词、页数和 31 条 toc；正式报告应写入真实章节树：1 Introduction；2 The TEG design and preparation / 2.1 The TEG with multi-interfaces / 2.2 Fabrication and assembly of TEGs / 2.3 Rough surfaces measurement and reconstruction；3 Two-scale TEG evaluation model / 3.1 Governing equations / 3.2 Calculation method of TCR and ECR / 3.3 Equivalent interfacial layers in TEG / 3.4 Meshed models / 3.5 Boundary conditions；4 Experimental platform and models' validation / 4.1 TCR measurements under different pressure and temperature / 4.2 Power supply measurement of TEG；5 Results and discussions / 5.1 Contact effects / 5.1.1 Contact mechanics / 5.1.2 Thermal and electrical contact resistances / 5.1.3 comparison with experimental results / 5.2 TEG performance / 5.2.1 equivalent interfacial layers / 5.2.2 thermo-mechanical performance / 5.2.3 TEG performance / 5.2.4 comparison with experimental results；6 Conclusion；CRediT；Declaration；Acknowledgements；datalink4；References。
+
+**抽取可用性**：摘要可从首页 `A B S T R A C T` 抽到，但 keywords 与第一段 Introduction 串入，需人工截断到 “6.978 V and 12.41 W”。Conclusion 可抽到 5 条，但从 p17 开始与 References 双栏混排；References 可抽，最大编号 48。
+
+**摘要中文译文**：高速飞行器在长航时飞行中会产生大量气动热，因此基于热电转换的气动热采集是有前景的热管理技术之一。本文创新性地设计并评估了一种热采集热电发电器 TEG，并充分考虑多异质界面的影响。首先，设计并制备的 TEG 包括承载框架、27 对圆柱形热电腿、54 对电极、两块基板、绝缘层和两类异质界面，使其同时具备热采集和承载功能。其次，基于接触式测量与 W-M 函数重构热电腿和电极的表面形貌，建立热接触电阻和电接触电阻模型，并通过间接实验测量验证，阐明压力、温度和间隙介质的影响。最后，在考虑微尺度接触电阻的条件下分析发电器的热电传输与转换过程，并在飞行器典型气动条件下通过数值和实验评估热电与力学性能，得到 TEG 最大电压 6.978 V、最大输出功率 12.41 W。
+
+**结论中文译文**：本文创新性地开发并评估了一种气动热采集 TEG，并充分考虑多界面接触效应。该 TEG 由承载框架、27 对圆柱形热电腿、54 对电极、两块基板、绝缘层和两类异质界面组成，可同时实现热采集与承载。热电腿和电极表面形貌由接触式测量和 W-M 函数重构，TCR/ECR 数值模型得到实验验证，压力、温度和间隙介质影响得到阐明。主要结论为：1）TCR 和 ECR 随界面加载压力和平均温度增加而降低，间隙介质也会降低接触阻抗；在 0.8179-3.041 MPa 范围内，不同介质下 TCR/ECR 均显著下降。2）TCR 模型经间接实验验证，最大偏差为 13.4%。3）制备的 TEG 能采集气动热并发电，在 0.1 MPa、银环氧胶间隙条件下，最大电压、输出功率和转换效率分别为 6.978 V、12.41 W、2.334%。4）等效界面模型可在考虑界面接触效应时评价 TEG 性能，最大模型偏差 0.444%；热电与力学性能受加载压力和间隙介质影响，承载框架最大 Mises 应力在银环氧胶和空气间隙下分别为 7.88 MPa 和 7.68 MPa。5）整机 TEG 评价模型由实验测量验证，输出电压最大偏差约 -19.69%。
+
+**逻辑复核**：提出的问题是高速飞行器气动热既是热防护负担也是可采集能源，真实 TEG 又必须承载并处理多异质界面接触损失。旧方法不足在于低温差/理想接触/少数 TE couples 研究不能覆盖 27 对热电腿、多界面和力学载荷。本文解决方案是“器件设计 + 粗糙面重构 + 微尺度 TCR/ECR + 等效界面层 + 整机实验”。学术增量是把接触效应从后验修正推进为 TEG 系统模型的一部分；工程增量是可承载的气动热采集 TEG 原型。证据链基本闭合，但整机电压偏差较大、银环氧胶高温长期可靠性和真实飞行热/振/氧化环境仍是正式报告应保留的风险。
+
+**引文分析**：Introduction 约 956 英文词、10 组引用，密度约 10.5 组/千词；先用高速飞行器热管理与 TPS 限制制造应用 gap，再用 TEG 与 TCR/ECR 文献制造“接触效应未充分进入整机”的方法 gap。References 最大编号 48，近年文献占主导，粗略首年结构：2011-2020 约 12，2021-2026 约 22，早期和无法解析项若干；高频来源包括 Applied Thermal Engineering、International Journal of Heat and Mass Transfer、Applied Energy、Energy、Aerospace Science and Technology。自引/团队前作较多但与连续研究链条相符。
+
+**句型库**：背景：1）High-speed flight vehicles generate large amounts of aerodynamic heat during long-duration flights. 2）The high-speed flight vehicle inherently creates huge temperature gradients between the fuselage interior and exterior. Gap：1）However, most published reports on contact effects focused on conventional metallic materials. 2）The experimental measurement of the TE transfer and conversion performance of the TEG is still limited. 方法：1）The surface topography was reconstructed based on contact-type measurement and W-M function. 2）Numerical models of TCRs and ECRs are established and validated by indirect experimental measurements. 结果：1）The maximum voltage and output power are revealed to be X and Y, respectively. 2）The TCR and ECR decrease with the increase of loading pressure and average temperature. 贡献：1）The equivalent interfacial model can be used to evaluate the performance under consideration of interfacial contact effects. 2）The device is designed to possess heat-harvest and force-bearing functions simultaneously. 限制：1）The model deviation indicates the need to explain assembly and interface uncertainties. 2）Long-term stability under real flight thermal cycling remains to be verified.
+
+## 42 The-quantitative-study-of-interfacial-contact-effec_2023_International-Journ
+
+**metadata/toc 核查**：metadata 完整，toc 41 条；正式报告应写入真实章节树：1 Introduction；2 The TEG, rough surfaces and electric power generation / 2.1 The TEG and material properties / 2.2 Theoretical power generation of TEG with consideration of contact effects / 2.3 Rough surfaces and contacting models；3 Numerical models / 3.1 Governing equations / 3.1.1-3.1.4 mechanics equations / 3.2 Calculation methods of TCR and ECR / 3.3 Boundary conditions / 3.4 Meshed models；4 Experimental measurement / 4.1 TCR method / 4.2 TCR platform / 4.3 ECR and power generation；5 Results and discussions / 5.1 Contact mechanics and heat transfer / 5.2 TCR and ECR / 5.2.1-5.2.5 / 5.3 Quantitative description of contact effects in TEG / 5.3.1 TCR / 5.3.2 TCR and ECR；6 Conclusion；Data availability；Declaration；CRediT；Acknowledgments；Appendix A-E；References。
+
+**抽取可用性**：摘要可抽到，Article history 和 Keywords 串入但主体完整。Conclusion 可抽到 7 条，p26 左栏结论与右栏附录/声明混排。References 可抽，最大编号 42；由于末页双栏，逐条解析会漏项，主代理应以最大编号与 References 段人工复原结合。
+
+**摘要中文译文**：异质界面接触效应的精确定量描述，是发展具有高超声速气动热采集潜力的热电发电器的关键问题。本文通过基于真实拓扑的数值预测和新的间接实验测试，研究热电腿与电极之间的热接触和电接触效应，并提出两个简化公式来定量表达其对 TEG 的影响。首先，预测不同温度、压力、间隙介质和热辐射条件下的热/电接触电阻。其次，提出一种依赖热电转换特性的间接 TCR 测试方法，建立相应平台并验证数值模型。再次，通过等效层模拟考虑接触效应的 TEG 热电转换过程，开发 TCR 测试平台测量 TEG 输出功率并进一步验证模型。最后，推导考虑接触效应的 TEG 最大输出功率预测公式，与数值结果吻合良好，最大偏差为 7.7%。
+
+**结论中文译文**：本文针对用于高超声速飞行器的 TEG，研究热电腿和电极之间的热/电接触效应。作者基于重构真实粗糙表面预测 TCR/ECR，分析温度、加载压力、间隙介质和热辐射影响；提出新的间接 TCR 测试方法并建立平台，测量不同温度和压力下的 TCR 并验证模型；同时改造平台测量 ECR 和 TEG 供电性能；再用等效层模拟考虑界面接触效应的 TEG 热传输与转换过程，最终建立考虑 TCR 与 TCR-ECR 的最大输出功率简化预测公式。结论包括：1）所提方法可预测不同温度、压力和间隙介质下的 TCR。2）真空或空气间隙下，热辐射对 TCR 的影响随界面平均温度升高而增强；真空中 TCR 主要受热电材料导热性影响，空气中 TCR 随平均温度升高而下降。3）TCR 随加载压力增大而下降但趋势减缓；空气间隙 TCR 约为真空间隙一半，银环氧胶间隙约为真空间隙千分之一。4）间接 TCR 测试平台能获得合理结果，实验与数值最大差异 -27.51%，并可测 ECR 与 TEG 输出。5）真空/空气间隙下 ECR 的负面影响大于 TCR；银环氧胶间隙下 TCR 略大于 ECR；银环氧胶下接触导致的性能退化不超过 4%，空气下超过 96%。6）TEG 电功率测量验证了接触效应数值模型，最大差异 8.73%。7）最大输出功率预测公式适用于 0.104-0.187 MPa、323-523 K、粗糙度 3.55-32.53 μm，以及真空、空气、银环氧胶间隙，最大偏差 7.7%。
+
+**逻辑复核**：提出的问题是 TEG 的界面接触效应如何定量进入输出功率预测。旧方法不足是只做局部接触或只报告接触阻抗，难以转成整机输出公式。本文解决了三件事：真实拓扑接触模型、间接实验平台、简化功率公式。学术增量在于把 TCR/ECR 的影响分解成可计算、可测、可公式化的链条；工程增量在于给出压力、温度、粗糙度、介质范围内的设计估算工具。证据链较完整，但 -27.51% 的 TCR 实验差异偏大，应在正式报告中作为模型验证风险保留。
+
+**引文分析**：Introduction 约 1193 词、10 组引用，密度约 8.4 组/千词；引用先铺垫高超声速气动热采集 TEG，再转向界面接触、粗糙表面和 TCR/ECR 测量，gap 是“已有接触研究不能给出 TEG 级定量影响”。References 最大编号 42，解析受串栏影响；粗略年份以 2011 年后为主，2021 年后也较多。高频来源集中在 Energy/Applied Energy、Applied Thermal Engineering、IJHMT、Composite Structures、AST 等。
+
+**句型库**：背景：1）The precise quantitative description of contact effects at heterogeneous interfaces is crucial in developing TEGs. 2）TEGs have potential for hypersonic aerodynamic heat harvest. Gap：1）Existing studies rarely quantify how interface contact effects change TEG-level output. 2）A direct test of all interfacial effects is difficult because the conversion process couples heat and electricity. 方法：1）Contact effects are studied by real-topology-based numerical predictions and indirect experimental tests. 2）Equivalent layers are introduced to simulate the TE conversion process with contact effects. 结果：1）The prediction formulas show good agreement with numerical results. 2）The performance degradation under the silver-epoxy gap is no more than X, whereas that under air gap is over Y. 贡献：1）Two simplified formulas are proposed to quantitatively express their effects on TEG. 2）A novel indirect TCR test approach relying on TE conversion characteristics is developed. 限制：1）The formulas are applicable within specified pressure, temperature, roughness and gap-medium ranges. 2）The relatively large experimental deviation should be treated as a validation boundary.
+
+## 43 The-unit-cell-method-in-predictions-of-thermal-expansion-pr_2018_Composite-S
+
+**metadata/toc 核查**：metadata 完整，toc 39 条；真实章节树：Introduction；Mathematical formulation / Constitutive equations / Temperature and displacement distributions in symmetric structures / translational / reflectional / 180° rotational / summary / application scopes；Development of unit cells / Unit cells of fiber yarns / plain woven / satin woven / Summary；Numerical modeling / Application of boundary conditions / Model discretization / Material properties；Results and discussion / Thermal expansion of UD / plain woven / satin woven / Normal displacement on boundary planes；Conclusions；Acknowledgment；References。
+
+**抽取可用性**：摘要可抽到，keywords 串入但主体完整。Conclusion 可抽到，p17-p18 与 Table 13/References 混排，需人工复原 3 条结论。References 可抽，最大编号 41。
+
+**摘要中文译文**：具有特定结构对称性的纺织增强复合材料，其热膨胀性质可由尺寸受限的单胞高效计算。本文发展了一种建立这类单胞模型的通用方法。为推导单胞边界条件，作者根据平移、反射和 180° 旋转对称结构在均匀温度变化载荷下的位移场，总结出三条规则，并从热学和力学角度阐明该单胞方法的适用范围。随后研究三类典型复合材料：单向纤维增强复合材料、平纹织物复合材料和多综缎纹织物复合材料，并分别构造 4 个、3 个和 2 个缩小尺寸单胞。文章分析各类复合材料的热膨胀行为，预测有效热膨胀系数，阐明结构对称性对单胞变形模式的影响。数值模型通过不同尺寸单胞获得一致结果以及文献结果得到验证。本文方法可用于具有相关结构对称性的其他复合材料热膨胀研究。
+
+**结论中文译文**：本文发展了一种单胞构造方法，用于预测纺织增强复合材料有效热膨胀系数。作者将平移、反射和 180° 旋转三类基本对称结构中的位移分布模式总结为统一方程，并通过典型计算验证；从热学与力学物理角度定义了方法适用范围；对单向纤维、平纹织物和 4/5/6/7/8 综缎纹织物复合材料分别构造多尺寸单胞并推导边界条件，完成热膨胀计算。具体结论为：1）具有对称结构的复合材料有效热膨胀系数可由单胞模型高效计算；单胞应基于结构对称性构造，相关边界条件应基于本文总结的位移分布规则推导；该模型还可预测纤维束或纺织复合材料中的局部应力分布，具有损伤分析潜力。2）边界条件推导基于均匀宏观应变场假设，该应变场可由均匀温度载荷产生；因此当前方法仅适用于均匀温度载荷下的热膨胀行为，如特定热处理后的热残余应力。3）由反射对称构造的边界可在热膨胀计算中获得均匀法向位移和均匀变形；只能由平移或旋转对称构造的边界，其法向位移和相关变形是非均匀的。
+
+**逻辑复核**：问题是如何用更小单胞预测纺织复合材料热膨胀，同时不破坏边界物理意义。旧方法多依赖平移周期边界，难以充分利用反射和旋转对称，也容易把热传导 BC 和热膨胀位移 BC 混用。本文解决的是“对称性识别 -> 位移规则 -> 单胞缩小 -> 多尺寸验证”。学术增量是将单胞边界条件从经验建模提升为基于位移分布的规则体系；工程增量是降低计算成本并可输出有效 CTE 与局部应力。证据闭合主要依赖多尺寸单胞一致性和文献对比，外部实验验证相对有限。
+
+**引文分析**：Introduction 约 859 词、6 组引用，密度约 7.0 组/千词；gap 由“已有均匀化/单胞方法多基于平移周期性，热膨胀问题仍缺少系统单胞规则”制造。References 41 条，结构偏经典与 2011-2018，早期均匀化/单胞文献与近年纺织复合材料文献并存；高频来源不集中，Composite Structures 和 AIAA 相关条目较显著。
+
+**句型库**：背景：1）Thermal expansion properties of textile reinforced composites can be efficiently calculated by a size-limited unit cell. 2）Textile reinforced composite is a typical composite with symmetric structures. Gap：1）A full study and summary of unit cell method for such problem is still absent. 2）Most involved unit cell models are formulated based on translational symmetries only. 方法：1）Three rules are summarized according to the displacement fields in symmetric structures. 2）Multi-size unit cells are formulated and corresponding BCs are derived. 结果：1）Identical results are obtained from unit cells of different sizes. 2）The influence of structure symmetries on the deformation pattern is clarified. 贡献：1）The developed approach can be applied to composites with relevant structure symmetries. 2）The application scope is clarified from thermal and mechanical points of view. 限制：1）The method can only be used under uniform temperature loading. 2）Real textile imperfections may weaken ideal symmetry assumptions.
+
+## 44 Thermoelectric-enhancement-in-perovskite-type-textured-Me0_2024_Chemical-Eng
+
+**metadata/toc 核查**：metadata 完整，toc 13 条；真实章节树：1 Introduction；2 Experimental section / 2.1 Materials and method / 2.2 Characterization；3 Results and discussion；4 Conclusion；CRediT；Declaration；Data availability；Acknowledgements；Appendix A Supplementary data；References。
+
+**抽取可用性**：摘要可抽到，keywords 串入但主体完整。Conclusion 有独立章节，但 p12 左栏结论与右栏 CRediT/Declaration 混排，结论正文后半截被串栏打断；正式报告应说明“结论可抽但需结合结果末段复原”。References 可抽，最大编号 50。
+
+**摘要中文译文**：提高热电陶瓷的 ZT 本质上需要能够同时优化电子和声子输运、从而解耦二者耦合关系的策略。本文通过流延结合模板晶粒生长方法制备了 〈001〉织构的 Me0.85TiO3（Me = La, Sr, Ba, Ca）陶瓷 LSBC-T，织构分数达 92%；其中 10 wt% 的 (001) 取向片状 SrTiO3 作为模板种子，A 位缺位高熵 (La0.25Sr0.25Ba0.25Ca0.25)0.85TiO3 作为基体。沿流延方向平行的样品在 1073 K 下获得峰值 ZT = 0.27，是非织构样品 ZT = 0.13 的两倍。对 A 位元素原子位移无序的定量分析，为理解高织构度晶粒取向演化以及 1073 K 下 1.79 W/(m K) 的低热导提供了原子尺度解释。材料中复杂多尺度缺陷包括阳离子和氧空位、刃位错、平行晶界、相界面、纳米金属/无机共存簇以及金属 Bi 夹层，它们作为额外声子散射中心并影响载流子输运，覆盖 100 GHz-15 THz 的全频声子。此外，多尺度平行界面使该高熵织构陶瓷表现出明显的电导和热导各向异性。本文通过在高熵体系中利用织构工程，为降低本征晶格热导、实现电/热输运各向异性、解耦电子-声子耦合并提高热电性能提供了理论基础和技术支持。
+
+**结论中文译文**：本文通过 A 位缺位 (La0.25Sr0.25Ba0.25Ca0.25)0.85TiO3 基体和 10 wt% (001) 取向 SrTiO3 模板种子，采用 (R)TGG 与流延结合的方法，成功制备了织构分数 f = 92% 的钙钛矿 Me0.85TiO3（Me = La, Sr, Ba, Ca）织构陶瓷。材料中构建并调控了独特的晶粒取向微结构、纳米 Bi/BiOx 簇、多尺度界面和层级缺陷。结合结果段可复原其总结性结论：高熵基体提供 A 位无序、氧空位和晶格畸变，有助于降低晶格热导；Bi2O3 液相促进晶粒取向生长并生成 Bi/BiOx 导电/散射结构；SrTiO3 模板和“砖墙式”织构晶界构建平行多尺度界面，使电导和热导表现出各向异性。最终，LSBC-T-8 平行方向样品在 1073 K 获得 ZT = 0.27，证明高熵与微结构/织构协同操控可改善 n 型钙钛矿氧化物热电性能。
+
+**逻辑复核**：问题是高熵热电氧化物往往降低热导但牺牲迁移率，n 型立方钙钛矿又难以获得高织构。旧方法不足在于单一高熵或单一织构不能稳定解耦电子/声子输运。本文解决方案是 A 位缺位高熵基体 + SrTiO3 模板 + Bi2O3 液相/还原析出 + 流延织构，证据覆盖 XRD/EBSD/TEM/iDPC/EDX/Hall/热电测试。学术增量是把“电子去局域化、声子局域化”落到多尺度结构证据；工程增量是给出可复制的高温氧化物织构工艺。证据链很密，但性能提升归因高度复合，难完全拆分高熵、Bi 缺陷、氧空位、织构的单独贡献。
+
+**引文分析**：Introduction 约 1202 词、20 组引用，密度约 16.6 组/千词；先从 ZT 参数耦合和氧化物热电优缺点切入，再用高熵和织构两条文献制造“单一策略不够”的 gap。References 最大编号 50，近年高熵/钙钛矿/织构热电文献多，2021-2026 占比较高；高频来源包括 Chemical Engineering Journal、Energy/Nano Energy、J. Mater. Chem.、J. Eur. Ceram. Soc 等。
+
+**句型库**：背景：1）Enhancing ZT essentially needs strategies that concurrently optimize electron and phonon transport. 2）Metal oxide thermoelectrics are attractive for high-temperature applications. Gap：1）High-entropy engineering can reduce lattice thermal conductivity but may deteriorate carrier mobility. 2）High texture fraction is difficult to obtain in n-type cubic ceramics. 方法：1）Textured ceramics were fabricated by tape casting combined with template grain-growth. 2）Atomic-scale structure was unveiled to understand grain orientation evolution. 结果：1）A peak ZT of X was attained at Y K. 2）Multi-scale defects act as additional phonon scattering centers while affecting carrier transport. 贡献：1）This work provides theoretical foundation and technical support for microstructure manipulation. 2）Texture engineering in high-entropy systems helps decouple electron-phonon coupling. 限制：1）The relative contributions of defects, texture and vacancies remain difficult to isolate. 2）Device-level thermal stability and repeatability still require further validation.
+
+## 45 Tolerance-indicating-models-of-non-thermal-and_2024_International-Journal-of
+
+**metadata/toc 核查**：metadata 完整，toc 21 条；真实章节树：1 Introduction；2 The high-speed vehicle and its HT system；3 The physical model and HT path design；4 Mathematical models of damage / 4.1 non-thermal damage / 4.2 thermal damage；5 The damage tolerance indicating model；6 Results and discussions / 6.1 non-thermal damage model / 6.2 thermal damage model / 6.3 damage tolerance for HT path / 6.3.1 non-thermal / 6.3.2 thermal / 6.3.3 volume fraction and tolerance；7 Conclusion；CRediT；Declaration；Data availability；Acknowledgment；References。
+
+**抽取可用性**：摘要可抽到，但末尾串入后文，应截断到 “validated by extended numerical data”。Conclusion 可抽到，p18-p19 与 References 混排但 6 条结论完整。References 可抽，最大编号 48。
+
+**摘要中文译文**：对于可重复使用高速飞行器，热输运路径在多次任务中积累损伤，会导致热阻增加、性能下降，甚至引起热输运系统失效。因此，对不同损伤容限进行定量表征，对可靠热输运系统至关重要。本文使用尺寸和体积分数的随机模型描述由机械振动、冲击、腐蚀等非热载荷造成的非热损伤，并提出考虑概率梯度以及局部、参考、极限和约束温度的概率模型来表征随温度升高产生的热损伤。通过以最低几何平均温度为目标的拓扑优化得到树枝状热输运系统，并分析多种非热与热损伤分布下的传热。文章阐明了非热损伤尺寸和体积分数，以及热损伤约束温度和概率梯度对热输运性能的影响。最后，通过多项式拟合提出两个考虑热输运性能的损伤容限指示模型，并用扩展数值数据验证。
+
+**结论中文译文**：本文针对具有树枝状路径的热输运系统建立了两个损伤容限指示模型。基于典型 Volume-to-Point 问题，通过拓扑优化得到研究算例；用随机模型和概率模型分别表征非热损伤与热损伤。非热损伤由腐蚀、振动、冲击等非热载荷引起，用损伤半径和体积分数描述；热损伤由温度升高引起，用最大损伤概率梯度和约束温度描述。基于数值数据得到两类损伤模型，并由指示模型计算树枝状热输运路径的损伤容限。结论为：1）损伤容限指示模型包含平均温度 Tavg、最高温度 Tmax 和温度标准差 ST，用于评价热输运路径性能。2）对非热损伤，损伤区域随体积分数 V 和半径 R 增加而扩大，热性能和容限下降；但随机性会导致奇异点，尤其是 Tmax。3）对热损伤，随着最大损伤概率梯度 β 降低和约束温度 Tf 增加，过渡区扩大、高温区减小，HT 路径损伤容限增强。4）当 V 与 R 分别在 2.12%-16.33% 和 0.94-5.00 mm 范围变化时，非热损伤容限为 0.302-0.926；Tavg、Tmax、ST 模型最大偏差分别为 0.83%、-8.54% 和 7.90%。5）当 β 和 Tf 分别在 13.5-15.5 与 373-383 K 变化时，热损伤容限为 0.13-0.787；当损伤体积分数大于 10.98% 时，Tavg、Tmax、ST 最大偏差分别为 0.90%、-1.50% 和 -4.82%。6）对于具有一定损伤的树枝状 HT 路径，可由损伤模型获得热性能；在相同损伤水平下，非热损伤容限优于热损伤。
+
+**逻辑复核**：问题是可重复高速飞行器 HT 系统在多任务损伤下的余量如何定量表达。旧方法多做无损拓扑优化或单次热性能评价，不足以回答“损伤到什么程度还能用”。本文解决方案是把非热/热损伤分别建模，再统一映射到 Tavg/Tmax/ST 和容限指标。学术增量是把损伤容限指示模型引入 HT 路径评价；工程增量是给出可比较的容限区间。证据链为拓扑优化 benchmark + 参数扫描 + 多项式拟合 + 扩展数据验证，较闭合；但随机损伤样本置信度、真实服役损伤分布和三维复杂路径外推仍需谨慎。
+
+**引文分析**：Introduction 约 1078 词、17 组引用，密度约 15.8 组/千词；引用从 TPS/热防护材料、主动冷却/热输运路径、拓扑优化与 VP 问题一路收束到“多次任务损伤容限”gap。References 最大编号 48，2011-2020 与 2021-2026 文献较多；高频来源为 IJHMT、Acta Astronautica、Applied Thermal Engineering、J. Eur. Ceram. Soc、AST。
+
+**句型库**：背景：1）Damage accumulation in heat transfer paths during multitudes of missions leads to resistance augment and performance undermining. 2）The quantitative characterization of tolerance for various damages becomes crucial to a reliable HT system. Gap：1）Existing optimization studies emphasize initial thermal performance rather than post-damage tolerance. 2）The accumulation of various damages can lead to failures of structures and equipment. 方法：1）A stochastic model is used to describe non-thermal damage. 2）A probability model considering probability gradient and constraint temperature is developed. 结果：1）The effects of size and volume fraction on HT performance are clarified. 2）The damage tolerance varies between X and Y under the given parameter range. 贡献：1）Two damage tolerance indicating models are proposed by polynomial fitting. 2）The models convert damage parameters into comparable performance margins. 限制：1）Randomness of damages may lead to singularities, especially for Tmax. 2）The model should be validated against real mission damage distributions.
+
+## 46 Transcriptome-sequencing-reveals-the-promotion-of-apoptosis-an_2024_Acta-Ast
+
+**metadata/toc 核查**：metadata 完整，toc 23 条；真实章节树：1 Introduction；2 Materials and methods / 2.1 Cells / 2.2 RPM system / 2.3 cell concentration and phenotype / 2.4 viability / 2.5 apoptosis / 2.6 transcriptome sequencing / 2.7 differential expression and enrichment / 2.8 qRT-PCR / 2.9 statistical analysis；3 Results / 3.1 reduced cell activity / 3.2 M1 polarization / 3.3 late apoptosis / 3.4 RNA-seq / 3.5 enrichment / 3.6 DEG validation；4 Discussion；Declaration；Acknowledgments；References。
+
+**抽取可用性**：摘要可抽到，keywords 串入但主体完整。无独立 Conclusion/Conclusions 章节；应明确写“无独立结论章节”，并翻译 Discussion 末尾总结性段落作为替代。References 可抽，最大编号 48；p8-p9 Discussion 末尾与 References 串栏。
+
+**摘要中文译文**：空间科学技术快速发展，使宇航员在空间环境中的长期驻留成为可能。然而，宇航员神经和认知损伤已成为直接阻碍空间任务成功完成的重要因素。研究表明，微重力可通过改变脑微环境削弱神经元功能和认知能力。微胶质细胞作为调控血脑屏障完整性的重要免疫细胞，被认为是微重力条件下神经功能退化的主要参与因素。本文旨在理解微重力条件下微胶质行为的分子过程。研究使用随机定位机模拟微重力，发现微重力会降低 BV2 微胶质细胞活性，诱导 M1 极化，并显著增加晚期凋亡。转录组分析揭示 142 个与微胶质表型和炎症相关的差异表达基因，qPCR 验证了部分候选 DEGs。这些结果阐明了微重力下微胶质行为的分子机制，强调了基因表达变化和细胞损伤。该研究为理解微重力对神经系统的影响、建立空间飞行导致神经功能损伤的对策，并为未来深空探索和长期载人航天医学支持提供参考。
+
+**结论中文译文**：无独立结论章节。Discussion 末尾总结性段落译文：为了促进未来研究，有必要采用更先进的方法，例如单细胞测序，生成能够更全面描绘复杂细胞内网络的基因表达图谱。作者认为，单细胞测序数据将有助于建立更可靠、更精确的网络，用于后续研究。最终，模拟微重力与真实空间环境之间仍存在许多差异。为了更全面地理解相关机制，需要开展综合、系统的研究，这也将成为未来研究重点。总之，本研究提示，微重力诱导的微胶质变化可能影响脑内神经炎症和神经退行性变化，并可能影响注意力、记忆等对空间任务至关重要的认知功能。
+
+**逻辑复核**：问题是微重力导致神经和认知风险时，微胶质细胞是否通过炎症、极化和凋亡参与其中。旧方法不足在于空间医学研究多停留在系统/组织表型或单一指标，缺少微胶质分子层面的系统数据。本文解决方案是 RPM 模拟微重力 + BV2 表型检测 + RNA-seq + qPCR 验证。学术增量是将微重力、微胶质 M1 极化、晚期凋亡和 DEGs/通路联系起来；工程/医学增量是为空间医学防护提供候选机制和靶点。证据链有表型、组学、验证三层，但 BV2 细胞系、24 h 单时点、RPM 模拟真实性和缺少因果干预是主要风险。
+
+**引文分析**：Introduction 约 1066 词、14 组引用，密度约 13.1 组/千词；引用先讲长期载人航天健康风险，再讲微胶质在脑微环境/血脑屏障/神经炎症中的作用，最后制造“微重力下微胶质分子机制仍有限”的 gap。References 最大编号 48，空间医学与神经炎症文献混合，Acta Astronautica、Nat/PNAS/Neuroscience/Immunology 类来源并存；年份以 2011 年后为主。
+
+**句型库**：背景：1）The prolonged habitation of astronauts in the space environment has become possible. 2）Neurological and cognitive impairments have become major factors impeding space missions. Gap：1）The molecular processes underlying microglial behavior under microgravity remain unclear. 2）Current understanding of microglial responses to microgravity is still limited. 方法：1）A Random Positioning Machine was used to simulate microgravity. 2）Transcriptome analysis was performed to identify differentially expressed genes. 结果：1）Microgravity reduces BV2 microglial cell viability and induces M1 polarization. 2）Transcriptome analysis revealed 142 differentially expressed genes. 贡献：1）These results elucidate molecular mechanisms of microglial behavior under microgravity. 2）The study provides a conceptual framework for comprehending the influence of microgravity on the nervous system. 限制：1）There are numerous disparities between simulated microgravity and the authentic space environment. 2）More sophisticated methodologies, such as single-cell sequencing, are needed.
+
+## 47 Unit-cells-of-composites-with-symmetric-structures-for-_2017_Applied-Thermal
+
+**metadata/toc 核查**：metadata 中 title/author/subject/keywords 为空，但 toc、页数、文本量完整；正式报告应补写题名为 toc 一级标题 “Unit cells of composites with symmetric structures for the study of effective thermal properties”。真实章节树：1 Introduction；2 Unit cell formulation rules in thermal calculations / 2.1 Unit cells and thermal boundary conditions / 2.2 Temperature disciplines in translational symmetric structures / 2.3 Temperature disciplines in reflectional and 180° rotational symmetric structures / 2.3.1-2.3.3；3 Axial calculations of UD composites / 3.1 Unit cell and boundary conditions / 3.2 Axial effective thermal conductivities；4 Study of typical composites with symmetric structures / 4.1 Transverse thermal properties of UD composite / 4.1.1-4.1.2 / 4.2 Satin woven composites / 4.2.1-4.2.5；5 Conclusions；Acknowledgment；References。
+
+**抽取可用性**：摘要可抽到，Article history 与 keywords 串入但完整。Conclusion 可抽到，p17 与 References 串栏，4 条结论完整。References 可抽，最大编号 32。
+
+**摘要中文译文**：具有对称结构的宏观复合材料，其有效热物性可由尺寸受限的代表性单胞高效计算。本文发展了一种通用单胞构造规则。该规则包括两个关键步骤：结构对称性识别和边界条件推导；前者建立几何模型，后者赋予模型代表原始结构的物理意义。文章阐明从实验试样到单胞模型的路径，特别是相关边界条件的演化。根据方向，将实验中的宏观热流定义为对称和反对称热刺激。对于平移、反射和 180° 旋转三类典型对称结构，揭示不同宏观热刺激下的温度分布规律并总结为两个方程，可用于推导单胞边界条件。通过单向纤维复合材料轴向算例，从物理机制角度展示推导边界条件与不合适边界条件的差异。对横向问题建立四个缩小尺寸单胞，说明单胞构造和边界条件推导过程。进一步针对更复杂的缎纹织物复合材料，研究 4-8 综结构中的对称性，构造两个不同尺寸单胞并以统一形式推导边界条件；多尺寸单胞获得相同结果验证了单胞和边界条件。本文方法可用于具有相关结构对称性的其他复合材料热学研究。
+
+**结论中文译文**：本文发展了一种用于具有对称结构复合材料热计算的单胞构造通用规则。该规则基于宏观实验试样和测量条件，将实验宏观热流按方向定义为对称热刺激和反对称热刺激。不同对称结构中的温度分布规律由相应方程描述，并通过典型计算验证，可用于推导单胞边界条件。单向纤维复合材料轴向算例展示了推导边界条件的必要性；横向算例说明单胞构造和边界条件推导基本流程；对 4-8 综缎纹织物复合材料，构造不同尺寸单胞并统一推导边界条件，数值结果和文献实验结果共同验证模型。结论为：1）具有对称结构复合材料的有效热物性可由单胞模型高效计算，单胞应依据结构对称性构造，相应边界条件应依据本文阐明的温度分布规律推导。2）单胞构造基本流程包括四步：识别结构对称性、建立几何构型、确定宏观热流方向、推导边界条件。3）每利用一次对称性都可产生更小单胞，但必须严格推导新的边界条件，不合适边界条件会影响计算精度。4）对于研究的缎纹织物复合材料，随综数增加，面内热导率略升高，而面外热导率略降低。
+
+**逻辑复核**：问题是如何利用结构对称性缩小热计算单胞，同时保证边界条件仍代表宏观实验。旧方法不足是常把完整 RVE 或平移周期 BC 当作默认，遇到反射/旋转对称时 BC 物理意义不清。本文解决“实验试样 -> 热刺激定义 -> 温度分布规则 -> 缩小单胞”的建模链。学术增量是提出热计算单胞 formulation rules；工程增量是降低 UD 和 satin woven 复合材料有效热导预测成本。证据闭合由错误 BC 对比、多尺寸一致性和实验对比支撑；但仍依赖理想对称和理想几何。
+
+**引文分析**：Introduction 约 1184 词、7 组引用，密度约 5.9 组/千词；引用密度不高，先列复合材料热物性需求和多相材料建模，再把 gap 锁定到“对称性利用和 BC 推导”。References 最大编号 32，偏 2001-2017，IJHMT、Composite Structures、Applied Thermal Engineering 较多，团队单胞前作承接明显。
+
+**句型库**：背景：1）Effective thermal properties of macro composites with symmetric structures can be efficiently calculated by a representative unit cell. 2）Boundary conditions endow the model with physical meanings to represent the original structure. Gap：1）Inappropriate boundary conditions can distort the physical mechanism of unit-cell calculation. 2）The evolution from experiment specimen to unit cell model needs clarification. 方法：1）The macroscopic heat flux is defined as symmetric and antisymmetric thermal stimulus. 2）Temperature distribution disciplines are summarized and used to derive boundary conditions. 结果：1）Identical results obtained by multi-size unit cells validate the unit cell and BCs. 2）The in-plane thermal conductivity increases slightly with harness number. 贡献：1）A general rule of unit cell formulation is developed. 2）The approach can be applied to thermal studies of composites with relevant symmetries. 限制：1）The method assumes ideal symmetric structures. 2）Experimental comparison is limited to available literature data.
+
+## 48 Unsteady-aerodynamic-modeling-and-flight-trajectory-simu_2024_Aerospace-Scie
+
+**metadata/toc 核查**：metadata 完整，toc 29 条；真实章节树：1 Introduction；2 Aerodynamic modeling method / 2.1 DNN / 2.2 Transfer learning / 2.3 DNN-TL method；3 Samples generation of aerodynamic modeling and prediction / 3.1 computational model / 3.2 Numerical method / 3.2.1 unsteady N-S / 3.2.2 flight dynamic equations / 3.2.3 coupled CFD/RBD / 3.3 dataset；4 Results and discussions / 4.1 parameter analysis / 4.2 aerodynamic modeling and results / 4.2.1 validation / 4.2.2 interpolation / 4.2.3 extrapolation / 4.3 trajectory simulation；5 Conclusions；CRediT；Declaration；Acknowledgments；Appendix A-C；datalink4；References。
+
+**抽取可用性**：摘要可抽到，keywords 串入但完整。Conclusion 可抽到，p15-p16 与 Algorithm/Table/Fig 串栏，但 3 条结论完整。References 可抽，最大编号 43；末页双栏导致逐条解析略有漏项。
+
+**摘要中文译文**：为评估双旋弹的飞行性能和气动特性，通常使用 CFD/RBD 耦合方法同时求解飞行动力学与流场，但大量 CFD 计算会降低效率。本文发展了一种结合深度神经网络和迁移学习的非定常气动建模方法，可在不同初始条件下准确预测双旋弹非定常气动力。考虑飞行状态和短期历史气动数据的影响，作者将其整合作为气动模型输入特征，以减少长期历史数据影响。为提升模型在不同初始条件下的泛化能力，使用少量新条件数据通过迁移学习微调已建气动模型。该方法分别通过插值和外推预测算例验证。结果表明，在双旋弹非定常气动建模中，所提方法比 LSTM 和 ARMA 方法具有更好精度和泛化能力。将飞行动力学方程与时域气动模型耦合后，飞行仿真仅需数秒，相比 CFD/RBD 耦合方法可将计算时间降低三个数量级。
+
+**结论中文译文**：本文提出一种基于 DNN 和迁移学习的双旋弹非定常气动建模方法，并通过三个测试算例验证和评估。进一步地，使用该方法建立的气动模型开展飞行轨迹仿真，以提高仿真效率。结论如下：1）所提 DNN-TL 方法能够在不同初始条件下准确建模双旋弹气动特性，所有气动力和力矩预测误差均小于 6%；但用于外推预测时，方法精度会下降。2）基于所建立气动模型的双旋弹飞行轨迹仿真相比 CFD/RBD 耦合仿真可显著提高效率，飞行状态误差小于 8%。3）与常用 ARMA 方法和 LSTM 网络相比，所提 DNN-TL 方法在预测气动力和力矩方面表现出更好的泛化能力和更高精度。
+
+**逻辑复核**：问题是 CFD/RBD 对双旋弹非定常气动和轨迹仿真准确但太慢。旧方法不足在于 ARMA 线性/统计建模泛化弱，LSTM 对长序列与新初始条件外推不够稳，纯 CFD 成本过高。本文解决方案是短期历史状态+气动载荷作为输入，先源域训练，再少量目标域数据迁移微调。学术增量是 DNN-TL 在双旋弹非定常气动代理模型中的输入设计和外推验证；工程增量是将轨迹仿真从 20 小时量级压到数秒。证据链包括参数分析、验证/插值/外推对比、轨迹仿真，但样本来自 CFD/RBD，真实飞行/风洞数据缺失。
+
+**引文分析**：Introduction 约 998 词、21 组引用，密度约 21.0 组/千词；引用密集，用 CFD/RBD、非定常气动、数据驱动、DNN/LSTM/迁移学习、飞行轨迹仿真建立方法谱系和 gap。References 最大编号 43，2021-2026 较多，AIAA、Aerospace Science and Technology、IEEE 类来源高频，符合航空气动与机器学习交叉定位。
+
+**句型库**：背景：1）The coupled CFD/RBD method can simultaneously solve flight mechanics and flow field. 2）To evaluate flight performance, accurate unsteady aerodynamic modeling is required. Gap：1）The efficiency is compromised by the large number of CFD calculations required. 2）Existing models cannot accurately predict aerodynamics under varying initial conditions. 方法：1）We integrate flight states and short-term historical aerodynamic data as input features. 2）The built aerodynamic model is fine-tuned using small amounts of data by transfer learning. 结果：1）The proposed method achieves better accuracy and generalizability than LSTM and ARMA. 2）The flight simulation only takes a few seconds. 贡献：1）The unsteady aerodynamic model can replace CFD calculations in coupled simulation. 2）The method reduces computing time by three orders of magnitude. 限制：1）The accuracy decreases in the extrapolation prediction case. 2）The model is validated against CFD/RBD data rather than flight-test data.
+
+## 49 Weight-adaptive-parameter-estimation-assisted-event-t_2025_Aerospace-Science
+
+**metadata/toc 核查**：metadata 完整，toc 27 条；真实章节树：1 Introduction；2 Problem formulation / 2.1 Standard motion equations / 2.2 Deviations and disturbances / 2.3 Reentry guidance problem；3 The ET-NMPG method / 3.1 Definition of TOP / 3.2 Process of ET-NMPG / 3.3 Tricks for TO online / 3.3.1-3.3.3；4 WAPE and change point detection / 4.1 PE for atmosphere / 4.2 PE for aerodynamics / 4.3 Change point detection；5 The guidance framework；6 Simulation results and discussion / 6.1 Comparison of different methods / 6.2 Monte Carlo simulation / 6.3 Results with in-flight faults；7 Conclusions；CRediT；Declaration；Data availability；References。
+
+**抽取可用性**：摘要可抽到，Communicated/Keywords 串入但主体完整。Conclusion 可抽到，p12 与 Data availability/References 串栏但正文完整。References 可抽，最大编号 42。
+
+**摘要中文译文**：本文提出一种由权重自适应参数估计 WAPE 辅助的事件触发模型预测制导 ET-NMPG 方法，并将其应用于再入制导。基于在线轨迹优化的制导方法在处理复杂问题时，常面临制导精度与制导指令计算效率之间的权衡。以状态偏差超过阈值作为事件触发条件，可在保证一定制导精度的同时有效降低计算资源消耗。然而，实际模型参数值往往偏离参考值，导致事件触发频率过高，并可能使轨迹优化不可行。为解决这一问题，作者在通用 ET-NMPG 框架中使用 WAPE 在线更新模型参数，从而提高制导精度并降低制导频率。对于再入过程，该方法还可进一步保证飞行状态处于可接受路径约束内。此外，文章设计了突变点检测步骤，以避免飞行中故障（参数突变）造成数据污染。数值仿真结果确认了所提方法有效性。
+
+**结论中文译文**：本文提出一种用于再入制导的 WAPE 辅助 ET-NMPG 方法。不同于大多数采用时间触发策略的在线优化制导方法，带有事件触发机制的 ET-NMPG 能在制导精度和计算资源消耗之间取得更好平衡。在此基础上，作者将参数估计步骤纳入 ET-NMPG 流程，以提高模型预测精度，从而进一步减少制导循环、提升制导精度并保证飞行安全。仿真结果表明，与 UI-NMPG、FC-NMPG 和 ET-NMPG 等现有方法相比，WAPE 辅助 ET-NMPG 具有更大的应用潜力。未来研究需要处理实际飞行过程中的多种偏差来源，并利用更全面的传感器数据增强在线参数估计。此外，还应根据实际情况综合考虑不确定性来源和大小；在此基础上，需要进一步研究事件触发阈值选择方法，以及是否需要引入鲁棒 NMPG。
+
+**逻辑复核**：问题是再入 NMPG 精度高但计算重，事件触发能降频却会在模型参数偏差下频繁触发甚至 TOP 不可行。旧方法不足是 UI/FC/ET-NMPG 分别面临高频计算、固定周期或模型偏差敏感；一般参数估计又未嵌入在线制导闭环。本文解决方案是 WAPE 在线更新大气/气动参数，配合突变点检测避免故障数据污染。学术增量是将权重自适应 PE、事件触发 NMPG、变点检测统一到再入制导框架；工程增量是成功率、终端误差、制导次数和路径约束同时改善。证据链由单工况、300 组 Monte Carlo、32 组故障突变仿真构成，较完整；但所有证据来自仿真，导航/执行机构/传感器假设较强，阈值和权重选择偏经验。
+
+**引文分析**：Introduction 约 1290 词、21 组引用，密度约 16.3 组/千词；引用从航天飞机/再入制导重要性、传统轨迹跟踪、CG&C、在线 TOP、事件触发 MPC/NMPG、参数估计逐步制造 gap。References 42 条，2021-2026 与 2011-2020 为主，J. Guid. Control Dyn、Aerospace Science and Technology、IEEE 来源高频；经典制导控制文献与近年计算制导文献搭配合理。
+
+**句型库**：背景：1）Guidance methods based on online trajectory optimization often face a trade-off between guidance accuracy and computation efficiency. 2）Reentry guidance must satisfy path constraints under model deviations. Gap：1）Actual model parameter values often deviate from reference values. 2）This may lead to an excessively high event trigger frequency and render trajectory optimization unfeasible. 方法：1）We propose updating model parameters online using WAPE within the ET-NMPG framework. 2）A change point detection step is designed to avoid data contamination in the case of in-flight faults. 结果：1）Simulation results demonstrate greater application potential compared to existing methods. 2）The method further reduces guidance cycles, enhances precision and ensures flight safety. 贡献：1）The framework couples event-triggered guidance with online parameter estimation. 2）The method evaluates module value through mission-level metrics. 限制：1）Further research is warranted to address various sources of deviation in actual flight processes. 2）The selection of event-triggered thresholds and robust NMPG should be explored in more detail.
+

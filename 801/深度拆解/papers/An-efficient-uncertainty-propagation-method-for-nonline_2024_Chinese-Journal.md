@@ -151,7 +151,7 @@ Chebyshev 方法用于高效求解区间 ODE。测试中多项式阶数取 `d=2`
 
 ### 11.x 章节结构与章节名分析（补充）
 
-> 自动分析说明：以下基于 `jmps/文本/txt/An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+> 自动分析说明：以下基于 `801/文本/txt/An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
 
 - 识别到的章节/小节数量：6
 - 结构类型判断：接近标准 IMRaD，但带有 JMPS 常见的理论/模型/验证扩展。
@@ -320,3 +320,227 @@ Chebyshev 方法用于高效求解区间 ODE。测试中多项式阶数取 `d=2`
 ## 19. 最终浓缩
 
 本文提出一种用于 distribution-free P-box processes 驱动非线性动力系统的不确定性传播方法。它把 P-box 输入下的非线性随机响应传播，通过 CADET 转化为响应均值和协方差边界的区间 ODE 问题，再用 Chebyshev 多项式非侵入式求解，并以 Gaussian P-box assumption 构造响应概率边界。Duffing、车辆和运载火箭算例显示误差通常低于 3%，计算时间相对嵌套抽样参考方法低于 0.2%。论文的关键贡献是把“分布未知 + 时间相关 + 非线性动力”这一昂贵传播问题转化为可快速求解的矩边界问题。
+
+<!-- REAUDIT-2026-05-26 START -->
+
+## 20. 复核增强：严格抽取、翻译、引文与句型
+
+> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal.txt` 与 `801/文本/metadata/An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
+
+### 20.1 严格章节树（按 PDF/metadata TOC）
+
+- L2 p.2: 1 Introduction （背景/领域定位）
+- L2 p.3: 2 Nonlinear dynamics with distribution-free P-box processes （对象/问题/模块）
+  - L3 p.3: 2.1 Definition of distribution-free P-box processes （对象/问题/模块）
+  - L3 p.4: 2.2 Uncertainty propagation problems under P-box processes （对象/问题/模块）
+- L2 p.5: 3 Proposed method （方法/模型）
+  - L3 p.5: 3.1 Transcription of P-box dynamics using CADET （对象/问题/模块）
+  - L3 p.5: 3.2 Domain analysis for mean and variance of the input P-box processes （对象/问题/模块）
+    - L4 p.5: 3.2.1 Generation of P-box realizations by discretization technique （对象/问题/模块）
+    - L4 p.6: 3.2.2 Domain analysis for mean and variance （对象/问题/模块）
+  - L3 p.7: 3.3 Chebyshev-polynomial-based method for interval ODEs （方法/模型）
+  - L3 p.9: 3.4 Uncertainty propagation and a P-box Gaussian assumption （对象/问题/模块）
+  - L3 p.10: 3.5 Entire procedure of proposed method （方法/模型）
+- L2 p.11: 4 Tests and setup （对象/问题/模块）
+  - L3 p.11: 4.1 Numerical tests （对象/问题/模块）
+    - L4 p.11: 4.1.1 Duffing oscillator analysis （对象/问题/模块）
+    - L4 p.12: 4.1.2 Vehicle ride analysis （对象/问题/模块）
+  - L3 p.13: 4.2 Application in uncertainty propagation of LV ascent trajectory （对象/问题/模块）
+    - L4 p.15: 4.2.1 Uncertainty propagation problems （对象/问题/模块）
+    - L4 p.16: 4.2.2 Results and discussion （结果/讨论/验证）
+- L2 p.17: 5 Conclusions （结论）
+- L2 p.19: Declaration of competing interest （对象/问题/模块）
+- L2 p.19: Acknowledgements （对象/问题/模块）
+- L2 p.19: Appendix A （附录）
+- L2 p.21: Appendix B （附录）
+- L2 p.22: References （参考文献）
+
+### 20.2 章节名功能分析
+
+| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
+| --- | ---: | ---: | --- | --- |
+| 1 Introduction | 2 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2 Nonlinear dynamics with distribution-free P-box processes | 3 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2.1 Definition of distribution-free P-box processes | 3 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2.2 Uncertainty propagation problems under P-box processes | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3 Proposed method | 5 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.1 Transcription of P-box dynamics using CADET | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.2 Domain analysis for mean and variance of the input P-box processes | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.2.1 Generation of P-box realizations by discretization technique | 5 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.2.2 Domain analysis for mean and variance | 6 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.3 Chebyshev-polynomial-based method for interval ODEs | 7 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.4 Uncertainty propagation and a P-box Gaussian assumption | 9 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3.5 Entire procedure of proposed method | 10 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4 Tests and setup | 11 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.1 Numerical tests | 11 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.1.1 Duffing oscillator analysis | 11 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.1.2 Vehicle ride analysis | 12 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.2 Application in uncertainty propagation of LV ascent trajectory | 13 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.2.1 Uncertainty propagation problems | 15 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.2.2 Results and discussion | 16 | 4 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5 Conclusions | 17 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Declaration of competing interest | 19 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Acknowledgements | 19 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix A | 19 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix B | 21 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| References | 22 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
+
+### 20.3 摘要完整摘录（本地证据）
+
+抽取状态：成功
+
+> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.4 摘要中文翻译
+
+> 无分布 P 盒过程可作为时间的有效量化模型。
+> 非线性动力学；当只有不精确的概率信息可用时，动态系统中的不确定性会变化
+> 不确定性传播；有能力的。然而，由于计算量过多，其在非线性系统中的应用仍然受到限制。概率不精确；这项工作开发了一种在非线性中传播无分布 P-box 过程的有效方法。
+> 免分配 P-box 亲耳动态。首先，使用协方差分析描述方程技术 (CADET)，
+> 过程； P-box 过程的动态问题被转化为区间常微分方程
+> 切比雪夫方法（ODE）。这些方程提供了系统的均值和协方差 (MAC) 界限
+> 与 P 盒过程激励的 MAC 界限相关的响应。他们还将预
+> 将 P 盒分析和非线性动态仿真耦合为两个连续步骤，
+> 包括激励的 MAC 界限分析和响应的 MAC 界限计算
+> 通过求解区间 ODE。随后，CADET 的高斯假设被扩展为
+> P 盒形式，即响应是近似参数高斯 P 盒过程。作为一个
+> 结果，响应的概率界限通过使用间解来近似
+> val ODE。
+> 
+> 此外，引入并修改了切比雪夫方法以有效地解决
+> 区间常微分方程。所提出的方法根据测试用例进行了验证，包括达芬振荡器，
+> 车辆行驶以及运载火箭轨迹的工程黑匣子问题。相比于
+
+### 20.5 结论完整摘录（本地证据）
+
+结论章节识别：5 Conclusions；状态：独立结论章节
+
+> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.6 结论中文翻译
+
+> 这项工作定义了具有无分布 P 盒过程的非线性动力学的不确定性传播 (UP) 问题。这个问题对于工程应用来说是有意义的，
+> 
+> 具有无分布 P 盒过程的非线性动力学的有效不确定性传播方法 133
+> 
+> 零件参数 符号 值
+> 
+> 运载火箭总质量（t） mLV 35.40 总长度（m） L 18.26 最大直径（m） D 1.67
+> 
+> 子级 1 子级质量 (t) m1 22.68 推进质量 (t) mp1 20.80 推进力 (kN) P1 912 工作时间 (s) t1 61.60
+> 
+> 子级 2 子级质量 (t) m2 7.05 推进质量 (t) mp2 6.25 推进力 (kN) P2 270 工作时间 (s) t2 65.20
+> 
+> 子级 3 子级质量 (t) m3 3.65 推进质量 (t) mp3 3.32 推进力 (kN) P3 155 工作时间 (s) t3 59.6
+> 
+> 其中仅可获得动态激励的不精确概率信息。然后，提出了一种有效解决UP问题的新方法。 (1)所提出的UP分析方法将无分布P盒分析和非线性系统随机分析解耦。结果，很大一部分计算成本显着降低。此外，还考虑了P盒形式的扩展高斯假设，即系统响应近似为参数化高斯P盒过程。
+> 
+> 此假设使得可以仅通过获取均值和方差的区间界限来评估响应的 CDF 界限。 (2)本工作中进行的测试验证了所提出方法的准确性。误差线的计算表明，与参考解相比，所提出方法的相对误差通常小于1%。 CDF界限评估表明，该方法的相对误差小于3%。因此，高斯假设可以有效地提供具有令人满意的精度的误差线。此外，基于假设的概率界限评估的误差也是可以接受的。 (3) 基于切比雪夫方法求解区间常微分方程的效率，该方法只需要参考解的不到 0.2% 的计算时间。 (4)通过LV轨迹的工程应用证明了该方法解决复杂黑盒问题的能力。
+
+### 20.7 论文逻辑脉络复核
+
+- 提出的问题：需结合 Introduction 首段复核。
+- 旧方法/已有研究不足：However, its application to nonlinear systems remains limited due to excessive computation. The proposed method is validated based on test cases, including a dufﬁng oscillator, a vehicle ride, and an engineering black-box problem of launch vehicle trajectory. However, the uncertainties resulting from limited or poor-quality data, termed imprecision (a form of epistemic uncertainties), have to be represented by non-probabilistic models.3 When aleatory uncertainties and imprecision appear together and result in imprecise probabilistic information, both probabilistic and non-probabilistic models are inapplicable.
+- 本文解决方式：The distribution-free P-box process serves as an effective quantiﬁcation model for time- Nonlinear dynamics; varying uncertainties in dynamical systems when only imprecise probabilistic information is avail- Uncertainty propagation; able. Imprecise probability; This work develops an efﬁcient method for propagating distribution-free P-box processes in nonlin- Distribution-free P-box pro- ear dynamics. First, using the Covariance Analysis Describing Equation Technique (CADET), the cesses; dynamic problems with P-box processes are transformed into interval Ordinary Differential Equa- Chebyshev method tions (ODEs).
+- 学术/工程增量：These equations provide the Mean-and-Covariance (MAC) bounds of the system responses in relation to the MAC bounds of P-box-process excitations. In addition, the error of probability-bound evaluation based on the assumption is also acceptable. (3) Based on the efficiency of the Chebyshev method for solving interval ODEs, the proposed method only required less than 0.2% calculation time of the reference solutions. (4) The capacity of the method in solving complex blackbox problems is demonstrated by the engineering application of the LV trajectory.
+- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
+
+### 20.8 引文分析补全
+
+- 全文引用簇数量（估计）：0
+- Introduction 引用簇数量（估计）：0
+- References 条目数（解析）：63
+- 可识别年份条目数：63
+- 近五年/近年文献（2021+）数量：23
+- 经典文献（2010年前）数量：10
+- 同刊引用数量（按 subject 粗略匹配）：0
+- 高频来源期刊（粗略）：未识别
+- 引用簇样例：未识别
+
+带引用的 gap/转折句样例：
+
+- 未在 Introduction 中自动识别到带引用的 gap 句；需人工复核文献转折段。
+
+References 解析样例（前12条）：
+
+- 1. Luo YZ, Yang Z. A review of uncertainty propagation in orbital mechanics. Prog Aerosp Sci 2017;89:23–39.
+- 2. Fu C, Sinou JJ, Zhu WD, et al. A state-of-the-art review on uncertainty analysis of rotor systems. Mech Syst Signal Process 2023;183:109619.
+- 3. Faes M, Moens D. Recent trends in the modeling and quantification of non-probabilistic uncertainty. Arch Comput Meth Eng 2020;27(3):633–71.
+- 4. Beer M, Ferson S, Kreinovich V. Imprecise probabilities in engineering analyses. Mech Syst Signal Process 2013;37(1– 2):4–29.
+- 5. Shinozuka M. Monte Carlo solution of structural dynamics. Comput Struct 1972;2(5–6):855–74.
+- 6. Geller DK. Linear covariance techniques for orbital rendezvous analysis and autonomous onboard mission planning. J Guid Contr Dyn 2006;29(6):1404–14.
+- 7. Roberts J, Spanos P. Random vibration and statistical linearization. New York: Courier Corporation; 1990.
+- 8. Dos Santos KRM, Kougioumtzoglou IA, Spanos PD. Hilbert transform–based stochastic averaging technique for determining the survival probability of nonlinear oscillators. J Eng Mech 2019;145(10):4019079.
+- 9. Kougioumtzoglou IA, Spanos PD. Response and first-passage statistics of nonlinear oscillators via a numerical path integral approach. J Eng Mech 2013;139(9):1207–17.
+- 10. Zhu WQ. Nonlinear stochastic dynamics and control in Hamiltonian formulation. Appl Mech Rev 2006;59(4):230–48.
+- 11. Li J. Probability density evolution method: background, significance and recent developments. Probab Eng Mech 2016;44:111–7.
+- 12. Chen GH, Yang DX. A unified analysis framework of static and dynamic structural reliabilities based on direct probability integral method. Mech Syst Signal Process 2021;158:107783.
+
+### 20.9 常用词、词类、语态与时态
+
+- 高频词：p-box(111)；fig(61)；nonlinear(59)；follows(59)；processes(54)；denotes(54)；presented(53)；bounds(52)；mean(50)；where(45)；cdf(45)；distribution-free(42)；dynamics(39)；time(37)；system(36)；denoted(34)；respectively(31)；interval(30)；flw(30)；case(29)
+- 高频名词化/学术名词：dynamics(39)；propagation(24)；variance(23)；reference(19)；probability(17)；section(17)；information(14)；assumption(14)；realization(12)；interpolation(12)；procedure(11)；covariance(10)；calculation(10)；precision(10)；function(9)
+- 高频学术动词：presented(53)；developed(6)；compared(4)；validated(2)；demonstrate(2)；demonstrated(2)；derived(2)
+- 高频形容词：interval(30)；cient(26)；table(20)；stochastic(17)；probabilistic(16)；dynamic(16)；relative(15)；parametric(13)；basic(12)；equal(10)；dynamical(9)；less(9)；instant(9)；polynomial(8)；possible(7)
+- 高频副词：respectively(31)；only(14)；finally(6)；ciently(5)；subsequently(5)；generally(4)；cantly(4)；mathematically(4)；easily(4)；recently(3)；accordingly(3)；usually(3)；widely(2)；commonly(2)；typically(2)
+- 高频二词短语：p-box processes(46)；distribution-free p-box(36)；nonlinear dynamics(28)；uncertainty propagation(22)；expressed follows(21)；flw fuw(20)；dynamics distribution-free(18)；cdf bounds(18)；mean variance(18)；where denotes(17)；reference solutions(14)；propagation nonlinear(13)
+- 高频三词短语：distribution-free p-box processes(24)；nonlinear dynamics distribution-free(18)；dynamics distribution-free p-box(17)；uncertainty propagation nonlinear(13)；cient uncertainty propagation(12)；propagation nonlinear dynamics(12)；page cient uncertainty(11)；parametric gaussian p-box(6)；gaussian p-box processes(6)；fig fig fig(6)；basic p-box processes(6)；distribution-free p-box process(5)
+- 被动语态估计：226；`we + 动作动词` 主动句估计：0
+- 一般现在时线索：294；一般过去时线索：569；现在完成时线索：2；情态动词线索：78
+
+章节词频：
+
+- Abstract: p-box(7)；odes(4)；mac(4)；bounds(4)；responses(4)；distribution-free(3)；processes(3)；interval(3)
+- Introduction: nonlinear(17)；dynamics(16)；uncertainties(12)；problems(9)；p-box(9)；systems(8)；probabilistic(8)；imprecise(8)
+- Conclusion: mass(7)；substage(6)；p-box(5)；time(4)；assumption(4)；problem(3)；nonlinear(3)；distribution-free(3)
+
+### 20.10 句型库扩充（每类多句）
+
+#### 背景句
+- 原句/结构：Compared to the The dynamic response evaluation of nonlinear systems is critical in most engineering problems.
+  可迁移模板：Compared to the The dynamic response evaluation of nonlinear systems is critical in most engineering problems.
+- 原句/结构：The convex model,28 reference solutions based on the Monte Carlo method, with relative errors of less than 3%, the proposed method requires less than 0.2% calculation time.
+  可迁移模板：The convex model,Xreference solutions based on the Monte Carlo method, with relative errors of less than X, the proposed method requires less than X calculation time.
+- 原句/结构：This problem is critical, as the precise probabilistic information of excitations of nonlinear dynamics is always challenging to obtain in practical engineering. (2) A novel UP method is developed.
+  可迁移模板：This problem is critical, as the precise probabilistic information of excitations of nonlinear dynamics is always challenging to obtain in practical engineering. (X) A novel METHOD method is developed.
+#### Gap句
+- 原句/结构：However, its application to nonlinear systems remains limited due to excessive computation.
+  可迁移模板：However, its application to nonlinear systems remains limited due to excessive computation.
+- 原句/结构：The proposed method is validated based on test cases, including a dufﬁng oscillator, a vehicle ride, and an engineering black-box problem of launch vehicle trajectory.
+  可迁移模板：The proposed method is validated based on test cases, including a dufﬁng oscillator, a vehicle ride, and an engineering black-box problem of launch vehicle trajectory.
+- 原句/结构：However, the uncertainties resulting from limited or poor-quality data, termed imprecision (a form of epistemic uncertainties), have to be represented by non-probabilistic models.3 When aleatory uncertainties and imprecision appear together and result in imprecise probabilistic information, both probabilistic and non-probabilistic models are inapplicable.
+  可迁移模板：However, the uncertainties resulting from limited or poor-quality data, termed imprecision (a form of epistemic uncertainties), have to be represented by non-probabilistic models.XWhen aleatory uncertainties and imprecision appear together and result in imprecise probabilistic information, both probabilistic and non-probabilistic models are inapplicable.
+#### 方法句
+- 原句/结构：The distribution-free P-box process serves as an effective quantiﬁcation model for time- Nonlinear dynamics; varying uncertainties in dynamical systems when only imprecise probabilistic information is avail- Uncertainty propagation; able.
+  可迁移模板：The distribution-free P-box process serves as an effective quantiﬁcation model for time- Nonlinear dynamics; varying uncertainties in dynamical systems when only imprecise probabilistic information is avail- Uncertainty propagation; able.
+- 原句/结构：Imprecise probability; This work develops an efﬁcient method for propagating distribution-free P-box processes in nonlin- Distribution-free P-box pro- ear dynamics.
+  可迁移模板：Imprecise probability; This work develops an efﬁcient method for propagating distribution-free P-box processes in nonlin- Distribution-free P-box pro- ear dynamics.
+- 原句/结构：First, using the Covariance Analysis Describing Equation Technique (CADET), the cesses; dynamic problems with P-box processes are transformed into interval Ordinary Differential Equa- Chebyshev method tions (ODEs).
+  可迁移模板：First, using the Covariance Analysis Describing Equation Technique (METHOD), the cesses; dynamic problems with P-box processes are transformed into interval Ordinary Differential Equa- Chebyshev method tions (ODEs).
+#### 结果句
+- 原句/结构：Although these probabilistic methods have achieved success in solving various UP problems, they still face the challenge that collecting sufficient information for constructing precise probability distributions of uncertainties may not always be possible.
+  可迁移模板：Although these probabilistic methods have achieved success in solving various METHOD problems, they still face the challenge that collecting sufficient information for constructing precise probability distributions of uncertainties may not always be possible.
+- 原句/结构：The calculation of error bars shows that compared to the reference solutions, the relative errors of the proposed method are typically less than 1%.
+  可迁移模板：The calculation of error bars shows that compared to the reference solutions, the relative errors of the proposed method are typically less than X.
+- 原句/结构：The evaluation of CDF bounds shows that the proposed method reaches the relative errors of less than 3%.
+  可迁移模板：The evaluation of METHOD bounds shows that the proposed method reaches the relative errors of less than X.
+#### 贡献句
+- 原句/结构：These equations provide the Mean-and-Covariance (MAC) bounds of the system responses in relation to the MAC bounds of P-box-process excitations.
+  可迁移模板：These equations provide the Mean-and-Covariance (METHOD) bounds of the system responses in relation to the METHOD bounds of P-box-process excitations.
+#### 限制/边界句
+- 原句/结构：The distribution-free P-box process serves as an effective quantiﬁcation model for time- Nonlinear dynamics; varying uncertainties in dynamical systems when only imprecise probabilistic information is avail- Uncertainty propagation; able.
+  可迁移模板：The distribution-free P-box process serves as an effective quantiﬁcation model for time- Nonlinear dynamics; varying uncertainties in dynamical systems when only imprecise probabilistic information is avail- Uncertainty propagation; able.
+- 原句/结构：However, its application to nonlinear systems remains limited due to excessive computation.
+  可迁移模板：However, its application to nonlinear systems remains limited due to excessive computation.
+- 原句/结构：However, the uncertainties resulting from limited or poor-quality data, termed imprecision (a form of epistemic uncertainties), have to be represented by non-probabilistic models.3 When aleatory uncertainties and imprecision appear together and result in imprecise probabilistic information, both probabilistic and non-probabilistic models are inapplicable.
+  可迁移模板：However, the uncertainties resulting from limited or poor-quality data, termed imprecision (a form of epistemic uncertainties), have to be represented by non-probabilistic models.XWhen aleatory uncertainties and imprecision appear together and result in imprecise probabilistic information, both probabilistic and non-probabilistic models are inapplicable.
+
+### 20.11 抽取失败与人工复核提示
+
+- 摘要抽取：正常
+- 结论抽取：正常
+- 引文解析：正常
+- 章节树：正常
+- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
+
+<!-- REAUDIT-2026-05-26 END -->

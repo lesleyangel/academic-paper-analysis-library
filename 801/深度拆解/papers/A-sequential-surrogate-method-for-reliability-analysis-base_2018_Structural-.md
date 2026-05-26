@@ -140,7 +140,7 @@ SSRM 的流程：
 
 ### 11.x 章节结构与章节名分析（补充）
 
-> 自动分析说明：以下基于 `jmps/文本/txt/A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural-.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+> 自动分析说明：以下基于 `801/文本/txt/A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural-.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
 
 - 识别到的章节/小节数量：4
 - 结构类型判断：非严格 IMRaD，更像按模型、机制或结果模块组织。
@@ -296,3 +296,181 @@ Gap 句：
 1. 综述经典方法时按“原理-优点-局限”写。
 2. 方法创新要用一个清晰准则公式承载。
 3. 验证表统一指标，使准确性和计算成本一眼可比。
+
+<!-- REAUDIT-2026-05-26 START -->
+
+## 20. 复核增强：严格抽取、翻译、引文与句型
+
+> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural-.txt` 与 `801/文本/metadata/A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural-.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
+
+### 20.1 严格章节树（按 PDF/metadata TOC）
+
+- L2 p.1: 1 Introduction （背景/领域定位）
+- L2 p.2: 2 Surrogate model （方法/模型）
+  - L3 p.2: 2.1 Construction of surrogate model （方法/模型）
+  - L3 p.3: 2.2 Validation of surrogate model （方法/模型）
+- L2 p.3: 3 Sequential surrogate reliability method （方法/模型）
+- L2 p.5: 4 Numerical examples （对象/问题/模块）
+  - L3 p.5: 4.1 Circular pipe structure （对象/问题/模块）
+  - L3 p.5: 4.2 Hyper-sphere bound problem （对象/问题/模块）
+  - L3 p.5: 4.3 Cantilever beam （对象/问题/模块）
+  - L3 p.5: 4.4 Speed reducer shaft （对象/问题/模块）
+  - L3 p.7: 4.5 Cantilever tube problem （对象/问题/模块）
+  - L3 p.9: 4.6 Dynamic response of a nonlinear oscillator （对象/问题/模块）
+  - L3 p.9: 4.7 High-dimensional problem （对象/问题/模块）
+- L2 p.11: 5 Conclusions （结论）
+- L2 p.11: Acknowledgements （对象/问题/模块）
+- L2 p.11: Appendix A Supplementary data （附录）
+- L2 p.11: References （参考文献）
+
+### 20.2 章节名功能分析
+
+| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
+| --- | ---: | ---: | --- | --- |
+| 1 Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2 Surrogate model | 2 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2.1 Construction of surrogate model | 2 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 2.2 Validation of surrogate model | 3 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 3 Sequential surrogate reliability method | 3 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4 Numerical examples | 5 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.1 Circular pipe structure | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.2 Hyper-sphere bound problem | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.3 Cantilever beam | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.4 Speed reducer shaft | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.5 Cantilever tube problem | 7 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.6 Dynamic response of a nonlinear oscillator | 9 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 4.7 High-dimensional problem | 9 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| 5 Conclusions | 11 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Acknowledgements | 11 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix A Supplementary data | 11 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| References | 11 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
+
+### 20.3 摘要完整摘录（本地证据）
+
+抽取状态：成功
+
+> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural-.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural-.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.4 摘要中文翻译
+
+> 提出了一种基于径向基函数（RBF）的顺序代理可靠性方法（SSRM），该方法通过解决特殊的优化问题来迭代更新极限状态函数（LSF）的代理模型。优化问题的目标是找到一个新点来最大化概率密度函数（PDF），但受到新点位于近似LSF上并且到现有点的最小距离大于或等于给定距离的约束。通过用新点更新代理模型，LSF代理模型在失效概率较高的重要区域和LSF边界上变得越来越准确。此外，由于最小距离约束，不重要区域的精度在迭代内进一步提高。 SSRM利用PDF和LSF的信息来捕获失效特征，这减少了由昂贵的有限元分析定义的隐式LSF的样本。数值算例表明，SSRM以较少的样本量提高了失效边界周围重要区域代理模型的精度，并且对非线性LSF具有更好的适应性，从而提高了可靠性分析的精度和效率。 �2018 Elsevier Ltd. 保留所有权利。
+
+### 20.5 结论完整摘录（本地证据）
+
+结论章节识别：5 Conclusions；状态：独立结论章节
+
+> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural-.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural-.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.6 结论中文翻译
+
+> 本文提出了一种有效的可靠性分析方法SSRM。该方法通过搜索新的样本点，涉及联合概率密度函数和极限状态函数的信息，迭代地细化LSF代理模型。顺序代理模型在重要区域捕获更有意义的故障特征，同时减少故障概率较低区域的样本。在每次迭代中，MCS 用于评估故障概率。因此，获得了近似故障概率的序列。数值和工程案例表明SSRM对不同非线性和维数的LSF具有良好的适应性。对于低维问题，SSRM在精度和效率方面较现有方法具有显着优势；对于高维问题，SSRM 具有与现有方法相当的精度和更高的效率。然而，由于代理模型、MCS和GA的参数优化需要多次代理评估，只有当LSF是耗时的隐函数（例如有限元分析）时，SSRM才显示出其优越性。
+> 
+> 在未来的研究中，可以涉及计算廉价的低保真模型的信息来构建可变保真代理模型，从而有望进一步减少耗时的高保真样本点的数量。
+
+### 20.7 论文逻辑脉络复核
+
+- 提出的问题：By updating the surrogate model with the new points, the surrogate model of LSF becomes more and more accurate in the important region with a high failure probability and on the LSF boundary. Moreover, the accuracy of the unimportant region is further improved within the iteration due to the minimum distance constraint. Several numerical examples show that SSRM improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear LSF, hence increases the accuracy and efficiency of the reliability analysis. �2018 Elsevier Ltd.
+- 旧方法/已有研究不足：The numerical integral and direct Monte Carlo Simulation (MCS) are difficult for a complex system with implicit time-consuming analysis models. However, it re In this paper, an efficient method for reliability analysis named SSRM is proposed. However, as the parameter optimization of the surrogate model, MCS, and GA take a number of surrogate evaluations, SSRM shows its superiority only when the LSFs are time-consuming implicit functions (e.g. finite element analysis).
+- 本文解决方式：A radial basis function (RBF) based sequential surrogate reliability method (SSRM) is proposed, in which a special optimization problem is solved to update the surrogate model of the limit state function (LSF) iteratively. By updating the surrogate model with the new points, the surrogate model of LSF becomes more and more accurate in the important region with a high failure probability and on the LSF boundary. Several numerical examples show that SSRM improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear LSF, hence increases the accuracy and efficiency of the reliability analysis. �2018 Elsevier Ltd.
+- 学术/工程增量：Moreover, the accuracy of the unimportant region is further improved within the iteration due to the minimum distance constraint. Several numerical examples show that SSRM improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear LSF, hence increases the accuracy and efficiency of the reliability analysis. �2018 Elsevier Ltd. Therefore, different approximations of the LSF are adopted to improve the computational efficiency of reliability analysis.
+- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
+
+### 20.8 引文分析补全
+
+- 全文引用簇数量（估计）：75
+- Introduction 引用簇数量（估计）：2
+- References 条目数（解析）：55
+- 可识别年份条目数：54
+- 近五年/近年文献（2021+）数量：0
+- 经典文献（2010年前）数量：31
+- 同刊引用数量（按 subject 粗略匹配）：0
+- 高频来源期刊（粗略）：未识别
+- 引用簇样例：[9], [47], [53], [10], [47], [47], [46], [9], [20,53], [4], [9], [6]
+
+带引用的 gap/转折句样例：
+
+- To calculate the integral with the original LSF faces enormous computational challenges [1–2].
+- Moreover, the adaptability to nonlinear boundary is still limited [10–11].
+
+References 解析样例（前12条）：
+
+- [1] Crespo LG, Kenny SP, Giesy DP. The Nasa Langley Multidisciplinary Uncertainty Quantification Challenge//AIAA Non-Deterministic Approaches Conference, 2015.
+- [2] Yao W, Chen X, Luo W, et al. Review of Uncertainty-based Multidisciplinary Design Optimization Methods for Aerospace Vehicles. Prog Aerosp Sci 2011;47 (1):450–79.
+- [3] Choi SK, Canfield RA, Grandhi RV. Reliability-based Structural Design. London: Springer; 2007. p. 207–12.
+- [4] Verma AK, Srividya A, Karanki DR. Reliability and Safety Engineering. Springer; 2009. p. 15–167.
+- [5] Cawlfield JD. Application of First-order (form) and Second-order (sorm) Reliability Methods: Analysis and Interpretation of Sensitivity Measures Related to Groundwater Pressure Decreases and Resulting Ground Subsidence. Sensitivity Anal, 317–327.
+- [6] Du X. Unified Uncertainty Analysis By the First Order Reliability Method. J Mech Des, 2008;130(9).
+- [7] Haldar A, Mahadevan S. First-order and Second-order Reliability Methods. Springer Us 1995:27–52.
+- [8] Verderaime V. Illustrated Structural Application of Universal First-order Reliability Method. Nasa Sti/recon Technical Report N, 1994, 95(August 1994).
+- [9] Du X, Sudjianto A. First Order Saddlepoint Approximation for Reliability Analysis. Aiaa J 2004;42(6):1199–207.
+- [10] Faragher J. Probabilistic Methods for the Quantification of Uncertainty and Error in Computational Fluid Dynamics Simulations.
+- [11] Mitteau JC. Error Evaluations for the Computation of Failure Probability in Static Structural Reliability Problems. Probab Eng Mech 1999;14(1):119–35.
+- [12] Cizelj L, Mavko B, Riesch-oppermann H. Application of First and Second Order Reliability Methods in the Safety Assessment of Cracked Steam Generator Tubing. Nucl Eng Des 1994;147(3):359–68.
+
+### 20.9 常用词、词类、语态与时态
+
+- 高频词：lsf(55)；surrogate(45)；samples(42)；sample(29)；step(28)；ssrm(27)；failure(27)；region(23)；reliability(22)；initial(22)；function(20)；variables(19)；probability(18)；accuracy(18)；mcs(17)；random(16)；optimization(15)；space(15)；problem(14)；important(14)
+- 高频名词化/学术名词：failure(27)；reliability(22)；function(20)；probability(18)；optimization(15)；distance(11)；iteration(8)；section(8)；approximation(7)；nonlinearity(7)；information(6)；distribution(6)；prediction(6)；adaptability(5)；tion(5)
+- 高频学术动词：presented(3)；compared(2)；predicted(1)；optimize(1)；estimate(1)；estimated(1)
+- 高频形容词：initial(22)；important(14)；normal(12)；original(11)；sequential(9)；radial(9)；boundary(9)；structural(8)；table(6)；less(5)；objective(4)；numerical(4)；cient(4)；variable(4)；local(4)
+- 高频副词：iteratively(3)；respectively(3)；eventually(2)；strictly(2)；essentially(1)；analytically(1)；instinctually(1)；finally(1)；commonly(1)；gradually(1)；tially(1)；only(1)；directly(1)；roughly(1)；fully(1)
+- 高频二词短语：important region(12)；random variables(11)；failure probability(10)；radial basis(8)；optimization problem(8)；minimum distance(8)；sequential surrogate(7)；surrogate lsf(7)；sample set(7)；structural safety(6)；basis function(6)；standard normal(6)
+- 高频三词短语：radial basis function(6)；page structural safety(5)；standard normal space(5)；sequential surrogate reliability(4)；limit state function(4)；basis function rbf(3)；original design space(3)；less important region(3)；surrogate reliability ssrm(2)；state function lsf(2)；density function pdf(2)；failure probability lsf(2)
+- 被动语态估计：58；`we + 动作动词` 主动句估计：0
+- 一般现在时线索：153；一般过去时线索：131；现在完成时线索：0；情态动词线索：18
+
+章节词频：
+
+- Abstract: lsf(7)；surrogate(5)；function(3)；ssrm(3)；new(3)；distance(3)；region(3)；failure(3)
+- Introduction: lsf(25)；failure(12)；region(12)；reliability(11)；surrogate(10)；ssrm(9)；important(9)；accuracy(9)
+- Conclusion: ssrm(5)；surrogate(5)；failure(4)；probability(3)；sample(2)；points(2)；information(2)；function(2)
+
+### 20.10 句型库扩充（每类多句）
+
+#### 背景句
+- 原句/结构：By updating the surrogate model with the new points, the surrogate model of LSF becomes more and more accurate in the important region with a high failure probability and on the LSF boundary.
+  可迁移模板：By updating the surrogate model with the new points, the surrogate model of METHOD becomes more and more accurate in the important region with a high failure probability and on the METHOD boundary.
+- 原句/结构：Moreover, the accuracy of the unimportant region is further improved within the iteration due to the minimum distance constraint.
+  可迁移模板：Moreover, the accuracy of the unimportant region is further improved within the iteration due to the minimum distance constraint.
+- 原句/结构：Several numerical examples show that SSRM improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear LSF, hence increases the accuracy and efficiency of the reliability analysis. �2018 Elsevier Ltd.
+  可迁移模板：Several numerical examples show that METHOD improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear METHOD, hence increases the accuracy and efficiency of the reliability analysis. �XElsevier Ltd.
+#### Gap句
+- 原句/结构：The numerical integral and direct Monte Carlo Simulation (MCS) are difficult for a complex system with implicit time-consuming analysis models.
+  可迁移模板：The numerical integral and direct Monte Carlo Simulation (METHOD) are difficult for a complex system with implicit time-consuming analysis models.
+- 原句/结构：To calculate the integral with the original LSF faces enormous computational challenges [1–2].
+  可迁移模板：To calculate the integral with the original METHOD faces enormous computational challenges [X–X].
+- 原句/结构：However, it requires the independent input variables obey normal distribution, which is difficult to be satisfied in practical problems.
+  可迁移模板：However, it requires the independent input variables obey normal distribution, which is difficult to be satisfied in practical problems.
+#### 方法句
+- 原句/结构：A radial basis function (RBF) based sequential surrogate reliability method (SSRM) is proposed, in which a special optimization problem is solved to update the surrogate model of the limit state function (LSF) iteratively.
+  可迁移模板：A radial basis function (METHOD) based sequential surrogate reliability method (METHOD) is proposed, in which a special optimization problem is solved to update the surrogate model of the limit state function (METHOD) iteratively.
+- 原句/结构：By updating the surrogate model with the new points, the surrogate model of LSF becomes more and more accurate in the important region with a high failure probability and on the LSF boundary.
+  可迁移模板：By updating the surrogate model with the new points, the surrogate model of METHOD becomes more and more accurate in the important region with a high failure probability and on the METHOD boundary.
+- 原句/结构：Several numerical examples show that SSRM improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear LSF, hence increases the accuracy and efficiency of the reliability analysis. �2018 Elsevier Ltd.
+  可迁移模板：Several numerical examples show that METHOD improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear METHOD, hence increases the accuracy and efficiency of the reliability analysis. �XElsevier Ltd.
+#### 结果句
+- 原句/结构：Several numerical examples show that SSRM improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear LSF, hence increases the accuracy and efficiency of the reliability analysis. �2018 Elsevier Ltd.
+  可迁移模板：Several numerical examples show that METHOD improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear METHOD, hence increases the accuracy and efficiency of the reliability analysis. �XElsevier Ltd.
+- 原句/结构：The mean value method (MVM) [3–4] performs a first-order Taylor expansion of the LSF at the mean point (as shown in Fig. 1), in which the LSF is assumed to be normal distribution. ⇑Corresponding author.
+  可迁移模板：The mean value method (METHOD) [X–X] performs a first-order Taylor expansion of the METHOD at the mean point (as shown in Fig. X), in which the METHOD is assumed to be normal distribution. ⇑Corresponding author.
+- 原句/结构：Several numerical examples show that SSRM improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear LSF, hence increases the accuracy and efficiency of the reliability analysis. �2018 Elsevier Ltd.
+  可迁移模板：Several numerical examples show that METHOD improves the accuracy of the surrogate model in the important region around the failure boundary with a small number of samples and has a better adaptability to the nonlinear METHOD, hence increases the accuracy and efficiency of the reliability analysis. �XElsevier Ltd.
+#### 贡献句
+- 未在抽取文本中稳定识别，需人工从对应章节补充。
+#### 限制/边界句
+- 原句/结构：In engineering design, when uncertainties are involved, the failure probability Pf of the limit state function (LSF) g(x) should be examined.
+  可迁移模板：In engineering design, when uncertainties are involved, the failure probability Pf of the limit state function (METHOD) g(x) should be examined.
+- 原句/结构：Moreover, the adaptability to nonlinear boundary is still limited [10–11].
+  可迁移模板：Moreover, the adaptability to nonlinear boundary is still limited [X–X].
+- 原句/结构：The response surface is a different commonly used reliability analysis method [14–16].
+  可迁移模板：The response surface is a different commonly used reliability analysis method [X–X].
+
+### 20.11 抽取失败与人工复核提示
+
+- 摘要抽取：正常
+- 结论抽取：正常
+- 引文解析：正常
+- 章节树：正常
+- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
+
+<!-- REAUDIT-2026-05-26 END -->

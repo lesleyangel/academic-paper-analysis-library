@@ -116,7 +116,7 @@ Introduction 先铺生态和冠层流背景，再引出 KH 不稳定与自然频
 
 ### 11.x 章节结构与章节名分析（补充）
 
-> 自动分析说明：以下基于 `jmps/文本/txt/Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+> 自动分析说明：以下基于 `801/文本/txt/Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
 
 - 识别到的章节/小节数量：13
 - 结构类型判断：接近标准 IMRaD，但带有 JMPS 常见的理论/模型/验证扩展。
@@ -259,3 +259,409 @@ Discussion on other parameters 的功能是控边界。作者没有把二维低 
 ## 19. 最终浓缩
 
 这篇论文的核心价值在于把植被冠层 waving/flapping 从单一 KH 不稳定解释推进到“混合层-结构属性耦合控制”解释。它最值得学习的是：用 fully coupled FSI 模型扫参数空间，用涡结构解释行为类别，用自然频率与 KH 频率比较解释 lock-in。最大风险是二维低 Re 结果和应用外推仍需 PDF 图像与更真实物理模型复核。
+
+<!-- REAUDIT-2026-05-26 START -->
+
+## 20. 复核增强：严格抽取、翻译、引文与句型
+
+> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and.txt` 与 `801/文本/metadata/Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
+
+### 20.1 严格章节树（按 PDF/metadata TOC）
+
+- L2 p.1: Introduction （背景/领域定位）
+- L2 p.3: Mathematical model （方法/模型）
+  - L3 p.3: Lattice Boltzmann method （方法/模型）
+  - L3 p.4: Finite element method （方法/模型）
+  - L3 p.4: Immersed boundary method （方法/模型）
+  - L3 p.5: Fluid–structure#xcoupling （对象/问题/模块）
+- L2 p.5: Numerical settings and parameter space （对象/问题/模块）
+- L2 p.6: Results and discussion （结果/讨论/验证）
+  - L3 p.6: Dynamic behaviors of vegetation canopy （对象/问题/模块）
+  - L3 p.8: Vortical structures in different vegetation behaviors （对象/问题/模块）
+  - L3 p.12: The influence of canopy density on mixing layer instability （对象/问题/模块）
+  - L3 p.15: Lock in effect （对象/问题/模块）
+  - L3 p.18: Discussion on the effects of other parameters （结果/讨论/验证）
+- L2 p.20: Conclusions （结论）
+- L2 p.21: CRediT authorship contribution statement （对象/问题/模块）
+- L2 p.21: Declaration of competing interest （对象/问题/模块）
+- L2 p.21: Acknowledgments （对象/问题/模块）
+- L2 p.21: Appendix. Grid independence test （附录）
+- L2 p.22: References （参考文献）
+
+### 20.2 章节名功能分析
+
+| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
+| --- | ---: | ---: | --- | --- |
+| Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Mathematical model | 3 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Lattice Boltzmann method | 3 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Finite element method | 4 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Immersed boundary method | 4 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Fluid–structure#xcoupling | 5 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Numerical settings and parameter space | 5 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Results and discussion | 6 | 2 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Dynamic behaviors of vegetation canopy | 6 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Vortical structures in different vegetation behaviors | 8 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| The influence of canopy density on mixing layer instability | 12 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Lock in effect | 15 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Discussion on the effects of other parameters | 18 | 3 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Conclusions | 20 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| CRediT authorship contribution statement | 21 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Declaration of competing interest | 21 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Acknowledgments | 21 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| Appendix. Grid independence test | 21 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
+| References | 22 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
+
+### 20.3 摘要完整摘录（本地证据）
+
+抽取状态：成功
+
+> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.4 摘要中文翻译
+
+> 水下植被冠层的波动运动与冠层顶部相干涡流的产生有关，这是混合层不稳定性的表现。混合层上方的不稳定流之间的相互作用及其对植被冠层本身的影响仍然相对未得到充分探索，大多数先前的研究都采用重要的建模假设来简化系统。在本文中，采用完全耦合的流体-结构建模方法来研究植被冠层与其上方出现的混合层之间的相互作用机制。探讨了植被行为对弯曲刚度和冠层密度的依赖性，观察了植被的五种代表性行为状态：静态、扑动、双重、规则波动和不规则波动。比较了在与每个状态相关的混合层中观察到的涡流结构，并研究了冠层密度对混合层发展的影响，特别关注与植被相关的流动特征。此外，在混合层不稳定频率与植被固有频率的交叉区域观察到锁定效应，这表明混合层对植被波动频率的吸引作用。 © 2021 爱思唯尔有限公司
+> 
+> 版权所有。
+
+### 20.5 结论完整摘录（本地证据）
+
+结论章节识别：Conclusions；状态：独立结论章节
+
+> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
+
+### 20.6 结论中文翻译
+
+> 根据上述研究结果，有必要进一步研究冠层流的锁定效应，确定冠层固有频率、纯/重/耦合KH频率和波动频率之间的关系。此外，值得注意的是，上述研究结论的差异部分是由于它们使用的建模方法不同所致。在 Py 等人的研究中。 （2006年、2004年）
+> 
+> Z.Fang、C.Gong、A.Revell 等。流体与结构学报109(2022)103467
+> 
+> 2 数学模型
+> 
+> 2.1.格子玻尔兹曼法
+> 
+> Ωf = 1
+> 
+> τ ( f (eq) −f )
+> 
+> 其中 f (eq) 表示分布函数 f 的平衡状态，τ 是与流体运动粘度 υ 相关的弛豫时间参数，它们的关系为：
+> 
+> ）
+> 
+> ν = ( τ -1
+> 
+> cs 是声格速度。经过时间和空间离散化后，方程中的每个流体粒子： (1) 分配有限个离散速度值，用下标α表示，则相应的平衡分布函数f(eq)可写为：
+> 
+> c2 s + (eα · v)2
+> 
+> 1 + eα · v
+> 
+> 2c4 s −v2
+> 
+> [
+> 
+> ]
+> 
+> f (eq) α = ρwα
+> 
+> 2c2秒
+> 
+> 式中外强迫项F的离散化形式(1) 是由Guo等人提出的。
+> 
+> (2002)，其中外力对流体动量和动量通量都有影响，其表达式可写为：
+> 
+> [ eα -v
+> 
+> c2 s + eα · v
+> 
+> Fα = (
+> 
+> ) wα
+> 
+> 1 −1
+> 
+> c4 s eα
+> 
+> 2τ
+> 
+> Gosselin 和 Langre (2009) 简化了流体和结构求解器，其中流动的速度剖面被视为分段线性，整个植被冠层被视为连续体，并且假设每个植被元素是刚性的。而 O’Connor 和 Revell (2019) 以及Zhang 等人。 （2020）使用了完全耦合的流体结构模型，其中单个植被是灵活的并且它们的动力学得到了完全解决。相对而言，O’Connor 和 Revell (2019) 以及Zhang 等人使用的流体-结构模型。 (2020)更适用，更能反映植被冠层的真实行为。本文采用O'Connor和Revell（2019）中使用的二维（2-D）流固模型，其中流体场采用格子玻尔兹曼法（LBM）求解，植被动态运动采用有限元法（FEM）计算，流体与植被之间的相互作用采用浸入边界法（IBM）处理。此外，该模型还引入了强耦合隐式方案，以提高算法的稳定性和准确性。
+> 
+> 近年来，现有的流固模型已广泛应用于许多FSI模拟中，例如柔性颗粒悬浮（Krüger等，2011）、被动流动控制（Fang等，2019）、能量收集（Dong等，2016）、弹性层振荡（De Rosis等，2014a）和扑翼飞行研究（De Rosis等，2014）等。 2014b）。这些研究也证明了本模型的准确性和可靠性，主要从以下三个方面：首先，本模型中使用的LBM因其简单的公式、高效率和高水平的并行性而被证明是纳维-斯托克斯（N-S）求解器的可行替代品（Shan等人，2006）。其次，IBM中的流体网格不需要符合结构边界，因此本模型中的网格生成比传统的任意拉格朗日欧拉（ALE）方法（Peskin，2002）快得多，并且在固定规则流体网格上非常有效地求解流动控制方程。第三，本模型中的有限元法具有很强的处理复杂结构非线性变形的能力，因此具有广泛的适用性（Felippa and Haugen，2005）。由于上述两个优点，当前的流固模型特别适合解决高变形结构的流固耦合问题。
+> 
+> 本文研究了雷诺数100下不同弯曲刚度和冠层密度的浅水植被冠层的动态响应，研究了混合层中的详细涡流结构及其对植被行为的影响。还探讨了混合层不稳定频率与植被固有频率之间的锁定效应。在本文的其余部分中，简要描述了流固耦合的数学模型，然后介绍了案例设置和相关参数空间。最后对结果和主要发现进行分析并得出结论。本文中的流场通过格子玻尔兹曼方程求解（Chen and Doolen，1998），给出为：
+> 
+> ∂f ∂t + e·∇xf + F·∇ef = Ωf (1)
+> 
+> 其中 t 是时间，x 和 e 是流体粒子在时间 t 时的位置和速度。 f是流体粒子的分布函数，力项F表示施加到流体上的外力。
+> 
+> Ωf 表示流体粒子的碰撞算子，可以使用 Bhatnagar、Gross 和 Krook (BGK) 方法进行简化 (Bhatnagar et al., 1954)，Ωf 的表达式为
+> 
+> (2)
+> 
+> c2 s (3)
+> 
+> (4)
+> 
+> 其中ρ为流体密度，eα和wα分别表示流体粒子上的离散速度和相应的权系数。 v 是宏观流体速度。 ]·f (5)
+> 
+> Z.Fang、C.Gong、A.Revell 等。流体与结构学报109(2022)103467
+> 
+> 其中 f 表示作用在流体上的力密度。则宏观流体量可由下式获得：
+> 
+> ρ = Σ
+> 
+> α eαfα + 1
+> 
+> 2 fδt = ρv*+ 1
+> 
+> ρv = Σ
+> 
+> 这里 v* 称为预测速度。 2.2.有限元法
+> 
+> 其中M是植被的质量矩阵，U和¡U分别是植被位移和加速度。 F int 表示植被的内力，F ext 表示作用于植被的外力。根据牛顿第三定律，F ext 的表达式可以写为：
+> 
+> ∫
+> 
+> F ext = − Σ
+> 
+> 米
+> 
+> [ K i T,t+Δt + c0M] ΔU i+1 = F ext,t+Δt −F i int,t+Δt −M [ c0 ( U i t+Δt −U t ) −c1 ˙U t −c2 ¡U t ]
+> 
+> 2.3.浸入边界法
+> 
+> Φ(X) = Π[Φ(x)] = Σ
+> 
+> φ(x) = Ψ [Φ(X)] = Σ
+> 
+> 代入等式。将（13）和（14）代入等式。 (7) 并转换方程。
+> 
+> (7) 代入拉格朗日坐标系为：
+> 
+> Π[ρ(x, t)]V(X, t) = Π [ ρv*(x, t)] + Δt
+> 
+> α fα (6)
+> 
+> 2 fδt (7)
+> 
+> 个体植被的动态通过非线性有限元方法计算，其中每个植被单元由一系列两节点欧拉-伯努利梁单元离散化。植被动态方程可写为：
+> 
+> M ¡U (t) + F int (U) −F ext (t) = 0 (8)
+> 
+> VmNT f′dV (9)
+> 
+> 其中 Vm 是第 m 个梁单元的体积。 N表示形函数矩阵，f'表示作用在单元上的力密度，其表达式见2.3节。等式。 (8)可以对时间进行离散化，并使用Newmark-β方法和Newton-Raphson方法进行求解，因此其离散形式可以写为：
+> 
+> (10)
+> 
+> 式中，Δt 为 Newmark-β 法中的时间步长，i 为 Newton-Raphson 法中的迭代步长，K T 为植被切线刚度矩阵，c0 ∼c2 为根据 Newmark-β 法精度和稳定性要求确定的变量。有关方程式的更多详细信息。 (10) 可以在 Doyle 和 Desantiago (2001) 中找到。流与植被之间的界面数据交换采用浸没边界法处理，其中流体场由一组固定欧拉点离散化，而植被由多个拉格朗日标记离散化。
+> 
+> 这两个网格之间的数据交换由两个算子实现：插值算子 Π 和扩展算子 Ψ ，它们的表达式为：
+> 
+> Ω φ(x)～δ(x −X)ΔxΔyΔz (11)
+> 
+> Λ Φ(X)~δ(x −X)ϵΔqΔrΔs (12)
+> 
+> 其中 φ 和 Φ 分别是欧拉框架和拉格朗日框架中定义的量。 x = (x, y, z) 是欧拉点的位置，而 X = (q, r, s) 是拉格朗日标记的位置。 Ω代表计算域，而Г代表结构边界。 ϵ 是 Π 和 Ψ 之间互易的比例因子。 ~δ 是 Peskin (2002) 中定义的三点离散狄拉克 δ 函数。正如李等人所描述的。 (2016)，LBM 中获得的笛卡尔网格点 x 处的流体速度 v 可以插值到坐标 X 的拉格朗日标记位置上，如下所示：
+> 
+> v(X,t) = Π(v(x,t)) (13)
+> 
+> 根据非滑移边界条件，该插值速度必须等于 FEM 中计算的边界速度 V (X, t)，如下所示：
+> 
+> V(X, t) = v(X, t) (14)
+> 
+> 2 f′(X, t) (15)
+> 
+> Z.Fang、C.Gong、A.Revell 等。流体与结构学报109(2022)103467
+> 
+> f (x, t) = Ψ [ f ′ (X, t) ]
+> 
+> 最后，将得到的力密度f(x,t)带回式(1)中。 (7)更新流场。 2.4.
+> 
+> 流固耦合
+> 
+> 其中，ω 为松弛因子，U 为有限元法计算的结构位移，~U 和~U k−1 分别表示当前迭代和上一次迭代中结构的松弛位移。 ωk = −ωk−1 ( rk−1)T ( rk −rk−1)
+> 
+> 其中 rk 是残差向量，由下式给出
+> 
+> 目前的流固模型已经在我们之前的研究中得到了彻底的验证和使用（O’Connor和Revell，2019；Favier等，2017；Harwood等，2018），读者可以参考这些研究以了解更多详细信息。 3.数值设置和参数空间
+> 
+> 通道入口处的速度具有抛物线轮廓，由下式给出
+> 
+> u(0, y) = 1.5uy(2H −y)
+> 
+> 求解方程。 (15) 得到校正力密度f′，然后通过扩散算子Ψ将其变换到流体网格中为：
+> 
+> (16)
+> 
+> 本模型中流体和结构的耦合是通过分区方法处理的，其中流动和结构被顺序求解，并且流固界面处必要的界面数据在这两个求解器之间交换。然而，对于结构与流体密度比较低的问题，这种耦合策略可能会导致流体-结构界面处的边界条件不匹配，从而对解决方案的稳定性和准确性产生不利影响。关于这个问题的理论分析可以参见Zheng等人的论文。 （2010）。
+> 
+> 为了克服这个问题，本工作引入了强耦合块高斯-塞德尔隐式方案。在此耦合方案中，流体和结构求解器在单个时间步内迭代多次，直到满足界面兼容性条件。在每次内部迭代中，结构的位移基于前一次迭代进行松弛，由下式给出
+> 
+> ～U = ωU + (1 − ω) ～U k−1 (17)
+> 
+> 这里采用Aitken的Δ2松弛方法（Kuttler and Wall，2008）来加快上述耦合方案的收敛速度，其中松弛因子ω通过以下方式动态计算：
+> 
+> ⏐⏐rk−rk−1⏐⏐2 (18)
+> 
+> rk = U k −~U k−1 (19)
+> 
+> 通常，较低的结构与流体密度比需要更多的子迭代以确保耦合的收敛。尽管这种隐式子迭代方案增加了计算成本，但目前的FSI模拟框架比其他传统的显式方法具有更高的数值稳定性和算法鲁棒性。如图2所示，植被冠层高度为h，嵌入高度H=3h的矩形明渠中。冠层中的每个植被元素直立且具有相等的间距 ΔS。整个顶篷放置在通道的所谓顶篷部分中，固定长度为 Lc = 64h。
+> 
+> 为了限制通道边界对冠层行为的干扰，冠层部分距通道入口10h，距通道出口30h，因此通道总长度Lt=104h。水平2 (20)
+> 
+> 其中 u 是平均流速，而 1.5u 是最大流速。与 Py 等人使用的分段线速度剖面相比。 (2006) 以及 Gosselin 和 Langre (2009) 本身有一个拐点，即当前速度
+> 
+> Z.Fang、C.Gong、A.Revell 等。流体与结构学报109(2022)103467
+> 
+> j 0 0.25 0.5 0.75 1 2 3 4 5 6 7 8 9 10
+> 
+> 植被的材料特性由无量纲质量比 M 和弯曲刚度 K 描述，由下式给出：
+> 
+> M = ρsb
+> 
+> ρf h, K = EI
+> 
+> 其中 ΔS 是植被元素之间的间距。在本文中，空间密度的值选自 0 到 0.1，由下式给出：
+> 
+> 4 结果与讨论
+> 
+> 4.1. Dynamic behaviors of vegetation canopy
+> 
+> n 1 9 17 25 33 65 97 129 161 193 225 257 289 321
+> 
+> 这里使用的剖面没有拐点，只是用来模拟明渠水流。 This allows us to capture the detailed development process of the mixing layer instability.
+> 
+> 此外，入口速度设置为在短时间内从零开始非线性增加，然后保持恒定，这用于抑制LBM弱压缩性产生的密度波。通道出口设置固定压力边界条件，而通道的底部和顶部边界分别施加非滑移和自由滑移条件。根据平均入口速度和植被高度，当前流动条件组的雷诺数为 100。 ρf u2h3 (21)
+> 
+> 其中ρf和ρs分别为流体和植被密度，b代表植被厚度，E和I分别为植被杨氏模量和二阶面积矩。正如 O’Connor 和 Revell (2019) 中所述，植被无量纲质量比 M 的典型值范围从水生植被的 O(0.01) 到陆地植被的 O(10)。即便如此，水生和陆地植被的波动不稳定性的主要特征是相似的（Gosselin 和 Langre，2009）。由于植被质量比不是我们研究的重点，本文选取典型值M=1.0。
+> 
+> 物理上，M = 1.0 对应陆地植被冠层，其中空气密度为 ρf = 1.29 kg/m3，植被密度为 ρs = 64.5 kg/m3（非常接近 Ebeling 和 Jenkins，1985 年报道的麦秆密度 ρs = 65.0 kg/m3），植被高度为 h = 0.3 m，植被厚度为 b = 0.006米。植被的无因次弯曲刚度 K 对于水生植被测量为 O(0.01)，对于陆地植被测量为 O(0.1)。为了覆盖控制水生和陆地植被行为的大部分参数空间，在以下测试中测试了 12 个不同的 K 值（K0 ∼K11），这些值按 10 次方分布为
+> 
+> Ki = 5 × 10−3+(2(i−1)/9), i = 0 ∼11 (22)
+> 
+> 除了个体植被的材料特性外，植被冠层的空间密度也是需要研究的重要参数。一般来说，冠层密度由植被占据的固体体积分数来描述，对于二维情况，其表达式为：
+> 
+> Φ = b/ΔS (23)
+> 
+> Φj = j × 10−2, j = 0 ∼ 10 (24)
+> 
+> 初步测试表明，上述 Φ 范围足以得出各种真实水生植物的典型固体体积分数（Chandler 等，1996）。
+> 
+> 在我们的模型中，冠层中存在的植被元素数量通过 n = Lc/ΔS + 1 = LcΦ/b + 1 获得。这里 Φ = 0（或 j = 0）代表单个植被元素的情况，用于提供与较大冠层结果进行比较的基准。方程中 j 的值集。 (24) 列于表 1 中。在上述情况下，每个植被元素均使用 50 个 IBM 标记/格点 (Δx = 0.02h) 和 20 个 FEM 元素进行离散化。为了保证FSI模拟的结果与网格分辨率无关，进行了网格独立性测试
+
+### 20.7 论文逻辑脉络复核
+
+- 提出的问题：Vegetation canopies, such as seagrass meadow, crop field and dense forest, are abundant in nature and play an important role in a wide range of ecological services. Secondly, the fluid grid in the IBM does not need to conform to the structure boundary, so the grid generation in the present model becomes much faster than that of the traditional Arbitrary Lagrangian Eulerian (ALE) method (Peskin, 2002), and the flow governing equations are solved very efficiently on the fixed regular fluid grid. At each internal iteration, the displacement of structure is relaxed based on the previous iteration, given by ˜U = ωU + (1 −ω) ˜U k−1 (17) The Aitken’s ∆2 relaxation method (Kuttler and Wall, 2008) is adopted here to speed up the convergence rate of the above coupling scheme, in which the relaxation factor ω is calculated dynamically through: ⏐⏐rk −rk−1⏐⏐2 (18) rk = U k −˜U k−1 (19) Typically, a lower structure-to-fluid density ratio requires more sub-iterations to ensure the convergence of the coupling.
+- 旧方法/已有研究不足：The interaction between this unsteady flow above the mixing layer, as well as its influence on the vegetation canopy itself, remain relatively underexplored, with most prior studies employing significant modeling assumptions to simplify the system. The interaction between this unsteady flow above the mixing layer, as well as its influence on the vegetation canopy itself, remain relatively underexplored, with most prior studies employing significant modeling assumptions to simplify the system. However, for problems with a low structure-to-fluid density ratio, this coupling strategy can lead to a boundary condition mismatch at the fluid–structure interface, which can adversely impact the stability and accuracy of the solution.
+- 本文解决方式：The interaction between this unsteady flow above the mixing layer, as well as its influence on the vegetation canopy itself, remain relatively underexplored, with most prior studies employing significant modeling assumptions to simplify the system. In this paper a fully coupled fluid–structure modeling approach is used to investigate the interaction mechanism between the vegetation canopy and the mixing layer that arises above it. The dependence of vegetation behavior on the bending rigidity and canopy density is explored and five representative behavior states of vegetation are observed: static, flapping, dual, regular waving and irregular waving.
+- 学术/工程增量：These canopies can provide habitats for wildlife (Carpenter and Lodge, 1986), capture suspended sediment (Palmer et al., 2004), adjust temperature (Karlsson, 2000) and improve water/air quality (Moore, 2004). In addition, a strong-coupling implicit scheme is also introduced in this model in order to improve the stability and accuracy of algorithm. The accuracy and reliability of the present model has also been demonstrated by these studies, mainly from the following three aspects: Firstly, the LBM used in the present model has been proven to be a feasible substitute over a Navier–Stokes (N–S) solver due to its simple formulations, high efficiency and high level of parallelizability (Shan et al., 2006).
+- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
+
+### 20.8 引文分析补全
+
+- 全文引用簇数量（估计）：0
+- Introduction 引用簇数量（估计）：0
+- References 条目数（解析）：97
+- 可识别年份条目数：54
+- 近五年/近年文献（2021+）数量：1
+- 经典文献（2010年前）数量：34
+- 同刊引用数量（按 subject 粗略匹配）：0
+- 高频来源期刊（粗略）：Journal of Fluids and Structures(1)
+- 引用簇样例：未识别
+
+带引用的 gap/转折句样例：
+
+- 未在 Introduction 中自动识别到带引用的 gap 句；需人工复核文献转折段。
+
+References 解析样例（前12条）：
+
+- 2012. The wind in the willows: flows in forest canopies in complex terrain. Annu. Rev. Fluid Mech. 44,
+479–
+- 504. Belcher, S., Jerram, N., Hunt, J.,
+- 2003. Adjustment of a turbulent boundary layer to a canopy of roughness elements. J. Fluid Mech. 488, 369–
+- 398. Berry, P.M., Sterling, M., Spink, J.H., Baker, C.J., Sylvester-Bradley, R., Money, S.J., Tams, A.R., Ennos, A.R., Sparks, D.L.,
+- 2004. Understanding and reducing
+lodging in cereals. Adv. Agron. 84, 217–
+- 271. Bhatnagar, P.L., Gross, E.P., Krook, M.,
+- 1954. A model for collision processes in gases. I. Small amplitude processes in charged and neutral
+one-component systems. Phys. Rev. 94 (3), 511–
+- 525. Carpenter, S.R., Lodge, D.M.,
+- 1986. Effects of submersed macrophytes on ecosystem processes. Aquat. Bot. 26, 341–
+- 370. Chandler, M., Colarusso, P., Buchsbaum, R.,
+- 1996. A study of eelgrass beds in Boston Harbor and northern Massachusetts bays. In: Proj. Rep. Off. Res.
+Dev. US EPA, Narragansett, RI. Chen, S., Doolen, G.D.,
+- 1998. Lattice Boltzmann method for fluid flows. Annu. Rev. Fluid Mech. 30, 329–
+
+### 20.9 常用词、词类、语态与时态
+
+- 高频词：vegetation(78)；canopy(56)；fluid(39)；flow(31)；structure(25)；velocity(23)；frequency(21)；density(19)；layer(18)；revell(18)；waving(18)；mixing(16)；where(15)；instability(13)；given(13)；represents(13)；structures(11)；connor(11)；above(11)；lock-in(10)
+- 高频名词化/学术名词：vegetation(78)；structure(25)；velocity(23)；density(19)；instability(13)；element(10)；motion(9)；influence(7)；addition(7)；interaction(6)；inflection(6)；function(5)；expression(5)；mechanism(4)；rigidity(4)
+- 高频学术动词：indicated(5)；predicted(4)；compared(3)；estimated(1)；demonstrated(1)；presented(1)；validated(1)
+- 高频形容词：natural(10)；aquatic(10)；boundary(10)；element(10)；journal(9)；terrestrial(9)；dynamic(7)；flexible(7)；coherent(4)；dual(4)；vertical(4)；material(4)；external(4)；displacement(4)；previous(4)
+- 高频副词：respectively(6)；fully(3)；relatively(2)；numerically(2)；finally(2)；experimentally(1)；greatly(1)；synchronously(1)；recently(1)；partly(1)；widely(1)；mainly(1)；firstly(1)；secondly(1)；efficiently(1)
+- 高频二词短语：vegetation canopy(17)；fluid structure(16)；mixing layer(15)；connor revell(9)；journal fluids(8)；fluids structures(8)；given where(7)；lock-in effect(6)；canopy density(6)；natural frequency(6)；vegetation canopies(6)；ghisalberti nepf(6)
+- 高频三词短语：journal fluids structures(8)；page fang gong(6)；fang gong revell(6)；gong revell journal(6)；revell journal fluids(6)；mixing layer instability(4)；each vegetation element(4)；connor revell zhang(3)；fluids structures fig(3)；waving frequency canopy(3)；natural frequency canopy(3)；fluid structure interaction(2)
+- 被动语态估计：76；`we + 动作动词` 主动句估计：0
+- 一般现在时线索：126；一般过去时线索：202；现在完成时线索：0；情态动词线索：22
+
+章节词频：
+
+- Abstract: vegetation(8)；mixing(7)；layer(7)；canopy(6)；waving(4)；observed(3)；frequency(3)；associated(2)
+- Introduction: canopy(31)；vegetation(21)；flow(18)；frequency(18)；waving(14)；layer(13)；mixing(11)；instability(10)
+- Conclusion: vegetation(48)；fluid(33)；structure(20)；canopy(17)；velocity(15)；density(14)；where(13)；represents(13)
+
+### 20.10 句型库扩充（每类多句）
+
+#### 背景句
+- 原句/结构：Vegetation canopies, such as seagrass meadow, crop field and dense forest, are abundant in nature and play an important role in a wide range of ecological services.
+  可迁移模板：Vegetation canopies, such as seagrass meadow, crop field and dense forest, are abundant in nature and play an important role in a wide range of ecological services.
+- 原句/结构：At each internal iteration, the displacement of structure is relaxed based on the previous iteration, given by ˜U = ωU + (1 −ω) ˜U k−1 (17) The Aitken’s ∆2 relaxation method (Kuttler and Wall, 2008) is adopted here to speed up the convergence rate of the above coupling scheme, in which the relaxation factor ω is calculated dynamically through: ⏐⏐rk −rk−1⏐⏐2 (18) rk = U k −˜U k−1 (19) Typically, a lower structure-to-fluid density ratio requires more sub-iterations to ensure the convergence of the coupling.
+  可迁移模板：At each internal iteration, the displacement of structure is relaxed based on the previous iteration, given by ˜U = ωU + (X−ω) ˜U k−X(X) The Aitken’s ∆Xrelaxation method (Kuttler and Wall, X) is adopted here to speed up the convergence rate of the above coupling scheme, in which the relaxation factor ω is calculated dynamically through: ⏐⏐rk −rk−X⏐⏐X(X) rk = U k −˜U k−X(X) Typically, a lower structure-to-fluid density ratio requires more sub-iterations to ensure the convergence of the coupling.
+- 原句/结构：In order to cover most of the parameter space that governs the behavior of both aquatic and terrestrial vegetation, twelve different values of K (K0 ∼K11) are tested in the following tests, which are distributed in powers of ten as Ki = 5 × 10−3+(2(i−1)/9), i = 0 ∼11 (22) Aside from the material properties of individual vegetation, the spatial density of the vegetation canopy is also an important parameter to be investigated.
+  可迁移模板：In order to cover most of the parameter space that governs the behavior of both aquatic and terrestrial vegetation, twelve different values of K (K0 ∼K11) are tested in the following tests, which are distributed in powers of ten as Ki = X× X−X+(X(i−X)/X), i = X∼X(X) Aside from the material properties of individual vegetation, the spatial density of the vegetation canopy is also an important parameter to be investigated.
+#### Gap句
+- 原句/结构：The interaction between this unsteady flow above the mixing layer, as well as its influence on the vegetation canopy itself, remain relatively underexplored, with most prior studies employing significant modeling assumptions to simplify the system.
+  可迁移模板：The interaction between this unsteady flow above the mixing layer, as well as its influence on the vegetation canopy itself, remain relatively underexplored, with most prior studies employing significant modeling assumptions to simplify the system.
+- 原句/结构：The interaction between this unsteady flow above the mixing layer, as well as its influence on the vegetation canopy itself, remain relatively underexplored, with most prior studies employing significant modeling assumptions to simplify the system.
+  可迁移模板：The interaction between this unsteady flow above the mixing layer, as well as its influence on the vegetation canopy itself, remain relatively underexplored, with most prior studies employing significant modeling assumptions to simplify the system.
+- 原句/结构：However, it should be noted that when the vegetation canopy becomes sparse, the prominence of the inflection point in the mean velocity profile is reduced and the above KH instability will not be applicable anymore.
+  可迁移模板：However, it should be noted that when the vegetation canopy becomes sparse, the prominence of the inflection point in the mean velocity profile is reduced and the above METHOD instability will not be applicable anymore.
+#### 方法句
+- 原句/结构：The interaction between this unsteady flow above the mixing layer, as well as its influence on the vegetation canopy itself, remain relatively underexplored, with most prior studies employing significant modeling assumptions to simplify the system.
+  可迁移模板：The interaction between this unsteady flow above the mixing layer, as well as its influence on the vegetation canopy itself, remain relatively underexplored, with most prior studies employing significant modeling assumptions to simplify the system.
+- 原句/结构：In this paper a fully coupled fluid–structure modeling approach is used to investigate the interaction mechanism between the vegetation canopy and the mixing layer that arises above it.
+  可迁移模板：In this paper a fully coupled fluid–structure modeling approach is used to investigate the interaction mechanism between the vegetation canopy and the mixing layer that arises above it.
+- 原句/结构：The dependence of vegetation behavior on the bending rigidity and canopy density is explored and five representative behavior states of vegetation are observed: static, flapping, dual, regular waving and irregular waving.
+  可迁移模板：The dependence of vegetation behavior on the bending rigidity and canopy density is explored and five representative behavior states of vegetation are observed: static, flapping, dual, regular waving and irregular waving.
+#### 结果句
+- 原句/结构：In addition, the lock-in effect is observed in the crossover region between the frequency of the mixing layer instability and the natural frequency of the vegetation, which indicates an attraction effect of the mixing layer on the waving frequency of the vegetation. © 2021 Elsevier Ltd.
+  可迁移模板：In addition, the lock-in effect is observed in the crossover region between the frequency of the mixing layer instability and the natural frequency of the vegetation, which indicates an attraction effect of the mixing layer on the waving frequency of the vegetation. © XElsevier Ltd.
+- 原句/结构：In addition, the lock-in effect is observed in the crossover region between the frequency of the mixing layer instability and the natural frequency of the vegetation, which indicates an attraction effect of the mixing layer on the waving frequency of the vegetation. © 2021 Elsevier Ltd.
+  可迁移模板：In addition, the lock-in effect is observed in the crossover region between the frequency of the mixing layer instability and the natural frequency of the vegetation, which indicates an attraction effect of the mixing layer on the waving frequency of the vegetation. © XElsevier Ltd.
+- 原句/结构：In addition, such drag discontinuity also results in strong velocity shear at the top of the canopy, making the flow in this region roll up and form the coherent canopyscale vortices which propagate downstream through the canopy (Ghisalberti and Nepf, 2002).
+  可迁移模板：In addition, such drag discontinuity also results in strong velocity shear at the top of the canopy, making the flow in this region roll up and form the coherent canopyscale vortices which propagate downstream through the canopy (Ghisalberti and Nepf, X).
+#### 贡献句
+- 原句/结构：These canopies can provide habitats for wildlife (Carpenter and Lodge, 1986), capture suspended sediment (Palmer et al., 2004), adjust temperature (Karlsson, 2000) and improve water/air quality (Moore, 2004).
+  可迁移模板：These canopies can provide habitats for wildlife (Carpenter and Lodge, X), capture suspended sediment (Palmer et al., X), adjust temperature (Karlsson, X) and improve water/air quality (Moore, X).
+- 原句/结构：The wavelike motion of vegetation canopy, called honami in terrestrial flow or monami in aquatic flow, provides the striking visualization of such propagations, as shown in Fig. 1.
+  可迁移模板：The wavelike motion of vegetation canopy, called honami in terrestrial flow or monami in aquatic flow, provides the striking visualization of such propagations, as shown in Fig. X.
+- 原句/结构：Here Φ = 0 (or j = 0) represents the case of a single vegetation element which is used to provide a benchmark for comparison with results for a larger canopy.
+  可迁移模板：Here Φ = X(or j = X) represents the case of a single vegetation element which is used to provide a benchmark for comparison with results for a larger canopy.
+#### 限制/边界句
+- 原句/结构：However, it should be noted that when the vegetation canopy becomes sparse, the prominence of the inflection point in the mean velocity profile is reduced and the above KH instability will not be applicable anymore.
+  可迁移模板：However, it should be noted that when the vegetation canopy becomes sparse, the prominence of the inflection point in the mean velocity profile is reduced and the above METHOD instability will not be applicable anymore.
+- 原句/结构：This finding conflicted with the mixing layer model in which the main waving frequency of canopy should be dominated by the flow instability, and therefore indicated a noticeable influence of canopy motion on the flow dynamics.
+  可迁移模板：This finding conflicted with the mixing layer model in which the main waving frequency of canopy should be dominated by the flow instability, and therefore indicated a noticeable influence of canopy motion on the flow dynamics.
+- 原句/结构：Ghisalberti and Nepf (2006) then performed a flume experiment with both rigid and flexible model canopies to study the structure of vegetated shear flow, they found the waving motion of canopy could improve the vertical momentum transport within the canopy and noted that the deflection of the canopy was more than just a passive response to the coherent vortices.
+  可迁移模板：Ghisalberti and Nepf (X) then performed a flume experiment with both rigid and flexible model canopies to study the structure of vegetated shear flow, they found the waving motion of canopy could improve the vertical momentum transport within the canopy and noted that the deflection of the canopy was more than just a passive response to the coherent vortices.
+
+### 20.11 抽取失败与人工复核提示
+
+- 摘要抽取：正常
+- 结论抽取：正常
+- 引文解析：正常
+- 章节树：正常
+- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
+
+<!-- REAUDIT-2026-05-26 END -->
