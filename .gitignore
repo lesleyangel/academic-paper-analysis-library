@@ -1,0 +1,22 @@
+# Source papers and vendor downloads are not published.
+*.pdf
+*.zip
+
+# Full-text extraction outputs may contain copyrighted article text.
+**/文本/txt/
+**/文本/metadata/
+aei/_extracted/*.txt
+aei/_extracted/1-s2.0-*-main.md
+aei/_extracted/1-s2.0-*-main.json
+aei/_extracted/index.json
+
+# Local/editor/runtime noise.
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Keep generated analysis, batch summaries, templates, reports, and tools.
