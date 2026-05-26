@@ -1,0 +1,83 @@
+Fig. 1. Schematic illustration of the DMS model integrating structural and aerodynamic modal spaces.
+
+Fig. 2. Illustration of the structural-to-aerodynamic mesh projection procedure.
+
+Fig. 3. Modeling framework of the DMS-LSTM model.
+
+Fig. 4. Prediction and reconstruction process of unsteady aerodynamic loads using the DMS-LSTM model.
+
+Fig. 5. First four structural modes of the NACA65A004 airfoil.
+
+Fig. 6. Aerodynamic computational mesh of the NACA65A004 airfoil.
+
+Fig. 7. Steady-state pressure contour of the NACA65A004 airfoil at an angle of attack of 10◦.
+
+Fig. 8. Structural modal excitation signals for training set.
+
+Fig. 9. Structural modal excitation signals for test set.
+
+Fig. 10. POD decomposition and generalized aerodynamic forces reduction of the NACA65A004 airfoil in time domain.
+
+Fig. 11. Predicted POD modal coefficients and corresponding absolute errors for the NACA65A004 airfoil using DMS-LSTM, DMS-OpInf, POD-LSTM and POD-OpInf.
+
+Fig. 12. RMSE of predicted first 10 POD coefficients for the NACA65A004 airfoil.
+
+Fig. 13. NSE of predicted first 10 POD coefficients for the NACA65A004 airfoil.
+
+Fig. 14. Predicted lift coefficient for the NACA65A004 airfoil.
+
+Fig. 15. Absolute error of predicted lift coefficient for the NACA65A004 airfoil.
+
+Fig. 16. Box plot of lift coefficient prediction RMSE for the NACA65A004 airfoil.
+
+Fig. 17. Box plot of lift coefficient prediction NSE for the NACA65A004 airfoil.
+
+Fig. 18. Predicted surface pressure coefficient distributions and absolute errors for the NACA65A004 airfoil at 0.0087 s, 0.0241 s, and 0.0359 s.
+
+Fig. 19. Time histories of the prescribed Mach number for the training dataset.
+
+Fig. 20. Time histories of the prescribed Mach number for the testing dataset.
+
+Fig. 21. Time histories of the prescribed angle of attack for the training dataset.
+
+Fig. 22. Time histories of the prescribed angle of attack for the testing dataset.
+
+Fig. 23. Structural modal excitation signals for training set.
+
+Fig. 24. Structural modal excitation signals for test set.
+
+Fig. 25. Predicted lift coefficient for the NACA65A004 airfoil.
+
+Fig. 26. Absolute error of predicted lift coefficient for the NACA65A004 airfoi.
+
+Fig. 28. Box plot of predicted lift coefficient NSE for the NACA65A004 airfoil.
+
+Fig. 29. Finite element mesh of the AGARD445.6 wing structure.
+
+Fig. 27. Box plot of predicted lift coefficient RMSE for the NACA65A004 airfoil.
+
+Fig. 30. First four structural modes of the AGARD445.6 wing.
+
+Fig. 31. Aerodynamic computational mesh of the AGARD445.6 wing.
+
+Fig. 32. Steady-state surface pressure contour of t the AGARD445.6 wing at an angle of attack of 10◦.
+
+Fig. 33. Structural modal excitation signals for training set.
+
+Fig. 34. Structural modal excitation signals for test set.
+
+Fig. 35. POD decomposition and generalized aerodynamic force reduction of the AGARD445.6 wing in time domain.
+
+Fig. 36. Prediction results and absolute errors of POD coefficients for the AGARD445.6 wing using DMS-LSTM and POD-LSTM.
+
+Fig. 37. RMSE of predicted first 40 POD coefficients for the AGARD445.6 wing. Fig. 38. NSE of predicted first 40 POD coefficients for the AGARD445.6 wing.
+
+Fig. 39. Predicted lift coefficient using DMS-LSTM and POD-LSTM for the AGARD445.6 wing.
+
+Fig. 40. Absolute error in predicted lift coefficient predictions for the AGARD445.6 wing.
+
+Fig. 41. Surface pressure coefficient prediction and absolute error using DMS-LSTM and POD-LSTM for the AGARD445.6 wing at 0.0081 s, 0.022 s, and 0.05 s.
+
+Fig. 37. RMSE of predicted first 40 POD coefficients for the AGARD445.6 wing.
+
+Fig. 38. NSE of predicted first 40 POD coefficients for the AGARD445.6 wing.

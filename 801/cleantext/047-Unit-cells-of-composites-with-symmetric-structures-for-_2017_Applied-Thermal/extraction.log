@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Unit-cells-of-composites-with-symmetric-structures-for-_2017_Applied-Thermal.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\047-Unit-cells-of-composites-with-symmetric-structures-for-_2017_Applied-Thermal",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\Unit-cells-of-composites-with-symmetric-structures-for-_2017_Applied-Thermal.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\047-Unit-cells-of-composites-with-symmetric-structures-for-_2017_Applied-Thermal",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 195.01,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\047-Unit-cells-of-composites-with-symmetric-structures-for-_2017_Applied-Thermal\nbody_chars=56715 references=35 tables=11\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T04:56:16"
+}

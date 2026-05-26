@@ -1,0 +1,5 @@
+Table 1 Definitions of coordinate systems
+Name,Symbol,Definition description
+Inertial coordinate system (earth fixed): NED (North-East- Down),$C S ^ { i } : o - x _ { i } y _ { i } z _ { i } ( i ^ { i } j ^ { i } k ^ { i } )$ CS,i (North) kb j(East) $C
+Body coordinate system (body fixed),$C S ^ { b } : o _ { b } - x _ { b } y _ { b } z _ { b } ( i ^ { b } j ^ { b } k ^ { b } )$,k (Down)
+Path coordinate system,$C S ^ { g } : p - x _ { g } y _ { g } z _ { g } ( i ^ { g } j ^ { g } k ^ { g } )$,p CSg ks

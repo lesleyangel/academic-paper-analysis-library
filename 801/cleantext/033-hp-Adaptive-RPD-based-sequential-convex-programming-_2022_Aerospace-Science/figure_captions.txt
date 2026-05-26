@@ -1,0 +1,25 @@
+Fig. 1. Coordinate system and states notations. ⎧ ⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎨
+
+Fig. 2. Division of segments and distribution of discretized points.
+
+Fig. 3. Sparsity pattern of the differentiation matrix.
+
+Fig. 4. Altitude histories for maximum longitudinal reentry.
+
+Fig. 5. Ground tracks for maximum longitudinal reentry.
+
+Fig. 6. Bank angle history and error of control defined by 1 −(u2 1 + u2 2).
+
+Fig. 7. Longitude-altitude curve updates during the iteration. (For interpretation of the colors in the figure(s), the reader is referred to the web version of this article.)
+
+Fig. 8. Mean of five state residual and max differential error history.
+
+Fig. 9. Number of discretized points and CPU time for each iteration.
+
+Fig. 10. Optimal longitude-altitude curves obtained by different algorithms.
+
+Fig. 11. Maximum residual history in different algorithms.
+
+Fig. 1. Coordinate system and states notations.
+
+Fig. 6. Bank angle history and error of control defined by $1 - ( u _ { 1 } ^ { 2 } + u _ { 2 } ^ { 2 } )$

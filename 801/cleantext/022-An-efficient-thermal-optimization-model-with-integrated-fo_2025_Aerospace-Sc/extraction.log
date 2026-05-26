@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\022-An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\022-An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 158.7,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\022-An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc\nbody_chars=56494 references=43 tables=5\nnoise_flags=many_figure_caption_markers\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T03:34:22"
+}

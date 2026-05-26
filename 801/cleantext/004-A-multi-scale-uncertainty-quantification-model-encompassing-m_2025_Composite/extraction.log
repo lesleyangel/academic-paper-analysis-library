@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-multi-scale-uncertainty-quantification-model-encompassing-m_2025_Composite.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\004-A-multi-scale-uncertainty-quantification-model-encompassing-m_2025_Composite",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-multi-scale-uncertainty-quantification-model-encompassing-m_2025_Composite.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\004-A-multi-scale-uncertainty-quantification-model-encompassing-m_2025_Composite",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 371.98,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\004-A-multi-scale-uncertainty-quantification-model-encompassing-m_2025_Composite\nbody_chars=73458 references=46 tables=14\nnoise_flags=many_figure_caption_markers,many_table_caption_markers\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T02:13:35"
+}

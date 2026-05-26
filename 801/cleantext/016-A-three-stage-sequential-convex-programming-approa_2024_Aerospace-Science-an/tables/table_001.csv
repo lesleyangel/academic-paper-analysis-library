@@ -1,0 +1,19 @@
+Parameters,Value,
+Properties,Lift coefficient,"{—0.2355, 2.9451, 0.2949, −0.3394}"
+,Drag coefficient,"{0.0234, 2.3795, 0.3983, -1.0794}"
+,Reference area (m2),0.484
+,Mass (kg),907.2
+Trajectory,Initial,Ho (km),80
+conditions,,θ0 (deg),100
+,,φo (deg),-30
+,,v0 (m/s),6800
+,,γ0 (deg),-1.5
+,,0 (deg),90
+,Terminal,Hf (km),20
+,,φf (deg),43
+,,vf(m/s),780
+,,γf (deg),-3
+,,ψf (deg),100
+,Path,qmax (kPa),38
+,boundary,Qmax (kW/,2500
+,,m2) $n _ { \mathrm { m a x } }$,3.5

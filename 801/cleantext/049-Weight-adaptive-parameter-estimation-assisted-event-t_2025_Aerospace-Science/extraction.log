@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Weight-adaptive-parameter-estimation-assisted-event-t_2025_Aerospace-Science.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\049-Weight-adaptive-parameter-estimation-assisted-event-t_2025_Aerospace-Science",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\Weight-adaptive-parameter-estimation-assisted-event-t_2025_Aerospace-Science.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\049-Weight-adaptive-parameter-estimation-assisted-event-t_2025_Aerospace-Science",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 249.77,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\049-Weight-adaptive-parameter-estimation-assisted-event-t_2025_Aerospace-Science\nbody_chars=56966 references=79 tables=6\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T05:03:20"
+}

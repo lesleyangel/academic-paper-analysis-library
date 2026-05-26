@@ -1,0 +1,10 @@
+| Step | Description |
+| --- | --- |
+| Step 1 | Discretize $[ t _ { s } , t _ { \mathrm { e } } ]$ into $n _ { \mathrm { i n i t } }$ time instants $t _ { i } ( i = 1 , 2 , . . . , n _ { \mathrm { i n i t } } )$ evenly. |
+| Step 2 | Employ SSL procedure to search LBMPPs and UBMPPs at 1 $\ u _ { i } ( i = 1 , 2 , . . . , n _ { \mathrm { i n i t } } )$ to obtain the initial training samples $\{ ( t _ { i } , \mathbf { u } _ { \mathrm { M P P } } ^ { \mathrm { L } } ( t _ { i } ) ) | i = 1 , 2 , . . . , n _ { \mathrm { i n i t } } \}$ and {(t, ${ \bf u } _ { \mathrm { M P P } } ^ { \mathrm { U } } ( t _ { i } ) ) | i = 1 , 2 , . . . , n _ { \mathrm { i n i t } } \}$ , respectively. |
+| Step $^ 3$ | Construct or update Kriging models L MPP(t) and U MPP(t) with corresponding sample sets. |
+| Step 4 | For L MPP(t), i $\Gamma e ^ { \mathrm { L } } ( t ^ { * } ) \leq e ^ { \mathrm { L } } \operatorname { t a r g e t } , g 0$ to the next step; otherwise, identify the time instant t* by Eq. (26) and add the new sample (t*, uL MPP(t*)) to the training sample set, then, go to Step 3. In this step, U MPP(t) is updated as |
+| Step 5 | similar to L MPP(t). Linearize the lower and upper bounds of the time-variant limit-state function to two Gaussian processes H'(t) and $H ^ { \mathrm { U } } ( t )$ based on the approximated BMPPT, and compute the corresponding characteristic |
+| Step 6 | functions. Expand H(t) and $H ^ { \mathrm { U } } ( t )$ by the eigenvalues and eigenvectors of the corresponding covariance matrix. |
+| Step $^ { 7 }$ | Generate the samples of $H ^ { \mathrm { L } } ( t )$ and $H ^ { \mathrm { U } } ( t )$ based on EOLE and MCS. |
+| Step 8 | Estimate PU $\mathrm { f } ( t _ { s } , t _ { \mathrm { e } } )$ and PL $\mathrm { f } ( t _ { \mathrm { s } } , t _ { \mathrm { e } } )$ with generated samples through Eqs. (34) and (35), respectively. |

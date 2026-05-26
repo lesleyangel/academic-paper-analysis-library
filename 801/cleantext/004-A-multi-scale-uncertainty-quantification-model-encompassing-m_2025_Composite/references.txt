@@ -1,0 +1,91 @@
+[1] ˙Inal O, Katnam KB, Potluri P, Soutis C. Progress in interlaminar toughening of aerospace polymer composites using particles and non-woven veils. Aeronaut J 2022;126:222–48.
+
+[2] Amraei J, Rogala T, Katunin A, Premanand A, et al. Thermomechanical fatigue behavior of CF/PEKK composite under low and ultrasonic frequencies. Compos B Eng 2024;281:111539.
+
+[3] Abtew MA. A comprehensive review on advancements, innovations and applications of 3D warp interlock fabrics and its composite materials. Compos B Eng 2024;278:111395.
+
+[4] Ivanov DS, Lomov SV. 2 - Modelling the structure and behaviour of 2D and 3D woven composites used in aerospace applications. In: Irving PE, Soutis C, editors. Polymer Composites in the Aerospace Industry. Woodhead Publishing; 2015. p. 21–52.
+
+[5] Potter, K. D., Understanding the origins of defects and variability in composites manufacture. In International conference on composite materials (ICCM)-17, Edinburgh, UK (2009): p. 18.
+
+[6] Mesogitis TS, Skordos AA, Long AC. Uncertainty in the manufacturing of fibrous thermosetting composites: A review. Compos A Appl Sci Manuf 2014;57:67–75.
+
+[7] Greene MS, Xu H, Tang S, Chen W, Liu WK. A generalized uncertainty propagation criterion from benchmark studies of microstructured material systems. Comput Methods Appl Mech Eng 2013;254:271–91.
+
+[8] Fang G, Wang B, Liang J. A coupled FE-FFT multiscale method for progressive damage analysis of 3D braided composite beam under bending load. Compos Sci Technol 2019;181:107691.
+
+[9] Zhu C, Zhu P, Liu Z. Uncertainty analysis of mechanical properties of plain woven carbon fiber reinforced composite via stochastic constitutive modeling. Compos Struct 2019;207:684–700.
+
+[10] Wang B, Fang G, Wang H, Liang J, Dai F, Meng S. Uncertainty modelling and multiscale simulation of woven composite twisted structure. Compos Sci Technol 2022;217:109118.
+
+[11] Tao W, Zhu P, Xu C, Liu Z. Uncertainty quantification of mechanical properties for three-dimensional orthogonal woven composites Part II: Multiscale simulation. Compos Struct 2020;235:111764.
+
+[12] Bostanabad R, Liang B, Gao J, Liu WK, Cao J, Zeng D, et al. Uncertainty quantification in multiscale simulation of woven fiber composites. Comput Methods Appl Mech Eng 2018;338:506–32.
+
+[13] Zhang H, Zhang L, Xu C, Liu Z, Zhu P. Global sensitivity analysis of mechanical properties in hybrid single lap aluminum-CFRP (plain woven) joints based on uncertainty quantification. Compos Struct 2022;280:114841.
+
+[14] Shi B, Deng Z. Multiscale reliability analysis of composite structures based on computer vision. Compos Struct 2022;292:115587.
+
+[15] Mishra S, Schwab C. Sparse tensor multi-level Monte Carlo finite volume methods for hyperbolic conservation laws with random initial data. Math Comp 2012;81: 1979–2018.
+
+[16] Alhassan E, Rochman D, Sj¨ostrand H, Vasiliev A, Koning AJ, Ferroukhi H. Bayesian updating for data adjustments and multi-level uncertainty propagation within Total Monte Carlo. Ann Nucl Energy 2020;139:107239.
+
+[17] Gommers B, Verpoest I, Van Houtte P. The Mori-Tanaka method applied to textile composite materials. Acta Mater 1998;46:2223–35.
+
+[18] S. Li, On the unit cell for micromechanical analysis of fibre-reinforced composites, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences 455 (1999) 815–838.
+
+[19] Li S, Wongsto A. Unit cells for micromechanical analyses of particle-reinforced composites. Mech Mater 2004;36:543–72.
+
+[20] Li S. On the nature of periodic traction boundary conditions in micromechanical FE analyses of unit cells. IMA J Appl Math 2012;77:441–50.
+
+[21] Li S. Boundary conditions for unit cells from periodic microstructures and their implications. Compos Sci Technol 2008;68:1962–74.
+
+[22] S. Li, E. Sitnikova, Representative Volume Elements and Unit Cells: Concepts, Theory, Applications and Implementation, Woodhead Publishing, Duxford, 2019.
+
+[23] Li S. General unit cells for micromechanical analyses of unidirectional composites. Compos A Appl Sci Manuf 2001;32:815–26.
+
+[24] Zeng T, Wu L, Guo L. A finite element model for failure analysis of 3D braided composites. Mater Sci Eng A 2004;366:144–51.
+
+[25] Zhang C, Xu X. Finite element analysis of 3D braided composites based on three unit-cells models. Compos Struct 2013;98:130–42.
+
+[26] Li D, Fang D, Jiang N, Xuefeng Y. Finite element modeling of mechanical properties of 3D five-directional rectangular braided composites. Compos B Eng 2011;42: 1373–85.
+
+[27] Zeng T, Wu L, Guo L. Mechanical analysis of 3D braided composites: a finite element model. Compos Struct 2004;64:399–404.
+
+[28] Sun X, Sun C. Mechanical properties of three-dimensional braided composites. Compos Struct 2004;65:485–92.
+
+[29] Fang G, Liang J, Wang B. Progressive damage and nonlinear analysis of 3D four- directional braided composites under unidirectional tension. Compos Struct 2009; 89:126–33.
+
+[30] Dong K, Peng X, Zhang J, Gu B, Sun B. Temperature-dependent thermal expansion behaviors of carbon fiber/epoxy plain woven composites: Experimental and numerical studies. Compos Struct 2017;176:329–41.
+
+[31] Fang G, Liang J, Wang Y, Wang B. The effect of yarn distortion on the mechanical properties of 3D four-directional braided composites. Compos A Appl Sci Manuf 2009;40:343–50.
+
+[32] Balokas G, Kriegesmann B, Rolfes R. Data-driven inverse uncertainty quantification in the transverse tensile response of carbon fiber reinforced composites. Compos Sci Technol 2021;211:108845.
+
+[33] Li H, Khodaei ZS, Aliabadi MHF. Multiscale modelling of material degradation and failure in plain woven composites: A novel approach for reliable predictions enabled by meta-models. Compos Sci Technol 2023;233:109910.
+
+[34] Gou JJ, Gong CL, Gu LX, Li S, Tao WQ. The unit cell method in predictions of thermal expansion properties of textile reinforced composites. Compos Struct 2018;195:99–117.
+
+[35] Gou JJ, Zhang H, Dai YJ, Li S, Tao WQ. Numerical prediction of effective thermal conductivities of 3D four-directional braided composites. Compos Struct 2015;125: 499–508.
+
+[36] Gou JJ, Dai YJ, Li S, Tao WQ. Numerical study of effective thermal conductivities of plain woven composites by unit cells of different sizes. Int J Heat Mass Transf 2015;91:829–40.
+
+[37] Gou JJ, Fang WZ, Dai YJ, Li S, Tao WQ. Multi-size unit cells to predict effective thermal conductivities of 3D four-directional braided composites. Compos Struct 2017;163:152–67.
+
+[38] Gou JJ, Gong CL, Tao WQ. Appropriate utilization of the unit cell method in thermal calculation of composites. Appl Therm Eng 2018;139:295–306.
+
+[39] Rosenblatt M. Remarks on a Multivariate Transformation. Ann Math Stat 1952;23: 470–2.
+
+[40] Liu PL, Der Kiureghian A. Multivariate distribution models with prescribed marginals and covariances. Probab Eng Mech 1986;1:105–12.
+
+[41] Frees EW, Valdez EA. Understanding Relationships Using Copulas. North American Actuarial Journal 1998;2:1–25.
+
+[42] Tao W, Zhu P, Xu C, Liu Z. Uncertainty quantification of mechanical properties for three-dimensional orthogonal woven composites Part I: Stochastic reinforcement geometry reconstruction. Compos Struct 2020;235:111763.
+
+[43] Yang Z, Yan H. Multiscale modeling and failure analysis of an 8-harness satin woven composite. Compos Struct 2020;242:112186.
+
+[44] Shapiro SS, Wilk MB. An analysis of variance test for normality (complete samples). Biometrika 1965;52(3-4):591–611.
+
+[45] Muschinski T, Mayr GJ, Simon T, Umlauf N, Zeileis A. Cholesky-based multivariate Gaussian regression. Econometr Stat 2024;29:261–81.
+
+[46] Naik NK, Ganesh VK. Prediction of on-axes elastic properties of plain weave fabric composites. Compos Sci Technol 1992;45:135–52. Yu-Cheng Yang: Writing – original draft, Visualization, Software, Methodology, Investigation, Formal analysis, Conceptualization. Jian- Jun Gou: Writing – review & editing, Supervision, Conceptualization. Chun-Lin Gong: Project administration, Investigation. Yue-Er Sun: Visualization, Data curation. Shuguang Li: Validation, Conceptualization.

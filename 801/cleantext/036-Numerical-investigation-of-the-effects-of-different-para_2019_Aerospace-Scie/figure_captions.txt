@@ -1,0 +1,45 @@
+Fig. 1. Comparison of verification results. The hydrodynamics coefficients of verification example and our results. (a) Lift coefficient with combined parameter of frequency and time. (b) Thrust coefficient with combined parameter of frequency and time.
+
+Fig. 2. (a) is NACA0012 flapping wing model, (b) is the flow field calculation domain. The flow field employed a standard Cartesian grid.
+
+Fig. 3. The hydrodynamics coefficients of flapping wings at different grid numbers for St = 0.6, Re = 200, ϕ = π/2 and Aθ = π/6 case. (a) Lift force coefficient. (b) Trust force coefficient.
+
+Fig. 4. The vorticity contour plot of NACA0012 flapping wing spread spanwise symmetry plane under three different grids. (a) Coarse grid, (b) Nominal grid, (c) Finer grid.
+
+Fig. 5. The hydrodynamics coefficients of flapping wings at different time steps for St = 0.6, Re = 200, ϕ = π/2 and Aθ = π/6 case. (a) Lift force coefficient, (b) Trust force coefficient.
+
+Fig. 6. The vorticity contour plot of NACA0012 flapping wing spread spanwise symmetry plane under three different time steps. (a) Loose time, (b) Nominal time, (c) Compact time.
+
+Fig. 7. Average velocity contour in one flapping cycle at the spanwise symmetry plane under different wing shapes. (a) Ellipsoidal wing, (b) NACA0012 wing, (c) Cuboid wing. (For interpretation of the colors in the figure(s), the reader is referred to the web version of this article.)
+
+Fig. 8. The hydrodynamics coefficients of flapping wings at different at different wing shape. (a) Lift force coefficient, (b) Thrust force coefficient. Both represent the relation- ship between thrust coefficients and combined parameter of frequency and time.
+
+Fig. 9. The vorticity contour plot of NACA0012 flapping wing spread wing span symmetry plane at different wing shapes. (a) Ellipsoidal wing, (b) NACA0012 wing, (c) Cuboid wing. The three states used the same color space.
+
+Fig. 10. Partial magnification of the vorticity contour in the wing span symmetry plane. Where, three-dimensional flapping wing is black. The three states used the same color space. (a) Ellipsoidal wing, (b) NACA0012 wing, (c) Cuboid wing.
+
+Fig. 11. The vortices varieties of the NACA0012 wing movement in one cycle at different time.
+
+Fig. 12. The vortex structure of the flapping wing identified by Q-criterion (Q = 0.1) in the wake zone of flapping wings at different wing shapes. Where, the picture marked the same order vortex structure with thin red lines.
+
+Fig. 13. One-cycle average velocity contours of NACA0012 wing with different aspect ratios.
+
+Fig. 14. The hydrodynamics coefficients of flapping wings at different at different aspect ratios. (a) Lift force coefficient. (b) Thrust force coefficient. Both represent the relationship between thrust coefficients and combined parameter of frequency and time.
+
+Fig. 15. Partial magnification of the vorticity contour in the wing span symmetry plane at different aspect ratios. The five states used the same color space.
+
+Fig. 16. The vortex structure of the flapping wing identified by Q-criterion (Q = 0.1) in the wake zone of flapping wings at different aspect ratios.
+
+Fig. 17. Velocity contour in the spanwise symmetry plane at different pitch-bias angles.
+
+Fig. 18. The hydrodynamics coefficients of flapping wings at different at different pitch-bias angles. (a) Lift force coefficient. (b) Thrust force coefficient. Both represent the relationship between thrust coefficients and combined parameter of frequency and time.
+
+Fig. 19. Vorticity contour in wing span symmetry plane at different pitch-bias angles.
+
+Fig. 3. The hydrodynamics coefficients of flapping wings at different grid numbers for $S t = 0 . 6 , R e = 2 0 0 , \varphi = \pi / 2$ and $A _ { \theta } = \pi / 6$ case. (a) Lift force coefficient. (b) Trust force coefficient.
+
+Fig. 5. The hydrodynamics coefficients of flapping wings at different time steps for $S t = 0 . 6 ,$ Re = 200, $\varphi = \pi / 2$ and $A _ { \theta } = \pi / 6$ case. (a) Lift force coefficient, (b) Trust force coefficient.
+
+Fig. 8. The hydrodynamics coefficients of flapping wings at different at different wing shape. (a) Lift force coefficient, (b) Thrust force coefficient. Both represent the relationship between thrust coefficients and combined parameter of frequency and time.
+
+Fig. 12. The vortex structure of the flapping wing identified by Q-criterion (Q 0.1) in the wake zone of flapping wings at different wing shapes. Where, the picture marked the same order vortex structure with thin red lines.

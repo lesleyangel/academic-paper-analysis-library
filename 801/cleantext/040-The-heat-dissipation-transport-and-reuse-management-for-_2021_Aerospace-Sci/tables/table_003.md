@@ -1,0 +1,5 @@
+|  | Configuration | Windward | Leeward |
+| --- | --- | --- | --- |
+| Head | Flat | Modified Newtonian | Prandtl-Meyer Expansion |
+| Fuselage | Flat | Modified Newtonian | Prandtl-Meyer Expansion |
+| Wing | Flat | Modified Newtonian | Prandtl-Meyer Expansion |

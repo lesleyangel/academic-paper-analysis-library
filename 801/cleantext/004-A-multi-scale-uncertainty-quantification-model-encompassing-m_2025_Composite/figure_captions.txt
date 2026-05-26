@@ -1,0 +1,47 @@
+Fig. 1. Multi-scale uncertainty quantification process.
+
+Fig. 3. Reflection symmetry diagram.
+
+Fig. 2. Structure with translational symmetry.
+
+Fig. 6. Fiber bundles and unit cells.
+
+Fig. 7. Geometric parameters of unit cells for fiber bundles.
+
+Fig. 8. Boundaries of unit cells for fiber bundles.
+
+Fig. 9. Plain woven composite and unit cells.
+
+Fig. 10. Geometric parameters of unit cells for plain woven composites.
+
+Fig. 11. Boundaries of unit cells for plain woven composite.
+
+Fig. 12. Fiber bundle uncertainty input frequency histogram.
+
+Fig. 13. Plain woven composite uncertainty input frequency histogram.
+
+Fig. 14. Multi-scale uncertainty propagation process.
+
+Fig. 15. Displacement fields of fiber bundles for different calculation cases.
+
+Fig. 16. Displacement fields of plain woven composites for different calculation cases.
+
+Fig. 17. Relative difference to UC1 (fiber bundles).
+
+Fig. 18. Relative difference to UC1 (plain woven composites).
+
+Fig. 19. The evolution of the mean and variance along with the sample size (fiber bundles).
+
+Fig. 20. The frequency histogram of output parameters for fiber bundles.
+
+Fig. 21. Input-output correlation of fiber bundles.
+
+Fig. 22. The evolution of parameters’ mean and variance along with the sample size (plain woven composites).
+
+Fig. 23. The frequency histogram of output parameters for plain woven composites.
+
+Fig. 24. Input-output correlation of plain woven composites.
+
+Fig. 4. 180◦ rotational symmetric structure diagram.
+
+Fig. 5. Displacement expression of a unit cell.

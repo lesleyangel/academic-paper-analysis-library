@@ -1,0 +1,519 @@
+{
+  "body_chars": 31244,
+  "body_words_estimate": 4589,
+  "noise_flags": [],
+  "engines": {
+    "pymupdf": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 104,
+      "pages": 9,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "docling": {
+      "available": false,
+      "succeeded": false,
+      "error": "No module named 'docling'",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "grobid": {
+      "available": false,
+      "succeeded": false,
+      "error": "No GROBID URL provided.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "mineru": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 53371,
+      "references": 0,
+      "tables": 0
+    },
+    "marker": {
+      "available": false,
+      "succeeded": false,
+      "error": "Marker CLI not found.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    }
+  },
+  "chosen_sources": {
+    "abstract": "",
+    "body": "mineru",
+    "references": "pymupdf_bbox_or_body_tail"
+  },
+  "audit": {
+    "quality_score": 1.0,
+    "needs_manual_review": false,
+    "issues_before_repair": [
+      {
+        "code": "references_inside_body",
+        "severity": "high",
+        "message": "Back matter heading was detected inside clean body."
+      },
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      }
+    ],
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "4 formula(s) need manual review."
+      }
+    ],
+    "repairs_applied": [
+      {
+        "action": "strip_back_matter",
+        "message": "Removed back matter from clean body and parsed reference-like tail entries.",
+        "after": 41315
+      },
+      {
+        "action": "trim_front_matter_to_main_body",
+        "message": "Trimmed title/authors/abstract/front matter before main body heading: ## 1. Introduction",
+        "before": 41315,
+        "after": 38888
+      },
+      {
+        "action": "move_figure_captions",
+        "message": "Moved figure captions out of clean body.",
+        "after": 6
+      },
+      {
+        "action": "move_table_like_blocks",
+        "message": "Moved table-like blocks out of clean body.",
+        "after": 1
+      },
+      {
+        "action": "normalize_inline_body_formulas",
+        "message": "Normalized inline/display math spans inside clean body.",
+        "after": 15
+      },
+      {
+        "action": "drop_false_positive_equations",
+        "message": "Dropped equation candidates that looked like prose/table labels rather than formulas.",
+        "after": 1
+      },
+      {
+        "action": "normalize_formula_text",
+        "message": "Normalized formula spacing, common OCR symbols, and simple LaTeX temperature/unit forms.",
+        "after": 15
+      },
+      {
+        "action": "sort_numbered_references",
+        "message": "Sorted numbered references after extraction order appeared scrambled.",
+        "before": 49,
+        "after": 49
+      }
+    ],
+    "candidate_scores": {
+      "mineru": {
+        "score": 1.0,
+        "chars": 31339,
+        "words_estimate": 4604,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 0,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": false,
+        "garbage_ratio": 0.0011,
+        "section_heading_count": 19
+      },
+      "pymupdf_bbox": {
+        "score": 1.0,
+        "chars": 28709,
+        "words_estimate": 4214,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 1,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": false,
+        "garbage_ratio": 0.0015,
+        "section_heading_count": 19
+      }
+    },
+    "final_body_metrics": {
+      "score": 1.0,
+      "chars": 31244,
+      "words_estimate": 4589,
+      "references_inside_body": false,
+      "publisher_noise_hits": 0,
+      "mojibake_hits": 0,
+      "caption_paragraph_starts": 0,
+      "table_like_paragraphs": 0,
+      "duplicate_paragraphs": 0,
+      "starts_with_continuation_fragment": false,
+      "garbage_ratio": 0.0011,
+      "section_heading_count": 19
+    },
+    "body_purification": {
+      "main_body_start_found": true,
+      "main_body_start_heading": "## 1. Introduction",
+      "front_matter_removed_chars": 2427,
+      "starts_with": "## 1. Introduction",
+      "section_sequence": {
+        "top_level_numbers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "missing_top_level_numbers": [],
+        "non_monotonic": false,
+        "headings": [
+          "## 1. Introduction",
+          "## 2. Materials and methods",
+          "## 2.1. Cells",
+          "## 2.2. RPM system",
+          "## 2.3. Observation and identification of cell concentration and phenotype",
+          "## 2.4. BV2 cell viability",
+          "## 2.5. BV2 cell apoptosis",
+          "## 2.6. Transcriptome sequencing",
+          "## 2.7. Differential expression analysis and enrichment analysis",
+          "## 2.8. Quantitative real-time PCR analysis",
+          "## 2.9. Statistical analysis",
+          "## 3. Results",
+          "## 3.1. Reduced cell activity under simulated microgravity",
+          "## 3.2. Activation M1 polarization of BV2 cells under simulated microgravity",
+          "## 3.3. Induced late apoptosis of BV2 cells under simulated microgravity",
+          "## 3.4. Transcriptome sequencing for differential expression analysis",
+          "## 3.5. Enrichment analysis of DEGs",
+          "## 3.6. Validation of the DEGs",
+          "## 4. Discussion"
+        ]
+      }
+    },
+    "formula_audit": {
+      "input_equations_count": 2,
+      "output_equations_count": 16,
+      "inline_formula_count": 15,
+      "dropped_false_positive_count": 1,
+      "low_confidence_count": 4,
+      "formulas": [
+        {
+          "id": "equation_001",
+          "source": "equations",
+          "meta": "[page 1, bbox (40.42, 659.04, 333.57, 690.38)]",
+          "original": "* Corresponding author. ** Corresponding author. E-mail addresses: huyanting@nwpu.edu.cn (T. Huyan), jj.gou@nwpu.edu.cn (J.-J. Gou).",
+          "normalized": "* Corresponding author. ** Corresponding author. E-mail addresses: huyanting@nwpu.edu.cn (T. Huyan), jj.gou@nwpu.edu.cn (J.-J. Gou)",
+          "confidence": 0.57,
+          "needs_review": true,
+          "issues": [
+            "text_heavy"
+          ],
+          "drop": false,
+          "repairs": [
+            "unit_expression_repaired"
+          ]
+        },
+        {
+          "id": "equation_002",
+          "source": "equations",
+          "meta": "[page 1, bbox (37.59, 695.66, 355.13, 716.91)]",
+          "original": "https://doi.org/10.1016/j.actaastro.2024.03.056 Received 22 August 2023; Received in revised form 24 February 2024; Accepted 28 March 2024",
+          "normalized": "https://doi.org/10.1016/j.actaastro.2024.03.056 Received 22 August 2023; Received in revised form 24 February 2024; Accepted 28 March 2024",
+          "confidence": 0.57,
+          "needs_review": true,
+          "issues": [
+            "text_heavy"
+          ],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( \\mathsf { C A } \\mathsf { S } ,",
+          "normalized": "( \\mathsf{CA} \\mathsf{S} ,",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.67,
+          "needs_review": true,
+          "issues": [
+            "unbalanced_delimiters"
+          ],
+          "drop": false,
+          "id": "body_inline_001"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "3 7 ^ { \\circ } \\mathrm { C }",
+          "normalized": "37~^{\\circ}\\mathrm{C}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired",
+            "unit_expression_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_002"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathrm { C O } _ { 2 } .",
+          "normalized": "\\mathrm{CO} _ {2}",
+          "repairs": [
+            "latex_spacing_repaired",
+            "unit_expression_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_003"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathrm { W } \\times 3 5 \\mathrm { H } \\mathrm { m m } )",
+          "normalized": "\\mathrm{W} \\times 35 \\mathrm{H} \\mathrm{mm} )",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.67,
+          "needs_review": true,
+          "issues": [
+            "unbalanced_delimiters"
+          ],
+          "drop": false,
+          "id": "body_inline_005"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathrm { m m } ^ { 2 }",
+          "normalized": "\\mathrm{mm} ^ {2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_006"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "3 7 ^ { \\circ } \\mathrm { C }",
+          "normalized": "37~^{\\circ}\\mathrm{C}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired",
+            "unit_expression_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_007"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathrm { C O } _ { 2 }",
+          "normalized": "\\mathrm{CO} _ {2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_008"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\times 1 0 ^ { 7 }",
+          "normalized": "\\times 10 ^ {7}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_009"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "2 \\times { 1 0 } ^ { 4 }",
+          "normalized": "2 \\times {10} ^ {4}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_010"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "3 7 ^ { \\circ } \\mathrm { C }",
+          "normalized": "37~^{\\circ}\\mathrm{C}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired",
+            "unit_expression_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_011"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathsf { a } \\mathrm { C O } _ { 2 }",
+          "normalized": "\\mathsf{a} \\mathrm{CO} _ {2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_012"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "2 ^ { - \\Delta \\Delta \\mathrm { C t } }",
+          "normalized": "2 ^ {- \\Delta \\Delta \\mathrm{Ct}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_013"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "p < 0 . 0 5",
+          "normalized": "p < 0.05",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_014"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "p < 0 . 0 1",
+          "normalized": "p < 0.01",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_015"
+        }
+      ],
+      "dropped": [
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "{ \\bf { s o } } ,",
+          "normalized": "{\\bf {s o}} ,",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_004"
+        }
+      ]
+    },
+    "section_headings_detected": [
+      "## 1. Introduction",
+      "## 2. Materials and methods",
+      "## 2.1. Cells",
+      "## 2.2. RPM system",
+      "## 2.3. Observation and identification of cell concentration and phenotype",
+      "## 2.4. BV2 cell viability",
+      "## 2.5. BV2 cell apoptosis",
+      "## 2.6. Transcriptome sequencing",
+      "## 2.7. Differential expression analysis and enrichment analysis",
+      "## 2.8. Quantitative real-time PCR analysis",
+      "## 2.9. Statistical analysis",
+      "## 3. Results",
+      "## 3.1. Reduced cell activity under simulated microgravity",
+      "## 3.2. Activation M1 polarization of BV2 cells under simulated microgravity",
+      "## 3.3. Induced late apoptosis of BV2 cells under simulated microgravity",
+      "## 3.4. Transcriptome sequencing for differential expression analysis",
+      "## 3.5. Enrichment analysis of DEGs",
+      "## 3.6. Validation of the DEGs",
+      "## 4. Discussion"
+    ],
+    "final_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    }
+  },
+  "header_footer_repeated_count": 3,
+  "header_footer_removed_count": 27,
+  "tables_count": 1,
+  "figure_captions_count": 9,
+  "table_captions_count": 0,
+  "equations_count": 13,
+  "references_count": 49,
+  "scanned_pdf_detected": false,
+  "ocr_fallback_needed": false
+}

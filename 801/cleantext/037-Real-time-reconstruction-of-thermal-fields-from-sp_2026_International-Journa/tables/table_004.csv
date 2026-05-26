@@ -1,0 +1,4 @@
+Number of raw samples used,$\mathrm { R } ^ { 2 }$,RMSE/(kW/m2),Relative error/%
+15,0.566,9.669,41.274
+26,0.841,5.851,23.453
+40,0.957,3.072,9.751

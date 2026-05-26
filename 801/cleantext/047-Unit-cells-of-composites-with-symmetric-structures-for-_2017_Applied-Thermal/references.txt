@@ -1,0 +1,69 @@
+[1] F. Gori, S. Corasaniti, W.M. Worek, W.J. Minkowycz, Theoretical prediction of thermal conductivity for thermal protection systems, Appl. Therm. Eng. 49 (2012) 124–130.
+
+1. Effective thermal properties of composites with symmetric structures can be efficiently calculated by a unit cell model, which should be formulated based on the symmetries indicated in the structures, and the corresponding boundary conditions should be derived based on temperature distribution disciplines clarified in this work.
+
+[2] J. Xie, J. Liang, G. Fang, Z. Chen, Effect of needling parameters on the effective properties of 3D needled C/C-SiC composites, Compos. Sci. and Technol. 117 (2015) 69–77.
+
+[3] W.Z. Fang, J.J. Gou, H. Zhang, Q. Kang, W.Q. Tao, Numerical predictions of the effective thermal conductivity for needled C/C-SiC composite materials, Numer. Heat Transf. Part A: Appl. 70 (10) (2016) 1101–1117.
+
+3. Each utilization of symmetries can create a new unit cell with smaller size, and new boundary conditions should be derived strictly since inappropriate boundary conditions will affect the calculation accuracy.
+
+[4] L. Chen, H.-B. Luan, Y.-L. He, W.-Q. Tao, Pore-scale flow and mass transport in gas diffusion layer of proton exchange membrane fuel cell with interdigitated flow fields, Int. J. Therm. Sci. 51 (2012) 132–144.
+
+4. For the studied satin woven composites, the in-plane thermal conductivity increases, while the out-plane one decreases very slightly with the increasing harness of composites.
+
+[5] X. He, Y. Guo, M. Li, N. Pan, M. Wang, Effective gas diffusion coefficient in fibrous materials by mesoscopic modeling, Int. J. Heat Mass Transf. 107 (2017) 736–746.
+
+[6] M. Wang, N. Pan, Modeling and prediction of the effective thermal conductivity of random open-cell porous foams, Int. J. Heat Mass Transf. 51 (5–6) (2008) 1325–1331.
+
+[7] P. Ranut, On the effective thermal conductivity of aluminum metal foams: review and improvement of the available empirical and analytical models, Appl. Therm. Eng. 101 (2016) 496–524.
+
+[8] J. Su, X. Liu, M. Charmchi, H. Sun, Experimental and numerical study of anisotropic thermal conductivity of magnetically aligned PDMS/Ni particle composites, Int. J. Heat Mass Transf. 97 (2016) 645–652.
+
+[9] M. Wang, N. Pan, Predictions of effective physical properties of complex multiphase materials, Mater. Sci. Eng. R: Rep. 63 (1) (2008) 1–30.
+
+[10] M. Wang, Q. Kang, N. Pan, Thermal conductivity enhancement of carbon fiber composites, Appl. Therm. Eng. 29 (2–3) (2009) 418–421.
+
+[11] M. Wang, N. Pan, Elastic property of multiphase composites with random microstructures, J. Comput. Phys. 228 (16) (2009) 5978–5988.
+
+[12] B. Yang, A Distributed Transfer Function Method for Heat Conduction Problems in Multilayer Composites, Numer. Heat Transf. Part B: Fundam. 54 (4) (2008) 314–337.
+
+[13] Z. Xia, C. Zhou, Q. Yong, X. Wang, On selection of repeated unit cell model and application of unified periodic boundary conditions in micro-mechanical analysis of composites, Int. J. Solids Struct. 43 (2) (2006) 266–278.
+
+[14] H.Z. Li, S. Li, Y.C. Wang, Prediction of effective thermal conductivities of woven fabric composites using unit cells at multiple length scales, J. Mater. Res. 26 (3) (2011) 384–394.
+
+[15] K. Dong, K. Liu, Q. Zhang, B. Gu, B. Sun, Experimental and numerical analyses on the thermal conductive behaviors of carbon fiber/epoxy plain woven composites, Int. J. Heat Mass Transf. 102 (2016) 501–517.
+
+[16] K. Woo, N.S. Goo, Thermal conductivity of carbon-phenolic 8-harness satin weave composites, Compos. Struct. 66 (1–4) (2004) 521–526.
+
+[17] H. Yu, D. Heider, S. Advani, Prediction of effective through-thickness thermal conductivity of woven fabric reinforced composites with embedded particles, Compos. Struct. 127 (2015) 132–140.
+
+[18] W.Z. Fang, L. Chen, J.J. Gou, W.Q. Tao, Predictions of effective thermal conductivities for three-dimensional four-directional braided composites using the lattice Boltzmann method, Int. J. Heat Mass Transf. 92 (2016) 120– 130.
+
+[19] L.L. Jiang, G.D. Xu, S. Cheng, X.M. Lu, T. Zeng, Predicting the thermal conductivity and temperature distribution in 3D braided composites, Compos. Struct. 108 (2014) 578–583.
+
+[20] K. Dong, J. Zhang, L. Jin, B. Gu, B. Sun, Multi-scale finite element analyses on the thermal conductive behaviors of 3D braided composites, Compos. Struct. 143 (2016) 9–22.
+
+[21] J.J. Gou, H. Zhang, Y.J. Dai, S. Li, W.Q. Tao, Numerical prediction of effective thermal conductivities of 3D four-directional braided composites, Compos. Struct. 125 (2015) 499–508.
+
+[22] K. Boomsma, D. Poulikakos, On the effective thermal conductivity of a three- dimensionally structured fluid-saturated metal foam, Int. J. Heat Mass Transf. 44 (4) (2001) 827–836.
+
+[23] K. Boomsma, D. Poulikakos, Y. Ventikos, Simulations of flow through open cell metal foams using an idealized periodic cell structure, Int. J. Heat Fluid Flow 24 (6) (2003) 825–834.
+
+[24] Z. Wu, C. Caliot, G. Flamant, Z. Wang, Numerical simulation of convective heat transfer between air flow and ceramic foams to optimise volumetric solar air receiver performances, Int. J. Heat Mass Transf. 54 (7–8) (2011) 1527–1537.
+
+[25] Z.Q. Yu, Y.L. Feng, W.J. Zhou, Y. Jin, M.J. Li, Z.Y. Li, W.Q. Tao, Study on flow and heat transfer characteristics of composite porous material and its performance analysis by FSP and EDEP, Appl. Energy 112 (2013) 1367–1375.
+
+[26] S. Li, A. Wongsto, Unit cells for micromechanical analyses of particle- reinforced composites, Mech. Mater. 36 (7) (2004) 543–572.
+
+[27] S. Li, On the unit cell for micromechanical analysis of fibre-reinforced composites, P. Roy. Soc. Lond. A Mat. 455 (1983) (1999) 815–838.
+
+[28] S. Li, C. Zhou, H. Yu, L. Li, Formulation of a unit cell of a reduced size for plain weave textile composites, Comput. Mater. Sci. 50 (5) (2011) 1770–1780.
+
+[29] J.J. Gou, Y.J. Dai, S. Li, W.Q. Tao, Numerical study of effective thermal conductivities of plain woven composites by unit cells of different sizes, Int. J. Heat Mass Transf. 91 (2015) 829–840.
+
+[30] J.J. Gou, W.Z. Fang, Y.J. Dai, S. Li, W.Q. Tao, Multi-size unit cells to predict effective thermal conductivities of 3D four-directional braided composites, Compos. Struct. 163 (2017) 152–167.
+
+[31] Z. Hashin, Analysis of composite materials-a survey, J. Appl. Mech. Trans. ASME 50 (3) (1983) 481–505.
+
+[32] M.P. Rao, M. Pantiuk, P.G. Charalambides, Modeling the Geometry of Satin Weave Fabric Composites, J. Compos. Mater. 43 (1) (2009) 19–56.

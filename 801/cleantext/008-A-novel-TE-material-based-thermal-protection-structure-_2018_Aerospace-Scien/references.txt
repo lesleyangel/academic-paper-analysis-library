@@ -1,0 +1,79 @@
+[1] B. Behrens, M. Müller, Technologies for thermal protection systems applied on re-usable launcher, Acta Astronaut. 55 (3–9) (2004) 529–536.
+
+[2] F. Gori, S. Corasaniti, W.M. Worek, W.J. Minkowycz, Theoretical prediction of thermal conductivity for thermal protection systems, Appl. Therm. Eng. 49 (2012) 124–130.
+
+[3] Y. Rong, Y. Wei, R. Zhan, Research on thermal protection by opposing jet and transpiration for high speed vehicle, Aerosp. Sci. Technol. 48 (Supplement C) (2016) 322–327.
+
+[4] D. Knight, H. Yan, A.G. Panaras, A. Zheltovodov, Advances in CFD prediction of shock wave turbulent boundary layer interactions, Prog. Aerosp. Sci. 39 (2) (2003) 121–184.
+
+[5] D. Knight, J. Longo, D. Drikakis, D. Gaitonde, A. Lani, I. Nompelis, B. Reimann, L. Walpot, Assessment of CFD capability for prediction of hypersonic shock in- teractions, Prog. Aerosp. Sci. 48 (Supplement C) (2012) 8–26.
+
+[6] Y. Kerboua, A.A. Lakis, Numerical model to analyze the aerodynamic behavior of a combined conical–cylindrical shell, Aerosp. Sci. Technol. 58 (Supplement C) (2016) 601–617.
+
+[7] P. Panagiotou, P. Kaparos, C. Salpingidou, K. Yakinthos, Aerodynamic design of a MALE UAV, Aerosp. Sci. Technol. 50 (Supplement C) (2016) 127–138.
+
+[8] P.D. Bravo-Mosquera, L. Botero-Bolivar, D. Acevedo-Giraldo, H.D. Cerón-Muñoz, Aerodynamic design analysis of a UAV for superficial research of volcanic envi- ronments, Aerosp. Sci. Technol. 70 (Supplement C) (2017) 600–614.
+
+[9] C.D. Engel, S.C. Praharaj, MINIVER Upgrade for the AVID System. Vol. 1: LAN- MIN User’s Manual, Nasa Cr, 1983.
+
+[10] E.V. Zoby, K. Sutton, Approximate convective-heating equations for hypersonic flows, J. Spacecr. Rockets 18 (1) (1981) 64.
+
+[11] Y. Ma, B. Xu, M. Chen, R. He, W. Wen, T. Cheng, D. Fang, Optimization design of built-up thermal protection system based on validation of corrugated core homogenization, Appl. Therm. Eng. 115 (2017) 491–500.
+
+[12] S. Kumar, S.P. Mahulikar, Reconstruction of aero-thermal heating and ther- mal protection material response of a reusable launch vehicle using inverse method, Appl. Therm. Eng. 103 (Supplement C) (2016) 344–355.
+
+[13] R. Savino, M. De Stefano Fumo, D. Paterna, M. Serpico, Aerothermodynamic study of UHTC-based thermal protection systems, Aerosp. Sci. Technol. 9 (2) (2005) 151–160.
+
+[14] S. Liu, B. Zhang, Effects of active cooling on the metal thermal protection sys- tems, Aerosp. Sci. Technol. 15 (7) (2011) 526–533.
+
+[15] R.J. Tobe, R.V. Grandhi, Hypersonic vehicle thermal protection system model optimization and validation with vibration tests, Aerosp. Sci. Technol. 28 (1) (2013) 208–213.
+
+[16] G. Xie, Q. Wang, B. Sunden, W. Zhang, Thermomechanical optimization of lightweight thermal protection system under aerodynamic heating, Appl. Therm. Eng. 59 (1) (2013) 425–434.
+
+[17] A. Riccio, F. Raimondo, A. Sellitto, V. Carandente, R. Scigliano, D. Tescione, Op- timum design of ablative thermal protection systems for atmospheric entry vehicles, Appl. Therm. Eng. 119 (Supplement C) (2017) 541–552.
+
+[18] M. Cioeta, G. Di Vita, T. Signorelli Maria, G. Bianco, M. Cutroni, F. Damiani, V. Ferretti, A. Rotondo, Design, qualification, manufacturing and integration of IXV ablative thermal protection system, Acta Astronaut. 124 (Supplement C) (2016) 90–101.
+
+[19] J. Barcena, I. Garmendia, K. Triantou, K. Mergia, B. Perez, S. Florez, G. Pinaud, J-M. Bouilly, W.P.P. Fischer, Infra-red and vibration tests of hybrid ablative/ce- ramic matrix technological breadboards for Earth re-entry thermal protection systems, Acta Astronaut. 134 (Supplement C) (2017) 85–97.
+
+[20] C. Gayner, K.K. Kar, Recent advances in thermoelectric materials, Prog. Mater. Sci. 83 (Supplement C) (2016) 330–382.
+
+[21] S. Lv, W. He, Q. Jiang, Z. Hu, X. Liu, H. Chen, M. Liu, Study of different heat exchange technologies influence on the performance of thermoelectric genera- tors, Energy Convers. Manag. 156 (Supplement C) (2018) 167–177.
+
+[22] S. Lan, Z. Yang, R. Chen, R. Stobart, A dynamic model for thermoelectric gener- ator applied to vehicle waste heat recovery, Appl. Energy 210 (Supplement C) (2018) 327–338.
+
+[23] X. Li, Z. Wang, Exergy analysis of integrated TEG and regenerative cooling sys- tem for power generation from the scramjet cooling heat, Aerosp. Sci. Technol. 66 (Supplement C) (2017) 12–19.
+
+[24] K. Cheng, J. Qin, Y. Jiang, C. Lv, S. Zhang, W. Bao, Performance assessment of multi-stage thermoelectric generators on hypersonic vehicles at a large temperature difference, Appl. Therm. Eng. (2017), https://doi .org /10 .1016 /j . applthermaleng .2017.11.057.
+
+[25] E. Guilmeau, R. Funahashi, M. Mikami, K. Chong, D. Chateigner, Thermoelectric properties–texture relationship in highly oriented Ca3Co4O9 composites, Appl. Phys. Lett. 85 (9) (2004) 1490–1492.
+
+[26] R. Funahashi, M. Mikami, T. Mihara, S. Urata, N. Ando, A portable thermoelectric-power-generating module composed of oxide devices, J. Appl. Phys. 99 (6) (2006) 066117.
+
+[27] S. Urata, R. Funahashi, T. Mihara, A. Kosuga, S. Sodeoka, T. Tanaka, Power gen- eration of p-type Ca3Co4O9/n-type CaMnO3 module, in: 25th International Conference on Thermoelectrics, 2007.
+
+[28] C.L. Gong, B. Chen, L.X. Gu, Comparison study of RBCC powered suborbital reusable launch vehicle concepts, in: 20th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, American Institute of Aero- nautics and Astronautics, 2015.
+
+[29] V. Fernandez Villace, J. Steelant, The thermal paradox of hypersonic cruisers, in: 20th AIAA International Space Planes and Hypersonic Systems and Tech- nologies Conference, American Institute of Aeronautics and Astronautics, 2015.
+
+[30] M. Moore, J. Williams, Aerodynamic prediction rationale for analyses of hyper- sonic configurations, in: 27th Aerospace Sciences Meeting, American Institute of Aeronautics and Astronautics, 1989.
+
+[31] I. Terasaki, Large thermoelectric power in NaCo2O4 single crystals single crys- tals, Phys. Rev. B 56 (20) (1997) 12685–12687.
+
+[32] M. Shikano, R. Funahashi, Electrical and thermal properties of single-crystalline (Ca2CoO3)0.7CoO2 with a Ca3Co4O9 structure, Appl. Phys. Lett. 82 (12) (2003) 1851–1853. The authors declared that they have no conflict of interest to this work.
+
+[33] Y. Liu, Y. Lin, S. Zhan, C.W. Nan, Z. Shen, Preparation of Ca3Co4O9 and improve- ment of its thermoelectric properties by Spark Plasma Sintering, J. Am. Ceram. Soc. 88 (5) (2005) 1337–1340.
+
+[34] J.G. Noudem, M. Prevel, A. Veres, D. Chateigner, J. Galy, Thermoelectric Ca3Co4O9 ceramics consolidated by Spark Plasma sintering, J. Electroceram. 22 (1–3) (2009) 91–97.
+
+[35] N.N. Van, N. Pryds, S. Linderoth, M. Ohtaki, Enhancement of the thermoelectric performance of p-type layered oxide Ca3Co4O(9+δ) through heavy doping and metallic nanoinclusions, Adv. Mater. 23 (21) (2011) 2484–2490.
+
+[36] C.L. Gong, G. Dong, J. Hu, Y. Chen, M. Qin, S. Yang, F. Gao, Effect of reducing an- nealing on the microstructure and thermoelectric properties of La–Bi co-doped SrTiO3 ceramics, J. Mater. Sci., Mater. Electron. 28 (19) (2017) 14893–14900.
+
+[37] Y. Wang, Y. Sui, J. Cheng, X. Wang, W. Su, Comparison of the high tempera- ture thermoelectric properties for Ag-doped and Ag-added Ca3Co4O9, J. Alloys Compd. 477 (1) (2009) 817–821.
+
+[38] N. Van Nong, N. Pryds, S. Linderoth, M. Ohtaki, Enhancement of the ther- moelectric performance of p-Type layered oxide Ca3Co4O9+δ through heavy doping and metallic nanoinclusions, Adv. Mater. 23 (21) (2011) 2484–2490.
+
+[39] J.J. Gou, X.J. Ren, Y.J. Dai, S. Li, W.Q. Tao, Study of thermal contact resistance of rough surfaces based on the practical topography, Comput. Fluids 164 (2018) 2–11, available online in 2016.
+
+[40] J.J. Gou, C.L. Gong, L.X. Gu, S. Li, W.Q. Tao, Unit cells of composites with sym- metric structures for the study of effective thermal properties, Appl. Therm. Eng. 126 (Supplement C) (2017) 602–619.

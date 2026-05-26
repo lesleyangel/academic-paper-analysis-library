@@ -1,0 +1,51 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.64, 206.74, 422.48, 220.38)]] Jian-Jun Gou a,∗, Shu-Zhen Jia a, Jin-Xing Li b, Shuang Xiao a, Chun-Lin Gong a,∗
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.64, 687.49, 264.98, 714.35)]] * Corresponding authors. E-mail addresses: jj.gou@nwpu.edu.cn (J.-J. Gou), leonwood@nwpu.edu.cn (C.-L. Gong)
+
+[confidence=0.92; source=equations; [page 2, bbox (306.63, 712.58, 557.7, 722.39)] [M]] {¨x} + [K]{x} = {0} (1)
+
+[confidence=0.62; needs_review; source=equations; [page 4, bbox (46.73, 399.96, 288.71, 416.72)]] ∂t + div(ρUφ) = div(�gradφ) + Q s (2)
+
+[confidence=0.92; source=equations; [page 5, bbox (209.58, 219.74, 456.19, 245.97)]] Inlet Ma=6, P=2971 Pa T =300 K Outlet P=0 Pa T =300 K Wall No slip, stationary q=0
+
+[confidence=0.57; needs_review; source=equations; [page 14, bbox (37.64, 728.33, 291.37, 748.81)]] (5) For the design of thin-panel-structural compression system, the consideration of resonance limit is essential
+
+[confidence=0.92; source=body_inline] \left[ M \right] \left\{\ddot {x} \right\} + \left[ K \right] \left\{x \right\} = \left\{0 \right\}\tag{1}
+
+[confidence=0.92; source=body_inline] \mathrm {k g / m ^ {3}}
+
+[confidence=0.92; source=body_inline] P _ {x 0} , \ P _ {x 1} , \ P _ {y 0} , \ P _ {y 1} , \ P _ {z 0} ,
+
+[confidence=0.92; source=body_inline] P _ {z 1}
+
+[confidence=0.92; source=body_inline] P _ {x 0} , P _ {x 1} , P _ {z 0} , P _ {z 1}
+
+[confidence=0.92; source=body_inline] P _ {y 0}
+
+[confidence=0.92; source=body_inline] P _ {y 1}
+
+[confidence=0.92; source=body_inline] \frac {\partial ( \rho \phi )} {\partial t} + \mathrm{div} ( \rho U \phi ) = \mathrm{div} ( \Gamma \mathbf {g r a d} \phi ) + Q _ {s}\tag{2}
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.92; source=body_inline] Q _ {s}
+
+[confidence=0.92; source=body_inline] \phi ,
+
+[confidence=0.92; source=body_inline] ^ {3 ,}
+
+[confidence=0.92; source=body_inline] c _ {p}
+
+[confidence=0.92; source=body_inline] \Delta t _ {1} \leq \frac {1} {20 f}\tag{3}
+
+[confidence=0.92; source=body_inline] \Delta t _ {2} \leq \frac {L} {20 V _ {\infty}}\tag{4}
+
+[confidence=0.92; source=body_inline] V _ {\infty}
+
+[confidence=0.67; needs_review; source=body_inline] ( P _ {y 1}
+
+[confidence=0.92; source=body_inline] 4 \times 10 ^ {6}
+
+[confidence=0.92; source=body_inline] 1 ^ {\mathsf{st}}
+
+[confidence=0.92; source=body_inline] 6 ^ {\mathrm {{t h}}}

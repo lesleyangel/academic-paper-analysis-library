@@ -1,0 +1,4 @@
+Time,DMS-LSTM,DMS-OpInf,POD-LSTM,POD-OpInf
+0.0087s,$\mathbf { 1 . 0 4 5 \times 1 0 ^ { - 3 } }$,$8 . 1 0 6 \times 1 0 ^ { - 3 }$,$8 . 8 1 1 \times 1 0 ^ { - 3 }$,$7 . 3 9 4 \times 1 0 ^ { - 3 }$
+0.0241s,$\mathbf { 1 . 2 4 9 \times 1 0 ^ { - 2 } }$,$1 . 9 7 9 \times 1 0 ^ { - 2 }$,$4 . 4 4 6 \times 1 0 ^ { - 2 }$,$1 . 9 0 3 \times { 1 0 } ^ { - 2 }$
+0.0359s,$1 . 7 8 2 \times 1 0 ^ { - 2 }$,$3 . 5 2 5 \times 1 0 ^ { - 3 }$,$\mathbf { 1 . 0 4 1 \times 1 0 ^ { - 2 } }$,$9 . 7 7 1 \times 1 0 ^ { - 3 }$

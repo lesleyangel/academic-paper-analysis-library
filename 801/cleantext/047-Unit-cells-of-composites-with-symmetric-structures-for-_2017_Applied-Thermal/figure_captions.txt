@@ -1,0 +1,49 @@
+Fig. 1. Formulation process of unit cells based on structure symmetries.
+
+Fig. 2. Translational symmetric structures.
+
+Fig. 3. Temperature fields under different thermal stimuli.
+
+Fig. 4. Physical meanings of symmetric and antisymmetric thermal stimuli.
+
+Fig. 5. Typical reflectional symmetric structures.
+
+Fig. 6. Temperature fields in reflectional symmetric structures.
+
+Fig. 7. Typical 180�rotational symmetric structure.
+
+Fig. 8. Temperature fields in 180�rotational symmetric structures.
+
+Fig. 9. Calculation model of UD composite and its boundary conditions.
+
+Fig. 10. Effective axial thermal conductivities of UD composites. Fig. 11. DTD of symmetric nodes on boundary planes in x-direction.
+
+Fig. 12. Unit cells for transverse structure of UD composites.
+
+Fig. 13. Boundary edges of unit cells.
+
+Fig. 14. Temperature fields calculated by four unit cells.
+
+Fig. 15. Satin weave textile and unit cells.
+
+Fig. 18. Unit cell model of 4HS satin woven composite.
+
+Fig. 16. Square unit cell and UC1 of 4HS fabric.
+
+Fig. 17. 180�Rotational symmetric structure of 4HS fabric.
+
+Fig. 19. Coordinate systems involved in the calculation.
+
+Fig. 20. Parameters of UC1 and boundaries of unit cells.
+
+Fig. 21. Temperature distribution patterns of satin woven composites.
+
+Fig. 7. Typical 180 rotational symmetric structure.
+
+Fig. 8. Temperature fields in 180 rotational symmetric structures.
+
+Fig. 10. Effective axial thermal conductivities of UD composites.
+
+Fig. 11. DTD of symmetric nodes on boundary planes in x-direction.
+
+Fig. 17. 180 Rotational symmetric structure of 4HS fabric.

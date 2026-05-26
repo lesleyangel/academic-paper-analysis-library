@@ -1,0 +1,349 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (42.63, 669.07, 214.3, 690.38)]] * Corresponding author. E-mail address: leonwood@nwpu.edu.cn (C. Gong)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 357.28, 716.91)]] https://doi.org/10.1016/j.ast.2026.111927 Received 14 August 2025; Received in revised form 5 February 2026; Accepted 12 February 2026
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (306.6, 339.73, 334.97, 357.06)]] F = ( ΦT s
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 529.84, 402.18, 543.69)]] Sp = [p1, p2, ..., pN] ∈Rna\timesN,
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (306.6, 606.25, 354.65, 622.59)]] Fi = [ Fx, Fy, Fz
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 680.19, 327.29, 704.11)]] F = 1 N
+
+[confidence=0.92; source=equations; [page 3, bbox (331.6, 697.48, 339.88, 705.95)]] i=1
+
+[confidence=0.92; source=equations; [page 3, bbox (37.59, 712.4, 291.01, 725.43)]] M ¨X + C ˙X + KX = F (1)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 142.52, 560.01, 155.55)]] X = Φsq (2)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 200.06, 560.01, 213.09)]] Mg ¨q + Cg ˙q + Kgq = Q (3)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 266.72, 560.02, 282.03)]] Q = ΦT s F ∈Rm (4)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 646.51, 560.02, 659.61)]] SF = [F1, F2, ..., FN] ∈R3na\timesN (6)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.54, 726.4, 560.01, 739.43)]] ̃SF = [̃F1, ̃F2, ..., ̃FN], ̃Fk = Fk -F (8)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 66.61, 74.13, 90.52)]] CF = 1 N ̃SF̃S
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 121.31, 291.01, 134.35)]] CFΨ = ΨΛ (10)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 200.56, 291.02, 214.42)]] Φp = [ψ1, ψ2, ..., ψr] ∈R3na\timesr (11)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 244.68, 291.01, 257.71)]] ̃F(t) = Φpa(t) (12)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 292.41, 291.01, 306.49)]] a(t) = ΦT p̃F(t) (13)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 326.37, 291.01, 339.4)]] F(t) = Φpa(t) + F (14)
+
+[confidence=0.92; source=equations; [page 4, bbox (333.81, 64.77, 560.02, 81.11)]] ( Φpa + F ) (15)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.59, 68.02, 333.33, 82.1)]] Q = ΦT A
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 112.07, 560.02, 125.64)]] Q -Q0 = Ha (16)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 317.12, 560.02, 330.64)]] a = H-1(Q -Q0) (17)
+
+[confidence=0.92; source=equations; [page 4, bbox (387.67, 356.86, 560.02, 373.73)]] ( H-1(Q -Q0) ) + F (18)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 360.16, 387.16, 373.19)]] F(t) ≈Φpa(t) + F = Φp
+
+[confidence=0.92; source=equations; [page 5, bbox (306.59, 582.11, 411.66, 595.2)]] {tk, q(tk), F(tk)}, k = 1, 2, ..., Nt
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 680.19, 383.58, 693.28)]] Q(tk) = ΦAF(tk) ∈Rm
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 722.32, 414.54, 735.4)]] {tk, q(tk), Q(tk)}, k = 1, 2, ..., Nt
+
+[confidence=0.92; source=equations; [page 6, bbox (306.6, 657.29, 529.4, 670.32)]] Xk = [q(tk-W+1), q(tk-W+2), ..., q(tk); Q(tk-W), Q(tk-W-1), ..., Q(tk-1)]
+
+[confidence=0.92; source=equations; [page 6, bbox (306.6, 707.06, 365.1, 720.15)]] Yk = Q(tk) ∈Rm
+
+[confidence=0.92; source=equations; [page 7, bbox (318.5, 68.02, 560.02, 81.59)]] aʹ(tk) = H-1(Qʹ(tk) -Q0) (19)
+
+[confidence=0.92; source=equations; [page 7, bbox (318.5, 114.8, 560.02, 127.88)]] Fʹ(tk) ≈Φpaʹ(tk) + F (20)
+
+[confidence=0.57; needs_review; source=equations; [page 7, bbox (306.6, 155.19, 557.64, 179.02)]] where, the matrices H = ΦT AΦp and Q0 = ΦT AF are computed once dur ing the training phase and reused for inference
+
+[confidence=0.92; source=equations; [page 10, bbox (85.32, 697.13, 291.02, 714.11)]] wk,isin ( 2πφk,it ) , k = 1, 2, 3, 4 (21)
+
+[confidence=0.92; source=equations; [page 10, bbox (37.59, 700.43, 70.67, 714.22)]] dk(t) = ηk
+
+[confidence=0.92; source=equations; [page 10, bbox (74.1, 712.27, 82.38, 720.74)]] i=1
+
+[confidence=0.92; source=equations; [page 11, bbox (312.61, 278.22, 546.25, 288.64)]] Time DMS-LSTM DMS-OpInf POD-LSTM POD-OpInf
+
+[confidence=0.92; source=equations; [page 11, bbox (312.61, 290.83, 551.71, 301.8)]] 0.0087s 1.045 £ 10-38.106 \times 10-38.811 \times 10-37.394 \times 10-3
+
+[confidence=0.92; source=equations; [page 11, bbox (312.61, 299.45, 551.71, 310.42)]] 0.0241s 1.249 £ 10-21.979 \times 10-24.446 \times 10-21.903 \times 10-2
+
+[confidence=0.92; source=equations; [page 11, bbox (312.61, 308.01, 551.71, 318.98)]] 0.0359s 1.782 \times 10-23.525 \times 10-31.041 £ 10-29.771 \times 10-3
+
+[confidence=0.57; needs_review; source=equations; [page 12, bbox (37.59, 620.78, 290.99, 644.3)]] order models are also constructed using both LSTM (POD-LSTM) and operator inference (POD-OpInf)
+
+[confidence=0.92; source=equations; [page 13, bbox (65.48, 567.07, 124.64, 590.89)]] (yi -̂yi)2 √
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 577.86, 63.28, 590.89)]] eRMSE =
+
+[confidence=0.92; source=equations; [page 13, bbox (82.2, 589.7, 90.49, 598.17)]] i=1
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 715.34, 133.88, 733.76)]] eNSE = ‖ |F (y)| -|F (̂y)| ‖2
+
+[confidence=0.92; source=equations; [page 15, bbox (37.59, 665.62, 100.6, 684.49)]] M∞(t) = M0 + ∑ 4
+
+[confidence=0.92; source=equations; [page 15, bbox (90.65, 683.25, 98.94, 691.72)]] i=1
+
+[confidence=0.92; source=equations; [page 15, bbox (306.6, 592.99, 359.34, 611.87)]] α(t) = α0 + ∑ 4
+
+[confidence=0.92; source=equations; [page 15, bbox (349.4, 610.62, 357.68, 619.09)]] i=1
+
+[confidence=0.57; needs_review; source=equations; [page 15, bbox (306.6, 625.66, 560.02, 659.89)]] where α0 = 10∘ denotes the mean angle of attack, and the amplitudes ωα,i ensure that the instantaneous angle of attack remains within 7.5∘⩽α(t)⩽12.5∘
+
+[confidence=0.92; source=equations; [page 17, bbox (37.59, 529.56, 70.67, 543.35)]] dk(t) = ηk
+
+[confidence=0.92; source=equations; [page 17, bbox (74.1, 541.4, 82.38, 549.87)]] i=1
+
+[confidence=0.92; source=equations; [page 17, bbox (85.32, 526.25, 291.02, 543.24)]] wk,isin ( 2πφk,it ) , k = 1, 2, 3, 4 (26)
+
+[confidence=0.92; source=body_inline] n _ {s}
+
+[confidence=0.92; source=body_inline] \mathbf {M} \ddot {\mathbf {X}} + \mathbf {C} \dot {\mathbf {X}} + \mathbf {K} \mathbf {X} = \mathbf {F}\tag{1}
+
+[confidence=0.92; source=body_inline] \mathbf {C} , \mathbf {K} \in \mathbb {R} ^ {3 n _ {s} \times 3 n _ {s}}
+
+[confidence=0.92; source=body_inline] \mathbf {X} \in \mathbb {R} ^ {3 n _ {s}}
+
+[confidence=0.92; source=body_inline] \mathbf {F} \in \mathbb {R} ^ {3 n _ {s}}
+
+[confidence=0.92; source=body_inline] \Phi _ {s} \in \mathbb {R} ^ {3 n _ {s} \times m}
+
+[confidence=0.92; source=body_inline] \mathbf {q} \in \mathbb {R} ^ {m}
+
+[confidence=0.92; source=body_inline] \mathbf {X} = \Phi _ {s} \mathbf {q}\tag{2}
+
+[confidence=0.92; source=body_inline] \mathbf {M} _ {g} \ddot {\mathbf {q}} + \mathbf {C} _ {g} \dot {\mathbf {q}} + \mathbf {K} _ {g} \mathbf {q} = \mathbf {Q}\tag{3}
+
+[confidence=0.92; source=body_inline] \mathbf {M} _ {g} \ = \ \ \mathbf {\Phi} \ \mathbf {\Phi} \ \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi \Phi} \mathbf {\Phi} \mathbf {\Phi \Phi} \mathbf {\Phi} \mathbf \Phi
+
+[confidence=0.92; source=body_inline] {\bf K} _ {g} = {\bf \Phi}
+
+[confidence=0.92; source=body_inline] \Phi _ {s} ^ {T} \mathbf {K} \pmb {\Phi} _ {s} \in \mathbb {R} ^ {m \times m}
+
+[confidence=0.92; source=body_inline] \mathbf {Q} = \Phi _ {s} ^ {T} \mathbf {F} \in \mathbb {R} ^ {m}\tag{4}
+
+[confidence=0.92; source=body_inline] \mathbf {F} = ( \Phi _ {s} ^ {T} ) ^ {\dag} \mathbf {Q}\tag{5}
+
+[confidence=0.92; source=body_inline] \left( \Phi _ {s} ^ {T} \right) ^ {\dag}
+
+[confidence=0.67; needs_review; source=body_inline] n _ {s} ) _ {{\scriptscriptstyle \mathrm{:}}}
+
+[confidence=0.92; source=body_inline] \mathbf {S} _ {p} = [ \mathbf {p} _ {1} , \mathbf {p} _ {2} , . . . , \mathbf {p} _ {N} ] \in \mathbb {R} ^ {n _ {a} \times N} ,
+
+[confidence=0.92; source=body_inline] n _ {a}
+
+[confidence=0.92; source=body_inline] \mathbf {F} _ {i} = \left[ F _ {x} , F _ {y} , F _ {z} \right] ^ {T} \in \mathbb {R} ^ {3 n _ {a}} ,
+
+[confidence=0.92; source=body_inline] {\pmb S} _ {F} = [ {\bf F} _ {1} , {\bf F} _ {2} , . . . , {\bf F} _ {N} ] \in \mathbb {R} ^ {3 n _ {a} \times N}\tag{6}
+
+[confidence=0.92; source=body_inline] \overline {{\mathbf {F}}} = \frac {1} {N} \sum _ {i = 1} ^ {N} \mathbf {F} _ {i}\tag{7}
+
+[confidence=0.92; source=body_inline] \widetilde {\mathbf {S}} _ {F} = [ \widetilde {\mathbf {F}} _ {1} , \widetilde {\mathbf {F}} _ {2} , . . . , \widetilde {\mathbf {F}} _ {N} ] , \widetilde {\mathbf {F}} _ {k} = \mathbf {F} _ {k} - \overline {{\mathbf {F}}}\tag{8}
+
+[confidence=0.92; source=body_inline] \mathbf {C} _ {F} = \frac {1} {N} \widetilde {\mathbf {S}} _ {F} \widetilde {\mathbf {S}} _ {F} ^ {T}\tag{9}
+
+[confidence=0.92; source=body_inline] \mathbf {C} _ {F}
+
+[confidence=0.92; source=body_inline] \mathbf {C} _ {F} \Psi = \Psi \Lambda\tag{10}
+
+[confidence=0.92; source=body_inline] A = d i a g ( \lambda _ {1} , \lambda _ {2} , \cdots , \lambda _ {3 n _ {a}} ) , ( \lambda _ {1} \geqslant \lambda _ {2} \geqslant \cdots \geqslant \lambda _ {3 n _ {a}} \geqslant 0 )
+
+[confidence=0.92; source=body_inline] \Psi = [ \psi _ {1} , \psi _ {2} , . . . , \psi _ {3 n} ] \in \mathbb {R} ^ {3 n _ {a} \times 3 n _ {a}}
+
+[confidence=0.92; source=body_inline] \Phi _ {p} = [ \psi _ {1} , \psi _ {2} , . . . , \psi _ {r} ] \in \mathbb {R} ^ {3 n _ {a} \times r}\tag{11}
+
+[confidence=0.92; source=body_inline] \widetilde {\mathbf {F}} ( t ) = \Phi _ {p} \mathbf {a} ( t )\tag{12}
+
+[confidence=0.92; source=body_inline] \mathbf {a} ( t ) \in \mathbb {R} ^ {r}
+
+[confidence=0.92; source=body_inline] \mathbf {a} ( t ) = \Phi _ {p} ^ {T} \widetilde {\mathbf {F}} ( t )\tag{13}
+
+[confidence=0.92; source=body_inline] \mathbf {F} ( t ) = \Phi _ {p} \mathbf {a} ( t ) + \overline {{\mathbf {F}}}\tag{14}
+
+[confidence=0.92; source=body_inline] \mathbf {S} _ {F} \in \mathbb {R} ^ {3 n _ {a} \times N}
+
+[confidence=0.92; source=body_inline] \Phi _ {A}
+
+[confidence=0.92; source=body_inline] \Phi _ {p}
+
+[confidence=0.92; source=body_inline] \Phi _ {A} \in \mathbb {R} ^ {3 n _ {a} \times m}
+
+[confidence=0.92; source=body_inline] \scriptstyle {\pmb {S}} _ {F}
+
+[confidence=0.92; source=body_inline] \Phi _ {p} \in \mathbb {R} ^ {3 n _ {a} \times r}
+
+[confidence=0.92; source=body_inline] 3 n _ {a}
+
+[confidence=0.92; source=body_inline] \mathbf {i . e . ,} m = r
+
+[confidence=0.67; needs_review; source=body_inline] \Phi _ {A} )
+
+[confidence=0.67; needs_review; source=body_inline] \Phi _ {p} )
+
+[confidence=0.92; source=body_inline] \mathbf {Q} = \Phi _ {A} ^ {T} \bigl ( \Phi _ {p} \mathbf {a} + \overline {{\mathbf {F}}} \bigr )\tag{15}
+
+[confidence=0.92; source=body_inline] \mathbf {Q} _ {0} = \Phi _ {A} ^ {T} \overline {{\mathbf {F}}} \in \mathbb {R} ^ {m}
+
+[confidence=0.92; source=body_inline] \mathbf {Q} - \mathbf {Q} _ {0} = \mathbf {H} \mathbf {a}\tag{16}
+
+[confidence=0.92; source=body_inline] \mathbf {\Phi} = \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} _ {A} ^ {T} \mathbf {\Phi} \mathbf {\Phi} _ {p} \in \mathbb {R} ^ {m \times m}
+
+[confidence=0.92; source=body_inline] \mathbf {a} = \mathbf {H} ^ {- 1} ( \mathbf {Q} - \mathbf {Q} _ {0} )\tag{17}
+
+[confidence=0.92; source=body_inline] \mathbf {F} ( t ) \approx \Phi _ {p} \mathbf {a} ( t ) + \overline {{\mathbf {F}}} = \Phi _ {p} \left( \mathbf {H} ^ {- 1} ( \mathbf {Q} - \mathbf {Q} _ {0} ) \right) + \overline {{\mathbf {F}}}\tag{18}
+
+[confidence=0.92; source=body_inline] \Phi _ {s} ,
+
+[confidence=0.92; source=body_inline] {\mathbf {X}} _ {A} ( t )
+
+[confidence=0.92; source=body_inline] \{t _ {k} , q ( t _ {k} ) , \mathbf {F} ( t _ {k} ) \} , k = 1 , 2 , . . . , N _ {t}
+
+[confidence=0.92; source=body_inline] N _ {t}
+
+[confidence=0.92; source=body_inline] q ( t _ {k} )
+
+[confidence=0.92; source=body_inline] \mathbf {Q} ( t _ {k} ) = \Phi _ {A} \mathbf {F} ( t _ {k} ) \in \mathbb {R} ^ {m}
+
+[confidence=0.92; source=body_inline] \{t _ {k} , q ( t _ {k} ) , \mathbf {Q} ( t _ {k} ) \} , k = 1 , 2 , . . . , N _ {t}
+
+[confidence=0.92; source=body_inline] \mathbf {F} ( t _ {k} ) \in \mathbb {R} ^ {3 n _ {a}}
+
+[confidence=0.92; source=body_inline] \mathbf {Q} ( t _ {k} ) \in \mathbb {R} ^ {m}
+
+[confidence=0.92; source=body_inline] \{q ( t _ {k} ) , \mathbf {Q} ( t _ {k} ) \}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {X _ {k} = [ q ( t _ {k - W + 1} ) , q ( t _ {k - W + 2} ) , . . . , q ( t _ {k} ) ; Q ( t _ {k - W} ) , Q ( t _ {k - W - 1} ) , . . . , Q ( t _ {k - 1} ) ]} \\ & {\mathrm{~~} \in \mathbb {R} ^ {2 m \times W} ,} \end{array}
+
+[confidence=0.92; source=body_inline] Y _ {k} = \mathbf {Q} ( t _ {k} ) \in \mathbb {R} ^ {m}
+
+[confidence=0.92; source=body_inline] \left\{X _ {k} , Y _ {k} \right\}
+
+[confidence=0.92; source=body_inline] X _ {A} ^ {\prime} ( t )
+
+[confidence=0.92; source=body_inline] \Phi _ {A} ,
+
+[confidence=0.92; source=body_inline] q ^ {\prime} ( t )
+
+[confidence=0.92; source=body_inline] X _ {k} ^ {\prime}
+
+[confidence=0.92; source=body_inline] \mathbf {Q} ^ {\prime} ( t _ {k} )
+
+[confidence=0.92; source=body_inline] \mathbf {a} ^ {\prime} ( t _ {k} ) = \mathbf {H} ^ {- 1} ( \mathbf {Q} ^ {\prime} ( t _ {k} ) - \mathbf {Q} _ {0} )\tag{19}
+
+[confidence=0.92; source=body_inline] \mathbf {F} ^ {\prime} ( t _ {k} ) \approx \Phi _ {p} \mathbf {a} ^ {\prime} ( t _ {k} ) + \overline {{\mathbf {F}}}\tag{20}
+
+[confidence=0.92; source=body_inline] \mathbf {H} = \Phi _ {A} ^ {T} \Phi _ {p}
+
+[confidence=0.92; source=body_inline] \mathbf {Q} _ {0} = \Phi _ {A} ^ {T} \overline {{\mathbf {F}}}
+
+[confidence=0.92; source=body_inline] \mathbf {F} \in \mathbb {R} ^ {3 n _ {a}}
+
+[confidence=0.92; source=body_inline] \mathbf {X} _ {A}
+
+[confidence=0.92; source=body_inline] 1 \times 10 ^ {- 2}
+
+[confidence=0.92; source=body_inline] 1 \times 10 ^ {6}
+
+[confidence=0.92; source=body_inline] ( m = 10 )
+
+[confidence=0.92; source=body_inline] 10 ^ {- 5} \mathrm{m}
+
+[confidence=0.92; source=body_inline] S S T - \omega
+
+[confidence=0.92; source=body_inline] 1 \times {10} ^ {- 4} s
+
+[confidence=0.92; source=body_inline] 0.428 k g / m ^ {3}
+
+[confidence=0.92; source=body_inline] \alpha = 10 ^{\circ}
+
+[confidence=0.92; source=body_inline] d _ {k} ( t ) = \eta _ {k} \sum _ {i = 1} ^ {7} w _ {k , i} \mathrm{sin} \big ( 2 \pi \varphi _ {k , i} t \big ) , k = 1 , 2 , 3 , 4\tag{21}
+
+[confidence=0.92; source=body_inline] \eta _ {k}
+
+[confidence=0.92; source=body_inline] w _ {k , i}
+
+[confidence=0.92; source=body_inline] \varphi _ {k , i}
+
+[confidence=0.92; source=body_inline] {\widehat {y}} _ {i} ,
+
+[confidence=0.92; source=body_inline] e _ {R M S E} = \sqrt {\frac {1} {n} \sum _ {i = 1} ^ {n} {( y _ {i} - \widehat {y} _ {i} )} ^ {2}}\tag{22}
+
+[confidence=0.92; source=body_inline] e _ {N S E} = \frac {| | \mathbf {\nabla} | \mathcal {F} ( \pmb {y} ) | - | \mathcal {F} ( \widehat {\pmb {y}} ) | \ | | _ {2}} {| | \mathbf {\nabla} | \mathcal {F} ( \pmb {y} ) | \ | | _ {2}}\tag{23}
+
+[confidence=0.92; source=body_inline] 1.844 \times {{10} ^ {- 4}}
+
+[confidence=0.92; source=body_inline] 6.082 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 4.151 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] 1.612 \times {10} ^ {- 2}
+
+[confidence=0.92; source=body_inline] 1.045 \times 10 ^ {- 2} ;
+
+[confidence=0.92; source=body_inline] \mathrm{POD-LSTM} ( 2.123 \ \times \ 10 ^ {- 2} )
+
+[confidence=0.92; source=body_inline] M _ {\infty} ( t ) = M _ {0} + \sum _ {i = 1} ^ {4} \omega _ {M , i} \mathrm{sin} \big ( 2 \pi \varphi _ {M , i} t \big )\tag{24}
+
+[confidence=0.92; source=body_inline] M _ {0} = 0.499
+
+[confidence=0.92; source=body_inline] \omega _ {M , i}
+
+[confidence=0.92; source=body_inline] 0.45 {\leqslant} M _ {\infty} ( t ) {\leqslant} 0.55
+
+[confidence=0.92; source=body_inline] \alpha ( t ) = \alpha _ {0} + \sum _ {i = 1} ^ {4} \omega _ {\alpha , i} \mathrm{sin} \big ( 2 \pi \varphi _ {\alpha , i} t \big )\tag{25}
+
+[confidence=0.92; source=body_inline] \alpha _ {0} = 10 ^{\circ}
+
+[confidence=0.92; source=body_inline] \omega _ {\alpha , i}
+
+[confidence=0.92; source=body_inline] {d _ {k}} ( t ) = {\eta _ {k}} \sum _ {i = 1} ^ {20} {{w _ {k , i}} \mathrm{sin} {\left( 2 \pi {{\varphi _ {k , i}}} t \right) , k}} = {1 , 2 , 3 , 4}\tag{26}
+
+[confidence=0.92; source=body_inline] \omega _ {k , i}
+
+[confidence=0.92; source=body_inline] 1 \times 10 ^ {- 5} 1
+
+[confidence=0.92; source=body_inline] 1 \times 10 ^ {- 4} s
+
+[confidence=0.92; source=body_inline] ( r = 40 )
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {{1} 1 ( \mathbf {a} _ {11} )} \end{array}
+
+[confidence=0.92; source=body_inline] \mathbf {6.09 \times 10 ^ {- 4}}
+
+[confidence=0.92; source=body_inline] 4.96 \times 10 ^ {- 1}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {40 ( \mathbf {a} _ {40} )} & {{}} \end{array}
+
+[confidence=0.92; source=body_inline] \bf {\dot {3.24} \times 10 ^ {- 4}}
+
+[confidence=0.92; source=body_inline] \mathbf {7.05 \times 10 ^ {- 1}}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\mathbf {\Omega} ^ {11} ( \mathbf {a} _ {11} ) ; \mathbf {\Omega}} \end{array}
+
+[confidence=0.92; source=body_inline] \mathbf {10 ^ {- 4}}
+
+[confidence=0.92; source=body_inline] \mathbf {5.99 \times 10 ^ {- 2}}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {40 ( \mathbf {a} _ {40} ) _ {\mathrm{~}}} & {{}} \end{array}
+
+[confidence=0.92; source=body_inline] \mathbf {2.72 \times 10 ^ {- 4}}
+
+[confidence=0.92; source=body_inline] \mathbf {3.68 \times 10 ^ {- 1}}
+
+[confidence=0.92; source=body_inline] ^ {6 ,}
+
+[confidence=0.92; source=body_inline] 2.935 \times 10 ^ {- 5}
+
+[confidence=0.92; source=body_inline] 1.519 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] 1.485 \times {{10} ^ {- 3}}
+
+[confidence=0.92; source=body_inline] ( 2.978 \times 10 ^ {- 3} )

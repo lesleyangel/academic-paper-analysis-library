@@ -1,0 +1,5 @@
+Method,eRMSE,$e _ { N S E }$
+DMS-LSTM,$\mathbf { 4 . 8 7 \times 1 0 ^ { - 3 } }$,$\mathbf { 1 . 4 1 \times 1 0 ^ { - 2 } }$
+DMS-OpInf,$1 . 1 9 \times 1 0 ^ { - 2 }$,$8 . 7 7 \times 1 0 ^ { - 2 }$
+POD-LSTM,$1 . 0 6 \times 1 0 ^ { - 2 }$,$3 . 1 1 \times 1 0 ^ { - 2 }$
+POD-OpInf,$4 . 2 9 \times 1 0 ^ { - 2 }$,$3 . 1 6 \times 1 0 ^ { - 1 }$

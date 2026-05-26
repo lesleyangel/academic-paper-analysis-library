@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-determination-of-physical-dimensions-of-a-hypersonic_2023_Aerospace-Scie.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\039-The-determination-of-physical-dimensions-of-a-hypersonic_2023_Aerospace-Scie",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-determination-of-physical-dimensions-of-a-hypersonic_2023_Aerospace-Scie.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\039-The-determination-of-physical-dimensions-of-a-hypersonic_2023_Aerospace-Scie",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 111.64,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\039-The-determination-of-physical-dimensions-of-a-hypersonic_2023_Aerospace-Scie\nbody_chars=42691 references=35 tables=7\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T04:26:03"
+}

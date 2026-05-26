@@ -1,0 +1,11 @@
+| Variables | Meana| Low Bound' | Standard deviation²| Up Boundb | Distribution |
+| --- | --- | --- | --- |
+| t(mm) | 5 | 0.1 | Normala |
+| d(mm) | 42 | 0.5 | Normala |
+| L1(mm) | 119.75 | 120.25 | Uniformb |
+| L2(mm) | 59.75 | 60.25 | Uniformb |
+| $F _ { 1 } ( { \mathsf { N } } )$ | 3000 | 300 | Normala |
+| $F _ { 2 } ( { \mathsf { N } } )$ | 3000 | 300 | Normala |
+| $P ( \mathsf { N } )$ | 12,000 | 1200 | Gumbela |
+| T(Nmm) | 90,000 | 9000 | Normal² |
+| $S _ { \mathrm { y } } ( \mathrm { M P a } )$ | 220 | 22 | Normala |

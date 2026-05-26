@@ -1,0 +1,39 @@
+Fig. 1. Ground structure and possible structure after optimization.
+
+Fig. 2. The single-point crossover operator for three hierarchy variables.
+
+Fig. 3. The simple mutation operator. Fig. 4. The derivation of the angle variable.
+
+Fig. 5. The geometric and meshed models of ground structure.
+
+Fig. 6. The meshed model and pressure fields of aerodynamic calculation.
+
+Fig. 7. The lifting surface and its grid.
+
+Fig. 8. The optimization path. Fig. 9. The optimization process of statics problem.
+
+Fig. 11. The beam angle and size of statics problem.
+
+Fig. 10. The beam, displacement and stress distribution of statics problem.
+
+Fig. 13. The optimization process of aeroelastic problem.
+
+Fig. 14. The beam angle and size of static aeroelastic problem.
+
+Fig. 15. Comparison with two-hierarchy optimization process for stat ics problem.
+
+Fig. 16. Comparison with two-hierarchy optimization process for static aero elastic problem.
+
+Fig. 3. The simple mutation operator.
+
+Fig. 4. The derivation of the angle variable.
+
+Fig. 8. The optimization path.
+
+Fig. 9. The optimization process of statics problem.
+
+Fig. 12. The optimization process of aeroelastic problem.
+
+Fig. 15. Comparison with two-hierarchy optimization process for statics problem.
+
+Fig. 16. Comparison with two-hierarchy optimization process for static aeroelastic problem.

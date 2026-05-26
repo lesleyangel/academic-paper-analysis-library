@@ -1,0 +1,6 @@
+| Sample ID |  | L10 | L13 | L19 | L22 | L25 | L40 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| $\scriptstyle \mathbf { a } = \mathbf { b } = \mathbf { c } ( { \mathring { \mathbf { A } } } )$ |  | 3.9225 | 3.9206 | 3.9205 | 3.9201 | 3.9169 | 3.9166 |
+| $\scriptstyle \mathbf { Q } = \mathbf { \beta } = \gamma$ |  | 90^ | 90° | 90° | 90° | 90° | 90° |
+| ρ | Before annealing | 4.94 | 4.97 | 5.03 | 5.13 | 5.07 | 5.18 |
+| $\scriptstyle ( g / \mathrm { c m } ^ { 3 } )$ | After annealing | 4.69 | 4.80 | 4.59 | 4.82 | 4.95 | 4.50 |

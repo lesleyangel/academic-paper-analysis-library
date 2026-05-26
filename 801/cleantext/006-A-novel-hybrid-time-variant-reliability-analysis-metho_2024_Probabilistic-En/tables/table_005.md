@@ -1,0 +1,9 @@
+| Variable | Distribution | Mean/ Midpoint | Standard deviation/ Radius | Autocorrelation coefficient function |
+| --- | --- | --- | --- | --- |
+| $A _ { 1 } { \sim } A _ { 1 0 }$ (m) | Normal | $1 \times 1 0 ^ { - 3 }$ | $1 \times 1 0 ^ { - 4 }$ | NA |
+| L (m) | Normal | 1 | 0.1 | NA |
+| E (Pa) | Normal | $6 . 8 \times 1 0 ^ { 1 0 }$ | $6 . 8 \times 1 0 ^ { 9 }$ | NA |
+| $F _ { 1 } ( t ) \left( \mathrm { N } \right)$ | Gaussian process | 40000 | 4000 | exp(−(3∆t)2) |
+| $F _ { 2 } ( t ) \left( \mathrm { N } \right)$ | Gaussian process | 10000 | 1000 | $\exp ( - ( 3 \Delta t ) ^ { 2 } )$ |
+| $d _ { 0 } ( \mathfrak { m } )$ | Interval | 5.25× 10-3 | $2 . 5 \times 1 0 ^ { - 4 }$ | NA |
+| F3(t) (N) | Interval process | 10000 | 1000 | exp(−|∆t|) |

@@ -1,0 +1,9 @@
+| Variable | Distribution | Mean/Midpoint | Standard deviation/Radius | Autocorrelation coefficient function |
+| --- | --- | --- | --- | --- |
+| σ (Pa) | Normal | $2 . 4 \times 1 0 ^ { 8 }$ | $2 . 4 \times 1 0 ^ { 7 }$ | NA |
+| L (m) | Normal | 5 | 1 | NA |
+| F(t) (N) | Gaussian process | 7500 | 1500 | $\exp ( - \Delta t ^ { 2 } )$ |
+| ρ (N/m3) | Interval | 78000 | 500 | NA |
+| b(t)(m) | Interval process | $b ^ { \mathrm { M } } ( t )$ | bR(t) | ρbb(t1,t2) |
+| h(t) (m) | Interval process | $h ^ { \mathrm { M } } ( t )$ | hR(t) | ρh(t1,t2) |
+| k (m/year) | Deterministic | $5 \times 1 0 ^ { - 5 }$ | NA | NA |

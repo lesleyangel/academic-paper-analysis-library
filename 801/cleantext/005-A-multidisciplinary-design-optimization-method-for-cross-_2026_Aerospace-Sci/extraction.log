@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-multidisciplinary-design-optimization-method-for-cross-_2026_Aerospace-Sci.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\005-A-multidisciplinary-design-optimization-method-for-cross-_2026_Aerospace-Sci",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-multidisciplinary-design-optimization-method-for-cross-_2026_Aerospace-Sci.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\005-A-multidisciplinary-design-optimization-method-for-cross-_2026_Aerospace-Sci",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 204.13,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\005-A-multidisciplinary-design-optimization-method-for-cross-_2026_Aerospace-Sci\nbody_chars=62929 references=38 tables=7\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T02:16:59"
+}

@@ -1,0 +1,129 @@
+Uyanna, H.
+
+Najafi, Thermal protection systems for space vehicles: a review on technology development, current challenges and future prospects, Acta Astronaut. 176 (2020), https://doi.org/10.1016/j.actaastro.2020.06.047. [2] G. Lu, Z. Shi, R. Zhang, Y. Li, K.
+
+Zhang, Probabilistic design and optimization of thermal protection system with variable thickness based on non-uniform aerodynamic heating, Int. J. Heat Mass Transf. 225 (2024), https://doi.org/ 10.1016/j.ijheatmasstransfer.2024.125386. [3] J.-J. Gou, S.-Z. Jia, J.-X.
+
+Li, S.
+
+Xiao, C.-L.
+
+Gong, The determination of physical dimensions of a hypersonic three-stage compression system considering panel vibration effects, Aerosp. Sci. Technol. 140 (2023) 108431, https://doi.org/ 10.1016/j.ast.2023.108431. [4] D.
+
+Lu, C.
+
+Wang, Three-dimensional temperature field inversion calculation based on an artificial intelligence algorithm, Appl. Therm. Eng. 225 (2023), https://doi. org/10.1016/j.applthermaleng.2023.120237. [5] M.T. Hughes, G. Kini, S. Garimella, Status, challenges, and potential for machine learning in understanding and applying heat transfer phenomena, J. Heat Transf. 143 (2021), https://doi.org/10.1115/1.4052510. [6] S.L. Brunton, J.N. Kutz, K. Manohar, A.Y. Aravkin, K. Morgansen, J. Klemisch, N. Goebel, J. Buttrick, J. Poskin, A.W. Blom-Schieber, T. Hogan, D. McDonald, Data-driven aerospace engineering: reframing the industry with machine learning, AIAA J. 59 (2021), https://doi.org/10.2514/1.J060131. [7] H. Chen, X. Tang, Z. Liu, Z.
+
+Liu, H.
+
+Zhou, Predicting the temperature field of thermal cloaks in homogeneous isotropic multilayer materials based on deep learning, Int. J. Heat Mass Transf. 219 (2024), https://doi.org/10.1016/j. ijheatmasstransfer.2023.124849. [8] X.
+
+Liu, W.
+
+Peng, Z.
+
+Gong, W.
+
+Zhou, W.
+
+Yao, Temperature field inversion of heat- source systems via physics-informed neural networks, Eng. Appl. Artif. Intell. 113 (2022), https://doi.org/10.1016/j.engappai.2022.104902. [9] M.S.
+
+Go, J.H.
+
+Lim, S.
+
+Lee, Physics-informed neural network-based surrogate model for a virtual thermal sensor with real-time simulation, Int. J. Heat Mass Transf. 214 (2023), https://doi.org/10.1016/j.ijheatmasstransfer.2023.124392. [10] N. Jiang, L. Wang, Quantum image scaling using nearest neighbor interpolation, Quantum Inf. Process 14 (2015), https://doi.org/10.1007/s11128-014-0841-8. [11] S.L. Rathbun, M.L. Stein, Interpolation of spatial data: some theory for kriging, J. Am. Stat. Assoc. 95 (2000), https://doi.org/10.2307/2669494. [12] M.N. Evans, A. Kaplan, M.A. Cane, Pacific Sea surface temperature field reconstruction from coral δ18O data using reduced space objective analysis, Paleoceanography 17 (2002), https://doi.org/10.1029/2000PA000590. [13] G. Biau, E. Scornet, A random forest guided tour, Test 25 (2016), https://doi.org/ 10.1007/s11749-016-0481-7. [14] A.
+
+Tikadar, S.
+
+Kumar, Investigation of thermal-hydraulic performance of metal- foam heat sink using machine learning approach, Int. J. Heat Mass Transf. 199 (2022), https://doi.org/10.1016/j.ijheatmasstransfer.2022.123438. [15] J.
+
+Xu, J.
+
+Liu, S.
+
+Yu, K.
+
+Xu, T.
+
+Zhang, Real-time temperature prediction of lunar regolith drilling based on ATT-bi-LSTM network, Int. J. Heat Mass Transf. 218 (2024), https://doi.org/10.1016/j.ijheatmasstransfer.2023.124783. [16] K. Xu, J.
+
+Zhuang, X.
+
+Meng, S.
+
+Yin, J.
+
+Fan, L.
+
+Hu, Temperature field prediction of lithium-ion batteries using improved local tangent space alignment, Int. J. Heat Mass Transf. 209 (2023), https://doi.org/10.1016/j. ijheatmasstransfer.2023.124126. [17] Z.T. Niu, H. Qi, J.W. Shi, Y.T. Ren, M.J. He, W.
+
+Zhou, Three-dimensional rapid visualization of flame temperature field via compression and noise reduction of light field imaging, Int. Commun. Heat Mass Transf. 137 (2022), https://doi.org/ 10.1016/j.icheatmasstransfer.2022.106270. [18] C. van der Linden, Y.
+
+Dufresne, The curse of dimensionality in voting advice applications: reliability and validity in algorithm design, J. Elect. Public Opin. Parties 27 (2017), https://doi.org/10.1080/17457289.2016.1268144. [19] P. Ray, S.S. Reddy, T. Banerjee, Various dimension reduction techniques for high dimensional data analysis: a review, Artif. Intell. Rev. 54 (2021), https://doi.org/ 10.1007/s10462-020-09928-0. [20] S.N.S. Hasan, N.W. Jamil, H. Ahmat, A review of dimension reduction techniques for classification on high-dimensional data, AIP Conf. Proc. (2023), https://doi. org/10.1063/5.0177327. [21] H. Hotelling, Analysis of a complex of statistical variables into principal components, J. Educ. Psychol. 24 (1933), https://doi.org/10.1037/h0071325. [22] L.
+
+Wu, K.
+
+Chen, C.
+
+Zhan, Snapshot POD analysis of transient flow in the pilot stage of a jet pipe servo valve, J. Turbul. 19 (2018), https://doi.org/10.1080/ 14685248.2018.1524579. [23] R.K.
+
+Pyla, J.R.K.K.
+
+Dabbakuti, Evaluation of ionospheric delays based on orthogonal dimensionality reduction approach, Acta Astronaut. 179 (2021), https://doi.org/10.1016/j.actaastro.2020.10.043. (1) The POD method effectively converts high-dimensional temper- ature data into low-dimensional modal coefficients, simplifying analysis while retaining the principal features of data. The dimensionality of temperature field data in this paper is reduced from 1920 to 12, with an absolute error of less than 2.5 K and a relative error of less than 1 %. (2) For the initial layout with 60 sensors and the input dimension- ality of 5, the performances of POD-BPNN model are m-MREs of 0.015 % and 0.068 %, m-MAEs of 0.103 K and 0.560 K for Td and Tu, respectively. The performances of POD-RF model are m-MREs of 2.535 % and 3.208 %, m-MAEs of 13.96 K and 20.35 K for Td and Tu, respectively. (3) The optimal layout obtained by GA includes 24 sensors gathering to high temperature and high gradient regions. For the RF method, the top 24 sensors ranked by importance are concen- trated in the regions with maximum and minimum temperatures. (4) With the optimal parameters and sensors, the performances of POD-BPNN-GA model are m-MREs of 0.014 % and 0.063 %, m- MAEs 0.091 K and 0.496 K for Td and Tu, respectively. The per- formances of POD-RF model are m-MREs of 0.601 % and 1.205 %, m-MAEs of 4.600 K and 11.47 K for Td and Tu, respectively. [24] B. Sch¨olkopf, A. Smola, K.R. Müller, Nonlinear component analysis as a kernel eigenvalue problem, Neural Comput. 10 (1998), https://doi.org/10.1162/ 089976698300017467. [25] S.T. Roweis, L.K. Saul, Nonlinear dimensionality reduction by locally linear embedding, Science (2000), https://doi.org/10.1126/science.290.5500.2323. [26] J.B. Tenenbaum, V. De Silva, J.C. Langford, A global geometric framework for nonlinear dimensionality reduction, Science 290 (2000), https://doi.org/10.1126/ science.290.5500.2319. [27] Y. Dai, J. Zhao, X. Gui, Y. Wang, W. Tao, Z. Zou, F. Bai, A fast and high-fidelity multi-parameter thermal-field prediction system based on CFD and POD coupling: application to the RPV insulation structure, Int. J. Heat Mass Transf. 233 (2024) 125985, https://doi.org/10.1016/j.ijheatmasstransfer.2024.125985. [28] X. Jia, C. Li, W. Ji, C. Gong, A hybrid reduced-order model combing deep learning for unsteady flow, Phys. Fluids 34 (2022), https://doi.org/10.1063/5.0104848. [29] S.S. Joshi, W. Hwang, S.S. Choi, Model reduction for hypersonic flows in thermochemical non-equilibrium, in: AIAA Aviation and Aeronautics Forum and Exposition, AIAA AVIATION Forum 2023, 2023, https://doi.org/10.2514/ 6.2023–3717. [30] Y.
+
+Guo, K.
+
+Wang, G.
+
+Leng, F.
+
+Zhao, H.
+
+Bao, Real-time temperature field reconstruction using a few measurement points and RPIM-AGQ6 interpolation, Measurement (Lond) 225 (2024), https://doi.org/10.1016/j. measurement.2023.114041. [31] H.R. Cheshmehgaz, H. Haron, A. Sharifi, The review of multiple evolutionary searches and multi-objective evolutionary algorithms, Artif. Intell. Rev. 43 (2015), https://doi.org/10.1007/s10462-012-9378-3. [32] J.H. Holland, Adaptation in Natural and Artificial Systems, 1992, https://doi.org/ 10.7551/mitpress/1090.001.0001. [33] M.
+
+Bilal, H.
+
+Pant, L.
+
+Zaheer, A.
+
+Garcia-Hernandez, Abraham, differential evolution: a review of more than two decades of research, Eng. Appl. Artif. Intell. 90 (2020) 103479, https://doi.org/10.1016/J.ENGAPPAI.2020.103479. [34] X. Li, S. Niu, H. Bao, N. Hu, Improved adaptive multi-objective particle swarm optimization of sensor layout for shape sensing with inverse finite element method, Sensors 22 (2022), https://doi.org/10.3390/s22145203. [35] Z. Zhao, K. Chen, Y. Liu, H. Bao, A large-scale sensor layout optimization algorithm for improving the accuracy of inverse finite element method, Sensors 23 (2023), https://doi.org/10.3390/s23198176. [36] Q. Lin, J.
+
+Hong, Z.
+
+Liu, B.
+
+Li, J.
+
+Wang, Investigation into the topology optimization for conductive heat transfer based on deep learning approach, Int. Commun. Heat Mass Transf. 97 (2018), https://doi.org/10.1016/j. icheatmasstransfer.2018.07.001. [37] M.
+
+Song, K.
+
+Chen, X.
+
+Zhang, Optimization of the volume-to-point heat conduction problem with automatic differentiation based approach, Int. J. Heat Mass Transf. 177 (2021), https://doi.org/10.1016/j.ijheatmasstransfer.2021.121552. [38] J.X.
+
+Hu, L.Q.
+
+Ai, N.
+
+Liu, J.J.
+
+Gou, C.L.
+
+Gong, Tolerance indicating models of non- thermal and thermal damages for a heat transport system, Int. J. Heat Mass Transf. 224 (2024), https://doi.org/10.1016/j.ijheatmasstransfer.2024.125360. [39] K. Ye, L.
+
+Qin, Z.
+
+Ye, D.
+
+Yang, B.
+
+Dong, Uncertainty analysis of rudder shaft thermal conditions on the flutter characteristics of the hypersonic control surface, Aerosp. Sci. Technol. 155 (2024) 109721, https://doi.org/10.1016/j.ast.2024.109721. [40] J.-J. Gou, S.-Z. Jia, H.-T.
+
+Tian, J.-X.
+
+Hu, C.-L.
+
+Gong, An integrated optimization method of multi-hierarchy variables for rudder structures with radial force transfer paths, Aerosp. Sci. Technol. 148 (2024) 109115, https://doi.org/10.1016/j. ast.2024.109115.

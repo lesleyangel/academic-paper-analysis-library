@@ -1,0 +1,63 @@
+Breiman, L., 2001. Random forests. Mach. Learn. 45 (1), 5–32.
+
+Cai, S., Wang, Z., Wang, S., et al., 2021. Physics-informed neural networks for heat transfer problems. J. Heat Transfer 143 (6), 060801. historical data entirely caused the reconstruction relative error to surge from 1.495% to 6.443%, highlighting the critical role of temporal context in solving this transient problem.
+
+Chanda, S., Balaji, C., Venkateshan, S.P., et al., 2017. Estimation of principal thermal conductivities of layered honeycomb composites using ANN-GA based inverse technique. Int. J. Therm. Sci. 111, 423–436.
+
+Chen, H., Yu, B., Zhou, H., et al., 2018. Identification of transient boundary conditions with improved cuckoo search algorithm and polynomial approximation. Eng. Anal. Bound. Elem. 95, 124–141.
+
+Cleary, J.W., 1969. Effects of angle of attack and bluntness on laminar heating-rate distributions of a 15 cone at a mach number of 10.6. Natl. Aeronaut. Space Administ. Faroughi S A, Pawar N, Fernandes C, et al.
+
+Physics-guided, physics-informed, and physics-encoded neural networks in scientific computing. arXiv preprint arXiv: 2211.07377, 2022.
+
+Forrester, A.I.J., S´obester, A., Keane, A.J., 2007. Multi-fidelity optimization via surrogate modelling. Proc. Royal Soc. A: Math. Phys. Eng. Sci. 463 (2088), 3251–3269. Fort S, Brock A, Pascanu R, et al. Drawing multiple augmentation samples per image during training efficiently decreases test error. arXiv preprint arXiv:2105.13343, 2021.
+
+Gu, J., Hong, M., Yang, Q., et al., 2023. A fast inversion approach for the identification of highly transient surface heat flux based on the generative adversarial network. Appl. Therm. Eng. 220, 119765.
+
+Huang, W., Gong, C., Li, C., et al., 2024. Real-time data-driven inverse heat conduction method for a reentry flight vehicle based on the random forest algorithm. J. Aerosp. Eng. 37 (1), 04023091.
+
+Huang, C.H., He, K.J., 2022. A steady-state inverse heat conduction-convection conjugated problem in determining unknown spatially dependent surface heat flux. Case Stud. Therm. Eng. 39, 102411.
+
+Huang, W., Li, C., Gong, C., et al., 2025. A heat flux distribution prediction method for hypersonic flight vehicle along trajectory based on POD and TSCN. Aerosp. Sci. Technol. 110283.
+
+Islam, M.S., Dutta, P., 2025. Machine learning assisted inverse heat transfer problem to find heat flux in ablative materials. Mater. Today Commun. 45 (C).
+
+Jiang, X., Wang, X., Wen, Z., et al., 2023. Practical uncertainty quantification for space- dependent inverse heat conduction problem via ensemble physics-informed neural networks. Int. Commun. Heat Mass Transfer 147, 106940.
+
+Kong, F.J., Liu, B.R., Wang, L., et al., 2020. Comparative analysis of calculation methods for heat flux field of the quartz lamp radiant heater. Spacecraft Environ. Eng. 37 (1), 47–53.
+
+Koric, S., Abueidda, D.W., 2023. Data-driven and physics-informed deep learning operators for solution of heat conduction equation with parametric heat source. Int. J. Heat Mass Transf. 203, 123809. Kossaifi J, Kovachki N, Azizzadenesheli K, et al. Multi-grid tensorized fourier neural operator for high-resolution pdes. arXiv preprint arXiv:2310.00120, 2023. Li Z, Kovachki N, Azizzadenesheli K, et al. Fourier neural operator for parametric partial differential equations. arXiv preprint arXiv:2010.08895, 2020.
+
+Liu, F.B., 2008. A modified genetic algorithm for solving the inverse heat transfer problem of estimating plan heat source. Int. J. Heat Mass Transf. 51 (15–16), 3745–3752.
+
+Mk, H.K., Ps, V., N g,, et al., 2018. A combined ANN-GA and experimental based technique for the estimation of the unknown heat flux for a conjugate heat transfer problem. Heat Mass Transf. 54 (11), 3185–3197.
+
+Mulani, K., Talukdar, P., Das, A., et al., 2015. Performance analysis and feasibility study of ant colony optimization, particle swarm optimization and cuckoo search algorithms for inverse heat transfer problems. Int. J. Heat Mass Transf. 89, 359–378.
+
+Nair, A.R., Asok, K.S., 2020. Development and validation of a code for heat flux estimation using inverse heat transfer technique and conjugate gradient method [M]//Emerging technologies for sustainability. CRC Press 671–676. Rahman M A, Ross Z E, Azizzadenesheli K. U-no: U-shaped neural operators. arXiv preprint arXiv:2204.11127, 2022.
+
+Samadi, F., Woodbury, K.A., Beck, J.V., 2018. Evaluation of generalized polynomial function specification methods. Int. J. Heat Mass Transf. 122, 1116–1127.
+
+Shang, Y., Ban, H., Liu, D., 2025. Simultaneous identification of boundary heat flux and thermal conductivity in inverse heat conduction problems using physics-informed neural networks. Therm. Sci. Eng. Prog. 103905.
+
+Tamaddon-Jahromi, H.R., Chakshu, N.K., Sazonov, I., et al., 2020. Data-driven inverse modelling through neural network (deep learning) and computational heat transfer. Comput. Methods Appl. Mech. Eng. 369, 113217.
+
+Vishweshwara, P.S., Gnanasekaran, N., Arun, M., 2018. Estimation of interfacial heat transfer coefficient for horizontal directional solidification of Sn-5 Wt% Pb alloy using genetic algorithm as inverse method. Soft Computing for Problem Solving: Socpros 2017 Volume 1, 447–459.
+
+Wang, X., Li, H., He, L., et al., 2018. Evaluation of multi-objective inverse heat conduction problem based on particle swarm optimization algorithm, normal distribution and finite element method. Int. J. Heat Mass Transf. 127, 1114–1127.
+
+Xie, Q., Wang, Y., Li, X., et al., 2022. Two-dimensional transient heat transfer model of moving quenching jet based on machine learning. Int. J. Heat Mass Transf. 191, 122765.
+
+Yang, F., Fu, C.L., 2010. A simplified Tikhonov regularization method for determining the heat source. App. Math. Model. 34 (11), 3286–3299.
+
+Yang, S., Lee, Y., Kang, N., 2025. Data-efficient deep operator network for unsteady flow: a multi-fidelity approach with physics-informed subsampling. Comput. Methods Appl. Mech. Eng. 446, 118254.
+
+Zhang, Z., Lei, J., Peng, B., et al., 2024. Self-supervised pretraining for stereoscopic image super-resolution with parallax-aware masking. IEEE Trans. Broadcast. 70 (2), 482–491.
+
+Zhao, J.S., Gu, L.X., Ma, H.Z., 2013. A rapid approach to convective aeroheating prediction of hypersonic vehicles. Sci. China Technol. Sci. 56 (8), 2010–2024. To highlight TFNO's advantage on field reconstruction, we compare against other baselines. As shown in Table 5.5, TFNO attains the best overall accuracy among the tested methods. In this work we formulated a physics-guided, data-driven inversion framework based on a TFNO for reconstructing complete thermal fields of hypersonic configurations from sparse measurements. The method integrates (i) replication-masking to harden the model against arbitrary sparse sensor layouts, (ii) multi-input fusion of discrete sensors with flight-state variables and low-fidelity (CFD) predictions for aerodynamic heating on a blunt cone, and (iii) short historical measurements to recover transient temperature fields on a radiatively heated C/SiC plate. Validation across these two representative scenarios demonstrates real- time inference and consistent improvements over traditional inter polants, conventional neural networks, and other operator backbones. The main conclusions are as follows: • On the blunt-cone heat-flux case, fusing discrete measurements, flight-state variables, and low-fidelity CFD yields a mean relative error below 2%, and ablation studies confirm the contribution of each component. • On the C/SiC plate temperature case, using three recent measure ments at 25 s intervals reduces the mean relative error in transient temperature reconstruction to below 1.5%, whereas omitting history raises it to about 6.4%. • The trained model infers one field in about 0.08 s, enabling online updates that meet real-time requirements. Compared with nearest- neighbor interpolation, RBF interpolation, BPNN, BPNN + POD, and alternative backbones, TFNO attains the best balance between accuracy and spatial coherence on both tasks. Repeated tests with a fixed masking ratio show that the model remains accurate even when some sensors fail or at unsensed locations. Huang Wenyu: Writing – original draft, Software, Methodology, Data curation. Li Chunna: Writing – review & editing. Gou Jianjun: Project administration. Ma Xiaobing: Funding acquisition. Gong Chunlin: Project administration. The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. The work presented in this paper was supported by National Natural Science Foundation of China (No. U2141254).
+
+Zhao, Z., Xie, O., Meng, Z., et al., 2014. Determination of an unknown source in the heat equation by the method of Tikhonov regularization in Hilbert scales. J. Appl. Math. Phys. 2 (2), 10–17.
+
+Zhu, F., Chen, J., Han, Y., 2022. A multiple regression convolutional neural network for estimating multi-parameters based on overall data in the inverse heat transfer problem. J. Therm. Sci. Eng. Appl. 14 (5), 051003.
+
+Zhu, F., Chen, J., Han, Y., et al., 2022. A deep learning method for estimating thermal boundary condition parameters in transient inverse heat transfer problem. Int. J. Heat Mass Transf. 194, 123089.

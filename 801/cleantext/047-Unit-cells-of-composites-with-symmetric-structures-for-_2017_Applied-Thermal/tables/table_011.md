@@ -1,0 +1,3 @@
+|  | $\lambda _ { t } \left( N u m . \right) \left( \mathsf { W / ( m . K ) } \right)$ | $\lambda _ { t } \left( E x p . \right) \left( \mathsf { W } / ( \mathsf { m } { \cdot } \mathrm { K } ) \right)$ | Diff. %) | $\lambda _ { a } \left( N u m . \right) \left( \mathsf { W / ( m . K ) } \right)$ | $\lambda _ { a } \left( E x p . \right) \left( \mathsf { W } / ( \mathsf { m cdot K } ) \right)$ | Diff. (%) |
+| --- | --- | --- | --- | --- | --- | --- |
+| C- phenolic | 2.35 | $2 . 7 9 \ [ 1 6 ]$ | -15.8 | 0.61 | $0 . 5 7 \ [ 1 6 ]$ | 7.0 |

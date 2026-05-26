@@ -1,0 +1,375 @@
+[
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "4 \\ : \\mathrm { M W } / \\mathrm { m } ^ { 2 }",
+    "normalized": "4 \\ : \\mathrm{MW} / \\mathrm{m} ^ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_001"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\nabla \\cdot q _ { \\mathrm { w } } \\vec { i } + \\rho _ { s } C _ { \\mathrm { p s } } \\frac { \\partial T } { \\partial t } = \\nabla \\cdot \\left( k \\frac { \\partial T } { \\partial x } \\vec { i } \\right) - \\rho _ { \\mathrm { g } } C _ { \\mathrm { p g } } \\vec { \\nu } _ { \\mathrm { g } } \\cdot \\nabla T - Q \\rho _ { s } \\frac { d c } { d t }\\tag{ð1Þ}\n",
+    "normalized": "\\nabla \\cdot q _ {\\mathrm{w}} \\vec {i} + \\rho _ {s} C _ {\\mathrm{ps}} \\frac {\\partial T} {\\partial t} = \\nabla \\cdot \\left( k \\frac {\\partial T} {\\partial x} \\vec {i} \\right) - \\rho _ {\\mathrm{g}} C _ {\\mathrm{pg}} \\vec {\\nu} _ {\\mathrm{g}} \\cdot \\nabla T - Q \\rho _ {s} \\frac {d c} {d t}\\tag{ð1Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_002"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { \\mathrm { w } }",
+    "normalized": "q _ {\\mathrm{w}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_003"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\therefore C _ { \\mathfrak { p } }",
+    "normalized": "\\therefore C _ {\\mathfrak {p}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_004"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\vec { \\upsilon } _ { \\mathrm { g } }",
+    "normalized": "\\vec {\\upsilon} _ {\\mathrm{g}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_005"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mu",
+    "normalized": "\\mu",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_006"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\vec { \\upsilon } _ { \\mathrm { g } } = - \\frac { \\lambda } { \\mu } \\frac { \\partial p } { \\partial x } \\vec { i }\\tag{ð2Þ}\n",
+    "normalized": "\\vec {\\upsilon} _ {\\mathrm{g}} = - \\frac {\\lambda} {\\mu} \\frac {\\partial p} {\\partial x} \\vec {i}\\tag{ð2Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_007"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\frac { d c } { d t } = - A _ { 0 } c ^ { n } \\exp \\left( - \\frac { E _ { \\mathrm { a } } } { R T } \\right)\\tag{ð3Þ}\n",
+    "normalized": "\\frac {d c} {d t} = - A _ {0} c ^ {n} \\exp \\left( - \\frac {E _ {\\mathrm{a}}} {R T} \\right)\\tag{ð3Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_009"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 0 } , n ,",
+    "normalized": "A _ {0} , n ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_010"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "E _ { \\mathrm { a } }",
+    "normalized": "E _ {\\mathrm{a}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_011"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\rho _ { \\mathsf { p } } { \\frac { \\partial \\varphi _ { \\mathsf { p } } } { \\partial t } } = { \\frac { d c } { d t } }\\tag{ð4Þ}\n",
+    "normalized": "\\rho _ {\\mathsf{p}} {\\frac {\\partial \\varphi _ {\\mathsf{p}}} {\\partial t}} = {\\frac {d c} {d t}}\\tag{ð4Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_012"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\rho _ { \\mathrm { c } } \\frac { \\partial \\varphi _ { \\mathrm { c } } } { \\partial t } = - \\frac { d c } { d t } ( 1 - \\Gamma ^ { \\mathrm { p } } )\\tag{ð5Þ}\n",
+    "normalized": "\\rho _ {\\mathrm{c}} \\frac {\\partial \\varphi _ {\\mathrm{c}}} {\\partial t} = - \\frac {d c} {d t} ( 1 - \\Gamma ^ {\\mathrm{p}} )\\tag{ð5Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_013"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\varphi _ { \\mathrm { g } } = 1 - \\varphi _ { \\mathrm { f } } - \\varphi _ { \\mathrm { p } } - \\varphi _ { \\mathrm { c } }\\tag{ð6Þ}\n",
+    "normalized": "\\varphi _ {\\mathrm{g}} = 1 - \\varphi _ {\\mathrm{f}} - \\varphi _ {\\mathrm{p}} - \\varphi _ {\\mathrm{c}}\\tag{ð6Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_014"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\rho , \\varphi",
+    "normalized": "\\rho , \\varphi",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_015"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\Gamma ^ { \\mathfrak { p } }",
+    "normalized": "\\Gamma ^ {\\mathfrak {p}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_016"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\rho = \\rho _ { \\mathrm { f } } \\varphi _ { \\mathrm { f } } + \\rho _ { \\mathrm { p } } \\varphi _ { \\mathrm { p } } + \\rho _ { \\mathrm { c } } \\varphi _ { \\mathrm { c } }\\tag{ð7Þ}\n",
+    "normalized": "\\rho = \\rho _ {\\mathrm{f}} \\varphi _ {\\mathrm{f}} + \\rho _ {\\mathrm{p}} \\varphi _ {\\mathrm{p}} + \\rho _ {\\mathrm{c}} \\varphi _ {\\mathrm{c}}\\tag{ð7Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_017"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { 0 } .",
+    "normalized": "h _ {0}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_018"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\frac { 1 } { h _ { 0 } } \\frac { \\partial h } { \\partial t } = [ \\beta _ { \\mathrm { v i r g } } ( 1 - c ) + \\beta _ { \\mathrm { c h a r } } c ] \\frac { \\partial T } { \\partial t } + \\frac { \\xi } { m _ { 0 } } \\frac { \\partial m } { \\partial t }\\tag{ð8Þ}\n",
+    "normalized": "\\frac {1} {h _ {0}} \\frac {\\partial h} {\\partial t} = [ \\beta _ {\\mathrm{virg}} ( 1 - c ) + \\beta _ {\\mathrm{char}} c ] \\frac {\\partial T} {\\partial t} + \\frac {\\xi} {m _ {0}} \\frac {\\partial m} {\\partial t}\\tag{ð8Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_019"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\beta _ { \\mathrm { v i r g } }",
+    "normalized": "\\beta _ {\\mathrm{virg}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_020"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\beta _ { \\mathrm { c h a r } }",
+    "normalized": "\\beta _ {\\mathrm{char}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_021"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( 8 ) , m _ { 0 }",
+    "normalized": "( 8 ) , m _ {0}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_022"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\nm = c m _ { 0 } + ( 1 - c ) m _ { \\mathrm { f i n a l } }\\tag{ð9Þ}\n",
+    "normalized": "m = c m _ {0} + ( 1 - c ) m _ {\\mathrm{final}}\\tag{ð9Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_023"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { \\mathrm { f i n a l } }",
+    "normalized": "m _ {\\mathrm{final}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_024"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t + \\Delta t ,",
+    "normalized": "t + \\Delta t ,",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_025"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { i ^ { \\prime } } ^ { 0 } ,",
+    "normalized": "T _ {i ^ {\\prime}} ^ {0} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_026"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\frac { \\partial m _ { \\mathrm { g } } } { \\partial t } = \\frac { \\partial m _ { \\mathrm { p g } } } { \\partial t } - \\nabla \\cdot ( \\rho _ { \\mathrm { g } } \\vec { \\upsilon } _ { \\mathrm { g } } )\\tag{ð10Þ}\n",
+    "normalized": "\\frac {\\partial m _ {\\mathrm{g}}} {\\partial t} = \\frac {\\partial m _ {\\mathrm{pg}}} {\\partial t} - \\nabla \\cdot ( \\rho _ {\\mathrm{g}} \\vec {\\upsilon} _ {\\mathrm{g}} )\\tag{ð10Þ}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_027"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { \\mathrm { p g } }",
+    "normalized": "m _ {\\mathrm{pg}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_028"
+  }
+]

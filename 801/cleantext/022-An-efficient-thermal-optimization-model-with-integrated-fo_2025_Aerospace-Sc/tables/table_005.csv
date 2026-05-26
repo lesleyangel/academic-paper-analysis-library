@@ -1,0 +1,4 @@
+Path mass (kg),Thermal insulation,Heat path,Force path,Sum,Reduction
+Force-only (550K),1.29,0,0.65,1.94,/
+Force-only (350 K),2.75,0,0.65,3.40,/
+Integrated path,0.49,0.51,0.86,1.86,0.08~1.54 kg 4.1 %~45.3 %

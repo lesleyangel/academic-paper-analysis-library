@@ -1,0 +1,543 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.64, 205.3, 367.08, 218.96)]] Jian-Jun Gou, Zheng-Wei Yan, Jia-Xin Hu, Ge Gao, Chun-Lin Gong ∗
+
+[confidence=0.92; source=equations; [page 1, bbox (41.17, 696.06, 204.7, 715.22)]] * Corresponding author. E-mail address: leonwood@nwpu.edu.cn (C.-L. Gong)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.63, 499.38, 557.7, 512.82)]] α (Tr -T w) = εσ T 4 w + qin (1)
+
+[confidence=0.92; source=equations; [page 5, bbox (37.5, 555.64, 288.71, 566.64)]] qin = heq′(T w -Tc) = hl(Tb -Tc) (2)
+
+[confidence=0.92; source=equations; [page 5, bbox (37.5, 739.08, 288.71, 749.95)]] qin = heqT w (3)
+
+[confidence=0.62; needs_review; source=equations; [page 6, bbox (37.5, 121.35, 288.71, 132.28)]] heqT w A = m f cp�Tc (4)
+
+[confidence=0.92; source=equations; [page 6, bbox (37.5, 435.36, 288.71, 447.59)]] heqT w A = U 2R/(2R)2 (5)
+
+[confidence=0.62; needs_review; source=equations; [page 6, bbox (37.8, 508.75, 288.71, 527.0)]] U = |Sn�Tn| + ��S p�T p �� (6)
+
+[confidence=0.62; needs_review; source=equations; [page 6, bbox (37.5, 586.71, 288.71, 605.61)]] heqT w A = m f cp�TC + (|Sn�Tn| + ��S p�T p ��)2/(4R) (7)
+
+[confidence=0.62; needs_review; source=equations; [page 6, bbox (39.48, 631.73, 274.35, 650.63)]] heqT w A = m f cp�TC + (|Snm�Tnm| + ��S pm�T pm ��)2/(4Rm)
+
+[confidence=0.62; needs_review; source=equations; [page 6, bbox (85.58, 649.26, 212.73, 667.71)]] +(|Snl�Tnl| + ��S pl�T pl ��)2/(4Rl)
+
+[confidence=0.92; source=equations; [page 6, bbox (306.99, 626.15, 557.7, 639.29)]] T ∗= 0.7Te + 0.58(T w -Te) + 0.23(Tr -Te)(5 < Mae < 10) (9)
+
+[confidence=0.92; source=equations; [page 7, bbox (308.63, 400.03, 381.4, 409.7)]] Min Weight(x) =
+
+[confidence=0.92; source=equations; [page 7, bbox (38.0, 589.14, 288.71, 600.21)]] T w < T T P S < T w + Ttol (10)
+
+[confidence=0.92; source=equations; [page 7, bbox (384.3, 399.6, 412.38, 420.73)]] i=0 ρixi
+
+[confidence=0.92; source=equations; [page 7, bbox (332.77, 420.68, 451.41, 431.05)]] s.t.Ti(x) < Ti max, i = 1, 2,...,n
+
+[confidence=0.92; source=equations; [page 9, bbox (110.69, 208.35, 215.2, 242.12)]] A1-A2 T (0, y)-T (a, y)=0 A3-A4 T (x, 0)-T (x, b)=0 A5 q = -hl (Tbottom-300) A6 q = qaero - qrad
+
+[confidence=0.92; source=equations; [page 9, bbox (39.64, 621.16, 143.45, 631.44)]] Max T EC = P/qaero/(ab)
+
+[confidence=0.92; source=equations; [page 9, bbox (39.78, 630.54, 288.71, 649.52)]] s.t. 300K < Tbottom < 440K (12)
+
+[confidence=0.92; source=equations; [page 9, bbox (39.64, 652.88, 107.76, 664.09)]] Max P D = P/ρe
+
+[confidence=0.92; source=equations; [page 9, bbox (39.78, 662.69, 288.71, 681.66)]] s.t. 300K < Tbottom < 440K (13)
+
+[confidence=0.92; source=equations; [page 9, bbox (39.64, 685.44, 132.85, 696.22)]] Max Hreuse = qin/qaero
+
+[confidence=0.92; source=equations; [page 9, bbox (39.78, 694.82, 288.71, 713.79)]] s.t. 300K < Tbottom < 440K (14)
+
+[confidence=0.62; needs_review; source=equations; [page 9, bbox (315.72, 514.26, 557.7, 531.02)]] ∂t + div(ρVφ) = div(�gradφ) + Q s (15)
+
+[confidence=0.92; source=equations; [page 13, bbox (145.28, 82.48, 497.97, 89.68)]] heq= 00.112510-20
+
+[confidence=0.92; source=equations; [page 13, bbox (145.66, 94.04, 494.29, 109.07)]] Tb=300367440300367440300367440300367440300367-300-440440
+
+[confidence=0.57; needs_review; source=equations; [page 14, bbox (153.09, 61.53, 406.95, 77.78)]] Table 8 The heat capacity of RC network for each subregion (cp · m f for △Tc = 1 K, W·K-1)
+
+[confidence=0.92; source=body_inline] 1 , L _ {F}
+
+[confidence=0.92; source=body_inline] 0.5 ~ \mathrm{m} ^ {2} ; ~ F _ {I - L} , ~ F _ {I I - L}
+
+[confidence=0.92; source=body_inline] F _ {I I I - L}
+
+[confidence=0.92; source=body_inline] 22.9 \ \mathrm {{\ m}} ^ {2}
+
+[confidence=0.92; source=body_inline] F _ {I - S} , \ F _ {I I - S}
+
+[confidence=0.92; source=body_inline] F _ {I I I - S}
+
+[confidence=0.92; source=body_inline] 14.8 ~ \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] F _ {I - W}
+
+[confidence=0.92; source=body_inline] 3.6 ~ \mathrm{m} ^ {2} ; ~ C _ {I} , ~ C _ {I I}
+
+[confidence=0.92; source=body_inline] C _ {I I I}
+
+[confidence=0.92; source=body_inline] 3.1 ~ \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] P _ {I - S} , \ P _ {I I - S}
+
+[confidence=0.92; source=body_inline] P _ {I I I - S}
+
+[confidence=0.92; source=body_inline] 6.3 ~ \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] P _ {I - W} , \ P _ {I I - W}
+
+[confidence=0.92; source=body_inline] P _ {I I I - W}
+
+[confidence=0.92; source=body_inline] 2.6 \ \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] W _ {L}
+
+[confidence=0.92; source=body_inline] W _ {W}
+
+[confidence=0.92; source=body_inline] 20.3 ~ \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] V _ {F}
+
+[confidence=0.92; source=body_inline] 11.2 \ \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] 145.9 \mathrm{~m} ^ {2}
+
+[confidence=0.92; source=body_inline] \mathrm{LH} _ {2}
+
+[confidence=0.92; source=body_inline] \mathrm{Fig.}
+
+[confidence=0.92; source=body_inline] \mathrm{LH} _ {2} ,
+
+[confidence=0.92; source=body_inline] \left( q _ {a e r o} \right)
+
+[confidence=0.92; source=body_inline] \alpha ( T _ {r} - T _ {w} ) = \varepsilon \sigma T _ {w} ^ {4} + q _ {i n}\tag{1}
+
+[confidence=0.92; source=body_inline] T _ {r}
+
+[confidence=0.92; source=body_inline] T _ {w}
+
+[confidence=0.92; source=body_inline] \sigma ~ = ~ 5.67 ~ \times ~ 10 ^ {- 8} ~ {\sf W} / ( {\mathrm m} ^ {2} {\cdot} {\bar {\mathrm{K}}} ^ {4} )
+
+[confidence=0.92; source=body_inline] q _ {i n}
+
+[confidence=0.92; source=body_inline] \mathrm{K} ;
+
+[confidence=0.92; source=body_inline] ( \mathsf{C} / \mathsf{C} , \mathsf{C} / \mathsf{SiC} . \hdots )
+
+[confidence=0.92; source=body_inline] q _ {i n} = h _ {e q ^ {\prime}} ( T _ {w} - T _ {c} ) = h _ {l} ( T _ {b} - T _ {c} )\tag{2}
+
+[confidence=0.92; source=body_inline] h _ {e q ^ {\prime}}
+
+[confidence=0.92; source=body_inline] T _ {c}
+
+[confidence=0.92; source=body_inline] h _ {l}
+
+[confidence=0.92; source=body_inline] T _ {b}
+
+[confidence=0.92; source=body_inline] h _ {e q}
+
+[confidence=0.92; source=body_inline] q _ {i n} = h _ {e q} T _ {w}\tag{3}
+
+[confidence=0.92; source=body_inline] q _ {i n} ,
+
+[confidence=0.92; source=body_inline] h _ {e q} T _ {w} A = m _ {f} c _ {p} \Delta T _ {c}\tag{4}
+
+[confidence=0.92; source=body_inline] m _ {f}
+
+[confidence=0.92; source=body_inline] c _ {p}
+
+[confidence=0.92; source=body_inline] \triangle T _ {c}
+
+[confidence=0.92; source=body_inline] m _ {f} \cdot c _ {p}
+
+[confidence=0.92; source=body_inline] ( \mathrm{LH} _ {2} ) ,
+
+[confidence=0.92; source=body_inline] \operatorname{If} q _ {i n}
+
+[confidence=0.92; source=body_inline] r \ : = \ : R
+
+[confidence=0.92; source=body_inline] h _ {e q} T _ {w} A = U ^ {2} R / ( 2 R ) ^ {2}\tag{5}
+
+[confidence=0.92; source=body_inline] U = | S _ {n} \Delta T _ {n} | + \left| S _ {p} \Delta T _ {p} \right|\tag{6}
+
+[confidence=0.92; source=body_inline] S _ {n}
+
+[confidence=0.92; source=body_inline] S _ {p}
+
+[confidence=0.92; source=body_inline] \Delta T _ {n}
+
+[confidence=0.92; source=body_inline] \Delta T _ {p}
+
+[confidence=0.92; source=body_inline] h _ {e q} T _ {w} A = m _ {f} c _ {p} \Delta T _ {C} + ( | S _ {n} \Delta T _ {n} | + \left| S _ {p} \Delta T _ {p} \right| ) ^ {2} / ( 4 \mathrm{R} )\tag{7}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {h _ {e q} T _ {w} A = m _ {f} c _ {p} \Delta T _ {C} + ( | S _ {n m} \Delta T _ {n m} | + \big | S _ {p m} \Delta T _ {p m} \big | ) ^ {2} / ( 4 R _ {m} )} \\ & {\qquad + ( | S _ {n l} \Delta T _ {n l} | + \big | S _ {p l} \Delta T _ {p l} \big | ) ^ {2} / ( 4 R _ {l} )} \end{array}\tag{8}
+
+[confidence=0.92; source=body_inline] q _ {a e r o}
+
+[confidence=0.92; source=body_inline] T _ {w} ,
+
+[confidence=0.92; source=body_inline] T ^ {*}
+
+[confidence=0.92; source=body_inline] T ^ {*} = 0.7 T _ {e} + 0.58 ( T _ {w} - T _ {e} ) + 0.23 ( T _ {r} - T _ {e} ) ( 5 < M a _ {e} < 10 )\tag{9}
+
+[confidence=0.92; source=body_inline] T _ {e}
+
+[confidence=0.92; source=body_inline] T _ {w} < T _ {T P S} < T _ {w} + T _ {t o l}\tag{10}
+
+[confidence=0.92; source=body_inline] T _ {T P S}
+
+[confidence=0.92; source=body_inline] T _ {t o l}
+
+[confidence=0.92; source=body_inline] T _ {b} ,
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathrm{Min}} & {\mathrm{Weight} ( x ) = \displaystyle \sum _ {i = 0} ^ {n} \rho _ {i} x _ {i}} \\ & {s . t . T _ {i} ( x ) < T _ {i \operatorname* {m a x}} , i = 1 , 2 , . . . , n} \\ & {T _ {n} ( x ) < T _ {b}} \end{array}\tag{11}
+
+[confidence=0.92; source=body_inline] T _ {i} ( x )
+
+[confidence=0.92; source=body_inline] T _ {n} ( x )
+
+[confidence=0.92; source=body_inline] T _ {i \mathrm{max}}
+
+[confidence=0.92; source=body_inline] 4 ( \mathsf{a} )
+
+[confidence=0.92; source=body_inline] t _ {0}
+
+[confidence=0.92; source=body_inline] t _ {1}
+
+[confidence=0.92; source=body_inline] t _ {0} = 3
+
+[confidence=0.92; source=body_inline] F _ {I I - L}
+
+[confidence=0.92; source=body_inline] h _ {e q} = 2 ~ \mathrm{W/(m} ^ {2} {\cdot} \mathrm{K} )
+
+[confidence=0.92; source=body_inline] t _ {1} = 2 \ \mathrm{mm}
+
+[confidence=0.92; source=body_inline] x = 6
+
+[confidence=0.92; source=body_inline] 2.5 \times 10 ^ {6}
+
+[confidence=0.92; source=body_inline] 10 \times 10 ^ {6}
+
+[confidence=0.92; source=body_inline] p -
+
+[confidence=0.92; source=body_inline] \mathsf{Bi} _ {2} \mathsf{Te} _ {3}
+
+[confidence=0.92; source=body_inline] \beta - Z {{\mathrm{b}}} _ {4} {{\mathrm{Sb}}} _ {3}
+
+[confidence=0.92; source=body_inline] ( \mathrm{Pb} _ {0.95} \mathrm{Sn} _ {0.05} \mathrm{Te} ) _ {0.92} ( \mathrm{Pb} \mathrm{S} ) _ {0.08}
+
+[confidence=0.92; source=body_inline] A _ {1}
+
+[confidence=0.92; source=body_inline] A _ {2} , A _ {3}
+
+[confidence=0.92; source=body_inline] A _ {4} , ~ A _ {5}
+
+[confidence=0.92; source=body_inline] A _ {6}
+
+[confidence=0.92; source=body_inline] A _ {2} , \ A _ {3}
+
+[confidence=0.92; source=body_inline] A _ {4}
+
+[confidence=0.92; source=body_inline] A _ {5}
+
+[confidence=0.92; source=body_inline] A _ {6} ,
+
+[confidence=0.92; source=body_inline] t _ {1} ,
+
+[confidence=0.92; source=body_inline] t _ {2} ,
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathsf{Max}} & {{} T E C = P / q _ {a e r o} / ( a b )} \end{array}
+
+[confidence=0.92; source=body_inline] s . t . \quad 300 \mathsf{K} < T _ {b o t t o m} < 440 \mathsf{K}\tag{12}
+
+[confidence=0.92; source=body_inline] \mathrm{Max} \quad P _ {D} = P / \rho _ {e}
+
+[confidence=0.92; source=body_inline] s . t . \quad 300 \mathsf{K} < T _ {b o t t o m} < 440 \mathsf{K}\tag{13}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathsf{Max}} & {{} H _ {r e u s e} = q _ {i n} / q _ {a e r o}} \end{array}
+
+[confidence=0.92; source=body_inline] s . t . \quad 300 \mathsf{K} < T _ {b o t t o m} < 440 \mathsf{K}\tag{14}
+
+[confidence=0.92; source=body_inline] P _ {D}
+
+[confidence=0.92; source=body_inline] \rho _ {e}
+
+[confidence=0.92; source=body_inline] H _ {r e u s e}
+
+[confidence=0.92; source=body_inline] 1 \leq t _ {1} \leq 10
+
+[confidence=0.92; source=body_inline] 1 \leq \ t _ {2} \ \leq 10
+
+[confidence=0.92; source=body_inline] 10 \leq h _ {l} \leq 25000 \mathrm{W/(m} ^ {2} {\cdot} \mathrm{K} )
+
+[confidence=0.92; source=body_inline] \frac {\partial ( \rho \phi )} {\partial t} + \mathrm{div} ( \rho \mathbf {\boldsymbol {v}} \phi ) = d i \nu ( \Gamma \mathbf {\boldsymbol {g} r a d} \phi ) + Q _ {s}\tag{15}
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.92; source=body_inline] Q _ {s}
+
+[confidence=0.92; source=body_inline] V _ {i}
+
+[confidence=0.92; source=body_inline] \mu
+
+[confidence=0.92; source=body_inline] \psi
+
+[confidence=0.92; source=body_inline] h _ {e q} \ = \ 0 , \ 0.1 , \ 1 , \ 2 , \ 5 , \ 10 ,
+
+[confidence=0.92; source=body_inline] {\sf W} / ( \mathrm{m} ^ {2} \cdot \mathrm{K} )
+
+[confidence=0.92; source=body_inline] h _ {e q} ,
+
+[confidence=0.92; source=body_inline] 4 \times 10 ^ {5} ~ \mathrm{kJ} / \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] h _ {e q} = \ 0
+
+[confidence=0.92; source=body_inline] {\sf W} / ( {\sf m} ^ {2} \cdot {\sf K} )
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0 , 0.1 , 1 , 2 , 5 , 10 ,
+
+[confidence=0.92; source=body_inline] {\sf W} / ( {\sf m} ^ {2} \cdot {\sf K} ) ,
+
+[confidence=0.67; needs_review; source=body_inline] \left( x = 4.5 ~ \mathrm{to} \right
+
+[confidence=0.92; source=body_inline] 20 ~ \mathsf{W} / ( \mathsf{m} ^ {2} {\cdot} \mathsf{K} )
+
+[confidence=0.92; source=body_inline] x = 5
+
+[confidence=0.92; source=body_inline] x = 2
+
+[confidence=0.67; needs_review; source=body_inline] h _ {e q} )
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0.1 ,
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0 ,
+
+[confidence=0.92; source=body_inline] \mathsf{kW} / \mathsf{m} ^ {2}
+
+[confidence=0.92; source=body_inline] 23 ^{\circ}
+
+[confidence=0.92; source=body_inline] \mathrm{kW} / {\mathrm{m}} ^ {2}
+
+[confidence=0.92; source=body_inline] W / ( \mathrm{m} ^ {2} \cdot \mathrm{K} ) ,
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0 , 0.1 , 1 , 2 , 5 , 10
+
+[confidence=0.92; source=body_inline] W / ( \mathrm{m} ^ {2} \cdot \mathrm{K} )
+
+[confidence=0.92; source=body_inline] \mathrm{~l~} \left( F _ {I - L} \right)
+
+[confidence=0.92; source=body_inline] \textbf {l} \left( F _ {I - W} \right)
+
+[confidence=0.92; source=body_inline] \left( C _ {I I I} \right)
+
+[confidence=0.92; source=body_inline] T _ {b} ~ = ~ 300
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0 , 0.1 , 1 , 2 , 5 , 10 , 15
+
+[confidence=0.67; needs_review; source=body_inline] ( c _ {p} \cdot m _ {f}
+
+[confidence=0.92; source=body_inline] \triangle T _ {c} = 1
+
+[confidence=0.92; source=body_inline] L _ {F}
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0.1 , 1 , 2 , 5 , 10 ,
+
+[confidence=0.92; source=body_inline] T _ {b} ~ = ~ 300 , ~ 367
+
+[confidence=0.92; source=body_inline] T _ {b} = 300
+
+[confidence=0.92; source=body_inline] T _ {b} ;
+
+[confidence=0.92; source=body_inline] 2.5 \times 10 ^ {6} , 4 \times 10 ^ {6}
+
+[confidence=0.92; source=body_inline] 2.5 \times 10 ^ {6} , 6 \times 10 ^ {6}
+
+[confidence=0.92; source=body_inline] 18 \times 10 ^ {6}
+
+[confidence=0.92; source=body_inline] 10 \times 10 ^ {6} , 6 \times 10 ^ {6}
+
+[confidence=0.92; source=body_inline] 2.5 ~ \times ~ 10 ^ {6}
+
+[confidence=0.92; source=body_inline] 4 , \mathrm{i.e.,} T _ {b} = 367 , 440 \ \mathrm{l}
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0
+
+[confidence=0.92; source=body_inline] T _ {b} = 300 , 367 ,
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0.1 , 1 , 2 , 5 , 10 , 15
+
+[confidence=0.92; source=body_inline] h _ {e q} \ = \ 5 \ \mathsf{W} / ( \mathsf{m} ^ {2} {\cdot} \mathsf{K} )
+
+[confidence=0.67; needs_review; source=body_inline] \mathrm{LH} _ {2} ( \mathrm{Figs.} 13 ( {\bf a} ) ,
+
+[confidence=0.67; needs_review; source=body_inline] ( \mathsf{c} ) )
+
+[confidence=0.92; source=body_inline] m _ {f} ,
+
+[confidence=0.67; needs_review; source=body_inline] m _ {f} ) ;
+
+[confidence=0.92; source=body_inline] y = 0.001
+
+[confidence=0.67; needs_review; source=body_inline] ( T _ {3 \mathrm{mm}} > T _ {2 \mathrm{mm}}
+
+[confidence=0.92; source=body_inline] y > 0.001
+
+[confidence=0.92; source=body_inline] > T _ {2 \mathrm{mm}} > T
+
+[confidence=0.92; source=body_inline] y > 0.002
+
+[confidence=0.67; needs_review; source=body_inline] ( T _ {3 \mathrm{mm}}
+
+[confidence=0.92; source=body_inline] T _ {2 \mathrm{mm}}
+
+[confidence=0.67; needs_review; source=body_inline] m _ {f} \cdot \triangle T _ {c} )
+
+[confidence=0.92; source=body_inline] 2.2 < x < 11.72
+
+[confidence=0.92; source=body_inline] m _ {f} = 0.5
+
+[confidence=0.92; source=body_inline] 10.9 < x < 11.72
+
+[confidence=0.92; source=body_inline] m _ {f} = 2.5
+
+[confidence=0.92; source=body_inline] q _ {s - f}
+
+[confidence=0.92; source=body_inline] m _ {f} \colon
+
+[confidence=0.67; needs_review; source=body_inline] \scriptstyle ( x \ = \ 0 \ {\mathrm{~to~}} x \ =
+
+[confidence=0.67; needs_review; source=body_inline] \dot {m} _ {f} = 2.27 \ ( q _ {s - f}
+
+[confidence=0.67; needs_review; source=body_inline] ( q _ {s - f}
+
+[confidence=0.92; source=body_inline] x \ = \ 11
+
+[confidence=0.67; needs_review; source=body_inline] ( m _ {f} = 2.27
+
+[confidence=0.92; source=body_inline] \triangle T _ {c} ~ - m _ {f}
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0.1 , \ 1 , \ 2 , \ 5 , \ 10
+
+[confidence=0.67; needs_review; source=body_inline] 22.2 \mathrm{~kW} / \mathrm{m} ^ {2} )
+
+[confidence=0.92; source=body_inline] \triangle T _ {c} ~ \cdot ~ m _ {f}
+
+[confidence=0.92; source=body_inline] q _ {i n} \cdot A
+
+[confidence=0.92; source=body_inline] \triangle T _ {c} = 425
+
+[confidence=0.92; source=body_inline] T _ {b} = 440
+
+[confidence=0.92; source=body_inline] h _ {e q} \ = \ 0.1
+
+[confidence=0.92; source=body_inline] 2 \ \mathsf{W} / ( \mathsf{m} ^ {2} {\cdot} \mathsf{K} )
+
+[confidence=0.92; source=body_inline] h _ {e q} = 5 \mathrm{~W/(m} ^ {2} {\cdot} \mathrm{K} )
+
+[confidence=0.92; source=body_inline] h _ {e q} = 10
+
+[confidence=0.92; source=body_inline] 2 \mathrm{~W} / ( \mathrm{m} ^ {2} {\cdot} \mathrm{K} ) ,
+
+[confidence=0.92; source=body_inline] h _ {e q} =
+
+[confidence=0.92; source=body_inline] 5 ~ {\mathsf{W}} / ( {\mathsf{m}} ^ {2} {\cdot} {\mathsf{K}} )
+
+[confidence=0.92; source=body_inline] h _ {e q} \ = \ 10 ,
+
+[confidence=0.92; source=body_inline] \triangle T _ {c} ~ = ~ 160
+
+[confidence=0.92; source=body_inline] T _ {b} ~ = ~ 440
+
+[confidence=0.67; needs_review; source=body_inline] H _ {r e w e} )
+
+[confidence=0.67; needs_review; source=body_inline] H _ {r e t r e} )
+
+[confidence=0.67; needs_review; source=body_inline] H _ {r e / / s c} )
+
+[confidence=0.92; source=body_inline] h _ {e q} \ = \ 0.1 ,
+
+[confidence=0.92; source=body_inline] 2 ~ {\mathsf{W}} / ( {\mathsf{m}} ^ {2} {\cdot} {\mathsf{K}} )
+
+[confidence=0.92; source=body_inline] h _ {e q} = 5
+
+[confidence=0.92; source=body_inline] 10 ~ \mathrm {{W / ( m ^ {2} {\cdot} K )}}
+
+[confidence=0.92; source=body_inline] h _ {e q} \ =
+
+[confidence=0.92; source=body_inline] = \ 0.1 ,
+
+[confidence=0.92; source=body_inline] h _ {e q} = 15
+
+[confidence=0.92; source=body_inline] 20 {\mathsf{W}} / ( {\mathsf{m}} ^ {2} {\cdot} {\mathsf{K}} )
+
+[confidence=0.92; source=body_inline] t _ {2}
+
+[confidence=0.92; source=body_inline] P _ {D} ,
+
+[confidence=0.92; source=body_inline] h _ {l} = 134
+
+[confidence=0.92; source=body_inline] h _ {l} \ = \ 134 \ W / ( \mathrm{m} ^ {2} {\cdot} \mathrm{K} ) ,
+
+[confidence=0.92; source=body_inline] ^ {9 ,}
+
+[confidence=0.92; source=body_inline] t _ {1} = 10
+
+[confidence=0.92; source=body_inline] t _ {2} {=} 10
+
+[confidence=0.92; source=body_inline] \times ~ 10 ^ {- 6} ~ \mathrm {W \cdot m ^ {\bar {3}} / k g}
+
+[confidence=0.92; source=body_inline] 13.6 \times 10 ^ {- 6}
+
+[confidence=0.92; source=body_inline] 10.7 \times 10 ^ {- 6} \mathrm{W} {\cdot} \mathrm{m} ^ {3} / \mathrm{kg}
+
+[confidence=0.92; source=body_inline] t _ {1} = 4.38
+
+[confidence=0.92; source=body_inline] t _ {2} = 6.73
+
+[confidence=0.92; source=body_inline] l = 1.62
+
+[confidence=0.92; source=body_inline] t _ {1} = 1
+
+[confidence=0.92; source=body_inline] t _ {2} = 1
+
+[confidence=0.92; source=body_inline] l = 6
+
+[confidence=0.92; source=body_inline] P _ {W}
+
+[confidence=0.92; source=body_inline] P _ {A} ,
+
+[confidence=0.92; source=body_inline] P _ {A D} ,
+
+[confidence=0.92; source=body_inline] P _ {W} , \ P _ {A}
+
+[confidence=0.92; source=body_inline] P _ {A D}
+
+[confidence=0.92; source=body_inline] \phantom {+} 0.94 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] h _ {l} = 2016
+
+[confidence=0.92; source=body_inline] 34.8 ~ \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] H _ {r e u s e} ,
+
+[confidence=0.92; source=body_inline] h _ {e q} ;
+
+[confidence=0.92; source=body_inline] 145.9 \ \mathrm{m} ^ {2} ;
+
+[confidence=0.67; needs_review; source=body_inline] ( h _ {e q} = 0
+
+[confidence=0.67; needs_review; source=body_inline] {\sf W} / ( \mathrm{m} ^ {2} \cdot \mathrm{K} ) )
+
+[confidence=0.67; needs_review; source=body_inline] \left( T _ {b} \right. = \left. 300 \right
+
+[confidence=0.92; source=body_inline] h _ {e q} = 0 , 0.1 , 1 , 2 , 5 ,
+
+[confidence=0.92; source=body_inline] 2 \ \mathrm{W} / ( \mathrm{m} ^ {2} {\cdot} \mathrm{K} )
+
+[confidence=0.92; source=body_inline] 10 \ \mathsf{W} / ( \mathsf{m} ^ {2} {\cdot} \mathsf{K} ) , m _ {f}
+
+[confidence=0.92; source=body_inline] {\sf W} / ( \mathrm{m} ^ {2} {\cdot} \mathrm{K} )
+
+[confidence=0.92; source=body_inline] h _ {e q} = 5 \ \mathrm{W/(m} ^ {2} {\cdot} \mathrm{K} )
+
+[confidence=0.92; source=body_inline] 14.2 \times 10 ^ {- 6}
+
+[confidence=0.92; source=body_inline] W {\cdot} \mathrm{m} ^ {3} / \mathrm{kg} ,
+
+[confidence=0.92; source=body_inline] 0.94 \times 10 ^ {- 3}

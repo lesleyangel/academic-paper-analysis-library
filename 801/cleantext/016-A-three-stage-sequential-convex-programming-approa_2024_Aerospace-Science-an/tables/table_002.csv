@@ -1,0 +1,5 @@
+Method,Terminal longitude (deg),Total number of knot points,Iterations,CPU Time (s)
+SCP(ED),134.86,601,45,21.458
+SCP (RPD),135.23,$6 0 1 ( 1 5 0 { \times } 4 + 1 )$,50,26.858
+GPOPS-II,135.58,649,c,78.375
+SCP (ARPD),134.91,565,23,6.640

@@ -1,0 +1,6 @@
+| Parameter | Value |
+| --- | --- |
+| $I _ { \mathrm { f r } } / ( \mathrm { k g } \cdot \mathrm { m } ^ { 2 } )$ | 0.014 6 |
+| $I _ { \mathrm { a x } } / ( \mathrm { k g } \cdot \mathrm { m } ^ { 2 } )$ | 0.146 |
+| $I _ { y } , I _ { z } / ( \mathrm { k g } \cdot \mathrm { m } ^ { 2 } )$ | 1.77 |
+| $I _ { x y } , I _ { y z } , I _ { x z } \ / ( \mathrm { k g \cdot m } ^ { 2 } )$ | 0 |

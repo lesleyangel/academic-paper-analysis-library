@@ -1,0 +1,145 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.7, 205.24, 358.12, 219.19)]] Ge Gao, Jian-Jun Gou ⇑, Chun-Lin Gong ⇑, Jia-Xin Hu, Rui-Chao Gao
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (42.07, 669.01, 304.57, 687.12)]] ⇑Corresponding authors. E-mail addresses: jj.gou@nwpu.edu.cn (J.-J. Gou), leonwood@nwpu.edu.cn (C.-L. Gong)
+
+[confidence=0.92; source=body_inline] \mathrm{UHTC} ,
+
+[confidence=0.92; source=body_inline] 1 ^ {\mathrm{st}} ,
+
+[confidence=0.92; source=body_inline] 2 ^ {\mathrm{nd}}
+
+[confidence=0.92; source=body_inline] ^ {1 ^ {\mathrm{st}}} ,
+
+[confidence=0.92; source=body_inline] 3 ^ {\mathrm{rd}}
+
+[confidence=0.92; source=body_inline] 8 \ \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] \mathbf {A g P b _ {18} S b T e _ {20}}
+
+[confidence=0.67; needs_review; source=body_inline] \mathbf {T e} ) _ {0.92} ( \mathbf {P b S} ) _ {0.08}
+
+[confidence=0.92; source=body_inline] [ 38 ] : 1 ^ {s t} :
+
+[confidence=0.92; source=body_inline] \mathbf {m} ^ {2}
+
+[confidence=0.92; source=body_inline] \mathrm{Fig.} 3 \colon 1 ^ {\mathrm{st}}
+
+[confidence=0.67; needs_review; source=body_inline] ( 1 ~ \bar {\mathbf {m}} ^ {2}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\frac {\partial \sigma _ {x x}} {\partial x} + \frac {\partial \tau _ {x y}} {\partial y} + \frac {\partial \tau _ {x z}} {\partial z} = 0 ;} \\ & {\frac {\partial \tau _ {y x}} {\partial x} + \frac {\partial \sigma _ {y y}} {\partial y} + \frac {\partial \tau _ {y z}} {\partial z} = 0 ;} \\ & {\frac {\partial \tau _ {z x}} {\partial x} + \frac {\partial \tau _ {z y}} {\partial y} + \frac {\partial \sigma _ {z z}} {\partial z} = 0} \end{array}\tag{1}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\varepsilon _ {x} = \frac {\partial u} {\partial x} ; \varepsilon _ {y} = \frac {\partial \nu} {\partial y} ; \varepsilon _ {z} = \frac {\partial w} {\partial z} ; \qquad} \\ {\gamma _ {y z} = \frac {\partial \nu} {\partial z} + \frac {\partial w} {\partial y} ; \gamma _ {x z} = \frac {\partial u} {\partial z} + \frac {\partial w} {\partial x} ; \qquad} \\ {\gamma _ {x y} = \frac {\partial u} {\partial y} + \frac {\partial \nu} {\partial x} \qquad} \end{array}\tag{2}
+
+[confidence=0.92; source=body_inline] \sigma _ {x x} ,
+
+[confidence=0.92; source=body_inline] \tau _ {x y}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {x} , \varepsilon _ {y} , \gamma _ {y z} . .
+
+[confidence=0.92; source=body_inline] \rho c \frac {\partial T} {\partial t} = [ \lambda ] \nabla ^ {2} \mathrm{T} - ( \mathrm{T} _ {\mathrm{ref}} + \mathrm{T} _ {\mathrm{off}} ) \{\beta \} ^ {\mathrm{T}} \frac {\partial \{\varepsilon \}} {\partial \mathrm{t}}\tag{3}
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.92; source=body_inline] \left\{\beta \right\} ^ {T}
+
+[confidence=0.92; source=body_inline] \{\beta \} = [ C ] \{\alpha \}
+
+[confidence=0.92; source=body_inline] \{\alpha \}
+
+[confidence=0.67; needs_review; source=body_inline] T _ {r e f} ( 300
+
+[confidence=0.92; source=body_inline] T _ {o f f}
+
+[confidence=0.92; source=body_inline] \{\sigma \} = [ C ] \{\varepsilon \} - \{\beta \} ( T - T _ {r e f} )\tag{4}
+
+[confidence=0.92; source=body_inline] ^ {\mathfrak {s}} [ ] ^ {\mathfrak {p}}
+
+[confidence=0.92; source=body_inline] " \{\} ^ {\flat}
+
+[confidence=0.92; source=body_inline] O _ {0} y _ {0}
+
+[confidence=0.92; source=body_inline] O _ {0} z _ {0} -
+
+[confidence=0.92; source=body_inline] O _ {0} z _ {0} - \mathbf {a x i s}
+
+[confidence=0.92; source=body_inline] O _ {0} x _ {0}
+
+[confidence=0.92; source=body_inline] 182.5 \ \mathrm{s} ; \ ( 2 )
+
+[confidence=0.92; source=body_inline] ^ {1063.5 ~ s ,}
+
+[confidence=0.92; source=body_inline] O _ {0} x _ {0} y _ {0} z _ {0}
+
+[confidence=0.92; source=body_inline] O x _ {1} y _ {1} z _ {1}
+
+[confidence=0.92; source=body_inline] O y _ {1}
+
+[confidence=0.92; source=body_inline] O x _ {1} - \mathbf {a x i s}
+
+[confidence=0.92; source=body_inline] O _ {0} x _ {0} - \mathbf {a x i s .}
+
+[confidence=0.92; source=body_inline] P _ {0} 1
+
+[confidence=0.92; source=body_inline] P _ {0} 4
+
+[confidence=0.92; source=body_inline] {p} _ {0} 8
+
+[confidence=0.92; source=body_inline] u _ {\mathrm{i}} , \nu _ {\mathrm{i}}
+
+[confidence=0.67; needs_review; source=body_inline] w _ {\mathrm{i}} \left( \begin{array} {r l} \end{array} \right
+
+[confidence=0.92; source=body_inline] p _ {0} 8
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {p _ {0} 1 ( x _ {1} , y _ {1} , z _ {1} ) ; p _ {0} 2 ( x _ {2} , y _ {2} , z _ {2} ) ; p _ {0} 3 ( x _ {3} , y _ {3} , z _ {3} ) ; p _ {0} 4 ( x _ {4} , y _ {4} , z _ {4} )} \\ {p _ {0} 5 ( x _ {5} , y _ {5} , z _ {5} ) ; p _ {0} 6 ( x _ {6} , y _ {6} , z _ {6} ) ; p _ {0} 7 ( x _ {7} , y _ {7} , z _ {7} ) ; p _ {0} 8 ( x _ {8} , y _ {8} , z _ {8} )} \end{array}\tag{5}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {p _ {0} 1 ( u _ {1} , \ \nu _ {1} , \ w _ {1} ) ; p _ {0} 2 ( u _ {2} , \ \nu _ {2} , \ w _ {2} ) ; p _ {0} 3 ( u _ {3} , \ \nu _ {3} , \ w _ {3} ) ; p _ {0} 4 ( u _ {4} , \ \nu _ {4} , \ w _ {4} )} \\ & {p _ {0} 5 ( u _ {5} , \ \nu _ {5} , \ w _ {5} ) ; p _ {0} 6 ( u _ {6} , \ \nu _ {6} , \ w _ {6} ) ; p _ {0} 7 ( u _ {7} , \ \nu _ {7} , \ w _ {7} ) ; p _ {0} 8 ( u _ {8} , \ \nu _ {8} , \ w _ {8} )} \end{array}\tag{6}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\quad \quad = \arcsin \left( - \pi + {\frac {\sqrt {3}} {4}} \right) + {\frac {\sqrt {3}} {4}} \operatorname* {m a x} _ {t} \left( - 2 \pi \right) + {\frac {\sqrt {3}} {4}} \operatorname* {m a x} _ {t} \left( \frac {1} {2} \right) + {\frac {\sqrt {3}} {4}} \operatorname* {m a x} _ {t} \left( - 2 \pi \right) + {\frac {\sqrt {3}} {4}} \left( \frac {1} {2} - \pi \right) \left( \left( \left( \frac {3} {2} - \pi \right) \right) \right) - 3 \left( \pi - {\frac {3} {2}} \right) \left( \frac {1} {2} - \pi \right)} \\ & {\quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad} \\ & & {\quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad} \\ & & \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \ \end{array}\tag{7}
+
+[confidence=0.92; source=body_inline] O x _ {2} y _ {2} z _ {2}
+
+[confidence=0.92; source=body_inline] 10 ~ \mathrm {W / ( m ^ {2} {\cdot} K )}
+
+[confidence=0.67; needs_review; source=body_inline] ( t = 0
+
+[confidence=0.92; source=body_inline] t = 182.5 s
+
+[confidence=0.92; source=body_inline] t = 525.5 s ,
+
+[confidence=0.92; source=body_inline] : t = 1063.5 s ,
+
+[confidence=0.92; source=body_inline] t = 1367.5 s ,
+
+[confidence=0.92; source=body_inline] 0.13 ~ \mathrm{\MW/m} ^ {2}
+
+[confidence=0.92; source=body_inline] \mathrm{kW/m} ^ {2} ;
+
+[confidence=0.92; source=body_inline] \mathrm{kW/m} ^ {2} ,
+
+[confidence=0.92; source=body_inline] t = 0 \ s ; ( 2 )
+
+[confidence=0.92; source=body_inline] t = 0 s ,
+
+[confidence=0.92; source=body_inline] O _ {0} x _ {0} , O _ {0} y _ {0}
+
+[confidence=0.92; source=body_inline] O _ {0} z _ {0}
+
+[confidence=0.92; source=body_inline] P _ {0} 2
+
+[confidence=0.92; source=body_inline] P _ {0} 3
+
+[confidence=0.92; source=body_inline] O _ {0} x _ {0} ,
+
+[confidence=0.92; source=body_inline] t = 182.5 s ,
+
+[confidence=0.92; source=body_inline] O _ {0} x _ {0} , \ O _ {0} y _ {0}
+
+[confidence=0.92; source=body_inline] t = 182.5 ~ \mathrm{s} ,
+
+[confidence=0.92; source=body_inline] \mathrm{K,}
+
+[confidence=0.92; source=body_inline] S _ {A}
+
+[confidence=0.92; source=body_inline] S _ {B}
+
+[confidence=0.92; source=body_inline] V = \int _ {T _ {1}} ^ {T _ {2}} ( S _ {B} ( T ) - S _ {A} ( T ) ) d T\tag{8}

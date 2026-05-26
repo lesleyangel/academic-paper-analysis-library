@@ -1,0 +1,35 @@
+Fig. 1. Velocity profile and the wavelike motion of vegetation canopy.
+
+Fig. 2. Schematic of computational domain.
+
+Fig. 3. Instantaneous snapshots of out-of-plane vorticity and vegetation deflections for six representative cases.
+
+Fig. 4. Parameter map with observed behavior modes for the vegetation canopy. The range of bending rigidity and canopy density is given by K0∼K11 and Φ0∼Φ10. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 5. Flow over the canopy for different bending rigidities. Flow streamlines displayed over contours of vertical velocity.. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 6. The mean drag coefficient and the amplitude of drag coefficient of the vegetation along canopy.
+
+Fig. 7. The mean deflection angle and the angular amplitude of oscillation of vegetation across the canopy (Φ4K1).
+
+Fig. 8. Snapshot of out-of-plane vorticity and vegetation deflections for Φ4K1 case with K2 vegetation.. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 9. Instantaneous snapshots of vorticity and vegetation deflection for different canopy densities.
+
+Fig. 10. Flow over the start of the canopy for different canopy densities. Flow streamlines displayed over contours of vertical velocity.
+
+Fig. 11. Variation of the streamwise velocity and its gradient in the wall-normal direction for different canopy densities.
+
+Fig. 12. Waving frequencies of vegetation canopy in different test cases. The range of bending rigidity and canopy density is given by K1∼K10 and Φ1∼Φ9. Marker shapes correspond to the states shown in Fig. 4. Light blue region: range of estimated KH frequencies of all dynamic states. Black solid line: first-order vacuum natural frequency; Red solid line: first-order fluid natural frequency; Black dashed line: second-order vacuum natural frequency; Red dashed line: second-order fluid natural frequency.. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 13. The estimated KH frequencies of vegetation canopy for different canopy density branches (Φ0.25∼Φ9). The range of bending rigidity is given by K0∼K11. Marker shapes correspond to the states shown in Fig. 4. Light blue region and black dashed lines: range of estimated KH frequencies of all dynamic states. Red dashed line: the lowest bound of estimated KH frequencies.. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 14. The influence of mixing layer on the waving frequencies of vegetation for different canopy density branches (Φ2, Φ4 and Φ7). The range of bending rigidity is given by K1∼K10. Marker shapes correspond to the states shown in Fig. 4. Black solid line: first-order vacuum natural frequency; Red solid line: first-order fluid natural frequency; Black dashed line: second-order vacuum natural frequency; Red dashed line: second-order fluid natural frequency.
+
+Fig. 4. Parameter map with observed behavior modes for the vegetation canopy. The range of bending rigidity and canopy density is given by K 0∼K 11 and Φ0∼Φ10. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 8. Snapshot of out-of-plane vorticity and vegetation deflections for Φ4K 1 case with K 2 vegetation.. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 12. Waving frequencies of vegetation canopy in different test cases. The range of bending rigidity and canopy density is given by $K 1 { \sim } K 1 0$ and $\phi 1 { \sim } \phi 9 .$ Marker shapes correspond to the states shown in Fig. 4. Light blue region: range of estimated KH frequencies of all dynamic states. Black solid line: first-order vacuum natural frequency; Red solid line: first-order fluid natural frequency; Black dashed line: second-order vacuum natural frequency; Red dashed line: second-order fluid natural frequency.. (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)
+
+Fig. 14. The influence of mixing layer on the waving frequencies of vegetation for different canopy density branches (Φ2, Φ4 and Φ7). The range of bending rigidity is given by $K 1 { \stackrel { - } { \sim } } K 1 0 .$ Marker shapes correspond to the states shown in Fig. 4. Black solid line: first-order vacuum natural frequency; Red solid line: first-order fluid natural frequency; Black dashed line: second-order vacuum natural frequency; Red dashed line: second-order fluid natural frequency.

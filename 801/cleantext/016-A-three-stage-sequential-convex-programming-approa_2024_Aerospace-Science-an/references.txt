@@ -1,0 +1,65 @@
+[1] P. Lu, Entry guidance and trajectory control for reusable launch vehicle, J. Guidance, Control, Dyn. 20 (1) (1997) 143–149, https://doi.org/10.2514/ 2.4008.
+
+[2] D.B. Doman, M.W. Oppenheimer, M.A. Bolender, Progress in guidance and control research for space access and hypersonic vehicles, in: Proceedings of the 45th IEEE Conference on Decision and Control, 2006, https://doi.org/10.1109/ CDC.2006.377649.
+
+[3] P. Lu, Introducing computational guidance and control, J. Guidance, Control, Dyn. 40 (2) (2017) 193, https://doi.org/10.2514/1.G002745.
+
+[4] P. Sarmah, C. Chawla, R. Padhi, A nonlinear approach for re-entry guidance of reusable launch vehicles using model predictive static programming, in: 2008 16th Mediterranean Conference on Control and Automation, Ajaccio, Corsica, France, 2008, https://doi.org/10.1109/MED.2008.4602026.
+
+[5] B. Tian, W. Fan, R. Su, Q. Zong, Real-time trajectory and attitude coordination control for reusable launch vehicle in reentry phase, IEEE Trans. Ind. Electron. 62 (3) (2015) 1639–1650, https://doi.org/10.1109/TIE.2014.2341553.
+
+[6] Y. Shi, Z. Wang, A deep learning-based approach to real-time trajectory optimization for hypersonic vehicles, AIAA Scitech 2020 Forum, 2020, https://doi. org/10.2514/6.2020-0023.
+
+[7] R. Chai, A. Savvaris, A. Tsourdos, S. Chai, Y. Xia, A review of optimization techniques in spacecraft flight trajectory design, Prog. Aeosp. Sci. 109 (2019) 100543, https://doi.org/10.1016/j.paerosci.2019.05.003.
+
+[8] A.V. Rao, A survey of numerical methods for optimal control, Adv. Astronautical Sci. 135 (1) (2010) 497–528, https://doi.org/10.1166/1.6337.
+
+[9] E. Bryson, Applied optimal control: optimization, estimation and control, Taylor & Francis Group, New York, 1975.
+
+[10] M. Kelly, An introduction to trajectory optimization: how to do your own direct collocation, SIAM Rev 59 (4) (2017) 849–904, https://doi.org/10.1137/ 16M1062569.
+
+[11] R. Foust, S. Chung, F.Y. Hadaegh, Optimal guidance and control with nonlinear dynamics using sequential convex programming, J. Guidance, Control, Dyn. 43 (4) (2019) 633–644, https://doi.org/10.2514/1.G004590.
+
+[12] X. Liu, P. Lu, B. Pan, Survey of convex optimization for aerospace applications, Astrodynamics 1 (1) (2017) 23–40, https://doi.org/10.1007/s42064-017-0003-8.
+
+[13] J.M.Carson Açıkmes¸e, L. Blackmore, Lossless convexification of nonconvex control bound and pointing constraints of the soft landing optimal control problem, IEEE Trans. Control Syst. Technol. 21 (6) (2013) 2104–2113, https://doi.org/10.1109/ TCST.2012.2237346.
+
+[14] S. Boyd, S.P. Boyd, L. Vandenberghe: Convex optimization, Cambridge University Press, 2004.
+
+[15] J. Wang, N. Cui, A pseudospectral-convex optimization algorithm for rocket landing guidance, in: 2018 AIAA Guidance, Navigation, and Control Conference, Kissimmee, Florida, 2018, https://doi.org/10.2514/6.2018-1871.
+
+[16] Y. Zheng, X. Fu, M. Xu, Q. Li, M. Lin, Ascent trajectory design of small-lift launch vehicle using hierarchical optimization, Aerosp. Sci. Technol. 107 (2020) 106285, https://doi.org/10.1016/j.ast.2020.106285.
+
+[17] Y. Ma, B. Pan, C. Hao, S. Tang, Improved sequential convex programming using modified chebyshev–picard iteration for ascent trajectory optimization, Aerosp. Sci. Technol. 120 (2022) 107234, https://doi.org/10.1016/j.ast.2021.107234.
+
+[18] A.Zavoli Benedikter, G. Colasurdo, S. Pizzurro, E. Cavallini, Convex approach to three-dimensional launch vehicle ascent trajectory optimization, J. Guidance, Control, Dyn. 44 (6) (2021) 1116–1131, https://doi.org/10.2514/1.G005376.
+
+[19] X. Liu, Z. Shen, P. Lu, Entry trajectory optimization by second-order cone programming, J. Guidance, Control, Dyn. 39 (2) (2016) 227–241, https://doi.org/ 10.2514/1.G001210.
+
+[20] T. Zhang, H. Su, C. Gong, hp-adaptive RPD based sequential convex programming for reentry trajectory optimization, Aerosp. Sci. Technol. 130 (2022) 107887, https://doi.org/10.1016/j.ast.2022.107887.
+
+[21] X. Zhou, R. He, H. Zhang, G. Tang, W. Bao, Sequential convex programming method using adaptive mesh refinement for entry trajectory planning problem, Aerosp. Sci. Technol. 109 (2021) 106374, https://doi.org/10.1016/j. ast.2020.106374.
+
+[22] X. Liu, Z. Shen, P. Lu, Exact convex relaxation for optimal flight of aerodynamically controlled missiles, IEEE Trans. Aerosp. Electron. Syst. 52 (4) (2016) 1881–1892, https://doi.org/10.1109/TAES.2016.150741.
+
+[23] G. Jung, B. Kim, K.W. Jung, C.H. Lee, Thrust integrated trajectory optimization for multipulse rocket missiles using convex programming, J. Spacecr. Rockets. 60 (3) (2023) 957–971, https://doi.org/10.2514/1.A35524.
+
+[24] P. Pei, J. Wang, A. Contento, Near-optimal guidance with impact angle and velocity constraints using sequential convex programming, Math. Probl. Eng. (2019) 2065730, https://doi.org/10.1155/2019/2065730, 2019.
+
+[25] Garg, et al., A unified framework for the numerical solution of optimal control problems using pseudospectral methods, Automatica 46 (11) (2010) 1843–1851, https://doi.org/10.1016/j.automatica.2010.06.048.
+
+[26] M. Sagliano, Generalized hp pseudospectral-convex programming for powered descent and landing, J. Guidance, Control, Dyn. 42 (7) (2019) 1562–1570, https:// doi.org/10.2514/1.G003731.
+
+[27] C.L. Darby, W.W. Hager, A.V. Rao, An hp-adaptive pseudospectral method for solving optimal control problems, Optim. Control Appl. Methods. 32 (4) (2011) 476–502, https://doi.org/10.1002/oca.957.
+
+[28] C.L. Darby, W.W. Hager, A.V. Rao, Direct trajectory optimization using a variable low-order adaptive pseudospectral method, J. Spacecr. Rockets. 48 (3) (2011) 433–445, https://doi.org/10.2514/1.52136.
+
+[29] M. Sagliano, E. Mooij, Optimal drag-energy entry guidance via pseudospectral convex optimization, Aerosp. Sci. Technol. 117 (2021) 106946, https://doi.org/ 10.1016/j.ast.2021.106946.
+
+[30] M.A. Patterson, A.V. Rao, Gpops-ii: a matlab software for solving multiple-phase optimal control problems using hp-adaptive gaussian quadrature collocation methods and sparse nonlinear programming, ACM Trans. Math. Softw. 41 (1) (2014) 1–37, https://doi.org/10.1145/2558904.
+
+[31] J. Dahl, E.D. Andersen, A primal-dual interior-point algorithm for nonsymmetric exponential-cone optimization, Math. Program. 194 (1) (2022) 341–370, https:// doi.org/10.1007/s10107-021-01631-4.
+
+[32] E.D. Andersen, C. Roos, T. Terlaky, On implementing a primal-dual interior-point method for conic quadratic optimization, Math. Program. 95 (2) (2003) 249–277, https://doi.org/10.1007/s10107-002-0349-3.
+
+[33] J.T. Betts, Practical methods for optimal control and estimation using nonlinear programming, second edition, Soc. Industrial Appl. Math., Philadelphia (2010), https://doi.org/10.1137/1.9780898718577.

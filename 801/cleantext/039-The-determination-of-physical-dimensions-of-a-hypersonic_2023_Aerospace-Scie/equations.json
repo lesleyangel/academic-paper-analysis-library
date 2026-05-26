@@ -1,0 +1,423 @@
+[
+  {
+    "id": "equation_001",
+    "source": "equations",
+    "meta": "[page 1, bbox (37.64, 206.74, 422.48, 220.38)]",
+    "original": "Jian-Jun Gou a,∗, Shu-Zhen Jia a, Jin-Xing Li b, Shuang Xiao a, Chun-Lin Gong a,∗",
+    "normalized": "Jian-Jun Gou a,∗, Shu-Zhen Jia a, Jin-Xing Li b, Shuang Xiao a, Chun-Lin Gong a,∗",
+    "confidence": 0.57,
+    "needs_review": true,
+    "issues": [
+      "text_heavy"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_002",
+    "source": "equations",
+    "meta": "[page 1, bbox (37.64, 687.49, 264.98, 714.35)]",
+    "original": "* Corresponding authors. E-mail addresses: jj.gou@nwpu.edu.cn (J.-J. Gou), leonwood@nwpu.edu.cn (C.-L. Gong).",
+    "normalized": "* Corresponding authors. E-mail addresses: jj.gou@nwpu.edu.cn (J.-J. Gou), leonwood@nwpu.edu.cn (C.-L. Gong)",
+    "confidence": 0.57,
+    "needs_review": true,
+    "issues": [
+      "text_heavy"
+    ],
+    "drop": false,
+    "repairs": [
+      "unit_expression_repaired"
+    ]
+  },
+  {
+    "id": "equation_003",
+    "source": "equations",
+    "meta": "[page 2, bbox (306.63, 712.58, 557.7, 722.39)] [M]",
+    "original": "{¨x} + [K]{x} = {0} (1)",
+    "normalized": "{¨x} + [K]{x} = {0} (1)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_006",
+    "source": "equations",
+    "meta": "[page 4, bbox (46.73, 399.96, 288.71, 416.72)]",
+    "original": "∂t + div(ρUφ) = div(�gradφ) + Q s (2)",
+    "normalized": "∂t + div(ρUφ) = div(�gradφ) + Q s (2)",
+    "confidence": 0.62,
+    "needs_review": true,
+    "issues": [
+      "mojibake"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_009",
+    "source": "equations",
+    "meta": "[page 5, bbox (209.58, 219.74, 456.19, 245.97)]",
+    "original": "Inlet Ma=6, P=2971 Pa T =300 K Outlet P=0 Pa T =300 K Wall No slip, stationary q=0",
+    "normalized": "Inlet Ma=6, P=2971 Pa T =300 K Outlet P=0 Pa T =300 K Wall No slip, stationary q=0",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_010",
+    "source": "equations",
+    "meta": "[page 14, bbox (37.64, 728.33, 291.37, 748.81)]",
+    "original": "(5) For the design of thin-panel-structural compression system, the consideration of resonance limit is essential.",
+    "normalized": "(5) For the design of thin-panel-structural compression system, the consideration of resonance limit is essential",
+    "confidence": 0.57,
+    "needs_review": true,
+    "issues": [
+      "text_heavy"
+    ],
+    "drop": false,
+    "repairs": [
+      "unit_expression_repaired"
+    ]
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\left[ M \\right] \\left\\{ \\ddot { x } \\right\\} + \\left[ K \\right] \\left\\{ x \\right\\} = \\left\\{ 0 \\right\\}\\tag{1}\n",
+    "normalized": "\\left[ M \\right] \\left\\{\\ddot {x} \\right\\} + \\left[ K \\right] \\left\\{x \\right\\} = \\left\\{0 \\right\\}\\tag{1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_001"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { k g / m ^ { 3 } }",
+    "normalized": "\\mathrm {k g / m ^ {3}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_002"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { x 0 } , \\ P _ { x 1 } , \\ P _ { y 0 } , \\ P _ { y 1 } , \\ P _ { z 0 } ,",
+    "normalized": "P _ {x 0} , \\ P _ {x 1} , \\ P _ {y 0} , \\ P _ {y 1} , \\ P _ {z 0} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_003"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { z 1 }",
+    "normalized": "P _ {z 1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_004"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { x 0 } , P _ { x 1 } , P _ { z 0 } , P _ { z 1 }",
+    "normalized": "P _ {x 0} , P _ {x 1} , P _ {z 0} , P _ {z 1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_005"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { y 0 }",
+    "normalized": "P _ {y 0}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_006"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { y 1 }",
+    "normalized": "P _ {y 1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_007"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { y 0 }",
+    "normalized": "P _ {y 0}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_008"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { y 1 }",
+    "normalized": "P _ {y 1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_009"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\frac { \\partial ( \\rho \\phi ) } { \\partial t } + \\mathrm { d i v } ( \\rho U \\phi ) = \\mathrm { d i v } ( \\Gamma \\mathbf { g r a d } \\phi ) + Q _ { s }\\tag{2}\n",
+    "normalized": "\\frac {\\partial ( \\rho \\phi )} {\\partial t} + \\mathrm{div} ( \\rho U \\phi ) = \\mathrm{div} ( \\Gamma \\mathbf {g r a d} \\phi ) + Q _ {s}\\tag{2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_010"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\rho",
+    "normalized": "\\rho",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_011"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "Q _ { s }",
+    "normalized": "Q _ {s}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_012"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\phi ,",
+    "normalized": "\\phi ,",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_013"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "Q _ { s }",
+    "normalized": "Q _ {s}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_014"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "^ { 3 , }",
+    "normalized": "^ {3 ,}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_015"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "c _ { p }",
+    "normalized": "c _ {p}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_016"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\Delta t _ { 1 } \\leq \\frac { 1 } { 2 0 f }\\tag{3}\n",
+    "normalized": "\\Delta t _ {1} \\leq \\frac {1} {20 f}\\tag{3}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_017"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\Delta t _ { 2 } \\leq \\frac { L } { 2 0 V _ { \\infty } }\\tag{4}\n",
+    "normalized": "\\Delta t _ {2} \\leq \\frac {L} {20 V _ {\\infty}}\\tag{4}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_019"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "V _ { \\infty }",
+    "normalized": "V _ {\\infty}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_020"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( P _ { y 1 }",
+    "normalized": "( P _ {y 1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_021"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { k g / m ^ { 3 } }",
+    "normalized": "\\mathrm {k g / m ^ {3}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_024"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "4 \\times 1 0 ^ { 6 }",
+    "normalized": "4 \\times 10 ^ {6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_025"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 ^ { \\mathsf { s t } }",
+    "normalized": "1 ^ {\\mathsf{st}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_027"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "6 ^ { \\mathrm { { t h } } }",
+    "normalized": "6 ^ {\\mathrm {{t h}}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_028"
+  }
+]

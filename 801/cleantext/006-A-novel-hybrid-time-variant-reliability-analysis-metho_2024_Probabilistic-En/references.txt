@@ -1,0 +1,93 @@
+[1] A. Singh, Z.P. Mourelatos, J. Li, Design for lifecycle cost using time-dependent reliability, J. Mech. Des. 132 (9) (2010), 091008, https://doi.org/10.1115/ 1.4002200.
+
+[2] Z. Meng, J. Zhao, C. Jiang, An efficient semi-analytical extreme value method for time-variant reliability analysis, Struct. Multidiscip. Optim. 64 (3) (2021) 1469–1480, https://doi.org/10.1007/s00158-021-02934-y.
+
+[3] H. Pang, T. Yu, B. Song, Failure mechanism analysis and reliability assessment of an aircraft slat, Eng. Fail. Anal. 60 (2016) 261–279, https://doi.org/10.1016/j. engfailanal.2015.11.032.
+
+[4] Z. Sun, J. Wang, R. Li, C. Tong, LIF: a new Kriging based learning function and its application to structural reliability analysis, Reliab. Eng. Syst. Saf. 157 (2017) 152–165, https://doi.org/10.1016/j.ress.2016.09.00.
+
+[5] G. Li, B. Li, H. Hu, A novel first–order reliability method based on performance measure approach for highly nonlinear problems, Struct. Multidiscip. Optim. 57 (4) (2018) 1593–1610, https://doi.org/10.1007/s00158-017-1830-1.
+
+[6] M. Di Paola, L. Galuppi, G. Royer Carfagni, Fractional viscoelastic characterization of laminated glass beams under time-varying loading, Int. J. Mech. Sci. 196 (2021), 106274, https://doi.org/10.1016/j.ijmecsci.2021.106274.
+
+[7] Z. Hu, X. Du, A sampling approach to extreme value distribution for time- dependent reliability analysis, J. Mech. Des. 135 (7) (2013), 071003, https://doi. org/10.1115/1.4023925.
+
+[8] Z. Wang, P. Wang, A nested extreme response surface approach for time-dependent reliability-based design optimization, J. Mech. Des. 134 (12) (2012), 121007, https://doi.org/10.1115/1.4007931.
+
+[9] W. Yun, Z. Lu, X. Jiang, L. Zhang, P. He, AK-ARBIS: an improved AK-MCS based on the adaptive radial-based importance sampling for small failure probability, Struct. Saf. 82 (2020), 101891, https://doi.org/10.1016/j.strusafe.2019.101891.
+
+[10] Z. Wang, W. Chen, Time-variant reliability assessment through equivalent stochastic process transformation, Reliab. Eng. Syst. Saf. 152 (2016) 166–175, https://doi.org/10.1016/j.ress.2016.02.008.
+
+[11] H. Liu, X. He, P. Wang, Z. Lu, Z. Yue, Time-dependent reliability analysis method based on ARBIS and Kriging surrogate model, Eng. Comput-Germany. 39 (3) (2022) 2035–2048, https://doi.org/10.1007/s00366-021-01570-w.
+
+[12] L. Cao, S.G. Gong, Y.R. Tao, S.Y. Duan, A RBFNN based active learning surrogate model for evaluating low failure probability in reliability analysis, Probab. Eng. Mech. 74 (2023), 103496, https://doi.org/10.1016/j.probengmech.2023.103496.
+
+[13] D. Zhang, N. Zhang, N. Ye, J. Fang, X. Han, Hybrid learning algorithm of radial basis function networks for reliability analysis, IEEE Trans. Reliab. 70 (3) (2021) 887–900, https://doi.org/10.1109/TR.2020.3001232.
+
+[14] Z. Hu, S. Mahadevan, A single-loop Kriging surrogate modeling for time-dependent reliability analysis, J. Mech. Des. 138 (6) (2016), 061406, https://doi.org/ 10.1115/1.4033428.
+
+[15] Z. Hu, X. Du, First order reliability method for time-variant problems using series expansions, Struct. Multidiscip. Optim. 51 (1) (2015) 1–21, https://doi.org/ 10.1007/s00158-014-1132-9.
+
+[16] C. Jiang, H. Qiu, L. Gao, D. Wang, Z. Yang, L. Chen, Real-time estimation error- guided active learning Kriging method for time-dependent reliability analysis, Appl. Math. Model. 77 (1) (2020) 82–98, https://doi.org/10.1016/j. apm.2019.06.035.
+
+[17] C. Jiang, X.P. Wei, Z.L. Huang, J. Liu, An outcrossing rate model and its efficient calculation for time-dependent system reliability analysis, J. Mech. Des. 139 (4) (2017), 041402, https://doi.org/10.1115/1.4035792.
+
+[18] H. Qian, Y. Li, H. Huang, Improved model for computing time-variant reliability based on outcrossing rate, ASCE-ASME, J. Risk. Uncertainty. Eng. Syst., Part A: Civ. Eng. 6 (4) (2020), 04020043, https://doi.org/10.1061/AJRUA6.0001090.
+
+[19] S.O Rice, Mathematical analysis of random noise, Bell Syst. Tech. J. 23 (3) (1944) 282–332, https://doi.org/10.1002/j.1538-7305.1944.tb00874.x.
+
+[20] C. Andrieu-Renaud, B. Sudret, M. Lemaire, The PHI2 method: a way to compute time-variant reliability, Reliab. Eng. Syst. Saf. 84 (1) (2004) 75–86, https://doi. org/10.1016/j.ress.2003.10.005.
+
+[21] B. Sudret, Analytical derivation of the outcrossing rate in time-variant reliability problems, Struct. Infrastruct. Eng. 4 (5) (2008) 353–362, https://doi.org/10.1080/ 15732470701270058.
+
+[22] P.H. Madsen, S. Krenk, An integral equation method for the first-passage problem in random vibration, J. Appl. Mech. 51 (3) (1984) 674–679, https://doi.org/ 10.1115/1.3167691.
+
+[23] Z. Hu, X. Du, Time-dependent reliability analysis with joint upcrossing rates, Struct. Multidiscip. Optim. 48 (5) (2013) 893–907, https://doi.org/10.1007/ s00158-013-0937-2.
+
+[24] R. Rackwitz, B. Flessler, Structural reliability under combined random load sequences, Comput. Struct. 9 (5) (1978) 489–494, https://doi.org/10.1016/0045- 7949(78)90046-9.
+
+[25] C. Jiang, X.P. Huang, X.P. Wei, N.Y. Liu, A time-variant reliability analysis method for structural systems based on stochastic process discretization, Int. J. Mech. Mater. Des. 13 (2) (2017) 173–193, https://doi.org/10.1007/s10999-015-9324-z.
+
+[26] C. Jiang, X.P. Wei, B. Wu, Z.L. Huang, An improved TRPD method for time-variant reliability analysis, Struct. Multidiscip. Optim. 58 (5) (2018) 1935–1946, https:// doi.org/10.1007/s00158-018-2002-7.
+
+[27] C. Gong, D.M. Frangopol, An efficient time-dependent reliability method, Struct. Saf. 81 (2019), 101864, https://doi.org/10.1016/j.strusafe.2019.05.001.
+
+[28] Y. Zhang, C. Gong, C. Li, Efficient time-variant reliability analysis through approximating the most probable point trajectory, Struct. Multidiscip. Optim. 63 (1) (2021) 289–309, https://doi.org/10.1007/s00158-020-02696-z.
+
+[29] C. Jiang, J. Zheng, X. Han, Probability-interval hybrid uncertainty analysis for structures with both aleatory and epistemic uncertainties: a review, Struct. Multidiscip. Optim. 57 (6) (2018) 2485–2502, https://doi.org/10.1007/s00158- 017-1864-4.
+
+[30] X. Jiang, X. Hu, G. Liu, X. Liang, R. Wang, A generalized active subspace for dimension reduction in mixed aleatory-epistemic uncertainty quantification, Comput. Meth. Appl. Mech. Eng. 370 (2020), 113240, https://doi.org/10.1016/j. cma.2020.113240.
+
+[31] F. Li, Z. Luo, J. Rong, N. Zhang, Interval multi-objective optimisation of structures using adaptive Kriging approximations, Comput. Struct. 119 (2013) 68–84, https://doi.org/10.1016/j.compstruc.2012.12.028.
+
+[32] C. Jiang, B.Y. Ni, X. Han, Y.R. Tao, Non-probabilistic convex model process: a new method of time-variant uncertainty analysis and its application to structural dynamic reliability problems, Comput. Method. Appl. M. 268 (2014) 656–676, https://doi.org/10.1016/j.cma.2013.10.016.
+
+[33] C. Jiang, B.Y. Ni, N.Y. Liu, X. Han, J. Liu, Interval process model and non-random vibration analysis, J. Sound Vib. 373 (2016) 104–131, https://doi.org/10.1016/j. jsv.2016.03.019.
+
+[34] L. Zhang, C. Li, H. Su, X. Wang, C. Gong, A novel linear uncertainty propagation method for nonlinear dynamics with interval process, Nonlinear. Dyn. 111 (5) (2023) 4425–4450, https://doi.org/10.1007/s11071-022-08084-0.
+
+[35] J.W. Li, J.Y. Li, C. Jiang, B.Y. Ni, G. Yang, A time-variant reliability analysis method based on interval process model, Chin. J. Comput. Mech. 38 (4) (2021) 462–470, https://doi.org/10.7511/jslx20210513407.
+
+[36] C. Jiang, G.Y. Lu, X. Han, L.X. Liu, A new reliability analysis method for uncertain structures with random and interval variables, Int. J. Mech. Mater. Des. 8 (2) (2012) 169–182, https://doi.org/10.1007/s10999-012-9184-8.
+
+[37] C. Jiang, X. Han, W.X. Li, J. Liu, Z. Zhang, A hybrid reliability approach based on probability and interval for uncertain structures, J. Mech. Des. 134 (3) (2012), 031001, https://doi.org/10.1115/1.4005595.
+
+[38] W. Wang, H. Xue, T. Kong, An efficient hybrid reliability analysis method for structures involving random and interval variables, Struct. Multidiscip. Optim. 62 (1) (2020) 159–173, https://doi.org/10.1007/s00158-019-02473-7.
+
+[39] Y. Shi, Z. Lu, Dynamic reliability analysis model for structure with both random and interval uncertainties, Int. J. Mech. Mater. Des. 15 (3) (2019) 521–537, https://doi.org/10.1007/s10999-018-9427-4.
+
+[40] H.C. Xie, D.H. Liao, A time-dependent reliability analysis method based on multi- level meta-models for problems involving interval variables, Probab. Eng. Mech. 70 (2022), 103369, https://doi.org/10.3390/sym13040568.
+
+[41] Q. Zhao, T. Wu, J. Hong, An envelope-function-based algorithm for time- dependent reliability analysis of structures with hybrid uncertainties, Appl. Math. Model. 110 (2022) 493–512, https://doi.org/10.1016/j.apm.2022.06.007.
+
+[42] K. Zhang, N. Chen, P. Zeng, J. Liu, M. Beer, An efficient reliability analysis method for structures with hybrid time-dependent uncertainty, Reliab. Eng. Syst. Saf. 228 (2022), 108794, https://doi.org/10.1016/j.ress.2022.108794.
+
+[43] B.Y. Ni, C. Jiang, J.W. Li, W.Y. Tian, Interval K-L expansion of interval process model for dynamic uncertainty analysis, J. Sound Vib. 474 (2020), 115254, https://doi.org/10.1016/j.jsv.2020.115254.
+
+[44] J. Guo, X.P. Du, Reliability sensitivity analysis with random and interval variables, Int. J. Numer. Meth. Eng. 78 (13) (2009) 1585–1617, https://doi.org/10.1002/ nme.2543.
+
+[45] P. Liu, A. Der Kiureghian, Multivariate distribution models with prescribed marginals and covariances, Probab. Eng. Mech. 1 (2) (1986) 105–112, https://doi. org/10.1016/0266-8920(86)90033-0.
+
+[46] B. Sudret, A. Der Kiureghian, Comparison of finite element reliability methods, Probab. Eng. Mech. 17 (4) (2002) 337–348, https://doi.org/10.1016/S0266-8920 (02)00031-0.
+
+[47] Y.M. Davydov, M.Y. Egorov, The instability of the working process in the combustion chamber of a solid-propellant rocket engine, Dokl. Phys. 46 (3) (2001) 195–198, https://doi.org/10.1134/1.1364728.

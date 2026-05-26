@@ -1,0 +1,685 @@
+[confidence=0.92; source=equations; [page 1, bbox (37.59, 205.75, 377.8, 223.92)]] Jia-Xin Hu a, Li-Qiang Ai b, Nan Liu b, Jian-Jun Gou a,*, Chun-Lin Gong a
+
+[confidence=0.92; source=equations; [page 1, bbox (42.63, 669.07, 206.24, 690.38)]] * Corresponding author. E-mail address: jj.gou@nwpu.edu.cn (J.-J. Gou)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 352.12, 716.91)]] https://doi.org/10.1016/j.ijheatmasstransfer.2024.125360 Received 28 May 2023; Received in revised form 18 January 2024; Accepted 19 February 2024
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (307.96, 415.36, 379.76, 440.45)]] Min : Tgeoav = ( 1 |Ω|
+
+[confidence=0.92; source=equations; [page 3, bbox (340.95, 439.63, 384.41, 459.32)]] ki∇TidΩ = ∫
+
+[confidence=0.92; source=equations; [page 4, bbox (307.95, 277.82, 398.09, 289.51)]] Find : X = {ρ1, ρ2, ..., ρNE}T
+
+[confidence=0.92; source=equations; [page 4, bbox (307.96, 305.72, 353.44, 314.88)]] Min : Tgeoav =
+
+[confidence=0.92; source=equations; [page 4, bbox (307.96, 328.23, 358.26, 336.59)]] s.t. KT = Q
+
+[confidence=0.92; source=equations; [page 4, bbox (332.33, 360.84, 340.35, 366.28)]] i=1
+
+[confidence=0.92; source=equations; [page 4, bbox (376.55, 316.34, 384.57, 321.78)]] i=1
+
+[confidence=0.92; source=equations; [page 5, bbox (306.59, 76.86, 320.44, 85.22)]] V =
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (306.6, 163.42, 344.1, 183.81)]] N0 = [V0⋅S
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 372.62, 328.86, 386.11)]] σ = R0
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 541.79, 103.67, 550.59)] [x, y]] = f1(V, R) + f2
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 113.43, 560.02, 126.47)]] S = Vc⋅L2 (6)
+
+[confidence=0.92; source=equations; [page 5, bbox (316.29, 503.01, 471.53, 545.28)]] ) √ \geri, i, j ∈{1, 2⋯N} ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ ( x2 i -x2 j
+
+[confidence=0.92; source=equations; [page 5, bbox (399.8, 535.1, 475.18, 544.26)]] \geri + rj, for N < 60
+
+[confidence=0.92; source=equations; [page 6, bbox (306.59, 86.37, 322.48, 95.53)]] Th =
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (37.59, 454.2, 85.8, 474.58)]] Tn = ( T -Tr
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (368.05, 64.55, 447.84, 86.77)]] ) + tanh [ β⋅ ( Tn - Tf-Tr Tlim-Tr
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (369.81, 85.75, 446.08, 107.98)]] ) + tanh [ β⋅ ( 1 - Tf-Tr Tlim-Tr
+
+[confidence=0.92; source=equations; [page 6, bbox (344.64, 555.9, 492.25, 583.45)]] L1 T = 293 K L2 q = 0 A q = 10 W
+
+[confidence=0.92; source=equations; [page 8, bbox (37.59, 165.18, 68.75, 174.04)] [x, y]] = f2
+
+[confidence=0.92; source=equations; [page 8, bbox (306.6, 362.92, 338.04, 381.63)]] Rn = R̅̅̅ Vc
+
+[confidence=0.92; source=equations; [page 8, bbox (325.13, 362.92, 391.46, 387.29)]] π √ ⋅L , Tavg-n = Tavg
+
+[confidence=0.92; source=equations; [page 8, bbox (393.22, 362.92, 442.34, 377.13)]] , Tmax-n = Tmax
+
+[confidence=0.92; source=equations; [page 8, bbox (444.13, 362.92, 480.63, 377.13)]] , ST-n = ST
+
+[confidence=0.92; source=equations; [page 9, bbox (75.63, 243.81, 223.24, 271.35)]] L1 T = 293 K L2 q = 0 A q = 10 W
+
+[confidence=0.92; source=equations; [page 9, bbox (306.6, 275.33, 355.83, 289.88)]] Tf-n = Tf -Tr
+
+[confidence=0.92; source=equations; [page 9, bbox (38.95, 289.67, 120.42, 308.42)]] Ent = 1/f3(Q, Vc, L, V, R) Et = 1 / f4
+
+[confidence=0.92; source=equations; [page 9, bbox (37.59, 384.43, 293.35, 397.46)]] f3(Q0, Vc0, L0, V, R) = k1⋅Tavg-n + k2⋅Tmax-n + k3⋅ST-n (15)
+
+[confidence=0.92; source=equations; [page 9, bbox (37.59, 524.69, 291.02, 538.02)]] T∗ avg = f3⋅Tavg0 (16)
+
+[confidence=0.92; source=equations; [page 9, bbox (311.92, 223.12, 562.36, 239.45)]] ( Q0, Vc0, L0, Tf-n, β ) = p1⋅Tavg-n + p2⋅Tmax-n + p3⋅ST-n (17)
+
+[confidence=0.57; needs_review; source=equations; [page 9, bbox (312.61, 534.42, 546.16, 553.4)]] Thermal performance HT system without damage (Fig. 3(d)) HT system with non-thermal damage (Fig. 9)
+
+[confidence=0.92; source=equations; [page 11, bbox (307.96, 480.16, 467.11, 489.32)]] f3(V, R) = (0.8735⋅k1 + 5.242⋅k2 + 11.81⋅k3)⋅V
+
+[confidence=0.92; source=equations; [page 11, bbox (306.6, 566.85, 320.44, 575.21)]] V =
+
+[confidence=0.92; source=equations; [page 11, bbox (306.6, 659.82, 353.58, 674.52)]] V = k4⋅π⋅N⋅R2
+
+[confidence=0.92; source=equations; [page 11, bbox (341.18, 493.32, 492.8, 513.74)]] + (0.2497⋅k1 + 4.611⋅k2 + 9.745⋅k3)⋅ R ̅̅̅̅̅̅̅̅̅̅ Vc/π √ ⋅L
+
+[confidence=0.92; source=equations; [page 11, bbox (341.18, 518.77, 467.95, 527.99)]] + (0.9761⋅k1 + 0.8251⋅k2 + 0.3294⋅k3)
+
+[confidence=0.92; source=equations; [page 12, bbox (38.95, 620.81, 214.17, 635.76)]] f3(N, R) = (0.9871⋅k1 + 5.923⋅k2 + 13.35⋅k3)⋅N⋅R2
+
+[confidence=0.92; source=equations; [page 12, bbox (72.45, 646.33, 224.13, 666.81)]] + (0.2497⋅k1 + 4.611⋅k2 + 9.745⋅k3)⋅ R ̅̅̅̅̅̅̅̅̅̅ Vc/π √ ⋅L
+
+[confidence=0.92; source=equations; [page 12, bbox (72.46, 671.84, 199.23, 681.0)]] + (0.9761⋅k1 + 0.8251⋅k2 + 0.3294⋅k3)
+
+[confidence=0.92; source=equations; [page 14, bbox (38.95, 54.96, 197.27, 64.92)]] f3(V, R) = (2.163⋅k1-12.71⋅k2 + 5.574⋅k3)⋅V2
+
+[confidence=0.92; source=equations; [page 14, bbox (72.17, 70.1, 202.12, 79.26)]] + (0.0907⋅k1 + 0.8537⋅k2-5.905⋅k3)⋅V
+
+[confidence=0.92; source=equations; [page 14, bbox (72.17, 109.17, 223.79, 129.65)]] + (0.1344⋅k1 + 5.699⋅k2 + 7.322⋅k3)⋅ R ̅̅̅̅̅̅̅̅̅̅ Vc/π √ ⋅L
+
+[confidence=0.92; source=equations; [page 14, bbox (72.17, 134.34, 227.59, 154.82)]] + (6.982⋅k1 + 87.06⋅k2 + 242.5⋅k3)⋅V⋅ R ̅̅̅̅̅̅̅̅̅̅ Vc/π √ ⋅L
+
+[confidence=0.92; source=equations; [page 14, bbox (72.17, 159.85, 194.97, 169.01)]] + (1.002⋅k1 + 0.9501⋅k2 + 0.9737⋅k3)
+
+[confidence=0.92; source=equations; [page 14, bbox (38.95, 179.52, 213.71, 194.52)]] f3(N, R) = (2.762⋅k1-16.23⋅k2 + 7.117⋅k3)⋅N2⋅R4
+
+[confidence=0.92; source=equations; [page 14, bbox (72.45, 205.48, 210.2, 220.49)]] + (7.89⋅k1 + 98.38⋅k2 + 274.03⋅k3)⋅N⋅R3
+
+[confidence=0.92; source=equations; [page 14, bbox (72.45, 231.45, 218.19, 246.45)]] + (0.1025⋅k1 + 0.9647⋅k2-6.673⋅k3)⋅N⋅R2
+
+[confidence=0.92; source=equations; [page 14, bbox (72.45, 282.99, 224.13, 303.41)]] + (0.1344⋅k1 + 5.699⋅k2 + 7.322⋅k3)⋅ R ̅̅̅̅̅̅̅̅̅̅ Vc/π √ ⋅L
+
+[confidence=0.92; source=equations; [page 14, bbox (72.46, 308.44, 195.26, 317.6)]] + (1.002⋅k1 + 0.9501⋅k2 + 0.9737⋅k3)
+
+[confidence=0.67; needs_review; source=equations; [page 14, bbox (331.37, 329.64, 480.11, 345.27)]] ) = (0.0314⋅p1-0.0304⋅p2 + 0.4461⋅p3)⋅β2
+
+[confidence=0.92; source=equations; [page 14, bbox (342.99, 350.45, 465.53, 359.61)]] + (0.257⋅p1 + 3.904⋅p2 + 9.422⋅p3)⋅β
+
+[confidence=0.67; needs_review; source=equations; [page 14, bbox (342.99, 359.75, 490.42, 380.13)]] + (312.5⋅p1 + 892.9⋅p2 + 5152⋅p3)⋅ ( Tf -Tr
+
+[confidence=0.92; source=equations; [page 14, bbox (342.99, 389.23, 486.68, 403.83)]] + (6.409⋅p1-175.8⋅p2 + 120.3⋅p3)⋅Tf -Tr
+
+[confidence=0.92; source=equations; [page 15, bbox (306.6, 614.35, 344.31, 623.16)]] Ent(V, R) =
+
+[confidence=0.92; source=equations; [page 15, bbox (354.78, 621.1, 507.97, 641.53)]] +4.39⋅ R ̅̅̅̅̅̅̅̅̅̅ Vc/π √ ⋅L + 112.18⋅V⋅ R ̅̅̅̅̅̅̅̅̅̅ Vc/π √ ⋅L + 0.975
+
+[confidence=0.92; source=equations; [page 16, bbox (306.6, 572.8, 321.75, 581.96)]] Et =
+
+[confidence=0.92; source=body_inline] \mathrm{ZrB} _ {2}
+
+[confidence=0.92; source=body_inline] \mathrm{HfB} _ {2}
+
+[confidence=0.92; source=body_inline] \mathbf {Z r B} _ {2} - \mathbf {S i C}
+
+[confidence=0.92; source=body_inline] \mathrm {Z r B _ {2}}
+
+[confidence=0.92; source=body_inline] \mathrm{i.e.,}
+
+[confidence=0.92; source=body_inline] \times 100 \mathrm{mm} \times 16
+
+[confidence=0.92; source=body_inline] \mathrm {{W / m} ^ {2}}
+
+[confidence=0.92; source=body_inline] 1 , \rho = 1
+
+[confidence=0.92; source=body_inline] 0 < \rho \leq 1
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{geoav}}
+
+[confidence=0.92; source=body_inline] \rho ( x ) , x \in \Omega
+
+[confidence=0.92; source=body_inline] \begin{array} {l l} {\displaystyle \mathrm{Min} :} & {T _ {\mathrm{geouv}} = \left( \displaystyle \frac {1} {| \Omega |} {\displaystyle \int _ {\Omega}} ( T _ {i} ( x ) ) ^ {m} d \Omega \right) ^ {\frac {1} {m}} , x \in \Omega} \\ {\mathrm{s.t.}} & {\displaystyle \int _ {\Omega} k _ {i} \nabla T _ {i} d \Omega = \int _ {\Omega} q _ {i} d \Omega} \\ & {\displaystyle \int _ {\Omega} \rho d \Omega \leq V _ {c}} \end{array}\tag{1}
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.92; source=body_inline] k _ {i}
+
+[confidence=0.92; source=body_inline] T _ {i ,}
+
+[confidence=0.92; source=body_inline] q _ {i}
+
+[confidence=0.92; source=body_inline] V _ {c}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {T _ {\mathrm{geoavg}} \overset {m \longrightarrow 1} {\longrightarrow} \mathrm{avg} ( T _ {i} ( x ) ) , x \in \Omega} \\ & {T _ {\mathrm{geoavg}} \overset {\longrightarrow \infty} {\longrightarrow} \mathrm{max} ( T _ {i} ( x ) ) , x \in \Omega} \end{array}
+
+[confidence=0.92; source=body_inline] X = \{\rho _ {1} , \rho _ {2} , . . . , \rho _ {N _ {E}} \} ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] \mathrm{Min} : T _ {\mathrm{geoav}} = \left( \frac {1} {| \Omega |} \sum _ {i = 1} ^ {N _ {E}} \int _ {\Omega _ {i}} ( \mathbf {N} _ {i} \mathbf {T} _ {i} ) ^ {m} d \Omega _ {i} \right) ^ {\frac {1} {m}}\tag{2}
+
+[confidence=0.92; source=body_inline] \mathbf {s . t .} \mathbf {K T} = \mathbf {Q}\tag{3}
+
+[confidence=0.92; source=body_inline] \sum _ {i = 1} ^ {N _ {E}} \rho _ {i} V _ {i} \leq V _ {c}
+
+[confidence=0.92; source=body_inline] \rho _ {\mathrm{min}} \leq \rho _ {i} \leq 1.0
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{E}}
+
+[confidence=0.92; source=body_inline] \rho _ {i}
+
+[confidence=0.92; source=body_inline] \Omega _ {i}
+
+[confidence=0.92; source=body_inline] V _ {i}
+
+[confidence=0.92; source=body_inline] \rho _ {\mathrm{min}}
+
+[confidence=0.92; source=body_inline] Q = 5 ~ \mathrm{W}
+
+[confidence=0.92; source=body_inline] Q = 10 \mathrm{W}
+
+[confidence=0.92; source=body_inline] Q = 15 \mathrm{W}
+
+[confidence=0.92; source=body_inline] \rho _ {\mathrm {{m i n}}}
+
+[confidence=0.92; source=body_inline] \mathrm{K,}
+
+[confidence=0.92; source=body_inline] [ \mathbf {x} , \mathbf {y} ] = f _ {1} ( V , R ) + f _ {2} \left( T _ {\mathrm{f}} , \beta \right)\tag{4}
+
+[confidence=0.92; source=body_inline] f _ {1}
+
+[confidence=0.92; source=body_inline] f _ {2}
+
+[confidence=0.92; source=body_inline] V = \frac {\displaystyle \sum _ {1} ^ {N} \pi \cdot r _ {i} ^ {2}} {S}\tag{5}
+
+[confidence=0.92; source=body_inline] S = V _ {\mathrm{c}} {\cdot} L ^ {2}\tag{6}
+
+[confidence=0.92; source=body_inline] V _ {0}
+
+[confidence=0.92; source=body_inline] R _ {0}
+
+[confidence=0.92; source=body_inline] N _ {0}
+
+[confidence=0.92; source=body_inline] N _ {0} = \bigg [ \frac {V _ {0} {\cdot} S} {\pi {\cdot} R _ {0} ^ {2}} \bigg ]\tag{7}
+
+[confidence=0.92; source=body_inline] ^ {\mathrm {{\small ~ \circ ,} ~}}
+
+[confidence=0.92; source=body_inline] ( x _ {i} , y _ {i} )
+
+[confidence=0.92; source=body_inline] A _ {\mathrm{i}} ,
+
+[confidence=0.92; source=body_inline] \{A _ {1} , A _ {2} , . . . , A _ {m} \}
+
+[confidence=0.67; needs_review; source=body_inline] \{A _ {i} \mid A _ {i} >
+
+[confidence=0.67; needs_review; source=body_inline] A ^ {*} \}
+
+[confidence=0.92; source=body_inline] A ^ {*}
+
+[confidence=0.92; source=body_inline] \{A _ {m 1} , A _ {m 2} , . . . , A _ {m N} \}
+
+[confidence=0.92; source=body_inline] \{m _ {1} , m _ {2} , . . . , m _ {N} \}
+
+[confidence=0.92; source=body_inline] r _ {i}
+
+[confidence=0.92; source=body_inline] \sigma = \frac {R _ {0}} {3}\tag{8}
+
+[confidence=0.92; source=body_inline] N < 60
+
+[confidence=0.92; source=body_inline] R _ {0} > 3
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array} {r l} & {[ \mathbf {x} , \mathbf {y} , \mathbf {R} ] = f _ {1} ( V _ {0} , R _ {0} , A )} \\ & {\left( \begin{array} {l l l} {N \left( x _ {i} ^ {2} - x _ {c} ^ {2} \right) + \left( y _ {i} ^ {2} - y _ {c} ^ {2} \right) \geq r _ {i} ,} & {i , j \in \{1 , 2 \cdots N \}} \\ {\sqrt {\left( x _ {i} ^ {2} - x _ {j} ^ {2} \right) + \left( y _ {i} ^ {2} - y _ {j} ^ {2} \right)} \geq r _ {i} + r _ {j} ,} & {\mathrm{for} N < 60} \end{array} \right.} \\ & {\left. \begin{array} {r l} {r _ {N \sim N} \left( R _ {0} , \frac {R _ {0} ^ {2}} {9} \right)} \\ {N \sim P ( N _ {0} )} \\ {A \sim U ( 0 , 1 )} \end{array} \right.} \end{array}\tag{9}
+
+[confidence=0.92; source=body_inline] ( x _ {\mathrm{c}} , y _ {\mathrm{c}} )
+
+[confidence=0.92; source=body_inline] V _ {0} = 10 \%
+
+[confidence=0.92; source=body_inline] R _ {0} = 2 ~ \mathrm{mm}
+
+[confidence=0.92; source=body_inline] \mathrm{(m.K)} ,
+
+[confidence=0.92; source=body_inline] T _ {\mathfrak {n}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{n}} = \left( {\frac {T - T _ {\mathrm{r}}} {T _ {\mathrm{lim}} - T _ {\mathrm{r}}}} \right) ^ {p}\tag{10}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{lim}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} ,
+
+[confidence=0.92; source=body_inline] \beta
+
+[confidence=0.92; source=body_inline] T = T _ {\mathrm{f}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} , T _ {\mathrm{n}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} = \frac {\displaystyle \mathrm{tanh} \bigg ( \beta \cdot \frac {T _ {\mathrm{f}} - T _ {\mathrm{r}}} {T _ {\mathrm{lim}} - T _ {\mathrm{r}}} \bigg ) + \mathrm{tanh} \bigg [ \beta \cdot \bigg ( T _ {\mathrm{n}} - \frac {T _ {\mathrm{f}} - T _ {\mathrm{r}}} {T _ {\mathrm{lim}} - T _ {\mathrm{r}}} \bigg ) \bigg ]} {\displaystyle \mathrm{tanh} \bigg ( \beta \cdot \frac {T _ {\mathrm{f}} - T _ {\mathrm{r}}} {T _ {\mathrm{lim}} - T _ {\mathrm{r}}} \bigg ) + \mathrm{tanh} \bigg [ \beta \cdot \bigg ( 1 - \frac {T _ {\mathrm{f}} - T _ {\mathrm{r}}} {T _ {\mathrm{lim}} - T _ {\mathrm{r}}} \bigg ) \bigg ]}\tag{11}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} = f ( T _ {\mathrm{n}} ) . \mathrm{For} p = 1 , T _ {\mathrm{n}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} = f ( T )
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{r}} = 293 \mathrm{K} , T _ {\mathrm{lim}} = 908 \mathrm{K} , p = 1 , T _ {\mathrm{f}} = 375 \mathrm{K}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} , T _ {\mathrm{n,}}
+
+[confidence=0.92; source=body_inline] T _ {\mathbf {n}}
+
+[confidence=0.92; source=body_inline] \beta = 13 ,
+
+[confidence=0.92; source=body_inline] {T < 0.85 T _ {f} , \ T _ {h}}
+
+[confidence=0.92; source=body_inline] 0.85 T _ {\mathrm{f}} < T < 1.15 T _ {\mathrm{f}} , T _ {\mathrm{h}}
+
+[confidence=0.92; source=body_inline] T > 1.15 T _ {\mathrm{f}} ,
+
+[confidence=0.92; source=body_inline] T {=} T _ {\mathrm{f}} , T _ {\mathrm{n}} {=} 0.13 , T _ {\mathrm{h}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} = 0.95 ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{r}} = 293 \mathrm{K} , T _ {\mathrm{lim}} = 908 \mathrm{K} , p = 1 , \beta = 14 . \mathrm{Fig.} 5 ( \mathrm{b} )
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{n} \cdot}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} = 0.05 ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} =
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} = 0.5 ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} = 370 \mathrm{K} ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} = 370 \ \mathrm{K} , 375 \ \mathrm{K} ,
+
+[confidence=0.67; needs_review; source=body_inline] ( T _ {\mathrm{h}}
+
+[confidence=0.67; needs_review; source=body_inline] T _ {\mathrm{h}} ~ < ~ 0.95 )
+
+[confidence=0.92; source=body_inline] ( T _ {\mathrm{h}} < 0.05 )
+
+[confidence=0.92; source=body_inline] \beta ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} , T _ {\mathrm{n}}
+
+[confidence=0.92; source=body_inline] T ( \beta = 14 )
+
+[confidence=0.92; source=body_inline] {\cal T} ( T _ {\mathrm{f}} {=} 375 \mathrm{K} )
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} , \ T _ {\mathrm{n}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{r}} = 293 \mathrm{K} , T _ {\mathrm{lim}} = 1473 \mathrm{K} , p = 1 , \beta =
+
+[confidence=0.92; source=body_inline] 4 , T _ {\mathrm{f}} {=} 883 \mathrm{K} ,
+
+[confidence=0.92; source=body_inline] [ \mathbf {x} , \mathbf {y} ] = f _ {2} \left( T _ {\mathrm{f}} , \beta , T , T _ {r} , T _ {\mathrm{lim}} , p \right)\tag{12}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} = 370 ~ \mathrm{K} , 375 ~ \mathrm{K} , 380 ~ \mathrm{K} ,
+
+[confidence=0.92; source=body_inline] \beta = 13 , 14 , 15
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} > 0.99
+
+[confidence=0.92; source=body_inline] ^ {7 ,}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{t}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{h}} = 0.99
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} = 375 \ \mathrm{K}
+
+[confidence=0.92; source=body_inline] \beta = 14
+
+[confidence=0.92; source=body_inline] ^ {21 , 149}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg}} ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] s _ {T}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg}} , \ T _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] s _ {T} ,
+
+[confidence=0.92; source=body_inline] V _ {\mathrm{c}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg0}} = 428.05 \ : \mathrm{K} , T _ {\mathrm{max0}} = 488.79
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {S _ {T 0} = 36.34 ~ \mathrm{K} .} \end{array}
+
+[confidence=0.92; source=body_inline] R _ {\mathrm{n}} = \frac {R} {\sqrt {\frac {V _ {c}} {\pi}} . L} , T _ {\mathrm{avg-n}} = \frac {T _ {\mathrm{avg}}} {T _ {\mathrm{avg0}}} , T _ {\mathrm{max-n}} = \frac {T _ {\mathrm{max}}} {T _ {\mathrm{max0}}} , S _ {T - \mathrm{n}} = \frac {S _ {T}} {S _ {T 0}}\tag{13}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg0}} , \ T _ {\mathrm{max0}} ,
+
+[confidence=0.92; source=body_inline] s _ {T 0}
+
+[confidence=0.92; source=body_inline] Q , V _ {\mathrm{c}} ,
+
+[confidence=0.92; source=body_inline] L ; T _ {\mathrm{avg}} , T _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] Q , V _ {\mathrm{c}} , L ,
+
+[confidence=0.92; source=body_inline] ^ {( 4 )} ,
+
+[confidence=0.92; source=body_inline] V _ {c} ,
+
+[confidence=0.92; source=body_inline] ( V , R , T _ {f} , \beta ) ,
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {E _ {\mathrm{nt}} = 1 / f _ {3} ( Q , V _ {c} , L , V , R )} \\ {E _ {\mathrm{t}} = 1 / f _ {4} ( Q , V _ {c} , L , T _ {f} , \beta )} \end{array}\tag{14}
+
+[confidence=0.92; source=body_inline] f _ {3}
+
+[confidence=0.92; source=body_inline] f _ {4}
+
+[confidence=0.92; source=body_inline] f _ {3} ( Q _ {0} , V _ {c 0} , L _ {0} , V , R ) = k _ {1} {\cdot} T _ {\mathrm{avg-n}} + k _ {2} {\cdot} T _ {\mathrm{max-n}} + k _ {3} {\cdot} S _ {T - \mathrm{n}}\tag{15}
+
+[confidence=0.92; source=body_inline] V _ {c 0}
+
+[confidence=0.92; source=body_inline] L _ {0}
+
+[confidence=0.92; source=body_inline] k _ {1} , k _ {2}
+
+[confidence=0.92; source=body_inline] k _ {3}
+
+[confidence=0.92; source=body_inline] k _ {1} = 1
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg}} ^ {\ast} = f _ {3} {\cdot} T _ {\mathrm{avg0}}\tag{16}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] f _ {3} = 1 ,
+
+[confidence=0.92; source=body_inline] f _ {3} > 1
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{nt}}
+
+[confidence=0.92; source=body_inline] f _ {4} \left( Q _ {0} , V _ {c 0} , L _ {0} , T _ {\mathrm{f-n}} , \beta \right) = p _ {1} \cdot T _ {\mathrm{avg-n}} + p _ {2} \cdot T _ {\mathrm{max-n}} + p _ {3} \cdot S _ {T - \mathrm{n}}\tag{17}
+
+[confidence=0.92; source=body_inline] p _ {1} , p _ {2}
+
+[confidence=0.92; source=body_inline] p _ {3}
+
+[confidence=0.92; source=body_inline] k _ {1} ,
+
+[confidence=0.92; source=body_inline] k _ {3} , T _ {\mathrm{f-n}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f-n}} = \frac {T _ {\mathrm{f}} - T _ {\mathrm{r}}} {T _ {\mathrm{lim}} - T _ {\mathrm{r}}}\tag{18}
+
+[confidence=0.92; source=body_inline] \mathrm{of} f _ {3}
+
+[confidence=0.92; source=body_inline] f _ {4} ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg}} , T _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] V _ {0} = 2 , 4 , 6 , 8 , 10 ,
+
+[confidence=0.92; source=body_inline] R _ {0} = 1 , 2 ,
+
+[confidence=0.92; source=body_inline] 5 , T _ {\mathrm{avg}}
+
+[confidence=0.67; needs_review; source=body_inline] 5 \ : ( V _ {O} = 2 \% , R _ {O} = 5
+
+[confidence=0.67; needs_review; source=body_inline] 7 \ ( V _ {O} = 4 \% , R _ {O} = 2
+
+[confidence=0.67; needs_review; source=body_inline] \bar {>} ( V _ {O} = 6 \% , R _ {O} = 5
+
+[confidence=0.67; needs_review; source=body_inline] ( V _ {0} = 8 \% , R _ {0} = 5
+
+[confidence=0.67; needs_review; source=body_inline] ( V _ {0} = 10 \% , R _ {0} = 4
+
+[confidence=0.92; source=body_inline] ( V _ {O} = 12 \% , R _ {O} = 5 \ \mathrm{mm} )
+
+[confidence=0.92; source=body_inline] V _ {O}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg}} = 428 \mathrm{Kfor} 0 < V < 5 \%
+
+[confidence=0.92; source=body_inline] = 115.1 {\cdot} V
+
+[confidence=0.92; source=body_inline] V > 5 \%
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{max}} = 360.6 {\cdot} V
+
+[confidence=0.92; source=body_inline] S _ {T} = 71.8 {\cdot} V + 33.8
+
+[confidence=0.92; source=body_inline] R _ {0} = 5 \mathrm{mm}
+
+[confidence=0.92; source=body_inline] R _ {0} = 5
+
+[confidence=0.92; source=body_inline] N _ {0} = 4
+
+[confidence=0.92; source=body_inline] r \sim N ( 5 , \frac {25} {9} )
+
+[confidence=0.67; needs_review; source=body_inline] S _ {T} \left( \mathrm{i.e.,} T _ {\mathrm{~avg}} ^ {\ast} , T _ {\mathrm{~max}} ^ {\ast} , \right
+
+[confidence=0.67; needs_review; source=body_inline] S ^ {*} {} _ {T} )
+
+[confidence=0.92; source=body_inline] V ^ {*}
+
+[confidence=0.92; source=body_inline] R ^ {*} ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{~\tiny~max~}} ^ {\ast}
+
+[confidence=0.92; source=body_inline] V _ {0} = 2 \%
+
+[confidence=0.92; source=body_inline] T ^ {*} \mathrm {{_ {m a x}}}
+
+[confidence=0.92; source=body_inline] V _ {0} = 6 \%
+
+[confidence=0.92; source=body_inline] ^ {6 .}
+
+[confidence=0.92; source=body_inline] R _ {0} , T ^ {\ast} \mathrm {{a v g}}
+
+[confidence=0.92; source=body_inline] S ^ {*} {} _ {T}
+
+[confidence=0.92; source=body_inline] T ^ {*} {\mathrm{avg}} {\mathrm{-n}} , \ T ^ {*} {\mathrm{max}} {\mathrm{-n}}
+
+[confidence=0.92; source=body_inline] S ^ {*} {} _ {T - \mathrm{n}}
+
+[confidence=0.92; source=body_inline] S ^ {*} \mathrm {_ {T - n}} ,
+
+[confidence=0.92; source=body_inline] T ^ {*} {\bf {\sigma}} _ {\operatorname* {m a x - n}} ,
+
+[confidence=0.92; source=body_inline] T ^ {*} {\mathfrak {a v g - n}}
+
+[confidence=0.92; source=body_inline] R _ {\mathrm{~\scriptsize~n~}} ^ {*}
+
+[confidence=0.92; source=body_inline] T ^ {*} {} _ {\mathsf{avg-n}}
+
+[confidence=0.92; source=body_inline] T ^ {*} {\bf \Pi} _ {\operatorname{max} - \mathrm{n}}
+
+[confidence=0.92; source=body_inline] S ^ {*} \mathrm {_ {T} ,}
+
+[confidence=0.92; source=body_inline] T ^ {*} \mathrm{avg} _ {\mathrm{-n}} , \ T _ {\mathrm {~ \mathrm{~max} \mathrm{-n}}} ^ {*} ,
+
+[confidence=0.92; source=body_inline] R ^ {*} {\bf {\Omega}} _ {\bf {n}} ,
+
+[confidence=0.92; source=body_inline] Q _ {0} = 10 \mathrm{W} , V _ {c 0} = 30 \% ,
+
+[confidence=0.92; source=body_inline] = 100
+
+[confidence=0.92; source=body_inline] {\begin{array} {r l} {f _ {3} ( V , R )} & {= ( 0.8735 \cdot k _ {1} + 5.242 \cdot k _ {2} + 11.81 \cdot k _ {3} ) \cdot V} \\ & {+ \ ( 0.2497 \cdot k _ {1} + 4.611 \cdot k _ {2} + 9.745 \cdot k _ {3} ) \cdot {\frac {R} {\sqrt {V _ {c} / \pi} \cdot L}}} \\ & {+ \ ( 0.9761 \cdot k _ {1} + 0.8251 \cdot k _ {2} + 0.3294 \cdot k _ {3} )} \end{array}}\tag{19}
+
+[confidence=0.92; source=body_inline] V = \frac {\pi \cdot \sum _ {i} ^ {N} r _ {i} ^ {2}} {V _ {c} \cdot L ^ {2}}\tag{20}
+
+[confidence=0.92; source=body_inline] r _ {i} ,
+
+[confidence=0.92; source=body_inline] \sum _ {i} ^ {N} r _ {i} ^ {2} \ge N \cdot R ^ {2}\tag{21}
+
+[confidence=0.92; source=body_inline] V = k _ {4} \cdot \frac {\pi \cdot N \cdot R ^ {2}} {V _ {c} \cdot L ^ {2}}\tag{22}
+
+[confidence=0.92; source=body_inline] k _ {4}
+
+[confidence=0.92; source=body_inline] 6 , k _ {4} = 1.13
+
+[confidence=0.92; source=body_inline] {\begin{array} {r l} {f _ {3} ( N , R )} & {= ( 0.9871 \cdot k _ {1} + 5.923 \cdot k _ {2} + 13.35 \cdot k _ {3} ) \cdot {\frac {N \cdot R ^ {2}} {V _ {c} \cdot \left/ \pi \cdot L ^ {2} \right.}}} \\ & {+ \left. ( 0.2497 \cdot k _ {1} + 4.611 \cdot k _ {2} + 9.745 \cdot k _ {3} ) \cdot {\frac {R} {\sqrt {V _ {c} / \pi} \cdot L}} \right.} \\ & {+ \left. ( 0.9761 \cdot k _ {1} + 0.8251 \cdot k _ {2} + 0.3294 \cdot k _ {3} ) \right.} \end{array}}\tag{23}
+
+[confidence=0.92; source=body_inline] T ^ {*} \mathrm{avg} . \mathrm{n} , T ^ {*} \mathrm{max} . \mathrm{n} ,
+
+[confidence=0.92; source=body_inline] T ^ {\ast} \mathrm {_ {a v g - n}} , T ^ {\ast} \mathrm {_ {m a x - n}} ,
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {f _ {3} ( V , R )} & {= ( 2.163 . k _ {1} - 12.71 \cdot k _ {2} + 5.574 . k _ {3} ) \cdot V ^ {2}} \\ & {+ \left( 0.0907 \cdot k _ {1} + 0.8537 \cdot k _ {2} - 5.905 . k _ {3} \right) \cdot V} \\ & {+ \left( - 1.828 \cdot k _ {1} - 39.35 \cdot k _ {2} - 76.58 \cdot k _ {3} \right) \cdot \frac {R ^ {2}} {V _ {c} / \pi \cdot L ^ {2}}} \\ & {+ \left( 0.1344 \cdot k _ {1} + 5.699 \cdot k _ {2} + 7.322 \cdot k _ {3} \right) \cdot \frac {R} {\sqrt {V _ {c} / \pi \cdot L}}} \\ & {+ \left( 6.982 \cdot k _ {1} + 87.06 \cdot k _ {2} + 242.5 \cdot k _ {3} \right) \cdot V \frac {R} {\sqrt {V _ {c} / \pi} \cdot L}} \\ & {+ \left( 1.002 \cdot k _ {1} + 0.9501 \cdot k _ {2} + 0.973 \cdot k _ {3} \right)} \end{array}\tag{24}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {f _ {S} ( N , R )} & {= ( 2.7625 k _ {1} - 16.23 k _ {2} + 7.117 k _ {3} ) {\frac {N ^ {2} R ^ {4}} {V _ {2} ^ {2} \left/ N ^ {2} - L ^ {4} \right.}}} \\ & {+ ( 7.895 k _ {1} + 98.38 k _ {2} + 274.03 k _ {3} ) {\frac {N - R ^ {3}} {V _ {4} / N ^ {2} - L ^ {2}}}} \\ & {+ ( 1.025 k _ {1} + 0.9647 k _ {2} - 6.673 k _ {3} ) {\frac {N - R ^ {2}} {V _ {4} / N ^ {2} - L ^ {2}}}} \\ & {+ ( - 1.828 k _ {1} - 39.35 k _ {2} - 76.588 k _ {3} ) {\frac {R ^ {2}} {V _ {4} / N ^ {2} - L ^ {2}}}} \\ & {+ ( 0.1344 k _ {1} + 5.699 k _ {2} + 7.322 k _ {3} ) {\frac {R} {\sqrt {V _ {4} / N ^ {2} - L ^ {2}}}}} \\ & {+ ( 1.002 k _ {1} + 0.9501 k _ {2} + 0.9737 k _ {3} ) .} \end{array}\tag{25}
+
+[confidence=0.92; source=body_inline] \dot {\boldsymbol {\beta}} = 13
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} = 380
+
+[confidence=0.92; source=body_inline] = 16
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} = 370 ~ \mathrm{K} ,
+
+[confidence=0.92; source=body_inline] 1 \mathrm{Fig.} 16 , \beta
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg-n}} , T _ {\mathrm{max-n}} ,
+
+[confidence=0.92; source=body_inline] {\cal {S}} _ {T - \mathrm {{n}}}
+
+[confidence=0.92; source=body_inline] S _ {T \cdot \mathrm{n}} ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{max-n}} ,
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg-n}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg-n}} , \ T _ {\mathrm{max-n}} ,
+
+[confidence=0.92; source=body_inline] s _ {T - \mathrm{n}}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {f _ {4} ( \beta , T _ {t} )} & {= ( 0.0314 \cdot p _ {1} - 0.0304 \cdot p _ {2} + 0.4461 \cdot p _ {3} ) \cdot \beta ^ {2}} \\ & {+ \left( 0.257 \cdot p _ {1} + 3.904 \cdot p _ {2} + 9.422 \cdot p _ {3} \right) \cdot \beta} \\ & {+ \left( 312.5 \cdot p _ {1} + 892.9 \cdot p _ {2} + 5152 \cdot p _ {3} \right) \cdot \left( \frac {T _ {t} - T _ {\tau}} {T _ {\mathrm{im}}} \right) ^ {2}} \\ & {+ \left( 6.409 \cdot p _ {1} - 175.8 \cdot p _ {2} + 120.3 \cdot p _ {3} \right) \cdot \frac {T _ {t} - T _ {\tau}} {T _ {\mathrm{im}} - T _ {\tau}}} \\ & {+ \left( - 7.337 \cdot p _ {1} - 12.39 \cdot p _ {2} - 13.1.3 \cdot p _ {3} \right) \cdot \beta \frac {T _ {\tau} - T _ {\tau}} {T _ {\mathrm{im}} - T _ {\tau}}} \\ & {+ \left( - 1.324 \cdot p _ {1} - 14.56 \cdot p _ {2} - 75.75 \cdot p _ {3} \right)} \end{array}\tag{26}
+
+[confidence=0.92; source=body_inline] V _ {0} = 5 \% ,
+
+[confidence=0.92; source=body_inline] R _ {0} = 2.3
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg}} , \ T _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] T ^ {*} {} _ {\mathrm{avg}} , \ T ^ {*} {} _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] \mathbf {g} \mathbf {e} ^ {\mathbf {\gamma}} \mathbf {\Sigma} _ {\mathbf {i}}
+
+[confidence=0.92; source=body_inline] \updownarrow , T _ {\mathrm{avg}} , T _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] T ^ {*} {} _ {\mathrm{avg}} , T ^ {*} {} _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] \mathrm{Eq.~} ( 24 )
+
+[confidence=0.92; source=body_inline] {\mathrm{Fig.~}} 18 ( {\mathrm{a}} ) ,
+
+[confidence=0.92; source=body_inline] V = 3.48 \%
+
+[confidence=0.92; source=body_inline] R = 2.28
+
+[confidence=0.92; source=body_inline] T ^ {*} {} _ {\mathrm{avg}} , T ^ {*} {} _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] S _ {T} \mathrm{are} - 2.86 \% , - 20
+
+[confidence=0.92; source=body_inline] V = 3
+
+[confidence=0.92; source=body_inline] V , R , T _ {\mathrm{avg}} , T _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] T ^ {*} {} _ {\mathrm{avg}} ,
+
+[confidence=0.92; source=body_inline] \mathrm{K} ,
+
+[confidence=0.92; source=body_inline] V = 7.81 ^{\circ}
+
+[confidence=0.92; source=body_inline] R = 3.78
+
+[confidence=0.92; source=body_inline] 1.49 \% , - 13.16 \% ,
+
+[confidence=0.92; source=body_inline] V = 2.78 \%
+
+[confidence=0.92; source=body_inline] R ^ {*} = 2.90
+
+[confidence=0.92; source=body_inline] 0.66 \% , \ - 9.96 \%
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{~\tiny~max}} ^ {\ast} ,
+
+[confidence=0.92; source=body_inline] T ^ {\ast} _ {\mathrm{avg}} , T ^ {\ast} _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] V = 13.48 \%
+
+[confidence=0.92; source=body_inline] R = 4.17
+
+[confidence=0.92; source=body_inline] \cdot \ \mathrm{are} \ - 1.18 \% , \ - 10.86 \%
+
+[confidence=0.92; source=body_inline] V = 8.48 \%
+
+[confidence=0.92; source=body_inline] R = 4.00
+
+[confidence=0.92; source=body_inline] T ^ {\ast} _ {\mathrm{avg}} , T _ {\mathrm{max}} ^ {\ast}
+
+[confidence=0.92; source=body_inline] , V , R , T _ {\mathrm{avg}} , T _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] S _ {T} ~ \mathrm{are} ~ - 0.28 \% , ~ - 7.54 \%
+
+[confidence=0.92; source=body_inline] - 0.74 \% ,
+
+[confidence=0.92; source=body_inline] 0.83 \% , - 7.54 \%
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{avg}} , T _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] k _ {1} = k _ {2} = k _ {3} = 1 / 3
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{nt}} ( V , R ) = \left( \begin{array} {l} {- 1.66 \cdot V ^ {2} + 1.65 \cdot V - 39.25 \cdot \frac {R ^ {2}} {V _ {c} / \pi \cdot L ^ {2}}} \\ {+ 4.39 \cdot \frac {R} {\sqrt {V _ {c} / \pi} \cdot L} + 112.18 \cdot V \cdot \frac {R} {\sqrt {V _ {c} / \pi} \cdot L} + 0.975} \end{array} \right) ^ {- 1}\tag{27}
+
+[confidence=0.92; source=body_inline] ^ {4 ,}
+
+[confidence=0.92; source=body_inline] V _ {0} = 5 \% , R _ {0} = 2
+
+[confidence=0.92; source=body_inline] R _ {0} = 3
+
+[confidence=0.92; source=body_inline] V = 2.12 \%
+
+[confidence=0.92; source=body_inline] R = 0.94
+
+[confidence=0.67; needs_review; source=body_inline] S _ {T} \left( \mathrm{i.e.,~} T _ {\mathrm{~avg}} ^ {\ast} , \ : T _ {\mathrm{~\max}} ^ {\ast} , \right
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{t}} ,
+
+[confidence=0.92; source=body_inline] q _ {1} = q _ {2}
+
+[confidence=0.92; source=body_inline] = q _ {3} = 1 / 3
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{nt}} , E _ {\mathrm{t}}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{t}}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{t}} = \left[ \begin{array} {l} {0.149 {\cdot} \beta ^ {2} + 4.53 {\cdot} \beta + 2119 {\cdot} \left( \frac {T _ {\mathrm{f}} - T _ {\mathrm{r}}} {T _ {\mathrm{lim}} - T _ {\mathrm{r}}} \right) ^ {2}} \\ {- 16.36 {\cdot} \frac {T _ {\mathrm{f}} - T _ {\mathrm{r}}} {T _ {\mathrm{lim}} - T _ {\mathrm{r}}} - 50.34 {\cdot} \beta {\cdot} \frac {T _ {\mathrm{f}} - T _ {\mathrm{r}}} {T _ {\mathrm{lim}} - T _ {\mathrm{r}}} - 30.54} \end{array} \right] ^ {- 1}\tag{28}
+
+[confidence=0.92; source=body_inline] \beta = 13.5
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} = 383 \mathrm{K}
+
+[confidence=0.92; source=body_inline] \beta = 14.5
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} = 378
+
+[confidence=0.92; source=body_inline] V =
+
+[confidence=0.92; source=body_inline] T ^ {*} {\mathrm{avg}} , T ^ {*} {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] V _ {0} = 9 \% , R _ {0} = 2
+
+[confidence=0.92; source=body_inline] V _ {0} = 9 \%
+
+[confidence=0.67; needs_review; source=body_inline] 1 ) ; \left( \mathbf {b} \right) T _ {\mathrm{avg}}
+
+[confidence=0.67; needs_review; source=body_inline] T _ {\mathrm{f}} ( \mathrm{i.e.} _ {\cdot}
+
+[confidence=0.67; needs_review; source=body_inline] T _ {\mathrm{f}} \left( \mathrm{i.e.,} \right
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{f}} = 383 \ \mathrm{K} ,
+
+[confidence=0.92; source=body_inline] \beta = 15.5
+
+[confidence=0.92; source=body_inline] V = 13.14 \%
+
+[confidence=0.92; source=body_inline] 0.83 \% , \ - 7.54 \%
+
+[confidence=0.92; source=body_inline] 0.90 \% , - 1.50 \%

@@ -1,0 +1,75 @@
+[1] K. Liang, Z. Yin, Investigation on nonlinear buckling performance of the optimized wing structure under the realistic flight cases, Aerosp. Sci. Technol. 139 (2023) 108416.
+
+[2] P.D.R. Santos, et al., Effect of design parameters on the mass of a variable-span morphing wing based on finite element structural analysis and optimization, Aerosp. Sci. Technol. 80 (2018) 587–603.
+
+[3] O. Dababneh, T. Kipouros, Influence of high fidelity structural models on the predicted mass of aircraft wing using design optimization, Aerosp. Sci. Technol. 79 (2018) 164–173.
+
+[4] D.J. Munk, J.D. Miller, Topology optimization of aircraft components for increased sustainability, AIAA J. 60 (1) (2021) 445–460. Vol. 60, No. 1.
+
+[5] S. Chintapalli, et al., The development of a preliminary structural design optimization method of an aircraft wing-box skin-stringer panels, Aerosp. Sci. Technol. 14 (3) (2010) 188–198.
+
+[6] M. Saporito, et al., Robust multidisciplinary analysis and optimization for conceptual design of flexible aircraft under dynamic aeroelastic constraints, Aerosp. Sci. Technol. 138 (2023) 108349.
+
+[7] D. Li, et al., Aeroelastic global structural optimization using an efficient CFD-based reduced order model, Aerosp. Sci. Technol. 94 (2019) 105354.
+
+[8] D. Sarojini, D. Mavris, Structural analysis and optimization of wings subjected to dynamic loads, AIAA Journal 60 (2) (2022) 1013–1023.
+
+[9] E. Jonsson, et al., High-fidelity gradient-based wing structural optimization including geometrically nonlinear flutter constraint, AIAA J. 0 (0) (2023) 1–17.
+
+[10] E. Jonsson, et al., Flutter and post-flutter constraints in aircraft design optimization, Progress Aerospace Sci. 109 (2019) 100537.
+
+[11] Querin, O.M., et al., "Chapter 1 - Introduction, in topology design methods for structural optimization", O.M. Querin, et al., Eds. 2017, Academic Press: Oxford. p. 1–13.
+
+[12] M.P. Bendsøe, N. Kikuchi, Generating optimal topologies in structural design using a homogenization method, Comput. Methods Appl. Mech. Eng. 71 (2) (1988) 197–224.
+
+[13] M.P. Bendsøe, Optimal shape design as a material distribution problem, Struct. Optimizat. 1 (4) (1989) 193–202.
+
+[14] M. Tarek, T. Ray, Adaptive continuation solid isotropic material with penalization for volume constrained compliance minimization, Comput. Methods Appl. Mech. Eng. 363 (2020) 112880.
+
+[15] C. Wang, X. Qian, A density gradient approach to topology optimization under design-dependent boundary loading, J. Comput. Phys. 411 (2020) 109398.
+
+[16] S.D. Rajan, Sizing, shape, and topology design optimization of trusses using genetic algorithm, J. Struct. Eng. 121 (10) (1995) 1480–1487.
+
+[17] W. Dorn, R. Gomory, H. Greenberg, Automatic design of optimal structures, J. de Mecanique 3 (1) (1964) 25–52.
+
+[18] X. Zhang, A.S. Ramos, G.H. Paulino, Material nonlinear topology optimization using the ground structure method with a discrete filtering scheme, Struct. Multidiscipl. Optimizat. 55 (6) (2017) 2045–2072.
+
+[19] P. Martínez, P. Martí, O.M. Querin, Growth method for size, topology, and geometry optimization of truss structures, Struct. Multidiscipl. Optimizat. 33 (1) (2007) 13–26.
+
+[20] A. Shakya, P. Nanakorn, W. Petprakob, A ground-structure-based representation with an element-removal algorithm for truss topology optimization, Struct. Multidiscipl. Optimizat. 58 (2) (2018) 657–675.
+
+[21] H. An, H. Huang, Topology and Sizing Optimization for Frame Structures with a Two-Level Approximation Method, AIAA J. 55 (3) (2017) 1044–1057.
+
+[22] K. Deb, S. Gulati, Design of truss-structures for minimum weight using genetic algorithms, Finite Elements Analy. Design 37 (5) (2001) 447–465.
+
+[23] H. An, S. Chen, H. Huang, Laminate stacking sequence optimization with strength constraints using two-level approximations and adaptive genetic algorithm, Struct. Multidiscipl. Optimizat. 51 (4) (2015) 903–918.
+
+[24] D. Li, S. Chen, H. Huang, Improved genetic algorithm with two-level approximation for truss topology optimization, Struct. Multidiscipl. Optimizat. 49 (5) (2014) 795–814.
+
+[25] K. Tian, et al., Data-driven non-intrusive shape-topology optimization framework for curved shells, Aerosp. Sci. Technol. 139 (2023) 108405.
+
+[26] F. Fernandez, et al., Simultaneous material, shape and topology optimization, Comput. Methods Appl. Mech. Eng. 371 (2020) 113321.
+
+[27] C. Wang, J. Zhu, W. Zhang, Simultaneous optimization of structural topology and build direction using B-spline parameterized density method, Struct. Multidiscipl. Optimizat. 65 (11) (2022) 313.
+
+[28] H. Zheng, et al., Simultaneous optimization of materials and fiber angles on laminated composite shells for reducing transient sound radiation, Thin-Walled Struct. 181 (2022) 110019.
+
+[29] O. Ghattas, R. Melosh, Structural optimization of stress-constrained indeterminate trusses as a linear programming problem, in: 31st Structures, Structural Dynamics and Materials Conference, American Institute of Aeronautics and Astronautics, 1990.
+
+[30] M. Kober, et al., Nonlinear topology optimization of centrifugally loaded aero- engine part with newly developed optimality-criteria based algorithm, Aerosp. Sci. Technol. 39 (2014) 705–711.
+
+[31] Y. Yu, G. Zhao, B. Wang, Midfrequency structural/acoustic optimization with a complex variable sensitivity analysis method, AIAA J. 57 (12) (2019) 5447–5461.
+
+[32] A.R. S´anchez-Majano, A. Pagani, Buckling and fundamental frequency optimization of tow-steered composites using layerwise structural models AIAA, J 61 (9) (2023) 4149–4163.
+
+[33] R. Hassan, et al., A comparison of particle swarm optimization and the genetic algorithm. 46th AIAA/ASME/ASCE/AHS/ASC Structures, Structural Dynamics and Materials Conference, 2005.
+
+[34] S.K. Barman, D.K. Maiti, D. Maity, Vibration-based delamination detection in composite structures employing mixed unified particle swarm optimization, AIAA J. 59 (1) (2021) 386–399.
+
+[35] J.X. Hu, et al., Study on the hybrid optimization method of structural layout and size for flight vehicles, Acta Aeronautica et Astronautica Sinica 43 (05) (2021) 225363 in Chinese.
+
+[36] Pencheva, T., O. Roeva, and A. Shannon, "Generalized net models of basic genetic algorithm operators, in imprecision and uncertainty in information representation and processing: new tools based on intuitionistic fuzzy sets and generalized nets", P. Angelov and S. Sotirov, Eds. 2016, Springer International Publishing: Cham. p. 305–325.
+
+[37] J.E. Baker, Reducing bias and inefficiency in the selection algorithm, in: Proceedings of the Second International Conference on genetic algorithms, Cambridge: Hillsdale, New Jersey, Lawrence-Erlbaum Associates, 1987.
+
+[38] J.R. Sampson, Adaptation in natural and artificial systems (John H. Holland), SIAM Rev. 18 (3) (1976) 529–530. statics problem and aeroelastic influence quantity reduction of 4.3 % for the static aeroelastic problem. Jian-Jun Gou: Writing – review & editing, Writing – original draft, Visualization, Supervision, Resources, Methodology, Investigation, Funding acquisition, Formal analysis, Data curation, Conceptualization. Shu-Zhen Jia: Writing – review & editing, Visualization, Validation, Software, Formal analysis, Data curation, Conceptualization. Hai-Tao Tian: Resources, Methodology, Investigation, Conceptualization. Jia- Xin Hu: Software, Methodology, Data curation, Conceptualization. Chun-Lin Gong: Investigation, Formal analysis, Conceptualization.

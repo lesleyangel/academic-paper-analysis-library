@@ -1,0 +1,33 @@
+| Nomenclature | K | Number of time steps |  |
+| --- | --- | --- | --- |
+| Abbreviations | k m | Index of time steps Index of modes |  |
+| ARMA | AutoRegressive Moving Average | N | Number of trajectories |
+| BPNN | Back-Propagation Neural Network |  | Index of trajectories |
+| CFD | Computational Fluid Dynamics | n P |  |
+| CHT | Conjugate Heat Transfer | p | Number of aerodynamic grid nodes Index of surface nodes |
+| CNN | Convolutional Neural Network |  | Heat fl ux |
+| CST | Computational Structural Thermodynamics | q R |  |
+| DBA | Dropout-based Bayesian Approximation | $R ^ { 2 }$ | Rank of matrix |
+| FCL | Fully Connected Layer | S | R-square Singular value |
+| GRU | Gated Recurrent Unit | T | Temperature |
+| TSCN | Temporal-Spatial Convolutional Network | t | Time |
+| HFDP | Heat Flux Distribution Prediction | U | Left singular matrix |
+| LSTM | Long Short-term Memory | V | Right singular matrix |
+| POD | Proper Orthogonal Decomposition | W | Energy contribution |
+| RMSE | Root Mean Squared Error | W | Weight |
+| RNN | Recurrent Neural Network | X | Flight state |
+| ROM | Reduced-Order Model | x | Input |
+| TCN | Temporal Convolutional Network | Greek symbols |  |
+|  | Relative error |  |  |
+| Symbols | Mode coefficient | δ |  |
+| a b | Bias | ε λ | Root mean squared error |
+| C |  |  | Thermal conductivity |
+| C | Feature of convolution output | ξ | POD mode |
+| E | Specific heat | σ | Activation function |
+|  | Mapping relationship | ρ | Density |
+| e F | Eigenvalue | T | Dilation rate |
+|  | Heat flux prediction model | Topscripts |  |
+| H | Output of causal dilated convolution |  | Average |
+|  | Size of the convolution kernel |  | Predicted |
+|  | Index of weights |  |  |
+|  | Index of features |  |  |

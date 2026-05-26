@@ -1,0 +1,99 @@
+[confidence=0.92; source=body_inline] 125~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] 800~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] 20-135~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] 350-650~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] E ( T ) = \frac {E _ {\mathrm{f}} + E _ {\mathrm{g}}} {2} - \frac {E _ {\mathrm{r}} - E _ {\mathrm{g}}} {2} \operatorname{tanh} ( \eta ( T - T _ {\mathrm{g}} ) )\tag{ð1Þ}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{r}}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{g}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{g}}
+
+[confidence=0.92; source=body_inline] 600~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] \Theta ^ {\mathrm{virg}} = K ^ {\mathrm{virg}} \widetilde {\theta}\tag{ð2Þ}
+
+[confidence=0.92; source=body_inline] K ^ {\mathrm{virg}}
+
+[confidence=0.92; source=body_inline] \tilde {\theta}
+
+[confidence=0.92; source=body_inline] \Theta ^ {\mathrm{new}} = K ^ {\mathrm{new}} \Big ( \widetilde {\theta} + \theta ^ {1} \Big ) = K ^ {\mathrm{virg}} \Big ( \widetilde {\theta} + \theta ^ {1} - \theta ^ {*} \Big )\tag{ð3Þ}
+
+[confidence=0.92; source=body_inline] \theta ^ {\mathrm{p}}
+
+[confidence=0.92; source=body_inline] \Theta ^ {\mathrm{g}} = K ^ {\mathrm{g}} \Big ( \tilde {\theta} + \theta ^ {2} - \theta ^ {\mathrm{p}} \Big ) = K ^ {\mathrm{virg}} \Big ( \tilde {\theta} + \theta ^ {2} - \theta ^ {\mathrm{p}} - \theta ^ {* *} \Big ) = - P\tag{ð4Þ}
+
+[confidence=0.92; source=body_inline] \boldsymbol {\theta} ^ {*}
+
+[confidence=0.92; source=body_inline] \boldsymbol {\theta} ^ {* *}
+
+[confidence=0.92; source=body_inline] \theta ^ {2}
+
+[confidence=0.92; source=body_inline] \theta ^ {1} = S ^ {1} \theta ^ {*} \quad \theta ^ {2} = S ^ {2} \theta ^ {* *}\tag{ð5Þ}
+
+[confidence=0.92; source=body_inline] S ^ {1}
+
+[confidence=0.92; source=body_inline] S ^ {2}
+
+[confidence=0.92; source=body_inline] \boldsymbol {\theta} ^ {*} , \boldsymbol {\theta} ^ {* *}
+
+[confidence=0.92; source=body_inline] \theta ^ {\ast} = \left[ K ^ {\mathrm{virg}} - \left( K ^ {\mathrm{virg}} - K ^ {\mathrm{new}} \right) S ^ {1} \right] ^ {- 1} \left( K ^ {\mathrm{virg}} - K ^ {\mathrm{new}} \right) \widetilde {\theta}\tag{ð6Þ}
+
+[confidence=0.92; source=body_inline] \theta ^ {* *} = \left[ K ^ {\mathrm{virg}} - \left( K ^ {\mathrm{virg}} - K ^ {g} \right) S ^ {2} \right] ^ {- 1} \left( K ^ {\mathrm{virg}} - K ^ {g} \right) \left[ \tilde {\theta} + ( S - I ) \theta ^ {\mathrm{p}} \right] .\tag{ð7Þ}
+
+[confidence=0.92; source=body_inline] \int _ {V ^ {\mathrm{virg}}} \Theta ^ {\mathrm{virg}} d V + \int _ {V ^ {\mathrm{new}}} \Theta ^ {\mathrm{new}} d V + \int _ {V ^ {\mathrm{g}}} \Theta ^ {\mathrm{g}} d V = 0\tag{ð8Þ}
+
+[confidence=0.92; source=body_inline] V ^ {\mathrm {{u r g}}} ,
+
+[confidence=0.92; source=body_inline] V ^ {\mathrm{g}}
+
+[confidence=0.92; source=body_inline] \tilde {\theta} + V ^ {\mathrm{new}} \Big ( \theta ^ {1} - \theta ^ {*} \Big ) + V ^ {\mathrm{g}} \Big ( \theta ^ {1} - \theta ^ {\mathrm{p}} - \theta ^ {* *} \Big ) = 0\tag{ð9Þ}
+
+[confidence=0.92; source=body_inline] K ^ {\mathrm{virg}} \left[ \tilde {\theta} + ( S - I ) \theta ^ {p} + ( S - I ) \theta ^ {* *} \right] = - P .\tag{ð10Þ}
+
+[confidence=0.92; source=body_inline] \overline {{\theta}} = V ^ {\mathrm{virg}} \theta ^ {\mathrm{virg}} + V ^ {\mathrm{new}} \theta ^ {\mathrm{new}} + V ^ {\mathrm{g}} \theta ^ {\mathrm{g}}\tag{ð11Þ}
+
+[confidence=0.92; source=body_inline] {\overline {{\theta}}} = K ( {\overline {{\theta}}} ) \left( \theta - {\overline {{\theta}}} \right)\tag{ð12Þ}
+
+[confidence=0.92; source=body_inline] K ( {\overline {{\theta}}} )
+
+[confidence=0.92; source=body_inline] \overline {{K}} = K ( \overline {{\theta}} ) \big ( 1 + \overline {{\theta}} \big )\tag{ð13Þ}
+
+[confidence=0.92; source=body_inline] K ^ {\mathrm{virg}} ,
+
+[confidence=0.92; source=body_inline] K ^ {\mathrm{virg}} ( T , t ) = K _ {\mathrm{soften}} ^ {\mathrm{virg}} \exp \left( - a \left\{\frac {T - T _ {0}} {T _ {0}} + \xi \int _ {0} ^ {t} \exp [ - \zeta ( t - \tau ) ] \frac {T ( \tau ) - T _ {0}} {T _ {0}} d \tau \right\} \right)\tag{ð14Þ}
+
+[confidence=0.92; source=body_inline] \zeta
+
+[confidence=0.92; source=body_inline] K _ {\mathrm{soffen}} ^ {\mathrm{virg}}
+
+[confidence=0.92; source=body_inline] \int _ {V ^ {\mathrm{m}}} \overline {{K}} ^ {\mathrm{m}} \tilde {\theta} d V + \int _ {V ^ {\mathrm{f}}} \overline {{K}} ^ {\mathrm{f}} \left( \tilde {\theta} + \theta ^ {1} \right) d V = 0 .\tag{ð15Þ}
+
+[confidence=0.92; source=body_inline] ( 1800~^{\circ}\mathrm{C})
+
+[confidence=0.92; source=body_inline] 400-650~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] ( 800~^{\circ}\mathrm{C}) ,
+
+[confidence=0.92; source=body_inline] ( 500-600~^{\circ}\mathrm{C})
+
+[confidence=0.92; source=body_inline] 1400~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] 65-180~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] 500~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] 550~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] 100 \mathrm{~kW} / \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] 200 \mathrm{\kW/m} ^ {2}
+
+[confidence=0.92; source=body_inline] \mathrm{kW/m} ^ {2}
+
+[confidence=0.92; source=body_inline] 500-1000~^{\circ}\mathrm{C}

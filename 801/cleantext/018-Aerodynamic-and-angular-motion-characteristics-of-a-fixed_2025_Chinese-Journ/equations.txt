@@ -1,0 +1,149 @@
+[confidence=0.92; source=equations; [page 1, bbox (42.52, 215.95, 330.44, 257.73)]] PII: S1000-9361(25)00594-1 DOI: https://doi.org/10.1016/j.cja.2025.103988 Reference: CJA 103988
+
+[confidence=0.57; needs_review; source=equations; [page 11, bbox (119.73, 74.48, 257.0, 84.11)]] f (rad/s) p Point A (Left) Point B (Right)
+
+[confidence=0.92; source=equations; [page 14, bbox (321.32, 695.2, 546.81, 713.96)]]   2 ,  e =   (9)
+
+[confidence=0.92; source=equations; [page 15, bbox (393.23, 547.03, 475.33, 556.62)]] f (rad/s) p 600π (free)
+
+[confidence=0.92; source=equations; [page 19, bbox (79.1, 74.49, 281.6, 91.91)]] Direction Velocity (m/s) Attitude angular (^{\circ}) Angular velocity (rad/s)
+
+[confidence=0.57; needs_review; source=equations; [page 21, bbox (73.7, 369.98, 333.28, 406.34)]] 39. Sahu J. Time-accurate numerical prediction of free- flight aerodynamics of a finned projectile. J Spacecr Rockets 2008;45(5):946-54.
+
+[confidence=0.92; source=body_inline] \mathsf{al.} ^ {29}
+
+[confidence=0.92; source=body_inline] \frac {\partial} {\partial t} \iiint _ {\mathcal {Q}} \mathbf {d} \mathcal {Q} + \iint _ {\hat {c} \mathcal {Q}} F \big ( \pmb {Q} , \nu _ {\mathrm{grid}} \big ) \bullet \pmb {n} \mathrm{d} S = \iint _ {\hat {c} \mathcal {Q}} \mathbf {G} ( \pmb {Q} ) \bullet \boldsymbol {n} \mathrm{d} S\tag{1}
+
+[confidence=0.92; source=body_inline] \pmb {Q} = \left[ \rho \rho \nu _ {x} \rho \nu _ {y} \rho \nu _ {z} \rho E \right]
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.92; source=body_inline] \mathsf{as} \quad \nu _ {x} , \quad \nu _ {y}
+
+[confidence=0.92; source=body_inline] \nu _ {z}
+
+[confidence=0.92; source=body_inline] , ^ {32}
+
+[confidence=0.92; source=body_inline] \pmb {\nu} _ {\mathrm{grid}}
+
+[confidence=0.92; source=body_inline] O _ {\mathrm{b}} x _ {\mathrm{b}} y _ {\mathrm{b}} z _ {\mathrm{b}}
+
+[confidence=0.92; source=body_inline] \theta
+
+[confidence=0.92; source=body_inline] \psi
+
+[confidence=0.92; source=body_inline] \varphi _ {\mathrm{f}}
+
+[confidence=0.92; source=body_inline] \varphi _ {\mathrm{a}}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {m {\left( \dot {u} + w q - \nu r \right)} = F _ {x} + F _ {\mathrm{g} x}} \\ {m {\left( \dot {\nu} + u r - w p _ {\mathrm{f}} \right)} = F _ {y} + F _ {\mathrm{g} y}} \\ {m {\left( \dot {w} + \nu p _ {\mathrm{f}} - w q \right)} = F _ {z} + F _ {\mathrm{g} z}} \end{array} \right.\tag{2}
+
+[confidence=0.92; source=body_inline] p _ {\mathrm{f}} ~
+
+[confidence=0.92; source=body_inline] r . \ F _ {x} , \ F _ {y}
+
+[confidence=0.92; source=body_inline] F _ {z}
+
+[confidence=0.92; source=body_inline] F _ {\mathrm{gr}} , F _ {\mathrm{gy}}
+
+[confidence=0.92; source=body_inline] F _ {\mathrm{g} z}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {I _ {\mathrm{f} x} {\dot {p}} _ {\mathrm{f}} = M _ {\mathrm{f} x}} \\ {I _ {\mathrm{ar}} {\dot {p}} _ {\mathrm{a}} = M _ {\mathrm{ax}}} \\ {I _ {y} {\dot {q}} + I _ {x} \overline {{p}} r - I _ {z} {p} _ {\mathrm{f}} r = M _ {y}} \\ {I _ {z} {\dot {r}} + I _ {y} p _ {\mathrm{f}} q - I _ {x} \overline {{p}} q = M _ {z}} \\ {\overline {{p}} = \left( I _ {\mathrm{fx}} p _ {\mathrm{f}} + I _ {\mathrm{ax}} p _ {\mathrm{a}} \right) / I _ {x}} \end{array} \right.\tag{3}
+
+[confidence=0.92; source=body_inline] p _ {\mathrm{a}}
+
+[confidence=0.92; source=body_inline] M _ {\mathrm{f} x}
+
+[confidence=0.92; source=body_inline] M _ {\mathrm{ax}}
+
+[confidence=0.92; source=body_inline] M _ {y}
+
+[confidence=0.92; source=body_inline] M _ {z}
+
+[confidence=0.92; source=body_inline] x ( t + 1 )
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {y \big ( t + 1 \big ) = \big [ F _ {x} ( t + 1 ) F _ {y} ( t + 1 ) F _ {z} ( t + 1 ) M _ {\mathrm{fx}} ( t + 1 ) M _ {\mathrm{ax}} ( t + 1 ) M _ {y} ( t + 1 ) M _ {z} ( t + 1 ) \big ]} \end{array}
+
+[confidence=0.92; source=body_inline] t = t + 1
+
+[confidence=0.92; source=body_inline] y ^ {+} = 0.8
+
+[confidence=0.92; source=body_inline] C _ {\mathrm{ave}} = \frac {\displaystyle \int _ {t} ^ {t + T} C ( t ) \mathrm{d} t} {T}\tag{4}
+
+[confidence=0.92; source=body_inline] p _ {\mathsf{f}}
+
+[confidence=0.92; source=body_inline] p _ {\mathsf{f}} {=} - 500 \pi \mathsf{rad} / \mathsf{s} ,
+
+[confidence=0.92; source=body_inline] p _ {\mathsf{f}} {=} 500 \pi \mathsf{rad} / \mathsf{s} ,
+
+[confidence=0.92; source=body_inline] \mathbf {A o A} = 5 ^{\circ}
+
+[confidence=0.92; source=body_inline] C _ {p}
+
+[confidence=0.92; source=body_inline] C _ {p} = \frac {p - p _ {\mathrm{ref}}} {q _ {\mathrm{ref}}}\tag{5}
+
+[confidence=0.92; source=body_inline] p _ {\mathrm{ref}}
+
+[confidence=0.92; source=body_inline] q _ {\mathrm{ref}}
+
+[confidence=0.92; source=body_inline] p _ {\mathsf{f}} {=} 0
+
+[confidence=0.92; source=body_inline] z = 0
+
+[confidence=0.92; source=body_inline] y = 0
+
+[confidence=0.92; source=body_inline] \chi _ {\mathrm{b}} = 0.55
+
+[confidence=0.92; source=body_inline] x _ {\mathrm{b}} = 0.8
+
+[confidence=0.92; source=body_inline] ( p _ {\mathsf{f}} {>} 0 \ r {\mathsf{ad}} / {\mathsf{s}} )
+
+[confidence=0.67; needs_review; source=body_inline] ( 0 ^{\circ} \cdot
+
+[confidence=0.92; source=body_inline] ( 180 ^{\circ} - 360 ^{\circ} )
+
+[confidence=0.92; source=body_inline] \pmb {\mathscr {s}} = \alpha + \mathrm{i} \beta\tag{6}
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array} {r} {\left\{\alpha = \theta - \theta _ {\nu} \right.} \\ {\left. \beta = \psi - \sigma \right.} \end{array}\tag{7}
+
+[confidence=0.92; source=body_inline] \alpha
+
+[confidence=0.92; source=body_inline] \beta
+
+[confidence=0.92; source=body_inline] \theta _ {\nu}
+
+[confidence=0.92; source=body_inline] \sigma
+
+[confidence=0.92; source=body_inline] \theta _ {\cdot}
+
+[confidence=0.92; source=body_inline] ^ {5 ,}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\displaystyle {\hat {y} _ {i} = \frac {1} {n} \sum _ {j = i - n / 2} ^ {i + n / 2} y _ {j}}} \\ {\displaystyle {y _ {j} = 0 , j < 0 , j > N}} \end{array} \right.\tag{8}
+
+[confidence=0.92; source=body_inline] y _ {j}
+
+[confidence=0.92; source=body_inline] \hat {y} _ {i}
+
+[confidence=0.92; source=body_inline] M _ {y .}
+
+[confidence=0.92; source=body_inline] M _ {\mathrm{R}}
+
+[confidence=0.92; source=body_inline] \pmb {e} _ {\pmb {\Delta}} = ( \alpha , \beta ) / \| \pmb {\Delta} \| _ {2}
+
+[confidence=0.92; source=body_inline] \left. \cdot \right. _ {2}
+
+[confidence=0.92; source=body_inline] M _ {\mathrm{R}} \cdot e _ {\Delta}
+
+[confidence=0.92; source=body_inline] {M _ {\mathrm{R}}} \cdot {e _ {\varDelta}} \leq 0
+
+[confidence=0.92; source=body_inline] M _ {\mathrm{R}} \cdot e _ {\measuredangle}
+
+[confidence=0.92; source=body_inline] M _ {\mathrm{R}} \cdot e _ {\varDelta}
+
+[confidence=0.92; source=body_inline] M _ {\mathrm{R}} \cdot e _ {A}
+
+[confidence=0.92; source=body_inline] \mathrm{~s~} - 4 \mathrm{~s~}
+
+[confidence=0.92; source=body_inline] {\mathsf{Zero}} ,
+
+[confidence=0.92; source=body_inline] \int _ {1.8567} ^ {20} M _ {\mathrm{R}} \cdot e _ {\varDelta} ( t ) \mathrm{d} t

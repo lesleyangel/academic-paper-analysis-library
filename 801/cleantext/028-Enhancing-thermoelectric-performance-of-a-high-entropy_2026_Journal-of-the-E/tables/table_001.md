@@ -1,0 +1,5 @@
+| Component | $a \left( \mathring { \mathbb { A } } \right)$ | $b ( \mathring { \mathrm { A } } )$ | $c \left( \mathring { \mathbb { A } } \right)$ | $V ( \mathring { \mathbb { A } } ^ { 3 } )$ |
+| --- | --- | --- | --- | --- |
+| $( \mathrm { C a } _ { 0 . 2 7 } \mathrm { S r } _ { 0 . 2 7 } \mathrm { B a } _ { 0 . 2 7 } \mathrm { L a } _ { 0 . 1 9 } ) \mathrm { T i O } _ { 3 }$ | 7.89 | 7.90 | 19.89 | 1239.76 |
+| $( \mathrm { C a } _ { 0 . 2 7 } \mathrm { S r } _ { 0 . 2 7 } \mathrm { B a } _ { 0 . 2 7 } \mathrm { L a } _ { 0 . 1 9 } ) \mathrm { T i O } _ { 2 . 9 }$ | 7.94 | 7.94 | 19.83 | 1250.15 |
+| $( \mathrm { C a } _ { 0 . 2 7 } \mathrm { S r } _ { 0 . 2 7 } \mathrm { B a } _ { 0 . 2 7 } \mathrm { L a } _ { 0 . 1 9 } ) \mathrm { T i O } _ { 2 . 8 }$ | 7.94 | 7.93 | 19.92 | 1254.25 |

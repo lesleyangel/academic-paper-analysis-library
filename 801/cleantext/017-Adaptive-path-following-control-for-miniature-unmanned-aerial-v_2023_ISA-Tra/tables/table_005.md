@@ -1,0 +1,4 @@
+| Case 1- extension | $k _ { o r b i t } =$ 2 | $k _ { o r b i t } =$ 3 | korbit = 4 | $k _ { o r b i t } =$ 5 | $k _ { o r b i t } =$ 6 | $_ { 7 } ^ { k _ { o r b i t } = }$ |
+| --- | --- | --- | --- | --- | --- | --- |
+| Test 1 $( 7 \mathrm { m } /$ s) | 22m | 17.5 m | 12m | 9m | - |  |
+| Test 2 (10 m/s) | 36m | 23m | 17m | 13.7 m | 11.5 m | 10m |

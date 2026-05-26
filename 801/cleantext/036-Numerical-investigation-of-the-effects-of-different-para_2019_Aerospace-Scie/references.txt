@@ -1,0 +1,113 @@
+[1] Brian P. Danowsky, et al., Incorporation of feedback control into a high-fidelity aeroservoelastic fighter aircraft model, J. Aircr. 47 (4) (2012) 1274–1282.
+
+[2] Paolo Domenici, R.W. Blake, The kinematics and performance of the escape response in the angelfish (Pterophyllum eimekei), Can. J. Zool. 71 (11) (1991) 2319–2326.
+
+[3] M.F. Platzer, et al., Flapping wing aerodynamics: progress and challenges, AIAA J. 46 (9) (2008) 2136–2149.
+
+[4] W. Shyy, et al., Aerodynamics, sensing and control of insect-scale flapping-wing flight, Proc. Math. Phys. Eng. Sci. 472 (2186) (2016) 20150712.
+
+[5] Farooq Umar, M. Sun, Aerodynamic force and power for flapping wing at low Reynolds number in ground effect, in: International Bhurban Conference on Applied Sciences and Technology, 2018, pp. 553–558.
+
+[6] George V. Lauder, et al., Design and Performance of a Fish Fin-Like Propulsor for AUVs, 2005.
+
+[7] Earl H. Dowell, Some recent advances in nonlinear aeroelasticity, in: A Modern Course in Aeroelasticity, 2015, pp. 609–649.
+
+[8] Wolfgang Geissler, B.G.V.D. Wall, Dynamic stall control on flapping wing air- foils, Aerosp. Sci. Technol. 62 (2017) 1–10.
+
+[9] J. Gray, Studies in animal locomotion V: resistance reflexes in the Eel, J. Exp. Biol. 13 (2) (1936) 181–191.
+
+[10] M.J. Lighthill, Large-amplitude elongated-body theory of fish locomotion, Proc. R. Soc. Lond. 179 (1055) (1971) 125–138.
+
+[11] Che Shu Lin, C. Hwu, W.B. Young, The thrust and lift of an ornithopter’s mem- brane wings with simple flapping motion, Aerosp. Sci. Technol. 10 (2) (2006) 111–119.
+
+[12] Shuanghou Deng, B.V. Oudheusden, Wake structure visualization of a flapping- wing micro-air-vehicle in forward flight, Aerosp. Sci. Technol. 50 (2016) 204–211.
+
+[13] Mittal Dong, Najjar, Wake topology and hydrodynamic performance of low- aspect-ratio flapping foils, J. Fluid Mech. 566 (566) (2006) 309–343.
+
+[14] Yun Fei Zhang, Y.E. Zheng-Yin, Three-dimensional Navier–Stokes simulation of flapping wing with pitching elasticity, J. Aerosp. Power 26 (4) (2011) 880–889.
+
+[15] Chengyu Li, H. Dong, Three-dimensional wake topology and propulsive perfor- mance of low-aspect-ratio pitching-rolling plates, Phys. Fluids 28 (7) (2016) 2413.
+
+[16] M. Moriche, O. Flores, M. García-Villalba, Three-dimensional instabilities in the wake of a flapping wing at low Reynolds number, Int. J. Heat Fluid Flow (2016).
+
+[17] Kosuke Suzuki, M. Yoshino, Aerodynamic comparison of a butterfly-like flap- ping wing-body model and a revolving-wing model, Fluid Dyn. Res. 49 (3) (2017) 035512.
+
+[18] S.M. Dash, et al., Enhanced thrust performance of a two dimensional elliptic airfoil at high flapping frequency in a forward flight, J. Fluids Struct. 76 (2018) 37–59.
+
+[19] Dengtao Yu, et al., Numerical study of the effect of motion parameters on propulsive efficiency for an oscillating airfoil, J. Fluids Struct. 68 (2017) 245–263.
+
+[20] J.M. Anderson, et al., Oscillating foils of high propulsive efficiency, J. Fluid Mech. 360 (360) (1998) 41–72.
+
+[21] Michael S. Triantafyllou, A.H. Techet, F.S. Hover, Review of experimental work in biomimetic foils, IEEE J. Ocean. Eng. 29 (3) (2004) 585–594.
+
+[22] R. Godoy-Diana, J.L. Aider, J.E. Wesfreid, Transitions in the wake of a flapping foil, Phys. Rev. E, Stat. Nonlinear Soft Matter Phys. 77 (2) (2008) 016308.
+
+[23] Kim Boon Lua, H. Lu, T.T. Lim, Rotating elliptic cylinders in a uniform cross flow, J. Fluids Struct. 78 (2018) 36–51.
+
+[24] K.B. Lua, et al., On the thrust performance of a flapping two-dimensional ellip- tic airfoil in a forward flight, J. Fluids Struct. 66 (2016) 91–109.
+
+[25] Sunetra Sarkar, K. Venkatraman, Numerical simulation of thrust generating flow past a pitching airfoil, Comput. Fluids 35 (1) (2006) 16–42.
+
+[26] Jie Zhang, N. Liu, L.U. Xiyun, Locomotion of a passively flapping flat plate, J. Fluid Mech. 659 (659) (2010) 43–68.
+
+[27] R. Ramamurti, W. Sandberg, A computational investigation of the three- dimensional unsteady aerodynamics of drosophila hovering and maneuvering, J. Exp. Biol. 210 (5) (2007) 881–896.
+
+[28] Mahmud Ashraf, J.C.S. Lai, J. Young, Numerical analysis of flapping wing aero- dynamics, in: 16th Australasian Fluid Mechanics Conference (AFMC) School of Engineering, The University of Queensland, 2007, pp. 1283–1290.
+
+[29] Kosuke Suzuki, M. Yoshino, Aerodynamic comparison of a butterfly-like flap- ping wing-body model and a revolving-wing model, Fluid Dyn. Res. 49 (3) (2017) 035512.
+
+[30] D.A. Read, F.S. Hover, M.S. Triantafyllou, Forces on oscillating foils for propul- sion and maneuvering, J. Fluids Struct. 17 (1) (2003) 163–183.
+
+[31] F.S. Hover, Ø. Haugsdal, M.S. Triantafyllou, Effect of angle of attack profiles in flapping foil propulsion, J. Fluids Struct. 19 (1) (2004) 37–47.
+
+[32] L. Schouveiler, F.S. Hover, M.S. Triantafyllou, Performance of flapping foil propulsion, J. Fluids Struct. 20 (7) (2005) 949–959.
+
+[33] M. Rosén, G.R. Spedding, A. Hedenström, Wake structure and wingbeat kine- matics of a house-martin Delichon urbica, J. R. Soc. Interface 4 (15) (2007) 659–668.
+
+[34] Hikaru Aono, F. Liang, H. Liu, Near- and far-field aerodynamics in insect hov- ering flight: an integrated computational study, J. Exp. Biol. 211 (2) (2008) 239–257.
+
+[35] Chengyu Li, H. Dong, Three-dimensional wake topology and propulsive perfor- mance of low-aspect-ratio pitching-rolling plates, Phys. Fluids 28 (7) (2016) 2413.
+
+[36] Charles S. Peskin, Flow patterns around heart valves, in: Lecture Notes in Physics, vol. 10, 1973, pp. 214–221.
+
+[37] F.B. Tian, et al., Interaction between a flexible filament and a downstream rigid body, Phys. Rev. E, Stat. Nonlinear Soft Matter Phys. 82 (2) (2010) 026301.
+
+[38] Kourosh, Leading edge strengthening and the propulsion performance of flexi- ble ray fins, J. Fluid Mech. 693 (2) (2012) 402–432.
+
+[39] Cyrus K. Aidun, J.R. Clausen, Lattice-Boltzmann method for complex flows, Annu. Rev. Fluid Mech. 42 (1) (2010) 439–472.
+
+[40] Jourabian Mahmoud, et al., Lattice Boltzmann simulation of melting phe- nomenon with natural convection from an eccentric annulus, Therm. Sci. 17 (3) (2013) 877–890.
+
+[41] Antonio F. Miguel, Non-Darcy porous media flow in no-slip and slip regimes, Therm. Sci. 16 (1) (2012) 167–176.
+
+[42] Zhiwei Tian, et al., Reactive transport LBM model for CO2 injection in fractured reservoirs, Comput. Geosci. 86 (C) (2016) 15–22.
+
+[43] Zhi Gang Feng, E.E. Michaelides, The immersed boundary-lattice Boltzmann method for solving fluid–particles interaction problems, J. Comput. Phys. 195 (2) (2004) 602–628.
+
+[44] Zhi Gang Feng, E.E. Michaelides, Proteus: a direct forcing method in the simu- lations of particulate flows, J. Comput. Phys. 202 (1) (2005) 20–51.
+
+[45] Jie Wu, et al., Fluid dynamics of flapping insect wing in ground effect, J. Bionics Eng. 11 (1) (2014) 52–60.
+
+[46] Jie Zhang, N. Liu, L.U. Xiyun, Locomotion of a passively flapping flat plate, J. Fluid Mech. 659 (659) (2010) 43–68.
+
+[47] Takaji Inamuro, Y. Kimura, K. Suzuki, Flight simulations of a two-dimensional flapping wing by the IB-LBM, Int. J. Mod. Phys. C 25 (01) (2014) 4191.
+
+[48] S. Succi, The lattice Boltzmann equation – for fluid dynamics and beyond, Phys. Today 55 (12) (2002) 58–60.
+
+[49] C.S. Peskin, The immersed boundary method, Acta Numer. 11 (2002) 479–517.
+
+[50] D. Goldstein, R. Handler, L. Sirovich, Modeling a no-slip flow boundary with an external force field, J. Comput. Phys. 105 (2) (1993) 354–366.
+
+[51] Wei Xi Huang, S.J. Shin, H.J. Sung, Simulation of flexible filaments in a uni- form flow by the immersed boundary method, J. Comput. Phys. 226 (2) (2007) 2206–2228.
+
+[52] J. Mohd-Yusof, Combined Immersed Boundary/B-Spline Methods for Simulation of Flow in Complex Geometries, Annual Research Briefs Center for Turbulence Research, 1997.
+
+[53] Kosuke Suzuki, K. Minami, T. Inamuro, Lift and thrust generation by a butterfly- like flapping wing–body model: immersed boundary-lattice Boltzmann simula- tions, J. Fluid Mech. 767 (2015) 659–695.
+
+[54] C.L. Gong, et al., Numerical investigation of unsteady flows past flapping wings with immersed boundary-lattice Boltzmann method, J. Mech. (2017) 1–15.
+
+[55] Zong Jing Yuan, J.I. Xing, G. Chen, Numerical simulation of unsteady flow past biomimetic wing with IB-LBM, Phys. Gases 2 (1) (2017) 39–47.
+
+[56] James Buchholz, M. Green, A. Smits, Pressure distribution, thrust performance, and wake structure of a low-aspect ratio pitching panel, in: Meeting of the APS Division of Fluid Dynamics, American Physical Society, 2006.
+
+[57] K. Parker, K.D.V. Ellenrieder, J. Soria, Using stereo multigrid DPIV (SMDPIV) measurements to investigate the vortical skeleton behind a finite-span flapping wing, Exp. Fluids 39 (2) (2005) 281–298.

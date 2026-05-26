@@ -1,0 +1,28 @@
+| x-component of velocity (m/s) |
+| --- |
+| Reference 2.5 -0.6 |
+| 2.5 |
+| Forecasted -0.6 |
+| 0.2 Error 0 |
+| -0.2 |
+| y-component of velocity (m/s) 0.42 |
+| 0 -0.42 |
+| 0.42 0 -0.42 |
+| 0.1 Error |
+| 1>>1r- -0.1 |
+| magnitude of velocity (m/s) 2.6 |
+| Reference 0 |
+| 2.6 Forecasted 0 |
+| 0.2 Error 0 |
+| 1 -0.2 |
+| Vorticity (s-1) 0.13 |
+| Reference -0.33 |
+| 0.13 Forecasted -0.33 |
+| 0.05 Error 0 |
+| -0.05 Pressur (Pa) |
+| Reference 0.4 |
+| -1.4 |
+| Forecasted 0.4 |
+| -1.4 |
+| 0.15 |
+| Error -0.15 |

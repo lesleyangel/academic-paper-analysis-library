@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-novel-hybrid-time-variant-reliability-analysis-metho_2024_Probabilistic-En.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\006-A-novel-hybrid-time-variant-reliability-analysis-metho_2024_Probabilistic-En",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-novel-hybrid-time-variant-reliability-analysis-metho_2024_Probabilistic-En.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\006-A-novel-hybrid-time-variant-reliability-analysis-metho_2024_Probabilistic-En",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 445.03,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\006-A-novel-hybrid-time-variant-reliability-analysis-metho_2024_Probabilistic-En\nbody_chars=69015 references=47 tables=11\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T02:24:24"
+}

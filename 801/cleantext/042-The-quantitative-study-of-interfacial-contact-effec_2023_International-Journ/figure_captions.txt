@@ -1,0 +1,47 @@
+Fig. 1. Schematic figure of TEG and interfacial contact effects.
+
+Fig. 2. Reconstructed rough surfaces and contacting model.
+
+Fig. 3. Boundary conditions of contacting model and TEG model.
+
+Fig. 4. Meshed models of contacting pairs and TEG.
+
+Fig. 5. Test method for TCR between TE leg and electrodes.
+
+Fig. 6. Experimental measurement platform for TCR.
+
+Fig. 7. Experimental measurements for ECR and power generation of TEG.
+
+Fig. 8. Temperature nephogram of contacting pairs under different gap mediums.
+
+Fig. 9. Temperature nephogram of rough surfaces for TE legs under vacuum and air gap.
+
+Fig. 10. Temperature and heat flux of rough surfaces for TE legs under silver-epoxy adhesive gap.
+
+Fig. 11. Numerical results of influences of thermal radiation on TCR.
+
+Fig. 12. Numerical results of variation of TCR with interface temperature under vacuum gap.
+
+Fig. 13. Numerical results of variation of TCR with interface temperature under air gap.
+
+Fig. 14. Variation of TCR with loading pressure under vacuum and air gap.
+
+Fig. 15. Variation of TCR with loading pressure under silver-epoxy adhesive gap.
+
+Fig. 16. Influence of gap medium on TEG with TCR.
+
+Fig. 17. Influence of loading pressure on TEG with TCR.
+
+Fig. 18. Maximum output power of TEG with TCR.
+
+Fig. 19. Temperature difference of TE legs under TCR considered condition.
+
+Fig. 20. Average temperature of TE legs under TCR considered condition.
+
+Fig. 21. Prediction of maximum output power of TEG with TCR.
+
+Fig. 22. Influences of gap medium on potential of TEG considering contact effects.
+
+Fig. 23. Influence of loading pressure on potential of TEG considering contact effects.
+
+Fig. 24. Prediction of maximum output power of TEG with TCR and ECR.

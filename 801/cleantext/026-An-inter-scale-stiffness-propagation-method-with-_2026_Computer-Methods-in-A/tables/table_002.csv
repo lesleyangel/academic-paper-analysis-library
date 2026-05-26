@@ -1,0 +1,7 @@
+Category,Parameters,Symbols,Default value,Unit
+Geometric,Radius,rb1,2.46,mm
+parameters,Length of $\mathrm { R V E } _ { \mathrm { b 1 } }$,a,10.48,mm
+,Width of RVEb1,b,6.05,mm
+,Thicknessof RVEb1,h,1.61,mm
+Constituent,Fiber bundle elastic modulus,$E _ { b }$,260,GPa
+properties,Fiber bundle Poisson's ratio,$\nu _ { b }$,0.20,1

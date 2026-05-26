@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-quantitative-study-of-interfacial-contact-effec_2023_International-Journ.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\042-The-quantitative-study-of-interfacial-contact-effec_2023_International-Journ",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-quantitative-study-of-interfacial-contact-effec_2023_International-Journ.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\042-The-quantitative-study-of-interfacial-contact-effec_2023_International-Journ",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 395.91,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\042-The-quantitative-study-of-interfacial-contact-effec_2023_International-Journ\nbody_chars=83428 references=42 tables=10\nnoise_flags=many_figure_caption_markers\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T04:40:26"
+}

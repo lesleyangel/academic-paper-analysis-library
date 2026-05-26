@@ -1,0 +1,8 @@
+Boundary planes,CoA,CoB
+$P _ { x 0 }$,Fixed,Fixed
+$P _ { x 1 }$,Fixed,Fixed
+$P _ { y 0 }$,Unconstrained,Unconstrained
+$P _ { y 1 }$ without rivets,Unconstrained,Unconstrained
+$P _ { z 0 }$,Fixed,Fixed
+$P _ { z 1 }$,Fixed,Fixed
+Nodes on rivets of $P _ { y 1 }$,Unconstrained,Fixed

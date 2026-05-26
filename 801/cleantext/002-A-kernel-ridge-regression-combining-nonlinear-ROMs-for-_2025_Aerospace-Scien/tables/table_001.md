@@ -1,0 +1,6 @@
+| Kernel type | Expression |
+| --- | --- |
+| RBF kernel | $K ( \mathbf { a } _ { i } , \mathbf { b } _ { j } ) = \exp \big ( - \gamma \| \mathbf { a } _ { i } - \mathbf { b } _ { j } \| _ { F } ^ { 2 } \big )$ |
+| Sigmoid kernel | $K ( { \bf { a } } _ { i } , { \bf { b } } _ { j } ) = \mathrm { t a n } h ( \gamma { \bf { a } } _ { i } ^ { T } { \bf { b } } _ { j } )$ |
+| Polynomial kernel | $K ( { \pmb a } _ { i } , { \pmb b } _ { j } ) = ( \gamma { \pmb a } _ { i } ^ { T } { \pmb b } _ { j } ) ^ { l }$ |
+| Linear kernel | $K ( { \pmb a } _ { i } , { \pmb b } _ { j } ) = \gamma { \pmb a } _ { i } ^ { T } { \pmb b } _ { j }$ |

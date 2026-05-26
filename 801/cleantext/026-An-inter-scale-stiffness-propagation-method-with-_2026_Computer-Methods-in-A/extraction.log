@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-inter-scale-stiffness-propagation-method-with-_2026_Computer-Methods-in-A.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\026-An-inter-scale-stiffness-propagation-method-with-_2026_Computer-Methods-in-A",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-inter-scale-stiffness-propagation-method-with-_2026_Computer-Methods-in-A.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\026-An-inter-scale-stiffness-propagation-method-with-_2026_Computer-Methods-in-A",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 242.87,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\026-An-inter-scale-stiffness-propagation-method-with-_2026_Computer-Methods-in-A\nbody_chars=70902 references=55 tables=11\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T03:50:51"
+}

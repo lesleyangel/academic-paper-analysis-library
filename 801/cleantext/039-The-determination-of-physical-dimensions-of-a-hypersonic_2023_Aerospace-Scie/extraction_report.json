@@ -1,0 +1,819 @@
+{
+  "body_chars": 42691,
+  "body_words_estimate": 7132,
+  "noise_flags": [],
+  "engines": {
+    "pymupdf": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 237,
+      "pages": 15,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "docling": {
+      "available": false,
+      "succeeded": false,
+      "error": "No module named 'docling'",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "grobid": {
+      "available": false,
+      "succeeded": false,
+      "error": "No GROBID URL provided.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "mineru": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 67365,
+      "references": 0,
+      "tables": 0
+    },
+    "marker": {
+      "available": false,
+      "succeeded": false,
+      "error": "Marker CLI not found.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    }
+  },
+  "chosen_sources": {
+    "abstract": "",
+    "body": "mineru",
+    "references": "pymupdf_bbox_or_body_tail"
+  },
+  "audit": {
+    "quality_score": 1.0,
+    "needs_manual_review": false,
+    "issues_before_repair": [
+      {
+        "code": "references_inside_body",
+        "severity": "high",
+        "message": "Back matter heading was detected inside clean body."
+      },
+      {
+        "code": "publisher_noise",
+        "severity": "medium",
+        "message": "Publisher header/footer boilerplate remains in body text."
+      },
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      }
+    ],
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "5 formula(s) need manual review."
+      }
+    ],
+    "repairs_applied": [
+      {
+        "action": "strip_back_matter",
+        "message": "Removed back matter from clean body and parsed reference-like tail entries.",
+        "after": 60373
+      },
+      {
+        "action": "clean_abstract_metadata",
+        "message": "Removed article-info or publisher boilerplate from abstract.",
+        "before": 1808,
+        "after": 1681
+      },
+      {
+        "action": "trim_front_matter_to_main_body",
+        "message": "Trimmed title/authors/abstract/front matter before main body heading: ## 1. Introduction",
+        "before": 60373,
+        "after": 57887
+      },
+      {
+        "action": "move_figure_captions",
+        "message": "Moved figure captions out of clean body.",
+        "after": 22
+      },
+      {
+        "action": "move_table_captions",
+        "message": "Moved table captions out of clean body.",
+        "after": 6
+      },
+      {
+        "action": "move_table_like_blocks",
+        "message": "Moved table-like blocks out of clean body.",
+        "after": 7
+      },
+      {
+        "action": "normalize_inline_body_formulas",
+        "message": "Normalized inline/display math spans inside clean body.",
+        "after": 22
+      },
+      {
+        "action": "drop_false_positive_equations",
+        "message": "Dropped equation candidates that looked like prose/table labels rather than formulas.",
+        "after": 8
+      },
+      {
+        "action": "normalize_formula_text",
+        "message": "Normalized formula spacing, common OCR symbols, and simple LaTeX temperature/unit forms.",
+        "after": 24
+      },
+      {
+        "action": "sort_numbered_references",
+        "message": "Sorted numbered references after extraction order appeared scrambled.",
+        "before": 35,
+        "after": 35
+      }
+    ],
+    "candidate_scores": {
+      "mineru": {
+        "score": 1.0,
+        "chars": 42801,
+        "words_estimate": 7140,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 3,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": false,
+        "garbage_ratio": 0.0005,
+        "section_heading_count": 20
+      },
+      "pymupdf_bbox": {
+        "score": 0.85,
+        "chars": 44762,
+        "words_estimate": 7700,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 9,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": false,
+        "garbage_ratio": 0.0027,
+        "section_heading_count": 21
+      }
+    },
+    "final_body_metrics": {
+      "score": 1.0,
+      "chars": 42691,
+      "words_estimate": 7132,
+      "references_inside_body": false,
+      "publisher_noise_hits": 0,
+      "mojibake_hits": 0,
+      "caption_paragraph_starts": 3,
+      "table_like_paragraphs": 0,
+      "duplicate_paragraphs": 0,
+      "starts_with_continuation_fragment": false,
+      "garbage_ratio": 0.0005,
+      "section_heading_count": 20
+    },
+    "body_purification": {
+      "main_body_start_found": true,
+      "main_body_start_heading": "## 1. Introduction",
+      "front_matter_removed_chars": 2486,
+      "starts_with": "## 1. Introduction",
+      "section_sequence": {
+        "top_level_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "missing_top_level_numbers": [],
+        "non_monotonic": false,
+        "headings": [
+          "## 1. Introduction",
+          "## 2. The hypersonic vehicle and multi-stage compression system",
+          "## 3. Numerical models",
+          "## 3.1. Mode analysis",
+          "## 3.1.1. Vibration differential equation",
+          "## 3.1.2. Meshed models and constraint conditions",
+          "## 3.2. Flow field analysis",
+          "## 3.2.1. Governing equations",
+          "## 3.2.2. Computational region, boundary conditions and mesh independence",
+          "## 3.2.3. Validation of the numerical method",
+          "## 4. Results and discussions",
+          "## 4.1. Mode analysis",
+          "## 4.2. Effects of the forced vibration of compression ramps",
+          "## 4.2.1. Effects of vibration amplitude",
+          "## 4.2.2. Effects of vibration frequency",
+          "## 4.3. Fluid-structural interaction effects",
+          "## 4.3.1. Structural vibration of compression ramps",
+          "## 4.3.2. Effects of vibration on the intake performance",
+          "## 4.4. Design path of compression system",
+          "## 5. Conclusions"
+        ]
+      }
+    },
+    "formula_audit": {
+      "input_equations_count": 10,
+      "output_equations_count": 30,
+      "inline_formula_count": 28,
+      "dropped_false_positive_count": 8,
+      "low_confidence_count": 5,
+      "formulas": [
+        {
+          "id": "equation_001",
+          "source": "equations",
+          "meta": "[page 1, bbox (37.64, 206.74, 422.48, 220.38)]",
+          "original": "Jian-Jun Gou a,∗, Shu-Zhen Jia a, Jin-Xing Li b, Shuang Xiao a, Chun-Lin Gong a,∗",
+          "normalized": "Jian-Jun Gou a,∗, Shu-Zhen Jia a, Jin-Xing Li b, Shuang Xiao a, Chun-Lin Gong a,∗",
+          "confidence": 0.57,
+          "needs_review": true,
+          "issues": [
+            "text_heavy"
+          ],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_002",
+          "source": "equations",
+          "meta": "[page 1, bbox (37.64, 687.49, 264.98, 714.35)]",
+          "original": "* Corresponding authors. E-mail addresses: jj.gou@nwpu.edu.cn (J.-J. Gou), leonwood@nwpu.edu.cn (C.-L. Gong).",
+          "normalized": "* Corresponding authors. E-mail addresses: jj.gou@nwpu.edu.cn (J.-J. Gou), leonwood@nwpu.edu.cn (C.-L. Gong)",
+          "confidence": 0.57,
+          "needs_review": true,
+          "issues": [
+            "text_heavy"
+          ],
+          "drop": false,
+          "repairs": [
+            "unit_expression_repaired"
+          ]
+        },
+        {
+          "id": "equation_003",
+          "source": "equations",
+          "meta": "[page 2, bbox (306.63, 712.58, 557.7, 722.39)] [M]",
+          "original": "{¨x} + [K]{x} = {0} (1)",
+          "normalized": "{¨x} + [K]{x} = {0} (1)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_006",
+          "source": "equations",
+          "meta": "[page 4, bbox (46.73, 399.96, 288.71, 416.72)]",
+          "original": "∂t + div(ρUφ) = div(�gradφ) + Q s (2)",
+          "normalized": "∂t + div(ρUφ) = div(�gradφ) + Q s (2)",
+          "confidence": 0.62,
+          "needs_review": true,
+          "issues": [
+            "mojibake"
+          ],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_009",
+          "source": "equations",
+          "meta": "[page 5, bbox (209.58, 219.74, 456.19, 245.97)]",
+          "original": "Inlet Ma=6, P=2971 Pa T =300 K Outlet P=0 Pa T =300 K Wall No slip, stationary q=0",
+          "normalized": "Inlet Ma=6, P=2971 Pa T =300 K Outlet P=0 Pa T =300 K Wall No slip, stationary q=0",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_010",
+          "source": "equations",
+          "meta": "[page 14, bbox (37.64, 728.33, 291.37, 748.81)]",
+          "original": "(5) For the design of thin-panel-structural compression system, the consideration of resonance limit is essential.",
+          "normalized": "(5) For the design of thin-panel-structural compression system, the consideration of resonance limit is essential",
+          "confidence": 0.57,
+          "needs_review": true,
+          "issues": [
+            "text_heavy"
+          ],
+          "drop": false,
+          "repairs": [
+            "unit_expression_repaired"
+          ]
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\left[ M \\right] \\left\\{ \\ddot { x } \\right\\} + \\left[ K \\right] \\left\\{ x \\right\\} = \\left\\{ 0 \\right\\}\\tag{1}\n",
+          "normalized": "\\left[ M \\right] \\left\\{\\ddot {x} \\right\\} + \\left[ K \\right] \\left\\{x \\right\\} = \\left\\{0 \\right\\}\\tag{1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_001"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathrm { k g / m ^ { 3 } }",
+          "normalized": "\\mathrm {k g / m ^ {3}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_002"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "P _ { x 0 } , \\ P _ { x 1 } , \\ P _ { y 0 } , \\ P _ { y 1 } , \\ P _ { z 0 } ,",
+          "normalized": "P _ {x 0} , \\ P _ {x 1} , \\ P _ {y 0} , \\ P _ {y 1} , \\ P _ {z 0} ,",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_003"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "P _ { z 1 }",
+          "normalized": "P _ {z 1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_004"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "P _ { x 0 } , P _ { x 1 } , P _ { z 0 } , P _ { z 1 }",
+          "normalized": "P _ {x 0} , P _ {x 1} , P _ {z 0} , P _ {z 1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_005"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "P _ { y 0 }",
+          "normalized": "P _ {y 0}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_006"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "P _ { y 1 }",
+          "normalized": "P _ {y 1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_007"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "P _ { y 0 }",
+          "normalized": "P _ {y 0}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_008"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "P _ { y 1 }",
+          "normalized": "P _ {y 1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_009"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\frac { \\partial ( \\rho \\phi ) } { \\partial t } + \\mathrm { d i v } ( \\rho U \\phi ) = \\mathrm { d i v } ( \\Gamma \\mathbf { g r a d } \\phi ) + Q _ { s }\\tag{2}\n",
+          "normalized": "\\frac {\\partial ( \\rho \\phi )} {\\partial t} + \\mathrm{div} ( \\rho U \\phi ) = \\mathrm{div} ( \\Gamma \\mathbf {g r a d} \\phi ) + Q _ {s}\\tag{2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_010"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho",
+          "normalized": "\\rho",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_011"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "Q _ { s }",
+          "normalized": "Q _ {s}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_012"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\phi ,",
+          "normalized": "\\phi ,",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_013"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "Q _ { s }",
+          "normalized": "Q _ {s}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_014"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "^ { 3 , }",
+          "normalized": "^ {3 ,}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_015"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "c _ { p }",
+          "normalized": "c _ {p}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_016"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\Delta t _ { 1 } \\leq \\frac { 1 } { 2 0 f }\\tag{3}\n",
+          "normalized": "\\Delta t _ {1} \\leq \\frac {1} {20 f}\\tag{3}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_017"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\Delta t _ { 2 } \\leq \\frac { L } { 2 0 V _ { \\infty } }\\tag{4}\n",
+          "normalized": "\\Delta t _ {2} \\leq \\frac {L} {20 V _ {\\infty}}\\tag{4}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_019"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "V _ { \\infty }",
+          "normalized": "V _ {\\infty}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_020"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( P _ { y 1 }",
+          "normalized": "( P _ {y 1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.67,
+          "needs_review": true,
+          "issues": [
+            "unbalanced_delimiters"
+          ],
+          "drop": false,
+          "id": "body_inline_021"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathrm { k g / m ^ { 3 } }",
+          "normalized": "\\mathrm {k g / m ^ {3}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_024"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "4 \\times 1 0 ^ { 6 }",
+          "normalized": "4 \\times 10 ^ {6}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_025"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "1 ^ { \\mathsf { s t } }",
+          "normalized": "1 ^ {\\mathsf{st}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_027"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "6 ^ { \\mathrm { { t h } } }",
+          "normalized": "6 ^ {\\mathrm {{t h}}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_028"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "equation_004",
+          "source": "equations",
+          "meta": "[page 4, bbox (37.64, 626.58, 75.06, 643.21)]",
+          "original": "�t1 ≤ 1",
+          "normalized": "�t1 \\le 1",
+          "confidence": 0.12,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal",
+            "mojibake"
+          ],
+          "drop": true,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_005",
+          "source": "equations",
+          "meta": "[page 4, bbox (37.64, 691.44, 78.73, 708.06)]",
+          "original": "�t2 ≤ L",
+          "normalized": "�t2 \\le L",
+          "confidence": 0.12,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal",
+            "mojibake"
+          ],
+          "drop": true,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_007",
+          "source": "equations",
+          "meta": "[page 4, bbox (64.7, 633.15, 288.71, 648.4)]",
+          "original": "20 f (3)",
+          "normalized": "20 f (3)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_008",
+          "source": "equations",
+          "meta": "[page 4, bbox (64.7, 698.01, 288.71, 714.27)]",
+          "original": "20V∞ (4)",
+          "normalized": "20V∞ (4)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f",
+          "normalized": "f",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_018"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( \\varphi )",
+          "normalized": "( \\varphi )",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_022"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varphi",
+          "normalized": "\\varphi",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_023"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "6 ,",
+          "normalized": "6 ,",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_026"
+        }
+      ]
+    },
+    "section_headings_detected": [
+      "## 1. Introduction",
+      "## 2. The hypersonic vehicle and multi-stage compression system",
+      "## 3. Numerical models",
+      "## 3.1. Mode analysis",
+      "## 3.1.1. Vibration differential equation",
+      "## 3.1.2. Meshed models and constraint conditions",
+      "## 3.2. Flow field analysis",
+      "## 3.2.1. Governing equations",
+      "## 3.2.2. Computational region, boundary conditions and mesh independence",
+      "## 3.2.3. Validation of the numerical method",
+      "## 4. Results and discussions",
+      "## 4.1. Mode analysis",
+      "## 4.2. Effects of the forced vibration of compression ramps",
+      "## 4.2.1. Effects of vibration amplitude",
+      "## 4.2.2. Effects of vibration frequency",
+      "## 4.3. Fluid-structural interaction effects",
+      "## 4.3.1. Structural vibration of compression ramps",
+      "## 4.3.2. Effects of vibration on the intake performance",
+      "## 4.4. Design path of compression system",
+      "## 5. Conclusions"
+    ],
+    "final_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    }
+  },
+  "header_footer_repeated_count": 2,
+  "header_footer_removed_count": 30,
+  "tables_count": 7,
+  "figure_captions_count": 23,
+  "table_captions_count": 6,
+  "equations_count": 26,
+  "references_count": 35,
+  "scanned_pdf_detected": false,
+  "ocr_fallback_needed": false
+}

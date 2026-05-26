@@ -1,0 +1,157 @@
+Bentley, Spaceplanes: From Airport to Spaceport, Springer, New York, NY, 2009. [3] Z. Liu, G.
+
+Zheng, B.
+
+Zhang, J.
+
+Wei, H.
+
+Huang, J.
+
+Yan, Predictor-corrector reentry guidance for hypersonic glide vehicles based on high-precision analytical solutions, Aerosp. Sci. Technol. (2024) 109545, https://doi.org/10.1016/j.ast.2024.109545. [4] R.
+
+Chai, A.
+
+Tsourdos, A.
+
+Savvaris, S.
+
+Chai, Y.
+
+Xia, C.
+
+Chen, Review of advanced guidance and control algorithms for space/aerospace vehicles, Prog. Aerosp. Sci. 122 (2021) 100696, https://doi.org/10.1016/j.paerosci.2021.100696. [5] P. Lu, Regulation about time-varying trajectories: precision entry guidance illus trated, J. Guid. Control Dyn. 22 (6) (1999) 784--790, https://doi.org/10.2514/2. 4479. [6] A. Vitiello, E.M. Leonardi, M. Pontani, Multiple-sliding-surface guidance and control for terminal atmospheric reentry and precise landing, J. Spacecr. Rockets 60 (3) (2023) 912--923, https://doi.org/10.2514/1.A35438. [7] P. Lu, Introducing computational guidance and control, J. Guid. Control Dyn. 40 (2) (2017) 193, https://doi.org/10.2514/1.G002745. [8] R. Chai, K.
+
+Chen, L.
+
+Cui, S.
+
+Chai, G.
+
+Inalhan, A.
+
+Tsourdos, Advanced Trajectory Op timization, Guidance and Control Strategies for Aerospace Vehicles: Methods and Applications, Springer Aerospace Technology, Springer Nature, Singapore, 2023. [9] H.
+
+Xu, G.
+
+Cai, C.
+
+Mu, X.
+
+Li, Analytical reentry guidance framework based on swarm intelligence optimization and altitude-energy prfile, Chin. J. Aeronaut. 36 (12) (2023) 336--348, https://doi.org/10.1016/j.cja.2023.07.029. [10] C. Sánchez, D. Izzo, Real-time optimal control via deep neural networks: study on landing problems, J. Guid. Control Dyn. 41 (5) (2018) 1122--1135, https://doi.org/ 10.2514/1.G002357. [11] R. Chai, A. Tsourdos, A. Savvaris, Y. Xia, S. Chai, Real-time reentry trajectory plan ning of hypersonic vehicles: a two-step strategy incorporating fuzzy multiobjective transcription and deep neural network, IEEE Trans. Ind. Electron. 67 (8) (2020) 6904--6915, https://doi.org/10.1109/TIE.2019.2939934. [12] T. Wu, H. Wang, Y. Liu, T. Li, Y. Yu, Learning-based interfered fluid avoidance guid [13] X. Li, X. Wang, H. Zhou, Entry guidance for spatial n-fly zones avoidance via model timal control problems using hp-adaptive gaussian quadrature collocation methods and sparse nonlinear programming, ACM Trans. Math. Softw. 41 (1) (2014) 1--37, https://doi.org/10.1145/2558904. [15] H. Yan, I.M. Ross, K.T. Alfriend, Pseudospectral feedback control for three-axis mag netic attitude stabilization in elliptic orbits, J. Guid. Control Dyn. 30 (4) (2007) 1107--1115, https://doi.org/10.2514/1.26591. [16] I.M. Ross, P. Sekhavat, A. Fleming, Q. Gong, Optimal feedback control: foundations, examples, and experimental results for a new approach, J. Guid. Control Dyn. 31 (2) (2008) 307--321, https://doi.org/10.2514/1.29532. [17] C. Zagaris, H. Park, J. Virgili-Llop, R. Zappulla, M. Romano, I. Kolmanovsky, Model predictive control of spacecraft relative motion with convexfied keep-out-zone con straints, J. Guid. Control Dyn. 41 (9) (2018) 2054--2062, https://doi.org/10.2514/ 1.G003549. [18] T.
+
+Zhang, H.
+
+Su, C.
+
+Gong, hp-adaptive rpd based sequential convex programming for reentry trajectory optimization, Aerosp. Sci. Technol. 130 (2022) 107887, https:// doi.org/10.1016/j.ast.2022.107887. [19] T.
+
+Gong, A three-stage sequential convex programming approach for trajectory optimization, Aerosp. Sci. Technol. 149 (2024) 109128, https://doi. org/10.1016/j.ast.2024.109128. [20] P.N. Dwivedi, A. Bhattacharyya, R. Padhi, Computationally efficient suboptimal mid course guidance using model predictive static programming (mpsp), IFAC Proc. Vol. 41 (2) (2008) 3550--3555, https://doi.org/10.3182/20080706-5-KR-1001.00600. [21] B. Pan, Y. Ma, R. Yan, Newton-type methods in computational guidance, J. Guid. Control Dyn. 42 (2) (2019) 377--383, https://doi.org/10.2514/1.G003931. [22] P.
+
+Sharma, P.
+
+Kumar, R.
+
+Padhi, Pseudo-spectral mpsp-based unfied midcourse and terminal guidance for reentry targets, IEEE Trans. Aerosp. Electron. Syst. 59 (4) (2023) 3982--3994, https://doi.org/10.1109/TAES.2023.3237796. [23] A.S.
+
+Hameed, G.R.
+
+Bindu, S.
+
+Vutukuri, Approach and landing guidance using con strained model predictive static programming, Aerosp. Sci. Technol. 144 (2024) 108732, https://doi.org/10.1016/j.ast.2023.108732. [24] J. Wang, N. Cui, C. Wei, Optimal rocket landing guidance using convex optimiza tion and model predictive control, J. Guid. Control Dyn. 42 (5) (2019) 1078--1092, https://doi.org/10.2514/1.G003518. [25] Y.
+
+Wu, J.
+
+Yao, X.
+
+Qu, An adaptive reentry guidance method considering the ifluence of blackout zone, Acta Astronaut. 142 (2018) 253--264, https://doi.org/10.1016/j. actaastro.2017.10.041. [26] M.E. Dennis, W.W. Hager, A.V. Rao, Computational method for optimal guidance and control using adaptive gaussian quadrature collocation, J. Guid. Control Dyn. 42 (9) (2019) 2026--2041, https://doi.org/10.2514/1.G003943. [27] J.B.
+
+Rawlings, D.Q.
+
+Mayne, M.M.
+
+Diehl, Model Predictive Control: Theory, Compu tation, and Design, 2nd edition, Nob Hill Publishing, Santa Barbara, 2020. [28] W.P.M.H. Heemels, K.H. Johansson, P. Tabuada, An introduction to event-triggered and self-triggered control, in: 2012 IEEE 51st IEEE Conference on Decision and Con trol (CDC), 2012 IEEE 51st IEEE Conference on Decision and Control (CDC), 2012, pp. 3270--3285. [29] C.
+
+Liu, H.
+
+Li, Y.
+
+Shi, D.
+
+Xu, Codesign of event trigger and feedback policy in ro bust model predictive control, IEEE Trans. Autom. Control 65 (1) (2020) 302--309, https://doi.org/10.1109/TAC.2019.2914416. [30] P.
+
+Huang, F.
+
+Di, H.
+
+Lu, J.
+
+Xu, S.
+
+Wang, Observer-based prescribed performance con sensus protocol: finite-time dynamic event-triggered schemes, Aerosp. Sci. Technol. 146 (2024) 108931, https://doi.org/10.1016/j.ast.2024.108931. [31] C.
+
+Wu, S.
+
+Jiang, S.
+
+Gao, Y.
+
+Han, Event-triggered model predictive control for dynamic energy management of electric vehicles in microgrids, J. Clean. Prod. 368 (2022) 133175, https://doi.org/10.1016/j.jclepro.2022.133175. [32] J.C.
+
+Sanchez, C.
+
+Louembet, F.
+
+Gavilan, R.
+
+Vazquez, An event-triggered predictive controller for spacecraft rendezvous hovering phases, IFAC-PapersOnLine 52 (12) (2019) 97--102, https://doi.org/10.1016/j.ifacol.2019.11.076. [33] T.
+
+Zhang, C.
+
+Gong, L.
+
+Zhang, Event-triggered nonlinear model-predictive control for optimal ascent guidance, IEEE Trans. Aerosp. Electron. Syst. 60 (6) (2024) 7771--7784, https://doi.org/10.1109/TAES.2024.3419073. [34] E.A. Morelli, V. Klein, Accuracy of aerodynamic model parameters estimated from flight test data, J. Guid. Control Dyn. 20 (1) (1997) 74--80, https://doi.org/10.2514/ 2.3997. [35] L.G. Sun, C.C. de Visser, Q.P. Chu, J.A. Mulder, Online aerodynamic model identfi cation using a recursive sequential method for multivariate splines, J. Guid. Control Dyn. 36 (5) (2013) 1278--1288, https://doi.org/10.2514/1.60375. [36] G.
+
+Chowdhary, R.
+
+Jategaonkar, Aerodynamic parameter estimation from flight data applying extended and unscented Kalman filter, Aerosp. Sci. Technol. 14 (2) (2010) 106--117, https://doi.org/10.1016/j.ast.2009.10.003. [37] T.M.
+
+Silva, J.-B.
+
+Bouvier, K.
+
+Xu, M.
+
+Hirabayashi, K.
+
+Ho, Spacecraft trajectory tracking and parameter estimation around a splitting contact binary asteroid, Acta Astronaut. 171 (2020) 280--289, https://doi.org/10.1016/j.actaastro.2020.02.052. [38] J.
+
+Zhao, R.
+
+Zhou, Reentry trajectory optimization for hypersonic vehicle satisfying complex constraints, Chin. J. Aeronaut. 26 (6) (2013) 1544--1553, https://doi.org/ 10.1016/j.cja.2013.10.009. [39] G.
+
+Hu, L.
+
+Ni, B.
+
+Gao, X.
+
+Zhu, W.
+
+Wang, Y.
+
+Zhong, Model predictive based unscented Kalman filter for hypersonic vehicle navigation with ins/gnss integration, IEEE Ac cess 8 (2020) 4814--4823, https://doi.org/10.1109/ACCESS.2019.2962832. [40] K. Chen, S. Pei, C. Zeng, G. Ding, Sins/bds tightly coupled integrated navigation algorithm for hypersonic vehicle, Sci. Rep. 12 (1) (2022) 6144, https://doi.org/10. 1038/s41598-022-10063-9. [41] N. Shyam Mohan, M. Jayakumar, T. Sivamurugan, K.C. Finitha, S.B. Vidya, J. Dhoaya, N. Remesh, M. Prasath, S. Krishna, A. Sidhique, Flush air data sensing sys tem, Curr. Sci. 114 (01) (2018) 68, https://doi.org/10.18520/cs/v114/i01/68-73. [42] X.
+
+Han, Z.
+
+Zheng, L.
+
+Liu, B.
+
+Wang, Z.
+
+Cheng, H.
+
+Fan, Y.
+
+Wang, Online policy iteration adp-based attitude-tracking control for hypersonic vehicles, Aerosp. Sci. Technol. 106 (2020) 106233, https://doi.org/10.1016/j.ast.2020.106233.

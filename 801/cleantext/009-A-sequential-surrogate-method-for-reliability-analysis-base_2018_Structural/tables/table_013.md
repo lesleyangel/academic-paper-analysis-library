@@ -1,0 +1,16 @@
+| Methods | $P _ { f }$ | Relative Error (%) | Number of LSF evaluations |
+| --- | --- | --- | --- |
+| FORM | $3 . 1 0 8 \times 1 0 ^ { - 2 }$ | 9.668 | 35 |
+| SORM | $2 . 8 4 0 \times 1 0 ^ { - 2 }$ | 0.212 | 48 |
+| DSa | $3 . 5 0 0 \times 1 0 ^ { - 2 }$ | 23.500 | 1281 |
+| $\mathsf { D } \mathsf { S } + \mathsf { R } \mathsf { S } ^ { \mathrm { b } }$ | $3 . 4 0 0 \times 1 0 ^ { - 2 }$ | 19.972 | 62 |
+| $\mathrm { D } { \mathsf { S } } + { \mathsf { S } } { \mathsf { P } } ^ { \mathrm { c } }$ | $3 . 4 0 0 \times 1 0 ^ { - 2 }$ | 19.972 | 76 |
+| $\mathrm { D } S + \mathrm { N N } ^ { \mathrm { d } }$ | $2 . 8 0 0 \times 1 0 ^ { - 2 }$ | 1.200 | 86 |
+| IS | $2 . 7 0 0 \times 1 0 ^ { - 2 }$ | 4.728 | 6144 |
+| $\mathbb { I S } + \mathbb { R } \mathbb { S }$ | $2 . 5 0 0 \times 1 0 ^ { - 2 }$ | 11.785 | 109 |
+| $\mathrm { I S } + \mathsf { S P }$ | $2 . 7 0 0 \times 1 0 ^ { - 2 }$ | 4.728 | 67 |
+| $\mathrm { I S } + \mathrm { N N }$ | $3 . 1 0 0 \times 1 0 ^ { - 2 }$ | 9.386 | 68 |
+| $\mathsf { A K } ^ { \mathrm { f } } + \mathsf { M C S } + \mathsf { U } ^ { \mathrm { g } }$ | $2 . 8 3 4 \times 1 0 ^ { - 2 }$ | 0.000 | 58 |
+| $\mathsf { A K } + \mathsf { M C S } + \mathsf { E F F } ^ { \mathrm { h } }$ | $2 . 8 5 1 \times 1 0 ^ { - 2 }$ | 0.600 | 45 |
+| SSRM | $2 . 8 8 0 \times 1 0 ^ { - 2 }$ | 1.623 | 19 |
+| $\mathrm { M C S } ( \mathrm { C O V } = 2 . 2 \% )$ | $2 . 8 3 4 \times 1 0 ^ { - 2 }$ | 0.000 | $7 \times 1 0 ^ { 4 }$ |

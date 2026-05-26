@@ -1,0 +1,27 @@
+[1] Gu Liangxian, Wang Yifan, Shi Shengbo, Dai Cunxi. An approach for bending and transient dynamic analysis of integrated thermal protection system with tempera- ture-dependent material properties. Compos Struct 2017;159:128–43.
+
+[2] Blosser ML. Development of advanced metallic thermal-protection-system prototype hardware. J Spacecraft Rockets 2004;41(2):183–94.
+
+[3] Martinez OA, Sankar BV, Haftka RT. Micromechanical analysis of composite cor- rugated-core sandwich panels for integral thermal protection systems. AIAA J 2007;45(9):2323–36.
+
+[4] Martinez OA, Bapanapalli SK, Sankar BV. Micromechanical analysis of composite truss-core sandwich panels for integral thermal protection systems. In: 47th AIAA/ ASME/ASCE/AHS/ASC Structures, structural dynamics, and materials conference, Newport, Rhode Island, May. 1–4, 2006.
+
+[5] Bapanapalli SK. Analysis and design of corrugated-core sandwich panels for thermal protection system of space vehicles. In: 47th AIAA Structures, Structural Dynamics and Materials Conference, Newport, Rhode Island, May 1–4, 2006.
+
+[6] Sharma A. Multi-fidelity design of an integrated thermal protection system for spacecraft reentry. In: 49th AIAA Structures, Structural Dynamics and Materials Conference, Schaumburg, April 7–10; 2008.
+
+[7] Rajesh KB. Bending, vibration and vibro-acoustic analysis of composite sandwich plates with corrugated core. University of Michigan-Dearborn; 2014. [Ph.D. thesis].
+
+[8] Ravishankar B, Sankar BV, Haftka RT. Homogenization of integrated thermal pro- tection system with rigid insulation bars. In: 47th AIAA/ASME/ASCE/AHS/ASC Structures, structural dynamics, and materials conference, Orlando, Florida, April. 12–15; 2010.
+
+[9] Seydel EB. Schubknickversuchemit Wellblechtafeln, Jahrbuch d. Deutsch. Versuchsanstalltfür Luftfahrt. E.V. München und Berlin; 1931. p. 233–35.
+
+[10] McFarland DE. An investigation of the static stability of corrugated rectangular plates loaded in pure shear [PhD. thesis]. KS: University of Kansas, Lawrence; 1967.
+
+[11] Mang AH, Girya-Vallabhan VC, Smith HJ. Finite element analysis of doubly cor- rugated shells. J Struct Div ASCE 1976;102:2033–50.
+
+[12] Briassoulis D. Equivalent orthotropic properties of corrugated sheets. Comput Struct 1986;23(2):129–38.
+
+[13] Shimansky RA, Lele MM. Transverse stiffness of a sinusoidally corrugated plate. Mech Struct Mach 1995;23(3):439–51.
+
+[14] Samanta A, Mukhopadhyay M. Finite element static and dynamic analyses of folded plates. Eng Struct 1999;21:277–87.

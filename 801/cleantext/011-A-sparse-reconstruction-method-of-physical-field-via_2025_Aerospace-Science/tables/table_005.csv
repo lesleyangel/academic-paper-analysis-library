@@ -1,0 +1,3 @@
+Test sample,$E _ { \mathrm { m a x } } ( \mathbf { P } )$,$E _ { \mathrm { m e a n } } ( \mathbf { P } )$,$E _ { \mathrm { m a x } } ( \mathbf { T } )$,$E _ { \mathrm { m e a n } } ( \mathbf { T } )$
+Worst accuracy,1.40%,0.09%,10.29%,0.30%
+Best accuracy,0.97%,0.05%,3.04%,0.09%

@@ -1,0 +1,25 @@
+Fig. 1. Schematic diagram of the MPPT.
+
+Fig. 2. Schematic diagram of the limit-state strip.
+
+Fig. 3. Procedure of the SSL for computing uL MPP(ti).
+
+Fig. 4. The flowchart of the proposed HABMPPT method.
+
+Fig. 5. A corroded steel beam.
+
+Fig. 6. Time-variant failure probability of the corroded steel beam.
+
+Fig. 7. A 10-bar truss.
+
+Fig. 8. Time-variant failure probability of the 10-bar truss.
+
+Fig. 9. Schematic diagram of the solid rocket engine.
+
+Fig. 10. Time-variant failure probability of the solid rocket engine shell.
+
+Fig. 11. The model of the rocket inter-stage structure.
+
+Fig. 12. Time-variant failure probability of the rocket inter-stage structure.
+
+Fig. 3. Procedure of the SSL for computing ${ \bf u } _ { \mathrm { M P P } } ^ { \mathrm { L } } ( t _ { i } )$

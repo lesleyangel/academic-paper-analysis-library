@@ -1,0 +1,53 @@
+[confidence=0.92; source=body_inline] 4 \ : \mathrm{MW} / \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] \nabla \cdot q _ {\mathrm{w}} \vec {i} + \rho _ {s} C _ {\mathrm{ps}} \frac {\partial T} {\partial t} = \nabla \cdot \left( k \frac {\partial T} {\partial x} \vec {i} \right) - \rho _ {\mathrm{g}} C _ {\mathrm{pg}} \vec {\nu} _ {\mathrm{g}} \cdot \nabla T - Q \rho _ {s} \frac {d c} {d t}\tag{ð1Þ}
+
+[confidence=0.92; source=body_inline] q _ {\mathrm{w}}
+
+[confidence=0.92; source=body_inline] \therefore C _ {\mathfrak {p}}
+
+[confidence=0.92; source=body_inline] \vec {\upsilon} _ {\mathrm{g}}
+
+[confidence=0.92; source=body_inline] \mu
+
+[confidence=0.92; source=body_inline] \vec {\upsilon} _ {\mathrm{g}} = - \frac {\lambda} {\mu} \frac {\partial p} {\partial x} \vec {i}\tag{ð2Þ}
+
+[confidence=0.92; source=body_inline] \frac {d c} {d t} = - A _ {0} c ^ {n} \exp \left( - \frac {E _ {\mathrm{a}}} {R T} \right)\tag{ð3Þ}
+
+[confidence=0.92; source=body_inline] A _ {0} , n ,
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{a}}
+
+[confidence=0.92; source=body_inline] \rho _ {\mathsf{p}} {\frac {\partial \varphi _ {\mathsf{p}}} {\partial t}} = {\frac {d c} {d t}}\tag{ð4Þ}
+
+[confidence=0.92; source=body_inline] \rho _ {\mathrm{c}} \frac {\partial \varphi _ {\mathrm{c}}} {\partial t} = - \frac {d c} {d t} ( 1 - \Gamma ^ {\mathrm{p}} )\tag{ð5Þ}
+
+[confidence=0.92; source=body_inline] \varphi _ {\mathrm{g}} = 1 - \varphi _ {\mathrm{f}} - \varphi _ {\mathrm{p}} - \varphi _ {\mathrm{c}}\tag{ð6Þ}
+
+[confidence=0.92; source=body_inline] \rho , \varphi
+
+[confidence=0.92; source=body_inline] \Gamma ^ {\mathfrak {p}}
+
+[confidence=0.92; source=body_inline] \rho = \rho _ {\mathrm{f}} \varphi _ {\mathrm{f}} + \rho _ {\mathrm{p}} \varphi _ {\mathrm{p}} + \rho _ {\mathrm{c}} \varphi _ {\mathrm{c}}\tag{ð7Þ}
+
+[confidence=0.92; source=body_inline] h _ {0}
+
+[confidence=0.92; source=body_inline] \frac {1} {h _ {0}} \frac {\partial h} {\partial t} = [ \beta _ {\mathrm{virg}} ( 1 - c ) + \beta _ {\mathrm{char}} c ] \frac {\partial T} {\partial t} + \frac {\xi} {m _ {0}} \frac {\partial m} {\partial t}\tag{ð8Þ}
+
+[confidence=0.92; source=body_inline] \beta _ {\mathrm{virg}}
+
+[confidence=0.92; source=body_inline] \beta _ {\mathrm{char}}
+
+[confidence=0.92; source=body_inline] ( 8 ) , m _ {0}
+
+[confidence=0.92; source=body_inline] m = c m _ {0} + ( 1 - c ) m _ {\mathrm{final}}\tag{ð9Þ}
+
+[confidence=0.92; source=body_inline] m _ {\mathrm{final}}
+
+[confidence=0.92; source=body_inline] t + \Delta t ,
+
+[confidence=0.92; source=body_inline] T _ {i ^ {\prime}} ^ {0} ,
+
+[confidence=0.92; source=body_inline] \frac {\partial m _ {\mathrm{g}}} {\partial t} = \frac {\partial m _ {\mathrm{pg}}} {\partial t} - \nabla \cdot ( \rho _ {\mathrm{g}} \vec {\upsilon} _ {\mathrm{g}} )\tag{ð10Þ}
+
+[confidence=0.92; source=body_inline] m _ {\mathrm{pg}}

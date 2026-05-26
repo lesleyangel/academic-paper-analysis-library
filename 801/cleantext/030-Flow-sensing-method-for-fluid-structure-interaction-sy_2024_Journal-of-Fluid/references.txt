@@ -1,0 +1,93 @@
+Calzolari, G., Liu, W., 2021. Deep learning to replace, improve, or aid CFD analysis in built environment applications: a review. Build. Environ. 206, 108315 https:// doi.org/10.1016/j.buildenv.2021.108315.
+
+Castellanos, R., Cornejo Maceda, G.Y., De La Fuente, I., Noack, B.R., Ianiro, A., Discetti, S., 2022. Machine-learning flow control with few sensor feedback and measurement noise. Phys. Fluids 34, 047118. https://doi.org/10.1063/5.0087208.
+
+Chen, S., Doolen, G.D., 1998. Lattice Boltzmann method for fluid flows. Annu. Rev. Fluid Mech. 30 (1), 329–364. https://doi.org/10.1146/annurev.fluid.30.1.329.
+
+Connor, J.O., Revell, A., 2019. Dynamic interactions of multiple wall-mounted flexible flaps. J. Fluid Mech. 870, 189–216. https://doi.org/10.1017/jfm.2019.266.
+
+Dang, F., Nasreen, S., Zhang, F., 2021. DMD-based background flow sensing for AUVs in flow pattern changing environments. IEEE Robot. Autom. Lett. 6 (3), 5207–5214. https://doi.org/10.1109/LRA.2021.3072570.
+
+Dubois, P., Gomez, T., Planckaert, L., Perret, L., 2022. Machine learning for fluid flow reconstruction from limited measurements. J. Comput. Phys. 448, 110733 https://doi.org/10.1016/j.jcp.2021.110733.
+
+Fang, Z., Gong, C., Revell, A., O’Connor, J., 2022. Fluid–structure interaction of a vegetation canopy in the mixing layer. J. Fluids Struct. 109, 103467 https://doi.org/ 10.1016/j.jfluidstructs.2021.103467.
+
+Favier, J., Revell, A., Pinelli, A., 2014. A Lattice Boltzmann – Immersed Boundary method to simulate the fluid interaction with moving and slender flexible objects. J. Comput. Phys. 261, 145–161. https://doi.org/10.1016/j.jcp.2013.12.052.
+
+Fresca, S., Manzoni, A., 2022. POD-DL-ROM: enhancing deep learning-based reduced order models for nonlinear parametrized PDEs by proper orthogonal decomposition. Comput. Methods Appl. Mech. Engrg. 388, 114181 https://doi.org/10.1016/j.cma.2021.114181.
+
+Gao, D., Deng, Z., Yang, W., Chen, W., 2021. Review of the excitation mechanism and aerodynamic flow control of vortex-induced vibration of the main girder for long-span bridges: a vortex-dynamics approach. J. Fluids Struct. 105, 103348 https://doi.org/10.1016/j.jfluidstructs.2021.103348.
+
+Gong, C., Fang, Z., Chen, G., 2018. A lattice Boltzmann-immersed boundary-finite element method for nonlinear fluid–solid interaction simulation with moving objects. Int. J. Comput. Methods. 15 (7), 1850063 https://doi.org/10.1142/S0219876218500639.
+
+Guo, Z., Zheng, C., Shi, B., 2002. Discrete lattice effects on the forcing term in the lattice Boltzmann method. Phys. Rev. E. 65, 046308 https://doi.org/10.1103/ PhysRevE.65.046308.
+
+Han, R., Wang, Y., Zhang, Y., Chen, G., 2019. A novel spatial-temporal prediction method for unsteady wake flows based on hybrid deep neural network. Phys. Fluids 31 (12), 127101. https://doi.org/10.1063/1.5127247.
+
+Harwood, A.R.G., Connor, J.O., Mu˜noz, J.S., Santasmasas, M.C., Revell, A.J., 2018. LUMA: a many-core, fluid-structure interaction solver based on the Lattice- Boltzmann method. SoftwareX 7, 88–94. https://doi.org/10.1016/j.softx.2018.02.004.
+
+Jia, X., Li, C., Ji, W., Gong, C., 2022. A hybrid reduced-order model combing deep learning for unsteady flow. Phys. Fluids 34, 097112. https://doi.org/10.1063/ 5.0104848.
+
+Kim, T., 2016. Parametric model reduction for aeroelastic systems: invariant aeroelastic modes. J. Fluids Struct. 65, 196–216. https://doi.org/10.1016/j. jfluidstructs.2016.05.006.
+
+Kou, J., Zhang, W., 2021. Data-driven modeling for unsteady aerodynamics and aeroelasticity. Prog. Aerosp. Sci. 125, 100725 https://doi.org/10.1016/j. paerosci.2021.100725.
+
+Kou, J., Zhang, W., Liu, Y., Li, X., 2017. The lowest reynolds number of vortex-induced vibrations. Phys. Fluids 29, 041701. https://doi.org/10.1063/1.4979966.
+
+Li, K., Kou, J., Zhang, W., 2019. Deep neural network for unsteady aerodynamic and aeroelastic modeling across multiple Mach numbers. Nonlinear Dyn. 96, 2157–2177. https://doi.org/10.1007/s11071-019-04915-9.
+
+Liu, G., Gao, S., Sarkodie-Gyan, T., Li, Z., 2018. A novel biomimetic sensor system for vibration source perception of autonomous underwater vehicles based on artificial lateral lines. Meas. Sci. Technol. 29, 125102 https://doi.org/10.1088/1361-6501/aae128.
+
+Liu, Z., Han, R., Zhang, M., Zhang, Y., Zhou, H., Wang, G., Chen, G., 2022. An enhanced hybrid deep neural network reduced-order model for transonic buffet flow prediction. Aerosp. Sci. Technol. 126, 107636 https://doi.org/10.1016/j.ast.2022.107636.
+
+Loiseau, J., Noack, B.R., Brunton, S.L., 2018. Sparse reduced-order modelling: sensor-based dynamics to full-state estimation. J. Fluid Mech. 844, 459–490. https:// doi.org/10.1017/jfm.2018.147.
+
+Lu, Q., Wang, L., Li, L., 2022. Efficient uncertainty quantification of stochastic problems in CFD by combination of compressed sensing and POD-Kriging. Comput. Methods Appl. Mech. Engrg. 396, 115118 https://doi.org/10.1016/j.cma.2022.115118.
+
+Ma, Z., Pan, W., 2021. Data-driven nonintrusive reduced order modeling for dynamical systems with moving boundaries using Gaussian process regression. Comput. Methods Appl. Mech. Engrg. 373, 113495 https://doi.org/10.1016/j.cma.2020.113495.
+
+Roma, A.M., Peskin, C.S., Berger, M.J., 1999. An adaptive version of the Immersed Boundary Method. J. Comput. Phys. 153, 509–534. https://doi.org/10.1006/ jcph.1999.6293.
+
+Rowley, C.W., Dawson, S.T.M., 2017. Model reduction for flow analysis and control. Annu. Rev. Fluid Mech. 49 (1), 387–417. https://doi.org/10.1146/annurev-fluid- 010816-060042.
+
+Rozov, V., Breitsamter, C., 2021. Data-driven prediction of unsteady pressure distributions based on deep learning. J. Fluids Struct. 104, 103316 https://doi.org/ 10.1016/j.jfluidstructs.2021.103316.
+
+Sabater, C., Stürmer, P., Bekemeyer, P., 2022. Fast predictions of aircraft aerodynamics using deep-learning techniques. AIAA J. 60 (9) https://doi.org/10.2514/1. J061234.
+
+Schmid, P.J., 2010. Dynamic mode decomposition of numerical and experimental data. J. Fluid Mech. 656, 5–28. https://doi.org/10.1017/S0022112010001217.
+
+Sekar, V., Jiang, Q., Shu, C., Khoo, B.C., 2019. Fast flow field prediction over airfoils using deep learning approach. Phys. Fluids 31 (5), 057103. https://doi.org/ 10.1063/1.5094943.
+
+Sun, Z., Wang, C., Zheng, Y., Bai, J., Li, Z., Xia, Q., Fu, Q., 2020. Non-intrusive reduced-order model for predicting transonic flow with varying geometries. Chinese J. Aeronaut. 33, 508–519. https://doi.org/10.1016/j.cja.2019.12.014.
+
+Tang, M., Liu, Y., Durlofsky, L.J., 2021. Deep-learning-based surrogate flow modeling and geological parameterization for data assimilation in 3D subsurface flow. Comput. Methods Appl. Mech. Engrg. 376, 113636 https://doi.org/10.1016/j.cma.2020.113636.
+
+Tao, J., Yu, X.B., 2012. Hair flow sensors: from bio-inspiration to bio-mimicking — A review. Smart Mater. Struct. 21 (11), 113001 https://doi.org/10.1088/0964- 1726/21/11/113001.
+
+Thuerey, N., Weißenow, K., Prantl, L., Hu, X., 2020. Deep learning methods for Reynolds-averaged Navier–Stokes simulations of airfoil flows. AIAA J. 58, 25–36. https://doi.org/10.2514/1.J058291.
+
+Triantafyllou, M.S., Weymouth, G.D., Miao, J., 2016. Biomimetic survival hydrodynamics and flow sensing. Annu. Rev. Fluid Mech. 48, 1–24. https://doi.org/ 10.1146/annurev-fluid-122414-034329.
+
+Verma, S., Papadimitriou, C., Lüthen, N., 2020. Optimal sensor placement for artificial swimmers. J. Fluid Mech. 884, A24. https://doi.org/10.1017/jfm.2019.940. Wang, X., Kou, J., Zhang, W., 2022b. Unsteady aerodynamic prediction for iced airfoil based on multi-task learning. Phys. Fluids 34, 087117. https://doi.org/ 10.1063/5.0101991. Wang, X., Zhu, C., Wu, M., Zhang, J., Chen, P., Chen, H., Jia, C., Liang, X., Xu, M., 2022a. A novel flow sensing and controlling system based on the flapping film triboelectric nanogenerator toward smart factories, Sensor. Actuat. A. Phys. 344, 113727 https://doi.org/10.1016/j.sna.2022.113727.
+
+Wang, Z., Zhang, W., Wu, X., Chen, K., 2018. A novel unsteady aerodynamic Reduced-Order Modeling method for transonic aeroelastic optimization. J. Fluids Struct. 82, 308–328. https://doi.org/10.1016/j.jfluidstructs.2018.07.001.
+
+Wolf, B.J., Morton, J.A.S., Macpherson, W.N., Van Netten, S.M., 2018. Bio-inspired all-optical artificial neuromast for 2D flow sensing. Bioinspir. Biomim. 13 (2), 026013 https://doi.org/10.1088/1748-3190/aaa786.
+
+Wolf, B.J., Warmelink, S., Van Netten, S.M., 2019. Recurrent neural networks for hydrodynamic imaging using a 2D-sensitive artificial lateral line. Bioinspir. Biomim. 14, 055001 https://doi.org/10.1088/1748-3190/ab2cb3.
+
+Wu, L., Chen, K., Zhan, C., 2018. Snapshot POD analysis of transient flow in the pilot stage of a jet pipe servo valve. J. Turbul. 19 (10), 889–909. https://doi.org/ 10.1080/14685248.2018.1524579.
+
+Xu, D., Lv, Z., Zeng, H., Bessaih, H., Sun, B., 2019. Sensor placement optimization in the artificial lateral line using optimal weight analysis combining feature distance and variance evaluation. ISA Trans. 86, 110–121. https://doi.org/10.1016/j.isatra.2018.10.039.
+
+Yao, X., Huang, R., Hu, H., 2022. Data-driven modeling of transonic unsteady flows and efficient analysis of fluid-structure stability. J. Fluids Struct. 111, 103549 https://doi.org/10.1016/j.jfluidstructs.2022.103549.
+
+Zhai, Y., Zheng, X., Xie, G., 2021. Fish lateral line inspired flow sensors and flow-aided control: a review. J. Bionic Eng. 18 (2), 264–291. https://doi.org/10.1007/ s42235-021-0034-y. Zhang, M., Fu, S., Ren, H., Ma, L., Xu, Y., 2022b. A hybrid FEM-DNN-based vortex-induced vibration prediction method for flexible pipes under oscillatory flow in the time domain. Ocean Eng 246, 110488. https://doi.org/10.1016/j.oceaneng.2021.110488. Zhang, X., Ji, T., Xie, F., Zheng, C., Zheng, Y., 2022c. Data-driven nonlinear reduced-order modeling of unsteady fluid–structure interactions. Phys. Fluids 34, 053608. https://doi.org/10.1063/5.0090394. Zhang, X., Ji, T., Xie, F., Zheng, H., Zheng, Y., 2022a. Unsteady flow prediction from sparse measurements by compressed sensing reduced order modeling. Comput. Methods Appl. Mech. Engrg. 393, 114800 https://doi.org/10.1016/j.cma.2022.114800.
+
+Zhang, X., Xie, F., Ji, T., Zhu, Z., Zheng, Y., 2021. Multi-fidelity deep neural network surrogate model for aerodynamic shape optimization. Comput. Methods Appl. Mech. Engrg. 373, 113485 https://doi.org/10.1016/j.cma.2020.113485.
+
+Zhao, X., Du, L., Peng, X., Deng, Z., Zhang, W., 2021. Research on refined reconstruction method of airfoil pressure based on compressed sensing. Theor. Appl. Mech. Lett. 11, 100223 https://doi.org/10.1016/j.taml.2021.100223.
+
+Zheng, X., Zhang, Y., Ji, M., Liu, Y., Lin, X., Qiu, J., Liu, G., 2018. Underwater positioning based on an artificial lateral line and a generalized regression neural network. J. Bionic. Eng. 15, 883–893. https://doi.org/10.1007/s42235-018-0075-z.
+
+Zhou, H., Hu, T., Low, K.H., Shen, L., Ma, Z., Wang, G., Xu, H., 2015. Bio-inspired flow sensing and prediction for fish-like undulating locomotion: a CFD-aided approach. J. Bionic. Eng. 12, 406–417. https://doi.org/10.1016/S1672-6529(14)60132-3.

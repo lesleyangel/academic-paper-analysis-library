@@ -1,0 +1,17 @@
+Fig. 1. XRD patterns of ceramics (a) CALC; (b) CALC/Ag.
+
+Fig. 2. SEM micrographs of CALC/Ag ceramics (a) before and (b) after annealing.
+
+Fig. 3. XPS of ceramics before and after annealing (a) CALC; (b) CALC/Ag.
+
+Fig. 4. XPS spectra of the O 1s of samples.
+
+Fig. 5. Electrical resistivity and Seebeck coefficient of the samples (a) CALC and (b) CALC/Ag.
+
+Fig. 6. Power factors (PF) of the samples.
+
+Fig. 7. Thermal conductivity of the samples.
+
+Fig. 8. Figure of Merit ZT of the samples.
+
+Fig. 5. Electrical resistivity and Seebeck coefficient of the samples (a) CALC and (b) $\mathrm { C A L C } / \mathrm { A g }$

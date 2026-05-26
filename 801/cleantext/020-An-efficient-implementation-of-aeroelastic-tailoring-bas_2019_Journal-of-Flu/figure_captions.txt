@@ -1,0 +1,25 @@
+Fig. 1. Geometry of laminated composite structure.
+
+Fig. 2. Flow chart of approximate aeroelastic characteristics evaluation method.
+
+Fig. 3. AGARD 445.6 wing: (a) structural model, and (b) surface CFD mesh.
+
+Fig. 4. AGARD 445.6 wing flutter boundary; experimental data from Yates (1987).
+
+Fig. 5. Dimensioned planform of AGARD 445.6 wing and composite ply angle.
+
+Fig. 6. First four modeshapes of the wing: (a) modeshapes and frequencies of original structure, (b) exact modeshapes and frequencies of Model B, (c) approximate modeshapes and frequencies of Model B.
+
+Fig. 7. Comparison of time histories of generalized aerodynamic forces obtain by the direct and approximate evaluation method for Model B at M = 0.960, AOA = 0 deg.
+
+Fig. 8. Comparison of time histories of generalized displacements obtain by the direct and approximate evaluation method for Model A at two freestream speeds; flow conditions: M = 0.960, AOA = 0 deg.
+
+Fig. 9. Comparison of time histories of generalized displacements obtain by the direct and approximate evaluation method for Model B at two freestream speed; flow condition M = 0.960, AOA = 0 deg.
+
+Fig. 10. Comparison of time histories of generalized displacements obtain by the direct and approximate evaluation method for Model C at two freestream speeds; flow condition: M = 0.960, AOA = 0 deg.
+
+Fig. 8. Comparison of time histories of generalized displacements obtain by the direct and approximate evaluation method for Model A at two freestream speeds; flow conditions: $\mathsf { M } = 0 . 9 6 0 , \mathsf { A O A } = 0$ deg .
+
+Fig. 9. Comparison of time histories of generalized displacements obtain by the direct and approximate evaluation method for Model B at two freestream speed; flow condition $\mathsf { M } = 0 . 9 6 0 , \mathsf { A } 0 \mathsf { A } = 0 d e g$
+
+Fig. 10. Comparison of time histories of generalized displacements obtain by the direct and approximate evaluation method for Model C at two freestream speeds; flow condition: $\mathsf { M } = 0 . 9 6 0 , \mathsf { A } 0 \mathsf { A } = 0 d e g$

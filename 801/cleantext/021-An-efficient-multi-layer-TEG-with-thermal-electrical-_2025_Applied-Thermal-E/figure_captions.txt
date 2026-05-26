@@ -1,0 +1,45 @@
+Fig. 1. The TEGs in Mars RTG.
+
+Fig. 2. The multi-layer TEG with multiple interfaces.
+
+Fig. 3. Seebeck coefficient, thermal conductivity, electrical conductivity and ZT of TE materials.
+
+Fig. 4. The multi-layer TEG and equivalent interfacial layers.
+
+Fig. 5. Optimization of multi-layer TEG considering interfacial contact effects.
+
+Fig. 6. Contact-type measurement of rough surfaces.
+
+Fig. 7. Meshed models and boundary conditions of roughness-scale contact model.
+
+Fig. 8. Meshed models and boundary conditions of TEG-scale contact model.
+
+Fig. 9. Components and manufacturing process of TEG sample.
+
+Fig. 10. Experimental measurement of TEG performance.
+
+Fig. 11. Dimensionless real contact area varied with loading pressure.
+
+Fig. 12. Stress distribution of rough surfaces for contacting pairs.
+
+Fig. 13. Temperature distribution of contacting pairs.
+
+Fig. 14. Potential distribution of contacting pairs.
+
+Fig. 15. TCRs under different clearances.
+
+Fig. 16. TCRs varied with loading pressure.
+
+Fig. 17. ECRs varied with loading pressure.
+
+Fig. 18. Multi-layer TEG structural optimization results.
+
+Fig. 19. Temperature and potential distributions of TE layers.
+
+Fig. 19. (continued).
+
+Fig. 20. Temperature and heat flux distributions of multi-layer TEG.
+
+Fig. 21. Temperature and potential distributions of TE layers.
+
+Fig. 22. Performance of radioisotope power supply.

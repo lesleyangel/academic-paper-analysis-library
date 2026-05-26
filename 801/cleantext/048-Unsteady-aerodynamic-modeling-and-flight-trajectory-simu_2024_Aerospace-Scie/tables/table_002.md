@@ -1,0 +1,6 @@
+| Test case | Source domain data(s) | Target domain data( τ) |
+| --- | --- | --- |
+| Validation | $\begin{array} { l } { p _ { f } = - 6 4 \mathrm { r a d } / s } \\ { p _ { f } = - 1 9 2 \mathrm { r a d } / s ^ { , t \in [ 0 , } } \end{array}$ | $p _ { f } = - 6 4 \mathrm { r a d } / s , t \in [ 3 . 5 ,$ 4]s |
+| Interpolation | $3 . 5 ] s$ | $p _ { f } = - 1 2 8 \mathrm { r a d } / s , t \in [ 0 ,$ |
+| prediction Extrapolation |  | 3.5] $p _ { f } = 1 2 8 \mathrm { r a d } / s , t \in [ 0 , 3 . 5 ] s$ |
+| prediction |  |  |

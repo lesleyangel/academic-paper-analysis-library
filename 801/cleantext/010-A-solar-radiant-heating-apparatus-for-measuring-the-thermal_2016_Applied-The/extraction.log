@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-solar-radiant-heating-apparatus-for-measuring-the-thermal_2016_Applied-The.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\010-A-solar-radiant-heating-apparatus-for-measuring-the-thermal_2016_Applied-The",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-solar-radiant-heating-apparatus-for-measuring-the-thermal_2016_Applied-The.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\010-A-solar-radiant-heating-apparatus-for-measuring-the-thermal_2016_Applied-The",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 64.71,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\010-A-solar-radiant-heating-apparatus-for-measuring-the-thermal_2016_Applied-The\nbody_chars=25244 references=31 tables=0\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T02:36:54"
+}

@@ -1,0 +1,45 @@
+Fig. 1. The architecture of DNN.
+
+Fig. 2. DNN model for aerodynamic modeling.
+
+Fig. 3. Procedure of the pre-training and fine-tuning.
+
+Fig. 4. The flowchart of the DNN-TL method.
+
+Fig. 5. The configuration of the canard dual-spin projectile.
+
+Fig. 6. Coordinate systems of the projectile.
+
+Fig. 7. Flowchart of the coupled CFD/RBD method.
+
+Fig. 8. Variation in the error of pitching moment with respect to m and n.
+
+Fig. 9. Variation in the prediction error of lateral force with respect to the number of neurons.
+
+Fig. 10. Comparison between the predicted and high-fidelity values for the validation case.
+
+Fig. 10. (continued).
+
+Fig. 11. Comparison of the δe by different methods for the validation case.
+
+Fig. 12. Comparison of prediction results of different methods and high-fidelity results for the interpolation prediction case.
+
+Fig. 12. (continued).
+
+Fig. 13. Comparison of δe by different methods for the interpolation predic- tion case.
+
+Fig. 14. Comparison of prediction results of different methods and high-fidelity results for the extrapolation prediction case.
+
+Fig. 14. (continued).
+
+Fig. 15. Comparison of δe by different methods for the extrapolation predic- tion case.
+
+Fig. 16. Flowchart of aerodynamic model-driven trajectory simulation.
+
+Fig. 17. Flight simulation results for the interpolation prediction case.
+
+Fig. 18. Flight simulation results for the extrapolation prediction case.
+
+Fig. 13. Comparison of $\delta _ { e }$ by different methods for the interpolation prediction case.
+
+Fig. 15. Comparison of $\delta _ { e }$ by different methods for the extrapolation prediction case.

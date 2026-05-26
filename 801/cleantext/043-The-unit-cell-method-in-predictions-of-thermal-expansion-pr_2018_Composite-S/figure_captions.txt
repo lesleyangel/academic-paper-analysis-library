@@ -1,0 +1,47 @@
+Fig. 2. Displacement fields in translational symmetric structures.
+
+Fig. 3. Reflectional symmetric structure and displacement fields.
+
+Fig. 4. 180° Rotational symmetric structure and displacement fields.
+
+Fig. 5. Temperature and displacement distributions.
+
+Fig. 6. Unit cells of UD composite.
+
+Fig. 7. Boundaries of unit cells of UD composite.
+
+Fig. 8. Symmetries and unit cells of plain woven composites.
+
+Fig. 9. All the textiles are shown in a 2D top view, while for unit cells both 2D and 3D schematics are displayed. In this work, two unit cells of different size are formulated. First, the parallelogram unit cell UC1 is formulated based on the translational symmetries along x′-, y′- and z- axis, and then a smaller parallelogram unit cells UC2 is formulated based on 180° rotational symmetry about axis Lz (white point). It also should be noted that the rectangular unit cells of satin woven compo- sites are more popular in previous researches [39–41]. Such unit cell has larger size, while more structured formulation and simpler BCs in comparison with that in this paper. As shown in Fig. 9, the unit cell for each HS textile has similar configuration, thus the geometric parameters can be summarized in a unified form. The geometric model of UC1 for 4HS is shown as an in- stance in Fig. 10, where S is the distance between two adjacent fiber bundles and W is the width of fiber yarns. The schematic of geometric parameters is displayed in the upper right diagram of Fig. 10, where a and b are the width and length of the unit cell along x′- and y′-axis, respectively, and α and β are the angles that x′- and y′-axis relative to x- axis, respectively. Therefore, UC1 has a dimension of a × b × h, and UC2 has a b/2 length in x′-direction and the same other parameters with UC1. The geometric parameters a, b, α and β for different HS satin woven composites can be calculated by S and are listed in Table 5 [22]. In addition, the schematic of boundary planes of UC1 and UC2 are shown in the lower part of Fig. 10, and the BCs required will be derived for each boundary separately.
+
+Fig. 9. Multi-harness satin weave textiles and unit cells.
+
+Fig. 10. Geometric parameters and boundaries of unit cells.
+
+Fig. 12. Meshed models.
+
+Fig. 11. The application of boundary conditions.
+
+Fig. 13. Coordinate systems involved in the calculation.
+
+Fig. 14. Displacement and stress fields of UD composite.
+
+Fig. 15. Transverse deformations after thermal expansion (UD).
+
+Fig. 16. Displacement fields of plain woven composite.
+
+Fig. 17. Transverse deformations after thermal expansion (plain woven).
+
+Fig. 18. Displacement fields of multi-harness satin woven composite.
+
+Fig. 19. z-displacement fields of z = h plane (4HS satin).
+
+Fig. 20. Transverse deformations after thermal expansion (4HS satin).
+
+Fig. 21. Another formulation of UC1 for UD and plain woven composite.
+
+Fig. 22. Non-uniform normal displacement fields on boundaries of plain woven composites.
+
+Fig. 1. Translational symmetric structure.
+
+Fig. 9. All the textiles are shown in a 2D top view, while for unit cells both 2D and 3D schematics are displayed. In this work, two unit cells of different size are formulated. First, the parallelogram unit cell UC1 is formulated based on the translational symmetries along $x ^ { \prime } , y ^ { \prime } -$ and zaxis, and then a smaller parallelogram unit cells UC2 is formulated based on 180° rotational symmetry about axis $L _ { z }$ (white point). It also should be noted that the rectangular unit cells of satin woven composites are more popular in previous researches [39–41]. Such unit cell has larger size, while more structured formulation and simpler BCs in comparison with that in this paper.

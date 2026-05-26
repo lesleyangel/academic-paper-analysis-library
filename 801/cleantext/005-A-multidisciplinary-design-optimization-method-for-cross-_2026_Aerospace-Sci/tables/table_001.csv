@@ -1,0 +1,36 @@
+Algorithm 1 Distributed-centralized ALC method for solving problems.
+Aim: To obtain an optimal solution to the problem
+"1: Provide n, and the functions $f ( { \bf x } ) ~ , ~ g _ { i } ( { \bf x } ) ~ \mathrm { ~ \bar { ~ } s ~ }$ and $h _ { j } ( \mathbf { x } ) \quad \mathbf { \ "" { s } }$ of the feasible set"
+"$\chi = \left\{ \mathbf { x } \in \mathbf { R } ^ { n } : g _ { i } \left( \mathbf { x } \right) \leq 0 , h _ { j } \left( \mathbf { x } \right) = 0 , i = 1 , 2 , \cdots , p , j = 1 , 2 , \cdots , q \right\}$"
+"2: Decompose the problem into t subproblems, and list the objective functions $f _ { t } ( \mathbf { x } )$ and constraint"
+"functions ${ \bf g } _ { t } ( { \bf x } ) , { \bf h } _ { t } ( { \bf x } )$ of each subproblem separately."
+"3:Analyze the number of coupling variables between t subproblems, choose the place m with the rela"
+"tive maximum number of couplings as the dividing point, and take the upper part as the master prob"
+lems according to (21) and the lower part as the subproblems according to $( \hat { 2 } 2 )$
+"4: Provide the initial value $\mathbf { x } _ { 0 } = ( x _ { 1 0 } , x _ { 2 0 } . . . . x _ { n 0 } )$ of the t subproblems."
+5:Provide the consistency constraint convergence condition $\varepsilon _ { \mathrm { 1 } } > 0$ for the inner loop and the conver
+gence condition $\varepsilon _ { 2 } > 0$ of the objective function for the outer loop
+"6: Choose parameters $\mathbf { v } , \mathbf { w } , \gamma , \beta , \mathbf { a } , \beta _ { 1 } , \beta _ { 2 }$ as the initial parameter inputs for the iteration"
+7:while the convergence ccuracy of the objiective function of the problee $> \varepsilon _ { 2 }$ do
+8:
+while the convergence accuracy of the objective function of the master problems $> \varepsilon _ { 2 }$ do
+9: Solve master problems in parallel
+10: while the consistency constraint convergence accuracy of the master problems $> \mathcal { E } _ { 1 }$ do
+11:
+"12: Fix $\mathbf { v } _ { 2 } , \mathbf { w } _ { 2 }$ , change $\mathbf { x } _ { 0 } = ( x _ { 1 0 } , x _ { 2 0 } . . . . x _ { n 0 } )$"
+13: Execute step 9
+14: end while
+"15: Update $\mathbf { v } _ { 2 } , \mathbf { w } _ { 2 }$ according to (24) and (25)"
+16: Execute the steps 9-13
+17: end while
+18: Solve subproblems in parallel
+while the consistency constraint convergence accuracy of the subproblems $> \mathcal { E } _ { 1 }$ do
+19:
+"Fix $\mathbf { v } _ { 1 } , \mathbf { w } _ { 1 }$ and the coupling variables transmitted by the master problems, and change the"
+20: other variables
+21: Execute step 17
+22: end while
+"23: Update $\mathbf { v } _ { 1 } , \mathbf { w } _ { 1 }$ according to $( 2 3 )$"
+24: Execute the steps 8-21
+25: end while
+return x as the optimal solution to the whole problem

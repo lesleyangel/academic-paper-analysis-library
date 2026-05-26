@@ -1,0 +1,93 @@
+[1] W. Xiong, C. Zhu, D. Guo, C. Hou, Z. Yang, Z. Xu, L. Qiu, H. Yang, K. Li, Y. Huang, Bio-inspired, intelligent flexible sensing skin for multifunctional flying perception, Nano Energy 90 (2021) 106550, https://doi.org/10.1016/j.nanoen.2021.106550.
+
+[2] Y. Huang, C. Zhu, W. Xiong, Y. Wang, Y. Jiang, L. Qiu, D. Guo, C. Hou, S. Jiang, Z. Yang, B. Wang, L. Wang, Z. Yin, Flexible smart sensing skin for “fly-by-feel” morphing aircraft, Sci. China Technol. Sci. 65 (1) (2022) 1–29, https://doi.org/ 10.1007/s11431-020-1793-0.
+
+[3] M.N. Mowla, D. Asadi, T. Durhasan, J.R. Jafari, M. Amoozgar, Recent advancements in morphing applications: architecture, artificial intelligence integration, challenges, and future trends-a comprehensive survey, Aerosp. Sci. Technol. 161 (2025) 110102, https://doi.org/10.1016/j.ast.2025.110102.
+
+[4] P. Dubois, T. Gomez, L. Planckaert, L. Perret, Machine learning for fluid flow reconstruction from limited measurements, J. Comput. Phys. 448 (2022) 110733, https://doi.org/10.1016/j.jcp.2021.110733.
+
+[5] J.E. Santos, Z.R. Fox, A. Mohan, D.O. Malley, H. Viswanathan, N. Lubbers, Development of the Senseiver for efficient field reconstruction from sparse observations, Nat. Mach. Intell. 5 (2023) 1317–1325, https://doi.org/10.1038/ s42256-023-00746-x.
+
+[6] D.L. Donoho, Compressed sensing, IEEE Trans. Inf. Theory 52 (4) (2006) 1289–1306, https://doi.org/10.1109/TIT.2006.871582.
+
+[7] L. Mathelin, K. Kasper, H. Abou Kandil, Observable dictionary learning for high‑dimensional statistical inference, Arch. Comput. Methods Eng. 25 (2018) 103–120, https://doi.org/10.1007/s11831-017-9219-2.
+
+[8] J.L. Callaham, K. Maeda, S.L. Brunton, Robust flow reconstruction from limited measurements via sparse representation, Phys. Rev. Fluids 4 (2019) 103907, https://doi.org/10.1103/PhysRevFluids.4.103907.
+
+[9] Z. Bai, T. Wimalajeewa, Z. Berger, G. Wang, M. Glauser, P.K. Varshney, Low- dimensional approach for reconstruction of airfoil data via compressive sensing, AIAA J. 53 (4) (2015) 920–933, https://doi.org/10.2514/1.J053287.
+
+[10] Y. Sha, Y. Xu, Q. Yang, Y. Wei, C. Wang, Research on pressure reconstruction of cavitation hydrofoil surface based on compressed sensing, Ocean Eng. 260 (2022) 112036, https://doi.org/10.1016/j.oceaneng.2022.112036.
+
+[11] Y. Sha, Y. Xu, Y. Wei, C. Wang, Prediction of pressure fields on cavitation hydrofoil based on improved compressed sensing technology, Phys. Fluids 36 (2024) 013321, https://doi.org/10.1063/5.0189088.
+
+[12] S.L. Brunton, B.R. Noack, P. Koumoutsakos, Machine learning for fluid mechanics, Annu. Rev. Fluid Mech. 52 (2020) 477–508, https://doi.org/10.1146/annurev- fluid-010719-060214.
+
+[13] Y. Li, J. Chang, C. Kong, W. Bao, Recent progress of machine learning in flow modeling and active flow control, Chin. J. Aeronaut. 35 (4) (2022) 14–44, https:// doi.org/10.1016/j.cja.2021.07.027.
+
+[14] X. Jia, C. Gong, W. Ji, C. Li, An accuracy-enhanced transonic flow prediction method fusing deep learning and a reduced-order model, Phys. Fluids 36 (2024) 056101, https://doi.org/10.1063/5.0204152.
+
+[15] K. Fukami, R. Maulik, N. Ramachandra, K. Fukagata, K. Taira, Global field reconstruction from sparse sensors with Voronoi tessellation-assisted deep learning, Nat. Mach. Intell. 3 (11) (2021) 945–951, https://doi.org/10.1038/ s42256-021-00402-2.
+
+[16] W. Zhu, Y. Wu, Z. Cao, Y. Zhang, F. Zhou, J. Yao, Real-time reconstruction of 3D transient non-uniform temperature field for thermal protection system based on machine learning, Aerosp. Sci. Technol. 151 (2024) 109241, https://doi.org/ 10.1016/j.ast.2024.109241.
+
+[17] S. Xu, Z. Sun, R. Huang, D. Guo, G. Yang, S. Ju, A practical approach to flow field reconstruction with sparse or incomplete data through physics informed neural network, Acta Mech. Sin. 39 (2023) 322302, https://doi.org/10.1007/s10409- 022-22302-x.
+
+[18] J. Peng, Z. Wang, X. Rong, M. Mei, M. Wang, Y. He, W. Wu, Rapid and sparse reconstruction of high-speed steady-state and transient compressible flow fields using physics- informed graph neural networks, Phys. Fluids 36 (2024) 046113, https://doi.org/10.1063/5.0202789.
+
+[19] E. Dowell, Reduced-order modeling: a personal journey, Nonlinear Dyn. 111 (2023) 9699–9720, https://doi.org/10.1007/s11071-023-08398-7.
+
+[20] L. Wang, X. Mao, G. Ma, Y. Liu, L. Gao, Investigation of unsteady characteristics in a counter-rotating compressor based on unsteady numerical simulation and mode decomposition methods, Aerosp. Sci. Technol. 158 (2025) 109848, https://doi. org/10.1016/j.ast.2024.109848.
+
+[21] J. Kudela, R. Matousek, Recent advances and applications of surrogate models for finite element method computations: a review, Appl. Soft Comput. 26 (2022) 13709–13733, https://doi.org/10.1007/s00500-022-07362-8.
+
+[22] J. Park, W. Lee, K.Y. Huh, Model order reduction by radial basis function network for sparse reconstruction of an industrial natural gas boiler, Case Stud. Therm. Eng. 37 (2022) 102288, https://doi.org/10.1016/j.csite.2022.102288.
+
+[23] Q. Zhao, J. Huang, Y. Guo, Y. Pan, J. Ji, Y. Huang, Machine learning-assisted sparse observation assimilation for real-time aerodynamic field perception, Sci. China Technol. Sci. 67 (5) (2024) 1458–1469, https://doi.org/10.1007/s11431-023- 2622-x.
+
+[24] E. Rodríguez-L´opez, D.W. Carter, B. Ganapathisubramani, Dynamic mode decomposition-based reconstructions for fluid–structure interactions: an application to membrane wings, J. Fluids Struct. 104 (2021) 103315, https://doi. org/10.1016/j.jfluidstructs.2021.103315.
+
+[25] X. Zhang, T. Ji, F. Xie, H. Zheng, Y. Zheng, Unsteady flow prediction from sparse measurements by compressed sensing reduced order modeling, Comput. Methods Appl. Mech. Eng. 393 (2022) 114800, https://doi.org/10.1016/j. cma.2022.114800.
+
+[26] J. Wu, D. Xiao, M. Luo, Deep-learning assisted reduced order model for high- dimensional flow prediction from sparse data, Phys. Fluids 35 (2023) 103115, https://doi.org/10.1063/5.0166114.
+
+[27] Z. Zhong, X. Hua, Z. Zhai, M. Ma, A novel tensor-based modal decomposition method for reduced order modeling and optimal sparse sensor placement, Aerosp. Sci. Technol. 155 (2024) 109530, https://doi.org/10.1016/j.ast.2024.109530.
+
+[28] L. Wang, B. Song, Z. Sun, X. Yang, Review on ultra-lightweight flapping-wing nano air vehicles: artificial muscles, flight control mechanism, and biomimetic wings, Chin. J. Aeronaut. 36 (6) (2023) 63–91, https://doi.org/10.1016/j. cja.2023.03.031.
+
+[29] W. Shen, J. Peng, R. Ma, J. Wu, J. Li, Z. Liu, J. Leng, X. Yan, M. Qi, Sunlight- powered sustained flight of an ultralight micro aerial vehicle, Nature 631 (2024) 537–543, https://doi.org/10.1038/s41586-024-07609-4.
+
+[30] S. Verma, C. Papadimitriou, N. Lüthen, G. Arampatzis, P. Koumoutsakos, Optimal sensor placement for artificial swimmers, J. Fluid Mech. 884 (2020) A24, https:// doi.org/10.1017/jfm.2019.940.
+
+[31] R. Inoba, K. Uchida, Y. Iwasaki, T. Nagata, Y. Ozawa, Y. Saito, T. Nonomura, K. Asai, Optimization of sparse sensor placement for estimation of wind direction and surface pressure distribution using time-averaged pressure-sensitive paint data on automobile model, J. Wind Eng. Ind. Aerodyn. 227 (2022) 105043, https://doi. org/10.1016/j.jweia.2022.105043.
+
+[32] H. Jia, C. Hu, H. Kikumoto, Effects of sensor configuration optimization on airflow estimation in urban environment: a case study with a building group model, Sustain. Cities Soc. 98 (2023) 104840, https://doi.org/10.1016/j. scs.2023.104840.
+
+[33] Y. Jin, H. Wang, T. Chugh, D. Guo, Data-driven evolutionary optimization: an overview and case studies, IEEE Trans. Evol. Comput. 23 (2019) 442–458, https:// doi.org/10.1109/TEVC.2018.2869001.
+
+[34] Z. Zhang, X. Gao, Q. Chen, Y. Yuan, A novel thermal turbulence reconstruction method using proper orthogonal decomposition and compressed sensing coupled based on improved particle swarm optimization for sensor arrangement, Phys. Fluids 36 (2024) 055124, https://doi.org/10.1063/5.0203159.
+
+[35] Z. Xu, Y. Guo, J.H. Saleh, Multi-objective optimization for sensor placement: an integrated combinatorial approach with reduced order model and gaussian process, Measurement 187 (2022) 110370, https://doi.org/10.1016/j. measurement.2021.110370.
+
+[36] Y. Hu, Z. Sun, L. Cao, Y. Zhang, P. Pan, Optimization configuration of gas path sensors using a hybrid method based on tabu search artificial bee colony and improved genetic algorithm in turbofan engine, Aerosp. Sci. Technol. 112 (2021) 106642, https://doi.org/10.1016/j.ast.2021.106642.
+
+[37] A. Barklage, M. Stradtner, P. Bekemeyer, Sensor placement for optimal aerodynamic data fusion, Aerosp. Sci. Technol. 155 (2024) 109598, https://doi. org/10.1016/j.ast.2024.109598.
+
+[38] F.M.S. Mello, G.F. Gomes, Sensor placement optimization for composite aircraft structures: a multi-objective Kriging-based approach, Compos. Struct. 353 (2025) 118723, https://doi.org/10.1016/j.compstruct.2024.118723.
+
+[39] X. Li, F. Dunkin, J. Dezert, Multi-source information fusion: progress and future, Chin. J. Aeronaut. 37 (1) (2024) 24–58, https://doi.org/10.1016/j. cja.2023.12.009.
+
+[40] H. An, B.D. Youn, H.S. Kim, A methodology for sensor number and placement optimization for vibration-based damage detection of composite structures under model uncertainty, Compos. Struct. 279 (2022) 114863, https://doi.org/10.1016/ j.compstruct.2021.114863.
+
+[41] X. Jia, C. Gong, W. Ji, C. Li, Flow sensing method for fluid-structure interaction systems via multilayer proper orthogonal decomposition, J. Fluids Struct. 124 (2024) 104023, https://doi.org/10.1016/j.jfluidstructs.2023.104023.
+
+[42] Z. Majdisova, V. Skala, Radial basis function approximations: comparison and applications, Appl. Math. Model. 51 (2017) 728–743, https://doi.org/10.1016/j. apm.2017.07.033.
+
+[43] M.F. Ahmad, N.A.M. Isa, W.H. Lim, K.M. Ang, Differential evolution: a recent review based on state-of-the-art works, Alex. Eng. J. 61 (2022) 3831–3872, https://doi.org/10.1016/j.aej.2021.09.013.
+
+[44] V. Puri, A. Prakash, L.B. Kara, Y.J. Zhang, SNF-ROM: projection-based nonlinear reduced order modeling with smooth neural fields, J. Comput. Phys. 532 (2025) 113957, https://doi.org/10.1016/j.jcp.2025.113957.
+
+[45] Z. Liu, R. Han, M. Zhang, Y. Zhang, H. Zhou, G. Wang, G. Chen, An enhanced hybrid deep neural network reduced-order model for transonic buffet flow prediction, Aerosp. Sci. Technol. 126 (2022) 107636, https://doi.org/10.1016/j. ast.2022.107636.
+
+[46] D. Li, Y. Wang, J. Wang, C. Wang, Y. Duan, Recent advances in sensor fault diagnosis: a review, Sens. Actuators A-Phys. 309 (2020) 111990, https://doi.org/ 10.1016/j.sna.2020.111990.
+
+[47] T.J. Bukowski, R.M. Rennie, S. Gordeyev, Sparse sensing and surface pressure field reconstruction for flow over a hemisphere, in: Proceedings of the AIAA SCITECH 2025 Forum, 2025, https://doi.org/10.2514/6.2025-1884.

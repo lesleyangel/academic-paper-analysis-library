@@ -1,0 +1,29 @@
+Fig. 1. The heat-force integrated path.
+
+Fig. 2. The fully decomposed path variable hierarchies.
+
+Fig. 3. Genetic selection, crossover and mutation operators.
+
+Fig. 4. The multi-hierarchy optimization process.
+
+Fig. 5. Ground path and mesh.
+
+Fig. 6. Optimization process of different population strategies (force-only paths, mass problem).
+
+Fig. 7. Optimization process of different optimization models (force-only paths, mass problem).
+
+Fig. 8. Optimization process of the integrated path (mass problem).
+
+Fig. 9. The temperature, stress and displacement fields of the optimal individuals (integrated paths, mass problem).
+
+Fig. 10. The optimal values of each variable (integrated paths, mass problem).
+
+Fig. 11. Optimization process and deviations of different optimization models (force-only paths, aeroelastic problem).
+
+Fig. 12. Optimization process of the integrated path (aeroelastic problem).
+
+Fig. 13. The temperature, stress and displacement fields of the optimal individuals (integrated paths, aeroelastic problem).
+
+Fig. 14. The optimal values of each variable (integrated paths, aeroelastic problem).
+
+Fig. 15. The path maximum temperature along with the thermal insulation layer mass.

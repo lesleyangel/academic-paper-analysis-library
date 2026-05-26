@@ -1,0 +1,35 @@
+Fig. 1. The cross-domain vehicle mission profile.
+
+Fig. 2. Parameterized mesh for initial vehicle structure.
+
+Fig. 3. The design structure matrix of the cross-domain vehicle.
+
+Fig. 4. The distributed-centralized ALC method solution model.
+
+Fig. 5. The distributed-centralized ALC method solving process.
+
+Fig. 6. The decomposition structure of the mathematical example.
+
+Fig. 7. Changes in the objective value and iteration count for different ALC methods when the consistency constraint convergence condition is taken as 1e-2,1e-3,1e- 4,1e-5.
+
+Fig. 8. Variation of computational time for different ALC methods when the consistency constraint convergence condition is taken as 1e-2,1e-3,1e-4,1e-5.
+
+Fig. 9. Consistency-constrained convergence case.
+
+Fig. 10. The sensitivity analysis results for each parameter.
+
+Fig. 11. The comprehensive sensitivity rankings for each CST parameter.
+
+Fig. 12. MDO process based on the distributed-centralized ALC method.
+
+Fig. 13. Optimization iteration history for the optimization objective.
+
+Fig. 14. CAD changes before and after optimization.
+
+Fig. 15. Stress and deformation distribution of optimized aircraft.
+
+Fig. 16. The vehicle re-entry trajectories.
+
+Fig. 7. Changes in the objective value and iteration count for different ALC methods when the consistency constraint convergence condition is taken as 1e-2,1e-3,1e-4,1e-5.
+
+Fig. 8. Variation of computational time for different ALC methods when the consistency constraint convergence condition is taken as $\scriptstyle 1 \mathrm { e } \mathrm { - } 2 , 1 \mathrm { e } \mathrm { - } 3 , 1 \mathrm { e } \mathrm { - } 4 , 1 \mathrm { e } \mathrm { - } 5 .$

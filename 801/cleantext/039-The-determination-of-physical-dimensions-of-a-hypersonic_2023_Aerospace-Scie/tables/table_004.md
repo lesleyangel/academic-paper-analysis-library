@@ -1,0 +1,11 @@
+| Cases | Boundaries | Momentum conditions | Thermal conditions |
+| --- | --- | --- | --- |
+| Forced vibration/ | Inlet | $\mathrm { M a } { = } 6 , P { = } 2 9 7 1 \ P a$ | T=300K |
+| Fluid-structural | Outlet | P=0 Pa | T=300K |
+| interaction | Wall | No slip, stationary | $\scriptstyle q = 0$ |
+| Forced vibration | CI Wall | $y = A \sin \left( 2 \pi \omega t \right) \cos \left( f \left( \pi z \right) \right) \sin \left( f \left( \pi x / \lambda \right) \right)$ | $\scriptstyle q = 0$ |
+|  | CIl Wall | $y = A \sin \left( 2 \pi \omega t \right) \cos \left( f \left( \pi z \right) \right) \sin \left( f \left( \pi x / \lambda \right) \right)$ | $\scriptstyle q = 0$ |
+|  | CIII Wall | $y = A \sin \left( 2 \pi \omega t \right) \cos \left( f \left( \pi z \right) \right) \sin \left( f \left( \pi x / \lambda \right) \right)$ | q=0 |
+| Fluid-structural | CI internal planes | Nodes on rivets are fi xed | q=0 |
+| interaction | CIl internal planes | Nodes on rivets are fixed | q=0 |
+|  | CII internal planes | Nodes on rivets are fixed | $q { = } 0$ |

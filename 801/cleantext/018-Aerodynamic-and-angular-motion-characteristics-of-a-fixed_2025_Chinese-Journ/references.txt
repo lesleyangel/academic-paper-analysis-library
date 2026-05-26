@@ -1,0 +1,75 @@
+1. Wang Y, Yu JY, Wang XM, et al. A guidance and control design with reduced information for a dual-spin stabilized projectile. Def Technol 2024;33:494–505.
+
+3. Karimi J, Rajabi MR, Sadati SH, et al. Multidisciplinary design optimization of a dual-spin guided vehicle. Def Technol 2024;37:133–48.
+
+4. Yin JT, Jiang SJ, Hu YW, et al. Aerodynamic characteristics and dynamic stability of coning motion of spinning finned projectile in supersonic conditions. Aerospace 2025;12(3):225.
+
+5. Zhu Z, Shi L, He C, et al. Construction and kinematic performance analysis of a suspension support for wind tunnel tests of spinning projectiles based on wire-driven parallel robot with kinematic redundancy. Chin J Aeronaut 2024;37(12):404–15.
+
+6. Wang G, Zhang RT, Lin HZ, et al. Study on influence of canard rotation speed on following stability of dual-spin projectile. Aero Weapon 2024;31(2):71–8 [Chinese].
+
+7. Chen SS, Cai FJ, Xiang XH, et al. A low-diffusion robust flux splitting scheme towards wide-ranging Mach number flows. Chin J Aeronaut 2021;34(5):628–41.
+
+8. Askary F, Soltani MR. Effects of Mach numbers on Magnus induced surface pressure. Chin J Aeronaut 2020;33(12):3058–72.
+
+9. Zhao XX, Shi JG, Wang ZY, et al. Nonlinear aerodynamic modeling and analysis on body of fixed canard dual-spin projectiles. Proceedings of the 2nd international conference on mechanical system dynamics. Singapore: Springer Nature Singapore, 2024:3759–74.
+
+10. Shen Q, Qiu LL, Pu WY, et al. Aerodynamic characteristics and characterization of the double spin structure of two-dimensional correction high-spin projectile. Trans Beijing Inst Technol 2024;44(4):359–68 [Chinese].
+
+11. Pokela R, Kumar R, Vasile JD, et al. Aerodynamic characterization of a generic high-speed projectile configuration. J Spacecr Rockets 2024;61(3):741–56.
+
+12. Li JM, He GL, Guo HY. A study on the aerodynamic characteristics for a two-dimensional trajectory correction fuze. Appl Mech Mater 2014;703:370–5.
+
+13. Jaiswal R, Kothari M, Abhishek A. Design and aerodynamic characterization of canard guided fuze for dual-spin artillery projectiles. AIAA SCITECH 2024 forum. Reston: AIAA; 2024.
+
+14. Liu XD, Wu XS, Yin JT. Aerodynamic characteristics of a dual-spin projectile with canards. Proc Inst Mech Eng Part G J Aerosp Eng 2019;233(12):4541–53.
+
+15. Yin JT, Lei JM, Wu XS, et al. Aerodynamic characteristics of a spinning projectile with elastic deformation. Aerosp Sci Technol 2016;51:181–91.
+
+16. Ji W, Gong CL, Jia XY, et al. Unsteady aerodynamic modeling and flight trajectory simulation of dual-spin projectile based on DNN and transfer-learning. Aerosp Sci Technol 2024;155:109711.
+
+17. Raza A. Dynamic stability analysis of spin-stabilized projectile. Proceedings of 2024 21st international bhurban conference on applied sciences and technology (IBCAST). New York: IEEE; 2024.
+
+18. Yan XY, Yang SX, Zhang C. Coning motion of spinning missiles induced by the rate loop. J Guid Control Dyn 2010;33(5):1490–9.
+
+19. Hu X, Yang SX. Coning motion instability of spinning missiles induced by the delay of strap-down seeker. Chin J Aeronaut 2020;33(12):3360–8.
+
+20. Zhang LP, Chang XH, Ma R, et al. A CFD-based numerical virtual flight simulator and its application in control law design of a maneuverable missile model. Chin J Aeronaut 2019;32(12):2577–91.
+
+21. Shi K, Liu MB. Trajectory analysis of a dual-spin- stabilized projectile with fixed-canards for the precision guidance kit. Proc Inst Mech Eng Part G J Aerosp Eng 2022;236(13):2620–32.
+
+22. Wang C, Ding LB, Feng Y, et al. Research on angular motion characteristics and stability of trajectory- corrected rocket projectile with isolated rotating tail rudder. Math Probl Eng 2023;2023(1):5880706.
+
+23. Lu TY, Wu XS, Lei JM, et al. Numerical study on the aerodynamic coupling effects of spinning and coning motions for a finned vehicle. Aerosp Sci Technol 2018;77:399–408.
+
+24. Sahu J, Burchett B, Gruenwald B. Advanced CFD- based coupled computational approach for prediction of complex flight behaviors. Eleventh international conference on computational fluid dynamics (ICCFD11). 2022. p.11–5.
+
+25. Saini D, Shafei B. Flight characteristics of rod-shaped windborne debris objects in atmospheric boundary layer winds. J Wind Eng Ind Aerodyn 2022;227:105073.
+
+26. Burchett BT, Sahu J, Gruenwald BC. Simulating extreme maneuvers and flight conditions using coupled rigid body- and computational fluid-dynamics. AIAA SCITECH 2025 forum. Reston: AIAA; 2025.
+
+27. Ernst Z, Drosendahl M, Robertson BE, et al. Development of a trajectory-centric CFD-RBD framework for advanced multidisciplinary/multiphysics simulation. AIAA SCITECH 2022 forum. Reston: AIAA; 2022.
+
+28. Yan L, Chang XH, Wang NH, et al. Numerical virtual flight investigation for longitudinal maneuver of a generic fighter based on machine learning. Phys Fluids 2024;36(7):077131.
+
+29. Yan L, Chang XH, Wang NH, et al. Aerodynamic identification and control law design of a missile using machine learning. AIAA J 2023;61(7):2998–3018.
+
+30. Silton SI, Sahu J, Fresconi F. Comparison of uncoupled and coupled CFD-based simulation techniques for the prediction of the aerodynamic behavior of a complex projectile. 34th AIAA applied aerodynamics conference. Reston: AIAA; 2016.
+
+31. Liu Y, Wang G, Ye ZY. Dynamic mode extrapolation to improve the efficiency of dual time stepping method. J Comput Phys 2018;352:190–212.
+
+32. Wang G, Zeng Z, Suo Q. Trajectory simulation of a spinning projectile based on variable step size CFD/RBD method. AIAA atmospheric flight mechanics conference. Reston: AIAA; 2015.
+
+33. Pang C, Gao ZH, Yang H, et al. An efficient grid assembling method in unsteady dynamic motion simulation using overset grid. Aerosp Sci Technol 2021;110:106450.
+
+34. Wang G, Ye ZY. Mixed element type unstructured grid generation and its application to viscous flow simulation. Proceedings of the 24th international congress of aeronautical sciences. 2004.
+
+35. Wang G, Jiang YW, Ye ZY. An improved LU-SGS implicit scheme for high Reynolds number flow computations on hybrid unstructured mesh. Chin J Aeronaut 2012;25(1):33–41.
+
+36. Seve F, Theodoulis S, Wernert P, et al. Flight dynamics modeling of dual-spin guided projectiles. IEEE Trans Aerosp Electron Syst 2017;53(4):1625–41.
+
+37. Jin CH, Wang G, He R, et al. Numerical simulation of discus to evaluate the trajectory and flight dynamic characteristics. AIAA aviation 2020 forum. Reston: AIAA; 2020.
+
+38. Lin TY, Zhang TY, Wang G. Spectrum analysis of aerodynamic interference from canard’s shedding vortex on a dual-spin projectile using improved delayed detached eddy simulation. Phys Fluids 2025;37(8):087226.
+
+39. Sahu J. Time-accurate numerical prediction of free- flight aerodynamics of a finned projectile. J Spacecr Rockets 2008;45(5):946–54. Declaration of Interest Statement ☒ The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. ☐ The author is an Editorial Board Member/Editor-in-Chief/Associate Editor/Guest Editor for this journal and was not involved in the editorial review or the decision to publish this article. ☐ The authors declare the following financial interests/personal relationships which may be considered as potential competing interests:

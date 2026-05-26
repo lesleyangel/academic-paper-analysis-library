@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-structural-damage-identification-model-with-finite-t_2025_Aerospace-Scienc.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\012-A-structural-damage-identification-model-with-finite-t_2025_Aerospace-Scienc",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-structural-damage-identification-model-with-finite-t_2025_Aerospace-Scienc.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\012-A-structural-damage-identification-model-with-finite-t_2025_Aerospace-Scienc",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 174.86,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\012-A-structural-damage-identification-model-with-finite-t_2025_Aerospace-Scienc\nbody_chars=72625 references=44 tables=21\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T02:42:45"
+}

@@ -1,0 +1,907 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (43.99, 686.56, 293.2, 704.34)]] ⁎ Corresponding authors. E-mail addresses: 2293352167@qq.com (Y. Wang), shishengbo@nwpu.edu.cn (S. Shi)
+
+[confidence=0.92; source=equations; [page 3, bbox (321.27, 185.6, 409.74, 200.66)]] ∫ ∫ = ⎛
+
+[confidence=0.92; source=equations; [page 3, bbox (306.66, 215.47, 393.27, 234.9)]] = - E t p d C C C ( ( ) / ) y w
+
+[confidence=0.92; source=equations; [page 3, bbox (321.28, 244.98, 364.67, 259.18)]] = C
+
+[confidence=0.92; source=equations; [page 3, bbox (321.11, 274.52, 364.52, 288.72)]] = C
+
+[confidence=0.92; source=equations; [page 3, bbox (321.09, 310.02, 326.84, 318.0)]] =
+
+[confidence=0.92; source=equations; [page 3, bbox (306.59, 435.65, 392.52, 447.35)]] where, = + ′ + z z z z
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 450.31, 391.27, 467.12)]] when ⩽ < + z z l z z (2) 2 l u (2) (2)
+
+[confidence=0.92; source=equations; [page 3, bbox (319.07, 468.62, 447.96, 485.42)]] In addition, when ⩽ ⩽ + z z z z u 2 (2) l u (2) (2)
+
+[confidence=0.92; source=equations; [page 3, bbox (319.07, 505.07, 420.81, 521.89)]] And when ⩽ < + z z l z z (2) 2 l u (2) (2)
+
+[confidence=0.92; source=equations; [page 3, bbox (319.07, 543.24, 448.04, 556.91)]] And the shear modulus = + Gw E μ 22(1 ) w
+
+[confidence=0.92; source=equations; [page 3, bbox (37.35, 613.69, 288.65, 624.25)]] = T x y z T x z Δ ( , , ) Δ ( , ) r (2) (2) (2)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.66, 417.76, 557.66, 428.32)]] = E E T x z (Δ ( , )) w w r 1 (2) (9)
+
+[confidence=0.92; source=equations; [page 3, bbox (396.06, 433.58, 481.81, 450.38)]] when ⩽ ⩽ + z z z z u 2 (2) l u (2) (2)
+
+[confidence=0.92; source=equations; [page 3, bbox (482.17, 435.65, 557.72, 447.35)]] , and = -′ + z z z z
+
+[confidence=0.92; source=equations; [page 3, bbox (392.14, 453.4, 525.99, 467.08)]] . And the shear modulus = + Gw E μ 12(1 ) w
+
+[confidence=0.92; source=equations; [page 3, bbox (306.66, 489.19, 557.6, 499.76)]] = = E E T x z z (Δ ( , )) w w r u 2 (2) (2) (10)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.66, 525.64, 557.6, 536.71)]] = = E E T x z z (Δ ( , )) w w r l 2 (2) (2) (11)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.9, 702.41, 557.6, 714.35)]] = = = μ μ μ μ μ , , 0 xy w xz w yz (2) (2) (2) (12)
+
+[confidence=0.92; source=equations; [page 4, bbox (52.32, 143.18, 116.68, 154.59)]] ⎜ ⎟ = ⎡
+
+[confidence=0.92; source=equations; [page 4, bbox (60.69, 143.19, 218.83, 164.04)]] ⎣⎢ ⎛ ⎝ - ⎞ ⎠ = ⎤
+
+[confidence=0.92; source=equations; [page 4, bbox (52.32, 178.45, 116.66, 189.85)]] ⎜ ⎟ = ⎡
+
+[confidence=0.92; source=equations; [page 4, bbox (60.69, 178.45, 218.84, 199.3)]] ⎣⎢ ⎛ ⎝ - ⎞ ⎠ = ⎤
+
+[confidence=0.92; source=equations; [page 4, bbox (52.32, 226.14, 65.36, 245.37)]] = ⎡ ⎣⎢
+
+[confidence=0.92; source=equations; [page 4, bbox (322.2, 265.84, 370.88, 273.82)]] = -
+
+[confidence=0.92; source=equations; [page 4, bbox (52.32, 308.23, 65.36, 327.46)]] = ⎡ ⎣⎢
+
+[confidence=0.92; source=equations; [page 4, bbox (306.36, 321.1, 373.71, 341.67)]] = - + ζ h z z z h 2 k k
+
+[confidence=0.92; source=equations; [page 4, bbox (50.82, 408.88, 235.54, 416.86)]] = = + =
+
+[confidence=0.92; source=equations; [page 4, bbox (58.8, 423.13, 120.16, 431.11)]] + =
+
+[confidence=0.92; source=equations; [page 4, bbox (349.36, 529.96, 355.1, 537.95)]] =
+
+[confidence=0.92; source=equations; [page 4, bbox (349.36, 588.36, 355.1, 596.34)]] =
+
+[confidence=0.92; source=equations; [page 4, bbox (349.35, 60.28, 426.81, 68.26)]] = +
+
+[confidence=0.92; source=equations; [page 4, bbox (349.35, 90.76, 426.39, 98.74)]] = +
+
+[confidence=0.92; source=equations; [page 4, bbox (349.35, 121.24, 428.52, 129.23)]] = +
+
+[confidence=0.92; source=equations; [page 4, bbox (322.2, 245.07, 506.05, 253.05)]] = - = + = -
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 245.08, 531.55, 259.15)]] Ψ (1 )/2, Ψ (1 )/2, Ψ 2 ( 1), Ψ
+
+[confidence=0.92; source=equations; [page 4, bbox (349.36, 499.48, 426.82, 507.46)]] = +
+
+[confidence=0.92; source=equations; [page 4, bbox (349.36, 514.72, 426.4, 522.7)]] = +
+
+[confidence=0.92; source=equations; [page 4, bbox (349.36, 557.87, 426.82, 565.85)]] = +
+
+[confidence=0.92; source=equations; [page 4, bbox (349.36, 573.11, 426.4, 581.1)]] = +
+
+[confidence=0.57; needs_review; source=equations; [page 4, bbox (306.59, 650.37, 557.6, 679.26)]] The strain-displacement relations corresponding to Eqs. (20), (23) and (24) are given by: For the middle layer,
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 60.28, 170.85, 68.26)]] = + + +
+
+[confidence=0.92; source=equations; [page 5, bbox (306.36, 74.99, 517.71, 84.2)]] = σ σ σ σ σ σ σ [ ] xx yy zz yz xz xy
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 75.19, 169.89, 83.17)]] = + + +
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 88.93, 247.0, 101.98)]] = - + + - = +
+
+[confidence=0.92; source=equations; [page 5, bbox (306.42, 95.0, 510.75, 105.16)]] = ε ε ε ε γ γ γ [ ] xx yy zz yz xz xy
+
+[confidence=0.92; source=equations; [page 5, bbox (58.29, 112.21, 244.24, 125.26)]] + + + - + + -
+
+[confidence=0.92; source=equations; [page 5, bbox (306.42, 116.1, 513.63, 126.26)]] = ε ε ε ε γ γ γ [ ] xx yy zz yz xz xy
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 135.5, 256.75, 148.55)]] = + + + + - +
+
+[confidence=0.92; source=equations; [page 5, bbox (58.29, 159.95, 242.59, 167.93)]] + - = + + +
+
+[confidence=0.92; source=equations; [page 5, bbox (58.29, 175.82, 177.87, 183.8)]] + + + +
+
+[confidence=0.92; source=equations; [page 5, bbox (321.93, 189.32, 327.68, 197.3)]] =
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 210.06, 183.4, 218.04)]] = + = +
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 224.76, 188.68, 237.81)]] = + - = + -
+
+[confidence=0.92; source=equations; [page 5, bbox (306.59, 235.41, 458.8, 249.9)]] where = - = ∼ Q Q i j ( , 1,2,3) ij k ij k Q Q
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 249.21, 172.78, 257.19)]] = + + +
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 283.42, 183.45, 291.4)]] = + = +
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 298.12, 188.73, 311.18)]] = + - = + -
+
+[confidence=0.92; source=equations; [page 5, bbox (50.31, 322.67, 172.82, 330.65)]] = + + +
+
+[confidence=0.92; source=equations; [page 5, bbox (37.35, 407.66, 288.65, 418.53)]] = - σ Q ε ε ( ) k k k k 0 ( ) ( ) ( ) ( ) (28)
+
+[confidence=0.92; source=equations; [page 5, bbox (306.59, 435.37, 557.62, 457.19)]] Substituting Eq. (37) into Eq. (20), Eq. (23) and Eq. (24), uj k ( ) be- comes
+
+[confidence=0.92; source=equations; [page 5, bbox (306.23, 464.02, 557.6, 475.45)]] = u S d j k k j ( ) ( ) (38)
+
+[confidence=0.92; source=equations; [page 5, bbox (52.56, 506.68, 58.3, 514.66)]] =
+
+[confidence=0.92; source=equations; [page 5, bbox (308.79, 524.14, 314.53, 532.12)]] =
+
+[confidence=0.92; source=equations; [page 5, bbox (53.55, 574.3, 161.28, 589.73)]] = - = +
+
+[confidence=0.92; source=equations; [page 5, bbox (306.36, 583.14, 384.43, 601.46)]] = d d Nd N j i i j i e j e
+
+[confidence=0.92; source=equations; [page 5, bbox (315.27, 583.44, 366.61, 594.21)]] ∑ = =
+
+[confidence=0.92; source=equations; [page 5, bbox (53.55, 602.75, 242.95, 618.17)]] = - = + = -
+
+[confidence=0.92; source=equations; [page 5, bbox (37.08, 637.12, 235.12, 652.54)]] = + = = = Q
+
+[confidence=0.92; source=equations; [page 5, bbox (51.27, 688.25, 57.01, 696.23)]] =
+
+[confidence=0.92; source=equations; [page 5, bbox (206.7, 688.25, 212.44, 696.23)]] =
+
+[confidence=0.92; source=equations; [page 5, bbox (51.27, 725.48, 130.54, 733.46)]] = =
+
+[confidence=0.92; source=equations; [page 6, bbox (37.71, 104.47, 288.65, 115.84)]] = + K d f f q T j j e j j ( ) (43)
+
+[confidence=0.92; source=equations; [page 6, bbox (47.7, 143.34, 79.64, 156.25)]] ∫ ∑ =
+
+[confidence=0.92; source=equations; [page 6, bbox (51.18, 199.75, 83.1, 212.65)]] ∫ ∑ =
+
+[confidence=0.92; source=equations; [page 6, bbox (38.91, 200.69, 179.55, 219.01)]] = f S S S S p V [ , , , ] d qj k V k k k k T j k
+
+[confidence=0.92; source=equations; [page 6, bbox (47.85, 235.47, 53.59, 243.45)]] =
+
+[confidence=0.92; source=equations; [page 6, bbox (61.02, 246.61, 65.03, 252.19)]] =
+
+[confidence=0.92; source=equations; [page 6, bbox (47.85, 261.93, 53.59, 269.91)]] =
+
+[confidence=0.92; source=equations; [page 6, bbox (61.02, 273.07, 65.03, 278.65)]] =
+
+[confidence=0.92; source=equations; [page 6, bbox (37.47, 702.18, 288.65, 713.56)]] = ε x y ε x y ζ ( , ) ( , , ) xx w xx c (2) (2) (47)
+
+[confidence=0.92; source=equations; [page 6, bbox (306.6, 367.33, 391.58, 380.73)]] where, = + + y y c B h ζ
+
+[confidence=0.92; source=equations; [page 6, bbox (306.59, 382.24, 412.86, 395.63)]] in Fig. 3, and = - ′ + y y c B h ζ
+
+[confidence=0.92; source=equations; [page 6, bbox (334.89, 456.2, 444.58, 464.18)]] = = = +
+
+[confidence=0.92; source=equations; [page 6, bbox (334.89, 472.91, 412.05, 480.9)]] = +
+
+[confidence=0.92; source=equations; [page 6, bbox (306.54, 643.65, 345.55, 654.28)]] = κ θκ cos x w
+
+[confidence=0.92; source=equations; [page 6, bbox (316.02, 689.55, 385.13, 711.16)]] ⎜ ⎟ = ∂ ∂ = ∂ ∂ ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 7, bbox (317.22, 62.47, 493.2, 82.01)]] ⎜ ⎟ = ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 7, bbox (317.07, 145.8, 492.8, 165.33)]] ⎜ ⎟ = ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 7, bbox (320.46, 229.14, 502.4, 248.67)]] ⎜ ⎟ = ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 7, bbox (37.35, 295.22, 89.86, 309.86)]] = - + ζ z h
+
+[confidence=0.92; source=equations; [page 7, bbox (306.59, 314.95, 366.97, 330.42)]] where, = I d w t b d 12 w3
+
+[confidence=0.92; source=equations; [page 7, bbox (67.86, 329.83, 96.89, 341.92)]] = ⎡
+
+[confidence=0.92; source=equations; [page 7, bbox (376.69, 391.91, 408.51, 421.34)]] ⎫ ⎬⎭ = ⎡
+
+[confidence=0.92; source=equations; [page 7, bbox (330.45, 395.93, 365.9, 421.34)]] = ⎧ ⎨⎩
+
+[confidence=0.92; source=equations; [page 7, bbox (37.71, 455.09, 288.65, 463.87)]] = + - - M Hh V p y M ( ) 120 (52)
+
+[confidence=0.92; source=equations; [page 7, bbox (37.71, 473.2, 288.65, 481.98)]] = N H 1 (53)
+
+[confidence=0.92; source=equations; [page 7, bbox (36.96, 490.94, 288.65, 499.73)]] = T V 1 (54)
+
+[confidence=0.92; source=equations; [page 7, bbox (389.43, 496.36, 410.02, 522.85)]] ⎫ ⎬⎭ = ⎧ ⎨ ⎩
+
+[confidence=0.92; source=equations; [page 7, bbox (306.23, 559.0, 519.04, 579.96)]] ∂ = - + + - θ x y ζ v x y ζ
+
+[confidence=0.92; source=equations; [page 7, bbox (348.98, 559.08, 362.5, 573.87)]] = ∂
+
+[confidence=0.92; source=equations; [page 7, bbox (37.71, 572.94, 288.65, 581.73)]] = - N H θ V θ cos sin 2 (56)
+
+[confidence=0.92; source=equations; [page 7, bbox (36.96, 591.14, 288.65, 599.93)]] = + T H θ V θ sin cos 2 (57)
+
+[confidence=0.92; source=equations; [page 7, bbox (306.42, 613.12, 557.6, 624.15)]] = δ θ x y ( , ,1) M y D (2) 0 (67)
+
+[confidence=0.92; source=equations; [page 7, bbox (37.71, 633.39, 288.65, 642.17)]] = - - M V p y M ( ) 30 (58)
+
+[confidence=0.92; source=equations; [page 7, bbox (37.71, 651.49, 288.65, 660.28)]] = N H 3 (59)
+
+[confidence=0.92; source=equations; [page 7, bbox (36.95, 669.35, 288.65, 678.17)]] = T V 3 (60)
+
+[confidence=0.92; source=equations; [page 8, bbox (120.42, 249.06, 141.02, 274.65)]] ⎫ ⎬⎭ = ⎧ ⎨⎩
+
+[confidence=0.92; source=equations; [page 8, bbox (37.41, 320.58, 98.64, 332.11)]] = δ γ x y h ( , ,1) H yz D (2)
+
+[confidence=0.92; source=equations; [page 8, bbox (69.01, 486.47, 96.41, 498.72)]] = ⎛
+
+[confidence=0.92; source=equations; [page 8, bbox (69.06, 544.81, 96.44, 564.04)]] = ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 8, bbox (344.88, 96.67, 465.03, 104.65)]] = +
+
+[confidence=0.92; source=equations; [page 8, bbox (320.25, 166.35, 500.68, 174.33)]] = + +
+
+[confidence=0.92; source=equations; [page 8, bbox (306.54, 533.24, 407.85, 554.12)]] = ∂ ∂ = - κ θ x h U U 1 ( ) x x x x (1) (1)
+
+[confidence=0.92; source=equations; [page 8, bbox (320.38, 564.21, 333.88, 578.69)]] = ∂
+
+[confidence=0.92; source=equations; [page 8, bbox (306.54, 570.62, 389.4, 584.78)]] ∂ = - κ
+
+[confidence=0.92; source=equations; [page 9, bbox (44.19, 254.72, 49.93, 262.7)]] =
+
+[confidence=0.92; source=equations; [page 9, bbox (44.19, 268.79, 205.03, 276.77)]] = - - - -
+
+[confidence=0.92; source=equations; [page 9, bbox (44.58, 289.42, 50.32, 297.4)]] =
+
+[confidence=0.92; source=equations; [page 9, bbox (44.58, 303.49, 208.03, 311.47)]] = - - - -
+
+[confidence=0.57; needs_review; source=equations; [page 9, bbox (37.59, 415.85, 232.7, 438.07)]] where, = - f p h θ cot 22 . For the discrete bottom face sheets, MA and FA are:
+
+[confidence=0.92; source=equations; [page 9, bbox (306.54, 120.66, 366.39, 141.74)]] = κ y M y E I ( ) ( ) local y
+
+[confidence=0.92; source=equations; [page 9, bbox (306.54, 218.88, 407.85, 239.77)]] = ∂ ∂ = - κ θ x h U U 1 ( ) x x x x (3) (3)
+
+[confidence=0.92; source=equations; [page 9, bbox (320.37, 250.76, 333.86, 265.22)]] = ∂
+
+[confidence=0.92; source=equations; [page 9, bbox (306.54, 257.16, 389.29, 271.31)]] ∂ = - κ
+
+[confidence=0.92; source=equations; [page 9, bbox (37.71, 356.38, 288.65, 365.11)]] = - ⩽ ⩽ M y F y M y f ( ) (0 ) A A (87)
+
+[confidence=0.92; source=equations; [page 9, bbox (306.72, 409.93, 399.31, 429.15)]] = - + M y PL PLy Py ( ) 121212
+
+[confidence=0.92; source=equations; [page 10, bbox (306.59, 617.49, 361.84, 625.46)]] where, k = 1,3.
+
+[confidence=0.92; source=equations; [page 10, bbox (37.53, 623.97, 95.73, 645.06)]] = κ y M y E I ( ) ( ) local y
+
+[confidence=0.92; source=equations; [page 10, bbox (331.44, 689.0, 435.07, 696.98)]] = +
+
+[confidence=0.92; source=equations; [page 11, bbox (62.44, 600.16, 165.95, 608.14)]] = +
+
+[confidence=0.92; source=equations; [page 11, bbox (320.46, 627.26, 473.63, 635.24)]] = + +
+
+[confidence=0.92; source=equations; [page 11, bbox (320.46, 677.66, 473.36, 685.64)]] = + +
+
+[confidence=0.92; source=equations; [page 12, bbox (51.45, 665.19, 204.62, 673.17)]] = + +
+
+[confidence=0.92; source=equations; [page 12, bbox (320.46, 616.15, 473.36, 624.13)]] = + +
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 632.85, 92.83, 640.82)]] where, k = 1,3.
+
+[confidence=0.92; source=equations; [page 13, bbox (313.92, 689.56, 333.36, 697.55)]] = ^{\circ}
+
+[confidence=0.92; source=equations; [page 13, bbox (313.92, 675.85, 511.29, 683.83)]] = = = = =
+
+[confidence=0.92; source=equations; [page 16, bbox (306.36, 614.53, 442.29, 634.59)]] ⎜ ⎟ = + ⎛ ⎝ - ⎞ ⎠ ^{\circ} - - T Δ 250501 ( C) z z
+
+[confidence=0.92; source=equations; [page 16, bbox (37.65, 638.49, 269.12, 648.03)]] = - + = + ^{\circ} - E T α T 0.0917220.5073 (GPa), 0.004810.6063(10 / C) T 6
+
+[confidence=0.92; source=equations; [page 24, bbox (49.68, 412.66, 274.52, 426.93)]] ∫ ∫ ⎜ ⎟ ⎜ ⎟ = ⎛
+
+[confidence=0.92; source=equations; [page 24, bbox (49.92, 446.11, 224.5, 465.71)]] ∫ ⎜ ⎟ = ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 24, bbox (37.14, 472.73, 120.26, 489.62)]] ∫ = - -′ ′ C d z
+
+[confidence=0.92; source=equations; [page 24, bbox (50.13, 506.77, 379.16, 521.26)]] ∫ ∫ ⎜ ⎟ = ⎛
+
+[confidence=0.92; source=equations; [page 24, bbox (50.04, 537.86, 255.44, 560.12)]] ∫ ∫ ⎜ ⎟ ⎜ ⎟ = - ⎛ ⎝ ⎛ ⎝ - ′ ⎞ ⎠ ⎞ ⎠
+
+[confidence=0.92; source=equations; [page 24, bbox (37.14, 569.7, 180.68, 589.37)]] ∫ ∫ = ′ + ′ C E I z θ E I y 1 d d sin 1 d d d
+
+[confidence=0.92; source=equations; [page 24, bbox (49.74, 639.03, 192.23, 653.31)]] ∫ ⎜ ⎟ = ⎛
+
+[confidence=0.92; source=equations; [page 24, bbox (49.98, 672.48, 235.31, 686.01)]] ∫ ⎜ ⎟ ⎜ ⎟ = ⎛
+
+[confidence=0.92; source=equations; [page 24, bbox (37.14, 699.78, 120.38, 716.69)]] ∫ = - -′ ′ C d z
+
+[confidence=0.92; source=equations; [page 25, bbox (50.19, 62.47, 151.63, 77.58)]] ∫ ⎜ ⎟ = ⎛
+
+[confidence=0.92; source=equations; [page 25, bbox (50.1, 97.56, 163.55, 111.08)]] ∫ ⎜ ⎟ ⎜ ⎟ = - ⎛
+
+[confidence=0.92; source=equations; [page 25, bbox (37.14, 124.92, 114.46, 144.54)]] ∫ = ′ C E I z θ 1 d d sin
+
+[confidence=0.92; source=equations; [page 25, bbox (51.84, 240.2, 64.88, 257.9)]] = ⎡
+
+[confidence=0.92; source=equations; [page 25, bbox (51.84, 285.16, 64.88, 302.86)]] = ⎡
+
+[confidence=0.92; source=equations; [page 25, bbox (51.96, 405.93, 57.7, 413.91)]] =
+
+[confidence=0.92; source=equations; [page 25, bbox (51.96, 505.54, 57.71, 513.52)]] =
+
+[confidence=0.92; source=equations; [page 25, bbox (51.96, 596.65, 57.71, 604.63)]] =
+
+[confidence=0.92; source=equations; [page 25, bbox (50.01, 689.43, 313.7, 709.03)]] ∫ ∫ ∫ ⎜ ⎟ ⎜ ⎟ = ⎛ ⎝ + ⎞ ⎠ + ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 25, bbox (50.01, 718.07, 304.67, 740.15)]] ∫ ∫ ⎜ ⎟ = - + ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 26, bbox (37.14, 58.07, 186.7, 77.3)]] ∫ ∫ = - + - - C h E t y h z E t z θ 12 d 12( ) d sin
+
+[confidence=0.92; source=equations; [page 26, bbox (94.38, 88.27, 374.8, 110.35)]] - + ⎞ ⎠ + ⎛ ⎝ - + + ⎞ ⎠ + ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 26, bbox (50.19, 90.76, 445.46, 110.35)]] ∫ ∫ ∫ ⎜ ⎟ ⎜ ⎟ ⎜ ⎟ = ⎛ ⎝
+
+[confidence=0.92; source=equations; [page 26, bbox (50.1, 117.59, 287.62, 137.87)]] ∫ ∫ ∫ = - - + - ⎛ ⎝ - ⎞ ⎠ + - -
+
+[confidence=0.92; source=body_inline] {\mathsf{C}} ^ {0}
+
+[confidence=0.92; source=body_inline] h _ {1}
+
+[confidence=0.92; source=body_inline] h _ {3} ,
+
+[confidence=0.92; source=body_inline] t _ {w} ,
+
+[confidence=0.92; source=body_inline] h _ {2} ,
+
+[confidence=0.92; source=body_inline] \theta ,
+
+[confidence=0.92; source=body_inline] z _ {l} ^ {( 1 )} , z _ {u} ^ {( 1 )} , z _ {l} ^ {( 2 )} , z _ {u} ^ {( 2 )} , z _ {l} ^ {( 3 )} , z _ {u} ^ {( 3 )} . E _ {w} , \mu _ {w}
+
+[confidence=0.92; source=body_inline] \alpha _ {w}
+
+[confidence=0.92; source=body_inline] \Delta {T} ^ {( 1 )} ( x , y , z ) ;
+
+[confidence=0.92; source=body_inline] \Delta {T} ^ {( 2 )} \left( x , y , z \right)
+
+[confidence=0.92; source=body_inline] \Delta T ^ {( 3 )} \left( x , y , z \right)
+
+[confidence=0.92; source=body_inline] \Delta {T} ^ {( 1 )} \left( x , y , z \right)
+
+[confidence=0.92; source=body_inline] \Delta T ^ {( 1 )} = \Delta T ^ {( 1 )} ( x , y ) , \Delta T ^ {( 3 )} = \Delta T ^ {( 3 )} ( x , y )\tag{1}
+
+[confidence=0.92; source=body_inline] \Delta T ^ {( 2 )} ( x , y = y _ {B} , z = z _ {l} ^ {( 2 )} )
+
+[confidence=0.92; source=body_inline] \Delta T ^ {( 2 )} ( x , y = y _ {C} , z = z _ {u} ^ {( 2 )} )
+
+[confidence=0.92; source=body_inline] y _ {B}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {y _ {B} + \frac {z - z _ {l} ^ {( 2 )}} {\tan \theta}} \end{array}
+
+[confidence=0.92; source=body_inline] \Delta T ^ {( 2 )} ( x , y = y _ {B ^ {'}} , z = z _ {l} ^ {( 2 )} )
+
+[confidence=0.92; source=body_inline] \Delta T ^ {( 2 )} ( x , y = y _ {C ^ {'}} , z = z _ {u} ^ {( 2 )} )
+
+[confidence=0.92; source=body_inline] y _ {B ^ {'}}
+
+[confidence=0.92; source=body_inline] y _ {C ^ {'}}
+
+[confidence=0.92; source=body_inline] y _ {B ^ {'}} - \frac {z - z _ {l} ^ {( 2 )}} {\mathrm{tan} \theta}
+
+[confidence=0.92; source=body_inline] \Delta T ^ {( 2 )} ( x , y , z ) = \Delta T _ {r} ^ {( 2 )} ( x , z )\tag{2}
+
+[confidence=0.92; source=body_inline] \mathrm{Fig} . \ 3 ,
+
+[confidence=0.92; source=body_inline] E _ {x} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] E _ {y} ^ {( 2 )} :
+
+[confidence=0.92; source=body_inline] E _ {z} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] G _ {y z} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] G _ {x z} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] G _ {x y} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] E _ {x} ^ {( 2 )} = {\frac {t _ {w}} {p d _ {f}}} {\left( \int _ {0} ^ {d _ {f}} E _ {w} ^ {1} {\frac {d z ^ {\prime}} {\sin \theta}} + \int _ {\frac {d _ {f}} {\tan \theta}} ^ {\frac {p} {2}} E _ {w} ^ {2} d y ^ {\prime} \right)}\tag{3}
+
+[confidence=0.92; source=body_inline] E _ {y} ^ {( 2 )} = \frac {t _ {w} p} {d _ {f} ( C _ {11} - ( C _ {13} ) ^ {2} / C _ {33} )}\tag{4}
+
+[confidence=0.92; source=body_inline] E _ {z} ^ {( 2 )} = \frac {t _ {w} d _ {f} \mathrm{det} ( C _ {r} ^ {z} )} {p \mathrm{det} ( C ^ {z} )}\tag{5}
+
+[confidence=0.92; source=body_inline] G _ {y z} ^ {( 2 )} = \frac {t _ {w} d _ {f} \mathrm{det} ( {\pmb C} _ {r} )} {p \mathrm{det} ( {\pmb C} )}\tag{6}
+
+[confidence=0.92; source=body_inline] G _ {x z} ^ {( 2 )} = \frac {t _ {w} d _ {f}} {2 ( 1 + \mu _ {w} ) p \left( \int _ {0} ^ {d _ {f}} \frac {1} {E _ {w} ^ {1}} \frac {\mathrm{d} z ^ {\prime}} {\mathrm{sin} \theta} + \int _ {\frac {d _ {f}} {\mathrm{tan} \theta}} ^ {\frac {p} {2}} \frac {1} {E _ {w} ^ {2}} \mathrm{d} y ^ {\prime} \right)}\tag{7}
+
+[confidence=0.92; source=body_inline] G _ {x y} ^ {( 2 )} = \frac {t _ {w}} {2 ( 1 + \mu _ {w} ) p d _ {f}} ( \int _ {0} ^ {d _ {f}} E _ {w} ^ {1} \frac {\mathrm{d} z ^ {\prime}} {\mathrm{sin} \theta} + \int _ {\frac {d _ {f}} {\mathrm{tan} \theta}} ^ {\frac {p} {2}} E _ {w} ^ {2} \mathrm{d} y ^ {\prime} )\tag{8}
+
+[confidence=0.92; source=body_inline] E _ {w} ^ {1}
+
+[confidence=0.92; source=body_inline] E _ {w} ^ {2}
+
+[confidence=0.92; source=body_inline] \mathrm{Eq.} ( 2 ) , E _ {w} ^ {1}
+
+[confidence=0.92; source=body_inline] E _ {w} ^ {1} = E _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) )\tag{9}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {z = \frac {z _ {l} ^ {( 2 )} + z _ {u} ^ {( 2 )}} {2} + z ^ {\prime}} \end{array}
+
+[confidence=0.92; source=body_inline] \frac {z _ {l} ^ {( 2 )} + z _ {u} ^ {( 2 )}} {2} \leqslant z \leqslant z _ {u} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {z = \frac {z _ {l} ^ {( 2 )} + z _ {u} ^ {( 2 )}} {2} - z ^ {\prime}} \end{array}
+
+[confidence=0.92; source=body_inline] z _ {l} ^ {( 2 )} \leqslant z < \frac {z _ {l} ^ {( 2 )} + z _ {u} ^ {( 2 )}} {2}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {G _ {w} ^ {1} = \frac {E _ {w} ^ {1}} {2 ( 1 + \mu _ {w} )} .} \end{array}
+
+[confidence=0.92; source=body_inline] \frac {z _ {l} ^ {( 2 )} + z _ {u} ^ {( 2 )}} {2} \leqslant z \leqslant z _ {u} ^ {( 2 )} , E _ {w} ^ {2}
+
+[confidence=0.92; source=body_inline] E _ {w} ^ {2} = E _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z = z _ {u} ^ {( 2 )} ) )\tag{10}
+
+[confidence=0.92; source=body_inline] z _ {l} ^ {( 2 )} \leqslant z < \frac {z _ {l} ^ {( 2 )} + z _ {u} ^ {( 2 )}} {2} , E _ {w} ^ {2}
+
+[confidence=0.92; source=body_inline] E _ {w} ^ {2} = E _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z = z _ {l} ^ {( 2 )} ) )\tag{11}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {G _ {w} ^ {2} = \frac {E _ {w} ^ {2}} {2 ( 1 + \mu _ {w} )}} \end{array}
+
+[confidence=0.92; source=body_inline] {\left[ \begin{array} {l l l} {C _ {11}} & {C _ {12}} & {C _ {13}} \\ & {C _ {22}} & {C _ {23}} \\ {s y m .} & & {C _ {33}} \end{array} \right]} ,
+
+[confidence=0.92; source=body_inline] \mathrm{A} ,
+
+[confidence=0.92; source=body_inline] c _ {r}
+
+[confidence=0.92; source=body_inline] \left\lceil \begin{array} {l l} {C _ {22}} & {C _ {23}} \\ {C _ {23}} & {C _ {33}} \end{array} \right\rceil
+
+[confidence=0.92; source=body_inline] \left\{\begin{array} {l l l} {C _ {11} ^ {z}} & {C _ {12} ^ {z}} & {C _ {13} ^ {z}} \\ & {C _ {22} ^ {z}} & {C _ {23} ^ {z}} \\ {s y m .} & & {C _ {33} ^ {z}} \end{array} \right\} ,
+
+[confidence=0.92; source=body_inline] c ^ {z}
+
+[confidence=0.92; source=body_inline] C _ {r} ^ {z}
+
+[confidence=0.92; source=body_inline] \mathrm{as} \left[ {\begin{array} {l l} {C _ {11} ^ {z}} & {C _ {13} ^ {z}} \\ {C _ {13} ^ {z}} & {C _ {33} ^ {z}} \end{array}} \right]
+
+[confidence=0.92; source=body_inline] \mu _ {x y} ^ {( 2 )} = \mu _ {w} , \mu _ {x z} ^ {( 2 )} = \mu _ {w} , \mu _ {y z} ^ {( 2 )} = 0
+
+[confidence=0.92; source=body_inline] \pmb {\alpha} _ {T} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] 3 . \alpha _ {T l} ^ {( 2 )} , \alpha _ {T 0} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] \pmb {\alpha} _ {T u} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] C D _ {i}
+
+[confidence=0.92; source=body_inline] \alpha _ {T l} ^ {( 2 )} , \alpha _ {T u} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] \alpha _ {T l} ^ {( 2 )} = \left[ 0 , \left( \frac {1} {2} - \frac {h _ {2}} {2 p \mathrm{tan} \theta} \right) \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z = z _ {l} ^ {( 2 )} ) ) , 0 , 0 , 0 , 0 \right] ^ {\mathrm{T}}\tag{13}
+
+[confidence=0.92; source=body_inline] \alpha _ {T u} ^ {( 2 )} = \left[ 0 , \left( \frac {1} {2} - \frac {h _ {2}} {2 p \mathrm{tan} \theta} \right) \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z = z _ {u} ^ {( 2 )} ) ) , 0 , 0 , 0 , 0 \right] ^ {\mathrm{T}}\tag{14}
+
+[confidence=0.92; source=body_inline] {\alpha} _ {T 0} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\alpha _ {T 0} ^ {( 2 )} = \Bigg [ \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) , \frac {h _ {2}} {p \tan \theta} \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) , \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) , 0 , c o t \theta} \\ & {\quad \quad \quad \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) , 0 \Bigg ] ^ {\mathrm{T}}} \end{array}\tag{15}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\alpha _ {T 0} ^ {( 2 )} = \Bigg [ \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) , \frac {h _ {2}} {p \mathrm{tan} \theta} \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) , \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) , 0 , c o t ( \pi} \\ & {\qquad - \theta ) \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) , 0 \Bigg ] ^ {\mathrm{T}}} \end{array}\tag{16}
+
+[confidence=0.92; source=body_inline] \pmb {\varepsilon _ {0} ^ {( 2 )}}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\varepsilon _ {0} ^ {( 2 )} = \alpha _ {T} ^ {( 2 )} \Delta T ^ {( 2 )} ( x , y , z ) = \alpha _ {T 0} ^ {( 2 )} \Delta T _ {r} ^ {( 2 )} ( x , z ) + \alpha _ {T l} ^ {( 2 )} \Delta T _ {r} ^ {( 2 )} ( x , z = z _ {l} ^ {( 2 )} )} \\ & {\qquad + \alpha _ {T u} ^ {( 2 )} \Delta T _ {r} ^ {( 2 )} ( x , z = z _ {u} ^ {( 2 )} )} \end{array}\tag{17}
+
+[confidence=0.92; source=body_inline] \pmb {\alpha} _ {T} ^ {( 1 )}
+
+[confidence=0.92; source=body_inline] \alpha _ {T} ^ {( 3 )}
+
+[confidence=0.92; source=body_inline] \alpha _ {T} ^ {( 1 )} = \{\alpha _ {x} ^ {( 1 )} ( \Delta T ^ {( 1 )} ( x , y ) ) , \alpha _ {y} ^ {( 1 )} ( \Delta T ^ {( 1 )} ( x , y ) ) , 0 , 0 , 0 \} ^ {\mathrm{T}}\tag{18}
+
+[confidence=0.92; source=body_inline] \alpha _ {T} ^ {( 3 )} = \{\alpha _ {x} ^ {( 3 )} ( \Delta T ^ {( 3 )} ( x , y ) ) , \alpha _ {y} ^ {( 3 )} ( \Delta T ^ {( 3 )} ( x , y ) ) , 0 , 0 , 0 \} ^ {\mathrm{T}}\tag{19}
+
+[confidence=0.92; source=body_inline] {\alpha} _ {x} ^ {( k )}
+
+[confidence=0.92; source=body_inline] {\alpha} _ {v} ^ {( k )}
+
+[confidence=0.92; source=body_inline] {\sf C} ^ {0}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {u ^ {( 2 )} ( x , y , \zeta _ {( 2 )} ) = U ^ {( 2 )} ( x , y ) \Psi _ {1} ^ {( 2 )} ( \zeta _ {( 2 )} ) + U ^ {( 3 )} ( x , y ) \Psi _ {2} ^ {( 2 )} ( \zeta _ {( 2 )} )} \\ & {\phantom {u ^ {( 2 )} ( x , y ) \Psi _ {1} ^ {( 2 )} ( \zeta _ {( 2 )} )} + \alpha _ {x} ^ {( 2 )} ( x , y ) \Psi _ {4} ^ {( 2 )} ( \zeta _ {( 2 )} ) \nu ^ {( 2 )} ( x , y , \zeta _ {( 2 )} )} \\ & {\phantom {u ^ {( 2 )} ( x , y ) \Psi _ {1} ^ {( 2 )} ( \zeta _ {( 2 )} )} = V ^ {( 3 )} ( x , y ) \Psi _ {2} ^ {( 2 )} ( \zeta _ {( 2 )} )} \\ & {\phantom {u ^ {( 2 )} ( x , y ) \Psi _ {1} ^ {( 2 )} ( \zeta _ {( 2 )} )} + \alpha _ {y} ^ {( 2 )} ( x , y ) \Psi _ {4} ^ {( 2 )} ( \zeta _ {( 2 )} ) w ^ {( 2 )} ( x , y , \zeta _ {( 2 )} )} \\ & {\phantom {u ^ {( 2 )} ( x , y ) \Psi _ {1} ^ {( 2 )} ( \zeta _ {( 2 )} )} = W ^ {( 1 )} ( x , y ) \Psi _ {2} ^ {( 2 )} ( \zeta _ {( 2 )} )} \\ & {\phantom {u ^ {( 2 )} ( x , y ) \Psi _ {1} ^ {( 2 )} ( \zeta _ {( 2 )} )} + \lambda _ {z} ^ {( 2 )} ( x , y ) \Psi _ {4} ^ {( 2 )} ( \zeta _ {( 2 )} )} \end{array}\tag{20}
+
+[confidence=0.92; source=body_inline] U ^ {( k )} , V ^ {( k )}
+
+[confidence=0.92; source=body_inline] U ^ {( k + 1 )} , V ^ {( k + 1 )}
+
+[confidence=0.67; needs_review; source=body_inline] k = 1 , 2 , 3 )
+
+[confidence=0.92; source=body_inline] W ^ {( 1 )} , W ^ {( 3 )}
+
+[confidence=0.92; source=body_inline] \Psi _ {1} ^ {( k )} , \Psi _ {2} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \Psi _ {3} ^ {( k )} , \Psi _ {4} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{\Psi _ {1} ^ {( k )} = ( 1 - \zeta _ {( k )} ) / 2 , \quad \Psi _ {2} ^ {( k )} = ( 1 + \zeta _ {( k )} ) / 2 , \quad \Psi _ {3} ^ {( k )} = {\displaystyle {\frac {h _ {k}} {2}}} ( \zeta _ {( k )} ^ {2} - 1 ) , \quad \Psi _ {4} ^ {( k )}}} \\ {{{}}} \\ {{{} = {\displaystyle {\frac {h _ {k}} {2}}} \zeta _ {( k )} ( \zeta _ {( k )} ^ {2} - 1 )}} \end{array}\tag{21}
+
+[confidence=0.92; source=body_inline] \zeta _ {( k )}
+
+[confidence=0.92; source=body_inline] \zeta _ {( k )} = \frac {2} {h _ {k}} z - \frac {z _ {l} ^ {( k )} + z _ {u} ^ {( k )}} {h _ {k}}\tag{22}
+
+[confidence=0.92; source=body_inline] h _ {k}
+
+[confidence=0.92; source=body_inline] z _ {l} ^ {( k )}
+
+[confidence=0.92; source=body_inline] z _ {u} ^ {( k )}
+
+[confidence=0.92; source=body_inline] W ^ {( 1 )}
+
+[confidence=0.92; source=body_inline] W ^ {( 3 )}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {u ^ {( 1 )} ( x , y , \zeta _ {( 1 )} ) = U ^ {( 1 )} ( x , y ) \Psi _ {1} ^ {( 1 )} ( \zeta _ {( 1 )} ) + U ^ {( 2 )} ( x , y ) \Psi _ {2} ^ {( 1 )} ( \zeta _ {( 1 )} ) v ^ {( 1 )} ( x , y , \zeta _ {( 1 )} )} \\ & {\qquad = V ^ {( 1 )} ( x , y ) \Psi _ {1} ^ {( 1 )} ( \zeta _ {( 1 )} ) + V ^ {( 2 )} ( x , y ) \Psi _ {2} ^ {( 1 )} ( \zeta _ {( 1 )} ) w ^ {( 1 )} ( x , y , \zeta _ {( 1 )} )} \\ & {\qquad = W ^ {( 1 )} ( x , y )} \end{array}\tag{23}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{u ^ {( 3 )} ( x , y , \zeta _ {( 3 )} ) = U ^ {( 3 )} ( x , y ) \Psi _ {1} ^ {( 3 )} ( \zeta _ {( 3 )} ) + U ^ {( 4 )} ( x , y ) \Psi _ {2} ^ {( 3 )} ( \zeta _ {( 3 )} ) v ^ {( 3 )} ( x , y , \zeta _ {( 3 )} )}} \\ {{\ \qquad = V ^ {( 3 )} ( x , y ) \Psi _ {1} ^ {( 3 )} ( \zeta _ {( 3 )} ) + V ^ {( 4 )} ( x , y ) \Psi _ {2} ^ {( 3 )} ( \zeta _ {( 3 )} ) w ^ {( 3 )} ( x , y , \zeta _ {( 3 )} )}} \\ {{\ \qquad = W ^ {( 3 )} ( x , y )}} \end{array}\tag{24}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\mathcal {E} _ {x x} ^ {( 2 )} = U _ {x} ^ {( 3 )} \Psi _ {1} ^ {( 1 )} + U _ {x} ^ {( 3 )} \Psi _ {2} ^ {( 2 )} + \alpha _ {x x} ^ {( 2 )} \Psi _ {3} ^ {( 2 )} + \lambda _ {x y} ^ {( 3 )} \Psi _ {4} ^ {( 2 )} \xi _ {x y} ^ {( 2 )}} \\ & {\quad = V _ {y y} ^ {( 3 )} \Psi _ {1} ^ {( 1 )} + V _ {y} ^ {( 3 )} \Psi _ {2} ^ {( 2 )} + \alpha _ {y y} ^ {( 3 )} \Psi _ {3} ^ {( 2 )} + \lambda _ {y y} ^ {( 3 )} \Psi _ {4} ^ {( 2 )} \xi _ {x z} ^ {( 2 )}} \\ & {\quad = \frac {W ^ {( 3 )} - W ^ {( 1 )}} {h _ {2}} + 2 \zeta _ {( 2 )} \alpha _ {z} ^ {( 2 )} + ( 3 \zeta _ {( 2 )} ^ {2} - 1 ) \lambda _ {z} ^ {( 2 )} \gamma _ {y z} ^ {( 2 )} = W _ {y} ^ {( 1 )} \Psi _ {1} ^ {( 2 )} + W _ {y} ^ {( 3 )} \Psi _ {2} ^ {( 2 )}} \\ & {\quad \quad + \alpha _ {z y} ^ {( 2 )} \Psi _ {3} ^ {( 2 )} + \lambda _ {z y} ^ {( 2 )} \Psi _ {4} ^ {( 2 )} + \frac {V ^ {( 3 )} - V ^ {( 2 )}} {h _ {2}} + 2 \zeta _ {( 2 )} \alpha _ {y} ^ {( 3 )} + ( 3 \zeta _ {( 2 )} ^ {2} - 1 ) \lambda _ {y} ^ {( 2 )} \gamma _ {x z} ^ {( 2 )}} \\ & \quad = W _ {x} ^ {( 1 )} \Psi _ {1} ^ {( 2 )} + W _ {x} ^ {( 3 )} \Psi _ {2} ^ {( 2 )} + \alpha _ {x x} ^ ( 2 ) \end{array}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\varepsilon _ {x x} ^ {( 1 )} = U _ {, x} ^ {( 1 )} \Psi _ {1} ^ {( 1 )} + U _ {, x} ^ {( 2 )} \Psi _ {2} ^ {( 1 )} \varepsilon _ {y y} ^ {( 1 )} = V _ {, y} ^ {( 1 )} \Psi _ {1} ^ {( 1 )} + V _ {, y} ^ {( 2 )} \Psi _ {2} ^ {( 1 )} \gamma _ {y z} ^ {( 1 )}} \\ & {\quad \quad = W _ {, y} ^ {( 1 )} + \frac {V ^ {( 2 )} - V ^ {( 1 )}} {h _ {1}} \gamma _ {x z} ^ {( 1 )} = W _ {, x} ^ {( 1 )} + \frac {U ^ {( 2 )} - U ^ {( 1 )}} {h _ {1}} \gamma _ {x y} ^ {( 1 )}} \\ & {\quad \quad = U _ {, y} ^ {( 1 )} \Psi _ {1} ^ {( 1 )} + U _ {, y} ^ {( 2 )} \Psi _ {2} ^ {( 1 )} + V _ {, x} ^ {( 1 )} \Psi _ {1} ^ {( 1 )} + V _ {, x} ^ {( 2 )} \Psi _ {2} ^ {( 1 )}} \end{array}\tag{26}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\varepsilon _ {x x} ^ {( 3 )} = U _ {, x} ^ {( 3 )} \Psi _ {1} ^ {( 3 )} + U _ {, x} ^ {( 4 )} \Psi _ {2} ^ {( 3 )} \varepsilon _ {y y} ^ {( 3 )} = V _ {, y} ^ {( 3 )} \Psi _ {1} ^ {( 3 )} + V _ {, y} ^ {( 4 )} \Psi _ {2} ^ {( 3 )} \gamma _ {y z} ^ {( 3 )}} \\ & {\quad \quad = W _ {, y} ^ {( 3 )} + \frac {V ^ {( 4 )} - V ^ {( 3 )}} {h _ {3}} \gamma _ {x z} ^ {( 3 )} = W _ {, x} ^ {( 3 )} + \frac {U ^ {( 4 )} - U ^ {( 3 )}} {h _ {3}} \gamma _ {x y} ^ {( 3 )}} \\ & {\quad \quad = U _ {, y} ^ {( 3 )} \Psi _ {1} ^ {( 3 )} + U _ {, y} ^ {( 4 )} \Psi _ {2} ^ {( 3 )} + V _ {, x} ^ {( 3 )} \Psi _ {1} ^ {( 3 )} + V _ {, x} ^ {( 4 )} \Psi _ {2} ^ {( 3 )}} \end{array}\tag{27}
+
+[confidence=0.92; source=body_inline] {\pmb \sigma} ^ {( k )} = {\pmb Q} ^ {( k )} ( {\pmb \varepsilon} ^ {( k )} - {\pmb \varepsilon} _ {\bf 0} ^ {( k )} )\tag{28}
+
+[confidence=0.92; source=body_inline] Q ^ {( k )}
+
+[confidence=0.92; source=body_inline] \pmb {\varepsilon _ {0} ^ {( k )}}
+
+[confidence=0.92; source=body_inline] Q ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] Q ^ {( 2 )} = \left[ \begin{array} {c c c c c c c} {Q _ {11} ^ {( 2 )}} & {Q _ {12} ^ {( 2 )}} & {Q _ {13} ^ {( 2 )}} & {0} & {0} & {0} \\ {Q _ {12} ^ {( 2 )}} & {Q _ {22} ^ {( 2 )}} & {Q _ {23} ^ {( 2 )}} & {0} & {0} & {0} \\ {Q _ {13} ^ {( 2 )}} & {Q _ {23} ^ {( 2 )}} & {Q _ {33} ^ {( 2 )}} & {0} & {0} & {0} \\ {0} & {0} & {0} & {Q _ {44} ^ {( 2 )}} & {0} & {0} \\ {0} & {0} & {0} & {0} & {Q _ {55} ^ {( 2 )}} & {0} \\ {0} & {0} & {0} & {0} & {0} & {Q _ {66} ^ {( 2 )}} \end{array} \right]\tag{29}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {Q _ {11} ^ {( 2 )} = \cfrac {1 - \mu _ {y z} ^ {( 2 )} \mu _ {z y} ^ {( 2 )}} {E _ {y} ^ {( 2 )} E _ {z} ^ {( 2 )} \Delta ^ {( 2 )}} , \quad Q _ {12} ^ {( 2 )} = \cfrac {\mu _ {y x} ^ {( 2 )} + \mu _ {z x} ^ {( 2 )} \mu _ {y z} ^ {( 2 )}} {E _ {y} ^ {( 2 )} E _ {z} ^ {( 2 )} \Delta ^ {( 2 )}} , \quad Q _ {22} ^ {( 2 )}} \\ & {\phantom {\frac {0} {1 - \mu _ {x z} ^ {( 2 )} \mu _ {z x} ^ {( 2 )}}} = \cfrac {1 - \mu _ {x y} ^ {( 2 )} \mu _ {z x} ^ {( 2 )}} {E _ {x} ^ {( 2 )} E _ {z} ^ {( 2 )} \Delta ^ {( 2 )}} , \quad Q _ {23} ^ {( 2 )} = \cfrac {\mu _ {z y} ^ {( 2 )} + \mu _ {x y} ^ {( 2 )} \mu _ {z x} ^ {( 2 )}} {E _ {x} ^ {( 2 )} E _ {z} ^ {( 2 )} \Delta ^ {( 2 )}} , \quad Q _ {33} ^ {( 2 )} = \cfrac {1 - \mu _ {x y} ^ {( 2 )} \mu _ {y x} ^ {( 2 )}} {E _ {x} ^ {( 2 )} E _ {y} ^ {( 2 )} \Delta ^ {( 2 )}} ,} \end{array}
+
+[confidence=0.92; source=body_inline] Q _ {13} ^ {( 2 )} = \frac {\mu _ {x z} ^ {( 2 )} + \mu _ {x y} ^ {( 2 )} \mu _ {y z} ^ {( 2 )}} {E _ {x} ^ {( 2 )} E _ {y} ^ {( 2 )} \Delta ^ {( 2 )}} , Q _ {44} ^ {( 2 )} = G _ {y z} ^ {( 2 )} , \quad Q _ {55} ^ {( 2 )} = G _ {x z} ^ {( 2 )} , \quad Q _ {66} ^ {( 2 )} = G _ {x y} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{\Delta ^ {( 2 )} = \displaystyle \frac {1} {E _ {x} ^ {( 2 )} E _ {y} ^ {( 2 )} E _ {z} ^ {( 2 )}} | \begin{array} {c c} {{1 \quad - \mu _ {y x} ^ {( 2 )} - \mu _ {z x} ^ {( 2 )}}} \\ {{- \mu _ {x y} ^ {( 2 )} 1 \quad - \mu _ {z y} ^ {( 2 )} | , \mu _ {y x} ^ {( 2 )} = \displaystyle \frac {E _ {y} ^ {( 2 )}} {E _ {x} ^ {( 2 )}} \mu _ {x y} ^ {( 2 )} ,}} \\ {{- \mu _ {x z} ^ {( 2 )} - \mu _ {y z} ^ {( 2 )} 1}} \end{array} | \mu _ {y} ^ {( 2 )} ,}} \\ {{\phantom {\Delta ^ {( 2 )} = \displaystyle \frac {E _ {z} ^ {( 2 )}} {E _ {x} ^ {( 2 )}} \mu _ {x z} ^ {( 2 )} ,} \quad \quad \mu _ {z y} ^ {( 2 )} = \displaystyle \frac {E _ {z} ^ {( 2 )}} {E _ {y} ^ {( 2 )}} \mu _ {y z} ^ {( 2 )}}} \end{array}
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} ^ {( 2 )} , \pmb {\varepsilon} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] \pmb {\varepsilon _ {0}} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] {\pmb {\sigma}} ^ {( 2 )} = [ \sigma _ {x x} ^ {( 2 )} \qquad \sigma _ {y y} ^ {( 2 )} \qquad \sigma _ {z z} ^ {( 2 )} \qquad \sigma _ {y z} ^ {( 2 )} \qquad \sigma _ {x z} ^ {( 2 )} \qquad \sigma _ {x y} ^ {( 2 )} \qquad \sigma _ {x y} ^ {( 2 )} ] ^ {T}\tag{30}
+
+[confidence=0.67; needs_review; source=body_inline] \varepsilon ^ {( 2 )} = [ \varepsilon _ {x x} ^ {( 2 )} \varepsilon _ {y y} ^ {( 2 )} \varepsilon _ {z z} ^ {( 2 )} \gamma _ {y z} ^ {( 2 )} \gamma _ {x z} ^ {( 2 )} \gamma _ {x y} ^ {( 2 )} T ^ {( 2 )}\tag{31}
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array} {r} {\varepsilon _ {\boldsymbol {\mathfrak {0}}} ^ {( 2 )} = [ \varepsilon _ {0 x x} ^ {( 2 )} \qquad \varepsilon _ {0 y y} ^ {( 2 )} \qquad \varepsilon _ {0 z z} ^ {( 2 )} \qquad \gamma _ {0 y z} ^ {( 2 )} \qquad \gamma _ {0 x z} ^ {( 2 )} \qquad \gamma _ {0 x y} ^ {( 2 )} T ^ {( 2 )}} \end{array}\tag{32}
+
+[confidence=0.92; source=body_inline] {\mathrm{~\AA~}} 5 \times 5
+
+[confidence=0.92; source=body_inline] k = 1
+
+[confidence=0.92; source=body_inline] Q ^ {( k )} = \left[ \begin{array} {c c c c c} {{\widetilde Q _ {11} ^ {( k )}}} & {{\widetilde Q _ {12} ^ {( k )}}} & {{0}} & {{0}} & {{0}} \\ {{\widetilde Q _ {12} ^ {( k )}}} & {{\widetilde Q _ {22} ^ {( k )}}} & {{0}} & {{0}} & {{0}} \\ {{0}} & {{0}} & {{Q _ {44} ^ {( k )}}} & {{0}} & {{0}} \\ {{0}} & {{0}} & {{0}} & {{Q _ {55} ^ {( k )}}} & {{0}} \\ {{0}} & {{0}} & {{0}} & {{0}} & {{Q _ {66} ^ {( k )}}} \end{array} \right]\tag{33}
+
+[confidence=0.92; source=body_inline] \widetilde {Q} _ {i j} ^ {( k )} = Q _ {i j} ^ {( k )} - \frac {Q _ {i 3} ^ {( k )} Q _ {j 3} ^ {( k )}} {Q _ {33} ^ {( k )}}
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} ^ {( k )} = [ \sigma _ {x x} ^ {( k )} \qquad \sigma _ {y y} ^ {( k )} \qquad \sigma _ {y z} ^ {( k )} \qquad \sigma _ {x z} ^ {( k )} \qquad \sigma _ {x y} ^ {( k )} ] ^ {T}\tag{34}
+
+[confidence=0.92; source=body_inline] {\pmb {\varepsilon}} ^ {( k )} = [ {\pmb {\varepsilon}} _ {x x} ^ {( k )} \qquad {\pmb {\varepsilon}} _ {y y} ^ {( k )} \qquad {\pmb {\gamma}} _ {y z} ^ {( k )} \qquad {\pmb {\gamma}} _ {x z} ^ {( k )} \qquad {\pmb {\gamma}} _ {x y} ^ {( k )} ] ^ {T}\tag{35}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\varepsilon _ {0} ^ {( k )} = [ \varepsilon _ {0 x x} ^ {( k )} \qquad \varepsilon _ {0 y y} ^ {( k )} \qquad \gamma _ {0 y z} ^ {( k )} \qquad \gamma _ {0 x z} ^ {( k )} \qquad \gamma _ {0 x y} ^ {( k )} ] ^ {T}} \end{array}\tag{36}
+
+[confidence=0.92; source=body_inline] \pmb {u} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \pmb {u} _ {j} ^ {( k )} = \{u _ {j} ^ {( k )} , \nu _ {j} ^ {( k )} , w _ {j} ^ {( k )} \} ^ {\mathrm{T}}\tag{37}
+
+[confidence=0.92; source=body_inline] ( 24 ) , \pmb {u} _ {j} ^ {( k )}
+
+[confidence=0.92; source=body_inline] {\pmb u} _ {j} ^ {( k )} = {\pmb S} ^ {( k )} {\pmb d} _ {j}\tag{38}
+
+[confidence=0.92; source=body_inline] \pmb {S} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \pmb {d} _ {j}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{d _ {j}}} \\ {{\ = \{U _ {j} ^ {( 1 )} , U _ {j} ^ {( 2 )} , U _ {j} ^ {( 3 )} , U _ {j} ^ {( 4 )} , V _ {j} ^ {( 1 )} , V _ {j} ^ {( 2 )} , V _ {j} ^ {( 3 )} , V _ {j} ^ {( 4 )} , W _ {j} ^ {( 1 )} , W _ {j} ^ {( 3 )} , \alpha _ {j , x} ^ {( 2 )} , \alpha _ {j , y} ^ {( 2 )} , \alpha _ {j , z} ^ {( 2 )} , \lambda _ {j , x} ^ {( 2 )} , \lambda _ {j , y} ^ {( 2 )} , \lambda _ {j , z} ^ {( 2 )} \}}} \end{array}\tag{39}
+
+[confidence=0.92; source=body_inline] {\pmb d} _ {j} = \sum _ {i = 1} ^ {4} N _ {i} {\pmb d} _ {j} ^ {i ( e )} = N {\pmb d} _ {j} ^ {( e )}\tag{40}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\mathrm{where} \qquad \boldsymbol {C} ^ {\mathrm{o}} \qquad \mathrm{shape} \qquad \mathrm{functions} \qquad N _ {i} = \frac {1} {4} ( 1 + \xi _ {i} \xi ) ( 1 + \eta _ {i} \eta )} \end{array}
+
+[confidence=0.92; source=body_inline] ( i = 1 , 2 , 3 , 4 ) ,
+
+[confidence=0.92; source=body_inline] \xi , \eta
+
+[confidence=0.92; source=body_inline] \pmb {d} _ {i} ^ {( e )}
+
+[confidence=0.92; source=body_inline] \mathrm{Eq.~} ( 38 ) \mathrm{,~} \dot {{\mathbf {u}} _ {i} ^ {( k )}}
+
+[confidence=0.92; source=body_inline] \pmb {u} _ {j} ^ {( k )} = [ \pmb {S} _ {1} ^ {( k )} , \pmb {S} _ {2} ^ {( k )} , \pmb {S} _ {3} ^ {( k )} , \pmb {S} _ {4} ^ {( k )} ] \pmb {d} _ {j} ^ {( e )}\tag{41}
+
+[confidence=0.92; source=body_inline] {\pmb S} _ {i} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \pmb {\varepsilon} _ {j} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \pmb {\varepsilon} _ {j} ^ {( k )} = [ \pmb {B} _ {1} ^ {( k )} , \pmb {B} _ {2} ^ {( k )} , \pmb {B} _ {3} ^ {( k )} , \pmb {B} _ {4} ^ {( k )} ] \pmb {d} _ {j} ^ {( e )}\tag{42}
+
+[confidence=0.92; source=body_inline] {\pmb B} _ {i} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \pmb \varepsilon ^ {( k )}
+
+[confidence=0.92; source=body_inline] {K _ {j}} {d _ {j} ^ {\left( e \right)}} = {f _ {q j}} + {f _ {T j}}\tag{43}
+
+[confidence=0.92; source=body_inline] K _ {j}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\pmb {K _ {j}} = \displaystyle \sum _ {k = 1} ^ {3} \int _ {V _ {( k )}} [ \pmb {B} _ {1} ^ {( k )} \pmb {B} _ {2} ^ {( k )} \pmb {B} _ {3} ^ {( k )} \pmb {B} _ {4} ^ {( k )} ] ^ {T} \pmb {Q} _ {j} ^ {( k )} [ \pmb {B} _ {1} ^ {( k )} \pmb {B} _ {2} ^ {( k )} \pmb {B} _ {3} ^ {( k )} \pmb {B} _ {4} ^ {( k )} ] \mathrm{d} V} \end{array}\tag{44}
+
+[confidence=0.92; source=body_inline] \textbf {\textit {f}} _ {q j}
+
+[confidence=0.92; source=body_inline] \pmb {f} _ {T j}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\pmb {f} _ {\pmb {q} j} = \displaystyle \sum _ {k = 1} ^ {3} \int _ {V _ {( k )}} \{\pmb {S} _ {1} ^ {( k )} , \pmb {S} _ {2} ^ {( k )} , \pmb {S} _ {3} ^ {( k )} , \pmb {S} _ {4} ^ {( k )} \} ^ {T} \pmb {p} _ {j} ^ {( k )} \mathrm{d} V} \end{array}\tag{45}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\pmb {f} _ {T} ^ {j} = \displaystyle \sum _ {k = 1} ^ {3} \int _ {V _ {( k )}} [ \pmb {B} _ {1} ^ {( k )} , \pmb {B} _ {2} ^ {( k )} , \pmb {B} _ {3} ^ {( k )} , \pmb {B} _ {4} ^ {( k )} ] ^ {T} \pmb {Q} _ {j} ^ {( k )} \pmb {\varepsilon} _ {0 j} ^ {( k )} \mathrm{d} V} \\ & {= \displaystyle \sum _ {k = 1} ^ {3} \int _ {V _ {( k )}} [ \pmb {B} _ {1} ^ {( k )} , \pmb {B} _ {2} ^ {( k )} , \pmb {B} _ {3} ^ {( k )} , \pmb {B} _ {4} ^ {( k )} ] ^ {T} \pmb {Q} _ {j} ^ {( k )} \pmb {\alpha} _ {T j} ^ {( k )} \Delta T _ {j} ^ {( k )} \mathrm{d} V} \end{array}\tag{46}
+
+[confidence=0.92; source=body_inline] \pmb {p} _ {j} ^ {( k )} = [ p _ {j x} ^ {( k )} , p _ {j y} ^ {( k )} , p _ {j z} ^ {( k )} ] ^ {T} , p _ {j x} ^ {( k )} , p _ {j y} ^ {( k )} , p _ {j z} ^ {( k )}
+
+[confidence=0.92; source=body_inline] {\alpha} _ {T j} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \Delta T _ {j} ^ {( k )}
+
+[confidence=0.92; source=body_inline] ^ {5 / 6}
+
+[confidence=0.92; source=body_inline] ^ {3 ,}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {x x} ^ {w} ( \overline {{x}} , \overline {{y}} ) = \varepsilon _ {x x} ^ {( 2 )} ( x , y ^ {c} , \zeta _ {( 2 )} )\tag{47}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {y ^ {c} = y _ {B} + \frac {h _ {2} ( \zeta _ {( 2 )} + 1 )} {2 \tan \theta}} \end{array}
+
+[confidence=0.92; source=body_inline] y ^ {c} = y _ {B ^ {'}} - \frac {h _ {2} ( \zeta _ {( 2 )} + 1 )} {2 \mathrm{tan} \theta}
+
+[confidence=0.92; source=body_inline] B ^ {\prime} C ^ {\prime}
+
+[confidence=0.92; source=body_inline] \delta _ {\bar {y}}
+
+[confidence=0.92; source=body_inline] \delta _ {z}
+
+[confidence=0.92; source=body_inline] \delta _ {v}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {\bar {y} \bar {y}} ^ {w}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\varepsilon _ {y \overline {{y}}} ^ {w} ( \overline {{x}} , \overline {{y}} ) = \frac {\delta _ {\overline {{y}}}} {l} = \frac {\delta _ {z} \sin \theta + \delta _ {y} \cos \theta} {l} = \frac {\delta _ {z}} {h _ {2}} \mathrm{sin} ^ {2} \theta + \frac {\delta _ {y}} {l _ {y}} \mathrm{cos} ^ {2} \theta} \\ {= \varepsilon _ {z z} ^ {( 2 )} ( x , y ^ {c} , \zeta _ {( 2 )} ) \mathrm{sin} ^ {2} \theta + \varepsilon _ {y y} ^ {( 2 )} ( x , y ^ {c} , \zeta _ {( 2 )} ) \mathrm{cos} ^ {2} \theta} \end{array}\tag{48}
+
+[confidence=0.92; source=body_inline] l _ {y}
+
+[confidence=0.92; source=body_inline] \kappa _ {x} ^ {w} = \cos \theta \kappa _ {x}\tag{49}
+
+[confidence=0.92; source=body_inline] \kappa _ {x}
+
+[confidence=0.92; source=body_inline] \theta _ {x}
+
+[confidence=0.92; source=body_inline] \kappa _ {x} = \frac {\partial \theta _ {x}} {\partial x} = \frac {\partial} {\partial x} \Bigg ( \frac {\partial u ^ {( 2 )}} {\partial z} \Bigg )\tag{50}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\zeta _ {( 2 )} = \frac {2} {h _ {2}} z - \frac {z _ {l} ^ {( 2 )} + z _ {u} ^ {( 2 )}} {h _ {2}}} \end{array}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\kappa _ {\bar {x}} ^ {w} ( \bar {x} , \overline {{y}} ) = \mathrm{cos} \theta \Bigg [ \frac {U _ {, x} ^ {( 3 )} ( x , y ^ {c} ) - U _ {, x} ^ {( 2 )} ( x , y ^ {c} )} {h _ {2}} + 2 \zeta _ {( 2 )} \alpha _ {x , x} ^ {( 2 )} ( x , y ^ {c} )} \\ & {\qquad + \left. ( 3 \zeta _ {( 2 )} ^ {2} - 1 ) \lambda _ {x , x} ^ {( 2 )} ( x , y ^ {c} ) \right]} \end{array}\tag{51}
+
+[confidence=0.92; source=body_inline] {\mathrm{Fig.~}} 5 ,
+
+[confidence=0.92; source=body_inline] M _ {1} = H h _ {2} + V ( p - y ) - M _ {0}\tag{52}
+
+[confidence=0.92; source=body_inline] N _ {1} = H\tag{53}
+
+[confidence=0.92; source=body_inline] T _ {1} = V\tag{54}
+
+[confidence=0.92; source=body_inline] M _ {0}
+
+[confidence=0.92; source=body_inline] M _ {2} = H ( h _ {2} - z ) + V \biggl ( p - \frac {z} {{\mathrm{tan}} \theta} \biggl ) - M _ {0}\tag{55}
+
+[confidence=0.92; source=body_inline] N _ {2} = H {\cos} \theta - V {\sin} \theta\tag{56}
+
+[confidence=0.92; source=body_inline] T _ {2} = H \mathrm{sin} \theta + V \mathrm{cos} \theta\tag{57}
+
+[confidence=0.92; source=body_inline] 0 \leqslant z \leqslant h _ {2}
+
+[confidence=0.92; source=body_inline] M _ {3} = V ( p - y ) - M _ {0}\tag{58}
+
+[confidence=0.92; source=body_inline] N _ {3} = H\tag{59}
+
+[confidence=0.92; source=body_inline] T _ {3} = V\tag{60}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {f + \frac {h _ {2}} {{\tan \theta}} \leqslant y \leqslant p .} \end{array}
+
+[confidence=0.92; source=body_inline] \delta _ {H} , \delta _ {V}
+
+[confidence=0.92; source=body_inline] \delta _ {M _ {0}}
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array} {r l} & \begin{array} {r l} {\Lambda _ {1 ^ {\prime}} - \int _ {0} ^ {1} ( \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} ) d y} \\ {+} & {\int _ {0} ^ {1} ( \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} ) d y} \\ {+} & {\int _ {0} ^ {1} ( \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} ) d x \leq \frac {\sin \theta} {\sin \theta}} \\ {- \int _ {0} ^ {1} \sqrt {\frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta}} \frac {\sin \theta} {\sin \theta} \mathrm{d} y} \\ {+} & {\int _ {0} ^ {1} \sqrt {\frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\cos \theta}} \frac {\sin \theta} {\sin \theta} \mathrm{d} y} \\ {- \int _ {0} ^ {1} ( \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} - \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} ) d y} \\ {- \int _ {0} ^ {1} ( \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} - \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} ) d x} \\ - \int _ {0} ^ {1} ( \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac {\sin \theta} {\sin \theta} + \frac \end{array} \end{array}\tag{62}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\mathrm{d} I _ {w} = \frac {t _ {w} ^ {3} \mathrm{d} b} {12} , \mathrm{d} A _ {w} = t _ {w} \mathrm{d} b . E _ {w} ^ {1} , E _ {w} ^ {2}} \end{array}
+
+[confidence=0.92; source=body_inline] E _ {w} ^ {3}
+
+[confidence=0.92; source=body_inline] G _ {w} ^ {1} , G _ {w} ^ {2}
+
+[confidence=0.92; source=body_inline] G _ {w} ^ {3}
+
+[confidence=0.92; source=body_inline] \left\{\begin{array} {l} {\delta _ {H}} \\ {\delta _ {V}} \\ {\delta _ {M _ {0}}} \end{array} \right\} = \frac {1} {\mathrm{d} b} C ^ {s t} \left\{\begin{array} {l} {H} \\ {V} \\ {M _ {0}} \end{array} \right\} = \frac {1} {\mathrm{d} b} \left[ \begin{array} {l l l} {C _ {11} ^ {s t}} & {C _ {12} ^ {s t}} & {C _ {13} ^ {s t}} \\ & {C _ {22} ^ {s t}} & {C _ {23} ^ {s t}} \\ {s y m} & & {C _ {33} ^ {s t}} \end{array} \right] \left\{\begin{array} {l} {H} \\ {V} \\ {M _ {0}} \end{array} \right\}\tag{64}
+
+[confidence=0.92; source=body_inline] H , \ V , \ M _ {0}
+
+[confidence=0.92; source=body_inline] \delta _ {H} = 0 , \delta _ {V} = 0
+
+[confidence=0.92; source=body_inline] \frac {1} {\mathrm{d} b} \left[ \begin{array} {l l l} {C _ {11} ^ {s t}} & {C _ {12} ^ {s t}} & {C _ {13} ^ {s t}} \\ & {C _ {22} ^ {s t}} & {C _ {23} ^ {s t}} \\ {s y m} & & {C _ {33} ^ {s t}} \end{array} \right] \left\{\begin{array} {l} {H} \\ {V} \\ {M _ {0}} \end{array} \right\} = \left\{\begin{array} {l} {0} \\ {0} \\ {\delta _ {M _ {0}}} \end{array} \right\}\tag{65}
+
+[confidence=0.92; source=body_inline] \nu ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] \theta _ {y} ^ {( 2 )} ( x , y , \zeta _ {( 2 )} ) = \frac {\partial \nu ^ {( 2 )} ( x , y , \zeta _ {( 2 )} )} {\partial z} = \frac {V ^ {( 3 )} - V ^ {( 2 )}} {h _ {2}} + 2 \zeta _ {( 2 )} \alpha _ {y} ^ {( 2 )} + ( 3 \zeta _ {( 2 )} ^ {2} - 1 ) \lambda _ {y} ^ {( 2 )}\tag{66}
+
+[confidence=0.92; source=body_inline] \delta _ {M _ {0}} = \theta _ {y} ^ {( 2 )} ( x , y _ {D} , 1 )\tag{67}
+
+[confidence=0.92; source=body_inline] y _ {D}
+
+[confidence=0.92; source=body_inline] M _ {2}
+
+[confidence=0.92; source=body_inline] E _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) d I _ {w} \varkappa _ {\bar {y}} ^ {w m} ( z ) = M _ {2} ( z )\tag{68}
+
+[confidence=0.92; source=body_inline] {\kappa _ {\bar {\nu}} ^ {w m}}
+
+[confidence=0.92; source=body_inline] \kappa _ {\overline {{x}}}
+
+[confidence=0.92; source=body_inline] \kappa _ {\bar {y}}
+
+[confidence=0.92; source=body_inline] \delta _ {V} = 0 , \delta _ {M _ {0}} = 0
+
+[confidence=0.92; source=body_inline] \frac {1} {\mathrm{d} b} [ \begin{array} {l l l} {C _ {11} ^ {s t}} & {C _ {12} ^ {s t}} & {C _ {13} ^ {s t}} \\ & {C _ {22} ^ {s t}} & {C _ {23} ^ {s t}} \\ {s y m} & & {C _ {33} ^ {s t}} \end{array} ] \{\begin{array} {l} {H} \\ {V} \\ {M _ {0}} \end{array} \} = \{\begin{array} {l} {\delta _ {H}} \\ {0} \\ {0} \end{array} \}\tag{69}
+
+[confidence=0.92; source=body_inline] \delta _ {H}
+
+[confidence=0.92; source=body_inline] \delta _ {{\cal H}} = \gamma _ {y z} ^ {( 2 )} ( x , y _ {D} , 1 ) h _ {2}\tag{70}
+
+[confidence=0.92; source=body_inline] V , M _ {0}
+
+[confidence=0.92; source=body_inline] E _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , z ) ) \mathrm{d} I _ {w} \varkappa _ {\overline {{y}}} ^ {w s} ( z ) = M _ {2} ( z )\tag{71}
+
+[confidence=0.92; source=body_inline] {\kappa _ {\overline {{y}}}} ^ {w s}
+
+[confidence=0.92; source=body_inline] \gamma _ {\overline {{{x y}}}} ^ {( 2 )} ( \overline {{{x}}} , \overline {{{y}}} ) = \mathrm{sin} \theta \left( \frac {\partial u ^ {( 2 )} ( x , y ^ {c} , \zeta _ {( 2 )} )} {\partial z} + \frac {\partial w ^ {( 2 )} ( x , y ^ {c} , \zeta _ {( 2 )} )} {\partial x} \right)\tag{72}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\gamma _ {\overline {{x y}}} ^ {( 2 )} ( \overline {{x}} , \overline {{y}} ) = \mathrm{sin} \theta \Bigg ( \frac {U ^ {( 3 )} ( x , y ^ {c} ) - U ^ {( 2 )} ( x , y ^ {c} )} {h _ {2}} + 2 \zeta _ {( 2 )} \alpha _ {x} ^ {( 2 )} ( x , y ^ {c} )} \\ & {\qquad + \left( 3 \zeta _ {( 2 )} ^ {2} - 1 \right) \lambda _ {x} ^ {( 2 )} ( x , y ^ {c} ) + W _ {, x} ^ {( 1 )} ( x , y ^ {c} ) \Psi _ {1} ^ {( 2 )} + W _ {, x} ^ {( 3 )} ( x , y ^ {c} ) \Psi _ {2} ^ {( 2 )}} \\ & {\qquad + \left. \alpha _ {z , x} ^ {( 2 )} ( x , y ^ {c} ) \Psi _ {3} ^ {( 2 )} + \lambda _ {z , x} ^ {( 2 )} ( x , y ^ {c} ) \Psi _ {4} ^ {( 2 )} \right)} \end{array}\tag{73}
+
+[confidence=0.92; source=body_inline] \sigma _ {x x} ^ {c , m i d} = E _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ) [ \varepsilon _ {x x} ^ {( 2 )} ( x , y ^ {c} , \zeta _ {( 2 )} ) - \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ) \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ] ,\tag{74}
+
+[confidence=0.92; source=body_inline] \sigma _ {\bar {y} \bar {y}} ^ {c , m i d} = E _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ) [ \varepsilon _ {z z} ^ {( 2 )} ( x , y ^ {c} , \zeta _ {( 2 )} ) - \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ) \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ]\tag{75}
+
+[confidence=0.92; source=body_inline] \Delta T _ {r} ^ {( 2 )}
+
+[confidence=0.92; source=body_inline] \sigma _ {x x} ^ {c}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\sigma _ {x x} ^ {c} ( \overline {{x}} , \overline {{y}} , \overline {{z}} ) = E _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ) [ \varepsilon _ {x x} ^ {( 2 )} ( x , y ^ {c} , \zeta _ {( 2 )} ) + \overline {{z}} \kappa _ {x} ^ {w} ( x , y ^ {c} , \zeta _ {( 2 )} )} \\ & {\qquad - \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ) \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ]} \end{array}\tag{76}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {- \frac {t _ {w}} {2} \leqslant \overline {{z}} \leqslant \frac {t _ {w}} {2} .} \end{array}
+
+[confidence=0.92; source=body_inline] \sigma _ {\overline {{y}} \overline {{y}}} ^ {c}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\sigma _ {\bar {y} \bar {y}} ^ {c} = E _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ) [ \varepsilon _ {z z} ^ {( 2 )} ( x , y ^ {c} , \zeta _ {( 2 )} ) + \mp ( \kappa _ {\bar {y}} ^ {w} ( x , y ^ {c} , \zeta _ {( 2 )} ) + \kappa _ {\bar {y}} ^ {w s} ( x , y ^ {c} , \zeta _ {( 2 )} ) )} \\ {- \alpha _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ) \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ] ( 77 )} \end{array}\tag{7}
+
+[confidence=0.92; source=body_inline] \sigma _ {x y} ^ {c}
+
+[confidence=0.92; source=body_inline] \sigma _ {\overline {{x}} \overline {{y}}} ^ {c} = G _ {w} ( \Delta T _ {r} ^ {( 2 )} ( x , \zeta _ {( 2 )} ) ) \gamma _ {\overline {{x}} \overline {{y}}} ^ {( 2 )} ( \overline {{x}} , \overline {{y}} )\tag{78}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {x x} ^ {( 1 )} ( x , y , \zeta _ {( 1 )} ) = U _ {, x} ^ {( 1 )} ( x , y ) \Psi _ {1} ^ {( 1 )} + U _ {, x} ^ {( 2 )} ( x , y ) \Psi _ {2} ^ {( 1 )}\tag{79}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {y y} ^ {( 1 )} ( x , y , \zeta _ {( 1 )} ) = V _ {, y} ^ {( 1 )} ( x , y ) \Psi _ {1} ^ {( 1 )} + V _ {, y} ^ {( 2 )} ( x , y ) \Psi _ {2} ^ {( 1 )}\tag{80}
+
+[confidence=0.92; source=body_inline] y -
+
+[confidence=0.92; source=body_inline] \varepsilon _ {x x} ^ {( 3 )} ( x , y , \zeta _ {( 3 )} ) = U _ {, x} ^ {( 3 )} ( x , y ) \Psi _ {1} ^ {( 3 )} + U _ {, x} ^ {( 4 )} ( x , y ) \Psi _ {2} ^ {( 3 )}\tag{81}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {y y} ^ {( 3 )} ( x , y , \zeta _ {( 3 )} ) = V _ {, y} ^ {( 3 )} ( x , y ) \Psi _ {1} ^ {( 3 )} + V _ {, y} ^ {( 4 )} ( x , y ) \Psi _ {2} ^ {( 3 )}\tag{82}
+
+[confidence=0.92; source=body_inline] \mathcal {\kappa} _ {x} ^ {( 1 )} = \frac {\partial \theta _ {x} ^ {( 1 )}} {\partial x} = \frac {1} {h _ {1}} ( U _ {, x} ^ {( 2 )} - U _ {, x} ^ {( 1 )} )\tag{83}
+
+[confidence=0.92; source=body_inline] \mathcal {K} _ {y} ^ {( 1 )} = \frac {\partial \theta _ {y} ^ {( 1 )}} {\partial y} = \frac {1} {h _ {1}} ( V _ {, y} ^ {( 2 )} - V _ {, y} ^ {( 1 )} )\tag{84}
+
+[confidence=0.92; source=body_inline] F _ {2}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {F _ {1} = \sigma _ {\bar {y} \bar {y}} ^ {c , m i d} ( y _ {B} ) t _ {w} \mathrm{sin} \theta} \\ & {\quad = E _ {\bar {y}} \left( \Delta T _ {r} ^ {\left( 2 \right)} ( x , - 1 ) \right) \left[ \varepsilon _ {z z} ^ {\left( 2 \right)} ( x , y _ {B} , - 1 ) - \alpha _ {\bar {y}} \left( \Delta T _ {r} ^ {\left( 2 \right)} ( x , - 1 ) \right) \right] t _ {w} \mathrm{sin} \theta} \end{array}\tag{85}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {F _ {2} {=} \sigma _ {\bar {y} \bar {y}} ^ {c , m i d} ( y _ {B ^ {\prime}} ) t _ {w} \mathrm{sin} \theta} \\ & {\quad = E _ {\bar {y}} ( \Delta T _ {r} ^ {( 2 )} ( x , - 1 ) ) [ \varepsilon _ {z z} ^ {( 2 )} ( x , y _ {B ^ {\prime}} , - 1 ) - \alpha _ {\bar {y}} ( \Delta T _ {r} ^ {( 2 )} ( x , - 1 ) ) ] t _ {w} \mathrm{sin} \theta} \end{array}\tag{86}
+
+[confidence=0.92; source=body_inline] M ( \overline {{{y}}} ) = F _ {A} \overline {{{y}}} - M _ {A} \qquad ( 0 \leqslant \overline {{{y}}} \leqslant f )\tag{87}
+
+[confidence=0.92; source=body_inline] M ( \overline {{{y}}} ) = F _ {A} \overline {{{y}}} - F _ {1} ( \overline {{{y}}} - f ) - M _ {A} \qquad ( f \leqslant \overline {{{y}}} \leqslant 2 p - f )\tag{88}
+
+[confidence=0.92; source=body_inline] M ( {\overline {{y}}} ) = F _ {A} {\overline {{y}}} - F _ {1} ( {\overline {{y}}} - f ) - F _ {2} ( {\overline {{y}}} - 2 p + f ) - M _ {A} \qquad ( 2 p - f \leqslant {\overline {{y}}} \leqslant 2 p )\tag{89}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {f = \frac {p - h _ {2} \mathrm{cot} \hat {\theta}} {2} .} \end{array}
+
+[confidence=0.92; source=body_inline] M _ {A}
+
+[confidence=0.92; source=body_inline] F _ {A}
+
+[confidence=0.92; source=body_inline] M _ {A} = \frac {1} {( 2 p ) ^ {2}} [ F _ {1} ( 2 p - f ) ^ {2} f + F _ {2} ( 2 p - f ) f ^ {2} ]\tag{90}
+
+[confidence=0.92; source=body_inline] F _ {A} = \frac {1} {( 2 p ) ^ {2}} [ F _ {1} ( 2 p - f ) ^ {2} + F _ {2} f ^ {2} + 4 M _ {A} p ]\tag{91}
+
+[confidence=0.92; source=body_inline] \kappa _ {l o c a l} ^ {( 1 )} ( \overline {{y}} ) = \frac {M ( \overline {{y}} )} {E _ {y} ^ {( 1 )} I ^ {( 1 )}}\tag{92}
+
+[confidence=0.92; source=body_inline] E _ {v} ^ {( 1 )}
+
+[confidence=0.92; source=body_inline] I ^ {( 1 )}
+
+[confidence=0.92; source=body_inline] \mathcal {K} _ {x} ^ {( 3 )} = \frac {\partial \theta _ {x} ^ {( 3 )}} {\partial x} = \frac {1} {h _ {3}} ( U _ {, x} ^ {( 4 )} - U _ {, x} ^ {( 3 )} )\tag{93}
+
+[confidence=0.92; source=body_inline] \mathcal {K} _ {y} ^ {( 3 )} = \frac {\partial \theta _ {y} ^ {( 3 )}} {\partial y} = \frac {1} {h _ {3}} ( V _ {, y} ^ {( 4 )} - V _ {, y} ^ {( 3 )} )\tag{94}
+
+[confidence=0.92; source=body_inline] M ( y ) = \frac {P L ^ {2}} {12} - \frac {1} {2} P L y + \frac {1} {2} P y ^ {2}\tag{95}
+
+[confidence=0.92; source=body_inline] \sigma _ {y y} ^ {z 1} , x {=} 0.4 m
+
+[confidence=0.92; source=body_inline] \sigma _ {\mathrm{y} y} ^ {z 1} , \kappa {=} 0.2 \ m
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} _ {\mathbf {y} \mathbf {y}} ^ {z _ {2}} , \pmb {x} {=} \pmb {0} . 4 \mathbf {m}
+
+[confidence=0.92; source=body_inline] \sigma _ {y y} ^ {z _ {2}} , \kappa {=} 0.2 m
+
+[confidence=0.92; source=body_inline] \mathcal {K} _ {l o c a l} ^ {( 3 )} ( y ) = \frac {M ( y )} {E _ {y} ^ {( 3 )} I ^ {( 3 )}}\tag{96}
+
+[confidence=0.92; source=body_inline] E _ {y} ^ {( 3 )}
+
+[confidence=0.92; source=body_inline] I ^ {( 3 )}
+
+[confidence=0.92; source=body_inline] \gamma _ {x y} ^ {( k )} ( x , y , \zeta _ {( k )} ) = U _ {, y} ^ {( k )} \Psi _ {1} ^ {( k )} + U _ {,} ^ {( k + 1 )} \Psi _ {2} ^ {( k )} + V _ {, x} ^ {( k )} \Psi _ {1} ^ {( k )} + V _ {, x} ^ {( k + 1 )} \Psi _ {2} ^ {( k )}\tag{97}
+
+[confidence=0.92; source=body_inline] k = 1 , 3 ,
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\sigma _ {x x} ^ {( k ) , m i d} = \widetilde {Q} _ {11} ^ {( k )} ( \Delta T ^ {( k )} ( x , y ) ) [ \varepsilon _ {x x} ^ {( k )} ( x , y ) + \mu _ {x y} ^ {( k )} \varepsilon _ {y y} ^ {( k )} ( x , y )} \\ & {\quad \quad \quad - \alpha _ {x} ^ {( k )} ( \Delta T ^ {( k )} ( x , y ) ) \Delta T ^ {( k )} ( x , y ) ]} \end{array}\tag{98}
+
+[confidence=0.92; source=body_inline] \sigma _ {y y} ^ {\mathsf{m}} , \mathsf{x} {=} 0.4 \mathsf{m}
+
+[confidence=0.92; source=body_inline] \sigma _ {y y} ^ {\mathsf{m}} , \mathsf{x} {=} 0.2 \mathsf{m}
+
+[confidence=0.92; source=body_inline] \begin{array} {c} {{\sigma _ {y y} ^ {( k ) , m i d} = \widetilde {Q} _ {22} ^ {( k )} ( \Delta T ^ {( k )} ( x , y ) ) [ \varepsilon _ {y y} ^ {( k )} ( x , y ) + \mu _ {y x} ^ {( k )} \varepsilon _ {x x} ^ {( k )} ( x , y )}} \\ {{- \alpha _ {y} ^ {( k )} ( \Delta T ^ {( k )} ( x , y ) ) \Delta T ^ {( k )} ( x , y ) ]}} \end{array}\tag{99}
+
+[confidence=0.92; source=body_inline] k = 1 , 3
+
+[confidence=0.92; source=body_inline] {\sigma _ {y y} ^ {( k )}}
+
+[confidence=0.92; source=body_inline] E _ {y} ^ {( k )} h _ {k}
+
+[confidence=0.92; source=body_inline] \overline {{E _ {y} ^ {( k )} h _ {k} + E _ {\overline {{\nu}}} ^ {( 2 )} t _ {w}}}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\sigma _ {x x} ^ {( 1 )} = \widetilde {Q} _ {11} ^ {( 1 )} ( \Delta T ^ {( 1 )} ( x , y ) ) [ \varepsilon _ {x x} ^ {( 1 )} ( x , y ) + z ^ {( 1 )} \kappa _ {x} ^ {( 1 )} ( x , y ) + \mu _ {x y} ^ {( 1 )} ( \varepsilon _ {y y} ^ {( 1 )} ( x , y )} \\ & {\phantom {\sigma _ {x x} ^ {( 1 )} =} + z ^ {( 1 )} \kappa _ {y} ^ {( 1 )} ( x , y ) + z ^ {( 1 )} \kappa _ {l o c a l} ^ {( 1 )} ( x , \overline {{y}} ) ) {- \alpha _ {x} ^ {( 1 )}} ( \Delta T ^ {( 1 )} ( x , y ) ) \Delta T ^ {( 1 )} ( x , y ) ]} \\ & {\phantom {\sigma _ {x x} ^ {( 1 )} =}} \\ & {\phantom {\sigma _ {x x} ^ {( 1 )} =} \mathcal {\widetilde {Q}} _ {22} ^ {( 1 )} ( \Delta T ^ {( 1 )} ( x , y ) ) [ \varepsilon _ {y y} ^ {( 1 )} ( x , y ) + z ^ {( 1 )} \kappa _ {y} ^ {( 1 )} ( x , y ) + z ^ {( 1 )} \kappa _ {l o c a l} ^ {( 1 )} ( x , \overline {{y}} )} \\ & {\phantom {\sigma _ {x y} ^ {( 1 )} =} + \mu _ {y x} ^ {( 1 )} ( \varepsilon _ {x x} ^ {( 1 )} ( x , y ) + z ^ {( 1 )} \kappa _ {x} ^ {( 1 )} ( x , y ) ) {- \alpha _ {y} ^ {( 1 )}} ( \Delta T ^ {( 1 )} ( x , y ) ) \Delta T ^ {( 1 )} ( x , y ) ]} \end{array}\tag{100}
+
+[confidence=0.92; source=body_inline] \sigma _ {y y} ^ {z _ {2}} , x {=} 0.4 m
+
+[confidence=0.92; source=body_inline] \sigma _ {\mathrm{yy}} ^ {z _ {2}} , \kappa {=} 0.2 \mathrm{m}
+
+[confidence=0.92; source=body_inline] \sigma _ {\mathsf{y} \mathsf{y}} ^ {\mathsf{m}} , \mathsf{x} {=} 0.4 \mathsf{m}
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} _ {\mathbf {y} \mathbf {y}} ^ {m} , \mathbf {x} {=} 0.2 \mathbf {m}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {- \frac {h _ {1}} {2} \leqslant z ^ {( 1 )} \leqslant \frac {h _ {1}} {2} .} \end{array}
+
+[confidence=0.92; source=body_inline] \begin{array} {c} {{\sigma _ {x x} ^ {( 3 )} = \widetilde {Q} _ {11} ^ {( 3 )} ( \Delta T ^ {( 3 )} ( x , y ) ) [ \varepsilon _ {x x} ^ {( 3 )} ( x , y ) + z ^ {( 3 )} \kappa _ {x} ^ {( 3 )} ( x , y ) + \mu _ {x y} ^ {( 3 )} ( \varepsilon _ {y y} ^ {( 3 )} ( x , y )}} \\ {{+ z ^ {( 3 )} \kappa _ {y} ^ {( 3 )} ( x , y ) + z ^ {( 3 )} \kappa _ {l o c a l} ^ {( 3 )} ( x , \overline {{{y}}} ) ) - \alpha _ {x} ^ {( 3 )} ( \Delta T ^ {( 3 )} ( x , y ) ) \Delta T ^ {( 3 )} ( x , y ) ]}} \end{array}\tag{102}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\sigma _ {y y} ^ {( 3 )} = \widetilde {Q} _ {22} ^ {( 3 )} ( \Delta T ^ {( 3 )} ( x , y ) ) [ \varepsilon _ {y y} ^ {( 3 )} ( x , y ) + z ^ {( 3 )} \kappa _ {y} ^ {( 3 )} ( x , y ) + z ^ {( 3 )} \kappa _ {l o c a l} ^ {( 3 )} ( x , \overline {{y}} )} \\ & {\quad \quad \quad \quad + \mu _ {y x} ^ {( 3 )} ( \varepsilon _ {x x} ^ {( 3 )} ( x , y ) + z ^ {( 3 )} \kappa _ {x} ^ {( 3 )} ( x , y ) ) - \alpha _ {y} ^ {( 3 )} ( \Delta T ^ {( 3 )} ( x , y ) ) \Delta T ^ {( 3 )} ( x , y ) ]} \end{array}\tag{103}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {- \frac {h _ {3}} {2} \leqslant z ^ {( 3 )} \leqslant \frac {h _ {3}} {2} .} \end{array}
+
+[confidence=0.92; source=body_inline] \sigma _ {y y} ^ {z 2} , x {=} 0.4 m
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} _ {\mathbf {y} \mathbf {y}} ^ {z 2} , \pmb {x} {=} \mathbf {0} . 2 \mathbf {m}
+
+[confidence=0.92; source=body_inline] \sigma _ {x y} ^ {( k )} = Q _ {66} ^ {( k )} \left( \Delta T ^ {( k )} ( x , y ) \right) \gamma _ {x y} ^ {( k )} ( x , y , \zeta _ {( k )} )\tag{104}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{{\boldsymbol {p}} = 0.05 ~ {\mathrm{m}} , ~ h _ {2} = 0.08 ~ {\mathrm{m}} , ~ h _ {3} = 0.002 ~ {\mathrm{m}} , ~ h _ {1} = 0.003 ~ {\mathrm{m}} , ~ t _ {w} = 0.002 ~ {\mathrm{m}} , ~ \theta}} \\ {{{\boldsymbol {\mathit {\sigma}}} = 75 ^{\circ} .}} \end{array}
+
+[confidence=0.92; source=body_inline] 0.8 \mathrm{m} \times 0.8 \mathrm{m}
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} _ {\mathbf {y} \mathbf {y}} ^ {z 1} , \pmb {\mathrm{x}} \pmb {=} \pmb {0} . 4 \mathbf {m}
+
+[confidence=0.92; source=body_inline] \sigma _ {\mathrm{yy}} ^ {z 1} , \kappa {=} 0.2 \mathrm{m}
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} _ {\mathbf {y} \mathbf {y}} ^ {z _ {2}} , \pmb {\mathrm{x}} \pmb {=} \pmb {0.4 \mathrm{m}}
+
+[confidence=0.92; source=body_inline] \sigma _ {\mathrm{yy}} ^ {z 1} , \kappa {=} 0.2 \ m
+
+[confidence=0.92; source=body_inline] {\mathfrak {\sigma}} _ {\mathbf {y} \mathbf {y}} ^ {\mathsf{m}} ,
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} _ {y y} ^ {z 1} , \pmb {x} {=} \pmb {0} . 4 \pmb {\mathrm{m}}
+
+[confidence=0.92; source=body_inline] E = - 0.0917 T + 220.5073 ( {\mathrm{GPa}} ) , \alpha _ {T} = 0.0048 T + 10.6063 ( 10 ^ {- 6} / {} ^{\circ} \mathrm{C} )
+
+[confidence=0.92; source=body_inline] \Delta T _ {1} = 50 \quad \mathrm {~ ( ^ {o} C )}
+
+[confidence=0.92; source=body_inline] \Delta T _ {3} = 250 ( ^{\circ} \mathrm{C} )
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\Delta T _ {2} = 250 \frac {z - z _ {l} ^ {( 2 )}} {h _ {2}} + 50 \bigg ( 1 - \frac {z - z _ {l} ^ {( 2 )}} {h _ {2}} \bigg )} \end{array}
+
+[confidence=0.92; source=body_inline] {\sigma} _ {y y} ^ {m} ,
+
+[confidence=0.92; source=body_inline] {\sigma} _ {\mathbf {y} {\mathbf {y}} ^ {\prime}} ^ {m}
+
+[confidence=0.92; source=body_inline] p = 0.1
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} _ {y y} ^ {z _ {2}} , \pmb {x} {=} \pmb {0.4 m}
+
+[confidence=0.92; source=body_inline] \sigma _ {y y} ^ {z 1} , \kappa {=} 0.2 \ m
+
+[confidence=0.92; source=body_inline] \sigma _ {\mathrm{yy}} ^ {z 2} , \kappa {=} 0.2 \ m
+
+[confidence=0.92; source=body_inline] \pmb {\sigma} _ {y y} ^ {m} , \pmb {x} {=} 0.4 \pmb {m}
+
+[confidence=0.92; source=body_inline] {\mathfrak {o}} _ {\mathbf {y} \mathbf {y}} ^ {Z 1} ,
+
+[confidence=0.92; source=body_inline] {\mathfrak {o}} _ {\mathbf {y} \mathbf {y}} ^ {z _ {2}} ,

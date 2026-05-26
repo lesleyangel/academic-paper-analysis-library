@@ -1,0 +1,244 @@
+[
+  {
+    "id": "equation_001",
+    "source": "equations",
+    "meta": "[page 1, bbox (40.42, 659.04, 333.57, 690.38)]",
+    "original": "* Corresponding author. ** Corresponding author. E-mail addresses: huyanting@nwpu.edu.cn (T. Huyan), jj.gou@nwpu.edu.cn (J.-J. Gou).",
+    "normalized": "* Corresponding author. ** Corresponding author. E-mail addresses: huyanting@nwpu.edu.cn (T. Huyan), jj.gou@nwpu.edu.cn (J.-J. Gou)",
+    "confidence": 0.57,
+    "needs_review": true,
+    "issues": [
+      "text_heavy"
+    ],
+    "drop": false,
+    "repairs": [
+      "unit_expression_repaired"
+    ]
+  },
+  {
+    "id": "equation_002",
+    "source": "equations",
+    "meta": "[page 1, bbox (37.59, 695.66, 355.13, 716.91)]",
+    "original": "https://doi.org/10.1016/j.actaastro.2024.03.056 Received 22 August 2023; Received in revised form 24 February 2024; Accepted 28 March 2024",
+    "normalized": "https://doi.org/10.1016/j.actaastro.2024.03.056 Received 22 August 2023; Received in revised form 24 February 2024; Accepted 28 March 2024",
+    "confidence": 0.57,
+    "needs_review": true,
+    "issues": [
+      "text_heavy"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( \\mathsf { C A } \\mathsf { S } ,",
+    "normalized": "( \\mathsf{CA} \\mathsf{S} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_001"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "3 7 ^ { \\circ } \\mathrm { C }",
+    "normalized": "37~^{\\circ}\\mathrm{C}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_002"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { C O } _ { 2 } .",
+    "normalized": "\\mathrm{CO} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_003"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { W } \\times 3 5 \\mathrm { H } \\mathrm { m m } )",
+    "normalized": "\\mathrm{W} \\times 35 \\mathrm{H} \\mathrm{mm} )",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_005"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { m m } ^ { 2 }",
+    "normalized": "\\mathrm{mm} ^ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_006"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "3 7 ^ { \\circ } \\mathrm { C }",
+    "normalized": "37~^{\\circ}\\mathrm{C}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_007"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { C O } _ { 2 }",
+    "normalized": "\\mathrm{CO} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_008"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\times 1 0 ^ { 7 }",
+    "normalized": "\\times 10 ^ {7}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_009"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 \\times { 1 0 } ^ { 4 }",
+    "normalized": "2 \\times {10} ^ {4}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_010"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "3 7 ^ { \\circ } \\mathrm { C }",
+    "normalized": "37~^{\\circ}\\mathrm{C}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_011"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathsf { a } \\mathrm { C O } _ { 2 }",
+    "normalized": "\\mathsf{a} \\mathrm{CO} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_012"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 ^ { - \\Delta \\Delta \\mathrm { C t } }",
+    "normalized": "2 ^ {- \\Delta \\Delta \\mathrm{Ct}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_013"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "p < 0 . 0 5",
+    "normalized": "p < 0.05",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_014"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "p < 0 . 0 1",
+    "normalized": "p < 0.01",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_015"
+  }
+]

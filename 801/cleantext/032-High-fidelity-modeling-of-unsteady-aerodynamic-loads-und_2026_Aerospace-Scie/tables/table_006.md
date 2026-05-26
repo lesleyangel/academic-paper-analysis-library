@@ -1,0 +1,4 @@
+| Method | eRMSE | eNSE |
+| --- | --- | --- |
+| DMS-LSTM | $\mathbf { 2 . 9 3 5 \times 1 0 ^ { - 5 } }$ | $\mathbf { 1 . 6 9 3 \times 1 0 ^ { - 2 } }$ |
+| POD-LSTM | $1 . 5 1 9 \times 1 0 ^ { - 4 }$ | $1 . 6 1 3 \times 1 0 ^ { - 1 }$ |

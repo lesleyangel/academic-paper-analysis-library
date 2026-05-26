@@ -1,0 +1,255 @@
+## 1. Introduction
+
+Measuring distributed loads of physical fields like force and heat on surface is essential for aerodynamic design, integrated thermal protection system analysis, health monitoring, and flight control of flight vehicle [1–3]. However, the limited sensor locations on the fight vehicle surface poses challenges in obtaining complete field data. To address this issue, researchers have developed sparse reconstruction methods to reconstruct physical filed data from limited sensor measurements. These methods have been extensively used in wind tunnel experiments and real-flight applications [4,5]. Generally, the key factors affecting sparse reconstruction performance include the sparse reconstruction model and sensor locations.
+
+Sparse reconstruction models directly affect the accuracy and efficiency of sparse reconstruction. In early studies, compressed sensing [6] (CS) was commonly used to construct sparse reconstruction models.
+
+Originating in signal processing, CS leverages signal sparsity to reconstruct complete signals from limited observations and has been widely used for sparse reconstruction of high-dimensional physical field data [7,8]. Bai et al. [9] utilized CS to reconstruct particle image velocimetry flow data. Similarly, CS was employed to reconstruct unsteady flow field around cavitation hydrofoils [10]. However, CS requires optimization to solve basis coefficients and is inherently NP-hard, posing challenges for ensuring sparse reconstruction accuracy. To address this, Sha et al. [11] proposed an improved CS method that incorporates a fully connected neural network to refine the solution process of basis coefficients. However, this improvement also led to increased model complexity and reduced computational efficiency.
+
+With advancements in machine learning algorithms [12,13], regression-based sparse reconstruction models have emerged. Unlike CS, which requires optimizing basis coefficients, these models directly map sparse sensor measurements to physical field data. They are trained to minimize reconstruction error, resulting in an optimal reconstruction model. Generally, regression-based sparse reconstruction models can be divided into two types: deep learning-based model and reduced-order model (ROM)-based surrogate model [14]. The deep learning-based model employs deep neural networks (DNN) to directly map sparse sensor measurements to high-dimensional physical filed data. Fukami et al. [15] employed convolutional neural networks to achieve sparse reconstruction of the 2D cylinder wake and sea surface temperature field. Santos et al. [5] proposed a model that combines one encoder and two decoders, which was applied to the sparse reconstruction of various flow scenarios, including flow past a cylinder, sea surface temperature, channel turbulence and multiphase flow. Additionally, fully-connected long short-term memory network [16], physics-informed neural networks [17] and physics-informed graph neural networks [18] have also been successfully applied to the fast and accurate sparse reconstruction of unsteady flow fields. Owing to the strong representation capability of DNN, deep learning-based model can achieve high accuracy in solving sparse reconstruction problems with complex features. However, training complex network architectures reduces modeling efficiency, and tasks like sensor location optimization, which require multiple iterations of model training, can incur high computational costs.
+
+The ROM-based surrogate model is a hybrid approach that reduces high-dimensional physical field data to low-dimensional mode coefficients using ROM [19,20] and maps sparse sensor measurements to mode coefficients through surrogate model [21] with simple architecture. Proper orthogonal decomposition (POD), a classical ROM, has been effectively applied to sparse reconstruction of physical field data in steady and unsteady flows by integrating surrogate models like radial basis function neural network (RBFNN) and multilayer perceptron [22, 23]. Dynamic mode decomposition, a ROM that captures spatial-temporal coherent structures in dynamical systems [24], has also been widely applied in recent years for sparse reconstruction of phenomena such as flow past a cylinder, weekly mean sea surface temperature, and isotropic turbulence [25,26]. The ROM-based surrogate model effectively resolves the challenge of low modeling efficiency, contributing to its widespread adoption.
+
+Considering the modeling efficiency and accuracy of the three aforementioned sparse reconstruction models, this study selects the ROM-based surrogate model for sparse reconstruction.
+
+Sensor locations refer specifically to both the number of sensors and their spatial arrangement. An insufficient number of sensors can reduce the complexity and cost of measuring system, but lead to inadequate measurement data, complicating accurate sparse reconstruction [27]. Conversely, an excessive number of sensors may cause interference and conflicts, thereby amplifying their impact on the measured system. This poses significant challenges for space-constrained applications, such as smart micro aerial vehicles [28,29]. Therefore, it is necessary to investigate the minimum number of sensors required to meet the accuracy requirements of the sparse reconstruction model. Moreover, the rational sensor locations significantly impacts both the accuracy and reliability of the sparse reconstruction model [30–32]. In existing studies, Heuristic optimization algorithms [33] are commonly used for determining the optimal sensor locations. Zhang et al. [34] optimized the sensor arrangement for thermal turbulence reconstruction in the nacelle using an improved particle swarm optimization algorithm. Additionally, both the greedy algorithm [31,35], genetic algorithm [36,37] and lichtenberg algorithm [38] have been successfully applied to optimize sensor locations for various sparse reconstruction problems.
+
+In summary, while previous research on sparse reconstruction models and sensor location optimization is well-established, it mainly focuses on single-source field data reconstruction, with limited exploration of multi-source field data. Sparse reconstruction of multi-source field data with a limited number of sensors cannot be achieved by independently reconstructing each physical field. Instead, it requires considering multi-source information [39] to ensure sparse reconstruction accuracy. Therefore, we developed a novel sparse reconstruction method for multiple physical filed data using multi-source sensor measurements. In this method, to fully utilize multi-source information, multi-source sensor measurements are used as shared inputs to the sparse reconstruction model to reconstruct each physical field. Subsequently, based on the sparse reconstruction model, multi-source sensor location optimization was carried out, and the theoretical minimum number of sensors required to achieve sparse reconstruction accuracy for multi-source physical field data was derived.
+
+The main contributions of this work can be summarized as follows:
+
+A sparse reconstruction method of physical field data via multisource sensor measurements is proposed, which involves constructing the sparse reconstruction model through POD-RBFNN and optimizing multi-source sensor locations with DE algorithm.
+
+The minimum number of multi-source sensors satisfying the sparse reconstruction accuracy is analyzed theoretically and validated through sparse reconstruction of multiple physical field data on a reentry capsule.
+
+The proposed method can efficiently decrease the total number of multi-source sensors and improve sparse reconstruction accuracy, as validated by the test case, and remains effective even under sensor measurement noise.
+
+The structure of this paper is as follows. Section 2 describes the procedure of the proposed sparse reconstruction method, including the overall process, the sparse reconstruction model and sensor location optimization, and briefly introduces the theory for determining the minimum number of sensors. Section 3 verifies the proposed method through the case involving the sparse reconstruction of two physical filed. Section 4 presents the conclusions of the paper.
+
+## 2. Methods
+
+This section introduces the basic principle overall process of the proposed sparse reconstruction method, and two models involved, including the sparse reconstruction model and sensor location optimization. Furthermore, a theoretical derivation is provided for determining the minimum number of multi-source sensors required under the proposed sparse reconstruction model.
+
+## 2.1. Sparse reconstruction method via multi-source sensors
+
+The sparse reconstruction method using multi-source sensor measurements is proposed to reduce the number of multi-source sensors and improve sparse reconstruction accuracy. Fig. 1 presents the schematic diagram of the proposed method, which includes three main steps: generation of database, construction of sparse reconstruction model through ROM-based surrogate, and sensor location optimization. The detailed description of these three steps can be described as follows.
+
+Firstly, for the sparse reconstruction problem of data from t physical fields $\left\{\mathbf {y} ^ {1} , \mathbf {y} ^ {2} , \cdots , \mathbf {y} ^ {t} \right\}$ , which involves flow conditions $\mathbf {x} = [ x _ {1} , x _ {2} , \cdots , x _ {l} ]$ with l parameters, sampling is employed to obtain r groups of flow conditions $\mathbf {X} \in \mathbb {R} ^ {l \times r} ( r {>} l )$ . For each group of flow conditions, the field data of all physical properties are obtained by numerical simulation methods such as computational fluid dynamics (CFD), and a comprehensive database $\left\{\mathbf {Y} ^ {1} , \mathbf {Y} ^ {2} , \cdots , \mathbf {Y} ^ {t} \right\}$ encompassing all physical fields is subsequently constructed. where, $\mathbf {Y} ^ {i} = [ \mathbf {Y} _ {1} ^ {i} , \mathbf {Y} _ {2} ^ {i} , \cdots , \mathbf {Y} _ {r} ^ {i} ] \in \mathbb {R} ^ {N _ {i} \times r} ( i = 1 , 2 , \cdots$ t) represents the ith physical field data, and $N _ {i}$ is the dimension of ith physical field data. Generally, Ni≫l.
+
+Secondly, a sparse reconstruction model is established to map multisource sparse measurements onto multiple physical field data, while concurrently solving the objective function of sensor location optimization. In the traditional spare reconstruction model for multi-source field data, individual sparse reconstruction models are typically constructed for each physical field based on its sparse measurements. This single-source reconstruction model can be expressed as
+
+$$\left\{\begin{array} {l l} {\mathbf {Y} ^ {1} = f _ {1} \left( \mathbf {D} ^ {1} \right)} \\ {\mathbf {Y} ^ {2} = f _ {2} \left( \mathbf {D} ^ {2} \right)} \\ {\quad \quad \vdots} \\ {\mathbf {Y} ^ {t} = f _ {t} ( \mathbf {D} ^ {t} )} \end{array} \right. .\tag{1}$$
+
+where, $f _ {i}$ and $\mathbf {D} ^ {i}$ represent the sparse reconstruction model and sensor measurements for the ith physical field, respectively. Di is obtained from $\mathbf {Y} ^ {i}$ by the given sensor locations $p ^ {i} ,$ , which can be expressed by
+
+$$\mathbf {D} ^ {i} = \mathbf {E} ^ {i} \mathbf {Y} ^ {i} = \mathbf {Y} ^ {i} \left[ \mathbf {p} ^ {i} , \boldsymbol {\otimes} ^ {c} \right] . .\tag{2}$$
+
+where, $\mathbf {D} ^ {i} \in \mathbb {R} ^ {n _ {i} \times r} ; \mathbf {E} ^ {i} = \left[ \mathbf {e} _ {p _ {1} ^ {i}} , \mathbf {e} _ {p _ {2} ^ {i}} , \cdots , \mathbf {e} _ {p _ {n _ {i}} ^ {i}} \right] ^ {\mathrm{T}} \in \mathbb {R} ^ {n _ {i} \times N _ {i}} , \mathbf {e} _ {p _ {k} ^ {i}} ( k = 1 , 2 , \cdots , n _ {i} )$ is a unit column vector with the $p _ {k} ^ {i}$ th element being 1; $\pmb {\mathrm{p}} ^ {i} = \left\{p _ {1} ^ {i} , p _ {2} ^ {i} , \cdots , p _ {n _ {i}} ^ {i} \right\}$ is the index set, which satisfies $1 \leq p _ {k} ^ {i} \leq N _ {i}$ and $\vert \mathbf {p} ^ {i} \vert = n _ {i} \ ( \vert \mathbf {p} ^ {i} \vert$ is the cardinality of $\mathbf {p} ^ {i} )$ . In the following context, $\mathbf {p} ^ {i}$ is also treated as $\left[ p _ {1} ^ {i} , p _ {2} ^ {i} , \cdots , \right$ $p _ {n _ {i}} ^ {i} \Big ]$ to support matrix operations.
+
+However, this model falls short in effectively leveraging multi-source measurements. To address this limitation, we propose a novel sparse reconstruction model. The proposed model utilizes sensor measurements from all physical fields as common input to individually reconstruct each physical field, which can be expressed by
+
+$$\left\{{\mathbf {Y}} ^ {1} = f _ {1} ( {\mathbf {D}} ) \right.\tag{3}$$
+
+where, $\mathbf {D} = {\left[ \begin{array} {l} {\mathbf {D} ^ {1}} \\ {\mathbf {D} ^ {2}} \\ {\vdots} \\ {\mathbf {D} ^ {t}} \end{array} \right]} \in \mathbb {R} ^ {n \times r}$ is the multi-source sensor measurements,
+
+which satisfies $n = n _ {1} + n _ {2} + \cdots + n _ {t}$ . The theoretical derivation of the minimum number of sensors required when using the proposed sparse reconstruction model is presented in Section 2.2.
+
+Finally, the sensor location optimization is performed with the goal of generating multi-source sensor locations $\mathbf {p} = \left[ \mathbf {p} ^ {1} , \mathbf {p} ^ {2} , \cdots , \mathbf {p} ^ {t} \right] \in \mathbb {R} ^ {1 \times n} ( n {=} n _ {1} {+} n _ {2} {+} \cdots {+} n _ {t} )$ during optimization, updating the sparse reconstruction model, and achieving optimum multi-source sensor locations and the updated sparse reconstruction model through iterative convergence. The specific procedures for the sparse reconstruction model and sensor location optimization are described in Section 2.3 and Section 2.4, respectively.
+
+## 2.2. Minimum number of the multi-source sensors
+
+This section theoretically discusses the minimum number of multisource sensors for sparse reconstruction based on system observability [40].
+
+## 2.2.1. Determine the rank of physical field data
+
+For each physical property $\mathbf {y} ^ {i} ,$ , the relationship from the flow conditions x to $\mathbf {y} ^ {i}$ can be regarded as a function F from an l-dimensional Euclidean space to a $N _ {i}$ dimensional Euclidean space: $\mathbb {R} ^ {l} \to \mathbb {R} ^ {N _ {i}}$ . This function is comprised of $\mathbf {\dot {N}} _ {i}$ real function: $y _ {1} ^ {i} ( x _ {1} , x _ {2} , \cdots , x _ {l} ) , . . . , y _ {N _ {i}} ^ {i} ( x _ {1} , x _ {2} , \cdots ,$ $x _ {l} )$ . When the field data corresponding to $\mathbf {y} ^ {i}$ does not contain discontinuous features, $F$ can be regarded as a continuously differentiable function. Define the Jacobian matrix $\mathbf {J} ^ {i} \in \mathbb {R} ^ {N _ {i} \times l}$ as
+
+$$\mathbf {J} ^ {i} = \left( \begin{array} {c c c c} {\displaystyle \frac {\partial y _ {1} ^ {i}} {\partial x _ {1}}} & {\displaystyle \frac {\partial y _ {1} ^ {i}} {\partial x _ {2}}} & {\cdots} & {\displaystyle \frac {\partial y _ {1} ^ {i}} {\partial x _ {l}}} \\ {\displaystyle \frac {\partial y _ {2} ^ {i}} {\partial x _ {1}}} & {\displaystyle \frac {\partial y _ {2} ^ {i}} {\partial x _ {2}}} & {\cdots} & {\displaystyle \frac {\partial y _ {2} ^ {i}} {\partial x _ {l}}} \\ {\vdots} & {\vdots} & {\vdots} & {\vdots} \\ {\displaystyle \frac {\partial y _ {N _ {i}} ^ {i}} {\partial x _ {1}}} & {\displaystyle \frac {\partial y _ {N _ {i}} ^ {i}} {\partial x _ {2}}} & {\cdots} & {\displaystyle \frac {\partial y _ {N _ {i}} ^ {i}} {\partial x _ {l}}} \end{array} \right) .\tag{4}$$
+
+The function F can be expressed as
+
+$$\mathbf {Y} ^ {i} = \mathbf {J} ^ {i} \mathbf {X} .\tag{5}$$
+
+Based on the rank theorem of matrix multiplication and Sylvester rank inequality, it can be obtained that
+
+$$\begin{array}{c} \{\operatorname{rank} ( \mathbf {Y} ^ {i} ) \leq \operatorname* {m i n} ( \operatorname{rank} ( \mathbf {J} ^ {i} ) , \operatorname{rank} ( \mathbf {X} ) ) \\ {\operatorname{rank} ( \mathbf {Y} ^ {i} ) \geq \operatorname{rank} ( \mathbf {J} ^ {i} ) + \operatorname{rank} ( \mathbf {X} ) - l} \end{array} . \tag{6}$$
+
+Since X consists of a set of linearly independent variables, i.e., rank(X) = l, Eq. (6) can be equivalently expressed as
+
+$$\operatorname{rank} \left( \mathbf {Y} ^ {i} \right) = \operatorname{rank} \left( \mathbf {J} ^ {i} \right) \leq l .\tag{7}$$
+
+Eq. (7) indicates that, when the physical field data Yi do not contain discontinuous features, its rank does not exceed the number of variables in the flow conditions. Additionally, $\forall \mathbf {Y} _ {j} ^ {i} \in \mathbf {Y} ^ {i} ;$ , when there exists at most one unique set of $\mathbf {X} _ {j} \in \mathbf {X}$ corresponding to $\mathbf {Y} _ {j} ^ {i} ,$ , the matrix Ji possesses full column rank, i.e., rank $\left( \mathbf {J} ^ {i} \right) = l$ Then, Eq. (7) can be reformulated as:
+
+$$\operatorname{rank} ( \mathbf {Y} ^ {i} ) = l .\tag{8}$$
+
+For the sparse reconstruction of multiple physical field data, define Y as the matrix composed of all physical field data, and the relationship from X to Y can be expressed as
+
+$$\mathbf {Y} = \mathbf {J} \mathbf {X} .\tag{9}$$
+
+$${\mathrm{where,~}} \mathbf {Y} = {\left[ \begin{array} {l} {\mathbf {Y} ^ {1}} \\ {\mathbf {Y} ^ {2}} \\ {\vdots} \\ {\mathbf {Y} ^ {t}} \end{array} \right]} , \mathbf {J} = {\left[ \begin{array} {l} {\mathbf {J} ^ {1}} \\ {\mathbf {J} ^ {2}} \\ {\vdots} \\ {\mathbf {J} ^ {t}} \end{array} \right]}$$
+
+Through similar analysis to the rank of $\mathbf {Y} ^ {i} ,$ the rank of Y satisfies
+
+$$\operatorname{rank} ( \mathbf {Y} ^ {i} ) \leq \operatorname{rank} ( \mathbf {Y} ) \leq l .\tag{10}$$
+
+By combining Eq. (8) and $\operatorname{Eq.} \left( 10 \right)$ , it can be deduced that rank $\mathbf {\partial} ( \mathbf {Y} ) =$ rank $( \mathbf {Y} ^ {i} ) = l$
+
+## 2.2.2. Determine the minimum number of sensors
+
+From $\operatorname{Eq.} \left( 2 \right)$ , we can obtain that the rank Ei equals $n _ {i} ,$ and the rank of $\mathbf {D} ^ {i}$ satisfies
+
+$$\operatorname{rank} \left( \mathbf {D} ^ {i} \right) \leq \operatorname* {m i n} \left( n _ {i} , \operatorname{rank} \left( \mathbf {Y} ^ {i} \right) \right) .\tag{11}$$
+
+Define the sparse reconstruction system as $\ell \colon \mathbb {R} ^ {N _ {i}} \to \mathbb {R} ^ {n _ {i}}$ , which represents the mapping relationship from the Ni-dimensional physical field data to the ni-dimensional sparse sensor measurements. The premise of accurate sparse reconstruction is that the system $\ell$ must be observable, meaning that ∀Di $\in \mathbf {D} ^ {i} ,$ there exists a unique set of $\mathbf {Y} _ {j} ^ {i} \in \mathbf {Y} ^ {i}$ that corresponds to it. Therefore, the system ℓ should satisfies
+
+$$\operatorname{rank} \left( \mathbf {D} ^ {i} \right) \geq \operatorname{rank} \left( \mathbf {Y} ^ {i} \right) .\tag{12}$$
+
+By combining Eq. (11) and Eq. (12), we can obtain that
+
+$$n _ {i} \geq \mathrm{rank} \big ( \mathbf {D} ^ {i} \big ) = \mathrm{rank} \big ( \mathbf {Y} ^ {i} \big ) .\tag{13}$$
+
+When the values of $\mathbf {p} ^ {i}$ are appropriate, $\mathbf {D} ^ {i}$ becomes a row full-rank matrix, and $n _ {i} = \mathrm{rank} \left( \mathbf {D} ^ {i} \right)$ . Physically, this means that the minimum number of sensors required for sparse reconstruction based on system observability is equal to the rank of the physical field data. Similarly, for the sparse reconstruction of multiple physical field data, the minimum number of multi-source sensors is equal to the rank of the multiple physical field data, $\mathbf {i . e . ,} n = \mathbf {r a n k} ( \mathbf {Y} )$ .
+
+Therefore, based on the minimum number of sensors for the sparse reconstruction of both single and multiple physical fields, it can be shown that the proposed sparse reconstruction method significantly reduces the number of multi-source sensors compared to the traditional method, which establish independent models for each physical field. Theoretically, the total number of multi-sensors can be reduced by (t − 1) /t × 100%.
+
+In summary, the determination of minimum number of multi-source sensor for sparse reconstruction of multiple physical fileds can be formalized as a three-step procedure (as shown in Fig. 2):
+
+1. Analysis the flow conditions of sparse reconstruction problems and compute their algebraic rank.
+
+2. Determine the rank of multiple physical field data for sparse reconstruction using matrix operation theory.
+
+3. Determine the minimum number of multi-source sensor based on system observability theory.
+
+## 2.3. Sparse reconstruction model using rom-based surrogate
+
+The sparse reconstruction model is constructed using ROM-based surrogate. The modeling and reconstructing process is shown in Fig. 3.
+
+In the modeling process, we first adopt POD to achieve a reducedorder representation and reconstruction of high-dimensional physical field data. Through the POD modeling process, the coherent structures from each group of physical field data are extracted, and $\mathbf {Y} ^ {i}$ can be represented as a superposition of $m _ {i}$ dominant modes, that is
+
+$$\mathbf {Y} ^ {i} \approx \mathbf {\Phi} \mathbf {\Phi} ^ {i} \mathbf {\cdot} \mathbf {A} ^ {i} + \overline {{\mathbf {Y}}} ^ {i} .\tag{14}$$
+
+where, $\Phi ^ {i} = \left\lceil \Phi _ {1} ^ {i} , \Phi _ {2} ^ {i} , \cdots \Phi _ {m _ {i}} ^ {i} \right\rceil \in \mathbb {R} ^ {N _ {i} \times m _ {i}}$ represents the matrix composed of the first m POD modes; $\mathbf {A} ^ {i} = \left[ \mathbf {A} _ {1} ^ {i} , \mathbf {A} _ {2} ^ {i} , \cdots , \mathbf {A} _ {r} ^ {i} \right] \in \mathbb {R} ^ {m _ {i} \times r}$ is the matrix of mode coefficients, and $\mathbf {A} _ {j} ^ {i} \in \mathbb {R} ^ {m _ {i} \times 1}$ represents the first $m _ {i}$ mode coefficients of Yi ; $\overline {{\mathbf {Y}}} ^ {i}$ represents the mean of $\mathbf {Y} ^ {i}$ and is calculated by $\overline {{\mathbf {Y}}} ^ {i} =$ $\begin{array} {r} {\frac {1} {r} \sum _ {j = 1} ^ {r} \mathbf {Y} _ {j} ^ {i} .} \end{array}$ . Generally, the value of $m _ {i}$ is much smaller than $N _ {i} ,$ , and it can be obtained through POD reconstruction error analysis or energy proportion analysis [41]. Here, we adopt the first approach to determine the value of $m _ {i}$ . Define $e ^ {i}$ as the reconstruction error of $\mathbf {Y} _ {\mathrm{~:~}} ^ {i}$ , which is calculated by
+
+$$e ^ {i} = \frac {1} {r} {\sum _ {j = 1} ^ {r}} \frac {\parallel \Phi ^ {i} {\cdot} \mathbf {A} _ {j} ^ {i} + \overline {{\mathbf {Y}}} ^ {i} - \mathbf {Y} _ {j} ^ {i} \parallel _ {1}} {\operatorname* {m a x} \left( {\mathbf {Y} _ {j} ^ {i}} \right) - \operatorname* {m i n} \left( {\mathbf {Y} _ {j} ^ {i}} \right)} .\tag{15}$$
+
+where, $\| \cdot \| _ {1}$ represents the 1-norm.
+
+Define the error threshold as $e _ {0} ^ {i} ,$ and mi is the minimum value that satisfies the reconstruction error condition:
+
+$$e ^ {i} \leq e _ {0} ^ {i} .\tag{16}$$
+
+where, $e _ {0} ^ {i}$ is set to $N ^ {i} \times 10 ^ {- 3}$ in this work.
+
+Then, the surrogate model is established to map muti-source sensor measurements to mode coefficients. Given the relatively low dimensionality of both the input and output, RBFNN is used for its strong nonlinear fitting ability, simple architecture, and high modeling efficiency [42]. As shown in Fig. 4, a typical RBFNN model includes three layers: input layer, hidden layer, and output layer. The input and output dimensions are n and mi, respectively. In the hidden layer, the Gaussian function is selected as the transfer function. The mapping from multi-source sensor measurements to the mode coefficients of the ith physical field can be expressed as
+
+$$\mathbf {A} ^ {i} = \varphi _ {i} ( \mathbf {D} ) .\tag{17}$$
+
+Subsequently, the sparse reconstruction model can be built by combing the POD model and RBFNN model, which is given by
+
+$$\mathbf {Y} ^ {i} = f _ {i} ( \mathbf {D} ) = \overline {{\mathbf {Y}}} ^ {i} + \Phi ^ {i} \mathbf {\cdot} \boldsymbol {\varphi} _ {i} ( \mathbf {D} ) .\tag{18}$$
+
+In the reconstructing process, given the multi-source sensor measurements Dʹ with the new flow conditions. Then, the mode coefficients for all physical field are predicted by the trained RBFNN model as follows:
+
+$$\left\{\begin{array} {l l} {\mathbf {A} ^ {1 ^ {\prime}} = \varphi _ {1} ( \mathbf {D} )} \\ {\mathbf {A} ^ {2 ^ {\prime}} = \varphi _ {2} ( \mathbf {D} )} \\ {\vdots} \\ {\mathbf {A} ^ {t ^ {\prime}} = \varphi _ {t} ( \mathbf {D} )} \end{array} \right. .\tag{19}$$
+
+where, $\mathbf {A} ^ {i}$ represents the predicted mode coefficients for the ith physical field.
+
+Finally, all the physical field data can be reconstructed using
+
+$$\left\{\begin{array} {l l} {\mathbf {Y} ^ {1 ^ {\prime}} = \overline {{\mathbf {Y}}} ^ {1} + \boldsymbol {\Phi} ^ {1} {\cdot} \boldsymbol {\mathbf {A}} ^ {1 ^ {\prime}}} \\ {\mathbf {Y} ^ {2 ^ {\prime}} = \overline {{\mathbf {Y}}} ^ {2} + \boldsymbol {\Phi} ^ {2} {\cdot} \boldsymbol {\mathbf {A}} ^ {2 ^ {\prime}}} \\ {\vdots} \\ {\mathbf {Y} ^ {t ^ {\prime}} = \overline {{\mathbf {Y}}} ^ {t} + \boldsymbol {\Phi} ^ {t} {\cdot} \boldsymbol {\mathbf {A}} ^ {t ^ {\prime}}} \end{array} \right. .\tag{20}$$
+
+where, $\mathbf {Y} ^ {i}$ represents the reconstructed field data for ith physical property. Combining Eq. (2), Eq. (19), and Eq. (20), $\mathbf {Y} ^ {i ^ {\prime}}$ can be expressed as
+
+$$\begin{array} {r} {\mathbf {Y} ^ {i ^ {\prime}} = \overline {{\mathbf {Y}}} ^ {t} + \mathbf {\Phi} \mathbf {\Phi} ^ {t} \cdot \boldsymbol {\varphi} _ {i} \left( \left[ \begin{array} {c} {\mathbf {Y} ^ {1} \left[ \mathbf {p} ^ {1} , \boldsymbol {\mathcal {O}} ^ {c} \right]} \\ {\mathbf {Y} ^ {2} \left[ \mathbf {p} ^ {2} , \boldsymbol {\mathcal {O}} ^ {c} \right]} \\ {\vdots} \\ {\mathbf {Y} ^ {t} [ \mathbf {p} ^ {t} , \boldsymbol {\mathcal {O}} ^ {c} ]} \end{array} \right] \right) .} \end{array}\tag{21}$$
+
+Eq. (21) demonstrates that the reconstructed results are influenced by both sparse reconstruction model and multi-source sensor locations.
+
+## 2.4. Sensor location optimization using de algorithm
+
+The multi-source sensor location optimization problem can be expressed as
+
+$$\displaystyle {\operatorname* {f i n d} _ {\mathbf {\theta}}} \\ \mathbf {m i n} g ( \mathbf {p} ) = \beta _ {1} {\cdot} g _ {1} ( \mathbf {p} ) + \beta _ {2} {\cdot} g _ {2} ( \mathbf {p} ) + \cdots + \beta _ {t} {\cdot} g _ {t} ( \mathbf {p} ) .\tag{22}$$
+
+where, p is the n-dimensional design variables and represents the multisource sensor locations. $\begin{array} {r} {g _ {i} = \sum _ {j = 1} ^ {r} \Vert \textbf {Y} _ {j} ^ {i ^ {\prime}} - \mathbf {Y} _ {j} ^ {i} \Vert _ {1}} \end{array}$ is the sub-objective function for ith physical field; $\beta _ {i}$ represents the weight assigned to $g _ {i} ,$ which normalizes the sub-objective function to ensure a rational optimization process. The value of $\beta _ {i}$ is determined by
+
+$$\beta _ {i} = \frac {1} {\sum _ {j = 1} ^ {r} \left( \operatorname* {m a x} \left( \mathbf {Y} _ {j} ^ {i} \right) - \operatorname* {m i n} \left( \mathbf {Y} _ {j} ^ {i} \right) \right)} .\tag{23}$$
+
+Detailed optimization process of the multi-source sensor locations is shown in Fig. 5.
+
+First, the initial group of multi-source sensor locations $\mathbf {P} \in \mathbb {R} ^ {s \times n} \ ( \{$ represents the population size) are sampled by Latin hypercube sampling (LHS) method. Subsequently, the calculation of objective function is performed. Specifically, $\forall \mathbf {p} \in \mathbf {P} ,$ the multi-source sensor measurements D are obtained by Eq. (2). Corresponding to p, sparse reconstruction models are constructed and utilized for reconstructing the multiple physical field data. the objective function is then calculated based on the reconstructed and reference data. Next, the sensor locations are updated using the DE algorithm, which processes good global optimization capability [43]. The objective function is subsequently reassessed. When the predefined termination criterion is met, the optimization process terminates, resulting in the determination of the optimum sensor locations, denoted as $\boldsymbol {\mathbf {p}} ^ {*}$ . Meanwhile, the corresponding sparse reconstruction model can be obtained.
+
+## 3. Test case
+
+The proposed sparse reconstruction method of physical field data via
+
+multi-source sensors was validated through a test case involving the reconstruction of pressure and heat flux fields on the surface of a reentry capsule.
+
+## 3.1. Description of physical model
+
+This case examines the sparse reconstruction of pressure and heat flux on the surface of the reentry capsule in hypersonic steady flow. The schematic diagram and dimensional specifications of the reentry capsule are shown in Fig. 6. The variable flow conditions include Mach number Ma, angle of attack $\alpha ,$ and altitude $H ,$ with their respective ranges shown in Table 1. A total of 300 sets of conditions are sampled via LHS, and multiple physical field data are obtained through CFD simulations using a density-based compressible Reynolds-averaged Navier–Stokes solver with SST k − ω turbulence model. The validation of grid independence is provided in Appendix.
+
+## 3.2. Modeling parameters analysis
+
+Through CFD simulations, the pressure field data ${\mathbf {P}} \in \mathbb {R} ^ {17125 \times 300}$ and heat flux field data $\mathbf {q} \in \mathbb {R} ^ {17125 \times 300}$ on the surface of reentry capsule are obtained. A total of 270 samples are selected to build the sparse reconstruction model for multi-source field data, and the remaining 30 samples are used for testing the model’s performance.
+
+Table 2 presents the parameter settings for sensor location optimization, including the size of modeling samples $r _ {\mathrm{modeling}}$ , the size of test samples $r _ {\mathrm{test}} ,$ , scaling factor $F _ {S} ,$ crossover probability $F _ {\mathrm{C}} ,$ population size $s _ {\mathrm{P}} ,$ , maximum generations $S _ {\mathrm{I}} ,$ and maximum allowed stagnation iterations $S _ {\mathrm {{M}}}$
+
+(a)
+
+(b)
+
+Subsequently, separate POD models are constructed for the pressure field data P and heat flux field data ${\mathfrak {q}} ,$ followed by an analysis of the POD reconstruction error. The mean values and the first three dominant modes of the pressure and heat flux fields are shown in Fig. 7 and Fig. $^ {8 ,}$ respectively. Define the energy proportion [14] of the ith mode as $k _ {i}$ . For both fields, the energy proportion of the first mode exceeds 99%. As the mode order increases, the energy proportion of the pressure field decreases more rapidly, indicating that the pressure field contains less information than the heat flux field. Fig. 9 shows the variation of reconstruction error with the number of modes for the POD models of the pressure and heat flux fields. As the number of modes m increases, the reconstruction error decreases rapidly. Under the same number of modes, the reconstruction error of the pressure field is lower than that of the heat flux field, indicating that the flow characteristics of the pressure field are relatively simpler. Consequently, a smaller number of modes are required to achieve high-fidelity representation. Based on the predefined error threshold, the selected numbers of modes for the pressure field and heat flux field are 6 and 12, respectively.
+
+(a) 
+(b)
+
+Next, the minimum number of sensors required for sparse reconstruction is determined. The flow conditions in this case include three parameters: Ma, α, and H, marking rank(X) = l = 3. These three parameters independently affect the pressure and heat flux on the surface of the reentry capsule. For any given surface pressure or heat flux field data, there exists at most one corresponding set of flow conditions, so rank(P) = rank(q) = 3. For single-source sparse reconstruction of the pressure and heat flux fields, the minimum number of sensors required based on system observability is 3. Similarly, for sparse reconstruction using multi-source sensor measurements, the minimum number of sensors is also 3.
+
+## 3.3. Reconstruction results
+
+This section first compares the proposed method with the traditional sparse reconstruction method using single-source sensor measurements. The number of sensors is set to 1, 2, 3, 4, 5, 6, 8, 10, 12, and 15. For each sensor count, 10 iterations of sensor location optimization are performed for both single-source and multi-source sparse reconstruction. The reconstruction error E, a dimensionless quantity, is calculated using the test set, as shown in Fig. 10. The calculation formula for its calculation is the same as Eq. (15).
+
+As the number of sensors increases from 1 to 3, the reconstruction errors for both methods drop rapidly. When the number of sensors increases from 3 to 10, the error reduction is minimal. This suggests that the single-source reconstruction method requires at least 6 sensors to accurately reconstruct both the pressure and heat flux fields. In contrast, the proposed method can accurately reconstruct both fields with only 3 sensors, reducing the required number of sensors by 50%. This result is consistent with the minimum number of sensors determined in Section 3.2. Besides, the error distribution from repeated optimizations exhibits low variance, demonstrating the robustness and consistency of the proposed method with the same number of sensors.
+
+Additionally, the sparse reconstruction performance of the two methods using the same number of sensors was evaluated, as detailed in Table 3. Using fewer than 3 sensors provided inadequate for both methods, leading to poor reconstruction accuracy. With only 3 sensors, the single-source reconstruction method results in reconstruction errors of 119.12 for the pressure field and 115.96 for the heat flux field, making accurate reconstruction impossible. In contrast, the proposed method decreases the reconstruction errors for the pressure and heat flux fields by 89.06% and 77.68%, respectively, enabling accurate reconstruction of both physical fields. With 6 sensors, the single-source reconstruction method accurately reconstructs both the pressure and heat flux fields. In comparison, the proposed method further improves reconstruction accuracy, reducing errors in the pressure and heat flux fields by 16.27% and 44.99%, respectively. The results confirm that the proposed method performs accurate sparse reconstruction for multiple physical fields, even with limited sensors, and delivers superior performance when more sensors are available.
+
+Fig. 11 shows the optimum sensor locations after 10 repeated optimization iterations for the proposed method with 3 sensors. Each optimization results in 1 pressure sensor and 2 heat flux sensors. The larger number of heat flux sensors is attributed to the greater amount of characteristic information in the heat flux field. To ensure accurate sparse reconstruction, the optimization process allocates more sensors to measure the heat flux field. Specifically, sensor 1 is a pressure sensor located in the nose region of the reentry capsule, where the pressure gradient is significant. Sensors 2 and 3 are heat flux sensors positioned in the upper and lower transition regions on the windward and leeward sides of the capsule, where the heat flux gradient is significant. Overall, the optimized locations of the three sensors are consistent and positioned in regions with high physical field gradients, validating the optimization results.
+
+A set of optimization results with three sensors is randomly selected, and the corresponding sparse reconstruction model is applied to reconstruct the test set. The samples with the worst and best sparse reconstruction accuracy are selected, and their sparse reconstruction results for pressure and heat flux are shown in Fig. 12 and Fig. 13, respectively. The maximum and the mean relative error of the pressure and heat flux fields for each sample are presented in Table 4.
+
+It can be seen that the reconstructed pressure and heat flux fields agree well the reference values. For the pressure field, the reconstruction error is mainly concentrated on the windward side, with a maximum
+
+relative error of 1.40%. For the heat flux field, the reconstruction error is focused in the upper part of the nose region on the windward side, with a maximum relative error of 10.29%. In fact, the error sources of the sparse reconstruction model constructed in this study consist of two components: the POD reconstruction error and the neural network training error. As shown in the comparison in Fig. 9, the heat flux field exhibits more complex flow characteristics compared to the pressure field, requiring a larger number of modes to achieve the same POD reconstruction accuracy. However, the mode coefficients of higherorder modes are more difficult to model accurately [14], leading to poorer sparse reconstruction accuracy for the heat flux. Introducing a nonlinear reduced-order model [44] or enhanced modeling strategies [14,45] may improve the sparse reconstruction performance for the heat flux. Although the maximum reconstruction error for the heat flux is relatively high, the reconstruction accuracy remains good in the upper windward region, where the heat flux is most intense. These results demonstrate that the proposed method achieves accurate sparse reconstruction of both pressure and heat flux fields with only three multi-source sensors.
+
+(a) Pressure 
+(b) Heat flux
+
+Given the harsh mechanical and thermal conditions during actual aircraft flight, sensor failures become inevitable [46]. If only the theoretical minimum number of sensors were deployed, the loss of even a single sensor could cause a sharp deterioration in sparse reconstruction accuracy. To mitigate this risk, it is advisable to augment the sensor array by adding 1–2 redundant sensors within the three optimized regions depicted in Fig. 11. This strategy enables the construction of multiple sensor configurations and their corresponding sparse reconstruction models, thereby ensuring robust and accurate multi-physics field reconstruction via cross validation and redundancy mechanism (as shown in Fig. 14), even under partial sensor failure conditions.
+
+## 3.4. Analysis of sensor noise
+
+In the preceding results and analysis, the sensor data were directly obtained from simulation datasets. However, in practical sparse reconstruction scenarios, sensor measurements inevitably exhibit certain deviations [25,47]. To address this issue, this section introduces artificial noise into the measurement data to systematically evaluate the robustness and applicability of the proposed method.
+
+To simulate real-world sensor measurements in sparse reconstruction scenarios, Gaussian white noise with noise levels σ of 1.0%, 2.0%, 3.0%, 4.0%, and 5.0% was added to the original CFD simulation data, which was then compared with the noise-free case $( \sigma ~ = ~ 0.0 \% )$ . The sparse reconstruction results for both pressure and heat flux fields, obtained using the proposed method and traditional single-source reconstruction method, are presented in Fig. 15. The results demonstrate that, in the presence of noisy sensor data, the single-source reconstruction method achieves low sparse reconstruction errors with just 3 pressure and 3 heat flux sensors, while the proposed method exhibits comparable reconstruction accuracy using only 3 multi-source sensors. These results align with the noise-free-derived minimum sensor number. Besides, further increasing the number of sensors does not lead to additional reductions in reconstruction error. These findings confirm that the proposed sparse reconstruction method remains effective even under noisy measurement conditions.
+
+(a) Pressure
+
+(b) Heat flux
+
+Fig. 16 presents the sparse reconstruction errors of pressure and heat flux for a representative test sample, obtained using three multi-source sensors under different noise levels. It can be seen that the sparse reconstruction errors for both pressure and heat flux fields exhibit increasing trends when the noise level rises from 0.0% to 5.0%. Notably, the locations of maximum reconstruction errors remain consistent across all noise levels, persistently occurring on the windward side.
+
+## 4. Conclusions
+
+This study presents a sparse reconstruction method for multiple physical field data based on multi-source sensor measurements. The method uses POD-RBFNN to build an efficient sparse reconstruction model via multi-source sensor measurements. It incorporates the DE algorithm for sensor location optimization, providing optimum multisource sensor locations and the corresponding sparse reconstruction model. The method is validated through the sparse reconstruction of two reentry capsule physical fields. The key conclusions are summarized below.
+
+1. The proposed method leverages multi-source sensor measurements to construct the sparse reconstruction model, significantly reducing the number of sensors. It determines the minimum number of sensors required to ensure high reconstruction accuracy based on system observability.
+
+2. Repeated optimizations demonstrate the method’s strong robustness, reflected in low variance of reconstruction errors, consistent sensor types and locations, and a physically meaningful distribution of optimum sensor locations.
+
+3. Compared to the single-source reconstruction method, the proposed method excels in accurately reconstructing multiple physical fields with a limited number of sensors and achieves even better performance when more sensors are available.
+
+4. The effectiveness of the proposed method under measurement noise is validated. Even under different noise levels, the minimum number of multi-source sensors remains stable, demonstrating noiseindependent performance.
+
+## CRediT authorship contribution statement
+
+Xiaobing Ma: Writing – original draft, Resources, Methodology, Investigation, Conceptualization. Xuyi Jia: Writing – original draft, Methodology, Investigation, Conceptualization. Chunna Li: Writing – review & editing, Funding acquisition, Formal analysis. Chunlin Gong: Writing – review & editing, Visualization, Supervision, Project administration.

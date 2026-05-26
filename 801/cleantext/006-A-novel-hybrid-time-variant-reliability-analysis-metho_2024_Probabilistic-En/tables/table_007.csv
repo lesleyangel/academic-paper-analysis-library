@@ -1,0 +1,10 @@
+Variable,Distribution,Mean/Midpoint,Standard deviation/Radius,Autocorrelation coefficient function
+$C ^ { * }$,Normal,1575,31.5,NA
+$\rho ( \mathrm { k g } / \mathrm { m } ^ { 3 } )$,Normal,1690,33.8,NA
+k,Gaussian process,1,0.05,exp(−(10∆t)2)
+$P _ { a 0 } \left( \mathrm { P a } \right)$,Interval,$9 . 2 \times 1 0 ^ { 6 }$,$5 \times { 1 0 } ^ { 4 }$,NA
+Dt(t) (m),Interval process,D(t),DR(t),"ρDtDt(t1,t2)"
+ke (m/s),Deterministic,$1 . 7 \times 1 0 ^ { - 4 }$,NA,NA
+L (m),Deterministic,1.35,NA,NA
+H0 (m),Deterministic,0.06,NA,NA
+Ds (m),Deterministic,0.247,NA,NA

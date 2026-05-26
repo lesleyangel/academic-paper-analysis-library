@@ -1,0 +1,5 @@
+Contacting pair,Wc $( 1 0 ^ { - 3 } ~ \mathrm { m m } )$,Temperature of air gap (K),Temperature of silver-epoxy adhesive gap (K),U1 (V),U2 (V)
+E-N_1,"−2.0,−2.5,−3.0,−3.5,−4.0",325,400,10,
+E-N_u,"−4.0, −5.0, −6.0, −7.0, −8.0",473
+E-P_1,"−2.0,−2.5,−3.0,−3.5,−4.0",673
+$\mathbb { E } { - } P _ { - } \mathbf { u }$,"$- 3 . 0 , \ : - 4 . 0 , \ : - 5 . 0 , \ : - 6 . 0 , \ : - 7 . 0 , \ : - 9 . 0$",725,,0

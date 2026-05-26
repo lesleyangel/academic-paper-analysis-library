@@ -1,0 +1,5 @@
+Mesh,"First grid layer height, m",Boundary grid layer number,Grid growth rate,Total grid number,σ,4
+Mesh1,2e-5,11,1.05,413400,0.418,0.894
+Mesh2,1e-5,15,1.1,862176,0.419,0.945
+Mesh3,5e-6,20,1.15,1287540,0.417,0.952
+Mesh4,2e-6,25,1.2,2588208,0.418,0.950

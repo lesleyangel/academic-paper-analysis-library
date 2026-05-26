@@ -1,0 +1,10 @@
+Variables,Distribution,Unit
+Fairing's ogive length,"N(2.5, 0.0004)",m
+Three-stage rocket radius,"N(1,0.0003)",m
+Three-stage rocket length,"N(2.5, 0.0004)",m
+Second-to-third-stage interstage segment length,"N(1.5, 0.0004)",m
+Second-stage rocket radius,"N(0.7, 0.0003)",m
+Second-stage rocket length,"N(2, 0.0004)",m
+First-to-second-stage interstage segment length,"N(0.3, 0.0003)",m
+First-stage rocket radius,"N(1,0.0003)",m
+First-stage rocket length,"N(7,0.0004)",m

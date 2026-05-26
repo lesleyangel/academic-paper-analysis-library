@@ -1,0 +1,33 @@
+| Nomenclature | simulation |  |  |
+| --- | --- | --- | --- |
+| Abbreviations | U2 ∆U | low voltage side potential of contacting pairs in simulation electrical potential difference |  |
+| TE | thermoelectric | $w _ { \mathrm { c } }$ | compression displacement |
+| TEG | thermoelectric generator | $F$ | loading pressure |
+| TCR | thermal contact resistance | $d _ { i }$ | distance of the corresponding real contact elements |
+| TCC | thermal contact conductance | $h$ | thermal contact conductance |
+| ECR | electrical contact resistance | $q$ | heat fl ux |
+| TPS | thermal protection system | $q _ { c }$ | heat flux of solid conduction |
+| PEEK | poly-ether-ether-ketone | $q _ { r }$ | heat flux of thermal radiation |
+|  |  | $h _ { c c }$ | TCC of the real contact elements |
+| Symbols |  | $h _ { m c }$ | TCC of the clearance medium |
+| $x , y , z$ | cartesian coordinate system | $h _ { r }$ | equivalent thermal conductance of thermal radiation |
+| $u , \nu , w$ $f _ { x } , f _ { y } , f _ { z }$ | displacements in x,y and % direction | $D _ { f }$ | fractal dimension |
+| $D ^ { e }$ | body forces in $x , y$ and % direction | $L _ { 0 }$ | sample length |
+| $D ^ { p }$ | elasticity matrix | $G$ | scaling constant |
+|  | plasticity matrix | $M$ | number of ridges |
+| $c _ { \mathfrak { p } }$ | specific heat capacity | $n$ | frequency index |
+| $j$ | electrical flow density | $z ( x , y )$ | the height function of fractal surfaces |
+| $k$ | electrical conductivity | $\mathrm { E } { \cdot } N$ | contacting pair of electrode and N-type TE leg |
+| $k _ { e q }$ $s$ | equivalent electrical conductivity | $\mathrm { E } { \cdot } P$ | contacting pair of electrode and P-type TE leg |
+| $T$ | Seebeck coefficient temperature | Greek Symbols |  |
+|  | hot side temperature of contacting pairs in simulation |  |  |
+| $_ { T 1 }$ $T 2$ |  | $\sigma$ | normal stress shear stress |
+| $T _ { 0 } 1$ | cold side temperature of contacting pairs in simulation | $\tau$ |  |
+| $T _ { 0 } 2$ | hot side temperature of TEG in simulation cold side temperature of TEG in simulation | $\varepsilon$ | mechanical strain |
+| $T _ { \mathrm { E 1 } }$ | hot side temperature of TE leg sample in experiment | $\gamma$ | shear strain |
+| $T _ { \mathrm { E 2 } }$ |  | $\rho$ | density |
+| $T _ { \mathrm { { S 1 } } }$ | cold side temperature of TE leg sample in experiment | $\lambda$ | thermal conductivity |
+| $T _ { S 2 }$ | hot side temperature of TEG in experiment | $\lambda _ { e q }$ | equivalent thermal conductivity |
+| $\Delta T$ | cold side temperature of TEG in experiment | $\psi$ | Peltier coefficient |
+| $U$ | temperature difference | $\gamma _ { 0 }$ | scaling parameter |
+| $U 1$ | electrical potential high voltage side potential of contacting pairs in | $\varphi _ { m , n }$ | random phase |

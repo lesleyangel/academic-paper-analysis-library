@@ -1,0 +1,55 @@
+[1] X. Du, W. Chen, Efficient uncertainty analysis methods for multidisciplinary robust design, AIAA J. 40 (3) (2002) 545–552.
+
+[2] N. Zou, C. Gong, L. Zhang, et al., A novel hybrid time-variant reliability analysis method through approximating bound-most-probable point trajectory, Probab. Eng. Eng. Mech. 75 (2024) 103558.
+
+[3] L. Casalino, F. Masseni, D. Pastrone, Uncertainty analysis and robust design for a hybrid rocket upper stage, J. Spacecraft Rockets 56 (5) (2019) 1424–1431.
+
+[4] C. Wang, H. Fan, X. Qiang, A review of uncertainty-based multidisciplinary design optimization methods based on intelligent strategies, Symmetry-Basel 15 (10) (2023) 1875.
+
+[5] Z. Liu, Z. Song, P. Zhu, A novel polynomial chaos expansion-based method for feedback-coupled multidisciplinary design optimization under metamodel uncertainty, Struct. Multidiscip. Optim. 65 (5) (2022) 117.
+
+[6] M.R. Setayandeh, Surrogate model–based robust multidisciplinary design optimization of an unmanned aerial vehicle, J. Aero. Eng. 34 (4) (2021) 04021029.
+
+[7] W. Yao, X. Chen, W. Luo, et al., Review of uncertainty-based multidisciplinary design optimization methods for aerospace vehicles, Prog. Aeosp. Sci. 47 (6) (2011) 450–479.
+
+[8] H. Zhu, H. Luo, P. Wang, et al., Uncertainty analysis and design optimization of solid rocket motors with finocyl grain, Struct. Multidiscip. Optim. 62 (2020) 3521–3537.
+
+[9] H.Z. Huang, X. Zhang, W. Yuan, Collaborative reliability analysis under the environment of multidisciplinary design optimization, Concurr. Eng. 19 (3) (2011) 245–254.
+
+[10] F. Alhama, A. Campo, Network simulation of the rapid temperature changes in the composite nozzle wall of an experimental rocket engine during a ground firing test, Appl. Therm. Eng. 23 (1) (2003) 37–47.
+
+[11] S. Li, K. Gurley, Y. Guo, et al., Numerical investigation of turbulence effect on flight trajectory of spherical windborne debris: a multi-layered approach, Probab. Eng. Eng. Mech. 77 (2024) 103661.
+
+[12] H. Lü, J. Zhang, X. Huang, et al., Robust-based design optimization of powertrain mounting system based on full vehicle model involving parametric uncertainty and correlation, Probab. Eng. Eng. Mech. 79 (2025) 103726.
+
+[13] Q. Tu, S. Miao, F. Yao, et al., An improved wind power uncertainty model for day- ahead robust scheduling considering spatio-temporal correlations of multiple wind farms, Int. J. Electr. Power Energy Syst. 145 (2023) 108674.
+
+[14] N. Yang, S. Liu, Y. Deng, et al., An improved robust SCUC approach considering multiple uncertainty and correlation, IEEJ Trans. Electr. Electron. Eng. 16 (1) (2021) 21–34.
+
+[15] D. Yu, N. Ghadimi, Reliability constraint stochastic UC by considering the correlation of random variables with Copula theory, IET Renew. Power Gener. 13 (14) (2019) 2587–2593.
+
+[16] Q. Liu, J. Liu, X. Wu, et al., An inverse reconstruction approach considering uncertainty and correlation for vehicle-vehicle collision accidents, Struct. Multidiscip. Optim. 60 (2019) 681–698.
+
+[17] S. Ghosh, D.N. Mavris, Methodology for probabilistic analysis of distributed multidisciplinary architecture, J. Aircraft 58 (3) (2021) 536–548.
+
+[18] H. Li, Z. Lü, X. Yuan, Nataf transformation based point estimate method, Chin. Sci. Bull. 53 (17) (2008) 2586–2592.
+
+[19] Q. Bouyu, F. Cheng, M. Ke, et al., Probabilistic energy flow calculation through the nataf transformation and point estimation, Appl. Sci. 9 (16) (2019) 3291.
+
+[20] W. Gao, P.R. Miles, R.C. Smith, et al., The maximum entropy method for data fusion and uncertainty quantification in multifunctional materials and structures, J. Intell. Mater. Syst. Struct. 33 (9) (2022) 1182–1197.
+
+[21] W. Wu, K. Wang, G. Li, et al., A multivariate dimension-reduction method for probabilistic power flow calculation, Electr. Power Syst. Res. 141 (12) (2016) 272–280.
+
+[22] P. Liu, A.D. Kiureghian, Multivariate distribution models with prescribed marginals and covariances, Probab. Eng. Eng. Mech. 1 (2) (1986) 105–112.
+
+[23] K. Feng, Z. Lu, H. Li, et al., Dimensional reduction technique-based maximum entropy principle method for safety degree analysis under twofold random uncertainty, Probab. Eng. Eng. Mech. 76 (2024) 103628.
+
+[24] D. Huang, J.N. Fuhg, C. Weißenfels, et al., A machine learning based plasticity model using proper orthogonal decomposition, Comput. Meth. Appl. Mech. Eng. 365 (2020) 113008.
+
+[25] M. Jahangiri, A. Palermo, S. Kamali, et al., A procedure to estimate the minimum observable damage in truss structures using vibration-based structural health monitoring systems, Probab. Eng. Eng. Mech. 73 (2023) 103451.
+
+[26] Z. Liu, L. Yan, Y. Liu, et al., Two dimension-reduction probabilistic models for simulating nonstationary turbulent wind fields, Probab. Eng. Eng. Mech. 72 (2023) 103435.
+
+[27] X. Jia, C. Gong, W. Ji, et al., Flow sensing method for fluid-structure interaction systems via multilayer proper orthogonal decomposition, J. Fluids Struct. 124 (2024) 104023.
+
+[28] M. Shi, C. Li, Y. Liu, et al., Accurate surrogate modeling method for performance of solid rocket motor under uncertainty, J. Propuls. Technol. 46 (1) (2025) 37–46, https://doi.org/10.13675/j.cnki.tjjs.2312060 (in Chinese).

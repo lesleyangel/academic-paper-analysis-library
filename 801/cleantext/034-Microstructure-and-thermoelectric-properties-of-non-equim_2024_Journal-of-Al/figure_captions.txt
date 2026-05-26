@@ -1,0 +1,25 @@
+Fig. 1. XRD patterns and Rietveld refinement for CSBL ceramics (a)Ceramic before annealing; (b) Ceramic after annealing; (c) L10 after annealing; (d) L13 after annealing; (e) L19 after annealing; (f) L22 after annealing; (g) L25 after annealing; (h) L40 after annealing;.
+
+Fig. 2. SEM images of CSBL ceramics before and after annealing, (a) L10; (b) L13; (c) L19; (d) L22; (e) L25; (f) L40.
+
+Fig. 3. TEM results of the L19 ceramic, (a) BF-TEM image; (b) HRTEM image; (c) HRTEM image of region I; (d) SAED image of region II; (e) IFFT image of region III; (f) EDX elemental maps.
+
+Fig. 4. Atomic resolution EDX images of L19 ceramic.
+
+Fig. 5. Raman spectroscopy analysis of CSBL ceramics, (a) Raman spectra; (b) The frequency variation of Raman peaks for different composition.
+
+Fig. 6. XPS spectra of the CSBL ceramics.
+
+Fig. 7. High-resolution XPS spectra of O 1 s, (a) L10; (b) L13; (c) L19; (d) L22; (e) L25; (f) L40.
+
+Fig. 8. Temperature dependent curve of electrical transport properties of CSBL ceramics, (a) Electrical conductivity; (b) Seebeck coefficient; (c) Arrhenius plot of In (σT)-1000/T; (d) Power factor.
+
+Fig. 9. Temperature dependent curve of thermal transport properties of CSBL ceramics, (a) Total thermal conductivity; (b) Lattice thermal conductivity and carrier thermal conductivity.
+
+Fig. 10. Schematic diagram of the possible phonon scattering for CSBL ceramics.
+
+Fig. 11. Thermoelectric performance of CSBL ceramics, (a) ZT variation curve with temperature; (b) The variation curve of S and σ with configuration entropy; (c) The variation curve of ZT with configuration entropy;(d) Comparison of ZT between L19 ceramics and previously published high-entropy SrTiO3-based ceramics.
+
+Fig. 7. High-resolution XPS spectra of $^ \textrm { \scriptsize O 1 s , }$ (a) L10; (b) L13; (c) L19; (d) L22; (e) L25; (f) L40.
+
+Fig. 11. Thermoelectric performance of CSBL ceramics, (a) ZT variation curve with temperature; (b) The variation curve of S and σ with configuration entropy; (c) The variation curve of ZT with configuration entropy;(d) Comparison of ZT between L19 ceramics and previously published high-entropy $\mathrm { { S r T i O _ { 3 } } \mathrm { { - } } }$ based ceramics.

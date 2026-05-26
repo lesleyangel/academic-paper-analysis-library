@@ -1,0 +1,11 @@
+| Nomenclature |  |  |
+| --- | --- | --- |
+| Abbreviation |  |  |
+| ATS | antisymmetric thermal stimulus boundary conditions | $q _ { i } , q _ { i } ^ { 0 }$ local and macroscopic heat flux in i direction $T$ |
+| BCs DTD |  | temperature |
+| satin harness | dimensionless temperature difference | fi ber volume fraction of composite |
+| HS |  | $x , y , z , x ^ { \prime } , y ^ { \prime }$ coordinate directions |
+| RVE | representative volume element | thermal conductivity of fiber regions |
+| STS | symmetric thermal stimulus | effective thermal conductivity in i direction |
+| UC |  | thermal conductivity of matrix |
+| UD | unidirectional fiber reinforced composite | macroscopic temperature gradient in i direction |

@@ -1,0 +1,265 @@
+Gori, S.
+
+Corasaniti, W.M.
+
+Worek, W.J.
+
+Minkowycz, Theoretical prediction of thermal conductivity for thermal protection systems, Appl. Therm. Eng. 49 (2012) 124–130, https://doi.org/10.1016/j.applthermaleng.2011.07.012. [2] B.
+
+Behrens, M.
+
+Müller, Technologies for thermal protection systems applied on re- usable launcher, Acta Astronaut. 55 (2004), https://doi.org/10.1016/j. actaastro.2004.05.034. [3] Y.
+
+Rong, Y.
+
+Wei, R.
+
+Zhan, Research on thermal protection by opposing jet and transpiration for high speed vehicle, Aerosp. Sci. Technol. 48 (2016) 322–327, https://doi.org/10.1016/J.AST.2015.11.014. [4] W.
+
+Lu, J.
+
+Li, J.
+
+Miao, L.
+
+Chen, J.
+
+Wei, J.
+
+Liu, C.
+
+Li, Application of high-thermal- conductivity diamond for space phased array antenna, Funct. Diamond 1 (2021) 189–196, https://doi.org/10.1080/26941112.2021.1996211. [5] C. Fang, F. Zheng, B. Chu, W. Cheng, H. Guo, H. Chen, R. Wang, C.
+
+Song, P.
+
+Tao, W.
+
+Shang, B.
+
+Fu, T.
+
+Deng, Molybdenum copper based ultrathin two-phase heat transport system for high power-density gallium nitride chips, Appl. Therm. Eng. 211 (2022), https://doi.org/10.1016/j.applthermaleng.2022.118458. [6] H.K.M. Al-Jothery, T.M.B. Albarody, P.S.M. Yusoff, M.A. Abdullah, A.R. Hussein, A review of ultra-high temperature materials for thermal protection system. IOP Conf Ser Mater Sci Eng, 2020, https://doi.org/10.1088/1757-899X/863/1/ 012003. Institute of Physics Publishing. [7] R. Fusaro, D. Ferretto, N. Viola, R. Scigliano, V. De Simone, M.
+
+Marini, Liquid metals heat-pipe solution for hypersonic air-intake leading edge: conceptual design, numerical analysis and verification, Acta Astronaut. 197 (2022) 336–352, https://doi.org/10.1016/j.actaastro.2022.05.034. [8] D. Huang, Q. Liu, Y. Zhang, C. Ye, S. Zhu, Z. Fan, F. Han, H. Liu, J. Liu, Ablation behavior and thermal conduction mechanism of 3D ZrC–SiC-modified carbon/ carbon composite having high thermal conductivity using mesophase-pitch-based carbon fibers and pyrocarbon as heat transfer channels, Compos. B Eng. 224 (2021), https://doi.org/10.1016/j.compositesb.2021.109201. [9] J.J. Gou, Z.W. Yan, J.X. Hu, G.
+
+Gao, C.L.
+
+Gong, The heat dissipation, transport and reuse management for hypersonic vehicles based on regenerative cooling and thermoelectric conversion, Aerosp. Sci. Technol. 108 (2021), https://doi.org/ 10.1016/j.ast.2020.106373. [10] Y.
+
+Qiao, P.
+
+Liu, W.
+
+Liu, Z.
+
+Liu, Analysis and optimization of flow and heat transfer performance of active thermal protection channel for hypersonic aircraft, Case Stud. Thermal Eng. 39 (2022), https://doi.org/10.1016/j.csite.2022.102476. [11] X.
+
+Yang, F.
+
+Seibold, Z.
+
+Feng, B.
+
+Weigand, Effects of blade lean on internal swirl cooling at turbine blade leading edges, Int. J. Heat Mass Transf. 194 (2022), https://doi.org/10.1016/j.ijheatmasstransfer.2022.123111. [12] T.Q.
+
+Li, Z.H.
+
+Xu, Z.J.
+
+Hu, X.G.
+
+Yang, Application of a high thermal conductivity C/C composite in a heat-redistribution thermal protection system, Carbon. 48 (2010) 924–925, https://doi.org/10.1016/j.carbon.2009.10.043. N. Y. [13] H. Wang, R. Ji, F. Qu, J. Bai, Q.
+
+Fu, H.
+
+Li, Three-dimensional pore-scale study of the directional heat transfer in a high thermal conductivity carbon/carbon composite protection system, Aerosp. Sci. Technol. 112 (2021), https://doi.org/10.1016/j. ast.2021.106609. [14] G.R.
+
+Sharp, T.A.
+
+Loftin, Applications of high thermal conductivity composites to electronics and spacecraft thermal design, NASA Technical Memorandum 102434 AIAA-90-0783, 1990. [15] T.H.
+
+Squire, J.
+
+Marschall, Material property requirements for analysis and design of UHTC components in hypersonic applications, J. Eur. Ceram. Soc. 30 (2010) 2239–2251, https://doi.org/10.1016/j.jeurceramsoc.2010.01.026. [16] A. Cecere, R.
+
+Savino, C.
+
+Allouis, F.
+
+Monteverde, Heat transfer in ultra-high temperature advanced ceramics under high enthalpy arc-jet conditions, Int. J. Heat Mass Transf. 91 (2015) 747–755, https://doi.org/10.1016/j. ijheatmasstransfer.2015.08.029. [17] L. Luo, Y.
+
+Wang, L.
+
+Liu, X.
+
+Zhao, Y.
+
+Lu, G.
+
+Wang, Carbon fiber reinforced silicon carbide composite-based sharp leading edges in high enthalpy plasma flows, Compos. B Eng. 135 (2018) 35–42, https://doi.org/10.1016/j. compositesb.2017.09.060. [18] S. Mungiguerra, G.D. Di Martino, A. Cecere, R. Savino, L.
+
+Zoli, L.
+
+Silvestroni, D.
+
+Sciti, Ultra-high-temperature testing of sintered ZrB2-based ceramic composites in atmospheric re-entry environment, Int. J. Heat Mass Transf. 156 (2020), https:// doi.org/10.1016/j.ijheatmasstransfer.2020.119910. [19] S. Mungiguerra, G.D. Di Martino, R. Savino, L.
+
+Sciti, Characterization of novel ceramic composites for rocket nozzles in high- temperature harsh environments, Int. J. Heat Mass Transf. 163 (2020), https://doi. org/10.1016/j.ijheatmasstransfer.2020.120492. [20] E.
+
+Zapata-Solvas, D.D.
+
+Jayaseelan, P.M.
+
+Brown, W.E.
+
+Lee, Thermal properties of La2O3-doped ZrB2- and HfB2-based ultra-high temperature ceramics, J. Eur. Ceram. Soc. 33 (2013) 3467–3472, https://doi.org/10.1016/j. jeurceramsoc.2013.06.009. [21] M. Zahid, R. Sharma, A.R.
+
+Bhagat, S.
+
+Abbas, A.
+
+Kumar, P.
+
+Mahajan, Micro- structurally informed finite element analysis of carbon/carbon composites for effective thermal conductivity, Compos. Struct. 226 (2019), https://doi.org/ 10.1016/j.compstruct.2019.111221. [22] Y.
+
+Liu, Q.
+
+Fu, J.
+
+Zhang, L.
+
+Li, L.
+
+Zhuang, Erosion resistance of C/C-SiC-ZrB2 composites exposed to oxyacetylene torch, J. Eur. Ceram. Soc. 36 (2016) 3815–3821, https://doi.org/10.1016/j.jeurceramsoc.2016.04.007. [23] L.
+
+Hongpeng, L.
+
+Weiqiang, Thermal-structural analysis of the platelet heat-pipe- cooled leading edge of hypersonic vehicle, Acta Astronaut. 127 (2016) 13–19, https://doi.org/10.1016/j.actaastro.2016.05.014. 1. The damage tolerance indicating models encompass the average temperature, Tavg, the maximum temperature, Tmax, and the stan dard deviation of temperature, ST, to evaluate the thermal perfor mance of an HT path. 2. For non-thermal damages, the damage region increases while the thermal performance and tolerance decreases with the increasing volume fraction, V and radius, R of damage; however, the random ness of damages will lead to some singularities, especially for Tmax. 3. For thermal damages, the transition region increases, the high- temperature region decreases and the damage tolerance of the HT path is thus enhanced with the decrease of the maximum damage probability gradient, β and the increase of constraint temperature, Tf. 4. The tolerances of non-thermal damages vary between 0.302 and 0.926 when the volume fraction and radius vary between 2.12% to 16.33% and 0.94 mm to 5.00 mm; the maximum deviations of the damage model are 0.83%, −7.54%, and 7.90% for average Tavg, Tmax, and ST, respectively. 5. The tolerances of thermal damages vary between 0.13 and 0.787 when β and Tf vary between 13.5 to 15.5 and 373 K to 383 K; the maximum deviations of the damage model are 0.90%, −1.50%, and −4.82% for average Tavg, Tmax, and ST, respectively, when the damage volume fraction is larger than 10.98%. 6. For a dendritic HT path with certain damages, the thermal perfor mance can be obtained by the damage models, and the tolerance of non-thermal damage is better than that of thermal damage under the same damage level. Jia-Xin Hu: Conceptualization, Methodology, Formal analysis, Investigation, Visualization, Writing – original draft. Li-Qiang Ai: Data curation, Writing – review & editing, Funding acquisition. Nan Liu: Validation, Resources, Writing – review & editing. Jian-Jun Gou: Su pervision, Writing – review & editing, Funding acquisition. Chun-Lin Gong: Conceptualization, Resources, Supervision, Project administration. [24] H.
+
+Liu, A numerical model for the platelet heat-pipe-cooled leading edge of hypersonic vehicle, Acta Astronaut. 118 (2016) 210–217, https://doi.org/ 10.1016/j.actaastro.2015.10.011. [25] X. Guangming, D. Yanxia, G.
+
+Yewei, L.
+
+Lei, Y.
+
+Xiaofeng, W.
+
+Dong, Heat transfer characteristics and limitations analysis of heat-pipe-cooled thermal protection structure, Appl. Therm. Eng. 70 (2014) 655–664, https://doi.org/10.1016/j. applthermaleng.2014.05.036. [26] D.
+
+Tokuda, T.
+
+Inoue, Heat transport characteristics of a sodium oscillating heat pipe: thermal performance, Int. J. Heat Mass Transf. 196 (2022), https://doi.org/ 10.1016/j.ijheatmasstransfer.2022.123281. [27] N.K. Gopinath, K.V.
+
+Govindarajan, D.R.
+
+Mahapatra, Fluid-thermo-structural response of actively cooled scramjet combustor in hypersonic accelerating-cruise flight, Int. J. Heat Mass Transf. 194 (2022), https://doi.org/10.1016/j. ijheatmasstransfer.2022.123060. [28] G.
+
+Zhao, W.
+
+Song, R.
+
+Zhang, Effect of pressure on thermal cracking of china RP-3 aviation kerosene under supercritical conditions, Int. J. Heat Mass Transf. 84 (2015) 625–632, https://doi.org/10.1016/j.ijheatmasstransfer.2015.01.059. [29] D. Ferretto, N. Viola, Preliminary design and simulation of a thermal management system with integrated secondary power generation capability for a Mach 8 aircraft concept exploiting liquid hydrogen, Aerospace 10 (2023), https://doi.org/ 10.3390/aerospace10020180. [30] L.
+
+Cuiyan, L.
+
+Kezhi, L.
+
+Hejun, O.
+
+Haibo, Z.
+
+Yulei, G.
+
+Lingjun, Ablation resistance and thermal conductivity of carbon/carbon composites containing hafnium carbide, Corros. Sci. 75 (2013) 169–175, https://doi.org/10.1016/j. corsci.2013.05.029. [31] L.
+
+Luo, Y.
+
+Duan, L.
+
+Liu, G.
+
+Wang, Ablation behavior of C/SiC-HfC composites in the plasma wind tunnel, J. Eur. Ceram. Soc. 36 (2016) 3801–3807, https://doi.org/10.1016/j.jeurceramsoc.2016.03.017. [32] R.
+
+Hassan, R.
+
+Kundu, K.
+
+Balani, Oxidation behaviour of coarse and fine SiC reinforced ZrB2 at re-entry and atmospheric oxygen pressures, Ceram. Int. 46 (2020) 11056–11065, https://doi.org/10.1016/j.ceramint.2020.01.125. [33] M.
+
+Ali, A.
+
+Ul-Hamid, L.M.
+
+Alhems, A.
+
+Saeed, Review of common failures in heat exchangers – Part I: mechanical and elevated temperature failures, Eng. Fail. Anal. 109 (2020), https://doi.org/10.1016/j.engfailanal.2020.104396. [34] B.H.
+
+Zhou, Z.Q.
+
+Zhai, Failure probabilistic analysis of steam generator heat-transfer tubing with pitting corrosion, Eng. Fail. Anal. 18 (2011) 1333–1340, https://doi. org/10.1016/j.engfailanal.2011.03.022. [35] A.S. Pelliccione, R. SantAnna, M.H.S.
+
+Siqueira, A.F.
+
+Ribeiro, J.E.
+
+Ramos, O.P.
+
+Silva, M.F.
+
+Pimentel, Failure analysis of a titanium plate heat exchanger – Mechanical fatigue, Eng. Fail. Anal. 105 (2019) 1172–1188, https://doi.org/10.1016/j. engfailanal.2019.07.059. [36] H.W. Song, G. Yu, J.S. Tan, L. Zhou, X.L. Yu, Thermal fatigue on pistons induced by shaped high power laser. Part I: experimental study of transient temperature field and temperature oscillation, Int. J. Heat Mass Transf. 51 (2008) 757–767, https:// doi.org/10.1016/j.ijheatmasstransfer.2007.04.035. [37] H.W. Song, G. Yu, A.F.H. Kaplan, J.S. Tan, X.L. Yu, Thermal fatigue on pistons induced by shaped high power laser. Part II: design of spatial intensity distribution via numerical simulation, Int. J. Heat Mass Transf. 51 (2008) 768–778, https://doi. org/10.1016/j.ijheatmasstransfer.2007.04.034. [38] S. Yin, N.
+
+Wang, X.
+
+Huang, Q.
+
+Wang, H.
+
+Wang, Characteristic of vapor leakage behavior from a pressurized pipeline system: experiment and model study, Int. J. Heat Mass Transf. 162 (2020), https://doi.org/10.1016/j. ijheatmasstransfer.2020.120335. [39] L. Gao, X.C. Zhao, B. Wang, Thermostructural responses of metallic lattice-frame sandwich structure for hypersonic leading edges, J. Thermophys. Heat Trans. 35 (2021), https://doi.org/10.2514/1.T6197. [40] Q. Lin, J.
+
+Hong, Z.
+
+Liu, B.
+
+Wang, Investigation into the topology optimization for conductive heat transfer based on deep learning approach, Int. Commun. Heat Mass Transf. (2018) 97, https://doi.org/10.1016/j. icheatmasstransfer.2018.07.001. [41] M.
+
+Song, K.
+
+Chen, X.
+
+Zhang, Optimization of the volume-to-point heat conduction problem with automatic differentiation based approach, Int. J. Heat Mass Transf. 177 (2021), https://doi.org/10.1016/j.ijheatmasstransfer.2021.121552. [42] A. Bejan, Constructal-theory network of conducting paths for cooling a heat generating volume, Int. J. Heat Mass Transf. 40 (1997), https://doi.org/10.1016/ 0017-9310(96)00175-5. [43] B.
+
+Hong, G.
+
+Liu, L.
+
+Ge, On identifying optimal heat conduction topologies from heat transfer paths analysis, Int. Commun. Heat Mass Transf. 90 (2018), https://doi.org/10.1016/j.icheatmasstransfer.2017.11.003. [44] S.-Q. Zhang, B.-B. Xu, Z.-H. Gao, G.-H. Jiang, Y.-T. Zheng, H.-Y.
+
+Liu, W.-W.
+
+Jiang, K.
+
+Yang, X.-W.
+
+Gao, Topology optimization of heat transfer and elastic problems based on element differential method, Eng. Anal. Bound. Elem. 149 (2023) 190–202, https://doi.org/10.1016/j.enganabound.2023.01.026. [45] C.Q. Wu, C. Yang, Q. Xiao, H.B.
+
+Ke, H.J.
+
+Xu, Topology optimization of porous solid structures for heat transfer and flow channels in reactors with fluid-solid reaction coupling, Int. J. Thermal Sci. (2022) 181, https://doi.org/10.1016/j. ijthermalsci.2022.107771. [46] H.
+
+Qiao, S.
+
+Liu, Topology optimization by minimizing the geometric average displacement, Eng. Optim. (2013) 45, https://doi.org/10.1080/ 0305215X.2012.654789. [47] B.T. Moghaddam, A.M.
+
+Hamedany, A.
+
+Mehmanparast, F.
+
+Brennan, K.
+
+Nikbin, C. M.
+
+Davies, Numerical analysis of pitting corrosion fatigue in floating offshore wind turbine foundations, Proc. Struct. Integr. (2019), https://doi.org/10.1016/j. prostr.2019.08.010. [48] B.
+
+Sun, T.
+
+Guo, A dimensional analysis based multi-scale thermal damage framework of brittle materials at elevated temperatures, Theor. Appl. Fract. Mech. 127 (2023), https://doi.org/10.1016/j.tafmec.2023.104089.

@@ -1,0 +1,27 @@
+Fig. 1. Illustration of multidisciplinary UP.
+
+Fig. 2. Flowchart of multidisciplinary UP considering variable correlations in a specific discipline.
+
+Fig. 3. Procedure for processing propagation data.
+
+Fig. 4. Procedure of correlation transformation for both numerical and field samples.
+
+Fig. 5. Process of the improved Nataf transformation method based on warm-start-based maximum entropy.
+
+Fig. 7. Comparison of correlation coefficients computed between field samples c1 and c2
+
+Fig. 8. PDF of output variable e.
+
+Fig. 9. Relationship of UP in the solid rocket system.
+
+Fig. 10. Comparison of correlation among the numerical variables and the mode coefficients in the engine discipline.
+
+Fig. 11. Comparison of correlation between thrust and mass in the engine discipline.
+
+Fig. 12. Comparison of PDFs for the velocity at the first-stage rocket separation point.
+
+Fig. 13. Comparison of PDFs for the total energy at the first-stage rocket separation point.
+
+Fig. 6. UP relations in the analytical test.
+
+Fig. 7. Comparison of correlation coefficients computed between field samples $\pmb { c } _ { 1 }$ and $\pmb { c } _ { 2 }$

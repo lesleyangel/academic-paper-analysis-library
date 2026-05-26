@@ -1,0 +1,19 @@
+Category,Parameters,Symbols,Default value,Unit
+Geometric,Length of UC1,$a _ { p 1 }$,0.900,mm
+parameter,Half width of fi ber bundle in UC1,$w _ { p 1 }$,0.300,mm
+UC1,Half gap of Fiber bundle in,$h _ { p 1 1 }$,0.005,mm
+UC1,Thickness of fi ber bundle in,$h _ { p 2 1 }$,0.100,mm
+,Layer gap of fiber bundles in,$h _ { p 3 1 }$,0.005,mm
+,UC1 Length of UC2,$a _ { p 2 }$,$a _ { p 1 } / 2$,mm
+UC2,Half width of fi ber bundle in,$w _ { p 2 }$,$w _ { p 1 }$,mm
+UC2,Half gap of Fiber bundle in,$h _ { p 1 2 }$,$h _ { p 1 1 }$,mm
+UC2,Thickness of fi ber bundle in,$h _ { p 2 2 }$,$h _ { p 2 1 }$,mm
+UC2,Layer gap of fiber bundles in,$h _ { p 3 2 }$,$h _ { p 3 1 }$,mm
+,Length of UC3,$a _ { p 3 }$,$a _ { p 1 } / 4$,mm
+UC3,Half width of fi ber bundle in,$w _ { p 3 }$,$w _ { p 1 }$,mm
+UC3,Half gap of Fiber bundle in,$h _ { p 1 3 }$,$h _ { p 1 1 }$,mm
+,Thickness of fiber bundle in UC3,$h _ { p 2 3 }$,$h _ { p 2 1 }$,mm
+,Layer gap of fi ber bundles in UC3,$h _ { p 3 3 }$,$h _ { p 3 1 }$,mm
+Constituent,Matrix elastic modulus,$E _ { m }$,3.50,GPa
+properties,Matrix Poisson's ratio,$\nu _ { m }$,0.35,1
+,Matrix coefficient of thermal expansion,$\alpha _ { m }$,50.00,1e-6/ K

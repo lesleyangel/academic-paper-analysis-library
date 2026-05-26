@@ -1,0 +1,143 @@
+Twaha, J.
+
+Zhu, Y.Y.
+
+Yan, B.
+
+Li, A comprehensive review of thermoelectric technology: materials, applications, modelling and performance improvement, Renew. Sust. Energy Rev. 65 (2016) 698–726, https://doi.org/10.1016/j. rser.2016.07.034. [4] I.T. Witting, T.C. Chasapis, F. Ricci, M. Peters, N.A. Heinz, G. Hautier, G.J. Snyder, The thermoelectric properties of Bismuth Telluride, Adv. Electron. Mater. 5 (6) (2019) 1800904, https://doi.org/10.1002/aelm.201800904. [5] B. Zhu, X.X. Liu, Q. Wang, Y. Qiu, Z. Shu, Z.T. Guo, Y. Tong, J. Cui, M. Gu, J.Q. He, Realizing record high performance in n-type Bi2Te3-based thermoelectric materials, Energy Environ. Sci. 13 (7) (2020) 2106–2114, https://doi.org/ 10.1039/D0EE01349H. [6] H.X. Wang, C. Tan, Y.Q. Sun, A. Abbas, Z.H.
+
+Li, C.L.
+
+Wang, H.C.
+
+Wang, Enhanced thermoelectric performance in cubic SnSe-based alloys via manipulation of grain boundary scattering and phonon transport, Chem. Eng. J. 480 (2024) 148002, https://doi.org/10.1016/j.cej.2023.148002. [7] B.C. Qin, D.Y. Wang, T. Hong, Y.P. Wang, D.R. Liu, Z.Y. Wang, X. Gao, Z.H. Ge, L. D. Zhao, High thermoelectric efficiency realized in SnSe crystals via structural modulation, Nat. Commun. 14 (2023) 1366, https://doi.org/10.1038/s41467-023- 37114-7. [8] J.P. Heremans, V. Jovovic, E.S. Toberer, A. Saramat, K. Kurosaki, A. Charoenphakdee, S. Yamanaka, G.J. Snyder, Enhancement of thermoelectric efficiency in PbTe by distortion of the electronic density of states, Science 321 (5888) (2008) 554–557, https://doi.org/10.1126/science.1159725. [9] H.T. Liu, Q. Sun, Y. Zhong, C.L. Xia, Y. Chen, Z.G. Chen, R. Ang, Achieving high- performance n-type PbTe via synergistically optimizing effective mass and carrier concentration and suppressing lattice thermal conductivity, Chem. Eng. J. 428 (2022) 132601, https://doi.org/10.1016/j.cej.2021.132601. [10] S. Saini, H.S. Yaddanapudi, K. Tian, Y.N. Yin, D. Magginetti, A. Tiwari, Terbium ion doping in Ca3Co4O9: A step towards high-performance thermoelectric materials, Sci. Rep. 7 (2017) 44621, https://doi.org/10.1038/srep44621. [11] S. Tajima, T. Tani, S. Isobe, K. Koumoto, Thermoelectric properties of highly textured NaCo2O4 ceramics processed by the reactive templated grain growth (RTGG) method, Mater. Sci. Eng. B 86 (1) (2001) 20–25, https://doi.org/10.1016/ S0921-5107(01)00633-X. [12] Y. Liu, L.D. Zhao, Y.C. Zhu, Y.C. Liu, F. Li, M.J. Yu, D.B. Liu, W. Xu, Y.H. Lin, C. W. Nan, Synergistically optimizing electrical and thermal transport properties of BiCuSeO via a dual-doping approach, Adv. Energy Mater. 6 (9) (2016) 1502423, https://doi.org/10.1002/aenm.201502423. [13] X. Liu, M.M.
+
+Fan, X.G.
+
+Zhu, Z.G.
+
+Tian, X.J.
+
+Li, H.Z.
+
+Song, Optimising the thermoelectric properties of Bi2Sr2Co2Oy using Ag substitution and Nano-SiC doping, Ceram. Int. 47 (21) (2021) 30657–30664, https://doi.org/10.1016/j. ceramint.2021.07.243. [14] S.J. Fan, T.T. Sun, M. Jiang, S.J. Gu, L.J. Wang, H.X. Yan, W. Jiang, In-situ growth of carbon nanotubes on ZnO to enhance thermoelectric and mechanical properties, J. Adv. Ceram. 11 (2022) 1932–1943, https://doi.org/10.1007/s40145-022-0657- 4. [15] J.B. Li, Y.X.
+
+Wang, X.
+
+Yang, H.J.
+
+Kang, Z.Q.
+
+Cao, X.
+
+Jiang, Z.N.
+
+Chen, E.Y.
+
+Guo, T. M.
+
+Wang, Processing bulk insulating CaTiO3 into a high-performance thermoelectric material, Chem. Eng. J. 428 (2022) 131121, https://doi.org/ 10.1016/j.cej.2021.131121. [16] S. Paengson, P. Pilasuta, K. Singsoog, W. Namhongsa, W. Impho, T. Seetawan, Improvement in thermoelectric properties of CaMnO3 by Bi doping and hot China (52272123, 52072301), the National Science and Technology 173 Program of China (No. 2022-JC-JQ-JJ-0015), the National Key R&D Program of China (No. 2022YFB3504901), the International Coopera tion Foundation of Shaanxi Province (2022KW-34), the Fundamental Research Funds for the Central Universities (No. D5000210722), the Research Fund of State Key Laboratory of Solidification Processing (NPU) (No. 2021-TS-08), the Undergraduate Innovation and Entrepre neurship Training Program of Shaanxi Province (S202210699186), the Open Fund of State Key Laboratory of New Ceramic and Fine Processing Tsinghua University (No. KFZD202102), and the ‘111’ Project (No. B20028). We would like to thank the Analytical & Testing Center of Northwestern Polytechnical University for the measurements of XRD, SEM-EDS, and TEM and valuable discussion. pressing, Mater. Today: Proc. 4 (2017) 6289–6295, https://doi.org/10.1016/j. matpr.2017.06.129. [17] J.L.
+
+Lan, Y.H.
+
+Lin, Y.
+
+Liu, S.L.
+
+Xu, C.W.
+
+Nan, High thermoelectric performance of nanostructured In2O3-based ceramics, J. Am. Ceram. Soc. 95 (8) (2012) 2465–2469, https://doi.org/10.1111/j.1551-2916.2012.05284.x. [18] T. Okuda, K. Nakanishi, S. Miyasaka, Y. Tokura, Large thermoelectric response of metallic perovskites: Sr1−xLaxTiO3 (0≤x≤0.1), Phys. Rev. B 63 (2001) 113104, https://doi.org/10.1103/PhysRevB.63.113104. [19] M.T. Buscaglia, F. Maglia, U.A. Tamburini, D. Marr´e, I. Pallecchi, A.
+
+Ianculescu, G.
+
+Canu, M.
+
+Viviani, M.
+
+Fabrizio, V.
+
+Buscaglia, Effect of nanostructure on the thermal conductivity of La-doped SrTiO3 ceramics, J. Eur. Ceram. Soc. 34 (2014) 307–316, https://doi.org/10.1016/j.jeurceramsoc.2013.08.009. [20] J. Wang, B.Y. Zhang, H.J. Kang, Y. Li, X.B. Yaer, J.F. Li, Q. Tan, S.
+
+Zhang, G.H.
+
+Fan, C.Y.
+
+Liu, L.
+
+Miao, D.
+
+Nan, T.M.
+
+Wang, L.D.
+
+Zhao, Record high thermoelectric performance in bulk SrTiO3 via nano-scale modulation doping, Nano Energy 35 (2017) 387–395, https://doi.org/10.1016/j.nanoen.2017.04.003. [21] F. Azough, A. Gholinia, D.T. Alvarez-Ruiz, E. Duran, D.M. Kepaptsoglou, A. S. Eggeman, Q.M. Ramasse, R. Freer, Self-nanostructuring in SrTiO3: A novel strategy for enhancement of thermoelectric response in oxides, ACS Appl. Mater. Interfaces 11 (2019) 32833–32843, https://doi.org/10.1021/acsami.9b06483. [22] A.V. Kovalevsky, A.A. Yaremchenko, S. Populoh, P. Thiel, D.P. Fagg, A. Weidenkaffbd, J.R. Fradea, Towards a high thermoelectric performance in rare- earth substituted SrTiO3: Effects provided by strongly-reducing sintering conditions, Phys. Chem. Chem. Phys. 16 (48) (2014) 26946–26954, https://doi. org/10.1039/C4CP04127E. [23] A.M. Dehkordi, S. Bhattacharya, T. Darroudi, J.W. Graff, U. Schwingenschl¨ogl, H. N. Alshareef, T.M. Tritt, Large thermoelectric power factor in Pr-doped SrTiO3−δ ceramics via grain-boundary-induced mobility enhancement, Chem. Mater. 26 (7) (2014) 2478–2485, https://doi.org/10.1021/cm4040853. [24] O. Okhay, S. Zlotnik, W.J. Xie, K. Orlinski, M.J.H. Gallo, G. Otero-Irurueta, A.J. S.
+
+Fernandes, D.A.
+
+Pawlak, A.
+
+Weidenkaff, A.
+
+Tkach, Thermoelectric performance of Nb-doped SrTiO3 enhanced by reduced graphene oxide and Sr deficiency cooperation, Carbon 143 (2019) 215–222, https://doi.org/10.1016/j. carbon.2018.11.023. [25] Z. Lu, H. Zhang, W. Lei, D.C. Sinclair, I.M. Reaney, High-figure-of-merit thermoelectric La-doped A-site-deficient SrTiO3 ceramics, Chem. Mater. 28 (3) (2016) 925–935, https://doi.org/10.1021/acs.chemmater.5b04616. [26] A.V. Kovalevsky, M.H. Aguirre, S. Populoh, S.G. Patricio, N.M. Ferreira, S. Mikhalev, D. Fagg, A. Weidenkaff, J. Frade, Designing strontium titanate based thermoelectrics: Insight into defect chemistry mechanisms, J. Matter. Chem. A 5 (8) (2017) 3909–3922, https://doi.org/10.1039/C6TA09860F. [27] S.R. Popuri, A.J.M. Scott, R.A. Downie, M.A. Hall, E. Suard, R. Decourt, M. Polletc, J.W.G. Bos, Glass-like thermal conductivity in SrTiO3 thermoelectrics induced by A-site vacancies, RSC Adv. 4 (64) (2014) 33720–33723, https://doi.org/10.1039/ C4RA06871H. [28] P. Zhang, Z.H. Lou, M.J. Qin, J. Xu, J.T. Zhu, Z.M. Shi, Q. Chen, M.J. Reece, H. X.
+
+Yan, F.
+
+Gao, High-entropy (Ca0.2Sr0.2Ba0.2La0.2Pb0.2)TiO3 perovskite ceramics with A site short-range disorder for thermoelectric applications, J. Mater. Sci. Technol. 97 (2022) 182–189, https://doi.org/10.1016/j.jmst.2021.05.016. [29] Y.P. Zheng, M.C. Zou, W.Y. Zhang, D. Yi, J.L. Lan, C.W. Nan, Y.H. Lin, Electrical and thermal transport behaviours of high-entropy perovskite thermoelectric oxides, J. Adv. Ceram. 10 (2021) 2226–4108, https://doi.org/10.1007/s40145- 021-0462-5. [30] R.Z. Zhang, F. Gucci, H.Y. Zhu, K. Chen, M.J. Reece, Data-driven design of ecofriendly thermoelectric high-entropy sulfides, Inorg. Chem. 57 (20) (2018) 13027–13033, https://doi.org/10.1021/acs.inorgchem.8b02379. [31] P. Zhang, Z.H. Lou, L.Y. Gong, J. Xu, Q. Chen, M.J.
+
+Reece, H.X.
+
+Yan, Z.
+
+Dashevsky, F.
+
+Gao, High-entropy MTiO3 perovskite oxides with glass-like thermal conductivity for thermoelectric applications, J. Alloy. Compd. 937 (2023) 168366, https://doi. org/10.1016/j.jallcom.2022.168366. [32] P. Zhang, L.Y. Gong, X. Xu, Z.H. Lou, Z.Y. Wei, P.H. Chen, Z.Z. Wu, J. Xu, F.
+
+Gao, Thermoelectric enhancement in A-site deficient high-entropy perovskite (Sr0.25Ca0.25La0.25Ba0.25)1-xTiO3±δ ceramics by fine manipulating cation vacancies, Chem. Eng. J. 472 (2023) 144974, https://doi.org/10.1016/j.cej.2023.144974. [33] S. Yang, J.L. Li, Y. Liu, M.W. Wang, L. Qiao, X.Y. Gao, Y.F. Chang, H.L. Du, Z. Xu, S. J. Zhang, F. Li, Textured ferroelectric ceramics with high electromechanical coupling factors over a broad temperature range, Nat. Commun. 12 (2021) 1414, https://doi.org/10.1038/s41467-021-21673-8. [34] T. Kimura, T.
+
+Takahashi, T.
+
+Tani, Y.
+
+Saito, Preparation of crystallographically textured Bi0.5Na0.5TiO3-BaTiO3 ceramics by reactive-templated grain growth method, Ceram. Int. 30 (2004) 1161–1167, https://doi.org/10.1016/j. ceramint.2003.12.011. [35] Y. Liu, Y. Chang, F. Li, B. Yang, Y. Sun, J. Wu, S. Zhang, R. Wang, W. Cao, Exceptionally high piezoelectric coefficient and low strain hysteresis in grain- oriented (Ba, Ca)(Ti, Zr)O3 through integrating crystallographic texture and domain engineering, ACS Appl. Mater. Interfaces 9 (35) (2017) 29863–29871, https://doi.org/10.1021/acsami.7b08160. [36] L. Jiang, L.H. Han, C.H. Lu, S.Y. Yang, Y.X. Liu, H.Z. Jiang, Y.G. Yan, X.F. Tang, D. W. Yang, Cu2Se as textured adjuvant for Pb-doped BiCuSeO materials leading to high thermoelectric performance, ACS Appl. Mater. Interfaces 13 (10) (2021) 11977–11984, https://doi.org/10.1021/acsami.0c22861. [37] M.J. Qin, F.
+
+Gao, M.
+
+Wang, L.
+
+Wang, G.G.
+
+Dong, X.X.
+
+Huang, Microstructure and enhanced Seebeck coefficient of textured Sr3Ti2O7 ceramics prepared by RTGG method, Ceram. Int. 42 (12) (2016) 13748–13754, https://doi.org/10.1016/j. ceramint.2016.05.173. Supplementary data to this article can be found online at https://doi. org/10.1016/j.cej.2024.153186. [38] D.B. Zhang, B.P. Zhang, D.S. Ye, Y.B.
+
+Zhu, Thermoelectric properties of textured Zn1−xAlxO ceramics prepared by spark plasma sintering of hydrothermally synthesized rod-shaped powders, Ceram. Int. 41 (10) (2015) 14627–14634, https://doi.org/10.1016/j.ceramint.2015.07.183. [39] P. Zhang, P.H. Chen, Z.H. Lou, Z.Y. Wei, Z.Z. Wu, J. Xu, X.J. Chen, W.H. Xu, Y. Q. Wang, F. Gao, Enhanced electrical conductivity of (001) oriented Sr0.9La0.1TiO3 microplatelets for thermoelectric applications, Inorg. Chem. 62 (2023) 15864–15874, https://doi.org/10.1021/acs.inorgchem.3c01647. [40] D. Srivastava, C.
+
+Norman, F.
+
+Azough, M.C.
+
+Schafer, E.
+
+Guilmeau, R.
+
+Freer, Improving the thermoelectric properties of SrTiO3-based ceramics with metallic inclusions, J. Alloy. Compd. 731 (2018) 723–730, https://doi.org/10.1016/j. jallcom.2017.10.033. [41] P. Zhang, Z.H. Lou, G.X. Hu, Z.Z. Wu, J. Xu, L.Y. Gong, F. Gao, In-situ construction of all-scale hierarchical microstructure and thermoelectric properties of (Sr0.25Ca0.25Ba0.25La0.25)TiO3/Pb@Bi composite oxide ceramics, J. Materiomics 9 (4) (2023) 661–672, https://doi.org/10.1016/j.jmat.2023.01.008. [42] M.J. Qin, Z.H. Lou, P. Zhang, Z.M. Shi, J. Xu, Y.S. Chen, F. Gao, Enhancement of thermoelectric performance of Sr0.9La0.1TiO3‑based ceramics regulated by nanostructures, ACS Appl. Mater. Interfaces 12 (48) (2020) 53899–53909, https:// doi.org/10.1021/acsami.0c13693. [43] E.
+
+Suvaci, G.L.
+
+Messing, Critical factors in the templated grain growth of textured reaction-bonded Alumina, J. Am. Ceram. Soc. 83 (8) (2000) 2041–2048, https:// doi.org/10.1111/j.1151-2916.2000.tb01509.x. [44] X.L.
+
+Shi, H.
+
+Wu, Q.F.
+
+Liu, W.
+
+Zhou, S.Y.
+
+Lu, Z.P.
+
+Shao, M.
+
+Dargusch, Z.G.
+
+Chen, SrTiO3-based thermoelectrics: Progress and challenges, Nano Energy 78 (2020) 105195, https://doi.org/10.1016/j.nanoen.2020.105195. [45] E.S. Toberer, A. Zevalkink, G.J. Snyder, Phonon engineering through crystal chemistry, J. Mater. Chem. 21 (2011) 15843–15852, https://doi.org/10.1039/ C1JM11754H. [46] P.G. Klemens, The scattering of low-frequency lattice waves by static imperfections, Proc. Phys. Soc. Sect. A 68 (1955) 1113, https://doi.org/10.1088/ 0370-1298/68/12/303. [47] E. Langenberg, E. Ferreiro-Vila, V. Lebor´an, A.O. Fumega, V. Pardo, F. Rivadulla, Analysis of the temperature dependence of the thermal conductivity of insulating single crystal oxides, APL Mater. 4 (2016) 104815, https://doi.org/10.1063/ 1.4966220. [48] Z.M. Shi, J.Z. Zhang, J. Wei, X. Hou, S.Y. Cao, S.J. Tong, S.Y. Liu, X.T. Li, Y. Zhang, A-site deficiency improved the thermoelectric performance of high-entropy perovskite manganite-based ceramics, J. Mater. Chem. C 10 (2022) 15582–15592, https://doi.org/10.1039/D2TC02952A. [49] J. Yao, T.T. Chen, H.X. Wang, M. Khan, C. Tan, Y.Q. Sun, W.B. Su, H.C. Wang, C. L. Wang, Stable cubic crystal structures and optimized thermoelectric performance of SrTiO3-based ceramics driven by entropy engineering, J. Mater. Chem. A 10 (46) (2022) 24561–24572, https://doi.org/10.1039/D2TA06576B. [50] R. Banerjee, S. Chatterjee, M. Ranjan, T. Bhattacharya, S. Mukherjee, S.S. Jana, A. Dwivedi, T. Maiti, High-entropy perovskites: an emergent class of oxide thermoelectrics with ultralow thermal conductivity, ACS Sustainable Chem. Eng. 8 (46) (2020) 17022–17032, https://doi.org/10.1021/acssuschemeng.0c03849.

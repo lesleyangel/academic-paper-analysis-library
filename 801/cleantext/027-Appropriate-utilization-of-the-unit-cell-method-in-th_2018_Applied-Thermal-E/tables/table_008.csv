@@ -1,0 +1,8 @@
+,UD,Plain woven,3D4d braided
+,${ q _ { x } } ^ { 0 }$,${ q _ { y } } ^ { 0 }$,${ q _ { z } } ^ { 0 }$,${ q _ { x } } ^ { 0 }$,${ q _ { y } } ^ { 0 }$,${ q _ { z } } ^ { 0 }$,${ q _ { x } } ^ { 0 }$,${ q _ { y } } ^ { 0 }$,${ q _ { z } } ^ { 0 }$
+$P _ { 1 }$,Uniform,Adiabatic,Adiabatic,Uniform,Adiabatic,Adiabatic,ULCa,ULC,ULC
+$P _ { 2 }$,Uniform,Adiabatic,Adiabatic,Uniform,Adiabatic,Adiabatic,ULC,ULC,ULC
+$P _ { 3 }$,Adiabatic,Uniform,Adiabatic,Adiabatic,Uniform,Adiabatic,ULC,ULC,ULC
+$P _ { 4 }$,Adiabatic,Uniform,Adiabatic,Adiabatic,Uniform,Adiabatic,ULC,ULC,ULC
+$P _ { 5 }$,Adiabatic,Adiabatic,Uniform,Periodic,Periodic,Periodic,Periodic,Periodic,Periodic
+$P _ { 6 }$,Adiabatic,Adiabatic,Uniform,,,,,,

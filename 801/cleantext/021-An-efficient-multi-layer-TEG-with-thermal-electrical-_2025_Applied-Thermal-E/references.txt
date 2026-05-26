@@ -1,0 +1,105 @@
+[1] R. Lallement, J.L. Bertaux, E. Qu´emerais, B.R. Sandel, Galactic cosmic rays measured by UVS on Voyager 1 and the end of the modulation, Astron. Astrophys. 563 (2014) A108.
+
+[2] J.W. Stultz, Thermal design of the Galileo spun and despun science, J. Spacecr. Rockets 28 (2) (1991) 139–145.
+
+[3] S. Guarro, B. Bream, L.K. Rudolph, R.J. Mulvihill, The Cassini mission risk assessment framework and application techniques, Reliab. Eng. Syst. Saf. 49 (3) (1995) 293–302.
+
+[4] S.J. Gomez, D. Cheikh, T. Vo, P. Von Allmen, K. Lee, M. Wood, G.J. Snyder, B. S. Dunn, J. Fleurial, S.K. Bux, Synthesis and characterization of vacancy-doped neodymium telluride for thermoelectric applications, Chem. Mat. 31 (12) (2019) 4460–4468.
+
+[5] T. Widdicombe, R.A. Borrelli, MCNP modelling of radiation effects of the Dragonfly mission’s RTG on Titan II: Atmospheric ionization effects, Acta Astronaut. 186 (2021) 517–522.
+
+[6] M.B. Naseem, J. Lee, S. In, Radioisotope thermoelectric generators (RTGs): a review of current challenges and future applications, Chem. Commun. 60 (96) (2024) 14155–14167.
+
+[7] C.P. Bankston, K.L. Atkins, E.F. Mastal, D.G. Mcconnell, Technology development issues in space nuclear-power for planetary exploration, Acta Astronaut. 24 (1991) 161–170.
+
+[8] X. Liu, H. Sun, S.M. Tang, C.L. Wang, W.X. Tian, S.Z. Qiu, G.H. Su, Thermal- hydraulic design features of a micronuclear reactor power source applied for multipurpose, Int. J. Energy Res. 43 (9) (2019) 4170–4183.
+
+[9] L.S. Hewawasam, A.S. Jayasena, M.M.M. Afnan, R.A.C.P. Ranasinghe, M. A. Wijewardane, Waste heat recovery from thermo-electric generators (TEGs), Energy Rep. 6 (2020) 474–479.
+
+[10] M.A. Zoui, S. Bentouba, J.G. Stocholm, M. Bourouis, A review on thermoelectric generators: progress and applications, Energies 13 (14) (2020). 2.578 × 10−8 to 1.019 × 10−8 and 6.778 × 10−10 to 6.711 × 10−10 Ω m2 under vacuum/atmosphere and silver-epoxy adhesive clearances, respectively.
+
+[11] Y.C. Lan, J.H. Lu, S.L. Wang, An experimental study on the performance of TEGs using uniform flow distribution heat exchanger for low-grade thermal energy recovery, Energy 292 (2024) 15.
+
+[12] Z. Wang, F.H. Han, Y.L. Ji, W.H. Li, Redundant energy combination and recovery scheme for dual fuel carriers based on thermoelectric harvesting with a large temperature range, Int. J. Energy Res. 45 (5) (2021) 7404–7420.
+
+[13] T.C. Holgate, R. Bennett, T. Hammel, T. Caillat, S. Keyser, B. Sievers, Increasing the efficiency of the multi-mission radioisotope thermoelectric generator, J. Electron. Mater. 44 (6) (2015) 1814–1821.
+
+[14] J. Joung, Y. Kang, Y. Nam, J. Jeong, Analysis of power generation considering design and finishing materials of thermoelectric energy harvesting blocks, Renew. Energy 231 (2024) 15.
+
+[15] J. Wei, J.W. Hui, T.T. Wang, Y. Wang, Y.P. Guo, S.Q. Zhang, Y.B. Zhang, X.Y. Qiao, A thermoelectric energy harvesting system for pavements with a fin cooling structure, Sustain. Energ. Fuels 7 (1) (2022) 248–262.
+
+[16] P. Wang, B.L. Wang, J.E. Li, Temperature and performance modeling of thermoelectric generators, Int. J. Heat Mass Transf. 143 (2019).
+
+[17] R. Bjork, D.V. Christensen, D. Eriksen, N. Pryds, Analysis of the internal heat losses in a thermoelectric generator, Int. J. Therm. Sci. 85 (2014) 12–20.
+
+[18] K. Karthick, S. Suresh, H. Singh, G.C. Joy, R. Dhanuskodi, Theoretical and experimental evaluation of thermal interface materials and other influencing parameters for thermoelectric generator system, Renew. Energy 134 (2019) 25–43.
+
+[19] M.H. Ge, Z.W. Xuan, C.Y. Zhao, D. Luo, Y.L. Wang, Y.Z. Li, Y.L. Zhao, Thermoelectric performance and mechanical analysis of inner-arc type leg applied in solar thermoelectric generator, Sol. Energy 263 (2023).
+
+[20] M.Q. Feng, S. Lv, J.C. Deng, Y. Guo, Y.Y. Wu, G.Q. Shi, M.M. Zhang, An overview of environmental energy harvesting by thermoelectric generators, Renew. Sust. Energ. Rev. 187 (2023) 113723.
+
+[21] Z.C. Yuan, X.B. Tang, Y.P. Liu, Z.H. Xu, K. Liu, Z.R. Zhang, W. Chen, J.Q. Li, A stacked and miniaturized radioisotope thermoelectric generator by screen printing, Sens. Actuat. A – Phys. 267 (2017) 496–504.
+
+[22] X.X. Zhou, B. Wu, W. Wei, K. Wang, K.R. Li, C.Y. Hou, Q.H. Zhang, Y.G. Li, H. Z. Wang, Bio-inspired high-performance belt-flex thermoelectric generators with Quasi-Archimedean spiral structures, Chem. Eng. J. 499 (2024) 9.
+
+[23] G. Gao, J.J. Gou, C.L. Gong, J.X. Hu, R.C. Gao, A novel mechanical-thermal- electrical thermal protection system concept and its multi-scale performance evaluation for hypersonic launch vehicles, Compos. Struct. 268 (2021) 113962.
+
+[24] E.Z. Mu, Z.H. Wu, Z.M. Wu, X. Chen, Y. Liu, X.C. Fu, Z.Y. Hu, A novel self-powering ultrathin TEG device based on micro/nano emitter for radiative cooling, Nano Energy 55 (2019) 494–500.
+
+[25] Y. Li, Y. Shi, D. Luo, X.H. Wang, Y.Y. Yan, Impacts of distributed thermal and electric contact resistance on performance and geometric optimization of thermoelectric generators, Appl. Therm. Eng. 246 (2024) 122873.
+
+[26] G. Gao, S.Y. Chen, L.Q. Ai, N. Liu, J.J. Gou, C.L. Gong, A thermal contact model encompassing near-field effects of multi-interface TEGs in hypersonic conditions, Int. J. Heat Mass Transf. 216 (2023) 124543.
+
+[27] Y.Y. Tian, M.J. Zhang, J.L. Wang, A.B. Liu, H.Q. Xie, Z.H. Wu, Y.H. Li, J.H. Mao, Y. Y. Wang, Thermal contact resistance matching to optimize performance in thermoelectric generators, J. Enhanc. Heat Transf. 27 (7) (2020) 617–627.
+
+[28] G. Gao, D. Li, J.J. Gou, C.L. Gong, S.M. Li, A study of interfacial electrical contact resistances of thermoelectric generators for hypersonic vehicles by experimental measurements and two-scale numerical simulations, Aerosp. Sci. Technol. 131 (2022) 107966.
+
+[29] C.N. Kim, Development of a numerical method for the performance analysis of thermoelectric generators with thermal and electric contact resistance, Appl. Therm. Eng. 130 (2018) 408–417.
+
+[30] J.L. Liu, C. Ma, S.L. Wang, S.B. Wang, B. Yang, Thermal contact resistance between bearing inner ring and shaft journal, Int. J. Therm. Sci. 138 (2019) 521–535.
+
+[31] A. Majumdar, C.L. Tien, Fractal characterization and simulation of rough surfaces, Wear 136 (2) (1990) 313–327.
+
+[32] J.J. Han, J. Zhu, W. Zheng, G.C. Wang, Influence of metal forming parameters on surface roughness and establishment of surface roughness prediction model, Int. J. Mech. Sci. 163 (2019) 105093.
+
+[33] Y. Liu, Q.Y. Meng, X.X. Yan, S.Y. Zhao, J.Y. Han, Research on the solution method for thermal contact conductance between circular-arc contact surfaces based on fractal theory, Int. J. Heat Mass Transf. 145 (2019) 118740.
+
+[34] W.M. Zhang, G. Meng, X.Y. Wei, Z.K. Peng, Slip flow and heat transfer in microbearings with fractal surface topographies, Int. J. Heat Mass Transf. 55 (2012) 7223–7233.
+
+[35] C. Wang, Q.Y. Lin, Z.K. Pan, J. Hong, Y.C. Zhou, Thermal contact analysis of Flip- Chip package considering microscopic contacts of double-layer thermal interface materials, Appl. Energy 356 (2024) 122453.
+
+[36] M.J. Chen, Q. Li, P. Zhang, Numerical prediction of high temperature thermal contact resistance of HTA–C/ZrB2-SiC with radiation effects, Int. Commun. Heat Mass Transf. 120 (2021) 105058.
+
+[37] Y. Li, Y. Shi, X.H. Wang, D. Luo, Y.Y. Yan, Thermal and electrical contact resistances of thermoelectric generator: experimental study and artificial neural network modelling, Appl. Therm. Eng. 225 (2023) 120154.
+
+[38] Y.J. Dai, J.J. Gou, X.J. Ren, F. Bai, W.Z. Fang, W.Q. Tao, A test-validated prediction model of thermal contact resistance for Ti-6Al-4V alloy, Appl. Energy 228 (2018) 1601–1617.
+
+[39] Y.Q. Xian, P. Zhang, S.P. Zhai, P. Yuan, D.G. Yang, Experimental characterization methods for thermal contact resistance: a review, Appl. Therm. Eng. 130 (2018) 1530–1548.
+
+[40] B. Feng, J. Tu, Y.H. Zhang, L.W. Fan, Z.T. Yu, An improved steady-state method for measuring the thermal contact resistance and bulk thermal conductivity of thin- The limitations of this study are listed: Firstly, the proposed TEG configuration is conducted under the assumption of constant heat source power, without considering its attenuation over time. Additionally, this study focuses on designing for one combination of high-, mid, and low- temperature TE materials. The optimal TEG configuration is sensitive to TE material properties, and variations in input parameters of TE mate- rial properties exceeding 10 % can lead to changes in the optimal TEG configuration. The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. walled materials having a sub-millimeter thickness, Appl. Therm. Eng. 171 (2020) 11.
+
+[41] X. Xiao, P. Zhang, M. Li, Effective thermal conductivity of open-cell metal foams’ impregnated with pure paraffin for latent heat storage, Int. J. Therm. Sci. 81 (2014) 94–105.
+
+[42] D.H. Liu, Y. Luo, X.C. Shang, Experimental investigation of high temperature thermal contact resistance between high thermal conductivity C/C material and Inconel 600, Int. J. Heat Mass Transf. 80 (2015) 407–410.
+
+[43] A. Bendada, A. Derdouri, M. Lamontagne, Y. Simard, Analysis of thermal contact resistance between polymer and mold in injection molding, Appl. Therm. Eng. 24 (14–15) (2004) 2029–2040.
+
+[44] G. Gao, D. Li, J.J. Gou, C.L. Gong, S.M. Li, The quantitative study of interfacial contact effects in TEGs by real-topology-based simulations and novel indirect tests, Int. J. Heat Mass Transf. 201 (2023) 123579.
+
+[45] J. Pla-García, S.C.R. Rafkin, G.M. Martinez, ´A. Vicente-Retortillo, C.E. Newman, H. Savij¨arvi, M. de la Torre, J.A. Rodriguez-Manfredi, F. G´omez, A. Molina, D. Viúdez-Moreiras, A. Harri, Meteorological predictions for Mars 2020 perseverance rover landing site at Jezero crater, Space Sci. Rev. 216 (8) (2020) 1–21.
+
+[46] B.Q. Zhang, S.Y. Xue, X.Z. Zhou, Thermal test of Martian environment based on thermal model correlation verification, Chin. Space Sci. Technol. 44 (4) (2024) 142–152.
+
+[47] Y. Sun, G.P. Lin, X.Q. Bu, L.Z. Bai, C.H. Xiao, D.S. Wen, A numerical study of fluid flow and heat transfer in carbon dioxide enclosures on Mars, Energies 11 (4) (2018) 1–19.
+
+[48] P. Bhandari, K. Anderson, P. Karlmann, K. Novak, CO2 insulation for thermal control of the Mars science laboratory, in: 41st International Conference on Environmental Systems, Oregon, 2011.
+
+[49] J.J. Gou, J.X. Hu, Z.W. Yan, G. Gao, C.L. Gong, Effects of physical dimensions, temperature ranges and interfacial thermal contacts on the multi-stage thermoelectric generators for a hypersonic vehicle, Int. J. Energy Res. 46 (14) (2022) 20021–20038.
+
+[50] W. Yan, K. Komvopoulos, Contact analysis of elastic-plastic fractal surfaces, J. Appl. Phys. 84 (7) (1998) 3617–3624.
+
+[51] A. Majumdar, B. Bhushan, Fractal model of elastic-plastic contact between rough surfaces, J. Tribol. 113 (1) (1991) 1–11.
+
+[52] S.Y. Chen, H.P. Chen, G. Gao, C.L. Gong, Y. Wu, J.J. Gou, The innovation of an aerodynamic-heat-harvest TEG considering multi-interface contact effect for a high-speed flight vehicle, Appl. Therm. Eng. 258 (2025) 124687.
+
+[53] R.P. Gupta, R. Mccarty, J. Sharp, Practical Contact resistance measurement method for bulk Bi2Te3-based thermoelectric devices, J. Electron. Mater. 43 (6) (2014) 1608–1612.

@@ -1,0 +1,43 @@
+| Nomenclature | $k _ { S }$ | harmonic mean thermal conductivity |  |
+| --- | --- | --- | --- |
+|  | $k _ { 0 }$ | vacuum wavevector |  |
+| Abbreviation TCR | thermal contact resistance | $k _ { \parallel }$ $k _ { \perp }$ | wavevector parallel to the interface |
+| TCC | thermal contact conductance |  | wavevector normal to the interface |
+| RTE | radiative transfer equation | $k _ { q }$ | wavevector |
+| FFTR | far-field thermal radiation | $r _ { 0 1 }$ | Fresnel reflection coefficient from medium 0 to 1 |
+| NFTR |  | $r _ { 0 2 }$ $U$ | Fresnel reflection coefficient from medium 0 to 2 |
+| SPPs | near-field thermal radiation surface plasmon polaritons |  | electric potential |
+| SPhPs | surface phonon polaritons | $\Delta U$ | electric potential difference |
+| TE | thermoelectric | $j$ $\mathbb { E } \mathrm { - } N \amalg$ | electrical current density |
+| TEG | thermoelectric generator |  | contacting pair of electrode and lower surface of N-type TE |
+| TEC | thermoelectric cooler | E-N_u | leg |
+| TPS | thermal protection system |  | contacting pair of electrode and upper surface of N-type TE |
+| PEEK | poly-ether-ether-ketone | E-P1 | leg |
+|  |  |  | contacting pair of electrode and lower surface of P-type TE leg |
+| Symbols S | Seebeck coefficient | E-Pu | contacting pair of electrode and upper surface of P-type TE |
+| $k$ | electrical conductivity |  | leg |
+| $T$ | absolute temperature | S-E | contacting pair of substrate and electrode |
+| T1 | hot side temperature of contacting pair in simulation | Greek |  |
+| $T 2$ | cold side temperature of contacting pair in simulation | $\lambda$ |  |
+| $T _ { 0 } 1$ | hot side temperature of TEG in simulation | $\sigma$ | thermal conductivity |
+| $T _ { 0 } 2$ | cold side temperature of TEG in simulation | c | normal stress |
+| $\Delta T$ | temperature difference |  | specific heat capacity |
+| $f$ | body force | $\rho$ | density |
+| $u , \nu , w$ | displacements in x,yandzdirection | $\tau$ | shear stress |
+| $D ^ { e }$ | elasticity matrix | $\gamma$ | shear strain |
+| $D ^ { p }$ | plasticity matrix | $\varepsilon$ | total mechanical strain |
+| $c _ { p }$ | specific heat capacity | $\psi$ | Peltier coefficient |
+| $w \mathbf { c }$ | compression displacement | $\xi$ | damping factor |
+| $q _ { c }$ | heat fl ux of solid conduction | $\varepsilon _ { r }$ | dielectric constant |
+|  |  | $\varepsilon _ { \infty }$ | high frequency dielectric constant |
+| $q _ { r }$ | heat flux of thermal radiation | $\Theta$ | mean energy of a Planck oscillator |
+| $q _ { f r }$ | heat fl ux of far-field thermal radiation | $\omega$ | angle frequency |
+| $q _ { n r }$ | heat flux of near-field thermal radiation | $\omega _ { p }$ | plasma frequency |
+| $h$ | thermal contact conductance | Subscripts / Superscripts |  |
+| $h _ { c c }$ | TCC of real contact elements | $x , y , z$ | Cartesian coordinate |
+| $h _ { m c }$ | TCC of clearance medium equivalent thermal conductance of far-field thermal | $p$ | transverse magnetic |
+| $h _ { f r }$ | radiation | $s$ | transverse electric |
+|  |  | evanescent |  |
+| equivalent thermal conductance of near-field thermal | evan $_ { L O }$ | longitudinal optical |  |
+| $d$ | radiation | $T O$ | transverse optical |
+| $k _ { B }$ | distance of corresponding contact elements Stefan-Boltzmann constant | prop | propagating |

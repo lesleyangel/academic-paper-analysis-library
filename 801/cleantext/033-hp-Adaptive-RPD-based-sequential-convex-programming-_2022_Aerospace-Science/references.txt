@@ -1,0 +1,73 @@
+[1] B. Tian, W. Fan, R. Su, Q. Zong, Real-time trajectory and attitude coordination control for reusable launch vehicle in reentry phase, IEEE Trans. Ind. Electron. 62 (3) (2015) 1639–1650, https://doi .org /10 .1109 /TIE .2014 .2341553.
+
+[2] A.V. Rao, A survey of numerical methods for optimal control, Adv. Astronaut. Sci. 135 (1) (2010) 497–528, https://www.webofscience .com /wos /alldb /full -record /WOS : 000280501900030.
+
+[3] R. Chai, A. Savvaris, A. Tsourdos, S. Chai, Y. Xia, A review of optimization techniques in spacecraft flight trajectory design, Prog. Aerosp. Sci. 109 (2019) 100543, https:// doi .org /10 .1016 /j .paerosci .2019 .05 .003.
+
+[4] K.D. Mease, J. Kremer, Shuttle entry guidance revisited using nonlinear geometric methods, J. Guid. Control Dyn. 17 (6) (1994) 1350–1356, https://doi .org /10 .2514 /3 . 21355.
+
+[5] A. Caruso, A.A. Quarta, G. Mengali, M. Ceriotti, Shape-based approach for solar sail trajectory optimization, Aerosp. Sci. Technol. 107 (2020) 106363, https://doi .org /10 . 1016 /j .ast .2020 .106363.
+
+[6] Y. Zheng, X. Fu, M. Xu, Q. Li, M. Lin, Ascent trajectory design of small-lift launch vehicle using hierarchical optimization, Aerosp. Sci. Technol. 107 (2020) 106285, https:// doi .org /10 .1016 /j .ast .2020 .106285.
+
+[7] K. Mease, P. Teufel, H. Schoenenberger, D. Chen, S. Bharadwaj, Re-entry trajectory planning for a reusable launch vehicle, in: 24th Atmospheric Flight Mechanics Confer- ence, Portland, OR, U.S.A., 1999.
+
+[8] D.A. Benson, G.T. Huntington, T.P. Thorvaldsen, A.V. Rao, Direct trajectory optimization and costate estimation via an orthogonal collocation method, J. Guid. Control Dyn. 29 (6) (2006) 1435–1440, https://doi .org /10 .2514 /1.20478.
+
+[9] S. Kameswaran, L.T. Biegler, Convergence rates for direct transcription of optimal control problems using collocation at Radau points, Comput. Optim. Appl. 41 (1) (2008) 81–126, https://doi .org /10 .1007 /s10589 -007 -9098 -9.
+
+[10] D. Garg, et al., A unified framework for the numerical solution of optimal control problems using pseudospectral methods, Automatica 46 (11) (2010) 1843–1851, https:// doi .org /10 .1016 /j .automatica .2010 .06 .048.
+
+[11] P. Lu, Entry guidance and trajectory control for reusable launch vehicle, J. Guid. Control Dyn. 20 (1) (1997) 143–149, https://doi .org /10 .2514 /2 .4008.
+
+[12] S. Bharadwaj, A.V. Rao, K.D. Mease, Entry trajectory tracking law via feedback linearization, J. Guid. Control Dyn. 21 (5) (1998) 726–732, https://doi .org /10 .2514 /2 .4318.
+
+[13] P. Lu, J.M. Hanson, Entry guidance for the x-33 vehicle, J. Spacecr. Rockets 35 (3) (1998) 342–349, https://doi .org /10 .2514 /2 .3332.
+
+[14] P. Lu, Introducing computational guidance and control, J. Guid. Control Dyn. 40 (2) (2017) 193, https://doi .org /10 .2514 /1.G002745.
+
+[15] T. Sands, Deterministic artificial intelligence, London, United Kingdom, IntechOpen, 2020, Online.
+
+[16] X. Liu, P. Lu, B. Pan, Survey of convex optimization for aerospace applications, Astrodynamics 1 (2017) 23–40, https://doi .org /10 .1007 /s42064 -017 -0003 -8.
+
+[17] M.W. Mueller, R. D’Andrea, A model predictive controller for quadrocopter state interception, in: 2013 European Control Conference (ECC), Zurich, Switzerland, 2013.
+
+[18] B. Acikmese, S.R. Ploen, Convex programming approach to powered descent guidance for Mars landing, J. Guid. Control Dyn. 30 (5) (2007) 1353–1366, https://doi .org / 10 .2514 /1.27553.
+
+[19] D. Zhou, Y. Zhang, S. Li, Receding horizon guidance and control using sequential convex programming for spacecraft 6-DOF close proximity, Aerosp. Sci. Technol. 87 (2019) 459–477, https://doi .org /10 .1016 /j .ast .2019 .02 .041.
+
+[20] X. Cheng, H. Li, R. Zhang, Efficient ascent trajectory optimization using convex models based on the Newton–Kantorovich/pseudospectral approach, Aerosp. Sci. Technol. 66 (2017) 140–151, https://doi .org /10 .1016 /j .ast .2017.02 .023.
+
+[21] Y. Li, B. Pang, C. Wei, N. Cui, Y. Liu, Online trajectory optimization for power system fault of launch vehicles via convex programming, Aerosp. Sci. Technol. 98 (2020) 105682, https://doi .org /10 .1016 /j .ast .2020 .105682.
+
+[22] X. Liu, Z. Shen, P. Lu, Entry trajectory optimization by second-order cone programming, J. Guid. Control Dyn. 39 (2) (2016) 227–241, https://doi .org /10 .2514 /1.G001210.
+
+[23] M. Sagliano, E. Mooij, Optimal drag-energy entry guidance via pseudospectral convex optimization, Aerosp. Sci. Technol. 117 (2021) 106946, https://doi .org /10 .1016 /j .ast . 2021.106946.
+
+[24] X. Zhou, R. He, H. Zhang, G. Tang, W. Bao, Sequential convex programming method using adaptive mesh refinement for entry trajectory planning problem, Aerosp. Sci. Technol. 109 (2021) 106374, https://doi .org /10 .1016 /j .ast .2020 .106374.
+
+[25] B. Ac¸ ıkmes¸ e, L. Blackmore, Lossless convexification of a class of optimal control problems with non-convex control constraints, Automatica 47 (2) (2011) 341–347, https://doi .org /10 .1016 /j .automatica .2010 .10 .037.
+
+[26] B. Ac¸ ıkmes¸ e, J.M. Carson, L. Blackmore, Lossless convexification of nonconvex control bound and pointing constraints of the soft landing optimal control problem, IEEE Trans. Control Syst. Technol. 21 (6) (2013) 2104–2113, https://doi .org /10 .1109 /TCST.2012 .2237346.
+
+[27] M.W. Harris, B. Ac¸ ıkmes¸ e, Lossless convexification of non-convex optimal control problems for state constrained linear systems, Automatica 50 (9) (2014) 2304–2311, https://doi .org /10 .1016 /j .automatica .2014 .06 .008.
+
+[28] X. Liu, Z. Shen, P. Lu, Exact convex relaxation for optimal flight of aerodynamically controlled missiles, IEEE Trans. Aerosp. Electron. Syst. 52 (4) (2016) 1881–1892, https://doi .org /10 .1109 /TAES .2016 .150741.
+
+[29] J. Wang, N. Cui, A pseudospectral-convex optimization algorithm for rocket landing guidance, in: 2018 AIAA Guidance, Navigation, and Control Conference, Kissimmee, Florida, 2018.
+
+[30] M. Sagliano, Generalized hp pseudospectral-convex programming for powered descent and landing, J. Guid. Control Dyn. 42 (7) (2019) 1562–1570, https://doi .org /10 . 2514 /1.G003731.
+
+[31] Y. Ma, B. Pan, C. Hao, S. Tang, Improved sequential convex programming using modified Chebyshev–Picard iteration for ascent trajectory optimization, Aerosp. Sci. Technol. 120 (2022) 107234, https://doi .org /10 .1016 /j .ast .2021.107234.
+
+[32] C.L. Darby, W.W. Hager, A.V. Rao, An hp-adaptive pseudospectral method for solving optimal control problems, Optim. Control Appl. Methods 32 (4) (2011) 476–502, https://doi .org /10 .1002 /oca .957.
+
+[33] M.A. Patterson, A.V. Rao, GPOPS-II: a MATLAB software for solving multiple-phase optimal control problems using hp-adaptive Gaussian quadrature collocation methods and sparse nonlinear programming, ACM Trans. Math. Softw. 41 (1) (2014) 1–37, https://doi .org /10 .1145 /2558904.
+
+[34] E.R. Pager, A.V. Rao, Method for solving bang-bang and singular optimal control problems using adaptive Radau collocation, Comput. Optim. Appl. 81 (3) (2022) 857–887, https://doi .org /10 .1007 /s10589 -022 -00350 -6.
+
+[35] Y. Zhao, P. Tsiotras, Density functions for mesh refinement in numerical optimal control, J. Guid. Control Dyn. 34 (1) (2011) 271–277, https://doi .org /10 .2514 /1.45852.
+
+[36] T.H. Phillips, A Common Aero Vehicle (CAV) Model, Description, and Employment Guide, Schafer Corporation, 2003.
+
+[37] J. Dahl, E.D. Andersen, A primal-dual interior-point algorithm for nonsymmetric exponential-cone optimization, Math. Program. 194 (1) (2022) 341–370, https://doi .org / 10 .1007 /s10107 -021 -01631 -4.

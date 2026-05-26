@@ -1,0 +1,311 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 343.9, 716.91)]] https://doi.org/10.1016/j.ast.2025.110283 Received 12 January 2025; Received in revised form 12 March 2025; Accepted 29 April 2025
+
+[confidence=0.92; source=equations; [page 3, bbox (346.11, 110.41, 359.73, 127.85)]] ⎥⎥⎦=
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 113.83, 327.87, 126.86)]] q(t) =
+
+[confidence=0.92; source=equations; [page 3, bbox (321.73, 158.49, 327.87, 166.46)]] =
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 217.3, 335.87, 230.35)]] qk = -λf
+
+[confidence=0.92; source=equations; [page 3, bbox (337.38, 220.45, 367.56, 235.83)]] ∂y = -λf
+
+[confidence=0.92; source=equations; [page 3, bbox (419.75, 110.41, 462.68, 127.85)]] ⎥⎥⎦and T(t) =
+
+[confidence=0.92; source=equations; [page 3, bbox (368.56, 211.91, 560.02, 235.83)]] Te k -Tw k-1 ye (2)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 78.23, 291.01, 92.25)]] Te k = E(Xk, Xk-1, Xk-2...Xk-i) (3)
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (37.59, 185.76, 146.35, 203.08)]] qk = F ( Xk, Xk-1, Xk-2...Xk-i, Tw k-1
+
+[confidence=0.92; source=equations; [page 4, bbox (54.03, 252.04, 291.01, 270.52)]] ∂t = ∇⋅(λs∇Tw(t)) + q (5)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 310.03, 103.67, 331.66)]] Tw k-1 = Tw k-2 + ∫tk-1
+
+[confidence=0.92; source=equations; [page 4, bbox (105.96, 312.26, 174.7, 325.29)]] ∇⋅(λs∇Tw(t)) + qk-1
+
+[confidence=0.92; source=equations; [page 4, bbox (322.53, 342.81, 560.02, 355.85)]] q = URΣRVR T (8)
+
+[confidence=0.92; source=equations; [page 4, bbox (357.33, 439.06, 378.0, 448.33)]] / ∑
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 440.37, 340.58, 457.78)]] Wm = ∑
+
+[confidence=0.92; source=equations; [page 4, bbox (341.92, 444.74, 355.48, 458.77)]] m i=1ei
+
+[confidence=0.92; source=equations; [page 4, bbox (379.28, 444.74, 560.02, 458.77)]] R i=1ei (9)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 471.0, 272.19, 484.03)] [qk1, qk2, ..., qkP]] = F(Xk, Xk-1, Xk-2, ..., Xk-i, [T(k-1)1, T(k-1)2, ..., T(k-1)P])
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 475.44, 318.51, 483.96)]] ε =
+
+[confidence=0.92; source=equations; [page 5, bbox (356.66, 484.08, 366.12, 492.55)]] p=1
+
+[confidence=0.92; source=equations; [page 5, bbox (342.43, 484.37, 351.97, 492.84)]] k=1
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 503.59, 351.35, 522.41)]] R2 = 1 - ∑ K
+
+[confidence=0.92; source=equations; [page 5, bbox (355.01, 521.16, 364.48, 529.63)]] p=1
+
+[confidence=0.92; source=equations; [page 5, bbox (340.84, 521.39, 350.38, 529.86)]] k=1
+
+[confidence=0.92; source=equations; [page 5, bbox (352.06, 539.53, 384.12, 558.35)]] ̂qkp - ∑ K
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 548.48, 318.63, 556.85)]] δ =
+
+[confidence=0.92; source=equations; [page 5, bbox (339.99, 557.1, 349.45, 565.57)]] p=1
+
+[confidence=0.92; source=equations; [page 5, bbox (325.81, 557.33, 335.36, 565.8)]] k=1
+
+[confidence=0.92; source=equations; [page 5, bbox (373.55, 557.33, 383.09, 565.8)]] k=1
+
+[confidence=0.57; needs_review; source=equations; [page 5, bbox (318.56, 402.99, 558.81, 417.27)]] iteratively until all the heat flux distributions ̂q = [̂q1, ̂q2...̂qk...̂qK]T
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (401.73, 503.59, 431.85, 514.1)]] )2 / ∑ K
+
+[confidence=0.92; source=equations; [page 5, bbox (435.46, 521.16, 444.92, 529.63)]] p=1
+
+[confidence=0.92; source=equations; [page 5, bbox (421.28, 521.39, 430.83, 529.86)]] k=1
+
+[confidence=0.92; source=equations; [page 5, bbox (413.4, 534.87, 437.75, 548.91)]] / ∑ K
+
+[confidence=0.92; source=equations; [page 5, bbox (387.72, 557.1, 397.19, 565.57)]] p=1
+
+[confidence=0.92; source=equations; [page 5, bbox (441.41, 557.1, 450.88, 565.57)]] p=1
+
+[confidence=0.92; source=equations; [page 5, bbox (427.18, 557.33, 436.72, 565.8)]] k=1
+
+[confidence=0.92; source=equations; [page 6, bbox (37.59, 162.98, 75.65, 181.8)]] H(k) = ∑ I-1
+
+[confidence=0.92; source=equations; [page 6, bbox (65.76, 180.61, 74.05, 189.08)]] i=0
+
+[confidence=0.92; source=equations; [page 6, bbox (37.59, 449.45, 59.07, 462.48)]] Cj = σ
+
+[confidence=0.92; source=equations; [page 6, bbox (68.54, 461.29, 76.83, 469.76)]] i=1
+
+[confidence=0.92; source=equations; [page 6, bbox (76.99, 168.77, 291.02, 181.8)]] w(i)xk-τi (13)
+
+[confidence=0.92; source=equations; [page 8, bbox (312.61, 470.15, 551.68, 481.12)]] Number of trajectories R2 RMSE/(kW/m²) Relative error/%
+
+[confidence=0.92; source=equations; [page 10, bbox (43.6, 75.68, 551.68, 86.65)]] Input Input analys R2 RMSE /(kW/m²) Relative error/%
+
+[confidence=0.92; source=equations; [page 10, bbox (109.13, 415.44, 178.31, 434.97)]] R2 RMSE /(kW/ m²)
+
+[confidence=0.92; source=equations; [page 10, bbox (237.94, 415.98, 304.71, 434.97)]] Average spatial RMSE/ (kW/m²)
+
+[confidence=0.92; source=equations; [page 10, bbox (314.13, 415.98, 386.4, 434.97)]] Maximum spatial RMSE/ (kW/m²)
+
+[confidence=0.92; source=equations; [page 10, bbox (395.88, 415.98, 448.02, 434.97)]] Average temporal RMSE/(kW/m²)
+
+[confidence=0.92; source=equations; [page 10, bbox (477.18, 415.98, 534.81, 434.97)]] Maximum temporal RMSE/(kW/m²)
+
+[confidence=0.92; source=equations; [page 10, bbox (43.6, 652.59, 191.69, 672.12)]] Methods R2 RMSE/ (kW/m²)
+
+[confidence=0.92; source=body_inline] 0 \leq t \leq t _ {K}
+
+[confidence=0.92; source=body_inline] q _ {k} ( k = 1 , 2 . . . K )
+
+[confidence=0.92; source=body_inline] T _ {k} ( k = 1 , 2 . . . K )
+
+[confidence=0.92; source=body_inline] q _ {k}
+
+[confidence=0.92; source=body_inline] T _ {k}
+
+[confidence=0.92; source=body_inline] q _ {k p} ( p = 1 , 2 . . . P )
+
+[confidence=0.92; source=body_inline] T _ {k p} ( p = 1 , 2 . . . P )
+
+[confidence=0.92; source=body_inline] q _ {k p}
+
+[confidence=0.92; source=body_inline] T _ {k p}
+
+[confidence=0.92; source=body_inline] p ^ {\mathrm{th}}
+
+[confidence=0.92; source=body_inline] t _ {k} . \mathrm{~A~}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l r} {{q ( t ) = [ \begin{array} {l} {q _ {1}} \\ {q _ {2}} \\ {\cdots} \\ {q _ {K}} \end{array} ] = [ \begin{array} {l} {q _ {11} , q _ {12} , \dots , q _ {1 P}} \\ {q _ {21} , q _ {22} , \dots , q _ {2 P}} \\ {\dots} \\ {q _ {K 1} , q _ {K 2} , \dots , q _ {K P}} \end{array} ] \mathrm{and} T ( t ) = [ \begin{array} {l} {T _ {1}} \\ {T _ {2}} \\ {\cdots} \\ {T _ {K}} \end{array} ]}} \\ & {} & {= [ \begin{array} {l} {T _ {11} , T _ {12} , \dots , T _ {1 P}} \\ {T _ {21} , q _ {22} , \dots , T _ {2 P}} \\ {\dots} \\ {T _ {K 1} , T _ {K 2} , \dots , T _ {K P}} \end{array} ]} \end{array}\tag{1}
+
+[confidence=0.92; source=body_inline] q _ {k} = - \lambda _ {f} \frac {\partial T} {\partial y} = - \lambda _ {f} \frac {T _ {k} ^ {e} - T _ {k - 1} ^ {w}} {y ^ {e}}\tag{2}
+
+[confidence=0.92; source=body_inline] \lambda _ {f}
+
+[confidence=0.92; source=body_inline] T _ {k} ^ {e}
+
+[confidence=0.92; source=body_inline] T _ {k - 1} ^ {w}
+
+[confidence=0.92; source=body_inline] t _ {k - 1}
+
+[confidence=0.92; source=body_inline] y ^ {e}
+
+[confidence=0.92; source=body_inline] T _ {k} ^ {e} = E ( X _ {k} , X _ {k - 1} , X _ {k - 2} . . . X _ {k - i} )\tag{3}
+
+[confidence=0.92; source=body_inline] X _ {k}
+
+[confidence=0.92; source=body_inline] t _ {k} ,
+
+[confidence=0.92; source=body_inline] T _ {k} ^ {e} ;
+
+[confidence=0.92; source=body_inline] q _ {k} = F \bigl ( X _ {k} , X _ {k - 1} , X _ {k - 2} . . . X _ {k - i} , T _ {k - 1} ^ {w} \bigr )\tag{4}
+
+[confidence=0.92; source=body_inline] \rho c \frac {\partial T ^ {w} ( t )} {\partial t} = \nabla \cdot ( \lambda _ {s} \nabla T ^ {w} ( t ) ) + q\tag{5}
+
+[confidence=0.92; source=body_inline] \rho , c
+
+[confidence=0.92; source=body_inline] \lambda _ {s}
+
+[confidence=0.92; source=body_inline] \mathrm{Eq.~} ( 5 )
+
+[confidence=0.92; source=body_inline] T _ {k - 1} ^ {w} = T _ {k - 2} ^ {w} + \int _ {t _ {k - 2}} ^ {t _ {k - 1}} \frac {\nabla \cdot \left( \lambda _ {s} \nabla T ^ {w} ( t ) \right) + q _ {k - 1}} {\rho c} d t\tag{6}
+
+[confidence=0.92; source=body_inline] T _ {k - 2} ^ {w}
+
+[confidence=0.92; source=body_inline] q _ {k - 1} ,
+
+[confidence=0.92; source=body_inline] ^ {( 7 ) ,}
+
+[confidence=0.92; source=body_inline] \bigl [ q _ {k 1} , q _ {k 2} , . . . , q _ {k P} \bigr ] = F \bigl ( X _ {k} , X _ {k - 1} , X _ {k - 2} , . . . , X _ {k - i} , [ T _ {( k - 1 ) 1} , T _ {( k - 1 ) 2} , . . . , T _ {( k - 1 ) P} ] \bigr )\tag{7}
+
+[confidence=0.92; source=body_inline] ^ {4 ,}
+
+[confidence=0.92; source=body_inline] X _ {1} , X _ {2} , . . . , X _ {n} , . . . , X _ {N}
+
+[confidence=0.92; source=body_inline] \textstyle \sum _ {n = 1} ^ {N} K _ {n}
+
+[confidence=0.92; source=body_inline] n ^ {t h}
+
+[confidence=0.92; source=body_inline] K _ {n}
+
+[confidence=0.92; source=body_inline] ( m < P )
+
+[confidence=0.92; source=body_inline] q = U _ {R} \Sigma _ {R} {V _ {R}} ^ {T}\tag{8}
+
+[confidence=0.92; source=body_inline] \Sigma = \mathrm{diag} ( S _ {1} , S _ {2} , . . . , S _ {R} )
+
+[confidence=0.92; source=body_inline] e = S ^ {2}
+
+[confidence=0.92; source=body_inline] W _ {m}
+
+[confidence=0.92; source=body_inline] W _ {m} = \sum {\sp m _ {i = 1} e _ {i} \sp i} \Big / \sum _ {i = 1} \sp R e _ {i}\tag{9}
+
+[confidence=0.92; source=body_inline] W _ {m} ,
+
+[confidence=0.92; source=body_inline] \textstyle \sum _ {R} , U _ {R}
+
+[confidence=0.92; source=body_inline] V _ {R} ^ {T}
+
+[confidence=0.92; source=body_inline] \textstyle \sum _ {m} , U _ {m}
+
+[confidence=0.92; source=body_inline] V _ {m} ^ {T}
+
+[confidence=0.92; source=body_inline] U _ {m}
+
+[confidence=0.92; source=body_inline] \sum m
+
+[confidence=0.67; needs_review; source=body_inline] \boldsymbol {a} _ {k 2} . . . \boldsymbol {a} _ {k m} ]
+
+[confidence=0.92; source=body_inline] \left[ \xi _ {1} , \xi _ {2} . . . \xi _ {m} \right] ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] [ \widehat {a} _ {k 1} , \widehat {\boldsymbol {a}} _ {k 2} . . . \widehat {\boldsymbol {a}} _ {k m} ]
+
+[confidence=0.92; source=body_inline] \left[ X _ {k} , X _ {k - 1} . . . X _ {k - i} \right] ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] [ a _ {k 1} , a _ {k 2} . . . a _ {k m} ] ;
+
+[confidence=0.92; source=body_inline] [ X _ {k} , X _ {k - 1} . . . X _ {k - i} ] ^ {\mathrm{T}}
+
+[confidence=0.67; needs_review; source=body_inline] [ \widehat {a} _ {k 1} , \widehat {a} _ {k 2}
+
+[confidence=0.67; needs_review; source=body_inline] . . \widehat {a} _ {k m} ]
+
+[confidence=0.92; source=body_inline] [ a _ {k 1} , a _ {k 2} . . . a _ {k m} ]
+
+[confidence=0.92; source=body_inline] t _ {1} {\mathrm{:}}
+
+[confidence=0.92; source=body_inline] t _ {1}
+
+[confidence=0.92; source=body_inline] X _ {1}
+
+[confidence=0.92; source=body_inline] [ X _ {1} , 0 . . . 0 ] ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] T _ {0} ,
+
+[confidence=0.92; source=body_inline] [ \widehat {a} _ {11} , \widehat {a} _ {12} . . . \widehat {a} _ {1 m} ] \mathrm{at} t _ {1}
+
+[confidence=0.92; source=body_inline] [ \widehat {a} _ {11} , \widehat {a} _ {12} . . . \widehat {a} _ {1 m} ]
+
+[confidence=0.92; source=body_inline] [ \xi _ {1} , \xi _ {2} . . . \xi _ {m} ] ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] \widehat {\boldsymbol {q}} _ {1}
+
+[confidence=0.92; source=body_inline] \widehat {q} _ {1}
+
+[confidence=0.92; source=body_inline] \left[ X _ {2} , X _ {1} . . . 0 \right] ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] \widehat {\pmb q} _ {2}
+
+[confidence=0.92; source=body_inline] t _ {2}
+
+[confidence=0.92; source=body_inline] \widehat {\pmb q} = [ \widehat {\pmb q} _ {1} , \widehat {\pmb q} _ {2} . . . \widehat {\pmb q} _ {k} . . . \widehat {\pmb q} _ {K} ] ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] \varepsilon = \sqrt {\frac {1} {K P} \sum _ {k = 1} ^ {K} \sum _ {p = 1} ^ {P} \left( \widehat {q} _ {k p} - q _ {k p} \right) ^ {2}}\tag{10}
+
+[confidence=0.92; source=body_inline] R ^ {2} = 1 - \sum _ {k = 1} ^ {K} \sum _ {p = 1} ^ {P} \bigg ( \widehat {q} _ {k p} - q _ {k p} \bigg ) ^ {2} \bigg / \sum _ {k = 1} ^ {K} \sum _ {p = 1} ^ {P} \bigg ( q _ {k p} - \overline {{q}} \bigg ) ^ {2}\tag{11}
+
+[confidence=0.92; source=body_inline] \delta = | \sum _ {k = 1} ^ {K} \sum _ {p = 1} ^ {P} \widehat {q} _ {k p} - \sum _ {k = 1} ^ {K} \sum _ {p = 1} ^ {P} q _ {k p} | / \sum _ {k = 1} ^ {K} \sum _ {p = 1} ^ {P} q _ {k p} \times 100 \%\tag{12}
+
+[confidence=0.92; source=body_inline] \varepsilon , R ^ {2}
+
+[confidence=0.92; source=body_inline] H ( k ) = \sum _ {i = 0} ^ {I - 1} w ( i ) x _ {k - \tau i}\tag{13}
+
+[confidence=0.92; source=body_inline] i ^ {\mathrm {{t h}}}
+
+[confidence=0.92; source=body_inline] x _ {k - \tau i}
+
+[confidence=0.92; source=body_inline] t _ {k - \tau i}
+
+[confidence=0.92; source=body_inline] C _ {j} = \sigma \Bigg ( \sum _ {i = 1} ^ {I} w _ {i j} x _ {i} + b _ {j} \Bigg )\tag{14}
+
+[confidence=0.92; source=body_inline] C _ {j}
+
+[confidence=0.92; source=body_inline] j ^ {\mathrm{th}}
+
+[confidence=0.92; source=body_inline] x _ {i}
+
+[confidence=0.92; source=body_inline] \mathrm{CST,}
+
+[confidence=0.92; source=body_inline] < 0.3
+
+[confidence=0.92; source=body_inline] \mathsf{l} \times 10 ^ {6}
+
+[confidence=0.92; source=body_inline] ^ {3 ,}
+
+[confidence=0.92; source=body_inline] Y =
+
+[confidence=0.92; source=body_inline] R ^ {2} {\mathrm{,}}
+
+[confidence=0.92; source=body_inline] Y = 0.281
+
+[confidence=0.92; source=body_inline] Y = 0.267
+
+[confidence=0.92; source=body_inline] Y = 0.278 ~ \mathrm{m} ,
+
+[confidence=0.92; source=body_inline] Y = 0.27 ~ \mathrm{m}
+
+[confidence=0.92; source=body_inline] t _ {\mathrm{ph}} = 94 \ : s ,
+
+[confidence=0.92; source=body_inline] t _ {\mathrm{lh}} = 372 s ,
+
+[confidence=0.92; source=body_inline] t _ {\mathrm{le}} = 105 \ s ,
+
+[confidence=0.92; source=body_inline] t _ {\mathrm{pe}} = 466 ~ s
+
+[confidence=0.92; source=body_inline] t _ {\mathrm{ph}} ,
+
+[confidence=0.92; source=body_inline] t _ {\mathrm{lh}} ,
+
+[confidence=0.92; source=body_inline] \left( t _ {\mathrm{ph}} , t _ {\mathrm{lh}} , t _ {\mathrm{le}} , a n d t _ {\mathrm{pe}} \right)
+
+[confidence=0.92; source=body_inline] t _ {\mathrm{ph}}
+
+[confidence=0.92; source=body_inline] t _ {\mathrm{lh}} , \ t _ {\mathrm{le}}
+
+[confidence=0.92; source=body_inline] t _ {\mathrm{pe}}

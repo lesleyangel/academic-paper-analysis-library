@@ -1,0 +1,8 @@
+| UD | Plain woven | 3D4d braided |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| UC3 | $x \mathrm { , ~ } y \mathrm { - ~ }$ | Path a | Transl. | Transl. | Transl. |
+| Path b | Transl. + Refl. | $\mathrm { T r a n s l . } + \mathrm { R e f l . }$ | Transl. + 180° Rot. |  |  |
+| Path c | $\mathrm { T r a n s l . } + \mathrm { R e f l . } + \mathrm { R e f l . }$ | $\mathrm { T r a n s l . } + \mathrm { R e f l . } + \mathrm { R e f l . }$ | Transl. + 180° Rot. + 180° Rot. |  |  |
+| Path a | Transl. | Transl. | Transl. |  |  |
+| Path b | $\mathrm { T r a n s l . } + \mathrm { R e f l . }$ | / | / |  |  |
+| Path c | $\mathrm { T r a n s l . } + \mathrm { R e f l . } + \mathrm { R e f l . }$ | / | / |  |  |

@@ -1,0 +1,167 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (46.08, 696.06, 203.21, 715.22)]] * Corresponding author. E-mail address: aachengang@xjtu.edu.cn (G. Chen)
+
+[confidence=0.92; source=equations; [page 2, bbox (303.43, 718.86, 411.45, 729.23)]] fi(x + eiδt,t + δt) -fi(x,t)
+
+[confidence=0.92; source=equations; [page 2, bbox (310.18, 731.7, 333.25, 746.93)]] = -1
+
+[confidence=0.62; needs_review; source=equations; [page 2, bbox (334.86, 730.02, 430.13, 750.44)]] � fi(x,t) -f eq i (x,t) � + 3
+
+[confidence=0.92; source=equations; [page 3, bbox (42.56, 153.29, 59.07, 164.16)]] ei =
+
+[confidence=0.92; source=equations; [page 3, bbox (42.56, 223.83, 61.26, 235.13)]] ωi =
+
+[confidence=0.92; source=equations; [page 3, bbox (44.25, 273.16, 81.98, 287.71)]] f eq i = ρωi
+
+[confidence=0.92; source=equations; [page 3, bbox (42.56, 328.23, 293.62, 338.55)]] υ = (2τ -1)/6 (5)
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (42.56, 367.69, 73.29, 386.46)]] ρ = �
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (42.55, 393.34, 70.21, 416.34)]] u = �
+
+[confidence=0.92; source=equations; [page 3, bbox (43.17, 447.09, 293.62, 460.02)]] p = c2 sρ (8)
+
+[confidence=0.57; needs_review; source=equations; [page 3, bbox (42.56, 459.34, 259.83, 476.86)]] where cs is the lattice sound velocity, cs is equal to 1/ √
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (42.56, 722.25, 293.62, 751.74)]] ρ �∂u ∂t + u · ∇u � = -∇p + μ∇2u + f (9)
+
+[confidence=0.92; source=equations; [page 3, bbox (311.55, 59.13, 562.62, 68.5)]] ∇· u = 0 (10)
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (311.55, 64.4, 350.38, 86.84)]] f(x,t) = �
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (355.97, 69.63, 562.62, 86.84)]] F(s,t)δ � x -X(s,t) � ds (11)
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (314.03, 96.24, 341.07, 125.34)]] ∂t = �
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (346.67, 101.47, 562.61, 118.68)]] u(x,t)δ � x -X(s,t) � dx (12)
+
+[confidence=0.57; needs_review; source=equations; [page 3, bbox (311.55, 179.46, 565.35, 200.49)]] The three-dimensional Dirac delta interpolation function in equation (12) is as follows [49]:
+
+[confidence=0.92; source=equations; [page 3, bbox (72.63, 213.05, 293.62, 244.89)]] 1/3 i = 01/18 i = 1, 2,··· , 61/36 i = 7, 8,··· , 18 (3)
+
+[confidence=0.92; source=equations; [page 3, bbox (311.55, 401.96, 351.89, 412.28)]] F(s,t) = α
+
+[confidence=0.92; source=equations; [page 3, bbox (312.39, 691.51, 562.62, 702.65)]] Z(t) = Az sin(2π f ) (15)
+
+[confidence=0.92; source=equations; [page 3, bbox (311.55, 738.65, 562.62, 749.86)]] θ(t) = α0 + Aθ sin(2π f t + ϕ) (16)
+
+[confidence=0.92; source=equations; [page 4, bbox (128.67, 93.28, 358.05, 103.24)]] Initialize the fluid field fi(x + eiδt,t + δt) -fi(x,t) = -1
+
+[confidence=0.92; source=equations; [page 4, bbox (355.04, 93.5, 429.94, 105.05)]] τ [ fi(x,t) -f eq i (x,t)] + 3
+
+[confidence=0.62; needs_review; source=equations; [page 4, bbox (256.97, 107.66, 285.69, 120.62)]] f(x,t) = �
+
+[confidence=0.92; source=equations; [page 4, bbox (285.68, 113.35, 354.4, 122.76)]] Γ F(s,t)δ(x -X(s,t))ds
+
+[confidence=0.92; source=equations; [page 4, bbox (128.67, 128.86, 358.05, 138.82)]] Get new velocity field fi(x + eiδt,t + δt) -fi(x,t) = -1
+
+[confidence=0.92; source=equations; [page 4, bbox (355.04, 129.09, 429.94, 140.64)]] τ [ fi(x,t) -f eq i (x,t)] + 3
+
+[confidence=0.57; needs_review; source=equations; [page 4, bbox (32.73, 457.72, 283.82, 478.68)]] The Strouhal number (St) and Reynolds number (Re) are de- fined as, respectively:
+
+[confidence=0.92; source=equations; [page 4, bbox (33.36, 486.65, 283.81, 497.79)]] St = 2Az f /U∞ Re = U∞L/υ (17)
+
+[confidence=0.92; source=equations; [page 4, bbox (32.85, 527.48, 78.58, 544.1)]] CT = T
+
+[confidence=0.92; source=equations; [page 4, bbox (55.88, 527.48, 161.13, 551.44)]] 0.5ρU 2∞A′ CL = L
+
+[confidence=0.57; needs_review; source=equations; [page 5, bbox (131.39, 441.46, 473.76, 449.98)]] Mesh Time step dt Number of overall-grid (\times106) The thrust coefficient Ct The relative errors (%)
+
+[confidence=0.57; needs_review; source=equations; [page 6, bbox (121.58, 417.48, 463.95, 426.01)]] Mesh Time step dt Number of overall-grid (\times106) The thrust coefficient Ct The relative errors (%)
+
+[confidence=0.92; source=equations; [page 7, bbox (48.62, 147.95, 264.89, 157.27)]] NACA0012 wing AR = 2 α0 = 0◦
+
+[confidence=0.92; source=equations; [page 7, bbox (48.62, 195.88, 264.89, 229.16)]] 2. The influence of aspect ratio on thrust performance NACA0012 AR = 1 AR = 2 AR = 3 α0 = 0◦
+
+[confidence=0.92; source=equations; [page 7, bbox (172.33, 229.61, 194.41, 245.23)]] AR = 5 AR = 7
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {f _ {i} ( \mathbf {x} + \mathbf {e} _ {i} \delta t , t + \delta t ) - f _ {i} ( \mathbf {x} , t )} \\ {\displaystyle = - \frac {1} {\tau} \big [ f _ {i} ( \mathbf {x} , t ) - f _ {i} ^ {e q} ( \mathbf {x} , t ) \big ] + \frac {3} {2} \omega _ {i} \mathbf {f} \cdot \mathbf {e} _ {i} \delta t} \end{array}\tag{1}
+
+[confidence=0.92; source=body_inline] f _ {i}
+
+[confidence=0.92; source=body_inline] f _ {i} ^ {e q}
+
+[confidence=0.92; source=body_inline] \mathbf {e} _ {i}
+
+[confidence=0.92; source=body_inline] \omega _ {i}
+
+[confidence=0.67; needs_review; source=body_inline] \mathbf {e} _ {i} = \left\{\begin{array} {l l} {( 0 , 0 , 0 )} & {i = 0} \\ {( \pm 1 , 0 , 0 ) , ( 0 , \pm 1 , 0 ) , ( 0 , 0 , \pm 1 )} & {i = 1 , 2 , \cdots , 6} \\ {( \pm 1 , \pm 1 , 0 ) , ( 0 , \pm 1 , \pm 1 ) , ( \pm 1 , 0 , \pm 1 )} & {i = 7 , 8 , \cdots , 18} \end{array} \right.\tag{2}
+
+[confidence=0.67; needs_review; source=body_inline] \omega _ {i} = \left\{\begin{array} {l l} {1 / 3} & {i = 0} \\ {1 / 18} & {i = 1 , 2 , \cdots , 6} \\ {1 / 36} & {i = 7 , 8 , \cdots , 18} \end{array} \right.\tag{3}
+
+[confidence=0.92; source=body_inline] f _ {i} ^ {e q} = \rho \omega _ {i} \bigg [ 1 + 3 \mathbf {e} _ {i} \cdot \mathbf {u} + \frac {9} {2} ( \mathbf {e} _ {i} \cdot \mathbf {u} ) ^ {2} - \frac {3} {2} \mathbf {u} \cdot \mathbf {u} \bigg ]\tag{4}
+
+[confidence=0.92; source=body_inline] \upsilon = ( 2 \tau - 1 ) / 6\tag{5}
+
+[confidence=0.92; source=body_inline] \rho = \sum _ {i} f _ {i}\tag{6}
+
+[confidence=0.92; source=body_inline] \mathbf {u} = \frac {\sum _ {i} \mathbf {e} _ {i} f _ {i} + 0.5 \mathbf {f} \delta t} {\rho}\tag{7}
+
+[confidence=0.92; source=body_inline] p = c _ {s} ^ {2} \rho\tag{8}
+
+[confidence=0.92; source=body_inline] c _ {s}
+
+[confidence=0.92; source=body_inline] 1 / \sqrt {3}
+
+[confidence=0.92; source=body_inline] \mathbf {x} = \mathbf {X} ( \mathbf {s} , t )
+
+[confidence=0.92; source=body_inline] \rho \left( \frac {\partial \mathbf {u}} {\partial t} + \mathbf {u} \cdot \boldsymbol {\nabla} \mathbf {u} \right) = - \boldsymbol {\nabla} p + \mu \boldsymbol {\nabla} ^ {2} \mathbf {u} + \mathbf {f}\tag{9}
+
+[confidence=0.92; source=body_inline] \nabla \cdot \mathbf {u} = \mathbf {0}\tag{10}
+
+[confidence=0.92; source=body_inline] \mathbf {f} ( \mathbf {x} , t ) = \intop _ {T} \mathbf {F} ( \mathbf {s} , t ) \delta {\big (} \mathbf {x} - \mathbf {X} ( \mathbf {s} , t ) {\big )} d \mathbf {s}\tag{11}
+
+[confidence=0.92; source=body_inline] \frac {\partial \mathbf {X}} {\partial t} = \intop _ {\Omega} \mathbf {u} ( \mathbf {x} , t ) \delta \big ( \mathbf {x} - \mathbf {X} ( \mathbf {s} , t ) \big ) d \mathbf {x}\tag{12}
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.67; needs_review; source=body_inline] \delta ( r ) = \left\{\begin{array} {l l} {\frac {1} {4} ( 1 + \cos ( \frac {\pi | r |} {2 \Delta x} ) )} & {| r | \leq 2 \Delta x ;} \\ {0 ,} & {| r | \geq 2 \Delta x .} \end{array} \right.\tag{13}
+
+[confidence=0.67; needs_review; source=body_inline] \mathbf {F} ( \mathbf {s} , t ) = \alpha \intop _ {0} ^ {t} [ \mathbf {u} {\big (} \mathbf {X} ( \mathbf {s} , t ) , t _ {1} {\big )} - \mathbf {u} {\big ]} d t _ {1} + \beta {\big [} \mathbf {u} ( \mathbf {X} ( \mathbf {s} , t ) , t {\big ]} - \mathbf {u} {\big ]}\tag{14}
+
+[confidence=0.92; source=body_inline] \beta
+
+[confidence=0.92; source=body_inline] {Z ( t ) = A _ {z} \sin ( 2 \pi f )}\tag{15}
+
+[confidence=0.92; source=body_inline] \theta ( t ) = \alpha _ {0} + A _ {\theta} \sin ( 2 \pi f t + \varphi )\tag{16}
+
+[confidence=0.92; source=body_inline] A _ {z}
+
+[confidence=0.92; source=body_inline] A _ {\theta}
+
+[confidence=0.92; source=body_inline] S t = 2 A _ {z} f / U _ {\infty} \qquad R e = U _ {\infty} L / \upsilon\tag{17}
+
+[confidence=0.92; source=body_inline] U _ {\infty}
+
+[confidence=0.92; source=body_inline] C _ {T} = {\frac {T} {0.5 \rho U _ {\infty} ^ {2} A ^ {\prime}}} \qquad C _ {L} = {\frac {L} {0.5 \rho U _ {\infty} ^ {2} A ^ {\prime}}}\tag{18}
+
+[confidence=0.92; source=body_inline] A ^ {\prime}
+
+[confidence=0.92; source=body_inline] S t = 0.6 , \ R e = 200 ,
+
+[confidence=0.92; source=body_inline] \varphi = \pi / 2
+
+[confidence=0.92; source=body_inline] A _ {\theta} = \pi / 6 ~ {\mathsf{case}}
+
+[confidence=0.92; source=body_inline] d t = 0.0005
+
+[confidence=0.92; source=body_inline] d t = 0.001
+
+[confidence=0.92; source=body_inline] d t = 0.0015 ,
+
+[confidence=0.92; source=body_inline] \alpha _ {0} = 10 ^{\circ}
+
+[confidence=0.92; source=body_inline] \alpha _ {0} = 20 ^{\circ}
+
+[confidence=0.92; source=body_inline] \alpha _ {0} = 30 ^{\circ}
+
+[confidence=0.92; source=body_inline] 0 ^{\circ}
+
+[confidence=0.92; source=body_inline] 30 ^{\circ}
+
+[confidence=0.92; source=body_inline] 0 , \ - 0.7007 , \ - 1.2762
+
+[confidence=0.92; source=body_inline] 10 ^{\circ}
+
+[confidence=0.92; source=body_inline] 20 ^{\circ}
+
+[confidence=0.92; source=body_inline] 0.3714 , \ : - 0.0104 , \ : - 0.5055

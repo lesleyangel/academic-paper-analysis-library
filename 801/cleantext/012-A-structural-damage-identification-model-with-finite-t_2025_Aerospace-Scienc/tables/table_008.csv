@@ -1,0 +1,7 @@
+Damage level,Discrimination criteria,Connotation
+Level 0,Cs>0.8 and min(θij>0.6,No damage
+Level 1,"Not Level $0 , C s { > } 0 . 7$ and min(θi)>0.5",Minor damage occurs
+Level 2,"Not Level 1, Cs>0.6 and min(θi)>0.4",Mild injury occurs
+Level 3,"Not Level 2, Cs>0.5 and min(θ)>0.3",Moderate damage occurs
+Level 4,"Not Level 3, Cs>0.4 and min(θi)>0.2",Serious damage occurs
+Level 5,other,"Serious damage has occurred, and the mission needs to be terminated"

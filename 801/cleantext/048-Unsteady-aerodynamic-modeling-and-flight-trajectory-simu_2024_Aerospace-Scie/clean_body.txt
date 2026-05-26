@@ -1,0 +1,317 @@
+## 1. Introduction
+
+Spinning projectiles, which are stabilized through high-speed spinning, often exhibit significant errors when hitting targets [1]. To maintain gyro stabilization while improving attack precision, the dual-spin projectile with guidance, navigation, and control (GNC) devices is developed [1,2]. Accurate predictions of aerodynamic characteristics and flight trajectory of the projectile are essential to obtain flight states, impact point distribution, and flight stability [3], and we can assess the flight performance of the projectile based on the above parameters.
+
+Although the aerodynamic characteristics of non-spinning vehicles exhibit unsteady and nonlinear properties during maneuverable flight at high angle of attack and large-amplitude-pitching, leading to phenomena like lift hysteresis and flow separation [4,5], the rapid spinning of the aft body in dual-spin projectiles induces asymmetric aerodynamic forces and moments perpendicular to the angle of attack plane, known as the Magnus effect [6]. This effect causes the projectile to deviate from the angle of attack plane, leading to cross-coupling between longitudinal and lateral motions, and strong coupling among pitch, yaw, and roll motions [7]. Furthermore, there is a highly complex aerodynamic interference effect between the canard and the aft body [8]. Additionally, flight parameters of the projectile, such as velocity, altitude, and aerodynamic angles, will vary within a large flight envelope [9]. Flight testing can obtain accurate performance parameters of a dual-spin projectile [10], but it is too expensive and time-consuming. The trajectory simulation using the traditional aerodynamic interpolation table is not sufficient to meet high-fidelity simulation requirements, as it cannot accurately reflect unsteady aerodynamic characteristics. The coupled CFD/RBD method can provide both the unsteady aerodynamics characteristics and the flight dynamics characteristics in an integrated manner without using a database [11,12], thus it can achieve high-fidelity. However, the high computational cost of the CFD simulations makes the method unsuitable for engineering applications. To address the above issues, it is necessary to replace the CFD module in the coupled simulation with an efficient and high-accuracy aerodynamic
+
+Input layer Hidden layers Output layer
+
+model.
+
+As a common concern in the fields of aerodynamics and flight dynamics, predicting aerodynamic parameters with high accuracy is the basis for flight dynamics analysis and flight trajectory simulation [13]. Thus, the accuracy of the aerodynamic model is crucial. For the dual-spin projectile, building aerodynamic modeling is more challenging due to the time-delayed effects [14]. In general, unsteady aerodynamic modeling methods are categorized into two types: the white-box method and the black-box method. The white-box method usually establishes a mathematical model with a known structure and parameters, thus it has good interpretability. The black-box method is a data-driven modeling method, which can build an input-output mapping model directly by a surrogate model [15] or machine learning approach [14], providing more powerful nonlinear description capabilities.
+
+Commonly used white-box models include aerodynamic derivative models [16,17], differential and integral equation models [18,19], and state-space models [20]. Recently, another type of white-box method building aerodynamic model by system identification with explicit expressions, such as Kriging [21] and autoregressive moving average (ARMA) [22] methods, have been developed and applied to unsteady aerodynamic modeling. The ARMA method was used to build the aerodynamic model of a spinning projectile, which was integrated with flight dynamics equations for trajectory simulation [23]. Brouwer et al. [24] used the Kriging model to predict unsteady aeroelastic loads during shock-induced separation, which can accelerate the simulation greatly. However, there still exist two shortcomings in the current study: it is hard to maintain high accuracy in predicting strongly nonlinear and unsteady aerodynamic forces; the generalization ability of the aerodynamic model is limited.
+
+With the increase in computational capability and storage resources, the black-box methods have been extensively developed and applied. Black-box methods, such as neural networks [25–27], can ignore physical features when constructing unsteady aerodynamic models. Commonly used black-box methods include radial basis function (RBF) neural networks [28,29], convolutional neural networks [30], and long short-term memory (LSTM) neural networks [31,32], etc. Wang et al. [33] proposed a fuzzy RBF neural network suitable for different input scales and applied it to aerodynamic prediction of forced oscillations of airfoils. Bagherzadeh et al. [34] used a neural network to establish an aerodynamic model based on flight testing data for aircraft maneuvering at a high angle of attack, which can greatly enhance model accuracy in comparison with the traditional dynamic derivative model. Lyu et al. [35] used an extreme learning machine method to model the unsteady aerodynamics of a fighter jet with large amplitude oscillation in a wind tunnel test, further they coupled the obtained aerodynamic model with the flight dynamics equations for designing its control law during maneuvering. Shi et al. [36] constructed the linear part and nonlinear correction part of the aerodynamic model respectively using ARMA and RBF neural networks, then they carried out flight dynamics simulations of an elastic aircraft based on the aerodynamic model.
+
+From the above review, unsteady aerodynamic modeling using black-box methods for pitch maneuver of the longitudinal plane has been delved in numerous studies and achieved high accuracy. However, there remains a need for unsteady aerodynamic modeling of spinning projectiles, particularly in the model applicability for various flight states and model accuracy. Moreover, to accelerate the flight trajectory simulation, the simulation driven by the aerodynamic model is of our concern.
+
+In this work, we propose an aerodynamic modeling method based on deep neural network and transfer learning (DNN-TL) to accurately predict unsteady aerodynamics of dual-spin projectile under different initial conditions. The DNN is first used to build a pre-trained aerodynamic model in the source domain, which can then be fine-tuned for other tasks. Moreover, we fine-tune the pre-trained model with a small amount of data when the initial flight states change, to fully use the knowledge learned in the source domain. Brside aerodynamic prediction, the established model is further used for fast and accurate flight trajectory simulations of dual-spin projectile.
+
+The contributions of the present work are summarized as follows:
+
+## Algorithm 1
+
+Transfer learning based on the pre-training.
+
+Input: training samples from the source domain and target domain 
+Output: the DNN-TL model 
+1: Obtain the source domain $\mathcal {D} s = \{\pmb {x} _ {i} , \pmb {y} _ {i} \} , i = 1 , 2 , \cdots , i$ n and target domain $\mathcal {D} _ {T} = \{{\boldsymbol {x}} _ {i} , {\boldsymbol {y}} _ {i} \} , i = 1 , 2 , \cdots$ , m by coupled CFD/RBD method 
+2: Obtain the pre-trained DNN model $\Psi _ {D N N} ^ {S} ( {\pmb S} , {\pmb \xi} _ {S} )$ based on the samples in the source domain 
+3: Freeze the first l − 1 hidden layers of the pre-training model, and randomly initialize the thresholds and weights of the last hidden layer 
+4: Retrain the pre-trained model based on the samples in the target domain 
+5: Unfreeze all layers and fine-tune the network with a very low learning rate 
+6: Return the DNN-TL model $\Psi _ {D N N} ^ {T} ( \pmb {S} , \pmb {\xi} _ {T} )$
+
+(1) An aerodynamic modeling method combining DNN and transfer learning is proposed, which is capable of predicting unsteady aerodynamics of dual-spin projectile with high accuracy under varying initial states.
+
+(2) Flight trajectory simulations of the dual-spin projectile combining the proposed aerodynamic modeling method, can greatly improve simulation efficiency in comparison with direct simulation by the coupled CFD/RBD method.
+
+(3) In comparison with commonly-used LSTM networks and ARMA method, the accuracy and generalization of the proposed DNN-TL method can be obviously improved.
+
+The remainder of this paper is organized as follows. Section 2 presents the procedure of the proposed DNN-TL modeling method in detail. The coupled CFD/RBD method and the generation of samples are introduced in Section 3. In Section $^ {4 ,}$ aerodynamic modeling and trajectory simulations are conducted, and discussions are further presented. The conclusions are given in Section 5.
+
+## 2. Aerodynamic modeling method
+
+In this section, we first introduce the DNN and transfer learning method respectively in Subsection 2.1 and 2.2. Further, the unsteady aerodynamic modeling method for dual-spin projectiles based on DNN-TL is presented in detail in 2.3.
+
+## 2.1. Deep neural network for aerodynamic modeling
+
+The general architecture of a DNN [37] is shown in Fig. 1. It can be divided into an input layer, hidden layers, and an output layer.
+
+Based on the general DNN, the architecture of the DNN model used for aerodynamic modeling in this work is presented in Fig. 2.
+
+The input of the DNN model is denoted as $\pmb {S} ( t )$ in Eq. (1). The timedelay effects both of flight states and aerodynamic forces and moments are considered in the inputs. The terms related to x in Eq. (1) represent
+
+the influence of flight state on the unsteady aerodynamics, while the other terms containing y consider the impact of historical aerodynamic data on the current aerodynamic forces and moments.
+
+$$\pmb {S} ( t ) = \left[ \pmb {x} ( t - m ) , . . . , \pmb {x} ( t - 1 ) , \pmb {x} ( t ) , \pmb {y} ( t - n ) , . . . , \pmb {y} ( t - 1 ) \right] ^ {T}\tag{1}$$
+
+where, ${\pmb x} ( t )$ denotes the flight states at time $t ,$ and the detailed expression is
+
+$${\pmb x} ( t ) = \Big [ {\pmb u} ( t ) ~ {\nu} ( t ) ~ {\pmb w} ( t ) ~ {\varphi} _ {f} ( t ) ~ {\varphi} _ {a} ( t ) ~ {\pmb \theta} ( t ) ~ {\psi} ( t ) ~ p _ {f} ( t ) ~ p _ {a} ( t ) ~ q ( t ) ~ r ( t ) ~ {\alpha} ( t ) \Big ] ^ {T}\tag{2}$$
+
+in which, $u , \nu ,$ and w are components of the velocity respectively in the $x ,$ $y ,$ and z directions in the body reference frame; $p , q ,$ and r are components of the angular velocity vector in the body reference frame; $\varphi , \theta ,$ and ψ represent the rolling, pitching and yawing angle, respectively. Subscripts a and f respectively represent the aft body and forebody of the projectile. ${\pmb y} ( t )$ represents the aerodynamic forces and moments at time t,
+
+$${\pmb y} ( t ) = \left[ F _ {x} ( t ) F _ {y} ( t ) F _ {z} ( t ) M _ {f x} ( t ) M _ {a x} ( t ) M _ {y} ( t ) M _ {z} ( t ) \right] ^ {T}\tag{3}$$
+
+where, $F _ {x} , F _ {y} ,$ and $F _ {z}$ represent the axial force, normal force, and lateral force, respectively; $M _ {f x} , \ M _ {a x} , \ M _ {y}$ , and $M _ {z}$ respectively represent the rolling moment of the forebody, rolling moment of aft body, pitching moment, and yawing moment.
+
+All the layers of the neural network are fully connected, thus the DNN [38] is expressed by
+
+$$\begin{array} {l} {{\displaystyle z _ {i} ^ {( l + 1 )} = \sum _ {j = 1} ^ {k} {\pmb W} _ {i j} ^ {( l )} {\pmb a} _ {j} ^ {( l )} + {\pmb b} _ {i} ^ {( l )}}} \\ {{\displaystyle a _ {i} ^ {( l + 1 )} = \sigma \big ( z _ {i} ^ {( l + 1 )} \big )}} \end{array}\tag{4}$$
+
+where $\sigma ( \cdot )$ is the activation function; ${\pmb w} _ {i j} ^ {( l )}$ is a weighting matrix that connects the neuron j in layer l and the neuron i in layer $l + 1 ; {\boldsymbol {b}} _ {i} ^ {( l )}$ is the bias matrix in layer l; $a _ {j} ^ {( l )}$ is an activation value of the neuron j in layer l.
+
+Thus, $a _ {j} ^ {( 1 )} = S _ {j}$ is the activation value of the neuron j in the input layer. 
+$z _ {i} ^ {( l + 1 )}$ is the output of neuron i in the layer l + 1.
+
+The outputs of the model are the aerodynamic forces and moments at the current time, denoted as y(t). Therefore, the DNN model with l layers and k neurons in each layer can be expressed as
+
+$${\pmb y} = \sum _ {j = 1} ^ {k} \left( \prod _ {i = 1} ^ {l} \sigma \left( \sum _ {r = 1} ^ {k} {\pmb W} _ {j i} ^ {( i )} \cdot \left( \sum _ {q = 1} ^ {k} {\pmb W} _ {i q} ^ {( i - 1 )} \cdot \left( \ldots \left( \sum _ {p = 1} ^ {m} {\pmb W} _ {r p} ^ {( 1 )} \cdot {\pmb a} _ {p} ^ {( 1 )} \right) \ldots \right) \right) + {\pmb b} _ {j} ^ {( i )} \right) \right)\tag{5}$$
+
+Hence, the expression of Eq. (6) can be expressed as
+
+$${\pmb y} ( t ) = \Psi _ {D N N} ( {\pmb S} ( t ) , {\pmb \xi} )\tag{6}$$
+
+where, ξ includes all the parameters of the network.
+
+## 2.2. Transfer learning based on the pre-training
+
+Given a source domain $\mathcal {D} _ {S} = \left\{{\pmb x} _ {i} , {\pmb y} _ {i} \right\} _ {i = 1} ^ {n}$ and a target domain $\mathcal {D} _ {\mathrm{T}} =$ $\left\{x _ {i} , {\pmb y} _ {i} \right\} _ {i = 1} ^ {m}$ , where $\mathcal {D} \mathbf {\boldsymbol {s}} \neq \mathcal {D} _ {\mathrm {{T}}}$ . The source domain is the domain that has rich knowledge and is what we transfer from. The aim of the transfer learning based on pre-training and fine-tuning is to learn a predictive function f ∗ parameterized by ξ using the previous parameter $\pmb {\xi} _ {0}$ from the model trained on the source domain, such that $f ^ {*}$ can reach minimum prediction error on the target domain [39]:
+
+$$f ^ {*} = \arg m i n _ {f} \mathbb {E} _ {( \pmb {x} , \pmb {y} ) \in \mathcal {D} _ {\mathrm{T}}} [ \ell ( \pmb {f} ( \pmb {\xi} | \pmb {\xi} _ {0} , \mathcal {D} _ {S} ) ) ]\tag{7}$$
+
+where, ℓ is the loss function, E is the mathematic expectation. Thus, the transfer learning method can make full use of the information of the source domain, so as to effectively complete the training of the task in $\mathcal {D} _ {\mathrm{T}}$
+
+The procedure of the transfer learning based on pre-training is outlined in Algorithm 1 and Fig. 3. This approach retains the first l − 1 hidden layers of the pre-training model as a part of the new model. Then those layers are restructured with a new randomly initialized hidden layer l, which is then retrained in the new DNN model. As the new DNN model is fine-tuned from the pre-trained model, the learning rate during the fine-tuning process is smaller than that of the pre-trained model.
+
+## 2.3. Aerodynamic modeling method based on DNN-TL
+
+The flowchart of the proposed modeling method is shown in Fig. 4. There are mainly four steps involved in the modeling procedure.
+
+Step 1: Sample generation.
+
+Given the initial flight states including velocity, angular velocity and attitude angle for a dual-spin projectile, the source domain $\mathcal {D} _ {S} =$ $\{\mathbf {{x}} _ {i} , \mathbf {{y}} _ {i} \} , i = 1 , 2 , \cdots , n$ can be obtained through coupled CFD/RBD simulation. Similarly, the target domain is obtained under the new initial states. Here, n and m represent the number of samples in the source domain and target domain, respectively.
+
+Step 2: Pre-trained model establishment.
+
+The main purpose of this step is to enable the network to learn information from the source domain. The pre-trained model $\Psi _ {D N N} ^ {S} ( pmb {S} , \pmb {\xi} _ {S} )$ is established on the source domain, where the input is $s ( t ) =$ $[ {\pmb x} ( t - m ) , . . . , {\pmb x} ( t - 1 ) , {\pmb x} ( t ) , {\pmb y} ( t - n ) , . . . , {\pmb y} ( t - 1 ) ] ^ {T}$ and the output is y(t). The weights and thresholds of the DNN are trained through the Adam algorithm.
+
+Step 3: DNN-TL model establishment.
+
+(a) RMSE
+
+(b) MRE
+
+(a) RMSE
+
+(b) MRE
+
+For this step, the main purpose is to apply the knowledge learned in the source domain to the target domain. We freeze the first several hidden layers of the $\Psi _ {D N N} ^ {S} ( {\pmb S} , {\pmb \xi} _ {S} )$ ) and then randomly initialize the thresholds and weights of the last hidden layer. Thus, the parameters of the last hidden layer of the pre-trained model can be retrained using a small number of samples. Subsequently, all layers are fine-tuned with a small learning rate to obtain the DNN-TL model $\Psi _ {D N N} ^ {T} ( {\pmb S} , {\pmb \xi} _ {T} )$
+
+Step 4: Unsteady aerodynamics prediction.
+
+In the target domain, the aerodynamic forces and moments at time instant t can be predicted by the DNN-TL model $\Psi _ {D N N} ^ {T} ( {\pmb S} , {\pmb \xi} _ {T} )$ ) as shown in Eq. (8).
+
+$${\pmb y} ( t ) = {\pmb {\Psi}} _ {D N N} ^ {T} ( [ {\pmb x} ( t - m ) , . . . , {\pmb x} ( t - 1 ) , {\pmb x} ( t ) , {\pmb y} ( t - n ) , . . . , {\pmb y} ( t - 1 ) ] ^ {T} , {\pmb \xi} _ {T} )\tag{8}$$
+
+In the source domain, the pre-trained model $\Psi _ {D N N} ^ {S} ( pmb {S} , \pmb {\xi} _ {S} )$ can still be used to predict unsteady aerodynamics as shown in Eq. (9).
+
+$${\pmb y} ( t ) = \Psi _ {D N N} ^ {S} ( [ {\pmb x} ( t - m ) , . . . , {\pmb x} ( t - 1 ) , {\pmb x} ( t ) , {\pmb y} ( t - n ) , . . . , {\pmb y} ( t - 1 ) ] ^ {T} , {\pmb \xi} _ {S} )\tag{9}$$
+
+## 3. Samples generation of aerodynamic modeling and prediction
+
+In this section, the computational model of the dual-spin projectile in this work and simulation settings are first presented. Then the numerical method for sample generation is introduced. Finally, detailed descriptions of the test cases and corresponding aerodynamic datasets are
+
+provided.
+
+## 3.1. Computational model and simulation settings
+
+In this paper, we select a dual-spin canard-guided projectile configuration as the computational model. It is composed of two distinct parts: the forebody and the aft body. The forebody contains all necessary GNC software and hardware, while the aft body is a ballistic weapon that spins at a high rate, ensuring the projectile’s stability. The configuration of the projectile and its physical parameters are illustrated in Fig. 5. Since the projectile is axisymmetric, the products of inertia are $I _ {x y} =$ $I _ {y z} = I _ {x z} = 0 ~ \mathrm{kg} {\cdot} \mathrm{m} ^ {2}$ . The computational grid of the projectile is given in Appendix A. We adopt the LU-SGS [40] implicit algorithm as the time marching scheme. The Roe scheme is employed for spatial discretization, and the Sparlat-Allmaras one-equation model is selected for turbulence modeling.
+
+The initial states for trajectory simulation are shown in Table 1.
+
+## 3.2. Numerical method
+
+## 3.2.1. Unsteady N-S equations
+
+The unsteady Reynolds average Navier-Stokes equation (RANS) described by the Arbitrary Lagrangian-Eulerian (ALE) method is used as the flow control equation in this work. The ALE RANS equation expressed in integral form is expressed as
+
+(a) Axial force
+
+(b) Lateral force
+
+(c) Normal force 
+(d) Rolling moment of forebody
+
+(e) Rolling moment of aft body
+
+(f) Pitching moment 
+(g) Yawing moment
+
+$$\frac {\partial} {\partial t} \int \displaylimits _ {\Omega} \int \displaylimits _ {\Omega} \int Q \mathrm{d} \Omega + \int \displaylimits _ {\partial \Omega} \int \displaylimits _ {\Omega} \mathbf {F} ( \pmb {Q} , \mathbf {v} _ {g r i d} ) \cdot \mathbf {n} \mathrm{d} S = \int \displaylimits _ {\partial \Omega} \int \displaylimits _ {\partial \Omega} \mathbf {G} ( \pmb {Q} ) \cdot \mathbf {n} \mathrm{d} S\tag{10}$$
+
+where, $\mathbf {Q} = \left[ \rho \rho \nu _ {x} \rho \nu _ {y} \rho \nu _ {z} \rho E \right]$ is the vector of conserved variables; $\rho$ is fluid density; E represents total internal energy per unit volume of fluid; $\nu _ {x} , \nu _ {y}$ and $\nu _ {z}$ respectively represent speed along $x , y ,$ and z direction. ${\bf v} _ {g r i d}$ represents the velocity of grid movement. n is the normal direction vector outside the border of the control volume.Ω and ∂Ω respectively represent the control volume and the boundary of the control volume. ${\pmb F} ( {\pmb Q} )$ and ${\bf G} ( {\bf Q} )$ are convective and viscous fluxes terms, respectively. In this paper, the in-house flow solver HUNS3D [41,42] is employed to solve the RANS equations.
+
+## 3.2.2. Flight dynamic equations
+
+The forebody and aft body of the dual-spin projectile rotate at different rates, creating relative motion between them, which adds an extra degree of freedom for rolling. Thus, the dual-spin projectile can move in seven degrees of freedom (DOF) in an inertial reference frame. The coordinate systems of the projectile are defined in Fig. 6. The x-axis points to an arbitrary direction in the ground plane. The z-axis is vertical downward and the y-axis is vertical to the xOz plane. The body frame is fixed to the vehicle with its origin at the center of mass.
+
+The 7-DoF RBD equations are introduced as follows. The centroid translational equation in the body frame is written as
+
+$$\left\{\begin{array} {c} {m ( \dot {u} + w q - \nu r ) = F _ {x} + F _ {g x}} \\ {m \Big ( \dot {\nu} + u r - w p _ {f} \Big ) = F _ {y} + F _ {g y}} \\ {m \Big ( \dot {w} + \nu p _ {f} - w q \Big ) = F _ {z} + F _ {g z}} \end{array} \right.\tag{11}$$
+
+where, m stands for mass; $F _ {g x} , F _ {g y}$ and $F _ {g z}$ are the components of the gravity force on the projectile along the x-axis, y-axis and z-axis in the body reference frame.
+
+The equations of rotational around the mass center under the body shafting are expressed as
+
+$$\left\{\begin{array} {l l} {I _ {f x} \dot {p} _ {f} = M _ {f x}} \\ {I _ {a x} \dot {p} _ {a} = M _ {a x}} \\ {I _ {y} \dot {q} + I _ {x} \overline {{p}} r - I _ {z} p _ {f} r = M _ {y}} \\ {I _ {z} \dot {r} + I _ {y} p _ {f} q - I _ {x} \overline {{p}} q = M _ {z}} \\ {\overline {{p}} = \left( I _ {f x} p _ {f} + I _ {a x} p _ {a} \right) \bigg / I _ {x}} \end{array} \right.\tag{12}$$
+
+where, I is the moment of inertia.
+
+The spatial position of the center of mass is calculated as follows
+
+$$\begin{array}{c} \left\{\begin{array} {c c c} {\dot {x}} \\ {\dot {y}} \\ {\dot {z}} \end{array} \right\} = \left[ s _ {\varphi} s _ {\theta} c _ {\psi} - c _ {\varphi} s _ {\psi} & {c _ {\theta} s _ {\psi} + c _ {\varphi} c _ {\psi}} & {s _ {\varphi} c _ {\theta}} \\ {c _ {\varphi} s _ {\theta} c _ {\psi} + s _ {\varphi} s _ {\psi}} & {c _ {\varphi} s _ {\theta} s _ {\psi} - s _ {\varphi} c _ {\psi}} & {c _ {\varphi} c _ {\theta}} \end{array} \right] \left\{\begin{array} {c c c} {u} \\ {\nu} \\ {w} \end{array} \right\}\tag{13}$$
+
+where, c and s respectively represent cosine and sine operation.
+
+The orientation angles are computed by
+
+$$\left\{\begin{array} {l} {\displaystyle {\dot {\varphi}} _ {f} = p _ {f} + \tan \theta \big ( q \mathrm{sin} \varphi _ {f} + r \mathrm{cos} \varphi _ {f} \big )} \\ {\displaystyle {\dot {\varphi}} _ {a} = {\dot {\varphi}} _ {f} + p _ {a} - p _ {f}} \\ {\displaystyle {\dot {\theta}} = q \mathrm{cos} \varphi _ {f} - r \mathrm{sin} \varphi _ {f}} \\ {\displaystyle {\dot {\psi}} = \frac {1} {\mathrm{cos} \theta} \big ( q \mathrm{sin} \varphi _ {f} + r \mathrm{cos} \varphi _ {f} \big )} \end{array} \right.\tag{14}$$
+
+The RBD equations are solved with the improved Adams fourth-order predictor-corrector method in this work [42].
+
+## 3.2.3. Coupled CFD/RBD method
+
+The flowchart of the coupled CFD/RBD method is shown in Fig. 7. It mainly consists of two modes: the uncoupled mode and the coupled mode. In the uncoupled mode, the steady initial state is calculated only with the translational velocities. After achieving the steady-state solution, the initial angular velocity is considered for several unsteady dualtime steps until the computation fully converges. In the coupled CFD/ RBD mode, the aerodynamic forces and moments predicted by CFD are passed on to 7-DOF RBD equations, which compute the projectile’s responses, including translational and rotational accelerations. These accelerations are then integrated to obtain the velocity and angular velocity and further integrated to determine the position and angular orientation. After getting the positions and orientations of the next step, the solid wall and computational grid are moved to the corresponding place. Then the HUNS3D is called to predict the new aerodynamic loads. The above process is repeated until the end of the simulation.
+
+## 3.3. Generation of the unsteady aerodynamic dataset
+
+Based on the initial states of the dual-spin projectile in Table 1, we vary different forebody angular velocities while keeping the initial rolling speed of the aft body at 1570 rad/s. The unsteady aerodynamic datasets of different cases are then obtained based on the coupled CFD/ RBD simulation. As shown in Table 2, the aerodynamic data of the dualspin projectile at $p _ {f} = - 64 \mathrm{rad} / s$ and $p _ {f} = - 192 \mathrm{rad} / s$ from 0 to 3.5 s is used as the source domain data. The validation case uses data from 3.5 to 4 s at $: p _ {f} = - 64 \mathrm{rad} / s ,$ primarily aiming to investigate the impact of the number of neurons and different delay orders on modeling. The accuracy and generalization of the aerodynamic model are verified in both interpolation and extrapolation prediction cases at $p _ {f} = - 128$ rad /s and $p _ {f} = 128 \mathrm{rad} / s$ from 0 to 3.5, respectively.
+
+## 4. Results and discussions
+
+## 4.1. Parameter analysis of the DNN-TL
+
+To analyze the predictive accuracy of the constructed model, we define the error as follows. $\delta _ {R}$ represents the root mean square error (RMSE) and it can be computed by $\mathrm{Eq.} ( 15 ) . \delta _ {e}$ is the mean relative error (MRE). Since there are values close to 0 in the aerodynamic force and moment data, δ can be defined as the form in Eq. (16).
+
+$$\delta _ {R} = \sqrt {\frac {1} {N} \sum _ {i = 1} ^ {N} {( y _ {i} - \widehat {y} _ {i} ) ^ {2}}}\tag{15}$$
+
+$$\delta _ {e} = \sum _ {i = 1} ^ {N} | y _ {i} - \widehat {y} _ {i} | \left/ \sum _ {i = 1} ^ {N} | \widehat {y} _ {i} | \right.\tag{16}$$
+
+where N is the number of samples; yi is the high-fidelity value calculated by the coupled CFD/RBD method; $\widehat {y} _ {i}$ is the value predicted by the aerodynamic model.
+
+Aerodynamic models are constructed with different values of m and n in Eq. (1) to assess the impact of different input-memory and outputmemory orders on the model accuracy. The accuracy of different models is compared in the validation case. According to previous experience, a three-layer neural network can approximate any nonlinear function. Thus, we select a neural network with 3 hidden layers, each consisting of 120 neurons. The Adam is used as the training algorithm with an initial learning rate of 0.001, and the maximum number of training epochs is set to 2000. RMSE is used as the metric to measure network performance.
+
+The variations in the prediction error of the pitching moment with respect to m and n are illustrated in Fig. 8. Along with the increase of m and n, the prediction error tends to be larger. It indicates that incorporating more historical data into modeling will reduce model accuracy.
+
+(a) Axial force
+
+(b) Lateral force
+
+(e) Rolling moment of aft body
+
+(f) Pitching moment 
+(g) Yawing moment
+
+We finally choose $m = n = 2 ,$ by which we can obtain minimum prediction error.
+
+$$\pmb {S} ( t ) = [ \pmb {x} ( t - 2 ) , \pmb {x} ( t - 1 ) , \pmb {x} ( t ) , \pmb {y} ( t - 2 ) , \pmb {y} ( t - 1 ) ] ^ {T}\tag{17}$$
+
+Then the optimum number of neurons is analyzed. We still use 3 hidden layers for the network but vary the number of neurons in each hidden layer. The model is trained using the training set, and then the prediction errors of the lateral force are calculated and compared. Fig. 9 depicts the changes in prediction error with respect to the number of neurons. The results indicate that if the number of neurons is too small, the model is inadequately trained, and the accuracy is low. Conversely, if the number of neurons is too large, the model may suffer from overfitting. In this work, the number of neurons is set to 200.
+
+All the networks are trained using a Nvidia GeForce RTX 3080 in our work. Based on the above settings, we trained the established DNN on the source domain and obtained the unsteady aerodynamic model $\Psi _ {D N N} ^ {S}$
+
+## 4.2. Aerodynamic modeling and results analysis
+
+The proposed method is applied to three test cases described in Table 2, which are the validation case, interpolation prediction case, and extrapolation prediction case. The commonly used unsteady aerodynamic modeling methods, ARMA and LSTM are also used to build aerodynamic models for three test cases, to assess the accuracy and generalizability of the proposed method. The ARMA method and LSTM network for aerodynamic modeling are introduced in Appendix B and Appendix $\mathrm{C} ,$ respectively.
+
+## 4.2.1. Result analysis of the validation case
+
+In this case, the aerodynamic model $\Psi _ {D N N} ^ {S}$ built by the DNN-TL method is used for the dual-spin projectile. The prediction results with different modeling methods are compared in Fig. 10. The proposed method showed accurate predictions of each aerodynamic force and moment. Comparatively, the models built by the ARMA and LSTM exhibit obvious deviations in predicting the rolling moment of the aft body and pitching moment, as is shown in Fig. 10 (e) and Fig. 10 (f). Therefore, the proposed method can fully take advantage of the information of the training set in the source domain.
+
+The comparison of the prediction errors by different methods is shown in Table $^ {3 ,}$ For all forces and moments predicted, the DNN-TL method shows the largest $\delta _ {e}$ of 5.54% for the rolling moment of the aft body, yet it is still relatively accurate. The DNN-TL method reduces the $\delta _ {R}$ by at least $7 \%$ and 31% in comparison with ARMA and LSTM, respectively, except for a slightly larger $\delta _ {R}$ in predicting the pitching moment than that of the ARMA method. As is shown in Fig. 11, the $\delta _ {e}$ of the DNN-TL model is much smaller than the models built by ARMA and LSTM, except for the pitching moment. Although ARMA has lower accuracy compared to the DNN-TL method, it can compute the estimated parameter vector in just a few seconds, resulting in a three-order-ofmagnitude reduction compared to the proposed method.
+
+## 4.2.2. Result analysis of the interpolation prediction case
+
+In this case, an aerodynamic model $\Psi _ {D N N} ^ {T 1}$ is trained based on the DNN-TL method using the data from 0-0.3s in the target domain. Similarly, the LSTM model built in the previous case is considered as a pre-trained model, and is then fine-tuned using these data to obtain a new aerodynamic model $\Psi _ {L S T M} ^ {T 1}$ . This method is denoted as LSTM-TL, and the process of the method is similar to that in Fig. 3, like the DNN-TL method.
+
+The prediction results by different methods are compared in Fig. 12. The aerodynamic models built by the ARMA and LSTM-TL fail to accurately predict the aerodynamic forces and moments. The predicted values deviate significantly from the computed values by the CFD/RBD, and these errors accumulate and increase over time. In contrast, the predicted values with the DNN-TL method remain close to the highfidelity results.
+
+The predicted errors of each model are compared in Table 4. While the LSTM-TL shows improvement compared to ARMA, the $\delta _ {e}$ of the predicted values are larger than 9% for both of the normal force $F _ {x}$ and lateral force $F _ {z}$ . The DNN-TL shows accurate predictions for aerodynamic forces and moments with the maximum $\delta _ {e} = 6.74 \%$ and maximum $\delta _ {R} = 0.58$ . The errors of the DNN-TL, measured by both $\delta _ {R}$ and $\delta _ {e} ,$ are significantly smaller than those of the other two methods. The smaller error exhibited by DNN-TL demonstrates its better generalization ability. As depicted in Fig. 13, the DNN-TL method exhibits the smallest $\delta _ {e}$ in comparison with ARMA and LSTM, which indicates that the DNN-TL method maintains better modeling accuracy for interpolation prediction case.
+
+(a) Axial force
+
+(b) Lateral force
+
+(e) Rolling moment of aft body
+
+(f) Pitching moment 
+(g) Yawing moment
+
+## 4.2.3. Result analysis of the extrapolation prediction case
+
+In this case, using the data from 0-0.3s of the target domain, an aerodynamic model $\Psi _ {D N N} ^ {T 2}$ is built based on the DNN-TL method. The LSTM-TL method is also used to build a new aerodynamic model $\Psi _ {L S T M} ^ {T 2}$ based on the same data in this case. The results of different modeling methods are compared in Fig. 14. The aerodynamic models established by the ARMA and LSTM-TL still cannot accurately predict the aerodynamic forces and moments and the predicted errors increase along with time. In contrast, the DNN-TL method shows higher accuracy in predicting aerodynamic forces and moments of the dual-spin projectile.
+
+Comparison of prediction errors of different methods is shown in Table 5. The prediction error of the DNN-TL method increases compared to the interpolation prediction case because the pre-trained model is based on source domain data and does not sufficiently capture the aerodynamic features in the extrapolation prediction case. However, the aerodynamic model built by DNN-TL still shows accurate predictions for aerodynamic forces and moments with the maximum $\delta _ {e} = 6.74 \% ,$ which indicates that the proposed method exhibits good generalization ability for the extrapolation prediction case. Moreover, compared with ARMA, the DNN-TL method reduces the $\delta _ {e}$ and $\delta _ {R}$ by at least 62.19% and 68.06%, respectively. As shown in Fig. 15, the $\delta _ {e}$ of the DNN-TL method is much smaller in comparison with the LSTM-TL and ARMA.
+
+## 4.3. Flight trajectory simulation based on aerodynamic model
+
+The unsteady aerodynamic model can be used to replace the CFD calculations in the coupled CFD/RBD simulation, to accelerate flight trajectory simulation of the dual-spin projectile. The main process of the trajectory simulation based on the aerodynamic model is given in Algorithm 2. It should be noted that, in this work, a coupled CFD/RBD simulation in three time steps needs to be performed first to obtain the inputs required by the algorithm.
+
+## Algorithm 2
+
+Trajectory simulation based on unsteady aerodynamic model.
+
+Based on Algorithm $^ {2 ,}$ the flowchart of the trajectory simulation based on the aerodynamic model is shown in Fig. 16.
+
+Flight trajectory simulations of the dual-spin projectile are performed using aerodynamic models trained with the DNN-TL method for both the interpolation and extrapolation cases. In the case of interpolation prediction, the simulation results are shown in Fig. 17 and the error of the flight states is given in Table 6. In current results, the angle of attack α and angle of sideslip β are calculated by
+
+$$\begin{array} {l} {{\alpha = \theta - \theta _ {V}}} \\ {{\beta = \psi - \psi _ {V}}} \end{array}\tag{18}$$
+
+where $\theta _ {V}$ and $\psi _ {V}$ represent the inclination angle and deflection angle of velocity, respectively. At the beginning of the simulation, the angle of attack and angle of sideslip are close to the results from the coupled CFD/RBD simulation. However, the deviations start to emerge and gradually increase along with time. This is primarily due to the accumulation of errors during the simulation process. In Table 6, the $\delta _ {e}$ for all the flight state parameters is smaller than 6%, indicating that the aerodynamic model has good accuracy. Moreover, the trajectory simulation using the DNN-TL model only takes a few seconds, while the coupled CFD/RBD simulation requires about 20 hours. The efficiency of trajectory simulation based on the unsteady aerodynamic model can be increased by three orders of magnitude.
+
+For the trajectory simulation in the extrapolation prediction case, the results are given in Fig. 18. Similar to the results in the interpolation prediction case, the errors of the state parameters are increased along with time. The simulation errors are shown in Table 7. In comparison with the simulation errors in the interpolation case, the δ has increased but remains below 8%, as the prediction error of the aerodynamic model is larger in this case.
+
+## 5. Conclusions
+
+In this work, an unsteady aerodynamic modeling method for dualspin projectile based on DNN and transfer learning is proposed, and three test cases are carried out to validate and assess the proposed method. Further, the aerodynamic models constructed by the proposed method are employed in flight trajectory simulation to enhance simulation efficiency. Conclusions are drawn as follows:
+
+(a) Variation of the θ with respect to t
+
+(b) Variation of the α with respect to t
+
+(c) Variation of the β with respect to t
+
+(d) Coining motion
+
+(1) The proposed DNN-TL method can accurately model the aerodynamic characteristics of the dual-spin projectile under different initial conditions, with prediction errors of all the forces and moments smaller than 6%, but the accuracy of the proposed method decreases when applied the method to extrapolation prediction.
+
+(2) The flight trajectory simulation of the dual-spin projectile based on the established aerodynamic model can significantly enhance simulation efficiency compared to the coupled CFD/RBD simulation, with $\delta _ {e} < 8 \%$
+
+(3) In comparison with the commonly used ARMA method and LSTM networks, the proposed DNN-TL method exhibits a better generalization capability and higher accuracy in predicting aerodynamic forces and moments.
+
+(a) Variation of the with respect to t
+
+(b) Variation of the with respect to t
+
+(c) Variation of the with respect to t
+
+(d) Coining motion
+
+## CRediT authorship contribution statement
+
+Wen Ji: Writing – review & editing, Writing – original draft, Methodology, Formal analysis. Chunlin Gong: Writing – review & editing, Supervision, Project administration, Conceptualization. Xuyi Jia: Writing – original draft, Validation, Investigation, Formal analysis.
+
+Chunna Li: Writing – review & editing, Methodology, Funding acquisition, Formal analysis. Gang Wang: Writing – review & editing, Software, Funding acquisition, Conceptualization.

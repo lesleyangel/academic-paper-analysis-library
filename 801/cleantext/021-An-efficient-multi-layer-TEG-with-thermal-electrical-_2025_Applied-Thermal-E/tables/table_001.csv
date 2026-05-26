@@ -1,0 +1,31 @@
+Nomenclature,U1,high voltage side potential of contacting pairs in simulation
+Abbreviations,U2,low voltage side potential of contacting pairs in simulation
+TE,thermoelectric,∆U,electrical potential difference
+TEG,thermoelectric generator,wc,compression displacement
+TCR,thermal contact resistance,$Q _ { H }$,radioisotope thermal power
+TCC,thermal contact conductance,$d _ { i }$,distance of the corresponding real contact elements
+ECR,electrical contact resistance,$h$,thermal contact conductance
+RTG,Radioisotope thermoelectric generator,q,heat fl ux
+PEEK,poly-ether-ether-ketone,$q _ { H }$,radioisotope power density
+,$q _ { c }$,heat flux of solid conduction
+"Symbols $x , y , z$",cartesian coordinate system,$q _ { r }$,heat flux of thermal radiation
+"$u , \nu , w$","displacements in x,y and % direction",$h _ { c c }$,TCC of the real contact elements
+"$f _ { x } , f _ { y } , f _ { z }$",,$h _ { m c }$,TCC of the clearance medium
+$D ^ { e }$,"body forces in x,y and % direction",$h _ { r }$,equivalent thermal conductance of thermal radiation
+$D ^ { p }$,elasticity matrix plasticity matrix,"$z ( x , y )$",the height function of fractal surfaces
+$c _ { \mathfrak { p } }$,specific heat capacity,$\mathrm { { s - E } }$,contacting pair of substrate and electrode
+$j$,electrical flow density,$\mathrm { E - T E }$,contacting pair of electrode and TE leg
+$k$,electrical conductivity,E-TE-H,contacting pair of electrode and high-temperature TE leg
+$k _ { e q }$,equivalent electrical conductivity,E-TE-M,contacting pair of electrode and mid-temperature TE leg
+$s$,Seebeck coefficient,$\mathrm { E - T E { - } L }$,contacting pair of electrode and low-temperature TE leg
+$T$,temperature,Greek symbols,
+$_ { T 1 }$,hot side temperature of contacting pairs in simulation,σ,normal stress
+$T 2$,cold side temperature of contacting pairs in simulation,$\tau$,
+$T _ { 0 } 1$,hot side temperature of TEG in simulation,$\varepsilon$,shear stress normal strain
+$T _ { 0 } 2$,cold side temperature of TEG in simulation,$\gamma$,shear strain
+$T _ { \mathrm { E 1 } }$,hot side temperature of TE leg sample in measurement,四,
+$T _ { \mathrm { E 2 } }$,cold side temperature of TE leg sample in measurement,$\rho$,gravimetric power density density
+$T _ { \mathrm { { S 1 } } }$,hot side temperature of TEG in measurement,$\lambda$,thermal conductivity
+$T _ { S 2 }$,cold side temperature of TEG in measurement,$\lambda _ { e q }$,equivalent thermal conductivity
+$\Delta T$,temperature difference,$\psi$,Peltier coefficient
+$U$,electrical potential,,

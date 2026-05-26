@@ -1,0 +1,9 @@
+| Composition | TE Type | p(mΩ2.cm) | S(V/K) | PF (mW/ m·K2) | $Z T$ | References |
+| --- | --- | --- | --- | --- | --- | --- |
+| $\mathrm { C a } _ { 2 . 9 } \mathrm { B a } _ { 0 . 1 } \mathrm { C o } _ { 4 } \mathrm { O } _ { 9 }$ | p | 8.3 | 170 | 0.93 | 0.20 | [22] |
+| $\mathrm { C a _ { 3 } C o _ { 4 } O _ { 9 } / A g }$ | P | 11 | 165 | 0.34 | 0.19 | [5] |
+| $\mathrm { C a } _ { 2 . 8 } \mathrm { L u } _ { 0 . 2 } \mathrm { C o } _ { 4 } \mathrm { O } _ { 9 }$ | P | 12 | 185 | 0.32 | 0.36 | [9] |
+| $\mathrm { S r } _ { 0 . 9 } \mathrm { L a } _ { 0 . 1 } \mathrm { T i O } _ { 3 }$ | n | 12 | -225 | 0.67 | 0.14 | [14] |
+| $\mathrm { [ C a _ { 0 . 9 5 } ( D y _ { 1 / 2 } N a _ { 1 / 2 } ) }$ $_ { 2 } ) _ { 0 . 0 5 } ] \mathrm { M n O } _ { 3 }$ | n | 8.7 | -252 | 0.35 | 0.24 | [23] |
+| $\mathrm { Z n } _ { 9 7 } \mathrm { A l } _ { 2 } \mathrm { G a O } _ { 1 0 0 }$ | n | 3.5 | -220 | 0.23 | 0.37 | [24] |
+| $\mathrm { C A L C } / \mathrm { A g }$ | n | 0.16 | -50 | 1.54 | 0.39 | This work |

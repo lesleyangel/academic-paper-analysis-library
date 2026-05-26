@@ -1,0 +1,83 @@
+[1] JJ Gou, JX Hu, ZW Yan, G Gao, CL. Gong, Effects of physical dimensions, temper- ature ranges and interfacial thermal contacts on the multi-stage thermoelectric generators for a hypersonic vehicle, Int. J. Energy Res. 46 (2022) 20 021–20 038, doi: 10.1002/er.7799 .
+
+[2] JJ Gou, ZW Yan, JX Hu, G Gao, CL. Gong, The heat dissipation, transport and reuse management for hypersonic vehicles based on regenerative cool- ing and thermoelectric conversion, Aerosp. Sci. Technol. 108 (2021) 106373, doi: 10.1016/j.ast.2020.106373 .
+
+[3] BX Shen, WQ. Liu, Insulating and absorbing heat of transpiration in a com- binational opposing jet and platelet transpiration blunt body for hyper- sonic vehicle, Int. J. Heat Mass Transf. 138 (2019) 314–325, doi: 10.1016/j. ijheatmasstransfer.2019.04.057 .
+
+[4] G Gao, J-J Gou, C-L Gong, J-X Hu, R-C. Gao, A novel mechanical-thermal- electrical thermal protection system concept and its multi-scale performance evaluation for hypersonic launch vehicles, Compos. Struct. 268 (2021) 113962, doi: 10.1016/j.compstruct.2021.113962 .
+
+[5] CL Gong, JJ Gou, JX Hu, F. Gao, A novel TE-material based thermal protection structure and its performance evaluation for hypersonic flight vehicles, Aerosp. Sci. Technol. 77 (2018) 458–470, doi: 10.1016/j.ast.2018.03.028 .
+
+[6] T Cui, Q Li, Y. Xuan, Characterization and application of engineered regular rough surfaces in thermal contact resistance, Appl. Therm. Eng. 71 (2014) 400– 409, doi: 10.1016/j.applthermaleng.2014.07.020 .
+
+[7] J Liu, C Ma, S Wang, S Wang, B. Yang, Thermal contact resistance between bearing inner ring and shaft journal, Int. J. Therm. Sci. 138 (2019) 521–535, doi: 10.1016/j.ijthermalsci.2019.01.022 .
+
+[8] PG Siddappa, A. Tariq, Contact area and thermal conductance estimation based on the actual surface roughness measurement, Tribol. Int. 148 (2020) 106358, doi: 10.1016/j.triboint.2020.106358 .
+
+[9] A Aalilija, C-A Gandin, E. Hachem, A simple and efficient numerical model for thermal contact resistance based on diffuse interface immersed boundary method, Int. J. Therm. Sci. 166 (2021) 106817, doi: 10.1016/j.ijthermalsci.2020. 106817 .
+
+[10] J-J Gou, X-J Ren, Y-J Dai, S. Li, Study of thermal contact resistance of rough surfaces based on the practical topography, Comput. Fluids 164 (2018) 2–11, doi: 10.1016/J.COMPFLUID.2016.09.018 .
+
+[11] YJ Dai, JJ Gou, XJ Ren, F Bai, WZ Fang, WQ. Tao, A test-validated predic- tion model of thermal contact resistance for Ti-6Al-4V alloy, Appl. Energy 228 (2018) 1601–1617, doi: 10.1016/j.apenergy.2018.06.134 .
+
+[12] XJ Ren, YJ Dai, JJ Gou, WQ. Tao, Numerical prediction of thermal contact resistance of 3D C/C-SiC needled composites based on measured practi- cal topography, Int. J. Heat Mass Transf. 131 (2019) 176–188, doi: 10.1016/j. ijheatmasstransfer.2018.08.137 .
+
+[13] B Beltrán-Pitarch, J Maassen, J. García-Cañadas, Comprehensive impedance spectroscopy equivalent circuit of a thermoelectric device which includes the internal thermal contact resistances, Appl. Energy 299 (2021) 117287, doi: 10. 1016/j.apenergy.2021.117287 .
+
+[14] S Wang, T Xie, H. Xie, Experimental study of the effects of the thermal contact resistance on the performance of thermoelectric generator, Appl. Therm. Eng. 130 (2018) 847–853, doi: 10.1016/j.applthermaleng.2017.11.036 .
+
+[15] B Beltrán-Pitarch, F Vidan, J. García-Cañadas, Thermal contact resistance eval- uation of a thermoelectric system by means of three I-V curves, Int. J. Heat Mass Transf. 173 (2021) 121247, doi: 10.1016/j.ijheatmasstransfer.2021.121247 .
+
+[16] XJ Ren, H Ding, YJ Dai, JY Tu, X Chen, JY He, et al., Experimental study on thermal contact resistance of carbon fiber reinforced silicon carbide composite with 3D needled preform (3DN C/SiC), Int. Commun. Heat Mass Transf. 124 (2021) 105271, doi: 10.1016/j.icheatmasstransfer.2021.105271 .
+
+[17] F Sun, P Zhang, H Wang, J Shen, L. Nie, Experimental study of thermal con- tact resistance between aluminium alloy and ADP crystal under vacuum envi- ronment, Appl. Therm. Eng. 155 (2019) 563–574, doi: 10.1016/j.applthermaleng. 2019.04.027 .
+
+[18] P Zhang, T Cui, Q. Li, Effect of surface roughness on thermal contact resis- tance of aluminium alloy, Appl. Therm. Eng. 121 (2017) 992–998, doi: 10.1016/ j.applthermaleng.2017.04.142 .
+
+[19] D Liu, Y Luo, X. Shang, Experimental investigation of high temperature thermal contact resistance between high thermal conductivity C/C material and Inconel 600, Int. J. Heat Mass Transf. 80 (2015) 407–410, doi: 10.1016/j. ijheatmasstransfer.2014.09.044 .
+
+[20] M Chen, Q Li, P. Zhang, Experimental investigation of high temperature ther- mal contact resistance of thin disk samples using infrared camera in vac- uum condition, Int. J. Heat Mass Transf. 157 (2020) 119749, doi: 10.1016/j. ijheatmasstransfer.2020.119749 .
+
+[21] J Deng, Z. Qian, Simplified analysis of thermal contact resistance on arc-slotted fin core, Appl. Therm. Eng. 125 (2017) 266–284, doi: 10.1016/j.applthermaleng. 2017.06.143 .
+
+[22] QY Li, K Katakami, T Ikuta, M Kohno, X Zhang, K. Takahashi, Measurement of thermal contact resistance between individual carbon fibers using a laser-flash Raman mapping method, Carbon 141 (2019) 92–98, doi: 10.1016/j.carbon.2018. 09.034 .
+
+[23] D Bi, M Jiang, H Chen, S Liu, Y. Liu, Effects of thermal conductivity on the thermal contact resistance between non-conforming rough surfaces: an exper- imental and modeling study, Appl. Therm. Eng. 171 (2020) 115037, doi: 10.1016/ j.applthermaleng.2020.115037 .
+
+[24] Y Xian, P Zhang, S Zhai, P Yuan, D. Yang, Experimental characterization meth- ods for thermal contact resistance: a review, Appl. Therm. Eng. 130 (2018) 1530–1548, doi: 10.1016/j.applthermaleng.2017.10.163 .
+
+[25] JR Riba, AG Mancini, C Abomailek, F. Capelli, A 3D-FEM-based model to predict the electrical constriction resistance of compressed contacts, Meas. J. Int. Meas. Confed. 114 (2018) 44–50, doi: 10.1016/j.measurement.2017.09.003 .
+
+[26] D Qiu, L Peng, P Yi, X. Lai, A micro contact model for electrical contact re- sistance prediction between roughness surface and carbon fiber paper, Int. J. Mech. Sci. 124–125 (2017) 37–47, doi: 10.1016/j.ijmecsci.2017.02.026 .
+
+[27] T Fiedler, N White, M Dahari, K. Hooman, On the electrical and thermal con- tact resistance of metal foam, Int. J. Heat Mass Transf. 72 (2014) 565–571, doi: 10.1016/j.ijheatmasstransfer.2014.01.045 .
+
+[28] S Dutta, GNVR Vikram, MS Bobji, S. Mohan, Table top experimental setup for electrical contact resistance measurement during indentation, Meas. J. Int. Meas. Confed. 152 (2020) 107286, doi: 10.1016/j.measurement.2019.107286 .
+
+[29] W Chen, S Ito, N Yusa, H. Hashizume, Investigation of the correlation between the electrical contact resistance and the contact area of mechanical lap joint fabricated with high-temperature superconducting tapes using X-ray microto- mography, Fusion Eng. Des. 148 (2019) 111284, doi: 10.1016/j.fusengdes.2019. 111284 .
+
+[30] Y Su, J Lu, B. Huang, Free-standing planar thin-film thermoelectric microrefrig- erators and the effects of thermal and electrical contact resistances, Int. J. Heat Mass Transf. 117 (2018) 436–446, doi: 10.1016/j.ijheatmasstransfer.2017.10.023 .
+
+[31] AB Zhang, BL Wang, DD Pang, JB Chen, J Wang, JK. Du, Influence of leg ge- ometry configuration and contact resistance on the performance of annu- lar thermoelectric generators, Energy Convers. Manag. 166 (2018) 337–342, doi: 10.1016/j.enconman.2018.04.042 . (U+ mS) 2 + S 2 (T h + mT c ) 2 (U+ mS) 4 u (U) 2 (U+ mS) 2 + S 2 (T h + mT c ) 2 (U+ mS) 4 u (U) 2 [ 4(R TE + R C h + R C c ) ] 2 + U 2 [ 4(R TE + R C h + R C c ) ] 4 � 16(u (R C h ) 2 + u (R C c ) 2 ) � (E.3) ; R C h denotes the ECR between the hot side of TE leg and electrode; R C c denotes the ECR between the cold side of TE leg and electrode.
+
+[32] CN. Kim, Development of a numerical method for the performance analysis of thermoelectric generators with thermal and electric contact resistance, Appl. Therm. Eng. 130 (2018) 408–417, doi: 10.1016/j.applthermaleng.2017.10.158 .
+
+[33] S Shittu, G Li, X Zhao, X Ma, YG Akhlaghi, Y. Fan, Comprehensive study and optimization of concentrated photovoltaic-thermoelectric considering all con- tact resistances, Energy Convers. Manag. 205 (2020) 112422, doi: 10.1016/j. enconman.2019.112422 .
+
+[34] G Xu, Y Duan, X Chen, T Ming, X. Huang, Effects of thermal and electri- cal contact resistances on the performance of a multi-couple thermoelectric cooler with non-ideal heat dissipation, Appl. Therm. Eng. 169 (2020) 114933, doi: 10.1016/j.applthermaleng.2020.114933 .
+
+[35] Z Ouyang, D. Li, Modelling of segmented high-performance thermoelectric generators with effects of thermal radiation, electrical and thermal contact re- sistances, Sci. Rep. 6 (2016) 24123, doi: 10.1038/srep24123 .
+
+[36] D Sun, G Liu, L Shen, H Chen, Y Yao, S Jin, Modeling of high power light- emitting diode package integrated with micro-thermoelectric cooler under var- ious interfacial and size effects, Ener gy Convers. Manag. 179 (2019) 81–90, doi: 10.1016/j.enconman.2018.10.063 .
+
+[37] A Massaguer, E Massaguer, M Comamala, T Pujol, JR González, MD Cardenas, et al., A method to assess the fuel economy of automotive thermoelectric gen- erators, Appl. Energy 222 (2018) 42–58, doi: 10.1016/j.apenergy.2018.03.169 .
+
+[38] K Karthick, S Suresh, H Singh, GC Joy, R. Dhanuskodi, Theoretical and experi- mental evaluation of thermal interface materials and other influencing param- eters for thermoelectric generator system, Renew. Energy 134 (2019) 25–43, doi: 10.1016/j.renene.2018.10.109 .
+
+[39] D Li, S Li, X Li, B Yang, H. Zhong, Efficiently synthesized n-type CoSb3 ther- moelectric alloys under TGZM effect, Mater. Sci. Semicond. Process. 123 (2021) 105542, doi: 10.1016/j.mssp.2020.105542 .
+
+[40] M Chen, Q Li, P. Zhang, Numerical prediction of high temperature thermal con- tact resistance of HTA–C/ZrB2-SiC with radiation effects, Int. Commun. Heat Mass Transf. 120 (2021) 105058, doi: 10.1016/j.icheatmasstransfer.2020.105058 .
+
+[41] XJ Ren, YJ Dai, JJ Gou, WQ. Tao, Numerical study on thermal contact resistance of 8-harness satin woven pierced composite, Int. J. Therm. Sci. 159 (2021) 106584, doi: 10.1016/j.ijthermalsci.2020.106584 .
+
+[42] R Kempers, P Kolodner, A Lyons, AJ. Robinson, A high-precision apparatus for the characterization of thermal interface materials, Rev. Sci. Instrum. 80 (2009) 095111, doi: 10.1063/1.3193715 .

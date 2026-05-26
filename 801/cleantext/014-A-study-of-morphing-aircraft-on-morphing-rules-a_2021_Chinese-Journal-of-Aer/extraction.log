@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-study-of-morphing-aircraft-on-morphing-rules-a_2021_Chinese-Journal-of-Aer.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\014-A-study-of-morphing-aircraft-on-morphing-rules-a_2021_Chinese-Journal-of-Aer",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-study-of-morphing-aircraft-on-morphing-rules-a_2021_Chinese-Journal-of-Aer.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\014-A-study-of-morphing-aircraft-on-morphing-rules-a_2021_Chinese-Journal-of-Aer",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 104.28,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\014-A-study-of-morphing-aircraft-on-morphing-rules-a_2021_Chinese-Journal-of-Aer\nbody_chars=29803 references=42 tables=6\nnoise_flags=many_figure_caption_markers\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T03:04:58"
+}

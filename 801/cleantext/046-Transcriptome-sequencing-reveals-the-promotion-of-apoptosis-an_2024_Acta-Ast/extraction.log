@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Transcriptome-sequencing-reveals-the-promotion-of-apoptosis-an_2024_Acta-Ast.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\046-Transcriptome-sequencing-reveals-the-promotion-of-apoptosis-an_2024_Acta-Ast",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\Transcriptome-sequencing-reveals-the-promotion-of-apoptosis-an_2024_Acta-Ast.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\046-Transcriptome-sequencing-reveals-the-promotion-of-apoptosis-an_2024_Acta-Ast",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 65.35,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\046-Transcriptome-sequencing-reveals-the-promotion-of-apoptosis-an_2024_Acta-Ast\nbody_chars=31244 references=49 tables=1\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T04:53:01"
+}

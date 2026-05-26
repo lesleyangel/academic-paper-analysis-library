@@ -1,0 +1,85 @@
+[1] J. Liu, X. Zhou, H. xin, High-Si reinforced Al matrix composites prepared by powder semi-solid squeeze, J. Alloys Compd. 726 (2017) 772–778.
+
+[2] J. Xie, J. Ma, M. Liao, W. Guo, L. Huang, P. Gao, H. Xiao, Reinforcement of thermally-conductive SiC/Al composite with 3D-interpenetrated network structure by various SiC foam ceramic skeletons, Ceram. Int. 47 (2021) 30869–30879.
+
+[3] Z. Zhang, Z. Wei, Z. Li, B. Hou, R. Xue, H. Xia, Z. Shi, SiC honeycomb reinforced Al matrix composite with improved tribological performance, Ceram. Int. 47 (2021) 23376–23385.
+
+[4] C. Yan, W. Lifeng, R. Jianyue, Multi-functional SiC/Al composites for aerospace applications, Chin. J. Aeronaut. 21 (2008) 578–584.
+
+[5] Z. Shen, G. Ji, J.-F. Silvain, From 1D to 2D arrangements of graphite flakes in an aluminium matrix composite: impact on thermal properties, Scr. Mater. 183 (2020) 86–90.
+
+[6] C. Zhang, R. Wang, Z. Cai, C. Peng, Y. Feng, L. Zhang, Effects of dual-layer coatings on microstructure and thermal conductivity of diamond/Cu composites prepared by vacuum hot pressing, Surf. Coat. Technol. 277 (2015) 299–307.
+
+[7] E.A. Ekimov, N.V. Suetin, A.F. Popovich, V.G. Ralchenko, Thermal conductivity of diamond composites sintered under high pressures, Diam. Relat. Mater. 17 (2008) 838–843.
+
+[8] Q. Cui, C. Chen, C. Yu, T. Lu, H. Long, S. Yan, A.A. Volinsky, J. Hao, Effect of molybdenum particles on thermal and mechanical properties of graphite flake/ copper composites, Carbon. N. Y. 161 (2020) 169–180.
+
+[9] B. Liu, D.Q. Zhang, X.F. Li, X.H. Guo, J. Shi, Z.J. Liu, Q.G. Guo, The microstructures and properties of graphite flake/copper composites with high volume fractions of graphite flake, New Carbon Mater. 35 (2020) 58–65.
+
+[10] T. Schwanekamp, System studies on active thermal protection of a hypersonic suborbital passenger transport vehicle, in: Proceedings of the 19th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, Atlanta, GA, 2014. June 16-20.
+
+[11] X.-S. Liu, Q.-G. Fu, H. Wang, Q. Song, Microstructure, thermophysical property and ablation behavior of high thermal conductivity carbon/carbon composites after heat-treatment, Chin. J. Aeronaut. 33 (2020) 1541–1548.
+
+[12] X. Zhang, X. Li, G. Yuan, Z. Dong, G. Ma, B. Rand, Large diameter pitch-based graphite fiber reinforced unidirectional carbon/carbon composites with high thermal conductivity densified by chemical vapor infiltration, Carbon. N. Y. 114 (2017) 59–69.
+
+[13] G. Yuan, X. Li, Z. Dong, X. Xiong, B. Rand, Z. Cui, Y. Cong, J. Zhang, Y. Li, Z. Zhang, J. Wang, Pitch-based ribbon-shaped carbon-fiber-reinforced one-dimensional carbon/carbon composites with ultrahigh thermal conductivity, Carbon. N. Y. 68 (2014) 413–425.
+
+[14] Z.H. Feng, Z. Fan, Q. Kong, X. Xiong, B.Y. Huang, Effect of high temperature treatment on the structure and thermal conductivity of 2D carbon/carbon composites with a high thermal conductivity, New Carbon Mater. 29 (2014) 357–362.
+
+[15] D. Huang, R. Tan, L. Liu, C. Ye, S. Zhu, Z. Fan, P. Zhang, H. Wu, F. Han, H. Liu, J. Liu, Preparation and properties of the three-dimensional highly thermal conductive carbon/carbon-silicon carbide composite using the mesophase-pitch- based carbon fibers and pyrocarbon as thermal diffusion channels, J. Eur. Ceram. Soc. 41 (2021) 4438–4446.
+
+[16] D. Huang, Q. Liu, Y. Zhang, C. Ye, S. Zhu, Z. Fan, F. Han, H. Liu, J. Liu, Ablation behavior and thermal conduction mechanism of 3D ZrC–SiC-modified carbon/ carbon composite having high thermal conductivity using mesophase-pitch-based carbon fibers and pyrocarbon as heat transfer channels, Compos. Part B Eng. 224 (2021) 109201.
+
+[17] J. Zhao, R. Cai, Z. Ma, K. Zhang, H. Liang, H. Qiu, S. Liu, W. Xie, Preparation and properties of C/SiC composites reinforced by high thermal conductivity graphite films, Diam. Relat. Mater. 116 (2021) 108376.
+
+[18] Y. Zhang, Y. Liu, L. Cao, H. Fang, B. Liu, Y. Cao, J. Wang, J. Chen, Y. Pan, Three- dimensional micro-pipelines high thermal conductive C/SiC composites, Ceram. Int. 47 (2021) 34333–34340.
+
+[19] G.M. Grover, T.P. Cotter, G.F. Erickson, Structures of very high thermal conductance, J. Appl. Phys. 35 (1964) 3072.
+
+[20] Y. Zhang, Q. Jiang, Q. Tan, Y. Liu, J. Zhu, J. Wang, Numerical analysis on heat transfer of porous wick flat micro heat pipe under various operating conditions, Int. Commun. Heat Mass Transf. 157 (2024) 107842.
+
+[21] M. Chavhan, P.K. Singh, Enhancing heat pipe performance through hybrid wick structures: balancing pore size and permeability, Appl. Therm. Eng. 256 (2024) 124079.
+
+[22] K.V. Paiva, M.B.H. Mantelli, L.K. Slongo, Experimental testing of mini heat pipes under microgravity conditions aboard a suborbital rocket, Aerosp. Sci. Technol. 45 (2015) 367–375.
+
+[23] G.A. NlBlock, J.C. Reeder, F. Huneidl, Four space shuttle wing leading edge concepts, J. Spacecr. Rockets 11 (1974) 314–320.
+
+[24] C.J. Camarda, R.V. Masek, Design, analysis, and tests of a shuttle-type heat-pipe- cooled leading edge, J. Spacecr. Rockets 18 (1981) 71–78.
+
+[25] B.L. Boman, K.M. Citrin, E.C. Garner, and J.E. Stone. Heat pipes for wing leading edges of hypersonic vehicles. NASA Contractor Report 181922. 1990.
+
+[26] D.E. Glass, M.A. Merrigan, J.T. Sena, and R.S. Reid. fabrication and testing of a leading-edge-shaped heat pipe. NTRS-NASA technical reports server. 1998. NASA/ CR-1998-208720.
+
+[27] D.E. Glass, C.J. Camarda, M.A. Merrigan, J.T. Sena, Fabrication and testing of Mo- Re heat pipes embedded in carbon/carbon, J. Spacecr. Rockets 36 (1999) 79–86.
+
+[28] D.E. Glass, Heat-pipe-cooled leading edges for hypersonic vehicles, in: Proceedings of the Workshop on Materials and Structures for Hypersonic Flight, 2006.
+
+[29] H. Liu, W. Liu, Thermal–structural analysis of the platelet heat-pipe-cooled leading edge of hypersonic vehicle, Acta Astronaut. 127 (2016) 13–19.
+
+[30] O. Tran, M. Heldmann, J. Fort, ECLSS heat sink for the NASP, in: Proceedings of the 2nd International Aerospace Planes Conference, 1990.
+
+[31] D. Glass, Ceramic Matrix Composite (CMC) Thermal Protection Systems (TPS) and hot structures for hypersonic vehicles, in: Proceedings of the 15th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, 2008.
+
+[32] S. Balland, V.F. Villace, J. Steelant, Thermal and energy management for hypersonic cruise vehicles - cycle analysis, in: Proceedings of the 20th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, 2015.
+
+[33] V. Fernandez Villace, J. Steelant, The thermal paradox of hypersonic cruisers, in: Proceedings of the 20th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, 2015. AIAA 2015-3643.
+
+[34] T. Schwanekamp, System studies on active thermal protection of a hypersonic suborbital passenger transport vehicle, in: Proceedings of the 19th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, 2014.
+
+[35] Y. Xia, C. Guo, E. Dong, L. Chen, W. Tao, Topology optimization of gas channels in proton exchange membrane fuel cells, Int. J. Heat. Mass Transf. 222 (2024) 125147.
+
+[36] J. Wang, D. Melideo, X. Liu, U. Desideri, Comparative study on topology optimization of microchannel heat sink by using different multi-objective algorithms and objective functions, Appl. Therm. Eng. 252 (2024) 123606.
+
+[37] Y. Xing, L. Tong, Accelerating reliability-based topology optimization via gradient online learning and prediction, Aerosp. Sci. Technol. 145 (2024) 108836.
+
+[38] K. Tian, T. Gao, L. Huang, Q. Xia, Data-driven non-intrusive shape-topology optimization framework for curved shells, Aerosp. Sci. Technol. 139 (2023) 108405.
+
+[39] Z. Zhou, Y. Sun, X. Li, Y. Zhou, K. Tian, P. Hao, B. Wang, Shape and size optimization framework of stiffened shell using isogeometric analysis, Thin-Walled Struct. 204 (2024) 112311.
+
+[40] H. An, H. Huang, Topology and sizing optimization for frame structures with a two- level approximation method, AIAA J. 55 (2017) 1044–1057.
+
+[41] F. Fernandez, A.T. Barker, J. Kudo, J.P. Lewicki, K. Swartz, D.A. Tortorelli, S. Watts, D.A. White, J. Wong, Simultaneous material, shape and topology optimization, Comput. Methods Appl. Mech. Eng. 371 (2020) 113321.
+
+[42] C. Wang, J. Zhu, W. Zhang, Simultaneous optimization of structural topology and build direction using B-spline parameterized density method, Struct. Multidiscip. Optim. 65 (2022)
+
+313. Jian-Jun Gou: Writing – review & editing, Writing – original draft, Visualization, Methodology, Investigation, Funding acquisition, Formal analysis, Conceptualization. Hao-Dong Niu: Validation, Methodology, Formal analysis, Data curation. Shu-Zhen Jia: Validation, Methodol ogy, Formal analysis, Data curation. Jia-Xin Hu: Validation, Method ology. Xiao-Wei Wang: Validation, Resources, Funding acquisition. Chun-Lin Gong: Resources, Project administration, Conceptualization. The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.

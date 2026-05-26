@@ -1,0 +1,8 @@
+| Parameter | Value |
+| --- | --- |
+| $M a$ | 0.72 |
+| $R e$ | $8 . 4 5 { \times } 1 0 ^ { 5 }$ |
+| $\rho ( \mathrm { k g } / \mathrm { m } ^ { 3 } )$ | 0.358 |
+| $\alpha ( ^ { \circ } )$ | 0,5, 10,15, 20,25 |
+| $p _ { \mathrm { a } } \left( \mathrm { r a d / s } \right)$ | 500π |
+| $p _ { \mathrm { f } } \left( \mathrm { r a d } / \mathrm { s } \right)$ | $- 5 0 0 \pi , - 2 5 0 \pi , 0 , 2 5 0 \pi , 5 0 0 \pi$ |

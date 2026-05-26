@@ -1,0 +1,33 @@
+| $R _ { c } ^ { T }$ | TCR between cold side of TE leg and electrode of test sample |
+| --- | --- |
+| $R _ { E - P \_ l } ^ { T }$ $R _ { E - P _ { - } u } ^ { T }$ | TCR between electrode and lower surface of P-type TE leg TcR between electrode and upper surface of P-type |
+| $R _ { E - N \_ l } ^ { T }$ $R _ { E - N _ { - } u } ^ { T }$ | TE leg TCR between electrode and lower surface of N-type TE leg |
+|  | TCR between electrode and upper surface of N-type |
+| TE leg $R _ { i }$ ECR | internal electric resistance internal electric resistance of TEG with ECR |
+| $R _ { i } ^ { \dot { E } C R }$ $R _ { i } ^ { \dot { P } C }$ | internal electric resistance of TEG without TCR or |
+| $R _ { i } ^ { T C R }$ | internal electric resistance of TEG with TCR |
+| $R _ { T E }$ $R _ { P }$ | electric resistance of TE material |
+| $R _ { N }$ | electric resistance of P-type TE leg electric resistance of N-type TE leg |
+| $R _ { h } ^ { C }$ | ECR between hot side of TE leg and electrode of test |
+| $R _ { c } ^ { C }$ | sample ECR between cold side of TE leg and electrode of |
+| $R _ { E - P \_ l } ^ { C }$ | test sample |
+| $R _ { E - P \_ u } ^ { C }$ | ECR between electrode and lower surface of P-type TE leg |
+| $R _ { E - N \_ l } ^ { C }$ | EcR between electrode and upper surface of P-type TE leg |
+|  | ECR between electrode and lower surface of N-type TE leg |
+| $R _ { E - N _ { - } u } ^ { C }$ | ECR between electrode and upper surface of N-type TE leg |
+| E-N_1 | contacting pair of electrode and lower surface of N- |
+| E-N_u | type TE leg |
+| E-P_1 | contacting pair of electrode and upper surface of N- type TE leg |
+|  | contacting pair of electrode and lower surface of P- type TE leg |
+| $\mathsf { E } { - } P _ { - } \boldsymbol { \mathsf { u } }$ | contacting pair of electrode and upper surface of $P -$ |
+| Greek | type TE leg |
+| $\lambda$ |  |
+| $\sigma$ | thermal conductivity |
+| $c$ | normal stress |
+|  | specific heat capacity |
+| $\rho$ | density |
+| $\tau$ | shear stress |
+| $\gamma$ | shear strain |
+| $\varepsilon$ | total mechanical strain |
+| $\psi$ | Peltier coeficient |
+| $\kappa$ | Stefan-Boltzmann constant |

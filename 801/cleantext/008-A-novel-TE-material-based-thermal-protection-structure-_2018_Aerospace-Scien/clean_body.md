@@ -1,0 +1,292 @@
+## 1. Introduction
+
+For a flight vehicle, the increasing flying speed brings about a large amount of aerodynamic heat and leads to a very harsh thermal environment. For a supersonic vehicle, at some specific locations of leading edge, the temperature may reach to a value of higher than 1800 K [1–3]. Thus, a reliable and efficient thermal protection system (TPS) is essential to ensure the safety of the vehicle.
+
+The first input condition of design and evaluation of a TPS is the aerodynamic heat. There are two main methods to predict the aerodynamic heat, the engineering-based method and the numerical method. During the last decades, numerous relevant studies have been carried on to develop appropriate numerical method (mainly CFD) for the aerodynamic heat prediction of flow fields/vehicle with different configurations [4–8]. For instance, in Ref. [4], the capacity of DNS (direct numerical simulations), LES (large eddy simulations) and RANS (Reynolds-averaged Navier–Stokes) for the prediction of turbulent shock wave were evaluated based on cases of 2D compression and expansion-compression corners, 2D shock impingement, 3D single and double fins. At present, the numerical method still has some challenges, such as the high requirement to mesh generation, especially the grid near the vehicle surface should be very carefully considered since the temperature gradient is very sensitive to the grids resolution. Also, the numerical simulation is a very resource-consuming method and has low efficiency. On the other hand, the engineering-based algorithms and programs, such as MINIVER [9] and LATCH [10] which are developed based on empirical correlations and engineering purposes are very popular. Such methods always contain a series of theories to adapt different flow conditions (e.g., subsonic or supersonic, laminar or turbulent). Thus, they have lower accuracy in comparison with numerical methods. However, they are much more efficient. In this work, a quick TPS evaluation approach is more concerned, and thus an engineering-based method is used to calculate the aerodynamic heat.
+
+A TPS always consists of a high-temperature layer and a below insulation layer. The high-temperature layer is the first layer to withstand the aerodynamic heating, and the candidate materials include C/SiC, C/C, ultra high temperature ceramic, etc. For the insulation layer, the basic requirement should be the low weight and low thermal conductivity [11,12]. Ma et al. [11] developed an integrated TPS with additional insulation layer, and different insulation material/structure including Mullite blanket, ceramic tile and aerogel are evaluated. In fact, the choosing of a TPS material is closely related to the material’s own characteristics and the TPS requirement. For instance, the TPS optional materials can be classified into two types in general, the ablative and non-ablative materials. For a structure with ablative materials [11,13–16], part of the aerodynamic heat will be taken away by its ablation process, and thus has higher efficiency. However, it is not applicable to a reusable vehicle due to its changing configuration during the flight mission. On the other hand, for a TPS based on non-ablative material [17–19], the surface radiation is the only dissipation of aerodynamic heat, and thus leaves some rooms for the improvement of its efficiency. In this work, a high-efficiency multi-functional TPS structure based on thermoelectric (TE) material is developed.
+
+The TE material and corresponding modules can convert aerodynamic heat into electric energy directly as the well-known Seebeck effect, and the conversion efficiency can reach a value of 5∼20% or even higher with some appropriate treatments like doping and nano-structuring [20]. According to its suitable temperature, the TE material can be classified as room-temperature (e.g., $\mathsf{Bi} _ {2} \mathsf{Te} _ {3} )$ , mid-temperature (e.g., PbTe) and high-temperature ones (Oxide ones). A TE module is always a couple of n- and p-type materials and can be used as an electricity generator under a certain temperature difference. The performance of a TE generator is partly dependent on the temperature difference across the TE material which is related to the performance of additional heat exchangers, Lv et al. [21] studied three typical heat exchangers (air cooling, fluid cooling and heat pipe) and evaluated their influence on TE performance. Lan et al. [22] developed a dynamic model of TE generator for the waste heat recovery of automotive vehicles. For the application of flight vehicles, to the authors’ knowledge, the relevant researches are limited: Li and Wang [23] developed an integrated TE module with regenerative cooling system, and analyzed its performance based on the exergy analysis theory; Cheng et al. [24] developed a multi-stage TE module considering the suitable temperature of TE material, and analyzed its thermal protection performance. The very limited research activities motivate further studies.
+
+In this work, a TE material based multi-functional TPS structure is developed. For the p-type material, the widely used hightemperature material $\mathsf{Ca} _ {3} \mathsf{Co} _ {4} \mathsf{O} _ {9} \ \left[ 25-27 \right]$ is adopted, and for the n-type material, a Ti-doped ceramic $\mathrm{Sr} _ {0.9} \mathrm{La} _ {0.1} \mathrm{Ti} 0 _ {3}$ is fabricated by solid state reaction method. The evaluation approach of its mechanical-thermoelectric performance is developed based on a specific vehicle and a typical trajectory.
+
+## 2. The vehicle, trajectory and aerodynamic heat
+
+It should be pointed out that under a limiting or an ideal condition, engineering structures can always have good performance, whereas relevant results have certain limitations. Therefore, the evaluation of an engineering system has to be accomplished according to a specific vehicle with specific mission trajectory. For the novel TPS structure proposed in this work, a complete evaluation process including the calculation of input thermal conditions, the mechanical-thermoelectric analysis and the TE conversion calculation is displayed in detail. Such approach can be referenced and used for other similar vehicles and trajectories.
+
+## 2.1. The vehicle and trajectory
+
+The vehicle and the trajectory studied in this work should be introduced first. Fig. 1 shows the vehicle and the trajectory. The left part is the model of a hypersonic reusable launch vehicle designed by the authors. The black circle on the compression surface is a specific point M that will be considered in the calculation of this work. The size of the vehicle and the general distribution of structure materials are shown in Fig. 1. The vehicle has a length of 30 m, a wingspan of 15 m, and the width of the fuselage is 5 m. The compression surface has an area of about $30 ~ \mathrm{m} ^ {2}$ . The structure of the vehicle is divided into several zones of different materials mainly consists of Ti-alloy, Al-alloy and resin based composites, and more detailed descriptions can be found for a similar vehicle in the authors’ previous work [28].
+
+The right part of Fig. 1 is its typical trajectory curve in a twodimensional pattern. The vertical axis is the altitude, the bottom horizontal axis is the flight time while the top one is the flight range. It should be noted that the flight range is not in a linear scale, and the largest value is about 6600 km and then the vehicle will return to the launch field. One can notice that the vehicle will reach 28 km height and its speed will increase from 0 to 8 Ma within 450 s, then it will fly to its highest altitude of about 50 km and accomplish its mission and return. The large amount of aerodynamic heat generated during the trans-atmospheric phase of its launch and re-entry gives rise of great challenges of TPS. In this work, the aerodynamic heat under the trajectory curve shown in Fig. 1 is calculated. The heat is then applied to analyze the thermal protection efficiency of the TPS structure proposed in this work.
+
+## 2.2. Aerodynamic heat
+
+In order to evaluate a TPS, the input condition which is the aerodynamic heat should be obtained first. For a non-ablative TPS system, the heat balance equation can be described by Eq. (1):
+
+$$q = h _ {c o n v} ( T _ {r} - T _ {w} ) = \sigma \varepsilon T _ {w} ^ {4} + q _ {c o n d}\tag{1}$$
+
+where $q$ is the aerodynamic heat flux, $h _ {c o n v}$ is the coefficient of convection, Tr is the recovery wall temperature, $T _ {w}$ is the wall temperature, $\sigma = 5.67 \times 10 ^ {- 8} \mathrm{W} / ( \mathrm{m} ^ {2} \mathrm{K} ^ {4} )$ is the Stefan–Boltzmann constant, ε is the surface emissivity, and $q _ {c o n d}$ is the heat flux conducted into the vehicle. The surface material of TPS is C/C-SiC and the emissivity is 0.8 [29] in this work.
+
+In this work, the aerodynamic heat is calculated by a fast engineering algorithm which is based on Prandtl’s boundary layer theory. The flow field is divided into inviscid flow which is external to the boundary layer and viscid field which is internal of the layer. The algorithm involves several theories of aerodynamic force and aerodynamic heat prediction. And three basic assumptions have to be stated first:
+
+a. In the calculation of aerodynamic force of the inviscid flow field, the head, the fuselage, and the wings can be considered as flat, and the corresponding methods are listed in Table 1.
+
+b. For the viscid compressible flow field internal of the boundary layer, it can be simulated by the incompressible theory with a compressibility correction, i.e., the reference temperature (enthalpy) method.
+
+c. For the situation of $\mathrm{Ma} < 2$ , the present method has low accuracy, thus the aerodynamic heat in that duration (0∼140 s) can be calculated by linear interpolation based on available data.
+
+For the inviscid flow field, the gas flow is considered as ideal and the aerodynamic parameters are calculated based on the isentropic conditions. The corresponding methods are listed in Table 1, and the detailed selection rationale (mainly based on speed and configuration) can be found in Ref. [30]. The calculation of inviscid field provides parameters of the outer edge of the boundary layer, which will be the input data in the viscid flow calculation.
+
+For the viscid flow internal of the boundary layer, the thermodynamic parameters are computed based on a reference temperature method, in which the reference temperature $T ^ {*}$ is defined by:
+
+$$\begin{array} {l} {T ^ {*} = T _ {e} + 0.58 ( T _ {w} - T _ {e} ) + 0.19 ( T _ {r} - T _ {e} ) \quad ( M a _ {e} < 5 )} \\ {T ^ {*} = 0.7 T _ {e} + 0.58 ( T _ {w} - T _ {e} ) + 0.23 ( T _ {r} - T _ {e} ) \quad ( 5 < M a _ {e} < 10 )} \end{array}\tag{2}$$
+
+where the subscript $" e "$ indicates the outer edge of the boundary layer; $T _ {r}$ is the recovery temperature which can be calculated based on the parameters (provided by the calculation of inviscid fields) of the outer edge of the boundary layer. The convective coefficient $h _ {c o n v}$ in Eq. (1) can then be obtained based on the thermodynamic parameters.
+
+Based on iterative solving, the aerodynamic heat flux can be obtained. In the calculation, the radiation equilibrium condition is assumed which means $q _ {c o n d}$ in Eq. (1) is considered to be 0. Fig. 2 shows the heat flux at the location of specific point M. The horizontal axis is time and the left vertical axis is heat flux. It is well-known that the aerodynamic heat flux is closely related to the flight altitude and speed. In general, the lower altitude (larger air pressure and density) with higher speed lead to larger heat flux. From Fig. 2, one can find that for the vehicle and trajectory studied in this work, the aerodynamic heat flux increases to its highest value in a duration of about 450 s (trans-atmosphere phase), and then decreases to a valley value in a very short time (rarefied gas flow), and then fluctuates in a relatively lower value range. The heat flux in Fig. 2 will be used as input thermal boundary conditions in the later mechanical-thermoelectric coupling calculation.
+
+## 3. The multi-functional TPS structure
+
+Fig. 3 is the schematic of multi-functional TPS structure proposed in this work. A three-layer structure is designed. The top layer is the high-temperature C/C-SiC satin woven composite. The middle layer consists two phases, the insulation material of Saffil Al-fiber and the TE materials. The bottom layer is Ti-6Al-4V alloy. The TE module is always composed of a p-type and a n-type composite which in this work are $\mathsf{Ca} _ {3} \mathsf{Co} _ {4} \mathsf{O} _ {9}$ and $\mathrm{Sr} _ {0.9} \mathrm{La} _ {0.1} \mathrm{Ti} 0 _ {3}$ based materials, respectively. In a temperature gradient field, the n-type material will create an electric potential which is positive in the high temperature side while negative in the lower temperature side. This phenomenon is known specifically as the Seebeck effect. However, the p-type material has the exact opposite Seebeck effect, and thus a relative larger electric potential will be created by the couple of p and n materials.
+
+Both the C/C-SiC and the Ti-6Al-4V layer have a thickness of 5 mm, and each p and n material has a dimension of $3 \times 3 \times$ 15 mm. It should be noted that the transverse size of the structure can be an arbitrary value depends on its application. Fig. 4 is the transfer path of aerodynamic heat from the vehicle top surface to the internal structure. If the aerodynamic heat generated in the structure surface is expressed as Q , before it enters the structure, a certain amount of heat $Q _ {r a d}$ will be dissipated by the radiation. When it transmits through the high-temperature layer and comes to the insulation layer, an amount of $Q _ {1}$ will be converted into electric power by TE materials. And when the rest heat transferred through the Ti-6Al-4V, another certain amount $Q _ {2}$ will be taken away by the convection heat transfer (possible bottom heat exchanger). Finally, the heat conducted into the vehicle internal structure is $Q _ {3}$ . It is clear that $Q = Q _ {r a d} + Q _ {1} + Q _ {2} + Q _ {3}$ .
+
+The design of such a TPS structure has two key points, i.e., the choosing of p-type TE material, and the fabrication of n-type material and the measurement of its TE properties such as Seebeck coefficients, which will be discussed in the later subsections.
+
+## 3.1. The choosing of p-type material
+
+By converting heat directly into electricity, TE generator offers a promising technology. The key to realize an efficient TE generator lies in finding materials with high TE performance: good durability and high robustness at high temperature in air. For a TE material, its conversion efficiency is often evaluated by the TE figure of merit ( Z T ):
+
+$$Z T = {\frac {k S ^ {2}} {\lambda}} T , \qquad S = - {\frac {\Delta E} {\Delta T}}\tag{3}$$
+
+where S is the Seebeck coefficient, k is the electrical conductivity, λ is the thermal conductivity of the material, E is the thermoelectric voltage and T is the temperature difference.
+
+By far the most widely used TE materials are alloys of $\mathsf{Bi} _ {2} \mathsf{Te} _ {3}$ PbTe and SiGe, which are often harmful, expensive or have poor durability at high temperature. Metal oxides have been considered as an alternative to overcome these disadvantages. Since the discovery of large TE power in p-type ${\tt N a C o} _ {2} {\tt O} _ {4}$ single crystals by Terasaki et al. in 1997 [31], metal oxide-based materials have been attracting continuous attentions. However, Na is volatile and the compound is instable in humid environment. On the other hand, another Co-based oxide $\mathrm {C a _ {3} C o _ {4} O _ {9 + \delta}}$ has good TE performance $( Z T = 0.83$ at 973 K for the single crystal) [32] with high thermal and chemical stabilities even up to 1200 K in air $[ 25 , 33 ,$ 34]. In addition, the addition of ${\tt A} {\tt g} ^ {+}$ and ${\mathrm{Lu}} ^ {3 +}$ can improve the Z T of the material $( \mathrm{Ca} _ {2.85} \mathrm{Ag} _ {0.05} \mathrm{Lu} _ {0.15} \mathrm{Co} _ {4} \mathrm{O} _ {9 + \delta}$ exhibits a $Z T$ of up to 0.61 at 1118 K [35]). Therefore, the p material used in this work is a $\mathsf{Ag} ^ {+}$ and $\mathrm{Lu} ^ {3 +}$ doped $\mathsf{Ca} _ {3} \mathsf{Co} _ {4} \mathsf{O} _ {9}$ based compound.
+
+## 3.2. Fabrication of n-type material and its TE properties
+
+A n-type TE material $\mathrm{Sr} _ {0.9} \mathrm{La} _ {0.1} \mathrm{Ti} 0 _ {3}$ is fabricated based on the solid-state reaction method in this work. Reagent-grade strontium carbonate $\left( \mathsf{SrCO} _ {3} \right)$ , titanium oxide $( \mathrm{TiO} _ {2} ) ,$ , lanthanum oxide $\left( \operatorname{La} _ {2} 0 _ {3} \right)$ and bismuth oxide $\left( \mathrm{Bi} _ {2} 0 _ {3} \right)$ were used as starting materials. Firstly, the mixtures of $\mathsf{SrCO} _ {3} ,$ , TiO2, $\mathbf {L} \mathbf {a} _ {2} \mathbf {O} _ {3}$ and ${\tt B i} _ {2} {\tt O} _ {3}$ were weighed and ball milled by zirconia balls (as grinding media) in ethanol for 12 h. The mixtures were then calcined at $1200~^{\circ}\mathrm{C}$ and ball milled again in ethanol for 12 h. After drying, the powders were granulated by PVA (as a binder) and then pressed into pellets with the radius of 30 mm and thickness of 3 mm. The compacts were heated to $500~^{\circ}\mathrm{C}$ for 2 h to burn out the binder and then sintered at $1450~^{\circ}\mathrm{C}$ for 2 h in argon atmosphere. Then samples were cut into the size of $3 \times 3 \times 15$ mm. In order to further reduce the electrical resistivity, an annealing process was taken at $1350~^{\circ}\mathrm{C}$ for 8 h in argon and graphite atmosphere. The detailed fabrication process can be found in Fig. 5(a) and can also reference the authors’ previous work [36].
+
+The Seebeck coefficient is the key property of TE materials. In this work, the Seebeck coefficient of the fabricated n-type material was measured by a 4-terminal method. Fig. 5(b) is the schematic of the measurement. A sample is set in a vertical position between the upper and lower blocks in the heating furnace, and there is an additional secondary heater in the lower block to provide a temperature gradient. The temperature difference T and the thermal electromotive force E can be measured by the thermocouples pressed against the side of the sample, and then the Seebeck coefficient can be obtained based on Eq. (3). Also, if a constant current I is applied to both ends of the sample, the voltage drop V can be obtained, and the electric resistance can then be calculated.
+
+Fig. 6 shows the Seebeck coefficients and the electric resistivities of p- and n-type materials used in this work, in which that of p-type comes from Refs. [37,38]. Other physical properties are listed in Table 2.
+
+(a) Fabrication process
+
+(b) Measurement of Seebeck coefficient
+
+## 3.3. Physical properties of other materials
+
+The physical properties of C/C-SiC and Ti-6Al-4V alloy can be found in Ref. [39]. The elastic modulus and the Possion’s ratio of TE materials are 105 GPa and 0.25, respectively, and that for Saffil material are 20 MPa and 0.3, respectively. The thermal expansion coefficient of Saffil Al-fiber is assumed to be $100 \times 10 ^ {- 6} \mathrm{K} ^ {- 1}$ in this work.
+
+## 4. Numerical model
+
+## 4.1. Governing and constitutive equations
+
+In this work, the mechanical-thermoelectric performance of the TPS structure is coupling analyzed by ANSYS Multiphysics which is based on Finite Element Method. In ANSYS, there are two types of coupled-field simulations, the load transfer and the direct coupling analyses. For the load transfer method, the fields are coupled by applying results from one field analysis as input loads in another field analysis. Such method is time saving while has lower accuracy. Therefore, in this work, the direct method is adopted. In order to save computational time, the thermoelastic and thermoelectric coupling are analyzed separately, and such treatment is reasonable, since to some extent the mechanical deformation and the electrical potential are independent to each other.
+
+The governing equations for the problem studied in this work can be listed as Eqs. (4), (5) and (6), respectively:
+
+## Mechanical:
+
+Equilibrium:
+
+$$\frac {\partial \sigma _ {x x}} {\partial x} + \frac {\partial \tau _ {x y}} {\partial y} + \frac {\partial \tau _ {x z}} {\partial z} = 0 ;$$
+
+$$\frac {\partial \tau _ {y x}} {\partial x} + \frac {\partial \sigma _ {y y}} {\partial y} + \frac {\partial \tau _ {y z}} {\partial z} = 0 ;$$
+
+$$\frac {\partial \tau _ {z x}} {\partial x} + \frac {\partial \tau _ {z y}} {\partial y} + \frac {\partial \sigma _ {z z}} {\partial z} = 0$$
+
+Strain-displacement:
+
+$$\begin{array} {l} {\varepsilon _ {x} = \displaystyle \frac {\partial u} {\partial x} ; \qquad \varepsilon _ {y} = \displaystyle \frac {\partial v} {\partial y} ;} \\ {\varepsilon _ {z} = \displaystyle \frac {\partial w} {\partial z} ; \qquad \gamma _ {y z} = \displaystyle \frac {\partial v} {\partial z} + \frac {\partial w} {\partial y} ;} \\ {\gamma _ {x z} = \displaystyle \frac {\partial u} {\partial z} + \frac {\partial w} {\partial x} ;} \\ {\gamma _ {x y} = \displaystyle \frac {\partial u} {\partial y} + \frac {\partial v} {\partial x}} \end{array}\tag{4}$$
+
+where $\sigma _ {x x} , \tau _ {x y} \ldots$ are stress components; $\varepsilon _ {x} , \varepsilon _ {y} , \gamma _ {y z} \ldots$ are strain components; u, v and w are displacements in $x , \ y$ and z directions, respectively.
+
+Electrical:
+
+$$[ k ] \nabla ^ {2} \phi = 0\tag{5}$$
+
+where [k] is the electric conductivity matrix and is isotropic in this work; φ is the electric potential.
+
+Thermal:
+
+Thermoelasticity:
+
+$$\rho c \frac {\partial T} {\partial t} = [ \lambda ] \nabla ^ {2} T - ( T _ {r e f} + T _ {o f f} ) \{\beta \} ^ {\mathrm{T}} \frac {\partial \{\varepsilon \}} {\partial t}\tag{6a}$$
+
+Thermoelectrics:
+
+$$\rho c {\frac {\partial T} {\partial t}} = [ \lambda ] \nabla ^ {2} T + {\frac {j _ {x} ^ {2} + j _ {y} ^ {2} + j _ {z} ^ {2}} {k}}\tag{6b}$$
+
+where $\rho$ is the density; c is the heat capacity; [λ] is the thermal conductivity matrix; $\{{\bar {\beta}} \} ^ {\mathrm{T}}$ is the transpose of vector $\{\beta \} = [ C ] \{\alpha \}$ in which [C ] and {α} are the stiffness matrix and the thermal expansion coefficient vector, respectively; $T _ {r e f} ~ ( = 300 ~ \mathrm{K}$ in this work) is the reference temperature; $T _ {o f f} ~ ( = 0$ in this work) is the offset temperature from absolute zero; $j _ {x} , j _ {y}$ and $j _ {z}$ are the current density in $x , y$ and z directions, respectively. It should be noted that the second terms of Eqs. (6a) and (6b) represent Piezocaloric effect for the thermoelastic coupling and Joule heating for the thermoelectric coupling, respectively.
+
+In addition to the above equations, the constitutive equations are:
+
+$$\{\sigma \} = [ C ] \{\varepsilon \} - \{\beta \} ( T - T _ {r e f} )\tag{7}$$
+
+$$\{j \} = [ k ] \big ( \{\phi _ {i} \} - [ S ] \{\nabla T \} \big )\tag{8}$$
+
+where $" [ \mathbf {\Gamma} ] "$ represents matrix, $" \{\} "$ represents vector, and $\ " \nabla "$ means gradient.
+
+## 4.2. The unit cell model and its mesh
+
+As discussed above, the TPS structure can have an arbitrary size in transverse direction (x- and y-), thus in order to save the computational cost, a unit cell model is formulated.
+
+The unit cell model (model formulation, model structure, mesh and boundaries) is shown in Fig. 7. As shown in the left picture of Fig. 7, the TPS structure is a typical translational symmetric structure along x- and y-axis, and thus a unit cell model which consists of only one p–n material couple can be formulated to represent the macro structure. It is clear that if the unit cell is translational moved along x- and y-axis, it will cover the whole structure. The unit cell model has a dimension of $12 \times 6 \times 25$ mm. In comparison with the unit cell, the dimension of the TPS structure can be considered as macroscopic.
+
+The model is meshed by the couple-field 3D solid element SOLID226 and has about 18046 elements and 79825 nodes. SOLID226 has 20 nodes and each node can have different (up to 5) degrees of freedom: temperature and three displacement components for thermoelastic coupling, or temperature and electric potential for thermoelectric coupling.
+
+## 4.3. The boundary and initial conditions
+
+For the top surface of the structure, the aerodynamic heat flux and the radiation dissipation are the boundary conditions. For the bottom surface, the assumed convection heat transfer which can be considered as active cooling is the boundary condition. The influence of convective coefficients on the TPS performance is studied in this paper.
+
+For a unit cell model to fully represent the macro structure, the accurate boundary conditions are essential. For the model in this work, the size-reducing occurs in transverse directions, thus, for the side planes of the structure, the boundary conditions should be considered more carefully. For a unit cell formulated by translational symmetries, the boundary conditions should be the so-called periodic conditions. The mechanical and thermal boundary conditions for the unit cell model are shown in Eqs. (9) and (10), respectively. In the equations, $\nabla T _ {x} ^ {0}$ and $\nabla T _ {y} ^ {0}$ are the macroscopic temperature gradients in x- and y-direction, respectively, and equal to 0 for the heat conduction problem in this work, K is the coefficient of convection heat transfer and qaerodynamic is the aerodynamic heat flux as shown in Fig. 2.
+
+In fact, the periodic boundary conditions in Eqs. (9) and (10) describe the relative displacement relations and the relative temperature relations between corresponding nodes, respectively. The corresponding nodes mean two nodes translational symmetric to each other, e.g., $M = ( x _ {1} , y _ {1} , z _ {1} )$ and $M ^ {\prime} = ( x _ {1} + 12 , y _ {1} , z _ {1} )$ which are translational symmetric along x-axis. In some commercial FEM software like ANSYS and ABAQUS, the boundary conditions of nodes on edges and vertices should be imposed separately to avoid the possible over constraint. In Eqs. (9) and (10), the boundary planes are expressed as $P _ {1} , P _ {2} , P _ {3} , P _ {4} , P _ {5}$ and $P _ {6} ,$ and the edges and vertices are indicated by numbers. The boundaries of the model are shown in the rightmost picture of Fig. 7, and similar schematic can be found in the authors’ previous work [40]. In the picture, the white circles with numbers are vertices while the black circles with numbers are edges. The model has a dimension of $a \times b \times h$ which is $12 \times 6 \times 25$ mm in this work as stated above. It should be noted that the periodic boundary condition is the so-called Dirichlet boundary condition which is related to nodes, so Eqs. (9) and (10) describe the constraint conditions of nodes on planes, on edges and on vertices. However, some equations in Eq. (10) involve heat flux which is Neumann boundary condition, so it should be pointed out that such heat flux in fact is imposed on corresponding elements rather than on those nodes.
+
+## Planes:
+
+$$P _ {1} \ - P _ {2} : u _ {( 0 , y _ {1} , z _ {1} )} - u _ {( a , y _ {1} , z _ {1} )} = a \varepsilon _ {x} ^ {0} ,$$
+
+$$\nu _ {( 0 , y _ {1} , z _ {1} )} - \nu _ {( a , y _ {1} , z _ {1} )} = 0 ,$$
+
+$$w _ {( 0 , y _ {1} , z _ {1} )} - w _ {( a , y _ {1} , z _ {1} )} = 0$$
+
+$$P _ {3} - P _ {4} : u _ {( x _ {1} , 0 , z _ {1} )} - u _ {( x _ {1} , b , z _ {1} )} = 0 ,$$
+
+$$\begin{array} {r} {\nu _ {( x _ {1} , 0 , z _ {1} )} - \nu _ {( x _ {1} , b , z _ {1} )} = b \varepsilon _ {y} ^ {0} ,} \end{array}$$
+
+$$w _ {( x _ {1} , 0 , z _ {1} )} - w _ {( x _ {1} , b , z _ {1} )} = 0$$
+
+$$P _ {5} : u = \nu = w = 0$$
+
+Edges:
+
+$$9-17 : u _ {( 0 , 0 , z _ {1} )} - u _ {( a , 0 , z _ {1} )} = a \varepsilon _ {x} ^ {0} ,$$
+
+$$\nu _ {( 0 , 0 , z _ {1} )} - \nu _ {( a , 0 , z _ {1} )} = 0 ,$$
+
+$$w _ {( 0 , 0 , z _ {1} )} - w _ {( a , 0 , z _ {1} )} = 0$$
+
+$$9-11 : u _ {( 0 , 0 , z _ {1} )} - u _ {( 0 , b , z _ {1} )} = 0 ,$$
+
+$$\nu _ {( 0 , 0 , z _ {1} )} - \nu _ {( 0 , b , z _ {1} )} = b \varepsilon _ {y} ^ {0} ,$$
+
+$$w _ {( 0 , 0 , z _ {1} )} - w _ {( 0 , b , z _ {1} )} = 0$$
+
+$$9-14 : u _ {( 0 , 0 , z _ {1} )} - u _ {( a , b , z _ {1} )} = a \varepsilon _ {x} ^ {0} ,$$
+
+$$\nu _ {( 0 , 0 , z _ {1} )} - \nu _ {( a , b , z _ {1} )} = b \varepsilon _ {y} ^ {0} ,$$
+
+$$10 , 13 , 16 , 19 : u = \nu = w = 0$$
+
+Vertices:
+
+$$\begin{array} {r l} \mathbf {u} _ {1} ^ \mathrm ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L ~ L \end{array}\tag{9}$$
+
+Planes:
+
+$$P _ {1} \ L - P _ {2} : T _ {( 0 , y _ {1} , z _ {1} )} - T _ {( a , y _ {1} , z _ {1} )} = 0$$
+
+$$P _ {3} - P _ {4} : T _ {( x _ {1} , 0 , z _ {1} )} - T _ {( x _ {1} , b , z _ {1} )} = 0$$
+
+$$P _ {5} : q _ {z} = - h ( T - T _ {\infty} )$$
+
+$$P _ {6} : q _ {z} = q _ {a e r o d y n a m i c} - \sigma \varepsilon \bigl ( T _ {w} ^ {4} - T _ {\infty} ^ {4} \bigr )$$
+
+Edges:
+
+$$9 \ - 17 : T _ {( 0 , 0 , z _ {1} )} - T _ {( a , 0 , z _ {1} )} = a \nabla T _ {x} ^ {0}\tag{10}$$
+
+$$9-11 : T _ {( 0 , 0 , z _ {1} )} - T _ {( 0 , b , z _ {1} )} = b \nabla T _ {y} ^ {0}$$
+
+$$9-14 : T _ {( 0 , 0 , z _ {1} )} - T _ {( a , b , z _ {1} )} = a \nabla T _ {x} ^ {0} + b \nabla T _ {y} ^ {0}$$
+
+Elements on 10, 13, 16, 19 $: q _ {z} = - K ( T - T _ {\infty} )$
+
+Elements on 12, 15, 18, 20 : $: q _ {z} = q _ {a e r o d y n a m i c} - \sigma \varepsilon \bigl ( T _ {w} ^ {4} - T _ {\infty} ^ {4} \bigr )$
+
+Vertices:
+
+Elements related to 1, $2 , 3 , 4 : q _ {z} = - K ( T - T _ {\infty} )$
+
+Elements related to 5, 6, 7, $, 8 : q _ {z} = q _ {a e r o d y n a m i c} - \sigma \varepsilon T _ {w} ^ {4}$
+
+For the TE materials involved in the multi-functional structure, the mechanical-thermoelectric performance is considered, while for other materials excluding TE ones, only thermal-mechanical problems are analyzed. For the TE material couple, the ground point is set on the lower surface of n material. The unsteady simulation is conducted for a duration of 0 to 1425 s. The initial temperature and electric potential are 300 K and 0 V, respectively.
+
+## 4.4. Interfaces between different materials
+
+There are five different materials and eight typical interfaces involved in the present structure as shown in Fig. 8. The thermal contact resistance (TCR) at the interface will influence the heat transfer process and thus brings about some effects on the calculation results. TCR always has a value range of $10 ^ {- 6}$ to $10 ^ {- 4} \ \mathrm{(Km} ^ {2} / \mathrm{W} )$ . In this work, the TCRs of interfaces $a , \ d$ and g are integrated as TCR1, and that of $c , h ,$ and f are integrated as TCR2. TCR1 and TCR2 are simulated by two additional layers with a thickness of 0.1 mm for each. The thermal conductivity of the layer should equal to the thickness divided by the assumed TCR, which means that if the TCR is assumed to be $10 ^ {- 4}$ , the thermal conductivity of the layer would be 1 W/(m K).
+
+In this paper, the influence of TCR (both TCR1 and TCR2) is considered by values of 0 and $10 ^ {- 4} \ ( \mathrm{K} \mathrm{m} ^ {2} / \mathrm{W} )$ It should be noted that for the case of TCR equals 0, no additional layers are simulated in the structure. Thermal contact resistance is a very complex issue related to interface topography, contact deformation, etc., and no quantitative description can be obtained for the problem studied in this work, thus most discussions in later Section 5 is based on the situation of no TCR consideration.
+
+Trajectory parameters of typical time
+
+## 5. Results and discussions
+
+The mechanical, thermal and electrical performances of the structure are analyzed along the typical trajectory (see Fig. 1) from 0 to 1425 s. The influence of TCR and the bottom active cooling is considered with the convective coefficient values of 10, 50, 100, 300 $\mathsf{W} / ( \mathsf{m} ^ {2} \mathsf{K} )$ in this section.
+
+## 5.1. Thermo-mechanical performance
+
+Figs. 9(a) and (b) are temperature distributions of the structure under convective coefficients of 10 and 100 $\mathsf{W} / ( \mathsf{m} ^ {2} \mathrm{K} ) ,$ , respectively. From left to right are results under 180, 495, 900 and 1400 s, respectively, and the corresponding trajectory parameters for each time are summarized in the top of the figure. For the legend, only the lowest and highest values are shown.
+
+As shown in Fig. 9(a), the temperature on the top surface increases from 302 to 918 K and then decreases to 720 K at the time of 1400 s, while that on the bottom surface increases from 300 to 635 K in the duration of 1400 s. However, the temperature on the top surface in Fig. 9(b) increases from 302 to 917 K and then decreases to 647 K, while that on the bottom surface increases from 300 to 423 K and then decreases to 394 K in a duration of 1400 s. Also, if the location of the red isothermal lines is concerned, one can find that the line moves downward with the increasing flight time, and the situation of higher convective coefficient moves more quickly. Although there must be several temperature ups and downs between these four typical times, this phenomenon reveals that the active cooling under the bottom of the TPS will cool the structure in a shorter time.
+
+A more detailed temperature distribution variation along with the flight time can be found in Fig. 10, in which four cases of different convective coefficients are calculated. The temperatures of the top and bottom surfaces which are represented by the center nodes of each surface are displayed by black and red lines, respectively. The temperature on the top surface has two obvious valleys after 495 s, while that on the bottom surface has much more gentle trends, which means that the temperature on the top surface is more sensitive to the variation of input heat flux. The black rectangles and the red circles in Fig. 10 are the temperature on the top and bottom surfaces, respectively, under the consideration of TCR of $10 ^ {- 4} \ : ( \mathrm{K} \ : \mathrm{m} ^ {2} / \mathrm{W} )$ . The convective coefficient is $10 \mathrm{\:W} / ( \mathrm{m} ^ {2} \mathrm{K} )$ in this case. TCR will result in the increasing of temperature on the top surface while the decreasing of that on the bottom surface, however, the influence is very limited with a largest deviation of 5% and an average deviation of 0.9%.
+
+Trajectory parameters of typical time
+
+The bottom surface of such TPS structure faces the vehicle structure, hence the bottom temperature is the criterion to validate the reliability of the TPS. For the studied four convective coefficients of 10, 50, 100 and $300 \mathrm{\:W/(m} ^ {2} \mathrm{K} )$ , the highest temperature of the bottom surface is 639, 497, 431 and 364 K, respectively. These values provide references for the TPS design of vehicles with different internal temperature control demands.
+
+It should be noted that the structures shown in Fig. 9 are the deformed volumes although they are very similar to the original ones. The thermal deformation calculated based on periodic mechanical boundary conditions should be discussed. Take y-displacement as an instance as shown in Fig. 11 in which the convective coefficient is 100 $\mathsf{W} / ( \mathsf{m} ^ {2} \mathrm{K} )$ and the four contour plots are results at 180, 495, 900 and 1400 s, respectively. It is clear that the distribution of y-displacement indicates the thermal deformation in y direction. According to the legend, one can find that the red region is the expansion in positive y-direction, while the blue one is in negative y-direction.
+
+Fig. 12 shows the difference of results obtained from nonperiodic boundary condition. In the right diagram, the planes in y-direction has no specific boundary conditions while that in x-direction are still in periodic constraint. The results of 495 s under convective coefficient of 100 $\mathsf{W} / ( \mathsf{m} ^ {2} \mathrm{K} )$ are shown in the figure. The volume results and that on boundary planes of $P _ {3} \ \left( y = 0 \right)$ and $P _ {4} ( y = b )$ are displayed, respectively. It is clear that the non-periodic boundary conditions will result in non-periodic displacement fields on symmetric boundaries, and the contour lines are in up-and-down strip pattern. The thermal expansion in insulation region is much larger than that in C/C-SiC and Ti-6Al-4V region, this is obviously unreasonable if the neighboring unit cells are considered, i.e., the translational movement of such deformed unit cells could not compose a complete structure since the C/C-SiC (and Ti-6Al-4V) regions are not continuous. However, the deformed structures that based on periodic boundary conditions can form a complete deformed TPS structure. This reveals that the periodic boundary conditions are essential to obtaining reasonable results for such unit cell.
+
+Trajectory parameters of typical time 
+(b) Convective coefficient 100 W/(m²•K)
+
+## 5.2. Thermoelectric performance
+
+Fig. 13 is the electric potential distribution of TE materials, and Figs. 13(a) and (b) are results under convective coefficients of 10 and 100 $\mathsf{W} / ( \mathsf{m} ^ {2} \mathrm{K} )$ , respectively. The electrical potential of the module increases from 0 at the bottom of n material to the highest value at the bottom of p material. Therefore, the largest value noted in the legend is the total electric potential of the module. For the convective coefficient of 10 ${\mathsf{W}} / ( {\mathsf{m}} ^ {2} {\mathsf{K}} ) ,$ , the electric potential increases from 0.0003 to 0.144 and then decreases to 0.024 V at the time of $1400 \ s ,$ while for the case of $100 \mathrm{\:W} / ( \mathrm{m} ^ {2} \mathrm{K} )$ , the potential increases from 0.0003 to 0.149 and then decreases to 0.065 V. Detailed results are shown in Fig. 14, in which the black solid line, red dashed line, blue dash-dotted line and the pink dotted line are the total potential of cases 10, 50, 100 and 300 $\mathsf{W} / ( \mathrm{m} ^ {2} \mathrm{K} ) ,$ respectively. Two valleys can be found in each line after 495 s, at which the highest output is obtained. The maximum potentials of each line are 0.144, 0.147, 0.149 and 0.154 V, respectively, while the average values for each case in the 1400 s duration are 0.048, 0.063, 0.69 and 0.076 V, respectively. For a module of $0.01 \ \mathrm{m} ^ {2}$ (100 × 100 mm) with 128 p–n couples, the maximum electric potential can be 18.4 to 19.7 V. It is clear that the higher convective coefficient obtains a larger electric potential, this should be due to the larger temperature difference across the TE materials. In
+
+Fig. 14, black rectangles represent the results considering the influence of TCR $( 10 ^ {- 4} ( \mathrm{K} \mathrm{m} ^ {2} / \mathrm{W} ) )$ with the convective coefficient of 10 $\mathsf{W} / ( \mathsf{m} ^ {2} \mathsf{K} )$ . It reveals in the figure that TCR has little effects on the total electric potentials with a maximum deviation of 4% and an average deviation of 1%.
+
+Fig. 15 shows the temperature and electric potentials on the top and bottom surfaces of n and p materials. In the figure, the black solid lines and the red dashed lines are the temperature on the top surface and the bottom surface of TE materials, and the blue solid lines and the pink dashed lines are the total electrical potential values in Fig. 14 and that of n material, respectively. In the upper part of the figure, the black solid lines and the red dashed lines are the temperature on the top surface and bottom surface of TE materials, respectively. It should be noted that each line in fact contains two coincident lines of p and n materials, respectively, and it means that p and n have very close temperature distributions which can be due to that both of their thermal conductivities are much larger than that of insulation material. In Fig. 15, for the results obtained with consideration of TCR $( 10 ^ {- 4} ~ ( \mathrm{K} \mathrm{m} ^ {2} / \mathrm{W} ) )$ , the black rectangles and the red circles represent the temperature on the top and the bottom surface of p-material, while the blue rectangles and the pink circles represent the electrical potentials of $p -$ and n-material, respectively. The convective coefficient is $10 {\mathrm{~W/(m}} ^ {2} {\mathrm{K)}}$ . Very small deviation can be found between results with TCR and without TCR: the maximum and average deviation of temperature are 0.6% and 0.2%, and that of electrical potential are 4% and 1%, respectively.
+
+## 5.3. Thermoelectric conversion efficiency
+
+The TE module can be used as a power supply, and its output power is related to the electrical load. In this work, the largest power for ideal conditions in which the load resistance equals to the resistance of TE materials are evaluated as shown in Fig. 16. In the figure, the solid lines indicate the output power, while the dashed lines are the TE conversion efficiency, and the black, red, blue and pink lines are results for different convective coefficients, respectively. The maximum output power is calculated by $E ^ {2} / ( 4 r )$
+
+where E is the total electric potential (see Fig. 14) while r is the electric resistance of the TE couple. In this work, r varies with flight time (changing temperature), and the values under average temperatures $( ( T _ {t o p - p \& n} + T _ {b o t t o m - p \& n} ) / 2 ,$ see Fig. 15) are used in the calculation. The TE conversion efficiency is calculated by the aerodynamic heat divided by the output power, and the aerodynamic heat is account for the area of the unit cell model rather than only the TE materials.
+
+It has to be pointed out that in a real engineering condition, the electric load is always steady and larger than the resistance of TE materials, and thus the output power should be less than the ideal value shown in Fig. 16. As shown in Fig. 16, the largest power that a p–n couple can supply increases from 0 V to its peak value and then decreases to a smaller value during the mission. The TE conversion efficiency has very similar trend excluding the end of those lines, which are in a sharp increasing. This is because in an unsteady simulation as this work, when the input heat flux decreases in a very short time, the temperature difference that can be used to create electric energy will maintain for a while.
+
+The influence of TCR on the TE conversion can also be found in Fig. 16, in which the black rectangles and the black circles are the largest output power and the TE conversion efficiency, respectively. The maximum deviation is 9% and the average deviation is only 2%, which means that under the typical vehicle and trajectory studied in this work, the TCR at different material interfaces has limited influence on the conversion efficiency of the developed TE module.
+
+In addition, both the output power and the conversion efficiency increase with a larger conductive coefficient. As shown in Table 3, for cases of K = 10, 50, 100 and 300 ${\mathsf{W}} / ( {\mathsf{m}} ^ {2} {\mathsf{K}} ) ,$ , the largest and the average values of output power and TE conversion efficiency are listed. The largest and the average power increase from 0.0182 to 0.0209 W and 0.00317 to 0.00713 W, respectively, while the largest and the average conversion efficiency increases from 2.63% to 4.09% and 0.237% to 0.607%, respectively. It means that the active cooling under the TPS bottom is very useful in improving the TE performance.
+
+It also worth noting that for a TPS structure (128 p–n couples) of just 0.01 $\mathrm{m} ^ {2}$ , the largest transient power and the average power will be 2.33 to 2.68 W and 0.406 to 0.913 W, respectively. The area of the compression surface of a typical reusable launch vehicle would be about $30 ~ \mathrm{m} ^ {2}$ as discussed in Section 1, which means that the largest transient output power and the average power during the mission for the studied vehicle and trajectory in this work can be higher than 6000 and 1000 W, respectively. Therefore, such kind of TPS structure has potentials to provide electrical power of thousands Watt and could be a part substitution of power supply especially for the vehicle that has a long time hypersonic flight.
+
+## Conclusions
+
+In this work, a thermoelectric material based multifunctional TPS structure is proposed and the relevant evaluation approach is developed. The TE module in the structure can convert a certain amount of aerodynamic heat into electricity supply. The TE couple consists of $\mathsf{Ca} _ {3} \mathsf{Co} _ {4} \mathsf{O} _ {9}$ based p-type material, and $\mathrm{Sr} _ {0.9} \mathrm{La} _ {0.1} \mathrm{Ti} 0 _ {3}$ based n-type compound which is fabricated by solid state reaction method. The mechanical-thermoelectric performance of the structure is studied based on a unit cell model. The aerodynamic heat is calculated by an engineering-based method based on a typical reusable launch vehicle with a typical trajectory curve, and is used as the input boundary conditions for the numerical simulation. The simulation approach developed in this work can be used in analysis of other trajectories of hypersonic vehicles. The results show some conclusions:
+
+1. In the thermal-mechanical studies of a unit cell model that formulated based on translational symmetries, the periodic boundary condition is essential to obtaining reasonable results.
+
+2. For the TPS structure proposed in this work, if a convection heat transfer with coefficients of 10, 50, 100 and 300 W/(m2 K) are provided under the bottom, in the studied trajectory duration the highest temperature of the bottom surface is 639, 497, 431 and 364 K, respectively, and this provide references for the TPS design of vehicles with different internal temperature control demands.
+
+3. In the studied trajectory duration, a multi-functional TPS structure of 0.01 m2 can provide maximum average output powers of 0.406, 0.618, 0.756 and 0.913 W, respectively, and considering the large area of real vehicle, such TPS has potentials to provide a part substitution of power supply.
+
+4. Active cooling is very useful in improving the thermoelectric performance including the output power and the TE conversion efficiency.
+
+## Conflict of interest statement
+
+The authors declared that they have no conflict of interest to this work.
+
+## Omitted Tables
+
+- [Table 1 omitted; saved to tables/table_001.md]
+- [Table 2 omitted; saved to tables/table_002.md]
+- [Table 3 omitted; saved to tables/table_003.md]

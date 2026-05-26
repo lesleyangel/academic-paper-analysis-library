@@ -1,0 +1,97 @@
+[1] R.S. Krishnamurthy, J. Hatton, Space science and technologies to advance health- related sustainable development goals, Bull. World Health Organ. 96 (2018), 3-3a.
+
+[2] L.A. Kramer, K.M. Hasan, M.B. Stenger, A. Sargsyan, S.S. Laurie, C. Otto, R. J. Ploutz-Snyder, K. Marshall-Goebel, R.F. Riascos, B.R. Macias, Intracranial effects of microgravity: a prospective longitudinal MRI study, Radiology 295 (2020) 640–648.
+
+[3] E. Pechenkova, I. Nosikova, A. Rumshiskaya, L. Litvinova, I. Rukavishnikov, E. Mershina, V. Sinitsyn, A. Van Ombergen, B. Jeurissen, S. Jillings, S. Laureys, J. Sijbers, A. Grishin, L. Chernikova, I. Naumov, L. Kornilova, F.L. Wuyts, E. Tomilovskaya, I. Kozlovskaya, Alterations of functional brain connectivity after long-duration spaceflight as revealed by fMRI, Front. Physiol. 10 (2019).
+
+[4] A.R. Hargens, D.E. Watenpaugh, Cardiovascular adaptation to spaceflight, Med. Sci. Sports Exerc. 28 (1996) 977–982.
+
+[5] B. Yulug, G. Erkol, E. Kilic, An interesting link between microgravity and psychiatric diseases, J. Neuropsychiatry Clin. Neurosci. 22 (2010) E
+
+[6] H.S. Cooper Jr., The loneliness of the long-duration astronaut, Air Space 11 (1996) 37–45.
+
+[7] T. Mano, N. Nishimura, S. Iwase, Sympathetic neural influence on bone metabolism in microgravity (Review), Acta Physiol. Hung. 97 (2010) 354–361.
+
+[8] M. Zayzafoon, V.E. Meyers, J.M. McDonald, Microgravity: the immune response and bone, Immunol. Rev. 208 (2005) 267–280.
+
+[9] J.M. Scott, J. Stoudemire, L. Dolan, M. Downs, Leveraging spaceflight to advance cardiovascular research on Earth, Circ. Res. 130 (2022) 942–957.
+
+[10] B. Zhang, L. Chen, Y.G. Bai, J.B. Song, J.H. Cheng, H.Z. Ma, J. Ma, M.J. Xie, miR- 137 and its target T-type Ca(V) 3.1 channel modulate dedifferentiation and proliferation of cerebrovascular smooth muscle cells in simulated microgravity rats by regulating calcineurin/NFAT pathway, Cell Prolif. 53 (2020) e12774.
+
+[11] K.E. Hupfeld, H.R. McGregor, P.A. Reuter-Lorenz, R.D. Seidler, Microgravity effects on the human brain and behavior: dysfunction and adaptive plasticity, Neurosci. Biobehav. Rev. 122 (2021) 176–189.
+
+12. E12.
+
+[12] A.C. Stahn, S. Kuhn, Extreme environments for understanding brain and cognition, Trends Cognit. Sci. 26 (2022) 1–3.
+
+[13] I.B. Krasnov, Gravitational neuromorphology, Adv. Space Biol. Med. 4 (1994) 85–110.
+
+[14] Q. Li, B.A. Barres, Microglia and macrophages in brain homeostasis and disease, Nat. Rev. Immunol. 18 (2018) 225–242.
+
+[15] R. Orihuela, C.A. McPherson, G.J. Harry, Microglial M1/M2 polarization and metabolic states, Br. J. Pharmacol. 173 (2016) 649–665.
+
+[16] A.B. Lopez-Rodriguez, E. Hennessy, C.L. Murray, A. Nazmi, H.J. Delaney, D. Healy, S.G. Fagan, M. Rooney, E. Stewart, A. Lewis, N. de Barra, P. Scarry, L. Riggs-Miller, D. Boche, M.O. Cunningham, C. Cunningham, Acute systemic inflammation exacerbates neuroinflammation in Alzheimer’s disease: IL-1 beta drives amplified responses in primed astrocytes and neuronal network dysfunction, Alzheimers Dement. 17 (2021) 1735–1755.
+
+[17] B.L. Brett, R.C. Gardner, J. Godbout, K. Dams-O’Connor, C.D. Keene, Traumatic brain injury and risk of neurodegenerative disorder, Biol. Psychiatr. 91 (2022) 498–507.
+
+[18] S. Voet, M. Prinz, G. van Loo, Microglia in central nervous system inflammation and multiple sclerosis pathology, Trends Mol. Med. 25 (2019) 112–123.
+
+[19] T. Lin, J. Du, L. Liu, Z. Wu, X.K. Kong, Y. Liu, Y.L. Cai, Treatment with minocycline suppresses microglia activation and reverses neural stem cells loss after simulated microgravity, BioMed Res. Int. 2020 (2020).
+
+[20] Y.A. Chelyshev, Y.O. Mukhamedshina, T.V. Povysheva, G.F. Shaymardanova, A. A. Rizvanov, M.V. Nigmetzyanova, O.V. Tiapkina, N.I. Bondarenko, E.E. Nikolskiy, R.R. Islamov, Characterization of spinal cord glial cells in a model of hindlimb unloading in mice, Neuroscience 280 (2014) 328–339.
+
+[21] T. Huyan, M.J. Li, W.T. Chen, X.J. Zhou, D. Pei, P. Shang, C.R. Wu, Simulated microgravity promotes oxidative stress-induced apoptosis in ARPE-19 cells associated with Nrf 2 signaling pathway, Acta Astronaut. 198 (2022) 161–169.
+
+[22] T. Huyan, Y. Du, H. Peng, X. Hu, C. Wu, Q. Li, D. Dong, J. Li, P. Shang, Evaluation of osteoclast-derived exosomal miRNA under simulated microgravity conditions using next-generation sequencing, Acta Astronaut. 161 (2019) 75–86.
+
+[23] V. Koppelmans, O. Pasternak, J.J. Bloomberg, Y.E. Dios, S.J. Wood, R. Riascos, P. A. Reuter-Lorenz, I.S. Kofman, A.P. Mulavara, R.D. Seidler, Intracranial fluid redistribution but No white matter microstructural changes during a spaceflight analog, Sci. Rep. 7 (2017) 3154.
+
+[24] A.P. Salazar, H.R. McGregor, K.E. Hupfeld, N.E. Beltran, I.S. Kofman, Y.E. De Dios, R.F. Riascos, P.A. Reuter-Lorenz, J.J. Bloomberg, A.P. Mulavara, S.J. Wood, R. Seidler, Changes in working memory brain activity and task-based connectivity after long-duration spaceflight, Cerebr. Cortex 33 (2022) 2641–2654.
+
+[25] M. Colonna, O. Butovsky, Microglia function in the central nervous system during health and neurodegeneration, Annu. Rev. Immunol. 35 (2017) 441–468.
+
+[26] B. Prasad, D. Grimm, S.M. Strauch, G.S. Erzinger, T.J. Corydon, M. Lebert, N. E. Magnusson, M. Infanger, P. Richter, M. Kruger, Influence of microgravity on apoptosis in cells, tissues, and other systems in vivo and in vitro, Int. J. Mol. Sci. 21 (2020).
+
+[27] F. Wei, K. Flowerdew, M. Kinzel, L.E. Perotti, J. Asiatico, M. Omer, C. Hovell, V. Reumers, M.J. Coathup, Changes in interstitial fluid flow, mass transport and the bone cell response in microgravity and normogravity, Bone Res. 10 (2022) 65.
+
+[28] H.S. Kwon, S.H. Koh, Neuroinflammation in neurodegenerative disorders: the roles of microglia and astrocytes, Transl. Neurodegener. 9 (2020) 42.
+
+[29] F.E. Garrett-Bakelman, M. Darshi, S.J. Green, R.C. Gur, L. Lin, B.R. Macias, M. J. McKenna, C. Meydan, T. Mishra, J. Nasrini, B.D. Piening, L.F. Rizzardi, K. Sharma, J.H. Siamwala, L. Taylor, M.H. Vitaterna, M. Afkarian, E. Afshinnekoo, S. Ahadi, A. Ambati, M. Arya, D. Bezdan, C.M. Callahan, S. Chen, A.M.K. Choi, G. E. Chlipala, K. Contrepois, M. Covington, B.E. Crucian, I. De Vivo, D.F. Dinges, D. J. Ebert, J.I. Feinberg, J.A. Gandara, K.A. George, J. Goutsias, G.S. Grills, A. R. Hargens, M. Heer, R.P. Hillary, A.N. Hoofnagle, V.Y.H. Hook, G. Jenkinson, P. Jiang, A. Keshavarzian, S.S. Laurie, B. Lee-McMullen, S.B. Lumpkins, M. MacKay, M.G. Maienschein-Cline, A.M. Melnick, T.M. Moore, K. Nakahira, H. H. Patel, R. Pietrzyk, V. Rao, R. Saito, D.N. Salins, J.M. Schilling, D.D. Sears, C. K. Sheridan, M.B. Stenger, R. Tryggvadottir, A.E. Urban, T. Vaisar, B. Van Espen, J. Zhang, M.G. Ziegler, S.R. Zwart, J.B. Charles, C.E. Kundrot, G.B.I. Scott, S. M. Bailey, M. Basner, A.P. Feinberg, S.M.C. Lee, C.E. Mason, E. Mignot, B.K. Rana, S.M. Smith, M.P. Snyder, F.W. Turek, The NASA Twins Study: a multidimensional analysis of a year-long human spaceflight, Science 364 (2019).
+
+[30] G. Barisano, F. Sepehrband, H.R. Collins, S. Jillings, B. Jeurissen, J.A. Taylor, C. Schoenmaekers, C. De Laet, I. Rukavishnikov, I. Nosikova, L. Litvinova, A. Rumshiskaya, J. Annen, J. Sijbers, S. Laureys, A. Van Ombergen, V. Petrovichev, V. Sinitsyn, E. Pechenkova, A. Grishin, P. Zu Eulenburg, M. Law, S. Sunaert, P. M. Parizel, E. Tomilovskaya, D.R. Roberts, F.L. Wuyts, The effect of prolonged spaceflight on cerebrospinal fluid and perivascular spaces of astronauts and cosmonauts, Proc. Natl. Acad. Sci. U. S. A. 119 (2022) e2120439119.
+
+[31] Y. Wang, X. Zhang, C. Wang, W. Huang, Q. Xu, D. Liu, W. Zhou, S. Chen, Y. Jiang, Modulation of biological motion perception in humans by gravity, Nat. Commun. 13 (2022) 2765.
+
+[32] S.D. Mhatre, J. Iyer, J. Petereit, R.M. Dolling-Boreham, A. Tyryshkina, A.M. Paul, R. Gilbert, M. Jensen, R.J. Woolsey, S. Anand, M.B. Sowa, D.R. Quilici, S.V. Costes, S. Girirajan, S. Bhattacharya, Artificial gravity partially protects space-induced neurological deficits in Drosophila melanogaster, Cell Rep. 40 (2022) 111279.
+
+[33] X. Yang, S. Xu, Y. Qian, Q. Xiao, Resveratrol regulates microglia M1/M2 polarization via PGC-1 alpha in conditions of neuroinflammatory injury, Brain Behav. Immun. 64 (2017) 162–172.
+
+[34] Y. Kong, F. Liu, B. Ma, J. Duan, W. Yuan, Y. Sang, L. Han, S. Wang, H. Liu, Wireless localized electrical stimulation generated by an ultrasound-driven piezoelectric discharge regulates proinflammatory macrophage polarization, Adv. Sci. 8 (2021) 2100962.
+
+[35] S.Y. Cheon, E.J. Kim, J.M. Kim, E.H. Kam, B.W. Ko, B.N. Koo, Regulation of microglia and macrophage polarization via apoptosis signal-regulating kinase 1 silencing after ischemic/hypoxic injury, Front. Mol. Neurosci. 10 (2017) 261.
+
+[36] H. Zhao, A. Alam, Q. Chen, A.E. M, A. Pal, S. Eguchi, L. Wu, D. Ma, The role of microglia in the pathobiology of neuropathic pain development: what do we know? Br. J. Anaesth. 118 (2017) 504–516.
+
+[37] X. Kong, J. Gao, Macrophage polarization: a key event in the secondary phase of acute spinal cord injury, J. Cell Mol. Med. 21 (2017) 941–954.
+
+[38] A. Thangaraj, P. Periyasamy, M.L. Guo, E.T. Chivero, S. Callen, S. Buch, Mitigation of cocaine-mediated mitochondrial damage, defective mitophagy and microglial activation by superoxide dismutase mimetics, Autophagy 16 (2020) 289–312.
+
+[39] N. Muller, M.J. Schwarz, COX-2 inhibition in schizophrenia and major depression, Curr. Pharmaceut. Des. 14 (2008) 1452–1465.
+
+[40] Q. Zhao, W. Dai, H.Y. Chen, R.E. Jacobs, B.V. Zlokovic, B.T. Lund, A. Montagne, A. Bonnin, Prenatal disruption of blood-brain barrier formation via cyclooxygenase activation leads to lifelong brain inflammation, Proc. Natl. Acad. Sci. U. S. A. 119 (2022) e2113310119.
+
+[41] P. Xu, M.W. Huang, C.X. Xiao, F. Long, Y. Wang, S.Y. Liu, W.W. Jia, W.J. Wu, D. Yang, J.F. Hu, X.H. Liu, Y.Z. Zhu, Matairesinol suppresses neuroinflammation and migration associated with Src and ERK1/2-NF-kappaB pathway in activating BV2 microglia, Neurochem. Res. 42 (2017) 2850–2860.
+
+[42] R. Roskoski Jr., Src protein-tyrosine kinase structure, mechanism, and small molecule inhibitors, Pharmacol. Res. 94 (2015) 9–25.
+
+[43] E.M. Ritzi, E.B. Walthall, Positive and negative modification of dexamethasone- mediated MMTV gp52 release by progesterone pretreatment of tumor cells, Intervirology 30 (1989) 111–116.
+
+[44] P. Gass, T. Herdegen, Neuronal expression of AP-1 proteins in excitotoxic- neurodegenerative disorders and following nerve fiber lesions, Prog. Neurobiol. 47 (1995) 257–290.
+
+[45] M. Engeln, M.F. Bastide, E. Toulme, B. Dehay, M. Bourdenx, E. Doudnikoff, Q. Li, C.E. Gross, E. Boue-Grabot, A. Pisani, E. Bezard, P.O. Fernagut, Selective inactivation of striatal FosB/DeltaFosB-expressing neurons alleviates L-DOPA- induced dyskinesia, Biol. Psychiatr. 79 (2016) 354–361.
+
+[46] V. Maneu, A. Yanez, C. Murciano, A. Molina, M.L. Gil, D. Gozalbo, Dectin-1 mediates in vitro phagocytosis of Candida albicans yeast cells by retinal microglia, FEMS Immunol. Med. Microbiol. 63 (2011) 148–150.
+
+[47] B. Ma’arif, M. Agil, H. Laswati, The enhancement of Arg1 and activated ERbeta expression in microglia HMC3 by induction of 96% ethanol extract of Marsilea crenata Presl. leaves, J. Basic Clin. Physiol. Pharmacol. 30 (2020).
+
+[48] Z. Yang, X.F. Ming, Functions of arginase isoforms in macrophage inflammatory responses: impact on cardiovascular diseases and metabolic disorders, Front. Immunol. 5 (2014) 533.

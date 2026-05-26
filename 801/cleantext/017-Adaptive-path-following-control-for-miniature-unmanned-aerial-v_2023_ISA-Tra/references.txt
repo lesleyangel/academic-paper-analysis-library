@@ -1,0 +1,61 @@
+[1] Maza I, Caballero F, Capit´an J, et al. Experimental results in multi-UAV coordination for disaster management and civil security applications. J Intell Robot Syst 2011;61(1):563–85.
+
+[2] Schmale Iii DG, Dingus BR, Reinholtz C. Development and application of an autonomous unmanned aerial vehicle for precise aerobiological sampling above agricultural fields. J. Field Robotics 2008;25(3):133–47.
+
+[3] Sujit PB, Kingston D, Beard R. Cooperative forest fire monitoring using multiple UAVs. In: 2007 46th IEEE conference on decision and control. IEEE; 2007. p. 4875–80.
+
+[4] Frew EW, Argrow B. Embedded reasoning for atmospheric science using unmanned aircraft systems. In: 2010 AAAI spring symposium series. 2010.
+
+[5] Askari A, Mortazavi M, Talebi HA. UAV formation control via the virtual structure approach. J. Aerosp. Eng. 2015;28(1):04014047.
+
+[6] Su Z, Wang H, Yao P, et al. Back-stepping based anti-disturbance flight controller with preview methodology for autonomous aerial refueling. Aerosp. Sci. Technol. 2017;61:95–108.
+
+[7] Wu J, Wang H, Li N, et al. Path planning for solar-powered UAV in urban environment. Neurocomputing 2018;275:2055–65.
+
+[8] Muniraj D, Palframan MC, Guthrie KT, et al. Path-following control of small fixed- wing unmanned aircraft systems with H∞ type performance. Control Eng. Pract. 2017;67:76–91.
+
+[9] Goncalves VM, Pimenta LCA, Maia CA, et al. Vector fields for robot navigation along time-varying curves in n-dimensions. IEEE Trans. Robot. 2010;26(4):647–59.
+
+[10] Zhu M, Tian Y, Chen T, et al. Spacial vector field path following for a stratospheric airship. In: 2016 35th Chinese control conference (CCC). IEEE; 2016. p. 10801–6.
+
+[11] Kapitanyuk YA, Proskurnikov AV, Cao M. A guiding vector-field algorithm for path-following control of nonholonomic mobile robots. IEEE Trans. Control Syst. Technol. 2017;26(4):1372–85.
+
+[12] Beard RW, Ferrin J, Humpherys J. Fixed wing UAV path following in wind with input constraints. IEEE Trans. Control Syst. Technol. 2014;22(6):2103–17.
+
+[13] Chitsaz H, LaValle SM. Time-optimal paths for a dubins airplane. In: 2007 46th IEEE conference on decision and control. IEEE; 2007. p. 2379–84.
+
+[14] Fari S, Wang X, Roy S, et al. Addressing unmodeled path-following dynamics via adaptive vector field: a UAV test case. IEEE Trans. Aerosp. Electron. Syst. 2019;56 (2):1613–22.
+
+[15] Rezende AMC, Gonçalves VM, Raffo GV, et al. Robust fixed-wing UAV guidance with circulating artificial vector fields. In: 2018 IEEE/RSJ international conference on intelligent robots and systems (IROS). IEEE; 2018. p. 5892–9.
+
+[16] Yao W, Lin B, Anderson BDO, Cao M. Topological analysis of vector-field guided path following on manifolds. IEEE Trans Autom Control. https://doi.org/10.11 09/TAC.2022.3151236.
+
+[17] Yao W, Lin B, Anderson BDO, Cao M. Guiding vector fields for following occluded paths. IEEE Trans. Automat. Control 2022;67(8):4091–106.
+
+[18] Han J. From PID to active disturbance rejection control. IEEE Trans Ind Electron 2009;56(3):900–6.
+
+[19] Mokhtari MR, Braham AC, Cherki B. Extended state observerbased control for coaxial-rotor UAV. ISA Trans 2016;61:1–14.
+
+[20] Shao X, Wang H, Zhang HP. Enhanced trajectory linearization control based advanced guidance and control for hypersonic re-entry vehicle with multiple disturbances. Aerosp. Sci. Technol. 2015;46:523–36.
+
+[21] Ma D, Xia Y, Li T, et al. Active disturbance rejection and predictive control strategy for a quadrotor helicopter. IET Control Theory Appl. 2016;10(17):2213–22.
+
+[22] Son YI, Kim IH, Choi DS, et al. Robust cascade control of electric motor drives using dual reduced-order PI observer. IEEE Trans. Ind. Electron. 2014;62(6):3672–82.
+
+[23] Kim SK. Offset-free one-step ahead state predictor for power electronic applications using robust proportional–Integral observer. IEEE Trans. Ind. Electron. 2015;63(3): 1763–70.
+
+[24] Zhu D, Hua X, Sun B. A neuro-dynamics control strategy for real-time tracking control of autonomous underwater vehicles. J Navig 2014;67(1):113–27.
+
+[25] Edison E, Shima T. Integrated task assignment and path optimization for cooperating uninhabited aerial vehicles using genetic algorithms. Comput. Oper. Res. 2011;38(1):340–56.
+
+[26] Cai Wenjing, et al. Disturbance suppression for quadrotor UAV using sliding-mode- observer-based equivalent-input-disturbance approach. ISA Trans 2019;92: 286–97.
+
+[27] Wu Xiwei, et al. Modeling and sliding mode-based attitude tracking control of a quadrotor UAV with time-varying mass. ISA Trans. 2022;124:436–43.
+
+[28] Xiang X, Yu C, Zhang Q. Robust fuzzy 3D path following for autonomous underwater vehicle subject to uncertainties. Comput. Oper. Res. 2017;84:165–77.
+
+[29] Sujit PB, Saripalli S, Sousa JB. Unmanned aerial vehicle path following: A survey and analysis of algorithms for fixed-wing unmanned aerial vehicles. IEEE Control Syst. Mag. 2014;34(1):42–59.
+
+[30] McLain Timothy, Beard Randall W, Owen Mark. Implementing dubins airplane paths on fixed-wing UAVs. All Faculty Publications; 2014. p. 1900. https://schola rsarchive.byu.edu/facpub/1900.
+
+[31] Dryden HL. A review of the statistical theory of turbulence. Quart. Appl. Math. 1943;1(1):7–42.

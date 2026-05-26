@@ -1,0 +1,24 @@
+Parameters,Value
+Properties,Mass,Initial mass (kg),"72,784"
+,,Total: stage 1 (kg),"49,320"
+,,Propellant: stage 1 (kg),"40,490"
+,,Total: stage 2 (kg),"23,464"
+,,Propellant: stage 2 (kg),"16,820"
+,Engine,Thrust: stage 1 (kN),1083.1
+,,Work time: stage 1,110.6
+,,(s) Thrust: stage 2 (kN),
+,,Work time: stage 2,110.094 700
+,Aerodynamic,(s),
+,,Drag coefficient Reference area (m2),0.5 4π
+Trajectory,Initial (position and,"$r _ { x , 0 }$ (km)",6056.7
+conditions,velocity),"$r _ { y , 0 }$ (km)",209.2
+,,(km),
+,,"$r _ { z , 0 }$",2144.8
+,,"$\nu _ { x , 0 }$ (m/s)",527.0
+,,"$\nu _ { y , 0 }$ (m/s)",2983.0
+,Terminal (orbital,"$\nu _ { z , 0 }$ (m/s) Semi-major axis a",186.9
+,elements),(km),"24,364"
+,,Eccentricity e,0.7308
+,,Inclination i (deg),19.5
+,,RAAN Ω (deg),270
+,,AP ω (deg),125

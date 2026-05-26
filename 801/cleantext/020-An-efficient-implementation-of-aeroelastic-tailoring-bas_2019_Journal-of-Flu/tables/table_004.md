@@ -1,0 +1,4 @@
+| Evaluation method | Process | CPU time |
+| --- | --- | --- |
+| Direct | Construct a new set of POD/ROMs Time histories responses of the generalized displacement for a values of free stream dynamic pressure Three structural parameter variation (Model A, B, C) Structure with 10o0 times structural parameter change | 16h 1.78s 48 h 5.34 s 16009.72 h |
+| Approximate | Construct the initial set of POD/ROMs for original structure Compute Z use extended Kirsch combined method Time histories responses of the generalized displacement for a values of free stream dynamic pressure Three structural parameter variation (Model A, B, C) Structure with 10oo0 times structural parameter change | 16h 0.74s 1.82s 16 h 7.68 s 26.31h |

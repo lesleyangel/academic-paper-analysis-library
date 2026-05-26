@@ -1,0 +1,4 @@
+|  | UC1 | UC2 | UC3 | UC4 | $\mathtt { E q . } ( 1 4 )$ |
+| --- | --- | --- | --- | --- | --- |
+| $\lambda _ { x x } ^ { 0 } \left( \mathrm { W / m \mathrm { . K } } \right)$ | 1.6503 | 1.6505 | 1.6505 | 1.6504 | 1.6506 |
+| $\lambda _ { y y } ^ { \mathrm { ~ 0 ~ } } ( \mathrm { W } / \mathrm { m } { \cdot } \mathrm { K } )$ | 1.6503 | 1.6505 | 1.6505 | 1.6505 | 1.6506 |

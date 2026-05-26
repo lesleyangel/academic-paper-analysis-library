@@ -1,0 +1,69 @@
+[1] F-Y. Zuo, S. Mölder, Hypersonic wavecatcher intakes and variable-geometry tur- bine based combined cycle engines, Prog. Aerosp. Sci. 106 (2019) 108–144.
+
+[2] S. Luo, Y. Sun, J. Liu, J. Song, W. Cao, Performance analysis of the hypersonic vehicle with dorsal and ventral intake, Aerosp. Sci. Technol. 131 (2022) 107964.
+
+[3] O. Musa, G. Huang, Z. Yu, Assessment of new pressure-corrected design method for hypersonic internal waverider intake, Acta Astronaut. 201 (2022) 230–246.
+
+[4] E.T. Curran, Scramjet engines: the first forty years, J. Propuls. Power 17 (6) (2001) 1138–1148.
+
+[5] C.J. Trefny, J.M. Roche, Performance Validation Approach for the GTX Air- Breathing Launch Vehicle, NASA/TM–2002-211495, 2002.
+
+[6] U.B. Mehta, M.J. Aftosmis, J.V. Bowles, S.A. Pandya, Skylon aerodynamics and SABRE plumes, in: 20th AIAA International Space Planes and Hypersonic Sys- tems and Technologies Conference, American Institute of Aeronautics and As- tronautics, 2015.
+
+[7] J.A. Medina, H. Patel, B. Chudoba, Inlet sizing of hypersonic vehicles for con- ceptual design, in: ASCEND 2021, American Institute of Aeronautics and Astro- nautics, 2021.
+
+[8] C. Yunseok, M. Yost, E. Lerner, J.F. Driscoll, Model of a JP-7-fueled generic X- 51 vehicle: effects of varying scramjet flowpath, in: AIAA Scitech 2021 Forum, American Institute of Aeronautics and Astronautics, 2021.
+
+[9] Y. Choi, M.F. Yost, E.W. Lerner, J.F. Driscoll, Scramjet performance computed for a JP-7-fueled generic X-51 vehicle, J. Propuls. Power 38 (3) (2022) 348–358.
+
+[10] S.N.B. Murthy, E.T. Curran, Strutjet rocket-based combined-cycle engine, in: Scramjet Propulsion, American Institute of Aeronautics and Astronautics, 2001, pp. 697–755.
+
+[11] W.Y.K. Chan, D.J. Mee, M.K. Smart, J.C. Turner, Drag reduction by boundary- layer combustion: effects of flow disturbances from rectangular-to-elliptical- shape-transition inlets, J. Propuls. Power 31 (5) (2015) 1256–1267.
+
+[12] N.O.P. Raj, K. Venkatasubbaiah, A new approach for the design of hypersonic scramjet inlets, Phys. Fluids 24 (8) (2012) 086103.
+
+[13] P.P.B. Araújo, M.V.S. Pereira, G.S. Marinho, J.F.A. Martos, P.G.P. Toro, Optimiza- tion of scramjet inlet based on temperature and Mach number of supersonic combustion, Aerosp. Sci. Technol. 116 (2021) 106864.
+
+[14] K. Oswatitsch, Pressure recovery for missiles with reaction propulsion at high supersonic speeds (the efficiency of shock diffusers), in: W. Schnei- der, M. Platzer (Eds.), Contributions to the Development of Gasdynamics: Se- lected Papers, Translated on the Occasion of K. Oswatitsch’s 70th Birthday, Vieweg+Teubner Verlag, Wiesbaden, 1980, pp. 290–323.
+
+[15] M.K. Smart, Optimization of two-dimensional scramjet inlets, J. Aircr. 36 (2) (1999) 430–433.
+
+[16] J. Huang, L. Duan, M.M. Choudhari, Direct numerical simulation of hypersonic turbulent boundary layers: effect of spatial evolution and Reynolds number, J. Fluid Mech. 937 (2022) A3.
+
+[17] F. Tong, J. Duan, X. Li, Shock wave and turbulent boundary layer interaction in a double compression ramp, Comput. Fluids 229 (2021) 105087.
+
+[18] N. Lamorte, P. Friedmann, D. Dalle, S. Torrez, J. Driscoll, Uncertainty propaga- tion in integrated airframe propulsion system analysis for hypersonic vehicles, in: 17th AIAA International Space Planes and Hypersonic Systems and Tech- nologies Conference, American Institute of Aeronautics and Astronautics, 2011.
+
+[19] C. Yao, Z. Liu, J. Wei, S. Qu, G. Zhang, Effect of wall deformation on aerodynamic performance for mixed compression intake, in: 44th AIAA Fluid Dynamics Con- ference, American Institute of Aeronautics and Astronautics, 2014.
+
+[20] K. Ye, Z. Ye, Q. Zhang, Z. Qu, Effects of aeroelasticity on the performance of hypersonic inlet, Proc. Inst. Mech. Eng., Part G, J. Aerosp. Eng. 232 (11) (2017) 2108–2121.
+
+[21] Q. Qin, J. Xu, K. Chen, Suppression and utilisation of aeroelastic behaviour in turbine-based combined cycle inlet, J. Fluids Struct. 95 (2020) 102983.
+
+[22] K. Ye, Z. Ye, C. Li, J. Wu, Effects of the aerothermoelastic deformation on the performance of the three-dimensional hypersonic inlet, Aerosp. Sci. Technol. 84 (2019) 747–762.
+
+[23] K. Ye, Z. Feng, X. Liu, Z. Ye, Numerical investigation of the influence of aerother- moelastic dynamic response on the performance of the three-dimensional hy- personic inlet, Proc. Inst. Mech. Eng., Part G, J. Aerosp. Eng. 236 (10) (2022) 2131–2147.
+
+[24] O.M. Hohn, A. Gülhan, Experimental investigation on the influence of sidewall compression on the flow field of a scramjet inlet at Mach 7, 2011.
+
+[25] J.V.M.B. de Siqueira, M.A.P. Rosa, G.B. Ribeiro, Three-dimensional CFD investiga- tion of a scramjet inlet under different freestream conditions, Therm. Sci. Eng. Prog. 27 (2022) 101051.
+
+[26] J. Huo, S. Yi, W. Zheng, H. Niu, X. Lu, D. Gang, Experimental investigation of expansion effect on shock wave boundary layer interaction near a compression ramp, Chin. J. Aeronaut. 35 (12) (2022) 89–101.
+
+[27] G. Chiapparino, C. Stemmer, Numerical investigation of a Mach 6 hypersonic laminar flow on two-dimensional cold-wall compression corners with con- trolled surface roughness, Int. J. Heat Fluid Flow 94 (2022) 108937.
+
+[28] H. Jiang, J. Liu, S. Luo, W. Huang, J. Wang, M. Liu, Thermochemical non- equilibrium effects on hypersonic shock wave/turbulent boundary-layer inter- action, Acta Astronaut. 192 (2022) 1–14.
+
+[29] C. Dai, B. Sun, S. Zhou, C. Zhuo, C. Zhou, L. Yue, Influence of high temperature non-equilibrium effects on Mach 12 scramjet inlet, Acta Astronaut. 193 (2022) 237–254.
+
+[30] C. Dai, B. Sun, C. Zhuo, S. Zhou, C. Zhou, L. Yue, Numerical study of high temperature non-equilibrium effects of double-wedge in hypervelocity flow, Aerosp. Sci. Technol. 124 (2022) 107526.
+
+[31] H.L. Kline, F. Palacios, J.J. Alonso, Sensitivity of the performance of a 3- dimensional hypersonic inlet to shape deformations, in: 19th AIAA Interna- tional Space Planes and Hypersonic Systems and Technologies Conference, American Institute of Aeronautics and Astronautics, 2014.
+
+[32] J. Lu, J. Li, Z. Song, W. Zhang, C. Yan, Uncertainty and sensitivity analysis of heat transfer in hypersonic three-dimensional shock waves/turbulent boundary layer interaction flows, Aerosp. Sci. Technol. 123 (2022) 107447.
+
+[33] J. Haberle, A. Gulhan, Experimental investigation of a two-dimensional and a three-dimensional scramjet inlet at Mach 7, J. Propuls. Power 24 (5) (2008) 1023–1034.
+
+[34] E.H. Dowell, Nonlinear oscillations of a fluttering plate, AIAA J. 4 (7) (1966) 1267–1275.
+
+[35] ANSYS Help 18.0.

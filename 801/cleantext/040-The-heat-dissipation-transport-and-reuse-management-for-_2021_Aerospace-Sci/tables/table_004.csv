@@ -1,0 +1,6 @@
+Boundaries,Thermal conditions,Momentum conditions
+Upper wall,$q = q _ { a e r o } \mathrm { ~ - ~ } q _ { r a d }$,/
+Lateral wall,$q { = } 0$,/
+Bottom wall,$q { = } 0$,/
+Inlet,"$T { = } 1 5 ~ \mathrm { K } , \ \mathrm { L H } _ { 2 }$ $T { = } 2 8 0 \ \mathrm { K } , \mathrm { J E T - A }$",$m _ { f }$ in x direction
+Outlet,/,Outflow

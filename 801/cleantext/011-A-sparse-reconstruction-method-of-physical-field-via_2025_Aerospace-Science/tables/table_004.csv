@@ -1,0 +1,5 @@
+Reconstruction error,Total number of sensors,2,3,4,6
+E(P),Single-source reconstruction method,119.12,119.12,26.01,15.18
+E(T),Proposed method Single-source,128.04,13.03,13.17,12.71
+,reconstruction,258.97,115.96,115.96,25.54
+,method Proposed method,151.03,25.88,20.09,14.05

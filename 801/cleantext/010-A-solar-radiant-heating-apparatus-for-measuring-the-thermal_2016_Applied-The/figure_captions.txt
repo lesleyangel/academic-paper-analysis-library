@@ -1,0 +1,21 @@
+Fig. 1. Schematic of the radiant heating apparatus and instrumentation.
+
+Fig. 2. Pictures of the solar radiant heating experimental apparatus.
+
+Fig. 3. Schematic of physico-chemical processes of FRP composites at high temperatures.
+
+Fig. 4. Schematic of the implementation of moving boundary due to thermal expansion for FRP composites.
+
+Fig. 5. The surface morphology of silica/phenolic composite specimen after radiant heating.
+
+Fig. 7. Comparison of experimental and calculated density profiles of silica/ phenolic composites after thermal exposure.
+
+Fig. 6. Images of segments of a silica/phenolic composite specimen after thermal exposure.
+
+Fig. 8. Variation of temperature versus heating time and material depth of silica/phenolic composites. (a) Comparison of experimental and calculated temperature profiles; (b) Comparison of temperature profiles with and without moving boundary.
+
+Fig. 9. Spatially dependent calculated decomposition degree of silica/phenolic composites under different heating time and measured depths of the heat affected zones.
+
+Fig. 11. The representative microstructures of silica/phenolic composites after thermal exposure at known locations. (a) Slice 1; (b) Slice 3; (c) Slice 4; (d) Slice 7.
+
+Fig. 10. Spatially dependent mass flux profiles of gas of silica/phenolic composites under different heating time.

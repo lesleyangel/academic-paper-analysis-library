@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\038-The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\038-The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 183.14,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\038-The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma\nbody_chars=53363 references=45 tables=6\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T04:24:11"
+}

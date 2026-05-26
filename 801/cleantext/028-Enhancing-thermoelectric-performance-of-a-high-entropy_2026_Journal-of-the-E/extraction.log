@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Enhancing-thermoelectric-performance-of-a-high-entropy_2026_Journal-of-the-E.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\028-Enhancing-thermoelectric-performance-of-a-high-entropy_2026_Journal-of-the-E",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\Enhancing-thermoelectric-performance-of-a-high-entropy_2026_Journal-of-the-E.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\028-Enhancing-thermoelectric-performance-of-a-high-entropy_2026_Journal-of-the-E",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 107.96,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\028-Enhancing-thermoelectric-performance-of-a-high-entropy_2026_Journal-of-the-E\nbody_chars=45265 references=77 tables=2\nnoise_flags=many_figure_caption_markers\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T03:56:57"
+}

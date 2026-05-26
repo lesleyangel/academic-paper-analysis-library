@@ -1,0 +1,75 @@
+[1] R. Hu, J.H. Meng, et al., Integrated structure/mechanism design of cross-domain wing-body fusion variant vehicle, Unmanned Sys. Technol. 7 (2) (2024) 51–64.
+
+[2] C.J. Li, F.C. Liu, N. Liu, et al., Design of inertial guidance device and anti-shock measurement method for cross-domain vehicle, Electron. Measure. Technol. 47 (5) (2024) 167–172.
+
+[3] S.B. Luo, Integrated Design of Airframe-Engine For Hypersonic Vehicle, Science Press, Beijing, 2018.
+
+[4] X., Q. Chen, et al., Multidisciplinary Design Optimization Theory and Application of Hypersonic Vehicle, Science Press, Beijing, 2020.
+
+[5] R. Balling, M.R. Rawlings, Collaborative optimization with disciplinary conceptual design, Struct. Multidisciplinary Opt. 20 (3) (2000) 232–241.
+
+[6] L.L. Yang, W.L. Li, X.L. Kong, H. Xu, Mixed uncertainty robust Cooperative optimization design method, Comp Integr Manuf Sys. 27 (11) (2021) 3282–3290.
+
+[7] R.D. Braun, A.A. Moore, I.M. Kroo, Collaborative approach to launch vehicle design, J. Spacecr. Rockets 34 (4) (1997) 478–486.
+
+[8] C. Ye, S.H. Miao, C. Li, W.C. Yang, D.D. Sun, Co-optimization of transmission and distribution grids based on improved parallel subspace algorithm, J. Electrotechnol. 33 (23) (2018) 5509–5522.
+
+[9] J. Sobieszczanski-Sobieski, S. Kodiyalam, BLISS/S: a new method for two-level structural optimization, Struct. Multidisciplinary Opt. 21 (1) (2001) 1–13.
+
+[10] P. Jiang, L. Kuang, X.Y. Shao, M. Xiao, An approximate model-based Co- optimization approach for two-stage integrated systems, China Mech. Eng. 23 (4) (2012) 395–402.
+
+[11] H.M. Kim, N.F. Michelena, P.Y. Papalambros, T. Jiang, Target cascading in optimal system design, in: ASME 2000 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference 12, 2020.
+
+[12] J. Sun, T. Qu, D.X. Nie, M. Thürer, C.D. Li, G.Q. Huang, Dual-channel multilevel distribution network location-inventory problem, Comp. Integr. Manuf.Sys. 27 (11) (2021) 3305–3317.
+
+[13] X.L. He, J. Chen, S.J. E, D.Y. Tang, L.M. Zhang, Optimization design of suspension parameters of undervehicle equipment based on objective cascade analysis, J. Transp. Eng. 21 (6) (2021) 321–330.
+
+[14] N. Michelena, H. Park, P.Y. Papalambros, Convergence properties of analytical target cascading, AIAA J 41 (5) (2003) 897–905.
+
+[15] S. Tosserams, L.F.P. Etman, P.Y. Papalambros, J.E. Rooda, An augmented lagrangian relaxation for analytical target cascading using the alternating direction method of multipliers, Struct. Multidisciplinary Opt. 31 (3) (2006) 176–189.
+
+[16] S. Tosserams, L.F.P. Etman, J.E. Rooda, An augmented lagrangian decomposition method for quasi-separable problems in MDO, Struct. Multidisciplinary Opt. 34 (3) (2007) 211–227.
+
+[17] S. Tosserams, L.F.P. Etman, J.E. Rooda, Block-separable linking constraints in augmented lagrangian coordination, Struct. Multidisciplinary Opt. 37 (5) (2009) 521–527.
+
+[18] S. Tosserams, L.F.P. Etman, J.E. Rooda, A classification of methods for distributed system optimization based on formulation structure, Struct. Multidisciplinary Opt. 39 (5) (2009) 503–517.
+
+[19] J.T. Gui, Y.S. He, C.Z. Tang, Z.F. Zhang, C.M. Xu, An MDO method based on distributed parallel augmented lagrangian coordination, Comp. Integr. Manuf. Sys. (2024) 1–16.
+
+[20] T. Cui, W. Zhao, C. Wang, et al., Design optimization of a steering and suspension integrated system based on dynamic constraint analytical target cascading method, Struct. Multidisciplinary Opt. 62 (1) (2020) 419–437.
+
+[21] D.X. Nie, T. Qu, M.L. Wang, T. Zhang, G.Q. Huang, Dominant augmented lagrangian coordination method for complex system optimization, Comp. Integr. Manuf. Sys. 23 (2) (2017) 422–432.
+
+[22] A. Benaouali, S. Kachel, An automated CAD/CAE integration system for the parametric design of aircraft wing structures, J. Theor. Appl. Mech. 447 (2017).
+
+[23] B.M. Kulfan, Recent extensions and applications of the ‘CST’ universal parametric geometry representation method, Aeronautical J. 114 (1153) (2010) 157–176.
+
+[24] B.M. Kulfan, J.E. Bussoletti, Fundamental” Parametric Geometry Representations For Aircraft Component Shapes, AIAA, 2006, pp. 2006–6948.
+
+[25] B.M. Kulfan, Universal parametric geometry representation method, J. Aircr. 45 (1) (2008) 142–158.
+
+[26] D.H. Zhang, S. Xi, D. Tian, Geometry control ability evaluation of classical airfoil parametric methods, Adv. Aeronautical Sci. Eng. 5 (3) (2014) 281–288, 295.
+
+[27] Y. Feng, W. Tang, J.X. Ren, et al., Parametric geometry representation method for hypersonic vehicle configuration, Acta Aerodynamica Sinica 30 (4) (2012) 546–550.
+
+[28] H. Su, C.L. Gong, L.X. Gu, Two-level aerodynamic shape optimization strategy based on three-dimensional CST modeling method, J. Solid Rocket Technol. 37 (1) (2014) 1–6, 22.
+
+[29] Su, H., Gu, L.X., Gong C.L.: Research on geometry modeling method based on three-dimensional CST parameterization technology. AIAA. 2015-3241 (2015).
+
+[30] H. Su, C.L. Gong, L.X. Gu, Three-dimensional CST parameterization method applied in aircraft aeroelastic analysis, Int. J.Aerosp. Eng (2017) 1–15.
+
+[31] S.R. Rohr, Development of a mass estimating relationship database for launch vehicle conceptual design, AIAA Space Forum (2008).
+
+[32] E.E. Halberg, O. Rina, K. Stephen, Nathaniel. Robinson, J. Blasser, An ISS space ambulance based on X-37B technology, AIAA Space Forum (2016).
+
+[33] D.P. Bertsekas, Nonlinear programming, J Oper. Res. Soc. 48 (3) (1997), 334–334.
+
+[34] D.P. Bertsekas, Constrained optimization and Lagrange Multiplier methods, Comp. Sci. App.l Mathe. (1982).
+
+[35] W. Li, M. Xiao, Y. Yi, L. Gao, Maximum variation analysis based analytical target cascading for multidisciplinary robust design optimization under interval uncertainty, Adv. Eng. Inform. 40 (2019) 81–92.
+
+[36] H.M. Kim, Target cascading in optimal system design, Diss Uni. Michigan (2001).
+
+[37] Z.Z. Li, Integrated design optimization of aerodynamic shape for winged re-entry vehicles, J. Aeronautics 41 (05) (2020) 113–127.
+
+[38] H. Su, Research On High-Fidelity Multidisciplinary Design Optimization Technology for Aircraft, Northwestern Polytechnical University, 2014. Data will be made available on request.

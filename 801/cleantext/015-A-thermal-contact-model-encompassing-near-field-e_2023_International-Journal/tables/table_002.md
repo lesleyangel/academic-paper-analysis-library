@@ -1,0 +1,3 @@
+| Element | duration | temperature | power | vacuum degree | Argon pressure | Film thickness |
+| --- | --- | --- | --- | --- | --- | --- |
+| Ni | 30min | 200℃ | 100 W/ Bias sputtering | $1 0 ^ { - 5 } \mathrm { P a }$ | 0.8 Pa | 1 μm |

@@ -1,0 +1,5 @@
+Training dataset,Test dataset,$\mathbb { R } ^ { 2 }$,RMSE/ $( \mathrm { k W / m ^ { 2 } } )$,Relative error/%
+CFD,CFD,0.979,5.081,3.926
+Engineering algorithm,Wind tunnel measurement,0.468,16.565,63.171
+Engineering,0.954,3.209,2.969
+algorithm Wind tunnel measurement,-0.503,29.017,122.538

@@ -1,0 +1,95 @@
+[1] K. An, Z yun Guo, X ping Xu, W Huang, A framework of trajectory design and optimization for the hypersonic gliding vehicle, Aerosp. Sci. Technol. 106 (2020) 106110, https://doi .org /10 .1016 /j .ast .2020 .106110.
+
+[2] W. Chen, R. Wang, X. Li, S. Lu, X. Fang, Study of the heat transfer design of an integrated thermal management system for hypersonic vehicles using su- percritical nitrogen as expendable coolant, Aerosp. Sci. Technol. 123 (2022) 107440, https://doi .org /10 .1016 /j .ast .2022 .107440.
+
+[3] P. Fernández-Yáñez, V. Romero, O. Armas, G. Cerretti, Thermal management of thermoelectric generators for waste energy recovery, Appl. Therm. Eng. (2021) 196, https://doi .org /10 .1016 /j .applthermaleng .2021.117291.
+
+[4] G. Gao, J.J. Gou, C.L. Gong, J.X. Hu, R.C. Gao, A novel mechanical-thermal- electrical thermal protection system concept and its multi-scale performance evaluation for hypersonic launch vehicles, Compos. Struct. 268 (2021) 113962, https://doi .org /10 .1016 /j .compstruct .2021.113962.
+
+[5] K. Cheng, J. Qin, H. Sun, C. Dang, S. Zhang, X. Liu, et al., Performance as- sessment of an integrated power generation and refrigeration system on hy- personic vehicles, Aerosp. Sci. Technol. 89 (2019) 192–203, https://doi .org /10 . 1016 /j .ast .2019 .04 .006.
+
+[6] K. Cheng, J. Qin, Y. Jiang, C. Lv, S. Zhang, W. Bao, Performance assessment of multi-stage thermoelectric generators on hypersonic vehicles at a large temperature difference, Appl. Therm. Eng. 130 (2018) 1598–1609, https:// doi .org /10 .1016 /j .applthermaleng .2017.11.057.
+
+[7] K. Cheng, D. Zhang, J. Qin, S. Zhang, W. Bao, Performance evaluation and com- parison of electricity generation systems based on single- and two-stage ther- moelectric generator for hypersonic vehicles, Acta Astronaut. 151 (2018) 15–21, https://doi .org /10 .1016 /j .actaastro .2018 .05 .033.
+
+[8] H.T. Zhu, J. Luo, J.K. Liang, Synthesis of highly crystalline Bi2Te3 nanotubes and their enhanced thermoelectric properties, J. Mater. Chem. A 2 (2014) 12821–12826, https://doi .org /10 .1039 /c4ta02532f.
+
+[9] X. Shi, H. Kong, C.P. Li, C. Uher, J. Yang, J.R. Salvador, et al., Low thermal conductivity and high thermoelectric figure of merit in n-type Bax Yby Co4 Sb12 double-filled skutterudites, Appl. Phys. Lett. 92 (2008) 90–93, https:// doi .org /10 .1063 /1.2920210.
+
+[10] L. Zhang, X. Chen, Y. Tang, L. Shi, G.J. Snyder, J.B. Goodenough, et al., Thermal stability of Mg2Si0.4Sn0.6 in inert gases and atomic-layer-deposited Al2O3 thin film as a protective coating, J. Mater. Chem. A 4 (2016) 17726–17731, https:// doi .org /10 .1039 /c6ta07611d.
+
+[11] B. Yang, S. Li, X. Li, Z. Liu, H. Zhong, S. Feng, Ultralow thermal conductiv- ity and enhanced thermoelectric properties of SnTe based alloys prepared by melt spinning technique, J. Alloys Compd. 837 (2020) 155568, https:// doi .org /10 .1016 /j .jallcom .2020 .155568.
+
+[12] Z. Soleimani, S. Zoras, B. Ceranic, Y. Cui, S. Shahzad, A comprehensive review on the output voltage/power of wearable thermoelectric generators concerning their geometry and thermoelectric materials, Nano Energy 89 (2021) 106325, https://doi .org /10 .1016 /j .nanoen .2021.106325.
+
+[13] L. Liang, M. Wang, X. Wang, P. Peng, Z. Liu, G. Chen, et al., Initiating a stretch- able, compressible, and wearable thermoelectric generator by a spiral archi- tecture with ternary nanocomposites for efficient heat harvesting, Adv. Funct. Mater. 32 (2022) 1–11, https://doi .org /10 .1002 /adfm .202111435.
+
+[14] C. Du, M. Cao, G. Li, Y. Hu, Y. Zhang, L. Liang, et al., Toward precision recognition of complex hand motions: wearable thermoelectrics by synergis- tic 2D nanostructure confinement and controlled reduction, Adv. Funct. Mater. 2206083 (2022) 1–9, https://doi .org /10 .1002 /adfm .202206083.
+
+[15] G. Rogl, A. Grytsiv, P. Rogl, E. Bauer, M. Hochenhofer, R. Anbalagan, et al., Nanostructuring of p- and n-type skutterudites reaching figures of merit of ap- proximately 1.3 and 1.6, respectively, Acta Mater. 76 (2014) 434–448, https:// doi .org /10 .1016 /j .actamat .2014 .05 .051.
+
+[16] X. Li, Q. Zhang, Y. Kang, C. Chen, L. Zhang, D. Yu, et al., High pressure synthe- sized Ca-filled CoSb3 skutterudites with enhanced thermoelectric properties, J. Alloys Compd. 677 (2016) 61–65, https://doi .org /10 .1016 /j .jallcom .2016 .03 .239.
+
+[17] H. Li, X. Tang, Q. Zhang, C. Uher, High performance InxCeyCo4Sb12 thermoelec- tric materials with in situ forming nanostructured InSb phase, Appl. Phys. Lett. 94 (2009) 12–15, https://doi .org /10 .1063 /1.3099804.
+
+[18] Z.Y. Liu, J.L. Zhu, X. Tong, S. Niu, W.Y. Zhao, A review of CoSb3-based skut- terudite thermoelectric materials, J. Adv. Ceram. 9 (2020) 647–673, https:// doi .org /10 .1007 /s40145 -020 -0407 -4.
+
+[19] X. Tong, Z. Liu, J. Zhu, T. Yang, Y. Wang, A. Xia, Research progress of p-type Fe-based skutterudite thermoelectric materials, Frontiers Mater. Sci. 15 (2021) 317–333, https://doi .org /10 .1007 /s11706 -021 -0563 -7.
+
+[20] Y. Tang, Z.M. Gibbs, L.A. Agapito, G. Li, H.S. Kim, M.B. Nardelli, et al., Con- vergence of multi-valley bands as the electronic origin of high thermoelectric performance in CoSb3 skutterudites, Nat. Mater. 14 (2015) 1223–1228, https:// doi .org /10 .1038 /nmat4430.
+
+[21] T. Itoh, M. Matsuhara, Influence of addition of alumina nanoparticles on ther- moelectric properties of La-filled skutterudite CoSb 3 compounds, Mater. Trans. 53 (2012) 1801–1805, https://doi .org /10 .2320 /matertrans .E -M2012821.
+
+[22] S. Katsuyama, M. Watanabe, M. Kuroki, T. Maehata, M. Ito, Effect of NiSb on the thermoelectric properties of skutterudite CoSb3, J. Appl. Phys. 93 (2003) 2758–2764, https://doi .org /10 .1063 /1.1545158.
+
+[23] J.J. Gou, Z.W. Yan, J.X. Hu, G. Gao, C.L. Gong, The heat dissipation, transport and reuse management for hypersonic vehicles based on regenerative cooling and thermoelectric conversion, Aerosp. Sci. Technol. 108 (2021) 106373, https://doi . org /10 .1016 /j .ast .2020 .106373.
+
+[24] J. Chen, R. Wang, D. Luo, W. Zhou, Performance optimization of a segmented converging thermoelectric generator for waste heat recovery, Appl. Therm. Eng. 202 (2022) 117843, https://doi .org /10 .1016 /j .applthermaleng .2021.117843.
+
+[25] T. Kim, Y. Ko, Y. Lee, C. Cha, N. Kim, Experimental analysis of flexible thermo- electric generators used for self-powered devices, Energy 200 (2020) 117544, https://doi .org /10 .1016 /j .energy.2020 .117544.
+
+[26] H. Lv, L. Liang, Y. Zhang, L. Deng, Z. Chen, Z. Liu, et al., A flexible spring-shaped architecture with optimized thermal design for wearable thermoelectric energy harvesting, Nano Energy 88 (2021) 106260, https://doi .org /10 .1016 /j .nanoen . 2021.106260.
+
+[27] X. Li, Z. Wang, Exergy analysis of integrated TEG and regenerative cooling sys- tem for power generation from the scramjet cooling heat, Aerosp. Sci. Technol. 66 (2017) 12–19, https://doi .org /10 .1016 /j .ast .2017.02 .021.
+
+[28] K. Cheng, J. Qin, H. Sun, C. Dang, S. Zhang, X. Liu, et al., Performance assess- ment of a closed-recuperative-Brayton-cycle based integrated system for power generation and engine cooling of hypersonic vehicle, Aerosp. Sci. Technol. 87 (2019) 278–288, https://doi .org /10 .1016 /j .ast .2019 .02 .028.
+
+[29] K. Cheng, J. Qin, D. Zhang, W. Bao, W. Jing, Performance evaluation for a combined power generation system of closed-Brayton-cycle and thermoelectric generator with finite cold source at room temperature on hypersonic vehicles, Energy 254 (2022) 124444, https://doi .org /10 .1016 /j .energy.2022 .124444.
+
+[30] C.-L. Gong, J.-J. Gou, J.-X. Hu, F. Gao, A novel TE-material based thermal pro- tection structure and its performance evaluation for hypersonic flight vehicles, Aerosp. Sci. Technol. 77 (2018) 458–470, https://doi .org /10 .1016 /J .AST.2018 .03 . 028.
+
+[31] L. Xu, S. Ling, D. Li, G. Zhai, Vibration-induced dynamic characteristics model- ing of electrical contact resistance for connectors, Microelectron. Reliab. (2020) 114, https://doi .org /10 .1016 /j .microrel .2020 .113868.
+
+[32] W. Ta, S. Qiu, Y. Wang, J. Yuan, Y. Gao, Y. Zhou, Volumetric contact theory to electrical contact between random rough surfaces, Tribol. Int. 160 (2021) 107007, https://doi .org /10 .1016 /j .triboint .2021.107007.
+
+[33] T. Fiedler, N. White, M. Dahari, K. Hooman, On the electrical and thermal con- tact resistance of metal foam, Int. J. Heat Mass Transf. 72 (2014) 565–571, https://doi .org /10 .1016 /j .ijheatmasstransfer.2014 .01.045.
+
+[34] C. Bolsinger, M. Zorn, K.P. Birke, Electrical contact resistance measurements of clamped battery cell connectors for cylindrical 18650 battery cells, J. Energy Storage 12 (2017) 29–36, https://doi .org /10 .1016 /j .est .2017.04 .001.
+
+[35] S. Dutta, G.N.V.R. Vikram, M.S. Bobji, S. Mohan, Table top experimental setup for electrical contact resistance measurement during indentation, Measurement 152 (2020) 107286, https://doi .org /10 .1016 /j .measurement .2019 .107286.
+
+[36] B.D. Beake, A.J. Harris, T.W. Liskiewicz, J. Wagner, S.J. McMaster, S.R. Goodes, et al., Friction and electrical contact resistance in reciprocating nano-scale wear testing of metallic materials, Wear (2021) 474–475, https://doi .org /10 .1016 /j . wear.2021.203866.
+
+[37] W. Chen, S. Ito, N. Yusa, H. Hashizume, Investigation of the correlation be- tween the electrical contact resistance and the contact area of mechanical lap joint fabricated with high-temperature superconducting tapes using X-ray mi- crotomography, Fusion Eng. Des. 148 (2019) 111284, https://doi .org /10 .1016 /j . fusengdes .2019 .111284.
+
+[38] Z. Wu, Y. Zhou, G. Lin, S. Wang, S.J. Hu, An improved model for predicting electrical contact resistance between bipolar plate and gas diffusion layer in proton exchange membrane fuel cells, J. Power Sources 182 (2008) 265–269, https://doi .org /10 .1016 /j .jpowsour.2008 .03 .044.
+
+[39] D. Qiu, L. Peng, P. Yi, X. Lai, A micro contact model for electrical contact re- sistance prediction between roughness surface and carbon fiber paper, Int. J. Mech. Sci. 124–125 (2017) 37–47, https://doi .org /10 .1016 /j .ijmecsci .2017.02 . 026.
+
+[40] J.R. Riba, A.G. Mancini, C. Abomailek, F. Capelli, A 3D-FEM-based model to pre- dict the electrical constriction resistance of compressed contacts, Measurement 114 (2018) 44–50, https://doi .org /10 .1016 /j .measurement .2017.09 .003.
+
+[41] S.A. Atyabi, E. Afshari, S. Wongwises, W.M. Yan, A. Hadjadj, M.S. Shadloo, Effects of assembly pressure on PEM fuel cell performance by taking into accounts electrical and thermal contact resistances, Energy 179 (2019) 490–501, https:// doi .org /10 .1016 /j .energy.2019 .05 .031.
+
+[42] D. Richard, M. Fafard, R. Lacroix, P. Cléry, Y. Maltais, Carbon to cast iron elec- trical contact resistance constitutive model for finite element analysis, J. Mater. Process. Technol. 132 (2003) 119–131, https://doi .org /10 .1016 /S0924 -0136(02 ) 00430 -2.
+
+[43] S. Shittu, G. Li, X. Zhao, X. Ma, Y.G. Akhlaghi, Y. Fan, Comprehensive study and optimization of concentrated photovoltaic-thermoelectric considering all con- tact resistances, Energy Convers. Manag. 205 (2020) 112422, https://doi .org /10 . 1016 /j .enconman .2019 .112422.
+
+[44] A.B. Zhang, B.L. Wang, D.D. Pang, J.B. Chen, J. Wang, J.K. Du, Influence of leg geometry configuration and contact resistance on the performance of annu- lar thermoelectric generators, Energy Convers. Manag. 166 (2018) 337–342, https://doi .org /10 .1016 /j .enconman .2018 .04 .042.
+
+[45] G. Xu, Y. Duan, X. Chen, T. Ming, X. Huang, Effects of thermal and electrical contact resistances on the performance of a multi-couple thermoelectric cooler with non-ideal heat dissipation, Appl. Therm. Eng. 169 (2020) 114933, https:// doi .org /10 .1016 /j .applthermaleng .2020 .114933.
+
+[46] C.N. Kim, Development of a numerical method for the performance analysis of thermoelectric generators with thermal and electric contact resistance, Appl. Therm. Eng. 130 (2018) 408–417, https://doi .org /10 .1016 /j .applthermaleng . 2017.10 .158.
+
+[47] Y. Su, J. Lu, B. Huang, Free-standing planar thin-film thermoelectric microrefrig- erators and the effects of thermal and electrical contact resistances, Int. J. Heat Mass Transf. 117 (2018) 436–446, https://doi .org /10 .1016 /j .ijheatmasstransfer. 2017.10 .023.
+
+[48] D. Li, S. Li, X. Li, B. Yang, H. Zhong, Efficiently synthesized n-type CoSb3 ther- moelectric alloys under TGZM effect, Mater. Sci. Semicond. Process. 123 (2021) 105542, https://doi .org /10 .1016 /j .mssp .2020 .105542.

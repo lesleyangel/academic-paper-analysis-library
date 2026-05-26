@@ -1,0 +1,95 @@
+[1] J.J. Gou, J.X. Hu, Z.W. Yan, G. Gao, C.L. Gong, Effects of physical dimensions, temperature ranges and interfacial thermal contacts on the multi-stage thermoelectric generators for a hypersonic vehicle, Int. J. Energy Res. (2022) 1–18, https://doi.org/10.1002/er.7799.
+
+[2] J.J. Gou, Z.W. Yan, J.X. Hu, G. Gao, C.L. Gong, The heat dissipation, transport and reuse management for hypersonic vehicles based on regenerative cooling and thermoelectric conversion, Aerosp. Sci. Technol. 108 (2021), 106373, https://doi. org/10.1016/j.ast.2020.106373.
+
+[3] B.X. Shen, W.Q. Liu, Insulating and absorbing heat of transpiration in a combinational opposing jet and platelet transpiration blunt body for hypersonic vehicle, Int. J. Heat Mass Transf. 138 (2019) 314–325, https://doi.org/10.1016/j. ijheatmasstransfer.2019.04.057.
+
+[4] G. Gao, J.J. Gou, C.L. Gong, J.X. Hu, R.C. Gao, A novel mechanical-thermal- electrical thermal protection system concept and its multi-scale performance evaluation for hypersonic launch vehicles, Compos. Struct. 268 (2021), 113962, https://doi.org/10.1016/j.compstruct.2021.113962.
+
+[5] C.L. Gong, J.J. Gou, J.X. Hu, F. Gao, A novel TE-material based thermal protection structure and its performance evaluation for hypersonic flight vehicles, Aerosp. Sci. Technol. 77 (2018) 458–470, https://doi.org/10.1016/j.ast.2018.03.028.
+
+[6] K. Cheng, J. Qin, Y. Jiang, C. Lv, S. Zhang, W. Bao, Performance assessment of multi-stage thermoelectric generators on hypersonic vehicles at a large temperature difference, Appl. Therm. Eng. (2018) 1598–1609, https://doi.org/ 10.1016/j.applthermaleng.2017.11.057.
+
+[7] J.A. Greenwood, J.B.P. Williamson, Contact of nominally flat surfaces, Proc. R. Soc. Lond. Ser. A Math. Phys. Sci. 295 (1966) 300–319, https://doi.org/10.1098/ rspa.1966.0242.
+
+[8] M.V. Berry, Z.V Lewis, On the Weierstrass-Mandelbrot fractal function, Proc. R. Soc. Lond. A Math. Phys. Sci. 370 (1980) 459–484, https://doi.org/10.1098/ rspa.1980.0044.
+
+[9] T. Cui, Q. Li, Y. Xuan, Characterization and application of engineered regular rough surfaces in thermal contact resistance, Appl. Therm. Eng. 71 (2014) 400–409, https://doi.org/10.1016/j.applthermaleng.2014.07.020.
+
+[10] J. Liu, C. Ma, S. Wang, S. Wang, B. Yang, Thermal contact resistance between bearing inner ring and shaft journal, Int. J. Therm. Sci. 138 (2019) 521–535, https://doi.org/10.1016/j.ijthermalsci.2019.01.022.
+
+[11] P.G. Siddappa, A. Tariq, Contact area and thermal conductance estimation based on the actual surface roughness measurement, Tribol. Int. 148 (2020), 106358, https://doi.org/10.1016/j.triboint.2020.106358.
+
+[12] G. Gao, D. Li, J.J. Gou, C.L. Gong, S.M. Li, A study of interfacial electrical contact resistances of thermoelectric generators for hypersonic vehicles by experimental measurements and two-scale numerical simulations, Aerosp. Sci. Technol. 131 (2022), 107966, https://doi.org/10.1016/j.ast.2022.107966.
+
+[13] Y. Frekers, T. Helmig, E.M. Burghold, R. Kneer, A numerical approach for investigating thermal contact conductance, Int. J. Therm. Sci. 121 (2017) 45–54, https://doi.org/10.1016/j.ijthermalsci.2017.06.026.
+
+[14] J.J. Gou, X.J. Ren, Y.J. Dai, S. Li, Study of thermal contact resistance of rough surfaces based on the practical topography, Comput. Fluids 164 (2018) 2–11, https://doi.org/10.1016/J.COMPFLUID.2016.09.018.
+
+[15] Y.J. Dai, J.J. Gou, X.J. Ren, F. Bai, W.Z. Fang, W.Q. Tao, A test-validated prediction model of thermal contact resistance for Ti-6Al-4 V alloy, Appl. Energy 228 (2018) 1601–1617, https://doi.org/10.1016/j.apenergy.2018.06.134.
+
+[16] X.J. Ren, Y.J. Dai, J.J. Gou, W.Q. Tao, Numerical prediction of thermal contact resistance of 3D C/C-SiC needled composites based on measured practical topography, Int. J. Heat Mass Transf. 131 (2019) 176–188, https://doi.org/ 10.1016/j.ijheatmasstransfer.2018.08.137.
+
+[17] G. Gao, D. Li, J.J. Gou, C.L. Gong, S.M. Li, The quantitative study of interfacial contact effects in TEGs by real-topology-based simulations and novel indirect tests, Int. J. Heat Mass Transf. 201 (2023), 123579, https://doi.org/10.1016/j. ijheatmasstransfer.2022.123579.
+
+[18] E.G. Cravalho, C.L. Tien, R.P. Caren, Effect of small spacings on radiative transfer between two dielectrics, J. Heat Transf. 89 (1967) 351–358, https://doi.org/ 10.1115/1.3614396.
+
+[19] M.P. Bernardi, D. Milovich, M. Francoeur, Radiative heat transfer exceeding the blackbody limit between macroscale planar surfaces separated by a nanosize vacuum gap, Nat. Commun. 7 (2016) 1–7, https://doi.org/10.1038/ ncomms12900.
+
+[20] S.B.Z. Fu, Review of near-field thermal radiation and its application to energy conversion, Int. J. Energy Res. 33 (2009) 1203–1232, https://doi.org/10.1002/ er.1607.
+
+[21] M. Chen, Q. Li, P. Zhang, Experimental investigation of high temperature thermal contact resistance of thin disk samples using infrared camera in vacuum condition, Int. J. Heat Mass Transf. 157 (2020), 119749, https://doi.org/10.1016/j. ijheatmasstransfer.2020.119749.
+
+[22] Z.M. Zhang, X.J. Wang, Unified wien’s displacement law in terms of logarithmic frequency or wavelength scale, J. Thermophys. Heat Transf. 24 (2010) 222–224, https://doi.org/10.2514/1.45992.
+
+[23] M. Luo, J. Zhao, L. Liu, Heat diffusion in nanoparticle systems via near-field thermal photons, Int. J. Heat Mass Transf. 200 (2023), 123544, https://doi.org/ 10.1016/j.ijheatmasstransfer.2022.123544.
+
+[24] B. Liu, J. Zhao, S.N. Grigoriev, A.V. Gusarov, Particle non-isothermality effect on the radiative thermal conductivity in dense particulate systems, Int. J. Heat Mass Transf. 204 (2023), 123822, https://doi.org/10.1016/j. ijheatmasstransfer.2022.123822.
+
+[25] B.N.J. Persson, B. Lorenz, A.I. Volokitin, Heat transfer between elastic solids with randomly rough surfaces, Eur. Phys. J. E 31 (2010) 3–24, https://doi.org/10.1140/ epje/i2010-10543-1.
+
+[26] Y. Xian, P. Zhang, S. Zhai, P. Yang, Z. Zheng, Re-estimation of thermal contact resistance considering near-field thermal radiation effect, Appl. Therm. Eng. 157 (2019), https://doi.org/10.1016/j.applthermaleng.2019.04.011.
+
+[27] M. Chen, Q. Li, P. Zhang, Numerical prediction of high temperature thermal contact resistance of HTA–C/ZrB2-SiC with radiation effects, Int. Commun. Heat Mass Transf. 120 (2021), 105058, https://doi.org/10.1016/j. icheatmasstransfer.2020.105058.
+
+[28] S. Li, D. Xu, J. Zhao, L. Liu, Random rough surface effects on the performance of near-field thermophotovoltaic system, Int. J. Heat Mass Transf. 202 (2023), 123713, https://doi.org/10.1016/j.ijheatmasstransfer.2022.123713.
+
+[29] X.J. Ren, H. Ding, Y.J. Dai, J.Y. Tu, X. Chen, J.Y. He, et al., Experimental study on thermal contact resistance of carbon fiber reinforced silicon carbide composite with 3D needled preform (3DN C/SiC), Int. Commun. Heat Mass Transf. 124 (2021), 105271, https://doi.org/10.1016/j.icheatmasstransfer.2021.105271.
+
+[30] F. Sun, P. Zhang, H. Wang, J. Shen, L. Nie, Experimental study of thermal contact resistance between aluminium alloy and ADP crystal under vacuum environment, Appl. Therm. Eng. 155 (2019) 563–574, https://doi.org/10.1016/j. applthermaleng.2019.04.027.
+
+[31] P. Zhang, T. Cui, Q. Li, Effect of surface roughness on thermal contact resistance of aluminium alloy, Appl. Therm. Eng. 121 (2017) 992–998, https://doi.org/ 10.1016/j.applthermaleng.2017.04.142.
+
+[32] D. Liu, Y. Luo, X. Shang, Experimental investigation of high temperature thermal contact resistance between high thermal conductivity C/C material and Inconel 600, Int. J. Heat Mass Transf. 80 (2015) 407–410, https://doi.org/10.1016/j. ijheatmasstransfer.2014.09.044.
+
+[33] J. Deng, Z. Qian, Simplified analysis of thermal contact resistance on arc-slotted fin core, Appl. Therm. Eng. 125 (2017) 266–284, https://doi.org/10.1016/j. applthermaleng.2017.06.143.
+
+[34] S. Wang, T. Xie, H. Xie, Experimental study of the effects of the thermal contact resistance on the performance of thermoelectric generator, Appl. Therm. Eng. 130 (2018) 847–853, https://doi.org/10.1016/j.applthermaleng.2017.11.036.
+
+[35] Y. Xian, P. Zhang, S. Zhai, P. Yuan, D. Yang, Experimental characterization methods for thermal contact resistance: a review, Appl. Therm. Eng. 130 (2018) 1530–1548, https://doi.org/10.1016/j.applthermaleng.2017.10.163.
+
+[36] B. Beltr´an-Pitarch, F. Vidan, J. García-Ca˜nadas, Thermal contact resistance evaluation of a thermoelectric system by means of three I-V curves, Int. J. Heat Mass Transf. 173 (2021), https://doi.org/10.1016/j. ijheatmasstransfer.2021.121247.
+
+[37] K. Karthick, S. Suresh, H. Singh, G.C. Joy, R. Dhanuskodi, Theoretical and experimental evaluation of thermal interface materials and other influencing parameters for thermoelectric generator system, Renew. Energy 134 (2019) 25–43, https://doi.org/10.1016/j.renene.2018.10.109.
+
+[38] C.N. Kim, Development of a numerical method for the performance analysis of thermoelectric generators with thermal and electric contact resistance, Appl. Therm. Eng. 130 (2018) 408–417, https://doi.org/10.1016/j. applthermaleng.2017.10.158.
+
+[39] S. Shittu, G. Li, X. Zhao, X. Ma, Y.G. Akhlaghi, Y. Fan, Comprehensive study and optimization of concentrated photovoltaic-thermoelectric considering all contact resistances, Energy Convers. Manag. 205 (2020), 112422, https://doi.org/ 10.1016/j.enconman.2019.112422.
+
+[40] G. Xu, Y. Duan, X. Chen, T. Ming, X. Huang, Effects of thermal and electrical contact resistances on the performance of a multi-couple thermoelectric cooler with non-ideal heat dissipation, Appl. Therm. Eng. 169 (2020), 114933, https:// doi.org/10.1016/j.applthermaleng.2020.114933.
+
+[41] Z. Ouyang, D. Li, Modelling of segmented high-performance thermoelectric generators with effects of thermal radiation, electrical and thermal contact resistances, Sci. Rep. 6 (2016), https://doi.org/10.1038/srep24123.
+
+[42] Y. Su, J. Lu, B. Huang, Free-standing planar thin-film thermoelectric microrefrigerators and the effects of thermal and electrical contact resistances, Int. J. Heat Mass Transf. 117 (2018) 436–446, https://doi.org/10.1016/j. ijheatmasstransfer.2017.10.023.
+
+[43] M.M. Yovanovich, Four decades of research on thermal contact, gap, and joint resistance in microelectronics, IEEE Trans. Compon. Packag. Technol. 28 (2005) 182–206, https://doi.org/10.1109/TCAPT.2005.848483.
+
+[44] P. Zhang, P. Yuan, X. Jiang, S. Zhai, J. Zeng, Y. Xian, et al., A theoretical review on interfacial thermal transport at the nanoscale, Small 14 (2018) 1–19, https://doi. org/10.1002/smll.201702769.
+
+[45] M. Francoeur, M. Pinar Mengüç, Role of fluctuational electrodynamics in near-field radiative heat transfer, J. Quant. Spectrosc. Radiat. Transf. 109 (2008) 280–293, https://doi.org/10.1016/j.jqsrt.2007.08.017.
+
+[46] J.P. Mulet, K. Joulain, R. Carminati, J.J. Greffet, Enhanced radiative heat transfer at nanometric distances, Microscale Thermophys. Eng. 6 (2002) 209–222, https:// doi.org/10.1080/10893950290053321.
+
+[47] Y.T. Chu, J.B. Bates, C.W. White, G.C. Farlow, Optical dielectric functions for amorphous Al2O3 and γ-Al2O3, J. Appl. Phys. 64 (1988) 3727–3730, https://doi. org/10.1063/1.341367.
+
+[48] M.A. Ordal, R.J. Bell, R.W. Alexander, L.L. Long, M.R Querry, Optical properties of fourteen metals in the infrared and far infrared: Al, Co, Cu, Au, Fe, Pb, Mo, Ni, Pd, Pt, Ag, Ti, V, and W, Appl. Opt. 24 (1985) 4493, https://doi.org/10.1364/ ao.24.004493.

@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\020-An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\020-An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 175.46,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\020-An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu\nbody_chars=52491 references=53 tables=4\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T03:27:32"
+}

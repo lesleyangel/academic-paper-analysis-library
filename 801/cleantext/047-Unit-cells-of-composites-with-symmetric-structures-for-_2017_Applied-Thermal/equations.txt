@@ -1,0 +1,279 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (32.83, 217.37, 432.46, 231.03)]] Jian-Jun Gou a, Chun-Lin Gong a, Liang-Xian Gu a, Shuguang Li b, Wen-Quan Tao c,⇑
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.13, 702.06, 202.88, 720.0)]] ⇑Corresponding author. E-mail address: wqtao@mail.xjtu.edu.cn (W.-Q. Tao)
+
+[confidence=0.92; source=equations; [page 7, bbox (41.22, 190.43, 275.28, 205.45)]] parallel STS/Eq. (3) STS/Eq. (3) STS/Eq. (3) perpendicular ATS/Eq. (4) ATS/Eq. (4) STS/Eq. (3)
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (312.89, 541.65, 488.34, 552.34)]] qxjx¼0 ¼ �qxjx¼a ¼ q1; ðb �cÞ=26 y 6 ðb þ cÞ=2
+
+[confidence=0.92; source=equations; [page 8, bbox (312.89, 580.88, 365.89, 591.29)]] q1=q2 ¼ 10 : 1
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (312.89, 554.24, 537.83, 564.99)]] qxjx¼0 ¼ �qxjx¼a ¼ q2; 0 < y < ðb �cÞ=2 or ðb þ cÞ=2 < y < b
+
+[confidence=0.92; source=equations; [page 9, bbox (371.17, 733.78, 552.74, 752.69)]] L3; L4 : qðx1;0Þ ¼ qðx1;b=2Þ ¼ 0 ð11-1Þ
+
+[confidence=0.62; needs_review; source=equations; [page 10, bbox (106.75, 644.32, 221.55, 656.12)]] L4 : Tðx1;b=2Þ �Tð0;0Þ ¼ �brT0 y=2
+
+[confidence=0.62; needs_review; source=equations; [page 10, bbox (106.75, 680.09, 221.6, 691.91)]] L2 : Tða=2;y1Þ �Tð0;0Þ ¼ �arT0 x=2
+
+[confidence=0.92; source=equations; [page 10, bbox (106.75, 694.33, 204.73, 705.18)]] L3; L4 : qðx1;0Þ ¼ qðx1;b=2Þ ¼ 0
+
+[confidence=0.92; source=equations; [page 10, bbox (106.75, 715.98, 205.01, 727.0)]] L1; L2 : qð0;y1Þ ¼ qða=2;y1Þ ¼ 0
+
+[confidence=0.62; needs_review; source=equations; [page 10, bbox (106.75, 741.09, 221.55, 752.91)]] L4 : Tðx1;b=2Þ �Tð0;0Þ ¼ �brT0 y=2
+
+[confidence=0.62; needs_review; source=equations; [page 10, bbox (375.7, 631.51, 490.61, 643.33)]] L2 : Tða=2;y1Þ �Tð0;0Þ ¼ �arT0 x=2
+
+[confidence=0.62; needs_review; source=equations; [page 10, bbox (375.7, 662.91, 543.84, 674.77)]] L4 : Tðx1;b=4Þ þ Tða=2�x1;b=4Þ �2Tð0;0Þ ¼ �arT0 x=2
+
+[confidence=0.92; source=equations; [page 10, bbox (375.7, 698.12, 473.96, 709.15)]] L1; L2 : qð0;y1Þ ¼ qða=2;y1Þ ¼ 0
+
+[confidence=0.62; needs_review; source=equations; [page 10, bbox (375.7, 727.26, 543.96, 739.06)]] L4 : Tðx1;b=4Þ þ Tða=2�x1;b=4Þ �2Tð0;0Þ ¼ �brT0 y=2
+
+[confidence=0.62; needs_review; source=equations; [page 11, bbox (259.48, 340.78, 352.31, 350.02)]] L4 : Tðx1;b=2Þ �Tð0;0Þ ¼ �brT0 y=2
+
+[confidence=0.62; needs_review; source=equations; [page 11, bbox (259.48, 369.86, 380.02, 388.63)]] L2 : Tða=2;y1Þ �Tð0;0Þ ¼ �arT0 x=2 Eq: ð11-1Þ ! L3; L4 : qðx1;0Þ ¼ qðx1;b=2Þ ¼ 0
+
+[confidence=0.62; needs_review; source=equations; [page 11, bbox (259.48, 446.74, 352.31, 465.5)]] L2 : Tða=2;y1Þ �Tð0;0Þ ¼ �arT0 x=2 L3 : qðx1;0Þ ¼ 0
+
+[confidence=0.62; needs_review; source=equations; [page 11, bbox (259.48, 417.83, 352.31, 427.07)]] L4 : Tðx1;b=2Þ �Tð0;0Þ ¼ �brT0 y=2
+
+[confidence=0.62; needs_review; source=equations; [page 11, bbox (259.48, 475.82, 396.19, 485.06)]] L4 : Tðx1;b=4Þ þ Tða=2�x1;b=4Þ �2Tð0;0Þ ¼ �arT0 x=2
+
+[confidence=0.62; needs_review; source=equations; [page 11, bbox (259.48, 514.26, 396.25, 523.5)]] L4 : Tðx1;b=4Þ þ Tða=2�x1;b=4Þ �2Tð0;0Þ ¼ �brT0 y=2
+
+[confidence=0.62; needs_review; source=equations; [page 12, bbox (320.03, 100.23, 551.0, 118.7)]] kxx 0 (W/m�K) 1.65031.65051.65051.65041.6506 kyy 0 (W/m�K) 1.65031.65051.65051.65051.6506
+
+[confidence=0.62; needs_review; source=equations; [page 12, bbox (311.53, 163.23, 562.55, 184.46)]] k0 ¼ km þ Vf 1=ðkf �kmÞ þ ð1 �VfÞ=ð2kmÞ ð14Þ
+
+[confidence=0.62; needs_review; source=equations; [page 14, bbox (311.53, 337.79, 562.55, 357.68)]] z ¼ �h 2 cosðpx=SÞ; z ¼ �h 2 cosðpy=SÞ ð15Þ
+
+[confidence=0.62; needs_review; source=equations; [page 17, bbox (41.22, 103.07, 529.68, 109.53)]] C- phenolic 2.352.79 [16] �15.80.610.57 [16] 7.0
+
+[confidence=0.92; source=body_inline] q _ {x} ^ {o} = - \lambda _ {x x} ^ {o} T _ {x} ^ {o} - \lambda _ {x y} ^ {o} T _ {y} ^ {o} - \lambda _ {x z} ^ {o} T _ {z} ^ {o}\tag{ð1-1Þ}
+
+[confidence=0.92; source=body_inline] q _ {y} ^ {o} = - \lambda _ {y x} ^ {o} T _ {x} ^ {o} - \lambda _ {y y} ^ {o} T _ {y} ^ {o} - \lambda _ {y z} ^ {o} T _ {z} ^ {o}\tag{ð1-2Þ}
+
+[confidence=0.92; source=body_inline] q _ {z} ^ {o} = - \lambda _ {z x} ^ {o} T _ {x} ^ {o} - \lambda _ {z y} ^ {o} T _ {y} ^ {o} - \lambda _ {z z} ^ {o} T _ {z} ^ {o}\tag{ð1-3Þ}
+
+[confidence=0.92; source=body_inline] q _ {i} ^ {0}
+
+[confidence=0.92; source=body_inline] \lambda _ {i} ^ {0}
+
+[confidence=0.92; source=body_inline] \nabla T _ {i} ^ {0}
+
+[confidence=0.92; source=body_inline] q _ {x} ^ {0} = q , q _ {y} ^ {0} = 0 , q _ {z} ^ {0} = 0\tag{ð2-1Þ}
+
+[confidence=0.92; source=body_inline] q _ {x} ^ {0} = 0 , q _ {y} ^ {0} = q , q _ {z} ^ {0} = 0\tag{ð2-2Þ}
+
+[confidence=0.92; source=body_inline] q _ {x} ^ {0} = 0 , q _ {y} ^ {0} = 0 , q _ {z} ^ {0} = q\tag{ð2-3Þ}
+
+[confidence=0.92; source=body_inline] M ^ {\prime \prime \prime}
+
+[confidence=0.92; source=body_inline] O ^ {\prime \prime \prime}
+
+[confidence=0.92; source=body_inline] {\mathsf{STS}} : ~ T _ {M} - T _ {0} = T _ {M ^ {\prime}} - T _ {0 ^ {\prime}}\tag{ð3Þ}
+
+[confidence=0.92; source=body_inline] - 10 \mathsf{W} / \mathsf{m} ^ {2}
+
+[confidence=0.92; source=body_inline] {\mathsf{ATS}} : ~ T _ {M} - T _ {0} = T _ {0 ^ {\prime}} - T _ {M ^ {\prime}}\tag{ð4Þ}
+
+[confidence=0.92; source=body_inline] \mathrm{Fig.} 4 ( \mathsf{a} ) ,
+
+[confidence=0.92; source=body_inline] M _ {x}
+
+[confidence=0.92; source=body_inline] M _ {x} ^ {\prime}
+
+[confidence=0.92; source=body_inline] M _ {y}
+
+[confidence=0.92; source=body_inline] M _ {y} '
+
+[confidence=0.92; source=body_inline] 180 ^{\circ}
+
+[confidence=0.92; source=body_inline] \frac {q} {x} \geq \mathsf{sTS} \colon q _ {M x} = q _ {M x} ,
+
+[confidence=0.92; source=body_inline] q ^ {0}
+
+[confidence=0.92; source=body_inline] M _ {y} ^ {\prime}
+
+[confidence=0.92; source=body_inline] M _ {x} ^ {\prime} , M _ {y}
+
+[confidence=0.92; source=body_inline] M _ {y} ^ {\prime} ,
+
+[confidence=0.92; source=body_inline] M _ {z}
+
+[confidence=0.92; source=body_inline] 10 \mathrm {{W / ( m {\cdot K} )}}
+
+[confidence=0.92; source=body_inline] 1 \mathrm{W} / ( \mathrm{m} {\cdot} \mathrm{K} )
+
+[confidence=0.92; source=body_inline] 10 \mathrm {{W / m ^ {2}}}
+
+[confidence=0.92; source=body_inline] x = 0 , x = a , y = 0
+
+[confidence=0.92; source=body_inline] y = b
+
+[confidence=0.67; needs_review; source=body_inline] y = b )
+
+[confidence=0.92; source=body_inline] M = \left( x _ {1} , y _ {1} \right)
+
+[confidence=0.92; source=body_inline] ( x _ {1 +} a , y _ {1} )
+
+[confidence=0.92; source=body_inline] \nabla T _ {x} ^ {0} ,
+
+[confidence=0.92; source=body_inline] O ^ {\prime}
+
+[confidence=0.92; source=body_inline] \Delta T = a \nabla T _ {x} ^ {0}
+
+[confidence=0.92; source=body_inline] x = 0 ,
+
+[confidence=0.92; source=body_inline] M = ( 0 , y _ {1} )
+
+[confidence=0.92; source=body_inline] M ^ {\prime} = \left( a , y _ {1} \right)
+
+[confidence=0.92; source=body_inline] T _ {( 0 , y _ {1} )} - T _ {( a , y _ {1} )} = \Delta T = a \nabla T _ {x} ^ {0}\tag{ð5Þ}
+
+[confidence=0.92; source=body_inline] x = 0
+
+[confidence=0.92; source=body_inline] x = a
+
+[confidence=0.92; source=body_inline] ( x _ {1} , y _ {1} )
+
+[confidence=0.92; source=body_inline] ( x _ {1} , y _ {1} + \mathsf{b} )
+
+[confidence=0.92; source=body_inline] y = 0 ,
+
+[confidence=0.92; source=body_inline] M = ( x _ {1} , 0 )
+
+[confidence=0.92; source=body_inline] M ^ {\prime} = ( x _ {1} , \mathbf {b} ) ,
+
+[confidence=0.92; source=body_inline] T _ {( x _ {1} , 0 )} - T _ {( x _ {1} , b )} = 0\tag{ð6Þ}
+
+[confidence=0.92; source=body_inline] q _ {x} | _ {x = 0} = - q _ {x} | _ {x = a} = q , q _ {y} | _ {y = 0} = q _ {y} | _ {y = b} = 0\tag{ð7Þ}
+
+[confidence=0.92; source=body_inline] ( T _ {( 0 , y _ {1} )} - T _ {( a , y _ {1} )} ) _ {y} / \mathrm{mean} ( T _ {x _ {= 0}} - T _ {x = a} )
+
+[confidence=0.92; source=body_inline] b = 5
+
+[confidence=0.92; source=body_inline] c = 3
+
+[confidence=0.92; source=body_inline] 6.4 {\mathrm{W}} / ( {\mathrm{m}} {\cdot} {\mathrm{K}} )
+
+[confidence=0.92; source=body_inline] ( 8 ) , \lambda ^ {0} , \lambda _ {f} , V _ {f}
+
+[confidence=0.92; source=body_inline] \lambda _ {m}
+
+[confidence=0.92; source=body_inline] \lambda ^ {0} = \lambda _ {f} V _ {f} + \lambda _ {m} ( 1 - V _ {f} )\tag{ð8Þ}
+
+[confidence=0.67; needs_review; source=body_inline] b = 0.1 \sim 200 )
+
+[confidence=0.92; source=body_inline] x = a ,
+
+[confidence=0.92; source=body_inline] ( 0 , y _ {1} )
+
+[confidence=0.92; source=body_inline] ( a , y _ {1} ) ,
+
+[confidence=0.92; source=body_inline] ( y _ {1} = ( 1 , 4 ) )
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {q _ {x} | _ {x = 0} = - q _ {x} | _ {x = a} = q _ {1} , ( b - c ) / 2 \leqslant y \leqslant ( b + c ) / 2} \\ & {q _ {x} | _ {x = 0} = - q _ {x} | _ {x = a} = q _ {2} , 0 < y < ( b - c ) / 2 \mathrm{~or~} ( b + c ) / 2 < y < b} \\ & {q _ {y} | _ {y = 0} = q _ {y} | _ {y = b} = 0 ,} \\ & {q _ {1} / q _ {2} = 10 : 1} \end{array}\tag{ð9Þ}
+
+[confidence=0.92; source=body_inline] P _ {x}
+
+[confidence=0.92; source=body_inline] P _ {y} ,
+
+[confidence=0.92; source=body_inline] L _ {z}
+
+[confidence=0.92; source=body_inline] \left( P _ {x} \right)
+
+[confidence=0.92; source=body_inline] \left( P _ {y} \right)
+
+[confidence=0.92; source=body_inline] 1 / 2
+
+[confidence=0.92; source=body_inline] 1 / 4
+
+[confidence=0.92; source=body_inline] \left( {{L} _ {z}} \right)
+
+[confidence=0.92; source=body_inline] 1 / 8
+
+[confidence=0.92; source=body_inline] q ^ {0} ,
+
+[confidence=0.92; source=body_inline] \mathsf{BCS} ,
+
+[confidence=0.92; source=body_inline] L _ {1} , \ L _ {2} , \ L _ {3}
+
+[confidence=0.92; source=body_inline] L _ {4} ,
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {L _ {1} - L _ {2} : T _ {( 0 , y _ {1} )} - T _ {( a , y _ {1} )} = a \nabla T _ {x} ^ {0}} \\ {\mathrm{BC1:}} \\ {L _ {3} - L _ {4} : T _ {( x _ {1} , 0 )} - T _ {( x _ {1} , b )} = b \nabla T _ {y} ^ {0}} \end{array}\tag{ð10Þ}
+
+[confidence=0.92; source=body_inline] {\begin{array} {l} {L _ {1} - L _ {2} : T _ {( 0 , y _ {1} )} - T _ {( a , y _ {1} )} = a \nabla T _ {x} ^ {0}} \\ {{\mathrm{BC2~under~}} q {\boldsymbol {0}} x :} \\ {L _ {3} , L _ {4} : q _ {( x _ {1} , 0 )} = q _ {( x _ {1} , b / 2 )} = 0} \end{array}}\tag{ð11-1Þ}
+
+[confidence=0.92; source=body_inline] {\begin{array} {r l} & {L _ {1} - L _ {2} : T _ {( 0 , y _ {1} )} - T _ {( a , y _ {1} )} = 0} \\ {{\mathrm{BC2~under~}} q _ {y} ^ {0} :} & {L _ {3} : T _ {( x _ {1} , 0 )} - T _ {( 0 , 0 )} = 0} \\ & {L _ {4} : T _ {( x _ {1} , b / 2 )} - T _ {( 0 , 0 )} = - b \nabla T _ {y} ^ {0} / 2} \end{array}}\tag{ð11-2Þ}
+
+[confidence=0.92; source=body_inline] L _ {1} : T _ {( 0 , y _ {1} )} - T _ {( 0 , 0 )} = 0
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathrm{BC3~under~} q _ {x} ^ {0} :} & {\mathbf {L} _ {2} : T _ {( a / 2 , y _ {1} )} - T _ {( 0 , 0 )} = - a \nabla T _ {x} ^ {0} / 2} \\ & {L _ {3} , L _ {4} : q _ {( x _ {1} , 0 )} = q _ {( x _ {1} , b / 2 )} = 0} \end{array}\tag{ð12-1Þ}
+
+[confidence=0.92; source=body_inline] L _ {1} , L _ {2} : q _ {( 0 , y _ {1} )} = q _ {( a / 2 , y _ {1} )} = 0
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {{}} & {{\mathrm{BC3~under~} q _ {y} ^ {0} : ~ {\bf {L}} _ {3} : T _ {( x _ {1} , 0 )} - T _ {( 0 , 0 )} = 0}} \\ {{}} & {{{\bf {L}} _ {4} : T _ {( x _ {1} , b / 2 )} - T _ {( 0 , 0 )} = - b \nabla T _ {y} ^ {0} / 2}} \end{array}\tag{ð12-2Þ}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {L _ {1} : T _ {( 0 , y _ {1} )} - T _ {( 0 , 0 )} = 0} \\ & {L _ {2} : T _ {( a / 2 , y _ {1} )} - T _ {( 0 , 0 )} = - a \nabla T _ {x} ^ {0} / 2} \\ {\mathrm{BC4~under~} q _ {x} ^ {0} :} & {L _ {3} : q _ {( x _ {1} , 0 )} = 0} \\ & {L _ {4} : T _ {( x _ {1} , b / 4 )} + T _ {( a / 2 - x _ {1} , b / 4 )} - 2 T _ {( 0 , 0 )} = - a \nabla T _ {x} ^ {0} / 2} \end{array}\tag{ð13-1Þ}
+
+[confidence=0.92; source=body_inline] \begin{array} {c} {{L _ {1} , L _ {2} : q _ {( 0 , y _ {1} )} = q _ {( a / 2 , y _ {1} )} = 0}} \\ {{\mathrm{BC4~under~} q _ {y} ^ {0} : \mathrm{~} L _ {3} : T _ {( x _ {1} , 0 )} - T _ {( 0 , 0 )} = 0}} \\ {{\mathrm{~}}} \\ {{L _ {4} : T _ {( x _ {1} , b / 4 )} + T _ {( a / 2 - x _ {1} , b / 4 )} - 2 T _ {( 0 , 0 )} = - b \nabla T _ {y} ^ {0} / 2}} \end{array}\tag{ð13-2Þ}
+
+[confidence=0.92; source=body_inline] \scriptstyle {q ^ {0}}
+
+[confidence=0.92; source=body_inline] \lambda ^ {0} = \lambda _ {m} + \frac {V _ {f}} {1 / ( \lambda _ {f} - \lambda _ {m} ) + ( 1 - V _ {f} ) / ( 2 \lambda _ {m} )}\tag{ð14Þ}
+
+[confidence=0.92; source=body_inline] \lambda ^ {0} , \lambda _ {m}
+
+[confidence=0.92; source=body_inline] \lambda _ {f}
+
+[confidence=0.92; source=body_inline] V _ {f}
+
+[confidence=0.92; source=body_inline] x ^ {\prime} , y ^ {\prime} -
+
+[confidence=0.92; source=body_inline] Z _ {1}
+
+[confidence=0.92; source=body_inline] h _ {f}
+
+[confidence=0.92; source=body_inline] S = 1.45
+
+[confidence=0.92; source=body_inline] h _ {f} = 0.19
+
+[confidence=0.92; source=body_inline] z = \pm \frac {h} {2} \cos ( \pi x / S ) , z = \pm \frac {h} {2} \cos ( \pi y / S )\tag{ð15Þ}
+
+[confidence=0.92; source=body_inline] S _ {x} ,
+
+[confidence=0.92; source=body_inline] x ^ {\prime} - , y ^ {\prime} -
+
+[confidence=0.92; source=body_inline] b / 2
+
+[confidence=0.92; source=body_inline] x ^ {\prime} = 0
+
+[confidence=0.92; source=body_inline] P _ {1} , P _ {2} ,
+
+[confidence=0.92; source=body_inline] P _ {3} , \ P _ {4} , \ P _ {5}
+
+[confidence=0.92; source=body_inline] P _ {6}
+
+[confidence=0.92; source=body_inline] {\begin{array} {r l} & {P _ {1} - P _ {2} : T _ {x ^ {\prime} = 0} - T _ {x ^ {\prime} = a} = a \cos ( \alpha ) T _ {x} ^ {o} - a \sin ( \alpha ) T _ {y} ^ {o}} \\ {{\mathrm{UC1:~}} P _ {3} - P _ {4} : T _ {y ^ {\prime} = 0} - T _ {y ^ {\prime} = b} = b \cos ( \beta ) T _ {x} ^ {o} + b \sin ( \beta ) T _ {y} ^ {o}} \\ & {P _ {5} - P _ {6} : T _ {z = 0} - T _ {z = h} = h T _ {z} ^ {o}} \end{array}}\tag{ð16Þ}
+
+[confidence=0.67; needs_review; source=body_inline] {( q _ {y} ^ {~ 0}}
+
+[confidence=0.67; needs_review; source=body_inline] q _ {z} ^ {\bar {0}} ) ,
+
+[confidence=0.92; source=body_inline] {q _ {y}} ^ {0}
+
+[confidence=0.92; source=body_inline] {q _ {z}} ^ {0}
+
+[confidence=0.92; source=body_inline] {( \lambda _ {x x}} ^ {0} = {\lambda _ {y y}} ^ {0} )
+
+[confidence=0.92; source=body_inline] ( {\lambda _ {z z}} ^ {0} )
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {P _ {1} - P _ {2} : T _ {x - 0} - T _ {x - a} = a \cos ( x ) T _ {x} ^ {0} - a \sin ( x ) T _ {y} ^ {0}} \\ & {P _ {3} : T _ {y - 0 , x \leq a / 2} + T _ {y - 0 , x \leq a / 2} - 2 T _ {( 0 , 0 , 0 )} = - a \cos ( x ) T _ {x} ^ {0} + a \sin ( x ) T _ {y} ^ {0}} \\ {\mathrm{UC2~under~} q \mathrm{0} x \mathrm{~or~} q \mathrm{0} y : \} \\ & {P _ {4} : T _ {y - b / 2 , x \leq a / 2} + T _ {y - b / 2 , x \leq a / 2} - 2 T _ {( 0 , 0 , 0 )} = - ( a \cos ( x ) + b \cos ( \beta ) ) T _ {x} ^ {0} + ( a \sin ( \alpha ) - b \sin ( \beta ) ) T _ {y} ^ {0}} \\ & {P _ {5} - P _ {6} : T _ {z - 0} - T _ {z \mathrm{ab}} = h T _ {z} ^ {0}} \end{array}\tag{ð17-1Þ}
+
+[confidence=0.92; source=body_inline] {\begin{array} {r l} & {P _ {1} - P _ {2} : T _ {x - 0} - T _ {x - a} = a \cos ( \alpha ) T _ {x} ^ {0} - a \sin ( \alpha ) T _ {y} ^ {0}} \\ & {P _ {3} : T _ {y = 0 , x \leqslant a / 2} - T _ {y ^ {- 0} , x ^ {\prime} \geqslant a / 2} = a \cos ( \alpha ) T _ {x} ^ {0} - a \sin ( \alpha ) T _ {y} ^ {0}} \\ {{\mathrm{UC2~under~}} q _ {z} ^ {0} :} & {P _ {4} : T _ {y ^ {- b} / 2 , x ^ {\prime} \leqslant a / 2} - T _ {y ^ {- b} / 2 , x \geqslant a / 2} = b \cos ( \beta ) T _ {x} ^ {0} + b \sin ( \beta ) T _ {y} ^ {0} + a \cos ( \alpha ) T _ {x} ^ {0} - a \sin ( \alpha ) T _ {y} ^ {0}} \\ & {P _ {5} - P _ {6} : T _ {z = 0} - T _ {z - h} = h T _ {z} ^ {0}} \end{array}}\tag{ð17-2Þ}
+
+[confidence=0.92; source=body_inline] \left( V _ {f} = 0.46 \right)
+
+[confidence=0.92; source=body_inline] 4 - , 5 - , 6 - , 7 -

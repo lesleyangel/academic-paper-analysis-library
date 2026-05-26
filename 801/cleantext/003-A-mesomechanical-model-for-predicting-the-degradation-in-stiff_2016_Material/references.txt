@@ -1,0 +1,71 @@
+[1] L. Bian, J. Xiao, J. Zeng, et al., Microstructural interpretation of the ablative properties of phenolic-quartz hybrid fabric reinforced phenolic resin composites, Mater. Des. 62 (2014) 424–429.
+
+[2] N. Guermazi, N. Haddar, K. Elleuch, H.F. Ayedi, Investigations on the fabrication and the characterization of glass/epoxy, carbon/epoxy and hybrid composites used in the reinforcement and the repair of aeronautic structures, Mater. Des. 56 (2014) 714–724.
+
+[3] P.R.S. Reddy, T.S. Reddy, V. Madhu, et al., Behavior of E-glass composite laminates under ballistic impact, Mater. Des. 84 (2015) 79–86.
+
+[4] P. Luangtriratana, B.K. Kandola, P. Myler, Ceramic particulate thermal barrier surface coatings for glass fibre-reinforced epoxy composites, Mater. Des. 68 (2015) 232–244.
+
+[5] E. Kandare, B.K. Kandola, P. Myler, G. Edwards, Thermo-mechanical responses of fiber-reinforced epoxy composites exposed to high temperature environments. Part I: experimental data acquisition, J. Compos. Mater. 44 (2010) 3093–3114.
+
+[6] A.M. Coppola, A.S. Griffin, N.R. Sottos, S.R. White, Retention of mechanical performance of polymer matrix composites above the glass transition temperature by vascular cooling, Compos. Part A 78 (2015) 412–423.
+
+[7] K. Wei, R. He, X. Cheng, et al., A lightweight, high compression strength ultra high temperature ceramic corrugated panel with potential for thermal protection system applications, Mater. Des. 66 (2015) 552–556.
+
+[8] B. Yu, V. Kodur, Effect of temperature on strength and stiffness properties of near- surface mounted FRP reinforcement, Compos. Part B 58 (2014) 510–517.
+
+[9] Y. Matsuura, K. Hirai, T. Kamita, et al., A challenge of modeling thermo-mechanical response of silica-phenolic composites under high heating rates, 49th AIAA Aerospace Sciences Meeting, Orland, Florida, 2011.
+
+[10] S.J. Kim, S.Y. Han, E.S. Shin, Micromechanics-based evaluation of the poroelastic effect and stress concentration in thermochemically-decomposed composites, J. Mech. Sci. Technol. 27 (2013) 3139–3147.
+
+[11] A.G. Gibson, Y.S. Wu, J.T. Evans, A.P. Mouritz, Laminate theory analysis of composites under load in fire, J. Compos. Mater. 40 (2006) 639–658.
+
+[12] M. Tsoi, J. Zhuge, R.H. Chen, J. Gou, Modeling and experimental studies of thermal degradation of glass fiber reinforced polymer composites, Fire Mater. 38 (2014) 247–263.
+
+[13] Y.I. Dimitrienko, Thermomechanical behaviour of composite materials and struc- tures under high temperatures: 1. Materials, Compos. Part A 28 (1997) 453–461.
+
+[14] Y.I. Dimitrienko, A structural thermo-mechanical model of textile composite materials at high temperatures, Compos. Sci. Technol. 59 (1999) 1041–1053.
+
+[15] Y.I. Dimitrienko, Thermomechanics of Composites Under High Temperatures, Kluwer Academic Publishers, London, 1999 73–108.
+
+[16] J. Liang, F.J. Yi, On ablation and phase-transformation properties of thermal protec- tive materials at high temperature by micromechanics, Acta Mater. Compos. Sin. 19 (2002) 108–112 (in Chinese).
+
+[17] J. Liang, On ablation and phase-transformation properties of fiber reinforced mate- rials at high temperature by micromechanics, Acta Mech. Sinica 34 (2002) 984–988 (in Chinese).
+
+[18] Y. Bai, T. Keller, Time dependence of material properties of FRP composites in fire, J. Compos. Mater. 43 (2009) 2469–2484.
+
+[19] Y. Bai, T. Keller, T. Vallée, Modeling of stiffness of FRP composites under elevated and high temperatures, Compos. Sci. Technol. 68 (2008) 3099–3106.
+
+[20] T. Keller, C. Tracy, A. Zhou, Structural response of liquid-cooled GFRP slabs subjected to fire. Part II: thermo-chemical and thermo-mechanical modeling, Compos. Part A 37 (2006) 1296–1308.
+
+[21] M. Dao, R. Asaro, A study on the failure prediction and design criteria for fiber composites under fire degradation, Compos. Part A 30 (1999) 123–131.
+
+[22] J. Bausano, S. Boyd, J. Lesko, S.W. Case, Composite life under sustained compression and one-sided simulated fire exposure: characterization and prediction, Proceed- ings of the International SAMPE Symposium, Long Beach, California, 2004.
+
+[23] A. Zhou, T. Keller, Structural response of FRP elements under combined thermal and mechanical loading: experiments and analysis, Proceedings of the 4th Conference on Composites in Fire, Tyne, Newcastle, 2005.
+
+[24] L. Liu, J.W. Holmes, G.A. Kardomateas, V. Birman, Compressive response of composites under combined fire and compression loading, Fire. Technol 47 (2011) 985–1016.
+
+[25] S. Feih, Z. Mathys, A.G. Gibson, A.P. Mouritz, Modelling the tension and compression strengths of polymer laminates in fire, Compos. Sci. Technol. 67 (2007) 551–564.
+
+[26] A.P. Mouritz, Z. Mathys, C.P. Gardiner, Thermomechanical modelling the fire proper- ties of fibre-polymer composites, Compos. Part B 35 (2004) 467–474.
+
+[27] A.P. Mouritz, Z. Mathys, E. Kandare, et al., Review of fire structural modelling of polymer composites, Compos. Part A 40 (2009) 1800–1814.
+
+[28] S.W. Kwon, W.L. Smith, S.W. Lee, Thermo-viscoplastic modeling of composites ex- posed to fire or high temperature, J. Compos. Mater. 40 (2006) 1607–1624.
+
+[29] L.F. Thompson, Through-thickness Compression Testing and Theory of Carbon Fibre Composite Materials, University of Manchester, 2011 30–53.
+
+[30] R.F. Ferguson, M.J. Hinton, M.J. Hiley, Determining the through-thickness properties of FRP materials, Compos. Sci. Technol. 58 (1998) 1411–1420.
+
+[31] B.C. Kim, D.C. Park, B.J. Kim, Through-thickness compressive strength of a carbon/ epoxy composite laminate, Compos. Struct. 92 (2010) 480–487.
+
+[32] S.B. Shi, J. Liang, R.J. He, Thermal decomposition behavior of silica-phenolic compos- ite exposed to one-sided radiant heating, Polym. Compos. 36 (2014) 1557–1564.
+
+[33] S.B. Shi, J. Liang, F.J. Yi, G.D. Fang, Modeling of one-dimensional thermal response of silica-phenolic composites with volume ablation, J. Compos. Mater. 47 (2013) 2219–2235.
+
+[34] B.K. Kandola, A.R. Horrocks, P. Myler, D. Blair, Mechanical performance of heat/fire damaged novel flame retardant glass-reinforced epoxy composites, Compos. Part A 34 (2003) 863–873.
+
+[35] J. Kim, S.W. Lee, S. Kwon, Time-to-failure of compressively loaded composite structures exposed to fire, J. Compos. Mater. 41 (2007) 2715–2735.
+
+[36] L.H. Ma, Q.S. Yang, Study on effective properties of elastic media containing fluid in- clusions, J. Beijing Univ. Technol. 37 (2011) 1136–1142 (in Chenese).

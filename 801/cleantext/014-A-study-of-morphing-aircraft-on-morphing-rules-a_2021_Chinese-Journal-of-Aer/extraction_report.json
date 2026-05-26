@@ -1,0 +1,1027 @@
+{
+  "body_chars": 29803,
+  "body_words_estimate": 4985,
+  "noise_flags": [
+    "many_figure_caption_markers"
+  ],
+  "engines": {
+    "pymupdf": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 160,
+      "pages": 12,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "docling": {
+      "available": false,
+      "succeeded": false,
+      "error": "No module named 'docling'",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "grobid": {
+      "available": false,
+      "succeeded": false,
+      "error": "No GROBID URL provided.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "mineru": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 47904,
+      "references": 0,
+      "tables": 0
+    },
+    "marker": {
+      "available": false,
+      "succeeded": false,
+      "error": "Marker CLI not found.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    }
+  },
+  "chosen_sources": {
+    "abstract": "",
+    "body": "mineru",
+    "references": "pymupdf_bbox_or_body_tail"
+  },
+  "audit": {
+    "quality_score": 0.93,
+    "needs_manual_review": false,
+    "issues_before_repair": [
+      {
+        "code": "references_inside_body",
+        "severity": "high",
+        "message": "Back matter heading was detected inside clean body."
+      },
+      {
+        "code": "publisher_noise",
+        "severity": "medium",
+        "message": "Publisher header/footer boilerplate remains in body text."
+      },
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      }
+    ],
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "7 formula(s) need manual review."
+      }
+    ],
+    "repairs_applied": [
+      {
+        "action": "strip_back_matter",
+        "message": "Removed back matter from clean body and parsed reference-like tail entries.",
+        "after": 40956
+      },
+      {
+        "action": "trim_front_matter_to_main_body",
+        "message": "Trimmed title/authors/abstract/front matter before main body heading: ## 1. Introduction",
+        "before": 40956,
+        "after": 38190
+      },
+      {
+        "action": "move_table_like_blocks",
+        "message": "Moved table-like blocks out of clean body.",
+        "after": 6
+      },
+      {
+        "action": "normalize_inline_body_formulas",
+        "message": "Normalized inline/display math spans inside clean body.",
+        "after": 38
+      },
+      {
+        "action": "drop_false_positive_equations",
+        "message": "Dropped equation candidates that looked like prose/table labels rather than formulas.",
+        "after": 3
+      },
+      {
+        "action": "normalize_formula_text",
+        "message": "Normalized formula spacing, common OCR symbols, and simple LaTeX temperature/unit forms.",
+        "after": 41
+      },
+      {
+        "action": "sort_numbered_references",
+        "message": "Sorted numbered references after extraction order appeared scrambled.",
+        "before": 42,
+        "after": 42
+      }
+    ],
+    "candidate_scores": {
+      "mineru": {
+        "score": 0.85,
+        "chars": 30359,
+        "words_estimate": 5077,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 17,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": false,
+        "garbage_ratio": 0.0004,
+        "section_heading_count": 14
+      },
+      "pymupdf_bbox": {
+        "score": 0.85,
+        "chars": 30113,
+        "words_estimate": 5316,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 20,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": false,
+        "garbage_ratio": 0.0043,
+        "section_heading_count": 21
+      }
+    },
+    "final_body_metrics": {
+      "score": 0.85,
+      "chars": 29803,
+      "words_estimate": 4985,
+      "references_inside_body": false,
+      "publisher_noise_hits": 0,
+      "mojibake_hits": 0,
+      "caption_paragraph_starts": 17,
+      "table_like_paragraphs": 0,
+      "duplicate_paragraphs": 0,
+      "starts_with_continuation_fragment": false,
+      "garbage_ratio": 0.0004,
+      "section_heading_count": 14
+    },
+    "body_purification": {
+      "main_body_start_found": true,
+      "main_body_start_heading": "## 1. Introduction",
+      "front_matter_removed_chars": 2766,
+      "starts_with": "## 1. Introduction",
+      "section_sequence": {
+        "top_level_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "missing_top_level_numbers": [],
+        "non_monotonic": false,
+        "headings": [
+          "## 1. Introduction",
+          "## 2. Problem description",
+          "## 3. Methods",
+          "## 3.1. Method of studying morphing rules along trajectory",
+          "## 3.2. Dynamic model",
+          "## 3.3. Multi-fidelity Kriging model",
+          "## 3.4. Leave-one-out cross validation",
+          "## 3.5. Morphing shape optimization in different flight states",
+          "## 4. Results and discussion",
+          "## 4.1. Results of aerodynamic performance simulation",
+          "## 4.2. Results of MFK modeling",
+          "## 4.3. Results of optimization",
+          "## 4.4. Morphing rules along trajectory",
+          "## 5. Conclusions"
+        ]
+      }
+    },
+    "formula_audit": {
+      "input_equations_count": 12,
+      "output_equations_count": 52,
+      "inline_formula_count": 43,
+      "dropped_false_positive_count": 3,
+      "low_confidence_count": 7,
+      "formulas": [
+        {
+          "id": "equation_001",
+          "source": "equations",
+          "meta": "[page 1, bbox (53.8, 33.39, 243.16, 41.44)]",
+          "original": "Chinese Journal of Aeronautics, (2021), 34(7): 232–243",
+          "normalized": "Chinese Journal of Aeronautics, (2021), 34(7): 232-243",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_002",
+          "source": "equations",
+          "meta": "[page 1, bbox (53.8, 655.43, 276.23, 686.19)]",
+          "original": "* Corresponding author. E-mail address: Leonwood@nwpu.edu.cn (C. GONG). Peer review under responsibility of Editorial Committee of CJA.",
+          "normalized": "* Corresponding author. E-mail address: Leonwood@nwpu.edu.cn (C. GONG). Peer review under responsibility of Editorial Committee of CJA",
+          "confidence": 0.57,
+          "needs_review": true,
+          "issues": [
+            "text_heavy"
+          ],
+          "drop": false,
+          "repairs": [
+            "unit_expression_repaired"
+          ]
+        },
+        {
+          "id": "equation_003",
+          "source": "equations",
+          "meta": "[page 4, bbox (46.83, 122.54, 54.76, 155.21)]",
+          "original": "8 > > > > > > <",
+          "normalized": "8 > > > > > > <",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_004",
+          "source": "equations",
+          "meta": "[page 4, bbox (46.83, 162.29, 54.76, 186.9)]",
+          "original": "> > > > > > :",
+          "normalized": "> > > > > > :",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_005",
+          "source": "equations",
+          "meta": "[page 6, bbox (232.95, 612.19, 529.15, 621.95)]",
+          "original": "a = 0� a = 2� a = 4� a = 6� a = 8�",
+          "normalized": "a = 0� a = 2� a = 4� a = 6� a = 8�",
+          "confidence": 0.62,
+          "needs_review": true,
+          "issues": [
+            "mojibake"
+          ],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_006",
+          "source": "equations",
+          "meta": "[page 7, bbox (252.96, 87.84, 544.57, 97.6)]",
+          "original": "a = 0� a = 2� a = 4� a = 6� a = 8�",
+          "normalized": "a = 0� a = 2� a = 4� a = 6� a = 8�",
+          "confidence": 0.62,
+          "needs_review": true,
+          "issues": [
+            "mojibake"
+          ],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_008",
+          "source": "equations",
+          "meta": "[page 7, bbox (123.48, 292.34, 544.58, 300.33)]",
+          "original": "Ma = 0.35 Ma = 0.5 Ma = 0.65 Ma = 0.8 Ma = 0.95",
+          "normalized": "Ma = 0.35 Ma = 0.5 Ma = 0.65 Ma = 0.8 Ma = 0.95",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_009",
+          "source": "equations",
+          "meta": "[page 8, bbox (123.59, 89.6, 536.14, 97.6)]",
+          "original": "Ma = 0.35 Ma = 0.5 Ma = 0.65 Ma = 0.8 Ma = 0.95",
+          "normalized": "Ma = 0.35 Ma = 0.5 Ma = 0.65 Ma = 0.8 Ma = 0.95",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_010",
+          "source": "equations",
+          "meta": "[page 8, bbox (123.59, 229.97, 536.14, 237.97)]",
+          "original": "Ma = 0.35 Ma = 0.5 Ma = 0.65 Ma = 0.8 Ma = 0.95",
+          "normalized": "Ma = 0.35 Ma = 0.5 Ma = 0.65 Ma = 0.8 Ma = 0.95",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_012",
+          "source": "equations",
+          "meta": "[page 11, bbox (53.8, 691.95, 292.91, 722.8)]",
+          "original": "This study was co-supported by the National Defense Funda- mental Research Funds of China (No. JCKY2016204B102 and JCKY2016208C001).",
+          "normalized": "This study was co-supported by the National Defense Funda- mental Research Funds of China (No. JCKY2016204B102 and JCKY2016208C001)",
+          "confidence": 0.57,
+          "needs_review": true,
+          "issues": [
+            "text_heavy"
+          ],
+          "drop": false,
+          "repairs": [
+            "unit_expression_repaired"
+          ]
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\left\\{ \\begin{array} { l l } { m \\frac { \\mathrm { d } v } { \\mathrm { d } t } = P \\mathrm { c o s } \\alpha - X - m g \\mathrm { s i n } \\theta } \\\\ { m \\frac { \\mathrm { d } \\theta } { \\mathrm { d } t } = P \\mathrm { s i n } \\alpha + Y - m g \\mathrm { c o s } \\theta } \\\\ { \\frac { \\mathrm { d } x } { \\mathrm { d } t } = \\nu \\mathrm { c o s } \\theta } \\\\ { \\frac { \\mathrm { d } y } { \\mathrm { d } t } = \\nu \\mathrm { s i n } \\theta } \\\\ { \\frac { \\mathrm { d } m } { \\mathrm { d } t } = - m _ { \\mathrm { s } } } \\end{array} \\right.\\tag{ð1Þ}\n",
+          "normalized": "\\left\\{\\begin{array} {l l} {m \\frac {\\mathrm{d} v} {\\mathrm{d} t} = P \\mathrm{cos} \\alpha - X - m g \\mathrm{sin} \\theta} \\\\ {m \\frac {\\mathrm{d} \\theta} {\\mathrm{d} t} = P \\mathrm{sin} \\alpha + Y - m g \\mathrm{cos} \\theta} \\\\ {\\frac {\\mathrm{d} x} {\\mathrm{d} t} = \\nu \\mathrm{cos} \\theta} \\\\ {\\frac {\\mathrm{d} y} {\\mathrm{d} t} = \\nu \\mathrm{sin} \\theta} \\\\ {\\frac {\\mathrm{d} m} {\\mathrm{d} t} = - m _ {\\mathrm{s}}} \\end{array} \\right.\\tag{ð1Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.67,
+          "needs_review": true,
+          "issues": [
+            "unbalanced_delimiters"
+          ],
+          "drop": false,
+          "id": "body_inline_001"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\nu , \\alpha , \\theta",
+          "normalized": "\\nu , \\alpha , \\theta",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_002"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "m _ { \\mathrm { s } }",
+          "normalized": "m _ {\\mathrm{s}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_003"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\left\\{ { \\begin{array} { l } { \\varepsilon _ { 1 } ( \\alpha ) = 0 } \\\\ { \\varepsilon _ { 2 } ( n ) = 0 } \\end{array} } \\right.\\tag{ð2Þ}\n",
+          "normalized": "\\left\\{{\\begin{array} {l} {\\varepsilon _ {1} ( \\alpha ) = 0} \\\\ {\\varepsilon _ {2} ( n ) = 0} \\end{array}} \\right.\\tag{ð2Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.67,
+          "needs_review": true,
+          "issues": [
+            "unbalanced_delimiters"
+          ],
+          "drop": false,
+          "id": "body_inline_004"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varepsilon _ { 1 }",
+          "normalized": "\\varepsilon _ {1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_005"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\ny _ { \\mathrm { h i g h } } ( x ) = \\rho ( x ) \\cdot y _ { \\mathrm { l o w } } ( x ) + \\delta ( x )\\tag{ð 3Þ}\n",
+          "normalized": "y _ {\\mathrm{high}} ( x ) = \\rho ( x ) \\cdot y _ {\\mathrm{low}} ( x ) + \\delta ( x )\\tag{ð 3Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_006"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho ( { \\boldsymbol { x } } )",
+          "normalized": "\\rho ( {\\boldsymbol {x}} )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_007"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\delta ( x )",
+          "normalized": "\\delta ( x )",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_008"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "y _ { \\mathrm { l o w } } ( x )",
+          "normalized": "y _ {\\mathrm{low}} ( x )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_009"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "y _ { \\mathrm { h i g h } } ( x )",
+          "normalized": "y _ {\\mathrm{high}} ( x )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_010"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "y _ { \\mathrm { l o w } } ( x )",
+          "normalized": "y _ {\\mathrm{low}} ( x )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_011"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "y _ { \\mathrm { h i g h } } ( x )",
+          "normalized": "y _ {\\mathrm{high}} ( x )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_012"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\delta ( x )",
+          "normalized": "\\delta ( x )",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_013"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "y _ { \\mathrm { l o w } } ( x )",
+          "normalized": "y _ {\\mathrm{low}} ( x )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_014"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho ( { \\boldsymbol { x } } )",
+          "normalized": "\\rho ( {\\boldsymbol {x}} )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_015"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "y _ { \\mathrm { l o w } } ( x )",
+          "normalized": "y _ {\\mathrm{low}} ( x )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_016"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "y _ { \\mathrm { h i g h } } ( x )",
+          "normalized": "y _ {\\mathrm{high}} ( x )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_017"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\rho ( \\pmb { x } ) = \\frac { \\mathrm { C o v } \\left[ y _ { \\mathrm { h i g h } } ( \\pmb { x } ) , y _ { \\mathrm { l o w } } ( \\pmb { x } ) \\right] } { \\mathrm { V a r } [ y _ { \\mathrm { l o w } } ( \\pmb { x } ) ] }\\tag{ð4Þ}\n",
+          "normalized": "\\rho ( \\pmb {x} ) = \\frac {\\mathrm{Cov} \\left[ y _ {\\mathrm{high}} ( \\pmb {x} ) , y _ {\\mathrm{low}} ( \\pmb {x} ) \\right]} {\\mathrm{Var} [ y _ {\\mathrm{low}} ( \\pmb {x} ) ]}\\tag{ð4Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_018"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathrm { C o v } [ y _ { \\mathrm { h i g h } } , \\ y _ { \\mathrm { l o w } } ]",
+          "normalized": "\\mathrm{Cov} [ y _ {\\mathrm{high}} , \\ y _ {\\mathrm{low}} ]",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_019"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathrm { V a r } [ y _ { \\mathrm { l o w } } ]",
+          "normalized": "\\mathrm{Var} [ y _ {\\mathrm{low}} ]",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_020"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "n - 1",
+          "normalized": "n - 1",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_021"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nR _ { \\mathrm { M S E } } = \\sqrt { \\frac { 1 } { l } \\sum _ { i = 1 } ^ { l } { ( y _ { i } - \\hat { y } _ { i } ) } ^ { 2 } }\\tag{ð5Þ}\n",
+          "normalized": "R _ {\\mathrm{MSE}} = \\sqrt {\\frac {1} {l} \\sum _ {i = 1} ^ {l} {( y _ {i} - \\hat {y} _ {i} )} ^ {2}}\\tag{ð5Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_022"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nR _ { \\mathrm { R M S E } } = \\frac { \\sqrt { \\frac { 1 } { l } \\displaystyle \\sum _ { i = 1 } ^ { l } \\left( y _ { i } - \\hat { y } _ { i } \\right) ^ { 2 } } } { y ^ { - } }\\tag{ð6Þ}\n",
+          "normalized": "R _ {\\mathrm{RMSE}} = \\frac {\\sqrt {\\frac {1} {l} \\displaystyle \\sum _ {i = 1} ^ {l} \\left( y _ {i} - \\hat {y} _ {i} \\right) ^ {2}}} {y ^ -}\\tag{ð6Þ}",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_023"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "y _ { i }",
+          "normalized": "y _ {i}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_024"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\hat { y } _ { i }",
+          "normalized": "\\hat {y} _ {i}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_025"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "y _ { i } .",
+          "normalized": "y _ {i}",
+          "repairs": [
+            "latex_spacing_repaired",
+            "unit_expression_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_026"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\begin{array} { r l } { \\operatorname* { m a x } } & { J ( \\gamma , x _ { \\mathrm { a } } ) } \\\\ { \\mathrm { s . t . ~ } } & { \\left\\{ \\begin{array} { c } { 0 ^ { \\circ } \\leqslant \\chi \\leqslant \\chi _ { \\mathrm { l i m i t } } } \\\\ { x _ { \\mathrm { a , l o w } } \\leqslant x _ { \\mathrm { a } } \\leqslant x _ { \\mathrm { a , u p } } } \\\\ { x _ { \\mathrm { p , l o w } } \\leqslant x _ { \\mathrm { p } } \\leqslant x _ { \\mathrm { p , u p } } } \\end{array} \\right. } \\end{array}\\tag{ð7Þ}\n",
+          "normalized": "\\begin{array} {r l} {\\operatorname* {m a x}} & {J ( \\gamma , x _ {\\mathrm{a}} )} \\\\ {\\mathrm{s.t.~}} & {\\left\\{\\begin{array} {c} {0 ^{\\circ} \\leqslant \\chi \\leqslant \\chi _ {\\mathrm{limit}}} \\\\ {x _ {\\mathrm{a,low}} \\leqslant x _ {\\mathrm{a}} \\leqslant x _ {\\mathrm{a,up}}} \\\\ {x _ {\\mathrm{p,low}} \\leqslant x _ {\\mathrm{p}} \\leqslant x _ {\\mathrm{p,up}}} \\end{array} \\right.} \\end{array}\\tag{ð7Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.67,
+          "needs_review": true,
+          "issues": [
+            "unbalanced_delimiters"
+          ],
+          "drop": false,
+          "id": "body_inline_027"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\chi _ { \\mathrm { l i m i t } }",
+          "normalized": "\\chi _ {\\mathrm{limit}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_029"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "x _ { \\mathrm { a } }",
+          "normalized": "x _ {\\mathrm{a}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_030"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "x _ { \\mathrm { a , l o w } }",
+          "normalized": "x _ {\\mathrm{a,low}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_031"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "x _ { \\mathrm { a , u p } }",
+          "normalized": "x _ {\\mathrm{a,up}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_032"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "x _ { \\mathrm { p } }",
+          "normalized": "x _ {\\mathrm{p}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_033"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "x _ { \\mathrm { p , l o w } }",
+          "normalized": "x _ {\\mathrm{p,low}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_034"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "x _ { \\mathrm { p , u p } }",
+          "normalized": "x _ {\\mathrm{p,up}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_035"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\{ 0 ^ { \\circ } , 2 ^ { \\circ } , 4 ^ { \\circ } , 6 ^ { \\circ } , 8 ^ { \\circ } \\}",
+          "normalized": "\\{0 ^{\\circ} , 2 ^{\\circ} , 4 ^{\\circ} , 6 ^{\\circ} , 8 ^{\\circ} \\}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_036"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\chi = 0 ^ { \\circ }",
+          "normalized": "\\chi = 0 ^{\\circ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_037"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\chi = 4 3 ^ { ^ { \\circ } }",
+          "normalized": "\\chi = 43 ^ {^{\\circ}}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_038"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "R _ { \\mathrm { M S E } }",
+          "normalized": "R _ {\\mathrm{MSE}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_039"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "R _ { \\mathrm { R M S E } }",
+          "normalized": "R _ {\\mathrm{RMSE}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_040"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "R _ { \\mathrm { M S E } }",
+          "normalized": "R _ {\\mathrm{MSE}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_041"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "R _ { \\mathrm { R M S E } }",
+          "normalized": "R _ {\\mathrm{RMSE}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_042"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "8 . 6 ^ { \\circ }",
+          "normalized": "8.6 ^{\\circ}",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_043"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "equation_007",
+          "source": "equations",
+          "meta": "[page 7, bbox (59.19, 276.46, 256.45, 286.22)]",
+          "original": "a (�) (Sweep angle (�), Axial position (mm))",
+          "normalized": "a (�) (Sweep angle (�), Axial position (mm))",
+          "confidence": 0.12,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal",
+            "mojibake"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_011",
+          "source": "equations",
+          "meta": "[page 11, bbox (59.19, 75.57, 436.06, 103.44)]",
+          "original": "Method Angle of attack (�) Velocity (Ma) Sweep angle (�) Axial position (mm) Low- fidelity data",
+          "normalized": "Method Angle of attack (�) Velocity (Ma) Sweep angle (�) Axial position (mm) Low- fidelity data",
+          "confidence": 0.27,
+          "needs_review": true,
+          "issues": [
+            "text_heavy",
+            "mojibake"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\chi",
+          "normalized": "\\chi",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_028"
+        }
+      ]
+    },
+    "section_headings_detected": [
+      "## 1. Introduction",
+      "## 2. Problem description",
+      "## 3. Methods",
+      "## 3.1. Method of studying morphing rules along trajectory",
+      "## 3.2. Dynamic model",
+      "## 3.3. Multi-fidelity Kriging model",
+      "## 3.4. Leave-one-out cross validation",
+      "## 3.5. Morphing shape optimization in different flight states",
+      "## 4. Results and discussion",
+      "## 4.1. Results of aerodynamic performance simulation",
+      "## 4.2. Results of MFK modeling",
+      "## 4.3. Results of optimization",
+      "## 4.4. Morphing rules along trajectory",
+      "## 5. Conclusions"
+    ],
+    "final_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    }
+  },
+  "header_footer_repeated_count": 2,
+  "header_footer_removed_count": 13,
+  "tables_count": 6,
+  "figure_captions_count": 0,
+  "table_captions_count": 0,
+  "equations_count": 42,
+  "references_count": 42,
+  "scanned_pdf_detected": false,
+  "ocr_fallback_needed": false
+}

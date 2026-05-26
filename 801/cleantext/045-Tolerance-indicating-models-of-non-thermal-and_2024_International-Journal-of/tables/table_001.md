@@ -1,0 +1,23 @@
+| Nomenclature |  | normalized temperature |
+| --- | --- | --- |
+|  | reference temperature of material |  |
+| Abbreviations heat transport |  | limit temperature of material |
+| HT VP |  | probability of thermal damage |
+| TPS | Volume-to-Point | threshold temperature |
+|  | thermal protection system | average temperature |
+| MMA | method of moving asymptotes | maximum temperature |
+| SIMP | solid isotropic material with penalization | standard deviation of temperature |
+| Symbols |  | average temperature without damage |
+| $k$ | thermal conductivity | $T _ { \mathrm { m a x 0 } }$ maximum temperature without damage standard deviation of temperature without damage |
+| $T$ | absolute temperature | $T _ { \mathrm { a v g - n } }$ |
+| $x , y , z$ | Cartesian coordinates | normalized average temperature normalized maximum temperature |
+| $T _ { \mathrm { g e o a v } }$ | geometric average temperature | normalized standard deviation of temperature |
+| $Q$ | thermal load | $T ^ { * } \mathbf { \tau } _ { \mathbf { a v g } }$ |
+| $V _ { \mathrm { c } }$ | volume constraint | prediction of average temperature $T ^ { * } \mathrm { _ { m a x } }$ prediction of maximum temperature |
+| $L$ | length of topology region | prediction of standard deviation of temperature |
+| $V$ | volume fraction | non-thermal damage tolerance |
+| $R$ | typical radius | thermal damage tolerance |
+| $T _ { \mathrm { f } }$ | constraint temperature |  |
+| $\beta$ | maximum probability gradient | Greek |
+| $r$ | radius of damage | density $\rho$ |
+| $N$ | number of damage | Ω design domain |

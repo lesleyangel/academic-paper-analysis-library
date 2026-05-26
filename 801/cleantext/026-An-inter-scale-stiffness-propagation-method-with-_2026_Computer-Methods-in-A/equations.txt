@@ -1,0 +1,571 @@
+[confidence=0.92; source=equations; [page 1, bbox (39.0, 203.61, 375.12, 234.3)]] Yu-Cheng Yang a, Zi-Qian Wang a, Jian-Jun Gou a,* , Xiao-Bing Ma a,b, Chun-Lin Gong a
+
+[confidence=0.92; source=equations; [page 1, bbox (44.05, 612.44, 205.56, 633.69)]] * Corresponding author. E-mail address: jj.gou@nwpu.edu.cn (J.-J. Gou)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (39.0, 642.88, 372.42, 664.19)]] https://doi.org/10.1016/j.cma.2025.118720 Received 28 October 2025; Received in revised form 15 December 2025; Accepted 29 December 2025
+
+[confidence=0.92; source=equations; [page 4, bbox (62.93, 137.36, 114.99, 150.39)]] P{N(V) = k} =
+
+[confidence=0.92; source=equations; [page 4, bbox (127.5, 137.36, 507.57, 155.89)]] k! e-λp|V|, k = 0, 1, 2, … (1)
+
+[confidence=0.57; needs_review; source=equations; [page 4, bbox (39.01, 156.75, 507.59, 180.27)]] Counts on disjoint subsets are independent, and conditional on N(V) = k, the centers are uniformly and independently distributed within V
+
+[confidence=0.92; source=equations; [page 4, bbox (62.93, 216.5, 101.09, 240.01)]] fR(r) = 1 σ
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (82.77, 292.23, 110.45, 311.42)]] ) = ⋃ N(ω)
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (87.48, 340.36, 507.57, 366.28)]] ) = {1, x ∈B (ω) (pore), 0, x ∕∈B (ω) (solid). (4)
+
+[confidence=0.92; source=equations; [page 4, bbox (62.93, 439.65, 507.57, 453.61)]] ϕV(x, ω) = 〈Y〉V(x, ω). (6)
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (106.07, 225.21, 137.78, 244.41)]] ] = ∫rmax
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (62.93, 225.21, 97.33, 246.31)]] vp = E [4π
+
+[confidence=0.92; source=equations; [page 5, bbox (70.47, 270.34, 157.4, 286.68)]] ( r ) = E[Y(x)Y(x + h)], CY
+
+[confidence=0.92; source=equations; [page 5, bbox (158.06, 270.34, 186.03, 286.68)]] ( r ) = S2
+
+[confidence=0.92; source=equations; [page 5, bbox (211.58, 271.94, 507.57, 286.68)]] 2, r = ‖ h ‖. (9)
+
+[confidence=0.92; source=equations; [page 5, bbox (62.93, 308.4, 507.58, 321.43)]] S2(r) = 1-2e-λpVp + e-λpV∪(r), (10)
+
+[confidence=0.92; source=equations; [page 5, bbox (62.93, 418.84, 507.58, 431.93)]] V∪(r) = 2Vp -E[V∩(r; A, B)], (11)
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (71.94, 452.16, 199.62, 468.55)]] ( r ) = exp [ -λpV∪(r) ] -exp [ -2λpvp
+
+[confidence=0.92; source=equations; [page 5, bbox (86.57, 556.89, 111.18, 573.46)]] ⎦= 1
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (86.57, 605.57, 507.58, 621.96)]] ] ≈Aϕ|V|-αϕ, (14)
+
+[confidence=0.92; source=equations; [page 5, bbox (44.96, 660.64, 499.26, 671.84)]] λp (µm-3) µR (µm) σR (µm) Rmin (µm) Rmax (µm)
+
+[confidence=0.57; needs_review; source=equations; [page 6, bbox (50.97, 63.49, 505.68, 76.95)]] For two local volumes V1, V2 with centers separated by h (distance r = ‖ h ‖), the cross-volume covariance of local porosities is
+
+[confidence=0.92; source=equations; [page 6, bbox (62.93, 78.79, 235.1, 102.71)]] Cϕ(r; V1, V2) = Cov [ ϕV1(x), ϕV2(x + h) ] = 1 |V1‖ V2|
+
+[confidence=0.92; source=equations; [page 6, bbox (259.99, 84.18, 507.58, 97.27)]] CY( ‖ h + u2 -u1 ‖ )du1du2. (15)
+
+[confidence=0.57; needs_review; source=equations; [page 6, bbox (50.97, 175.48, 477.5, 190.56)]] In practice, ̂CΦ(r; V1, V2) is estimated either by ensemble averaging over many realizations. With n realizations {ωk}n k=1,
+
+[confidence=0.92; source=equations; [page 6, bbox (136.29, 193.35, 507.58, 213.21)]] ( ϕ(k) V1 (x) -ϕ )( ϕ(k) V2 (x + h) -ϕ ) . (16)
+
+[confidence=0.92; source=equations; [page 6, bbox (63.33, 253.81, 120.76, 277.72)]] ̂Cϕ(r; V1, V2) = 1 n
+
+[confidence=0.92; source=equations; [page 6, bbox (125.07, 271.09, 133.35, 279.56)]] i=0
+
+[confidence=0.92; source=equations; [page 6, bbox (186.07, 255.94, 253.17, 273.15)]] ) -ϕ, Y ( x + h + u(i) 2
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (253.7, 255.94, 507.58, 272.28)]] ) -ϕ ] , (17)
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (136.29, 255.94, 185.59, 273.15)]] Cov [ Y ( x + u(i) 1
+
+[confidence=0.92; source=equations; [page 6, bbox (63.33, 303.02, 120.76, 326.93)]] ̂Cϕ(r; V1, V2) = 1 n
+
+[confidence=0.92; source=equations; [page 6, bbox (125.07, 320.3, 133.35, 328.77)]] i=0
+
+[confidence=0.92; source=equations; [page 6, bbox (147.46, 305.15, 229.5, 322.36)]] ( ‖ h + u(i) 2 -u(i) 1 ‖ ) -ϕ
+
+[confidence=0.92; source=equations; [page 7, bbox (62.93, 173.7, 140.68, 186.79)]] Cmodel ϕ (r; V1, V2) = AϕV
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (205.34, 168.01, 507.58, 186.79)]] ) , Vg = ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ |V1||V2| √ , (19)
+
+[confidence=0.92; source=equations; [page 7, bbox (62.93, 316.67, 507.58, 329.77)]] X(V) = (X1, …, Xm)⊤∈Rm, (20)
+
+[confidence=0.92; source=equations; [page 7, bbox (72.57, 435.83, 507.58, 452.17)]] / Vm,max ∈{1/3, 1/2, 1/1.5, 1}, (21)
+
+[confidence=0.57; needs_review; source=equations; [page 8, bbox (50.97, 346.67, 470.7, 359.7)]] For the three normal loading cases, a unit macroscopic normal stress is prescribed successively in directions i = 1,2,3,
+
+[confidence=0.92; source=equations; [page 8, bbox (62.93, 359.92, 115.0, 376.31)]] 〈σii〉= 1, 〈σjk
+
+[confidence=0.92; source=equations; [page 8, bbox (115.48, 359.92, 507.58, 376.25)]] 〉 = 0, ( j, k ∕= i ) , (23)
+
+[confidence=0.92; source=equations; [page 8, bbox (170.99, 419.5, 507.58, 435.84)]] 〉(i) / 〈εii〉(i), ( j ∕= i), (24)
+
+[confidence=0.57; needs_review; source=equations; [page 8, bbox (71.49, 473.81, 386.48, 490.29)]] 〉 is extracted from the FE solution, and the shear modulus is computed directly as Gij = 〈σij
+
+[confidence=0.92; source=equations; [page 8, bbox (62.93, 568.34, 507.58, 581.43)]] Var[Xi(V)] = BiV-αi, i = 1, 2, …, m, (25)
+
+[confidence=0.92; source=equations; [page 9, bbox (62.93, 85.16, 507.58, 102.51)]] Z(V) = (X1, …, Xm, ϕV)⊤, μZ = ( μ⊤ X , ϕ )⊤, (26)
+
+[confidence=0.92; source=equations; [page 9, bbox (62.93, 124.55, 507.58, 137.58)]] Σ(V) = D(V)RD(V), (27)
+
+[confidence=0.67; needs_review; source=equations; [page 9, bbox (62.93, 157.3, 117.27, 173.63)]] D ( V ) = diag(σ1
+
+[confidence=0.92; source=equations; [page 9, bbox (140.32, 194.09, 507.58, 212.75)]] ( V ) = ̅̅̅̅̅ Bϕ √ V-αϕ/2. (29)
+
+[confidence=0.92; source=equations; [page 9, bbox (142.41, 305.89, 507.58, 322.28)]] ( V )σϕ(V)-2( ϕ -ϕ ) , (30)
+
+[confidence=0.92; source=equations; [page 9, bbox (167.24, 327.83, 218.33, 344.17)]] ( V )σϕ(V)-2ΣϕX
+
+[confidence=0.92; source=equations; [page 9, bbox (62.93, 331.13, 132.3, 344.81)]] Var[X|ϕV = ϕ] = ΣXX
+
+[confidence=0.67; needs_review; source=equations; [page 9, bbox (249.85, 348.79, 291.98, 366.08)]] ( V ) = ( ρiϕσi
+
+[confidence=0.92; source=equations; [page 9, bbox (142.36, 379.49, 507.58, 403.41)]] σi(V) σϕ(V) (ϕ -ϕ), i = 1, …, m, (32)
+
+[confidence=0.67; needs_review; source=equations; [page 9, bbox (153.92, 407.77, 507.58, 426.43)]] ) , i = 1, …, m. (33)
+
+[confidence=0.92; source=equations; [page 9, bbox (62.93, 552.96, 507.58, 566.88)]] Z (ω) = {(ϕe(ω), Xe(ω)) ∈R \times Rm : e = 1, …, ne}. (34)
+
+[confidence=0.67; needs_review; source=equations; [page 9, bbox (143.15, 605.91, 507.58, 622.24)]] ) , rij =‖ xi -xj ‖, (35)
+
+[confidence=0.92; source=equations; [page 9, bbox (62.93, 648.79, 507.58, 662.12)]] ϕ = ϕ + Lϕξ, ξ ∼N (0, Ine), LϕL⊤ ϕ = Σϕ, (36)
+
+[confidence=0.92; source=equations; [page 10, bbox (62.93, 105.42, 507.58, 124.48)]] σi(Ve) = ̅̅̅̅ Bi √ ⃒⃒⃒Ve|-αi/2, σϕ(Ve) = ̅̅̅̅̅ Bϕ √ ⃒⃒⃒Ve|-αϕ/2, (37)
+
+[confidence=0.92; source=equations; [page 10, bbox (62.93, 150.79, 507.58, 165.93)]] μXe|ϕe = E[Xe|ϕe] = μX + ΣXϕ(Ve)σϕ(Ve)-2(ϕe -ϕ), (38)
+
+[confidence=0.92; source=equations; [page 10, bbox (62.93, 173.93, 185.0, 187.65)]] ΣXe|ϕe = Var[Xe|ϕe] = ΣXX(Ve) -ΣXϕ
+
+[confidence=0.67; needs_review; source=equations; [page 10, bbox (75.17, 191.58, 126.62, 209.09)]] ( Ve) = diag ( σ21
+
+[confidence=0.67; needs_review; source=equations; [page 10, bbox (197.07, 170.62, 507.58, 186.96)]] )σϕ(Ve)-2ΣϕX(Ve), (39)
+
+[confidence=0.92; source=equations; [page 10, bbox (40.31, 191.59, 506.62, 220.83)]] ) = ( ρiϕσi
+
+[confidence=0.92; source=equations; [page 10, bbox (62.93, 224.55, 507.58, 239.35)]] Xe = μXe|ϕe + LXe|ϕeηe, ηe ∼N (0, Im), LXe|ϕeL⊤ Xe|ϕe = ΣXe|ϕe. (40)
+
+[confidence=0.92; source=equations; [page 11, bbox (132.94, 226.92, 160.24, 244.33)]] nc + ∑
+
+[confidence=0.57; needs_review; source=equations; [page 13, bbox (154.15, 286.68, 391.87, 318.7)]] Table 3 Fitted parameters of the Mat´ern covariance model Cmodel Φ with smoothness ν = 3/2.
+
+[confidence=0.92; source=equations; [page 15, bbox (62.93, 645.95, 144.26, 664.93)]] F -err = ‖ Rmod -Remp
+
+[confidence=0.92; source=equations; [page 15, bbox (152.84, 645.95, 251.69, 664.93)]] , λ -err = ‖ Rmod -Remp
+
+[confidence=0.92; source=equations; [page 16, bbox (64.23, 603.75, 507.58, 624.85)]] DB = -ln ( ∫ ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ p(x)q(x) √ dx ) , (43)
+
+[confidence=0.92; source=equations; [page 16, bbox (74.83, 650.07, 507.58, 676.67)]] ( p ‖ q ) = ∫ p ( x)ln p(x) q(x) dx, (44)
+
+[confidence=0.92; source=body_inline] \phi _ {V} ( x )
+
+[confidence=0.92; source=body_inline] \phi _ {V}
+
+[confidence=0.92; source=body_inline] C _ {\phi} ( r ; V _ {1} , V _ {2} )
+
+[confidence=0.92; source=body_inline] \mathrm{Var} [ \overline {{\phi}} _ {V} ] {\propto} | V | ^ {- \alpha _ {\phi}}
+
+[confidence=0.92; source=body_inline] \alpha _ {\phi} \approx 1
+
+[confidence=0.92; source=body_inline] \operatorname{Var} [ X _ {i} ( V ) ] = B _ {i} | V | ^ {- \alpha _ {i}}
+
+[confidence=0.92; source=body_inline] \phi _ {e}
+
+[confidence=0.92; source=body_inline] C _ {\phi} ( r ; V _ {e} , V _ {e ^ {\prime}} )
+
+[confidence=0.92; source=body_inline] V _ {e}
+
+[confidence=0.92; source=body_inline] X _ {e}
+
+[confidence=0.92; source=body_inline] P ( X _ {e} | \phi _ {e} , V _ {e} )
+
+[confidence=0.92; source=body_inline] \lambda _ {P} > 0
+
+[confidence=0.92; source=body_inline] \mathcal {D} \mathsf{C} \mathbb {R} ^ {3}
+
+[confidence=0.92; source=body_inline] \mathbb {P} \{N ( V ) = k \} = \frac {{\left( \lambda _ {p} | V | \right)} ^ {k}} {k !} e ^ {- \lambda _ {p} | V |} , k = 0 , 1 , 2 , \ldots\tag{1}
+
+[confidence=0.92; source=body_inline] N ( \mathrm{~V~} ) = k ,
+
+[confidence=0.92; source=body_inline] x _ {i}
+
+[confidence=0.92; source=body_inline] R _ {i}
+
+[confidence=0.92; source=body_inline] {\mathcal {N}} ( \mu , \sigma ^ {2} )
+
+[confidence=0.92; source=body_inline] [ r _ {\operatorname* {m i n}} , r _ {\operatorname* {m a x}} ]
+
+[confidence=0.92; source=body_inline] f _ {R} ( r ) = \frac {1} {\sigma \sqrt {2 \pi}} \cdot \frac {\exp \left( - \frac {( r - \mu ) ^ {2}} {2 \sigma ^ {2}} \right)} {\Phi _ {\mathcal {N}} \left( \frac {r _ {\mathrm{max}} - \mu} {\sigma} \right) - \Phi _ {\mathcal {N}} \left( \frac {r _ {\mathrm{min}} - \mu} {\sigma} \right)} , r _ {\mathrm{min}} \leq r \leq r _ {\mathrm{max}} ,\tag{2}
+
+[confidence=0.92; source=body_inline] \Phi _ {\mathcal {N}} ( \cdot )
+
+[confidence=0.67; needs_review; source=body_inline] , R ) = \big \{\boldsymbol {y} \in \mathbb {R} ^ {3} : \| \boldsymbol {y} - \boldsymbol {x} \| \le R \big \}
+
+[confidence=0.92; source=body_inline] \omega \in \Omega
+
+[confidence=0.92; source=body_inline] \mathcal {B} \bigg ( \omega \bigg ) = \bigcup _ {i = 1} ^ {N ( \omega )} \mathbb {B} \bigg ( \mathbf {x} _ {i} \bigg ( \omega ) , R _ {i} \bigg ( \omega ) \bigg ) \mathsf{C} \mathbb {R} ^ {3} ,\tag{3}
+
+[confidence=0.67; needs_review; source=body_inline] Y {\biggl (} \mathbf {x} , \omega {\biggr )} = {\left\{\begin{array} {l l} {1 ,} & {\mathbf {x} \in {\mathcal {B}} ( \omega ) \quad {\mathrm{(pore)}} ,} \\ {0 ,} & {\mathbf {x} \not \in {\mathcal {B}} ( \omega ) \quad {\mathrm{(solid)}} .} \end{array} \right.}\tag{4}
+
+[confidence=0.92; source=body_inline] V {\subset} \mathbb {R} ^ {3}
+
+[confidence=0.92; source=body_inline] f ( \mathbf {x} , \omega )
+
+[confidence=0.92; source=body_inline] \langle f \rangle _ {V} \bigg ( \mathbf {x} , \omega \bigg ) = \frac {1} {| V |} \int _ {\mathbf {u} \in V} f \bigg ( \mathbf {x} + \mathbf {u} , \omega \bigg ) d \mathbf {u} .\tag{5}
+
+[confidence=0.92; source=body_inline] \phi _ {V} ( \mathbf {x} , \omega ) = \langle Y \rangle _ {V} ( \mathbf {x} , \omega ) .\tag{6}
+
+[confidence=0.92; source=body_inline] \lambda _ {p}
+
+[confidence=0.92; source=body_inline] \sigma _ {R}
+
+[confidence=0.67; needs_review; source=body_inline] \lambda _ {p} )
+
+[confidence=0.92; source=body_inline] Y ( {\bf x} , \omega )
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\overline {{\phi}} = \mathbb {E} \big [ \boldsymbol {Y} ( \mathbf {x} , \cdot ) \big ] = 1 - \exp \big ( - \lambda _ {p} \overline {{\nu}} _ {p} \big ) , \mathbf {x} \in \mathcal {D} ,} \end{array}\tag{7}
+
+[confidence=0.92; source=body_inline] \overline {{\nu}} _ {p} = \mathbb {E} \bigg [ \frac {4 \pi} {3} R ^ {3} \bigg ] = \int _ {r _ {\mathrm{min}}} ^ {r _ {\mathrm{max}}} \frac {4 \pi} {3} R ^ {3} f _ {R} ( R ) \mathrm{d} R .\tag{8}
+
+[confidence=0.92; source=body_inline] S _ {2} ( r ) = \mathbb {E} [ Y ( \mathbf {x} ) Y ( \mathbf {x + h} ) ] , C _ {Y} ( r ) = S _ {2} ( r ) - \overline {{\phi}} ^ {2} , r = \| \textbf {h} \| .\tag{9}
+
+[confidence=0.92; source=body_inline] S _ {2} ( r ) = 1-2 e ^ {- \lambda _ {p} \overline {{V}} _ {\mathrm{p}}} + e ^ {- \lambda _ {p} \overline {{V}} _ {\cup} ( r )} ,\tag{10}
+
+[confidence=0.92; source=body_inline] \overline {{V}} _ {\cup} ( r )
+
+[confidence=0.92; source=body_inline] f _ {R} {:}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\overline {{V}} _ {\cup} ( r ) = 2 \overline {{V}} _ {\mathrm{p}} - \mathbb {E} [ V _ {\cap} ( r ; A , B ) ] ,} \end{array}\tag{11}
+
+[confidence=0.92; source=body_inline] V _ {\cap}
+
+[confidence=0.92; source=body_inline] C _ {Y} \big ( r \big ) = \exp \big [ - \lambda _ {p} \overline {{V}} _ {\cup} ( r ) \big ] - \exp \big [ - 2 \lambda _ {p} \overline {{\nu}} _ {\mathrm{p}} \big ] .\tag{12}
+
+[confidence=0.92; source=body_inline] {{a} _ {0}} ,
+
+[confidence=0.92; source=body_inline] \overline {{V}} _ {\cup} ( r ) = 2 \overline {{\nu}} _ {p} \mathrm{for} r > 2 a _ {0}
+
+[confidence=0.92; source=body_inline] C _ {Y} ( r )
+
+[confidence=0.92; source=body_inline] \mathrm{Var} [ \phi _ {V} ] = \frac {1} {\vert V \vert ^ {2}} \int \displaylimits _ {0} \int \displaylimits _ {V \times V} C _ {Y} ( \Vert \mathbf {u} _ {2} - \mathbf {u} _ {1} \Vert ) d \mathbf {u} _ {1} d \mathbf {u} _ {2} , \left( \mathbf {u} _ {1} , \mathbf {u} _ {2} \in V ) , \right.\tag{13}
+
+[confidence=0.92; source=body_inline] \mathsf{Var} [ \phi _ {V} ] \approx A _ {\phi} \vert V \vert ^ {- \alpha _ {\phi}} ,\tag{14}
+
+[confidence=0.92; source=body_inline] A _ {\phi} > 0
+
+[confidence=0.92; source=body_inline] C _ {Y}
+
+[confidence=0.92; source=body_inline] V _ {1} , V _ {2}
+
+[confidence=0.67; needs_review; source=body_inline] r = \parallel \mathbf {h} \parallel )
+
+[confidence=0.92; source=body_inline] C _ {\phi} ( r ; V _ {1} , V _ {2} ) = \mathrm{Cov} \big [ \phi _ {V _ {1}} ( \mathbf {x} ) , \phi _ {V _ {2}} ( \mathbf {x} + \mathbf {h} ) \big ] = \frac {1} {| V _ {1} | | \ V _ {2} |} \ \int \int d \mathbf {\Omega} C _ {Y} ( \mathbf {\Omega} \| \ \mathbf {h} + \mathbf {u} _ {2} - \mathbf {u} _ {1} \mathrm{\Omega} \| \mathbf {\Omega} ) d \mathbf {u} _ {1} d \mathbf {u} _ {2} .\tag{15}
+
+[confidence=0.92; source=body_inline] A _ {\phi}
+
+[confidence=0.92; source=body_inline] {a} _ {\phi} ,
+
+[confidence=0.92; source=body_inline] \widehat {C} _ {\Phi} ( r ; V _ {1} , V _ {2} )
+
+[confidence=0.92; source=body_inline] \{\omega _ {k} \} _ {k = 1} ^ {n}
+
+[confidence=0.92; source=body_inline] \widehat {C} _ {\phi} ( r ; V _ {1} , V _ {2} ) = \frac {1} {n} \sum _ {k = 1} ^ {n} \left( \phi _ {V _ {1}} ^ {( k )} ( \mathbf {x} ) - \overline {{\phi}} \right) \left( \phi _ {V _ {2}} ^ {( k )} ( \mathbf {x} + \mathbf {h} ) - \overline {{\phi}} \right) .\tag{16}
+
+[confidence=0.92; source=body_inline] \big ( \mathbf {u} _ {1} ^ {( i )} , \mathbf {u} _ {2} ^ {( i )} \big ) \sim
+
+[confidence=0.92; source=body_inline] \mathsf{f} ( V _ {1} ) \times \mathsf{Unif} ( V _ {2} )
+
+[confidence=0.92; source=body_inline] \widehat {C} _ {\phi} ( r ; V _ {1} , V _ {2} ) = \frac {1} {n} \sum _ {i = 0} ^ {n} \mathrm{Cov} \big [ Y \big ( \mathbf {x} + \mathbf {u} _ {1} ^ {( i )} \big ) - \overline {{\phi}} , Y \big ( \mathbf {x} + \mathbf {h} + \mathbf {u} _ {2} ^ {( i )} \big ) - \overline {{\phi}} \big ] ,\tag{17}
+
+[confidence=0.92; source=body_inline] S _ {2}
+
+[confidence=0.92; source=body_inline] \widehat {C} _ {\phi} ( r ; V _ {1} , V _ {2} ) = \frac {1} {n} \sum _ {i = 0} ^ {n} \big ( S _ {2} \big ( \mid \mid \mathbf {h} + \mathbf {u} _ {2} ^ {( i )} - \mathbf {u} _ {1} ^ {( i )} \mid \mid \big ) - \overline {{\phi}} ^ {2} \big ) .\tag{18}
+
+[confidence=0.92; source=body_inline] V _ {1}
+
+[confidence=0.92; source=body_inline] V _ {2}
+
+[confidence=0.92; source=body_inline] \mathrm{i.e.,}
+
+[confidence=0.92; source=body_inline] n = N _ {\mathrm{MC}}
+
+[confidence=0.67; needs_review; source=body_inline] ( \mathbf {u} _ {1} ^ {( i )}
+
+[confidence=0.67; needs_review; source=body_inline] \mathbf {u} _ {2} ^ {( i )} )
+
+[confidence=0.92; source=body_inline] \mathbf {u} _ {1} ^ {( i )}
+
+[confidence=0.92; source=body_inline] \mathbf {u} _ {2} ^ {( i )}
+
+[confidence=0.92; source=body_inline] V _ {2 s}
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{MC}} = 1.2 \mathrm{e} 4
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{MC}}
+
+[confidence=0.92; source=body_inline] r \in [ 0 , 60 \mu \mathrm{m} ] , N _ {r} = 15 ,
+
+[confidence=0.92; source=body_inline] R _ {V} \in [ 20 \mu \mathrm{m} , 36 \mu \mathrm{m} ] , N _ {R \nu} = 5
+
+[confidence=0.92; source=body_inline] \left( V _ {1} , V _ {2} \right)
+
+[confidence=0.92; source=body_inline] V _ {1} ,
+
+[confidence=0.67; needs_review; source=body_inline] C _ {\phi} ( r ;
+
+[confidence=0.67; needs_review; source=body_inline] V _ {1} , V _ {2} )
+
+[confidence=0.92; source=body_inline] \nu = 3 / 2
+
+[confidence=0.92; source=body_inline] C _ {\phi} ^ {\mathrm{model}} ( r ; V _ {1} , V _ {2} ) = A _ {\phi} V _ {g} ^ {- \alpha _ {\phi}} \left( 1 + \frac {r} {\rho} \right) \exp \left( - \frac {r} {\rho} \right) , V _ {g} = \sqrt {| V _ {1} | | V _ {2} |} ,\tag{19}
+
+[confidence=0.92; source=body_inline] V _ {g}
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.92; source=body_inline] \left| V \right| ^ {- 1}
+
+[confidence=0.92; source=body_inline] \mathbf {X} ( V ) = \left( X _ {1} , . . . , X _ {m} \right) ^ {\top} \in \mathbb {R} ^ {m} ,\tag{20}
+
+[confidence=0.92; source=body_inline] E _ {1} , E _ {2} , E _ {3} ,
+
+[confidence=0.92; source=body_inline] G _ {12} , G _ {23} , G _ {13} ,
+
+[confidence=0.92; source=body_inline] \nu _ {12} , \nu _ {23} , \nu _ {31}
+
+[confidence=0.92; source=body_inline] \mu _ {X _ {i}} ( V ) = \operatorname {\mathbb {E}} [ X _ {i} ( V ) ]
+
+[confidence=0.92; source=body_inline] V _ {m} / V _ {m , \operatorname* {m a x}} \in \{1 / 3 , 1 / 2 , 1 / 1.5 , 1 \} ,\tag{21}
+
+[confidence=0.92; source=body_inline] V _ {m , \operatorname* {m a x}}
+
+[confidence=0.92; source=body_inline] \mathrm {( R V E _ {m 1} )}
+
+[confidence=0.92; source=body_inline] V _ {m} ,
+
+[confidence=0.92; source=body_inline] E _ {m} = 82.5 \mathrm{GPa}
+
+[confidence=0.92; source=body_inline] \nu _ {m} = 0.2
+
+[confidence=0.92; source=body_inline] \langle \pmb {\sigma} \rangle = \frac {1} {| V |} \int _ {V} \pmb {\sigma} \bigg ( \mathbf {x} ) \mathrm{d} \mathbf {x} , \qquad \langle \pmb {\varepsilon} \rangle = \frac {1} {| V |} \int _ {V} \pmb {\varepsilon} \bigg ( \mathbf {x} ) \mathrm{d} \mathbf {x} ,\tag{22}
+
+[confidence=0.92; source=body_inline] \mathbf {C} ^ {\mathrm{eff}}
+
+[confidence=0.92; source=body_inline] \langle {\pmb \sigma} \rangle = {\bf C} ^ {\mathrm{eff}} \langle {\pmb \varepsilon} \rangle
+
+[confidence=0.92; source=body_inline] \mathbf {C} ^ {\mathrm {{e f f}}}
+
+[confidence=0.92; source=body_inline] i = {1 , 2 , 3}
+
+[confidence=0.92; source=body_inline] \langle \sigma _ {i i} \rangle = 1 , \quad \langle \sigma _ {j k} \rangle = 0 , \quad ( j , k \neq i ) ,\tag{23}
+
+[confidence=0.92; source=body_inline] \left. \varepsilon _ {11} \right
+
+[confidence=0.92; source=body_inline] \left. \varepsilon _ {33} \right
+
+[confidence=0.92; source=body_inline] E _ {i} = \left. \sigma _ {i i} \right. ^ {( i )} \big / \left. \varepsilon _ {i i} \right. ^ {( i )} , \quad \nu _ {i j} = - \big \langle \varepsilon _ {j j} \big \rangle ^ {( i )} \big / \left. \varepsilon _ {i i} \right. ^ {( i )} , \quad ( j \ne i ) ,\tag{24}
+
+[confidence=0.92; source=body_inline] \left. \sigma _ {i j} \right. = 1
+
+[confidence=0.92; source=body_inline] \langle \varepsilon _ {k k} \rangle = 0
+
+[confidence=0.92; source=body_inline] \left. \varepsilon _ {i j} \right
+
+[confidence=0.92; source=body_inline] G _ {i j} = {\left. \sigma _ {i j} \right.} ^ {( i j )} / {\left. \varepsilon _ {i j} \right.} ^ {( i j )}
+
+[confidence=0.67; needs_review; source=body_inline] ( E _ {1}
+
+[confidence=0.67; needs_review; source=body_inline] E _ {2} , E _ {3} , \nu _ {12} , \nu _ {23} , \nu _ {31} , G _ {12} , G _ {23} , G _ {13} )
+
+[confidence=0.92; source=body_inline] \operatorname{Var} [ X _ {i} ( V ) ] = B _ {i} V ^ {- \alpha _ {i}} , i = 1 , 2 , . . . , m ,\tag{25}
+
+[confidence=0.92; source=body_inline] B _ {i} > 0
+
+[confidence=0.92; source=body_inline] \alpha _ {i}
+
+[confidence=0.92; source=body_inline] \alpha _ {i} \approx 1
+
+[confidence=0.92; source=body_inline] | V | ^ {- 1}
+
+[confidence=0.92; source=body_inline] ( X _ {1} , . . . , X _ {m} , \phi _ {V} )
+
+[confidence=0.67; needs_review; source=body_inline] {>} 0.9 )
+
+[confidence=0.92; source=body_inline] \boldsymbol {Z} ( \boldsymbol {V} ) = \left( X _ {1} , . . . , X _ {m} , \boldsymbol {\phi} _ {\boldsymbol {V}} \right) ^ {\top} , \boldsymbol {\mu} _ {\boldsymbol {Z}} = \left( \boldsymbol {\mu} _ {\boldsymbol {X}} ^ {\top} , \overline {{\boldsymbol {\phi}}} \right) ^ {\top} ,\tag{26}
+
+[confidence=0.92; source=body_inline] \pmb {\Sigma} ( V ) = \pmb {\mathrm{\bfD}} ( V ) \pmb {\mathrm{\bfR}} \pmb {\mathrm{\bfD}} ( V ) ,\tag{27}
+
+[confidence=0.92; source=body_inline] {\bf D} ( V ) = \mathrm{diag} ( \sigma _ {1} ( V ) , \sigma _ {2} ( V ) , . . . , \sigma _ {m} ( V ) , \sigma _ {\phi} ( V ) ) ,\tag{28}
+
+[confidence=0.92; source=body_inline] \sigma _ {i} \Big ( V \Big ) = \sqrt {B _ {i}} V ^ {- \alpha _ {i} / 2} , \sigma _ {\phi} \Big ( V \Big ) = \sqrt {B _ {\phi}} V ^ {- \alpha _ {\phi} / 2} .\tag{29}
+
+[confidence=0.92; source=body_inline] \operatorname {\mathbb {E}} [ X | \phi _ {V} = \phi ] = \mu _ {X} + \Sigma _ {X \phi} \left( V \right) \sigma _ {\phi} {( V )} ^ {- 2} {\left( \phi - \overline {{\phi}} \right)} ,\tag{30}
+
+[confidence=0.92; source=body_inline] \operatorname{Var} [ X | \phi _ {V} = \phi ] = \Sigma _ {X X} {\big (} V {\big )} - \Sigma _ {X \phi} {\big (} V {\big )} \sigma _ {\phi} ( V ) ^ {- 2} \Sigma _ {\phi X} {\big (} V {\big )} ,\tag{31}
+
+[confidence=0.92; source=body_inline] \Sigma _ {X X} ( V )
+
+[confidence=0.92; source=body_inline] \Sigma _ {X \phi} \left( V \right) = ( \rho _ {i \phi} \sigma _ {i} ( V ) \sigma _ {\phi} ( V ) ) _ {i =} ^ {m}
+
+[confidence=0.92; source=body_inline] \rho _ {i \phi}
+
+[confidence=0.92; source=body_inline] \mathbb {E} [ X _ {i} | \phi _ {V} = \phi ] = \mu _ {X _ {i}} + \rho _ {i \phi} \frac {\sigma _ {i} ( V )} {\sigma _ {\phi} ( V )} ( \phi - \overline {{\phi}} ) , \quad \quad i = 1 , . . . , m ,\tag{32}
+
+[confidence=0.92; source=body_inline] \mathrm{Var} [ X _ {i} | \phi ] = \sigma _ {i} ^ {2} \Bigl ( V \Bigr ) \Bigl ( 1 - \rho _ {i \phi} ^ {2} \Bigr ) , \qquad i = 1 , . . . , m .\tag{33}
+
+[confidence=0.92; source=body_inline] | V | ^ {- \alpha}
+
+[confidence=0.92; source=body_inline] \{B _ {i} , \alpha _ {i} \}
+
+[confidence=0.92; source=body_inline] \mathrm {( R V E _ {b} )}
+
+[confidence=0.92; source=body_inline] e =
+
+[confidence=0.92; source=body_inline] 1 , . . . , n _ {e} ,
+
+[confidence=0.92; source=body_inline] x _ {e} \in \mathcal {D}
+
+[confidence=0.92; source=body_inline] \mathcal {Z} ( \omega ) = \{( \phi _ {e} ( \omega ) , X _ {e} ( \omega ) ) \in \mathbb {R} \times \mathbb {R} ^ {m} : e = 1 , . . . , n _ {e} \} .\tag{34}
+
+[confidence=0.92; source=body_inline] \{\phi _ {e} \}
+
+[confidence=0.92; source=body_inline] \left\{X _ {e , i} \right\} _ {i = 1} ^ {m}
+
+[confidence=0.92; source=body_inline] \mathcal {Z} ( \omega )
+
+[confidence=0.92; source=body_inline] ^ {4 ,}
+
+[confidence=0.92; source=body_inline] n _ {e} \times n _ {e}
+
+[confidence=0.92; source=body_inline] \left[ \Sigma _ {\phi} \right] _ {i j} = C _ {\phi} ^ {\mathrm{model}} \bigl ( r _ {i j} ; V _ {i} , V _ {j} \bigr ) , \qquad r _ {i j} = \parallel x _ {i} - x _ {j} \parallel ,\tag{35}
+
+[confidence=0.92; source=body_inline] \overline {{\phi}} . \mathrm{A}
+
+[confidence=0.92; source=body_inline] \phi = \overline {{\phi}} + \mathbf {L} _ {\phi} \boldsymbol {\xi} , \boldsymbol {\xi} \sim \mathcal {N} ( \mathbf {0} , \mathbf {I} _ {n _ {e}} ) , \mathbf {L} _ {\phi} \mathbf {L} _ {\phi} ^ {\top} = \boldsymbol {\Sigma} _ {\phi} ,\tag{36}
+
+[confidence=0.92; source=body_inline] \mu _ {X} ,
+
+[confidence=0.92; source=body_inline] \sigma _ {i} ( V _ {e} ) = \sqrt {B _ {i}} \Big | V _ {e} \big | ^ {- \alpha _ {i} / 2} , \qquad \sigma _ {\phi} ( V _ {e} ) = \sqrt {B _ {\phi}} \Big | V _ {e} \big | ^ {- \alpha _ {\phi} / 2} ,\tag{37}
+
+[confidence=0.92; source=body_inline] \mu _ {X _ {e} | \phi _ {e}} = \mathbb {E} [ \mathbf {X} _ {e} | \phi _ {e} ] = \mu _ {X} + \Sigma _ {X \phi} ( V _ {e} ) \sigma _ {\phi} ( V _ {e} ) ^ {- 2} ( \phi _ {e} - \overline {\phi} ) ,\tag{38}
+
+[confidence=0.92; source=body_inline] \pmb {\Sigma} _ {X _ {e} | \phi _ {e}} = \mathrm{Var} [ \pmb {X} _ {e} | \phi _ {e} ] = \pmb {\Sigma} _ {X X} ( V _ {e} ) - \pmb {\Sigma} _ {X \phi} \left( V _ {e} \right) \sigma _ {\phi} ( V _ {e} ) ^ {- 2} \pmb {\Sigma} _ {\phi X} ( V _ {e} ) ,\tag{39}
+
+[confidence=0.92; source=body_inline] \Sigma _ {X X} ( V _ {e} ) = {\mathrm{diag}} \left( \sigma _ {1} ^ {2} ( V _ {e} ) , . . . , \sigma _ {m} ^ {2} ( V _ {e} ) \right) R _ {X}
+
+[confidence=0.92; source=body_inline] R _ {X} ,
+
+[confidence=0.92; source=body_inline] \Sigma _ {X \phi} \left( V _ {e} \right) =
+
+[confidence=0.92; source=body_inline] ( \rho _ {i \phi} \sigma _ {i} \big ( V _ {e} \big ) \sigma _ {\phi} \big ( V _ {e} \big ) ) _ {i = 1} ^ {m}
+
+[confidence=0.92; source=body_inline] \mathbf {X} _ {e} = \mu _ {X _ {e} | \phi _ {e}} + \mathbf {L} _ {X _ {e} | \phi _ {e}} \eta _ {e} , \qquad \eta _ {e} \sim \mathcal {N} ( \mathbf {0} , \mathbf {I} _ {m} ) , \mathbf {L} _ {X _ {e} | \phi _ {e}} \mathbf {L} _ {X _ {e} | \phi _ {e}} ^ {\top} = \Sigma _ {X _ {e} | \phi _ {e}} .\tag{40}
+
+[confidence=0.92; source=body_inline] | \rho _ {i \phi} |
+
+[confidence=0.92; source=body_inline] \{\pmb {\eta _ {e}} \}
+
+[confidence=0.92; source=body_inline] \mathrm{i.i.d.}
+
+[confidence=0.92; source=body_inline] \Sigma _ {\phi}
+
+[confidence=0.92; source=body_inline] ( \mathrm {R V E _ {b 1} , R V E _ {b 2} , R V E _ {b 3}} )
+
+[confidence=0.92; source=body_inline] \mathrm{Fig.4.}
+
+[confidence=0.92; source=body_inline] \mathrm {R V E _ {b}}
+
+[confidence=0.92; source=body_inline] {\mathrm{RVE}} _ {\mathrm{b}} ,
+
+[confidence=0.92; source=body_inline] n _ {\mathrm{pore}}
+
+[confidence=0.92; source=body_inline] N _ {\mathrm {{s a m p}}}
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{intrusive}} \sim N _ {\mathrm{samp}} n _ {\mathrm{pore}} ,
+
+[confidence=0.92; source=body_inline] n _ {m , i}
+
+[confidence=0.92; source=body_inline] n _ {c}
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{nonintrusive}} \sim N _ {\mathrm{samp}} \left( n _ {c} + \sum _ {i} n _ {m , i} \right) .\tag{41}
+
+[confidence=0.92; source=body_inline] n _ {c} = 10 ^ {4}
+
+[confidence=0.92; source=body_inline] {n _ {m , 1} = 10 ^ {4} / 3 , n _ {m , 2} = 10 ^ {4} / 2 , n _ {m , 3} = 10 ^ {4} / 1.5}
+
+[confidence=0.92; source=body_inline] n _ {m , 4} = 10 ^ {4}
+
+[confidence=0.92; source=body_inline] \Sigma n _ {m , I} = 2.5 \times 10 ^ {4}
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{samp}} = 2000
+
+[confidence=0.92; source=body_inline] n _ {\mathrm{pore}} \sim 10 ^ {7} - 10 ^ {8}
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{intrusive}} \sim 2 \times 10 ^ {10} {- 2} \times 10 ^ {11} , N _ {\mathrm{no}}
+
+[confidence=0.92; source=body_inline] \approx 7 \times 10 ^ {7}
+
+[confidence=0.92; source=body_inline] ^ {6 ,}
+
+[confidence=0.92; source=body_inline] C _ {Y} ( r ) \left( \operatorname{Eq.} \left( 12 \right) \right)
+
+[confidence=0.92; source=body_inline] {\mathrm{Fig.~}} 6 ,
+
+[confidence=0.92; source=body_inline] ( V _ {1} , V _ {2} , R ) ,
+
+[confidence=0.92; source=body_inline] V ^ {- 1}
+
+[confidence=0.92; source=body_inline] \operatorname{8} ( \mathsf{a-c} )
+
+[confidence=0.92; source=body_inline] V _ {g} ,
+
+[confidence=0.67; needs_review; source=body_inline] ( R = 0 \mu \mathrm{m} , R = 75 \mu \mathrm{m}
+
+[confidence=0.67; needs_review; source=body_inline] R = 150 \mu \mathrm{m} )
+
+[confidence=0.67; needs_review; source=body_inline] \equiv \phi _ {\mathrm{RVE}} )
+
+[confidence=0.92; source=body_inline] 1 / V
+
+[confidence=0.67; needs_review; source=body_inline] ( B _ {i} ,
+
+[confidence=0.92; source=body_inline] R ^ {2}
+
+[confidence=0.92; source=body_inline] ( \alpha _ {i} = 0.93-0.98 )
+
+[confidence=0.92; source=body_inline] \alpha _ {i} = 1
+
+[confidence=0.67; needs_review; source=body_inline] R ^ {2} {>} 0.99 )
+
+[confidence=0.92; source=body_inline] ( B _ {i} , \alpha _ {i} )
+
+[confidence=0.92; source=body_inline] \rho ( C _ {i j} , \Phi )
+
+[confidence=0.92; source=body_inline] \mathrm{All} \rho ( C _ {i j} , \Phi )
+
+[confidence=0.92; source=body_inline] ( \nu _ {12} , \nu _ {13} , \nu _ {23} )
+
+[confidence=0.92; source=body_inline] C _ {i j} ,
+
+[confidence=0.92; source=body_inline] R _ {\mathrm{emp}}
+
+[confidence=0.92; source=body_inline] R _ {\mathrm {{m o d}}}
+
+[confidence=0.92; source=body_inline] \mathrm{F-err} = \frac {\Vert \mathrm{\bf~R} _ {\mathrm{mod}} - \mathrm{\bf~R} _ {\mathrm{emp}} \Vert _ {F}} {\Vert \mathrm{\bf~R} _ {\mathrm{emp}} \Vert _ {F}} , \qquad \lambda - \mathrm{err} = \frac {\Vert \mathrm{\bf~R} _ {\mathrm{mod}} - \mathrm{\bf~R} _ {\mathrm{emp}} \Vert _ {2}} {\Vert \mathrm{\bf~R} _ {\mathrm{emp}} \Vert _ {2}} .\tag{42}
+
+[confidence=0.67; needs_review; source=body_inline] \rho ( \mathbf {C} _ {\mathrm{ij}} ,
+
+[confidence=0.92; source=body_inline] D _ {\mathrm{B}} = - \mathrm{ln} \bigg ( \int \sqrt {p ( x ) q ( x )} d x \bigg ) ,\tag{43}
+
+[confidence=0.92; source=body_inline] D _ {\mathrm{KL}} \bigg ( p \| q \bigg ) = \int p \bigg ( x ) \mathrm{ln} \frac {p ( x )} {q ( x )} d x ,\tag{44}
+
+[confidence=0.92; source=body_inline] {\mathrm{RVE}} _ {\mathrm{b3}} ,
+
+[confidence=0.92; source=body_inline] \mathrm{RVE} _ {\mathrm{b3}}
+
+[confidence=0.92; source=body_inline] {\mathrm{RVE}} _ {\mathrm{b1}}
+
+[confidence=0.92; source=body_inline] \mathrm{RVE} _ {\mathrm{b2}}
+
+[confidence=0.92; source=body_inline] 2.67 \mathrm{e} {- 4}
+
+[confidence=0.92; source=body_inline] \phi _ {V} ,
+
+[confidence=0.92; source=body_inline] \mathrm {R V E _ {b 1} / \ R V E _ {b 2} / \ R V E _ {b 3}}
+
+[confidence=0.92; source=body_inline] \mathrm {R V E _ {b 1} / \ R V E _ {b 2} / \ R V E _ {b 3}} ,
+
+[confidence=0.92; source=body_inline] \widehat {\alpha} _ {i} \in [ 0.96 , 1.02 ]
+
+[confidence=0.92; source=body_inline] R ^ {2} = 0.99-1.00
+
+[confidence=0.92; source=body_inline] V ^ {1}
+
+[confidence=0.92; source=body_inline] B _ {\mathrm{i}}
+
+[confidence=0.92; source=body_inline] \alpha _ {\mathrm{i}}
+
+[confidence=0.92; source=body_inline] \rho ( X _ {i} , \Phi )
+
+[confidence=0.67; needs_review; source=body_inline] | \rho | \approx 0.35 \substack {- 0.55} )

@@ -1,0 +1,27 @@
+Fig. 1. The flow chart of the proposed method.
+
+Fig. 2. Return trajectory of the re-entry module.
+
+Fig. 3. The re-entry module structure.
+
+Fig. 4. The mesh of the heat-proof shell.
+
+Fig. 5. Aerodynamic pressure and heat flux.
+
+Fig. 6. The meshed structural model.
+
+Fig. 7. Data expansion process.
+
+Fig. 8. Damage identification model construction.
+
+Fig. 9. Temperature and stress fields of typical conditions.
+
+Fig. 10. The raw data and expanded data.
+
+Fig. 11. The Train effect with and without database expansion.
+
+Fig. 12. Network training process.
+
+Fig. 13. Error distribution histogram.
+
+Fig. 14. The residual capacity recognition value of three cases.

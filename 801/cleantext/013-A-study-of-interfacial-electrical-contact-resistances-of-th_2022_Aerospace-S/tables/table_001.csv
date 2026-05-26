@@ -1,0 +1,31 @@
+Nomenclature
+Abbreviations R
+ECR,electrical contact resistance,$R ^ { c }$ $P _ { \mathrm { m a x } } ^ { E C R }$,electrical contact resistance maximum output power of TEG with electrical contact
+TE,thermoelectric,,resistance
+TEG,thermoelectric generator,$P _ { \mathrm { m a x } } ^ { P C }$,maximum output power of TEG under perfect contact
+TEC,thermoelectric cooler,,condition
+PEEK,poly-ether-ether-ketone,$R _ { i } ^ { P C }$,internal electric resistance of TEG under perfect con- tact condition
+Symbols
+S,Seebeck coeffi cient,$R _ { i } ^ { E C R }$,internal electric resistance of TEG with electrical con-
+$k$,electrical conductivity,E-N_1,tact resistance
+$T$,absolute temperature,,contacting pair composed of electrode and lower sur- face of N-type TE leg
+$\Delta T$,temperature difference,E-N_u,contacting pair composed of electrode and upper sur-
+"$x , y , z$",Cartesian coordinates,,face of N-type TE leg
+"u, V,w","displacements in x, y and z directions",E-P_1,contacting pair composed of electrode and lower sur-
+$E$,elasticity modulus,,face of P-type TE leg
+$E _ { p }$,plasticity modulus,E-P_u,contacting pair composed of electrode and upper sur-
+$E _ { t }$,slop of the stress-strain,,face of P-type TE leg
+$D ^ { e }$,elasticity matrix,,
+$D ^ { p }$,plasticity matrix,Greek,
+$G$,shear modulus,$\lambda$,thermal conductivity
+$\pmb { \mathscr { s } }$,deflection stress tensor,σ,normal stress
+$w _ { c }$,compression displacement,$\sigma _ { s }$,elastoplastic stress
+$U$,electric potential,$\tau$,shear stress
+$\Delta U$,electric potential difference,$\gamma$,shear strain
+$j$,electric current density,$\mu$,Poisson's ratio
+$c _ { p }$,specific heat capacity,$\varepsilon$,total mechanical strain
+$P$,loading pressure,$\varepsilon ^ { e }$,elastic strain
+$A _ { \mathrm { c } }$,dimensionless real contact area,$\varepsilon ^ { p }$,plastic strain
+$R _ { \mathfrak { a } }$,mean absolute deviation of roughness,$\rho$,density
+$R _ { \mathfrak { q } }$,,$\psi$,Peltier coeficient
+,standard deviation of roughness,,

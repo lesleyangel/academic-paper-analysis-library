@@ -1,0 +1,6 @@
+| Flight Condition | Correlation coefficient of original samples | Correlation coefficient of resampled samples | Relative error (%) |
+| --- | --- | --- | --- |
+| $M a = 0 . 4 ~ \alpha$ $= 2 ^ { \circ }$ | 0.9706 | 0.9683 | 0.24 |
+| $M a = 0 . 4 ~ \alpha$ $= 6 ^ { \circ }$ | 0.9712 | 0.9703 | 0.09 |
+| Ma = 1.2 α $= 2 ^ { \circ }$ | 0.9319 | 0.9302 | 0.18 |
+| $M a = 1 . 2 \alpha$ $= 6 ^ { \circ }$ | 0.9220 | 0.9224 | 0.04 |

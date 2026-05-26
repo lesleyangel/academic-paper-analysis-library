@@ -1,0 +1,504 @@
+## 1. Introduction
+
+Due to the outstanding strength-to-weight performance, fabricreinforced composites have been widely used as the structural materials in aircraft, automobile, and so on [1–4]. Such type of material is developed by embedding fabric fibers into resin or ceramic matrix to take advantages of both the fiber and matrix. The internal force transfer process is different from conventional materials due to the complex fabric structure and multiple constituents, and more specifically, the effective physical properties of such composites are determined by the geometric structures of fabrics, and the fraction and properties of constituents. However, the mold making, dimensional processing and high temperature in the composite manufacturing bring about various uncertainties of geometric and constituent parameters in multiple scales, thus, it is crucial to quantify these uncertainties to hold the prediction accuracy of composites properties [5,6].
+
+To quantify the uncertainty of plain woven composites with two additional sub-scales of fiber and fiber bundle, multiscale uncertainty analysis is required [7–14]. The mostly used method in uncertainty analysis is the Monte Carlo method [15], which is based on the Law of Large Numbers. Such method tend to outcome true results as the number of simulations increases [16]. Theoretically, executing a sufficient number of Monte Carlo samples can provide a reliable measure of uncertainty. However, this approach involves a significant amount of computationally intensive simulations to explore the entire uncertainty space. Thus, for plain woven composites with uncertainties of at least three scales, i.e., composite, fiber bundle, fiber, and matrix, the primary challenge in uncertainty quantification by Monte Carlo method is the unaffordable computational burden. To address this computational burden, the usual choice is to reduce the simulation number by surrogate models like the Radial Basis Function [11], Gaussian processes [12], Polynomial Chaos Expansion [13], etc. The utilization of these surrogate models is surely accompanied with certain compromise in analysis accuracy.
+
+In fact, the computational cost is determined by the number of simulations and the cost of the single simulation. In this work, we have tried to develop a method to reduce the computational cost of the single simulation without any compromise in simulation accuracy. In the calculation of mechanical properties of composite materials, the main methods include both analytical and numerical approaches. Classical analytical methods include the self-consistent method, the differential method, and the Mori-Tanaka method, the latter of which is widely used due to its explicit formulas [17]. Compared to analytical methods, the numerical ones, primarily represented by the Finite Element Method, can capture more local details, and enhance the calculation accuracy. However, they incur higher costs in terms of model construction and solving numerous equations. For plain woven composites, the effective mechanical properties are always numerically predicted by unit cell models, which is formulated based on geometric symmetries in fiber fabric. The utilization of more symmetries will formulate unit cells with smaller size and will hold the same calculation accuracy due to the strict mathematic deviation of boundary conditions [18–23]. The computational cost of numerical simulation is positively correlated with the size of unit cell. Thus, an exhaustive analysis of structural symmetries to formulate unit cells with minimum size is essential to obtain a balance between the computation cost and accuracy. There are three typical symmetries in nature, i.e., translational, reflectional, and rotational ones. The translational symmetry is the mostly utilized symmetry to formulate a finite-size unit cell from the infinite-size composite, and the boundary conditions are the so-called periodic ones [24–33]. Such type of unit cell can be considered as the full-size unit cell. Based on the fullsize unit cell, the reflectional and rotational symmetries are further utilized to reduce the unit cell size in our previous works, it is found that the smaller size unit cell will obtain the same results and great reduction of computation cost, and the only disadvantage is the complicated boundary conditions [34–38].
+
+In multiscale composite material uncertainty propagation analysis, it is typically necessary to recover the distribution form of uncertainty. Describing uncertainty solely through the marginal distribution of outputs is incomplete, as the correlations between multidimensional variables must also be considered. Existing methods for handling correlated random variables include Rosenblatt transformations [39], Nataf transformations [40], copulas [41], and others. Copulas can address data with tail dependencies, and Tao et al. employed copulas to reconstruct the uncertainty distribution for woven materials [42]. Nataf transformation ensures the preservation of correlation information during sample reconstruction by transforming the joint distribution into a correlated normal distribution. Since the output parameters in this study do not exhibit significant nonlinear correlations, Nataf transformation is adopted to address the correlation issues in uncertainty propagation.
+
+This study aims to develop an efficient method that integrates multiscale modeling with uncertainty quantification to assess and define uncertainty in composite materials effectively. By harnessing symmetries across different scales, the method significantly shortens the simulation time needed for such analyses, thereby, saving computational resources. This enables examination of a wider range of parameters and more complex systems. The resulting model accurately predicts the mechanical properties of plain woven composites and manages to curtail the traditionally high computational demands by optimizing simulation unit cell sizes based on structural symmetries.
+
+## 2. Multi-scale uncertainty quantification model
+
+Fig. 1 shows the multi-scale uncertainty quantification process, which contains three primary sub-processes: microscale uncertainty quantification, uncertainty propagation, and mesoscale uncertainty quantification. The uncertainty quantification at different scales each includes two components: parameter uncertainty tracing and numerical analysis models. In this work, the constituent parameters and geometric ones are included in the uncertainty tracing. The cost of the whole process is closely dependent on each sample analysis; thus, the minimum size unit cell model is established in this work for both the microscale fiber bundle and the mesoscale plain woven composite. In terms of uncertainty propagation, the Nataf transformation is used to transfer the uncertainty from the microscale to the mesoscale. Finally, the uncertainty quantification of the effective properties for plain woven composites is achieved.
+
+## 3. Minimum-size unit cells and model parameterizations
+
+In this work, the minimum-size unit cells of fiber bundles and plain woven composites are formulated by the exhaustive analysis of structural symmetries, the unit cell model is parameterized as constituent and geometric ones to quantify its uncertainties, and the effective elastic modulus, Poisson’s ratio, shear modulus and thermal expansion coefficient are calculated based on the unit cell models with uncertainty analysis.
+
+## 3.1. Constitutive equation and constituent parameters
+
+For anisotropic composites, the constitutive equation can be expressed as:
+
+$$\left[ \begin{array} {l} {z _ {1}} \\ {z _ {21}} \\ {z _ {3}} \\ {z _ {3}} \\ {y _ {23}} \\ {z _ {12}} \\ {0} \end{array} \right] = \left[ \begin{array} {l l l l l l l} {1 _ {j _ {E _ {1}}}} & {- \nu _ {12} / _ {E _ {2}}} & {- \nu _ {13} / _ {E _ {3}}} & {0} & {0} & {0} \\ {- \nu _ {12} / _ {E _ {1}}} & {1 _ {j _ {E _ {2}}}} & {- \nu _ {23} / _ {E _ {3}}} & {0} & {0} & {0} \\ {- \nu _ {33} / _ {E _ {1}}} & {- \nu _ {33} / _ {E _ {2}}} & {1 _ {j _ {E _ {3}}}} & {0} & {0} & {0} \\ {0} & {0} & {0} & {1 _ {f _ {Q 3}}} & {0} & {0} \\ {0} & {0} & {0} & {0} & {1 _ {f _ {Q 3}}} & {0} \\ {0} & {0} & {0} & {0} & {0} & {1 _ {f _ {T _ {12}}}} \\ {0} & {0} & {0} & {0} & {0} & {0} \end{array} \right] \left[ \begin{array} {l} {\sigma _ {1}} \\ {\sigma _ {1}} \\ {\sigma _ {23}} \\ {\tau _ {31}} \\ {\tau _ {12}} \\ {\tau _ {12}} \end{array} \right]\tag{1}$$
+
+where $\varepsilon _ {i}$ and $\sigma _ {i}$ represent the strain and stress in the i-direction, $\gamma _ {i j}$ and $\tau _ {i j}$ is the shear strain and shear stress, Ei is the effective elastic modulus in idirection, $\nu _ {i j}$ is the effective Poisson’s ratio, and $G _ {i j}$ is the shear modulus.
+
+For thermomechanical problem, the strain can be described as:
+
+$$\varepsilon _ {i} = \varepsilon _ {i} ^ {m} + \alpha _ {i} \Delta T\tag{2}$$
+
+where $\varepsilon _ {i} ^ {m}$ represents the strain induced by mechanical loading, αi represents the effective linear thermal expansion coefficient in the i-direction, and ΔT is the temperature change.
+
+According to Eq. (2), the effective elastic modulus, Poisson’s ratio, shear modulus and thermal expansion coefficient can be calculated by Eqs. (3), (4), (5) and (6), respectively:
+
+$$E _ {i} = \sigma _ {i} / \varepsilon _ {i}\tag{3}$$
+
+$$\nu _ {i j} = - \varepsilon _ {i} / \varepsilon _ {j}\tag{4}$$
+
+$$G _ {i j} = \tau _ {i j} / \gamma _ {i j}\tag{5}$$
+
+$$\alpha _ {i} = \varepsilon _ {i} / \Delta T\tag{6}$$
+
+For a unit cell model, if the macroscopic stress or temperature difference are imposed on, the macroscopic strain (the ratio of displacement difference to distance difference) can be obtained by solving governing equations (not shown for the limited paper length), and the effective modulus, Poisson’s ratio, shear modulus and thermal expansion coefficient can then be calculated by Eqs. (3), (4), (5) and (6), respectively.
+
+During the solve of the governing equations, the elastic modulus, Poisson’s ratio, shear modulus, and coefficient of thermal expansion of the fiber are considered as inputs.
+
+## 3.2. Unit cells and geometric parameters
+
+## 3.2.1. Translational symmetric structure
+
+The key of unit cell formulation is the derivation of boundary conditions based on symmetries. The displacement relations between symmetric points provides basic rules for the boundary condition derivation. Such rules are proposed in our previous works [34–38] in different forms and a concise summary is supplied in this subsection. Fig. 2 shows the structure with translational symmetry, the translational axis is along $x _ {i}$ and the unit cell $\varPhi _ {m}$ can be defined by two boundary interfaces, $\Omega _ {m - 1}$ and $\varOmega _ {m}$ Within the unit cell $\Phi _ {m} , M _ {m}$ represents an arbitrary point in the volume, $O _ {m}$ is a reference point with a fixed position. For any two unit cells $( \phi _ {m}$ and $\phi _ {m - 1} )$ the position of $M _ {m}$ relative to $O _ {m}$ remains consistent with the position of $M _ {m - 1}$ relative to $O _ {m - 1}$
+
+The internal responses in unit cells, like the relative displacements between certain points, satisfy the following relationship:
+
+$$u _ {i} ^ {M _ {m}} - u _ {i} ^ {O _ {m}} = u _ {i} ^ {M _ {m + 1}} - u _ {i} ^ {O _ {m + 1}} \quad ( i = x , y , z )\tag{7}$$
+
+where $u _ {i} ^ {( ^ {*} )}$ represents the displacement in the i-direction corresponding to the (\*) point.
+
+Fig. 3 (a) and (b) show the reflectional structure under symmetric and antisymmetric loads, respectively. Their difference lies in whether the loads are identical or opposite after being reflectionally symmetric about the symmetry plane $\varOmega ,$ which are referred to as reflectional symmetry (RS) and reflectional antisymmetry (RAS), respectively. In the figure, M and M’, are two symmetric points relative to the symmetry plane. The relative displacements between certain points satisfy the following relationship:
+
+(a) symmetric load
+
+(b) antisymmetric load
+
+$$\left\{\begin{array} {c c} {{u _ {q} ^ {M} - u _ {q} ^ {o} = - \lambda \Big ( u _ {q} ^ {M} - u _ {q} ^ {o} \Big )}} & {{( q = i )}} \\ {{u _ {q} ^ {M} - u _ {q} ^ {o} = + \lambda \Big ( u _ {q} ^ {M} - u _ {q} ^ {o} \Big )}} & {{( q \not = i )}} \\ {{\lambda = \left\{\begin{array} {l l} {{1}} & {{R S}} \\ {{- 1}} & {{R A S}} \end{array} \right.}} & {{}} \end{array} \right.\tag{8}$$
+
+where λ reflecting the distinct influences when loads are symmetric or antisymmetric. When loads are antisymmetric, the relationship inverts: symmetric points have opposite displacements in non-i directions, while in the i-direction, their displacements remain the same.
+
+Fig. 4(a) and (b) display the 180◦ rotationally symmetric structure under symmetric and antisymmetric loads, respectively. The difference lies in whether the loads remain the same or become opposite after a 180◦ rotational symmetry around the symmetry axis l (in the k-direction), which are termed rotational symmetry (ROS) and rotational antisymmetry (ROAS), respectively. In the figures, M and M’ are two symmetric points relative to the symmetry axis. The relative displacements between certain points satisfy the following relationship:
+
+$$\left\{\begin{array} {l l} {{u _ {q} ^ {M} - u _ {q} ^ {o} = - \lambda \Big ( u _ {q} ^ {M} - u _ {q} ^ {o} \Big )}} & {{( q \neq k )}} \\ {{u _ {q} ^ {M} - u _ {q} ^ {o} = + \lambda \Big ( u _ {q} ^ {M} - u _ {q} ^ {o} \Big )}} & {{( q = k )}} \\ {{\qquad \lambda = \left\{\begin{array} {l l} {{1}} & {{R S}} \\ {{- 1}} & {{R A S}} \end{array} \right.}} & {{}} \end{array} \right.\tag{9}$$
+
+where λ reflecting the distinct influences when loads are symmetric or antisymmetric. When loads are rotational antisymmetric, the relationship inverts: symmetric points have opposite displacements in k-directions, while in the non-k-direction, their displacements remain the same.
+
+## 3.2.2. Summary of symmetry
+
+The displacement constraint equations for five symmetry relations, namely, TS, RS, RAS, ROS, ROAS, can be expressed uniformly as follows:
+
+$$u _ {i} ^ {M} - u _ {i} ^ {O} = \lambda _ {i j} \big ( u _ {i} ^ {M} - u _ {i} ^ {O ^ {}} \big ) , \quad ( i = x , y , z )\tag{10}$$
+
+(a) Symmetric load
+
+(b) Antisymmetric load
+
+where i is the direction of displacement, j represents the direction of the plane or line of symmetry, and $\lambda _ {i j}$ is the symmetry factor. Its value depends on the direction of displacement, the direction of the plane of symmetry, and the form of symmetry.
+
+To calculate the effective properties of a unit cell, it is necessary to know the equivalent displacement of each surface of the unit cell. We define the average displacement as representing the displacement of the surface. The average displacement is expressed as follows:
+
+$$\delta _ {i} ^ {P} = \frac {1} {A _ {P}} \int _ {P} u _ {i} ^ {M} {\big |} _ {M \in P} d A , \quad ( i = x , y , z )\tag{11}$$
+
+where $\delta _ {i} ^ {P}$ is the average displacement in three directions on surface P, AP represents the area of surface $P ,$ and $u _ {i} ^ {M}$ designates the displacement at any point within surface P in these three directions.
+
+A set of symmetrical surfaces $( P$ and P’) is defined as the surfaces formed by a set of points within a symmetrical body, denoted as surface P, and its symmetrical points forming surface $P ^ {\prime}$ The average displacement is calculated for both sides of Eq. (10). Then, subtracting Eq. (13) from $\operatorname{Eq.}$ (10) yields $\operatorname{Eq.}$ (14).
+
+$$\frac {\int _ {P} \big ( u _ {i} ^ {M} \big | _ {M \in P} - u _ {i} ^ {o} \big ) d A} {\int _ {P} d A} = \lambda _ {i j} \frac {\int _ {P ^ {\prime}} \big ( u _ {i} ^ {M} \big | _ {M ^ {\prime} \in P ^ {\prime}} - u _ {i} ^ {o} \big ) d A} {\int _ {P ^ {\prime}} d A} , \quad ( i = x , y , z )\tag{12}$$
+
+$$\delta _ {i} ^ {P} - u _ {i} ^ {O} = \lambda _ {i j} \big ( \delta _ {i} ^ {P ^ {\prime}} - u _ {i} ^ {O ^ {\prime}} \big ) , \quad ( i = x , y , z )\tag{13}$$
+
+$$u _ {i} ^ {M} - \delta _ {i} ^ {P} = \lambda _ {i j} \big ( u _ {i} ^ {M ^ {\prime}} - \delta _ {i} ^ {P ^ {\prime}} \big ) , \quad ( i = x , y , z \quad M \in P \quad M \in P ^ {\prime} )\tag{14}$$
+
+where $u _ {i} ^ {M}$ and $u _ {i} ^ {M}$ represent the displacements in the i-direction at the corresponding points on surfaces P and $P _ {\mathrm{~,~}}$ while $\delta _ {i} ^ {P}$ and $\delta _ {i} ^ {P}$ represent the average displacements in the i-direction on surfaces P and $P ^ {\prime}$ . Based on Eq. (14), five types of symmetry equations for surfaces are defined, with the value of $\lambda _ {i j}$ determined as follows:
+
+$$\begin{array} {r} {\left\{\begin{array} {l l} {T S ( P , P ) \Rightarrow \lambda _ {\emptyset} = 1} & {( i = x , y , z )} \\ {R S ( P , P , j ) \Rightarrow \lambda _ {\emptyset} = \left\{\begin{array} {l l} {- 1} & {( i = j )} \\ {1} & {( i \ne j )} \end{array} \right.} \\ {R A S ( P , P , j ) \Rightarrow \lambda _ {\emptyset} = \left\{\begin{array} {l l} {1} & {( i = j )} \\ {- 1} & {( i \ne j )} \end{array} \right.} \\ {R O S ( P , P , j ) \Rightarrow \lambda _ {\emptyset} = \left\{\begin{array} {l l} {1} & {( i = j )} \\ {- 1} & {( i = j )} \end{array} \right.} \\ {- 1} & {( i \ne j )} \\ {- 1} & {( i \ne j )} \end{array} \right.} \\ {R O S ( P , P , j ) \Rightarrow \lambda _ {\emptyset} = \left\{\begin{array} {l l} {- 1} & {( i = j )} \\ {- 1} & {( i = j )} \end{array} \right.} \\ {- 1} & {( i = j )} \\ {R O A S ( P , P , j ) \Rightarrow \lambda _ {\emptyset} = \left\{\begin{array} {l l} {- 1} & {( i = j )} \\ {1} & {( i \ne j )} \end{array} \right.} \end{array}\tag{15}$$
+
+In TS, P and $P ^ {\star}$ are two planes possessing translational symmetry. In RS and ROS, the input involves two planes, P and P’, with reflective symmetry, along with the direction of the symmetrical plane denoted as j. In ROS, the input comprises two planes, P and $P '$ , exhibiting rotational symmetry, and the direction of the rotational symmetry axis, denoted as j.
+
+The use of these symmetry constraints is to ensure that when we downsize the model, we don’t lose vital symmetry information, which is crucial for accurate analysis. For instance, if there are two surfaces in the j-direction that exhibit both translational and reflective symmetry, their displacement constraint equations will be a system of two equations.
+
+$$\left\{\begin{array} {l l} {T S ( P _ {1} , P _ {2} )} \\ {R S ( P _ {1} , P _ {2} , j )} \end{array} \right. \Rightarrow \left\{\begin{array} {c c} {u _ {i} ^ {M _ {1}} - \delta _ {i} ^ {P _ {1}} = 0 , ( i = j )} \\ {u _ {i} ^ {M _ {1}} - \delta _ {i} ^ {P _ {1}} = u _ {i} ^ {M _ {2}} - \delta _ {i} ^ {P _ {2}} , ( i \neq j )} \end{array} \right. , \left( M _ {1} \in P _ {1} \quad M _ {2} \in P _ {2} \right)\tag{16}$$
+
+In a typical unit cell, each of the six surfaces is named according to the coordinate axes. The average displacement difference between two opposite surfaces in certain direction is needed to calculate parameters like elastic modulus. For simplicity and clearer expression, we define this average displacement difference on opposing surfaces in certain direction as follows:
+
+$$\delta _ {i j} = \delta _ {j} ^ {P _ {i 2}} - \delta _ {j} ^ {P _ {i 1}} , ( i , j = x , y , z )\tag{17}$$
+
+For computational convenience, the average displacement on the surface $P _ {i 1}$ can be assumed to be zero, $\delta _ {j} ^ {P _ {i 1}} = 0 _ {:}$ , for all directions $( i , j = x ,$ y, z). As shown in ${\mathrm{Fig.}} \ 5 ,$ this assumption implies that the average displacement difference, $\delta _ {i j} ,$ , is equal to the displacement on the surface Pi2, $\delta _ {i j} = \delta _ {j} ^ {P _ {i 2}}$ , for each direction.
+
+## 3.3. Unit cells and their parameterization
+
+In this work, the plain woven composites and fiber bundles are considered as meso-scale and micro-scale, respectively, and unit cells of such two scales are formulated.
+
+## 3.3.1. Microscale fiber bundle
+
+Fig. 6 shows fiber bundles and unit cells, specifically UC1, UC2, UC3, and UC4. In the modelling of fiber bundles, the fibers are always assumed to be distributed in square or honeycomb patterns. In this work, the honeycomb pattern is adopted for its higher volume fraction limit [18,21,23,30,32,34,35,36,38,43]. UC1 is the full-size one which is constructed by translational symmetries. UC2 is generated by reflecting UC1 about the plane in the y-direction (PRS(Y)), UC3 is generated by reflecting UC2 about the plane in the x-direction $( P _ {\mathrm{RS(X)}} ) _ {\mathrm{\Omega}}$ , and UC4 is generated by rotating UC3 symmetrically around the line in the z-direction $\left( L _ {\mathrm{ROS(Z)}} \right)$ . For a unit cell model, the mesh on corresponding boundaries should satisfy corresponding symmetrical relations. For UC4 of the fiber bundle, the meshes on surface $P _ {y 2}$ need to be symmetric about the 180◦ rotational line $L _ {\mathrm{ROS} ( Z )}$
+
+Fig. 7 shows the geometric parameters of unit cells for fiber bundles. The parameters for each unit cell include the width, length, and height of the unit cell $( a _ {b} , b _ {b} ,$ and $h _ {b} )$ , as well as the fiber radius r. Among these, $h _ {b}$ is unrelated to effective properties and is not parameterized, while the other parameters are all parameterized.
+
+The coordinates and boundaries of unit cells are indicated in Fig. 8. Under the coordinate system, the symmetric plane PRS(Y) of UC2 is located at $y = b _ {b 2} ;$ the symmetric plane $P _ {\mathrm{RS(Z)}}$ of UC3 is located at $x =$ ab3; the symmetric line LROS(Z) of UC4 is located at $( x , y ) = ( a _ {b 4} / 2 , b _ {b 4} )$ Sub-figure (a) is a three-dimensional grid that shows the boundary of a unit cell with markers $P _ {x 1} , P _ {x 2} , P _ {y 1} , P _ {y 2} , P _ {z 1}$ , and $P _ {z 2}$ . These mark the boundaries in the $x , y ,$ and z directions. Sub-figures (b) to (e) show the top view of each unit cell on the x-y plane. For Sub-figure (b) UC1, $P _ {x 1 ,}$ $P _ {x 2} , P _ {y 1} , P _ {y 2}$ mark the unit cell’s boundaries. In Sub-figure (c) UC2, the boundaries are the same as in UC1, but $\boldsymbol {P} _ {y 1} ^ {*}$ shows a boundary that’s not there because of RS about plane $P _ {\mathrm{RS(Y)}} ( P _ {y 2} )$ . For Sub-figure (d) UC3, along with the usual boundary from UC2, $P _ {x} ^ {*}$ shows a boundary that’s missing due to RS about $P _ {\mathrm{RS(X)}} ( P _ {x 2} )$ . Finally, for Sub-figure (e) UC4, it has the same boundaries as UC3, but $P _ {y 2} ^ {*}$ points out a boundary that’s gone because of ROS around the LROS(Z). In this work, the calculations of Young’s modulus, thermal expansion coefficient, and Poisson’s ratio, as well as the calculation of $G _ {x y}$ and calculation of $G _ {x z} ,$ have different boundary conditions on such boundaries, corresponding to Table 1, 2 and 3 respectively.
+
+Table 1 shows the summary of the unit cell boundary conditions for calculating the elastic modulus, Poisson’s ratio, and thermal expansion coefficient of fiber bundles. These effective properties can be calculated under symmetric loading conditions, hence there are no antisymmetric loads. In UC1, every pair of opposing surfaces in the three directions has TS. Building on UC1, UC2 has RS between the $P _ {y 1}$ and the non-existent $P _ {y 1} ^ {*} ,$ , while the $P _ {y 2}$ is a plane of reflection, thus it is symmetric with itself. From UC2, UC3 has RS between the $P _ {x 1}$ and the non-existent $P _ {x} ^ {*} ,$ and the $P _ {x 2}$ has RS with itself. Finally, based on UC3, UC4 has ROS between the $P _ {y 1}$ and the non-existent $P _ {y 2} ^ {*} ,$ and the $P _ {y 2}$ has ROS with itself.
+
+The displacement boundary conditions for each unit cell can be
+
+(a) Coordinate 
+(b) UC1
+
+(d) UC3
+
+(c) UC2 
+(e) UC4
+
+derived based on the symmetry specified in Table 1.
+
+UC1 has displacement boundary conditions on its six surfaces as follows:
+
+$$\begin{array} {r} {\begin{array} {r l} & {P _ {x 1} - P _ {x 2} \Rightarrow u _ {i} ( 0 , y , z ) - u _ {i} ( a , y , z ) = - \delta _ {x i} , ( i = x , y , z )} \\ & {P _ {y 1} - P _ {y 2} \Rightarrow u _ {i} ( x , 0 , z ) - u _ {i} ( x , b , z ) = - \delta _ {y i} , ( i = x , y , z )} \\ & {P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}} \end{array}\tag{18}$$
+
+UC2 has displacement boundary conditions on its six surfaces as follows:
+
+$$\begin{array} {r l} & {P _ {x 1} - P _ {x 2} \Rightarrow u _ {i} ( 0 , y , z ) - u _ {i} ( a , y , z ) = - \delta _ {x i} , ( i = x , y , z )} \\ & {\qquad P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = y )} \\ & {\qquad P _ {y 2} \Rightarrow u _ {i} ( x , b / 2 , z ) = \delta _ {i} ^ {P _ {y 2}} = \delta _ {y i} / 2 , ( i = y )} \\ & {P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{19}$$
+
+UC3 has displacement boundary conditions on its six surfaces as follows:
+
+$$\begin{array} {r l} & {\quad P _ {x 1} \Rightarrow u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i = x )} \\ & {\quad P _ {x 2} \Rightarrow u _ {i} ( a / 2 , y , z ) = \delta _ {i} ^ {P _ {x 2}} = \delta _ {x i} / 2 , ( i = x )} \\ & {\quad \quad P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = y )} \\ & {\quad \quad P _ {y 2} \Rightarrow u _ {i} ( x , b / 2 , z ) = \delta _ {i} ^ {P _ {y 2}} = \delta _ {y i} / 2 , ( i = y )} \\ & {\quad \quad P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{20}$$
+
+UC4 has displacement boundary conditions on its six surfaces as follows:
+
+$$\begin{array} {c} {{P _ {x 1} \Rightarrow u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i = x )}} \\ {{P _ {x 2} \Rightarrow u _ {i} ( a / 2 , y , z ) = \delta _ {i} ^ {P _ {x 2}} = \delta _ {x i} / 2 , ( i = x )}} \\ {{P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = y )}} \\ {{P _ {y 2} \Rightarrow \left\{\begin{array} {l l} {{u _ {i} ( x , b / 4 , z ) + u _ {i} ( a / 2 - x , b / 4 , z ) = \delta _ {y i} / 2 , ( i = x , y )}} \\ {{u _ {i} ( x , b / 4 , z ) - u _ {i} ( a / 2 - x , b / 4 , z ) = 0 , ( i = z )}} \end{array} \right.}} \\ {{P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )}} \end{array}\tag{21}$$
+
+Table 2 shows the summary of the unit cell boundary conditions for calculating the shear modulus $G _ {x y}$ of fiber bundles. For the calculation of $G _ {x y} ,$ tangential loads are applied, which are antisymmetric with respect to the RS symmetric surfaces in the x-direction (perpendicular to the xdirection) and similarly antisymmetric with respect to the RS symmetric surfaces in the y-direction. Therefore, when generating UC2 and UC3, all RS should be replaced with RAS. In the case of generating UC4, the loads are symmetric with respect to the ROS in the z-axis, so the ROS in the boundary conditions of UC4 should remain unchanged.
+
+$$\begin{array} {r} {\begin{array} {r l} & {P _ {x 1} - P _ {x 2} \Rightarrow u _ {i} ( 0 , y , z ) - u _ {i} ( a , y , z ) = - \delta _ {x i} , ( i = x , y , z )} \\ & {P _ {y 1} - P _ {y 2} \Rightarrow u _ {i} ( x , 0 , z ) - u _ {i} ( x , b , z ) = - \delta _ {y i} , ( i = x , y , z )} \\ & {P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}} \end{array}\tag{22}$$
+
+$$\begin{array} {r l} & {P _ {x 1} - P _ {x 2} \Rightarrow u _ {i} ( 0 , y , z ) - u _ {i} ( a , y , z ) = - \delta _ {x i} , ( i = x , y , z )} \\ & {\qquad P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = x , z )} \\ & {\qquad P _ {y 2} \Rightarrow u _ {i} ( x , b / 2 , z ) = \delta _ {i} ^ {P _ {y 2}} = \delta _ {y i} / 2 , ( i = x , z )} \\ & {P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{23}$$
+
+$$\begin{array} {c} {P _ {x 1} {\Rightarrow} u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i {=} y , z )} \\ {P _ {x 2} {\Rightarrow} u _ {i} ( a / 2 , y , z ) = \delta _ {i} ^ {P _ {x 2}} = \delta _ {x i} / 2 , ( i {=} y , z )} \\ {P _ {y 1} {\Rightarrow} u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i {=} x , z )} \\ {P _ {y 2} {\Rightarrow} u _ {i} ( x , b / 2 , z ) = \delta _ {i} ^ {P _ {y 2}} = \delta _ {y i} / 2 , ( i {=} x , z )} \\ {P _ {z 1} - P _ {z 2} {\Rightarrow} u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{24}$$
+
+$$\begin{array} {c} {{P _ {x 1} {\Rightarrow} u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i {=} y , z )}} \\ {{P _ {x 2} {\Rightarrow} u _ {i} ( a / 2 , y , z ) = \delta _ {i} ^ {P _ {x 2}} = \delta _ {x i} / 2 , ( i {=} y , z )}} \\ {{P _ {y 1} {\Rightarrow} u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i {=} x , z )}} \\ {{P _ {y 2} {\Rightarrow} \bigg \{u _ {i} ( x , b / 4 , z ) + u _ {i} ( a / 2 - x , b / 4 , z ) = \delta _ {y i} / 2 , ( i {=} x , y )}} \\ {{u _ {i} ( x , b / 4 , z ) - u _ {i} ( a / 2 - x , b / 4 , z ) = 0 , ( i {=} z )}} \\ {{P _ {z 1} - P _ {z 2} {\Rightarrow} u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i {=} x , y , z )}} \end{array}\tag{25}$$
+
+Table 3 shows the summary of the unit cell boundary conditions for calculating the shear modulus $G _ {x z}$ of fiber bundles. For the calculation of $G _ {x z} ,$ tangential loads are antisymmetric with respect to the RS symmetric surfaces in the x-direction (perpendicular to the x-direction) and symmetric with respect to the RS symmetric surfaces in the y-direction. Therefore, when generating UC2, all RS remain unchanged, and when generating UC3 using the x-direction RS, all should be replaced with RAS. In the case of generating UC4, the loads are antisymmetric with respect to the ROS in the z-axis, so the ROS in the boundary conditions of UC4 should be replaced with ROAS.
+
+$$\begin{array} {r} {\begin{array} {r l} & {P _ {x 1} - P _ {x 2} \Rightarrow u _ {i} ( 0 , y , z ) - u _ {i} ( a , y , z ) = - \delta _ {x i} , ( i = x , y , z )} \\ & {P _ {y 1} - P _ {y 2} \Rightarrow u _ {i} ( x , 0 , z ) - u _ {i} ( x , b , z ) = - \delta _ {y i} , ( i = x , y , z )} \\ & {P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}} \end{array}\tag{26}$$
+
+$$\begin{array} {r l} & {P _ {x 1} - P _ {x 2} \Rightarrow u _ {i} ( 0 , y , z ) - u _ {i} ( a , y , z ) = - \delta _ {x i} , ( i = x , y , z )} \\ & {\qquad P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = y )} \\ & {\qquad P _ {y 2} \Rightarrow u _ {i} ( x , b / 2 , z ) = \delta _ {i} ^ {P _ {y 2}} = \delta _ {y i} / 2 , ( i = y )} \\ & {P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{27}$$
+
+$$\begin{array} {r l} & {\qquad P _ {x 1} \Rightarrow u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i = y , z )} \\ & {\qquad P _ {x 2} \Rightarrow u _ {i} ( a / 2 , y , z ) = \delta _ {i} ^ {P _ {x 2}} = \delta _ {x i} / 2 , ( i = y , z )} \\ & {\qquad P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = y )} \\ & {\qquad P _ {y 2} \Rightarrow u _ {i} ( x , b / 2 , z ) = \delta _ {i} ^ {P _ {y 2}} = \delta _ {y i} / 2 , ( i = y )} \\ & {\qquad P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{28}$$
+
+$$\begin{array} {c} {{P _ {x 1} \Rightarrow u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i = y , z )}} \\ {{P _ {x 2} \Rightarrow u _ {i} ( a / 2 , y , z ) = \delta _ {i} ^ {P _ {x 2}} = \delta _ {x i} / 2 , ( i = y , z )}} \\ {{P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = y )}} \\ {{P _ {y 2} \Rightarrow \left\{\begin{array} {c} {{u _ {i} ( x , b / 4 , z ) + u _ {i} ( a / 2 - x , b / 4 , z ) = \delta _ {y i} / 2 , ( i = z )}} \\ {{u _ {i} ( x , b / 4 , z ) - u _ {i} ( a / 2 - x , b / 4 , z ) = 0 , ( i = x , y )}} \end{array} \right.}} \\ {{P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )}} \end{array}\tag{29}$$
+
+Table 4 shows the fiber bundle parameterization parameters, the parameters are classified as geometric and constituent ones. The geometric parameters are listed for UC1, UC2, UC3, and UC4.The constituent parameter includes Elastic modulus, Poisson’s ratio, coefficient of thermal expansion of fiber and matrix.
+
+## 3.3.2. Mesoscale woven composite material
+
+The mesoscale model is the plain woven composite composed of fiber bundles and a matrix. Fig. 9 shows the plain woven composite, the unit cells, and the corresponding mesh model. Like the unit cell of fiber bundles, UC1 is constructed using translational symmetry. Based on UC1, UC2 and UC3 are successively constructed through two reflections (about planes $P _ {\mathrm{RS(X)}}$ and $P _ {\mathrm{RS(Y)}} )$ and 180◦ rotational symmetries (about lines LROS(X) and LROS(Y)). For UC3 of the plain woven composite, the meshes need to be symmetric about $L _ {\mathrm{ROS(X)}}$ and $L _ {\mathrm {{R O S ( Y )}}} ,$ , while the meshes on surface $P _ {x 2}$ need to be symmetric about $L _ {\mathrm {{R O S ( X )}}} ,$ and the meshes on surface $P _ {y 2}$ need to be symmetric about LROS(X).
+
+Fig. 10 shows the geometric parameters of unit cells for plain woven composites. The parameters of each unit cell include the length $( a _ {p} )$ , and the half-width $( w _ {p} )$ , half-gap $( h _ {p 1} ) _ {\cdot}$ , thickness $( h _ {p 2} ) _ {:}$ , and layer gap $( h _ {p 3} )$ of the fiber bundle. These parameters all affect the effective properties of plain woven composite, and therefore need to be parameterized.
+
+Fig. 11 shows the coordinates and boundaries of unit cells for plain woven composite. Under the coordinate system, the symmetric plane $P _ {\mathrm{RS(X)}}$ of UC2 is located at $\begin{array} {r} {x = a _ {p 2} ;} \end{array}$ the symmetric plane $P _ {\mathrm{RS(Y)}}$ of UC2 is located a $\begin{array} {r} {y = a _ {p 2} ,} \end{array}$ the symmetric line $L _ {\mathrm{ROS(X)}}$ of UC3 is located at $( y , z ) =$ (ap2, hp13 + hp23 + hp33/2); the symmetric line LROS(Y) of UC3 is located at $( x , z ) = ( a _ {p 2} , h _ {p 13} + h _ {p 23} + h _ {p 33} / 2 )$ . Sub-figure (a) displays the boundaries of a unit cell, marked in accordance with the coordinate system as $P _ {x 1}$ $P _ {x 2} , P _ {y 1} , P _ {y 2} , P _ {z 1}$ , and $P _ {z 2}$ . Sub-figures (b) to (e) present the view of each unit cell on the x-y plane. For sub-figure (b) UC1, $P _ {x 1} , P _ {x 2} , P _ {y 1}$ and $P _ {y 2}$ delineate the four boundaries of the unit cell. In sub-figure (c) UC2, the boundaries are identical to UC1, but $P _ {x 1} ^ {*}$ indicates a boundary that is absent due to RS about $P _ {\mathrm{RS(X)}} \left( \mathbf {P} \mathbf {x} 2 \right)$ , and $\boldsymbol {P} _ {y 1} ^ {*}$ indicates a boundary that is absent due to RS about $P _ {\mathrm{RS(Y)}}$ (Py2). For sub-figure (d) UC3, it has the same boundaries as UC2, but $P _ {x 2} ^ {*}$ and $P _ {y 2} ^ {*}$ denote boundaries that have disappeared due to two instances of ROS about LROS(Y) and LROS(X), respectively. In this work, the calculations of Young’s modulus, thermal expansion coefficient, and Poisson’s ratio, as well as the calculations of $G _ {x y}$ and $G _ {x z} ,$ are subject to different boundary conditions due to various loading forms, corresponding respectively to Table $^ {5 ,}$ Table 6 and Table 7 in the academic context.
+
+Table 5 shows the summary of the unit cell boundary conditions for calculating the elastic modulus, Poisson’s ratio, and thermal expansion coefficient of plain woven composites. In the calculation of these effective properties, symmetric loads are applied. UC1 is generated using TS, so all boundary conditions are TS. UC2 is constructed based on UC1 by applying RS in the x and y directions, respectively; the additional equations in UC2 are reflected in the four RS boundary conditions in the x and y directions. UC3 is built since UC2 by applying ROS twice in the zdirection; the additional boundaries are reflected in the four ROS boundary conditions in the x and y directions.
+
+$$\begin{array} {r} {\begin{array} {r l} & {P _ {x 1} - P _ {x 2} \Rightarrow u _ {i} ( 0 , y , z ) - u _ {i} ( a , y , z ) = - \delta _ {x i} , ( i = x , y , z )} \\ & {P _ {y 1} - P _ {y 2} \Rightarrow u _ {i} ( x , 0 , z ) - u _ {i} ( x , a , z ) = - \delta _ {y i} , ( i = x , y , z )} \\ & {P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}} \end{array}\tag{30}$$
+
+(a) Coordinate
+
+(b) UC1
+
+(c) UC2
+
+(d) UC3
+
+$$\begin{array} {r l} & {\quad P _ {x 1} \Rightarrow u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i = x )} \\ & {\quad P _ {x 2} \Rightarrow u _ {i} ( a / 2 , y , z ) = \delta _ {i} ^ {P _ {x 2}} = \delta _ {x i} / 2 , ( i = x )} \\ & {\quad \quad P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = y )} \\ & {\quad \quad P _ {y 2} \Rightarrow u _ {i} ( x , a / 2 , z ) = \delta _ {i} ^ {P _ {y 2}} = \delta _ {y i} / 2 , ( i = y )} \\ & {\quad \quad P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{31}$$
+
+$$\begin{array} {c} {{P _ {x 1} \Rightarrow u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i = x )}} \\ {{P _ {x 2} \Rightarrow \left\{\begin{array} {c} {{u _ {i} ( a / 4 , y , z ) + u _ {i} ( a / 4 , y , h - z ) = \delta _ {x i} / 2 , ( i = x , z )}} \\ {{u _ {i} ( a / 4 , y , z ) - u _ {i} ( a / 4 , y , h - z ) = 0 , ( i = y )}} \end{array} \right.}} \\ {{P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = y )}} \\ {{P _ {y 2} \Rightarrow \left\{\begin{array} {c} {{u _ {i} ( x , a / 4 , z ) + u _ {i} ( x , a / 4 , h - z ) = \delta _ {y i} / 2 , ( i = y , z )}} \\ {{u _ {i} ( x , a / 4 , z ) - u _ {i} ( x , a / 4 , h - z ) = 0 , ( i = x )}} \end{array} \right.}} \\ {{P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = \delta _ {z i} , ( i = x , y , z )}} \end{array}\tag{32}$$
+
+Table 6 shows the summary of the unit cell boundary conditions for calculating the shear modulus $G _ {x y}$ of plain woven composites. For the calculation of $G _ {x y} ,$ the tangential loads applied are antisymmetric on the RS in the x-direction and similarly antisymmetric on the RS symmetric surfaces in the y-direction. Compared to the boundary conditions in Table $^ {5 ,}$ when generating UC2 using RS twice in the y-direction and xdirection, all RS should be replaced with RAS. When generating UC3 using ROS, the loads are antisymmetric about both the x-axis and y-axis, so the ROS in the boundary conditions of UC3 should be replaced with ROAS.
+
+UC1 has displacement boundary conditions on its six surfaces as
+
+follows:
+
+$$\begin{array} {r} {\begin{array} {r l} & {P _ {x 1} - P _ {x 2} \Rightarrow u _ {i} ( 0 , y , z ) - u _ {i} ( a , y , z ) = - \delta _ {x i} , ( i = x , y , z )} \\ & {P _ {y 1} - P _ {y 2} \Rightarrow u _ {i} ( x , 0 , z ) - u _ {i} ( x , a , z ) = - \delta _ {y i} , ( i = x , y , z )} \\ & {P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}} \end{array}\tag{33}$$
+
+$$\begin{array} {c} {P _ {x 1} {\Rightarrow} u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i {=} y , z )} \\ {P _ {x 2} {\Rightarrow} u _ {i} ( a / 2 , y , z ) = \delta _ {i} ^ {P _ {x 2}} = \delta _ {x i} / 2 , ( i {=} y , z )} \\ {P _ {y 1} {\Rightarrow} u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i {=} x , z )} \\ {P _ {y 2} {\Rightarrow} u _ {i} ( x , a / 2 , z ) = \delta _ {i} ^ {P _ {y 2}} = \delta _ {y i} / 2 , ( i {=} x , z )} \\ {P _ {z 1} - P _ {z 2} {\Rightarrow} u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{34}$$
+
+$$\begin{array} {r l} & {\qquad P _ {x 1} \Rightarrow u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i = y , z )} \\ & {\qquad P _ {x 2} \Rightarrow \left\{\begin{array} {l l} {u _ {i} ( a / 4 , y , z ) + u _ {i} ( a / 4 , y , h - z ) = \delta _ {x i} / 2 , ( i = y )} \\ {u _ {i} ( a / 4 , y , z ) - u _ {i} ( a / 4 , y , h - z ) = 0 , ( i = x , z )} \\ {\qquad v _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = x , z )} \end{array} \right.} \\ & {\qquad P _ {y 2} \Rightarrow u _ {i} ( x , a / 4 , z ) + u _ {i} ( x , a / 4 , h - z ) = \delta _ {y i} / 2 , ( i = x )} \\ & {\qquad P _ {u _ {i}} ( x , a / 4 , z , z ) - u _ {i} ( x , a / 4 , h - z ) = 0 , ( i = y , z )} \\ & {\qquad P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{35}$$
+
+Table 7 shows the summary of the unit cell boundary conditions for calculating the shear modulus $G _ {x z}$ of plain woven composites. For the calculation of $G _ {x z} ,$ the tangential loads applied are symmetric on the RS in the x-direction and antisymmetric in the y-direction. Therefore, compared to the boundary conditions in Table $^ {5 ,}$ the RS on the two boundary surfaces in the x-direction should be replaced with RAS, while the RS on the two boundary surfaces in the y-direction remain unchanged. When generating UC3 using ROS, the loads are antisymmetric about the x-axis and symmetric about the y-axis. Thus, in the boundary conditions of UC3, the ROS on the two surfaces in the x-direction remain unchanged, while the ROS on the two surfaces in the y-direction should be replaced with ROAS.
+
+$$\begin{array} {r} {\begin{array} {r l} & {P _ {x 1} - P _ {x 2} \Rightarrow u _ {i} ( 0 , y , z ) - u _ {i} ( a , y , z ) = - \delta _ {x i} , ( i = x , y , z )} \\ & {P _ {y 1} - P _ {y 2} \Rightarrow u _ {i} ( x , 0 , z ) - u _ {i} ( x , a , z ) = - \delta _ {y i} , ( i = x , y , z )} \\ & {P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}} \end{array}\tag{36}$$
+
+UC2 has displacement boundary conditions on its six surfaces as
+
+follows:
+
+$$\begin{array} {r l} & {\qquad P _ {x 1} \Rightarrow u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {P _ {x 1}} = 0 , ( i = y , z )} \\ & {\qquad P _ {x 2} \Rightarrow u _ {i} ( a / 2 , y , z ) = \delta _ {i} ^ {P _ {x 2}} = \delta _ {x i} / 2 , ( i = y , z )} \\ & {\qquad P _ {y 1} \Rightarrow u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {P _ {y 1}} = 0 , ( i = y )} \\ & {\qquad P _ {y 2} \Rightarrow u _ {i} ( x , a / 2 , z ) = \delta _ {i} ^ {P _ {y 2}} = \delta _ {y i} / 2 , ( i = y )} \\ & {\qquad P _ {z 1} - P _ {z 2} \Rightarrow u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = - \delta _ {z i} , ( i = x , y , z )} \end{array}\tag{37}$$
+
+$$\begin{array} {c} {{P _ {x 1} {\Rightarrow} u _ {i} ( 0 , y , z ) = \delta _ {i} ^ {p _ {x 1}} = 0 , ( i {=} y , z )}} \\ {{P _ {x 2} {\Rightarrow} \left\{\begin{array} {c} {{u _ {i} ( a / 4 , y , z ) + u _ {i} ( a / 4 , y , h - z ) = \delta _ {x i} / 2 , ( i = x , z )}} \\ {{u _ {i} ( a / 4 , y , z ) - u _ {i} ( a / 4 , y , h - z ) = 0 , ( i = y )}} \\ {{P _ {y 1} {\Rightarrow} u _ {i} ( x , 0 , z ) = \delta _ {i} ^ {p _ {y 1}} = 0 , ( i = y )}} \end{array} \right.}} \\ {{P _ {y 2} {\Rightarrow} u _ {i} ( x , a / 4 , z ) + u _ {i} ( x , a / 4 , h - z ) = \delta _ {y i} / 2 , ( i = x )}} \\ {{P _ {y 2} {\Rightarrow} \left\{\begin{array} {c} {{u _ {i} ( x , a / 4 , z ) - u _ {i} ( x , a / 4 , h - z ) = 0 , ( i = y , z )}} \\ {{u _ {i} ( x , a / 4 , z ) - u _ {i} ( x , a / 4 , h - z ) = 0 , ( i = y , z )}} \end{array} \right.}} \\ {{P _ {z 1} - P _ {z 2} {\Rightarrow} u _ {i} ( x , y , 0 ) - u _ {i} ( x , y , h ) = \delta _ {z i} , ( i = x , y , z )}} \end{array}\tag{38}$$
+
+Table 8 lists the plain woven composite parameterization parameters. Each unit cell has five independent geometric parameters, and the relationships between the geometric parameters of different unit cells are given in the default values. The constituent properties parameters include the elastic modulus, Poisson’s ratio, and thermal expansion coefficient of the matrix. The constituent parameters of fiber bundles are derived from the model calculations and are not specified as input sources.
+
+## 4. Parameter uncertainty and propagation model
+
+The uncertainty quantification consists of three steps: the uncertainty traceability description of geometric and constituent parameters, the uncertainty propagation between multiple scales, and the final uncertainty quantification of effective properties.
+
+## 4.1. Traceability description of parameter uncertainty
+
+For geometric parameters, uncertainties primarily arise during manufacturing and molding processes. Based on relevant process standards, the upper and lower bounds of parameters can be obtained, which are usually assumed to follow uniform distributions. For the constituent parameters, uncertainties come from various sources, such as process errors and deviations in microstructure. In numerous studies, these uncertainties are commonly assumed to follow normal distributions [14]. In this work, the uncertainty distribution of the geometric parameters (as listed in Table 9 and Table 10) is assumed to be uniform, while the uncertainty of the constituent parameters is assumed to follow a normal distribution.
+
+Table 9 shows the input parameter uncertainties of the fiber bundle. The geometric parameters for UC1 to UC4, including width, length, and fiber radius, adopt a uniform distribution with $a \pm 25$ % mean-based range, $\mathrm{e.} \mathrm{g.}$ , width of UC1, $a _ {f 1}$ , has a mean of 0.0848 mm with a range of ± 25 %. The constituent properties such as the elastic modulus $( E _ {f}$ and $E _ {m} )$ , Poisson’s ratio $( \nu _ {f}$ and $\nu _ {m} )$ , and thermal expansion coefficient $( \alpha _ {f}$ and $\alpha _ {m} )$ for both fiber and matrix are normally distributed, with standard deviations set as a percentage of the means, e.g., the fiber’s elastic modulus $E _ {f f}$ is 72.0 GPa with a standard deviation of ± 2 % of the mean value.
+
+Table 10 shows the input parameter uncertainties of the plain woven composite. The geometric parameters for UC1 to UC3, including length, and half width, half gap, thickness, and layer gap of the fiber bundle, adopt a uniform distribution with $a \pm 15$ % mean-based range. The constituent properties such as the elastic modulus $\left( E _ {m} \right)$ , Poisson’s ratio $( \nu _ {m} ) ,$ and thermal expansion coefficient $\left( \alpha _ {m} \right)$ for matrix is normally distributed, with standard deviations set as a percentage of the means.
+
+Fig. 12 and Fig. 13 respectively show the frequency histograms for fiber bundles and plain woven composite. For the same model, the parametric distributions of unit cells of different sizes are identical; therefore, only the frequency histogram of the largest representative unit cell (UC1) are presented here. The p-value is the result of the Shapiro-Wilk test [44], which assesses normality; if the value exceeds 0.05, the sample is considered to follow a normal distribution.
+
+## 4.2. Inter-scale propagation model
+
+## 4.2.1. Multiscale uncertainty propagation process
+
+In multiscale models, outputs at the microscale often serve as inputs at the macroscale. During this transmission of uncertainty from microscale to macroscale, the Nataf transformation, which relies on Gaussian distributions, is employed to address the variable correlations. The transformation facilitates the uncertainty analysis of correlated variables, streamlining the simulation process. By mapping correlated variables to independent standard normal distributions, it permits a more precise conveyance of uncertainty across scales. The multi-scale uncertainty propagation process is shown in Fig. 14 with three main steps:
+
+(1) By inputting the uncertainty distributions of fibers properties, matrix properties, and fiber bundles geometry, uncertainty samples at the microscale are obtained through sampling. The uncertainty samples of the effective properties of fiber bundles are obtained through the fiber bundle analysis model.
+
+(2) Based on the Nataf transformation, the uncertainty samples of the effective properties of fiber bundles are converted into distributions with correlation. Specifically, the joint distribution of the effective properties of the fiber bundle is first converted to an independent normal distribution. Second, new samples are sampled from the independent normal distribution, and then the samples are converted back to the joint distribution as input to the mesoscale uncertainty.
+
+(3) By inputting the uncertainty distributions of fiber bundles properties, matrix properties, and plain woven composites geometry, uncertainty samples at the mesoscale are obtained through sampling; the effective properties of plain woven composites are obtained through the plain woven composites analysis model.
+
+## 4.2.2. The multivariate gaussian distribution
+
+The Multivariate Gaussian Distribution is a cornerstone in statistical analysis, capturing correlations among multiple random variables. A multivariate normal distribution with mean vector $\mu$ and covariance matrix Σ is described by the probability density function:
+
+$$\phi ( z , \mu , \Sigma ) = \frac {1} {( 2 \pi ) ^ {n / 2} | {\Sigma |} ^ {1 / 2}} \exp \bigg ( - \frac {1} {2} ( z - \mu ) ^ {T} \Sigma ^ {- 1} ( z - \mu ) \bigg )\tag{39}$$
+
+where Σ is the covariance matrix, and it is calculated as $\pmb {\Sigma} = E [ ( z - \mu ) ( z -$ $\mu ) ^ {T} ]$ , E is the expectation operator, z is the random vector, and $\mu$ is the mean vector.
+
+A transformation to standard normal form is necessary to use such multivariate gaussian distribution in practical applications. The
+
+(a) $\delta _ {b 1}$
+
+(e) $a _ {f}$
+
+(f) $E _ {{_ m}}$
+
+(d) $\nu _ {f}$
+
+(g) $\nu _ {{_ m}}$
+
+(h) $\boldsymbol {\alpha} _ {{} _ {m}}$
+
+transformation is based on the Cholesky decomposition [45], which breaks down the covariance matrix into $\dot {\boldsymbol {z}} = \boldsymbol {L} \dot {\boldsymbol {L} ^ {\mathrm{T}}}$ , where L is a lower triangular matrix.
+
+To perform the transformation, the covariance matrix Σ of the original distribution is first computed, followed by the application of Cholesky decomposition to obtain the lower triangular matrix L. Subsequently, a new random vector z is generated, with each component being an independent standard normal random variable characterized by a mean of 0 and a variance of 1. The transformed vector x is then calculated as $\mu + L z ,$ which possesses the desired properties of a standard normal distribution while retaining the original correlation structure encapsulated within $\mathbf {{\delta L}}$ Through this process, the random variable x adheres to independent standard normal distributions, with the correlation structure of the original Gaussian distribution preserved via $L ,$ ensuring the covariance matrix of x is congruent with Σ.
+
+## 4.2.3. Nataf transformation
+
+The Nataf transformation is a technique employed in uncertainty analysis to address the correlations among parameters. It accomplishes this by mapping the original correlated random variables onto a space of standard normal variables, while preserving the structure of their correlations. This mapping utilizes the cumulative distribution function and its inverse for each variable, facilitating the conversion of a multidimensional random variable set with complex correlations into a collection with more manageable statistical properties. Such a transformation is particularly crucial when the multi-variable dependencies are significant and cannot be overlooked, as it simplifies the uncertainty analysis of correlated variables. It involves three main steps:
+
+(a) $a _ {p 1}$
+
+(b) $w _ {p 1}$
+
+(c) $h _ {p 11}$
+
+(d) $h _ {p 21}$
+
+(e) $h _ {p 31}$
+
+(1) Equivalent marginal distribution transformation.
+
+Convert the correlated random variables $\textit {X} = [ x _ {1} , x _ {2} , . . . , x _ {n} ]$ to correlated standard normal variables $Z = [ z _ {1} , z _ {2} , . . . , z _ {n} ]$ . The correlation coefficient matrix $\rho$ is defined as follows:
+
+$$\rho _ {i j} = {\frac {\operatorname{cov} {\bigl (} \mathrm{X} _ {i} , \mathrm{X} _ {j} {\bigr )}} {\sigma _ {i} \sigma _ {j}}} = {\frac {1} {n}} \sum {\frac {( x _ {i} - \mu _ {i} ) {\bigl (} x _ {j} - \mu _ {j} {\bigr )}} {\sigma _ {i} \sigma _ {j}}}\tag{40}$$
+
+where cov(\*) represents the covariance between random variables $X _ {i}$ and $X _ {j} ,$ while $\sigma _ {i}$ and $\sigma _ {j}$ denote the standard deviations of $X _ {i}$ and $X _ {j}$ . In the Nataf transformation, the original correlated random variables are transformed into correlated standard normal random variables $Z$ using the cumulative distribution function F and its inverse function Φ-1.
+
+$$Z _ {i} = \Phi ^ {- 1} ( F _ {i} ( X _ {i} ) )\tag{41}$$
+
+where Φ(\*) is the standard normal cumulative distribution function, $\Phi ^ {- 1} ( ^ {*} )$ is its inverse function, and $F _ {i} ( * )$ is the cumulative distribution function of random variable $X _ {i} ,$ which can be computed through sample frequency statistics:
+
+$$F _ {i} ( \mathbf {x} _ {i} ) = \frac {1} {n} \sum _ {j = 1} ^ {n} I ( x _ {j} \leq x _ {i} )\tag{42}$$
+
+where I is the indicator function.
+
+(2) Correlation coefficients calculation of Z.
+
+After transforming X to Z, calculate the new correlation coefficients for $z$ using their standard deviations and a joint probability density function. The relationship between the correlation coefficients of X and Z can be expressed as follows:
+
+$$\begin{array} {r l r} {{\rho _ {i j} ^ {( X )} = \int _ {- \infty} ^ {\infty}}} \\ & {} & {\times \int _ {- \infty} ^ {\infty} ( \frac {F _ {i} ^ {- 1} ( \Phi ( z _ {i} ) ) - \mu _ {i} ^ {( X )}} {\sigma _ {i} ^ {( X )}} ) ( \frac {F _ {j} ^ {- 1} ( \Phi ( z _ {j} ) ) - \mu _ {j} ^ {( X )}} {\sigma _ {j} ^ {( X )}} ) \phi _ {i j} ( z _ {i} , z _ {j} , \rho _ {i j} ^ {( Z )} ) d z _ {i} d z _ {j}} \end{array}\tag{43}$$
+
+where $\mu _ {i} ^ {( X )}$ and $\mu _ {i} ^ {( X )}$ represent the standard deviations of the random variables $X _ {i}$ and $X _ {j} ,$ respectively, while $: \phi$ is the standard joint probability density function of standard normal distribution with a linear correlation coefficient of $\rho _ {i j} ^ {( Z )}$ ,
+
+$$\phi _ {i j} \left( z _ {i} , z _ {j} , \rho _ {i j} ^ {\left( Z \right)} \right) = \phi \left( \left[ \begin{array} {l} {{z _ {i}}} \\ {{z _ {j}}} \end{array} \right] , \left[ \begin{array} {l} {{0}} \\ {{0}} \end{array} \right] , \left[ \begin{array} {l l} {{1}} & {{\rho _ {i j} ^ {\left( Z \right)}}} \\ {{\rho _ {i j} ^ {\left( Z \right)}}} & {{1}} \end{array} \right] \right)\tag{44}$$
+
+In the computation of these correlation coefficients, double integrals often require complex mathematical operations. Therefore, the Monte Carlo method is employed to estimate the relationships between these coefficients:
+
+$$\rho _ {i j} ^ {( X )} \approx \frac {1} {n} \sum _ {k = 1} ^ {n} \left( \frac {F _ {i} ^ {- 1} \left( \Phi \left( z _ {i} ^ {( k )} \right) \right) - \mu _ {i} ^ {( X )}} {\sigma _ {i} ^ {( X )}} \right) \left( \frac {F _ {j} ^ {- 1} \left( \Phi \left( z _ {j} ^ {( k )} \right) \right) - \mu _ {j} ^ {( X )}} {\sigma _ {j} ^ {( X )}} \right)\tag{45}$$
+
+where n represents the number of sampling points, and $( z _ {i} , z _ {j} )$ are sample point from a standard normal distribution with a correlation coefficient of $\cdot _ {\rho _ {i j} ^ {\left( Z \right)}}$
+
+The determination of $\rho ^ {( Z )}$ from $\rho ^ {( X )}$ is challenging. However, according to Lemma [40], it is established that $\rho ^ {( Z )}$ is a strictly increasing function o ${\bf \chi} _ {\rho} ( X )$ , and when $\rho ^ {( Z )} = 0 , \rho ^ {( X )}$ also equals $_ {0 .}$ These properties allow us to express the relationship between $\rho ^ {( Z )}$ and $\rho ^ {( X )}$ as follows:
+
+$$\rho _ {i j} ^ {( Z )} = g _ {i j} \Big ( \rho _ {i j} ^ {( X )} \Big ) \rho _ {i j} ^ {( X )}\tag{46}$$
+
+where $g _ {i j}$ represents a function with respect to $\rho ^ {( X )}$ . By sampling several $\rho ^ {( Z )}$ values and employing the Monte Carlo method to determine their corresponding $\rho ^ {( X )}$ values, we can derive the functional form of $g _ {i j}$ through sample fitting. Building upon this and armed with the fitted gij and the actual $\rho ^ {( X )}$ values, we can calculate $\rho ^ {( Z )}$
+
+(3) Cholesky decomposition transformation.
+
+Factorize the correlation coefficient matrix of Z using Cholesky decomposition into:
+
+$$\pmb {\Sigma} = \pmb {L} _ {0} {\cdot} \pmb {L} _ {0} ^ {T}\tag{47}$$
+
+Then, transform Z into independent standard normal variables Y using: Y = L0⋅Z (48)
+
+After these steps, the original correlated variables X are now represented by independent standard normal variables Y, while preserving the correlation structure.
+
+## 5. Results and discussions
+
+## 5.1. Analysis of model accuracy and efficiency
+
+Fig. 15 (a), (b), (c) and (d) shown the displacement fields obtained in the calculations of elastic modulus in x-direction, y-direction, zdirection, and that of thermal expansion coefficient for fiber bundles, respectively. The displacement fields obtained by different unit cells also present very similar distributions, and thus indicates the accuracy of the boundary conditions for those unit cells.
+
+(a) $E _ {x b}$
+
+(b) $E _ {y b}$
+
+Table 11 shows the results comparison with Refs. [23,46], and the same input parameters are used in the simulations. In each case, the first row presents the calculated results of the Reference, the subsequent four rows are the results obtained by unit cells in this work, and the final row indicates the maximum deviation among the results obtained by various methods. The results show that: for $E _ {z b} ,$ Exb, Gxyb, Gxzb, vxzb, $\nu _ {x y b} ,$ αzb and $\alpha _ {x b} ,$ the maximum deviations are 0.0932 %, 0.6 %, 3.529 %, 1.322 %, 0.0043 %, 0.0125 %, 0.0074 %, and 0.0042 %, respectively; and the unit cells and corresponding simulations are validated by such minor deviations to some extent.
+
+Fig. 16(a), (b), (c) and (d) shown the displacement fields obtained in the calculations of elastic modulus in x-direction, y-direction, z-direction, and that of thermal expansion coefficient for plain woven composites, respectively. As shown in Fig. 16, the displacement fields obtained by different unit cells also present very similar distributions, and thus indicates the accuracy of the boundary conditions for those unit cells.
+
+Table 12 shows the results comparison with Ref. [46], and the same volume fractions are used in the simulations. The first three rows present the calculated results of the Reference, the subsequent three rows are the results obtained by unit cells in this work, and the final row indicates the maximum deviation among the results obtained by various methods. The results show that: for $E _ {x p} , G _ {x y p} ,$ and $\nu _ {x y p} ,$ the maximum deviations are 7.834 %, 25.52 %, and 46.15 %, respectively. Also, the same results obtained by unit cells of different sizes indicates the potentials of the minimum unit cell in overall computational efficiency improvement.
+
+Fig. 17 illustrates the relative difference between the output of each fiber bundle unit cell and that of UC1. Sub-figures (a) to (g) correspond to the calculations of different effective properties. It can be observed that although the relative difference for UC2 to UC4 increases progressively compared to UC1, the relative differences are small enough with the largest magnitude on the order of 10e-4. Sub-figures (h) to (j) represent the number of elements, number of nodes, and computation time, respectively. It is evident that significant reductions can be found for both the model size and the calculation time, and the average computation time for UC4 is reduced by 82 % compared to UC1.
+
+Fig. 18 illustrates the relative difference between the output of each plain woven composite unit cell and that of UC1. Sub-figures (a) to (g) correspond to the calculations of different effective properties. It can be
+
+(c) $E _ {z b}$
+
+(d) $\boldsymbol {\mathcal {{a}}} _ {b}$
+
+(a) $E _ {x p}$
+
+(b) $E _ {y p}$
+
+(c) $E _ {z p}$
+
+(d) $\alpha _ {p}$
+
+observed that although the relative difference for UC2 to UC3 increases progressively compared to UC1, the relative differences are small enough with the largest magnitude on the order of 10e-3. Sub-figures (h) to (j) represent the number of elements, number of nodes, and computation time, respectively. It is evident that significant reductions can be found for both the model size and the calculation time, and the average computation time for UC3 is reduced by 94 % compared to UC1.
+
+## 5.2. Multiscale uncertainty analysis
+
+## 5.2.1. Microscale uncertainty analysis
+
+For the uncertainty analysis of the fiber bundle, UC4 is adopted to conduct calculation of each sample. During the sampling, the outputs’ mean and variance are obtained in each step to ensure the adequate sample size. Fig. 19 shows the evolution of the mean and variance along with the sample size, and the converged sampling process can be observed around 3000 samples. In this work, 3000 sample size is adopted and the sample requirements for Monte Carlo simulations is satisfied.
+
+Fig. 20 shows the marginal distribution of fiber bundle output parameters including volume fraction, effective properties, and elements number of unit cells. The p-value shows that most of the outputs are nonnormally distributed under the input parameter distributions of this paper, and only the out-plane coefficient of thermal expansion, $\alpha _ {z b} ,$ is normally distributed. Table 13 demonstrates the mean, standard deviation, maximum, minimum, coefficient of variation $( \mathbf {C V} ) ,$ kurtosis, and skewness of the distribution of fiber bundle output parameters. The CV represents the degree of dispersion of the data from the mean, and the geometric input parameters of the fiber bundle are uniformly distributed with large coefficients of variation, but the coefficients of variation for the volume fraction of the fiber bundle (vf ) are controlled to be roughly comparable to the other effective properties. The effective parameter with the largest CV is $G _ {y x b}$ with a value of 5.08 %. Skewness represents the symmetry of the data distribution, and $\nu f _ {b} , E _ {z b} , \nu _ {x y b} ,$ and $\alpha _ {x b}$ have low symmetry, with absolute values of skewness greater than 0.1. Kurtosis represents the sharpness of the data distribution, and the homogeneity of the geometric parameters results in the lowest kurtosis of 2.52 for $\nu f _ {b} ,$ and most of the other parameters are platykurtic (kurtosis values less
+
+UC1 UC2 UC3 UC4 
+(a) Exb
+
+(c) E2b
+
+(d) \_ \$
+
+(f)
+
+(g)x2
+
+(h) enum
+
+(i)nnum
+
+(i) spend time
+
+(b) 2
+
+(d) α x
+
+(f) d
+
+(g) x
+
+(h) enum
+
+(i) num p
+
+(i) spend time
+
+than 3).
+
+The matrix of correlation coefficients for the fiber bundle parameters is shown in Fig. 21. From the correlation coefficient matrix, it can be seen that the input parameters of the fiber bundle are independent. After the propagation of uncertainty, there is a clear correlation between the output parameters. The $\nu f _ {b}$ is only related to the geometric parameters among the input parameters, and its value is strongly correlated with the elastic modulus, shear modulus and thermal expansion coefficient $( E _ {x b} ,$ $E _ {z b} ,$ Gyxb, Gzxb, $\alpha _ {x b} ,$ and $\alpha _ {z b} )$ , thus it is an important indicator to characterize the effective properties. The relevant effects of constituent properties on the effective properties of fiber bundles can be categorized into three types: fiber-dominated, matrix-dominated, and co-dominated. In terms of elastic modulus, the in-plane and out-plane elastic moduli $( E _ {x b}$ and $E _ {z b} )$ are strongly correlated with the elastic modulus of the matrix $\left( E _ {m} \right)$ and the elastic modulus of the fiber bundle (Ef), respectively. In addition, $E _ {x b}$ is also related to the matrix shear modulus, since the matrix has larger deformations during transverse tension while the fibers experience smaller deformations and resulting in more obvious interface tangential deformation. Thus $E _ {x b}$ is the matrix-dominated effective property, while $E _ {z b}$ is the fiber-dominated effective property. In terms of Poisson’s ratio, the deformation in-plane is dominated by the matrix, and the fiber deformation is smaller, so $\nu _ {x y b}$ has a strong correlation with $\nu _ {m} ;$ the out-plane deformation is dominated by the fiber, and the fiber and matrix deformation are basically the same, so $\nu _ {x z b}$ has a correlation with all constituent properties. For the shear modulus, the shear modulus in both directions $( G _ {y x b}$ and $G _ {z x b} )$ has a strong correlation with the matrix elastic modulus $( E _ {m} ) ,$ which is the matrix-dominated effective properties, due to the fact that the tangential deformation, in either direction, has a larger deformational amount in the matrix rather than in the fiber. In terms of the coefficient of thermal expansion, the inplane and out-plane coefficients of thermal expansion are strongly correlated with the coefficients of thermal expansion of the matrix and the fiber bundle, respectively, which is also due to the different deformation-dominant materials. From the above analysis, it can be
+
+(b) Variance
+
+(a) Mean 
+(a) $\nu f _ {b}$
+
+(b) $E _ {x b}$
+
+(c) $E _ {_ {z b}}$
+
+(d) $\nu _ {_ {x y b}}$
+
+(e) $\nu _ {_ {x z b}}$
+
+(f) $G _ {_ {y x b}}$
+
+(g) $G _ {_ {z x b}}$
+
+(h) $\alpha _ {_ {x b}}$
+
+(i)) $\boldsymbol {\alpha} _ {_ {z b}}$
+
+(i) $e n u m _ {b}$
+
+(a) Mean
+
+(b) Variance
+
+Frequency
+
+concluded that the out-plane effective properties are more strongly related to the input fiber, while the in-plane ones are more strongly related to the input matrix properties.
+
+## 5.2.2. Mesoscale uncertainty analysis
+
+We conducted a simulation analysis of the plain woven composite model’s effective properties using the UC3 unit cell. The distribution of effective properties for the fiber bundle model was obtained through uncertainty analysis in the previous section, and the samples were generated using Nataf transformation.
+
+Fig. 22 shows the evolution of the mean and variance of the parameters of plain woven composites as a function of sample size. It can be observed that after analyzing 4000 samples, the means and variances of the parameters have substantially converged. Combining the number of samples from different scale analysis models and the difference in average computation time between the smallest size cell and the original cell, it can be concluded that the overall computational efficiency has decreased by 89 %.
+
+Fig. 23 shows the output distribution of the uncertainty in the effective properties of the plain woven composites. The distribution shows that only the coefficient of thermal expansion $( \alpha _ {z p} )$ remains normally distributed after the transformation. The number of elements, on the other hand, shows a clear multi-peak phenomenon, which is caused by the different meshing algorithms that analyze the variations in model size. Table 14 demonstrates the statistical properties of the plain woven composite output parameter distributions. For the coefficients of variation, the plain woven composite has a greater variation in the CV compared to fiber bundles, which is due to the multiscale transfer, and the larger CV of the plain woven composite geometric parameters, with the largest CV of the volume fractions, vfp, at 7.71 %. In terms of skewness and kurtosis, the skewness of $\alpha _ {x p}$ has the largest absolute value of − 0.27, and the kurtosis of vfp has the largest discrepancy from the normal distribution at 2.48.
+
+Fig. 24 shows the correlation coefficients of the input and output parameters of the plain woven composites. From the correlation of input parameters of plain woven composites, it can be determined that the geometric and matrix property are independent of each other and do not correlate; however, the input fiber bundle effective properties maintain their correlation. The volume fraction (vfp) was correlated with the input parameters of the plain woven composite geometric and fiber bundle volume fraction parameters; it maintains its correlation with the other parameters in the output parameters quite high and is the main influence of the effective properties of plain woven composite. In addition to the influence of geometric parameters, the influence of matrix and fiber bundle property on the property of plain woven composite is analyzed below. Similarly, the effective property parameters of plain woven composites are classified into fiber bundle-dominated, matrix-dominated, and co-dominated categories. For elastic modulus, the elastic modulus in the woven plane $( E _ {x p} )$ is only strongly influenced by the fiber bundle effective properties, which is the dominant parameter of the fiber bundle; the elastic modulus between different layers $( E _ {z p} )$ is strongly associated with both the fiber bundle and the matrix, which is the codominant effective property. For Poisson’s ratio, the in-plane Poisson’s ratio $( \nu _ {x y p} )$ is like that of $\nu _ {x z b} ,$ which is a co-dominant parameter; the interlayer Poisson’s ratio $( \nu _ {x z p} )$ is similar to that of $\nu _ {x y b} ,$ whose parameter changes are mainly dominated by the matrix. For shear modulus, the analysis of fiber bundles shows that the fibers contribute less to the shear modulus, and therefore the changes of both shear modulus are mainly from the properties of the matrix. For thermal expansion coefficients, the thermal expansion coefficients in both directions $( \alpha _ {x p}$ and $\alpha _ {z p} )$ are correlated with the matrix thermal expansion coefficients and the effective properties of fiber bundles and are therefore jointly dominated by both. From the analysis, it can be seen that the coupling between the parameters is more pronounced due to the complexity of the plain woven composite structure compared to the fiber bundle. The in-plane effective properties are more strongly related to the input fiber bundles, while the out-plane ones are more strongly related to the input matrix properties.
+
+## 6. Conclusions
+
+In this work, an uncertainty quantification model with high accuracy and feasible cost is developed for the effective mechanical properties of plain woven composites. In this model, uncertainties of geometric and constituent parameters are analyzed through the processes of traceability, inter-scale propagation, and quantification. Minimum size unit cells are developed through exhaustive analysis of the structural symmetries for the fiber bundle and plain woven composite to reduce the
+
+(i) p
+
+(h) αx
+
+computational cost without compromising accuracy. Some conclusions are obtained:
+
+1. For fiber bundles, the minimum unit cell with 1/8 size is developed based on three translational, two reflectional and one 180◦ rotational symmetries; the minimum unit cell is validated by larger ones and References with the largest deviation of 3.5 %, and the uncertainty analysis cost is reduced by 82 %.
+
+2. For the plain woven composites, the minimum unit cell with 1/16 size is developed based on three translational, two reflectional and two 180◦ rotational symmetries; the minimum unit cell is validated by the comparison with larger ones, and the uncertainty analysis cost is reduced by 94 %.
+
+3. The total efficiency of the uncertainty quantification of plain woven composites is improved by 89 % considering the minimum unit cells of both composites and fiber bundles.
+
+4. For the uncertainties of fiber bundles, most effective properties have relatively low kurtosis values, and Ezb, vxyb, and αxb present relatively high absolute skewness values; the out-plane effective properties are more strongly related to the input fiber properties, while the in-plane ones are more strongly related to the input matrix properties.
+
+5. For the uncertainties of plain woven composites, most effective properties have relatively low kurtosis values, and $\nu _ {x y p} , \nu _ {x z p} , G _ {y x p}$ and $\alpha _ {x p}$ present relatively high absolute skewness values; the in-plane effective properties are more strongly related to the input fiber bundle properties, while the out-plane ones are more strongly related to the input matrix properties.
+
+## CRediT authorship contribution statement
+
+Yu-Cheng Yang: Writing – original draft, Visualization, Software, Methodology, Investigation, Formal analysis, Conceptualization. Jian-Jun Gou: Writing – review & editing, Supervision, Conceptualization. Chun-Lin Gong: Project administration, Investigation. Yue-Er Sun: Visualization, Data curation. Shuguang Li: Validation, Conceptualization.
+
+## Omitted Tables
+
+- [Table 1 omitted; saved to tables/table_001.md]
+- [Table 2 omitted; saved to tables/table_002.md]
+- [Table 3 omitted; saved to tables/table_003.md]
+- [Table 4 omitted; saved to tables/table_004.md]
+- [Table 5 omitted; saved to tables/table_005.md]
+- [Table 6 omitted; saved to tables/table_006.md]
+- [Table 7 omitted; saved to tables/table_007.md]
+- [Table 8 omitted; saved to tables/table_008.md]
+- [Table 9 omitted; saved to tables/table_009.md]
+- [Table 10 omitted; saved to tables/table_010.md]
+- [Table 11 omitted; saved to tables/table_011.md]
+- [Table 12 omitted; saved to tables/table_012.md]
+- [Table 13 omitted; saved to tables/table_013.md]
+- [Table 14 omitted; saved to tables/table_014.md]

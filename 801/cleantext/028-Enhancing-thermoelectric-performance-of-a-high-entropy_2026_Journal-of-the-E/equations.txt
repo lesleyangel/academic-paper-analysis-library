@@ -1,0 +1,173 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 361.81, 716.91)]] https://doi.org/10.1016/j.jeurceramsoc.2025.117974 Received 28 August 2025; Received in revised form 2 November 2025; Accepted 9 November 2025
+
+[confidence=0.92; source=equations; [page 3, bbox (37.59, 214.51, 102.58, 233.56)]] F(R∞) = (1 -R∞)2
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (37.59, 245.91, 291.01, 259.69)]] [F(R∞)hv1/2 = B(hv -Eg) (2)
+
+[confidence=0.92; source=equations; [page 3, bbox (37.59, 376.49, 291.01, 389.52)]] κtot = DCpρ (3)
+
+[confidence=0.92; source=equations; [page 3, bbox (37.59, 396.5, 291.01, 409.53)]] κe = LTσ (4)
+
+[confidence=0.92; source=equations; [page 3, bbox (37.59, 416.17, 291.01, 429.21)]] κlat = κtotal -κe (5)
+
+[confidence=0.92; source=equations; [page 4, bbox (365.9, 78.06, 560.02, 92.08)]] A + 3O\times O (6)
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 308.12, 560.02, 322.14)]] C + O\times O→CO + V⋅⋅ O + 2eʹ (7)
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 328.53, 560.02, 342.55)]] CO + O\times O→CO2 + V⋅⋅ O + 2eʹ (8)
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 348.94, 560.02, 362.95)]] C + 2O\times O→CO2 + 2V⋅⋅ O + 4eʹ (9)
+
+[confidence=0.92; source=equations; [page 8, bbox (37.59, 383.42, 59.67, 397.39)]] σ = σ0
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (37.59, 407.48, 115.9, 434.08)]] In(σT) = In(C) ( - Ea kBT
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (306.6, 245.86, 370.59, 270.35)]] |S| = 8π2k2 B 3eh2 m∗T ( π
+
+[confidence=0.92; source=equations; [page 9, bbox (37.59, 205.27, 64.94, 218.36)]] m∗= ℏ2
+
+[confidence=0.92; source=equations; [page 9, bbox (37.59, 376.83, 91.33, 396.06)]] μw = 3h3σ
+
+[confidence=0.92; source=equations; [page 9, bbox (43.6, 75.68, 282.69, 86.88)]] Sample n (cm-3) μH (cm2/V/s) m*/me
+
+[confidence=0.92; source=body_inline] {Z T} {=} S ^ {2} {\sigma} T / {\kappa} ,
+
+[confidence=0.92; source=body_inline] ( \mathrm {M g _ {0.2} Z n _ {0.2} C o _ {0.2} C u _ {0.2} N i _ {0.2}} ) \mathrm{O}
+
+[confidence=0.92; source=body_inline] \mathrm {{\cal S r T i O}} _ {3}
+
+[confidence=0.92; source=body_inline] \mathrm {{S r T i O} _ {3}} \mathrm {{.}}
+
+[confidence=0.92; source=body_inline] \mathrm{Sr} _ {0.9} \mathrm{La} _ {0.1} \mathrm{TiO} _ {3} / \mathrm{Ag}
+
+[confidence=0.92; source=body_inline] \mathrm{Sr} _ {0.875} \mathrm{La} _ {0.1} \mathrm{TiO} _ {3}
+
+[confidence=0.92; source=body_inline] \mathrm {{s r T i O} _ {3} .}
+
+[confidence=0.92; source=body_inline] \mathrm {{S r T i O _ {3}}}
+
+[confidence=0.92; source=body_inline] \mathrm {S r T i O _ {3}}
+
+[confidence=0.92; source=body_inline] \mathrm{SrTiO} _ {3} \ [ 29 ]
+
+[confidence=0.92; source=body_inline] \mathrm {{s r T i O} _ {3}}
+
+[confidence=0.92; source=body_inline] ( \mathrm{Ca} _ {0.27} \mathrm{Sr} _ {0.27} \mathrm{Ba} _ {0.27} \mathrm{La} _ {0.19} ) \mathrm{TiO} _ {3}
+
+[confidence=0.92; source=body_inline] ( \mathrm{Ca} _ {0.27} \mathrm{Sr} _ {0.27} \mathrm{Ba} _ {0.27} \mathrm{La} _ {0.19} ) \mathrm{TiO} _ {3 - x} \ : ( x = 0 , 0.1 , 0.2 )
+
+[confidence=0.92; source=body_inline] x = 0.1
+
+[confidence=0.92; source=body_inline] x = 0.2
+
+[confidence=0.92; source=body_inline] . . 0 \times 10 ^ {- 6}
+
+[confidence=0.92; source=body_inline] 0.03 \mathrm{eV} / \mathring {\mathrm{A}} ^ {3}
+
+[confidence=0.92; source=body_inline] 1.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] \mathring \mathrm{A}
+
+[confidence=0.92; source=body_inline] \mathrm{CaCO} _ {3} ,
+
+[confidence=0.92; source=body_inline] \mathrm {\bf S r C O _ {3}} ,
+
+[confidence=0.92; source=body_inline] \mathrm{CO} _ {3} ,
+
+[confidence=0.92; source=body_inline] O _ {3} ,
+
+[confidence=0.92; source=body_inline] \mathrm{TiO} _ {2}
+
+[confidence=0.92; source=body_inline] \mathrm {Z r O _ {2}}
+
+[confidence=0.92; source=body_inline] 1300~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] 1250~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] \mathrm {{A l} _ {2} \mathrm {{O} _ {3}}}
+
+[confidence=0.92; source=body_inline] ^ \circ \mathrm{C}
+
+[confidence=0.92; source=body_inline] " \mathrm{A} "
+
+[confidence=0.92; source=body_inline] F ( R _ {\infty} ) = \frac {\left( 1 - R _ {\infty} \right) ^ {2}} {2 R _ {\infty}}\tag{1}
+
+[confidence=0.67; needs_review; source=body_inline] [ F ( R _ {\infty} ) h \nu ^ {1 / 2} = B ( h \nu - E _ {g} )\tag{2}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{g}}
+
+[confidence=0.92; source=body_inline] ( C _ {\mathfrak {p}} )
+
+[confidence=0.92; source=body_inline] ( \kappa _ {\mathrm{tot}} )
+
+[confidence=0.92; source=body_inline] \left( \kappa _ {\mathrm{e}} \right) _ {:}
+
+[confidence=0.92; source=body_inline] \left( \kappa _ {\mathrm{lat}} \right)
+
+[confidence=0.92; source=body_inline] \kappa _ {\mathrm{tot}} = D C _ {\mathrm{p}} \rho\tag{3}
+
+[confidence=0.92; source=body_inline] \kappa _ {\mathrm{e}} = L T {\sigma}\tag{4}
+
+[confidence=0.92; source=body_inline] \kappa _ {\mathrm{lat}} = \kappa _ {\mathrm{total}} - \kappa _ {\mathrm{e}}\tag{5}
+
+[confidence=0.92; source=body_inline] I _ {\mathrm{D}} / I _ {\mathrm{G}}
+
+[confidence=0.92; source=body_inline] R _ {\mathrm{wp}}
+
+[confidence=0.92; source=body_inline] \mathrm{La} _ {2} \mathrm{O} _ {3} {} 2 \mathrm{La} _ {\mathrm{A}} ^ {.} + V _ {\mathrm{A}} ^ {\prime \prime} + 3 \mathrm{O} _ {0} ^ {\times}
+
+[confidence=0.92; source=body_inline] ( \mathrm{Ca} _ {0.27} \mathrm{Sr} _ {0.27} \mathrm{Ba} _ {0.27} \mathrm{La} _ {0.19} ) \mathrm{TiO} _ {2.8}
+
+[confidence=0.92; source=body_inline] \left( \mathrm{O} _ {\mathrm{lat}} \right)
+
+[confidence=0.92; source=body_inline] \left( \mathrm{V} _ {\mathrm{O}} \right)
+
+[confidence=0.92; source=body_inline] \mathbf {\rho} ( \mathrm {O _ {a d s}} )
+
+[confidence=0.92; source=body_inline] \mathrm{CO} _ {2}
+
+[confidence=0.92; source=body_inline] C + O _ {o} ^ {\times} {} C O + V _ {o} ^ {\cdot} + 2 e ^ {\prime}\tag{7}
+
+[confidence=0.92; source=body_inline] C O + O _ {o} ^ {\times} {} C O _ {2} + V _ {O} ^ {\cdot} + 2 e\tag{8}
+
+[confidence=0.92; source=body_inline] C + 2 O _ {o} ^ {\times} {} C O _ {2} + 2 V _ {o} ^ {\cdot} + 4 e ^ {\prime}\tag{9}
+
+[confidence=0.92; source=body_inline] \scriptstyle \mathrm{C=} 0
+
+[confidence=0.92; source=body_inline] 1000 \thinspace \mathrm{cm} ^ {- 1} \thinspace \mathrm{to} 2000 \thinspace \mathrm{cm} ^ {- 1}
+
+[confidence=0.92; source=body_inline] \mathrm{Ti} ^ {4 +}
+
+[confidence=0.92; source=body_inline] ( < ~ 600 ~ \mathrm{S/m} )
+
+[confidence=0.92; source=body_inline] \mu \mathrm{W} / ( \mathrm{m} {\cdot} \mathrm{K} ^ {2} )
+
+[confidence=0.92; source=body_inline] \sigma = {\frac {\sigma _ {0}} {T}} \exp {{\frac {- E _ {\mathrm {{a}}}} {k _ {\mathrm {{B}}} T}}}\tag{10}
+
+[confidence=0.92; source=body_inline] \mathrm{In} ( \sigma T ) = \mathrm{In} ( C ) \bigg ( - \frac {E _ {a}} {k _ {\mathrm{B}} T} \bigg )\tag{11}
+
+[confidence=0.92; source=body_inline] \sigma , k _ {\mathrm{B}} ,
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{a}}
+
+[confidence=0.92; source=body_inline] | S | = {\frac {8 \pi ^ {2} k _ {\mathrm{B}} ^ {2}} {3 e h ^ {2}}} m ^ {*} T \Bigl ( {\frac {\pi} {3 n}} \Bigr ) ^ {2 / 3}\tag{12}
+
+[confidence=0.92; source=body_inline] k _ {\mathrm{B}} , e , h , m ^ {\ast} , T ,
+
+[confidence=0.92; source=body_inline] ( \mu _ {\mathrm{H}} )
+
+[confidence=0.92; source=body_inline] ( m ^ {*} / m _ {\mathrm{e}} )
+
+[confidence=0.92; source=body_inline] m ^ {*} = \hbar ^ {2} \left( \frac {d ^ {2} E} {d k ^ {2}} \right) ^ {- 1}\tag{13}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\mu _ {w} = \cfrac {3 h ^ {3} \sigma} {8 \pi e \left( 2 m _ {0} k _ {B} T \right) ^ {3 / 2}} \left\{\cfrac {\exp \left[ \frac {| S |} {k _ {B} / e} - 2 \right]} {1 + \exp \left[ - 5 \left( \frac {| S |} {k _ {B} / e} - 1 \right) \right]} \right.} \\ & {\left. + \frac {\frac {3 | S |} {\pi ^ {2} k _ {B} / e}} {1 + \exp \left[ 5 \left( \frac {| S |} {k _ {B} / e} - 1 \right) \right]} \right\}} \end{array}\tag{14}
+
+[confidence=0.92; source=body_inline] \mathbf {\Pi} ( \kappa _ {\mathrm{tot}} )
+
+[confidence=0.92; source=body_inline] \left( \kappa _ {\mathrm{e}} \right)
+
+[confidence=0.92; source=body_inline] \kappa _ {\mathrm{e}}
+
+[confidence=0.92; source=body_inline] k _ {\mathrm{lat}}
+
+[confidence=0.92; source=body_inline] ( \mathrm {C a _ {0.27} S r _ {0.27} B a _ {0.27} L a _ {0.19}} ) \mathrm {T i O _ {3} / G O}

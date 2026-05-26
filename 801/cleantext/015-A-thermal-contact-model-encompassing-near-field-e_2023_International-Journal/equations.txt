@@ -1,0 +1,443 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 205.75, 443.68, 223.92)]] Ge Gao a, Shi-Yuan Chen a, Li-Qiang Ai b, Nan Liu b, Jian-Jun Gou a,*, Chun-Lin Gong a
+
+[confidence=0.92; source=equations; [page 1, bbox (42.63, 669.07, 206.24, 690.38)]] * Corresponding author. E-mail address: jj.gou@nwpu.edu.cn (J.-J. Gou)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 324.91, 716.91)]] https://doi.org/10.1016/j.ijheatmasstransfer.2023.124543 Received 8 April 2023; Received in revised form 27 June 2023; Accepted 23 July 2023
+
+[confidence=0.92; source=equations; [page 5, bbox (307.96, 123.32, 332.58, 137.88)]] εx = ∂u
+
+[confidence=0.92; source=equations; [page 5, bbox (307.96, 147.13, 334.06, 162.43)]] γyz = ∂v
+
+[confidence=0.92; source=equations; [page 5, bbox (307.96, 170.94, 334.79, 186.24)]] γxy = ∂u
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (313.0, 389.06, 357.85, 414.59)]] ∂t = div ( λ cp
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (313.51, 419.96, 356.28, 445.13)]] ∂t = div (k
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 556.87, 355.1, 576.52)]] TCR = ΔT qc + qr
+
+[confidence=0.92; source=equations; [page 5, bbox (83.85, 609.31, 122.53, 623.26)]] ∂z + fx = 0
+
+[confidence=0.92; source=equations; [page 5, bbox (83.85, 633.12, 122.47, 647.07)]] ∂z + fy = 0
+
+[confidence=0.92; source=equations; [page 5, bbox (84.02, 656.93, 121.62, 670.88)]] ∂z + fz = 0
+
+[confidence=0.92; source=equations; [page 5, bbox (325.02, 123.32, 360.25, 142.73)]] ∂x; εy = ∂v
+
+[confidence=0.92; source=equations; [page 5, bbox (352.97, 123.32, 389.41, 142.73)]] ∂y; εz = ∂w
+
+[confidence=0.92; source=equations; [page 5, bbox (344.64, 147.13, 382.86, 166.54)]] ∂y; γxz = ∂u
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 246.21, 562.35, 259.25)]] dσij = De ijkldεe kl (3)
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (306.6, 292.57, 405.4, 311.59)]] dσij = Dep ijkl⋅dεkl = ( De ijkl -Dp ijkl
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (359.66, 389.06, 562.35, 410.1)]] gradT ) + ( jψ + j2 / k ) (5)
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (352.8, 419.96, 562.35, 445.13)]] ε gradU ) + kSΔT (6)
+
+[confidence=0.92; source=equations; [page 5, bbox (411.87, 554.32, 431.74, 569.83)]] = ∑ n
+
+[confidence=0.92; source=equations; [page 5, bbox (357.96, 556.87, 409.04, 576.52)]] = ΔT qc + qnr + qfr
+
+[confidence=0.92; source=equations; [page 5, bbox (421.97, 572.48, 429.99, 577.92)]] i=1
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (306.6, 714.42, 560.01, 739.45)]] hi = {hcc(di = 0) hmc + hnr + hfr(di ∕= 0) (8)
+
+[confidence=0.92; source=equations; [page 6, bbox (314.98, 61.08, 429.07, 81.14)]] hT nr = qT nr (T + 1/2) -(T -1/2) = qT nr
+
+[confidence=0.92; source=equations; [page 6, bbox (43.6, 75.68, 224.23, 86.77)]] Material ε∞ ωp(1016rad/s) γ(1014/s)
+
+[confidence=0.92; source=equations; [page 6, bbox (334.71, 86.14, 427.92, 107.21)]] qT fr (T + 1/2) -(T -1/2) = qT fr
+
+[confidence=0.92; source=equations; [page 6, bbox (316.12, 92.55, 332.52, 103.53)]] hT fr =
+
+[confidence=0.92; source=equations; [page 6, bbox (310.56, 260.74, 398.16, 280.15)]] ω,12 = Θ(ω, T1) -Θ(ω, T2) 4π2
+
+[confidence=0.92; source=equations; [page 6, bbox (371.45, 280.66, 449.99, 299.22)]] ( 1 -|rp 01|2)( 1 -|rp 02|2)
+
+[confidence=0.92; source=equations; [page 6, bbox (310.56, 329.85, 398.16, 345.44)]] ω,12 = Θ(ω, T1) -Θ(ω, T2)
+
+[confidence=0.92; source=equations; [page 6, bbox (378.82, 354.41, 440.45, 369.13)]] + Im(rp 01)Im(rp 02)
+
+[confidence=0.92; source=equations; [page 6, bbox (306.6, 586.01, 337.53, 606.0)]] qfr = ∫∞
+
+[confidence=0.92; source=equations; [page 6, bbox (306.6, 615.89, 338.72, 635.88)]] qnr = ∫∞
+
+[confidence=0.92; source=equations; [page 6, bbox (399.46, 328.91, 456.48, 347.2)]] ∫∞ k0 k‖dk‖e-2Im(k⊥)d
+
+[confidence=0.92; source=equations; [page 6, bbox (306.6, 524.65, 562.36, 544.41)]] Θ(ω, T) = ℏω exp(ℏω/kBT) -1 (11)
+
+[confidence=0.92; source=equations; [page 7, bbox (37.59, 478.12, 293.35, 498.88)]] εr(ω) ≡ε, r + iε, r = ε∞- ω2 p ω2 + iξω (13)
+
+[confidence=0.92; source=equations; [page 7, bbox (37.59, 545.64, 95.95, 562.05)]] εr(ω) = ε∞+ ∑ n
+
+[confidence=0.57; needs_review; source=equations; [page 19, bbox (306.59, 721.41, 559.99, 744.93)]] In this work, a thermal contact model encompassing near-field thermal radiation (NFTR) effects of thermoelectric generators (TEGs)
+
+[confidence=0.92; source=body_inline] \mathrm {C / Z r B _ {2}} - S \mathrm{iC}
+
+[confidence=0.92; source=body_inline] \mathrm {_ 1 C e _ {0.8} F e _ {3} C o S b _ {12}}
+
+[confidence=0.67; needs_review; source=body_inline] \mathrm {( A l _ {2} O _ {3} ,}
+
+[confidence=0.92; source=body_inline] \left( R _ {\mathrm{a}} \right)
+
+[confidence=0.92; source=body_inline] ( R _ {\triangle {q}} )
+
+[confidence=0.92; source=body_inline] \mathrm{i.e.,}
+
+[confidence=0.92; source=body_inline] \frac {\partial {\sigma _ {x}}} {\partial x} + \frac {\partial {\tau _ {y x}}} {\partial y} + \frac {\partial {\tau _ {z x}}} {\partial z} + f _ {x} = 0
+
+[confidence=0.92; source=body_inline] \frac {\partial \tau _ {x y}} {\partial x} + \frac {\partial \sigma _ {y}} {\partial y} + \frac {\partial \tau _ {z y}} {\partial z} + f _ {y} = 0\tag{1}
+
+[confidence=0.92; source=body_inline] \frac {\partial \tau _ {x z}} {\partial x} + \frac {\partial \tau _ {y z}} {\partial y} + \frac {\partial \sigma _ {z}} {\partial z} + f _ {z} = 0
+
+[confidence=0.92; source=body_inline] f _ {x} , f _ {y}
+
+[confidence=0.92; source=body_inline] f _ {z}
+
+[confidence=0.92; source=body_inline] \tau _ {i j}
+
+[confidence=0.92; source=body_inline] \sigma _ {i} ( i = x , y , z )
+
+[confidence=0.92; source=body_inline] \varepsilon _ {x} = \frac {\partial u} {\partial x} ; \varepsilon _ {y} = \frac {\partial \nu} {\partial y} ; \varepsilon _ {z} = \frac {\partial w} {\partial z}
+
+[confidence=0.92; source=body_inline] \gamma _ {y z} = \frac {\partial \nu} {\partial z} + \frac {\partial w} {\partial y} ; \gamma _ {x z} = \frac {\partial u} {\partial z} + \frac {\partial w} {\partial x}\tag{2}
+
+[confidence=0.92; source=body_inline] \gamma _ {x y} = \frac {\partial u} {\partial y} + \frac {\partial \nu} {\partial x}
+
+[confidence=0.92; source=body_inline] \scriptstyle \varepsilon _ {i} ( i = x , y , z )
+
+[confidence=0.92; source=body_inline] \gamma _ {i j}
+
+[confidence=0.92; source=body_inline] d \sigma _ {i j} = D _ {i j k l} ^ {e} d \varepsilon _ {k l} ^ {e}\tag{3}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {k l} ^ {e}
+
+[confidence=0.92; source=body_inline] D _ {i j k l} ^ {e}
+
+[confidence=0.92; source=body_inline] d \sigma _ {i j} = D _ {i j k l} ^ {e p} \cdot d \varepsilon _ {k l} = \left( D _ {i j k l} ^ {e} - D _ {i j k l} ^ {p} \right) d \varepsilon _ {k l}\tag{4}
+
+[confidence=0.92; source=body_inline] D _ {i j k l} ^ {p} \mathrm{i} s
+
+[confidence=0.92; source=body_inline] \frac {\partial ( \rho T )} {\partial t} = d i \nu \bigg ( \frac {\lambda} {c _ {p}} \mathbf {g r a d} T \bigg ) + \left( j \psi + j ^ {2} / k \right)\tag{5}
+
+[confidence=0.92; source=body_inline] \frac {\partial ( \rho U )} {\partial t} = d i \nu \Big ( \frac {k} {\varepsilon} \mathbf {g r a d} U \Big ) + k S \Delta T\tag{6}
+
+[confidence=0.92; source=body_inline] c _ {p}
+
+[confidence=0.92; source=body_inline] \mathrm{TCR} = \frac {\Delta T} {q _ {c} + q _ {r}} = \frac {\Delta T} {q _ {c} + q _ {n r} + q _ {f r}} = \sum _ {i = 1} ^ {n} \frac {1} {h _ {i}}\tag{7}
+
+[confidence=0.92; source=body_inline] q _ {c}
+
+[confidence=0.92; source=body_inline] q _ {n r}
+
+[confidence=0.92; source=body_inline] q _ {f r}
+
+[confidence=0.92; source=body_inline] {{10} ^ {- 6}}
+
+[confidence=0.67; needs_review; source=body_inline] ( 6.30 \times 10 ^ {- 5}
+
+[confidence=0.92; source=body_inline] 3.43 \times 10 ^ {- 2}
+
+[confidence=0.92; source=body_inline] 1.79 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] 1.05 \times 10 ^ {- 1}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {66} E} {\cdot} N \bot \Gamma ^ {\prime} ,
+
+[confidence=0.92; source=body_inline] 1.33 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] \times 10 ^ {- 2}
+
+[confidence=0.92; source=body_inline] \phantom {+} 1.19 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 4.85 \times 10 ^ {- 2}
+
+[confidence=0.92; source=body_inline] 2.92 \times 10 ^ {- 3} \mathrm{to} 2.90 \times 10 ^ {- 2}
+
+[confidence=0.67; needs_review; source=body_inline] \mathrm {^ {66} E} {\cdot} P _ - \mathrm{u} ^ {\prime \prime} )
+
+[confidence=0.67; needs_review; source=body_inline] h _ {i} = \left\{\begin{array} {c} {{h _ {c c} ( d _ {i} = 0 )}} \\ {{h _ {m c} + h _ {n r} + h _ {f r} ( d _ {i} \neq 0 )}} \end{array} \right.\tag{8}
+
+[confidence=0.92; source=body_inline] d _ {i}
+
+[confidence=0.92; source=body_inline] h _ {c c}
+
+[confidence=0.92; source=body_inline] h _ {m c}
+
+[confidence=0.92; source=body_inline] h _ {n r}
+
+[confidence=0.92; source=body_inline] h _ {f r}
+
+[confidence=0.92; source=body_inline] 1 \times 10 ^ {10} \mathrm{W/m} ^ {2} / \mathrm{K}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {c} {h _ {n r} ^ {T} = \displaystyle \frac {q _ {n r} ^ {T}} {( T + 1 / 2 ) - ( T - 1 / 2 )} = q _ {n r} ^ {T}} \\ {h _ {f r} ^ {T} = \displaystyle \frac {q _ {f r} ^ {T}} {( T + 1 / 2 ) - ( T - 1 / 2 )} = q _ {f r} ^ {T}} \end{array} \right.\tag{9}
+
+[confidence=0.92; source=body_inline] T + 1 / 2
+
+[confidence=0.92; source=body_inline] T - 1 / 2
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array} {r l} & {d _ {\omega , 12} ^ {r n p} = \frac {\Theta ( \omega , T _ {1} ) - \Theta ( \omega , T _ {2} )} {4 \pi ^ {2}} \int _ {0} ^ {t _ {0}} k _ {1} d k _ {1} \left[ \frac {\Big ( 1 - \big | r _ {0} ^ {r} \big | ^ {2} \Big ) \Big ( 1 - \big | r _ {0} ^ {r} \big | ^ {2} \Big )} {1 - r _ {0} ^ {r} r _ {0} ^ {r} e ^ {2 R ( k _ {\perp} )} d ^ {2}} \right.} \\ & {\qquad \left. + \frac {\big ( 1 - \big | r _ {0} ^ {r} \big | ^ {2} \Big ) \Big ( 1 - \big | r _ {0} ^ {r} \big | ^ {2} \Big )} {\big | 1 - r _ {0} ^ {r} r _ {0} ^ {r} e ^ {2 R ( k _ {\perp} )} d ^ {2} \big | ^ {2}} \right]} \\ & {d _ {\omega , 12} ^ {r n p} = \frac {\Theta ( \omega , T _ {1} ) - \Theta ( \omega , T _ {2} )} {\pi ^ {2}} \int _ {k _ {0}} ^ {\infty} k _ {1} d k _ {1} e ^ {- 2 \pi \omega ( k _ {\perp} ) d} \left[ \frac {\mathrm{Im} \big ( r _ {0} ^ {s} \big ) \ln \big ( r _ {0} ^ {s} \big )} {\big | 1 - r _ {0} ^ {r} r _ {0} ^ {r} e ^ {2 R ( k _ {\perp} )} d ^ {2}} \right.} \\ & {\qquad \left. + \frac {\mathrm{Im} ( r _ {0} ^ {s} ) \ln \big ( r _ {0} ^ {s} \big )} {\big | 1 - r _ {0} ^ {r} r _ {0} ^ {2} e ^ {2 R ( k _ {\perp} )} d ^ {2} \big | ^ {2}} \right.} \end{array}\tag{10a}
+
+[confidence=0.92; source=body_inline] k _ {0} ^ {2} = k _ {\parallel} ^ {2} + k _ {\perp} ^ {2}
+
+[confidence=0.92; source=body_inline] k _ {0}
+
+[confidence=0.92; source=body_inline] k _ {\parallel}
+
+[confidence=0.92; source=body_inline] k _ {\perp}
+
+[confidence=0.92; source=body_inline] r _ {01} ^ {s}
+
+[confidence=0.92; source=body_inline] r _ {01} ^ {p}
+
+[confidence=0.92; source=body_inline] r _ {02} ^ {s}
+
+[confidence=0.92; source=body_inline] r _ {02} ^ {p}
+
+[confidence=0.92; source=body_inline] \Theta ( \omega , T ) = \frac {\hbar \omega} {\exp ( \hbar \omega / k _ {B} T ) - 1}\tag{11}
+
+[confidence=0.92; source=body_inline] k _ {B}
+
+[confidence=0.92; source=body_inline] q _ {f r} = \int _ {0} ^ {\infty} d \omega q _ {\omega , 12} ^ {p r o p}\tag{12a}
+
+[confidence=0.92; source=body_inline] q _ {n r} = \int _ {0} ^ {\infty} d \omega q _ {\omega , 12} ^ {e \nu e n}\tag{12b}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {r} ( \omega ) \equiv \varepsilon _ {r} + i \varepsilon _ {r} ^ {\prime} = \varepsilon _ {\infty} - \frac {\omega _ {p} ^ {2}} {\omega ^ {2} + i \xi \omega}\tag{13}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {\infty}
+
+[confidence=0.92; source=body_inline] \omega _ {p}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {r} ( \omega ) = \varepsilon _ {\infty} + \sum _ {1} ^ {n} \frac {S _ {n} \omega _ {T O , n} ^ {2}} {\omega _ {L O , n} ^ {2} - \omega ^ {2} - i \omega \xi _ {n}}\tag{14}
+
+[confidence=0.92; source=body_inline] S _ {n} , \omega _ {T O , n}
+
+[confidence=0.92; source=body_inline] \omega _ {L O , n}
+
+[confidence=0.92; source=body_inline] 10 ^ {5}
+
+[confidence=0.92; source=body_inline] 10 ^ {2}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {*} E} - N \mathrm{_-} \mathrm {^ {,}}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {*} E} - N _ - \mathrm{u} ^ {\mathrm{*}}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {66} E} {\cdot} N \bot \Gamma ,
+
+[confidence=0.92; source=body_inline] ^ {\mathrm{6}} \mathrm{E} {\cdot} N _ - \mathrm{u} ^ {\mathrm{7}} ,
+
+[confidence=0.92; source=body_inline] \mathrm {^ {*} E} {\cdot} P _ - \mathrm{u} ^ {\prime}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {66} S - E ^ {3}}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {66} S ^ {,} E ^ {, 3}}
+
+[confidence=0.92; source=body_inline] P 1 _ {\cdot}
+
+[confidence=0.67; needs_review; source=body_inline] \mathrm{} ^ {\mathrm{~:~}} \mathrm{E} - N \mathrm{]} ^ {\mathrm{,~}} , \mathrm{\} ^ {\mathrm{\cdot}} \mathrm{E} - N _ - \mathrm{u} ^ {\mathrm{,,}} ,
+
+[confidence=0.92; source=body_inline] P _ - \Gamma ^ {\prime \prime}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {*} E} - P _ - \mathrm{u} ^ {\mathrm{*}}
+
+[confidence=0.92; source=body_inline] \mathbf {o f} \ {\mathrm {^ {6} S - E ^ {3}}}
+
+[confidence=0.92; source=body_inline] T _ {0} 1
+
+[confidence=0.92; source=body_inline] T _ {0} 2
+
+[confidence=0.92; source=body_inline] P _ {0} 1
+
+[confidence=0.92; source=body_inline] P _ {0} 2 ,
+
+[confidence=0.92; source=body_inline] 3.0 \times 10 ^ {- 3} \mathrm{to} 5.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 5.5 \times 10 ^ {- 3} \mathrm{to} 7.5 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 6.5 \times 10 ^ {- 3} \mathrm{to} 8.5 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 2.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 4.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 1.3 \times 10 ^ {- 3} \mathrm{to} 1.7 \times
+
+[confidence=0.92; source=body_inline] 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] ^ {\mathrm{\tiny~\cdot\cdot}} \mathrm{E} - N _ - \mathrm{,~} ^ {\mathrm{\tiny~\cdot\cdot}} \mathrm{E} - N _ - \mathrm{u} ^ {\mathrm{\tiny~\cdot\cdot}} \mathrm{,~} ^ {\mathrm{\tiny~\cdot\cdot}} \mathrm{E} - P _ - \mathrm{I} ^ {\mathrm{\tiny~\cdot\cdot}} ,
+
+[confidence=0.67; needs_review; source=body_inline] ( w _ {\mathrm{c}} = - 3.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] ( w _ {\mathrm{c}} = - 7.5 \times 10 ^ {- 3} \mathrm{mm} )
+
+[confidence=0.67; needs_review; source=body_inline] 1.3 \% ( w _ {\mathrm{c}} = - 6.5 \times 10 ^ {- 3}
+
+[confidence=0.67; needs_review; source=body_inline] ( w _ {\mathrm{c}} = - 4.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] ( w _ {\mathrm{c}} = - 1.5 \times 10 ^ {- 3} \mathrm{mm} ) _ {\mathrm{\Omega}}
+
+[confidence=0.92; source=body_inline] 2.9 \% ( w _ {\mathrm{c}} = - 7.5 \times 10 ^ {- 3} \mathrm{mm} ) , 1.9 \% ( w _ {\mathrm{c}} = - 6.5 \times 10 ^ {- 3} \mathrm{mm} )
+
+[confidence=0.67; needs_review; source=body_inline] ( w _ {\mathrm{c}} = - 1.5 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 1.772 \times {{10} ^ {- 2}}
+
+[confidence=0.92; source=body_inline] \times \ 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] - 2.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 3.903 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 3.534 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] - 4.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {66} E} {\cdot} N _ - \mathrm{u} ^ {\prime}
+
+[confidence=0.92; source=body_inline] 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] \phantom {0} {0} \mathbf {f} - 6.5 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 3.579 \times 10 ^ {- 3} \mathrm{to} 3.250 \times 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] \mathbf {o f} - 8.5 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] \mathrm{} ^ {\mathrm{s}} \mathrm {\bar {E}} - P \mathrm {\underline {{1}}} ^ {\mathrm{,} \mathrm{,}}
+
+[confidence=0.92; source=body_inline] \times 10 ^ {- 2} \mathrm{to} 9.665 \times 10 ^ {- 2} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 5.5 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 5.139 \times 10 ^ {- 3} \mathrm{tc}
+
+[confidence=0.92; source=body_inline] 4.412 \times 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] - 7.5 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 1.183 \times 10 ^ {- 2} \ : ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 0 \mathsf{f} \mathrm{~-} 3.0 \mathrm{~} \times
+
+[confidence=0.92; source=body_inline] \times \ 10 ^ {- 3} ( \mathrm {K {\cdot m} ^ {2} ) / W}
+
+[confidence=0.92; source=body_inline] \mathbf {o f} - 5.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 1.324 \times 10 ^ {- 3} \mathrm {{t o} 1.146 \times 10 ^ {- 3} \mathrm {{( K {\cdot} m ^ {2} )} / W}}
+
+[confidence=0.92; source=body_inline] 1.175 \times 10 ^ {- 3} \mathrm{to} 1.132 \times 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 1.089 \times 10 ^ {- 3} \mathrm{to} 9.612 \times 10 ^ {- 4} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 8.582 \times 10 ^ {- 4} \mathrm{to} 8.332 \times
+
+[confidence=0.92; source=body_inline] 10 ^ {- 4} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W} ,
+
+[confidence=0.92; source=body_inline] \times 10 ^ {- 4} \mathrm{to} 8.776 \times 10 ^ {- 4} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 8.306 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] 8.034 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 8.821 \times 10 ^ {- 4} \mathrm{to} 7.848 \times
+
+[confidence=0.92; source=body_inline] 10 ^ {- 4} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 6.979 \times 10 ^ {- 4} {\mathrm{to}} 6.775 \times 10 ^ {- 4} ( {\mathrm{K}} {\cdot} {\mathrm{m}} ^ {2} ) / {\mathrm{W}}
+
+[confidence=0.92; source=body_inline] 1.871 \times 10 ^ {- 3} \mathrm{to} 1.656 \times 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 1.3 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 3.150 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] 3.132 \times 10 ^ {- 4} ~ ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 10 ^ {- 4} \ \mathrm{to} 5.808 \ \times \ 10 ^ {- 4} \ ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 2.425 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] \times 10 ^ {- 4} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] \mathbf {\bar {E}} \mathbf - N \mathbf {\underline {{l}}} ^ {\prime}
+
+[confidence=0.92; source=body_inline] \phantom {0} {- 2.0} \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] {\mathrm{!.182}} \times {10 ^ {- 2}} {\mathrm{to}} 7.804 \times {10 ^ {- 3}} ( {\mathrm{K}} {\cdot} {\mathrm{m}} ^ {2} ) / {\mathrm{W}}
+
+[confidence=0.92; source=body_inline] \phantom {0} {\cdot 2.0} \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 1.498 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {1.146 \times 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W} .} \end{array}
+
+[confidence=0.92; source=body_inline] \becausett E / - N _ - \tt u ^ {, , *} , \tt {\tilde {E}} / - P _ - \tt I ^ {, *}
+
+[confidence=0.92; source=body_inline] \bf \tilde {\ v} {S - E} ^ {\prime 3}
+
+[confidence=0.92; source=body_inline] \mathbf {o f} - 1.3 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 1.351 \times \mathrm {{\bar {10}} ^ {- 3} t o 1.656 \times 10 ^ {- 3} ( K {\cdot} m ^ {2} ) / W}
+
+[confidence=0.92; source=body_inline] - 1.3 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 5.666 \times {{10} ^ {- 4}}
+
+[confidence=0.67; needs_review; source=body_inline] \mathrm{~} ^ {*} \mathrm{E} - N _ - ]
+
+[confidence=0.92; source=body_inline] 1.2213 \times {10} ^ {- 2}
+
+[confidence=0.92; source=body_inline] 3.494 \times 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] \times 10 ^ {- 3} \mathrm{to} 1.177 \times 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {46} E -}
+
+[confidence=0.92; source=body_inline] N _ - \mathbf {u} ^ {\dag}
+
+[confidence=0.92; source=body_inline] 1.127 \times 10 ^ {- 2} {\mathrm{to}} 3.215 \times 10 ^ {- 3} ( {\mathrm{K}} {\cdot} {\mathrm{m}} ^ {2} ) / {\mathrm{W}}
+
+[confidence=0.92; source=body_inline] 1.397 \times 10 ^ {- 3} \mathrm{to} 8.789 \times 10 ^ {- 4} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) /
+
+[confidence=0.92; source=body_inline] \times \ 10 ^ {- 2}
+
+[confidence=0.92; source=body_inline] \times \ 10 ^ {- 3} \ ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 1.353 \times 10 ^ {- 3} {\mathrm{to}} 8.873 \times 10 ^ {- 4} ( {\mathrm{K}} {\cdot} {\mathrm{m}} ^ {2} ) / {\mathrm{W}}
+
+[confidence=0.92; source=body_inline] \times 10 ^ {- 2} \mathrm{to} 4.241 \times 10 ^ {- 3} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) /
+
+[confidence=0.92; source=body_inline] 1.203 \times 10 ^ {- 3} \mathrm{to} 7.487 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] \bf {\tilde {{s c}} \mathrm {{.}} \mathbf {E} ^ {\prime} \tilde {{s}}}
+
+[confidence=0.92; source=body_inline] 1.347 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 4.392 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] \times 10 ^ {- 4} \mathrm{to} 3.016 \times 10 ^ {- 4} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] {\mathrm {~ ~ \tilde {~} {~ E ~} -}} N {\underline {{~ l}}} ^ {, ,}
+
+[confidence=0.92; source=body_inline] \mathrm{T} _ {E 1}
+
+[confidence=0.92; source=body_inline] \mathrm{T} _ {E 2}
+
+[confidence=0.92; source=body_inline] ^ {5 ,}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {* *} S - E ^ {*}} ,
+
+[confidence=0.92; source=body_inline] N _ - \mathrm{l} ^ {\prime} \mathrm{\Omega}
+
+[confidence=0.92; source=body_inline] \tilde {\mathrm{~\varepsilon~}} _ {\mathrm{E} - N _ - \mathrm{u}} ,
+
+[confidence=0.92; source=body_inline] \mathrm {\bf {\ddot {E}}} {\bf -} P _ - \mathrm {\bf {u}} ^ {\mathrm {\tiny {\ '}}}
+
+[confidence=0.92; source=body_inline] 6.07 \% , \ : - 6.00 \%
+
+[confidence=0.92; source=body_inline] - 5.76 \% ,
+
+[confidence=0.92; source=body_inline] {\mathrm {~ ~ \tilde {~} {~ E ~} ~}} _ - P _ - {\mathrm{~~r~}} ^ {, ,}

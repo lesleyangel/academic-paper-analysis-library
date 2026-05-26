@@ -1,0 +1,105 @@
+Akgün, M.A., Garcelon, J.H., Haftka, R.T., 2001. Fast exact linear and non-linear structural reanalysis and the Sherman–Morrison–Woodbury formulas. Internat. J. Numer. Methods Engrg. 50, 1587–1606.
+
+Alyanak, E.J., Pendleton, E., 2017. Aeroelastic tailoring and active aeroelastic wing impact on a lambda wing configuration. J. Aircr. 54, 11–19.
+
+Amsallem, D., Farhat, C., Lieu, T., 2007. Aeroelastic analysis of F-16 and F −18/A configurations using adapted CFD-based reduced-order models. AIAA Pap. 2364, 23–26.
+
+Bekemeyer, P., Timme, S., 2017. Reduced Order Transonic Aeroelastic Gust Response Simulation of Large Aircraft. In: 35th AIAA Applied Aerodynamics Conference, p. 4361.
+
+Beliveau, J.-G., Cogan, S., Lallement, G., Ayer, F., 1996. Iterative least-squares calculation for modal eigenvector sensitivity. AIAA J. 34, 385–391.
+
+Cesnik, C.E., Hodges, D.H., Patil, M.J., 1996. Aeroelastic analysis of composite wings. In: Proceedings of the 37th Structures, Structural Dynamics, and Materials Conference, pp. 18-19.
+
+Chen, S.H., Song, D.T., Ma, A.J., 1994. Eigensolution reanalysis of modified structures using perturbations and Rayleigh quotients. Commun. Numer. Methods. Eng. 10, 111–119.
+
+Chen, G., Sun, J., Li, Y.-M., 2012. Adaptive reduced-order-model-based control-law design for active flutter suppression. J. Aircr. 49, 973–980.
+
+Chen, G., Sun, J., Mao, W., Li, Y., 2013. Limit cycle oscillation control for transonic aeroelastic systems based on support vector machine reduced order model. Trans. Japan Soc. Aeronaut. Space Sci. 56, 8–14.
+
+Chen, G., Wang, X., Li, Y., 2014. Reduced-order-model-based placement optimization of multiple control surfaces for active aeroelastic control. Int. J. Comput. Math. 11, 1350081.
+
+Chen, S.H., Yang, X.W., 2000. Extended Kirsch combined method for eigenvalue reanalysis. AIAA J. 38, 927–930.
+
+Chen, S., Yang, X., Lian, H., 2000. Comparison of several eigenvalue reanalysis methods for modified structures. Struct. Multidiscip. Optim. 20, 253–259.
+
+Cizmas, P.G., Palacios, A., 2003. Proper orthogonal decomposition of turbine rotor-stator interaction. J. Propuls. power 19, 268–281.
+
+Clark, S.T., Kielb, R.E., Hall, K.C., 2012. Developing a reduced-order model to understand non-synchronous vibration (NSV) in turbomachinery. In: ASME Turbo Expo 2012: Turbine Technical Conference and Exposition. American Society of Mechanical Engineers, pp. 1373–1382.
+
+Deilmann, C., 2009. Passive aEroelastic Tailoring of Wind Turbine Blades: a Numerical Analysis. Massachusetts Institute of Technology.
+
+Demasi, L., Palacios, A., 2010. A reduced order nonlinear aeroelastic analysis of joined wings based on the proper orthogonal decomposition. In: 51st AIAA Structures, Structural Dynamics and Materials Conference, Orlando, FL.
+
+Dowell, E.H., Thomas, J.P., Hall, K.C., 2004. Transonic limit cycle oscillation analysis using reduced order aerodynamic models. J. Fluids Struct. 19, 17–27.
+
+Fenwick, C., Jones, D., Gaitonde, A., 2007. Consideration of ROM Interpolation for Aeroelastic Design using Structural Modification. In: 18th AIAA Computational Fluid Dynamics Conference, Miami, FL.
+
+Guo, S., 2007. Aeroelastic optimization of an aerobatic aircraft wing structure. Aerosp. Sci. Technol. 11, 396–404.
+
+Hayes, R., Yao, W., Marques, S.P., 2014. The influence of structural variability on limit cycle oscillation behaviour. in: Aiaa/issmo Multidisciplinary Analysis and Optimization Conference, p. 63.
+
+Hesse, H., Palacios, R., 2014. Reduced-order aeroelastic models for dynamics of maneuvering flexible aircraft. AIAA J. 52, 1717–1732.
+
+Jones, R.M., Bert, C.W., 1975. Mechanics of Composite Materials. Scripta Book Company.
+
+Kim, T., Hansen, A.M., Branner, K., 2013. Development of an anisotropic beam finite element for composite wind turbine blades in multibody system. Renew. Energy 59, 172–183.
+
+Kirsch, U., 2008. Reanalysis of Structures. Springer Netherlands.
+
+Kirsch, U., Bogomolni, M., Sheinman, I., 2007. Efficient dynamic reanalysis of structures. J. Struct. Eng. 133, 440–448.
+
+Lieu, T., Farhat, C., 2006. Adaptation of POD-based aeroelastic ROMs for varying mach number and angle of attack: Application to a complete F-16 configuration. Chin. J. Med. Libr. 3867, 67–84.
+
+Lieu, T., Farhat, C., 2007. Adaptation of aeroelastic reduced-order models and application to an f-16 configuration. AIAA J. 45, 1244.
+
+Lieu, T., Farhat, C., Lesoinne, M., 2006. Reduced-order fluid/structure modeling of a complete aircraft configuration. Comput. Methods Appl. Mech. Engrg. 195, 5730–5742.
+
+Lieu, T., Lesoinne, M., 2004. Parameter adaptation of reduced order models for three-dimensional flutter analysis. AIAA Pap. 888, 2004.
+
+Liu, B., Haftka, R.T., Akgün, M.A., 2000. Two-level composite wing structural optimization using response surfaces. Struct. Multidiscip. Optim. 20, 87–96.
+
+Lucia, D.J., Beran, P.S., Silva, W.A., 2004. Reduced-order modeling: new approaches for computational physics. Prog. Aerosp. Sci. 40, 51–117.
+
+Mariappan, S., Gardner, A.D., Kai, R., Raffel, M., 2014. Analysis of dynamic stall using dynamic mode decomposition technique. Aiaa J. 52, 2427–2439.
+
+Marques, F., Natarajan, S., Ferreira, A., 2017. Evolutionary-based aeroelastic tailoring of stiffened laminate composite panels in supersonic flow regime. Compos. Struct. 167, 30–37.
+
+Matthews, F.L., Davies, G., Hitchings, D., Soutis, C., 2000. Finite element modelling of composite materials and structures. Elsevier.
+
+Reddy, J.N., 2004. Mechanics of Laminated Composite Plates and Shells: Theory and Analysis. CRC press.
+
+Rizk, M., 1981. Propeller slipstream/wing interaction in the transonic regime. J. Aircr. 18, 184–191.
+
+Scott, S., Capuzzi, M., Langston, D., Bossanyi, E., McCann, G., Weaver, P.M., Pirrera, A., 2017. Effects of aeroelastic tailoring on performance characteristics of wind turbine systems. Renew. Energy 114, 887–903.
+
+Sherrer, V., Hertz, T., Shirk, M., 1981. Wind tunnel demostration of aeroelastic tailoring applied to forward swept wings. J. AIRCRAFT 18, 976–983.
+
+Shirk, M.H., Hertz, T.J., Weisshaar, T.A., 1986. Aeroelastic tailoring - theory, practice, and promise. J. Aircr. 23, 6–18.
+
+Song, Q., Chen, P., Sun, S., 2014. An exact reanalysis algorithm for local non-topological high-rank structural modifications in finite element analysis. Comput. Struct. 143, 60–72.
+
+Stanford, B., Beran, P., 2013. Cost reduction techniques for the structural design of nonlinear flapping wings. Internat. J. Numer. Methods Engrg. 88, 533–555. Winter, M., Breitsamter, C., 2016a. Efficient unsteady aerodynamic loads prediction based on nonlinear system identification and proper orthogonal decomposition. J.Fluids Struct. 67, 1–21.
+
+Winter, M., Breitsamter, C., 2016b. Neurofuzzy-Model-Based unsteady aerodynamic computations across varying freestream conditions. Aiaa J. 54, 1–16.
+
+Winter, M., Heckmeier, F.M., Breitsamter, C., 2017. CFD-based aeroelastic reduced-order modeling robust to structural parameter variations. Aerosp. Sci. Technol. 67, 13–30.
+
+Yates, E.C., 1987. AGARD standard aeroelastic configuration for dynamic response, candidate configuration I. Wing 445, 103–129.
+
+Yu, Y., Wang, Z., Guo, S., 2017. Efficient method for aeroelastic tailoring of composite wing to minimize gust response. Int. J. Aerosp. Eng. 2017.
+
+Zaide, A., Raveh, D., 2006. Numerical simulation and reduced-order modeling of airfoil gust response. AIAA J. 44, 1826–1834.
+
+Zhang, W., Chen, K., Ye, Z., 2015. Unsteady aerodynamic reduced-order modeling of an aeroelastic wing using arbitrary mode shapes. J. Fluids Struct. 58, 254–270.
+
+Zhang, W., Kou, J., Wang, Z., 2016. Nonlinear aerodynamic reduced-order model for limit-cycle oscillation and flutter. Aiaa J. 54.
+
+Zhao, J., Fan, X., Qin, S., 2015. Global shared-layer blending method for stacking sequence optimization design and blending of composite structures. Composites B 69, 181–190.
+
+Zhao, J., Qin, S., Silberschmidt, V.V., 2016. A framework for design and optimization of tapered composite structures. Part I: From individual panel to global blending structure. Compos. Struct. 154, 106–128.
+
+Zhong, J., Xu, Z., 2016. Coupled fluid structure analysis for wing 445.6 flutter using a fast dynamic mesh technology. Int. J. Comput. Fluid Dyn. 30, 531–542.
+
+Zhou, Q., Chen, G., Li, Y., 2014. A reduced order model based on block Arnoldi method for aeroelastic system. Int. J. Appl. Mech. 6, 1450069.
+
+Zhou, Q., Chen, G., Ronch, A.Da., Li, Y., 2017. Reduced order unsteady aerodynamic model of a rigid aerofoil in gust encounters. Aerosp. Sci. Technol. 63, 203–213. Zhou, Q., Gang, C., Yueming, L., Andrea, D.R., 2016a. Aeroelastic moving gust responses and alleviation based on CFD. In: AIAA Modeling and Simulation Technologies Conference, p. 3837. Zhou, Q., Li, Ronch, A.Da, Chen, G., Li, 2016b. Computational fluid dynamics-based transonic flutter suppression with control delay. J. Fluids Struct. 66, 183–206.

@@ -1,0 +1,29 @@
+Fig. 1. A hp Radau pseudospectral discretization scheme.
+
+Fig. 2. The flowchart of the improved three-stage SCP approach.
+
+Fig. 3. Altitude vs. Longitude evolution. (MR means “mesh refinement” and FC means “fast convergence”.).
+
+Fig. 4. ψ evolution at e = 4.4 × 1010J in the third stage of iteration.
+
+Fig. 5. Altitude time histories and ground track comparison.
+
+Fig. 7. Max error vs. iteration with different algorithms.
+
+Fig. 8. Mesh-Feature evolution in the second iteration stage.
+
+Fig. 9. Altitude and velocity time histories comparison.
+
+Fig. 10. Control time histories comparison.
+
+Fig. 11. Max error vs. iteration with different algorithms.
+
+Fig. 12. Mesh-Feature evolution in the second iteration stage.
+
+Fig. 13. Sparsity pattern of all linear constraint coefficient matrixes: The differential matrix in (a) is composed of submatrices with the same structure which will be different with the mesh updating; The linear system matrix in (b) is composed of matrices A, B, and C at each knot point; (a) and (b) combine to form the left end term coefficient matrix of the differential constraint. (c) includes not only control equation constraints at all knot points but endpoint constraints, and (d) represents all linear constraints.
+
+Fig. 14. Sparsity pattern of all linear constraint coefficient matrixes: Unlike the previous example, the trajectory here contains two phases, so the matrix represented by (a) and (b) contains two parts. The constraints represented by (c) are, from top to bottom, initial state constraints, terminal state (linear) constraints, phase (state and control) connection constraints, and control smoothness constraints.
+
+Fig. 4. ψ evolution at $e = 4 . 4 \times 1 0 ^ { 1 0 } \mathrm { J }$ in the third stage of iteration.
+
+Fig. 6. Control time histories comparison.

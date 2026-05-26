@@ -1,0 +1,543 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (41.17, 696.06, 197.43, 715.22)]] * Corresponding author. E-mail address: leonwood@nwpu.edu.cn (C. Gong)
+
+[confidence=0.92; source=equations; [page 3, bbox (70.83, 260.42, 118.71, 273.71)]] r′ = sinγ /D
+
+[confidence=0.92; source=equations; [page 3, bbox (70.98, 274.5, 167.15, 287.79)]] θ′ = cosγ sinψ/rD cosφ
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (70.98, 288.57, 288.83, 316.39)]] φ′ = cosγ cosψ/rD γ ′ = [L cosσ/m + (υ2 -μ/r) cosγ /r + 2ωυ cosφ sinψ
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (70.98, 332.17, 248.47, 345.46)]] ψ′ = [L sinσ/m cosγ + υ2 cosγ sinψ tanφ/r
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (91.32, 319.98, 281.54, 330.92)]] + rω2(cosγ cosφ + sinγ sinφ cosψ) cosφ]/υ2D
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (91.93, 347.42, 359.82, 359.99)]] -2ωυ(tanγ cosψ cosφ -sinφ) + rω2 sinψ sinφ cosφ/ cosγ ]/υ2D
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (61.55, 429.95, 557.7, 459.7)]] � L = ρυ2CL Sref/2 D = ρυ2C D Sref/2 (2)
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (61.55, 493.36, 557.7, 519.66)]] ρ = ρ0e(r-Re)/β (3) � CL = CL0 + CL1α + CL2eCL3υ
+
+[confidence=0.92; source=equations; [page 3, bbox (69.47, 515.31, 557.7, 531.21)]] C D = C D0 + C D1α2 + C D2eC D3υ (4)
+
+[confidence=0.92; source=equations; [page 3, bbox (62.12, 566.79, 557.7, 578.2)]] E = m(μ/r -υ2/2) (5)
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (61.55, 595.71, 557.7, 614.02)]] υ = � 2(μ/r -E/m) (6)
+
+[confidence=0.92; source=equations; [page 3, bbox (61.55, 659.99, 557.7, 672.34)]] α(E) = αn(E) + k1ek2(E0-E) (7)
+
+[confidence=0.92; source=equations; [page 3, bbox (61.6, 738.65, 557.7, 749.86)]] u1 = cosσ, u2 = sinσ (8)
+
+[confidence=0.92; source=equations; [page 4, bbox (61.64, 168.8, 557.7, 182.34)]] x′ = f (x,e) + B(x,e)u + g(x,e) (10)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.64, 186.79, 329.58, 199.02)]] where x = [˜r, θ, φ, γ , ψ], u = [u1, u2]T , and e is the dimensionless form of E
+
+[confidence=0.92; source=equations; [page 4, bbox (61.55, 249.36, 557.7, 262.92)]] ∥u∥22 = 1 (11)
+
+[confidence=0.92; source=equations; [page 4, bbox (61.4, 294.56, 83.43, 309.78)]] ˜q = 1
+
+[confidence=0.92; source=equations; [page 4, bbox (62.32, 315.68, 557.7, 330.33)]] ˜Q = kQ ˜ρ0.5 ˜υ3.15 ⩽˜Q max (13)
+
+[confidence=0.62; needs_review; source=equations; [page 4, bbox (61.31, 326.61, 557.7, 349.83)]] ˜n = � ˜L2 + ˜D2 ⩽˜nmax (14)
+
+[confidence=0.57; needs_review; source=equations; [page 4, bbox (61.42, 384.74, 557.7, 399.33)]] r ⩾rmin(e) = max(rq min,r Q min,rn min) (15)
+
+[confidence=0.92; source=equations; [page 4, bbox (61.56, 436.79, 557.7, 448.08)]] h(x(e0), x(e f )) = 0 (16)
+
+[confidence=0.92; source=equations; [page 4, bbox (63.54, 493.0, 173.89, 504.29)]] P0 : minimize J = -θ(e f )
+
+[confidence=0.92; source=equations; [page 4, bbox (61.64, 659.28, 187.21, 672.83)]] x′ = f (x,e) + B(x,e)u + g(x,e)
+
+[confidence=0.92; source=equations; [page 4, bbox (70.51, 678.24, 250.72, 695.81)]] ≈f (xref ,e) + B(xref ,e)uref + g(xref ,e) + ∂f
+
+[confidence=0.92; source=equations; [page 5, bbox (61.64, 55.26, 557.7, 68.5)]] x′ ≈Ax + Bu + c (19)
+
+[confidence=0.62; needs_review; source=equations; [page 5, bbox (199.84, 86.97, 557.7, 119.81)]] ���� xref xref + g(xref ,e) (20)
+
+[confidence=0.92; source=equations; [page 5, bbox (63.54, 181.29, 173.89, 192.59)]] P1 : minimize J = -θ(e f )
+
+[confidence=0.62; needs_review; source=equations; [page 5, bbox (76.4, 334.4, 105.06, 366.19)]] ���� u=u∗=
+
+[confidence=0.92; source=equations; [page 5, bbox (183.23, 348.01, 557.7, 357.39)]] = 0 (24)
+
+[confidence=0.92; source=equations; [page 5, bbox (70.98, 423.64, 101.6, 437.77)]] λ′ 1 = ∂H
+
+[confidence=0.92; source=equations; [page 5, bbox (70.98, 441.51, 101.6, 455.72)]] λ′ 2 = ∂H
+
+[confidence=0.92; source=equations; [page 5, bbox (70.98, 459.37, 101.6, 473.59)]] λ′ 3 = ∂H
+
+[confidence=0.92; source=equations; [page 5, bbox (70.98, 477.24, 101.6, 491.47)]] λ′ 4 = ∂H
+
+[confidence=0.92; source=equations; [page 5, bbox (70.98, 495.1, 101.6, 509.23)]] λ′ 5 = ∂H
+
+[confidence=0.92; source=equations; [page 5, bbox (94.14, 424.97, 296.04, 438.1)]] ∂r = -a11λ1 -a21λ2 -a31λ3 -a41λ4 -a51λ5 -μ2
+
+[confidence=0.92; source=equations; [page 5, bbox (93.62, 443.27, 119.48, 455.97)]] ∂θ = 0
+
+[confidence=0.92; source=equations; [page 5, bbox (93.32, 461.14, 175.8, 473.83)]] ∂φ = -a23λ2 -a53λ5
+
+[confidence=0.92; source=equations; [page 5, bbox (92.96, 479.0, 273.79, 491.7)]] ∂γ = -a14λ1 -a24λ2 -a34λ3 -a44λ4 -a54λ5
+
+[confidence=0.92; source=equations; [page 5, bbox (92.74, 496.87, 208.49, 509.58)]] ∂ψ = -a25λ2 -a35λ3 -a55λ5
+
+[confidence=0.62; needs_review; source=equations; [page 5, bbox (141.79, 547.72, 557.7, 580.55)]] ���� e f = -1 (26)
+
+[confidence=0.92; source=equations; [page 6, bbox (62.32, 209.85, 557.7, 221.72)]] P p(i)-1(τ) + P p(i)(τ) = 0 (27)
+
+[confidence=0.92; source=equations; [page 6, bbox (140.31, 320.77, 557.7, 344.25)]] k=1 X(i) k lk(τ) (29)
+
+[confidence=0.62; needs_review; source=equations; [page 6, bbox (134.88, 387.14, 557.7, 415.49)]] k=1 X(i) k � lk(τ j) �′, j = 1,..., p(i) (30)
+
+[confidence=0.62; needs_review; source=equations; [page 6, bbox (99.51, 496.38, 557.7, 516.51)]] � x(i) j �′ = A(e j)x(i) j + B(e j)u(i) j + c(e j), j = 1,..., p(i) (31)
+
+[confidence=0.92; source=equations; [page 6, bbox (63.71, 577.5, 186.52, 590.66)]] U = [u1,1, u2,1,..., u1,N, u2,N]T
+
+[confidence=0.62; needs_review; source=equations; [page 6, bbox (63.92, 589.86, 136.55, 608.9)]] N = �N k=1 p(k) + 1
+
+[confidence=0.92; source=equations; [page 6, bbox (64.39, 560.04, 246.73, 572.92)]] X = [˜r1,θ1,φ1,γ1,ψ1,..., ˜rN,θN,φN,γN,ψN]T
+
+[confidence=0.92; source=equations; [page 6, bbox (62.21, 634.1, 557.7, 647.64)]] F X = M[X T , U T ]T + O (33)
+
+[confidence=0.92; source=equations; [page 6, bbox (61.94, 717.35, 79.34, 726.73)]] M =
+
+[confidence=0.92; source=equations; [page 6, bbox (306.81, 703.76, 344.67, 736.07)]] ⎥⎥⎥⎥⎦ , O =
+
+[confidence=0.92; source=equations; [page 7, bbox (64.39, 486.93, 214.07, 499.86)]] X f = [˜r f -ξ,φ f -ξ,γ f -ξ,ψ f -ξ]T
+
+[confidence=0.92; source=equations; [page 7, bbox (64.41, 495.99, 557.7, 513.7)]] X f = [˜r f + ξ,φ f + ξ,γ f + ξ,ψ f + ξ]T (37)
+
+[confidence=0.92; source=equations; [page 7, bbox (63.54, 546.59, 195.88, 561.22)]] P(k) 2 : minimize J = Pθθ f + Pξξ
+
+[confidence=0.92; source=equations; [page 7, bbox (92.79, 561.92, 229.65, 575.01)]] subject to F X = M([X T , U T ]T ) + O
+
+[confidence=0.92; source=equations; [page 7, bbox (132.63, 610.44, 197.08, 623.22)]] Z = [X T , U T ,ξ]T
+
+[confidence=0.92; source=equations; [page 7, bbox (131.94, 596.39, 279.58, 610.07)]] U 2 i + U 2 i+1 ⩽1, i = 1, 3,··· , 2N -1
+
+[confidence=0.92; source=equations; [page 8, bbox (61.51, 55.64, 557.7, 82.71)]] ˆe(i) j = e(i) j + e(i) j+12 , j = 1,..., p(i) (39)
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (62.12, 96.51, 142.56, 117.18)]] R(i) = � R(i) 1 ··· R(i) p(i) �T
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (62.12, 115.31, 189.41, 138.51)]] R(i) j = ��� X(i)′ -x(i)′� ⊘x(i)′�� e=ˆe(i) j
+
+[confidence=0.92; source=equations; [page 8, bbox (61.55, 172.06, 557.7, 185.31)]] R(i) = max R(i) (41)
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (61.55, 214.09, 132.66, 240.33)]] K(i) j = ���� γ (i)′′
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (155.67, 214.09, 557.7, 248.13)]] ���� e=ˆe(i) j , j = 1,..., p(i) (42)
+
+[confidence=0.92; source=equations; [page 8, bbox (61.55, 335.71, 121.23, 353.03)]] V(i) = maxK(i)
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (62.18, 392.06, 145.28, 416.37)]] p(i) new = p(i) + max ��
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (61.31, 462.81, 119.68, 487.15)]] n(i) new = max ��
+
+[confidence=0.92; source=equations; [page 8, bbox (75.05, 506.49, 119.21, 517.54)]] (K(i)(e))1/3
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (89.84, 508.59, 153.43, 530.9)]] � K(i) de = j
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (61.55, 561.47, 88.52, 574.72)]] � K(i) :=
+
+[confidence=0.92; source=equations; [page 8, bbox (142.44, 511.78, 249.34, 533.9)]] n(i) new , j = 1,...,n(i) new -1
+
+[confidence=0.62; needs_review; source=equations; [page 8, bbox (100.16, 557.8, 154.43, 575.01)]] � K(i)(e) �1/3de
+
+[confidence=0.92; source=equations; [page 8, bbox (62.41, 700.49, 177.58, 715.44)]] Xk+1 ref = Xk ref + κ(Xk opt -Xk ref )
+
+[confidence=0.92; source=equations; [page 8, bbox (61.71, 711.56, 557.7, 731.37)]] Uk+1 ref = Uk ref + κ(Uk opt -Uk ref ) (47)
+
+[confidence=0.92; source=equations; [page 9, bbox (41.31, 153.25, 123.82, 163.68)]] 8: for j = 1 to n(i) new do
+
+[confidence=0.92; source=equations; [page 9, bbox (61.55, 287.55, 557.7, 301.7)]] |F X -M([X T , U T ]T )| ⩽O(1 + δr) (48)
+
+[confidence=0.92; source=equations; [page 9, bbox (63.56, 399.02, 557.7, 410.02)]] J = Pθθ f + Pe∥X -Xref ∥2 (49)
+
+[confidence=0.57; needs_review; source=equations; [page 9, bbox (41.31, 492.66, 260.25, 512.64)]] 2: for k = 1 to Nmax do 3: Calculate X, X, F, M, O and form the optimization subproblem P(k) 2 ;
+
+[confidence=0.92; source=equations; [page 9, bbox (61.55, 710.29, 557.7, 721.78)]] ϵiter = max(|Xopt -Xref |) ⩽ϵ (50)
+
+[confidence=0.92; source=equations; [page 10, bbox (183.75, 150.42, 475.44, 165.82)]] m (kg) Re (km) k1 k2 kQ 907.2637135909.437 \times 10-5
+
+[confidence=0.62; needs_review; source=equations; [page 10, bbox (61.55, 385.0, 98.18, 407.98)]] ϵ = �1 m
+
+[confidence=0.62; needs_review; source=equations; [page 10, bbox (191.18, 385.0, 557.7, 408.94)]] �T , dε = 10-4 (52)
+
+[confidence=0.92; source=equations; [page 10, bbox (61.55, 563.67, 182.24, 580.5)]] Emax = max e∈[e0,e f ]E(e), Emean =
+
+[confidence=0.92; source=equations; [page 10, bbox (61.55, 584.96, 166.47, 598.34)]] E(e) = |Xi result(e) -Xi int(e)|
+
+[confidence=0.92; source=equations; [page 10, bbox (191.7, 563.67, 290.82, 581.32)]] e f -e0 , Eend = E(e f )
+
+[confidence=0.62; needs_review; source=equations; [page 13, bbox (67.11, 461.43, 207.67, 486.48)]] Xm guess = Xl guess + kmΔx sin � π e -e0
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {r ^ {\prime} = \sin \gamma / D} \\ {\theta ^ {\prime} = \cos \gamma \sin \psi / r D \cos \phi} \\ {\phi ^ {\prime} = \cos \gamma \cos \psi / r D} \\ {\gamma ^ {\prime} = [ L \cos \sigma / m + ( \upsilon ^ {2} - \mu / r ) \cos \gamma / r + 2 \omega \upsilon \cos \phi \sin \psi} \\ {\quad \quad + r \omega ^ {2} ( \cos \gamma \cos \phi + s i n \gamma \sin \phi \cos \psi ) \cos \phi ] / \upsilon ^ {2} D} \\ {\psi ^ {\prime} = [ L \sin \sigma / m \cos \gamma + \upsilon ^ {2} \cos \gamma \sin \psi / \tan \phi / r} \\ {\quad \quad - 2 \omega \upsilon ( \tan \gamma \cos \psi \cos \phi - \sin \phi ) + r \omega ^ {2} \sin \psi \sin \phi \cos \phi / \cos \gamma ] / \upsilon ^ {2} D} \end{array} \right.\tag{1}
+
+[confidence=0.92; source=body_inline] \mu ,
+
+[confidence=0.92; source=body_inline] R _ {e} ,
+
+[confidence=0.92; source=body_inline] \sqrt {\mu / R _ {e}}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {L = \rho \upsilon ^ {2} C _ {L} S _ {r e f} / 2} \\ {D = \rho \upsilon ^ {2} C _ {D} S _ {r e f} / 2} \end{array} \right.\tag{2}
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.92; source=body_inline] S _ {r e f}
+
+[confidence=0.92; source=body_inline] C _ {L}
+
+[confidence=0.92; source=body_inline] C _ {D}
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array} {l} {\rho = \rho _ {0} e ^ {( r - R _ {e} ) / \beta}} \\ {\left\{\begin{array} {l l} {C _ {L} = C _ {L 0} + C _ {L 1} \alpha + C _ {L 2} e ^ {C _ {L 3} \upsilon}} \\ {C _ {D} = C _ {D 0} + C _ {D 1} \alpha ^ {2} + C _ {D 2} e ^ {C _ {D 3} \upsilon}} \end{array} \right.} \end{array}\tag{3}
+
+[confidence=0.92; source=body_inline] \rho _ {0} = 1.2258
+
+[confidence=0.92; source=body_inline] \beta = - 1.3785 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] C _ {D i} \ ( i = 0 , 1 , 2 , 3 )
+
+[confidence=0.92; source=body_inline] E = m ( \mu / r - \upsilon ^ {2} / 2 )\tag{5}
+
+[confidence=0.92; source=body_inline] \upsilon = \sqrt {2 ( \mu / r - E / m )}\tag{6}
+
+[confidence=0.92; source=body_inline] \alpha ( E ) = \alpha _ {n} ( E ) + k _ {1} e ^ {k _ {2} ( E _ {0} - E )}\tag{7}
+
+[confidence=0.92; source=body_inline] E _ {0}
+
+[confidence=0.92; source=body_inline] k _ {2}
+
+[confidence=0.92; source=body_inline] u _ {1} = \cos \sigma , \quad u _ {2} = \sin \sigma\tag{8}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\tilde {r} ^ {\prime} = \sin \gamma / \tilde {D}} \\ {\theta ^ {\prime} = \cos \gamma \sin \psi / \tilde {r} \tilde {D} \cos \phi} \\ {\phi ^ {\prime} = \cos \gamma \cos \psi / \tilde {r} \tilde {D}} \\ {\gamma ^ {\prime} = ( 1-1 / \tilde {r} \tilde {\upsilon} ^ {2} ) \cos \gamma / \tilde {r} \tilde {D} + \lambda u _ {1} / \tilde {\upsilon} ^ {2} + \varOmega _ {1}} \\ {\psi ^ {\prime} = \cos \gamma \sin \psi \tan \phi / \tilde {r} \tilde {D} + \lambda u _ {2} / \tilde {\upsilon} ^ {2} \cos \gamma + \varOmega _ {2}} \end{array} \right.\tag{9}
+
+[confidence=0.92; source=body_inline] \lambda = L / D
+
+[confidence=0.92; source=body_inline] \varOmega _ {1} , \varOmega _ {2}
+
+[confidence=0.92; source=body_inline] {\pmb x} ^ {\prime} = {\pmb f} ( {\pmb x} , e ) + B ( {\pmb x} , e ) {\pmb u} + {\pmb g} ( {\pmb x} , e )\tag{10}
+
+[confidence=0.92; source=body_inline] \pmb {x} = [ \widetilde {r} , \theta , \phi , \gamma , \psi ] , \pmb {u} = [ u _ {1} , u _ {2} ] ^ {T}
+
+[confidence=0.92; source=body_inline] u _ {1}
+
+[confidence=0.92; source=body_inline] u _ {2}
+
+[confidence=0.92; source=body_inline] \| \pmb {u} \| _ {2} ^ {2} = 1\tag{11}
+
+[confidence=0.92; source=body_inline] 0 \leqslant u _ {1} \leqslant 1 , - 1 \leqslant u _ {2} \leqslant 1
+
+[confidence=0.92; source=body_inline] \begin{array} {r l r} & {{\tilde {q} = \frac {1} {2} \tilde {\rho} \tilde {\upsilon} ^ {2} \leqslant \tilde {q} _ {\mathrm{max}}}} \\ & {\tilde {Q} = k _ {Q} \tilde {\rho} ^ {0.5} \tilde {\upsilon} ^ {3.15} \leqslant \tilde {Q} _ {\mathrm{max}}} \\ & {\tilde {n} = \sqrt {\tilde {L} ^ {2} + \tilde {D} ^ {2}} \leqslant \tilde {n} _ {\mathrm{max}}} \end{array}\tag{12}
+
+[confidence=0.92; source=body_inline] k _ {Q}
+
+[confidence=0.92; source=body_inline] r \geqslant r _ {\operatorname* {m i n}} ( e ) = \operatorname* {m a x} ( r _ {\operatorname* {m i n}} ^ {q} , r _ {\operatorname* {m i n}} ^ {Q} , r _ {\operatorname* {m i n}} ^ {n} )\tag{15}
+
+[confidence=0.92; source=body_inline] r _ {\operatorname* {m i n}} ^ {q} , r _ {\operatorname* {m i n}} ^ {Q}
+
+[confidence=0.92; source=body_inline] r _ {\mathrm{min}} ^ {n}
+
+[confidence=0.92; source=body_inline] {\pmb h} ( {\pmb x} ( e _ {0} ) , {\pmb x} ( e _ {f} ) ) = 0\tag{16}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathcal {P} \mathrm{0:~}} & {\mathrm{minimize~} J = - \theta ( e _ {f} )} \\ & {\mathrm{subject~to~Eqs.~} ( 10 ) , ( 12 ) , ( 16 ) , ( 17 )} \end{array}\tag{17}
+
+[confidence=0.92; source=body_inline] \mathcal {P} _ {0}
+
+[confidence=0.92; source=body_inline] {\mathcal {P}} _ {0}
+
+[confidence=0.92; source=body_inline] {\pmb x} _ {r e f}
+
+[confidence=0.92; source=body_inline] {\pmb u} _ {r e f}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{\displaystyle {\pmb x} ^ {\prime} = {\pmb f} ( {\pmb x} , e ) + B ( {\pmb x} , e ) {\pmb u} + {\pmb g} ( {\pmb x} , e )}} \\ {\displaystyle \approx {\pmb f} ( {\pmb x} _ {r e f} , e ) + B ( {\pmb x} _ {r e f} , e ) {\pmb u} _ {r e f} + {\pmb g} ( {\pmb x} _ {r e f} , e ) + \frac {\partial {\pmb f}} {\partial {\pmb x}} | _ {{\pmb x} _ {r e f}} ( {\pmb x} - {\pmb x} _ {r e f} )} \\ {+ \frac {\partial B {\pmb u}} {\partial {\pmb x}} | _ {{\pmb x} _ {r e f}} ( {\pmb x} - {\pmb x} _ {r e f} ) + \frac {\partial {\pmb g}} {\partial {\pmb x}} | _ {{\pmb x} _ {r e f}} ( {\pmb x} - {\pmb x} _ {r e f} ) + \frac {\partial B {\pmb u}} {\partial {\pmb u}} \bigg | _ {{\pmb x} _ {r e f}} ( {\pmb u} - {\pmb u} _ {r e f} )} \end{array}\tag{18}
+
+[confidence=0.92; source=body_inline] \pmb {x} ^ {\prime} \approx A \pmb {x} + B \pmb {u} + c\tag{19}
+
+[confidence=0.92; source=body_inline] A = \frac {\partial {\mathbf {f}}} {\partial \mathbf {x}} \bigg \vert _ {x _ {r e f}} , ~ c = f ( {\pmb x} _ {r e f} , e ) - \frac {\partial {\mathbf {f}}} {\partial \mathbf {x}} \bigg \vert _ {{\pmb x} _ {r e f}} {\pmb x} _ {r e f} + {\pmb g} ( {\pmb x} _ {r e f} , e )\tag{20}
+
+[confidence=0.92; source=body_inline] \| \mathbf {u} \| _ {2} ^ {2} \leqslant 1\tag{21}
+
+[confidence=0.92; source=body_inline] {\mathsf{So}} ,
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathcal {P} _ {1} :} & {\mathrm{minimize} ~ J = - \theta ( e _ {f} )} \\ & {\mathrm{subject~to~Eqs.} ( 20 ) , ( 22 ) , ( 16 ) , ( 17 )} \end{array}\tag{22}
+
+[confidence=0.92; source=body_inline] \mathcal {P} _ {1}
+
+[confidence=0.92; source=body_inline] \| \pmb {u} \| _ {2} ^ {2} = 1
+
+[confidence=0.92; source=body_inline] H ( \pmb {x} , \pmb {u} , \lambda , \mu , e ) = \pmb {\lambda} ^ {T} ( \pmb {A} \pmb {x} + \pmb {B} \pmb {u} + c ) + \pmb {\mu} ^ {T} \left[ \begin{array} {l} {\pmb {u} _ {1} ^ {2} + \pmb {u} _ {2} ^ {2} - 1} \\ {\pmb {r} _ {\operatorname* {m i n}} - \pmb {r}} \end{array} \right]\tag{23}
+
+[confidence=0.92; source=body_inline] \lambda = [ \lambda _ {1} , \lambda _ {2} , \lambda _ {3} , \lambda _ {4} , \lambda _ {5} ] ^ {T}
+
+[confidence=0.92; source=body_inline] {\pmb {\mu}} = [ \mu _ {1} , \mu _ {2} ] ^ {T}
+
+[confidence=0.92; source=body_inline] u _ {1} ^ {*}
+
+[confidence=0.92; source=body_inline] u _ {2} ^ {*}
+
+[confidence=0.92; source=body_inline] \left. {\frac {\partial H} {\partial \pmb {u}}} \right| _ {{\pmb {u}} = {\pmb {u}} ^ {*}} = \left[ b _ {41} \lambda _ {4} - 2 \mu _ {1} u _ {1} \right] = 0\tag{24}
+
+[confidence=0.92; source=body_inline] b _ {i j}
+
+[confidence=0.92; source=body_inline] [ e _ {1} , e _ {2} ] \subseteq [ e _ {0} , e _ {f} ]
+
+[confidence=0.92; source=body_inline] \mu _ {1} = 0 , \forall e \in [ e _ {1} , e _ {2} ]
+
+[confidence=0.92; source=body_inline] \lambda _ {4} = \lambda _ {5} = 0 , \forall e \in [ e _ {1} , e _ {2} ]
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\lambda _ {1} ^ {\prime} = \frac {\partial H} {\partial r} = - a _ {11} \lambda _ {1} - a _ {21} \lambda _ {2} - a _ {31} \lambda _ {3} - a _ {41} \lambda _ {4} - a _ {51} \lambda _ {5} - \mu _ {2}} \\ {\lambda _ {2} ^ {\prime} = \frac {\partial H} {\partial \theta} = 0} \\ {\lambda _ {3} ^ {\prime} = \frac {\partial H} {\partial \phi} = - a _ {23} \lambda _ {2} - a _ {53} \lambda _ {5}} \\ {\lambda _ {4} ^ {\prime} = \frac {\partial H} {\partial \gamma} = - a _ {14} \lambda _ {1} - a _ {24} \lambda _ {2} - a _ {34} \lambda _ {3} - a _ {44} \lambda _ {4} - a _ {54} \lambda _ {5}} \\ {\lambda _ {5} ^ {\prime} = \frac {\partial H} {\partial \psi} = - a _ {25} \lambda _ {2} - a _ {35} \lambda _ {3} - a _ {55} \lambda _ {5}} \end{array} \right.\tag{25}
+
+[confidence=0.92; source=body_inline] a _ {i j}
+
+[confidence=0.92; source=body_inline] \lambda _ {4} = \lambda _ {5} = 0 ,
+
+[confidence=0.92; source=body_inline] \lambda _ {2} ( a _ {23} - ( a _ {25} / a _ {35} ) ^ {\prime} ) = 0 ,
+
+[confidence=0.92; source=body_inline] \forall e \in [ e _ {1} , \overline {{e _ {2}}} ]
+
+[confidence=0.92; source=body_inline] \lambda _ {2} ( e _ {f} ) = \frac {\partial ( - \theta ( e _ {f} ) )} {\partial \theta} \Bigg | _ {e _ {f}} = - 1\tag{26}
+
+[confidence=0.92; source=body_inline] {\partial \lambda _ {2}} / {\partial e} = 0
+
+[confidence=0.92; source=body_inline] \lambda _ {2} = - 1 , \forall e \in [ e _ {1} , e _ {2} ]
+
+[confidence=0.92; source=body_inline] a _ {23} - ( a _ {25} / a _ {35} ) ^ {\prime} = 0
+
+[confidence=0.92; source=body_inline] \in [ e _ {1} , e _ {2} ]
+
+[confidence=0.92; source=body_inline] \| \mathbf {u} \| _ {2} ^ {2} \leqslant 1
+
+[confidence=0.92; source=body_inline] \mathcal {H} _ {i} , i = 1 , \ldots , N
+
+[confidence=0.92; source=body_inline] \mathcal {H} _ {i}
+
+[confidence=0.92; source=body_inline] p ^ {( i )} + 1
+
+[confidence=0.92; source=body_inline] e _ {0} ^ {( i )}
+
+[confidence=0.92; source=body_inline] e _ {f} ^ {( i )}
+
+[confidence=0.92; source=body_inline] N - 1
+
+[confidence=0.92; source=body_inline] \boldsymbol {p} ^ {( i )}
+
+[confidence=0.92; source=body_inline] P _ {p ^ {( i )} - 1} ( \tau ) + P _ {p ^ {( i )}} ( \tau ) = 0\tag{27}
+
+[confidence=0.92; source=body_inline] P _ {k}
+
+[confidence=0.92; source=body_inline] [ - 1 , 1 ]
+
+[confidence=0.92; source=body_inline] \tau _ {1} ^ {( i )} = - 1
+
+[confidence=0.92; source=body_inline] e _ {k} ^ {( i )} = \frac {e _ {f} ^ {( i )} - e _ {0} ^ {( i )}} {2} \tau _ {k} ^ {( i )} + \frac {e _ {f} ^ {( i )} - e _ {0} ^ {( i )}} {2} , ~ k = 1 , \dots , p ^ {( i )} + 1\tag{28}
+
+[confidence=0.92; source=body_inline] \pmb {x} ^ {( i )} ( \tau ) \approx X ^ {( i )} ( \tau ) = \sum _ {k = 1} ^ {p ^ {( i )} + 1} X _ {k} ^ {( i )} l _ {k} ( \tau )\tag{29}
+
+[confidence=0.92; source=body_inline] l _ {k} ( \tau )
+
+[confidence=0.92; source=body_inline] X _ {k} ^ {( i )}
+
+[confidence=0.92; source=body_inline] e _ {k} ^ {( i )}
+
+[confidence=0.92; source=body_inline] \left( \pmb {x} _ {j} ^ {( i )} \right) ^ {\prime} \approx \left( \boldsymbol {X} _ {j} ^ {( i )} \right) ^ {\prime} = \sum _ {k = 1} ^ {p ^ {( i )} + 1} \boldsymbol {X} _ {k} ^ {( i )} \big [ \boldsymbol {l} _ {k} ( \tau _ {j} ) \big ] ^ {\prime} , \quad j = 1 , \dots , p ^ {( i )}\tag{30}
+
+[confidence=0.92; source=body_inline] ( X _ {j} ^ {( i )} ) ^ {\prime}
+
+[confidence=0.92; source=body_inline] \frac {2} {e _ {j} ^ {( i )} - e _ {0} ^ {( i )}} \big ( {\pmb x} _ {j} ^ {( i )} \big ) ^ {\prime} = A ( e _ {j} ) {\pmb x} _ {j} ^ {( i )} + B ( e _ {j} ) {\pmb u} _ {j} ^ {( i )} + c ( e _ {j} ) , \quad j = 1 , \dots , p ^ {( i )}\tag{31}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {X = [ \widetilde {r} _ {1} , \theta _ {1} , \phi _ {1} , \gamma _ {1} , \psi _ {1} , \hdots , \widetilde {r} _ {\overline {{N}}} , \theta _ {\overline {{N}}} , \phi _ {\overline {{N}}} , \gamma _ {\overline {{N}}} , \psi _ {\overline {{N}}} ] ^ {T}} \\ & {U = [ u _ {1 , 1} , u _ {2 , 1} , \hdots , u _ {1 , \overline {{N}}} , u _ {2 , \overline {{N}}} ] ^ {T}} \\ & {\overline {{N}} = \sum _ {k = 1} ^ {N} p ^ {( k )} + 1} \end{array}\tag{32}
+
+[confidence=0.92; source=body_inline] \boldsymbol {X} \in \mathbb {R} ^ {5 \overline {{{N}}}}
+
+[confidence=0.92; source=body_inline] U \in \mathbb {R} ^ {2 \overline {{N}}}
+
+[confidence=0.92; source=body_inline] \boldsymbol {F} \boldsymbol {X} = \boldsymbol {M} [ \boldsymbol {X} ^ {T} , \boldsymbol {U} ^ {T} ] ^ {T} + \boldsymbol {O}\tag{33}
+
+[confidence=0.92; source=body_inline] 5 \overline {{N}} \times ( 5 \overline {{N}} + 5 )
+
+[confidence=0.92; source=body_inline] [ l _ {k} ( \tau ) ] ^ {\prime}
+
+[confidence=0.92; source=body_inline] 5 \overline {{N}} \times ( 7 \overline {{N}} + 7 )
+
+[confidence=0.92; source=body_inline] M = \left[ \begin{array} {c c c c c c c c} {A ( e _ {1} )} & {\mathbf {0}} & {\cdots} & {\mathbf {0}} & {B ( e _ {1} )} & {\mathbf {0}} & {\cdots} & {\mathbf {0}} \\ {\mathbf {0}} & {A ( e _ {2} )} & & {\vdots} & {\mathbf {0}} & {B ( e _ {2} )} & & {\vdots} \\ {\vdots} & & & {\ddots} & {\mathbf {0}} & {\vdots} & & {\ddots} & {\mathbf {0}} \\ {\mathbf {0}} & {\cdots} & {\mathbf {0}} & {A ( e _ {N} )} & {\mathbf {0}} & {\cdots} & {\mathbf {0}} & {B ( e _ {N} )} \end{array} \right] , \quad O = \left[ \begin{array} {c} {c ( e _ {1} )} \\ {c ( e _ {2} )} \\ {\vdots} \\ {c ( e _ {N} )} \end{array} \right]\tag{34}
+
+[confidence=0.92; source=body_inline] | X - X _ {r e f} | \leqslant \underbrace {[ \varDelta ^ {T} \cdot \cdot \cdot \varDelta ^ {T} ]} _ {\mathrm{Repeated} \overline {{N}} \mathrm{times}} ^ {T}\tag{35}
+
+[confidence=0.92; source=body_inline] \xi \geqslant 0
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\underline {{X}} _ {f} = [ \tilde {r} _ {f} - \xi , \phi _ {f} - \xi , \gamma _ {f} - \xi , \psi _ {f} - \xi ] ^ {T}} \\ {\overline {{X}} _ {f} = [ \tilde {r} _ {f} + \xi , \phi _ {f} + \xi , \gamma _ {f} + \xi , \psi _ {f} + \xi ] ^ {T}} \end{array}\tag{37}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathcal {P} _ {2} ^ {( k )} :} & {\mathrm{minimize~} J = P _ {\theta} \theta _ {f} + P _ {\xi} \xi} \\ & {\mathrm{subject~to~} F X = M ( [ X ^ {T} , U ^ {T} ] ^ {T} ) + O} \\ & {\qquad \quad \underline {{X}} \leqslant X \leqslant \overline {{X}}} \\ & {\quad \quad \quad U _ {i} ^ {2} + U _ {i + 1} ^ {2} \leqslant 1 , \quad i = 1 , 3 , \cdots , 2 \overline {{N}} - 1} \\ & {\quad \quad \quad \quad Z = [ X ^ {T} , U ^ {T} , \xi ] ^ {T}} \end{array}\tag{38}
+
+[confidence=0.92; source=body_inline] P _ {\theta} < 0 , P _ {\xi} \gg 0
+
+[confidence=0.92; source=body_inline] Z \in \mathbb {R} ^ {7 \times \overline {{N}} + 1}
+
+[confidence=0.92; source=body_inline] \mathcal {P} _ {2} ^ {( k )}
+
+[confidence=0.92; source=body_inline] X ^ {( i )}
+
+[confidence=0.92; source=body_inline] U ^ {( i )}
+
+[confidence=0.92; source=body_inline] \hat {e} ^ {( i )}
+
+[confidence=0.92; source=body_inline] \hat {e} _ {j} ^ {( i )} = \frac {e _ {j} ^ {( i )} + e _ {j + 1} ^ {( i )}} {2} , \quad j = 1 , \ldots , p ^ {( i )}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {R ^ {( i )} = \left[ R _ {1} ^ {( i )} \cdots R _ {p ^ {( i )}} ^ {( i )} \right] ^ {T}} \\ & {R _ {j} ^ {( i )} = \left| \left( X ^ {( i ) \prime} - \pmb {x} ^ {( i ) \prime} \right) \oslash \pmb {x} ^ {( i ) \prime} \right| _ {e = \hat {e} _ {j} ^ {( i )}}} \end{array}\tag{40}
+
+[confidence=0.92; source=body_inline] X ^ {( i ) \prime}
+
+[confidence=0.92; source=body_inline] \pmb {x} ^ {( i ) \prime}
+
+[confidence=0.92; source=body_inline] \mathcal {R} ^ {( i )} = \operatorname* {m a x} R ^ {( i )}\tag{41}
+
+[confidence=0.92; source=body_inline] \mathcal {K} _ {j} ^ {( i )} = \left. \frac {\gamma ^ {( i )} \prime \prime} {[ 1 + ( \gamma ^ {( i )} \prime ) ^ {2} ] ^ {3 / 2}} \right. _ {e = \hat {e} _ {j} ^ {( i )}} , \quad j = 1 , \hdots , p ^ {( i )}\tag{42}
+
+[confidence=0.92; source=body_inline] \mathcal {R} ^ {( i )}
+
+[confidence=0.92; source=body_inline] \mathcal {K} _ {j} ^ {( i )}
+
+[confidence=0.92; source=body_inline] {\kappa} _ {j} ^ {( i )}
+
+[confidence=0.92; source=body_inline] \mathcal {V} ^ {( i )} = \frac {\operatorname* {m a x} \mathcal {K} ^ {( i )}} {\overline {{\mathcal {K}}} ^ {( i )}}\tag{43}
+
+[confidence=0.92; source=body_inline] \overline {{\mathcal {K}}} ^ {( i )}
+
+[confidence=0.92; source=body_inline] \mathcal {K} ^ {( i )}
+
+[confidence=0.92; source=body_inline] \mathcal {V} ^ {( i )}
+
+[confidence=0.92; source=body_inline] p _ {\mathrm{new}} ^ {( i )} = p ^ {( i )} + \operatorname* {m a x} \biggl ( \biggl | \log _ {10} \biggl ( \frac {\mathcal {R} ^ {( i )}} {\varepsilon} \biggr ) \biggr rceil , 0 \biggr )\tag{44}
+
+[confidence=0.92; source=body_inline] n _ {\mathrm{new}} ^ {( i )}
+
+[confidence=0.92; source=body_inline] \tilde {e} _ {i} ^ {( i )}
+
+[confidence=0.92; source=body_inline] p _ {\mathrm{min}}
+
+[confidence=0.92; source=body_inline] n _ {\mathrm{new}} ^ {( i )} = \operatorname* {m a x} \biggl ( \biggl | \log _ {10} \biggl ( \frac {\mathcal {R} ^ {( i )}} {\varepsilon} \biggr ) \biggr | , 2 \biggr )\tag{45}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{\displaystyle {\widetilde {e} _ {j} ^ {( i )}}} ( \mathcal {K} ^ {( i )} ( e ) ) ^ {1 / 3} \mathrm{d} e = \frac {j} {n _ {\mathrm{new}} ^ {( i )}} , \quad j = 1 , \dots , n _ {\mathrm{new}} ^ {( i )} - 1} \\ {{\displaystyle e _ {0} ^ {( i )}}} \end{array}\tag{46}
+
+[confidence=0.92; source=body_inline] \widehat {\mathcal {K}} ^ {( i )} : = \int _ {e _ {0} ^ {( i )}} ^ {e _ {j} ^ {( i )}} \bigl ( \mathcal {K} ^ {( i )} ( e ) \bigr ) ^ {1 / 3} \mathrm{d} e
+
+[confidence=0.92; source=body_inline] [ e _ {0} , e _ {f} ]
+
+[confidence=0.92; source=body_inline] k + 1
+
+[confidence=0.92; source=body_inline] \mathcal {\bar {P}} _ {2} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {X _ {r e f} ^ {k + 1} = X _ {r e f} ^ {k} + \kappa ( X _ {o p t} ^ {k} - X _ {r e f} ^ {k} )} \\ & {U _ {r e f} ^ {k + 1} = U _ {r e f} ^ {k} + \kappa ( U _ {o p t} ^ {k} - U _ {r e f} ^ {k} )} \end{array}\tag{47}
+
+[confidence=0.92; source=body_inline] X _ {o p t} ^ {k}
+
+[confidence=0.92; source=body_inline] {\mathcal {P}} _ {2} ^ {( k )}
+
+[confidence=0.92; source=body_inline] \mathcal {V} ^ {( : )}
+
+[confidence=0.92; source=body_inline] e _ {\mathrm{new}} ^ {( : )}
+
+[confidence=0.92; source=body_inline] e _ {\mathrm{new}} ^ {( \cdot )} = \mathrm{NULL} , ~ N _ {\mathrm{new}} = 0 ;
+
+[confidence=0.92; source=body_inline] e _ {\mathrm{new}} ^ {( i + N _ {\mathrm{new}} )} : = p _ {\mathrm{new}} ^ {( i )}
+
+[confidence=0.92; source=body_inline] [ e _ {0} ^ {( i )} , e _ {f} ^ {( i )} ] ;
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{new}} = N _ {\mathrm{new}} + 1 ;
+
+[confidence=0.92; source=body_inline] n _ {\mathrm{new}} ^ {( i )} - 1
+
+[confidence=0.92; source=body_inline] e _ {j} ^ {( i )}
+
+[confidence=0.92; source=body_inline] j = 1
+
+[confidence=0.92; source=body_inline] e _ {\mathrm{new}} ^ {( i + N _ {\mathrm{new}} )} : = p _ {\mathrm{min}}
+
+[confidence=0.67; needs_review; source=body_inline] [ e _ {j - 1} ^ {( i )} , e _ {j} ^ {( i )}
+
+[confidence=0.92; source=body_inline] \delta _ {r}
+
+[confidence=0.92; source=body_inline] \vert F X - M ( [ X ^ {T} , U ^ {T} ] ^ {T} ) \vert \leqslant {\cal {O}} ( 1 + \delta _ {r} )\tag{48}
+
+[confidence=0.92; source=body_inline] J = P _ {\theta} \theta _ {f} + P _ {e} \| X - X _ {r e f} \| _ {2}\tag{49}
+
+[confidence=0.92; source=body_inline] P _ {e}
+
+[confidence=0.92; source=body_inline] X _ {r e f} ^ {( : )} , U _ {r e f} ^ {( : )} , T _ {s t a g e} = 1 ^ {s t} ;
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] {\mathcal {P}} _ {2} ^ {( k )} ;
+
+[confidence=0.92; source=body_inline] U _ {o p t} ^ {k}
+
+[confidence=0.92; source=body_inline] \epsilon _ {\mathrm {{i t e r}}} ;
+
+[confidence=0.92; source=body_inline] X _ {r e s u l t} = X _ {o p t} ^ {k} , U _ {r e s u l t} = U _ {o p t} ^ {k}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{stage}} ,
+
+[confidence=0.92; source=body_inline] X _ {r e f} ^ {k + 1} , \ : U _ {r e f} ^ {k + 1}
+
+[confidence=0.92; source=body_inline] \mathcal {V} ^ {( : )} ;
+
+[confidence=0.92; source=body_inline] \mathcal {R} ^ {( : )} > \varepsilon \& n _ {r e l} = 1
+
+[confidence=0.92; source=body_inline] X _ {r e f} ^ {k + 1} , U _ {r e f} ^ {k + 1}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{stage}} = 2 ^ {\mathrm{nd.}}
+
+[confidence=0.92; source=body_inline] \mathrm {{\Delta} n} _ {r e l} > 1 \mathrm {{\Delta}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{stage}} = 1 ^ {\mathrm{nd.}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{stage}} = 3 ^ {\mathrm{nd.}} ;
+
+[confidence=0.92; source=body_inline] \epsilon _ {\mathrm{iter}} = \operatorname* {m a x} ( | X _ {o p t} - X _ {r e f} | ) \leq \epsilon\tag{50}
+
+[confidence=0.92; source=body_inline] C _ {L 0} = - 0.236 , C _ {L 1} = 2.945 , C _ {L 2} = 0.295 , C _ {L 3} = - 3.394 \times 10 ^ {- 4} , C _ {D 0} =
+
+[confidence=0.92; source=body_inline] C _ {D 1} = 2.379 , C _ {D 2} = 0.398 , C _ {D 3} = - 1.079 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {\displaystyle \varDelta = \left[ \frac {20 \mathrm{km}} {R _ {e}} , \frac {20 \pi} {180} , \frac {20 \pi} {180} , \frac {20 \pi} {180} , \frac {20 \pi} {180} \right] ^ {T}} \\ {\displaystyle \epsilon = \left[ \frac {1 \mathrm{m}} {R _ {e}} , \frac {d _ {\varepsilon} \pi} {180} , \frac {d _ {\varepsilon} \pi} {180} , \frac {d _ {\varepsilon} \pi} {180} , \frac {d _ {\varepsilon} \pi} {180} \right] ^ {T} , \quad {d _ {\varepsilon} = 10} ^ {- 4}} \end{array}\tag{51}
+
+[confidence=0.92; source=body_inline] P _ {\theta} = 1 , \ P _ {\xi} = 10 ^ {4} , \ P _ {e} = 10 ^ {- 2} , \ \varepsilon = 10 ^ {- 2} , \ \delta _ {r} = 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] N _ {\mathrm{max}} = 50 , p _ {\mathrm{min}} = 4
+
+[confidence=0.92; source=body_inline] X _ {i n t}
+
+[confidence=0.92; source=body_inline] \mathcal {E} _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] \mathcal {E} _ {\mathrm{mean}}
+
+[confidence=0.92; source=body_inline] \mathcal {E} _ {\mathrm{end}}
+
+[confidence=0.92; source=body_inline] X ^ {i}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\mathcal {E} _ {\operatorname* {m a x}} = \underset {e \in [ e _ {0} , e _ {f} ]} {\operatorname* {m a x}} \mathcal {E} ( e ) , \quad \mathcal {E} _ {\operatorname* {m e a n}} = \frac {\int _ {e _ {0}} ^ {e _ {f}} \mathcal {E} ( e ) \mathrm{d} e} {e _ {f} - e _ {0}} , \quad \mathcal {E} _ {\mathrm{end}} = \mathcal {E} ( e _ {f} )} \\ & {\mathcal {E} ( e ) = | X _ {r e s u l t} ^ {i} ( e ) - X _ {i n t} ^ {i} ( e ) |} \end{array}\tag{53}
+
+[confidence=0.92; source=body_inline] 0.02 ^{\circ}
+
+[confidence=0.92; source=body_inline] 1 - ( u _ {1} ^ {2} + u _ {2} ^ {2} )
+
+[confidence=0.92; source=body_inline] 10 ^ {- 7}
+
+[confidence=0.92; source=body_inline] 0.01 ^{\circ}
+
+[confidence=0.92; source=body_inline] n _ {r e l}
+
+[confidence=0.92; source=body_inline] \boldsymbol {\epsilon} _ {\mathrm{iter}}
+
+[confidence=0.92; source=body_inline] \mathcal {R} ^ {( : )}
+
+[confidence=0.92; source=body_inline] ( X _ {g u e s s} ^ {m} )
+
+[confidence=0.92; source=body_inline] X _ {g u e s s} ^ {l}
+
+[confidence=0.92; source=body_inline] \varDelta _ {x}
+
+[confidence=0.92; source=body_inline] X _ {g u e s s} ^ {m}
+
+[confidence=0.92; source=body_inline] k _ {m}
+
+[confidence=0.92; source=body_inline] \theta _ {f , g u e s s}
+
+[confidence=0.92; source=body_inline] \begin{array} {c} {{X _ {g u e s s} ^ {m} = X _ {g u e s s} ^ {l} + k _ {m} \Delta _ {x} \sin \displaystyle \left( \pi \frac {e - e _ {0}} {e _ {f} - e _ {0}} \right)}} \\ {{k _ {m} \sim U ( 10 ^ {- 2} , 10 ^ {- 1} )}} \\ {{\theta _ {f , g u e s s} \sim U ( 80 ^{\circ} , 120 ^{\circ} )}} \end{array}\tag{54}

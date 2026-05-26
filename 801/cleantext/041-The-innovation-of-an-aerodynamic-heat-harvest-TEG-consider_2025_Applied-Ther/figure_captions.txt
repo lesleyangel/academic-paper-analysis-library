@@ -1,0 +1,39 @@
+Fig. 1. Schematic diagram of TEGs for a high-speed flight vehicle.
+
+Fig. 2. Schematic diagram of the TEG and its components.
+
+Fig. 3. Fabrication and assembly process of TEG.
+
+Fig. 4. Measurement and reconstruction of rough surfaces.
+
+Fig. 5. Meshed models of contacting pairs and TEG.
+
+Fig. 6. Aerodynamic meshed model and external thermo-mechanical loads.
+
+Fig. 7. Boundary conditions of contacting pairs and TEG.
+
+Fig. 8. Experimental measurements of TCR.
+
+Fig. 9. Experimental measurements of TEG performance.
+
+Fig. 10. Dimensionless real contact aera varied with loading pressure.
+
+Fig. 11. Stress distribution of rough surfaces for contacting pairs.
+
+Fig. 12. TCRs between electrodes and TE legs.
+
+Fig. 13. ECRs between electrodes and TE legs.
+
+Fig. 14. Comparison between equivalent model and micro-scale interfa- cial model.
+
+Fig. 15. Temperature distribution under different clearances.
+
+Fig. 16. Mises stress distribution for TEG and its components.
+
+Fig. 17. TEG performance of the voltage.
+
+Fig. 18. TEG performance of the output power.
+
+Fig. 19. TEG performance of the conversion efficiency.
+
+Fig. 14. Comparison between equivalent model and micro-scale interfacial model.

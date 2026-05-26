@@ -1,0 +1,53 @@
+Fig. 1. Coordinate system and states notations.
+
+Fig. 2. 𝐶𝐷contour and a 𝑣−𝛼curve.
+
+Fig. 3. Relationship between 𝑚Δ𝑡∕𝑇𝑟𝑒𝑓and [𝜌𝑙𝑠𝑞,𝑊𝑑𝑎𝑡𝑎].
+
+Fig. 4. Comparison diagram of different NMPG strategies. (For interpretation of the colors in the figure(s), the reader is referred to the web version of this article.)
+
+Fig. 7. 𝑣−𝐻curves of FC-NMPG and ET-NMPG. 𝐻𝑟 min and 𝐻𝑜 min represent the altitude lower bound corresponding to the initial and relaxed dynamic pressure and heating rate constraint boundaries, respectively.
+
+Fig. 5. 𝑣−𝐻curves of FLG and NMPGs.
+
+Fig. 8. 𝑣−𝐻curves of ET-NMPG and WAPE-assisted ET-NMPG.
+
+Fig. 6. Ground tracks of FLG and NMPGs.
+
+Fig. 9. Ground tracks of ET-NMPG and WAPE-assisted ET-NMPG. Fig. 10. Guidance commands of ET-NMPG and WAPE-assisted ET-NMPG.
+
+Fig. 11. Parameter estimation results. Aerodynamic coefficients have been converted to correspond to the true mass as described in Section 4.2.
+
+Fig. 12. Terminal position errors. If the terminal position error exceeds 5 km, the guidance is considered to have failed, and only successful guidance results are plotted in the diagram.
+
+Fig. 13. The relationship between estimation error of parameters and the PE times.
+
+Fig. 14. Scatter plot of parameter estimation error with different time.
+
+Fig. 15. 𝑣−𝐻curves with in-flight faults.
+
+Fig. 16. Guidance commands with in-flight faults.
+
+Fig. 17. PE results with in-flight faults.
+
+Fig. 2. $C _ { D }$ contour and a ?? − ?? curve.
+
+Fig. 3. Relationship between ?? $\Delta t / T _ { r e f }$ and $[ \rho _ { l s q } , W _ { d a t a } ] .$
+
+Fig. 4. Comparison diagram of different NMPG strategies. (For interpretation of the colors in the fi gure(s), the reader is referred to the web version of this article.)
+
+Fig. 5. ?? − ?? curves of FLG and NMPGs.
+
+Fig. 7. ?? − ?? curves of FC-NMPG and ET-NMPG. $H _ { \operatorname* { m i n } } ^ { r }$ and $H _ { \operatorname* { m i n } } ^ { o }$ represent the altitude lower bound corresponding to the initial and relaxed dynamic pressure and heating rate constraint boundaries, respectively.
+
+Fig. 8. ?? − ?? curves of ET-NMPG and WAPE-assisted ET-NMPG.
+
+Fig. 9. Ground tracks of ET-NMPG and WAPE-assisted ET-NMPG.
+
+Fig. 10. Guidance commands of ET-NMPG and WAPE-assisted ET-NMPG.
+
+Fig. 15. ?? − ?? curves with in-fl ight faults.
+
+Fig. 16. Guidance commands with in-fl ight faults.
+
+Fig. 17. PE results with in-fl ight faults.

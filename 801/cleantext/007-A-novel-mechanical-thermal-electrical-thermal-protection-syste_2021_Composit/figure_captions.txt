@@ -1,0 +1,31 @@
+Fig. 1. The vehicle and the MTPS.
+
+Fig. 2. CAD model, structure cross-section and 3D printed model of the MTPS unit.
+
+Fig. 3. Analysis steps.
+
+Fig. 4. Model, mesh, boundaries and loads of the vehicle.
+
+Fig. 5. Model, mesh and boundaries of the MTPS plate.
+
+Fig. 6. Mesh and boundaries of the MTPS unit.
+
+Fig. 7. Stress distribution of the vehicle.
+
+Fig. 8. Interpolation displacement boundaries of the MTPS plate.
+
+Fig. 10. Displacement boundaries of the MTPS unit.
+
+Fig. 9. Stress distribution of the MTPS plate.
+
+Fig. 11. Temperature fields of the MTPS unit.
+
+Fig. 12. Stress distribution of the MTPS unit.
+
+Fig. 13. Stress and temperature curves of selected nodes of the MTPS unit.
+
+Fig. 14. Selected TE materials.
+
+Fig. 15. Temperature distribution of the TE materials.
+
+Fig. 16. Electrical performance of the MTPS unit.

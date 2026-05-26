@@ -1,0 +1,9 @@
+Material,Density (g/cm³),Elastic modulus (GPa),Compressive yield stress (MPa),Poisson's ratio,Specific heat capacity (J/(kg K)),Thermal conductivity (W/(m K)),Electrical conductivity (S/m)
+$\mathbf { S r } _ { 0 . 9 } \mathrm { L a } _ { 0 . 1 } \mathrm { T i O } _ { 3 }$,4.615,105,112,0.25,296,/,/
+Ca3Co409,4.672,105,116,0.25,657,/,/
+PbTe,8.164,16,77,0.26,160,/,/
+BiTe,7.700,59,88,0.25,154,/,/
+Alumina ceramic,3.97,300,850,0.2,760,20,${ 1 0 ^ { - 2 5 } }$
+PEEK,1.32,3.66,110,0.16,2160,0.25,${ 1 0 } ^ { { - } 1 5 }$
+Copper,8.92,110,200,0.31,385 504,390,$5 . 7 \times 1 0 ^ { 1 0 }$
+Silver-epoxy adhesive,2.3,/,/,0.3,,/,${ 1 0 ^ { 8 } }$

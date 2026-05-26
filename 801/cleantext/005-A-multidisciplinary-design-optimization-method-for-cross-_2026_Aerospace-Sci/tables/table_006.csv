@@ -1,0 +1,8 @@
+,Structural mass/kg,TPS mass/kg,Payload mass/kg,Iteration count
+Before optimization,992.35,495.2,454.0,-
+MDF,948.8,510.0,682.7,42
+Centralized ALC,869.8,515.6,756.1,100
+Dominant ALC,863.4,517.7,760.4,89
+Distributed ALC,875.5,533.9,732.2,55
+Distributed parallel ALC,884.2,512.4,745.0,80
+Distributed-centralized ALC,848.9,520.2,772.5,61

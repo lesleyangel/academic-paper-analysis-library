@@ -1,0 +1,7168 @@
+[
+  {
+    "id": "equation_001",
+    "source": "equations",
+    "meta": "[page 1, bbox (37.64, 205.3, 367.08, 218.96)]",
+    "original": "Jian-Jun Gou, Zheng-Wei Yan, Jia-Xin Hu, Ge Gao, Chun-Lin Gong ∗",
+    "normalized": "Jian-Jun Gou, Zheng-Wei Yan, Jia-Xin Hu, Ge Gao, Chun-Lin Gong ∗",
+    "confidence": 0.57,
+    "needs_review": true,
+    "issues": [
+      "text_heavy"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_002",
+    "source": "equations",
+    "meta": "[page 1, bbox (41.17, 696.06, 204.7, 715.22)]",
+    "original": "* Corresponding author. E-mail address: leonwood@nwpu.edu.cn (C.-L. Gong).",
+    "normalized": "* Corresponding author. E-mail address: leonwood@nwpu.edu.cn (C.-L. Gong)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": [
+      "unit_expression_repaired"
+    ]
+  },
+  {
+    "id": "equation_003",
+    "source": "equations",
+    "meta": "[page 4, bbox (306.63, 499.38, 557.7, 512.82)]",
+    "original": "α (Tr −T w) = εσ T 4 w + qin (1)",
+    "normalized": "α (Tr -T w) = εσ T 4 w + qin (1)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": [
+      "unicode_math_symbol_normalized"
+    ]
+  },
+  {
+    "id": "equation_004",
+    "source": "equations",
+    "meta": "[page 5, bbox (37.5, 555.64, 288.71, 566.64)]",
+    "original": "qin = heq′(T w −Tc) = hl(Tb −Tc) (2)",
+    "normalized": "qin = heq′(T w -Tc) = hl(Tb -Tc) (2)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": [
+      "unicode_math_symbol_normalized"
+    ]
+  },
+  {
+    "id": "equation_005",
+    "source": "equations",
+    "meta": "[page 5, bbox (37.5, 739.08, 288.71, 749.95)]",
+    "original": "qin = heqT w (3)",
+    "normalized": "qin = heqT w (3)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_006",
+    "source": "equations",
+    "meta": "[page 6, bbox (37.5, 121.35, 288.71, 132.28)]",
+    "original": "heqT w A = m f cp�Tc (4)",
+    "normalized": "heqT w A = m f cp�Tc (4)",
+    "confidence": 0.62,
+    "needs_review": true,
+    "issues": [
+      "mojibake"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_007",
+    "source": "equations",
+    "meta": "[page 6, bbox (37.5, 435.36, 288.71, 447.59)]",
+    "original": "heqT w A = U 2R/(2R)2 (5)",
+    "normalized": "heqT w A = U 2R/(2R)2 (5)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_008",
+    "source": "equations",
+    "meta": "[page 6, bbox (37.8, 508.75, 288.71, 527.0)]",
+    "original": "U = |Sn�Tn| + ��S p�T p �� (6)",
+    "normalized": "U = |Sn�Tn| + ��S p�T p �� (6)",
+    "confidence": 0.62,
+    "needs_review": true,
+    "issues": [
+      "mojibake"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_009",
+    "source": "equations",
+    "meta": "[page 6, bbox (37.5, 586.71, 288.71, 605.61)]",
+    "original": "heqT w A = m f cp�TC + (|Sn�Tn| + ��S p�T p ��)2/(4R) (7)",
+    "normalized": "heqT w A = m f cp�TC + (|Sn�Tn| + ��S p�T p ��)2/(4R) (7)",
+    "confidence": 0.62,
+    "needs_review": true,
+    "issues": [
+      "mojibake"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_011",
+    "source": "equations",
+    "meta": "[page 6, bbox (39.48, 631.73, 274.35, 650.63)]",
+    "original": "heqT w A = m f cp�TC + (|Snm�Tnm| + ��S pm�T pm ��)2/(4Rm)",
+    "normalized": "heqT w A = m f cp�TC + (|Snm�Tnm| + ��S pm�T pm ��)2/(4Rm)",
+    "confidence": 0.62,
+    "needs_review": true,
+    "issues": [
+      "mojibake"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_012",
+    "source": "equations",
+    "meta": "[page 6, bbox (85.58, 649.26, 212.73, 667.71)]",
+    "original": "+(|Snl�Tnl| + ��S pl�T pl ��)2/(4Rl)",
+    "normalized": "+(|Snl�Tnl| + ��S pl�T pl ��)2/(4Rl)",
+    "confidence": 0.62,
+    "needs_review": true,
+    "issues": [
+      "mojibake"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_013",
+    "source": "equations",
+    "meta": "[page 6, bbox (306.99, 626.15, 557.7, 639.29)]",
+    "original": "T ∗= 0.7Te + 0.58(T w −Te) + 0.23(Tr −Te)(5 < Mae < 10) (9)",
+    "normalized": "T ∗= 0.7Te + 0.58(T w -Te) + 0.23(Tr -Te)(5 < Mae < 10) (9)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": [
+      "unicode_math_symbol_normalized"
+    ]
+  },
+  {
+    "id": "equation_015",
+    "source": "equations",
+    "meta": "[page 7, bbox (308.63, 400.03, 381.4, 409.7)]",
+    "original": "Min Weight(x) =",
+    "normalized": "Min Weight(x) =",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_016",
+    "source": "equations",
+    "meta": "[page 7, bbox (38.0, 589.14, 288.71, 600.21)]",
+    "original": "T w < T T P S < T w + Ttol (10)",
+    "normalized": "T w < T T P S < T w + Ttol (10)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_017",
+    "source": "equations",
+    "meta": "[page 7, bbox (384.3, 399.6, 412.38, 420.73)]",
+    "original": "i=0 ρixi",
+    "normalized": "i=0 ρixi",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_019",
+    "source": "equations",
+    "meta": "[page 7, bbox (332.77, 420.68, 451.41, 431.05)]",
+    "original": "s.t.Ti(x) < Ti max, i = 1, 2,...,n",
+    "normalized": "s.t.Ti(x) < Ti max, i = 1, 2,...,n",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_021",
+    "source": "equations",
+    "meta": "[page 9, bbox (110.69, 208.35, 215.2, 242.12)]",
+    "original": "A1-A2 T (0, y)-T (a, y)=0 A3-A4 T (x, 0)-T (x, b)=0 A5 q = -hl (Tbottom-300) A6 q = qaero - qrad",
+    "normalized": "A1-A2 T (0, y)-T (a, y)=0 A3-A4 T (x, 0)-T (x, b)=0 A5 q = -hl (Tbottom-300) A6 q = qaero - qrad",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_022",
+    "source": "equations",
+    "meta": "[page 9, bbox (39.64, 621.16, 143.45, 631.44)]",
+    "original": "Max T EC = P/qaero/(ab)",
+    "normalized": "Max T EC = P/qaero/(ab)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_023",
+    "source": "equations",
+    "meta": "[page 9, bbox (39.78, 630.54, 288.71, 649.52)]",
+    "original": "s.t. 300K < Tbottom < 440K (12)",
+    "normalized": "s.t. 300K < Tbottom < 440K (12)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_024",
+    "source": "equations",
+    "meta": "[page 9, bbox (39.64, 652.88, 107.76, 664.09)]",
+    "original": "Max P D = P/ρe",
+    "normalized": "Max P D = P/ρe",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_025",
+    "source": "equations",
+    "meta": "[page 9, bbox (39.78, 662.69, 288.71, 681.66)]",
+    "original": "s.t. 300K < Tbottom < 440K (13)",
+    "normalized": "s.t. 300K < Tbottom < 440K (13)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_026",
+    "source": "equations",
+    "meta": "[page 9, bbox (39.64, 685.44, 132.85, 696.22)]",
+    "original": "Max Hreuse = qin/qaero",
+    "normalized": "Max Hreuse = qin/qaero",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_027",
+    "source": "equations",
+    "meta": "[page 9, bbox (39.78, 694.82, 288.71, 713.79)]",
+    "original": "s.t. 300K < Tbottom < 440K (14)",
+    "normalized": "s.t. 300K < Tbottom < 440K (14)",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_028",
+    "source": "equations",
+    "meta": "[page 9, bbox (315.72, 514.26, 557.7, 531.02)]",
+    "original": "∂t + div(ρVφ) = div(�gradφ) + Q s (15)",
+    "normalized": "∂t + div(ρVφ) = div(�gradφ) + Q s (15)",
+    "confidence": 0.62,
+    "needs_review": true,
+    "issues": [
+      "mojibake"
+    ],
+    "drop": false,
+    "repairs": []
+  },
+  {
+    "id": "equation_029",
+    "source": "equations",
+    "meta": "[page 13, bbox (145.28, 82.48, 497.97, 89.68)]",
+    "original": "heq= 0 0.1 1 2 5 10-20",
+    "normalized": "heq= 00.112510-20",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": [
+      "overspaced_digits_repaired"
+    ]
+  },
+  {
+    "id": "equation_030",
+    "source": "equations",
+    "meta": "[page 13, bbox (145.66, 94.04, 494.29, 109.07)]",
+    "original": "Tb=300 367 440 300 367 440 300 367 440 300 367 440 300 367- 300- 440 440",
+    "normalized": "Tb=300367440300367440300367440300367440300367-300-440440",
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired"
+    ]
+  },
+  {
+    "id": "equation_031",
+    "source": "equations",
+    "meta": "[page 14, bbox (153.09, 61.53, 406.95, 77.78)]",
+    "original": "Table 8 The heat capacity of RC network for each subregion (cp · m f for △Tc = 1 K, W·K−1).",
+    "normalized": "Table 8 The heat capacity of RC network for each subregion (cp · m f for △Tc = 1 K, W·K-1)",
+    "confidence": 0.57,
+    "needs_review": true,
+    "issues": [
+      "text_heavy"
+    ],
+    "drop": false,
+    "repairs": [
+      "unicode_math_symbol_normalized",
+      "unit_expression_repaired"
+    ]
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 , L _ { F }",
+    "normalized": "1 , L _ {F}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_001"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "0 . 5 ~ \\mathrm { m } ^ { 2 } ; ~ F _ { I - L } , ~ F _ { I I - L }",
+    "normalized": "0.5 ~ \\mathrm{m} ^ {2} ; ~ F _ {I - L} , ~ F _ {I I - L}",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_002"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I I - L }",
+    "normalized": "F _ {I I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_003"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 2 . 9 \\ \\mathrm { { \\ m } } ^ { 2 }",
+    "normalized": "22.9 \\ \\mathrm {{\\ m}} ^ {2}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_004"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I - S } , \\ F _ { I I - S }",
+    "normalized": "F _ {I - S} , \\ F _ {I I - S}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_005"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I I - S }",
+    "normalized": "F _ {I I I - S}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_006"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 4 . 8 ~ \\mathrm { m } ^ { 2 }",
+    "normalized": "14.8 ~ \\mathrm{m} ^ {2}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_007"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I - W }",
+    "normalized": "F _ {I - W}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_008"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "3 . 6 ~ \\mathrm { m } ^ { 2 } ; ~ C _ { I } , ~ C _ { I I }",
+    "normalized": "3.6 ~ \\mathrm{m} ^ {2} ; ~ C _ {I} , ~ C _ {I I}",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_009"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "C _ { I I I }",
+    "normalized": "C _ {I I I}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_010"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "3 . 1 ~ \\mathrm { m } ^ { 2 }",
+    "normalized": "3.1 ~ \\mathrm{m} ^ {2}",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_011"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { I - S } , \\ P _ { I I - S }",
+    "normalized": "P _ {I - S} , \\ P _ {I I - S}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_012"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { I I I - S }",
+    "normalized": "P _ {I I I - S}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_013"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "6 . 3 ~ \\mathrm { m } ^ { 2 }",
+    "normalized": "6.3 ~ \\mathrm{m} ^ {2}",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_014"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { I - W } , \\ P _ { I I - W }",
+    "normalized": "P _ {I - W} , \\ P _ {I I - W}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_015"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { I I I - W }",
+    "normalized": "P _ {I I I - W}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_016"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 . 6 \\ \\mathrm { m } ^ { 2 }",
+    "normalized": "2.6 \\ \\mathrm{m} ^ {2}",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_017"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "W _ { L }",
+    "normalized": "W _ {L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_018"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "W _ { W }",
+    "normalized": "W _ {W}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_019"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 0 . 3 ~ \\mathrm { m } ^ { 2 }",
+    "normalized": "20.3 ~ \\mathrm{m} ^ {2}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_020"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "V _ { F }",
+    "normalized": "V _ {F}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_021"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 1 . 2 \\ \\mathrm { m } ^ { 2 } .",
+    "normalized": "11.2 \\ \\mathrm{m} ^ {2}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_022"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 4 5 . 9 \\mathrm { ~ m } ^ { 2 }",
+    "normalized": "145.9 \\mathrm{~m} ^ {2}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_023"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_024"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { F i g . }",
+    "normalized": "\\mathrm{Fig.}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_025"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 } ,",
+    "normalized": "\\mathrm{LH} _ {2} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_026"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\left( q _ { a e r o } \\right)",
+    "normalized": "\\left( q _ {a e r o} \\right)",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_027"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\alpha ( T _ { r } - T _ { w } ) = \\varepsilon \\sigma T _ { w } ^ { 4 } + q _ { i n }\\tag{1}\n",
+    "normalized": "\\alpha ( T _ {r} - T _ {w} ) = \\varepsilon \\sigma T _ {w} ^ {4} + q _ {i n}\\tag{1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_028"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { r }",
+    "normalized": "T _ {r}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_029"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { w }",
+    "normalized": "T _ {w}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_030"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\sigma ~ = ~ 5 . 6 7 ~ \\times ~ 1 0 ^ { - 8 } ~ { \\sf W } / ( { \\mathrm m } ^ { 2 } { \\cdot } { \\bar { \\mathrm { K } } } ^ { 4 } )",
+    "normalized": "\\sigma ~ = ~ 5.67 ~ \\times ~ 10 ^ {- 8} ~ {\\sf W} / ( {\\mathrm m} ^ {2} {\\cdot} {\\bar {\\mathrm{K}}} ^ {4} )",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_031"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_032"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { K } ;",
+    "normalized": "\\mathrm{K} ;",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_033"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( \\mathsf { C } / \\mathsf { C } , \\mathsf { C } / \\mathsf { S i C } . \\hdots )",
+    "normalized": "( \\mathsf{C} / \\mathsf{C} , \\mathsf{C} / \\mathsf{SiC} . \\hdots )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_034"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_035"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_036"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\nq _ { i n } = h _ { e q ^ { \\prime } } ( T _ { w } - T _ { c } ) = h _ { l } ( T _ { b } - T _ { c } )\\tag{2}\n",
+    "normalized": "q _ {i n} = h _ {e q ^ {\\prime}} ( T _ {w} - T _ {c} ) = h _ {l} ( T _ {b} - T _ {c} )\\tag{2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_037"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q ^ { \\prime } }",
+    "normalized": "h _ {e q ^ {\\prime}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_038"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { c }",
+    "normalized": "T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_039"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { l }",
+    "normalized": "h _ {l}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_040"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_041"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_042"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_043"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { c }",
+    "normalized": "T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_044"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_045"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { c }",
+    "normalized": "T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_046"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_047"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { c }",
+    "normalized": "T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_048"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { c }",
+    "normalized": "T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_049"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\nq _ { i n } = h _ { e q } T _ { w }\\tag{3}\n",
+    "normalized": "q _ {i n} = h _ {e q} T _ {w}\\tag{3}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_050"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_051"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_052"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { w }",
+    "normalized": "T _ {w}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_053"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { c }",
+    "normalized": "T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_054"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_055"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n } ,",
+    "normalized": "q _ {i n} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_056"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_057"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\nh _ { e q } T _ { w } A = m _ { f } c _ { p } \\Delta T _ { c }\\tag{4}\n",
+    "normalized": "h _ {e q} T _ {w} A = m _ {f} c _ {p} \\Delta T _ {c}\\tag{4}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_058"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_059"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "c _ { p }",
+    "normalized": "c _ {p}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_060"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c }",
+    "normalized": "\\triangle T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_061"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } \\cdot c _ { p }",
+    "normalized": "m _ {f} \\cdot c _ {p}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_062"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( \\mathrm { L H } _ { 2 } ) ,",
+    "normalized": "( \\mathrm{LH} _ {2} ) ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_063"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\operatorname { I f } q _ { i n }",
+    "normalized": "\\operatorname{If} q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_064"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "r \\ : = \\ : R",
+    "normalized": "r \\ : = \\ : R",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_066"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_067"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\nh _ { e q } T _ { w } A = U ^ { 2 } R / ( 2 R ) ^ { 2 }\\tag{5}\n",
+    "normalized": "h _ {e q} T _ {w} A = U ^ {2} R / ( 2 R ) ^ {2}\\tag{5}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_068"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\nU = | S _ { n } \\Delta T _ { n } | + \\left| S _ { p } \\Delta T _ { p } \\right|\\tag{6}\n",
+    "normalized": "U = | S _ {n} \\Delta T _ {n} | + \\left| S _ {p} \\Delta T _ {p} \\right|\\tag{6}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_069"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "S _ { n }",
+    "normalized": "S _ {n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_070"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "S _ { p }",
+    "normalized": "S _ {p}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_071"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\Delta T _ { n }",
+    "normalized": "\\Delta T _ {n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_072"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\Delta T _ { p }",
+    "normalized": "\\Delta T _ {p}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_073"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_074"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\nh _ { e q } T _ { w } A = m _ { f } c _ { p } \\Delta T _ { C } + ( | S _ { n } \\Delta T _ { n } | + \\left| S _ { p } \\Delta T _ { p } \\right| ) ^ { 2 } / ( 4 \\mathrm { R } )\\tag{7}\n",
+    "normalized": "h _ {e q} T _ {w} A = m _ {f} c _ {p} \\Delta T _ {C} + ( | S _ {n} \\Delta T _ {n} | + \\left| S _ {p} \\Delta T _ {p} \\right| ) ^ {2} / ( 4 \\mathrm{R} )\\tag{7}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_075"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\begin{array} { r l } & { h _ { e q } T _ { w } A = m _ { f } c _ { p } \\Delta T _ { C } + ( | S _ { n m } \\Delta T _ { n m } | + \\big | S _ { p m } \\Delta T _ { p m } \\big | ) ^ { 2 } / ( 4 R _ { m } ) } \\\\ & { \\qquad + ( | S _ { n l } \\Delta T _ { n l } | + \\big | S _ { p l } \\Delta T _ { p l } \\big | ) ^ { 2 } / ( 4 R _ { l } ) } \\end{array}\\tag{8}\n",
+    "normalized": "\\begin{array} {r l} & {h _ {e q} T _ {w} A = m _ {f} c _ {p} \\Delta T _ {C} + ( | S _ {n m} \\Delta T _ {n m} | + \\big | S _ {p m} \\Delta T _ {p m} \\big | ) ^ {2} / ( 4 R _ {m} )} \\\\ & {\\qquad + ( | S _ {n l} \\Delta T _ {n l} | + \\big | S _ {p l} \\Delta T _ {p l} \\big | ) ^ {2} / ( 4 R _ {l} )} \\end{array}\\tag{8}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_076"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_078"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { a e r o }",
+    "normalized": "q _ {a e r o}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_079"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { w } ,",
+    "normalized": "T _ {w} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_080"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_081"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_082"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { w }",
+    "normalized": "T _ {w}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_083"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { w } .",
+    "normalized": "T _ {w}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_084"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_085"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T ^ { * }",
+    "normalized": "T ^ {*}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_086"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\nT ^ { * } = 0 . 7 T _ { e } + 0 . 5 8 ( T _ { w } - T _ { e } ) + 0 . 2 3 ( T _ { r } - T _ { e } ) ( 5 < M a _ { e } < 1 0 )\\tag{9}\n",
+    "normalized": "T ^ {*} = 0.7 T _ {e} + 0.58 ( T _ {w} - T _ {e} ) + 0.23 ( T _ {r} - T _ {e} ) ( 5 < M a _ {e} < 10 )\\tag{9}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_087"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { e }",
+    "normalized": "T _ {e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_088"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { r }",
+    "normalized": "T _ {r}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_090"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { e }",
+    "normalized": "T _ {e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_091"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { e } .",
+    "normalized": "T _ {e}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_092"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { a e r o }",
+    "normalized": "q _ {a e r o}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_093"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { w }",
+    "normalized": "T _ {w}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_094"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\nT _ { w } < T _ { T P S } < T _ { w } + T _ { t o l }\\tag{10}\n",
+    "normalized": "T _ {w} < T _ {T P S} < T _ {w} + T _ {t o l}\\tag{10}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_095"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { T P S }",
+    "normalized": "T _ {T P S}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_096"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { t o l }",
+    "normalized": "T _ {t o l}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_097"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { w }",
+    "normalized": "T _ {w}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_098"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { a e r o }",
+    "normalized": "q _ {a e r o}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_099"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_100"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ,",
+    "normalized": "T _ {b} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_101"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\begin{array} { r l } { \\mathrm { M i n } } & { \\mathrm { W e i g h t } ( x ) = \\displaystyle \\sum _ { i = 0 } ^ { n } \\rho _ { i } x _ { i } } \\\\ & { s . t . T _ { i } ( x ) < T _ { i \\operatorname* { m a x } } , i = 1 , 2 , . . . , n } \\\\ & { T _ { n } ( x ) < T _ { b } } \\end{array}\\tag{11}\n",
+    "normalized": "\\begin{array} {r l} {\\mathrm{Min}} & {\\mathrm{Weight} ( x ) = \\displaystyle \\sum _ {i = 0} ^ {n} \\rho _ {i} x _ {i}} \\\\ & {s . t . T _ {i} ( x ) < T _ {i \\operatorname* {m a x}} , i = 1 , 2 , . . . , n} \\\\ & {T _ {n} ( x ) < T _ {b}} \\end{array}\\tag{11}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_102"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { i } ( x )",
+    "normalized": "T _ {i} ( x )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_103"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { n } ( x )",
+    "normalized": "T _ {n} ( x )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_104"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { i \\mathrm { m a x } }",
+    "normalized": "T _ {i \\mathrm{max}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_105"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_107"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c }",
+    "normalized": "\\triangle T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_108"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "4 ( \\mathsf { a } )",
+    "normalized": "4 ( \\mathsf{a} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_109"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 0 }",
+    "normalized": "t _ {0}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_110"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 }",
+    "normalized": "t _ {1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_111"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 0 }",
+    "normalized": "t _ {0}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_112"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 0 } = 3",
+    "normalized": "t _ {0} = 3",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_113"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I - L }",
+    "normalized": "F _ {I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_114"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I I - L }",
+    "normalized": "F _ {I I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_115"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 2 ~ \\mathrm { W / ( m } ^ { 2 } { \\cdot } \\mathrm { K } )",
+    "normalized": "h _ {e q} = 2 ~ \\mathrm{W/(m} ^ {2} {\\cdot} \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_116"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 }",
+    "normalized": "t _ {1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_117"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I - L }",
+    "normalized": "F _ {I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_118"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I I - L }",
+    "normalized": "F _ {I I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_119"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 } = 2 \\ \\mathrm { m m }",
+    "normalized": "t _ {1} = 2 \\ \\mathrm{mm}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_120"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "x = 6",
+    "normalized": "x = 6",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_121"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 . 5 \\times 1 0 ^ { 6 }",
+    "normalized": "2.5 \\times 10 ^ {6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_122"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 0 \\times 1 0 ^ { 6 }",
+    "normalized": "10 \\times 10 ^ {6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_123"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_124"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_125"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "p -",
+    "normalized": "p -",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_126"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathsf { B i } _ { 2 } \\mathsf { T e } _ { 3 }",
+    "normalized": "\\mathsf{Bi} _ {2} \\mathsf{Te} _ {3}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_127"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\beta { \\mathrm { - } } Z { { \\mathrm { b } } } _ { 4 } { { \\mathrm { S b } } } _ { 3 }",
+    "normalized": "\\beta - Z {{\\mathrm{b}}} _ {4} {{\\mathrm{Sb}}} _ {3}",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_128"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( \\mathrm { P b } _ { 0 . 9 5 } \\mathrm { S n } _ { 0 . 0 5 } \\mathrm { T e } ) _ { 0 . 9 2 } ( \\mathrm { P b } \\mathrm { S } ) _ { 0 . 0 8 }",
+    "normalized": "( \\mathrm{Pb} _ {0.95} \\mathrm{Sn} _ {0.05} \\mathrm{Te} ) _ {0.92} ( \\mathrm{Pb} \\mathrm{S} ) _ {0.08}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_129"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 1 }",
+    "normalized": "A _ {1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_130"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 2 } , A _ { 3 }",
+    "normalized": "A _ {2} , A _ {3}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_131"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 4 } , ~ A _ { 5 }",
+    "normalized": "A _ {4} , ~ A _ {5}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_132"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 6 }",
+    "normalized": "A _ {6}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_133"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 1 }",
+    "normalized": "A _ {1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_134"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 2 } , \\ A _ { 3 }",
+    "normalized": "A _ {2} , \\ A _ {3}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_135"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 4 }",
+    "normalized": "A _ {4}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_136"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 5 }",
+    "normalized": "A _ {5}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_137"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "A _ { 6 } ,",
+    "normalized": "A _ {6} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_138"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 } ,",
+    "normalized": "t _ {1} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_139"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 2 } ,",
+    "normalized": "t _ {2} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_140"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { l }",
+    "normalized": "h _ {l}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_141"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\begin{array} { r l } { \\mathsf { M a x } } & { { } T E C = P / q _ { a e r o } / ( a b ) } \\end{array}\n",
+    "normalized": "\\begin{array} {r l} {\\mathsf{Max}} & {{} T E C = P / q _ {a e r o} / ( a b )} \\end{array}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_142"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\ns . t . \\quad 3 0 0 \\mathsf { K } < T _ { b o t t o m } < 4 4 0 \\mathsf { K }\\tag{12}\n",
+    "normalized": "s . t . \\quad 300 \\mathsf{K} < T _ {b o t t o m} < 440 \\mathsf{K}\\tag{12}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_143"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\mathrm { M a x } \\quad P _ { D } = P / \\rho _ { e }\n",
+    "normalized": "\\mathrm{Max} \\quad P _ {D} = P / \\rho _ {e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_144"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\ns . t . \\quad 3 0 0 \\mathsf { K } < T _ { b o t t o m } < 4 4 0 \\mathsf { K }\\tag{13}\n",
+    "normalized": "s . t . \\quad 300 \\mathsf{K} < T _ {b o t t o m} < 440 \\mathsf{K}\\tag{13}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_145"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\begin{array} { r l } { \\mathsf { M a x } } & { { } H _ { r e u s e } = q _ { i n } / q _ { a e r o } } \\end{array}\n",
+    "normalized": "\\begin{array} {r l} {\\mathsf{Max}} & {{} H _ {r e u s e} = q _ {i n} / q _ {a e r o}} \\end{array}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_146"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\ns . t . \\quad 3 0 0 \\mathsf { K } < T _ { b o t t o m } < 4 4 0 \\mathsf { K }\\tag{14}\n",
+    "normalized": "s . t . \\quad 300 \\mathsf{K} < T _ {b o t t o m} < 440 \\mathsf{K}\\tag{14}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_147"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D }",
+    "normalized": "P _ {D}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_148"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\rho _ { e }",
+    "normalized": "\\rho _ {e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_149"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e u s e }",
+    "normalized": "H _ {r e u s e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_150"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e u s e }",
+    "normalized": "H _ {r e u s e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_151"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D }",
+    "normalized": "P _ {D}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_152"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 \\leq t _ { 1 } \\leq 1 0",
+    "normalized": "1 \\leq t _ {1} \\leq 10",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_153"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 \\leq \\ t _ { 2 } \\ \\leq 1 0",
+    "normalized": "1 \\leq \\ t _ {2} \\ \\leq 10",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_154"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 0 \\leq h _ { l } \\leq 2 5 0 0 0 \\mathrm { W / ( m } ^ { 2 } { \\cdot } \\mathrm { K } )",
+    "normalized": "10 \\leq h _ {l} \\leq 25000 \\mathrm{W/(m} ^ {2} {\\cdot} \\mathrm{K} )",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_156"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\n\\frac { \\partial ( \\rho \\phi ) } { \\partial t } + \\mathrm { d i v } ( \\rho \\mathbf { \\boldsymbol { v } } \\phi ) = d i \\nu ( \\Gamma \\mathbf { \\boldsymbol { g } r a d } \\phi ) + Q _ { s }\\tag{15}\n",
+    "normalized": "\\frac {\\partial ( \\rho \\phi )} {\\partial t} + \\mathrm{div} ( \\rho \\mathbf {\\boldsymbol {v}} \\phi ) = d i \\nu ( \\Gamma \\mathbf {\\boldsymbol {g} r a d} \\phi ) + Q _ {s}\\tag{15}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_157"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\rho",
+    "normalized": "\\rho",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_158"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "Q _ { s }",
+    "normalized": "Q _ {s}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_159"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "V _ { i }",
+    "normalized": "V _ {i}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_160"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mu",
+    "normalized": "\\mu",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_161"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\psi",
+    "normalized": "\\psi",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_162"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_163"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } \\ = \\ 0 , \\ 0 . 1 , \\ 1 , \\ 2 , \\ 5 , \\ 1 0 ,",
+    "normalized": "h _ {e q} \\ = \\ 0 , \\ 0.1 , \\ 1 , \\ 2 , \\ 5 , \\ 10 ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_164"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_165"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ,",
+    "normalized": "h _ {e q} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_166"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ,",
+    "normalized": "h _ {e q} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_167"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "4 \\times 1 0 ^ { 5 } ~ \\mathrm { k J } / \\mathrm { m } ^ { 2 }",
+    "normalized": "4 \\times 10 ^ {5} ~ \\mathrm{kJ} / \\mathrm{m} ^ {2}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_168"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = \\ 0",
+    "normalized": "h _ {e q} = \\ 0",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_169"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( { \\sf m } ^ { 2 } \\cdot { \\sf K } ) .",
+    "normalized": "{\\sf W} / ( {\\sf m} ^ {2} \\cdot {\\sf K} )",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_170"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 , 0 . 1 , 1 , 2 , 5 , 1 0 ,",
+    "normalized": "h _ {e q} = 0 , 0.1 , 1 , 2 , 5 , 10 ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_171"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( { \\sf m } ^ { 2 } \\cdot { \\sf K } ) ,",
+    "normalized": "{\\sf W} / ( {\\sf m} ^ {2} \\cdot {\\sf K} ) ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_172"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\left( x = 4 . 5 ~ \\mathrm { t o } \\right.",
+    "normalized": "\\left( x = 4.5 ~ \\mathrm{to} \\right",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_173"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } \\ = \\ 0 , \\ 0 . 1 , \\ 1 , \\ 2 , \\ 5 , \\ 1 0 ,",
+    "normalized": "h _ {e q} \\ = \\ 0 , \\ 0.1 , \\ 1 , \\ 2 , \\ 5 , \\ 10 ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_174"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_175"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n }",
+    "normalized": "q _ {i n}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_176"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_177"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 0 ~ \\mathsf { W } / ( \\mathsf { m } ^ { 2 } { \\cdot } \\mathsf { K } ) .",
+    "normalized": "20 ~ \\mathsf{W} / ( \\mathsf{m} ^ {2} {\\cdot} \\mathsf{K} )",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_178"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "x = 5",
+    "normalized": "x = 5",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_179"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "x = 2",
+    "normalized": "x = 2",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_180"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ,",
+    "normalized": "h _ {e q} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_181"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_182"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_183"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ) .",
+    "normalized": "h _ {e q} )",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_184"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "x = 5",
+    "normalized": "x = 5",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_185"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ,",
+    "normalized": "h _ {e q} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_186"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 . 1 ,",
+    "normalized": "h _ {e q} = 0.1 ,",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_187"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( { \\sf m } ^ { 2 } \\cdot { \\sf K } ) ,",
+    "normalized": "{\\sf W} / ( {\\sf m} ^ {2} \\cdot {\\sf K} ) ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_188"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ,",
+    "normalized": "h _ {e q} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_189"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\left( q _ { a e r o } \\right)",
+    "normalized": "\\left( q _ {a e r o} \\right)",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_190"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 ,",
+    "normalized": "h _ {e q} = 0 ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_191"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathsf { k W } / \\mathsf { m } ^ { 2 }",
+    "normalized": "\\mathsf{kW} / \\mathsf{m} ^ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_192"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 3 ^ { \\circ }",
+    "normalized": "23 ^{\\circ}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_193"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathsf { k W } / \\mathsf { m } ^ { 2 }",
+    "normalized": "\\mathsf{kW} / \\mathsf{m} ^ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_194"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I - L }",
+    "normalized": "F _ {I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_195"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { k W } / { \\mathrm { m } } ^ { 2 }",
+    "normalized": "\\mathrm{kW} / {\\mathrm{m}} ^ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_196"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_197"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "W / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } ) ,",
+    "normalized": "W / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} ) ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_198"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } .",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_199"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_200"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 , 0 . 1 , 1 , 2 , 5 , 1 0",
+    "normalized": "h _ {e q} = 0 , 0.1 , 1 , 2 , 5 , 10",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_201"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "W / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } ) .",
+    "normalized": "W / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_202"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { ~ l ~ } \\left( F _ { I - L } \\right)",
+    "normalized": "\\mathrm{~l~} \\left( F _ {I - L} \\right)",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_203"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\textbf { l } \\left( F _ { I - W } \\right)",
+    "normalized": "\\textbf {l} \\left( F _ {I - W} \\right)",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_204"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\left( C _ { I I I } \\right)",
+    "normalized": "\\left( C _ {I I I} \\right)",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_205"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_206"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_207"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ~ = ~ 3 0 0",
+    "normalized": "T _ {b} ~ = ~ 300",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_208"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 , 0 . 1 , 1 , 2 , 5 , 1 0 , 1 5",
+    "normalized": "h _ {e q} = 0 , 0.1 , 1 , 2 , 5 , 10 , 15",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_209"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_210"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_211"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ,",
+    "normalized": "h _ {e q} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_212"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_213"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_214"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_215"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_216"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( c _ { p } \\cdot m _ { f }",
+    "normalized": "( c _ {p} \\cdot m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_217"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c } = 1",
+    "normalized": "\\triangle T _ {c} = 1",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_218"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } .",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_219"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "L _ { F }",
+    "normalized": "L _ {F}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_220"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I - W }",
+    "normalized": "F _ {I - W}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_221"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_222"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "c _ { p }",
+    "normalized": "c _ {p}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_223"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_224"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_225"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 . 1 , 1 , 2 , 5 , 1 0 ,",
+    "normalized": "h _ {e q} = 0.1 , 1 , 2 , 5 , 10 ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_226"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_227"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_228"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_229"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_230"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_231"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 . 1 , 1 , 2 , 5 , 1 0 ,",
+    "normalized": "h _ {e q} = 0.1 , 1 , 2 , 5 , 10 ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_232"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_233"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_234"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 . 1 , 1 , 2 , 5 , 1 0 ,",
+    "normalized": "h _ {e q} = 0.1 , 1 , 2 , 5 , 10 ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_235"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_236"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_237"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_238"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_239"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_240"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } .",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_241"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ~ = ~ 3 0 0 , ~ 3 6 7",
+    "normalized": "T _ {b} ~ = ~ 300 , ~ 367",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_242"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_243"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ~ = ~ 3 0 0 , ~ 3 6 7",
+    "normalized": "T _ {b} ~ = ~ 300 , ~ 367",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_244"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_246"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_247"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } = 3 0 0",
+    "normalized": "T _ {b} = 300",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_248"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_249"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ,",
+    "normalized": "h _ {e q} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_250"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_251"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ;",
+    "normalized": "T _ {b} ;",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_252"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_253"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ,",
+    "normalized": "h _ {e q} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_254"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_255"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 . 5 \\times 1 0 ^ { 6 } , 4 \\times 1 0 ^ { 6 }",
+    "normalized": "2.5 \\times 10 ^ {6} , 4 \\times 10 ^ {6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_256"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 0 \\times 1 0 ^ { 6 }",
+    "normalized": "10 \\times 10 ^ {6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_257"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 . 5 \\times 1 0 ^ { 6 } , 6 \\times 1 0 ^ { 6 }",
+    "normalized": "2.5 \\times 10 ^ {6} , 6 \\times 10 ^ {6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_258"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 8 \\times 1 0 ^ { 6 }",
+    "normalized": "18 \\times 10 ^ {6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_259"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 0 \\times 1 0 ^ { 6 } , 6 \\times 1 0 ^ { 6 }",
+    "normalized": "10 \\times 10 ^ {6} , 6 \\times 10 ^ {6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_260"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 . 5 ~ \\times ~ 1 0 ^ { 6 }",
+    "normalized": "2.5 ~ \\times ~ 10 ^ {6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_261"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I - L }",
+    "normalized": "F _ {I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_262"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I I - L }",
+    "normalized": "F _ {I I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_263"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I - L }",
+    "normalized": "F _ {I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_264"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I I - L }",
+    "normalized": "F _ {I I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_265"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "4 , \\mathrm { i . e . , } T _ { b } = 3 6 7 , 4 4 0 \\ \\mathrm { l }",
+    "normalized": "4 , \\mathrm{i.e.,} T _ {b} = 367 , 440 \\ \\mathrm{l}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_266"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0",
+    "normalized": "h _ {e q} = 0",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_267"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } = 3 0 0 , 3 6 7 ,",
+    "normalized": "T _ {b} = 300 , 367 ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_268"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 . 1 , 1 , 2 , 5 , 1 0 , 1 5",
+    "normalized": "h _ {e q} = 0.1 , 1 , 2 , 5 , 10 , 15",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_269"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 0 ~ \\mathsf { W } / ( \\mathsf { m } ^ { 2 } { \\cdot } \\mathsf { K } )",
+    "normalized": "20 ~ \\mathsf{W} / ( \\mathsf{m} ^ {2} {\\cdot} \\mathsf{K} )",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_270"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_271"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathsf { k W } / \\mathsf { m } ^ { 2 }",
+    "normalized": "\\mathsf{kW} / \\mathsf{m} ^ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_272"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } \\ = \\ 5 \\ \\mathsf { W } / ( \\mathsf { m } ^ { 2 } { \\cdot } \\mathsf { K } ) .",
+    "normalized": "h _ {e q} \\ = \\ 5 \\ \\mathsf{W} / ( \\mathsf{m} ^ {2} {\\cdot} \\mathsf{K} )",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_273"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_274"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 } ( \\mathrm { F i g s . } 1 3 ( { \\bf a } ) ,",
+    "normalized": "\\mathrm{LH} _ {2} ( \\mathrm{Figs.} 13 ( {\\bf a} ) ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_275"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } .",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_276"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_277"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( \\mathsf { c } ) )",
+    "normalized": "( \\mathsf{c} ) )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_278"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_279"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } .",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_280"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_281"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_282"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_283"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_284"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } ,",
+    "normalized": "m _ {f} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_285"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_286"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } ) ;",
+    "normalized": "m _ {f} ) ;",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_287"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_288"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 } ,",
+    "normalized": "\\mathrm{LH} _ {2} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_289"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_290"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_291"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "y = 0 . 0 0 1",
+    "normalized": "y = 0.001",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_292"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_293"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_295"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_296"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_297"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( T _ { 3 \\mathrm { m m } } > T _ { 2 \\mathrm { m m } }",
+    "normalized": "( T _ {3 \\mathrm{mm}} > T _ {2 \\mathrm{mm}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_299"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "y > 0 . 0 0 1",
+    "normalized": "y > 0.001",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_300"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "> T _ { 2 \\mathrm { m m } } > T",
+    "normalized": "> T _ {2 \\mathrm{mm}} > T",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_301"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "y > 0 . 0 0 2",
+    "normalized": "y > 0.002",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_302"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( T _ { 3 \\mathrm { m m } }",
+    "normalized": "( T _ {3 \\mathrm{mm}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_303"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { 2 \\mathrm { m m } }",
+    "normalized": "T _ {2 \\mathrm{mm}}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_305"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_307"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } \\cdot \\triangle T _ { c } )",
+    "normalized": "m _ {f} \\cdot \\triangle T _ {c} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_308"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 } ,",
+    "normalized": "\\mathrm{LH} _ {2} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_309"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 . 2 < x < 1 1 . 7 2",
+    "normalized": "2.2 < x < 11.72",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_310"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } = 0 . 5",
+    "normalized": "m _ {f} = 0.5",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_311"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 0 . 9 < x < 1 1 . 7 2",
+    "normalized": "10.9 < x < 11.72",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_312"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } = 2 . 5",
+    "normalized": "m _ {f} = 2.5",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_313"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { s - f }",
+    "normalized": "q _ {s - f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_314"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } \\colon",
+    "normalized": "m _ {f} \\colon",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_315"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\scriptstyle ( x \\ = \\ 0 \\ { \\mathrm { ~ t o ~ } } x \\ =",
+    "normalized": "\\scriptstyle ( x \\ = \\ 0 \\ {\\mathrm{~to~}} x \\ =",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_316"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_317"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_318"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\dot { m } _ { f } = 2 . 2 7 \\ ( q _ { s - f }",
+    "normalized": "\\dot {m} _ {f} = 2.27 \\ ( q _ {s - f}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_319"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( q _ { s - f }",
+    "normalized": "( q _ {s - f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_320"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "x \\ = \\ 1 1",
+    "normalized": "x \\ = \\ 11",
+    "repairs": [
+      "overspaced_digits_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_321"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( m _ { f } = 2 . 2 7",
+    "normalized": "( m _ {f} = 2.27",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_322"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I - L }",
+    "normalized": "F _ {I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_323"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I I - L }",
+    "normalized": "F _ {I I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_324"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c } ~ - m _ { f }",
+    "normalized": "\\triangle T _ {c} ~ - m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_325"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c }",
+    "normalized": "\\triangle T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_326"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_327"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I - L }",
+    "normalized": "F _ {I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_328"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I I - L }",
+    "normalized": "F _ {I I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_329"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 . 1 , \\ 1 , \\ 2 , \\ 5 , \\ 1 0",
+    "normalized": "h _ {e q} = 0.1 , \\ 1 , \\ 2 , \\ 5 , \\ 10",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_330"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_331"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_332"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 2 . 2 \\mathrm { ~ k W } / \\mathrm { m } ^ { 2 } )",
+    "normalized": "22.2 \\mathrm{~kW} / \\mathrm{m} ^ {2} )",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_333"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f } ,",
+    "normalized": "m _ {f} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_334"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c }",
+    "normalized": "\\triangle T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_335"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c }",
+    "normalized": "\\triangle T _ {c}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_336"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c } ~ \\cdot ~ m _ { f }",
+    "normalized": "\\triangle T _ {c} ~ \\cdot ~ m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_337"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_338"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "q _ { i n } \\cdot A",
+    "normalized": "q _ {i n} \\cdot A",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_339"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_340"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_341"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_342"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_343"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_344"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c } = 4 2 5",
+    "normalized": "\\triangle T _ {c} = 425",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_345"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } = 4 4 0",
+    "normalized": "T _ {b} = 440",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_346"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } \\ = \\ 0 . 1",
+    "normalized": "h _ {e q} \\ = \\ 0.1",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_348"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 \\ \\mathsf { W } / ( \\mathsf { m } ^ { 2 } { \\cdot } \\mathsf { K } )",
+    "normalized": "2 \\ \\mathsf{W} / ( \\mathsf{m} ^ {2} {\\cdot} \\mathsf{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_349"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_350"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 5 \\mathrm { ~ W / ( m } ^ { 2 } { \\cdot } \\mathrm { K } )",
+    "normalized": "h _ {e q} = 5 \\mathrm{~W/(m} ^ {2} {\\cdot} \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_352"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 1 0 ",
+    "normalized": "h _ {e q} = 10",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_353"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 . 1 ,",
+    "normalized": "h _ {e q} = 0.1 ,",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_354"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 \\mathrm { ~ W } / ( \\mathrm { m } ^ { 2 } { \\cdot } \\mathrm { K } ) ,",
+    "normalized": "2 \\mathrm{~W} / ( \\mathrm{m} ^ {2} {\\cdot} \\mathrm{K} ) ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_355"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_356"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_357"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } = 4 4 0",
+    "normalized": "T _ {b} = 440",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_358"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } =",
+    "normalized": "h _ {e q} =",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_359"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "5 ~ { \\mathsf { W } } / ( { \\mathsf { m } } ^ { 2 } { \\cdot } { \\mathsf { K } } )",
+    "normalized": "5 ~ {\\mathsf{W}} / ( {\\mathsf{m}} ^ {2} {\\cdot} {\\mathsf{K}} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_360"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } \\ = \\ 1 0 ,",
+    "normalized": "h _ {e q} \\ = \\ 10 ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_361"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( { \\sf m } ^ { 2 } \\cdot { \\sf K } ) ,",
+    "normalized": "{\\sf W} / ( {\\sf m} ^ {2} \\cdot {\\sf K} ) ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_362"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\triangle T _ { c } ~ = ~ 1 6 0",
+    "normalized": "\\triangle T _ {c} ~ = ~ 160",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_363"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ~ = ~ 4 4 0",
+    "normalized": "T _ {b} ~ = ~ 440",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_364"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e w e } )",
+    "normalized": "H _ {r e w e} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_365"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e t r e } )",
+    "normalized": "H _ {r e t r e} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_366"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e / / s c } )",
+    "normalized": "H _ {r e / / s c} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_367"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } \\ = \\ 0 . 1 ,",
+    "normalized": "h _ {e q} \\ = \\ 0.1 ,",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_368"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 ~ { \\mathsf { W } } / ( { \\mathsf { m } } ^ { 2 } { \\cdot } { \\mathsf { K } } )",
+    "normalized": "2 ~ {\\mathsf{W}} / ( {\\mathsf{m}} ^ {2} {\\cdot} {\\mathsf{K}} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_369"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_370"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 5",
+    "normalized": "h _ {e q} = 5",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_371"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 0 ~ \\mathrm { { W / ( m ^ { 2 } { \\cdot } K ) } }",
+    "normalized": "10 ~ \\mathrm {{W / ( m ^ {2} {\\cdot} K )}}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_372"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } \\ =",
+    "normalized": "h _ {e q} \\ =",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_373"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "W / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } ) ,",
+    "normalized": "W / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} ) ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_374"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_375"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "= \\ 0 . 1 ,",
+    "normalized": "= \\ 0.1 ,",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_376"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 \\ \\mathsf { W } / ( \\mathsf { m } ^ { 2 } { \\cdot } \\mathsf { K } )",
+    "normalized": "2 \\ \\mathsf{W} / ( \\mathsf{m} ^ {2} {\\cdot} \\mathsf{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_377"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_378"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_379"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ~ = ~ 4 4 0",
+    "normalized": "T _ {b} ~ = ~ 440",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_380"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 5",
+    "normalized": "h _ {e q} = 5",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_381"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_382"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_383"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_384"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 1 5",
+    "normalized": "h _ {e q} = 15",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_385"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 0 { \\mathsf { W } } / ( { \\mathsf { m } } ^ { 2 } { \\cdot } { \\mathsf { K } } )",
+    "normalized": "20 {\\mathsf{W}} / ( {\\mathsf{m}} ^ {2} {\\cdot} {\\mathsf{K}} )",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_386"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 } ,",
+    "normalized": "t _ {1} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_387"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 2 } .",
+    "normalized": "t _ {2}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_388"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { l }",
+    "normalized": "h _ {l}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_389"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D } ,",
+    "normalized": "P _ {D} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_390"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e u s e }",
+    "normalized": "H _ {r e u s e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_391"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathsf { k W } / \\mathsf { m } ^ { 2 }",
+    "normalized": "\\mathsf{kW} / \\mathsf{m} ^ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_392"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 5",
+    "normalized": "h _ {e q} = 5",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_393"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 0 ~ \\mathrm { { W / ( m ^ { 2 } { \\cdot } K ) } }",
+    "normalized": "10 ~ \\mathrm {{W / ( m ^ {2} {\\cdot} K )}}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_394"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( { \\sf m } ^ { 2 } \\cdot { \\sf K } ) ,",
+    "normalized": "{\\sf W} / ( {\\sf m} ^ {2} \\cdot {\\sf K} ) ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_395"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { l }",
+    "normalized": "h _ {l}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_396"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { l } = 1 3 4",
+    "normalized": "h _ {l} = 134",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_397"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_398"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D } ,",
+    "normalized": "P _ {D} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_399"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e u s e } .",
+    "normalized": "H _ {r e u s e}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_400"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { l } \\ = \\ 1 3 4 \\ W / ( \\mathrm { m } ^ { 2 } { \\cdot } \\mathrm { K } ) ,",
+    "normalized": "h _ {l} \\ = \\ 134 \\ W / ( \\mathrm{m} ^ {2} {\\cdot} \\mathrm{K} ) ,",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_401"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_402"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D }",
+    "normalized": "P _ {D}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_404"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e u s e }",
+    "normalized": "H _ {r e u s e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_405"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "^ { 9 , }",
+    "normalized": "^ {9 ,}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_406"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 } = 1 0",
+    "normalized": "t _ {1} = 10",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_407"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 2 } { = } 1 0",
+    "normalized": "t _ {2} {=} 10",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_408"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 }",
+    "normalized": "t _ {1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_409"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 2 }",
+    "normalized": "t _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_410"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D }",
+    "normalized": "P _ {D}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_411"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\times ~ 1 0 ^ { - 6 } ~ \\mathrm { W \\cdot m ^ { \\bar { 3 } } / k g }",
+    "normalized": "\\times ~ 10 ^ {- 6} ~ \\mathrm {W \\cdot m ^ {\\bar {3}} / k g}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_412"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D }",
+    "normalized": "P _ {D}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_413"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 3 . 6 \\times 1 0 ^ { - 6 }",
+    "normalized": "13.6 \\times 10 ^ {- 6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_414"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 0 . 7 \\times 1 0 ^ { - 6 } \\mathrm { W } { \\cdot } \\mathrm { m } ^ { 3 } / \\mathrm { k g }",
+    "normalized": "10.7 \\times 10 ^ {- 6} \\mathrm{W} {\\cdot} \\mathrm{m} ^ {3} / \\mathrm{kg}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_415"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 } = 4 . 3 8",
+    "normalized": "t _ {1} = 4.38",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_416"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 2 } = 6 . 7 3",
+    "normalized": "t _ {2} = 6.73",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_417"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "l = 1 . 6 2",
+    "normalized": "l = 1.62",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_418"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e u s e }",
+    "normalized": "H _ {r e u s e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_419"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e u s e }",
+    "normalized": "H _ {r e u s e}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_420"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 } = 1",
+    "normalized": "t _ {1} = 1",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_421"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 2 } = 1",
+    "normalized": "t _ {2} = 1",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_422"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "l = 6",
+    "normalized": "l = 6",
+    "repairs": [],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_423"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 1 }",
+    "normalized": "t _ {1}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_424"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "t _ { 2 }",
+    "normalized": "t _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_425"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { W }",
+    "normalized": "P _ {W}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_426"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { A } ,",
+    "normalized": "P _ {A} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_427"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { A D } ,",
+    "normalized": "P _ {A D} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_428"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { W } , \\ P _ { A }",
+    "normalized": "P _ {W} , \\ P _ {A}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_429"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { A D }",
+    "normalized": "P _ {A D}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_430"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\phantom { + } 0 . 9 4 \\times 1 0 ^ { - 3 }",
+    "normalized": "\\phantom {+} 0.94 \\times 10 ^ {- 3}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_431"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D }",
+    "normalized": "P _ {D}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_432"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D } ,",
+    "normalized": "P _ {D} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_433"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { l } = 2 0 1 6",
+    "normalized": "h _ {l} = 2016",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_434"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_435"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I - L }",
+    "normalized": "F _ {I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_436"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "F _ { I I I - L }",
+    "normalized": "F _ {I I I - L}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_437"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "3 4 . 8 ~ \\mathrm { m } ^ { 2 }",
+    "normalized": "34.8 ~ \\mathrm{m} ^ {2}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_438"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D } ,",
+    "normalized": "P _ {D} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_439"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "H _ { r e u s e } ,",
+    "normalized": "H _ {r e u s e} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_440"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "P _ { D }",
+    "normalized": "P _ {D}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_441"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ;",
+    "normalized": "h _ {e q} ;",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_442"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_443"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_444"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 4 5 . 9 \\ \\mathrm { m } ^ { 2 } ;",
+    "normalized": "145.9 \\ \\mathrm{m} ^ {2} ;",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_445"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_446"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_447"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ;",
+    "normalized": "h _ {e q} ;",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_448"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ,",
+    "normalized": "T _ {b} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_449"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "( h _ { e q } = 0",
+    "normalized": "( h _ {e q} = 0",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_450"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } ) )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} ) )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_451"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\left( T _ { b } \\right. = \\left. 3 0 0 \\right.",
+    "normalized": "\\left( T _ {b} \\right. = \\left. 300 \\right",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.67,
+    "needs_review": true,
+    "issues": [
+      "unbalanced_delimiters"
+    ],
+    "drop": false,
+    "id": "body_inline_452"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } .",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired",
+      "unit_expression_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_453"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_454"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_455"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_456"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } ,",
+    "normalized": "h _ {e q} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_457"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q }",
+    "normalized": "h _ {e q}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_458"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_459"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_460"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 0 , 0 . 1 , 1 , 2 , 5 ,",
+    "normalized": "h _ {e q} = 0 , 0.1 , 1 , 2 , 5 ,",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_461"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( { \\sf m } ^ { 2 } \\cdot { \\sf K } ) ,",
+    "normalized": "{\\sf W} / ( {\\sf m} ^ {2} \\cdot {\\sf K} ) ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_462"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_463"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_464"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_465"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "\\mathrm { L H } _ { 2 }",
+    "normalized": "\\mathrm{LH} _ {2}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_466"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } \\ = \\ 0 . 1 ,",
+    "normalized": "h _ {e q} \\ = \\ 0.1 ,",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_467"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 \\ \\mathrm { W } / ( \\mathrm { m } ^ { 2 } { \\cdot } \\mathrm { K } )",
+    "normalized": "2 \\ \\mathrm{W} / ( \\mathrm{m} ^ {2} {\\cdot} \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_468"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_469"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_470"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ~ = ~ 4 4 0",
+    "normalized": "T _ {b} ~ = ~ 440",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_471"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } ~ = ~ 3 0 0",
+    "normalized": "T _ {b} ~ = ~ 300",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_472"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 5",
+    "normalized": "h _ {e q} = 5",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_473"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 0 \\ \\mathsf { W } / ( \\mathsf { m } ^ { 2 } { \\cdot } \\mathsf { K } ) , m _ { f }",
+    "normalized": "10 \\ \\mathsf{W} / ( \\mathsf{m} ^ {2} {\\cdot} \\mathsf{K} ) , m _ {f}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_474"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 1 5",
+    "normalized": "h _ {e q} = 15",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_475"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } { \\cdot } \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} {\\cdot} \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_476"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } \\ = \\ 0 . 1 ,",
+    "normalized": "h _ {e q} \\ = \\ 0.1 ,",
+    "repairs": [
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_477"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "2 \\ \\mathrm { W } / ( \\mathrm { m } ^ { 2 } { \\cdot } \\mathrm { K } )",
+    "normalized": "2 \\ \\mathrm{W} / ( \\mathrm{m} ^ {2} {\\cdot} \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_478"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "m _ { f }",
+    "normalized": "m _ {f}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_479"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b }",
+    "normalized": "T _ {b}",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_480"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "T _ { b } = 4 4 0",
+    "normalized": "T _ {b} = 440",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_481"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 5 \\ \\mathrm { W / ( m } ^ { 2 } { \\cdot } \\mathrm { K } )",
+    "normalized": "h _ {e q} = 5 \\ \\mathrm{W/(m} ^ {2} {\\cdot} \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_482"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "h _ { e q } = 1 0",
+    "normalized": "h _ {e q} = 10",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_483"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "{ \\sf W } / ( \\mathrm { m } ^ { 2 } \\cdot \\mathrm { K } )",
+    "normalized": "{\\sf W} / ( \\mathrm{m} ^ {2} \\cdot \\mathrm{K} )",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_484"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "1 4 . 2 \\times 1 0 ^ { - 6 }",
+    "normalized": "14.2 \\times 10 ^ {- 6}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_485"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "W { \\cdot } \\mathrm { m } ^ { 3 } / \\mathrm { k g } ,",
+    "normalized": "W {\\cdot} \\mathrm{m} ^ {3} / \\mathrm{kg} ,",
+    "repairs": [
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_486"
+  },
+  {
+    "source": "body_inline",
+    "meta": "",
+    "original": "0 . 9 4 \\times 1 0 ^ { - 3 }",
+    "normalized": "0.94 \\times 10 ^ {- 3}",
+    "repairs": [
+      "overspaced_digits_repaired",
+      "overspaced_numbers_or_operators_repaired",
+      "latex_spacing_repaired"
+    ],
+    "confidence": 0.92,
+    "needs_review": false,
+    "issues": [],
+    "drop": false,
+    "id": "body_inline_487"
+  }
+]

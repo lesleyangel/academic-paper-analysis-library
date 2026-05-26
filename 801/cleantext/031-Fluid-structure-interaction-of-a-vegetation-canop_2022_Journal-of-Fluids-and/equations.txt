@@ -1,0 +1,277 @@
+[confidence=0.92; source=equations; [page 3, bbox (63.46, 410.35, 505.9, 432.93)]] ∂f ∂t + e · ∇xf + F · ∇ef = Ωf (1)
+
+[confidence=0.92; source=equations; [page 3, bbox (62.27, 482.75, 91.99, 498.47)]] Ωf = 1
+
+[confidence=0.92; source=equations; [page 3, bbox (87.0, 483.74, 133.73, 504.7)]] τ ( f (eq) -f )
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (62.27, 533.91, 109.7, 549.84)]] υ = ( τ -1
+
+[confidence=0.92; source=equations; [page 3, bbox (62.27, 603.37, 106.52, 616.27)]] f (eq) α = ρwα
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (62.27, 672.27, 89.76, 689.05)]] Fα = (
+
+[confidence=0.92; source=equations; [page 4, bbox (62.27, 70.32, 93.97, 81.91)]] ρ = ∑
+
+[confidence=0.92; source=equations; [page 4, bbox (128.39, 95.77, 192.7, 117.27)]] 2 f δt = ρv∗+ 1
+
+[confidence=0.92; source=equations; [page 4, bbox (62.27, 99.11, 98.53, 110.71)]] ρv = ∑
+
+[confidence=0.92; source=equations; [page 4, bbox (62.27, 206.83, 505.9, 220.49)]] M ¨U (t) + F int (U) -F ext (t) = 0 (8)
+
+[confidence=0.92; source=equations; [page 4, bbox (142.49, 474.55, 505.9, 497.22)]] Ω φ(x)˜δ(x -X)∆x∆y∆z (11)
+
+[confidence=0.92; source=equations; [page 4, bbox (142.18, 501.2, 505.9, 523.88)]] Γ Φ(X)˜δ(x -X)ϵ∆q∆r∆s (12)
+
+[confidence=0.92; source=equations; [page 4, bbox (62.27, 598.33, 505.9, 608.51)]] v (X, t) = Π (v (x, t)) (13)
+
+[confidence=0.92; source=equations; [page 4, bbox (62.27, 642.97, 505.9, 653.16)]] V (X, t) = v (X, t) (14)
+
+[confidence=0.92; source=equations; [page 4, bbox (62.27, 674.97, 215.09, 697.79)]] Π[ρ(x, t)]V(X, t) = Π [ ρv∗(x, t)] + ∆t
+
+[confidence=0.92; source=equations; [page 5, bbox (62.27, 202.63, 147.79, 222.92)]] f (x, t) = Ψ [ f ′ (X, t) ]
+
+[confidence=0.92; source=equations; [page 5, bbox (62.27, 353.38, 505.9, 367.41)]] ˜U = ωU + (1 -ω) ˜U k-1 (17)
+
+[confidence=0.92; source=equations; [page 5, bbox (62.27, 421.87, 185.57, 442.67)]] ωk = -ωk-1 ( rk-1)T ( rk -rk-1)
+
+[confidence=0.92; source=equations; [page 5, bbox (125.32, 434.3, 505.9, 456.54)]] ⏐⏐rk -rk-1⏐⏐2 (18)
+
+[confidence=0.92; source=equations; [page 5, bbox (62.27, 473.8, 505.9, 487.75)]] rk = U k -˜U k-1 (19)
+
+[confidence=0.92; source=equations; [page 5, bbox (62.27, 645.76, 155.33, 662.45)]] u(0, y) = 1.5uy(2H -y)
+
+[confidence=0.92; source=equations; [page 6, bbox (62.27, 208.32, 96.85, 224.25)]] M = ρsb
+
+[confidence=0.92; source=equations; [page 6, bbox (84.02, 209.31, 147.21, 232.22)]] ρf h, K = EI
+
+[confidence=0.92; source=equations; [page 6, bbox (62.27, 378.0, 505.9, 389.52)]] Ki = 5 \times 10-3+(2(i-1)/9), i = 0 ∼11 (22)
+
+[confidence=0.92; source=equations; [page 6, bbox (62.27, 433.52, 505.9, 443.64)]] Φ = b/∆S (23)
+
+[confidence=0.92; source=equations; [page 6, bbox (62.27, 475.78, 505.9, 487.29)]] Φj = j \times 10-2, j = 0 ∼10 (24)
+
+[confidence=0.92; source=equations; [page 16, bbox (88.03, 601.71, 122.08, 624.93)]] u = k2 i 2π
+
+[confidence=0.92; source=equations; [page 16, bbox (62.27, 603.34, 96.76, 620.18)]] f v ni = fnih
+
+[confidence=0.92; source=equations; [page 16, bbox (133.33, 608.16, 505.9, 624.93)]] M , with cos ki cosh ki + 1 = 0 (25)
+
+[confidence=0.92; source=equations; [page 16, bbox (62.27, 669.69, 94.38, 692.9)]] f f ni = k2 i 2π
+
+[confidence=0.92; source=equations; [page 17, bbox (62.27, 326.71, 96.3, 337.62)]] fKH = Stn
+
+[confidence=0.92; source=equations; [page 17, bbox (62.27, 348.58, 101.07, 366.66)]] θ = ∫+∞
+
+[confidence=0.92; source=equations; [page 19, bbox (62.27, 620.08, 505.9, 637.28)]] FB = ( ρf -ρs ) ghb = ρf gh (b -Mh) (29)
+
+[confidence=0.57; needs_review; source=equations; [page 21, bbox (107.17, 416.91, 437.09, 425.64)]] Fig. A.1. Results of the grid independence test for different grid resolutions (NIBM = 30, 40, 50 and 60)
+
+[confidence=0.92; source=body_inline] \frac {\partial f} {\partial t} + \pmb {e} \cdot \nabla _ {\pmb {x}} f + \pmb {F} \cdot \nabla _ {\pmb {e}} f = \Omega _ {f}\tag{1}
+
+[confidence=0.92; source=body_inline] \varOmega _ {f}
+
+[confidence=0.92; source=body_inline] \varOmega _ {f} = \frac {1} {\tau} \left( f ^ {( e q )} - f \right) \tag{2}
+
+[confidence=0.92; source=body_inline] f ^ {( e q )}
+
+[confidence=0.92; source=body_inline] \upsilon _ {\star}
+
+[confidence=0.92; source=body_inline] \upsilon = \left( \tau - \frac {1} {2} \right) c _ {s} ^ {2}\tag{3}
+
+[confidence=0.92; source=body_inline] c _ {s}
+
+[confidence=0.92; source=body_inline] \alpha ,
+
+[confidence=0.92; source=body_inline] f _ {\alpha} ^ {( e q )} = \rho w _ {\alpha} \left[ 1 + \frac {{\pmb e} _ {\alpha} \cdot {\pmb v}} {c _ {s} ^ {2}} + \frac {( {\pmb e} _ {\alpha} \cdot {\pmb v} ) ^ {2}} {2 c _ {s} ^ {4}} - \frac {{\pmb v} ^ {2}} {2 c _ {s} ^ {2}} \right]\tag{4}
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.92; source=body_inline] \pmb {e} _ {\alpha}
+
+[confidence=0.92; source=body_inline] w _ {\alpha}
+
+[confidence=0.92; source=body_inline] F _ {\alpha} = \left( 1 - \frac {1} {2 \tau} \right) w _ {\alpha} \left[ \frac {{\pmb e} _ {\alpha} - {\pmb v}} {c _ {s} ^ {2}} + \frac {{\pmb e} _ {\alpha} \cdot {\pmb v}} {c _ {s} ^ {4}} {\pmb e} _ {\alpha} \right] \cdot {\pmb f}\tag{5}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {\displaystyle \rho = \sum _ {\alpha} f _ {\alpha}} \\ {\displaystyle \rho \pmb {v} = \sum _ {\alpha} \pmb {e} _ {\alpha} f _ {\alpha} + \frac {1} {2} \pmb {f} \delta t = \rho \pmb {v} ^ {\ast} + \frac {1} {2} \pmb {f} \delta t} \end{array}\tag{6}
+
+[confidence=0.92; source=body_inline] v ^ {*}
+
+[confidence=0.92; source=body_inline] {\pmb M} {\ddot {\pmb U}} \left( t \right) + {\pmb F} _ {i n t} \left( {\pmb U} \right) - {\pmb F} _ {e x t} \left( t \right) = 0\tag{8}
+
+[confidence=0.92; source=body_inline] F _ {i n t}
+
+[confidence=0.92; source=body_inline] \pmb {F} _ {e x t}
+
+[confidence=0.92; source=body_inline] \boldsymbol {F} _ {e x t} = - \sum _ {m} \int _ {V _ {m}} \boldsymbol {N} ^ {T} \mathbf {f} ^ {\prime} d V\tag{9}
+
+[confidence=0.92; source=body_inline] V _ {m}
+
+[confidence=0.92; source=body_inline] \pmb {f} ^ {\prime}
+
+[confidence=0.92; source=body_inline] - \beta
+
+[confidence=0.92; source=body_inline] \left[ {\pmb {K}} _ {T , t + \Delta t} ^ {i} + c _ {0} {\pmb {M}} \right] \Delta {\pmb {U}} ^ {i + 1} = {\pmb {F}} _ {e x t , t + \Delta t} - {\pmb {F}} _ {i n t , t + \Delta t} ^ {i} - {\pmb {M}} \left[ c _ {0} \left( {\pmb {U}} _ {t + \Delta t} ^ {i} - {\pmb {U}} _ {t} \right) - c _ {1} {\dot {\pmb {U}}} _ {t} - c _ {2} {\ddot {\pmb {U}}} _ {t} \right] .\tag{10}
+
+[confidence=0.92; source=body_inline] {\pmb K} _ {T}
+
+[confidence=0.92; source=body_inline] c _ {0} \sim c _ {2}
+
+[confidence=0.92; source=body_inline] \psi
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{\displaystyle \phi ( {\pmb X} ) = \pi [ \phi ( {\pmb x} ) ] = \sum _ {\varOmega} \phi ( {\pmb x} ) \tilde {\delta} ( {\pmb x} - {\pmb X} ) \Delta x \varDelta y \varDelta z}} \\ {{\displaystyle \phi ( {\pmb x} ) = \varPsi [ \phi ( {\pmb X} ) ] = \sum _ {\varGamma} \phi ( {\pmb X} ) \tilde {\delta} ( {\pmb x} - {\pmb X} ) \epsilon \varDelta q \varDelta r \varDelta s}} \end{array}\tag{11}
+
+[confidence=0.92; source=body_inline] \phi
+
+[confidence=0.92; source=body_inline] \pmb {x} = ( x , y , z )
+
+[confidence=0.92; source=body_inline] \pmb {X} = ( q , r , s )
+
+[confidence=0.92; source=body_inline] {\pmb v} \left( {\pmb X} , t \right) = \varPi \left( {\pmb v} \left( {\pmb x} , t \right) \right)\tag{13}
+
+[confidence=0.92; source=body_inline] \pmb {V} \left( \pmb {X} , t \right) = \pmb {v} \left( \pmb {X} , t \right)\tag{14}
+
+[confidence=0.92; source=body_inline] \pi [ \rho ( {\pmb x} , t ) ] {\pmb V} ( {\pmb X} , t ) = \pi \left[ \rho {\pmb v} ^ {\ast} ( {\pmb x} , t ) \right] + \frac {\Delta t} {2} {\pmb f} ^ {\prime} ( {\pmb X} , t )\tag{15}
+
+[confidence=0.92; source=body_inline] {\pmb f} \left( {\pmb x} , t \right) = \psi \left[ {\pmb f} ^ {\prime} \left( {\pmb X} , t \right) \right]\tag{16}
+
+[confidence=0.92; source=body_inline] \tilde {\pmb {U}} = \omega \pmb {U} + ( 1 - \omega ) \tilde {\pmb {U}} ^ {k - 1}\tag{17}
+
+[confidence=0.92; source=body_inline] \omega
+
+[confidence=0.92; source=body_inline] \tilde {\pmb {U}} ^ {k - 1}
+
+[confidence=0.92; source=body_inline] \varDelta ^ {2}
+
+[confidence=0.92; source=body_inline] {\boldsymbol {\omega}} ^ {k} = - {\boldsymbol {\omega}} ^ {k - 1} {\frac {\left( {\pmb {r}} ^ {k - 1} \right) ^ {T} \left( {\pmb {r}} ^ {k} - {\pmb {r}} ^ {k - 1} \right)} {\left| {\pmb {r}} ^ {k} - {\pmb {r}} ^ {k - 1} \right| ^ {2}}}\tag{18}
+
+[confidence=0.92; source=body_inline] r ^ {k}
+
+[confidence=0.92; source=body_inline] \pmb {r} ^ {k} = \pmb {U} ^ {k} - \tilde {\pmb {U}} ^ {k - 1}\tag{19}
+
+[confidence=0.92; source=body_inline] H = 3 h
+
+[confidence=0.92; source=body_inline] L _ {c} = 64 h
+
+[confidence=0.92; source=body_inline] L _ {t} = 104 h
+
+[confidence=0.92; source=body_inline] u ( 0 , y ) = 1.5 \overline {{u}} \frac {y ( 2 H - y )} {H ^ {2}}\tag{20}
+
+[confidence=0.92; source=body_inline] M = \frac {\rho _ {s} b} {\rho _ {f} h} , K = \frac {E I} {\rho _ {f} \overline {{u}} ^ {2} h ^ {3}}\tag{21}
+
+[confidence=0.92; source=body_inline] \rho _ {f}
+
+[confidence=0.92; source=body_inline] \rho _ {s}
+
+[confidence=0.92; source=body_inline] M = 1.0
+
+[confidence=0.92; source=body_inline] \rho _ {f} = 1.29 \mathrm{kg} / \mathrm{m} ^ {3}
+
+[confidence=0.92; source=body_inline] \rho _ {s} = 64.5 ~ \mathrm{kg} / \mathrm{m} ^ {3}
+
+[confidence=0.92; source=body_inline] \rho _ {s} = 65.0 ~ \mathrm{kg} / \mathrm{m} ^ {3}
+
+[confidence=0.92; source=body_inline] h = 0.3
+
+[confidence=0.92; source=body_inline] b = 0.006 \textrm {m}
+
+[confidence=0.92; source=body_inline] K i = 5 \times 10 ^ {- 3 + ( 2 ( i - 1 ) / 9 )} , i = 0 \sim 11\tag{22}
+
+[confidence=0.92; source=body_inline] \varPhi = b / \varDelta S\tag{23}
+
+[confidence=0.92; source=body_inline] \phi j = j \times 10 ^ {- 2} , \quad j = 0 \sim 10\tag{24}
+
+[confidence=0.92; source=body_inline] n = L _ {c} / \Delta S + 1 = L _ {c} \phi / b + 1
+
+[confidence=0.92; source=body_inline] \varPhi = 0 \left( \mathrm{or} j = 0 \right)
+
+[confidence=0.92; source=body_inline] ( \varDelta x = 0.02 h )
+
+[confidence=0.92; source=body_inline] \theta _ {t i p} = \arctan \left( \delta _ {x} / \left( h + \delta _ {y} \right) \right)
+
+[confidence=0.92; source=body_inline] \delta _ {x}
+
+[confidence=0.92; source=body_inline] \delta _ {y}
+
+[confidence=0.92; source=body_inline] ( \phi 1 \sim \phi 9 )
+
+[confidence=0.92; source=body_inline] u _ {y}
+
+[confidence=0.92; source=body_inline] \overline {{C}} _ {D} = \left( \operatorname* {m a x} \left( C _ {D} \right) + \operatorname* {m i n} \left( C _ {D} \right) \right) / 2
+
+[confidence=0.92; source=body_inline] C _ {D} ^ {\prime} = \operatorname* {m a x} {( C _ {D} )} - \operatorname* {m i n} {( C _ {D} )}
+
+[confidence=0.92; source=body_inline] C _ {D} = F _ {D} / \left( 1 / 2 \rho _ {f} \overline {{u}} ^ {2} h \right)
+
+[confidence=0.92; source=body_inline] F _ {D}
+
+[confidence=0.92; source=body_inline] C _ {D} ^ {\prime}
+
+[confidence=0.92; source=body_inline] \overline {{C}} _ {D}
+
+[confidence=0.92; source=body_inline] \overline {{\theta}} _ {t i p} = \left( \operatorname* {m a x} \left( \theta _ {t i p} \right) + \operatorname* {m i n} \left( \theta _ {t i p} \right) \right) / 2
+
+[confidence=0.92; source=body_inline] \theta _ {t i p} ^ {\prime} = \operatorname* {m a x} \left( \theta _ {t i p} \right) - \operatorname* {m i n} \left( \theta _ {t i p} \right)
+
+[confidence=0.92; source=body_inline] ( \phi 1 \sim \phi 7 )
+
+[confidence=0.92; source=body_inline] u _ {x}
+
+[confidence=0.92; source=body_inline] \partial u _ {x} / \partial y
+
+[confidence=0.92; source=body_inline] x = 26.0
+
+[confidence=0.92; source=body_inline] ( y = h )
+
+[confidence=0.92; source=body_inline] ( y = 3 h )
+
+[confidence=0.67; needs_review; source=body_inline] \partial u _ {x} / \partial y )
+
+[confidence=0.92; source=body_inline] ( \phi 0 \sim \phi 10 )
+
+[confidence=0.92; source=body_inline] f _ {n i} ^ {v} = \frac {f _ {n i} h} {\overline {{u}}} = \frac {k _ {i} ^ {2}} {2 \pi} \sqrt {\frac {K} {M}} , \mathrm{with~} \cos k _ {i} \cosh k _ {i} + 1 = 0\tag{25}
+
+[confidence=0.92; source=body_inline] f _ {n i}
+
+[confidence=0.92; source=body_inline] k _ {1} = 1.875
+
+[confidence=0.92; source=body_inline] k _ {2} = 4.694
+
+[confidence=0.92; source=body_inline] f _ {n i} ^ {f} = \frac {k _ {i} ^ {2}} {2 \pi} \sqrt {\frac {K} {M + C _ {m} \cdot \pi / 4}} \nonumber\tag{26}
+
+[confidence=0.92; source=body_inline] C _ {m} = 1.0
+
+[confidence=0.92; source=body_inline] C _ {m}
+
+[confidence=0.92; source=body_inline] f _ {n 2} ^ {v}
+
+[confidence=0.92; source=body_inline] f _ {n 2} ^ {f}
+
+[confidence=0.92; source=body_inline] f _ {n 1} ^ {v}
+
+[confidence=0.92; source=body_inline] f _ {n 1} ^ {f}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {f _ {K H} = {S t _ {n}} \displaystyle \frac {\overline {{u}}} {\theta}} \\ {\displaystyle \theta = {\int _ {- \infty} ^ {+ \infty} {\left[ \frac {1} {4} - \left( \frac {u - \overline {{u}}} {\varDelta u} \right) ^ {2} \right] d y}}} \end{array}\tag{27}
+
+[confidence=0.92; source=body_inline] S t _ {n} = 0.032
+
+[confidence=0.92; source=body_inline] u _ {1}
+
+[confidence=0.92; source=body_inline] u _ {2}
+
+[confidence=0.92; source=body_inline] \overline {{u}} \ : = \ : \left( u _ {1} + u _ {2} \right) / 2
+
+[confidence=0.92; source=body_inline] \varDelta u \ = \ u _ {2} \ - \ u _ {1}
+
+[confidence=0.92; source=body_inline] 0 {\sim} O ( 10 ^ {5} )
+
+[confidence=0.92; source=body_inline] F _ {B} = \left( \rho _ {f} - \rho _ {s} \right) g h b = \rho _ {f} g h \left( b - M h \right)\tag{29}
+
+[confidence=0.92; source=body_inline] F _ {B}
+
+[confidence=0.92; source=body_inline] F _ {B} = 0
+
+[confidence=0.92; source=body_inline] M ^ {*} = b / h = 0.02
+
+[confidence=0.92; source=body_inline] M = 1.0 > M ^ {*}
+
+[confidence=0.92; source=body_inline] ( N _ {I B M} = 30 , 40 , 50 \ \mathrm{and} \ 60 )

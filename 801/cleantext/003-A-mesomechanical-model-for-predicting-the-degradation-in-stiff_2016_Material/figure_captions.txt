@@ -1,0 +1,21 @@
+Fig. 1. The equipment for high-temperature compression experiment: (a) Facility; (b) Three zone furnace; (c) Temperature control system.
+
+Fig. 2. The physical models in mesomechanical scale of polymer matrix and silica fibers.
+
+Fig. 3. Variation of measured compressive modulus versus temperature.
+
+Fig. 4. Variation of volume fraction for each phase media in phenolic resin versus temperature.
+
+Fig. 5. Variation of volume fraction for each phase media in silica fiber versus temperature.
+
+Fig. 6. Change in elastic modulus of phase component materials versus temperature.
+
+Fig. 7. Change in elastic modulus of silica/phenolic composites versus temperature.
+
+Fig. 8. The fracture morphologies of silica/phenolic composite specimen after high- temperature compression experiment.
+
+Fig. 9. Schematic of a FRP composite specimen under combined one-sided heating and compression loading.
+
+Fig. 10. Change in residual stiffness of silica/phenolic composite versus heating time when exposed to one-sided heat flux.
+
+Fig. 8. The fracture morphologies of silica/phenolic composite specimen after hightemperature compression experiment.

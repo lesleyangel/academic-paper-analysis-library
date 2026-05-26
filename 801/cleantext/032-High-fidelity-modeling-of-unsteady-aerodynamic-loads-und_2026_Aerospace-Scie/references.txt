@@ -1,0 +1,77 @@
+[1] C. Herrmann, W. Dewulf, M. Hauschild, et al., Life cycle engineering of lightweight structures, Cirp Ann. 67 (2) (2018) 651–672, https://doi.org/10.1016/j. cirp.2018.05.008.
+
+1. J058462.
+
+1. J056060.
+
+[2] D P Wells, B L Horvath, L A McCullers, The Flight Optimization System Weights Estimation Method, National Aeronautics and Space Administration, 2017.
+
+[3] E. Livne, Future of airplane aeroelasticity, J. Aircr. 40 (6) (2003) 1066–1092, https://doi.org/10.2514/2.7218.
+
+[4] N F Giannelis, G A Vio, O. Levinski, A review of recent developments in the understanding of transonic shock buffet, Prog. Aerosp. Sci. 92 (2017) 39–84, https://doi.org/10.1016/j.paerosci.2017.05.004.
+
+5. Conclusion This paper presents a DMS-LSTM reduced-order modeling frame work for predicting unsteady aerodynamic load distributions induced by structural vibrations, with improved accuracy and physical consistency. The proposed Dual Modal Space (DMS) formulation couples struc tural modal bases with aerodynamic POD modes, enabling an explicit and bidirectional mapping between generalized aerodynamic forces and unsteady aerodynamic load distributions. By projecting aerodynamic loads onto the structural modal space, the formulation effectively miti gates modal mixing and provides a reduced representation that is well aligned with structural dynamics. When integrated with LSTM networks, the DMS-based reduced rep resentation facilitates efficient learning of the nonlinear temporal evo lution of unsteady aerodynamic loads. Numerical investigations on a two-dimensional NACA65A004 airfoil and a three-dimensional AGARD445.6 wing demonstrate that the proposed DMS-LSTM model consistently outperforms conventional POD-LSTM approaches in both time-domain and frequency-domain metrics, achieving over 50 % reduction in surface pressure reconstruction error and up to 80.7 % improvement in lift coefficient prediction, while maintaining more than 97.2 % global reconstruction accuracy under broadband excitations and time-varying aerodynamic conditions. The present study is limited to linear structural modal representa tions and open-loop aerodynamic load prediction driven by prescribed structural motions. Although nonlinear flow effects are implicitly captured through high-fidelity CFD data, the modal decompositions employed remain linear, and fully coupled aeroelastic feedback is not considered. Future work will focus on extending the proposed frame work to nonlinear structural dynamics and fully coupled aeroelastic simulations, as well as incorporating adaptive modal representations and physics-informed learning strategies to enhance robustness and generalization under more complex flow conditions.
+
+[5] J. Kou, W. Zhang, Data-driven modeling for unsteady aerodynamics and aeroelasticity, Prog. Aerosp. Sci. 125 (2021) 100725, https://doi.org/10.1016/j. paerosci.2021.100725.
+
+[6] J C Loiseau, B R Noack, S L Brunton, Sparse reduced-order modelling: sensor-based dynamics to full-state estimation, J. Fluid Mech. 844 (2018) 459–490, https://doi. org/10.1017/jfm.2018.147.
+
+[7] H. Bai, Z. Wang, X. Chu, et al., Data-driven modeling of unsteady flow based on deep operator network, Phys. Fluids 36 (6) (2024), https://doi.org/10.1063/ 5.0213233.
+
+[8] W. Ji, C. Gong, X. Jia, et al., Unsteady aerodynamic modeling and flight trajectory simulation of dual-spin projectile based on DNN and transfer-learning, Aerosp. Sci. Technol. 155 (2024) 109711, https://doi.org/10.1016/j.ast.2024.109711.
+
+[9] D. Massegur, A. Da Ronch, Recurrent graph convolutional multi-mesh autoencoder for unsteady transonic aerodynamics, J. Fluids Struct. 131 (2024) 104202, https:// doi.org/10.1016/j.jfluidstructs.2024.104202.
+
+[10] J. Liu, J. Liu, W. Du, et al., Performance analysis and characterization of training deep learning models on mobile device, in: 2019 IEEE 25th international conference on parallel and distributed systems (ICPADS), IEEE, 2019, pp. 506–515, https://doi.org/10.1109/ICPADS47876.2019.00077.
+
+[11] R W Kaszeta, T W Simon, D E Ashpis, Experimental investigation of transition to turbulence as affected by passing wakes, in: Turbo Expo: Power for Land, Sea, and Air. American Society of Mechanical Engineers 78521, 2001, https://doi.org/ 10.1115/2001-GT-0195. V003T01A069.
+
+[12] S. Taghizadeh, F D Witherden, Y A Hassan, et al., Turbulence closure modeling with data-driven techniques: Investigation of generalizable deep neural networks, Phys. Fluids 33 (11) (2021), https://doi.org/10.1063/5.0070890.
+
+[13] G. Berkooz, P. Holmes, J L Lumley, The proper orthogonal decomposition in the analysis of turbulent flows, Annu. Rev. Fluid Mech. 25 (1) (1993) 539–575, https://doi.org/10.1146/annurev.fl.25.010193.002543.
+
+[14] K. Taira, M S Hemati, S L Brunton, et al., Modal analysis of fluid flows: Applications and outlook, AIAA J. 58 (3) (2020) 998–1022, https://doi.org/10.2514/
+
+[15] B. Kramer, B. Peherstorfer, K E Willcox, Learning nonlinear reduced models from data with operator inference, Annu. Rev. Fluid Mech. 56 (1) (2024) 521–548, https://doi.org/10.1146/annurev-fluid-121021-025220.
+
+[16] A. Nazvanova, M C Ong, G. Yin, A data-driven reduced-order model based on long short-term memory neural network for vortex-induced vibrations of a circular cylinder, Phys. Fluids 35 (6) (2023), https://doi.org/10.1063/5.0150288.
+
+[17] X. Du, C. Hu, H. Dong, POD-LSTM model for predicting pressure time series on structures, J. Wind Eng. Ind. Aerodyn. 245 (2024) 105651, https://doi.org/ 10.1016/j.jweia.2024.105651.
+
+[18] J. Zhang, X. Zhao, A novel dynamic wind farm wake model based on deep learning, Appl. Energy 277 (2020) 115552, https://doi.org/10.1016/j. apenergy.2020.115552.
+
+[19] W. Huang, C. Li, C. Gong, et al., A heat flux distribution prediction method for hypersonic flight vehicle along trajectory based on POD and TSCN, Aerosp. Sci. Technol. 163 (2025) 110283, https://doi.org/10.1016/j.ast.2025.110283.
+
+[20] K. Taira, S L Brunton, S T M Dawson, et al., Modal analysis of fluid flows: An overview, AIAA J. 55 (12) (2017) 4013–4041, https://doi.org/10.2514/
+
+[21] C. Rowley, T. Colonius, R. Murray, Dynamical models for control of cavity oscillations, in: 7th AIAA/CEAS aeroacoustics conference and exhibit, 2001, p. 2126, https://doi.org/10.2514/6.2001-2126.
+
+[22] Y. Zhang, A. Hodˇzi´c, F. Evrard, et al., Phase proper orthogonal decomposition of non-stationary turbulent flow, Phys. Fluids 35 (4) (2023), https://doi.org/ 10.1063/5.0143780.
+
+[23] J. Hu, Y. Wang, H. Liu, et al., Comparative study on modal decomposition methods of unsteady separated flow in compressor cascade, J. Northwest. Polytech. Univ. 38 (1) (2020) 121–129, https://doi.org/10.1051/JNWPU/20203810121.
+
+[24] O T Schmidt, T. Colonius, Guide to spectral proper orthogonal decomposition, Aiaa J. 58 (3) (2020) 1023–1033, https://doi.org/10.2514/1.J058809.
+
+[25] B. Barraza, A. Gross, Reduced-order modeling of steady and unsteady flows with deep neural networks, Aerospace 11 (7) (2024) 506, https://doi.org/10.3390/ aerospace11070506.
+
+[26] C. Hansen, X I A Yang, M. Abkar, A POD-mode-augmented wall model and its applications to flows at non-equilibrium conditions, J. Fluid Mech. 975 (2023) A24, https://doi.org/10.1017/jfm.2023.857.
+
+[27] J. Li, W. Zhang, The performance of proper orthogonal decomposition in discontinuous flows, Theor. Appl. Mech. Lett. 6 (5) (2016) 236–243, https://doi. org/10.1016/j.taml.2016.08.008.
+
+[28] R L Bisplinghoff, H. Ashley, R L Halfman, Aeroelasticity, Courier Corporation, 2013.
+
+[29] B. Kramer, B. Peherstorfer, K E Willcox, Learning nonlinear reduced models from data with operator inference, Annu. Rev. Fluid Mech. 56 (1) (2024) 521–548, https://doi.org/10.1146/annurev-fluid-121021-025220.
+
+[30] K. Hasegawa, K. Fukami, T. Murata, et al., Machine-learning-based reduced-order modeling for unsteady flows around bluff bodies of various shapes, Theor. Comput. Fluid Dyn. 12 (2020), https://doi.org/10.1007/s00162-020-00528-w.
+
+[31] M. Korda, I. Mezi´c, Linear predictors for nonlinear dynamical systems: Koopman operator meets model predictive control, Automatica 93 (2018) 149–160, https:// doi.org/10.1016/j.automatica.2018.03.046.
+
+[32] O T Schmidt, T. Colonius, Guide to spectral proper orthogonal decomposition, Aiaa J. 58 (3) (2020) 1023–1033, https://doi.org/10.2514/1.J058809.
+
+[33] J N Kutz, S L Brunton, B W Brunton, et al., Dynamic Mode Decomposition: Data- Driven Modeling of Complex Systems, Society for Industrial and Applied Mathematics, 2016.
+
+[34] B. Lusch, J N Kutz, S L Brunton, Deep learning for universal linear embeddings of nonlinear dynamics, Nat. Commun. 9 (1) (2018) 4950, https://doi.org/10.1038/ s41467-018-07210-0.
+
+[35] G E Karniadakis, I G Kevrekidis, L. Lu, et al., Physics-informed machine learning, Nat. Rev. Phys. 3 (6) (2021) 422–440, https://doi.org/10.1038/s42254-021- 00314-5.
+
+[36] J G Marshall, M. Imregun, A review of aeroelasticity methods with emphasis on turbomachinery applications, J. Fluids Struct. 10 (3) (1996) 237–267, https://doi. org/10.1006/jfls.1996.0015.

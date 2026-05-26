@@ -1,0 +1,71 @@
+[1] G. Berkooz, P. Holmes, J.L. Lumley, The proper orthogonal decomposition in the analysis of turbulent flows, Annu. Rev. Fluid Mech 25 (1993) 539–575, https://doi. org/10.1146/annurev.fl.25.010193.002543.
+
+[2] C. Cao, C. Nie, S. Pan, J. Cai, K. Qu, A constrained reduced-order method for fast prediction of steady hypersonic flows, Aerosp. Sci. Technol 91 (2019) 679–690, https://doi.org/10.1016/j.ast.2019.07.016.
+
+[3] P. Cook, M. Firmin, M. McDonald, AGARD Report AR 138, 1979.
+
+[4] K. Decker, N. Iyengar, C. Perron, D. Rajaram, D. Mavris, Nonlinear multi-fidelity reduced order modeling method using manifold alignment, in: AIAA AVIATION 2021 FORUM, 2021, https://doi.org/10.2514/6.2021-3050.
+
+[5] M. Dellacasagrande, D. Barsi, P. Bagnerini, D. Lengani, D. Simoni, Identification of coexisting dynamics in boundary layer flows through proper orthogonal decomposition with weighting matrices, Meccanica 56 (2021) 2197–2217, https:// doi.org/10.1007/s11012-021-01367-7.
+
+[6] A. Ehlert, C.N. Nayeri, M. Morzynski, B.R. Noack, Locally Linear Embedding For Transient Cylinder Wakes [WWW Document], arXiv.org, 2019. URL, https://arxiv. org/abs/1906.07822v1. accessed 2.14.25.
+
+[7] E. Farzamnik, A. Ianiro, S. Discetti, N. Deng, K. Oberleithner, B.R. Noack, V. Guerrero, From snapshots to manifolds – a tale of shear flows, J. Fluid Mech 955 (2023) A34, https://doi.org/10.1017/jfm.2022.1039.
+
+[8] R.W. Floyd, Algorithm 97: shortest path, Commun ACM 5 (1962) 345, https://doi. org/10.1145/367766.368168.
+
+[9] T. Franz, R. Zimmermann, S. G¨ortz, N. Karcher, Interpolation-based reduced-order modelling for steady transonic flows via manifold learning, Int. J. Comput. Fluid Dyn 28 (2014) 106–121.
+
+[10] B. García-Archilla, V. John, S. Katz, J. Novo, POD-ROMs for incompressible flows including snapshots of the temporal derivative of the full order solution: error bounds for the pressure, J. Numer. Math 32 (2024) 301–329, https://doi.org/ 10.1515/jnma-2023-0039.
+
+[11] D. Gottlieb, C.-W. Shu, On the Gibbs phenomenon and its resolution, SIAM Rev. 39 (1997) 644–668, https://doi.org/10.1137/S0036144596301390.
+
+[12] X. Hou, J. Zhang, L. Fang, Invertible neural network combined with dynamic mode decomposition applied to flow field feature extraction and prediction, Phys. Fluids 36 (2024) 095174, https://doi.org/10.1063/5.0221740.
+
+[13] L. Jacquin, P. Molton, S. Deck, B. Maury, D. Soulevant, Experimental study of shock oscillation over a transonic supercritical profile, AIAa J. 47 (2009) 1985–1994, https://doi.org/10.2514/1.30190.
+
+[14] X. Jia, C. Gong, W. Ji, C. Li, An accuracy-enhanced transonic flow prediction method fusing deep learning and a reduced-order model, Phys. Fluids 36 (2024) 056101, https://doi.org/10.1063/5.0204152.
+
+[15] X. Jia, C. Li, W. Ji, C. Gong, A hybrid reduced-order model combing deep learning for unsteady flow, Phys. Fluids 34 (2022) 097112, https://doi.org/10.1063/ 5.0104848.
+
+[16] M. Kawaguchi, M. Iwasaki, R. Nakayama, R. Yamamoto, A. Nakashima, Y. Ogata, Mode analysis for multiple parameter conditions of nozzle internal unsteady flow using parametric global proper orthogonal decomposition, Fluid Dyn. Res 56 (2024) 055501, https://doi.org/10.1088/1873-7005/ad716a.
+
+[17] J.A. Lee, Nonlinear Dimensionality reduction, Information science and Statistics, Springer, New York, 2007.
+
+[18] B. Li, J. Garicano-Mena, E. Valero, A dynamic mode decomposition technique for the analysis of non–uniformly sampled flow data, J. Comput. Phys 468 (2022) 111495, https://doi.org/10.1016/j.jcp.2022.111495.
+
+[19] R. Li, S. Song, Manifold learning-based reduced-order model for full speed flow field, Phys. Fluids 36 (2024) 087117, https://doi.org/10.1063/5.0211689.
+
+[20] Z. Li, G. Zhang, Q. Wang, Z. Cao, Experimental and numerical investigation on the development of surface shedding vortex caused by abnormal stagger angle in a compressor cascade, Aerosp. Sci. Technol 151 (2024) 109272, https://doi.org/ 10.1016/j.ast.2024.109272.
+
+[21] Z. Ma, J. Yu, R. Xiao, Data-driven reduced order modeling for parametrized time- dependent flow problems, Phys. Fluids 34 (2022) 075109, https://doi.org/ 10.1063/5.0098122.
+
+[22] L. Marra, G.Y.C. Maceda, A. Meil´an-Vila, V. Guerrero, S. Rashwan, B.R. Noack, S. Discetti, A. Ianiro, Actuation manifold from snapshot data, J. Fluid Mech 996 (2024) A26, https://doi.org/10.1017/jfm.2024.593.
+
+[23] A. Mashhadi, A. Sohankar, M.M. Moradmand, Three-dimensional wake transition of rectangular cylinders and temporal prediction of flow patterns based on a machine learning algorithm, Phys. Fluids 36 (2024) 094138, https://doi.org/ 10.1063/5.0225180.
+
+[24] K. Menon, R. Mittal, Dynamic mode decomposition based analysis of flow over a sinusoidally pitching airfoil, J. Fluids Struct 94 (2020) 102886, https://doi.org/ 10.1016/j.jfluidstructs.2020.102886.
+
+[25] Y. Nakamura, S. Sato, N. Ohnishi, Application of proper orthogonal decomposition to flow fields around various geometries and reduced-order modeling, Comput. Methods Appl. Mech. Eng 432 (2024) 117340, https://doi.org/10.1016/j. cma.2024.117340.
+
+[26] S.T. Roweis, L.K. Saul, Nonlinear dimensionality reduction by locally linear embedding, Science (1979) 290 (2000) 2323–2326, https://doi.org/10.1126/ science.290.5500.2323.
+
+[27] P.J. Schmid, Dynamic mode decomposition of numerical and experimental data, J. Fluid Mech 656 (2010) 5–28, https://doi.org/10.1017/S0022112010001217.
+
+[28] P. Sol´an-Fustero, J.L. Gracia, A. Navas-Montilla, P. García-Navarro, Combination of intrusive POD-based reduced-order models and augmented Riemann solvers applied to unsteady 2D shallow water equations, Comput. Methods Appl. Mech. Eng 436 (2025) 117702, https://doi.org/10.1016/j.cma.2024.117702.
+
+[29] F. Tauro, S. Grimaldi, M. Porfiri, Unraveling flow patterns through nonlinear manifold learning, PLoS. One 9 (2014) e91131, https://doi.org/10.1371/journal. pone.0091131.
+
+[30] J.B. Tenenbaum, V.de Silva, J.C. Langford, A global geometric framework for nonlinear dimensionality reduction, Science (1979) 290 (2000) 2319–2323, https://doi.org/10.1126/science.290.5500.2319.
+
+[31] W.S. Torgerson, Multidimensional scaling: I. Theory and method, Psychometrika 17 (1952) 401–419, https://doi.org/10.1007/BF02288916.
+
+[32] W. Wu, J. Yao, J. Liu, Analysis of morphological characteristics of rotating flow field using proper orthogonal decomposition, J. Phys. Conf. Ser 1064 (2018) 012077, https://doi.org/10.1088/1742-6596/1064/1/012077.
+
+[33] Y. Yuan, K. Zhou, W. Zhou, X. Wen, Y. Liu, Flow prediction using dynamic mode decomposition with time-delay embedding based on local measurement, Phys. Fluids 33 (2021) 095109, https://doi.org/10.1063/5.0064867.
+
+[34] M. Zhao, Y. Zhao, Z. Liu, Dynamic mode decomposition analysis of flow characteristics of an airfoil with leading edge protuberances, Aerosp. Sci. Technol 98 (2020) 105684, https://doi.org/10.1016/j.ast.2020.105684.
+
+[35] B. Zheng, W. Yao, M. Xu, Nonlinear manifold learning and model reduction for transonic flows, AIAa J. 61 (2023) 5498–5513, https://doi.org/10.2514/1. J062894.
+
+[36] W. Zhu, Y. Wu, Z. Cao, Y. Zhang, F. Zhou, J. Yao, Real-time reconstruction of 3D transient non-uniform temperature field for thermal protection system based on machine learning, Aerosp. Sci. Technol. 151 (2024) 109241, https://doi.org/ 10.1016/j.ast.2024.109241.

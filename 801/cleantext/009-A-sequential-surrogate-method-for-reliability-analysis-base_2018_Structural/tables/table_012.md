@@ -1,0 +1,8 @@
+| Variables | Mean | Standard deviation | Distribution |
+| --- | --- | --- | --- |
+| m | 1 | 0.05 | Normal |
+| $c _ { 1 }$ | 1 | 0.1 | Normal |
+| $c _ { 2 }$ | 0.1 | 0.01 | Normal |
+| $r$ | 0.5 | 0.05 | Normal |
+| $F _ { 1 }$ | 0.5 | 0.2 | Normal |
+| $t _ { 1 }$ | 1 | 0.2 | Normal |

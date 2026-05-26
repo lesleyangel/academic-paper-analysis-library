@@ -1,0 +1,6 @@
+| Conductions | Samples | Electrical resistivity (mΩ2.cm) | Carrier concentration (1/ cm³d | Mobility $( \mathrm { c m } ^ { 2 } / \mathrm { V } / \mathrm { S } )$ |
+| --- | --- | --- | --- | --- |
+| Before annealing | CALC | $1 . 3 0 6 \times 1 0 ^ { 8 }$ | $1 . 3 7 1 0 \times 1 0 ^ { 1 2 }$ | 0.4401 |
+|  | $\mathrm { C A L C } / \mathrm { A g }$ | $2 . 7 8 1 3 \times 1 0 ^ { 5 }$ | $1 . 9 5 7 9 \times 1 0 ^ { 1 7 }$ | 0.2126 |
+| After annealing | CALC | 0.1032 | $4 . 7 7 6 3 \times 1 0 ^ { 2 1 }$ | 8.7972 |
+|  | $\mathrm { C A L C } / \mathrm { A g }$ | 0.0441 | $7 . 6 9 8 6 \times 1 0 ^ { 2 1 }$ | 3.1602 |

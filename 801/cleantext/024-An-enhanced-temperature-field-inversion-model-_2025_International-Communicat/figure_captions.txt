@@ -1,0 +1,41 @@
+Fig. 1. The wing model with HT paths.
+
+Fig. 2. Conceptual flow for solution of the TFI problem.
+
+Fig. 3. Max reconstruction error of temperature data by POD.
+
+Fig. 4. Basic temperature and first 5 POD modes of and. The unit is K.
+
+Fig. 5. The performance of TFI models with different max epochs.
+
+Fig. 6. Distributions and errors of Tu.
+
+Fig. 7. Box plots of performance with different widths and depths.
+
+Fig. 8. Box plots of performance with different dimensionalities of input and output.
+
+Fig. 9. The optimization process of sensor layout.
+
+Fig. 10. The sensor layouts of the effective individuals.
+
+Fig. 11. Box plots of performance with different numbers of regression trees.
+
+Fig. 12. Box plots of performance with different minimum leaf sizes.
+
+Fig. 13. Box plots of performance with different dimensionalities of input.
+
+Fig. 14. The optimization result by RF method.
+
+Fig. 15. Performance of Sample 1 in Case 1 (POD-BPNN-GA model).
+
+Fig. 16. Inversion performance of POD-BPNN-GA model for test set 1.
+
+Fig. 17. Inversion performance of POD-BPNN-GA model for test set 2. (a) Box plots of RE (b) Box plots of AE.
+
+Fig. 18. Performance of Sample 1 in Case 4 (POD-RF model).
+
+Fig. 19. Inversion performance of POD-RF model for test set 1.
+
+Fig. 20. Inversion performance of POD-RF model for test set 2.
+
+Fig. 6. Distributions and errors of $\mathbf { T } _ { \mathbf { u } } .$

@@ -1,0 +1,3 @@
+,Loss,$r _ { \mathrm { a v g \_ o v } }$,$r _ { \mathrm { m a x } }$,$r _ { \mathrm { m i n } }$
+Training set,0.0000926,0.0062,0.0066,0.0058
+Validation set,0.0000975,0.0064,0.0068,0.0060

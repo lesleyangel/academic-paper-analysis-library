@@ -1,0 +1,7 @@
+| Variables | Mean²| Lower Boundb | Standard deviation| Upper Boundb | Distribution |
+| --- | --- | --- | --- |
+| Diameter D(mm) | 39 | 0.1 | Normala |
+| Span L(mm) | 400 | 0.1 | Normal |
+| External Force F(N) | 1500 | 350 | Grumble(Max) a |
+| Torques T(Nmm) | 250,000 | 35,000 | Normala |
+| Strength S(MPa) | 70 | 80 | Uniformb |

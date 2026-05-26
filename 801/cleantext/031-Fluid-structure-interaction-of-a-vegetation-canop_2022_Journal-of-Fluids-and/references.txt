@@ -1,0 +1,103 @@
+Belcher, S.E., Harman, I.N., Finnigan, J.J., 2012. The wind in the willows: flows in forest canopies in complex terrain. Annu. Rev. Fluid Mech. 44, 479–504.
+
+Belcher, S., Jerram, N., Hunt, J., 2003. Adjustment of a turbulent boundary layer to a canopy of roughness elements. J. Fluid Mech. 488, 369–398.
+
+Berry, P.M., Sterling, M., Spink, J.H., Baker, C.J., Sylvester-Bradley, R., Money, S.J., Tams, A.R., Ennos, A.R., Sparks, D.L., 2004. Understanding and reducing lodging in cereals. Adv. Agron. 84, 217–271.
+
+Bhatnagar, P.L., Gross, E.P., Krook, M., 1954. A model for collision processes in gases. I. Small amplitude processes in charged and neutral one-component systems. Phys. Rev. 94 (3), 511–525.
+
+Carpenter, S.R., Lodge, D.M., 1986. Effects of submersed macrophytes on ecosystem processes. Aquat. Bot. 26, 341–370.
+
+Chandler, M., Colarusso, P., Buchsbaum, R., 1996. A study of eelgrass beds in Boston Harbor and northern Massachusetts bays. In: Proj. Rep. Off. Res. Dev. US EPA, Narragansett, RI.
+
+Chen, S., Doolen, G.D., 1998. Lattice Boltzmann method for fluid flows. Annu. Rev. Fluid Mech. 30, 329–364.
+
+Chung, H., Chen, S.S., 1984. Hydrodynamic Mass (No. CONF-840647–9). Argonne National Lab., United States.
+
+De, L.E., 2008. Effects of wind on plants. Annu. Rev. Fluid Mech. 40, 141–168. De Rosis, A., Falcucci, G., Ubertini, S., Ubertini, F., 2014b. Aeroelastic study of flexible flapping wings by a coupled lattice Boltzmann-finite element approach with immersed boundary method. J. Fluids Struct. 49, 516–533. De Rosis, A., Ubertini, S., Ubertini, F., 2014a. A partitioned approach for two-dimensional fluid–structure interaction problems by a coupled lattice Boltzmann-finite element method with immersed boundary. J. Fluids Struct. 45, 202–215.
+
+Dong, D., Chen, W., Shi, S., 2016. Coupling motion and energy harvesting of two side-by-side flexible plates in a 3D uniform flow. Appl. Sci. 6 (5), 141.
+
+Doyle, J.F., Desantiago, E., 2001. Nonlinear Analysis of Thin-Walled Structures: Statics, Dynamics, and Stability. In: Mechanical Engineering Series, Springer New York.
+
+Ebeling, J.M., Jenkins, B.M., 1985. Physical and chemical properties of biomass fuels. Trans. ASAE 28 (3), 898–901.
+
+Fang, Z., Gong, C., Revell, A., Chen, G., Harwood, A., O’Connor, J., 2019. Passive separation control of a NACA0012 airfoil via a flexible flap. Phys. Fluids 31 (10), 101904.
+
+Favier, J., Li, C., Kamps, L., Revell, A., O’Connor, J., Brücker, C., 2017. The pelskin project – part I: fluid–structure interaction for a row of flexible flaps: a reference study in oscillating channel flow. Meccanica 52 (8), 1767–1780.
+
+Felippa, C.A., Haugen, B., 2005. A unified formulation of small-strain corotational finite elements: I. theory. Comput. Methods Appl. Mech. Eng. 194 (21–24), 2285–2335.
+
+Finnigan, J.J., 1979. Turbulence in waving wheat. I. Mean statistics and honami. Bound.-Layer Met. 16, 181–211.
+
+Finnigan, J., 2000. Turbulence in plant canopies. Annu. Rev. Fluid Mech. 32, 519–571.
+
+Finnigan, J., 2007. The Turbulent Wind in Plant and Forest Canopies. Academic Press, Burlington, USA, pp. 15–58.
+
+Ghisalberti, M., Nepf, H.M., 2002. Mixing layers and coherent structures in vegetated aquatic flows. J. Geophys. Res. Oceans 107.
+
+Ghisalberti, M., Nepf, H., 2006. The structure of the shear layer in flows over rigid and flexible canopies. Environ. Fluid Mech. 6 (3), 277–301.
+
+Gosselin, F., Langre, E.De., 2009. Destabilising effects of plant flexibility in air and aquatic vegetation canopy flows. Eur. J. Mech. (B/Fluids) 28 (2), 271–282.
+
+Guo, Z., Zheng, C., Shi, B., 2002. Discrete lattice effects on the forcing term in the lattice Boltzmann method. Phys. Rev. E 65 (4), 046308.
+
+Harwood, A.R.G., O’Connor, J., Muñoz, J.S., Santasmasas, M.C., Revell, A.J., 2018. LUMA: A Many-core, fluid–structure interaction solver based on the Lattice–Boltzmann method. SoftwareX 7, 88–94.
+
+Ho, C.M., P, Huerre., 1984. Perturbed free shear layers. Annu. Rev. Fluid Mech. 16 (1), 365–422.
+
+Karlsson, I.M., 2000. Nocturnal air temperature variations between forest and open areas. J. Appl. Meteorol. 39 (6), 851–862.
+
+Katwijk, M.Van., Bos, A., Hermus, D., Suykerbuyk, W., 2010. Sediment modification by seagrass beds: muddification and sandification induced by plant cover and environmental conditions. Estuar. Coast. Shelf Sci. 89, 175–181.
+
+Krüger, T., Varnik, F., Raabe, D., 2011. Efficient and accurate simulations of deformable particles immersed in a fluid using a combined immersed boundary lattice Boltzmann finite element method. Comput. Math. Appl. 61 (12), 3485–3505.
+
+Kuttler, U., Wall, W.A., 2008. Fixed-point fluid–structure interaction solvers with dynamic relaxation. Comput. Mech. 43 (1), 61–72.
+
+Li, Z., Favier, J., D’Ortona, U., 2016. An immersed boundary-lattice Boltzmann method for single- and multi-component fluid flows. J. Comput. Phys. 304 (C), 424–440.
+
+Luhar, M., Nepf, H.M., 2016. Wave-induced dynamics of flexible blades. J. Fluids Struct. 61, 20–41.
+
+Mark, Swanson., S, 2015. Classical Field Theory and the Stress–Energy Tensor. Morgan & Claypool Publishers.
+
+Moore, K.A., 2004. Influence of seagrasses on water quality in shallow regions of the lower Chesapeake Bay. J. Coast. Res. 20, 162–178.
+
+Moulia, B., Combes, D., 2006. Thigmomorphogenetic acclimation of plants to moderate winds as a major factor controlling height growth and biomass distribution in crops, as demonstrated in alfalfa (medicago sativa l.). In: Proceedings of the 5th Plant Biomechanics Conference.
+
+STFI, Stockholm, pp. 317–322.
+
+Natali, D., Pralits, J.O., Mazzino, A., Bagheri, S., 2016. Stabilizing effect of porosity on a flapping filament. J. Fluids Struct. 61, 362–375.
+
+Nepf, H.M., 2011. Flow and transport in regions with aquatic vegetation. Annu. Rev. Fluid Mech. 44 (1), 123–142.
+
+Nepf, H.M., 2012. Hydrodynamics of vegetated channels. J. Hydraul. Res. 50 (3), 262–279.
+
+Nepf, H.M., Ghisalberti, M., White, B., Murphy, E., 2007. Retention time and dispersion associated with submerged aquatic canopies. Water Resour. Res. 43 (W04422).
+
+Nepf, H.M., Vivoni, E.R., 2000. Flow structure in depth-limited, vegetated flow. J. Geophys. Res. Oceans 105 (C12), 28547–28557. O’Connor, J., Revell, A., 2019. Dynamic interactions of multiple wall-mounted flexible flaps. J. Fluid Mech. 870, 189–216.
+
+Palmer, M.R., Nepf, H.M., Petterson, T.J.R., Ackerman, J.D., 2004. Observations of particle capture on a cylindrical collector: Implications for particle accumulation and removal in aquatic systems. Limnol. Oceanogr. 49, 76–85.
+
+Pepona, M., Favier, J., 2016. A coupled Immersed Boundary–Lattice Boltzmann method for incompressible flows through moving porous media. J. Comput. Phys. 321, 1170–1184.
+
+Peskin, C.S., 2002. The immersed boundary method. Acta Numer 11, 479–517.
+
+Pluvinage, F., Kourta, A., Bottaro, A., 2014. Instabilities in the boundary layer over a permeable, compliant wall. Phys. Fluids 26 (8), 084103.
+
+Poggi, D., Porporato, A., Ridolfi, L., Albertson, J.D., Katul, G.G., 2004. The effect of vegetation density on canopy sub-layer turbulence. Bound.-Lay. Meteorol. 111 (3), 565–587.
+
+Py, C., Langre, E.De., Moulia, B., 2004. The mixing layer instability of wind over a flexible crop canopy. C. R. Méc 332 (8), 613–618.
+
+Py, C., Langre, E.De., Moulia, B., 2006. A frequency lock-in mechanism in the interaction between wind and crop canopies. J. Fluid Mech. 568, 425–449.
+
+Py, C., Langre, E.De., Moulia, B., Hémon, P., 2005. Measurement of wind-induced motion of crop canopies from digital video images. Agric. Forest Meteorol. 130 (3–4), 223–236.
+
+Raupach, M.R., Finnigan, J.J., Brunet, Y., 1996. Coherent eddies and turbulence in vegetation canopies: The mixing layer analogy. Bound. Layer Meteorol 78, 351–382.
+
+Robert, A., Houze, J., 2014 Atmospheric Dynamics. International Geophysics. Elsevier Science & Technology, (Chapter 2).
+
+Shan, X., Yuan, X.F., Chen, H., 2006. Kinetic theory representation of hydrodynamics: a way beyond the Navier–Stokes equation. J. Fluid Mech. 550 (2006), 413–441.
+
+Zhang, X., He, G., Zhang, X., 2020. Fluid–structure interactions of single and dual wall-mounted 2d flexible filaments in a laminar boundary layer. J. Fluids Struct. 92, 102787.
+
+Zheng, X., Xue, Q., Mittal, R., Beilamowicz, S., 2010. A coupled sharp-interface immersed boundary-finite-element method for flow-structure interaction with application to human phonation. J. Biomech. Eng. 132 (11), 111003.

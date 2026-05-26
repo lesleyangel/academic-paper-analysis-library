@@ -1,0 +1,31 @@
+Fig. 1. The vehicle and the trajectory.
+
+Fig. 2. The aerodynamic heat flux.
+
+Fig. 4. The heat transfer path.
+
+Fig. 3. The multi-functional TPS structure.
+
+Fig. 5. The fabrication of n-type material and the measurement of Seebeck coefficient.
+
+Fig. 6. The Seebeck coefficient and electric resistivity.
+
+Fig. 7. The model, mesh and boundaries.
+
+Fig. 8. Interfaces and relevant thermal contact resistances.
+
+Fig. 9. Temperature fields (For interpretation of the colors in the figure(s), the reader is referred to the web version of this article.)
+
+Fig. 10. Temperatures on the top and the bottom surface of the structure.
+
+Fig. 11. The distribution of y-displacement.
+
+Fig. 12. Results comparison between different boundary conditions (y-displacement).
+
+Fig. 13. The distribution of electric potential.
+
+Fig. 14. The total electric potential.
+
+Fig. 15. The thermo-electric results of p and n couple.
+
+Fig. 16. The maximum output power and TE conversion efficiency.

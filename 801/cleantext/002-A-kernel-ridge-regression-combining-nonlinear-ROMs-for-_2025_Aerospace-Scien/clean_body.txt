@@ -1,0 +1,349 @@
+## 1. Introduction
+
+Accurate prediction of flow fields, particularly those containing discontinuities like shocks, is crucial for aerodynamic design. These discontinuities significantly impact the overall flow behavior and performance, demanding high-fidelity simulation tools. Although traditional computational fluid dynamics (CFD) methods have been developed rapidly in the past decades, their high computational expense limits their applications in design optimization processes especially for engineering problems. Therefore, the development of reduced-order models (ROMs) has been motivated in recent years, aiming to capture the essential characteristics of the flow fields using a significantlyreduced number of dimensions. In comparison with full-order CFD simulations, the ROMs can lead to substantial improvements in computational efficiency.
+
+Traditional ROMs operate by projecting the high-dimensional flow fields onto a low-dimensional subspace spanned by a set of linear modes. These modes are typically obtained by proper orthogonal decomposition (POD) [1] or dynamic mode decomposition (DMD) [27]. In the existing studies, POD and DMD have been widely applied to flow-field modeling [10,21,25,28,36], prediction [12,23,33,36] and analysis [16,18,20,24, 32,34]. However, since the sharp gradients and nonlinear nature of discontinuities are poorly approximated by the smooth modes from POD or DMD, these POD-based or DMD-based methods often struggle to accurately capture the discontinuities in the flow fields. This leads to significant errors in the reconstruction of the flow fields, particularly in the discontinuous regions. Although methods such as local partitioning [14], weighted POD [2,5] and combinatorial method [15] have been proposed to address nonlinear flow-field prediction and analysis, the linearity of these methods limits their further application in modeling flow fields with discontinuities.
+
+To address this issue, researchers began employing nonlinear ROMs, of which the most famous one is manifold learning (ML). The ML assumes that high-dimensional data is distributed on a low-dimensional manifold, which can capture the intrinsic features and relationships between the data. The pioneer works on the ML include the isometric mapping (ISOMAP) [30] and local linear embedding (LLE) [26] which were both published in 2000. The ISOMAP originates from the classical multiple dimensional scaling (MDS) [31]. It replaces the Euclidean distance used in MDS with the geodesic distance, allowing it to achieve a low-dimensional manifold from high-dimensional nonlinear data while simultaneously preserving both local linear structures and global nonlinear structures. Unlike the ISOMAP, which preserves the distances between nearby samples, the LLE extracts the manifold structure by maintaining the topological relationships among samples within a neighborhood. It assumes that each sample in the high-dimensional space can be reconstructed by a linear combination of its neighboring samples, and such a linear relationship can be preserved in the low-dimensional manifold space. These two ML methods have already been applied in the dimensionality reduction and analysis of nonlinear flow fields. Tauro [29] employed the ISOMAP to identify flow patterns while Marra [22] described the relationship between manifold coordinates and physical parameters. Farzamnik [7] have done a similar work, but found that there is a correlation between the manifold coordinates and dimensionless force coefficients. Ehlert [6] adopted the LLE to identify the reduced-order representations of cylinder wake transients. In the modeling of nonlinear flow, Franz [9] firstly applied the ISOMAP to predict the transonic steady flow fields. The prediction results for the airfoil and wing indicated that the pressure distribution obtained using nonlinear ROMs is more accurate, especially near the shock, compared to linear ROMs. This work demonstrated the potential of the ML-based ROMs in modeling flow fields with discontinuities. Thereafter, more flow fields modeling methods based on ML have been developed. For example, Decker [4] combined the ML and manifold alignment to build a multi-fidelity nonlinear ROM. Zheng [35] adopted constrained optimization genetic algorithm (COGA), using the distances between the sample and its neighbors as constraints to optimize the interpolated manifold coordinates, aiming to achieve more accurate prediction results with small sample size. Li [19] respectively used the ISOMAP to extract global features and the LLE to extract local features of the flow fields, achieving accurate prediction of transonic and supersonic flow fields.
+
+\*γ is the scale factor and l is the degree of the polynomial.
+
+a) RBF kernel $( \gamma = 0.5 )$
+
+b) Sigmoid kernel $( \gamma = 0.5 )$
+
+c) Polynomial kernel $\left( \ \gamma = 0.5 , \ l = 3 \right)$
+
+d) Linear kernel $( \gamma = 0.5 )$
+
+a) $E _ {\mathrm{mean}}$
+
+Unlike POD and DMD, the MLs do not provide an explicit mapping relationship between the low-dimensional manifold coordinates and the high-dimensional flow fields. Therefore, when applying ML methods in flow-field modeling, specific reconstruction algorithms are required. Most of the previously-mentioned modeling cases for flow fields with discontinuities use the non-parametric back-mapping (NPBM) algorithm
+
+b) $E _ {\mathrm{max}}$
+
+c) $R _ {\mathrm{rs}}$
+
+a) $E _ {\mathrm{mean}}$
+
+b) $E _ {\mathrm{max}}$
+
+c) $R _ {\mathrm{rs}}$
+
+a) reconstructed flow field
+
+b) original flow field
+
+c) absolute error
+
+proposed by Franz [9] as the reconstruction algorithm. This algorithm draws inspiration from the idea of LLE, assuming that the high-dimensional flow fields can be reconstructed through a linear combination of its surrounding neighbors. However, when there are significant differences in the intensity and position of discontinuities between neighbors, this method tends to result in large deviations in the discontinuity positions and significant errors in the reconstructed flow fields. Currently, few studies have been focused on the reconstruction methods between the low-dimensional manifold coordinates of flow fields with discontinuities and the original high-dimensional flow fields. How to achieve reconstruction of the discontinuities with accurate intensity and location is an issue of our interest.
+
+To address above problem, we propose a novel reconstruction method for flow fields with discontinuities. Inspired by POD, a kernel function is introduced to obtain the mode coefficients in the nonlinear kernel space, and a ridge regression is performed to construct a set of modes that capture the discontinuity features in the flow field. These constructed coefficients and modes are then combined to achieve accurate reconstruction of flow fields with discontinuities.
+
+a) $E _ {\mathrm{mean}}$
+
+b) $E _ {\mathrm{max}}$
+
+c) $R _ {\mathrm{rs}}$
+
+a) reconstructed flow field
+
+b) original flow field
+
+c) absolute error
+
+The paper is organized as follows: in Section 2, the developed reconstruction method is introduced in detail; then the method validation on transonic flow fields around RAE2822 airfoil, the key parameters analysis and the comparison with commonly-used methods are carried out in Section 3; In Section 4, we draw the conclusions. In Appendix A the implementation procedures of the ISOMAP and LLE are detailed, and in Appendix B the accuracy verification of the CFD simulation is shown.
+
+## 2. Methodology
+
+In this work, an accurate reconstruction method KRR-based discontinuity-capturing reconstruction (KRR-DCR) for flow fields with discontinuities is developed. The proposed method consists of three steps. First, we perform the dimensionality reduction of the flow fields by the ML, aiming to find the hidden low-dimensional nonlinear manifold of the original high-dimensional flow fields. Second, a set of mode coefficients and modes are obtained by the kernel ridge regression (KRR) with the manifold coordinates and the original flow fields. Lastly, the original flow fields are accurately reconstructed through a nonlinear combination of the manifold coordinates and the constructed modes. Fig. 1 shows the main procedure of the reconstruction procedure, and the details are introduced as follows.
+
+a) $E _ {\mathrm{mean}}$
+
+b) $E _ {\mathrm{max}}$ 
+c) $R _ {\mathrm{rs}}$
+
+## 2.1. Dimensionality reduction based on ML
+
+Since flow fields with discontinuities exhibits strong nonlinearity, traditional linear dimensionality reduction techniques are not applicable. Therefore, it is necessary to use nonlinear methods, among which ML is one of the most representative approaches.
+
+First, n flow-field samples are obtained by CFD simulations. Each sample is vectorized to an m-dimensional vector $\pmb {x} _ {i}$ (subscript i indicates the ith sample) and all of them form a samples matrix $\pmb {X} \in \mathbb {R} ^ {n \times m}$ . The ML assumes that X is embedded on a p-dimensional manifold. Generally, p is much smaller than m. Thus, if we can build a mapping f(⋅)between the original high-dimensional flow fields and low-dimensional manifold, the dimensionality reduction of the flow fields can be achieved, expressed as,
+
+$$\pmb {Y} = \pmb {f} ( \pmb {X} )\tag{2.1}$$
+
+where $\pmb {Y} {\in} \mathbb {R} ^ {n \times p}$ is the low-dimensional representation of X.
+
+According to the principles of constructing $f ( \cdot )$ , the ML can be divided into various types. The LLE and ISOMAP are two of the most commonly used ML methods. The main processes of the LLE and ISO-MAP are described in Appendix A. The comparison of KKR-DCR using the LLE and ISOMAP is presented in Section 3.2.
+
+## 2.2. KRR-based discontinuity-capturing reconstruction (KRR-DCR)
+
+Since the low-dimensional representation Y are obtained by the ML, we need to build a reconstruction model to reobtain the original flow fields X.
+
+Drawing inspiration from the flow reconstruction by the POD, we aim to find the mode matrix $\pmb {W} \in \mathbb {R} ^ {p \times m}$ that satisfies
+
+$$\pmb {X} \approx \pmb {X} ^ {\prime} = \pmb {Y} \pmb {W} ^ {T}\tag{2.2}$$
+
+where $\pmb {X} ^ {'} \in \mathbb {R} ^ {n \times m}$ is the reconstructed flow-field matrix.
+
+Formula (2.2) is a linear reconstruction of X. Howeve $\mathbf {r} ,$ in order to achieve accurate reconstruction in nonlinear regions considering discontinuities, it is desirable to introduce a mode matrix $W _ {\mathrm{nonlinear}}$ for nonlinear reconstruction. Thus, we map Y from the manifold space to the kernel inner product space using a kernel function $\Phi ( \cdot )$ , and construct $\pmb {W} _ {\mathrm{nonlinear}}$ in this space by
+
+$$\pmb {X} \approx \pmb {X} ^ {\prime} = \Phi ( \pmb {Y} , \pmb {Y} ) \pmb {W} _ {\mathrm{nonlinear}} ^ {T} = \pmb {Z} \pmb {W} _ {\mathrm{nonlinear}} ^ {T}\tag{2.3}$$
+
+a) $E _ {\mathrm{mean}}$
+
+b) $E _ {\mathrm{max}}$
+
+c) $R _ {\mathrm{rs}}$
+
+where Z is the kernel matrix, which represents the nonlinear similarity between training samples.
+
+Then, we use ridge regression to solve $W _ {\mathrm{nonlinear}}$ by minimizing the following target function
+
+$$\begin{array} {r} {\Vert \textbf {\em X} - \pmb {Z} \pmb {W} _ {\mathrm{nonlinear}} ^ {T} \Vert _ {F} ^ {2} + \lambda \Vert \textbf {\em W} _ {\mathrm{nonlinear}} \ \Vert _ {F} ^ {2}} \end{array}\tag{2.4}$$
+
+where ‖ ⋅‖F represents the Frobenius norm; λ is the L2 regularization coefficient. Formula (2.4) consists of two parts: the first indicates the difference between the original flow fields and the reconstructed flow fields; the second prevents overfitting. The influence of λ is further discussed in Section 3.4.
+
+Let formula (2.4) equals 0, and we can obtain the expression for Wnonlinear
+
+$$\pmb {W} _ {\mathrm{nonlinear}} = \pmb {X} ^ {T} \pmb {Z} \big ( \pmb {Z} ^ {T} \pmb {Z} + \lambda \pmb {I} \big ) ^ {+}\tag{2.5}$$
+
+where $\scriptstyle I \in \mathbb {R} ^ {n \times n _ {\mathrm{i}}}$ is an identity matrix, and $( \cdot ) ^ {+}$ represents pseudo-inverse. $W _ {\mathrm{nonlinear}}$ is an $m \times n$ matrix, where each column represents the mode corresponding to each training sample.
+
+Assuming we have obtained the low-dimensional representations of k new flow fields in manifold space, which form a matrix $\pmb {Y} _ {\mathrm{new}} \in \mathbb {R} ^ {k \times p}$ , the reconstructed flow-field matrix $\pmb {X} _ {\mathrm{new}} ^ {\prime} \in \mathbb {R} ^ {k \times p}$ is
+
+$$\pmb {X} _ {\mathrm{new}} = \pmb {Z} _ {\mathrm{new}} \pmb {W} _ {\mathrm{nonlinear}} ^ {T} = \Phi ( \pmb {Y} _ {\mathrm{new}} , \pmb {Y} ) \pmb {W} _ {\mathrm{nonlinear}} ^ {T}\tag{2.6}$$
+
+where $Z _ {\mathrm {{n e w}}}$ is the kernel matrix between the new samples and the
+
+training samples.
+
+## 2.3. Kernel method
+
+During the construction of the mode matrix $W _ {\mathrm{nonlinear}}$ in the above section, we use a kernel function to project manifold space into the kernel inner product space. In this section, the basic idea of the kernel method is detailed.
+
+The mathematical foundation of the kernel method lies in the concept of mapping data into a higher-dimensional space $\mathcal {H}$ and then leveraging inner products in that space to solve linear problems in place of solving the nonlinear problem in the original space $\mathcal {X}$ by the mapping function $\phi ,$ expressed as,
+
+$$\phi : \mathcal {X} \to \mathcal {H}\tag{2.7}$$
+
+Since most of the mapping functions cannot be explicitly computed, the kernel method uses a kernel function $K ( \cdot ) \mathrm{to}$ directly compute the inner product of two samples in $\mathcal {H}$
+
+$$K ( x , y ) = \langle \phi ( x ) , \phi ( y ) \rangle\tag{2.8}$$
+
+which represents the similarity between x and y.
+
+For two data matrices $\pmb {A} \in \mathbb {R} ^ {r \times d}$ and $\pmb {B} \in \mathbb {R} ^ {q \times d}$ , which contain r and q samples respectively, with each data point in d dimension, the similarity between the data in A and B can be represented using a kernel matrix $z ,$ expressed by
+
+b) $M _ {\infty} = 0.758$ , $\alpha = 4.17 ^{\circ}$
+
+a) $M _ {\infty} = 0.755$ $\alpha = 2.33 ^{\circ}$ 
+c) $M _ {\infty} = 0.804$ $\alpha = 2.05 ^{\circ}$
+
+d) $M _ {\infty} = 0.827$ $\alpha = 5.10 ^{\circ}$
+
+e) $M _ {\infty} = 0.843$ $\alpha = 5.55 ^{\circ}$
+
+$\pmb {Z} = \Phi ( \pmb {A} , \pmb {B} )$ , where $Z _ {i j} = K ( a _ {i} , b _ {j} )$
+
+(2.9)
+
+of which $\Phi ( \cdot ,$ , ⋅)represents the kernel function of matrices. $Z _ {i j}$ is the element in the ith row and jth column of the kernel matrix $z ,$ and $\pmb {a} _ {i} \in \mathbb {R} ^ {d}$ is the ith sample in $\pmb {A} , \pmb {b} _ {j} \in \mathbb {R} ^ {d}$ is the jth sample in B.
+
+In this work, we employ 4 commonly-used kernel functions, of which the first 3 are nonlinear kernel functions, while the last one is a linear kernel function. The mathematical expressions of each kernel function and their visualizations are respectively shown in Table 1 and Fig. 2. The
+
+RBF kernel and sigmoid kernel rapidly drop to zero beyond a local range, resulting in more pronounced local characteristics. While the polynomial kernel has a larger range of influence and can better reflect the global characteristics. The comparison of the effect by different kernels in flow-field reconstruction is presented in Section 3.2.
+
+## 3. Method validation and parameter analysis
+
+To validate and evaluate the proposed KRR-DCR method, we perform the flow field reconstruction of the RAE2822 airfoil with steady transonic flow. First, the generation of the dataset is introduced, as well as the accuracy criterion. Then, the transonic flow fields are reconstructed by the proposed KRR-DCR method, and key parameter analysis is performed. At last, the proposed KRR-DCR method is compared with 2 commonly-used reconstruction methods and the physical significance of the modes constructed by our method is explained. In addition, to validate the applicability to time-dependent problems of the KRR-DCR method, a brief analysis of transonic buffet case on OAT15A airfoil is also presented.
+
+Unless otherwise stated, all reconstructions are directly based on the pressure fields and all the contours shown are the normalized pressure. The normalization is implemented according to
+
+$$\pmb {p} _ {\mathrm{Norm}} ^ {( i )} = \frac {\pmb {p} ^ {( i )} - \operatorname* {m i n} \left( \pmb {p} _ {\mathrm{test}} ^ {( i )} \right) \cdot \mathbf {1}} {\operatorname* {m a x} \left( \pmb {p} _ {\mathrm{test}} ^ {( i )} \right) - \operatorname* {m i n} \left( \pmb {p} _ {\mathrm{test}} ^ {( i )} \right)}\tag{3.1}$$
+
+where $p _ {\mathrm{Norm}}$ is the normalized flow-field vector; $\pmb {P} _ {\mathrm{test}}$ is the original flowfield vector of a testing sample; 1 is an all-ones vector of the same length as $\mathbf {\phi} _ {p _ {\mathrm{test}}} ;$ superscript (i) represents the ith testing sample.
+
+All experiments below are performed on a laptop with an intel® Core™ i7 10750H processor (6-core/12-thread, 2.60 GHz) and 32 GB RAM (2666 MHz).
+
+## 3.1. Dataset generation and accuracy evaluation criterion
+
+The samples of the transonic flow fields are generated under the flight condition of $M _ {\infty} \in [ 0.734 , 0.85 ]$ and $\alpha \in [ 2 ^{\circ} , 6 ^{\circ} ]$ . Within this range of flight conditions, the position and intensity of shocks in the flow fields change drastically. The Latin hypercube sampling (LHS) is employed to select 900 samples. Since this work only focuses on the process of flowfield reconstruction and does not involve flow field prediction, all 900 samples are used for dimensionality reduction, while 50 of them are randomly selected as testing samples for flow-field reconstruction. Among the testing samples, 5 reconstruction samples are selected. These reconstruction samples are located in different regions of the sampling space to assess the performance of the reconstruction model at the boundaries and within the sampling space. The distribution of all the 900 samples in the parameter space is shown in Fig. 3. CFD simulations are performed to obtain the flow fields of all samples. The computational mesh, solver settings and accuracy validation of CFD solver is presented in Appendix B.
+
+The accuracy of the flow-field reconstruction is qualified by measuring the mean relative reconstruction error $E _ {\mathrm{mean}}$ and the maximum relative reconstruction error $E _ {\mathrm{max}}$ on the testing samples. $E _ {\mathrm{mean}}$ represents the ability to reconstruct the global flow field, while $E _ {\mathrm{max}}$ shows the capability of capturing the local flow structures. The definition of $E _ {\mathrm{mean}}$ and $E _ {\mathrm{max}}$ are given as follows
+
+a) Normalized pressure field
+
+b) Absolute error
+
+$$E _ {\mathrm{mean}} = \frac {\sum _ {k = 1} ^ {n} \sum _ {i = 1} ^ {m} e _ {i} ^ {( k )}} {n m}\tag{3.2}$$
+
+$$E _ {\mathrm{max}} = \frac {\sum _ {k = 1} ^ {n} \operatorname* {m a x} _ {i \in [ 1 , m ]} ( e _ {i} ^ {( k )} )} {n}\tag{3.3}$$
+
+$$e _ {i} ^ {( k )} = \left| \frac {x _ {i} ^ {\mathrm{real}} - x _ {i} ^ {\mathrm{recons}}} {x _ {i} ^ {\mathrm{real}}} \right|\tag{3.4}$$
+
+where n is the number of testing samples; m is the number of mesh cells; $e _ {i} ^ {( k )}$ represents relative reconstruction error on the ith cell of the kth testing sample.
+
+Additionally, the correlation coefficient R between the reconstructed flow fields and the original flow fields is also adopted as one of the metrics for evaluating the reconstruction accuracy of the global flowfield structures. In subsequent comparisons, to highlight the differences in $R ,$ we define the values of 1 minus the correlation coefficient as $R _ {\mathrm{rs}}$
+
+$$R _ {\mathrm{rs}} = 1 - R = 1 - {\frac {\mathrm{cov} \bigl ( {\pmb x} ^ {\mathrm{recons}} , \ {\pmb x} ^ {\mathrm{real}} \bigr )} {\sigma _ {{\pmb x} ^ {\mathrm{recons}}} \sigma _ {{\pmb x} ^ {\mathrm{real}}}}}\tag{3.5}$$
+
+where $\operatorname{cov} ( \cdot , \cdot$ )represents the covariance and σ is the variance.
+
+In all the expressions mentioned above, the superscripts "real" and "recons" represent the original flow-field data and the reconstructed flow-field data, respectively.
+
+## 3.2. Flow-field reconstruction
+
+We first perform dimensionality reduction on the dataset using the LLE and ISOMAP with 15 neighbors respectively. Then we reconstruct the flow fields of the 50 testing samples using the proposed KRR-DCR method. For both cases, the kernel function is set to be cubic polynomial kernel and $\gamma = 1 . \ E _ {\mathrm{mean}} , \ E _ {\mathrm{max}}$ and $R _ {\mathrm{rs}}$ under different manifold dimensions d are shown in Fig. 4. For the KRR-DCR using ISOMAP, when d is greater than 15, $E _ {\mathrm{mean}}$ starts to gradually increase; when d is between 10 and 20, $E _ {\mathrm{max}}$ exhibits an abnormal peak, as well as $R _ {\mathrm{rs}}$ However, compared to the ISOMAP, both relative reconstruction error and R for $R _ {\mathrm{rs}}$ the KRR-DCR using LLE are much smaller. This indicates that, for the proposed flow-field reconstruction method, it is more suitable to the LLE to perform dimensionality reduction of flow fields.
+
+a) overview
+
+b) close-up view of SBLI region
+
+a) overview
+
+b) close-up view of SBLI region
+
+a) overview
+
+b) close-up view of SBLI region
+
+Then, the impact of kernel function types on the reconstruction accuracy is then studied. We compare the relative reconstruction error and $R _ {\mathrm{rs}}$ of the 4 different kernel functions, where the degree of the polynomial kernel is sequentially taken from 2nd to 5th order, as shown in Fig. 5. γ of all the kernels are set to 1, then the LLE is used to perform
+
+dimensionality reduction.
+
+When d is less than 10, $E _ {\mathrm{mean}}$ of KRR-DCR using all the kernels decrease sharply as d increases, where the linear kernel shows the poorest performance as its $E _ {\mathrm{mean}}$ is much larger than all of the other nonlinear kernels. This could be caused by the incapability of capturing nonlinear characteristics of the flow fields with discontinuities by the linear kernels. For the nonlinear RBF and sigmoid kernels, $E _ {\mathrm{mean}}$ starts to increase significantly after d exceeds 10. The reason could be: as the dimension of the manifold space increases, the distribution of samples becomes sparse and uniform, resulting in a smaller relative range of influence for the RBF and sigmoid kernels, which causes struggling in capturing global information. In comparison, $E _ {\mathrm{mean}}$ of the polynomial kernels keeps decreasing until d reaches 16. This indicates that the polynomial kernels are less sensitive to the overall distribution of samples in manifold space. At the same time, $E _ {\mathrm{mean}}$ of KRR-DRC using the linear kernel still achieve an accurate reconstruction globally when d is large, as shown in Fig. $^ {6 ,}$ since the nonlinear characteristics in the regions away from discontinuities are relatively weak. The variation of $E _ {\mathrm{mean}}$ demonstrates that a kernel with global characteristics is more conducive to the reconstruction of the global flow field.
+
+a) overview
+
+c) near shock
+
+Regardless of the value of d, $E _ {\mathrm{max}}$ of KRR-DCR using the linear kernel is significantly greater than that of all other nonlinear kernels. Due to the presence of discontinuities, the linear kernel cannot capture these local nonlinear features in the flow fields, resulting large reconstruction errors. Although the RBF kernel can achieve a lower $E _ {\mathrm{max}}$ when d is less than $^ {5 ,}$ its performance gradually starts to decline as d increases compared to the polynomial kernel. This could be caused by too much focus on samples in the local neighborhood. The limited range of influence of the RBF kernel in the manifold space with a larger dimensionality results in a limited number of local neighboring samples and restricts further improvement in reconstruction accuracy. This result indicates that while focusing on the local neighborhood can enhance the reconstruction accuracy of local flow-field structures, a too small range of influence of kernels may actually have adverse effects.
+
+The trend of $R _ {\mathrm{rs}}$ is generally consistent with that of $E _ {\mathrm{mean}}$ . However, for the RBF kernel and sigmoid kernel, $R _ {\mathrm{rs}}$ does not increase as $E _ {\mathrm{mean}}$ does when d exceeds 10. Although the global reconstruction error increases for these two kernels, the overall flow-field structure remains intact. This indicates that, regardless of the nonlinear kernel used, the KRR-DCR method can effectively preserve the flow-field structure during flow-field reconstruction.
+
+The above comparison indicates that a kernel that incorporates both global and local characteristics is crucial for the accurate reconstruction of the flow fields. Thus, the polynomial kernels are the best choice. The further comparison of the polynomial kernels with different degrees is shown in Fig. $^ {7 ,}$ with the y-axis using a logarithm to base 10. For the quartic and quintic polynomial kernels, $E _ {\mathrm{mean}} , E _ {\mathrm{max}}$ and $R _ {\mathrm{rs}}$ all begin to increase when d exceed around $^ {16 ,}$ which is caused by the amplification of data noise and overfitting. Using a low-degree polynomial kernel may alleviate this problem. Thus, the quartic polynomial kernel is chosen. In our case, we hope to achieve higher reconstruction accuracy in the discontinuous areas by adopting a smaller d. Therefore, we reduce the dimensionality of the flow fields to 17.
+
+a) overview
+
+c) near shock
+
+The reconstructed flow field at $M _ {\infty} = 0.758$ and $\alpha = 4.169 ^{\circ}$ is shown in Fig. 8. It indicates that the largest reconstruction error in the flow field occurs near the discontinuities, which is the same as Fig. 6. However, the flow field reconstructed through the quartic polynomial kernel shows stronger discontinuity, and the absolute error in the local regions around the discontinuities by the quartic polynomial kernel is much smaller than that by the linear kernel, which proves the ability of nonlinear kernels to capture the discontinuities more accurately.
+
+## 3.3. Parametric analysis of λ and $\gamma$
+
+In the proposed method, there are two key hyperparameters: the L2 regularization coefficient λ and the scale factor γ, which greatly affect the reconstruction accuracy. In this section, we carry out parametric analysis of these two key hyperparameters.
+
+The L2 regularization coefficient λ can control the influence of the regularization term on solving the mode matrix $\mathbf {\Delta} \mathbf {W} _ {\mathrm{nonlinear}} ,$ thereby balancing the fitting capability and complexity of the model. The $E _ {\mathrm{mean}} ,$ $E _ {\mathrm{max}}$ and $R _ {\mathrm{rs}}$ on the testing samples under different λ are shown in Fig. $^ {9 ,}$ where the x-axis uses a base-10 logarithmic coordinate. $E _ {\mathrm{mean}}$ decreases as λ increases and reaches minimum when λ is around $10 ^ {- 5}$ . This is because when λ is too small, the regularization term loses its effect, and is overfitted under the influence of noise. When $\lambda > 10 ^ {- 5} ,$ , as λ continues to increase, $E _ {\mathrm{mean}}$ begins to grow. While $E _ {\mathrm{max}}$ keeps increase but it is not significant before λ reaches $10 ^ {- 5} . R _ {\mathrm{rs}}$ reaches its minimum when λ is near $10 ^ {- 4}$ . However, since the increase in $R _ {\mathrm{rs}}$ from $\lambda {=} 10 ^ {- 4}$ to $10 ^ {- 5}$ is less than $10 ^ {- 5} ,$ it can be considered practically unchanged. Therefore, λ is set to $10 ^ {- 5}$
+
+γ determines the extent to which the inner product of samples affects the polynomial kernel. When $\gamma$ is large, the inner product between samples is amplified, and the kernel function becomes more sensitive to neighboring samples with high similarity. The variations in $E _ {\mathrm{mean}} , E _ {\mathrm{max}}$ and $R _ {\mathrm{rs}}$ for different $\gamma$ are shown in Fig. 10. When $\gamma > 1.1 , E _ {\mathrm{mean}}$ is basically flat (the difference between the maximum and minimum values is less than 0.00025). While $E _ {\mathrm{max}}$ slightly increases when $\gamma {>} 1.4$ It is because the number of neighboring samples with high similarity is limited, and excessive sensitivity to these samples prevents the model from obtaining sufficient discontinuity information. Similarly, $R _ {\mathrm{rs}}$ exhibits minimal variation when γ ranges from 0.6 to 1.2. Hence, it is more rational to set $\gamma = 1.1$
+
+## 3.4. Comparison with commonly-used reconstruction methods
+
+The reconstruction model by the proposed KRR-DCR method is compared with the commonly-used POD and the NPBM methods. The dimensionality reduction method of NPBM stays the same with the original work by Franz [9]. 15 neighbors are adopted for dimensionality reduction and flow-field reconstruction. For all methods, the high-dimensional flow fields are reduced to 17 dimensions.
+
+a) overview
+
+c) near shock
+
+The reconstructed wall pressure distributions through different methods are compared in Fig. 11. The wall pressure distribution of all samples using the POD show strong oscillations around the discontinuities. The reasons of this phenomenon could be attributed to two aspects. First, the truncation of the high-order modes in the POD leads to the loss of discontinuous information, making it inaccurate to reconstruct the details of the discontinuities in the flow fields. Second, the POD modes exhibit globally smooth characteristics, and the linear combination of these finite-order smooth modes is insufficient to accurately capture and reconstruct the local discontinuities. These result in oscillations similar to the Gibbs phenomenon observed in signal processing [11].
+
+In comparison with the POD, both the NPBM and KRR-DCR demonstrate to be more accurate in reconstructing wall pressure, especially near the discontinuities. This is due to the ML, which is a kind of nonlinear ROM and can effectively preserve the discontinuous information in the flow fields. However, at higher Mach numbers, as is shown in Fig. 11d) and e), the NPBM begins to exhibit obvious errors in reconstructing the discontinuities on both the upper and lower surfaces, while the KRR-DCR can still maintain high accuracy. The increase in shock intensity at high Mach number leads to an enhancement of nonlinear effects, resulting in substantial variations in the manifold’s curvature near these samples beyond the applicability of local linear approximations by the NPBM. However, for the KRR-DCR, since the original manifold coordinates are nonlinearly mapped into the kernel space by the kernel function, the changes in the manifold’s curvature can be preserved. This allows the modes constructed by the KRR-DCR to capture the nonlinear discontinuous information precisely, leading to an improvement of reconstruction accuracy near the discontinuities.
+
+a) Static Pressure
+
+b) Density
+
+c) Velocity Magnitude
+
+d) Static Temperature
+
+The entire reconstructed flow fields by different methods are compared in Figs. 12-16. The $E _ {\mathrm{mean}}$ and $E _ {\mathrm{max}}$ represent the mean relative error and the maximum relative error of the reconstruction sample. They are calculated by Eqs. (3.2) and (3.3), where $n = 1$
+
+All flow fields reconstructed by the POD achieve an $E _ {\mathrm{max}}$ over 20 %, with sample at $M _ {\infty} = 0.804 , \alpha = 2.05 ^{\circ}$ even reaching 36.7 %. Meanwhile, the isobars of the flow fields reconstructed by the POD exhibit significant oscillations near the discontinuities and such oscillations become more pronounced with the increase of $M _ {\infty}$ and $\alpha ,$ as shown in Fig. 14, Fig. 15, Fig. 16. The increase in $M _ {\infty}$ leads to a dramatic increase in the shock intensity around the airfoil, thereby causing stronger nonlinearity in the flow fields, resulting in greater loss of discontinuity information when applying the POD.
+
+a) The first 9 modes of the POD
+
+b) The 9 modes corresponding to the first 9 training samples for building the KRR-DCR
+
+The NPBM can reconstruct the flow fields more accurately compared to the POD. This benefits from nonlinear dimensionality reduction which can effectively capture discontinuous characteristics. However, along with the increase of $M _ {\infty} ,$ the reconstruction accuracy of the NPBM significantly decreases, as is shown in Fig. 15 and Fig. 16. Although the nonlinear ROM does capture the discontinuity of the flow fields, the NPBM, that relies on a linear combination of neighbors, become incapable of accurately recover discontinuities under high shock intensity.
+
+Among the three methods, the KRR-DCR achieves the highest reconstruction accuracy across all reconstruction samples according to Figs. 12-16. The KRR-DCR can accurately reconstruct the flow fields in discontinuous regions due to the nonlinear reconstruction by the ML as well as the nonlinear combination of the constructed modes. For the first 4 reconstruction samples, $E _ {\mathrm{mean}}$ are all below 0.05 % and $E _ {\mathrm{max}}$ are all below 10 %. This indicates that the KRR-DCR can achieve high reconstruction accuracy in both global and local flow field. However, for the reconstruction sample at $M _ {\infty} = 0.843 ~ \mathrm{and} \alpha = 5.55 ^{\circ}$ , the KRR-DCR exhibits large reconstruction errors in the discontinuous region away from upper surface with an $E _ {\mathrm{max}} {=} 27.64$ %, as shown in Fig. 16. At the same time, the isobars in this region also show oscillations similar to those observed in the POD. The reason could be insufficient number of training samples around the sampling bounds which cannot provide sufficient modes containing similar discontinuity information. Nevertheless, the KRR-DCR is still more accurate than the POD and NPBM in capturing the discontinuity of the flow fields.
+
+To enhance the reconstruction accuracy of reconstruction sample at $M _ {\infty} = 0.843 \mathrm{and} \alpha = 5.55 ^{\circ}$ , We supplement 10 additional samples in the sampling bounds near this reconstruction sample and reconstruct the flow field accordingly. The distribution of the additional samples is shown in Fig. 17, while the reconstructed pressure field and absolute error are shown in Fig. 18. After supplementing the additional samples, the reconstruction accuracy of the flow field has been improved significantly, with $E _ {\mathrm{mean}}$ decreasing to 0.04 % and $E _ {\mathrm{max}}$ dropping to 9.95 %. This demonstrates that increasing the number of boundary training samples can effectively enhance the reconstruction accuracy of the flow fields near the bounds.
+
+We further analyze the accuracy of physical consistency in flow fields reconstructed by different methods. We separately reconstruct the pressure, temperature and velocity fields of the reconstruction sample at
+
+$M _ {\infty} = 0.755 , \alpha = 2.33$ . Then, the dimensionless entropy and vorticity in z-direction are calculated.
+
+Since the freestream is modeled as the ideal gas, the dimensionless entropy ̂s simplifies to
+
+$${\widehat {s}} = \ln \left( {\frac {T} {T _ {\infty}}} \right) - {\frac {\gamma - 1} {\gamma}} \ln \left( {\frac {p} {p _ {\infty}}} \right)\tag{3.6}$$
+
+where specific heat ratio $\prime = 1.4 ; T$ is the temperature and $p$ is the pressure; subscript $\ " \infty \ '$ refers to freestream parameters.
+
+The entropy isolines of flow fields reconstructed by different methods are plotted and compared with the CFD result, as is shown in Fig. 19, Fig. 20, Fig. 21. All methods exhibit significant errors in entropy near discontinuity. The POD fails to produce reconstructed flow field with physically reasonable entropy distributions. The flow fields reconstructed by both the KRR-DCR and the NPBM correctly capture the post-shock entropy rise location, but demonstrate anomalously high entropy values—a non-physical phenomenon—in the upstream pre-shock regions. However, the entropy distribution in the shock-wave/boundary-layer interaction (SBLI) region of the flow field reconstructed by the KRR-DCR shows good agreement with the CFD result. This demonstrates that the reconstructed flow fields maintain excellent physical accuracy within this region.
+
+The vorticity isolines are shown in Fig. 22, Fig. 23, Fig. 24. The vorticity distributions near the leading-edge stagnation point obtained by all three methods show good agreement with the CFD result, indicating that these methods achieve high accuracy in flow-field reconstruction for smooth regions near the leading edge. However, significant difference exists near the discontinuous and SBLI regions. The flow field reconstructed by the POD exhibits large underpredicted vorticity production downstream of the shock. The NPBM can accurately reconstruct the vorticity production locations, though some errors persist in the magnitude. The KRR-DCR demonstrates high reconstruction accuracy for vorticity production in both locations and magnitude.
+
+Furthermore, we set a monitoring line at y = 0.2c and $\pmb {x} = 0.4 c . 0.8 c$ as is shown in Fig. 25, and present the distributions of static pressure, density, velocity magnitude and static temperature along this line. The comparison between the results of different methods and CFD are shown in Fig. 26. The POD significantly smooths the sharp gradient of the discontinuity, and all physical quantities exhibit non-physical oscillations across the discontinuity due to the Gibbs phenomenon. Meanwhile, the NPBM and KRR-DCR effectively preserve the physical jump location at the discontinuity. However, the NPBM exhibits large errors in the magnitude of physical jumps for static temperature and velocity, while the KRR-DCR maintains satisfactory accuracy across all physical quantities.
+
+To further validate the physical consistency of the KRR-DCR at the discontinuities, we also present the variation of total temperature along the monitoring line, as shown in Fig. 27. The POD exhibits intense oscillations throughout the entire monitoring line. Due to the inaccurate reconstruction of velocity magnitude and static temperature, the NPBM demonstrates a large oscillation amplitude at the discontinuity. While the KRR-DCR also shows some variation in total temperature, the absolute amplitude of this variation remains within 1 K.
+
+All analyses above indicate that the KRR-DCR possesses the highest level of physical consistency.
+
+A comparison of total time required for flow-field reconstruction across different methods is shown in Table 2 and Table 3. According to the time consumption of different methods, the KRR-DCR requires a relatively long time to solve the modes matrix $\mathbf {\Delta} \mathbf {W} _ {\mathrm{nonlinear}} ,$ but its computational efficiency in the flow-field reconstruction stage is comparable to that of the NPBM method. The computational efficiency of the POD method is significantly higher than that of the other two methods, as the POD only involves a simple linear matrix transformation during flow-field reconstruction. However, considering the reconstruction accuracy improvement achieved by the KRR-DCR, the average time consumption of 0.02 s for reconstructing a single sample is acceptable.
+
+The first 9 modes of the POD and the 9 modes corresponding to the first 9 training samples of the KRR-DCR are compared in Fig. 28. All modes presented in the figures are constructed exclusively from the pressure fields. The modes constructed by these two methods exhibit different physical characteristics, resulting in significant difference in reconstruction accuracy in discontinuous regions.
+
+For the POD, the modes mainly represent the energy characteristics of the flow fields. Low-order modes focus on the global characteristics, including the pressure gradient at the leading and trailing edges of the airfoil, as well as in the region with discontinuities on the upper and lower surfaces. As the order increases, the modes begin to gradually concentrate on the local discontinuity information in the flow fields as shown in mode 5–9. The values of these higher-order modes alternately exhibit maxima and minima near the discontinuities. When reconstructing the flow fields, the maxima and minima compensate for each other to capture the sharp gradient at the discontinuities. It is observed that the frequency of this alternation gradually increases as the order rises. This indicates that the lower-order modes primarily capture the overall variation of the discontinuities, which are low-frequency components. While the higher-order modes can capture the discontinuities through high-frequency components. Truncating these high-order modes could lead to the significant loss of discontinuity information, resulting in large reconstruction errors and significant oscillations in the local region near the discontinuities.
+
+Compared to the POD, the KRR-DCR modes reflect the similarity among the training samples in the kernel inner product space. For flow fields with discontinuities, the differences among these training samples are manifested in the location and intensity of the discontinuities. Thus, each mode constructed by the KRR-DCR can precisely capture the shock’s location and intensity of its corresponding training sample, as show in Fig. 28b). Each mode of the KRR-DCR represents the energy characteristics and contains significant discontinuity information of the flow field of each training sample. This enables the KRR-DCR to ensure the reconstruction accuracy of local discontinuities. Additionally, due to the use of kernel functions, the KRR-DCR can automatically select the modes that have a high similarity to the reconstruction sample, thereby reducing the reconstruction errors caused by incorrect truncation of the
+
+a)
+
+b)
+
+c)
+
+modes. However, this also brings a problem: when the reconstruction sample is on the boundary of sampling space, the modes selected by the model contain limited discontinuity information, resulting in a decrease in reconstruction accuracy. A potential solution is increasing the number of training samples in these areas.
+
+## 3.5. Applicability to time-dependent problems
+
+In this section, the applicability to time-dependent problems of the proposed KRR-DCR method is analyzed. We apply the KRR-DCR to a transonic shock buffet case involving the OAT15A airfoil at $M _ {\infty} = 0.73 \mathrm{,}$ $\alpha = 3.5 ^{\circ} , \mathrm{Re} = 3 ~ \times ~ 10 ^ {6}$ . The computational mesh and CFD solver settings are detailed in Appendix B as well.
+
+We generate 855 flow-field snapshots for dimensionality reduction using LLE within 1.5 periods, and randomly choose 800 snapshots as training samples to construct KRR-DCR modes. 3 reconstruction samples are selected randomly from the remaining 55 snapshots, and their corresponding lift coefficients are shown in Fig. 29.
+
+The reconstructed pressure fields of the 3 reconstruction samples using different methods are illustrated in Fig. 30, Fig. 31, Fig. 32. In this transient case, the reconstruction accuracy of the KRR-DCR method exhibits a noticeable decline. Although it remains significantly more accurate than the POD method around the discontinuities, the reconstruction error of the KRR-DCR method is larger compared to the NPBM method.
+
+The inaccuracies could stem from two aspects: 1) the manifold coordinates obtained through LLE when preforming dimensionality reduction do not incorporate global temporal information; 2) the selected kernel function lacks temporal characteristics.
+
+The first two dimensions of the manifold coordinates are shown in Fig. 33. To compare the relationship between the manifold coordinates and the flow-field dynamics, we normalize the lift coefficient to (− 1, 1) and also plot it in Fig. 33. It can be observed that although the manifold coordinates still exhibit an overall periodic variation trend with time, the lack of global temporal constraints results in non-smooth variations. This also reflects the characteristic of the LLE method for dimensionality reduction: it focuses only on relationships among samples within local neighborhoods while neglecting the preservation of global manifold structure.
+
+We further plot all the kernel values for the reconstruction sample at time step=348, as is shown in Fig. 34. The indices of training samples are arranged according to the temporal sequence of the training samples corresponding to each kernel value. The magnitude of these kernel values represents the contribution of each training sample’s corresponding KRR-DCR mode to the flow-field reconstruction. It can be observed that the kernel values exhibit an anomalous peak within the training samples at time step between 200 and 300, with its temporal position precisely coinciding with a local peak in the manifold coordinates. This indicates that the inaccuracies in the manifold coordinates lead to errors in kernel calculations. Additionally, the kernel values are computed totally based on the manifold coordinates without incorporating temporal characteristics, which further exacerbates errors. As a result, certain modes with low similarity to the reconstruction sample participate in the reconstruction process with disproportionately large weights, consequently decreasing the reconstruction accuracy.
+
+We also select four characteristic locations on the lift coefficient curve, as shown in Fig. 35, and plot the corresponding KRR-DCR modes for each location in Fig. 36.
+
+The results demonstrate that the KRR-DCR modes successfully capture the shock’s movements at corresponding time instances. From location a) to c), the shock progressively moves downstream, resulting in an increase in lift coefficient; whereas from c) to d), the shock retreats upstream, accompanied by a gradual decrease in lift coefficient.
+
+However, our current KRR-DCR modes can only obtain the flow-field dynamics of the discontinuities within the training snapshots. Consequently, during extrapolative prediction, the reconstruction process becomes compromised due to the absence of sufficiently similar modes. This represents a limitation common to all current data-driven models employed in this study. The POD modes, also derived from training snapshots, cannot accurately reconstruct flow fields when flow structures lie outside the training regime. Similarly, the NPBM relies on neighborhood samples and fails when no neighboring training samples exist. Therefore, future research should focus on appropriately incorporating temporal constraints and physical laws into the modeling process.
+
+Based on the above analyses, the following limitations of the current KRR-DCR method are identified:1) Kernel sensitivity: reconstruction accuracy exhibits significant dependence on kernel selection, parameter tuning and method of dimensionality reduction, necessitating casespecific adjusting; 2) Absence of physical constraints: the modes’ construction process lacks physical laws and constraints; 3) Extrapolation vulnerability: performance degrades substantially in extrapolation beyond the training dataset.
+
+Therefore, to ensure that the constructed KRR-DCR method accurately reconstructs flow fields around discontinuities, the key lies in: the manifold coordinates obtained through ML precisely preserve the discontinuity information present in the samples, and the kernel values quantitatively describe the similarity between samples. Selecting appropriate ML method and kernel functions regarding the specific problem is essential to meet the reconstruction requirements.
+
+## 4. Conclusion
+
+In this paper, a new reconstruction method KRR-DCR is proposed to enhance the reconstruction accuracy of the flow fields with discontinuities. The main conclusions are drawn as follows:
+
+1. After dimensionality reduction by ML, we introduce the KRR to construct a set of mode coefficients and modes to nonlinearly reconstruct the flow fields from manifold coordinates. It can significantly improve the reconstruction accuracy in the discontinuous regions in comparison with the POD and NPBM.
+
+2. The modes constructed by the KRR-DCR show strong physical interpretability, with each mode effectively capturing the discontinuity information of its corresponding training sample.
+
+3. The LLE is recommended for dimensionality reduction of flow fields in the KRR-DCR, and the quartic polynomial kernel function with $\lambda {=} 10 ^ {- 5}$ and $\gamma = 1.1$ are suitable for flow-field reconstruction of the RAE2822 airfoil to achieve the minimum reconstruction error.
+
+4. The analysis of applicability to time-dependent problems shows that main limitations of the current KRR-DCR method include kernel sensitivity, absence of physical constraints and extrapolation vulnerability.
+
+5. Future works include leveraging conservation laws or governing equations into the construction of the KRR-DCR modes and exploring the feasibility of the KRR-DCR modes for building intrusive ROMs.
+
+## CRediT authorship contribution statement
+
+Weiji Wang: Writing – original draft, Validation, Methodology, Investigation, Formal analysis, Conceptualization. Chunlin Gong: Writing – review & editing, Supervision, Project administration. Xuyi Jia: Data curation, Conceptualization. Chunna Li: Writing – review & editing, Supervision, Project administration, Funding acquisition.

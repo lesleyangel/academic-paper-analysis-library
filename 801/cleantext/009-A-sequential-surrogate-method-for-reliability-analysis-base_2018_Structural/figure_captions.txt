@@ -1,0 +1,27 @@
+Fig. 1. Approximations of LSF in X and U space.
+
+Fig. 2. Initial surrogate in U-Space. ‘‘ ” denotes the initial samples, and ‘‘ ” denotes the added sample based on the initial surrogate model.
+
+Fig. 3. Flow chart of SSRM.
+
+Fig. 4. Iterative process of SSRM for the circular pipe structure.
+
+Fig. 5. Iterative process of SSRM for the hyper-sphere problem.
+
+Fig. 6. Iterative process of SSRM for the cantilever beam.
+
+Fig. 7. Iterative process of SSRM for the speed reducer shaft.
+
+Fig. 8. Cantilever tube [6].
+
+Fig. 9. Iterative process of SSRM for the cantilever tube.
+
+Fig. 10. Nonlinear oscillator [34].
+
+Fig. 12. Iterative process of SSRM for the high-dimensional problem for m = 40, 100 and 250. Fig. 11. Iterative process of SSRM for the nonlinear oscillator.
+
+Fig. 2. Initial surrogate in U-Space. $" \underbrace { \mathbf { \phi } } _ { \mathrm { ~ \tiny ~ ~ } } \cdot \mathbf { \psi } ^ { \star }$ denotes the initial samples, and $" \Delta "$ denotes the added sample based on the initial surrogate model.
+
+Fig. 11. Iterative process of SSRM for the nonlinear oscillator.
+
+Fig. 12. Iterative process of SSRM for the high-dimensional problem for m = 40, 100 and 250.

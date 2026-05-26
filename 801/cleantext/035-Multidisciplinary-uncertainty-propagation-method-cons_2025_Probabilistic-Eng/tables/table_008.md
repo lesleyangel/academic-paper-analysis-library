@@ -1,0 +1,8 @@
+| Statistical parameter | Unit | MCS | Consider correlation | Ignore correlation |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  |  | Value | Relative error (%) | Value | Relative error (%) |
+| 1 | J | 2.64E10 | 2.64E10 | 0.03 | 2.65E10 | 0.44 |
+| 2 | J | 1.57E9 | 1.65E9 | 4.64 | 2.16E9 | 37.21 |
+| 3 | - | -9.19E- 2 | -1.54E- 2 | 83.24 | 5.55E-2 | 160.39 |
+| $\mu _ { 4 }$ | - | 3.19E0 | 3.17E0 | 0.45 | 3.11E0 | 2.26 |
+| $l _ { b }$ | J | 2.12E10 | 2.07E10 | 2.67 | 1.96E10 | 7.87 |

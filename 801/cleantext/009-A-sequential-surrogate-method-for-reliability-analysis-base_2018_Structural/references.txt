@@ -1,0 +1,107 @@
+[1] Crespo LG, Kenny SP, Giesy DP. The Nasa Langley Multidisciplinary Uncertainty Quantification Challenge//AIAA Non-Deterministic Approaches Conference, 2015.
+
+[2] Yao W, Chen X, Luo W, et al. Review of Uncertainty-based Multidisciplinary Design Optimization Methods for Aerospace Vehicles. Prog Aerosp Sci 2011;47 (1):450–79.
+
+[3] Choi SK, Canfield RA, Grandhi RV. Reliability-based Structural Design. London: Springer; 2007. p. 207–12.
+
+[4] Verma AK, Srividya A, Karanki DR. Reliability and Safety Engineering. Springer; 2009. p. 15–167.
+
+[5] Cawlfield JD. Application of First-order (form) and Second-order (sorm) Reliability Methods: Analysis and Interpretation of Sensitivity Measures Related to Groundwater Pressure Decreases and Resulting Ground Subsidence. Sensitivity Anal, 317–327.
+
+[6] Du X. Unified Uncertainty Analysis By the First Order Reliability Method. J Mech Des, 2008;130(9).
+
+[7] Haldar A, Mahadevan S. First-order and Second-order Reliability Methods. Springer Us 1995:27–52.
+
+[8] Verderaime V. Illustrated Structural Application of Universal First-order Reliability Method. Nasa Sti/recon Technical Report N, 1994, 95(August 1994).
+
+[9] Du X, Sudjianto A. First Order Saddlepoint Approximation for Reliability Analysis. Aiaa J 2004;42(6):1199–207.
+
+[10] Faragher J. Probabilistic Methods for the Quantification of Uncertainty and Error in Computational Fluid Dynamics Simulations.
+
+[11] Mitteau JC. Error Evaluations for the Computation of Failure Probability in Static Structural Reliability Problems. Probab Eng Mech 1999;14(1):119–35.
+
+[12] Cizelj L, Mavko B, Riesch-oppermann H. Application of First and Second Order Reliability Methods in the Safety Assessment of Cracked Steam Generator Tubing. Nucl Eng Des 1994;147(3):359–68.
+
+[13] Der kiureghian. Second-order Reliability Approximations. J Eng Mech 1987;113(8):1208–1225.
+
+[14] Faravelli L. Response-surface Approach for Reliability Analysis. J Eng Mech 1989;115(12):2763–81.
+
+[15] Faravelli L. Structural Reliability Via Response Surface. Nonlinear Stochastic Mechanics, 1992.
+
+[16] Li D, Zheng D, Cao Z, et al. Response Surface Methods for Slope Reliability Analysis: Review and Comparison. Eng Geol 2016;203(1):3–14.
+
+[17] Au SK, Beck JL. Important Sampling in High Dimensions. Struct Saf 2003;25 (2):139–63.
+
+[18] Echard B, Gayton N, Lemaire M, et al. A Combined Importance Sampling and Kriging Reliability Method for Small Failure Probabilities with Time- demanding Numerical Models. Reliab Eng Syst Saf 2013;111(2):232–40.
+
+[19] Nie J, Ellingwood BR. Directional Methods for Structural Reliability Analysis. Struct Saf 2000;22(3):233–49.
+
+[20] Rajashekhar M, Ellingwood B. A New Look at the Response Surface Approach for Reliability Analysis. Struct Saf 1993;12(3):205–20.
+
+[21] Allaix DL, Carbone VI. An Improvement of the Response Surface Method. Struct Saf 2011;33(2):165–72.
+
+[22] Basaga HB, Bayraktar A, Kaymaz I. An Improved Response Surface Method for Reliability Analysis of Structures. Struct Eng Mech 2012;42(2):175–89.
+
+[23] Bucher CG, Bourgund U. A Fast and Efficient Response Surface Approach for Structural Reliability Problems. Struct Saf 1990;7(1):57–66.
+
+[24] Cheng Y, Zhou CY, Xie JR, et al. Research on Complex Structures Reliability Analysis Using Improved Response Surface Method. Adv Mater Res 2011:538–42.
+
+[25] Goswami S, Ghosh S, Chakraborty S. Reliability Analysis of Structures By Iterative Improved Response Surface Method. Struct Saf 2016;60(1):56–66.
+
+[26] Gupta S, Manohar CS. An Improved Response Surface Method for the Determination of Failure Probability and Importance Measures. Struct Saf 2004;26(2):123–39.
+
+[27] Kuschel N, Rackwitz R. Two Basic Problems in Reliability-based Structural Optimization. Math Methods Oper Res 1997;46(3):309–33.
+
+[28] Li GB, Meng GW, Li F, et al. A New Response Surface Method for Structural Reliability Analysis. Adv Mater Res 2013;712–715:1506–9.
+
+[29] Liu J, Li Y. An Improved Adaptive Response Surface Method for Structural Reliability Analysis. J Central South Univ 2012;19(4):1148–54.
+
+[30] Most T, Bucher C. Adaptive Response Surface Approach for Reliability Analysis Using Advanced Meta-models//International Conference on Applications of Statistics and Probability in Civil Engineering, 2007.
+
+[31] Echard B, Gayton N, Lemaire M. Ak-mcs: an Active Learning Reliability Method Combining Kriging and Monte Carlo Simulation. Struct Saf 2011;33(2): 145–54.
+
+[32] Roussouly N, Petitjean F, Salaun M. A New Adaptive Response Surface Method for Reliability Analysis. Probab Eng Mech 2012;32:103–15.
+
+[33] Basudhar A, Missoum S, Sanchez AH. LSF Identification Using Support Vector Machines for Discontinuous Responses and Disjoint Failure Domains. Probab Eng Mech 2008;23(1):1–11.
+
+[34] Bourinet JM, Deheeger F, Lemaire M. Assessing Small Failure Probabilities By Combined Subset Simulation and Support Vector Machines. Struct Saf 2011;33 (6):343–53.
+
+[35] Chau MQ, Han X, Bai YC, et al. A Structural Reliability Analysis Method Based on Radial Basis Function. Comput Mater Continua 2012;27(2):128–42.
+
+[36] Chau M, Han X, Jiang C, et al. An Efficient Pma-based Reliability Analysis Technique Using Radial Basis Function. Eng Comput 2014;31:1098–115.
+
+[37] Cheng J, Li QS, Xiao R. A New Artificial Neural Network-based Response Surface Method for Structural Reliability Analysis. Probab Eng Mech 2008;23 (1):51–63.
+
+[38] Dai QH, Fang JY. Weighted Linear Response Surface Method for Structural Reliability Analysis. Berlin Heidelberg: Springer; 2013. p. 631–9.
+
+[39] Deng J. Structural Reliability Analysis for Implicit Performance Function Using Radial Basis Function Network. Int J Solids Struct 2006;43(11):3255–91.
+
+[40] Deng J, Gu D, Li X, et al. Structural Reliability Analysis for Implicit Performance Functions Using Artificial Neural Network. Struct Saf 2005;27(1):25–48.
+
+[41] Kang SC, Koh HM, Choo JF. An Efficient Response Surface Method Using Moving Least Squares Approximation for Structural Reliability Analysis. Probab Eng Mech 2010;25(4):365–71.
+
+[42] Kaymaz I, Mcmahon CA. A Response Surface Method Based on Weighted Regression for Structural Reliability Analysis. Probab Eng Mech 2005;20 (1):11–7.
+
+[43] Li HS, Lu ZZ, Qiao HW, et al. A New High-order Response Surface Method for Structural Reliability Analysis. Struct Eng Mech 2010;34(6):199–203.
+
+[44] Ren PS. Response Surface Method Based on Support Vector Machine and Its Application in Engineering. J Hunan Agric Univ 2009;35(6):702–4.
+
+[45] Wang Q, Fang H, Shen L. Reliability Analysis of Tunnels Using a Metamodeling Technique Based on Augmented Radial Basis Functions. Tunn Undergr Space Technol 2016;56:45–53.
+
+[46] Roshanian Jafar, Ebrahimi Masoud. Latin hypercube sampling applied to reliability-based multidisciplinary design optimization of a launch vehicle. Aerosp Sci Technol 2013;28(1):297–304.
+
+[47] Hastie T,Tibshirani R,Friedman R. The Elements of Statistical Learning Data Mining, Inference, and Prediction. 2008.
+
+[48] Rommel g. regis Christine-A.-Shoemaker. Constrained Global Optimization of Expensive Black Box Functions Using Radial Basis Functions. J Global Optim, 2005;31(1):153–171.
+
+[49] Boopathy K, Rumpfkeil MP. A Multivariate Interpolation and Regression Enhanced Kriging Surrogate Model[C]//21st Aiaa Computational Fluid Dynamics Conference. Sand Diego: Aiaa; 2013. p. 1–18.
+
+[50] Roshan V, Ying H, Sudjianto A. Blind Kriging: A New Method for Developing Metamodels. J Mech Des 2008;130(3):350–3.
+
+[51] Gano SE, Renaud JE, Sanders B. Hybrid Variable Fidelity Optimization By Using a Kriging-based Scaling Function. Aiaa J 2005;43(11):2422–33.
+
+[52] Hurtado JE, Alvarez DA. Neural-network-based Reliability Analysis: a Comparative Study. Comput Methods Appl Mech Eng 2001;191(1):113–32.
+
+[53] Schueremans L, Van Gemert D. Benefit of splines and neural networks in simulation based structural reliability analysis. Struct Saf 2005;27:246–61.
+
+[54] Bourinet J, Deheeger F, Lemaire M. Assessing Small Failure Probabilities by Combined SubsetSimulation and Support Vector Machines. Struct Saf 2011;33 (6):343–53.

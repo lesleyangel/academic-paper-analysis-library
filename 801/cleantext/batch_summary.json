@@ -1,0 +1,1509 @@
+[
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-heat-flux-distribution-prediction-method-for-hyperson_2025_Aerospace-Scien.pdf",
+    "paper_id": "001-A-heat-flux-distribution-prediction-method-for-hyperson_2025_Aerospace-Scien",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\001-A-heat-flux-distribution-prediction-method-for-hyperson_2025_Aerospace-Scien",
+    "status": "ok",
+    "elapsed_seconds": 142.76,
+    "body_chars": 47330,
+    "references_count": 37,
+    "tables_count": 7,
+    "figure_captions_count": 13,
+    "equations_count": 156,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "7 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 7
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.pdf",
+    "paper_id": "002-A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\002-A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien",
+    "status": "ok",
+    "elapsed_seconds": 153.91,
+    "body_chars": 49354,
+    "references_count": 36,
+    "tables_count": 3,
+    "figure_captions_count": 56,
+    "equations_count": 147,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "33 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 33
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-mesomechanical-model-for-predicting-the-degradation-in-stiff_2016_Material.pdf",
+    "paper_id": "003-A-mesomechanical-model-for-predicting-the-degradation-in-stiff_2016_Material",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\003-A-mesomechanical-model-for-predicting-the-degradation-in-stiff_2016_Material",
+    "status": "ok",
+    "elapsed_seconds": 77.44,
+    "body_chars": 28620,
+    "references_count": 36,
+    "tables_count": 2,
+    "figure_captions_count": 11,
+    "equations_count": 50,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 0
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-multi-scale-uncertainty-quantification-model-encompassing-m_2025_Composite.pdf",
+    "paper_id": "004-A-multi-scale-uncertainty-quantification-model-encompassing-m_2025_Composite",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\004-A-multi-scale-uncertainty-quantification-model-encompassing-m_2025_Composite",
+    "status": "ok",
+    "elapsed_seconds": 371.98,
+    "body_chars": 73458,
+    "references_count": 46,
+    "tables_count": 14,
+    "figure_captions_count": 24,
+    "equations_count": 435,
+    "noise_flags": [
+      "many_figure_caption_markers",
+      "many_table_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "66 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 66
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-multidisciplinary-design-optimization-method-for-cross-_2026_Aerospace-Sci.pdf",
+    "paper_id": "005-A-multidisciplinary-design-optimization-method-for-cross-_2026_Aerospace-Sci",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\005-A-multidisciplinary-design-optimization-method-for-cross-_2026_Aerospace-Sci",
+    "status": "ok",
+    "elapsed_seconds": 204.13,
+    "body_chars": 62929,
+    "references_count": 38,
+    "tables_count": 7,
+    "figure_captions_count": 18,
+    "equations_count": 260,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "59 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 59
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-novel-hybrid-time-variant-reliability-analysis-metho_2024_Probabilistic-En.pdf",
+    "paper_id": "006-A-novel-hybrid-time-variant-reliability-analysis-metho_2024_Probabilistic-En",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\006-A-novel-hybrid-time-variant-reliability-analysis-metho_2024_Probabilistic-En",
+    "status": "ok",
+    "elapsed_seconds": 445.03,
+    "body_chars": 69015,
+    "references_count": 47,
+    "tables_count": 11,
+    "figure_captions_count": 13,
+    "equations_count": 326,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "57 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 57
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-novel-mechanical-thermal-electrical-thermal-protection-syste_2021_Composit.pdf",
+    "paper_id": "007-A-novel-mechanical-thermal-electrical-thermal-protection-syste_2021_Composit",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\007-A-novel-mechanical-thermal-electrical-thermal-protection-syste_2021_Composit",
+    "status": "ok",
+    "elapsed_seconds": 209.85,
+    "body_chars": 58038,
+    "references_count": 50,
+    "tables_count": 6,
+    "figure_captions_count": 16,
+    "equations_count": 73,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "7 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 7
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien.pdf",
+    "paper_id": "008-A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\008-A-novel-TE-material-based-thermal-protection-structure-_2018_Aerospace-Scien",
+    "status": "ok",
+    "elapsed_seconds": 203.4,
+    "body_chars": 47862,
+    "references_count": 40,
+    "tables_count": 3,
+    "figure_captions_count": 16,
+    "equations_count": 185,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "10 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 10
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural-.pdf",
+    "paper_id": "009-A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\009-A-sequential-surrogate-method-for-reliability-analysis-base_2018_Structural",
+    "status": "ok",
+    "elapsed_seconds": 217.56,
+    "body_chars": 37071,
+    "references_count": 54,
+    "tables_count": 15,
+    "figure_captions_count": 14,
+    "equations_count": 118,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "13 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 13
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-solar-radiant-heating-apparatus-for-measuring-the-thermal_2016_Applied-The.pdf",
+    "paper_id": "010-A-solar-radiant-heating-apparatus-for-measuring-the-thermal_2016_Applied-The",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\010-A-solar-radiant-heating-apparatus-for-measuring-the-thermal_2016_Applied-The",
+    "status": "ok",
+    "elapsed_seconds": 64.71,
+    "body_chars": 25244,
+    "references_count": 31,
+    "tables_count": 0,
+    "figure_captions_count": 11,
+    "equations_count": 27,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 0
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-sparse-reconstruction-method-of-physical-field-via_2025_Aerospace-Science-.pdf",
+    "paper_id": "011-A-sparse-reconstruction-method-of-physical-field-via_2025_Aerospace-Science",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\011-A-sparse-reconstruction-method-of-physical-field-via_2025_Aerospace-Science",
+    "status": "ok",
+    "elapsed_seconds": 148.72,
+    "body_chars": 42099,
+    "references_count": 47,
+    "tables_count": 5,
+    "figure_captions_count": 22,
+    "equations_count": 134,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "20 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 20
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-structural-damage-identification-model-with-finite-t_2025_Aerospace-Scienc.pdf",
+    "paper_id": "012-A-structural-damage-identification-model-with-finite-t_2025_Aerospace-Scienc",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\012-A-structural-damage-identification-model-with-finite-t_2025_Aerospace-Scienc",
+    "status": "ok",
+    "elapsed_seconds": 174.86,
+    "body_chars": 72625,
+    "references_count": 44,
+    "tables_count": 21,
+    "figure_captions_count": 14,
+    "equations_count": 213,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "11 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 11
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-study-of-interfacial-electrical-contact-resistances-of-th_2022_Aerospace-S.pdf",
+    "paper_id": "013-A-study-of-interfacial-electrical-contact-resistances-of-th_2022_Aerospace-S",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\013-A-study-of-interfacial-electrical-contact-resistances-of-th_2022_Aerospace-S",
+    "status": "ok",
+    "elapsed_seconds": 211.88,
+    "body_chars": 62079,
+    "references_count": 48,
+    "tables_count": 5,
+    "figure_captions_count": 21,
+    "equations_count": 170,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "14 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 14
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-study-of-morphing-aircraft-on-morphing-rules-a_2021_Chinese-Journal-of-Aer.pdf",
+    "paper_id": "014-A-study-of-morphing-aircraft-on-morphing-rules-a_2021_Chinese-Journal-of-Aer",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\014-A-study-of-morphing-aircraft-on-morphing-rules-a_2021_Chinese-Journal-of-Aer",
+    "status": "ok",
+    "elapsed_seconds": 104.28,
+    "body_chars": 29803,
+    "references_count": 42,
+    "tables_count": 6,
+    "figure_captions_count": 0,
+    "equations_count": 42,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "7 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 7
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-thermal-contact-model-encompassing-near-field-e_2023_International-Journal.pdf",
+    "paper_id": "015-A-thermal-contact-model-encompassing-near-field-e_2023_International-Journal",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\015-A-thermal-contact-model-encompassing-near-field-e_2023_International-Journal",
+    "status": "ok",
+    "elapsed_seconds": 268.02,
+    "body_chars": 69879,
+    "references_count": 48,
+    "tables_count": 6,
+    "figure_captions_count": 24,
+    "equations_count": 222,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "23 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 23
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-three-stage-sequential-convex-programming-approa_2024_Aerospace-Science-an.pdf",
+    "paper_id": "016-A-three-stage-sequential-convex-programming-approa_2024_Aerospace-Science-an",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\016-A-three-stage-sequential-convex-programming-approa_2024_Aerospace-Science-an",
+    "status": "ok",
+    "elapsed_seconds": 364.96,
+    "body_chars": 56428,
+    "references_count": 33,
+    "tables_count": 6,
+    "figure_captions_count": 15,
+    "equations_count": 316,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "39 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 39
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Adaptive-path-following-control-for-miniature-unmanned-aerial-v_2023_ISA-Tra.pdf",
+    "paper_id": "017-Adaptive-path-following-control-for-miniature-unmanned-aerial-v_2023_ISA-Tra",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\017-Adaptive-path-following-control-for-miniature-unmanned-aerial-v_2023_ISA-Tra",
+    "status": "ok",
+    "elapsed_seconds": 156.04,
+    "body_chars": 42347,
+    "references_count": 31,
+    "tables_count": 6,
+    "figure_captions_count": 19,
+    "equations_count": 203,
+    "noise_flags": [],
+    "audit_score": 0.96,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "34 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 34
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Aerodynamic-and-angular-motion-characteristics-of-a-fixed_2025_Chinese-Journ.pdf",
+    "paper_id": "018-Aerodynamic-and-angular-motion-characteristics-of-a-fixed_2025_Chinese-Journ",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\018-Aerodynamic-and-angular-motion-characteristics-of-a-fixed_2025_Chinese-Journ",
+    "status": "ok",
+    "elapsed_seconds": 140.76,
+    "body_chars": 31771,
+    "references_count": 38,
+    "tables_count": 8,
+    "figure_captions_count": 0,
+    "equations_count": 75,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "7 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 7
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite.pdf",
+    "paper_id": "019-An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\019-An-approach-for-stress-analysis-of-corrugated-core-integrated_2018_Composite",
+    "status": "ok",
+    "elapsed_seconds": 355.65,
+    "body_chars": 78933,
+    "references_count": 14,
+    "tables_count": 1,
+    "figure_captions_count": 36,
+    "equations_count": 454,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "7 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 7
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu.pdf",
+    "paper_id": "020-An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\020-An-efficient-implementation-of-aeroelastic-tailoring-bas_2019_Journal-of-Flu",
+    "status": "ok",
+    "elapsed_seconds": 175.46,
+    "body_chars": 52491,
+    "references_count": 53,
+    "tables_count": 4,
+    "figure_captions_count": 13,
+    "equations_count": 189,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "20 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 20
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-efficient-multi-layer-TEG-with-thermal-electrical-_2025_Applied-Thermal-E.pdf",
+    "paper_id": "021-An-efficient-multi-layer-TEG-with-thermal-electrical-_2025_Applied-Thermal-E",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\021-An-efficient-multi-layer-TEG-with-thermal-electrical-_2025_Applied-Thermal-E",
+    "status": "ok",
+    "elapsed_seconds": 246.23,
+    "body_chars": 68354,
+    "references_count": 53,
+    "tables_count": 15,
+    "figure_captions_count": 23,
+    "equations_count": 176,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "13 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 13
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.pdf",
+    "paper_id": "022-An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\022-An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc",
+    "status": "ok",
+    "elapsed_seconds": 158.7,
+    "body_chars": 56494,
+    "references_count": 43,
+    "tables_count": 5,
+    "figure_captions_count": 15,
+    "equations_count": 101,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "7 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 7
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal.pdf",
+    "paper_id": "023-An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\023-An-efficient-uncertainty-propagation-method-for-nonline_2024_Chinese-Journal",
+    "status": "ok",
+    "elapsed_seconds": 397.13,
+    "body_chars": 81033,
+    "references_count": 64,
+    "tables_count": 7,
+    "figure_captions_count": 0,
+    "equations_count": 349,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "41 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 41
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-enhanced-temperature-field-inversion-model-_2025_International-Communicat.pdf",
+    "paper_id": "024-An-enhanced-temperature-field-inversion-model-_2025_International-Communicat",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\024-An-enhanced-temperature-field-inversion-model-_2025_International-Communicat",
+    "status": "ok",
+    "elapsed_seconds": 193.16,
+    "body_chars": 65960,
+    "references_count": 65,
+    "tables_count": 9,
+    "figure_captions_count": 21,
+    "equations_count": 171,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "6 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 6
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-integrated-optimization-method-of-multi-hierarchy-va_2024_Aerospace-Scien.pdf",
+    "paper_id": "025-An-integrated-optimization-method-of-multi-hierarchy-va_2024_Aerospace-Scien",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\025-An-integrated-optimization-method-of-multi-hierarchy-va_2024_Aerospace-Scien",
+    "status": "ok",
+    "elapsed_seconds": 156.05,
+    "body_chars": 45817,
+    "references_count": 38,
+    "tables_count": 0,
+    "figure_captions_count": 20,
+    "equations_count": 104,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.96,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "14 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 14
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-inter-scale-stiffness-propagation-method-with-_2026_Computer-Methods-in-A.pdf",
+    "paper_id": "026-An-inter-scale-stiffness-propagation-method-with-_2026_Computer-Methods-in-A",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\026-An-inter-scale-stiffness-propagation-method-with-_2026_Computer-Methods-in-A",
+    "status": "ok",
+    "elapsed_seconds": 242.87,
+    "body_chars": 70902,
+    "references_count": 55,
+    "tables_count": 11,
+    "figure_captions_count": 24,
+    "equations_count": 286,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "40 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 40
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Appropriate-utilization-of-the-unit-cell-method-in-th_2018_Applied-Thermal-E.pdf",
+    "paper_id": "027-Appropriate-utilization-of-the-unit-cell-method-in-th_2018_Applied-Thermal-E",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\027-Appropriate-utilization-of-the-unit-cell-method-in-th_2018_Applied-Thermal-E",
+    "status": "ok",
+    "elapsed_seconds": 243.17,
+    "body_chars": 40542,
+    "references_count": 36,
+    "tables_count": 8,
+    "figure_captions_count": 11,
+    "equations_count": 198,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "15 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 15
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Enhancing-thermoelectric-performance-of-a-high-entropy_2026_Journal-of-the-E.pdf",
+    "paper_id": "028-Enhancing-thermoelectric-performance-of-a-high-entropy_2026_Journal-of-the-E",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\028-Enhancing-thermoelectric-performance-of-a-high-entropy_2026_Journal-of-the-E",
+    "status": "ok",
+    "elapsed_seconds": 107.96,
+    "body_chars": 45265,
+    "references_count": 77,
+    "tables_count": 2,
+    "figure_captions_count": 5,
+    "equations_count": 87,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "5 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 5
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Fabrication-and-thermoelectric-properties-of-Ca-Co-O-cerami_2018_Results-in-.pdf",
+    "paper_id": "029-Fabrication-and-thermoelectric-properties-of-Ca-Co-O-cerami_2018_Results-in",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\029-Fabrication-and-thermoelectric-properties-of-Ca-Co-O-cerami_2018_Results-in",
+    "status": "ok",
+    "elapsed_seconds": 95.81,
+    "body_chars": 19360,
+    "references_count": 30,
+    "tables_count": 3,
+    "figure_captions_count": 9,
+    "equations_count": 73,
+    "noise_flags": [],
+    "audit_score": 0.97,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 0
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Flow-sensing-method-for-fluid-structure-interaction-sy_2024_Journal-of-Fluid.pdf",
+    "paper_id": "030-Flow-sensing-method-for-fluid-structure-interaction-sy_2024_Journal-of-Fluid",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\030-Flow-sensing-method-for-fluid-structure-interaction-sy_2024_Journal-of-Fluid",
+    "status": "ok",
+    "elapsed_seconds": 220.73,
+    "body_chars": 66707,
+    "references_count": 47,
+    "tables_count": 4,
+    "figure_captions_count": 55,
+    "equations_count": 230,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "18 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 18
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and.pdf",
+    "paper_id": "031-Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\031-Fluid-structure-interaction-of-a-vegetation-canop_2022_Journal-of-Fluids-and",
+    "status": "ok",
+    "elapsed_seconds": 130.08,
+    "body_chars": 79247,
+    "references_count": 52,
+    "tables_count": 1,
+    "figure_captions_count": 18,
+    "equations_count": 139,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "4 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 4
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\High-fidelity-modeling-of-unsteady-aerodynamic-loads-und_2026_Aerospace-Scie.pdf",
+    "paper_id": "032-High-fidelity-modeling-of-unsteady-aerodynamic-loads-und_2026_Aerospace-Scie",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\032-High-fidelity-modeling-of-unsteady-aerodynamic-loads-und_2026_Aerospace-Scie",
+    "status": "ok",
+    "elapsed_seconds": 250.48,
+    "body_chars": 55202,
+    "references_count": 39,
+    "tables_count": 7,
+    "figure_captions_count": 42,
+    "equations_count": 175,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "10 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 10
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.pdf",
+    "paper_id": "033-hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\033-hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science",
+    "status": "ok",
+    "elapsed_seconds": 197.22,
+    "body_chars": 54990,
+    "references_count": 37,
+    "tables_count": 5,
+    "figure_captions_count": 13,
+    "equations_count": 272,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "35 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 35
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al.pdf",
+    "paper_id": "034-Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\034-Microstructure-and-thermoelectric-properties-of-non-equim_2024_Journal-of-Al",
+    "status": "ok",
+    "elapsed_seconds": 108.81,
+    "body_chars": 33717,
+    "references_count": 74,
+    "tables_count": 5,
+    "figure_captions_count": 13,
+    "equations_count": 106,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "14 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 14
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Multidisciplinary-uncertainty-propagation-method-cons_2025_Probabilistic-Eng.pdf",
+    "paper_id": "035-Multidisciplinary-uncertainty-propagation-method-cons_2025_Probabilistic-Eng",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\035-Multidisciplinary-uncertainty-propagation-method-cons_2025_Probabilistic-Eng",
+    "status": "ok",
+    "elapsed_seconds": 162.1,
+    "body_chars": 38115,
+    "references_count": 28,
+    "tables_count": 8,
+    "figure_captions_count": 14,
+    "equations_count": 221,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "35 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 35
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Numerical-investigation-of-the-effects-of-different-para_2019_Aerospace-Scie.pdf",
+    "paper_id": "036-Numerical-investigation-of-the-effects-of-different-para_2019_Aerospace-Scie",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\036-Numerical-investigation-of-the-effects-of-different-para_2019_Aerospace-Scie",
+    "status": "ok",
+    "elapsed_seconds": 104.64,
+    "body_chars": 44847,
+    "references_count": 57,
+    "tables_count": 5,
+    "figure_captions_count": 23,
+    "equations_count": 84,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "19 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 19
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Real-time-reconstruction-of-thermal-fields-from-sp_2026_International-Journa.pdf",
+    "paper_id": "037-Real-time-reconstruction-of-thermal-fields-from-sp_2026_International-Journa",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\037-Real-time-reconstruction-of-thermal-fields-from-sp_2026_International-Journa",
+    "status": "ok",
+    "elapsed_seconds": 163.52,
+    "body_chars": 75018,
+    "references_count": 32,
+    "tables_count": 16,
+    "figure_captions_count": 29,
+    "equations_count": 142,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "13 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 13
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.pdf",
+    "paper_id": "038-The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\038-The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma",
+    "status": "ok",
+    "elapsed_seconds": 183.14,
+    "body_chars": 53363,
+    "references_count": 45,
+    "tables_count": 6,
+    "figure_captions_count": 17,
+    "equations_count": 162,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "5 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 5
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-determination-of-physical-dimensions-of-a-hypersonic_2023_Aerospace-Scie.pdf",
+    "paper_id": "039-The-determination-of-physical-dimensions-of-a-hypersonic_2023_Aerospace-Scie",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\039-The-determination-of-physical-dimensions-of-a-hypersonic_2023_Aerospace-Scie",
+    "status": "ok",
+    "elapsed_seconds": 111.64,
+    "body_chars": 42691,
+    "references_count": 35,
+    "tables_count": 7,
+    "figure_captions_count": 23,
+    "equations_count": 26,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "5 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 5
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-heat-dissipation--transport-and-reuse-management-for-_2021_Aerospace-Sci.pdf",
+    "paper_id": "040-The-heat-dissipation-transport-and-reuse-management-for-_2021_Aerospace-Sci",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\040-The-heat-dissipation-transport-and-reuse-management-for-_2021_Aerospace-Sci",
+    "status": "ok",
+    "elapsed_seconds": 272.38,
+    "body_chars": 84112,
+    "references_count": 58,
+    "tables_count": 10,
+    "figure_captions_count": 18,
+    "equations_count": 272,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "28 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 28
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-innovation-of-an-aerodynamic-heat-harvest-TEG-consider_2025_Applied-Ther.pdf",
+    "paper_id": "041-The-innovation-of-an-aerodynamic-heat-harvest-TEG-consider_2025_Applied-Ther",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\041-The-innovation-of-an-aerodynamic-heat-harvest-TEG-consider_2025_Applied-Ther",
+    "status": "ok",
+    "elapsed_seconds": 184.2,
+    "body_chars": 46564,
+    "references_count": 48,
+    "tables_count": 14,
+    "figure_captions_count": 20,
+    "equations_count": 113,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "14 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 14
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-quantitative-study-of-interfacial-contact-effec_2023_International-Journ.pdf",
+    "paper_id": "042-The-quantitative-study-of-interfacial-contact-effec_2023_International-Journ",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\042-The-quantitative-study-of-interfacial-contact-effec_2023_International-Journ",
+    "status": "ok",
+    "elapsed_seconds": 395.91,
+    "body_chars": 83428,
+    "references_count": 42,
+    "tables_count": 10,
+    "figure_captions_count": 24,
+    "equations_count": 295,
+    "noise_flags": [
+      "many_figure_caption_markers"
+    ],
+    "audit_score": 0.93,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "45 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 45
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-unit-cell-method-in-predictions-of-thermal-expansion-pr_2018_Composite-S.pdf",
+    "paper_id": "043-The-unit-cell-method-in-predictions-of-thermal-expansion-pr_2018_Composite-S",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\043-The-unit-cell-method-in-predictions-of-thermal-expansion-pr_2018_Composite-S",
+    "status": "ok",
+    "elapsed_seconds": 231.57,
+    "body_chars": 62298,
+    "references_count": 43,
+    "tables_count": 13,
+    "figure_captions_count": 24,
+    "equations_count": 239,
+    "noise_flags": [],
+    "audit_score": 0.99,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "12 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 12
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Thermoelectric-enhancement-in-perovskite-type-textured-Me0_2024_Chemical-Eng.pdf",
+    "paper_id": "044-Thermoelectric-enhancement-in-perovskite-type-textured-Me0_2024_Chemical-Eng",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\044-Thermoelectric-enhancement-in-perovskite-type-textured-Me0_2024_Chemical-Eng",
+    "status": "ok",
+    "elapsed_seconds": 129.02,
+    "body_chars": 49263,
+    "references_count": 72,
+    "tables_count": 1,
+    "figure_captions_count": 14,
+    "equations_count": 148,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "8 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 8
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Tolerance-indicating-models-of-non-thermal-and_2024_International-Journal-of.pdf",
+    "paper_id": "045-Tolerance-indicating-models-of-non-thermal-and_2024_International-Journal-of",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\045-Tolerance-indicating-models-of-non-thermal-and_2024_International-Journal-of",
+    "status": "ok",
+    "elapsed_seconds": 324.59,
+    "body_chars": 71149,
+    "references_count": 133,
+    "tables_count": 9,
+    "figure_captions_count": 26,
+    "equations_count": 343,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "26 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 26
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Transcriptome-sequencing-reveals-the-promotion-of-apoptosis-an_2024_Acta-Ast.pdf",
+    "paper_id": "046-Transcriptome-sequencing-reveals-the-promotion-of-apoptosis-an_2024_Acta-Ast",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\046-Transcriptome-sequencing-reveals-the-promotion-of-apoptosis-an_2024_Acta-Ast",
+    "status": "ok",
+    "elapsed_seconds": 65.35,
+    "body_chars": 31244,
+    "references_count": 49,
+    "tables_count": 1,
+    "figure_captions_count": 9,
+    "equations_count": 13,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "4 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 4
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Unit-cells-of-composites-with-symmetric-structures-for-_2017_Applied-Thermal.pdf",
+    "paper_id": "047-Unit-cells-of-composites-with-symmetric-structures-for-_2017_Applied-Thermal",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\047-Unit-cells-of-composites-with-symmetric-structures-for-_2017_Applied-Thermal",
+    "status": "ok",
+    "elapsed_seconds": 195.01,
+    "body_chars": 56715,
+    "references_count": 35,
+    "tables_count": 11,
+    "figure_captions_count": 25,
+    "equations_count": 140,
+    "noise_flags": [],
+    "audit_score": 0.99,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "24 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 24
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Unsteady-aerodynamic-modeling-and-flight-trajectory-simu_2024_Aerospace-Scie.pdf",
+    "paper_id": "048-Unsteady-aerodynamic-modeling-and-flight-trajectory-simu_2024_Aerospace-Scie",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\048-Unsteady-aerodynamic-modeling-and-flight-trajectory-simu_2024_Aerospace-Scie",
+    "status": "ok",
+    "elapsed_seconds": 173.72,
+    "body_chars": 38195,
+    "references_count": 50,
+    "tables_count": 8,
+    "figure_captions_count": 23,
+    "equations_count": 137,
+    "noise_flags": [],
+    "audit_score": 1.0,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "16 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 16
+  },
+  {
+    "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Weight-adaptive-parameter-estimation-assisted-event-t_2025_Aerospace-Science.pdf",
+    "paper_id": "049-Weight-adaptive-parameter-estimation-assisted-event-t_2025_Aerospace-Science",
+    "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\049-Weight-adaptive-parameter-estimation-assisted-event-t_2025_Aerospace-Science",
+    "status": "ok",
+    "elapsed_seconds": 249.77,
+    "body_chars": 56966,
+    "references_count": 79,
+    "tables_count": 6,
+    "figure_captions_count": 27,
+    "equations_count": 238,
+    "noise_flags": [],
+    "audit_score": 0.96,
+    "needs_manual_review": false,
+    "issues_after_repair": [
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      },
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "35 formula(s) need manual review."
+      }
+    ],
+    "chosen_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    },
+    "formula_low_confidence_count": 35
+  }
+]

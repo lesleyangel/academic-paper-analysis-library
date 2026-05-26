@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\Thermoelectric-enhancement-in-perovskite-type-textured-Me0_2024_Chemical-Eng.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\044-Thermoelectric-enhancement-in-perovskite-type-textured-Me0_2024_Chemical-Eng",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\Thermoelectric-enhancement-in-perovskite-type-textured-Me0_2024_Chemical-Eng.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\044-Thermoelectric-enhancement-in-perovskite-type-textured-Me0_2024_Chemical-Eng",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 129.02,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\044-Thermoelectric-enhancement-in-perovskite-type-textured-Me0_2024_Chemical-Eng\nbody_chars=49263 references=72 tables=1\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T04:46:27"
+}

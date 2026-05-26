@@ -1,0 +1,235 @@
+[confidence=0.92; source=equations; [page 2, bbox (100.92, 83.83, 227.09, 101.19)]] GSORM(u)=0 gMVM(x)=0
+
+[confidence=0.92; source=equations; [page 2, bbox (88.29, 110.0, 283.29, 120.37)]] μ GFORM(u)=0
+
+[confidence=0.92; source=equations; [page 2, bbox (211.92, 148.68, 246.0, 155.78)]] LSF G(u)=0
+
+[confidence=0.92; source=equations; [page 2, bbox (91.28, 157.3, 123.48, 164.41)]] LSF g(x)=0
+
+[confidence=0.62; needs_review; source=equations; [page 2, bbox (370.32, 723.51, 484.79, 741.82)]] Gaussian expð�cr2Þ Inverse Multiquadric ð1 þ cr2Þ �1=2
+
+[confidence=0.92; source=equations; [page 3, bbox (303.08, 98.88, 310.47, 151.64)]] 8 > > > > > > > > > > > > > > > <
+
+[confidence=0.92; source=equations; [page 3, bbox (303.08, 158.24, 310.47, 203.46)]] > > > > > > > > > > > > > > > :
+
+[confidence=0.92; source=equations; [page 3, bbox (354.88, 696.93, 375.28, 704.03)]] g(x)=0
+
+[confidence=0.62; needs_review; source=equations; [page 3, bbox (371.28, 263.57, 478.65, 283.92)]] � � ¼ 2�m=2 exp �kuk2
+
+[confidence=0.92; source=equations; [page 3, bbox (488.34, 625.74, 517.23, 633.12)]] G(u;S0)=0
+
+[confidence=0.92; source=equations; [page 3, bbox (485.04, 696.83, 505.6, 703.91)]] G(u)=0
+
+[confidence=0.92; source=equations; [page 4, bbox (232.16, 330.76, 257.72, 346.18)]] No k=k+ 1
+
+[confidence=0.62; needs_review; source=equations; [page 5, bbox (301.72, 645.23, 552.74, 665.06)]] gðXÞ ¼ S �32=ðpD3Þ ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi F2L2=16 þ T2 q ð23Þ
+
+[confidence=0.92; source=equations; [page 7, bbox (303.08, 256.66, 351.42, 279.03)]] J ¼ 2I szx ¼ Td=ð2JÞ
+
+[confidence=0.62; needs_review; source=equations; [page 7, bbox (303.08, 239.59, 398.65, 252.9)]] I ¼ ðp=64Þ½d 4 �ðd �2tÞ 4�
+
+[confidence=0.62; needs_review; source=equations; [page 7, bbox (303.08, 292.32, 396.1, 305.62)]] A ¼ ðp=4Þ½d 2 �ðd �2tÞ 2�
+
+[confidence=0.92; source=equations; [page 7, bbox (303.08, 309.38, 462.87, 331.83)]] h ¼ d=2 rx ¼ ðP þ F1 sinðh1Þ þ F2 sinðh1ÞÞ=A þ Mh=I
+
+[confidence=0.57; needs_review; source=equations; [page 11, bbox (32.71, 664.18, 283.79, 693.18)]] Supplementary data associated with this article can be found, in the online version, at https://doi.org/10.1016/j.strusafe.2018.02.005.
+
+[confidence=0.57; needs_review; source=equations; [page 11, bbox (35.94, 732.7, 283.75, 755.09)] [1]] Crespo LG, Kenny SP, Giesy DP. The Nasa Langley Multidisciplinary Uncertainty Quantification Challenge//AIAA Non-Deterministic Approaches Conference, 2015.
+
+[confidence=0.92; source=body_inline] P _ {f}
+
+[confidence=0.92; source=body_inline] P _ {f} = \int \int \cdots \int _ {D} {\sf p} ( {\bf x} ) {\sf d} x _ {1} {\sf d} x _ {2} \cdot \cdot \cdot {\sf d} x _ {m}\tag{1}
+
+[confidence=0.92; source=body_inline] D = \{\mathbf {x} | \mathbf {g} ( \mathbf {x} ) \leqslant 0 , \mathbf {x} \in \mathbb {R} ^ {m} \}
+
+[confidence=0.92; source=body_inline] S = \{( \mathbf {x} _ {i} , y _ {i} ) | i = 1 , 2 , \ldots , n \}\tag{2}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\mathbf {X} = \left[ \mathbf {x} _ {1} , \mathbf {x} _ {2} , \ldots , \mathbf {x} _ {n} \right] ^ {\mathrm{T}}} \\ {\mathbf {y} = \left[ y _ {1} , y _ {2} , \ldots , y _ {n} \right] ^ {\mathrm{T}}} \end{array}\tag{3}
+
+[confidence=0.92; source=body_inline] {\widehat {\mathbf {y}}} ( \mathbf {x} ) = \sum _ {i = 1} ^ {n} \beta _ {i} \mathbf {f} ( \| \mathbf {x} - \mathbf {x} _ {i} \| ) = \mathbf {f} ( \mathbf {x} ) ^ {\mathrm{T}} \mathbf {\beta}\tag{4}
+
+[confidence=0.92; source=body_inline] \mathbf {x} , \beta _ {i}
+
+[confidence=0.92; source=body_inline] \mathbf {f} ( \lVert \mathbf {x} - \mathbf {x} _ {i} \rVert )
+
+[confidence=0.92; source=body_inline] r = \| \mathbf {x} - \mathbf {x} _ {i} \|
+
+[confidence=0.92; source=body_inline] \left[ \begin{array} {c} {y _ {1}} \\ {y _ {2}} \\ {\vdots} \\ {y _ {n}} \end{array} \right] = \left[ \begin{array} {c c c c} {\mathbf {f} ( r _ {11} )} & {\mathbf {f} ( r _ {12} )} & {\ldots} & {\mathbf {f} ( r _ {1 n} )} \\ {\mathbf {f} ( r _ {21} )} & {\mathbf {f} ( r _ {22} )} & {\ldots} & {\mathbf {f} ( r _ {2 n} )} \\ {\vdots} & {\vdots} & {\ddots} & {\vdots} \\ {\mathbf {f} ( r _ {n 1} )} & {\mathbf {f} ( r _ {n 2} )} & {\ldots} & {\mathbf {f} ( r _ {n n} )} \end{array} \right] \left[ \begin{array} {c} {\beta _ {1}} \\ {\beta _ {2}} \\ {\vdots} \\ {\beta _ {n}} \end{array} \right]\tag{5}
+
+[confidence=0.92; source=body_inline] \mathbf {y} = \mathbf {F} \mathbf {\beta}\tag{6}
+
+[confidence=0.92; source=body_inline] \mathbf {F} \in \mathbb {R} ^ {n \times n}
+
+[confidence=0.92; source=body_inline] \mathbf {\beta} \mathbf {=} \mathbf {F} ^ {- 1} \mathbf {y}
+
+[confidence=0.92; source=body_inline] {\widehat {\mathbf {y}}} ( \mathbf {x} ) = \mathbf {f} ( \mathbf {x} ) ^ {\mathrm{T}} \mathbf {F} ^ {- 1} \mathbf {y}\tag{7}
+
+[confidence=0.92; source=body_inline] \mathbf {x} ; \mathbf {F} ^ {- 1} \mathbf {y}
+
+[confidence=0.92; source=body_inline] ( k = 1 , 2 , \cdots , K ) ,
+
+[confidence=0.92; source=body_inline] m i n \sum _ {c} ^ {n} [ y _ {i} - \widehat {\mathbf {y}} ( \mathbf {x} _ {i} ; S - \{( \mathbf {x} _ {i} , y _ {i} ) \} ) ] ^ {2}\tag{8}
+
+[confidence=0.92; source=body_inline] u _ {i} = \mathrm{F} _ {U _ {i}} ^ {- 1} \mathrm{F} _ {X _ {i}} ( x _ {i} ) , ( i = 1 , 2 , \cdot \cdot \cdot , m )\tag{9}
+
+[confidence=0.92; source=body_inline] X _ {i}
+
+[confidence=0.92; source=body_inline] U _ {i}
+
+[confidence=0.92; source=body_inline] \mathrm{F} _ {X _ {i}} ( \cdot )
+
+[confidence=0.92; source=body_inline] \mathsf{F} _ {U _ {i}} ( \cdot )
+
+[confidence=0.92; source=body_inline] U _ {i} ,
+
+[confidence=0.92; source=body_inline] \mathbf {g} ( \mathbf {x} ) = \mathbf {g} [ \mathbf {F} _ {\mathbf {X}} ^ {- 1} \mathbf {F} _ {\mathbf {U}} ( \mathbf {u} ) ] = \mathbf {G} ( \mathbf {u} )\tag{10}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l} {{\displaystyle \Delta u _ {k} = \mathrm{argmin} \ | {\bf u} | \ | \ {\bf s} . \mathrm{t} . \left\{\begin{array} {c} {{\hat {\bf G}} \displaystyle ( {\bf u} ; S _ {k - 1} ) = 0} \\ {\displaystyle ( {\bf u} ; S _ {k - 1} ) \geqslant {\bf d} _ {\mathrm{min}} ( S _ {k - 1} )} \\ {{\bf u} _ {\mathrm{L}} \leqslant {\bf u} \leqslant {\bf u} _ {\mathrm{U}} , {\bf u} \in {\bf R} ^ {m}} \end{array} \right.}} \\ {{\displaystyle \qquad \} \ \Delta S _ {k} = \left\{( \Delta {\bf u} _ {k} , {\bf g} ( \Delta {\bf u} _ {k} ) ) \right\}} \\ {{\displaystyle \qquad S _ {k} = S _ {k - 1} \ \sqcup \Delta S _ {k}}} \\ {\displaystyle P _ {k} = \mathrm {P _ {M C S}} \{{\hat {\bf G}} ( {\bf u} ; S _ {k} ) \leqslant 0 \} , k = 1 , 2 , 3 , \ldots} \\ {\displaystyle \ \mathrm{Start} : S _ {0} , P _ {0} = \mathrm {P _ {M C S}} \{{\hat {\bf G}} ( {\bf u} ; S _ {0} ) \leqslant 0 \}} \\ {{\displaystyle \mathrm{Stop} : k \geqslant k _ {\mathrm{max}} \ \mathrm{or} \ ( | P _ {k} - P _ {k - 1} | \leqslant \varepsilon _ {a} \ \& {\delta} \stackrel {| P _ {k} - P _ {k - 1} |} {P _ {k}} \leqslant \varepsilon _ {r} )}} \end{array} \right.\tag{11}
+
+[confidence=0.92; source=body_inline] \Delta {\bf u} _ {k}
+
+[confidence=0.92; source=body_inline] \mathbf {p} ( \mathbf {u} ) = \prod _ {i = 1} ^ {m} {\frac {1} {\sqrt {2}}} \exp \left( - {\frac {u _ {i} ^ {2}} {2}} \right) = 2 ^ {- m / 2} \exp \left( - {\frac {\left\| \mathbf {u} \right\| ^ {2}} {2}} \right) .\tag{12}
+
+[confidence=0.92; source=body_inline] S _ {k}
+
+[confidence=0.92; source=body_inline] \hat {\bf G} ( {\bf u} ; S _ {k} )
+
+[confidence=0.92; source=body_inline] S _ {k} ,
+
+[confidence=0.92; source=body_inline] S _ {k - 1}
+
+[confidence=0.92; source=body_inline] | S _ {k - 1} |
+
+[confidence=0.67; needs_review; source=body_inline] \pmb {S} _ {k - 1} )
+
+[confidence=0.92; source=body_inline] {\bf d} _ {\mathrm{min}} ( {\pmb S} _ {{\pmb k} - 1} )
+
+[confidence=0.92; source=body_inline] \mathbf {u} _ {\mathrm{L}}
+
+[confidence=0.92; source=body_inline] \mathbf {u} _ {\mathrm{U}}
+
+[confidence=0.92; source=body_inline] P _ {k}
+
+[confidence=0.92; source=body_inline] P _ {0}
+
+[confidence=0.92; source=body_inline] k _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {\mathrm{a}}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {\mathrm{r}}
+
+[confidence=0.92; source=body_inline] S _ {0}
+
+[confidence=0.92; source=body_inline] \mathsf{P} \{- 5 \leqslant U _ {i} \leqslant 5 \}
+
+[confidence=0.92; source=body_inline] | S _ {0} | = m + 1
+
+[confidence=0.92; source=body_inline] | S _ {0} | = 2 m + 1
+
+[confidence=0.92; source=body_inline] \hat {\mathbf {G}} ( \mathbf {u} ; S _ {0} )
+
+[confidence=0.92; source=body_inline] P _ {0} = \mathrm{P} _ {\mathrm{MCS}} \{\hat {\mathrm{G}} ( \mathbf {u} ; S _ {0} ) \leqslant 0 \}
+
+[confidence=0.92; source=body_inline] \mathrm{P} _ {\mathrm{MCS}} \{\widehat {\mathsf{G}} ( \mathbf {u} ; S _ {0} ) \leqslant 0 \} \approx \frac {1} {N} \sum _ {j = 1} ^ {N} \mathrm{I} ( \widehat {\mathbf {G}} ( \mathbf {u} _ {j} ; S _ {0} ) )\tag{13}
+
+[confidence=0.92; source=body_inline] \mathrm{COV} ( P _ {\mathrm{MCS}} ) = \sqrt {\frac {1 - P _ {\mathrm{MCS}}} {P _ {\mathrm{MCS}} N}}\tag{14}
+
+[confidence=0.67; needs_review; source=body_inline] \operatorname{I} ( x ) = {\left\{\begin{array} {l l} {1 , i f x \leqslant 0} \\ {0 , i f x > 0} \end{array} \right.}\tag{15}
+
+[confidence=0.92; source=body_inline] \mathrm{d} ( \mathbf {u} ; S _ {k - 1} ) = \operatorname* {m i n} _ {\mathbf {u} _ {i}} \left\{\| \mathbf {u} - \mathbf {u} _ {i} \| | ( \mathbf {u} _ {i} , \mathbf {g} ( \mathbf {u} _ {i} ) ) \in \mathsf{S} _ {k - 1} \right\}\tag{16}
+
+[confidence=0.92; source=body_inline] \mathsf{d} _ {\operatorname* {m i n}} ( S _ {k - 1} ) = \lambda \underset {\mathbf {u} _ {i}} {\operatorname* {m a x}} \underset {\mathbf {u} _ {j}} {\operatorname* {m i n}} \{\| \mathbf {u} _ {i} - \mathbf {u} _ {j} \| | ( \mathbf {u} _ {i} , \mathbf {g} ( \mathbf {u} _ {i} ) ) , ( \mathbf {u} _ {j} , \mathbf {g} ( \mathbf {u} _ {j} ) ) \in S _ {k - 1} , i \neq j \}\tag{17}
+
+[confidence=0.67; needs_review; source=body_inline] \lambda = 0.2 )
+
+[confidence=0.92; source=body_inline] \Delta {\mathbf {u}} _ {k} = \underset {\mathbf {u}} {\mathrm{argmin}} \ \frac {( 1 + \lVert \mathbf {u} \rVert ) | \hat {\mathbf {G}} ( \mathbf {u} ; S _ {k - 1} ) |} {\left[ \frac {\mathrm{d} ( \mathbf {u} ; S _ {k - 1} )} {1 + \exp ( - 20 ( \mathrm{d} ( \mathbf {u} ; S _ {k - 1} ) - \mathrm{d} _ {\operatorname* {m i n}} ( S _ {k - 1} ) ) )} \right]}\tag{18}
+
+[confidence=0.92; source=body_inline] \hat {\bf G} ( {\bf u} ; S _ {k - 1} ) = 0 ,
+
+[confidence=0.92; source=body_inline] \hat {\mathbf {G}} ( \mathbf {u} ; S _ {k - 1} ) \approx 0 ,
+
+[confidence=0.67; needs_review; source=body_inline] S _ {k - 1} ) < \mathsf{d} _ {\operatorname* {m i n}} ( S _ {k - 1} )
+
+[confidence=0.92; source=body_inline] \Delta S _ {k} = \{( \Delta \mathbf {u} _ {k} , \mathbf {G} ( \Delta \mathbf {u} _ {k} ) ) \}
+
+[confidence=0.92; source=body_inline] \mathsf{S} _ {k} = S _ {k - 1} \cup \Delta S _ {k}
+
+[confidence=0.92; source=body_inline] P _ {k} = \mathrm{P} _ {\mathrm{MCS}} \{\hat {\mathrm{G}} ( \mathbf {u} ; S _ {k} ) \leqslant 0 \}
+
+[confidence=0.92; source=body_inline] \iota \geqslant k _ {\mathrm{max}} , ( \mathbf {b} )
+
+[confidence=0.92; source=body_inline] | P _ {k} - P _ {k - 1} | / P _ {k} \leqslant \varepsilon _ {r} ( = 1 \times 10 ^ {- 4} )
+
+[confidence=0.92; source=body_inline] | P _ {k} - P _ {k - 1} | \leqslant \varepsilon _ {a} ( = 1 \times 10 ^ {- 3} )
+
+[confidence=0.92; source=body_inline] k = k + 1
+
+[confidence=0.92; source=body_inline] \in [ - 5 , 5 ] , i = 1 , 2 , \cdots , m ,
+
+[confidence=0.92; source=body_inline] {\bf g} ( {\bf X} ) = 4 t \sigma _ {f} R ^ {2} \left( \cos \left( {\frac {\theta} {2}} \right) - {\frac {1} {2}} \sin ( \theta ) \right) - M\tag{19}
+
+[confidence=0.92; source=body_inline] \sigma _ {f} , \theta ,
+
+[confidence=0.92; source=body_inline] R = 0.3377
+
+[confidence=0.92; source=body_inline] M = 3 ~ \times ~ 10 ^ {6}
+
+[confidence=0.92; source=body_inline] \sigma _ {f}
+
+[confidence=0.92; source=body_inline] \mathrm{LSF} \hat {\mathbf {G}} _ {\mathrm{SSRM}} ( \mathbf {u} )
+
+[confidence=0.92; source=body_inline] 4 ( \mathsf{a} )
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\mathbf {g} ( \mathbf {X} ) = 1 - X _ {1} ^ {3} - X _ {2} ^ {3}} \end{array}\tag{20}
+
+[confidence=0.92; source=body_inline] 5 \left( \mathsf{a} \right)
+
+[confidence=0.92; source=body_inline] {\bf g} = {\frac {l} {325}} - {\frac {w b l ^ {4}} {8 E I}}\tag{21}
+
+[confidence=0.92; source=body_inline] I = b h ^ {3} / 12 ,
+
+[confidence=0.92; source=body_inline] 2.6 \times 10 ^ {4}
+
+[confidence=0.92; source=body_inline] \mathbf {g} ( \mathbf {X} ) = 18.46154-74769.23 {\frac {X _ {1}} {X _ {2} ^ {3}}}\tag{22}
+
+[confidence=0.92; source=body_inline] P _ {f} {=} 0.009499
+
+[confidence=0.67; needs_review; source=body_inline] \bf {u} = ( - 4 , \frac {} {}
+
+[confidence=0.92; source=body_inline] \mathbf {u} = ( 0 , 0 )
+
+[confidence=0.92; source=body_inline] g ( X ) = S - 32 / ( \pi D ^ {3} ) \sqrt {F ^ {2} L ^ {2} / 16 + T ^ {2}}\tag{23}
+
+[confidence=0.92; source=body_inline] g ( X ) = S _ {y} - \sqrt {\sigma _ {x} ^ {2} + 3 \tau _ {z x} ^ {2}}\tag{24}
+
+[confidence=0.92; source=body_inline] \tau _ {z x} = T d / ( 2 J )
+
+[confidence=0.92; source=body_inline] J = 2 I
+
+[confidence=0.92; source=body_inline] I = ( \pi / 64 ) [ d ^ {4} - ( d - 2 t ) ^ {4} ]
+
+[confidence=0.92; source=body_inline] M = F _ {1} L _ {1} \cos ( \theta _ {1} ) + F _ {2} L _ {2} \cos ( \theta _ {2} )
+
+[confidence=0.92; source=body_inline] A = ( \pi / 4 ) [ d ^ {2} - ( d - 2 t ) ^ {2} ]
+
+[confidence=0.92; source=body_inline] h = d / 2
+
+[confidence=0.92; source=body_inline] \sigma _ {x} = ( P + F _ {1} \sin ( \theta _ {1} ) + F _ {2} \sin ( \theta _ {1} ) ) / A + M h / I
+
+[confidence=0.92; source=body_inline] \theta _ {1} = 5 ^ {^{\circ}} , \theta _ {2} = 10 ^ {^{\circ}}
+
+[confidence=0.92; source=body_inline] \mathbf {g} ( c _ {1} , c _ {2} , m , r , t _ {1} , F _ {1} ) = 3 r - | \frac {2 F _ {1}} {m \omega _ {0} ^ {2}} \sin ( \frac {\omega _ {0} t _ {1}} {2} ) |\tag{26}
+
+[confidence=0.92; source=body_inline] \omega _ {0} = \sqrt {( c _ {1} + c _ {2} ) / m}
+
+[confidence=0.92; source=body_inline] \mathbf {g} ( \mathbf {X} ) = m + 3 \sigma \sqrt {m} - \sum _ {i = 1} ^ {m} X _ {i}\tag{27}
+
+[confidence=0.92; source=body_inline] X _ {i} ( i = 1 , 2 , \cdots , m )
+
+[confidence=0.92; source=body_inline] \mu = 1
+
+[confidence=0.92; source=body_inline] \sigma = 0.2
+
+[confidence=0.92; source=body_inline] \operatorname{g} ( \mathbf {U} ) = m + 3 \sigma {\sqrt {m}} - \sum _ {i = 1} ^ {m} \exp \left( \ln {\frac {\mu ^ {2}} {\sqrt {\mu ^ {2} + \sigma ^ {2}}}} + U _ {i} {\sqrt {\ln \left( {\frac {\sigma ^ {2}} {\mu ^ {2}}} + 1 \right)}} \right)\tag{28}
+
+[confidence=0.92; source=body_inline] m = 250 , 501

@@ -1,0 +1,47 @@
+Fig. 1. Representative stochastic pore realizations under different Poisson intensities and radius-distribution parameters. The parameter values shown here are chosen for illustrative purposes only and do not correspond quantitatively to the simulation inputs listed in Table 1.
+
+Fig. 2. Definition of the sampling distance r and local volumes V1, V2 in the Monte Carlo scheme for estimating the cross-volume covariance of local
+
+Fig. 3. Representative pore realizations of the matrix RVEs with four normalized sizes, used to analyze variance-volume scaling and cross-property correlations.
+
+Fig. 4. Geometry and FE schematic of the three normalized fiber-bundle RVEs. (a) Geometric configuration of the RVEb with embedded pores. (b) FE meshes used for homogenization analysis.
+
+Fig. 5. Histograms of sampled pore radii and corresponding pore volumes derived from the truncated Gaussian distribution, serving as the input statistics for the Boolean pore model.
+
+Fig. 6. Indicator covariance kernel CY(r) computed from the stochastic pore realizations, showing an exponential decay with separation and a correlation length on the order of the pore size.
+
+Fig. 7. Monte Carlo analysis of the covariance of local porosity fields. (a) Covariance Cmodel ϕ plotted against V2 for several fixed V1 and correlation
+
+Fig. 8. Residual diagnostics for the Mat´ern-kernel fit of the covariance model. (a-c) Residuals versus separation distance R, geometric mean volume Vg, and the corresponding histogram. (d-f) Relative-error maps at fixed separations R = 0µ m, R = 75µ m, and R = 150µ m. Errors remain within a few percent across the domain, confirming the accuracy of the fitted Mat´ern kernel.
+
+Fig. 9. Variance-volume power-law fits (log-log) for porosity and effective moduli. Fitted data and corresponding regression lines are shown for each property; curves are vertically offset for clarity.
+
+Fig. 10. Leave-one-volume-out validation of the variance-volume power-law model. Each point compares the empirical variance at the held-out volume with the corresponding value predicted by the fitted model; the close clustering along the 1:1 line confirms predictive consistency and absence of overfitting.
+
+Fig. 11. Correlation between porosity and homogenized mechanical properties across sampling volumes, with 95 % Fisher confidence bands. (a) Correlations ρ(X, Φ) for engineering constants; Poisson ratios show larger variability with volume. (b) Correlations ρ(Cᵢⱼ, Φ) for stiffness-matrix components, which remain strongly negative and vary by less than ≈3–5 % across all RVE sizes (note the finer y-axis scale).
+
+Fig. 12. Frobenius-distance analysis of correlation matrices across RVE volumes. (a) Engineering constants (E, ν, G), showing slightly larger dis tances at small volumes due to the numerical variability of Poisson ratios. (b) Stiffness-tensor correlations (Cij), exhibiting uniformly low distances and improved volume-invariance.
+
+Fig. 13. Parity comparison of empirical and modeled covariance entries across sampling volumes. The close alignment along the 1:1 line indicates that the covariance model D(V)RD(V) accurately reproduces both variances and cross-covariances.
+
+Fig. 14. Variance-volume power-law fits (log-log) for homogenized composite properties across RVEb1, RVEb2 and RVEb3. Linear trends with slopes αi ≈1 confirm the persistence of the V−1 self-averaging law at the composite-scale.
+
+Fig. 15. Correlation between stiffness components and porosity ρ(Xi, Φ) versus sampling volume V for the composite-scale RVEs (Fisher 95 % confidence bands). The negative correlations persist but with reduced magnitude relative to matrix-scale RVEs, consistent with load sharing and averaging effects in the composite.
+
+Fig. 2. Definition of the sampling distance r and local volumes $V _ { 1 } , V _ { 2 }$ in the Monte Carlo scheme for estimating the cross-volume covariance of local porosities. Random pairs of points $( \mathbf { u } _ { 1 } ^ { ( i ) } , \mathbf { u } _ { 2 } ^ { ( i ) } )$ are drawn within each local volume to compute the covariance as a function of r.
+
+Fig. 4. Geometry and FE schematic of the three normalized fiber-bundle RVEs. (a) Geometric configuration of the $\mathrm { R V E _ { b } }$ with embedded pores. (b) FE meshes used for homogenization analysis.
+
+Fig. 6. Indicator covariance kernel $C _ { Y } ( r )$ computed from the stochastic pore realizations, showing an exponential decay with separation and a correlation length on the order of the pore size.
+
+Fig. 7. Monte Carlo analysis of the covariance of local porosity fields. (a) Covariance $C _ { \phi } ^ { \mathrm { m o d e l } }$ plotted against $V _ { 2 }$ for several fixed $V _ { 1 }$ and correlation distances R. (b) Three-dimensional isosurface representation of the covariance over (r, V1, V2), illustrating the variance-volume scaling and the short-range correlation structure.
+
+Fig. 8. Residual diagnostics for the Mat´ern-kernel fit of the covariance model. (a-c) Residuals versus separation distance $R ,$ geometric mean volume $V _ { g } ,$ and the corresponding histogram. (d-f) Relative-error maps at fixed separations $R = 0 \mu \mathrm { ~ m ~ } , R = 7 5 \mu \mathrm { ~ m ~ }$ , and $R = 1 5 0 \mu$ m. Errors remain within a few percent across the domain, confirming the accuracy of the fitted Mat´ern kernel.
+
+Fig. 11. Correlation between porosity and homogenized mechanical properties across sampling volumes, with 95 % Fisher confidence bands. (a) Correlations $\rho ( X ,$ Φ) for engineering constants; Poisson ratios show larger variability with volume. (b) Correlations $\rho ( C _ { i j } ,$ Φ) for stiffness-matrix components, which remain strongly negative and vary by less than ≈3–5 % across all RVE sizes (note the finer y-axis scale).
+
+Fig. 12. Frobenius-distance analysis of correlation matrices across RVE volumes. (a) Engineering constants $( E , \nu , G ) ,$ , showing slightly larger distances at small volumes due to the numerical variability of Poisson ratios. (b) Stiffness-tensor correlations $( C _ { i j } ) _ { ; }$ exhibiting uniformly low distances and improved volume-invariance.
+
+Fig. 14. Variance-volume power-law fits (log-log) for homogenized composite properties across $\mathrm { R V E _ { b 1 } , R V E _ { b 2 } }$ and ${ \mathrm { R V E } } _ { \mathrm { b 3 } } .$ Linear trends with slopes $\alpha _ { i } \approx 1$ confirm the persistence of the $\boldsymbol { V } ^ { - 1 }$ self-averaging law at the composite-scale.
+
+Fig. 15. Correlation between stiffness components and porosity $\rho ( X _ { i } ,$ , Φ) versus sampling volume V for the composite-scale RVEs (Fisher 95 % confidence bands). The negative correlations persist but with reduced magnitude relative to matrix-scale RVEs, consistent with load sharing and averaging effects in the composite.

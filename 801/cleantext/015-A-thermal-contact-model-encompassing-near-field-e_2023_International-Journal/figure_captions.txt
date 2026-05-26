@@ -1,0 +1,47 @@
+Fig. 1. Schematic figure of thermal contact model.
+
+Fig. 2. Measured and reconstructed rough surfaces of contacting pairs in TEG.
+
+Fig. 3. Comparison of calculation results for thermal radiation effect with publicly reported literatures.
+
+Fig. 4. Equivalent thermal contact conductance of thermal radiation.
+
+Fig. 5. Real model and CAD model.
+
+Fig. 6. Meshed models of contacting pairs and TEG.
+
+Fig. 7. Boundary conditions of contacting pairs and TEG.
+
+Fig. 8. Experimental measurement platform for TCR of TEG.
+
+Fig. 9. Dimensionless real contact aera varied with loading pressure.
+
+Fig. 10. Mises stress contour of rough surfaces.
+
+Fig. 11. Temperature contour of contacting pairs.
+
+Fig. 12. Temperature contour of rough surfaces under different heat transfer forms (I: solid conduction; II: solid conduction and far-field radiation; III: solid con duction, far- and near-field radiation).
+
+Fig. 13. Temperature contour of rough surfaces in negative heat transfer path.
+
+Fig. 14. Influence of thermal radiation on TCRs between TE legs and electrodes under vacuum clearance.
+
+Fig. 15. Influence of thermal radiation on TCRs between TE legs and electrodes under air clearance.
+
+Fig. 16. Influence of thermal radiation on TCR between substrate and electrode.
+
+Fig. 17. Contributions of solid conduction, far- and near-field radiation to heat transfer.
+
+Fig. 18. TCRs between TE legs and electrodes in different heat transfer paths.
+
+Fig. 19. TCRs between substrate and electrode in different heat transfer paths.
+
+Fig. 20. TCRs varied with loading pressure.
+
+Fig. 21. Temperature contour of TEG under different heat transfer forms (I: solid conduction; II: solid conduction and far-field radiation; III: solid conduction, far- and near-field radiation).
+
+Fig. 22. Influence of thermal radiation on TEG performance.
+
+Fig. 12. Temperature contour of rough surfaces under different heat transfer forms (I: solid conduction; II: solid conduction and far-field radiation; III: solid conduction, far- and near-field radiation).
+
+Fig. 21. Temperature contour of TEG under different heat transfer forms (I: solid conduction; II: solid conduction and far-field radiation; III: solid conduction, farand near-field radiation).

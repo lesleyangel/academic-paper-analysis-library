@@ -1,0 +1,5 @@
+Variables,Distribution,Unit
+Gravitational acceleration,"$N \left( \mu _ { g } , \mu _ { g } \times 0 . 2 \% \right)$",$\mathbf { m } / \mathsf { s } ^ { 2 }$
+Atmospheric density,"$N ( \mu _ { \rho } , \mu _ { \rho } \times 2 \% )$",$\mathrm { k g / m ^ { 3 } }$
+Local sound velocity,"$N ( \mu _ { c } , \mu _ { c } \times 1 \% )$",$\mathbf { m } / s$
+Attack angle,"$N ( \mu _ { a } , \mu _ { a } \times 1 \% )$",0

@@ -1,0 +1,85 @@
+[1] Chen X, Liu L, Yue Z. Coupled analysis of aerodynamic heating, radiative heat transfer and heat conduction for hypersonic vehicles. 20th AIAA International Space Planes and Hypersonic Systems and Technologies Conference. American Institute of Aeronautics and Astronautics; 2015.
+
+1. For a composite with symmetric structures, the effective coefficient of thermal expansion can be efficiently calculated by a unit cell model. Such unit cell should be formulated based on structure symmetries, and relevant BCs can be derived based on displacement distribution rules summarized in this work. Such unit cell models can also be used to predict the local stress distributions in fiber yarns or textile reinforced composites and thus has potentials for damage analysis of these composites.
+
+[2] Gommers B, Verpoest I, Van Houtte P. The Mori-Tanaka method applied to textile composite materials. Acta Mater 1998;46(6):2223–35.
+
+[3] Mortazavi B, Baniassadi M, Bardon J, Ahzi S. Modeling of two-phase random composite materials by finite element, Mori-Tanaka and strong contrast methods. Compos B Eng 2013;45(1):1117–25.
+
+3. For boundaries that can be formulated by reflectional symmetries, the uniform normal displacement and the uniform deformation can be obtained in thermal expansion calculations; for boundaries that can only be formulated based on translational or rotational sym- metries, the normal displacement and the relevant deformation are non-uniform. 2014;108:578–83.
+
+[4] Yang B. A distributed transfer function method for heat conduction problems in multilayer composites. Numer Heat Transf, Part B: Fundam 2008;54(4):314–37.
+
+[5] Li DS, Fang DN, Jiang N, Yao XF. Finite element modeling of mechanical properties of 3D five-directional rectangular braided composites. Compos Part B: Eng 2011;42(6):1373–85.
+
+[6] Fang GD, Liang J, Wang Y, Wang BL. The effect of yarn distortion on the mechanical properties of 3D four-directional braided composites. Compos A Appl Sci Manuf 2009;40(4):343–50.
+
+[7] Dong K, Peng X, Zhang J, Gu B, Sun B. Temperature-dependent thermal expansion behaviors of carbon fiber/epoxy plain woven composites: Experimental and nu- merical studies. Compos Struct 2017;176:329–41.
+
+[8] Zeng T, Wu LZ, Guo LC. Mechanical analysis of 3D braided composites: a finite element model. Compos Struct 2004;64(3–4):399–404.
+
+[9] Sun XK, Sun CJ. Mechanical properties of three-dimensional braided composites. Compos Struct 2004;65(3–4):485–92.
+
+[10] Zhang C, Xu XW. Finite element analysis of 3D braided composites based on three unit-cells models. Compos Struct 2013;98:130–42.
+
+[11] Zeng T, Wu LZ, Guo LC. A finite element model for failure analysis of 3D braided composites. Mater Sci Eng A-Struct Mater Prop Microstruct Process 2004;366(1):144–51.
+
+[12] Fang GD, Liang J, Wang BL. Progressive damage and nonlinear analysis of 3D four- directional braided composites under unidirectional tension. Compos Struct 2009;89(1):126–33.
+
+[13] Lu ZX, Wang CY, Xia B, Zhou Y. Effect of interfacial properties on the thermo- physical properties of 3D braided composites: 3D multiscale finite element study. Polym Compos 2013;35(9):1690–700.
+
+[14] Jiang LL, Xu GD, Cheng S, Lu XM, Zeng T. Predicting the thermal conductivity and temperature distribution in 3D braided composites. Compos Struct
+
+[15] Dong K, Zhang J, Jin L, Gu B, Sun B. Multi-scale finite element analyses on the thermal conductive behaviors of 3D braided composites. Compos Struct 2016;143:9–22.
+
+[16] Dong K, Liu K, Zhang Q, Gu B, Sun B. Experimental and numerical analyses on the thermal conductive behaviors of carbon fiber/epoxy plain woven composites. Int J Heat Mass Transf 2016;102:501–17.
+
+[17] Woo K, Goo NS. Thermal conductivity of carbon-phenolic 8-harness satin weave composites. Compos Struct 2004;66(1–4):521–6.
+
+[18] Yu H, Heider D, Advani S. Prediction of effective through-thickness thermal con- ductivity of woven fabric reinforced composites with embedded particles. Compos Struct 2015;127:132–40.
+
+[19] Gou JJ, Dai YJ, Li S, Tao WQ. Numerical study of effective thermal conductivities of plain woven composites by unit cells of different sizes. Int J Heat Mass Transf 2015;91:829–40.
+
+[20] Gou JJ, Zhang H, Dai YJ, Li S, Tao WQ. Numerical prediction of effective thermal conductivities of 3D four-directional braided composites. Compos Struct 2015;125:499–508.
+
+[21] Gou JJ, Fang WZ, Dai YJ, Li S, Tao WQ. Multi-size unit cells to predict effective thermal conductivities of 3D four-directional braided composites. Compos Struct 2017;163:152–67.
+
+[22] Gou JJ, Gong CL, Gu LX, Li S, Tao WQ. Unit cells of composites with symmetric structures for the study of effective thermal properties. Appl Therm Eng 2017.
+
+[23] Li SG. General unit cells for micromechanical analyses of unidirectional composites. Compos Part A-Appl Sci Manuf 2001;32(6):815–26.
+
+[24] Li S, Zhou C, Yu H, Li L. Formulation of a unit cell of a reduced size for plain weave textile composites. Comput Mater Sci 2011;50(5):1770–80.
+
+[25] Li S, Warrior N, Zou Z, Almaskari F. A unit cell for FE analysis of materials with the microstructure of a staggered pattern. Compos A Appl Sci Manuf 2011;42(7):801–11.
+
+[26] Dasgupta A, Agarwal RK, Bhandarkar SM. Three-dimensional modeling of woven- fabric composites for effective thermo-mechanical and thermal properties. Compos Sci Technol 1996;56(3):209–23.
+
+[27] Shabana YM, Noda N. Numerical evaluation of the thermomechanical effective properties of a functionally graded material using the homogenization method. Int J Solids Struct 2008;45(11):3494–506.
+
+[28] Nasution MRE, Watanabe N, Kondo A, Yudhanto A. Thermomechanical properties and stress analysis of 3-D textile composites by asymptotic expansion homo- genization method. Compos Part B: Eng 2014;60(Supplement C):378–91.
+
+[29] Ishikawa T, Chou TW. In-plane thermal expansion and thermal bending coefficients of fabric composites. J Compos Mater 1983;17(2):92–104.
+
+[30] Naik NK, Ganesh VK. Prediction of thermal expansion coefficients of plain weave fabric composites. Compos Struct 1993;26(3):139–54.
+
+[31] Ganesh VK, Naik NK. Thermal expansion coefficients of plain-weave fabric lami- nates. Compos Sci Technol 1994;51(3):387–408.
+
+[32] Karadeniz ZH, Kumlutas D. A numerical study on the coefficients of thermal ex- pansion of fiber reinforced composite materials. Compos Struct 2007;78(1):1–10.
+
+[33] Dong K, Zhang J, Cao M, Wang M, Gu B, Sun B. A mesoscale study of thermal expansion behaviors of epoxy resin and carbon fiber/epoxy unidirectional compo- sites based on periodic temperature and displacement boundary conditions. Polym Test 2016;55:44–60.
+
+[34] Wang H, Cao M, Siddique A, Sun B, Gu B. Numerical analysis of thermal expansion behaviors and interfacial thermal stress of 3D braided composite materials. Comput Mater Sci 2017;138:77–91.
+
+[35] Khoun L, Challagulla K, Hubert P. Thermo-mechanical properties of 5-harness satin fabric composites. J Compos Mater 2012;46(25):3121–36.
+
+[36] Ai S, Fu H, He R, Pei Y. Multi-scale modeling of thermal expansion coefficients of C/ C composites at high temperature. Mater Des 2015;82:181–8.
+
+[37] Abueidda DW, Dalaq AS, Abu Al-Rub RK, Jasiuk I. Micromechanical finite element predictions of a reduced coefficient of thermal expansion for 3D periodic archi- tectured interpenetrating phase composites. Compos Struct 2015;133:85–97.
+
+[38] Wongsto A, Li S. Micromechanical FE analysis of UD fibre-reinforced composites with fibres distributed at random over the transverse cross-section. Compos A Appl Sci Manuf 2005;36(9):1246–66.
+
+[39] Daggumati S, Van Paepegem W, Degrieck J, Xu J, Lomov SV, Verpoest I. Local damage in a 5-harness satin weave composite under static tension: Part II – Meso-FE modelling. Compos Sci Technol 2010;70(13):1934–41.
+
+[40] Daggumati S, Van Paepegem W, Degrieck J, Praet T, Verhegghe B, Xu J, et al. Local strain in a 5-harness satin weave composite under static tension: Part II – Meso-FE analysis. Compos Sci Technol 2011;71(9):1217–24.
+
+[41] Melro AR, Camanho PP, Andrade Pires FM, Pinho ST. Numerical simulation of the non-linear deformation of 5-harness satin weaves. Comput Mater Sci 2012;61(Supplement C):116–26.

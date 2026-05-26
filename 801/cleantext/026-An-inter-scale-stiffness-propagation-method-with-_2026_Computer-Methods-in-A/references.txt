@@ -1,0 +1,109 @@
+Lomov, Detailed characterization of voids in multidirectional carbon fiber/epoxy composite laminates using X-ray micro-computed tomography, Compos. A: Appl. Sci. Manuf. 125 (2019) 105532, https://doi.org/10.1016/j.compositesa.2019.105532. [2] S.H.R. Sanei, E.J. Barsotti, D. Leonhardt, R.S. FertigIII, Characterization, synthetic generation, and statistical equivalence of composite microstructures, J. Compos. Mater. 51 (2017) 1817–1829, https://doi.org/10.1177/0021998316662133. [3] M. Petrolo, A.
+
+Pagani, M.
+
+Trombini, E.
+
+Carrera, Voids effect on micromechanical response of elastoplastic fiber-reinforced polymer composites using 1D higher- order theories, Mech. Mater. 184 (2023) 104747, https://doi.org/10.1016/j.mechmat.2023.104747. [4] Porous materials reinforced with short fibers: unbiased full-field assessment of several homogenization strategies in elasticity: mechanics of Advanced Materials and Structures: Vol 29, No 20 - Get Access, (n.d.). https://www.tandfonline.com/doi/full/10.1080/15376494.2021.1880674 (accessed September 12, 2025). [5] S.P. Shah, M. Maiarù, Effect of manufacturing on the transverse response of polymer matrix composites, Polymers 13 (2021) 2491, https://doi.org/10.3390/ polym13152491. [6] T. Kanit, S. Forest, I. Galliet, V. Mounoury, D. Jeulin, Determination of the size of the representative volume element for random composites: statistical and numerical approach, Int. J. Solids. Struct. 40 (2003) 3647–3679, https://doi.org/10.1016/S0020-7683(03)00143-4. [7] D.
+
+Savvas, G.
+
+Stefanou, M.
+
+Papadrakakis, Determination of RVE size for random composites with local volume fraction variation, Comput. Methods Appl. Mech. Eng. 305 (2016) 340–358, https://doi.org/10.1016/j.cma.2016.03.002. [8] T.H. Hoang, M. Guerich, J. Yvonnet, Determining the size of RVE for nonlinear random composites in an incremental computational homogenization framework, J. Eng. Mech. 142 (2016) 04016018, https://doi.org/10.1061/(ASCE)EM.1943-7889.0001057. [9] E. Ghossein, M. L´evesque, Homogenization models for predicting local field statistics in ellipsoidal particles reinforced composites: comparisons and validations, Int. J. Solids. Struct. 58 (2015) 91–105, https://doi.org/10.1016/j.ijsolstr.2014.12.021. [10] S. Ghosh, K. Lee, S. Moorthy, Multiple scale analysis of heterogeneous elastic structures using homogenization theory and voronoi cell finite element method, Int. J. Solids. Struct. 32 (1995) 27–62, https://doi.org/10.1016/0020-7683(94)00097-G. [11] M.
+
+Grigoriu, Stochastic Calculus: Applications in Science and Engineering, Springer Science & Business Media, 2013. [12] J. Ma, S. Sahraee, P. Wriggers, L. De Lorenzis, Stochastic multiscale homogenization analysis of heterogeneous materials under finite deformations with full uncertainty in the microstructure, Comput. Mech. 55 (2015) 819–835, https://doi.org/10.1007/s00466-015-1136-3. [13] S.R.
+
+Arwade, G.
+
+Deodatis, Variability response functions for effective material properties, Probabilistic Eng. Mech. 26 (2011) 174–181, https://doi.org/ 10.1016/j.probengmech.2010.11.005. [14] J.-J.
+
+Gou, H.
+
+Zhang, Y.-J.
+
+Dai, S.
+
+Li, W.-Q.
+
+Tao, Numerical prediction of effective thermal conductivities of 3D four-directional braided composites, Compos. Struct. 125 (2015) 499–508, https://doi.org/10.1016/j.compstruct.2015.02.009. [15] J.-J.
+
+Gou, C.-L.
+
+Gong, L.-X.
+
+Gu, S.
+
+Tao, The unit cell method in predictions of thermal expansion properties of textile reinforced composites, Compos. Struct. 195 (2018) 99–117, https://doi.org/10.1016/j.compstruct.2018.04.045. [16] J.-J. Gou, W.-Z.
+
+Fang, Y.-J.
+
+Tao, Multi-size unit cells to predict effective thermal conductivities of 3D four-directional braided composites, Compos. Struct. 163 (2017) 152–167, https://doi.org/10.1016/j.compstruct.2016.12.034. [17] J.-J. Gou, X.-J.
+
+Ren, W.-Z.
+
+Fang, S.
+
+Tao, Two small unit cell models for prediction of thermal properties of 8-harness satin woven pierced composites, Compos. B: Eng. 135 (2018) 218–231, https://doi.org/10.1016/j.compositesb.2017.10.007. [18] Y. Zhou, S.J. Semnani, A machine learning based multi-scale finite element framework for nonlinear composite materials, Eng. Comput. (2025), https://doi.org/ 10.1007/s00366-025-02121-3. [19] V.D. Fachinotti, I. Peralta, S. Toro, B.A. Storti, A. Caggiano, Automatic generation of high-fidelity representative volume elements and computational homogenization for the determination of thermal conductivity in foamed concretes, Mater. Struct. 56 (2023) 179, https://doi.org/10.1617/s11527-023-02253- 2. [20] M. Kami´nski, P.
+
+Ostrowski, Homogenization of heat transfer in fibrous composite with stochastic interface defects, Compos. Struct. 261 (2021) 113555, https:// doi.org/10.1016/j.compstruct.2021.113555. [21] M. Kami´nski, M. Kleiber, Numerical homogenization of N-component composites including stochastic interface defects, Int. J. Numer. Methods Eng. 47 (2000) 1001–1027, https://doi.org/10.1002/(SICI)1097-0207(20000220)47:5%253C1001::AID-NME814%253E3.0.CO;2-V. [22] M. Schneider, M. Josien, F. Otto, Representative volume elements for matrix-inclusion composites - a computational study on the effects of an improper treatment of particles intersecting the boundary and the benefits of periodizing the ensemble, J. Mech. Phys. Solids. 158 (2022) 104652, https://doi.org/ 10.1016/j.jmps.2021.104652. [23] O. Kunc, F. Fritzen, Finite strain homogenization using a reduced basis and efficient sampling, Math. Comput. Appl. 24 (2019) 56, https://doi.org/10.3390/ mca24020056. [24] J.T.
+
+Oden, E.E.
+
+Prudencio, P.T.
+
+Bauman, Virtual model validation of complex multiscale systems: applications to nonlinear elastostatics, Comput. Methods Appl. Mech. Eng. 266 (2013) 162–184, https://doi.org/10.1016/j.cma.2013.07.011. [25] R. Viviani, E.D.
+
+Pracht, D.
+
+Brenner, P.
+
+Beschoner, J.C.
+
+Stingl, T. St¨ocker, MEMPRAGE Multimodal, FLAIR, and R2* segmentation to resolve dura and vessels from cortical gray matter, Front. Neurosci. 11 (2017) 258, https://doi.org/10.3389/fnins.2017.00258. [26] K. Winner, M.J. Noonan, C.H. Fleming, K.A. Olson, T. Mueller, D. Sheldon, J.M. Calabrese, Statistical inference for home range overlap, Methods Ecol. Evol. 9 (2018) 1679–1691, https://doi.org/10.1111/2041-210X.13027. [27] M. Kami´nski, Uncertainty propagation, entropy, and relative entropy in the homogenization of some particulate composites, Int. J. Numer. Methods Eng. 124 (2023) 3834–3851, https://doi.org/10.1002/nme.7259. [28] M. Kami´nski, R.
+
+Bredow, On application of the relative entropy concept in reliability assessment of some engineering cable structures, Comput. Struct. 305 (2024) 107560, https://doi.org/10.1016/j.compstruc.2024.107560. [29] J. Guilleminot, Modeling non-Gaussian random fields of material properties in multiscale mechanics of materials, in: uncertainty quantification in multiscale materials Modeling, Elsevier (2020) 385–420, https://doi.org/10.1016/B978-0-08-102941-1.00012-2. [30] R. Bostanabad, B. Liang, J.
+
+Gao, W.K.
+
+Liu, J.
+
+Cao, D.
+
+Zeng, X.
+
+Su, H.
+
+Xu, Y.
+
+Li, W.
+
+Chen, Uncertainty quantification in multiscale simulation of woven fiber composites, Comput. Methods Appl. Mech. Eng. 338 (2018) 506–532, https://doi.org/10.1016/j.cma.2018.04.024. [31] S.
+
+Rahman, A Galerkin isogeometric method for Karhunen-Lo`eve approximation of random fields, Comput. Methods Appl. Mech. Eng. 338 (2018) 533–561, https://doi.org/10.1016/j.cma.2018.04.026. [32] N.
+
+Lüthen, S.
+
+Marelli, B.
+
+Sudret, A spectral surrogate model for stochastic simulators computed from trajectory samples, Comput. Methods Appl. Mech. Eng. 406 (2023) 115875, https://doi.org/10.1016/j.cma.2022.115875. [33] K.
+
+Teferra, L.
+
+Graham-Brady, A random field-based method to estimate convergence of apparent properties in computational homogenization, Comput. Methods Appl. Mech. Eng. 330 (2018) 253–270, https://doi.org/10.1016/j.cma.2017.10.027. [34] J.
+
+Li, L.
+
+Hai, T.
+
+Xu, Two-scale random field model for quasi-brittle materials, Probabilistic Eng. Mech. 66 (2021) 103154, https://doi.org/10.1016/j. probengmech.2021.103154. [35] C. Srivastava, P. Agostino, A.G. Stamopoulos, B. Alcock, A. Strandlie, S. Grammatikos, Three-dimensional analysis of porosity in As-manufactured glass Fiber/ vinyl ester filament winded composites using X-ray micro-computed tomography, Appl. Compos. Mater. 31 (2024) 171–200, https://doi.org/10.1007/s10443- 023-10167-z. [36] Z. Wang, L. Zhang, J. Zhong, Y. Peng, Y. Ma, F. Han, Image-based peridynamic modeling-based micro-CT for failure simulation of composites, Materials 17 (2024) 4987, https://doi.org/10.3390/ma17204987. [37] T.S.
+
+Mesogitis, A.A.
+
+Skordos, A.C.
+
+Long, Uncertainty in the manufacturing of fibrous thermosetting composites: a review, Compos. A: Appl. Sci. Manuf. 57 (2014) 67–75, https://doi.org/10.1016/j.compositesa.2013.11.004. [38] I. Tretiak, L.F. Kawashita, S.R. Hallett, Manufacturing composite laminates with controlled void content through process control, J. Reinf. Plast. Compos. 43 (2024) 16–29, https://doi.org/10.1177/07316844231154585. [39] S. Liang, J. Tao, X. Zhao, Z. Liu, D. Zhang, C. Tu, Determining the size of representative volume elements for a two-dimensional random aggregate numerical model of asphalt mortar without damage, Materials 17 (2024) 3387, https://doi.org/10.3390/ma17143387. [40] M. Br¨andel, D. Brands, S. Maike, O. Rheinbach, J. Schr¨oder, A. Schwarz, D. Stoyan, Effective hyperelastic material parameters from microstructures constructed using the planar boolean model, Comput. Mech. 69 (2022) 1295–1321, https://doi.org/10.1007/s00466-022-02142-5. [41] M.´Angeles Gallego, M. Victoria Ib´a˜nez, A. Sim´o, Inhomogeneous K-function for germ-grain models, Spat. Stat. 18 (2016) 489–504, https://doi.org/10.1016/j. spasta.2016.10.001. [42] I. Flint, N. Privault, Computation of coverage probabilities in a spherical germ-grain model, Methodol. Comput. Appl. Probab. 23 (2021) 491–502, https://doi. org/10.1007/s11009-019-09741-5. [43] Y.-C. Yang, J.-J. Gou, C.-L. Gong, Y.-E.
+
+Sun, S.
+
+Li, A multi-scale uncertainty quantification model encompassing minimum-size unit cells for effective properties of plain woven composites, Compos. Struct. 352 (2025) 118648, https://doi.org/10.1016/j.compstruct.2024.118648.

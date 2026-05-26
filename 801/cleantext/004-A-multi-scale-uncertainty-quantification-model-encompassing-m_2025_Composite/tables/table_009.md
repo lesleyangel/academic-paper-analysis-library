@@ -1,0 +1,24 @@
+| Category | Parameters | Symbols | Distribution | Mean() | Parameter(%) | Unit |
+| --- | --- | --- | --- | --- | --- | --- |
+| Geometric | y directional fi ber spacing of UC1 | $\delta _ { b 1 }$ | Uniform | 0.0094 | Range=±25 % | mm |
+| parameter | Radius of UC1 fiber | rb1 | Uniform | 0.0345 | Range=±25 % | mm |
+|  | Width of UC1 | ab1 | $4 / \sqrt { 3 } ( \delta _ { b 1 } + r _ { b 1 } )$ |  |  | mm |
+|  | Length of UC1 | bb1 | $4 ( \delta _ { b 1 } + r _ { b 1 } )$ |  |  | mm |
+|  | y directional fiber spacing of UC2 | $\delta _ { b 2 }$ | Uniform | 0.0094 | Range=±25 % | mm |
+|  | Radius of UC2 fiber | rb2 | Uniform | 0.0345 | Range=±25 % | mm |
+|  | Width of UC2 | $ab2 | $4 / \sqrt { 3 } ( \delta _ { b 2 } + r _ { b 2 } )$ |  |  | mm |
+|  | Length of UC2 | bb2$ | $2 ( \delta _ { b 2 } + r _ { b 2 } )$ |  |  | mm |
+|  | y directional fiber spacing of Uc3 | δb3$ | Uniform | 0.0094 | Range=±25 % | mm |
+|  | Radius of UC3 fiber | rb3 | Uniform | 0.0345 | Range=±25 % | mm |
+|  | Width of UC3 | $ab3 | $2 / \sqrt { 3 } ( \delta _ { b 3 } + r _ { b 3 } )$ | 一 |  | mm |
+|  | Length of UC3 | bb3 | $2 ( \delta _ { b 2 } + r _ { b 2 } )$ |  |  | mm |
+|  | y directional fiber spacing of UC4 | $\delta _ { b 4 }$ | Uniform | 0.0094 | Range=±25 % | mm |
+|  | Radius of UC4 fiber | $r _ { b 4 }$ | Uniform | 0.0345 | Range=±25 % | mm |
+|  | Width of UC4 | $a _ { b 4 }$ | $2 / \sqrt { 3 } ( \delta _ { b 4 } + r _ { b 4 } )$ |  |  | mm |
+| Constituent | Length of UC4 | $b _ { b 4 }$ | $\delta _ { b 4 } + r _ { b 4 }$ |  |  | mm |
+| properties | Fiber elastic modulus | $E _ { f }$ | Normal | 72.0 | σ = 2 % | GPa |
+|  | Fiber Poisson's ratio | Vf | Normal | 0.30 | σ = 2% | 1 |
+|  | Fiber coefficient of thermal expansion | αf | Normal | 7.20 | σ = 2 % | 1e-6/K |
+|  | Matrix elastic modulus | $E _ { m }$ | Normal | 3.50 | σ = 2 % | GPa |
+|  | Matrix Poisson's ratio | $\nu _ { m }$ | Normal | 0.35 | σ = 2% | 1 |
+|  | Matrix coefficient of thermal expansion | $\alpha _ { m }$ | Normal | 50.00 | σ = 2 % | 1e-6/K |

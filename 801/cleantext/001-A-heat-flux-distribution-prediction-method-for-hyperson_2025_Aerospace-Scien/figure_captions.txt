@@ -1,0 +1,25 @@
+Fig. 2. Scheme of surface temperature and heat flux after spatial discretization.
+
+Fig. 1. Illustration of conjugate heat transfer integrating CFD and CST.
+
+Fig. 3. Illustration of conjugate heat transfer integrating HFDP model and CST.
+
+Fig. 4. The procedure of heat flux distribution prediction method.
+
+Fig. 6. The structure of convolution block: (a) TCN; (b) CNN.
+
+Fig. 7. Test trajectories and range of possible trajectories.
+
+Fig. 8. Schematic of the re-entry capsule’s model and trajectory.
+
+Fig. 9. Schematic of the re-entry capsule’s model and trajectory.
+
+Fig. 10. The combination of varying input sequence lengths and output.
+
+Fig. 11. The prediction results along 3 test trajectories.
+
+Fig. 12. Comparison of predicted and actual heat flux distributions at critical time points: (a) extremum heat flux; (b) extremum spatially averaged absolute error.
+
+Fig. 13. Heat flux prediction along 3 test trajectories: (a) test 50 times; (b) test 200 times; (c) test 800 times.
+
+Fig. 5. Dilated causal convolution.

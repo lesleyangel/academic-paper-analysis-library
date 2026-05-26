@@ -1,0 +1,414 @@
+## 1. Introduction
+
+Fiber-reinforced composites achieve high specific stiffness and strength by embedding stiff fibers in matrix; yet microstructural variability - irregular fiber packing and matrix porosity - almost inevitably arises during manufacturing [1,2]. Even small pore fractions can degrade stiffness and strength and accelerate damage evolution by reducing load-bearing area and introducing stress concentrators [3]. Beyond the overall porosity level, the location and morphology of pores also play a decisive role. In particular, pores that form in the matrix regions between fibers can further reduce stiffness; studies on short-glass-fiber thermoplastics with random orientations have shown that even modest increases in porosity may lead to appreciable decreases in the effective Young’s modulus [4]. These effects, though microscopic, collectively manifest as stochastic variability in macroscopic stiffness. Quantifying this inherent stochasticity is therefore essential for reliable prediction and design of composite structures.
+
+Inter-scale stochastic modeling offers a rational method to link matrix-scale stochasticity with composite-scale response by homogenizing over a representative volume element (RVE) while tracking the propagation of statistical fluctuations. The accuracy of such homogenization strongly depends on the RVE size. When the domain is below a critical threshold, statistical volume elements (SVEs) exhibit significant sample-to-sample variability; studies on carbon-fiber systems have identified the approximate critical RVE size [5]. After this transition, random heterogeneous materials generally display the self-averaging effect: as the averaging volume increases, the variance of effective properties decreases, often following inverse-volume or power-law decay [5,6]. Recent investigations have further confirmed the influence of SVE volume on the distribution of effective properties, viewed here as RVE-level random variables defined over an ensemble of realizations [7–13]. To examine spatial variability, RVEs of different sizes are usually constructed: larger RVEs are suitable for periodic or translationally symmetric boundary conditions, while smaller RVEs are necessary to capture matrix-scale defects such as matrix pores between fibers and their impact on bundle scale mechanical properties [14–17]. In practice, RVEs cannot be enlarged indefinitely because high-fidelity simulations of very large domains are computationally prohibitive, particularly for architectures lacking clear scale separation [18]. A high-fidelity RVE model of a porous composite may contain hundreds of millions of elements, making it impractical for routine analysis [19]. These constraints highlight the need for variance-aware modeling strategies that remain accurate at finite, feasible volumes rather than relying on asymptotically large RVEs [18]. Several modeling efforts have incorporated stochastic micro-defects into homogenization analyses, including the interface-defect models of Kaminski ´ et al. [20,21]. These studies offer valuable insight into how random geometric imperfections influence effective properties. While these works primarily consider interface irregularities represented by independent defect variables, the present study addresses matrix porosity modeled as a spatially correlated volume-type random field. By introducing explicit spatial correlation and scale dependence, the proposed method enables stochastic propagation from the matrix scale to the composite scale and complements existing approaches in this area.
+
+Beyond variance-volume scaling, it is also important to assess whether the statistical structure of the homogenized properties is preserved across different volumes. Recent probabilistic homogenization studies have employed various distance measures for this purpose. Matrix-based distances, such as the Frobenius norm or the spectral norm, measure discrepancies between empirical and modeled correlation or covariance matrices [22,23]. Distribution-based metrics provide a complementary viewpoint: the Bhattacharyya distance (BD) characterizes the overlap between multivariate distributions, while the Kullback-Leibler divergence (KL) quantifies their information discrepancy [24–26]. Such information-theoretic, distribution-based measures have recently been employed to assess uncertainty propagation in probabilistic homogenization frameworks, providing a rigorous basis for distribution-level model validation [27]. Entropy-based distances of this type have also proved useful beyond homogenization; for instance, recent reliability analyses of telecommunication skeletal structures have shown that BD offers an efficient and robust probabilistic measure compared with KL divergence and classical First-Order Reliability Method-type indices, further highlighting the relevance of such metrics in characterizing stochastic response surfaces [28]. These metrics offer rigorous tools for evaluating whether a reduced or scale-bridging model can accurately reproduce the joint statistics of homogenized properties. Following this perspective, the present work incorporates both matrix-level and distribution-level comparisons to validate the proposed stochastic stiffness-porosity model across RVE volumes.
+
+While these metrics primarily evaluate the joint distributional consistency of homogenized properties, spatial correlation must also be considered because matrix-scale microstructures possess intrinsic length scales. A standard approach is to model local effective stiffness as a stochastic field with position-independent mean and a two-point covariance that decays with separation [29,30]; Karhunen-Lo\`eve expansions and spectral methods are routinely employed for discretization [31,32]. Such stochastic field representations have been used to estimate RVE convergence by extracting autocorrelation from a single SVE’s response field, thereby predicting variance without massive Monte Carlo simulations [33]. For example, Teferra and Graham-Brady computed autocorrelation functions from one mesoscale simulation and showed that the variance of elastic moduli for larger domains can be obtained analytically as a function of volume, avoiding many additional FE runs [33]. Stochastic field techniques have also been applied to link microscale strength variability to structural behavior in quasi-brittle materials: Li et al. modeled spatially varying concrete strength using a two-scale stochastic field, successfully capturing size effects in probabilistic failure predictions [34].
+
+While stochastic field models describe variability statistically, image-based methods such as micro-CT provide direct morphological information. For composites with porosity, micro-CT or X-ray tomography can reveal pore sizes, shapes, and locations in a single specimen, enabling image-based models that replicate that specimen’s pore morphology [35]. Micro-CT inspections have shown, for instance, distinct pore populations in woven composites (small nearly-spherical pores in resin-rich pockets vs. larger elongated pores between fiber bundles) [1]. Such high-resolution image-based models can be directly meshed for analysis [36]. Yet large-scale production cannot rely on exhaustive CT for every part: scanning each part is costly and time-consuming, and high-resolution scans are limited to relatively small samples. Moreover, pore statistics measured from a few exemplars carry epistemic uncertainty (incomplete distributional knowledge) in addition to aleatory variability [37]. In practice, manufacturers often treat a porosity below ${\sim} 2$ % as acceptable [38], but lack confidence in how rarer or larger pores might affect performance. Quantifying how such epistemic uncertainty in pore distributions propagates to stiffness variability is therefore crucial, especially when only limited characterization data are available. These challenges motivate the development of scale-bridging stochastic models that can incorporate limited data in a computationally feasible manner.
+
+In UD composites, the geometry spans multiple scales from fibers and matrix pores to bundles and laminate units. RVE-based homogenization with appropriate boundary conditions is a standard approach to compute effective properties, and size-graded RVEs are often used to study convergence [39]. However, stochastic porosity and other manufacturing defects break the nominal periodicity, so that RVEs differ realization by realization, and recent studies have confirmed their significant impact on stiffness, toughness, and nonlinear response. These observations motivate the development of a general inter-scale stiffness-propagation method capable of incorporating realistic pore morphology, spatial correlations of porosity, and its coupling with stiffness, while remaining nonintrusive to existing FE solvers. The detailed formulation is presented in Section 2.
+
+## 2. Inter-scale stiffness propagation method with stochastic porosity
+
+A nonintrusive, RVE-based inter-scale method is developed to propagate stochastic porosity effects from the matrix-scale to the stiffness field. At the matrix-scale (Section 3), the pores are modeled as a Boolean model consisting of Poisson-distributed germs and independent, identically distributed (i.i.d.) spherical grains. This stochastic construction yields a binary phase Y and defines the local average porosity $\phi _ {V} ( x )$ . This compact, physics-based generator allows direct control of the mean porosity and provides the stochastic input for all composite-scale statistics.
+
+(a) Spatial statistics and volume scaling of porosity (Section 4). The spatial statistics of $\phi _ {V}$ are characterized by the two-point covariance function $C _ {\phi} ( r ; V _ {1} , V _ {2} )$ , which follows a Mat´ern-type form. This correlation structure induces a scale law for local averages $\mathrm{Var} [ \overline {{\phi}} _ {V} ] {\propto} | V | ^ {- \alpha _ {\phi}}$ , with $\alpha _ {\phi} \approx 1$ empirically. Together, these ingredients quantify both spatial coherence and variancevolume decay of porosity, and they will be reused to drive mesh-level sampling.
+
+(b) Porosity-mechanics coupling (Section 5). FE-based homogenization links porosity to local stiffness (see detailed information in subSection 5.2). Numerical experiments demonstrate that the mean stiffness is nearly volume-invariant; the variance follows a power-law decay $\operatorname{Var} [ X _ {i} ( V ) ] = B _ {i} | V | ^ {- \alpha _ {i}}$ ; and the correlation between X and $\phi _ {V}$ remains strong and almost independent of the volume. These findings motivate a volume-adaptive joint model.
+
+(c) Nonintrusive mesh-level sampling (Section 6). The model is implemented without modifying the FE solver. For each matrixphase element e, a local porosity value $\phi _ {e}$ is generated at the element centroids, either by kriging or by direct sampling from the covariance model $C _ {\phi} ( r ; V _ {e} , V _ {e ^ {\prime}} )$ , according to the element volumes $V _ {e}$ The corresponding stiffness tensor $X _ {e}$ of that element is then sampled from the conditional distribution $P ( X _ {e} | \phi _ {e} , V _ {e} )$ prescribed by the joint model. Each Monte Carlo realization thus produces a porosity field and a statistically consistent multivariate stiffness field, preserving both spatial coherence and the cross-property structure while respecting variance-volume scaling.
+
+Each Monte Carlo realization produces a porosity field and a statistically consistent multivariate stiffness field, preserving spatial coherence, cross-property structure, and the variance-volume scaling. The resulting pipeline is nonintrusive, parameter-efficient, and volume-adaptive, enabling calibrated transfer of stochastic porosity from the matrix-scale to composite-scale property fields over arbitrary FE meshes.
+
+## 3. Matrix-scale RVE model of stochastic pores
+
+The pores within the composite matrix are modeled using a Boolean model, which is a specific instance of the germ-grain process [40,41]. A random closed set is generated from a Poisson point process of pore centers (germs) and a family of compact random grains (spherical pores) defined on a probability space $( \Omega , {\mathcal {F}} , \mathbb {P} )$ .
+
+To keep the stochastic construction compact and isotropic, the pore grains are represented as spheres. This choice is consistent with the early formation stage of matrix-dominated voids in thermoset composites, where micro-voids nucleate in a viscous resin and commonly exhibit near-spherical morphology. The spherical model therefore serves as a neutral first-order approximation of pore geometry rather than a restrictive physical assumption. It provides an analytically tractable reference shape for deriving closed-form two-point statistics in the Boolean generator, while avoiding any shape-induced anisotropy in the covariance structure. Importantly, only the analytical expression of the overlap volume relies on this representation; the subsequent components of the framework, such as FE-based homogenization and the stiffness-porosity coupling—operate independently of pore geometry and remain applicable when more complex pore shapes are introduced.
+
+The pore centers follow a homogeneous Poisson point process with intensity $\lambda _ {P} > 0$ in the domain $\mathcal {D} \mathsf{C} \mathbb {R} ^ {3}$ . For any Borel set V⊂D , the number of pore centers N(V) satisfies
+
+$$\mathbb {P} \{N ( V ) = k \} = \frac {{\left( \lambda _ {p} | V | \right)} ^ {k}} {k !} e ^ {- \lambda _ {p} | V |} , k = 0 , 1 , 2 , \ldots\tag{1}$$
+
+Counts on disjoint subsets are independent, and conditional on $N ( \mathrm{~V~} ) = k ,$ the centers are uniformly and independently distributed within $V$
+
+Each center $x _ {i}$ is assigned a radius $R _ {i}$ drawn independently from a truncated normal distribution ${\mathcal {N}} ( \mu , \sigma ^ {2} )$ over $[ r _ {\operatorname* {m i n}} , r _ {\operatorname* {m a x}} ]$ , with density
+
+$$f _ {R} ( r ) = \frac {1} {\sigma \sqrt {2 \pi}} \cdot \frac {\exp \left( - \frac {( r - \mu ) ^ {2}} {2 \sigma ^ {2}} \right)} {\Phi _ {\mathcal {N}} \left( \frac {r _ {\mathrm{max}} - \mu} {\sigma} \right) - \Phi _ {\mathcal {N}} \left( \frac {r _ {\mathrm{min}} - \mu} {\sigma} \right)} , r _ {\mathrm{min}} \leq r \leq r _ {\mathrm{max}} ,\tag{2}$$
+
+where $\Phi _ {\mathcal {N}} ( \cdot )$ is the standard normal cumulative distribution function.
+
+Let B(x, $, R ) = \big \{\boldsymbol {y} \in \mathbb {R} ^ {3} : \| \boldsymbol {y} - \boldsymbol {x} \| \le R \big \}$ denote a closed ball. Allowing overlaps between balls, the pore phase in a realization $\omega \in \Omega$ is defined as the Boolean union
+
+$$\mathcal {B} \bigg ( \omega \bigg ) = \bigcup _ {i = 1} ^ {N ( \omega )} \mathbb {B} \bigg ( \mathbf {x} _ {i} \bigg ( \omega ) , R _ {i} \bigg ( \omega ) \bigg ) \mathsf{C} \mathbb {R} ^ {3} ,\tag{3}$$
+
+and its complement in $\mathcal {D}$ corresponds to the solid matrix. The binary indicator field is then defined as
+
+$$Y {\biggl (} \mathbf {x} , \omega {\biggr )} = {\left\{\begin{array} {l l} {1 ,} & {\mathbf {x} \in {\mathcal {B}} ( \omega ) \quad {\mathrm{(pore)}} ,} \\ {0 ,} & {\mathbf {x} \not \in {\mathcal {B}} ( \omega ) \quad {\mathrm{(solid)}} .} \end{array} \right.}\tag{4}$$
+
+For spatial statistics, let $V {\subset} \mathbb {R} ^ {3}$ be a bounded local volume containing the origin. The local average of a field $f ( \mathbf {x} , \omega )$ over V is defined as
+
+$$\langle f \rangle _ {V} \bigg ( \mathbf {x} , \omega \bigg ) = \frac {1} {| V |} \int _ {\mathbf {u} \in V} f \bigg ( \mathbf {x} + \mathbf {u} , \omega \bigg ) d \mathbf {u} .\tag{5}$$
+
+Accordingly, the local average porosity is defined as
+
+$$\phi _ {V} ( \mathbf {x} , \omega ) = \langle Y \rangle _ {V} ( \mathbf {x} , \omega ) .\tag{6}$$
+
+The total porosity is determined jointly by the center intensity $\lambda _ {p}$ and the radius distribution. Fig. 1 illustrates representative realizations of the stochastic porous medium modeled by the Boolean model on the same RVE. Increasing the dispersion $\sigma _ {R}$ (with fixed $\lambda _ {p} )$ produces greater heterogeneity and a higher probability of large pores, whereas increasing $\lambda _ {p}$ (for a moderate σR) yields a denser and more uniformly distributed pore network.
+
+A two-scale composite is considered, in which fiber bundles are embedded within a porous matrix. The composite-scale RVE comprises one bundle and its surrounding matrix, assumed periodic in all directions. The pores within the inter-bundle matrix are described by the Boolean model introduced above, with parameters listed in Table 1.
+
+These parameters correspond to those adopted in the subsequent numerical studies and are provided here for completeness.
+
+## 4. Statistical features and modeling of porosity field
+
+In the Boolean model introduced in Section 3, the pore phase is the union of stochastically distributed spheres, and the binary indicator field is $Y ( {\bf x} , \omega )$ . Ensemble operators E[ ⋅ ], Var[ ⋅ ], and $\operatorname{Cov} [ \cdot , \cdot ]$ are taken with respect to P. We characterize the first and second order statistics of the pore phase and of the local average porosity (Eq. (6)) and then propose an analytical model for the porosity covariance suitable for inter-scale simulations.
+
+## 4.1. Statistical features of pores field
+
+The ensemble mean porosity is the classical Boolean model result [42]
+
+$$\begin{array} {r} {\overline {{\phi}} = \mathbb {E} \big [ \boldsymbol {Y} ( \mathbf {x} , \cdot ) \big ] = 1 - \exp \big ( - \lambda _ {p} \overline {{\nu}} _ {p} \big ) , \mathbf {x} \in \mathcal {D} ,} \end{array}\tag{7}$$
+
+where the mean single-pore volume is
+
+$$\overline {{\nu}} _ {p} = \mathbb {E} \bigg [ \frac {4 \pi} {3} R ^ {3} \bigg ] = \int _ {r _ {\mathrm{min}}} ^ {r _ {\mathrm{max}}} \frac {4 \pi} {3} R ^ {3} f _ {R} ( R ) \mathrm{d} R .\tag{8}$$
+
+Define the two-point function and the indicator covariance
+
+$$S _ {2} ( r ) = \mathbb {E} [ Y ( \mathbf {x} ) Y ( \mathbf {x + h} ) ] , C _ {Y} ( r ) = S _ {2} ( r ) - \overline {{\phi}} ^ {2} , r = \| \textbf {h} \| .\tag{9}$$
+
+For Boolean spheres, the two-point function admits a closed form [42]
+
+$$S _ {2} ( r ) = 1-2 e ^ {- \lambda _ {p} \overline {{V}} _ {\mathrm{p}}} + e ^ {- \lambda _ {p} \overline {{V}} _ {\cup} ( r )} ,\tag{10}$$
+
+where $\overline {{V}} _ {\cup} ( r )$ is the mean union volume of two independent pores whose centers are separated by distance r. For spherical grains, the overlap volume depends solely on the center-to-center distance, and therefore the two-point function is isotropic and admits the compact closed-form expression shown above. This isotropy is a direct consequence of the spherical geometry: the covariance reduces to a function of a scalar separation variable, with no directional dependence. If the grains representing pores were non-spherical, the Boolean-model formulation would remain valid; however, the overlap volume would depend on both the magnitude and the orientation of the grains, leading to an anisotropic two-point covariance function. In such cases, the overlap integral must be evaluated numerically, and only the covariance kernel, not the structure of the stochastic framework, would be modified.
+
+Writing A and B for two i.i.d. balls with radii drawn from $f _ {R} {:}$ ,
+
+$$\begin{array} {r} {\overline {{V}} _ {\cup} ( r ) = 2 \overline {{V}} _ {\mathrm{p}} - \mathbb {E} [ V _ {\cap} ( r ; A , B ) ] ,} \end{array}\tag{11}$$
+
+with $V _ {\cap}$ the overlap volume at separation r. Consequently,
+
+$$C _ {Y} \big ( r \big ) = \exp \big [ - \lambda _ {p} \overline {{V}} _ {\cup} ( r ) \big ] - \exp \big [ - 2 \lambda _ {p} \overline {{\nu}} _ {\mathrm{p}} \big ] .\tag{12}$$
+
+For monodisperse pores of radius ${{a} _ {0}} ,$ , the mean union volume satisfies $\overline {{V}} _ {\cup} ( r ) = 2 \overline {{\nu}} _ {p} \mathrm{for} r > 2 a _ {0}$ . Consequently, the covariance $C _ {Y} ( r )$ vanishes outside that range. For polydisperse radii, $C _ {Y} ( r )$ decays smoothly and is empirically close to exponential form with a correlation length on the order of the pore size.
+
+## 4.2. Statistical features of porosity field
+
+Using Eq. (6) and linearity of averaging, the ensemble variance of the local porosity is the local average microscopic covariance
+
+$$\mathrm{Var} [ \phi _ {V} ] = \frac {1} {\vert V \vert ^ {2}} \int \displaylimits _ {0} \int \displaylimits _ {V \times V} C _ {Y} ( \Vert \mathbf {u} _ {2} - \mathbf {u} _ {1} \Vert ) d \mathbf {u} _ {1} d \mathbf {u} _ {2} , \left( \mathbf {u} _ {1} , \mathbf {u} _ {2} \in V ) , \right.\tag{13}$$
+
+which makes explicit the non-hyperuniform self-averaging law
+
+$$\mathsf{Var} [ \phi _ {V} ] \approx A _ {\phi} \vert V \vert ^ {- \alpha _ {\phi}} ,\tag{14}$$
+
+where $A _ {\phi} > 0$ depends on the integral of $C _ {Y}$
+
+For two local volumes $V _ {1} , V _ {2}$ with centers separated by h (distance $r = \parallel \mathbf {h} \parallel )$ , the cross-volume covariance of local porosities is
+
+$$C _ {\phi} ( r ; V _ {1} , V _ {2} ) = \mathrm{Cov} \big [ \phi _ {V _ {1}} ( \mathbf {x} ) , \phi _ {V _ {2}} ( \mathbf {x} + \mathbf {h} ) \big ] = \frac {1} {| V _ {1} | | \ V _ {2} |} \ \int \int d \mathbf {\Omega} C _ {Y} ( \mathbf {\Omega} \| \ \mathbf {h} + \mathbf {u} _ {2} - \mathbf {u} _ {1} \mathrm{\Omega} \| \mathbf {\Omega} ) d \mathbf {u} _ {1} d \mathbf {u} _ {2} .\tag{15}$$
+
+These integrals are spatial averages over the finite local volumes; the volume shape can slightly modulate the prefactor $A _ {\phi}$ ${a} _ {\phi} ,$ and we consistently use spherical volumes unless otherwise stated. It is emphasized that the variance-volume scaling in $\operatorname{Eqs.} \ ( 13 ) ‐ ( 14 )$ and the cross-volume covariance in $\operatorname{Eq}$ (15) do not rely on the spherical-pore assumption. These relations follow from the general properties of Boolean media with bounded grains and finite-range covariance. The use of spherical averaging windows is adopted solely to preserve isotropy of the sampling volumes and does not impose any restriction on pore geometry. For non-spherical pores, the same formulations remain valid, with only the microscopic covariance kernel modified to reflect possible anisotropy.
+
+In practice, $\widehat {C} _ {\Phi} ( r ; V _ {1} , V _ {2} )$ is estimated either by ensemble averaging over many realizations. With n realizations $\{\omega _ {k} \} _ {k = 1} ^ {n}$
+
+$$\widehat {C} _ {\phi} ( r ; V _ {1} , V _ {2} ) = \frac {1} {n} \sum _ {k = 1} ^ {n} \left( \phi _ {V _ {1}} ^ {( k )} ( \mathbf {x} ) - \overline {{\phi}} \right) \left( \phi _ {V _ {2}} ^ {( k )} ( \mathbf {x} + \mathbf {h} ) - \overline {{\phi}} \right) .\tag{16}$$
+
+For a single large realization, an ergodic spatial Monte Carlo quadrature of Eq. (15) is obtained by sampling i.i.d. pairs $\big ( \mathbf {u} _ {1} ^ {( i )} , \mathbf {u} _ {2} ^ {( i )} \big ) \sim$ Uni $\mathsf{f} ( V _ {1} ) \times \mathsf{Unif} ( V _ {2} )$ and computing
+
+$$\widehat {C} _ {\phi} ( r ; V _ {1} , V _ {2} ) = \frac {1} {n} \sum _ {i = 0} ^ {n} \mathrm{Cov} \big [ Y \big ( \mathbf {x} + \mathbf {u} _ {1} ^ {( i )} \big ) - \overline {{\phi}} , Y \big ( \mathbf {x} + \mathbf {h} + \mathbf {u} _ {2} ^ {( i )} \big ) - \overline {{\phi}} \big ] ,\tag{17}$$
+
+which is equivalent to averaging the two-point function $S _ {2}$ over the sampled pairwise distances since Eq. (9):
+
+$$\widehat {C} _ {\phi} ( r ; V _ {1} , V _ {2} ) = \frac {1} {n} \sum _ {i = 0} ^ {n} \big ( S _ {2} \big ( \mid \mid \mathbf {h} + \mathbf {u} _ {2} ^ {( i )} - \mathbf {u} _ {1} ^ {( i )} \mid \mid \big ) - \overline {{\phi}} ^ {2} \big ) .\tag{18}$$
+
+The geometric definition of the sampling distance r and the local volumes $V _ {1}$ and $V _ {2}$ used in this Monte Carlo scheme is illustrated in Fig. 2. The definition of the sampling distance r in Fig. 2 follows the minimum gap distance between two non-overlapping local volumes, $\mathrm{i.e.,}$ the distance by which the regions are separated without any geometric overlap. This choice is consistent with the FE discretization used later in the composite-scale model, where elements do not overlap and where partially overlapping averaging windows are neither required nor physically meaningful. In addition, the covariance between two regions becomes highly nonlinear when they overlap or are separated by extremely small distances; avoiding this regime yields a more stable and volume-consistent characterization of spatial correlations.
+
+At the composite scale, larger elements imply larger separations between neighboring non-overlapping elements, placing the corresponding gap distances in a range where the porosity correlation has already decayed substantially. Together with the strong selfaveraging effect at large volumes, which significantly reduces the variance of the homogenized porosity, these factors make the interelement covariance terms numerically small in practice at the composite scale. Increasing the element size in large composite-scale meshes also naturally increases the center-to-center distance between elements, reinforcing this effect.
+
+In this Monte Carlo scheme, the local volumes $V _ {1}$ and $V _ {2}$ are represented by spheres whose radii are those associated with the prescribed averaging volumes, as introduced earlier. For each evaluation of $\widehat {C} _ {\phi} ( r ; V _ {1} , V _ {2} )$ , a total of $n = N _ {\mathrm{MC}}$ random point pairs $( \mathbf {u} _ {1} ^ {( i )}$ $\mathbf {u} _ {2} ^ {( i )} )$ are generated, where $\mathbf {u} _ {1} ^ {( i )}$ and $\mathbf {u} _ {2} ^ {( i )}$ are independently and uniformly sampled within the spherical regions corresponding to $V _ {1}$ and $V _ {2 s}$ respectively.
+
+In this study, we use $N _ {\mathrm{MC}} = 1.2 \mathrm{e} 4$ , which provides $N _ {\mathrm{MC}}$ pairwise distances for estimating the covariance at each separation distance. The separation distance is discretized on a uniform grid $r \in [ 0 , 60 \mu \mathrm{m} ] , N _ {r} = 15 ,$ such that the cross-volume covariance is evaluated at 15 distinct separations. Similarly, the local averaging volumes are prescribed through a uniform grid of radii $R _ {V} \in [ 20 \mu \mathrm{m} , 36 \mu \mathrm{m} ] , N _ {R \nu} = 5$ , and the Monte Carlo estimation is performed for each prescribed pair $\left( V _ {1} , V _ {2} \right)$
+
+Overall, this procedure produces Monte Carlo evaluations of $\widehat {C} _ {\phi} ( r ; V _ {1} , V _ {2} )$ over a three-dimensional grid of input parameters (r, $V _ {1} ,$ V2). The resulting dataset provides the numerical samples needed to fit the parametric cross-volume covariance model $\widehat {C} _ {\phi} ( r ; V _ {1} , V _ {2} )$ in the subsequent analysis.
+
+## 4.3. Statistical modeling of porosity field covariance
+
+To integrate porosity correlations into the inter-scale method, we adopt an analytical model for the cross-volume covariance $C _ {\phi} ( r ;$ $V _ {1} , V _ {2} )$ parameterized by the local volumes and the separation distance. Motivated by the empirical near-exponential decay of $C _ {Y} ( r )$ and by its matrix-scale interpretation, we use a Mat´ern kernel with smoothness $\nu = 3 / 2$ together with the volume-scaling law from Eq. (14)
+
+$$C _ {\phi} ^ {\mathrm{model}} ( r ; V _ {1} , V _ {2} ) = A _ {\phi} V _ {g} ^ {- \alpha _ {\phi}} \left( 1 + \frac {r} {\rho} \right) \exp \left( - \frac {r} {\rho} \right) , V _ {g} = \sqrt {| V _ {1} | | V _ {2} |} ,\tag{19}$$
+
+where $V _ {g}$ is the geometric mean volume, $\rho$ is the correlation length (on the order of pore radius to a few radii), and $A _ {\phi}$ is the variance amplitude at unit volume, and the exponent α ≈ 1 reflects the $\left| V \right| ^ {- 1}$ variance scaling. This fitted covariance is used later to generate spatially correlated porosity fields, which are then mapped to stiffness fields via the variance-covariance relationships established earlier.
+
+## 5. Statistical feature of matrix-scale effective properties
+
+Cross-property statistics are evaluated within the same RVE volume V (without spatial separation). The local porosity is defined as the spatial average given in Eq. (6). For each realization, FE homogenization is performed to obtain a vector of effective mechanical properties
+
+$$\mathbf {X} ( V ) = \left( X _ {1} , . . . , X _ {m} \right) ^ {\top} \in \mathbb {R} ^ {m} ,\tag{20}$$
+
+where entries include principal Young’s moduli $E _ {1} , E _ {2} , E _ {3} ,$ shear moduli $G _ {12} , G _ {23} , G _ {13} ,$ and Poisson’s ratios $\nu _ {12} , \nu _ {23} , \nu _ {31}$ . Repeated simulations reveal three robust behaviors above a modest minimal volume: (i) mean invariance—the ensemble mean $\mu _ {X _ {i}} ( V ) = \operatorname {\mathbb {E}} [ X _ {i} ( V ) ]$ is essentially independent of V; (ii) variance decay—the variability of each component decreases with V (self-averaging); (iii) strong negative stiffness-porosity correlation—each stiffness component is strongly anti-correlated with $\phi _ {V}$ and this correlation is nearly invariant with $V$
+
+## 5.1. Stiffness and porosity sampling of RVE size
+
+Four RVEs of the matrix, containing embedded spherical pores, are analyzed with normalized volumes of
+
+$$V _ {m} / V _ {m , \operatorname* {m a x}} \in \{1 / 3 , 1 / 2 , 1 / 1.5 , 1 \} ,\tag{21}$$
+
+where $V _ {m , \operatorname* {m a x}}$ denotes the total volume of the matrix-scale RVE $\mathrm {( R V E _ {m 1} )}$
+
+For each $V _ {m} ,$ a large ensemble of pore realizations is generated using the geometric model of Section 3, and high-fidelity FE homogenization is performed under periodic boundary conditions. From each simulation we extract X(V) together with the sample’s porosity $\phi _ {V}$ . Representative realizations of the four matrix RVEs are illustrated in Fig. 3, showing the stochastic pore structures generated at different RVE sizes. All pore realizations shown in Fig. 3 are generated using the Boolean-model parameters listed in Table 1, which are consistently employed in the subsequent numerical studies. For each RVE size, the same procedure is repeated over an independent Monte Carlo ensemble, yielding four datasets for subsequent analysis of variance-volume scaling and cross-property correlations. For each size, the Monte Carlo sampling is continued until the relevant first- and second-order statistical moments exhibit stable convergence, with the mean and covariance varying by less than about 0.5 %. In practice, this criterion is typically met with roughly 2000 realizations.
+
+The matrix is assumed to be isotropic, and the default elastic modulus and Poisson’s ratio are set to $E _ {m} = 82.5 \mathrm{GPa}$ and $\nu _ {m} = 0.2$ respectively. Although the pristine matrix itself exhibits no directional dependence, the introduction of pores may induce local anisotropy in the effective stiffness of the representative volume elements (RVEs). To describe this potential anisotropy, a local coordinate system is defined where directions 1, 2, and 3 correspond to the principal material axes of each RVE. In addition, in the presence of pores, the effective elastic modulus of the matrix phase is assumed to decrease by approximately 90 %, while the Poisson’s ratio remains unchanged.
+
+The FE-based homogenization used in this work does not depend on the assumed pore geometry. The voxelized indicator field generated from the stochastic pore model is supplied directly to the FE solver, so spherical and non-spherical pores are treated identically. Thus, the spherical assumption affects only the analytical form of the pore-field statistics, not the homogenization process or the inter-scale propagation framework.
+
+## 5.2. FE-based homogenization procedure
+
+Once the pore-induced material properties have been assigned to all elements of the matrix-scale RVE, the effective elastic constants are computed using a standard FE-based homogenization procedure formulated in terms of macroscopic stresses. The macroscopic stress and strain tensors are defined as
+
+$$\langle \pmb {\sigma} \rangle = \frac {1} {| V |} \int _ {V} \pmb {\sigma} \bigg ( \mathbf {x} ) \mathrm{d} \mathbf {x} , \qquad \langle \pmb {\varepsilon} \rangle = \frac {1} {| V |} \int _ {V} \pmb {\varepsilon} \bigg ( \mathbf {x} ) \mathrm{d} \mathbf {x} ,\tag{22}$$
+
+where V denotes the RVE domain and $| V |$ is its volume. The macroscopic stress and strain tensors are related through the effective stiffness tensor $\mathbf {C} ^ {\mathrm{eff}}$ as $\langle {\pmb \sigma} \rangle = {\bf C} ^ {\mathrm{eff}} \langle {\pmb \varepsilon} \rangle$ .To identify all components of $\mathbf {C} ^ {\mathrm {{e f f}}}$ , six elementary loading cases are solved under periodic-type or symmetry-consistent boundary conditions, ensuring kinematic compatibility and satisfaction of the Hill-Mandel energy condition. A stress-controlled formulation is adopted so that the engineering elastic constants can be extracted directly from the resulting volumeaveraged strain responses.
+
+For the three normal loading cases, a unit macroscopic normal stress is prescribed successively in directions $i = {1 , 2 , 3}$
+
+$$\langle \sigma _ {i i} \rangle = 1 , \quad \langle \sigma _ {j k} \rangle = 0 , \quad ( j , k \neq i ) ,\tag{23}$$
+
+while all remaining macroscopic stress components are set to zero. The FE solutions provide the corresponding volume-averaged normal strains $\left. \varepsilon _ {11} \right$ , 〈ε22〉 and $\left. \varepsilon _ {33} \right$ 〉, from which the Young’s moduli and Poisson’s ratios in the local coordinate system of each RVE are obtained directly as
+
+$$E _ {i} = \left. \sigma _ {i i} \right. ^ {( i )} \big / \left. \varepsilon _ {i i} \right. ^ {( i )} , \quad \nu _ {i j} = - \big \langle \varepsilon _ {j j} \big \rangle ^ {( i )} \big / \left. \varepsilon _ {i i} \right. ^ {( i )} , \quad ( j \ne i ) ,\tag{24}$$
+
+where the superscript (i) denotes the response under the i th normal loading case.
+
+For the three shear loading cases, a unit macroscopic shear stress is applied, $\left. \sigma _ {i j} \right. = 1$ for $i \neq j ,$ , and the admissible boundary displacements are constrained to enforce vanishing macroscopic normal strains, $\langle \varepsilon _ {k k} \rangle = 0$ . The corresponding volume-averaged shear strain $\left. \varepsilon _ {i j} \right$ is extracted from the FE solution, and the shear modulus is computed directly as $G _ {i j} = {\left. \sigma _ {i j} \right.} ^ {( i j )} / {\left. \varepsilon _ {i j} \right.} ^ {( i j )}$ , where the superscript (ij) denotes the response under the shear loading case $\left. \sigma _ {i j} \right. = 1$
+
+Together, these six loading cases—three normal and three shear—yield the complete set of nine engineering elastic constants $( E _ {1}$ $E _ {2} , E _ {3} , \nu _ {12} , \nu _ {23} , \nu _ {31} , G _ {12} , G _ {23} , G _ {13} )$ for each pore realization and for every RVE size considered.
+
+## 5.3. Stiffness and porosity variance decay with RVE size
+
+Self-averaging is captured by the power-law model
+
+$$\operatorname{Var} [ X _ {i} ( V ) ] = B _ {i} V ^ {- \alpha _ {i}} , i = 1 , 2 , . . . , m ,\tag{25}$$
+
+where $B _ {i} > 0$ is the unit-volume variance amplitude and $\alpha _ {i}$ is the decay exponent. Physically, $\alpha _ {i}$ quantifies the rate at which variability decreases as pores are averaged out; in our tests $\alpha _ {i} \approx 1$ for all stiffness components, consistent with the $| V | ^ {- 1}$ law also observed for porosity in Section 4.
+
+Besides variances, the correlation structure of the multi-property vector $( X _ {1} , . . . , X _ {m} , \phi _ {V} )$ at each V remains nearly volume-invariant: pairwise Pearson correlations among stiffness components are high (often ${>} 0.9 )$ and change little with $V ;$ most importantly, each stiffness component is strongly negatively correlated with $\phi _ {V}$ and this correlation is almost constant with V. Thus, upon upscaling, the joint distribution remains self-similar: scaling V primarily contracts the marginal variances while preserving the correlation pattern.
+
+## 5.4. Joint distribution modeling of stiffness-porosity
+
+Let
+
+$$\boldsymbol {Z} ( \boldsymbol {V} ) = \left( X _ {1} , . . . , X _ {m} , \boldsymbol {\phi} _ {\boldsymbol {V}} \right) ^ {\top} , \boldsymbol {\mu} _ {\boldsymbol {Z}} = \left( \boldsymbol {\mu} _ {\boldsymbol {X}} ^ {\top} , \overline {{\boldsymbol {\phi}}} \right) ^ {\top} ,\tag{26}$$
+
+and model the covariance as
+
+$$\pmb {\Sigma} ( V ) = \pmb {\mathrm{\bfD}} ( V ) \pmb {\mathrm{\bfR}} \pmb {\mathrm{\bfD}} ( V ) ,\tag{27}$$
+
+where R is the volume-independent correlation matrix (pooled over all V), and the diagonal scaling matrix is
+
+$${\bf D} ( V ) = \mathrm{diag} ( \sigma _ {1} ( V ) , \sigma _ {2} ( V ) , . . . , \sigma _ {m} ( V ) , \sigma _ {\phi} ( V ) ) ,\tag{28}$$
+
+with
+
+$$\sigma _ {i} \Big ( V \Big ) = \sqrt {B _ {i}} V ^ {- \alpha _ {i} / 2} , \sigma _ {\phi} \Big ( V \Big ) = \sqrt {B _ {\phi}} V ^ {- \alpha _ {\phi} / 2} .\tag{29}$$
+
+Assuming a multivariate normal model for Z(V), which is empirically adequate at the aggregation scales considered, the Gaussian approximation is further supported by the aggregation behavior of Poisson-Boolean microstructures. As the sampling volume increases, fluctuations of both porosity and stiffness exhibit a central-limit-type convergence toward Gaussian distributions due to spatial averaging. Within the volume range relevant to the composite-scale FE discretization, stiffness samples are well separated from zero and display nearly symmetric, unimodal distributions, so that a normal approximation accurately captures their first- and second-order statistics. Since the proposed scale-bridging formulation relies primarily on these moments and on a nearly volume-invariant correlation structure, the precise marginal shape plays only a secondary role in the resulting conditional model.
+
+The conditional distribution of stiffness given porosity is
+
+$$\operatorname {\mathbb {E}} [ X | \phi _ {V} = \phi ] = \mu _ {X} + \Sigma _ {X \phi} \left( V \right) \sigma _ {\phi} {( V )} ^ {- 2} {\left( \phi - \overline {{\phi}} \right)} ,\tag{30}$$
+
+$$\operatorname{Var} [ X | \phi _ {V} = \phi ] = \Sigma _ {X X} {\big (} V {\big )} - \Sigma _ {X \phi} {\big (} V {\big )} \sigma _ {\phi} ( V ) ^ {- 2} \Sigma _ {\phi X} {\big (} V {\big )} ,\tag{31}$$
+
+where $\Sigma _ {X X} ( V )$ is the $m \times$ m stiffness covariance block and $\Sigma _ {X \phi} \left( V \right) = ( \rho _ {i \phi} \sigma _ {i} ( V ) \sigma _ {\phi} ( V ) ) _ {i =} ^ {m}$ 1 with $\rho _ {i \phi}$ taken from the (approximately volumeinvariant) correlation matrix R. Component wise, Eqs. (30) and (31) reduces to the familiar linear-regression form
+
+$$\mathbb {E} [ X _ {i} | \phi _ {V} = \phi ] = \mu _ {X _ {i}} + \rho _ {i \phi} \frac {\sigma _ {i} ( V )} {\sigma _ {\phi} ( V )} ( \phi - \overline {{\phi}} ) , \quad \quad i = 1 , . . . , m ,\tag{32}$$
+
+$$\mathrm{Var} [ X _ {i} | \phi ] = \sigma _ {i} ^ {2} \Bigl ( V \Bigr ) \Bigl ( 1 - \rho _ {i \phi} ^ {2} \Bigr ) , \qquad i = 1 , . . . , m .\tag{33}$$
+
+Eqs. (25)-(31) provide a volume-adaptive, cross-property stochastic model: the means are volume-invariant, the variances follow $| V | ^ {- \alpha}$ laws, and the correlation matrix is nearly constant across V. Hence, once $\{B _ {i} , \alpha _ {i} \}$ and the pooled R are identified from data at a few volumes, the model extrapolates to any intermediate scale and enables conditioning X on a measured $\phi _ {V}$
+
+## 6. Composite-scale FE model with nonintrusive pores
+
+## 6.1. Nonintrusive mesh-level sampling in composite scale
+
+The uncertainty is propagated from the matrix-scale to the composite-scale RVE $\mathrm {( R V E _ {b} )}$ by assigning, to each FE mesh element $e =$ $1 , . . . , n _ {e} ,$ , a porosity and a corresponding vector of effective properties consistent with Sections 4–5. Let the mesh contain elements with centroids $x _ {e} \in \mathcal {D}$ and volumes $V _ {e}$ A Monte Carlo sample realization is the collection
+
+$$\mathcal {Z} ( \omega ) = \{( \phi _ {e} ( \omega ) , X _ {e} ( \omega ) ) \in \mathbb {R} \times \mathbb {R} ^ {m} : e = 1 , . . . , n _ {e} \} .\tag{34}$$
+
+The set $\{\phi _ {e} \}$ forms a discrete porosity field over the composite-scale mesh, and $\left\{X _ {e , i} \right\} _ {i = 1} ^ {m}$ constitute the corresponding stiffnessproperty fields. The random fields $\mathcal {Z} ( \omega )$ are generated through a two-stage Monte Carlo construction, detailed as follows.
+
+Stage 1 (Sampling the porosity field). Using the covariance model fitted in Section $^ {4 ,}$ we assemble the $n _ {e} \times n _ {e}$ covariance matrix
+
+$$\left[ \Sigma _ {\phi} \right] _ {i j} = C _ {\phi} ^ {\mathrm{model}} \bigl ( r _ {i j} ; V _ {i} , V _ {j} \bigr ) , \qquad r _ {i j} = \parallel x _ {i} - x _ {j} \parallel ,\tag{35}$$
+
+with mean vector $\overline {{\phi}} . \mathrm{A}$ mesh-wide porosity field is drawn from the Gaussian model
+
+$$\phi = \overline {{\phi}} + \mathbf {L} _ {\phi} \boldsymbol {\xi} , \boldsymbol {\xi} \sim \mathcal {N} ( \mathbf {0} , \mathbf {I} _ {n _ {e}} ) , \mathbf {L} _ {\phi} \mathbf {L} _ {\phi} ^ {\top} = \boldsymbol {\Sigma} _ {\phi} ,\tag{36}$$
+
+(optionally projecting to [0,1] to enforce physical bounds).
+
+To ensure statistical convergence, we generate 2000 independent porosity realizations, which is sufficient for the empirical first and second moments of $\phi _ {e}$ (mean and variance across the mesh) to stabilize within a prescribed tolerance.
+
+Stage 2 (Conditional assignment of effective stiffness). For each porosity realization from Stage 1, the effective stiffness vector of every FE element is sampled using the volume-adaptive cross-property stochastic model of Section 5. With volume-invariant means $\mu _ {X} ,$ pooled correlation coefficients $\rho _ {i \phi}$ , and volume-dependent standard deviations
+
+$$\sigma _ {i} ( V _ {e} ) = \sqrt {B _ {i}} \Big | V _ {e} \big | ^ {- \alpha _ {i} / 2} , \qquad \sigma _ {\phi} ( V _ {e} ) = \sqrt {B _ {\phi}} \Big | V _ {e} \big | ^ {- \alpha _ {\phi} / 2} ,\tag{37}$$
+
+the conditional distribution of $X _ {e}$ given $\phi _ {e}$ is Gaussian with
+
+$$\mu _ {X _ {e} | \phi _ {e}} = \mathbb {E} [ \mathbf {X} _ {e} | \phi _ {e} ] = \mu _ {X} + \Sigma _ {X \phi} ( V _ {e} ) \sigma _ {\phi} ( V _ {e} ) ^ {- 2} ( \phi _ {e} - \overline {\phi} ) ,\tag{38}$$
+
+$$\pmb {\Sigma} _ {X _ {e} | \phi _ {e}} = \mathrm{Var} [ \pmb {X} _ {e} | \phi _ {e} ] = \pmb {\Sigma} _ {X X} ( V _ {e} ) - \pmb {\Sigma} _ {X \phi} \left( V _ {e} \right) \sigma _ {\phi} ( V _ {e} ) ^ {- 2} \pmb {\Sigma} _ {\phi X} ( V _ {e} ) ,\tag{39}$$
+
+where $\Sigma _ {X X} ( V _ {e} ) = {\mathrm{diag}} \left( \sigma _ {1} ^ {2} ( V _ {e} ) , . . . , \sigma _ {m} ^ {2} ( V _ {e} ) \right) R _ {X}$ uses the (approximately volume-invariant) stiffness correlation matrix $R _ {X} ,$ and $\Sigma _ {X \phi} \left( V _ {e} \right) =$ $( \rho _ {i \phi} \sigma _ {i} \big ( V _ {e} \big ) \sigma _ {\phi} \big ( V _ {e} \big ) ) _ {i = 1} ^ {m}$ . A practical sampling formula is therefore
+
+$$\mathbf {X} _ {e} = \mu _ {X _ {e} | \phi _ {e}} + \mathbf {L} _ {X _ {e} | \phi _ {e}} \eta _ {e} , \qquad \eta _ {e} \sim \mathcal {N} ( \mathbf {0} , \mathbf {I} _ {m} ) , \mathbf {L} _ {X _ {e} | \phi _ {e}} \mathbf {L} _ {X _ {e} | \phi _ {e}} ^ {\top} = \Sigma _ {X _ {e} | \phi _ {e}} .\tag{40}$$
+
+Component wise, Eqs. (38) and (39) reduces to the familiar regression form Eqs. (32) and (33), so when $| \rho _ {i \phi} |$ is large the residual noise becomes small. Repeating Eqs. (35)-(40) with independent standard normal ξ and $\{\pmb {\eta _ {e}} \}$ produces $\mathrm{i.i.d.}$ . samples $\mathcal {Z} ( \omega )$ . The FE mesh is left unchanged, and the assignment of porosity and stiffness samples is fully nonintrusive; in each realization, the porosity $\phi _ {e}$ and stiffness Xe are treated as element-wise constants over the FE mesh. This nonintrusive Monte Carlo procedure induces spatial correlation through $\Sigma _ {\phi}$ and cross-property correlation through the conditional Gaussian model, while preserving the marginal dis tributions and the volume-scaling laws established in Sections 4–5.
+
+At the composite-scale, three normalized RVEs $( \mathrm {R V E _ {b 1} , R V E _ {b 2} , R V E _ {b 3}} )$ are analyzed, as illustrated in $\mathrm{Fig.4.}$ . These RVEs differ only in their geometric volumes and are employed to examine whether a volume-scaling effect similar to that observed at the matrix-scale persists at the composite-scale. If such a size effect is present, the use of multiple $\mathrm {R V E _ {b}}$ volumes enables its propagation to structuralscales in a consistent manner.
+
+For each ${\mathrm{RVE}} _ {\mathrm{b}} ,$ a large ensemble of pore realizations is generated, and homogenized effective elastic properties are computed under symmetric boundary conditions, following standard periodic-type constraints commonly used for fiber-bundle homogenization [43]. These boundary conditions ensure that the admissible deformation modes remain compatible with the assumed periodic microstructure and that the resulting effective properties are volume-objective across the three selected $\mathrm {R V E _ {b}}$ sizes.
+
+The fiber bundle contained in each $\mathrm {R V E _ {b}}$ is assumed to be isotropic, and its geometric and material properties are summarized in Table 2. The local coordinate system of $\mathrm {R V E _ {b}}$ is defined such that the 3-direction coincides with the fiber-bundle axis, whereas the 1- and 2-directions are transverse to it; this convention is used for reporting the homogenized stiffness tensors and their stochastic variations.
+
+## 6.2. Computational efficiency
+
+To quantify the computational efficiency of the proposed nonintrusive framework, we provide an order-of-magnitude comparison of the element-level workload (measured in terms of total number of finite elements processed) with that of a fully pore-resolved composite-scale Monte Carlo analysis. The purpose of this comparison is to highlight the scaling behavior and feasibility of the method, rather than to provide a machine-dependent performance benchmark.
+
+Let $n _ {\mathrm{pore}}$ denote the number of finite elements required to explicitly resolve micron-scale porosity within a composite-scale RVE, and let $N _ {\mathrm {{s a m p}}}$ be the number of Monte Carlo realizations. In a fully intrusive, pore-resolved composite-scale analysis, the computational workload scales as $N _ {\mathrm{intrusive}} \sim N _ {\mathrm{samp}} n _ {\mathrm{pore}} ,$ reflecting the need to process a highly refined mesh for each realization. This workload increases linearly with both the mesh resolution and the number of samples.
+
+(a)
+
+In the proposed nonintrusive two-scale construction, pore geometry is not resolved at the composite scale. Instead, the computational effort consists of Monte Carlo evaluations performed on a small set of matrix-scale RVEs, together with a coarse compositescale RVE. Denoting by $n _ {m , i}$ the number of elements in the i th matrix-scale RVE and by $n _ {c}$ the number of elements in the composite-scale mesh, the total workload can be estimated as
+
+$$N _ {\mathrm{nonintrusive}} \sim N _ {\mathrm{samp}} \left( n _ {c} + \sum _ {i} n _ {m , i} \right) .\tag{41}$$
+
+This expression highlights that the difference between the intrusive and nonintrusive approaches lies primarily in the mesh resolutions involved, rather than in the number of Monte Carlo samples.
+
+In the present study, the composite-scale RVE contains approximately $n _ {c} = 10 ^ {4}$ elements. The four matrix-scale RVEs used to calibrate the porosity statistics and cross-property relations contain ${n _ {m , 1} = 10 ^ {4} / 3 , n _ {m , 2} = 10 ^ {4} / 2 , n _ {m , 3} = 10 ^ {4} / 1.5}$ and $n _ {m , 4} = 10 ^ {4}$ elements, yielding $\Sigma n _ {m , I} = 2.5 \times 10 ^ {4}$ elements per Monte Carlo realization. For the estimation of first- and second-order statistics, all configurations are sampled with $N _ {\mathrm{samp}} = 2000$
+
+By contrast, a pore-resolved composite-scale RVE must resolve micron-scale voids within composite elements of characteristic size on the order of hundreds of microns. This requires a geometric refinement ratio on the order of 20–40 per spatial direction, leading to an estimated element count of $n _ {\mathrm{pore}} \sim 10 ^ {7} - 10 ^ {8}$ per realization. Substituting these values yields $N _ {\mathrm{intrusive}} \sim 2 \times 10 ^ {10} {- 2} \times 10 ^ {11} , N _ {\mathrm{no}}$ nintrusive $\approx 7 \times 10 ^ {7}$ , indicating a reduction of the computational workload by two to three orders of magnitude.
+
+This substantial reduction arises from avoiding explicit pore-resolved geometric refinement at the composite scale and replacing it with stochastic element-wise property assignment on a coarse finite-element mesh. As a result, the proposed method enables largesample uncertainty quantification at the composite scale with computational costs that remain feasible in practice.
+
+## 7. Results and discussions
+
+This section presents numerical validations corresponding to the methodological components developed in Sections 4–6. Section 7.1 characterizes the pore-geometry statistics required in the spatial-volumetric covariance model of Section 4. Section 7.2 validates the volume-adaptive cross-property model formulated in Section 5. Section 7.3, building upon the two-stage Monte Carlo assignment in Section $^ {6 ,}$ examines whether the volume-scaling (self-averaging) behavior observed at the matrix-scale persists at the compositescale by homogenizing the composite-scale RVEs.
+
+## 7.1. Statistical features of pore and porosity
+
+To quantify the pore statistics used in the covariance model, pore radii were first sampled from the prescribed truncated Gaussian distribution, and the corresponding sphere volumes were computed from the spherical geometry. Fig. 5 illustrates the resulting distributions: the pore-radius histogram (with truncation limits) follows the truncated Gaussian assumption, and the induced volume distribution is obtained accordingly. These two distributions serve as the statistical inputs for the Boolean germ-grain model of pores.
+
+The indicator covariance kernel $C _ {Y} ( r ) \left( \operatorname{Eq.} \left( 12 \right) \right)$ was evaluated from the stochastic pore realizations to characterize the probability that two points separated by a distance rsimultaneously lie within the pore phase. As illustrated in ${\mathrm{Fig.~}} 6 ,$ the kernel exhibits an exponential decay with distance, and the corresponding correlation length is approximately on the order of the pore size.
+
+Based on the stochastic pore realizations, the covariance of local porosity fields $C _ {\Phi} ( r ; V _ {1} , V _ {2} )$ was evaluated through nested Monte Carlo integration of $\operatorname{Eq.}$ (18), and representative results are shown in Fig. 7. Fig. 7(a) presents the covariance values (black markers) obtained from Monte Carlo sampling, together with the fitted curves (colored lines) for several fixed $V _ {1}$ and correlation distances R. The fitted functions reproduce the numerical data closely, indicating that the covariance amplitude—and hence the local variance—systematically decreases with increasing representative volume, consistent with the expected volume-averaging effect. Fig. 7 (b) provides a three-dimensional isosurface representation over $( V _ {1} , V _ {2} , R ) ,$ , revealing the same monotonic reduction of covariance with increasing sub-volume size and confirming the short-range nature of the porosity correlation structure. Together, these results validate the anticipated variance-volume scaling law and the spatial coherence of the stochastic porosity field.
+
+The numerical covariance data were fitted using the Mat´ern covariance kernel with smoothness $\nu = 3 / 2$ in Eq. (19). The fitted parameters are listed in Table 3, showing consistency with the theoretical $V ^ {- 1}$ scaling and a correlation length on the order of several pore radii.
+
+To evaluate the fitting accuracy, Fig. 8 presents residual diagnostics for the Mat´ern model. Fig. $\operatorname{8} ( \mathsf{a-c} )$ show residuals versus separation distance R and geometric mean volume $V _ {g} ,$ as well as the error distribution; the residuals are centered near zero with no systematic trend, and the histogram displays a narrow, symmetric spread. Fig. 8(d-f) illustrate relative-error maps at fixed separations $( R = 0 \mu \mathrm{m} , R = 75 \mu \mathrm{m}$ , and $R = 150 \mu \mathrm{m} )$ , plotted as functions of $\left( V _ {1} , V _ {2} \right)$ . Errors remain within a few percent across the full domain and exhibit no coherent bias. These diagnostics confirm that the fitted Mat´ern kernel, combined with the volume-scaling law, consistently reproduces the Monte Carlo covariance within sampling uncertainty, thereby validating its applicability for stochastic-field generation.
+
+## 7.2. Joint distribution of stiffness-porosity
+
+Table 4 summarizes the mean, standard deviation, and coefficient of variation (COV = Std / Mean) of the homogenized matrixscale properties evaluated over local sampling volumes of increasing size. Φ denotes the porosity averaged over the entire RVE (Φ $\equiv \phi _ {\mathrm{RVE}} )$ . The means remain essentially volume-invariant, while the dispersion decreases monotonically with local volume size, consistent with the $1 / V$ variance decay induced by local volume averaging. Pairwise correlations among stiffness components remain high and nearly unchanged across volumes; at the matrix-scale, the elastic moduli exhibit a pronounced negative correlation with porosity, whereas Poisson’s ratios show weaker and less stable trends. In principle, the geometry of the sampling volume may influence these statistics, but the effects are minor. For computational convenience, cubic sampling volumes are adopted here. These statistics will then be used to fit the covariance/scale-dependence model in a nonintrusive manner.
+
+The variance of each effective property $X _ {i}$ was fitted to the power-law relation in Eq. (25), using the Monte Carlo datasets generated at the four RVE sizes. As shown in Fig. 9 (log-log plots), all moduli and the porosity display nearly linear decay with slopes $\alpha _ {i} \approx 1$ confirming the expected self-averaging behavior consistent with the classical 1/V variance decay. The fitted parameters $( B _ {i} ,$ αi) together with their 95 % confidence intervals and $R ^ {2}$ values are listed in Table 5. The fitted exponents cluster tightly around unity for
+
+(b)
+
+both stiffness and porosity $( \alpha _ {i} = 0.93-0.98 )$ , and their confidence intervals all include 1, so the hypothesis $\alpha _ {i} = 1$ cannot be rejected. The coefficients of determination are uniformly high (mostly $R ^ {2} {>} 0.99 )$ , confirming that a single power-law satisfactorily explains almost all between-volume variability.
+
+Each point in Fig. 10 represents one prediction obtained from the leave-one-volume-out (LOOV) validation, in which the power-law parameters $( B _ {i} , \alpha _ {i} )$ were fitted using any three of the four sampling volumes and then used to predict the variance at the excluded one. The horizontal axis corresponds to the empirical variance measured from simulations at the held-out volume, whereas the vertical axis shows the variance predicted by the fitted model. The close clustering of all points along the 1:1 parity line demonstrates excellent predictive consistency across all property components and volume scales, indicating that the fitted power-law model generalizes well without observable overfitting.
+
+Fig. 11 examines the correlation structure between porosity and the homogenized mechanical properties. In Fig. 11(a), the Young’s and shear moduli exhibit consistently strong negative correlations with porosity, whereas the Poisson ratios show noticeably larger statistical fluctuations. This behavior is expected, because Poisson ratios are ratio-type quantities with very small physical variance, their estimated correlations are highly sensitive to local numerical noise, resulting in wide Fisher confidence intervals.
+
+To verify that these fluctuations do not reflect a physical volume dependence, Fig. 11(b) plots the correlations $\rho ( C _ {i j} , \Phi )$ for the nine independent stiffness components. $\mathrm{All} \rho ( C _ {i j} , \Phi )$ remain strongly negative and nearly volume-invariant across RVE sizes, confirming that the underlying stiffness-porosity coupling is robust. Hence, although Poisson ratios fluctuate more in Fig. 11(a), their apparent variability is numerical rather than physical, and the stiffness-porosity correlations show no systematic dependence on the sampling volume V. These fluctuations therefore do not affect the subsequent FE analysis or the construction of the cross-scale statistical models.
+
+Beyond the one-dimensional correlations presented earlier, it is also essential to verify whether the full multivariate dependency structure remains stable across volumes. Fig. 12 presents the Frobenius-distance maps between correlation matrices obtained at different sampling volumes. In Fig. 12(a), the distances based on engineering constants are slightly larger—particularly for small RVEs—consistent with the previously observed instability of the Poisson ratios. This behavior originates from the numerical sensitivity of ratio-type quantities $( \nu _ {12} , \nu _ {13} , \nu _ {23} )$ , rather than from any physical change in the underlying stiffness-porosity dependency. Fig. 12(b) clarifies this point: when correlations are constructed from the stiffness-tensor components $C _ {i j} ,$ the Frobenius distances become uni formly small across all volume pairs. This demonstrates that the underlying stiffness-porosity dependency is inherently stable and volume-invariant, and the fluctuations seen in Fig. 12(a) stem solely from the Poisson ratios rather than the mechanical response itself.
+
+To further quantify this stability, Table 6 reports the relative Frobenius (F-err) and spectral (λ-err) errors defined in Eq. (42), where $R _ {\mathrm{emp}}$ denotes the empirical correlation matrix computed from sample statistics and $R _ {\mathrm {{m o d}}}$ denotes the modeled correlation matrix obtained from the proposed variance-scaling law and constant correlation assumption. Both the engineering-constant correlations and the stiffness-based correlations yield errors of within a few percent, confirming that the multivariate correlation structure of the effective properties can be regarded as essentially volume-invariant for subsequent stochastic modeling.
+
+$$\mathrm{F-err} = \frac {\Vert \mathrm{\bf~R} _ {\mathrm{mod}} - \mathrm{\bf~R} _ {\mathrm{emp}} \Vert _ {F}} {\Vert \mathrm{\bf~R} _ {\mathrm{emp}} \Vert _ {F}} , \qquad \lambda - \mathrm{err} = \frac {\Vert \mathrm{\bf~R} _ {\mathrm{mod}} - \mathrm{\bf~R} _ {\mathrm{emp}} \Vert _ {2}} {\Vert \mathrm{\bf~R} _ {\mathrm{emp}} \Vert _ {2}} .\tag{42}$$
+
+In view of these results, the cross-scale covariance is defined by Eq. (27). Fig. 13 evaluates the proposed covariance construction by
+
+(b) $\rho ( \mathbf {C} _ {\mathrm{ij}} ,$ Φ) for stiffness components 
+Log-Volume (m³)
+
+(a) Frobenius dist. (Engineering consts)
+
+(b) Frobenius dist. (Stiffess)
+
+comparing the empirical covariance entries with those predicted by D(V)RD(V) across all sampling volumes. Points cluster tightly along the 1:1 parity line, demonstrating that the model consistently reproduces both the variances and cross-covariances of the homogenized properties.
+
+To quantify the similarity between the empirical and modeled joint Gaussian distributions of the stiffness components, two standard distance measures are used, BD and KL. BD evaluates the overlap between two Gaussian distributions,
+
+$$D _ {\mathrm{B}} = - \mathrm{ln} \bigg ( \int \sqrt {p ( x ) q ( x )} d x \bigg ) ,\tag{43}$$
+
+where smaller values indicate larger distributional overlap. KL measures the information discrepancy between two Gaussian densities
+
+$$D _ {\mathrm{KL}} \bigg ( p \| q \bigg ) = \int p \bigg ( x ) \mathrm{ln} \frac {p ( x )} {q ( x )} d x ,\tag{44}$$
+
+providing a complementary assessment of distributional difference.
+
+The resulting distances for all RVE volumes are summarized in Table 7. The BD values remain below 0.2 and the KL values are similarly small, confirming that the modeled Gaussian distribution is highly consistent with the empirical joint statistics across all volumes.
+
+These results confirm that a constant correlation matrix, combined with the power-law variance model, can accurately represent the joint statistics of stiffness and porosity across scales, providing a sound basis for the stochastic FE propagation.
+
+## 7.3. Mesh independence and correlation discretization effects
+
+To evaluate the influence of spatial discretization on the homogenized stiffness, four successively refined meshes were generated for ${\mathrm{RVE}} _ {\mathrm{b3}} ,$ , ranging from 169 to 16,234 elements. The corresponding effective orthotropic constants are listed in Table 8. A consistent mesh-convergence trend is observed for all engineering constants.
+
+The transition from the coarsest mesh (169 elements) to a moderately refined mesh (604 elements) produces variations below 0.5 % for the Young’s and shear moduli and below 0.3 % for the Poisson ratios. Further refinement to the current mesh (5154 elements) or to the densest mesh (16,234 elements) results in very small additional changes (<0.1 %). These variations are well below the intrinsic stochastic fluctuations induced by porosity and therefore do not affect any of the statistical conclusions drawn in this work.
+
+The mesh adopted for $\mathrm{RVE} _ {\mathrm{b3}}$ contains 5154 elements, placing it comfortably within the mesh-converged regime established above. The discretizations used for ${\mathrm{RVE}} _ {\mathrm{b1}}$ and $\mathrm{RVE} _ {\mathrm{b2}}$ have comparable element densities and thus provide a similar spatial resolution for the homogenization of effective properties. Overall, the FE meshes used for all RVEs can be regarded as sufficiently refined to ensure converged homogenized stiffness, with discretization effects well below the level of stochastic variability associated with the pore morphology. The FE spatial resolution therefore does not introduce a noticeable contribution to the uncertainty in the inter-scale stiffness propagation.
+
+To assess the effect of discretizing the porosity correlation model, the same spatial-volumetric covariance was sampled on four meshes of increasing resolution (169–16,234 elements), and 2000 porosity-field realizations were generated on each mesh. Table 9 reports the RVEb4 porosity mean E[Φ] and standard deviation Std[Φ] for all cases.
+
+The mean porosity shows excellent mesh-independence: all meshes produce E[Φ] with differences below 0.01 % relative to the finest discretization. The sample standard deviation exhibits a smooth and monotonic convergence trend, decreasing from $2.67 \mathrm{e} {- 4}$ on the coarsest grid to 2.44e-4 on the reference mesh. The moderately refined mesh with 5154 elements, which is used in all subsequent analyses, differs from the densest mesh by <5 % in standard deviation, and all meshes produce standard deviations of the same order of magnitude. These results indicate that discretization of the input correlation structure has only a minor influence on the first- and
+
+second-order statistics of the generated porosity fields.
+
+This behavior is consistent with the structure of the stochastic model: porosity is defined as a volume average, and its variance is governed primarily by the integral of the microscopic covariance rather than by the precise sampling grid. Because the stiffnessporosity coupling established in Section 5 depends on $\phi _ {V} ,$ the mesh-independence observed for the porosity field directly carries over to the statistics of the homogenized stiffness. In particular, small differences in $\phi _ {V} ,$ caused by grid refinement translate into proportionally small changes in the resulting stiffness realizations. Therefore, the discretization of the composite-scale mesh contributes negligibly to the overall uncertainty when compared with the intrinsic stochastic variability induced by porosity, and the mesh with 5154 elements yields statistically reliable approximations of both the porosity and stiffness fields.
+
+## 7.4. Stochastic FE demonstration
+
+This section presents a stochastic finite-element demonstration of the proposed inter-scale propagation method after the porositystiffness random fields have been fully constructed. At this stage, no additional modeling assumptions are introduced: the stochastic porosity and stiffness fields obtained from Sections 4–6 are directly embedded into composite-scale RVEs of increasing size. The purpose of this demonstration is to illustrate the end-to-end use of the propagated random fields in FE homogenization and to examine whether the variance-volume scaling and correlation structures identified at the matrix scale persist naturally at the composite scale.
+
+Pores are confined to the inter-bundle matrix, while fibers are treated as deterministic. The local porosity of each matrix element is obtained by averaging the porosity field over its element volume. At the composite scale considered here, self-averaging substantially reduces porosity variance, and the separation distances between neighboring non-overlapping elements fall in a regime where the porosity covariance has largely decayed. As a result, inter-element covariance terms are numerically small, and element properties can be treated as conditionally independent given their local porosity without loss of accuracy.
+
+Table 10 reports the mean, standard deviation, and COV of the homogenized composite properties at $\mathrm {R V E _ {b 1} / \ R V E _ {b 2} / \ R V E _ {b 3}}$ . The means remain essentially volume-invariant, while the variances are small and decrease with increasing RVE size, consistent with the self-averaging behavior observed at the matrix-scale. Pairwise correlations are discussed later; here, Table 10 is intended to summarize
+
+the marginal statistics.
+
+Building upon the composite-scale statistics summarized in Table 7, the variance-volume scaling behavior of each effective property $X _ {i}$ is examined. For each component, the power-law relation of Eq. (25) is fitted using the three RVEs. Fig. 14 (log-log) shows clear linear trends across $\mathrm {R V E _ {b 1} / \ R V E _ {b 2} / \ R V E _ {b 3}} ,$ with fitted slopes $\widehat {\alpha} _ {i} \in [ 0.96 , 1.02 ]$ and coefficients of determination $R ^ {2} = 0.99-1.00$ These results confirm that the classical $V ^ {1}$ self-averaging law persists at the composite scale.
+
+Table 11 summarizes the fitted parameters $B _ {\mathrm{i}}$ and $\alpha _ {\mathrm{i}}$ together with their 95 % confidence intervals and $R ^ {2}$ , documenting both the scale exponents and the high quality of the fits.
+
+Fig. 15 plots the correlation coefficients $\rho ( X _ {i} , \Phi )$ versus sampling volume V, together with 95 % Fisher confidence bands. The elastic moduli E and shear moduli G maintain negative correlations with porosity across different $\mathrm {R V E _ {b}}$ sizes, but the magnitudes are attenuated compared with matrix-only RVEs (typically $| \rho | \approx 0.35 \substack {- 0.55} )$ here vs. ≈ 0.9 previously). This reduction mainly arises from load sharing within the composite, where fibers carry most of the stiffness while pores soften only the matrix. It is further amplified by statistical averaging at larger element volumes, which limits the observable range of porosity variation, and by geometry-induced scatter and anisotropy that introduce additional Φ-independent variability. Poisson’s ratios remain weakly correlated, as expected for ratio-type quantities.
+
+These results demonstrate that, once propagated to the composite scale, the stochastic porosity-stiffness fields remain statistically consistent and naturally reproduce the expected self-averaging behavior across increasing RVE sizes. This confirms that the proposed nonintrusive method enables physically consistent and computationally feasible uncertainty propagation from matrix-scale porosity to composite-scale effective properties.
+
+## 8. Conclusion
+
+This study presents a nonintrusive, RVE-based inter-scale method for propagating stochastic porosity effects from the matrix scale to stiffness uncertainty in UD composites. The proposed method integrates stochastic geometry, FE homogenization, and Monte Carlo sampling into a unified multiscale uncertainty-quantification process. Some conclusions are obtained:
+
+(1) At the matrix-scale, pores are represented by a Boolean model consisting of Poisson-distributed centers and truncated-Gaussian radii. The resulting porosity field exhibits Mat´ern-type spatial covariance and variance-volume scaling governed by local statistical averaging. This model captures both spatial correlation and volume dependence of porosity and can be directly superimposed on standard FE analyses compatible with the deterministic mechanics solver.
+
+(2) High-fidelity homogenization of porous-matrix RVEs establishes a quantitative stiffness-porosity relationship. The variance of stiffness components decays with increasing averaging volume following a power-law form, whereas the stiffness-porosity correlation remains strongly negative and nearly volume-invariant over the scales investigated. These trends provide a quan titative basis for selecting statistically representative RVE sizes and for constructing inter-scale stochastic mappings.
+
+(3) Comprehensive uncertainty propagation from pore geometry to composite-scale material properties is achieved through a twostage Monte Carlo construction. The resulting porosity and element-wise stiffness fields provide statistically consistent inputs for composite-scale FE analyses, enabling efficient and reliable quantification of pore-induced stiffness uncertainty.
+
+Overall, the proposed inter-scale method offers a physics-consistent and computationally feasible route for incorporating stochastic porosity into composite-scale analyses. It provides practical support for reliability-oriented design and quality assessment of UD
+
+composites.
+
+## CRediT authorship contribution statement
+
+Yu-Cheng Yang: Writing – original draft, Software, Resources, Formal analysis, Data curation, Conceptualization. Zi-Qian Wang: Visualization, Data curation. Jian-Jun Gou: Writing – review & editing, Validation, Conceptualization. Xiao-Bing Ma: Supervision. Chun-Lin Gong: Validation, Supervision.

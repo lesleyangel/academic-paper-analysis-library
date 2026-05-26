@@ -1,0 +1,430 @@
+## 1. Introduction
+
+Lightweight and flexible structures are widely used in modern aerospace vehicles to improve aerodynamic performance and structural efficiency [1,2]. However, increased structural flexibility also leads to strong coupling between structural vibration and aerodynamic loads. Structural vibration can significantly modify the surrounding flow field, resulting in highly unsteady and spatially distributed aerodynamic forces. Accurate and efficient prediction of these unsteady aerodynamic load distributions is therefore essential for aeroelastic analysis, flight stability assessment, and multidisciplinary design optimization [3,4].
+
+High-fidelity computational fluid dynamics (CFD) simulations are commonly employed to resolve such fluid–structure interaction problems with high accuracy. Nevertheless, their computational cost remains prohibitively high, particularly for long-time unsteady simulations involving dynamically deforming geometries. This limitation restricts their applicability in iterative design processes and time-critical prediction scenarios, motivating the development of reduced-order models (ROMs) that balance efficiency and accuracy.
+
+Data-driven approaches for unsteady aerodynamic modeling can generally be categorized as black-box or gray-box models [5,6]. Black-box models, such as deep neural networks and operator-learning frameworks, aim to directly learn the mapping between structural motion and aerodynamic response from data [7–9]. While flexible, these models typically require large training datasets and provide limited physical interpretability, which can reduce robustness and generalization capability under strongly coupled aeroelastic conditions [10–12]. In contrast, gray-box ROMs embed physical knowledge into the modeling process, most commonly through modal decomposition. Among these methods, proper orthogonal decomposition (POD) has been widely adopted due to its solid theoretical foundation, optimal energy-capturing property, and effectiveness in representing unsteady flow fields [13–15]. POD-based ROMs are often combined with long short-term memory (LSTM) networks to model the temporal evolution of reduced-order aerodynamic states [16–19]. Although such POD–LSTM frameworks have shown promising performance in many unsteady flow problems, their limitations become particularly pronounced when structural vibration is involved.
+
+Specifically, the main difficulty of direct POD–LSTM modeling arises at the level of POD modal coefficients. Under structural vibration, multiple vibration frequencies and strong fluid–structure interaction effects cause different physical flow phenomena to project onto POD modes with similar energy content, leading to modal mixing and loss of clear physical interpretation [20–24]. In addition, higher-order POD coefficients often encode small-scale unsteady flow structures that are intermittently excited by structural deformation, resulting in irregular high-frequency oscillations and strong nonlinearity [25–27]. These characteristics significantly increase the difficulty of learning accurate and stable temporal models, thereby degrading the convergence and generalization performance of LSTM-based surrogate models.
+
+To address these limitations, this study introduces generalized aerodynamic forces as an alternative reduced-order representation. Here, generalized aerodynamic forces are defined as the modal aerodynamic forces obtained by projecting the CFD-based aerodynamic load distribution onto the structural modal basis, where each force represents the contribution of aerodynamic loads to a specific structural vibration mode. Because they are defined in the structural modal space [28], generalized aerodynamic forces maintain strong physical consistency with structural dynamics and typically exhibit smoother temporal behavior than aerodynamic POD modal coefficients. In addition, the modal projection inherently filters out small-scale, high-frequency flow structures that are weakly correlated with structural vibration, making generalized aerodynamic forces more suitable as reduced-order variables for surrogate modeling under structural vibration conditions.
+
+Building on this idea, this paper proposes a Dual Modal Space (DMS) model that integrates the structural modal space and the aerodynamic modal space into a unified reduced-order representation. Instead of directly modeling POD modal coefficients or learning abstract latent variables, the DMS framework introduces generalized aerodynamic forces as the intermediate modeling variable, explicitly enforcing alignment between structural deformation and aerodynamic loads through the structural modal basis. Compared with existing gray-box ROMs such as POD-based autoencoders, DeepONet, and operator inference approaches [29–31], the proposed framework emphasizes physical consistency and interpretability rather than increasing latent-space complexity.
+
+It is worth noting that other modal decomposition techniques, such as spectral POD (SPOD), dynamic mode decomposition (DMD), and phase-based POD, as well as recent developments in Koopman-based modeling and physics-informed machine learning, provide complementary perspectives on unsteady flow modeling [32–35]. However, their integration with structurally aligned aerodynamic representations remains an open challenge for unsteady aeroelastic problems.
+
+Motivated by these considerations, this study proposes a Dual Modal Space Long Short-Term Memory (DMS-LSTM) framework. The present work focuses on open-loop prediction with prescribed structural vibrations in subsonic conditions, and assesses interpolation performance within the tested parametric range. The proposed approach introduces generalized aerodynamic forces as an intermediate reduced-order representation by coupling structural modal bases with aerodynamic POD modes, enabling a physically consistent and bidirectional mapping between structural deformation and aerodynamic loads. An LSTM-based surrogate model is then constructed in the DMS space to capture the nonlinear temporal evolution of unsteady aerodynamic responses. The effectiveness of the proposed framework is demonstrated through twodimensional and three-dimensional benchmark cases. The remainder of this paper is organized as follows: Section 2 presents the DMS formulation, Section 3 introduces the DMS-LSTM modeling framework, Section 4 discusses numerical results, and Section 5 concludes the paper.
+
+## 2. Dual modal space model
+
+In this work, “unsteady aerodynamic loads” denote the timedependent aerodynamic force distributions obtained from high-fidelity CFD simulations with prescribed structural motion, in which wake dynamics, non-circulatory effects, and viscous unsteadiness are implicitly included as part of the integrated CFD response rather than modeled or decomposed separately.
+
+Building on the physical motivation introduced in Section 1, this section presents the formulation of the proposed Dual Modal Space (DMS) model. The illustration of the DMS model is shown in Fig. 1.
+
+## 2.1. Structural modal space
+
+In aeroelastic analysis, structural modal analysis provides a compact and physically interpretable basis for representing structural deformation by extracting the dominant vibration characteristics of the system [36]. By projecting the equations of motion into modal coordinates, the governing dynamics can be expressed in a reduced space that preserves physical fidelity while significantly reducing computational complexity.
+
+Consider a finite element structural model with $n _ {s}$ nodes, each with three translational degrees of freedom. The governing equations of motion can be written as:
+
+$$\mathbf {M} \ddot {\mathbf {X}} + \mathbf {C} \dot {\mathbf {X}} + \mathbf {K} \mathbf {X} = \mathbf {F}\tag{1}$$
+
+where M, $\mathbf {C} , \mathbf {K} \in \mathbb {R} ^ {3 n _ {s} \times 3 n _ {s}}$ denote the mass, damping, and stiffness matrices, respectively; $\mathbf {X} \in \mathbb {R} ^ {3 n _ {s}}$ is the nodal displacement vector containing the $x , y ,$ and z direction displacements of all nodes; and $\mathbf {F} \in \mathbb {R} ^ {3 n _ {s}}$ denotes the external force vector, specifically the aerodynamic force in this context.
+
+Let $\Phi _ {s} \in \mathbb {R} ^ {3 n _ {s} \times m}$ denote the structural modal matrix composed of the first m dominant vibration modes, where m≪3n . The physical displacement vector can be projected onto the generalized displacements $\mathbf {q} \in \mathbb {R} ^ {m}$ :
+
+$$\mathbf {X} = \Phi _ {s} \mathbf {q}\tag{2}$$
+
+where $\mathbf {q} \in \mathbb {R} ^ {m}$ denotes the generalized coordinates.
+
+Substituting this relation into the governing equation and premultiplying by ΦTs yields the reduced-order structural dynamics:
+
+$$\mathbf {M} _ {g} \ddot {\mathbf {q}} + \mathbf {C} _ {g} \dot {\mathbf {q}} + \mathbf {K} _ {g} \mathbf {q} = \mathbf {Q}\tag{3}$$
+
+Where $\mathbf {M} _ {g} \ = \ \ \mathbf {\Phi} \ \mathbf {\Phi} \ \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi \Phi} \mathbf {\Phi} \mathbf {\Phi \Phi} \mathbf {\Phi} \mathbf \Phi$ , and ${\bf K} _ {g} = {\bf \Phi}$ $\Phi _ {s} ^ {T} \mathbf {K} \pmb {\Phi} _ {s} \in \mathbb {R} ^ {m \times m}$ denoting the generalized mass, damping, and stiffness matrices, respectively.
+
+The generalized aerodynamic force vector is given by:
+
+$$\mathbf {Q} = \Phi _ {s} ^ {T} \mathbf {F} \in \mathbb {R} ^ {m}\tag{4}$$
+
+Through modal projection, the high-dimensional aerodynamic load distribution vector F in physical space is transformed into a compact representation Q in modal space. However, for applications that require recovery of the physical aerodynamic force distribution, reconstruction of F from the predicted Q is required:
+
+$$\mathbf {F} = ( \Phi _ {s} ^ {T} ) ^ {\dag} \mathbf {Q}\tag{5}$$
+
+where $\left( \Phi _ {s} ^ {T} \right) ^ {\dag}$ denotes the Moore–Penrose pseudo-inverse.
+
+For large-scale structural models (i.e., large $n _ {s} ) _ {{\scriptscriptstyle \mathrm{:}}}$ , computing the pseudo-inverse is often numerically challenging and computationally expensive. To maintain reconstruction accuracy while improving computational efficiency, it is advantageous to combine structural modal analysis with a POD-based aerodynamic basis, a strategy that lies at the core of the DMS model.
+
+## 2.2. Aerodynamic modal space via POD
+
+Proper orthogonal decomposition (POD) is an unsupervised, datadriven technique for extracting energy-optimal coherent structures from high-dimensional spatiotemporal data, providing a compact lowdimensional representation of the system dynamics. Consider a set of unsteady surface pressure snapshots collected on the aerodynamic mesh:
+
+$$\mathbf {S} _ {p} = [ \mathbf {p} _ {1} , \mathbf {p} _ {2} , . . . , \mathbf {p} _ {N} ] \in \mathbb {R} ^ {n _ {a} \times N} ,$$
+
+where $n _ {a}$ is the number of aerodynamic surface nodes and N is the number of time snapshots.
+
+To couple with the structural dynamic equations, the pressure data is first converted to nodal aerodynamic forces on the aerodynamic mesh in all three Cartesian directions, yielding:
+
+$$\mathbf {F} _ {i} = \left[ F _ {x} , F _ {y} , F _ {z} \right] ^ {T} \in \mathbb {R} ^ {3 n _ {a}} ,$$
+
+and forming the unsteady aerodynamic load distribution dataset:
+
+$${\pmb S} _ {F} = [ {\bf F} _ {1} , {\bf F} _ {2} , . . . , {\bf F} _ {N} ] \in \mathbb {R} ^ {3 n _ {a} \times N}\tag{6}$$
+
+The temporal mean of the force snapshots is computed as:
+
+$$\overline {{\mathbf {F}}} = \frac {1} {N} \sum _ {i = 1} ^ {N} \mathbf {F} _ {i}\tag{7}$$
+
+Subtracting the mean yields the fluctuation matrix:
+
+$$\widetilde {\mathbf {S}} _ {F} = [ \widetilde {\mathbf {F}} _ {1} , \widetilde {\mathbf {F}} _ {2} , . . . , \widetilde {\mathbf {F}} _ {N} ] , \widetilde {\mathbf {F}} _ {k} = \mathbf {F} _ {k} - \overline {{\mathbf {F}}}\tag{8}$$
+
+The temporal covariance matrix is then constructed as:
+
+$$\mathbf {C} _ {F} = \frac {1} {N} \widetilde {\mathbf {S}} _ {F} \widetilde {\mathbf {S}} _ {F} ^ {T}\tag{9}$$
+
+which captures the temporal correlations in the aerodynamic load field. Eigenvalue decomposition of $\mathbf {C} _ {F}$ yields:
+
+$$\mathbf {C} _ {F} \Psi = \Psi \Lambda\tag{10}$$
+
+where $A = d i a g ( \lambda _ {1} , \lambda _ {2} , \cdots , \lambda _ {3 n _ {a}} ) , ( \lambda _ {1} \geqslant \lambda _ {2} \geqslant \cdots \geqslant \lambda _ {3 n _ {a}} \geqslant 0 )$ , is the diagonal matrix of eigenvalues, and $\Psi = [ \psi _ {1} , \psi _ {2} , . . . , \psi _ {3 n} ] \in \mathbb {R} ^ {3 n _ {a} \times 3 n _ {a}}$ contains the corresponding eigenvectors, representing the POD modes.
+
+The first r dominant modes (where r≪3na) are retained to form the POD basis matrix:
+
+$$\Phi _ {p} = [ \psi _ {1} , \psi _ {2} , . . . , \psi _ {r} ] \in \mathbb {R} ^ {3 n _ {a} \times r}\tag{11}$$
+
+The aerodynamic load fluctuation at any given time t can then be approximated as:
+
+$$\widetilde {\mathbf {F}} ( t ) = \Phi _ {p} \mathbf {a} ( t )\tag{12}$$
+
+where $\mathbf {a} ( t ) \in \mathbb {R} ^ {r}$ is the vector of POD modal coefficients, computed by projection:
+
+$$\mathbf {a} ( t ) = \Phi _ {p} ^ {T} \widetilde {\mathbf {F}} ( t )\tag{13}$$
+
+The final reconstructed aerodynamic load distribution is:
+
+$$\mathbf {F} ( t ) = \Phi _ {p} \mathbf {a} ( t ) + \overline {{\mathbf {F}}}\tag{14}$$
+
+In this work, the dataset $\mathbf {S} _ {F} \in \mathbb {R} ^ {3 n _ {a} \times N}$ is decomposed directly using POD, rather than applying POD separately to each of the $x , y ,$ and z direction components. This approach better captures the global spatial structure and the coupling between directional components in the aerodynamic load distribution, which is essential for constructing a unified surrogate model and achieving higher computational efficiency.
+
+## 2.3. DMS by integrating structural and aerodynamic modes
+
+The core idea of the DMS model is to establish a bidirectional, lowdimensional, and dynamic mapping between the generalized aerodynamic force Q and the physical aerodynamic load distribution $\mathbf {F} ,$ by coupling the structural modes $\Phi _ {A}$ and the aerodynamic POD modes $\Phi _ {p}$ both defined over the same aerodynamic mesh with $n _ {a}$ nodes.
+
+The DMS procedure consists of the following steps:
+
+## Step 1: Extraction and alignment of modal bases
+
+The dominant structural modes $\Phi _ {s} \in \mathbb {R} ^ {3 n _ {s} \times m}$ are first obtained through structural dynamic analysis on the structural mesh. These modes are then interpolated onto the aerodynamic mesh to yield $\Phi _ {A} \in \mathbb {R} ^ {3 n _ {a} \times m}$ . Separately, the unsteady aerodynamic force dataset $\scriptstyle {\pmb {S}} _ {F}$ defined on the aerodynamic mesh is decomposed via POD to extract the first m dominant POD modes:
+
+$$\Phi _ {p} \in \mathbb {R} ^ {3 n _ {a} \times r}$$
+
+At this point, both $\Phi _ {A}$ and $\Phi _ {p}$ lie in the same physical space of dimension $3 n _ {a}$ . To ensure the invertibility of the modal mapping and consistency in dimensionality, the number of structural modes and POD modes are matched, $\mathbf {i . e . ,} m = r$ In the following, we uniformly denote this shared dimension as m.
+
+## Step 2: Construction of the dual modal mapping
+
+The key to the DMS model is establishing a direct relationship between the generalized aerodynamic force Q (defined via $\Phi _ {A} )$ and the POD coefficients a (defined via $\Phi _ {p} )$ . Substituting the POD reconstruction
+
+formula (Eq. (14)) into the definition of $\mathbf {Q}$ (Eq. (4))yields:
+
+$$\mathbf {Q} = \Phi _ {A} ^ {T} \bigl ( \Phi _ {p} \mathbf {a} + \overline {{\mathbf {F}}} \bigr )\tag{15}$$
+
+The constant term $\mathbf {Q} _ {0} = \Phi _ {A} ^ {T} \overline {{\mathbf {F}}} \in \mathbb {R} ^ {m}$ is interpreted as the mean offset in the generalized force space. We define the modal mapping as:
+
+$$\mathbf {Q} - \mathbf {Q} _ {0} = \mathbf {H} \mathbf {a}\tag{16}$$
+
+where H $\mathbf {\Phi} = \mathbf {\Phi} \mathbf {\Phi} \mathbf {\Phi} _ {A} ^ {T} \mathbf {\Phi} \mathbf {\Phi} _ {p} \in \mathbb {R} ^ {m \times m}$ is the dual modal mapping matrix. The matrix H has significantly lower dimensionality than the original space (m≪3na) and is computed solely from inner products of basis vectors defined in the same space.
+
+In practice, H is evaluated once using the training dataset and remains fixed during surrogate model training and inference. To avoid potential numerical issues associated with near-linear dependence among modal bases, the conditioning of H is monitored during construction. In all test cases considered in this work, the condition number of H remains well within acceptable limits, and its inversion is performed using standard numerical linear algebra routines. No additional regularization is required in the present study.
+
+Step 3: Reconstruction of aerodynamic load distribution from generalized forces
+
+The POD coefficients can be recovered by inverting Eq. (16):
+
+$$\mathbf {a} = \mathbf {H} ^ {- 1} ( \mathbf {Q} - \mathbf {Q} _ {0} )\tag{17}$$
+
+With a determined, the aerodynamic load distribution is reconstructed using Eq. (14):
+
+$$\mathbf {F} ( t ) \approx \Phi _ {p} \mathbf {a} ( t ) + \overline {{\mathbf {F}}} = \Phi _ {p} \left( \mathbf {H} ^ {- 1} ( \mathbf {Q} - \mathbf {Q} _ {0} ) \right) + \overline {{\mathbf {F}}}\tag{18}$$
+
+The entire reconstruction pathway ${\bf Q} {} {\bf a} {} {\bf F}$ is explicit, computationally lightweight, and robust. The reconstruction error in the DMS model arises primarily from two sources: POD truncation and numerical inversion of H. The former can be controlled via energy-based truncation thresholds, while the latter can be reliably handled using modern numerical techniques. Therefore, the DMS formulation is considered both feasible and efficient for surrogate modeling of unsteady aerodynamic load distribution under structural vibration.
+
+## 3. DMS-LSTM surrogate modeling
+
+Given the strong temporal correlations inherent in unsteady aerodynamic load distribution under structural vibration, we employ a LSTM neural network to construct a surrogate model. The LSTM architecture, equipped with input, forget, and output gates along with a cell state, is capable of capturing long-range dependencies in time series data. This makes it particularly suitable for modeling the dynamic evolution of unsteady flow fields. Compared to conventional feedforward neural networks, LSTM offers superior capability in learning temporal patterns in strongly time-dependent aerodynamic responses.
+
+The core strategy of the proposed DMS-LSTM framework is to leverage the DMS model for reducing the high-dimensional unsteady aerodynamic load distribution to a compact, physically interpretable generalized force representation Q, which exhibits smoother dynamics and is more amenable to modeling. An LSTM network is then trained to learn the nonlinear mapping from generalized displacements q to the generalized aerodynamic forces Q. Finally, the DMS model is used to explicitly reconstruct the full-dimensional aerodynamic load distribution F from the predicted Q.
+
+The modeling framework shown in Fig. 3 consists of the following steps:
+
+Step 1: Sample Data Generation
+
+Structural modal analysis is first performed on the target vehicle to extract the first m dominant structural modes $\Phi _ {s} ,$ defined on the structural mesh with $n _ {s}$ nodes. These are interpolated onto the aerodynamic mesh (with $n _ {a}$ nodes) to obtain the modal matrix $\Phi _ {A} \in \mathbb {R} ^ {3 n _ {a} \times m}$ as shown in Fig. 2. For the two-dimensional NACA65A004 airfoil case, a onedimensional linear interpolation is employed to map the structural modal displacements onto the aerodynamic surface nodes. For the threedimensional AGARD445.6 wing case, a constant volume transformation method is adopted to project the structural modal shapes onto the aerodynamic surface mesh.
+
+A prescribed excitation signal $q ( t )$ is applied in modal coordinates over a total simulation duration $T ,$ and the resulting transient displacement field ${\mathbf {X}} _ {A} ( t )$ is computed on the aerodynamic mesh. This deformation field serves as the moving boundary for high-fidelity unsteady CFD simulations. The resulting unsteady surface pressure distributions are extracted and converted into nodal aerodynamic forces $\mathbf {F} ( t )$ , forming the unsteady aerodynamic load distribution dataset:
+
+$$\{t _ {k} , q ( t _ {k} ) , \mathbf {F} ( t _ {k} ) \} , k = 1 , 2 , . . . , N _ {t}$$
+
+where $N _ {t}$ is the total number of time steps.
+
+Step 2: DMS-Based Dimensionality Reduction
+
+The generalized displacement $q ( t _ {k} )$ is directly taken from the excitation signal. The corresponding generalized aerodynamic force is computed as:
+
+$$\mathbf {Q} ( t _ {k} ) = \Phi _ {A} \mathbf {F} ( t _ {k} ) \in \mathbb {R} ^ {m}$$
+
+This yields a reduced-order dataset in the form of generalized coordinate input–output pairs:
+
+$$\{t _ {k} , q ( t _ {k} ) , \mathbf {Q} ( t _ {k} ) \} , k = 1 , 2 , . . . , N _ {t}$$
+
+Through the DMS model, the original high-dimensional aerodynamic load distribution $\mathbf {F} ( t _ {k} ) \in \mathbb {R} ^ {3 n _ {a}}$ is effectively reduced to a compact representation $\mathbf {Q} ( t _ {k} ) \in \mathbb {R} ^ {m}$
+
+Step 3: LSTM Sequential Surrogate Modeling
+
+To accommodate the sequential nature of LSTM, the reduced-order dataset $\{q ( t _ {k} ) , \mathbf {Q} ( t _ {k} ) \}$ is transformed into a supervised learning format using a sliding window approach. Given a window size W, the input sequence at step k is constructed as:
+
+$$\begin{array} {r l} & {X _ {k} = [ q ( t _ {k - W + 1} ) , q ( t _ {k - W + 2} ) , . . . , q ( t _ {k} ) ; Q ( t _ {k - W} ) , Q ( t _ {k - W - 1} ) , . . . , Q ( t _ {k - 1} ) ]} \\ & {\mathrm{~~} \in \mathbb {R} ^ {2 m \times W} ,} \end{array}$$
+
+with the corresponding output:
+
+$$Y _ {k} = \mathbf {Q} ( t _ {k} ) \in \mathbb {R} ^ {m}$$
+
+The training dataset $\left\{X _ {k} , Y _ {k} \right\}$ is then used to train the LSTM model.
+
+Step 4: Prediction and Load Distribution Reconstruction
+
+Given a new structural deformation history, the displacement field is first projected onto the aerodynamic mesh as $X _ {A} ^ {\prime} ( t )$ . Using $\Phi _ {A} ,$ , the generalized displacement sequence $q ^ {\prime} ( t )$ is obtained and processed with the same sliding window to generate LSTM input sequences $X _ {k} ^ {\prime}$ . The trained LSTM model predicts the corresponding generalized aerodynamic forces $\mathbf {Q} ^ {\prime} ( t _ {k} )$ . The prediction and reconstruction process are shown in Fig. 4.
+
+Using the explicit DMS mapping, the full-dimensional aerodynamic load distribution is reconstructed as follows:
+
+• Compute the POD coefficients via Eq. (17):
+
+$$\mathbf {a} ^ {\prime} ( t _ {k} ) = \mathbf {H} ^ {- 1} ( \mathbf {Q} ^ {\prime} ( t _ {k} ) - \mathbf {Q} _ {0} )\tag{19}$$
+
+• Reconstruct the physical aerodynamic load distribution via Eq. (18):
+
+$$\mathbf {F} ^ {\prime} ( t _ {k} ) \approx \Phi _ {p} \mathbf {a} ^ {\prime} ( t _ {k} ) + \overline {{\mathbf {F}}}\tag{20}$$
+
+where, the matrices $\mathbf {H} = \Phi _ {A} ^ {T} \Phi _ {p}$ and $\mathbf {Q} _ {0} = \Phi _ {A} ^ {T} \overline {{\mathbf {F}}}$ are computed once during the training phase and reused for inference.
+
+The proposed DMS-LSTM framework offers several key advantages:
+
+• Substantial dimensionality reduction: The modeling target is reduced from the original high-dimensional aerodynamic load distribution $\mathbf {F} \in \mathbb {R} ^ {3 n _ {a}}$ to a compact generalized force representation $\mathbf {Q} \in \mathbb {R} ^ {m}$ , which significantly lowers the input and output dimensions of the LSTM model, thereby reducing its overall complexity.
+
+• Strong physical interpretability: Both the input q (generalized displacement) and the output Q (generalized aerodynamic force) are tightly coupled through the structural modal basis $\Phi _ {A}$ . This coupling provides clear physical meaning to the learned mapping and helps alleviate the ambiguity often introduced by mode mixing in the input–output relationship.
+
+• Smoother temporal characteristics: The generalized aerodynamic force Q typically exhibits smoother temporal behavior than either the high-order POD coefficients a or the full-field load F. This reduces the burden on the LSTM in learning complex nonlinear dynamics, especially in scenarios involving strongly nonlinear flow behavior induced by structural deformation.
+
+• Efficient and stable reconstruction: The reconstruction pipeline Q→a→F is implemented entirely through explicit matrix operations. This not only ensures computational efficiency but also improves numerical stability, overcoming the modeling challenges and accuracy degradation commonly associated with direct regression of high-order POD coefficients in traditional POD-ROM approaches.
+
+• Unified modeling framework: The DMS model provides a complete, efficient, and coherent workflow for aerodynamic load prediction—from structural deformation input $\mathbf {X} _ {A}$ to final load field output F.
+
+## 4. Test case
+
+To evaluate the effectiveness, accuracy, and generalization capability of the proposed DMS-LSTM modeling approach for predicting unsteady aerodynamic load distribution induced by structural vibrations, two representative benchmark cases are considered: the twodimensional NACA65A004 airfoil and the three-dimensional AGARD445.6 wing. For the two-dimensional airfoil case, four reduced-order modeling approaches are constructed and compared, including DMS-LSTM, POD-LSTM, DMS-OpInf, and POD-OpInf. This allows the contribution of both the reduced modal space and the surrogate modeling strategy to be independently assessed. For the threedimensional wing case, due to the significantly increased computational cost and model complexity, the comparison focuses on LSTMbased surrogate models only, namely DMS-LSTM and POD-LSTM. This setting is sufficient to demonstrate the effectiveness of the proposed DMS formulation under realistic three-dimensional aerodynamic conditions under the considered subsonic conditions with prescribed structural motions, within the tested parametric range.
+
+For the LSTM-based surrogate models, a sequence-to-one architecture is adopted. In the two-dimensional airfoil case, the LSTM network consists of two stacked LSTM layers with 64 hidden units per layer. In the three-dimensional wing case, two LSTM layers with 128 hidden units per layer. In all cases, the time window length is set to 2. The RMSE is
+
+pressure coeffi cient
+
+Structural Modal Space
+
+## generalized aerodynamic force
+
+POD coefficients
+
+structural modal space onto aerodynamic mesh
+
+## Unsteady Aerodynamic Load Distribution
+
+## Aerodynamic Modal Space
+
+## aerodynamic modal space (POD components)
+
+DMS-LSTM & DMS-OpInf
+
+·…. Origin Load Field DMS-LSTM ----- DMS-OpInf POD-LSTM POD-OpInf
+
+used as the loss function, and model training is performed using the Adam optimizer with a learning rate of 0.001. For the OpInf models, the same time window length of 2 is adopted. Quadratic nonlinear operators are included, with a Tikhonov regularization parameter set to $1 \times 10 ^ {- 2}$ To prevent numerical instability during operator identification, a clipping threshold of $1 \times 10 ^ {6}$ is applied to the inferred operators.
+
+## 4.1. Case A: Two-dimensional airfoils
+
+## 4.1.1. Case setup
+
+The structural model of the two-dimensional NACA65A004 airfoil is simplified as a clamped-clamped beam. The material properties are listed in Table 1. The first ten structural modes are extracted to form the structural modal matrix $( m = 10 )$ , among which the first four modes are selected as the dominant vibration modes of the airfoil. The corresponding mode shapes are illustrated in Fig. 5.
+
+The aerodynamic simulation is performed on a structured mesh consisting of 61,248 elements, with a near-wall first layer height of 1 × $10 ^ {- 5} \mathrm{m}$ . A diffusion-based dynamic mesh technique is employed to accommodate structural deformation. The turbulence model used is the $S S T - \omega$ model, and the time step size is set to $1 \times {10} ^ {- 4} s$ The incoming flow has a freestream Mach number of 0.499, a freestream density of $0.428 k g / m ^ {3}$ , and an $\alpha = 10 ^{\circ}$ . The computational mesh and steady-state flow field are shown in Fig. 6 and Fig. 7, respectively.
+
+The first four structural modes are selected as the dominant vibration modes of the airfoil. Time-varying excitation signals are actively applied to these four modes. A multi-frequency sinusoidal excitation is imposed on all four modes to generate both the training dataset shown in Fig. 8 and the testing dataset shown in Fig. 9. The excitation signal is defined as follows:
+
+$$d _ {k} ( t ) = \eta _ {k} \sum _ {i = 1} ^ {7} w _ {k , i} \mathrm{sin} \big ( 2 \pi \varphi _ {k , i} t \big ) , k = 1 , 2 , 3 , 4\tag{21}$$
+
+where $\eta _ {k}$ is the generalized displacement amplitude scaling factor, $w _ {k , i}$ is
+
+the modulation coefficient, and $\varphi _ {k , i}$ is the excitation frequency assigned to the i-th mode. The frequencies are assigned starting from 5 Hz and increase in increments of 10 Hz, up to 65 Hz.
+
+## 4.1.2. Result and discussion
+
+The time-domain surface pressure coefficient distributions obtained from the unsteady CFD simulations are decomposed using POD. The first 10 modes are extracted to construct the POD modal basis. Simultaneously, the surface pressure distributions are projected onto the structural modal basis to compute the generalized aerodynamic forces. The resulting modal coefficients and generalized forces are illustrated in Fig. 10.
+
+An analysis of the POD decomposition results reveals that the loworder POD coefficients exhibit approximately linear behavior, while the higher-order coefficients gradually display pronounced nonlinear characteristics. This trend can be attributed to the inherently nonlinear nature of the unsteady aerodynamic load distribution induced by structural deformation. Although POD is fundamentally a linear dimensionality reduction technique, the leading modes, which capture the majority of the system energy, retain good linear separability. In contrast, the higher-order modes inevitably encapsulate more complex nonlinear flow features.
+
+An analysis of the generalized aerodynamic forces reveals that although higher-order modes exhibit increasing degrees of nonlinearity, the overall behavior remains predominantly linear. Compared to directly modeling the nonlinear mapping of POD coefficients, reducedorder modeling based on generalized aerodynamic forces offers distinct advantages: the reduced space exhibits better linear separability, and the impact of nonlinear perturbations in higher modes on the global reconstruction accuracy is relatively limited. These properties make the generalized aerodynamic force an effective state variable for constructing surrogate models of unsteady aerodynamic load distribution, enabling a favorable balance between model generalization and complexity.
+
+order models are also constructed using both LSTM (POD-LSTM) and operator inference (POD-OpInf).
+
+The inclusion of operator inference serves to evaluate the effectiveness of the proposed dual modal space independently of the surrogate modeling technique. Unlike LSTM, which learns temporal dependencies implicitly, operator inference explicitly identifies the governing operators of the reduced-order dynamical system from data. By applying both learning paradigms to POD-based and DMS-based reduced spaces, the contribution of modal space construction to modeling accuracy can be isolated and systematically assessed.
+
+In the DMS-based models, the surrogate learns the mapping from generalized displacements to generalized aerodynamic forces, whereas in the POD-based models, the mapping is established directly between generalized displacements and POD modal coefficients. The accuracy of all reduced-order models is evaluated by comparing the predicted first 10 POD modal coefficients, and the corresponding prediction results are shown in Fig. 11.
+
+To evaluate the performance of the reduced-order model, quantitative error metrics are introduced from both the time domain and the frequency domain. The root mean square error (RMSE) is employed as the primary time-domain metric to assess the instantaneous amplitude accuracy of the predicted responses. For a given signal yi and its prediction ${\widehat {y}} _ {i} ,$ the RMSE is defined as:
+
+$$e _ {R M S E} = \sqrt {\frac {1} {n} \sum _ {i = 1} ^ {n} {( y _ {i} - \widehat {y} _ {i} )} ^ {2}}\tag{22}$$
+
+where n denotes the total number of time samples.
+
+However, under structural vibration, unsteady aerodynamic loads are inherently characterized by strong frequency-dependent behavior, and comparable time-domain errors may correspond to substantially different frequency content. To complement RMSE, a frequency-domain error metric, referred to as the Normalized Spectral Error (NSE), is introduced to assess the accuracy of the predicted dynamic characteristics. This metric is widely used in reduced-order modeling and system identification studies to evaluate the fidelity of dominant frequencies and energy distribution. The NSE is defined as:
+
+$$e _ {N S E} = \frac {| | \mathbf {\nabla} | \mathcal {F} ( \pmb {y} ) | - | \mathcal {F} ( \widehat {\pmb {y}} ) | \ | | _ {2}} {| | \mathbf {\nabla} | \mathcal {F} ( \pmb {y} ) | \ | | _ {2}}\tag{23}$$
+
+where $\mathcal {F} ( \cdot )$ denotes the Fourier transform operator and |⋅| represents the amplitude spectrum. This metric quantifies the relative discrepancy in frequency-domain energy distribution between the predicted and reference signals.
+
+The RMSE and NSE results for the prediction of the first 10 POD modal coefficients is summarized in the Fig. 12 and Fig. 13, respectively:
+
+For the first three low-order POD modes, all reduced-order models achieve similar accuracy, with consistently low RMSE and NSE values, indicating that the dominant, near-linear modal dynamics can be captured reliably.
+
+As the modal order increases, pronounced differences appear. PODbased models exhibit rapidly increasing RMSE and NSE for higher-order modes, reflecting their limited ability to represent nonlinear, highfrequency oscillatory behavior and the associated spectral distortion.
+
+In contrast, DMS-based models maintain low errors across all modal orders, demonstrating that the dual modal space effectively suppresses high-frequency spectral errors and stabilizes the prediction of highly oscillatory modes. The comparable performance of LSTM- and OpInfbased models within the DMS framework further indicates that the improvement mainly stems from the modal space construction rather than the specific surrogate modeling technique.
+
+To evaluate the impact of these differences on physical quantities in the present open-loop setting, the predicted POD coefficients are used to reconstruct the surface pressure distribution and compute the lift coefficient. The lift coefficient time histories are compared in Fig. 14 and Fig. 15, and their RMSE and NSE values are summarized in Table 2, providing a comprehensive assessment of time-domain accuracy and frequency-domain fidelity at the global aerodynamic force level.
+
+To evaluate the robustness of the reduced-order modeling approaches, both learning-based and system-identification-based models are independently constructed and evaluated under identical conditions. Specifically, the DMS-LSTM and POD-LSTM models are trained and tested 20 times to account for the stochastic nature of neural network initialization and training, while the corresponding DMS-OpInf and POD-OpInf models are included for reference. The distributions of the lift coefficient prediction errors are summarized using box plots, where both RMSE and NSE are reported in Fig. 16 and Fig. 17.
+
+To further analyze the reconstruction accuracy at critical time instances, three representative moments with relatively large prediction errors (0.0087 s, 0.0241 s, and 0.0359 s) were selected. At each time step, the pressure coefficient distribution over the airfoil surface was plotted, and the absolute prediction error in pressure distribution was computed separately for the upper and lower surfaces. The results are presented in Fig. 18.
+
+The reconstruction accuracy analysis of the aerodynamic load distribution further confirms the superiority of the DMS-LSTM approach. As indicated by the RMSE and NSE values in Table 2, the DMS-LSTM model achieves the highest prediction accuracy, with an RMSE of $1.844 \times {{10} ^ {- 4}}$ and an NSE of $6.082 \times 10 ^ {- 3}$ Compared to POD-LSTM, whose corresponding errors are $4.151 \times 10 ^ {- 4}$ and $1.612 \times {10} ^ {- 2}$ , the DMS-LSTM model reduces the time-domain and frequency-domain errors by approximately 55.6 % and 62.3 %, respectively.
+
+When operator inference is employed, a similar trend is observed. The DMS-OpInf model consistently outperforms POD-OpInf in both RMSE and NSE, demonstrating that the accuracy improvement is not restricted to sequence-learning-based surrogates. This confirms that the enhanced lift prediction accuracy primarily originates from the dual modal space formulation rather than the specific surrogate modeling technique.
+
+To further examine the local reconstruction fidelity, surface pressure coefficient distributions are compared at three representative time instances (0.0087 s, 0.0241 s, and 0.0359 s), as shown in Fig. 18, with the corresponding RMSE values summarized in Table 3. At these time instants, DMS-LSTM yields an average surface pressure coefficient RMSE of $1.045 \times 10 ^ {- 2} ;$ , which is approximately 50.762 % lower than that of $\mathrm{POD-LSTM} ( 2.123 \ \times \ 10 ^ {- 2} )$ . The error distributions also indicate that DMS-based models exhibit reduced oscillatory behavior, particularly on the upper and lower surfaces where high-frequency components are more pronounced.
+
+In addition, the robustness of lift coefficient prediction is assessed through repeated experiments, with the resulting RMSE and NSE distributions illustrated using box-and-whisker plots in Fig. 16 and Fig. 17. These statistical results further demonstrate that DMS-based models not only achieve higher accuracy but also exhibit improved consistency and stability across multiple runs.
+
+## 4.1.3. Further analysis with complex excitation conditions
+
+To further assess the performance of the proposed reduced-order modeling framework under more complex excitation conditions, an additional dataset is constructed based on the two-dimensional NACA65A004 airfoil case described in Section 4.1.1. Except for the prescribed time-varying inflow parameters, all numerical settings, including the computational mesh, turbulence model, time step size,
+
+Aerodynamic Modal Space
+
+initial flow conditions, and structural properties, are kept identical to those of the baseline two-dimensional case.
+
+In this dataset, the freestream Mach number and angle of attack are prescribed as time-dependent inputs to introduce non-stationary aerodynamic operating conditions. Both parameters are defined as superpositions of four sinusoidal components with different frequencies ranging from 5 Hz to 35 Hz. The time-varying Mach number is given by:
+
+$$M _ {\infty} ( t ) = M _ {0} + \sum _ {i = 1} ^ {4} \omega _ {M , i} \mathrm{sin} \big ( 2 \pi \varphi _ {M , i} t \big )\tag{24}$$
+
+where the mean Mach number is $M _ {0} = 0.499$ , and the amplitudes $\omega _ {M , i}$ are selected such that the instantaneous Mach number varies within the range $0.45 {\leqslant} M _ {\infty} ( t ) {\leqslant} 0.55$
+
+Similarly, the angle of attack is prescribed as
+
+$$\alpha ( t ) = \alpha _ {0} + \sum _ {i = 1} ^ {4} \omega _ {\alpha , i} \mathrm{sin} \big ( 2 \pi \varphi _ {\alpha , i} t \big )\tag{25}$$
+
+where $\alpha _ {0} = 10 ^{\circ}$ denotes the mean angle of attack, and the amplitudes $\omega _ {\alpha , i}$ ensure that the instantaneous angle of attack remains within 7.5∘ ⩽α(t)⩽12.5∘ .
+
+The time histories of the prescribed Mach number used in the training and testing datasets are shown in Fig. 19 and Fig. 20, respectively, while the corresponding training and testing time histories of the angle of attack are presented in Fig. 21 and Fig. 22.
+
+Following the same structural modeling and modal decomposition described in Section 4.1.1, the first four structural modes are again selected as the dominant vibration modes in the present analysis. The structural deformation is represented in modal coordinates, while the
+
+POD-LSTM 
+generalized aerodynamic force
+
+## DMS-LSTM
+
+POD coefficients
+
+POD-LSTM
+
+POD coefficients
+
+Origin Load Field
+
+underlying structural properties and mode shapes remain unchanged from the baseline two-dimensional case.
+
+The key difference lies in the excitation strategy applied to the structural modes. In this dataset, each of the four modal coordinates is excited by a broadband multi-sinusoidal signal composed of 20 sinusoidal components, resulting in a significantly extended excitation bandwidth compared to the baseline case. The generalized displacement of the k-th structural mode is prescribed as
+
+$${d _ {k}} ( t ) = {\eta _ {k}} \sum _ {i = 1} ^ {20} {{w _ {k , i}} \mathrm{sin} {\left( 2 \pi {{\varphi _ {k , i}}} t \right) , k}} = {1 , 2 , 3 , 4}\tag{26}$$
+
+where the excitation frequencies $\omega _ {k , i}$ span the range from 5 Hz to 195 Hz.
+
+The time histories of the prescribed structural modal excitations used in the training and testing datasets are shown in Fig. 23 and Fig. 24, respectively.
+
+In view of the increased complexity introduced by the simultaneous variation of inflow conditions and structural excitations, the predictive performance of the reduced-order models is assessed primarily at the level of aerodynamic response. As an integrated quantity that reflects the combined effects of modal accuracy, temporal consistency, and load reconstruction, the lift coefficient provides a concise yet representative measure for evaluating model behavior under complex excitation conditions.
+
+Accordingly, the predicted lift coefficient time histories obtained from different reduced-order modeling approaches, together with their corresponding absolute error distributions and quantitative error statistics, are presented in Fig. 25 and Fig. 26 and summarized in Table 4.
+
+To further assess the stability and consistency of different reducedorder modeling strategies under the present non-stationary excitation conditions, repeated prediction experiments are conducted for both data-driven and system-identification-based models. The resulting RMSE and NSE distributions for all four models are summarized using box plots in Fig. 27 and Fig. 28.
+
+When both aerodynamic conditions and structural excitations vary simultaneously, the unsteady aerodynamic response becomes more complex, which leads to increased prediction errors for all reducedorder models, as summarized in Table 4. This increase reflects the higher modeling difficulty introduced by the strongly non-stationary excitation signals in this dataset.
+
+Despite the overall error growth, the DMS-based models consistently outperform the conventional POD-based approaches. In particular, DMS-LSTM achieves the lowest RMSE and NSE for lift coefficient prediction and shows smaller error dispersion across repeated runs in Fig. 27 and Fig. 28, indicating more stable and reliable performance. Although prediction accuracy decreases compared with simpler excitation cases, the results in this section demonstrate that, for the present open-loop prediction problem with prescribed structural motions in subsonic conditions and within the tested parametric range, the DMSbased models provide consistently lower errors and better stability than the POD-based baselines.
+
+## 4.2. Case B: Three-dimensional wing
+
+## 4.2.1. Case setup
+
+The three-dimensional test case is based on the AGARD445.6 wing, which has a NACA65A004 airfoil cross-section. The root chord length is 0.559 m, the semi-span is 0.762 m, the aspect ratio is 1.65, the taper ratio is 0.66, and the sweep angle is 45◦. The structural model of the wing is built using a hexahedral finite element mesh, as shown in Fig. 29. The wing root is fully clamped, and the material properties are listed in Table 1. The first 40 structural modes (m = 40) are extracted to form the structural modal matrix, with the first four modes selected as the dominant vibration modes. The corresponding mode shapes are illustrated in Fig. 30.
+
+The aerodynamic simulation of the wing is performed on a structured mesh consisting of 4,545,688 elements, with a near-wall first layer height of $1 \times 10 ^ {- 5} 1$ m. A diffusion-based dynamic mesh method is adopted to handle structural deformation, and the SST − ω turbulence model is employed. The time step size is set to $1 \times 10 ^ {- 4} s$ . The initial flight conditions are identical to those used in the two-dimensional airfoil case. The computational mesh and steady-state flow field are shown in Fig. 31 and Fig. 32, respectively.
+
+The first four structural modes are selected as the dominant vibration modes of the wing. Time-varying excitation signals are actively applied to these four modes. A multi-frequency sinusoidal excitation is imposed on all four modes to generate the training dataset shown in Fig. 33 and the testing dataset shown in Fig. 34.
+
+## 4.2.2. Result and discussion
+
+The unsteady aerodynamic load distribution training data for the three-dimensional wing are decomposed using POD, and the first 40 modes $( r = 40 )$ are extracted to construct the POD modal basis. Simultaneously, the surface pressure distributions are projected onto the structural modal basis to compute the generalized aerodynamic forces. The resulting modal coefficients and generalized forces are shown in Fig. 35.
+
+An analysis of the POD decomposition results reveals that the threedimensional flow significantly enhances the nonlinearity of the unsteady aerodynamic load distribution. The low-order POD modes are capable of capturing the dominant physical features of the unsteady loads, and their corresponding modal coefficient time histories exhibit nearly linear behavior. In contrast, the high-order POD modes account for a smaller portion of the total energy and possess limited physical interpretability. Their modal coefficients exhibit irregular high-frequency oscillations and strong nonlinearity, making them particularly difficult to model. However, to ensure acceptable reconstruction accuracy, it remains necessary to model these high-order coefficients, which poses a major challenge.
+
+An examination of the generalized aerodynamic forces shows that although the 3D flow introduces stronger nonlinear effects into the unsteady aerodynamic field, the transformed generalized aerodynamic forces still exhibit an energy distribution that is predominantly linear in the modal space. This observation further supports the theoretical feasibility of using generalized aerodynamic forces as intermediate variables in surrogate modeling of unsteady aerodynamic loads.
+
+Based on these findings, reduced-order surrogate models are constructed using both the DMS-LSTM and POD-LSTM approaches. The DMS-LSTM model learns the mapping from generalized displacements to generalized aerodynamic forces, while the POD-LSTM model directly maps generalized displacements to the POD modal coefficients. The prediction accuracy of the two approaches is evaluated by comparing the predicted 40 modes POD coefficients, as shown in Fig. 36.
+
+The RMSE and NSE for the prediction of the first 40 POD modal coefficients is summarized in the Fig. 37 and Fig. 38:
+
+The presence of three-dimensional flow significantly amplifies the nonlinear characteristics of the unsteady aerodynamic load distribution, which poses considerable challenges for reduced-order modeling of POD modal coefficients shown Fig. 36. For the POD-LSTM model, noticeable prediction errors are observed for mid- and high-order modes in Fig. 37 and Fig. 38 . For example, for mode $\begin{array} {r} {{1} 1 ( \mathbf {a} _ {11} )} \end{array}$ , the RMSE and NSE reach approximately $\mathbf {6.09 \times 10 ^ {- 4}}$ and $4.96 \times 10 ^ {- 1}$ , respectively, while for mode $\begin{array} {r l} {40 ( \mathbf {a} _ {40} )} & {{}} \end{array}$ , the corresponding errors increase to about $\bf {\dot {3.24} \times 10 ^ {- 4}}$ and $\mathbf {7.05 \times 10 ^ {- 1}}$ , indicating both large amplitude deviations and pronounced spectral discrepancies in the predicted responses.
+
+In contrast, the DMS-LSTM model yields consistently lower errors for the same representative modes, as illustrated in Fig. 37 and Fig. 38. For mode $\begin{array} {r} {\mathbf {\Omega} ^ {11} ( \mathbf {a} _ {11} ) ; \mathbf {\Omega}} \end{array}$ , the RMSE and NSE are reduced to approximately 1.68 £ $\mathbf {10 ^ {- 4}}$ and $\mathbf {5.99 \times 10 ^ {- 2}}$ , respectively, and for mode $\begin{array} {r l} {40 ( \mathbf {a} _ {40} ) _ {\mathrm{~}}} & {{}} \end{array}$ , they remain at about $\mathbf {2.72 \times 10 ^ {- 4}}$ and $\mathbf {3.68 \times 10 ^ {- 1}}$ . This simultaneous reduction in time-domain and frequency-domain errors demonstrates that the DMSbased formulation more effectively captures the dynamic behavior of unsteady aerodynamic loads under three-dimensional flow conditions.
+
+The predicted generalized aerodynamic forces are subsequently used to reconstruct the surface pressure distribution on the wing, which is then integrated to obtain the lift coefficient. The resulting lift coefficient predictions from both reduced-order modeling approaches are presented in Fig. 39 and Fig. 40.
+
+To further examine the local prediction accuracy, three representative time instances with relatively large errors (0.0081 s, 0.022 s, and 0.05 s) were selected. At each time step, the pressure coefficient distribution over the wing surface was plotted, and the absolute prediction errors were computed separately for the upper and lower surfaces. The results are presented in Fig. 41.
+
+The reconstruction results of the three-dimensional aerodynamic load distribution, as shown in Fig. 39-Fig. 41 and Table 5,Table $^ {6 ,}$ further highlight the advantages of the DMS-LSTM approach under complex configurations. In terms of lift coefficient prediction, DMS-LSTM achieves an RMSE of $2.935 \times 10 ^ {- 5}$ , significantly outperforming the POD-LSTM model, which yields an RMSE of $1.519 \times 10 ^ {- 4}$ , corresponding to an 80.678 % reduction in error.
+
+For surface pressure distribution prediction at three representative time instances, DMS-LSTM reaches an RMSE of $1.485 \times {{10} ^ {- 3}}$ , which is 50.134 % lower than that of POD-LSTM $( 2.978 \times 10 ^ {- 3} )$ , while maintaining over 97.2 % global reconstruction accuracy.
+
+By comparing these results with those obtained for the twodimensional airfoil case, it becomes evident that the advantages of the DMS-LSTM modeling approach become increasingly pronounced as the nonlinearity of the aerodynamic load distribution intensifies.
+
+## 5. Conclusion
+
+This paper presents a DMS-LSTM reduced-order modeling framework for predicting unsteady aerodynamic load distributions induced by structural vibrations, with improved accuracy and physical consistency.
+
+The proposed Dual Modal Space (DMS) formulation couples structural modal bases with aerodynamic POD modes, enabling an explicit and bidirectional mapping between generalized aerodynamic forces and unsteady aerodynamic load distributions. By projecting aerodynamic loads onto the structural modal space, the formulation effectively mitigates modal mixing and provides a reduced representation that is well aligned with structural dynamics.
+
+When integrated with LSTM networks, the DMS-based reduced representation facilitates efficient learning of the nonlinear temporal evolution of unsteady aerodynamic loads. Numerical investigations on a two-dimensional NACA65A004 airfoil and a three-dimensional AGARD445.6 wing demonstrate that the proposed DMS-LSTM model consistently outperforms conventional POD-LSTM approaches in both time-domain and frequency-domain metrics, achieving over 50 % reduction in surface pressure reconstruction error and up to 80.7 % improvement in lift coefficient prediction, while maintaining more than 97.2 % global reconstruction accuracy under broadband excitations and time-varying aerodynamic conditions.
+
+The present study is limited to linear structural modal representations and open-loop aerodynamic load prediction driven by prescribed structural motions. Although nonlinear flow effects are implicitly captured through high-fidelity CFD data, the modal decompositions employed remain linear, and fully coupled aeroelastic feedback is not considered. Future work will focus on extending the proposed framework to nonlinear structural dynamics and fully coupled aeroelastic simulations, as well as incorporating adaptive modal representations and physics-informed learning strategies to enhance robustness and generalization under more complex flow conditions.
+
+## CRediT authorship contribution statement
+
+Xuanhe Ding: Writing – original draft, Validation, Methodology, Investigation, Formal analysis. Chunlin Gong: Writing – review & editing, Supervision, Project administration, Conceptualization. Hua Su: Writing – review & editing, Software, Funding acquisition, Data curation, Conceptualization. Chunna Li: Writing – review & editing. Wei Li: Writing – review & editing. Xuyi Jia: Writing – review & editing.
+
+## Omitted Tables
+
+- [Table 1 omitted; saved to tables/table_001.md]
+- [Table 2 omitted; saved to tables/table_002.md]
+- [Table 3 omitted; saved to tables/table_003.md]
+- [Table 4 omitted; saved to tables/table_004.md]
+- [Table 5 omitted; saved to tables/table_005.md]
+- [Table 6 omitted; saved to tables/table_006.md]
+- [Table 7 omitted; saved to tables/table_007.md]

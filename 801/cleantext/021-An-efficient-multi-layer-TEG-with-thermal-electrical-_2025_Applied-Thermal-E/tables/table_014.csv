@@ -1,0 +1,5 @@
+Types of RTG,Input power (W),Output power (W),Conversion efficiency (%)
+Designed RTG,1500,107.8,7.189
+mmRTG,2000,126,6.3
+MHW-RTG,2380,150,6.5
+GPHS-RTG,4180,280,6.7

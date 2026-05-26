@@ -1,0 +1,17 @@
+| Data acquisition method | Loading pressure (MPa) | Temperature (K) | Gap medium | $R _ { E - P \_ u } ^ { c } \left( \Omega \cdot \mathrm { m } ^ { 2 } \right)$ | $R _ { E - P \_ l } ^ { c } \ ( \Omega \cdot \mathrm { m } ^ { 2 } )$ | $R _ { E - N _ { - } u } ^ { c } \left( \Omega \cdot \mathrm { m } ^ { 2 } \right)$ | $R _ { E - N \_ l } ^ { c } \left( \Omega \cdot \mathrm { m } ^ { 2 } \right)$ |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Numerical | 0.1039 | 298 | Air | $9 . 6 0 \times 1 0 ^ { - 7 }$ | $2 . 4 3 \times 1 0 ^ { - 7 }$ | $6 . 2 0 \times 1 0 ^ { - 7 }$ | $4 . 3 2 \times 1 0 ^ { - 7 }$ |
+| prediction | 0.1455 |  |  | $8 . 5 5 \times 1 0 ^ { - 7 }$ | $2 . 0 8 \times 1 0 ^ { - 7 }$ | $5 . 3 0 \times 1 0 ^ { - 7 }$ | $3 . 5 6 \times 1 0 ^ { - 7 }$ |
+|  | 0.1870 |  |  | $8 . 0 9 \times 1 0 ^ { - 7 }$ | $1 . 8 6 \times 1 0 ^ { - 7 }$ | $4 . 7 7 \times 1 0 ^ { - 7 }$ | $3 . 1 7 \times 1 0 ^ { - 7 }$ |
+| Experimental | 0.1039 | 298 |  | $1 . 1 3 \times 1 0 ^ { - 6 }$ | $3 . 3 5 \times 1 0 ^ { - 7 }$ | $6 . 7 8 \times 1 0 ^ { - 7 }$ | $4 . 4 7 \times 1 0 ^ { - 7 }$ |
+| measurement | 0.1455 |  |  | $9 . 2 8 \times 1 0 ^ { - 7 }$ | $2 . 8 9 \times 1 0 ^ { - 7 }$ | $5 . 5 8 \times 1 0 ^ { - 7 }$ | $3 . 3 7 \times 1 0 ^ { - 7 }$ |
+|  | 0.1870 |  |  | $8 . 3 0 \times 1 0 ^ { - 7 }$ | $2 . 0 4 \times 1 0 ^ { - 7 }$ | $4 . 4 3 \times 1 0 ^ { - 7 }$ | $3 . 3 7 \times 1 0 ^ { - 7 }$ |
+| Numerical | 0.1039 | 473 |  | $1 . 1 3 \times 1 0 ^ { - 6 }$ | $2 . 8 7 \times 1 0 ^ { - 7 }$ | $7 . 0 7 \times 1 0 ^ { - 7 }$ | $4 . 9 5 \times 1 0 ^ { - 7 }$ |
+| prediction | 0.1455 |  |  | $1 . 0 3 \times 1 0 ^ { - 6 }$ | $2 . 4 5 \times 1 0 ^ { - 7 }$ | $6 . 0 5 \times 1 0 ^ { - 7 }$ | $4 . 0 9 \times 1 0 ^ { - 7 }$ |
+|  | 0.1870 |  |  | $9 . 4 6 \times 1 0 ^ { - 7 }$ | $2 . 1 7 \times 1 0 ^ { - 7 }$ | $5 . 4 3 \times 1 0 ^ { - 7 }$ | $3 . 6 3 \times 1 0 ^ { - 7 }$ |
+|  | 0.1039 | 673 |  | $1 . 3 3 \times 1 0 ^ { - 6 }$ | $3 . 3 7 \times 1 0 ^ { - 7 }$ | $7 . 4 8 \times 1 0 ^ { - 7 }$ | $5 . 2 3 \times 1 0 ^ { - 7 }$ |
+|  | 0.1455 |  |  | $1 . 2 1 \times 1 0 ^ { - 6 }$ | $2 . 9 0 \times 1 0 ^ { - 7 }$ | $6 . 4 0 \times 1 0 ^ { - 7 }$ | $4 . 3 3 \times 1 0 ^ { - 7 }$ |
+|  | 0.1870 |  |  | $1 . 1 1 \times 1 0 ^ { - 6 }$ | $2 . 5 6 \times 1 0 ^ { - 7 }$ | $5 . 7 3 \times 1 0 ^ { - 7 }$ | $3 . 8 3 \times 1 0 ^ { - 7 }$ |
+|  | 0.1039 | 400 | Silver | $1 . 0 2 \times 1 0 ^ { - 9 }$ | $8 . 9 6 \times 1 0 ^ { - 1 0 }$ | $9 . 3 4 \times 1 0 ^ { - 1 0 }$ | $9 . 0 9 \times 1 0 ^ { - 1 0 }$ |
+|  | 0.1455 |  | epoxy | $1 . 0 1 \times 1 0 ^ { - 9 }$ | $8 . 9 3 \times 1 0 ^ { - 1 0 }$ | $9 . 2 8 \times 1 0 ^ { - 1 0 }$ | $9 . 0 4 \times 1 0 ^ { - 1 0 }$ |
+|  | 0.1870 |  | adhesive | $1 . 0 0 \times 1 0 ^ { - 9 }$ | $8 . 9 1 \times 1 0 ^ { - 1 0 }$ | $9 . 2 3 \times 1 0 ^ { - 1 0 }$ | $9 . 0 0 \times 1 0 ^ { - 1 0 }$ |

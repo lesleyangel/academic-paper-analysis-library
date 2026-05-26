@@ -1,0 +1,348 @@
+## 1. Introduction
+
+Composites are widely used, for instance, in the aerospace industry, where they are frequently subjected to a harsh service environment, e.g. severe thermal conditions. The temperature of certain location in highspeed aerospace vehicles may increase from room temperature to above 1000 °C in a short time of 600 s [1]. Under this condition, the thermal expansion behaviors of relevant composites and structures should be carefully considered, since the mismatch of thermal expansion coefficient between different phases may lead to damages of the composite, and that between different composites may lead to final failures of the structure.
+
+Composite consists of two or more phases and is always designed to have advantages of each phase. Before its application, the corresponding behaviors and effective properties should be well understood primarily. The effective properties of composites can be calculated by a representative volume element (RVE) model based on the known properties of each phase. The prediction method has mainly two types, the analytical method and the numerical method. Classical analytical methods includes the self-consistent method, the differential method, the Mori-Tanaka method, etc., in which the Mori-Tanaka method is widespread for its explicit formula [2]. In comparison with the numerical method like Finite Element (FE) method, such analytical methods are much more efficient in model reconstruction and computational cost saving. The FE method, the Mori-Tanaka method and the strong contrast method (a statistical method) are compared in Ref. [3] for two-phase random composites. The results of Ref. [3] show that the Mori-Tanaka method is more efficient, whereas has some limitations such as the inclusions should have ellipsoidal shapes of low aspect ratios; the strong contrast method has good performance for spherical inclusions; while the FE method is more capable in capturing details like the local physical fields. According to Ref. [3], excluding the larger computational cost, another disadvantage of FE method is its dependency on the size of RVE. This should be due to the complexity and the stochasticity of composite structures, for which only approximate RVE and boundary conditions (BCs) rather than accurate ones can be obtained. On the other hand, for composites with symmetric structures (ordered structures), an accurate RVE can be formulated based on the symmetries and precise boundary conditions can be derived based on additional physical rules. Under this condition, the FE result is independent of the size of RVE. Such RVE is always expressed as unit cell.
+
+A unit cell model should contain enough mesoscopic structure information, while for the macroscopic characteristics such as the related macro physical field that have been abandoned in the RVE formulation, we need to derive appropriate BCs to keep enough representation. Therefore, a unit cell model has two essential elements, the identification of structure symmetries and the derivation of accurate BCs. Textile reinforced composite is a typical composite with symmetric structures and has extensive applications in the present aerospace industry [4]. According to the textile process, there are plain/twill/satin woven, multi-directional braided, knitted composites, etc. To be general, the weave process is always used to create two-dimensional (2D) laminate structures, while the knitting process is good at manufacturing three-dimensional (3D) structure, and the braiding process is in between. Although different textile technologies create entirely different structures, all the complex textile structure can be decomposed into simple unit based on three basic symmetries, i.e., translation along an axis, reflection about a plane and rotation about an axis, and thus we can propose some basic rules of unit cell formulation and BC derivation for all the textile reinforced composite.
+
+Boundary conditions are the relations between the micro unit cell model and the macro real composite (essential conditions of homogenization). In fact, in the unit cell formulation, the most consideration should be paid on the derivation of BCs. In most literatures about the mechanical or thermal calculation, only a full unit cell formulated by translational symmetries is used, and for such a model the accurate BC is the so-called periodic BC, i.e., periodic relative nodal displacement for mechanical problems [5–12] and periodic relative nodal temperature for thermal problems [13–18]. Such type BC is relative simpler and easier to be imposed on. However, if the reflectional and rotational symmetries are involved, the BC would be more complex and its implementation would raise some particular requirement of mesh generations. On the other hand, a better understanding of the composite behaviors and the cost saving brought by such size-reduced unit cell model are very attractive.
+
+In the authors’ previous works [19–22], structure symmetries of plain woven, satin woven, 3D four-directional braided composites are fully exploited, corresponding BCs for thermal calculations are derived and effective thermal conductivities for each composite are studied. On the other hand, for mechanical problems, in Li’s work [23], the unidirectional (UD) fiber reinforced composite with both square and hexagonal fiber packing patterns are studied, unit cells for each pattern are formulated by using only translational symmetries, and corresponding mechanical BCs are derived. Li and his team also contribute a lot of extraordinary works on the unit cell method for mechanical studies of various textile reinforced composite [24,25].
+
+Thermal expansion is a thermal-mechanical coupling problem, a fully study and summary of unit cell method for such problem is still absent. Dasgupta et al. [26] studied the thermal mechanical and also thermal conductive properties of plain woven composites by both FE and analytical methods based on a periodic unit cell. Shabana et al. [27] studied the effective thermomechanical properties of functionally graded composites, in which both the square and hexagonal arrangements of fibers are simulated. Nasution et al. [28] studied global effective and micro local thermomechanical properties of 3D orthogonal interlock composites. One can also find a series of excellent previous works about UD, woven, braided composites and interpenetrating phase composites [7,29–37]. To be summarized, the homogenization and unit cell methods are the basic methods used in the above typical researches, and all the involved unit cell models are in fact formulated based on translational symmetries only and are expressed as periodic ones in [26–28]. This leaves some room for us to employ the structure symmetries completely, to further reduce the model size and to develop a general unit cell approach for thermal expansion calculations. It also should be pointed out that the authors’ previous work [19–22] are mainly focused on the effective thermal conductive properties, the BCs are derived based on thermal conduction theory, and the unit cell models can only be used to simulate thermal conduction problems. For the thermal expansion problem studied in this work, the same geometric configurations involved in the above references are available, however, the BCs need new derivations. $\mathsf{Also} ,$ for each typical composite studied in the present work, the influence of structure symmetries on the deformation pattern is clarified based on the investigation of displacement fields on the model boundaries.
+
+In this paper, the displacement distribution rules that can be used in BC derivations are summarized based on basic symmetric structures (translational, reflectional and 180° rotational symmetric structures), and the application scope of such rules is defined according to the mechanical and thermal considerations. For UD composites, four unit cells are formulated by different symmetries, and then a general unit cell approach for thermal expansion calculation is developed. For plain and multi-harness (4HS, 5HS, 6HS, 7HS and 8HS) satin woven composites, three and two unit cells are formulated, respectively, and the thermal expansion behaviors are studied.
+
+## 2. Mathematical formulation
+
+## 2.1. Constitutive equations
+
+For a thermal conduction problem, the constitutive relation between macroscopic heat flux and temperature gradient can be described as Eq. (1):
+
+$$q _ {i} ^ {0} = - \lambda ^ {0} \nabla T _ {i} ^ {0} , ~ i = x , y , z\tag{1}$$
+
+where $q _ {i} ^ {0}$ is the macroscopic (global) heat flux, $\lambda ^ {0}$ is the effective thermal conductivity matrix, $\nabla T _ {i} ^ {0}$ is the temperature gradient, and i is the component direction in x, y and z-directions. The superscript ${} ^ {\mathfrak {a}} 0 ^ {\mathfrak {n}}$ in this work represents the macroscopic variables or effective properties. For a specific composite model, if one of $q _ {i} ^ {0}$ or $\nabla T _ {i} ^ {0}$ is given as the loading, the other one will be obtained by an appropriate numerical calculation, and the effective thermal conductivities can then be obtained based on Eq. (1).
+
+In a thermal expansion problem, the stress and strain due to the temperature change should be concerned. Similarly, the constitutive relationship between stress and strain can be described by Eqs. (2-1), and in a pure thermal expansion process of orthotropic materials, the thermal strain due to the temperature change is expressed by Eq. (2-2).
+
+$$\sigma ^ {0} = \mathbf {C} ( \varepsilon ^ {0} - \alpha ^ {0} T )\tag{2-1}$$
+
+$$\varepsilon _ {i t h} ^ {0} = \alpha _ {i} ^ {0} T , i = x , y , z\tag{2-2}$$
+
+where $\sigma ^ {0}$ and $\varepsilon ^ {0}$ are the macroscopic thermal stress and strain, respectively, C is the stiffness matrix, $\alpha _ {i} ^ {0}$ is the thermal expansion coefficient, T is the temperature offset from the reference temperature at which no thermal stress is induced. The reference temperature in this work is assumed to be 0 °C. In case of pure temperature loading, the term $\sigma ^ {0}$ equals to zero, since in such a case, the macroscopic strain $\varepsilon ^ {0}$ equals the macroscopic thermal strain $\alpha ^ {0} T$ . For a specific numerical simulation, a uniform temperature T is imposed on the model, the thermal strain $( x - , y - ,$ z-) can be obtained by post-processing and the thermal expansion coefficient at T can be calculated based on Eq. (2-2).
+
+However, for a unit cell, we need additional constraint BCs except for the macroscopic loading. As discussed above, the unit cell is established based on three basic structure symmetries, i.e., translation along an axis, reflection about a plane and rotation about an axis for a certain angle. Hence, before the derivation of such constraint BCs, the temperature and displacement distribution rules in these basic symmetric structures should be stated first.
+
+## 2.2. Temperature and displacement distributions in symmetric structures
+
+Three typical structures, i.e., translational, reflectional and 180° rotational symmetric structures are studied in this work, and the relative temperature relations between symmetric nodes and the relative displacement relations between symmetric nodes are stated. As discussed in the authors’ previous work [22], the relative temperature relations between symmetric nodes M and M’ under uniform temperature gradient field can be described as:
+
+$$T _ {M} - T _ {O} = \pm ( T _ {M ^ {\prime}} - T _ {O ^ {\prime}} )$$
+
+$${\mathrm {\Lambda ^ {\alpha} + \mathrm {\Lambda ^{\circ}} : \ s y m m e t r i c \ t h e r m a l \ s t i m u l u s}} ; {\mathrm{}} ^ {\alpha} - \mathrm {\Lambda ^ {\rho} : \ a n t i s y m m e t r i c \ t h e r m a l \ s t i m u l u s}\tag{3}$$
+
+where O is the reference node and $o '$ is its symmetric node. The symmetric thermal stimulus (STS) is the macroscopic heat flux that parallel to the reflection plane or the 180° rotation axis, while the antisymmetric (ATS) one is that perpendicular to the reflection plane or the rotation axis. In addition, for a translational structure, all the macroscopic heat flux can be considered as STS. Based on Eq. (3), one can derive BCs of unit cells for thermal conduction calculations.
+
+However, for a thermal expansion problem, the relative displacement distribution rules should be stated. Under a macroscopic uniform strain field, we can have relative displacement relations between M and M′ as:
+
+$$\big ( x _ {M} - x _ {O} \big ) \big ( u _ {M} - u _ {O} \big ) = \big ( x _ {M ^ {\prime}} - x _ {O ^ {\prime}} \big ) \big ( u _ {M ^ {\prime}} - u _ {O ^ {\prime}} \big )\tag{4-1}$$
+
+$$\big ( y _ {M} - y _ {O} \big ) \big ( \nu _ {M} - \nu _ {O} \big ) = \big ( y _ {M ^ {\prime}} - y _ {O ^ {\prime}} \big ) \big ( \nu _ {M ^ {\prime}} - \nu _ {O ^ {\prime}} \big )\tag{4-2}$$
+
+$$\big ( z _ {M} - z _ {O} \big ) \big ( w _ {M} - w _ {O} \big ) = \big ( z _ {M ^ {\prime}} - z _ {O ^ {\prime}} \big ) \big ( w _ {M ^ {\prime}} - w _ {O ^ {\prime}} \big )\tag{4-3}$$
+
+where u, v and w are displacements in $x \mathrm{,~} y -$ and z-direction, respectively. It should be noted that Eq. (4) only describes the loading conditions under a uniform temperature change (thermal expansion) without considerations of macroscopic shear stress or strain. The above equations can be used to derive BCs of unit cells for thermal expansion calculations, and they will be confirmed by numerical simulations for translational, reflectional and 180° rotational symmetric structures, respectively, in the following subsections.
+
+## 2.2.1. Translational symmetric structure
+
+Fig. 1 shows a typical translational symmetric structure along x and y-axis. The structure should have an infinite dimension. An arbitrary node M in structure will be transformed to $M ^ {\prime} , ~ M ^ {\prime \prime} , ~ M ^ {\prime \prime \prime} . .$ after a translation along the x-axis and y-axis by one, two, three… period lengths, respectively. The node O is a reference node, and $O ^ {\prime} , O ^ {\prime \prime} , O ^ {\prime \prime \prime} . .$ are its translational symmetric nodes, respectively. According to the structure symmetries, we can have nodes coordinates of $\boldsymbol {M} = ( x _ {1} , y _ {1} , z _ {1} )$
+
+x Translation axis
+
+(a) x-displacement fields
+
+(b) y-displacement fields
+
+and $M ^ {\prime} = ( a - x _ {1} , b - y _ {1} , h - z _ {1} )$ , and assumed reference nodes $O = ( 0 , 0 , 0 )$ and $O ^ {\prime} = ( a , b , h )$ , thus Eq. (4) becomes:
+
+$$u _ {M} - u _ {O} = u _ {M ^ {'}} - u _ {O ^ {'}}\tag{5-1}$$
+
+$$\nu _ {M} - \nu _ {O} = \nu _ {M} \prime - \nu _ {O} \prime\tag{5-2}$$
+
+$$w _ {M} - w _ {O} = w _ {M} \prime - w _ {O ^ {'}}\tag{5-3}$$
+
+In this section, a 2D numerical simulation is conducted to confirm Eq. (5). The model has a similar geometry as shown in Fig. 1 and has $16 \times 16$ units to simulate an infinite dimension. The elastic modulus of the triangle region is 10 GPa while the other region is 1 GPa, the thermal expansion coefficient of the triangle region is $50 \times 10 ^ {- 6 \circ} \mathrm{C} ^ {- 1}$ while the other region is $5 \times 10 ^ {- 6 \circ} \mathsf{C} ^ {- 1}$ . The boundaries $x = 0$ and $y = 0$ are constrained in their normal directions, a uniform temperature of 20 °C is imposed on the whole region and the reference temperature is assumed to be 0 °C. The calculated displacement fields are shown in Fig. 2.
+
+Fig. 2(a) and (b) show the x- and y-displacement distributions, respectively. In the left part of each figure, a relative uniform global field can be found. Two units (black rectangles) are enlarged and presented with individual displacement legends on the right. The identical displacement distribution patterns can be observed in the two units and the relative displacement relations between symmetric nodes M and M’ satisfy Eqs. (5-1) and (5-2), respectively.
+
+It is clear that one can select any unit of the infinite structure in Figs. 1 and 2 as a unit cell model. Such unit cell (by translational symmetries) is the first unit cell that can be established for a composite, thus expressed as UC1 in this work. UC1 enables us to use a size-limited model to represent an infinite dimension structure. When M comes to boundaries of the unit cell, Eq. (5) can be used to derive BCs of UC1. If the dimension of the unit cell is assumed as $a \times b \times h ,$ , the BCs can be
+
+(a) Reflectional structure
+
+(b) x-displacement fields
+
+(c) y-displacement fields
+
+described as:
+
+xBoundaries in -direction:
+
+$$\begin{array} {r l} & {u _ {( 0 , y _ {1} , z _ {1} )} - u _ {( a , y _ {1} , z _ {1} )} = a \varepsilon _ {x} ^ {0} , \nu _ {( 0 , y _ {1} , z _ {1} )} - \nu _ {( a , y _ {1} , z _ {1} )} = 0 , w _ {( 0 , y _ {1} , z _ {1} )} - w _ {( a , y _ {1} , z _ {1} )} = 0 , \varepsilon _ {x} ^ {0}} \\ & {\qquad = \alpha _ {x} ^ {0} T} \end{array}$$
+
+yBoundaries in -direction:
+
+$$\begin{array} {r l} & {u _ {( x _ {1} , 0 , z _ {1} )} - u _ {( x _ {1} , b , z _ {1} )} = 0 , \nu _ {( x _ {1} , 0 , z _ {1} )} - \nu _ {( x _ {1} , b , z _ {1} )} = b \varepsilon _ {y} ^ {0} , \ w _ {( x _ {1} , 0 , z _ {1} )} - w _ {( x _ {1} , b , z _ {1} )} = 0 , \varepsilon _ {y} ^ {0}} \\ & {\qquad = \alpha _ {y} ^ {0} T} \end{array}$$
+
+zBoundaries in -direction:
+
+$$\begin{array} {r l} & {u _ {( x _ {1} , y _ {1} , 0 )} - u _ {( x _ {1} , y _ {1} , h )} = 0 , \nu _ {( x _ {1} , y _ {1} , 0 )} - \nu _ {( x _ {1} , y _ {1} , h )} = 0 , w _ {( x _ {1} , y _ {1} , 0 )} - w _ {( x _ {1} , y _ {1} , h )} = h \varepsilon _ {z} ^ {0} , \varepsilon _ {z} ^ {0}} \\ & {\qquad = \alpha _ {z} ^ {0} T} \end{array}\tag{6}$$
+
+This type of BC is the so-called periodic BC of relative displacement, and is widely used in the study of textile reinforced composite.
+
+## 2.2.2. Reflectional symmetric structure
+
+Sometimes, the structure of UC1 possesses reflectional symmetries and its size can be further reduced. Fig. 3 shows a typical reflectional structure (2D schematic) with a dimension of $a \times b \times h ,$ , and the white
+
+line indicates the reflection plane $x = a / 2$ . In this reflectional structure, one can have $M = ( x _ {1} , y _ {1} , z _ {1} )$ and $M ^ {\prime} = ( a - x _ {1} , y _ {1} , z _ {1} )$ and the reference nodes $O = ( 0 , 0 , 0 )$ and $O ^ {\prime} = ( a , 0 , 0 )$ , thus Eq. (4) becomes:
+
+$$u _ {M} - u _ {O} = - ( u _ {M ^ {'}} - u _ {O ^ {'}} )\tag{7-1}$$
+
+$$\nu _ {M} - \nu _ {O} = \nu _ {M ^ {'}} - \nu _ {O ^ {'}}\tag{7-2}$$
+
+$$w _ {M} - w _ {O} = w _ {M} \prime - w _ {O ^ {'}}\tag{7-3}$$
+
+A 2D numerical simulation is conducted to confirm Eq. (7). The model has a similar geometry as shown in Fig. 3(a). The elastic modulus of the triangle region is 10 GPa while the other region is 1 GPa. The thermal expansion coefficient of the triangle region is $50 \times 10 ^ {- 6 \circ} \mathrm{C} ^ {- 1}$ while the other region is $5 \times 10 ^ {- 6 \circ} \mathsf{C} ^ {- 1}$ . The mechanical BCs are described in Eq. (6), a uniform temperature of $20~^{\circ}\mathrm{C}$ is imposed on the whole region and the reference temperature is assumed to be $0 \mathrm{^\circC}$ The calculated x- and y-displacement fields are shown in Fig. 3(b) and (c), respectively. From the two figures, one can notice that the relative relations between symmetric nodes satisfy Eqs. (7-1) and (7-2), respectively.
+
+It should be noted that if the reflection plane is perpendicular to yor z-direction, symmetric nodes will have different coordinate relations and thus the relative displacements will have different descriptions. The details are similar to Eq. (7) and will be summarized in Section 2.2.4.
+
+## 2.2.3. 180° rotational symmetric structure
+
+Fig. 4(a) shows a typical 180° rotational symmetric structure with a dimension of $a \times b \times h$ The white dashed line indicates the rotation axis $( a / 2 , b / 2 , z )$ . In this structure, we can have $M = ( x _ {1} , y _ {1} , z _ {1} )$ and $M ^ {\prime} = ( a - x _ {1} , b - y _ {1} , z _ {1} )$ and the reference nodes $O = ( 0 , 0 , 0 )$ and ${\cal O} ^ {\prime} = ( a ,$ $b , 0 ) _ {\mathrm{i}}$ thus $\operatorname{Eq.} \ ( 4 )$ becomes:
+
+$$u _ {M} - u _ {O} = - ( u _ {M ^ {'}} - u _ {O ^ {'}} )$$
+
+$$\nu _ {M} - \nu _ {O} = - ( \nu _ {M ^ {'}} - \nu _ {O ^ {'}} )\tag{8-1}$$
+
+$$w _ {M} - w _ {O} = w _ {M} \prime - w _ {O ^ {'}}\tag{8-2}$$
+
+(8-3)
+
+A 3D numerical simulation is conducted to confirm Eq. (8). The model has a similar geometry as shown in Fig. 4(a). The material properties are the same with the above cases. The mechanical BCs are those described in Eq. (6), a uniform temperature of ${} ^ {20} \mathrm{} ^{\circ} \mathrm{C}$ is imposed on the whole region and the reference temperature is assumed to be $0 \ ^{\circ} \mathrm{C}$ The calculated $x \mathrm{,~} y \mathrm{.~}$ and z-displacement fields are shown in Fig. 4(b), (c) and (d), and Eqs. (8-1), (8-2) and (8-3) are thus verified, respectively.
+
+If the rotation axis is parallel to x- or y-direction, the symmetric nodes will have different coordinate relations and thus the relative displacements will have different descriptions. The details are similar to Eq. (8) and will be summarized in the later subsection.
+
+## 2.2.4. Summary of displacement distribution rules
+
+According to the above three subsections, the relative displacement relations between symmetric nodes in translational, reflectional and 180° rotational symmetric structures can be summarized as Eqs. (9-1), (9-2) and (9-3), and the value of parameters k, m and n are listed in Table 1. As shown in the table, for reflectional/rotational structures with different reflection planes/rotation axes, the relative displacement descriptions are different. If the reflection plane/rotation axis is parallel to a certain i-axis $( x - , y - \ \sigma \mathbf {r} \ z - )$ , the corresponding parameter in i-displacement equation is 1, however, if it is perpendicular to i-axis, the parameter in i-displacement equation is −1. If M comes to a certain boundary of a unit cell, Eq. (9) can be used to derive the BCs for that boundary.
+
+$$u _ {M} - u _ {O} = k \left( u _ {M ^ {'}} - u _ {O ^ {'}} \right)$$
+
+$$\nu _ {M} - \nu _ {O} = m ( \nu _ {M ^ {'}} - \nu _ {O ^ {'}} )\tag{9-1}$$
+
+(9-2)
+
+$$w _ {M} - w _ {O} = n ( w _ {M ^ {'}} - w _ {O ^ {'}} )\tag{9-3}$$
+
+(a) 180° rotational structures
+
+(b) x-displacement fields
+
+(c) y-displacement fields 
+(d) z-displacement fields
+
+## 2.2.5. Application scopes
+
+As discussed above, all the displacement distribution rules (Eqs. (7), (8) and (9)) related to reflectional and rotational symmetries are based on UC1 with periodic BCs (Eqs. (5) and (6)), which means that the derivation of BC of smaller unit cells UC2, UC3… are based on the periodic BCs. However, an improper use of such periodic BCs can be found in some thermal expansion researches. In some works [7,13,33], the periodic relative displacement BC and the periodic relative temperature BC are imposed on the unit cell at the same time to simulate the thermal expansion behaviors. Unfortunately, this is inappropriate. Such two types of BCs enable the unit cell to meet the homogenization requirement of macroscopic uniform strain field and uniform temperature gradient field, respectively. However, a macroscopic uniform strain field and a uniform temperature gradient field could not appear at the same time, which means that such two BCs could not be imposed on the same model. A simple schematic of such statement is shown in Fig. 5, in which the two cases of thermal loadings, i.e., uniform T and uniform T gradient, and the induced x-displacement distributions for a macro structure are displayed. In Fig. 5, ΔT and Δu are the relative temperature and relative displacement, respectively. In Fig. 5(a), the two diagrams are the uniform T and the induced u distribution, respectively. The left one is the uniform $T = 20~^{\circ}\mathrm{C}$ , and the induced Δu distribution has a periodic pattern as the right diagram (same with Fig. 2(a)) shows. On the other hand, in the left diagram of Fig. 5(b), a uniform T gradient in x-direction is imposed on the structure. As shown in the enlarged two unit cells, the same temperature distribution pattern and the periodic ΔT can be found. However, as shown in the right diagram of Fig. 5(b), the relevant Δu will distribute in a totally nonperiodic pattern, and under this condition Eq. (6) is no longer an appropriate BC for those repetitive unit cells.
+
+In a clear description, the periodic BC of relative temperature and the periodic BC of relative displacement should not be imposed on a model at the same time. In other words, a thermal-elasticity problem with temperature gradients calls for higher order homogenization theory and may be totally different BCs of the unit cell. Thus, to be summarized, the unit cells and the BCs that about to be derived in this work can be used to simulate the thermal expansion behaviors of composites under a uniform temperature change loading, such as the thermal residual stresses after a specific heat treating, and of course can be used to calculate the effective CTE of composites.
+
+In the later sections, thermal expansion behaviors of several typical composites under uniform temperature change loadings are studied. The work is based on a two-scale consideration, the meso-scale fiber yarn and the macro-scale plain and satin woven composites. For both the yarn and the woven composite, unit cells of multi sizes are formulated based on the symmetries indicated in their structures, and corresponding BCs are derived.
+
+## 3. Development of unit cells
+
+It should be pointed out that all the unit cells’ formulations in this section are based on idealized fiber arrangements or textile structures disregarding flaws linked to the manufacturing processes. The flaw in textile composites has several types, such as the porosities in matrix, the interface between fiber yarns and matrix, the porosities between fibers in fiber yarns, etc. The quantitative descriptions of such flaws are difficult to obtain, thus in this work all the models are established with no considerations of them.
+
+## 3.1. Unit cells of fiber yarns
+
+## 3.1.1. Formulation of unit cells
+
+Fiber yarns can be considered as unidirectional (UD) fiber reinforced composites and the typical transverse fiber distribution pattern in matrix is shown in Fig. 6. The left diagram of the figure shows a schematic of UD composite, the red circles indicate fibers and the blue background is the matrix. The right five diagrams are the transverse (xy plane) layout of fiber-matrix and unit cells UC1 ∼ UC4, respectively. In Fig. 6, the two black lines with arrow are the translation axes x and $y ,$ the blue lines are the reflection planes $P _ {x}$ and $P _ {y}$ (perpendicular to the paper), and the pink dot presents the rotation axis $L _ {z}$ As shown in Fig. $^ {6 ,}$ UC1 is formulated based on translational symmetries along xand y-axis, and then two reflectional symmetries about $P _ {x}$ and $P _ {y}$ planes can be observed in UC1 structure, and UC2 and UC3 will then be formulated based on them, respectively. The structure of UC3 has a 180° rotational symmetry about rotation axis $L _ {z} ,$ and UC4 will be finally formulated. It should be noted that the unit cell model formulated in this work is three-dimensional so both the transverse and the axial (zdirection) effective properties can be calculated. The model length in axial direction (z-) will not influence the calculation accuracy provided that appropriate BCs are imposed on, and thus a unit axial length h is specified for each model in this work. Therefore, in fact, UC1 is formulated based on translational symmetries along $x , y$ and z-axis, and has a dimension of $a \times b \times h$ as shown in Fig. 6.
+
+It also worth noting that UC1, UC2 and UC3 can have a maximum fiber volume fraction of 0.907, while UC4 can only have a value of 0.68 according to its present configuration. If UC4 has a configuration as depicted by black dashed lines (see UC4 in Fig. 6), it will be also available for the condition of 0.907 fiber volume fraction. In this work, in order to keep consistency with the later discussion of plain woven composite (cubic geometric configuration), UC4 has a cubic configuration. The derivation of BCs for the two configuration of unit cells obeys the same rules as discussed in Section 2.2.3.
+
+In this subsection, the mechanical BC of each unit cell is derived and the derivation process can be referenced by macro-scale plain and satin woven composites, although the later ones have much more complex structure. For each unit cell model, as shown in Fig. 7, there are six boundaries indicated by $P _ {1} , P _ {2} , P _ {3} , P _ {4} , P _ {5}$ and $P _ {6} ,$ twelve edges indicated by black circles with numbers, and eight vertices indicated by white circles with numbers. The coordinates of boundary planes are also listed in the figure and the BCs should be derived for these planes, respectively.
+
+It should be noted that the ordered arrangement (with certain structure symmetries) in Fig. 6 is an assumed one, while in real composites the fiber arrangement has certain randomness. The present unit cell method could not be applied to random microstructure since such method is developed based on the structure symmetries. For composites with random phase-distribution structure, the formulation of its RVE model can be referenced in [38].
+
+## 3.1.2. Boundary conditions
+
+UC1 is formulated by three translational symmetries in $x , y$ and z directions and the periodic BCs are shown in Eq. (6). UC2 is formulated based on UC1 by a reflectional transformation about $P _ {y} = ( x _ {1} , b / 2 , z _ {1} )$ $P _ {y}$ is perpendicular to y-axis, and thus $k ,$ m and n in Eq. (9) are ${1 , - 1}$ and 1, respectively. UC3 is formulated based on UC2 by a reflectional transformation about $P _ {x} = ( a / 2 , y _ {1} , z _ {1} )$ which is perpendicular to xaxis, and thus $k ,$ m and n in Eq. $( 9 ) \mathsf{are} - 1 ,$ 1 and 1, respectively. UC4 is formulated based on UC3 by a 180° rotational transformation about $L _ {z}$ $= ( a / 4 , b / 4 , z _ {1} )$ which is parallel to z-axis, and thus $k ,$ m and n in Eq. (9) $\tt a r e \mathrm{~-1,~} - 1$ and 1, respectively. The derivation processes of BCs for UC1, UC2, UC3 and UC4 are summarized in Table 2, and the BCs are listed as Eqs. (10), (11), (12) and (13), respectively. It should be noted that the BCs of vertices and edges should be imposed on separately to avoid possible redundant constraints on nodes. Such BCs can be derived from that for planes, i.e., two simultaneous equations of planes attached to the edge and three simultaneous equations of edges attached to the vertex. The derivation and the specific equations of edges and vertices are omitted here. In this work, the macroscopic strain in those equations $\varepsilon _ {i} ^ {0} = \alpha _ {i} ^ {0} T$ , where T is the temperature change loading with a reference temperature of $0 \ {} ^{\circ} \mathbf {C}$
+
+## 3.2. Unit cells of plane woven composites
+
+The schematic of plain weave textile is shown in Fig. 8. The upper part of Fig. 8 shows the plain weave textile in a 2D pattern, the formulation process of unit cells and three typical unit cell models in 3D patterns. If the 2D top view is investigated, a full unit cell can be formulated based on translational symmetries along x-, y- and z-axis, a half cell and a 1/4 unit cell will be formulated based on reflectional symmetries about $P _ {y}$ and $P _ {x}$ plane, respectively, and then a 1/8 and a 1/16 unit cell will be formulated based on two 180° rotational symmetries about $L _ {x}$ and $L _ {y} ,$ respectively. In this work, the full, 1/4 and 1/16 unit cells are used to conduct simulations, and are expressed as UC1, UC2 and UC3, respectively. The 3D model of each unit cell is displayed
+
+## 3.2.1. Formulation of unit cells
+
+Schematic of symmetries
+
+below in which the matrix is not shown.
+
+In the lower part of Fig. 8, a 3D schematic of the unit cell structure is shown, and UC1 is assumed to have a dimension of $a \times y \times h$ in $x \mathrm{,~} y -$ and z-direction, respectively. In the figure, the locations and coordinates of the reflection planes and the rotation axes are displayed. The reflection plane $P _ {y} = ( x _ {1} , b / 2 , z _ {1} )$ is perpendicular to y-axis, while $P _ {x} = ( a / 2 , y _ {1} , z _ {1} )$ is perpendicular to x-axis. The 180° rotation axis $L _ {x} = ( x , b / 2 , 0 )$ is parallel to x-axis, while $L _ {y} = ( x , b / 2 , 0 )$ is parallel to y-axis. As discussed in Section 2.2.4 we know that the relative displacement relations between symmetric nodes, i.e., Eq. (9) are different for different symmetric structures, thus the BCs of each unit cell should be derived carefully. Considering the similar cubic geometry with that in Section 3.1, the boundary planes of unit cells are also expressed as $P _ {1} \sim P _ {6}$ as Fig. 7 shows, although the coordinates are different. In the later Section 3.2.2, the BCs will be derived for each boundary plane.
+
+## 3.2.2. Boundary conditions
+
+As mentioned above, UC1 is formulated by three translational transformations in x, y and z directions and the periodic BCs are shown in Eq. (6). UC2 is formulated based on UC1 by two reflectional transformations about $P _ {y} = ( x _ {1} , b / 2 , z _ {1} )$ and $P _ {x} = ( a / 2 , y _ {1} , z _ {1} )$ , and two groups of boundary planes $P _ {3} \& P _ {4}$ and $P _ {1} \& P _ {2}$ are formed, respectively. UC3 is formulated based on UC2 by two 180° rotational transformations about $L _ {x} = ( x , b / 2 , 0 )$ and $L _ {y} = ( x , b / 2 , 0 ) _ {\mathrm {{;}}}$ , and also boundary plane groups $P _ {3} \& P _ {4}$ and $P _ {1} \& P _ {2}$ are formed, respectively. The new formed boundary planes need new BCs to represent the macroscopic composite. For boundary planes in the same group, the parameters k, m and n in Eq. (9) have the same values. For UC2 and UC3, the coordinates of each boundary plane, the relevant reflection planes and rotation axes, their spatial relations with the global coordinate axes, and the resulted parameters $k ,$ m and n in Eq. (9) are listed in Table 3. Based on the information in Table 3, the derivation processes of BCs for each unit cell are summarized in Table 4. From the table one can see that the BCs of UC1 and UC2 have the same expression with that of UC1 and UC3 for UD composites, i.e., Eqs. (10) and (12), respectively. The BC of UC3 is described in Eq. (14). In addition, BCs of edges and vertices should be applied separately and the detailed descriptions are omitted in this work.
+
+## 3.3. Unit cells of satin woven composites
+
+## 3.3.1. Formulation of unit cells
+
+All the 2D weave textiles have certain patterns of interlacing of weft and warp yarns, and in the comparison with plain weave textiles, the satin one has less interlacing points and thus glossier surface, better draping and more flexible characteristics. According to the interlacing points layout, the satin weave textile can be defined as $4 \AA , 5 \AA , 6 \AA , 7 \AA$ and 8-harness (HS) textiles. Fig. 9 shows the weave textile (left) and relevant unit cells (right) for each harness satin woven composite. In the figure the matrix is not shown to display the yarn orientation clear. For 4, 5, 6, 7 and 8HS satin textiles, there are 4, 5, 6, 7 and 8 warp yarns between two neighboring floating weft yarns, respectively, as shown in
+
+As shown in Fig. 9, the unit cell for each HS textile has similar configuration, thus the geometric parameters can be summarized in a unified form. The geometric model of UC1 for 4HS is shown as an instance in Fig. 10, where S is the distance between two adjacent fiber bundles and W is the width of fiber yarns. The schematic of geometric parameters is displayed in the upper right diagram of Fig. 10, where a and b are the width and length of the unit cell along $x ^ {\prime} -$ and $y ^ {\prime}$ -axis, respectively, and α and $\beta$ are the angles that x′- and y′-axis relative to xaxis, respectively. Therefore, UC1 has a dimension of $a \times b \times h ,$ , and UC2 has a b/2 length in x′-direction and the same other parameters with UC1. The geometric parameters a, b, α and $\beta$ for different HS satin woven composites can be calculated by S and are listed in Table 5 [22]. In addition, the schematic of boundary planes of UC1 and UC2 are shown in the lower part of Fig. 10, and the BCs required will be derived for each boundary separately.
+
+## 3.3.2. Boundary conditions
+
+As mentioned above, UC1 is formulated by three translational transformations in $x ^ {\prime} , y ^ {\prime}$ and z directions, which is very different from the orthotropic $x , y$ and z-axis for UD and plain woven composites. Under this condition, the periodic BCs will be entirely different, and the coordinates relations between $x ^ {\prime} - O \ - y ^ {\prime}$ and x-O-y should be obtained first (see detailed discussion in [22]). As shown in Table $^ {6 ,}$ based on the unified parameter a, b, α and β, the BC (periodic) of UC1 for multi HS satin woven composites is derived in a unified form Eq. (15), and that of UC2 is shown in Eq. (16). The 180° rotation axis is perpendicular to x and y-axis, while parallel to z-axis, so $( k , m , n )$ in Eq. (9) is (−1, −1, 1) in the derivation of BC for UC2. Also, as discussed in the above sections, the BCs of vertices and edges should be applied by separate equations.
+
+## 3.4. Summary
+
+The derivations of above BCs are in very brief forms as shown in Tables 2, 4 and 6. Detailed process of similar equations about thermal conduction calculations can be found in the authors’ previous work [21,22]. It should be pointed here that some of the above BCs (Eqs. (10), (12), (14)) can be found in similar forms somewhere else such as Ref. [24], while some of them (Eqs. (11), (13), (15) and (16)) are derived here for the first time. Those BCs that available in other references are re-derived as supplement cases of the derivation process developed in this work.
+
+## 4. Numerical modeling
+
+## 4.1. Application of boundary conditions
+
+In order to investigate the thermal expansion behaviors under a specific temperature change T (the reference temperature is assumed to be $0 \ {} ^{\circ} \mathrm{C} ) _ {i}$ , the uniform T should be imposed on the model with appropriate BCs derived in this paper, and then the macroscopic stress or the macroscopic strain induced by the temperature change can be obtained by appropriate post-processing, and the effective thermal expansion coefficient can be calculated by Eq. (2-2).
+
+As shown in Fig. $11 , \varepsilon _ {x} ^ {0} , \varepsilon _ {\nu} ^ {0}$ and $\varepsilon _ {z} ^ {0}$ in equations (Eqs. (6), (10), (11), (12), (13), (14), (15) and (16)) represent the macroscopic (average) strain of the macro structure induced by temperature loadings. If a macro structure is studied, the loading would be a pure temperature change with no concentrated forces. And after the calculation, the macroscopic strain $\varepsilon _ {x} ^ {0} , \varepsilon _ {y} ^ {0}$ and $\varepsilon _ {z} ^ {0}$ could be obtained and then the thermal expansion coefficients could be calculated.
+
+However, for a micro unit cell model, we need additional $\mathtt {B C s}$ which are also the essential condition of homogenization to relate to the macroscopic physical fields. The BCs derived in this work are in fact functions of macroscopic strain vector $( \varepsilon _ {x} ^ {0} , \varepsilon _ {y} ^ {0} , \varepsilon _ {z} ^ {0} )$ . The values of $\varepsilon _ {x} ^ {0} , \varepsilon _ {y} ^ {0}$ and $\varepsilon _ {z} ^ {0}$ are unknown before the calculation, which means that those equations only describe the constraint relations between symmetric (translational, reflectional or rotational) nodes rather than the determined constraints. During the solution, $\varepsilon _ {x} ^ {0} , \varepsilon _ {y} ^ {0}$ and $\varepsilon _ {z} ^ {0}$ are performed as arbitrary degrees of freedom (e.g., x-displacement) for three extra nodes NN1, NN2 and NN3 (not included in the model), respectively. If the loading is a uniform temperature change, after the solution is converged, the values of $\varepsilon _ {x} ^ {0} , \varepsilon _ {y} ^ {0}$ and $\varepsilon _ {z} ^ {0} \left( \boldsymbol {\mathrm{e}} . \boldsymbol {\mathrm{g}} . , \right$ x-displacement of NN1, NN2 and NN3) can then be obtained as the reaction of the whole model to the temperature loading. Then the thermal expansion coefficient can be
+
+## 4.2. Model discretization
+
+calculated based on Eq. (2-2). If the loading is a concentrate force F at additional nodes, the macroscopic stress loading then equals to F/V where V is the volume of the model, and after the solution is converged, the $\varepsilon _ {x} ^ {0} , \varepsilon _ {y} ^ {0}$ and $\varepsilon _ {z} ^ {0}$ can be obtained as reactions to the force loading, and then the effective elastic properties can be calculated by stress-strain relations.
+
+On the other hand, if we give the values of $\varepsilon _ {x} ^ {0} , \varepsilon _ {y} ^ {0} \mathrm{or} \varepsilon _ {z} ^ {0} , \mathrm{e.g.,} x -$ displacement on NN1, NN2 or NN3 as the loading, the reaction force at three additional nodes will be obtained after the solution, and then the macroscopic stress can be calculated and the effective properties can also be obtained.
+
+Fig. 12 shows the meshed model of fiber yarn and plain woven composite. ANSYS Multiphysics is used to do the simulation in this work. The element is the couple-field 3D solid element SOLID226. The element has 20 nodes as shown in the right top corner of Fig. 12, and can be used to simulate multi-physics field coupling problem such as thermal-mechanical one. The grid numbers and the computational costs for each model are listed in Table 7. In the table, “N.”, “E.” and $\mathbf {\vec {\mathbf {\omega}}} ^ {\omega} \mathbf {\vec {\mathbf {\Lambda}}} ^ {\vec {\mathbf {\Lambda}}}$ represent the number of node, the number of element, and the computational time, respectively. The computational time contains the preprocessing, the solving and the post-processing processes which are all written in a APDL (ANSYS Parametric Design Language) program. As shown in Table 7, the numbers of elements and nodes are decreasing with the reduced size of unit cells and thus considerable saving of computational cost will be obtained by the smaller unit cell. It also should be noted that all the numerical results obtained in this work are independent of the grid number.
+
+According to the BCs described in Eqs. (10) to (16), for all unit cells there are certain corresponding boundary planes that need identical mesh to apply constraint relations between symmetric nodes. The
+
+## Macro structure
+
+Loading: T ${} , F _ {x} = F _ {y} = F _ {z} = 0$ Reaction solution: ${\varepsilon _ {x}} ^ {0} , {\varepsilon _ {y}} ^ {0} , {\varepsilon _ {z}} ^ {0}$ To calculate: $\boldsymbol {a _ {x}} ^ {0} , \ : \boldsymbol {a _ {y}} ^ {0} , \ : \boldsymbol {a _ {z}} ^ {0}$
+
+$$\overline {{{\varepsilon _ {x}} ^ {0} = {\alpha _ {x}} ^ {0} \cdot T}}$$
+
+$$\overline {{{\varepsilon _ {y}} ^ {0} = {\alpha _ {y}} ^ {0} \cdot T}}$$
+
+$$\overline {{{\varepsilon _ {z}} ^ {0} = {\alpha _ {z}} ^ {0} \cdot T}}$$
+
+Unit cell
+
+Loading: T, $F _ {x} = F _ {y} = F _ {z} = 0$
+
+Boundary conditions: $< u _ {1} , u _ {2} > = f ( \varepsilon _ {x} ^ {~ 0} , \varepsilon _ {x} ^ {~ 0} , \varepsilon _ {x} ^ {~ 0} )$
+
+Reaction solution: $\varepsilon _ {x} ^ {0} , \varepsilon _ {x} ^ {0} , \varepsilon _ {x} ^ {0}$
+
+To calculate: ${a _ {x}} ^ {0} , {a _ {y}} ^ {0} , {a _ {z}} ^ {0}$
+
+${\varepsilon _ {x}} ^ {0}$ is assumed to be a DOF of NN1
+
+${\varepsilon _ {y}} ^ {0}$ is assumed to be a DOF of NN2
+
+$\varepsilon _ {z} ^ {\mathrm{~v~}}$ is assumed to be a DOF of NN3
+
+$F _ {x}$ is concentrated force related to ${\varepsilon _ {x}} ^ {0}$ on NN1
+
+$F _ {y}$ is concentrated force related to ${\varepsilon _ {y}} ^ {0}$ on NN2
+
+$F _ {z}$ is concentrated force related to $\bar {\varepsilon _ {z}} ^ {0}$ on NN3
+
+boundary plane groups for each unit cell are listed in Table 8. The two boundaries linking by “&” are those need identical mesh grids. In this work, the “MSHCOPY” command in ANSYS is used to realize the copy of mesh.
+
+In the calculation of plain and satin woven composites, the axial and transverse thermal conductivities of fiber yarns (UD composite) are input as material properties, and thus for each yarn a principal axis should be specified which means a local CS (coordinate system) should be specified. However, all the fiber yarns in woven composites are in an undulant orientation which means one local coordinate system is not enough to describe the whole yarn. For plain woven composite, the fiber yarn is undulate in its whole length, while for satin ones, the undulant segment has a length of S and is a part of the whole yarn. In this work, the elements in undulant yarn are classified into groups by their locations in the global CS. For each group, the same local CS is defined and thus the elements have the same transverse and axial directions. A schematic of the CS involved in the calculation is shown in Fig. 13. There are four types of CSs, $\mathrm{i.e.,}$ the global CS for the composite, the local CS for the matrix which is identical with the global CS, the local CS for undulant segment of fiber yarns which is varies with the undulation of the yarn, and the local CS for straight segment of fiber yarn. In Fig. 13, z-axis indicates the axial (out-plane) direction. In this work for plain woven composite, 40 groups of elements which mean 40 local coordinate systems are defined for each yarn of UC1, similarly, 20 and 10 for UC2 and UC3, respectively. For satin woven composite, 10 groups of elements are defined for each undulant segment. Also, it should be noted here that the numerical results in this paper are independent of this number.
+
+## 4.3. Material properties
+
+The thermal and mechanical properties of fiber and matrix used in the calculation are listed in Table 9. The fiber volume fraction in UD composite is 0.6. The yarn volume fraction of plain woven composites whose geometry parameters are detailed described in Ref. [19] is 0.5421 which means the fiber volume fraction is 0.33, while that of multi HS satin woven composites in Ref. [22] is 0.45, which means the fiber volume fraction is 0.27. It should be pointed out that the material properties and volume fraction parameters used in this work are just for example cases, one can use the developed approach to study any other real composites.
+
+## 5. Results and discussion
+
+## 5.1. Thermal expansion of UD composite
+
+## 5.1.1. Thermal expansion behaviors
+
+Fig. 14 shows the displacement and Von Mises stress fields under a temperature loading of $20~^{\circ}\mathrm{C}$ . The reference temperature is $0 \ {} ^{\circ} \mathbf {C}$ The node $( 0 , 0 , 0 )$ is constrained in x, y and z-directions. Fig. 14(a), (b), (c) and (d) are the x-displacement, the y-displacement, the z-displacements and the Von Mises stress fields calculated by four unit cell models, respectively. In the same legend, identical displacement and stress distributions can be found for four unit cells, which means that the BCs derived for unit cells of multi-size are accurate.
+
+The deformation of a structure is in fact the normal displacements of nodes on the boundary planes. If the normal displacement distribution on boundary planes are investigated, one can find that for x-direction planes the “relative uniform” x-displacement distributions are obtained by all the unit cells, and for z-direction planes the “relative uniform” zdisplacement distributions are also obtained by all the unit cells, however, for y-direction planes the “relative uniform” y-displacement distributions are obtained by UC1, UC2, UC3, but not UC4 (N-un. y in Fig. 14). Under this condition, the edges of models after thermal expansion will have a deformed pattern as shown in Fig. 15, in which only x-y plane is shown. The white solid lines are the original undeformed edges. For UC1, UC2 and UC3, the deformed edges are parallel to the original ones, which mean that the deformation is “relative uniform”. However, for UC4, the x-boundary plane has “relative uniform” deformation while on y-plane the deformation increases with the increasing x-coordinate value (the enlarged diagram). It worth noting that UC4 is the lower half part of UC3, if we choose the upper part as a unit cell, to be compatible with the uniform deformation of UC3 model it will certainly have opposite deformation pattern with UC4. The “relative uniform” in the above discussion means the field seems to be uniform in a large range of legend and the practical value will be reinvestigated in later Section 5.4.
+
+The stress prediction is very important for damage analysis. As shown in Fig. 14(d), the stress concentration appears between fibers, which always leads to the initiation of cracks. Each unit cell can be used to model such stress concentration, although UC4 has only one region of fiber. This is because the stress distribution has a symmetric pattern (same with the symmetric structures in Fig. 6), if the stress field is calculated by UC4, then one can obtain the field of UC3 by a 180° rotational transformation, then UC2 by a reflectional transformation (about $P _ {x}$ in Fig. 6), UC1 by one more reflectional transformation (about $P _ {y}$ in Fig. 6), and finally the stress field of macro composite can be obtained by translational transformations in x-, y- and z-direction.
+
+## 5.1.2. Effective CTE and validation of numerical models
+
+In order to validate the numerical model, the results are compared with that available in literatures as shown in Table 10. In the table, the axial and transverse elastic moduli are also listed, as discussed above that, the effective mechanical properties can be easily obtained by a force loading instead of the temperature loading. As shown in the table, the results obtained in this work and that in Ref. [23] have good agreements with a maximum deviation of 0.014% which validates the numerical models in this work.
+
+## 5.2. Thermal expansion of plain woven composite
+
+## 5.2.1. Thermal expansion behaviors
+
+Fig. 16 shows the displacement fields of plain woven composites under a temperature loading of 20 °C, the reference temperature is 0. The node (0, 0, 0) is constrained in x, y and z-directions. The top three diagrams are the x-displacement, the middle three diagrams are the ydisplacement, while the lower three are the z-displacement fields calculated by three unit cell models, respectively. In the same legend, $x \mathrm{,} y -$ and z-displacement fields of three unit cells have the same distribution, which means that the BCs derived for unit cells of multi-size are accurate. In addition, for all the unit cells, we can observe “relative uniform” x-displacement on x-direction boundary plane, “relative uniform” y-displacement on $y \cdot$ direction boundary planes, and “relative uniform” z-displacement on z-direction boundary planes. The “relative uniform” will be discussed in Section 5.4. Fig. 17 shows the transverse deformation behaviors after the thermal expansion. In the figure, the blue rectangle is the top view of the deformed UC1 model, the deformed edges of UC2 and UC3 are indicated by red and green dashed lines, respectively, and the white solid lines are the undeformed edges of three unit cells. It is clear that for all the unit cells, uniform deformation in transverse boundary planes can be found and indicates an accordance of the “relative uniform” normal displacements on boundary planes as shown in Fig. 16.
+
+(a) x-displacement
+
+(b) y-displacement
+
+(d) Von Mises stress
+
+## 5.2.2. Effective CTE and validation of boundary conditions
+
+Table 11 shows the effective mechanical properties and CTEs of plain woven composites calculated by three unit cells. As shown in the table, the BCs derived in this work is validated by the identical (a maximum deviation of 0.56%) results that obtained by unit cells of different size.
+
+## 5.3. Thermal expansion of satin woven composite
+
+## 5.3.1. Thermal expansion behaviors
+
+Fig. 18 shows the displacement fields calculated by UC1 and UC2 of 4, $5 , 6 , 7$ and 8HS satin woven composites under a temperature change of 20 °C. From the left diagrams to the right ones, they are x-, y- and zdisplacement fields, respectively, and from the upper diagrams to the lower ones, they are 4, 5, 6, 7 and 8HS satin woven composites, respectively. For the two unit cells of each type composite, the same displacement legend is used, and the legend is not shown since the absolute value is not concerned in this work. From the figure, one can easily find that the displacement fields calculated by UC1 and UC2 are the same, which indicates a confirmation of the accuracy of our BCs.
+
+displacement distributions as shown in Fig. 19. The distribution on UC1 is in a 180° rotational symmetric pattern due to the 180° rotational structure symmetry about Lz (the black point).
+
+The transverse deformation of 4HS satin woven composites after the thermal expansion is shown in Fig. 20. The blue parallelogram is the deformed UC1, the red dashed line is the edge of deformed UC2, while the white solid lines are the undeformed edges of UC1 and UC2. One can notice that for the boundaries in transverse directions, the relative uniform normal deformations are obtained, while for the boundaries in the axial direction, non-uniform deformation (non-uniform z-displacement field in $\mathrm{Fig.}$ 19) will be obtained. All the other satin woven composites have similar deformation patterns and are omitted here.
+
+## 5.3.2. Effective CTE and validation of boundary conditions
+
+Table 12 shows the effective mechanical properties and CTEs of multi-harness satin woven composites calculated by two unit cells. As shown in the table, unit cells of different size obtain identical results with a maximum deviation of 0.19%, and the BCs derived in this work is thus validated. The effective properties in x- and y-directions are identical, which indicates a transverse isotropic composite.
+
+For the sake of paper-length, the influence of specific constituents on the thermal expansion behaviors of UD, plain woven and satin woven composites are not considered in this paper. However, the approach developed in this work can be used to predict CTEs of any other composites with certain structure symmetries.
+
+## 5.4. Normal displacement on boundary planes
+
+In the above subsections, the “relative uniform” normal displacement field on boundary planes means the field seems to be uniform in a large range of legend. For UD composites, according to Eqs. (10) to (13), the normal displacements on boundary planes $P _ {3}$ and $P _ {4}$ for UC2, $P _ {1} \sim P _ {4}$ for UC3, and $P _ {1} \sim P _ {3}$ for UC4 are constrained as constant values. For the other boundary planes, the equations have no such particular constraints. However, if the results of UC1 of UD are carefully investigated, one can find that the normal displacements on all the boundary planes also have uniform values. Considering the succession relations between unit cells, for all the boundary planes of UC2, UC3 and UC4 (excluding $P _ {4} )$ they will have uniform normal displacement distributions. That is, those boundaries without constant value constraints can also have uniform normal displacement distributions. In fact, if the structure in Fig. 6 is observed from a new point of view as shown in Fig. 21(a), UC1 can also be formulated by reflectional symmetries about $P _ {x} ^ {0} , P _ {y} ^ {0}$ and $P _ {z} ^ {0}$ based on a larger unit cell UC0. According to the BC derivations of UC2 and UC3, we know that the reflectional symmetries will result in uniform normal displacement distribution in boundaries. This means that the configuration of UC1 implies reflectional symmetric relations with adjacent unit cells in three directions, and thus will have uniform normal displacement distributions in all the boundaries.
+
+For plain woven composite, according to Eqs. (10), (12) and (14), the normal displacements on boundary planes $P _ {1} \sim P _ {4}$ for UC2, and $P _ {1}$ and $P _ {3}$ for UC3 are constrained as constant values. The other boundary planes have no such particular constraints. If the normal displacement fields of UC1 on boundary planes are observed separately, identical ones on $P _ {1} \sim P _ {4}$ can also be noticed. As shown in Fig. 21(b), the UC1 configuration also implies reflectional symmetric relations with adjacent unit cells in x- and y-directions, and thus the boundaries in x- and y-direction will have uniform normal displacement distributions. For the z-direction of plain woven composites, the laminate structure only has translational symmetry.
+
+For plain woven composites, the boundary planes with non-uniform normal displacement fields should be re-investigated. Fig. 22 shows the non-uniform planes results: z-displacement fields on boundaries $P _ {6}$ $( z = h )$ , x-displacement fields on boundary $P _ {2} \left( x = a / 4 \right$ of UC3) and the y-displacement fields on boundary $P _ {4} \ : ( y = b / 4$ of UC3). They all have a slight non-uniform distribution which is not revealed in Fig. 16 for its wide range of legend. For z-displacement fields on $z = h ,$ reflectional and 180° rotational symmetric fields are shown in corresponding locations. It worth noting that an 180° rotational symmetry about $L _ {z}$ (white point in left part of Fig. 22) in the structure of UC2 is revealed by the symmetric displacement fields, while the $180 ^{\circ}$ rotational symmetries that utilized in the UC3 formulation in this work are $L _ {x}$ and $L _ {y}$ (see Fig. 8), which means that we can use different combinations of symmetries to formulate a unit cell. It can also be noted from Fig. 21 that the distributions of x- and y-displacements of UC3 satisfy Eq. (14) in which the sum of upper and lower corresponding symmetric nodes is a constant value.
+
+For satin woven composite, the $x '$ and y’-direction boundaries have certain angles with global x and y-coordinates, so there is no normal displacement definition for such boundaries, even if the adjacent unit cells are considered, UC1 of satin woven composite has no reflectional symmetric relations between them. In addition, the z-direction boundary has non-uniform normal displacement distributions as discussed in Section 5.3.1.
+
+So, the normal displacement distribution patterns on boundaries for all composites can be summarized as Table 13. For UD composite, the thermal expansion deformation is uniform on all boundaries of UC1, UC2, UC3 and UC4 (excluding $P _ {4} ) ;$ for plain woven composite, it is uniform on transverse (in-plane, x and y-direction) boundaries while slight non-uniform on axial boundaries (out-plane, z-direction) of UC1, UC2, UC3 (excluding $P _ {2}$ and $P _ {4} ) ;$ for satin woven composite, it is nonuniform on all boundaries. A conclusion can then be obtained: for boundaries that can be formulated by reflectional symmetries, the uniform normal displacement distributions and thus the uniform deformation pattern can be obtained in thermal expansion calculations; for boundaries that can only be formulated based on translational or rotational symmetries, the non-uniform normal displacement distribution can be obtained. In some studies, the uniform normal displacement (or uniform temperature in thermal calculation) is imposed on boundaries, and thus one can confirm its validity based on this conclusion.
+
+(a) UD
+
+(b) Plain weave
+
+## 6. Conclusions
+
+This work developed an approach to formulate unit cells to predict effective coefficient of thermal expansion of textile reinforced composites. The displacement distribution patterns in translational, reflectional and $180 ^{\circ}$ rotational symmetric structures are summarized as unified equations and are confirmed by typical calculations. The application scope of the present method is defined in the point views of both thermal and mechanical physics. Multi-size unit cells of unidirectional fiber reinforced, plain woven and multi-harness $( 4 , 5 , 6 , 7$ and 8HS) satin woven composites are formulated, the corresponding BCs are derived, and the thermal expansion calculations are conducted. Four, three and two size-reducing unit cells are formulated for each type of composite, respectively. The developed method can be referenced by any composites with corresponding symmetric structures. The specific novel studies involved in this work are: the summary of relative displacement distribution rules for three basic symmetric structures, four unit cells of different sizes are formulated for UD composite, two smaller unit cells for satin woven composite are formulated, and the deformation pattern on unit cell boundaries and its relations with structure symmetries are clarified.
+
+Several following conclusions can be summarized:
+
+1. For a composite with symmetric structures, the effective coefficient of thermal expansion can be efficiently calculated by a unit cell model. Such unit cell should be formulated based on structure symmetries, and relevant BCs can be derived based on displacement distribution rules summarized in this work. Such unit cell models can also be used to predict the local stress distributions in fiber yarns or textile reinforced composites and thus has potentials for damage analysis of these composites.
+
+2. The boundary conditions of unit cells are derived based on the assumption of uniform macro strain field, which can be resulted in by a uniform temperature loading. Thus, the current unit cell method can only be used to simulate thermal expansion behaviors under a uniform temperature loading, such as the thermal residual stresses after a specific heat treating.
+
+3. For boundaries that can be formulated by reflectional symmetries, the uniform normal displacement and the uniform deformation can be obtained in thermal expansion calculations; for boundaries that can only be formulated based on translational or rotational symmetries, the normal displacement and the relevant deformation are non-uniform.

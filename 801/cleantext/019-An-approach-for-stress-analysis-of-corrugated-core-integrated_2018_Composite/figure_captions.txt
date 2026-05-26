@@ -1,0 +1,71 @@
+Fig. 1. Trapezoidal corrugated core ITPS panel.
+
+Fig. 2. Equivalent sandwich plate.
+
+Fig. 3. The unit cell that build corrugated core.
+
+Fig. 4. The deformation acting on corrugated web.
+
+Fig. 5. The nomenclature of a half of unit cell and forces acting on the section.
+
+Fig. 6. The forces and moments acting on the bottom face sheet of two different unit cells.
+
+Fig. 7. Normal stresses in the mid-plane of corrugated webs subjected to pressure loading.
+
+Fig. 8. Normal stresses in the top surface of corrugated webs subjected to pressure loading.
+
+Fig. 9. Normal stresses in the bottom surface of corrugated webs subjected to pressure loading.
+
+Fig. 10. Normal stresses in the mid-plane of top face sheet subjected to pressure loading.
+
+Fig. 11. Normal stresses in the top surface of top face sheet subjected to pressure loading.
+
+Fig. 12. Normal stresses in the bottom surface of top face sheet subjected to pressure loading.
+
+Fig. 13. Normal stresses in the mid-plane of bottom face sheet subjected to pressure loading.
+
+Fig. 14. Normal stresses in the top surface of bottom face sheet subjected to pressure loading.
+
+Fig. 15. Normal stresses in the bottom surface of bottom face sheet subjected to pressure loading.
+
+Fig. 16. Shear stresses in the mid-plane of corrugated webs, top face sheet and bottom face sheet subjected to pressure loading.
+
+Fig. 17. Normal stresses in the mid-plane of corrugated webs subjected to temperature distribution.
+
+Fig. 18. Normal stresses in the top surface of corrugated webs subjected to temperature distribution.
+
+Fig. 19. Normal stresses in the bottom surface of corrugated webs subjected to temperature distribution.
+
+Fig. 20. Normal stresses in the mid-plane of top face sheet subjected to temperature distribution.
+
+Fig. 21. Normal stresses in the top surface of top face sheet subjected to temperature distribution.
+
+Fig. 22. Normal stresses in the bottom surface of top face sheet subjected to temperature distribution.
+
+Fig. 23. Normal stresses in the mid-plane of bottom face sheet subjected to temperature distribution.
+
+Fig. 24. Normal stresses in the top surface of bottom face sheet subjected to temperature distribution.
+
+Fig. 25. Normal stresses in the bottom surface of bottom face sheet subjected to temperature distribution.
+
+Fig. 26. Shear stresses in the mid-plane of corrugated webs, top face sheet and bottom face sheet subjected to temperature distribution.
+
+Fig. 27. Normal stresses in the mid-plane of corrugated webs subjected to pressure and temperature distribution.
+
+Fig. 28. Normal stresses in the top surface of corrugated webs subjected to pressure and temperature distribution.
+
+Fig. 29. Normal stresses in the bottom surface of corrugated webs subjected to pressure and temperature distribution.
+
+Fig. 30. Normal stresses in the mid-plane of top face sheet subjected to pressure and temperature distribution.
+
+Fig. 31. Normal stresses in the top surface of top face sheet subjected to pressure and temperature distribution.
+
+Fig. 32. Normal stresses in the bottom surface of top face sheet subjected to pressure and temperature distribution.
+
+Fig. 33. Normal stresses in the mid-plane of bottom face sheet subjected to pressure and temperature distribution.
+
+Fig. 34. Normal stresses in the top surface of bottom face sheet subjected to pressure and temperature distribution.
+
+Fig. 35. Normal stresses in the bottom surface of bottom face sheet subjected to pressure and temperature distribution.
+
+Fig. 36. Shear stresses in the mid-plane of corrugated webs, top face sheet and bottom face sheet subjected to pressure and temperature distribution.

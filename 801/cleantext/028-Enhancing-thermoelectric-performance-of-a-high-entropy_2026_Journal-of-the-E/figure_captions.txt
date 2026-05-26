@@ -1,0 +1,9 @@
+Fig. 1. (a) phase structures and (b) microstructures of the HEC/GO composite materials.
+
+Fig. 2. First-principles calculation models and band structures of the HEC/GO composite materials.
+
+Fig. 3. (a) High-resolution XPS spectra of O element, (b) High-resolution XPS spectra of C element, and (c) Raman spectra of HEC/GO composite materials before and after annealing.
+
+Fig. 4. (a) HAADF image and the corresponding EDX area-scanning results; (b) HRTEM image, along with the FFT image and stress field map corresponding to Region III; (c) SAED patterns corresponding to Regions I, II, and III, respectively; and (d) Atomic-resolution image of A1GO and the corresponding EDX area-scanning results of the A1GO sample.
+
+Fig. 5. Properties of the annealed HEC/GO composite material, (a) Electrical conductivity, (b) Seebeck coefficient, (c) Power factor, (d) Total thermal conductivity, (e) Lattice thermal conductivity and (f) ZT values.

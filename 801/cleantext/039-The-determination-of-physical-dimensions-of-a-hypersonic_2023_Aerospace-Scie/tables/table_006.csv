@@ -1,0 +1,5 @@
+Constraint conditions/ Frequency (Hz),$1 ^ { \mathsf { s t } }$ order,$2 ^ { \mathrm { n d } }$ order,$3 ^ { \mathrm { r d } } ~ 0 \mathrm { r d e r }$,$4 ^ { \mathrm { t h } }$ order,$5 ^ { \mathrm { t h } }$ order,$6 ^ { \mathrm { { t h } } }$ order
+CoA,27.25,29.57,33.81,40.24,48.97,60.00
+CoB,42.20,44.67,49.14,55.91,65.20,77.09
+Increment,14.95,15.10,15.33,15.67,16.23,17.09
+Deviation,54.86%,51.06%,45.32%,38.94%,33.15%,28.48%

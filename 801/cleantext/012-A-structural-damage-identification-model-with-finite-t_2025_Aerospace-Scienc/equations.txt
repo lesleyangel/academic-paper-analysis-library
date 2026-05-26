@@ -1,0 +1,425 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 206.16, 377.52, 223.92)]] Xiao-Bing Ma a,b, Rui Guo a, Hua Su a, Chun-Lin Gong a, Jian-Jun Gou a,*
+
+[confidence=0.92; source=equations; [page 1, bbox (42.63, 669.07, 204.14, 690.38)]] * Corresponding author. E-mail address: jj.gou@nwpu.edu.cn (J.-J. Gou)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 357.56, 716.91)]] https://doi.org/10.1016/j.ast.2025.110150 Received 3 September 2024; Received in revised form 14 January 2025; Accepted 16 March 2025
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 404.29, 55.79, 418.2)]] ε = σ
+
+[confidence=0.92; source=equations; [page 4, bbox (51.7, 404.29, 70.81, 425.63)]] E = σ
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 488.23, 74.24, 512.15)]] λ = 1 - A A0
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 555.43, 291.01, 576.27)]] σ = σ 1 -λ (3)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 593.96, 291.01, 617.88)]] λ = 1 -E E (4)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 728.61, 291.01, 741.7)]] E = [e1, ..., em] (5)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 112.7, 560.01, 125.73)]] Λ = [λ1, ..., λm] (6)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 211.38, 560.01, 225.22)]] E = E0⋅(1 -Λ)T = [e10(1 -λ1), ..., em0(1 -λm)] (7)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 254.26, 560.01, 267.29)]] L = 1 -Λ = [1 -λ1, ..., 1 -λm] (8)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 722.25, 560.01, 736.62)]] Cp = C∗ psin2θ (9)
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 113.54, 389.0, 132.02)]] μ∗= 1.46 \times 10-6 T∗1.5
+
+[confidence=0.92; source=equations; [page 5, bbox (366.07, 118.99, 560.02, 137.52)]] T∗+ 110 (14)
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 172.06, 330.5, 183.75)]] ρ∗= ρe
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 214.8, 349.15, 233.22)]] Re∗= ρ∗vex∗
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 283.18, 560.02, 296.62)]] Retri = 105.37+0.2326Ma-0.004015Ma2 (17)
+
+[confidence=0.92; source=equations; [page 5, bbox (307.96, 326.54, 486.04, 340.56)]] α = 0.332Re∗-1.5Pr∗-1.5ρ∗c∗ pve (Re \leRetri)
+
+[confidence=0.92; source=equations; [page 5, bbox (434.78, 336.73, 498.07, 353.07)]] ( Retri < Re \le107)
+
+[confidence=0.92; source=equations; [page 5, bbox (307.96, 340.04, 411.8, 354.05)]] α = 0.0296Re∗-0.2Pr∗-1.5ρ∗c∗ pve
+
+[confidence=0.92; source=equations; [page 5, bbox (447.02, 340.55, 560.02, 367.07)]] ( Re > 107) (18)
+
+[confidence=0.92; source=equations; [page 5, bbox (307.96, 353.46, 426.31, 368.06)]] α = 0.184(lgRe∗)-2.584Pr∗-1.5ρ∗c∗ pve
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (82.71, 511.85, 169.86, 538.4)]] (γ + 12 Ma ) γ γ-11 (
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 514.48, 75.55, 538.4)]] C∗ p = 2 γMa2 ∞
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 593.0, 291.01, 606.09)]] qw = α(Tr -Tw) (11)
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 644.31, 64.83, 657.34)]] Tr = T∞
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 728.27, 291.01, 741.3)]] T∗= Te + 0.5(Tw -Te) + 0.22(Tr -Te) (13)
+
+[confidence=0.92; source=equations; [page 6, bbox (79.65, 538.06, 291.01, 551.15)]] = q(xwall, ywall, zwall) (20)
+
+[confidence=0.92; source=equations; [page 6, bbox (37.59, 649.64, 291.02, 662.67)]] qr = εσT4 (21)
+
+[confidence=0.92; source=equations; [page 6, bbox (306.59, 262.48, 560.02, 275.57)]] qa = h(Tw -Te) (22)
+
+[confidence=0.92; source=equations; [page 6, bbox (306.6, 350.13, 560.02, 363.16)]] q = qr + qa + qin (23)
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (155.39, 379.14, 291.01, 400.24)]] ) = 0 (19)
+
+[confidence=0.92; source=equations; [page 6, bbox (358.13, 579.62, 399.01, 598.09)]] ∂z + fx = 0
+
+[confidence=0.92; source=equations; [page 6, bbox (358.02, 603.66, 398.67, 622.19)]] ∂z + fy = 0
+
+[confidence=0.92; source=equations; [page 6, bbox (357.9, 627.75, 398.16, 646.23)]] ∂z + fz = 0
+
+[confidence=0.92; source=equations; [page 8, bbox (38.95, 507.68, 64.24, 526.12)]] εx = ∂u
+
+[confidence=0.92; source=equations; [page 8, bbox (56.24, 507.68, 92.46, 531.59)]] ∂x, εy = ∂v
+
+[confidence=0.92; source=equations; [page 8, bbox (84.87, 507.68, 122.33, 531.59)]] ∂y, εz = ∂w
+
+[confidence=0.92; source=equations; [page 8, bbox (57.94, 531.66, 85.43, 550.84)]] γxy = ∂v
+
+[confidence=0.92; source=equations; [page 8, bbox (57.37, 555.7, 86.27, 574.82)]] γxz = ∂w
+
+[confidence=0.92; source=equations; [page 8, bbox (57.71, 578.03, 84.53, 597.15)]] γyz = ∂v
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (84.98, 609.95, 135.49, 633.87)]] εx = 1 E [σxx -μ
+
+[confidence=0.92; source=equations; [page 8, bbox (85.66, 631.89, 174.3, 655.81)]] εy = 1 E [σyy -μ(σxx + σzz) ]
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (85.21, 653.83, 134.42, 677.75)]] εz = 1 E [σzz -μ
+
+[confidence=0.92; source=equations; [page 8, bbox (38.95, 676.23, 220.52, 700.14)]] γyz = 2(1 + μ) E σyz, γxz = 2(1 + μ) E σxz, γxy = 2(1 + μ) E σxy
+
+[confidence=0.92; source=equations; [page 8, bbox (306.6, 77.6, 560.02, 90.64)]] σ = σf + EαΔT (27)
+
+[confidence=0.92; source=equations; [page 8, bbox (167.19, 309.17, 240.38, 319.6)]] 0.1 (W/(m⋅K)) 0.9
+
+[confidence=0.92; source=equations; [page 8, bbox (167.19, 326.3, 240.38, 336.72)]] 130 (W/(m⋅K)) 0.2
+
+[confidence=0.92; source=equations; [page 8, bbox (306.6, 723.33, 560.02, 736.94)]] y(x) = f(x)Tβ + z(x) (28)
+
+[confidence=0.92; source=equations; [page 9, bbox (308.12, 371.71, 455.32, 388.05)]] ̂y(x) -y(x) = cT(Fβ + Z) - ( f(x)Tβ + z(x) )
+
+[confidence=0.92; source=equations; [page 9, bbox (330.12, 380.57, 560.02, 399.84)]] = cTZ -z(x) + ( FTc -f(x) )Tβ (34)
+
+[confidence=0.92; source=equations; [page 9, bbox (37.59, 429.66, 157.16, 448.48)]] E(z(x)z(w)) = σ2R(θ, w, x) = σ2 ∏ n
+
+[confidence=0.92; source=equations; [page 9, bbox (147.91, 447.29, 156.23, 455.76)]] j=1
+
+[confidence=0.92; source=equations; [page 9, bbox (306.6, 456.6, 560.02, 469.63)]] FTc = f(x) (35)
+
+[confidence=0.92; source=equations; [page 9, bbox (318.56, 472.81, 487.87, 485.84)]] Thus, ̂y(x) -y(x) can be expressed by Eq. (36):
+
+[confidence=0.92; source=equations; [page 9, bbox (306.77, 489.42, 560.02, 502.45)]] ̂y(x) -y(x) = cTZ -z(x) (36)
+
+[confidence=0.92; source=equations; [page 9, bbox (61.8, 508.06, 112.22, 527.76)]] ) = exp ( -θjd2 j
+
+[confidence=0.92; source=equations; [page 9, bbox (307.96, 518.43, 464.62, 537.15)]] MSE = E ( (̂y(x) -y(x))2) = E (( cTZ -z(x) )2)
+
+[confidence=0.92; source=equations; [page 9, bbox (331.26, 533.57, 441.26, 549.91)]] = E ( z2(x) + cTZZTc -2cTZz(x) )
+
+[confidence=0.92; source=equations; [page 9, bbox (347.53, 534.49, 560.02, 560.28)]] = σ2( 1 + cTRc -2cTr ) (37)
+
+[confidence=0.92; source=equations; [page 9, bbox (37.82, 549.23, 291.01, 562.26)]] ̂y(x) = cTY (31)
+
+[confidence=0.67; needs_review; source=equations; [page 9, bbox (37.59, 566.17, 108.8, 582.64)]] where Y = [ y1, ..., yn
+
+[confidence=0.92; source=equations; [page 9, bbox (307.96, 587.65, 457.31, 603.99)]] L(c, λ) = σ2( 1 + cTRc -2cTr ) -λT( FTc -f )
+
+[confidence=0.92; source=equations; [page 9, bbox (307.96, 602.01, 560.02, 628.88)]] ∂L ∂c = 2σ2(Rc -r) -Fλ (38)
+
+[confidence=0.92; source=equations; [page 9, bbox (49.1, 626.09, 135.46, 642.43)]] MSE = E ( (̂y(x) -y(x))2)
+
+[confidence=0.92; source=equations; [page 9, bbox (38.95, 636.29, 291.02, 655.01)]] = E ([ cTY - ( f(x)Tβ + z(x) )]2) (32)
+
+[confidence=0.92; source=equations; [page 9, bbox (307.96, 650.03, 343.59, 663.06)]] FTc = f(x)
+
+[confidence=0.92; source=equations; [page 9, bbox (307.96, 660.75, 560.02, 687.16)]] ∂L ∂c = 2σ2(Rc -r) -Fλ (39)
+
+[confidence=0.92; source=equations; [page 9, bbox (37.82, 685.68, 291.02, 702.01)]] ̂y(x) -y(x) = cTY - ( f(x)Tβ + z(x) ) (33)
+
+[confidence=0.67; needs_review; source=equations; [page 9, bbox (306.6, 688.07, 516.8, 719.42)]] By solving Eq. (37), the following equation is obtained: {λ = -2σ2( FTR-1F )-1( FTR-1r -f(x) )
+
+[confidence=0.92; source=equations; [page 9, bbox (343.62, 710.69, 560.02, 729.79)]] c = R-1( r + 2σ2Fλ ) (40)
+
+[confidence=0.92; source=equations; [page 10, bbox (306.59, 362.98, 370.56, 376.77)]] X = [Λ1, ...., Λn]T =
+
+[confidence=0.92; source=equations; [page 10, bbox (306.6, 435.6, 368.23, 449.45)]] Q = [S1, ...., Sn]T =
+
+[confidence=0.92; source=equations; [page 10, bbox (43.6, 547.28, 202.15, 575.07)]] Level 0 Cs>0.8 and min(θi)>0.6 No damage Level 1 Not Level 0, Cs>0.7 and min(θi)>0.5
+
+[confidence=0.92; source=equations; [page 10, bbox (43.6, 573.02, 156.78, 592.19)]] Level 2 Not Level 1, Cs>0.6 and min(θi)>0.4
+
+[confidence=0.92; source=equations; [page 10, bbox (43.6, 590.14, 156.78, 609.37)]] Level 3 Not Level 2, Cs>0.5 and min(θi)>0.3
+
+[confidence=0.92; source=equations; [page 10, bbox (43.6, 607.27, 156.78, 626.49)]] Level 4 Not Level 3, Cs>0.4 and min(θi)>0.2
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 374.68, 291.02, 398.59)]] Sigmoid : F(x) = 11 + e-x (44)
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 403.82, 291.02, 416.85)]] Relu : F(x) = max(x, 0) (45)
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 506.07, 291.01, 524.79)]] y = F ( ∑ wixi + b ) (46)
+
+[confidence=0.92; source=equations; [page 14, bbox (37.59, 662.11, 66.74, 686.02)]] Loss = 1 n
+
+[confidence=0.92; source=equations; [page 14, bbox (66.73, 663.11, 291.02, 680.58)]] ∑ (yi -̂yi)2 (47)
+
+[confidence=0.92; source=equations; [page 14, bbox (306.59, 667.78, 375.7, 687.18)]] w(1) i = w(0) i -η ∂Loss
+
+[confidence=0.92; source=equations; [page 15, bbox (306.59, 78.28, 336.66, 97.11)]] Cs = ∑ m
+
+[confidence=0.92; source=equations; [page 15, bbox (326.72, 95.91, 335.0, 104.38)]] i=1
+
+[confidence=0.92; source=equations; [page 15, bbox (37.59, 369.86, 291.02, 392.41)]] xb = x -μ σ (49)
+
+[confidence=0.92; source=equations; [page 15, bbox (50.46, 713.53, 291.01, 726.58)]] ωi = 1 (50)
+
+[confidence=0.92; source=equations; [page 15, bbox (39.23, 725.37, 47.52, 733.84)]] i=1
+
+[confidence=0.92; source=equations; [page 18, bbox (37.59, 323.88, 291.02, 347.79)]] S∗2 n = 1 n -1(xi -x)2 (52)
+
+[confidence=0.92; source=equations; [page 18, bbox (37.59, 575.37, 291.01, 597.92)]] ri -μ σ ∼N(0, 1) (53)
+
+[confidence=0.92; source=equations; [page 18, bbox (37.59, 651.56, 291.01, 674.11)]] (n -1)S∗2 n σ2 ∼χ2(n -1) (54)
+
+[confidence=0.92; source=equations; [page 18, bbox (327.63, 159.64, 560.02, 184.29)]] / (n -1) ∼F(1, n -1) (55)
+
+[confidence=0.92; source=equations; [page 18, bbox (327.63, 259.53, 560.02, 284.19)]] / (n -1) < F0.05(1, n -1) (56)
+
+[confidence=0.92; source=equations; [page 18, bbox (335.51, 294.1, 505.94, 314.88)]] √ < ri < μ + ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ F0.05(1, n -1)S∗2 n
+
+[confidence=0.92; source=equations; [page 18, bbox (440.62, 294.1, 560.02, 314.82)]] √ = up i (57)
+
+[confidence=0.92; source=equations; [page 18, bbox (306.6, 294.1, 400.83, 314.88)]] 0 = μ - ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ F0.05(1, n -1)S∗2 n
+
+[confidence=0.92; source=body_inline] \varepsilon = \frac {\sigma} {\overline {{E}}} = \frac {\overline {{\sigma}}} {E}\tag{1}
+
+[confidence=0.92; source=body_inline] \lambda = 1 - \frac {A} {A _ {0}}\tag{2}
+
+[confidence=0.92; source=body_inline] A _ {0}
+
+[confidence=0.92; source=body_inline] {\overline {{\sigma}}} = {\frac {\sigma} {1 - \lambda}}\tag{3}
+
+[confidence=0.92; source=body_inline] \lambda = 1 - {\frac {\overline {{E}}} {E}}\tag{4}
+
+[confidence=0.92; source=body_inline] \mathbf {E} = [ e _ {1} , . . . , e _ {m} ]\tag{5}
+
+[confidence=0.92; source=body_inline] e _ {i}
+
+[confidence=0.92; source=body_inline] {\pmb E} _ {0}
+
+[confidence=0.92; source=body_inline] e _ {i 0}
+
+[confidence=0.92; source=body_inline] \Lambda = [ \lambda _ {1} , . . . , \lambda _ {m} ]\tag{6}
+
+[confidence=0.92; source=body_inline] \lambda _ {i}
+
+[confidence=0.92; source=body_inline] \lambda _ {i} \in [ 0 , l o s s _ {\operatorname* {m a x}} ]
+
+[confidence=0.92; source=body_inline] \mathbf {E} = \mathbf {E _ {0}} \cdot ( 1 - \Lambda ) ^ {T} = \left[ e _ {10} ( 1 - \lambda _ {1} ) , . . . , e _ {m 0} ( 1 - \lambda _ {m} ) \right]\tag{7}
+
+[confidence=0.92; source=body_inline] \mathbf {L} = \mathbf {1} - \boldsymbol {\Lambda} = [ 1 - \lambda _ {1} , . . . , 1 - \lambda _ {m} ]\tag{8}
+
+[confidence=0.92; source=body_inline] C _ {p} = C _ {p} ^ {*} \mathrm{sin} ^ {2} \theta\tag{9}
+
+[confidence=0.92; source=body_inline] C _ {p} ^ {*}
+
+[confidence=0.92; source=body_inline] C _ {p} ^ {*} = \frac {2} {\gamma M a _ {\infty} ^ {2}} \left[ \left( \frac {\gamma + 1} {2} M a \right) ^ {\frac {\gamma} {\gamma - 1}} \frac {1} {\left( \frac {2 \lambda} {\gamma + 1} M a _ {\infty} ^ {2} - \frac {\gamma - 1} {\gamma + 1} \right) ^ {\frac {1} {\gamma - 1}}} - 1 \right]\tag{10}
+
+[confidence=0.92; source=body_inline] q _ {w} = \alpha ( T _ {r} - T _ {w} )\tag{11}
+
+[confidence=0.92; source=body_inline] T _ {w}
+
+[confidence=0.92; source=body_inline] T _ {r}
+
+[confidence=0.92; source=body_inline] T _ {r} = T _ {\infty} \left( 1 + \frac {\gamma - 1} {2} r M a ^ {2} \right)\tag{12}
+
+[confidence=0.92; source=body_inline] r = {\sqrt {P r}} \mathrm{for}
+
+[confidence=0.92; source=body_inline] r = \sqrt [ 3 ] {P r}
+
+[confidence=0.92; source=body_inline] T ^ {*} = T _ {e} + 0.5 ( T _ {w} - T _ {e} ) + 0.22 ( T _ {r} - T _ {e} )\tag{13}
+
+[confidence=0.92; source=body_inline] T _ {e}
+
+[confidence=0.92; source=body_inline] \mu ^ {*} = 1.46 \times 10 ^ {- 6} \frac {T ^ {* 1.5}} {T ^ {*} + 110}\tag{14}
+
+[confidence=0.92; source=body_inline] \rho ^ {*} = \rho _ {e} \frac {T _ {e}} {T ^ {*}}\tag{15}
+
+[confidence=0.92; source=body_inline] R e ^ {*} = \frac {\rho ^ {*} \nu _ {e} x ^ {*}} {\mu ^ {*}}\tag{16}
+
+[confidence=0.92; source=body_inline] x ^ {*}
+
+[confidence=0.92; source=body_inline] x ^ {*} = x / 3
+
+[confidence=0.92; source=body_inline] x ^ {*} =
+
+[confidence=0.92; source=body_inline] x / 2
+
+[confidence=0.92; source=body_inline] R e _ {t r i} = 10 ^ {5.37 + 0.2326 M a - 0.004015 M a ^ {2}}\tag{17}
+
+[confidence=0.92; source=body_inline] \begin{array} {l r} {\alpha = 0.332 R e ^ {* - 1.5} P r ^ {* - 1.5} \rho ^ {*} c _ {p} ^ {*} \nu _ {e}} & {\left( R e \leq R e _ {t r i} \right)} \\ {\alpha = 0.0296 R e ^ {* - 0.2} P r ^ {* - 1.5} \rho ^ {*} c _ {p} ^ {*} \nu _ {e}} & {\left( R e _ {t r i} < R e \leq 10 ^ {7} \right)} \\ {\alpha = 0.184 ( 1 g R e ^ {*} ) ^ {- 2.584} P r ^ {* - 1.5} \rho ^ {*} c _ {p} ^ {*} \nu _ {e}} & {\left( R e > 10 ^ {7} \right)} \end{array}\tag{18}
+
+[confidence=0.92; source=body_inline] \frac {\partial} {\partial x} \left( k \frac {\partial T} {\partial x} \right) + \frac {\partial} {\partial y} \left( k \frac {\partial T} {\partial y} \right) + \frac {\partial} {\partial z} \left( k \frac {\partial T} {\partial z} \right) = 0\tag{19}
+
+[confidence=0.92; source=body_inline] - \kappa \bigg ( \frac {\partial T} {\partial n} \bigg ) _ {w a l l} = q ( x _ {w a l l} , y _ {w a l l} , z _ {w a l l} )\tag{20}
+
+[confidence=0.92; source=body_inline] q _ {r} = \varepsilon \sigma T ^ {4}\tag{21}
+
+[confidence=0.92; source=body_inline] q _ {r}
+
+[confidence=0.92; source=body_inline] \sigma = 5.67 \times 10 ^ {- 8} W / \big ( m ^ {2} {\cdot} K ^ {4} \big )
+
+[confidence=0.92; source=body_inline] q _ {a} = h ( T _ {w} - T _ {e} )\tag{22}
+
+[confidence=0.92; source=body_inline] q _ {a}
+
+[confidence=0.92; source=body_inline] q = q _ {r} + q _ {a} + q _ {i n}\tag{23}
+
+[confidence=0.92; source=body_inline] q _ {i n}
+
+[confidence=0.92; source=body_inline] T _ {O}
+
+[confidence=0.92; source=body_inline] 1200~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] 70~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] \mathrm {k W / m ^ {2}}
+
+[confidence=0.92; source=body_inline] {20 \ ^{\circ} \mathrm{C}}
+
+[confidence=0.67; needs_review; source=body_inline] \left. \begin{array} {l} {\displaystyle \frac {\partial \sigma _ {x x}} {\partial x} + \frac {\partial \sigma _ {y x}} {\partial y} + \frac {\partial \sigma _ {z x}} {\partial z} + f _ {x} = 0} \\ {\displaystyle \frac {\partial \sigma _ {x y}} {\partial x} + \frac {\partial \sigma _ {y y}} {\partial y} + \frac {\partial \sigma _ {z y}} {\partial z} + f _ {y} = 0} \\ {\displaystyle \frac {\partial \sigma _ {x z}} {\partial x} + \frac {\partial \sigma _ {y z}} {\partial y} + \frac {\partial \sigma _ {z z}} {\partial z} + f _ {z} = 0} \end{array} \right\}\tag{24}
+
+[confidence=0.67; needs_review; source=body_inline] \left. \begin{array} {c} {\displaystyle \varepsilon _ {x} = \frac {\partial u} {\partial x} , \varepsilon _ {y} = \frac {\partial v} {\partial y} , \varepsilon _ {z} = \frac {\partial w} {\partial z}} \\ {\displaystyle \gamma _ {x y} = \frac {\partial v} {\partial x} + \frac {\partial u} {\partial y}} \\ {\displaystyle \gamma _ {x z} = \frac {\partial w} {\partial x} + \frac {\partial u} {\partial z}} \\ {\displaystyle \gamma _ {y z} = \frac {\partial v} {\partial z} + \frac {\partial w} {\partial y}} \end{array} \right\}\tag{25}
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array} {c} {\varepsilon _ {x} = \displaystyle \frac {1} {E} \left[ \sigma _ {x x} - \mu \big ( \sigma _ {y y} + \sigma _ {z z} \big ) \right]} \\ {\varepsilon _ {y} = \displaystyle \frac {1} {E} \left[ \sigma _ {y y} - \mu \big ( \sigma _ {x x} + \sigma _ {z z} \big ) \right]} \\ {\varepsilon _ {z} = \displaystyle \frac {1} {E} \left[ \sigma _ {z z} - \mu \big ( \sigma _ {y y} + \sigma _ {x x} \big ) \right]} \\ {\gamma _ {y z} = \displaystyle \frac {2 ( 1 + \mu )} {E} \sigma _ {y z} \gamma _ {x z} = \frac {2 ( 1 + \mu )} {E} \sigma _ {x z} \gamma _ {x y} = \frac {2 ( 1 + \mu )} {E} \sigma _ {x y} \Bigg )} \end{array}\tag{26}
+
+[confidence=0.92; source=body_inline] \mu
+
+[confidence=0.92; source=body_inline] \sigma = \sigma _ {f} + E \alpha \Delta T\tag{27}
+
+[confidence=0.92; source=body_inline] \sigma _ {f}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\pmb {y} ( \pmb {x} ) = \pmb {f} ( \pmb {x} ) ^ {T} \beta + \pmb {z} ( \pmb {x} )} \end{array}\tag{28}
+
+[confidence=0.92; source=body_inline] \beta
+
+[confidence=0.92; source=body_inline] f _ {1} \left( x \right) {=} 1 ;
+
+[confidence=0.92; source=body_inline] f _ {1} ( x ) {=} 1 , f _ {2} ( x ) {=} x _ {1} , . . . , f _ {2} ( x ) {=} x _ {n} ,
+
+[confidence=0.92; source=body_inline] E ( z ( x ) z ( w ) ) = \sigma ^ {2} R ( \theta , w , x ) = \sigma ^ {2} \prod _ {j = 1} ^ {n} R _ {j} \bigl ( \theta , w _ {j} - x _ {j} \bigr )\tag{29}
+
+[confidence=0.92; source=body_inline] R ( \theta , {\bf w} , x )
+
+[confidence=0.92; source=body_inline] R _ {j} \big ( \theta , d _ {j} \big ) = \exp \Bigl ( - \theta _ {j} d _ {j} ^ {2} \Bigr )\tag{30}
+
+[confidence=0.92; source=body_inline] {\widehat {\boldsymbol {y}}} ( {\boldsymbol {x}} ) = {\boldsymbol {c}} ^ {T} {\boldsymbol {Y}}\tag{31}
+
+[confidence=0.92; source=body_inline] Y = [ y _ {1} , . . . , y _ {n} ]
+
+[confidence=0.92; source=body_inline] X = [ x _ {1} , . . . , x _ {n} ]
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\quad M S E = E \big ( ( \widehat {\boldsymbol {y}} ( \pmb {x} ) - \pmb {y} ( \pmb {x} ) ) ^ {2} \big )} \\ & {= E \Big ( \big [ c ^ {T} Y - \big ( f ( \pmb {x} ) ^ {T} \beta + z ( \pmb {x} ) \big ) \big ] ^ {2} \Big )} \end{array}\tag{32}
+
+[confidence=0.92; source=body_inline] {\widehat {y}} ( x ) - y ( x )
+
+[confidence=0.92; source=body_inline] \widehat {\pmb {y}} ( \pmb {x} ) - \pmb {y} ( \pmb {x} ) = \pmb {c} ^ {T} \pmb {Y} - \big ( \pmb {f} ( \pmb {x} ) ^ {T} \pmb {\beta} + \pmb {z} ( \pmb {x} ) \big )\tag{33}
+
+[confidence=0.92; source=body_inline] \begin{array} {c} {{{\widehat {y}} ( x ) - y ( x ) = c ^ {T} ( F \beta + Z ) - {\left( {f ( x )} ^ {T} \beta + z ( x ) \right)}}} \\ {{{}}} \\ {{= c ^ {T} Z - z ( x ) + {\left( F ^ {T} c - f ( x ) \right)} ^ {T} \beta}} \end{array}\tag{34}
+
+[confidence=0.92; source=body_inline] f ( x ) ^ {T} \beta
+
+[confidence=0.92; source=body_inline] {\cal F} ^ {T} {\cal C} = f ( x )\tag{35}
+
+[confidence=0.92; source=body_inline] {\widehat {\boldsymbol {y}}} ( {\boldsymbol {x}} ) - {\boldsymbol {y}} ( {\boldsymbol {x}} )
+
+[confidence=0.92; source=body_inline] \widehat {\pmb {y}} ( \pmb {x} ) - \pmb {y} ( \pmb {x} ) = \pmb {c} ^ {T} \pmb {Z} - \pmb {z} ( \pmb {x} )\tag{36}
+
+[confidence=0.92; source=body_inline] \begin{array} {c} {{M S E = E \bigl ( \bigl ( \widehat {y} ( x ) - y ( x ) \bigr ) ^ {2} \bigr ) = E \Bigl ( \bigl ( c ^ {T} Z - z ( x ) \bigr ) ^ {2} \Bigr )}} \\ {{= E \bigl ( z ^ {2} ( x ) + c ^ {T} Z Z ^ {T} c - 2 c ^ {T} Z z ( x ) \bigr )}} \\ {{= \sigma ^ {2} \bigl ( 1 + c ^ {T} R c - 2 c ^ {T} r \bigr )}} \end{array}\tag{37}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{L ( c , \lambda ) = \sigma ^ {2} \big ( 1 + c ^ {T} R c - 2 c ^ {T} r \big ) - \lambda ^ {T} \big ( F ^ {T} c - f \big )}} \\ {{\qquad}} \\ {{\displaystyle {\frac {\partial L} {\partial c}} = 2 \sigma ^ {2} ( R c - r ) - F \lambda}} \end{array}\tag{38}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{F ^ {T} c = f ( x )}} \\ {{{}}} \\ {{{\displaystyle {\frac {\partial L} {\partial c}} = 2 \sigma ^ {2} ( R c - r ) - F \lambda}}} \end{array}\tag{39}
+
+[confidence=0.92; source=body_inline] \left. \begin{array} {c} {\lambda = - 2 \sigma ^ {2} \big ( F ^ {T} R ^ {- 1} F \big ) ^ {- 1} \big ( F ^ {T} R ^ {- 1} r - f ( x ) \big )} \\ {c = R ^ {- 1} \big ( r + 2 \sigma ^ {2} F \lambda \big )} \end{array} \right.\tag{40}
+
+[confidence=0.92; source=body_inline] \pmb {X} = [ \Lambda _ {1} , . . . . , \Lambda _ {n} ] ^ {T} = \left[ \begin{array} {c} {\lambda _ {1 , 1} . . . \lambda _ {1 , n a}} \\ {\vdots \ddots \vdots} \\ {\lambda _ {m , 1} . . . \lambda _ {m , n a}} \end{array} \right]\tag{41}
+
+[confidence=0.92; source=body_inline] \mathbf {Q} = [ S _ {1} , . . . . , S _ {n} ] ^ {T} = \left[ \begin{array} {c} {s _ {1 , 1} \cdots s _ {1 , n s}} \\ {\vdots \ddots \vdots} \\ {s _ {m , 1} \cdots s _ {m , n s}} \end{array} \right]\tag{42}
+
+[confidence=0.92; source=body_inline] T _ {i} : X {} Q _ {i}\tag{43}
+
+[confidence=0.92; source=body_inline] Q _ {i}
+
+[confidence=0.92; source=body_inline] \pmb {T} ( X _ {r} ) = [ T _ {1} ( X _ {r} ) , . . . , T _ {n s} ( X _ {r} ) ]
+
+[confidence=0.92; source=body_inline] \mathbf {\partial} : F ( {\boldsymbol {x}} ) = {\frac {1} {1 + e ^ {- x}}}
+
+[confidence=0.92; source=body_inline] F ( x ) = \operatorname* {m a x} ( x , 0 )
+
+[confidence=0.92; source=body_inline] y = F {\Big (} \sum w _ {i} x _ {i} + b {\Big )}\tag{46}
+
+[confidence=0.92; source=body_inline] r _ {a \nu g \_ o \nu}
+
+[confidence=0.92; source=body_inline] x _ {i}
+
+[confidence=0.92; source=body_inline] L o s s = \frac {1} {n} {\sum} \left( y _ {i} - \widehat {y} _ {i} \right) ^ {2}\tag{47}
+
+[confidence=0.92; source=body_inline] w _ {i} ^ {( 1 )} = w _ {i} ^ {( 0 )} - \eta \frac {\partial L o s s} {\partial w _ {i} ^ {( 0 )}}\tag{48}
+
+[confidence=0.92; source=body_inline] w _ {i} ^ {( 0 )}
+
+[confidence=0.92; source=body_inline] w _ {i} ^ {( 1 )}
+
+[confidence=0.92; source=body_inline] x _ {b} = {\frac {x - \mu} {\sigma}}\tag{49}
+
+[confidence=0.92; source=body_inline] \mu ( x )
+
+[confidence=0.92; source=body_inline] \sum _ {i = 1} ^ {m} \omega _ {i} = 1\tag{50}
+
+[confidence=0.92; source=body_inline] C s = \sum _ {i = 1} ^ {m} \omega _ {i} \theta _ {i}\tag{51}
+
+[confidence=0.92; source=body_inline] 170~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] {<} 9
+
+[confidence=0.92; source=body_inline] r _ {a \nu g o \nu}
+
+[confidence=0.92; source=body_inline] r _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] r _ {\mathrm{min}}
+
+[confidence=0.92; source=body_inline] r _ {a \nu g . o \nu} , r _ {\mathrm{max}} ,
+
+[confidence=0.92; source=body_inline] \mathsf{as} S _ {n} ^ {* 2}
+
+[confidence=0.92; source=body_inline] S _ {n} ^ {* 2} = {\frac {1} {n - 1}} ( x _ {i} - {\overline {{x}}} ) ^ {2}\tag{52}
+
+[confidence=0.92; source=body_inline] x _ {i} , {\bar {x}}
+
+[confidence=0.92; source=body_inline] \mathrm{eq.}
+
+[confidence=0.92; source=body_inline] \frac {r _ {i} - \mu} {\sigma} \sim N ( 0 , 1 )\tag{53}
+
+[confidence=0.92; source=body_inline] \frac {( n - 1 ) S _ {n} ^ {* 2}} {\sigma ^ {2}} \sim \chi ^ {2} ( n - 1 )\tag{54}
+
+[confidence=0.92; source=body_inline] \chi ^ {2} ( n - 1 )
+
+[confidence=0.92; source=body_inline] {\frac {\left( {\frac {r _ {i} - \mu} {\sigma ^ {2}}} \right) ^ {2}} {\left. {\frac {( n - 1 ) S _ {n} ^ {* 2}} {\sigma ^ {2}}} \right/ ( n - 1 )}} \sim F ( 1 , n - 1 )\tag{55}
+
+[confidence=0.92; source=body_inline] F ( 1 , n - 1 )
+
+[confidence=0.92; source=body_inline] F _ {1 - \alpha} ( 1 , n - 1 )
+
+[confidence=0.92; source=body_inline] ^ {\% ,}
+
+[confidence=0.92; source=body_inline] \frac {\left( \frac {r _ {i} - \mu} {\sigma ^ {2}} \right) ^ {2} \bigg / 1} {\frac {( n - 1 ) S _ {n} ^ {* 2}} {\sigma ^ {2}} \bigg / ( n - 1 )} < F _ {0.05} ( 1 , n - 1 )\tag{56}
+
+[confidence=0.92; source=body_inline] 0 = \mu - \sqrt {F _ {0.05} ( 1 , n - 1 ) S _ {n} ^ {* 2}} < r _ {i} < \mu + \sqrt {F _ {0.05} ( 1 , n - 1 ) S _ {n} ^ {* 2}} = u _ {i} ^ {p}\tag{57}
+
+[confidence=0.92; source=body_inline] u _ {i} ^ {p}
+
+[confidence=0.92; source=body_inline] u _ {i} ^ {p} ,
+
+[confidence=0.92; source=body_inline] y \in \left[ y - u _ {i} ^ {p} , y + u _ {i} ^ {p} \right]\tag{58}

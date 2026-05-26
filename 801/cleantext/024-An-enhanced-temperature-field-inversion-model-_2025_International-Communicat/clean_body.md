@@ -1,0 +1,500 @@
+## 1. Introduction
+
+The extreme aerodynamic force and heat effect brings great challenges to high-speed aircraft structures [1–3], and the accurate acquisition of structural states such as temperature field is crucial to its state and performance evaluations [4]. At present, the real temperature can be measured by sensors which only provide local data, while the global temperature field can be obtained by numerical simulations which necessarily include certain deviations. Thus, the high-accuracy temperature field can be acquired combining the local real sensor data with the global simulated data, referred to as the temperature field inversion (TFI), which is closely dependent on the machine learning and data reduction techniques [5–7].
+
+The TFI problem studied in this paper focuses on the reconstruction of temperature field based on the limited sensor data of structures [4,8,9]. Traditional interpolation methods like nearest neighbor [10] and Gaussian process regression [11] offer low-precision approaches that fit temperature distribution using discrete points [12]. With the development of artificial intelligence, machine learning methods such as Neural Networks (NN) and Random Forest (RF) have shown great potential in the TFI problem due to their capability to effectively characterize complex nonlinear relationships [13–15]. Xu et al. [16] developed a temperature field prediction model combining the NN and dimensionality reduction methods, which is more robust than the traditional method. Niu et al. [17] proposed an approach of light field compression and noise reduction to extract the main features of the projection matrix and improve the performance of 3D temperature field reconstruction. Liu et al. [8] introduced the physics-informed neural network method to solve the TFI problem with limited observations, and developed a coefficient matrix condition number based position selection of observations method to alleviate the noises effect in observations. Lu et al. [4] proposed a 3D TFI model based on NN to predict the heat transfer boundary conditions of a hexahedral geometry from limited surface sensors. Most of the above references are focused on the efficiency and performance improvement of the method, while the input data such as the sensors layout has great influence for the TFI model and deserves more research attention.
+
+TFI problems always involve into large amounts of high-dimensional data which brings about difficulties and very high cost in model training [18]. Therefore, data dimensionality reduction methods are introduced to extract the data principal features and improve the model efficiency [19]. Dimensionality reduction methods can be categorized into linear and nonlinear approaches [20]. Linear methods like Proper Orthogonal Decomposition (POD) [21,22] and singular value decomposition [23] are easy-implement and low-cost, approximating high-dimensional data with the appropriate linear models. Nonlinear methods include Kernel Principal Component Analysis (KPCA) [24] and manifold learning [25,26], etc. The KPCA extends POD method into nonlinear spaces, while the manifold learning projects high-dimensional data onto lowdimensional manifolds. The POD method constructs reduced-order models by extracting the main modes of physical fields and has been widely applied in the dimensionality reduction of aerodynamic fields. For instance, Dai et al. [27] proposed a thermal field prediction model for reactor pressure vessel, which integrated the CFD method and POD technique. Jia et al. [28] constructed a hybrid reduced-order model by combining POD and dynamic mode decomposition methods to capture complex and strongly nonlinear flow structures. Susmit et al. [29] introduced a framework of model reduction for hypersonic flows in thermochemical non-equilibrium conditions, using nonlinear isometric mapping near shocks and linear POD method in quieter regions to balance computational cost and accuracy. These applications highlight the significance of the POD method in analyzing high-dimensional temperature data and enhancing the performance of TFI model. For dimensionality reduction of physical fields data, POD is a widely-used and efficient method. However, for the high-speed wing with heat transport (HT) paths studied in this paper, the researches on principal features extraction and dimensionality reduction of structural temperature fields are relatively limited.
+
+(a) Topology optimization model
+
+(b) Topology optimization result
+
+(c) Reconstructed structure
+
+(d) Mesh model for HT analysis
+
+(e) Initial sensor layout (+Y)
+
+(f) Initial sensor layout (-Y)
+
+The performance of a TFI model is closely dependent on the sensors’ layout, as appropriate layout provides better quality of observation data by capturing essential temperature field features. Sensor layout optimization typically involves multi-objective optimization problems, requiring a balance between the accuracy and cost, i.e., the number of sensors [30]. Traditional methods like the conjugate gradient method are unsuitable for such problems due to the difficulty of obtaining gradient information [31]. Therefore, evolutionary algorithms such as Genetic Algorithm (GA) [32] and Differential Evolution (DE) [33] have been developed. Unlike traditional methods, evolutionary algorithms are global optimization methods with high robustness and wide applicability. Li et al. [34] developed an improved adaptive multiobjective particle swarm optimization algorithm for the deformation reconstruction of complex plate-beam model. Zhao et al. [35] proposed an improved adaptive large-scale cooperative coevolution algorithm for high-dimensional strain sensor layout optimization problems of complex antenna truss models, enhancing reconstruction accuracy and algorithm efficiency. Most optimization of sensor layout is to improve the representativeness of sensor measurement, while relevant researches in temperature field inversion problem are still limited, and this leaves some room for the present work especially when the sensor layout has great influence on the TFI model performance for certain.
+
+For a typical TFI problem, there are three sub-problems: (1) Data preprocessing, accurate sample data is the foundation of the inversion model, while a lot of high-dimensional data with redundant features will lead to the waste of computing and storage resources; (2) Inversion method, as the core of inversion model, the methods should be able to represent the nonlinear relationship between complex features, and the artificial intelligence algorithm shows great potential; (3) Sensor optimization, the balance between the accuracy and cost of the inversion model is pursued in engineering, so the number and location of sensors need to be optimized to obtain the best layout. The current research on inversion methods has achieved accurate inversion of temperature field with a large amount of sample data, and rarely considered the sensors optimization, which may due to the high training cost. Therefore, the purpose of this paper is to construct an enhanced inversion model, improve the training efficiency of the inversion model through data dimension reduction method, and complete the optimization of sensor layout. In this paper, a 3D wing structure with HT paths is considered. Sample data of the temperature filed are generated by numerical simulation, and the POD method is employed to identify the principal features and reduce the data dimensionality. The TFI model is trained by the BPNN method, and the influence of hyperparameters on inversion performance is studied. A hybrid optimization approach based on GA is proposed to optimize the sensor locations and numbers simultaneously to balance the inversion performance and cost. An RF-based model is introduced for comparison, and the results reveal the advantages of the TFI model, which obtains superior performance for the inversion of 3D temperature field from limited sensor data.
+
+## 2. The wing and the TFI problem
+
+## 2.1. The wing with HT paths and initial sensor layout
+
+The wing configuration studied in this paper is shown in Fig. 1(a), with a wing root length of 1000 mm, a wing tip length of 360 mm and a spread length of 540 mm. It should be noted that the model is threedimensional with a hexagonal airfoil and a maximum thickness of 50 mm, as depicted in Fig. 1(a). The wing consists of three parts: the heat protection coating made of silicone rubber with a thermal conductivity of 0.2 W/mK; the skin made of superalloy with a thermal conductivity of 30 W/mK; the internal HT paths made of C/C material with a thermal conductivity of 1000 W/mK. During flight, aerodynamic heat from the coating and skin will be eventually transported to the cold source by the HT paths, which are obtained by topology optimization as shown in Fig. 1(b). In Fig. 1(c), temperature of the outer side of heat protection coating is defined as $\mathrm {T _ {u}}$ and $\mathrm {T _ {d}}$ is the temperature on the inner side of skin.
+
+The HT paths are designed using topology optimization and following reconstruction methods with the flight speed of 6 Ma and altitude of 15 km. This is a typical VP problem with a known thermal load in the design domain $[ 36 , 37 ]$ , as shown in Fig. 1(a). The design domain is surrounded by an adiabatic boundary and includes a blue heat sink of 150 mm at the wing root, with temperature of 293 K. With the objective of minimum geometric mean temperature and the constraint of path volume fraction, the mathematical formulation of this topology optimization problem is described in Eq. (1):
+
+Find : $\rho ( {\pmb x} ) , {\pmb x} \in \Omega$
+
+Min :
+
+s.t.
+
+$$\begin{array} {l} {\displaystyle T _ {\mathrm{geouv}} = \left( \frac {1} {| \Omega |} {\int _ {\Omega}} ( T _ {i} ( x ) ) ^ {m} d \Omega \right) ^ {\frac {1} {m}} , x \in \Omega} \\ {\displaystyle} \\ {\displaystyle \int _ {\Omega} k _ {i} \nabla T _ {i} d \Omega = \int _ {\Omega} q _ {i} d \Omega} \\ {\displaystyle \int _ {\Omega} \rho d \Omega \leq V _ {c}} \end{array}\tag{1}$$
+
+where $\rho$ is the normalized element density; Ω represents the design domain, which is the entire wing structure in this problem; $k _ {i} , T _ {i} ,$ and $q _ {i}$ represent the thermal conductivity, temperature and heat flux of the element, respectively; m is the control factor of geometric mean temperature, which can be generally set to 10 [38]; $V _ {c}$ is the volume fraction constraint, which is assumed to be 30 %.
+
+To improve the optimization efficiency, a flat plate model with a rectangular airfoil substitutes the actual wing in topology optimization. The optimal structure is shown in Fig. 1(b), where the red dendritic structure represents the HT path using high thermal conductivity materials. Based on topology optimization results, the geometric structure is reconstructed to the multilevel dendritic structure shown in Fig. 1(c). The optimization and heat transfer analysis are processed using COM-SOL Multiphysics 6.1, with the mesh model shown as Fig. 1(d).
+
+For the high-speed wing structure, considering the resolution and installation location constraints of the temperature sensors, the minimum distance between adjacent measurement points should be 20–40 mm. Based on this, the surface mesh of the wing structure is reconstructed with a maximum size of 33 mm and 1920 nodes $( 30 \times 32 \times 2 )$ on the upper and lower surfaces. Therefore, the sensor coordinate can be substituted by node numbers. The mesh model of the wing and the initial sensor layout are shown in Fig. 1(e) and $\left( \mathrm {{f}} \right) ,$ with the sensors represented by red points, resulting in a total of 60 sensors. It should be noted that sensors can only be arranged inside the skin for an actual wing, therefore, the sensor data $\mathbf {T} _ {s}$ is selected from $\mathbf {T _ {d}}$ based on the sensor layout.
+
+To generate the sample data of temperature field, the flight states of wing are divided into orthogonal groups based on the flight altitude, speed and attack angle. The altitudes are 5000, 10,000, 15,000, 20,000 and 25,000 m; the speeds are 2, 3, 4, 5, and 6 Ma; and the attack angles are 0, 4, 8, and 12◦, resulting in 100 groups of sample data. The thermal load is obtained using the panel method, followed by heat transfer analysis to derive temperature field data. Ten test sets are selected via the Latin hypercube method, as shown in the Table 1.
+
+The simulation results obtained by COMSOL Multiphysics 6.1 show that the maximum and minimum values of $\mathbf {T} _ {\mathbf {u}}$ are 2085 K and 305 K, respectively, which could cover the possible thermal environment of the high-speed wing from 2 to 6 Ma. For the design condition of 6 Ma at 15 km, the maximum and minimum values of $\mathbf {T} _ {\mathbf {u}}$ are 1747 K and 912 K, respectively, which are basically consistent with the results from the temperature field of a high-speed wing obtained by Ye et al. [39].
+
+## 2.2. Mathematical description of TFI problem
+
+In this paper, the TFI problem is the process of reconstructing the temperature field (T) from the limited observations (Ts), and it can be expressed as the mapping:
+
+$$\mathbf {T} \approx \mathbf {T} _ {\theta} = f _ {\theta} ( \mathbf {T} _ {s} )\tag{2}$$
+
+where $\mathbf {T} _ {s}$ and $\mathbf {T} _ {\theta}$ are the input and output, respectively; θ indicates the parameters of the mapping.
+
+With the development of machine learning, methods like neural networks show certain advantages in solving the inverse problem, providing fast and accurate inversion results from relatively small dataset. In this work, BPNN method is introduced to construct the TFI model, with the model parameters optimized to improve the inversion performance. The creation of TFI model can be expressed as a constrained optimization problem, which is formulated as:
+
+$$\begin{array} {r l} & {\mathrm{find} \theta , x _ {s} , y _ {s} , z _ {s}} \\ & {m i n | | \mathbf {T} _ {\theta} ( x _ {s} , y _ {s} , z _ {s} , \mathbf {T} _ {s} ) - \mathbf {T} _ {\mathrm{ori}} | _ {1}} \\ & {\mathrm{s.t.} \varepsilon \leq \varepsilon _ {\mathrm{max}}} \\ & {\quad \quad \quad \quad X _ {N} \leq X _ {N m a x}} \end{array}\tag{3}$$
+
+where $\pmb \theta$ is the vector of the model parameters; $x _ {s} , y _ {s} , z _ {s}$ are the coordinate vectors of the sensors; $\mathbf {T} _ {\theta} = \left[ T _ {\theta} ^ {1} , T _ {\theta} ^ {2} , \cdots , T _ {\theta} ^ {N} \right]$ denotes the inversion result with input of $\pmb {\theta} ; \mathbf {T} _ {s}$ is the temperature vector obtained by sensors; $\mathbf {T} _ {\mathrm{ori}} = \left[ T _ {\mathrm{ori}} ^ {1} , T _ {\mathrm{ori}} ^ {2} , \cdots , T _ {\mathrm{ori}} ^ {N} \right]$ denotes the original temperature data; N is the number of nodes in the model; ε is the residual error of the TFI model and $\varepsilon _ {\mathrm {{m a x}}}$ is the limit; $X _ {N}$ is the number of sensors and $X _ {N \mathrm{max}}$ is the limit.
+
+In summary, the conceptual flow for solution of the TFI problem is shown in Fig. 2. The process consists of four parts: (1) Sample data generation, including aerothermal analysis using the panel method and heat transfer analysis based on the FEM model; (2) Data dimensionality reduction using the POD method; (3) TFI model construction with the BPNN method; (4) Sensor layout optimization based on the GA method.
+
+## 3. Methodologies of the TFI model
+
+## 3.1. POD-based data dimensionality reduction
+
+The principle of POD method is to use low-dimensional modal coefficients to represent high-dimensional temperature field data. With the
+
+training sets of T $( m \times n )$ , where m = 1920 and $n = 90$ , the Snapshot-POD method [28] is employed to improve the efficiency.
+
+The basic temperature $\overline {{\mathbf {T}}} _ {0} \left( m \times 1 \right)$ is calculated by:
+
+$$\overline {{\mathbf {T}}} _ {0} = \frac {1} {n} \sum _ {i = 1} ^ {n} \mathbf {T} ^ {i}\tag{4}$$
+
+which can be expanded into a matrix $\overline {{\mathbf {T}}} = \left[ \overline {{\mathbf {T}}} _ {0} ^ {1} , \overline {{\mathbf {T}}} _ {0} ^ {2} , \cdots \overline {{\mathbf {T}}} _ {0} ^ {n} \right]$ to facilitate subsequent calculations.
+
+Similar to the basic temperature, the pulsatile temperature $\boldsymbol {\mathbf {T}} ^ {*} =$ $\left[ \mathbf {T} ^ {* 1} , \mathbf {T} ^ {* 2} , \cdots \mathbf {T} ^ {* n} \right]$ can be defined as:
+
+$$\mathbf {T} ^ {\ast} = \mathbf {T} - \overline {{\mathbf {T}}}\tag{5}$$
+
+which can be regarded as a linear space. The purpose of POD is to find a set of orthogonal bases, i.e., POD modes, for this linear space and to screen out the important modes.
+
+$$\mathbf {C} = \mathbf {T} ^ {\ast \mathrm{T}} \mathbf {T} ^ {\ast}$$
+
+In order to describe the correlation of temperature field data in different states, the correlation matrix of $\mathbf {T} ^ {*}$ can be defined as $\mathbf {C} ( n \times n ) \colon$
+
+(6)
+
+which is a symmetric square matrix can be eigen decomposed as:
+
+$$\mathbf {C Q} = \lambda \mathbf {Q}\tag{7}$$
+
+where $\mathbf {Q} = [ \pmb {q} _ {1} , \pmb {q} _ {2} , \cdots , \pmb {q} _ {n} ]$ is the eigenvector matrix, and $\pmb {q} _ {i}$ is a column vector of n $\iota \times 1 ; \lambda = d i a g ( \lambda _ {1} , \lambda _ {2} , \cdots , \lambda _ {n} )$ is a diagonal matrix of eigenvalues ranked from large to small.
+
+The POD mode matrix $\pmb {\varphi} = [ \pmb {\varphi} _ {1} , \pmb {\varphi} _ {2} , \cdots \pmb {\varphi} _ {n} ]$ satisfies:
+
+$${\pmb \varphi} _ {i} = \frac {{\bf T} ^ {*} {\pmb q} _ {i}} {\sqrt {\lambda _ {i}}}\tag{8}$$
+
+where $\pmb {\varphi} _ {i}$ is a column vector of $m \times 1$
+
+The POD mode coefficient corresponding to $\pmb {\varphi} _ {i}$ is denoted as $\pmb {a} _ {i}$ (n × 1):
+
+$$\pmb {a} _ {i} = \pmb {\varphi} _ {i} ^ {\mathrm{T}} \mathbf {T} ^ {*}\tag{9}$$
+
+which represents the temperature variation of the feature field corresponding to $\varphi _ {i} ,$ and the superposition of ai in all modes is the original temperature field.
+
+Noting that the mode matrix φ is orthogonal, the mapping from lowdimensional mode coefficients to high-dimensional field data can be denoted as:
+
+$$\mathbf {T} = \varphi \mathbf {A} ^ {\mathrm{T}} + \overline {{\mathbf {T}}}\tag{10}$$
+
+(a) POD modes of $\mathbf {T} _ {\mathrm{d}}$ 
+(b) POD modes of $\mathbf {T} _ {\mathrm{u}}$
+
+where $\mathbf {A} = [ \pmb {a} _ {1} , \pmb {a} _ {2} , \cdots \pmb {a} _ {n} ]$ is the POD mode coefficient matrix.
+
+Furthermore, the dimensionality of data can be reduced by analyzing the importance of each mode. Considering that the eigenvalue λi represents the energy contribution of the corresponding mode φ in all POD modes, the total energy E can be defined as:
+
+$$E = \sum _ {i = 1} ^ {n} \lambda _ {i}\tag{11}$$
+
+Then, the contribution rate $\eta _ {i}$ of $\pmb {\varphi} _ {i}$ to the total energy is:
+
+$$\eta _ {i} = \frac {\lambda _ {i}} {E}\tag{12}$$
+
+Generally, when the energy proportion of the first t modes reaches a certain threshold, such as 99 %, it can be considered sufficient to approximately represent the original data. Based on the reduced-order mode matrix ${\pmb {\varphi}} _ {\mathrm{R0}} = [ {\pmb {\varphi}} _ {1} , {\pmb {\varphi}} _ {2} , \cdots {\pmb {\varphi}} _ {t} ]$ and mode coefficient matrix ${\bf A} _ {\mathrm{RO}} =$ $[ \pmb {a} _ {1} , \pmb {a} _ {2} , \cdots \pmb {a} _ {t} ]$ , the temperature field data can be expressed as:
+
+$$\mathbf {T} \approx \varphi _ {\mathrm{RO}} \mathbf {A} _ {\mathrm{RO}} ^ {\mathrm{T}} + \overline {{\mathbf {T}}}\tag{13}$$
+
+In the subsequent research, the high-dimensional temperature field data T can be characterized by the low-dimensional mode coefficient $\mathbf {A} _ {\mathrm {{R O}}}$ . Similarly, the sensor data Ts can be characterized by ${\bf {B}} _ {\mathrm {{R O}}}$
+
+## 3.2. BPNN-based temperature field inversion
+
+In this paper, the BPNN method is used to establish the mapping from sensor data to temperature field data, where BP indicates the back propagation process during the NN training. The basic principle of NN is to build a network layer consisting of many neurons to reveal the underlying relationships between inputs and outputs. The specific mapping relationship is described by weights and biases, which can be expressed as:
+
+$$\mathbf {L} _ {2} \approx f ( \mathbf {L} _ {1} ) = \pmb {w} \mathbf {L} _ {1} + \delta\tag{14}$$
+
+where $\mathbf {L} _ {1}$ and $\mathbf {L} _ {2}$ represent the data of the 1st and 2nd layers; w is the weight matrix; and δ is the bias matrix. The principle of a multi-layer NN is to construct such a mapping between layers and optimize network parameters according to the residual error until the model meets the accuracy requirements.
+
+Considering that the mean value of the pulse temperature T\* is 0, the tanh function is chosen as the activation function σ in this paper:
+
+$$\sigma = t a n h ( x ) = \frac {2} {1 + e ^ {- 2 x}} - 1\tag{15}$$
+
+With the input of sensor data $\mathbf {T} _ {s}$ and the output of inversion data ${\widehat {\mathbf {T}}} ,$ , the NN model can be expressed as:
+
+$$\widehat {\mathbf {T}} = f _ {\theta} ( \mathbf {T} _ {s} ) = \sigma ( \mathbf {L} _ {1} ) \circ \sigma ( \mathbf {L} _ {2} ) \circ \cdots \circ \sigma ( \mathbf {L} _ {D} )\tag{16}$$
+
+where θ represents the vector of weights and biases; D is the depth of NN, i.e., the number of layers; ∘ indicates the operation between hidden layers.
+
+(a) Box plots of time
+
+(b) Box plots of MRE
+
+(c) Box plots of MAE
+
+(d) Box plots of RE
+
+(e) Box plots of AE
+
+(f) Mean $\mathrm {T _ {d}}$ and $\mathrm {T _ {u}}$ of test sets
+
+(a) Test set 1 
+(b) Test set 2
+
+Furthermore, the loss function is employed to evaluate the performance of the NN model. Since the problem studied in this paper is a regression problem, the Mean Square Error (MSE) is chosen as the loss function. The training process of NN is essentially an optimization problem, finding the most appropriate parameters to minimize the loss function. In the optimization, the residual error is calculated using forward propagation results, and then the parameters like weights and biases are optimized according to the error, which is the back propagation process. Considering the small dataset used in this paper, the Bayesian regularization method is employed as the optimization method. Other hyperparameters such as the number of hidden layers, the number of neurons will be determined in the subsequent analysis.
+
+## 3.3. GA-based sensor layout optimization
+
+A hybrid optimization approach based on GA method is proposed to optimize the number and location of sensors simultaneously. The mathematical model of the optimization problem can be described as:
+
+find $X _ {\mathrm{N}} , X _ {\mathrm{L}}$
+
+$$m i n \ \frac {\mathrm {{\cal {M}} R E _ {\mathrm {{T d}}}} ( X _ {\mathrm {{N}}} , X _ {\mathrm {{L}}} )} {\mathrm {{\cal {M}} R E _ {\mathrm {{T d}}}} ( X _ {\mathrm {{N 0}}} , X _ {\mathrm {{L 0}}} )} + \frac {\mathrm {{\cal {M}} R E _ {\mathrm {{T u}}}} ( X _ {\mathrm {{N}}} , X _ {\mathrm {{L}}} )} {\mathrm {{\cal {M}} R E _ {\mathrm {{T u}}}} ( X _ {\mathrm {{N 0}}} , X _ {\mathrm {{L 0}}} )} + \frac {X _ {\mathrm {{N}}}} {X _ {\mathrm {{N 0}}}}$$
+
+$$\begin{array} {r} {\mathrm {s . t . {\bf \Upsilon} M A E _ {T d}} ( X _ {\mathrm{N}} , X _ {\mathrm{L}} ) \le \mathbf {M A E _ {T d}} ( X _ {\mathrm{N0}} , X _ {\mathrm{L0}} )} \end{array}$$
+
+$$\mathbf {M A E} _ {\mathrm{Tu}} ( X _ {\mathrm{N}} , X _ {\mathrm{L}} ) \leq \mathbf {M A E} _ {\mathrm{Tu}} ( X _ {\mathrm{N0}} , X _ {\mathrm{L0}} )$$
+
+$$\mathsf{AE} _ {\mathrm{Td} , m a x} ( X _ {\mathrm{N}} , X _ {\mathrm{L}} ) \leq \mathsf{AE} _ {\mathrm{Td} , m a x} ( X _ {\mathrm{N0}} , X _ {\mathrm{L0}} )$$
+
+$$\mathsf{AE} _ {\mathrm{Tu} , m a x} ( X _ {\mathrm{N}} , X _ {\mathrm{L}} ) \leq \mathsf{AE} _ {\mathrm{Tu} , m a x} ( X _ {\mathrm{N0}} , X _ {\mathrm{L0}} )$$
+
+$$X _ {\mathrm{N}} \in [ 1 , 60 ]\tag{17}$$
+
+$$X _ {\mathrm{L}} ^ {i} \in [ 1 , 1920 ]$$
+
+where $X _ {\mathrm{N}}$ and $X _ {\mathrm{L}}$ are optimization variables, which indicate the number and locations of sensors, respectively; $X _ {\mathrm{N0}}$ and $X _ {\mathrm{L} 0}$ are parameters from the initial sensor layout (as shown in Fig. 1). The objective function is to minimize the sum of three variables, the Mean Relative Error (MRE) of $\mathbf {T} _ {\mathrm{d}} ,$ the MRE of $\mathbf {T} _ {\mathrm{u}} ,$ , and number of sensors, and all of them are normalized by the corresponding values of the initial sensor layout to ensure the optimal result obtains better performance than the initial sensor layout. The constraints are defined with the maximum and Mean Absolute Errors (MAE) of $\mathbf {T _ {d}}$ andTu, which are less than the corresponding values of the initial sensor layout, respectively.
+
+$X _ {\mathrm{N}}$ is an integer variable not exceeding $X _ {\mathrm{N0}}$ (60). As discussed in Section 2.2, the sensor coordinates are substituted by node numbers. Therefore, XL is a vector, and the upper limit of each element $X _ {\mathrm{L}} ^ {i}$ is 1920, representing the total number of nodes. Considering that $X _ {\mathrm{N}}$ and $X _ {\mathrm{L}}$ are variables of different hierarchies, chromosomes in the hybrid optimization should be precisely designed for favorable results. In this paper, the construction of $X _ {\mathrm{N}}$ and $X _ {\mathrm{L}}$ is assumed to be independent, and the chromosome length is fixed. Then the chromosome can be divided into two parts of equal length, the first part denotes $X _ {\mathrm{N}} {\mathrm{:}}$
+
+$$\{x _ {\mathrm{N1}} , x _ {\mathrm{N2}} , . . . x _ {\mathrm{N60}} \} \quad x _ {\mathrm{N} i} \in \{0 , 1 \}$$
+
+It consists of 0 and 1, and the total number of 1 s represents the number of sensors. The second part denotes $X _ {\mathrm{L}} \colon$
+
+$$\{x _ {\mathrm{L1}} , x _ {\mathrm{L2}} , \cdots x _ {\mathrm{L60}} \} \quad x _ {\mathrm{L} i} \in [ 1 , 1920 ]\tag{19}$$
+
+where $x _ {\mathrm {{L}} i}$ is the node number of a certain sensor, activated only when the corresponding element $x _ {\mathrm{N} i} = 1$
+
+Besides, the second part of chromosome should be encoded to binary. Natural code may have large Hamming distance between continuous integers, which is unstable for high precision problems [40]. The Gray code, with only one different bit between continuous integers, is favorable for crossover and mutation operators. Therefore, this paper uses the Gray code to encode chromosomes, with the code width of 11 bits since the value of $x _ {\mathrm{Li}}$ is less than 1920.
+
+## 4. Creation of the TFI model
+
+## 4.1. ROMs of temperature field data with POD method
+
+In this paper, the reduced-order models (ROMs) of various temperature data in the training sets, including the sensor data, $\mathbf {T} _ {\mathrm{d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ are obtained using the POD method. The number of POD modes affects the accuracy of reconstruction results, and Fig. 3 shows the maximum relative error with different number of modes. The blue, orange and yellow lines in the figure represent the data of the initial sensor, $\mathbf {T} _ {\mathrm{d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ respectively. For the initial sensor, the maximum relative error is 0.60 % with the first 5 modes. For $\mathbf {T} _ {\mathrm{d}} ,$ the maximum relative error is 0.85 % with the first 5 modes. For $\mathbf {T} _ {\mathrm{u}} ,$ the maximum relative error is 0.95 % with the first 10 modes. Since the inversion results of $\mathbf {T} _ {\mathrm{d}}$ and $\mathbf {T} _ {\mathbf {u}}$ need to be compared and analyzed in the subsequent study, it is necessary to standardize the number of reconstruction modes. It should be noted that the sensor data is selected from $\mathbf {T} _ {\mathrm{d}} ,$ which means the reconstruction error of sensor data is lower than $\mathbf {T _ {d}}$ . Therefore, for the sensor data, $\mathbf {T} _ {\mathrm{d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ the number of POD modes required for reconstruction can be tentatively selected as 5, 10 and 10, respectively.
+
+(18)
+
+For $\mathbf {T} _ {\mathrm{d}} ,$ Fig. 4(a) shows the basic temperature $\overline {{\mathbf {T}}} _ {0}$ and the distribution of the first 5 POD modes. As defined in Eq. (4), $\overline {{\mathbf {T}}} _ {0}$ is the average of all samples in the training sets, with a maximum value of 780 K. The i-th mode $\pmb {\varphi} _ {i}$ defined by Eq. (8) is shown as the corresponding distribution, representing the basis of pulse temperature $\mathbf {T} ^ {*}$ in the linear space constructed by POD method. Taking the 1st mode as an example, most values on the HT paths are 0, indicating that this mode mainly contains the temperature information of the region on the skin except the HT paths. Similarly, for the 2nd mode, the temperature information of the leading and trailing edge of the wing is mainly contained. It should be noted that according to the definition of $\operatorname{Eq.}$ (8), the unit of the POD mode $\varphi _ {i}$ is K, but it does not represent the actual temperature. It is used to obtained the pulse temperature $\mathbf {T} ^ {*}$ after multiplied by the corresponding coefficient matrix A.
+
+(a) Box plots of time
+
+(b) Box plots of MRE
+
+(c) Box plots of MAE
+
+(a) Box plots of time
+
+(b) Box plots of MRE
+
+(c) Box plots of MAE
+
+Similarly, Fig. 4(b) shows the basic temperature of $\mathbf {T} _ {\mathbf {u}}$ and the distribution of the first 5 modes. The maximum value of $\mathbf {T} _ {\mathbf {u}}$ is about 976 K. The 1st mode contains the overall temperature information of the wing. The 2nd mode mainly contains the information of the leading edge, while the 3rd mode primarily captures the windward information.
+
+## 4.2. TFI model construction with POD-BPNN method
+
+In the construction of POD-BPNN model, hyperparameters such as depth and width of NN, along with POD parameters, will influence the performance and training time. As mentioned in Section 3.2, the Bayesian regularization method, which can automatically update the Marquardt adjustment parameter (MU), is used for training. Other parameters are determined in this section, with specific training settings outlined as follows. For NN, the architecture is set to be a single layer with 20 neurons by default; the initial, increment and max of MU are set to be 0.005, 10, and $1 \times 10 ^ {10}$ , respectively; the training objective is MSE $< 1 \times 10 ^ {- 6}$ . For POD, the dimensionalities of input (sensor data) and output $( \mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}} )$ are 5 and 10, respectively. Given the randomness in BPNN model construction, particularly with noisy data and small datasets, 10 models with fixed parameters are trained independently, and the average performance is used to analyze the influence. The compute infrastructure is a common $\mathrm{PC} ,$ with a 3-GHz Intel (R) Core (TM) i7–9700 CPU and 16-GB memory.
+
+## 4.2.1. The determination of max epochs
+
+For the training of a BPNN model, it is crucial to run the algorithm until convergence to improve the performance. Besides TFI model construction, GA is also employed to optimize sensor layout in this paper. To improve the efficiency and reduce the cost, the influence of epochs on the training time and performance is analyzed in this section. As shown in Table $^ {2 ,}$ there are 5 cases with max epochs ranging from 1000 to 5000. All the results are obtained by calculating the average value of 10 independent training runs. The best results are bolded in Table $^ {2 ,}$ with m- represents the mean of variables in 10 runs.
+
+Table 2 and Fig. 5(a) show that as max epochs increase, training time also rises, indicating higher computational cost. The mean training time of Cases 1 to 5 is 15.95 s, 31.29 s, 43.01 s, 51.36 s and 57.38 s, respectively. As shown in Fig. 5(b), the MREs of $\mathbf {T _ {d}}$ are below 0.03 %, and there is an outlier in Case 1. The MRE distributions of Cases 2, 3 and 4 are more concentrated, indicating higher robustness. The MRE of $\mathbf {T} _ {\mathbf {u}}$ decreases with the increase of max epochs from 1000 to 3000, indicating improved performance in Cases 1 to 3. As shown in Fig. 5(c), the trends of MAE are similar to MRE for both $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ . In summary, within a certain range, the performance and robustness of POD-BPNN model improve with the increase of max epochs. For instance, the beast results in the Table 2 appear in Cases 2 to 4, while Case 5 shows worse performance, possibly due to overfitting. Considering the computational cost and inversion performance, 3000 is the optimal value for max epochs.
+
+Furthermore, the inversion results in Case 3 are analyzed. There are 10 samples in Case $^ {3 ,}$ and the error distribution is concentrated. Hence, Sample 1 is taken as an example to study the inversion results for the test sets. As shown in Fig. 5(d) and (e), the REs and AEs of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ in each test set are used to evaluate the performance. The box plots are based on the data from all 1920 nodes. It can be found that: (1) the model obtains better performance of $\mathbf {T _ {d}}$ than $\mathbf {T} _ {\mathrm{u}} \mathbf {; \Gamma} ( 2 )$ for $\mathbf {T} _ {\mathrm{d}} ,$ most nodes (about 95 %)
+
+(a) The $1 ^ {\mathrm{st}}$ generation
+
+(b) The $9 ^ {\mathrm{th}}$ generation
+
+(c) The $20 ^ {\mathrm{th}}$ generation
+
+(d) The $23 ^ {\mathrm{rd}}$ generation
+
+show performance of RE < 0.1 % and $\mathbf {A E} < 1 \mathbf {K} ,$ , with outliers <5 % in all test sets; (3) for $\mathbf {T} _ {\mathrm{u}} ,$ most nodes (about 95 %) show performance of RE < 0.4 % and $\mathrm{AE} < 4 \mathrm{K} ,$ with outliers <5 % in all test sets.
+
+Additionally, mean $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ in test sets are shown in Fig. 5(f). Comparing with Fig. 5(e), the MAEs and means of temperature in test sets have similar trends, especially for $\mathbf {T} _ {\mathbf {u}}$ . Since the influence of local temperature is excluded in RE calculation, no clear relationship exists between MREs and mean temperatures. It can be concluded that for this sample, the AE of inversion results increases with temperature rise.
+
+As shown in Fig. 5(e), the MAE of T in test set 2 is larger than in test set 1, while the MREs of $\mathbf {T} _ {\mathbf {u}}$ in both sets are almost the same. This discrepancy arises because: (1) as shown in Fig. 5(f), m- ${\bf \nabla} \cdot {\bf T _ {u}}$ in test set 2 is larger than in test set 1, eliminating AE differences when calculating RE; (2) as shown in Fig. 6, the maximum AE of test set 1 is small, while the regions with high AE in red are concentrated in the low-temperature areas such as the wing root and trailing edge, leading to the larger RE, whereas in test set 2, high AE regions are in the high-temperature areas such as the leading edge, resulting in the smaller RE.
+
+(a) Box plots of time
+
+(b) Box plots of MRE
+
+(c) Box plots of MAE
+
+## 4.2.2. The determination of width and depth
+
+To study the influence of width and depth of NN, 8 cases are introduced with the max epochs of 3000. As shown in Table 3, Case 1 to 4 have one hidden layer with 5, 10, 20, 30 neurons, respectively; Case 5 to 8 have two hidden layers. All the results are obtained by the average value of 10 independent repeated training runs. The best results are bolded, and m- represents the mean of variables in 10 runs.
+
+As shown in Fig. 7(a), the depth of Cases 1 to 4 is 1, and the mean training time increases as the width. For Cases 1 to 3 in Fig. 7(b) and (c), the MREs and MAEs decreases, indicating improved inversion performance. However, both MAE and MRE increase slightly in Case 4, suggesting that too many neurons in a hidden layer will lead to overfitting and worse performance. Cases 5 to 8, with the depth of $^ {2 ,}$ show increasing mean training times as the width increases. The minimum MAE and MRE occur in Case 7, and the distributions are scattered. Although Case 7 has the same total number of neurons as Case 3, its inversion performance is much worse due to the increased depth. Therefore, it can be concluded that a shallow NN architecture with a depth of 1 and a width of 20 is optimal, effectively learning enough physical information to describe the entire temperature field and
+
+achieving better performance.
+
+## 4.2.3. The determination of data dimensionality
+
+In Section 4.1, the error in temperature field reconstruction by the POD method is analyzed, and the dimensionalities of the input and output data are initially set. In this section, the influence of data dimensionality on the inversion performance is investigated while constructing the POD-BPNN using dimensionality reduction data. According to the previous analysis of POD method, the dimensionalities of input and output data can be reduced to 5 and 10, respectively. Therefore, there are 9 cases with the input dimensionalities of 4, 5, 6, and the output dimensionalities of 8, 10, 12. And the 10th case analyzes the scenario without dimensionality reduction of input data, with the output dimensionality is reduced to 12. The NN has one hidden layer with 20 neurons, and the max epochs is 3000. The results are shown in Table 4 and Fig. 8, which are obtained by the average value of 10 independent repeated training runs. Since Case 10 is special, it is not shown in the figure and is discussed separately.
+
+With the increase of input and output dimensionalities, the computational cost rises. The cases can be classified by input dimensionalities of 4, 5 and 6, with average training times of 35.18 s, 46.34 s and 49.69 s, respectively. When classified by output dimensionalities of 8, 10 and 12, and the average training times are 36.45 s, 43.29 s and 51.47 s, respectively. Results indicate that computational cost is more sensitive to input dimensionality.
+
+For Cases 1 to 3, when the input dimensionality is 4, the increasing output dimensionality improves the inversion performance for $\mathbf {T} _ {\mathrm{d}}$ and $\mathbf {T} _ {\mathbf {u}}$ . For Cases 4 to $^ {6 ,}$ with the input dimension of 5, the increasing output dimensionality improves the inversion performance for $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ more significantly. Results of Cases 7 to 9 reveal that with the input and output dimensionalities of 6 and $^ {10 ,}$ the inversion performance of the model for $\mathbf {T} _ {\mathbf {u}}$ is optimal, whereas the performance for $\mathbf {T} _ {\mathrm{d}}$ decreases with the increasing output dimensionality, possibly due to noise in modes with less energy proportion. Finally, it can be found that Case 6 with input and output dimensionalities of 5 and 12 shows the best performance.
+
+(a) Box plots of time
+
+(b) Box plots of MRE
+
+(c) Box plots of MAE
+
+(a) Box plots of time
+
+(b) Box plots of MRE
+
+(c) Box plots of MAE
+
+For Case 10, the mean training time is about 1170 s. Compared to Case $^ {6 ,}$ the computational cost of Case 10 is greatly increased, with worse inversion performance for $\mathbf {T} _ {\mathrm{d}} ,$ and slightly better for $\mathbf {T} _ {\mathbf {u}}$ . This indicates the significance of reducing input data dimensionality to filter out less influential or noisy information. Consequently, setting input and output dimensionalities to 5 and 12, respectively, is optimal for achieving a better-performing TFI model. Additionally, the results of Case 6 will serve as benchmark data obtained from the initial sensor layout for subsequent optimization and analysis.
+
+(a) Distribution of importance
+
+Sensor layout (24 in total) 
+(b) Optimal sensor layout
+
+(a) Box plots of RE
+
+(b) Box plots of AE
+
+## 4.3. Sensor layout optimization by GA
+
+According to the results from Section 4.2, for the initial sensor layout, m-MREs of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ are 0.015 % and 0.068 %, and m-MAEs of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ are 0.103 K and 0.560 K. These data are substituted into Eq. (17) to construct the objective and constraints for the sensor layout optimization by the $\mathtt {G A}$ method.
+
+As mentioned in Section 3.3, the objective is defined as the sum of normalized MRE and sensor number, and the constraints are defined with the maximum MAE and AE $\mathrm {o f T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ . For the selection operator, the stochastic universal sampling method is adopted for its advantages in selecting relatively inferior individuals and higher efficiency. For the single-point crossover operator, offsprings exchange chromosomes after a specified crossover point in the binary string. For the simple mutation operator, the binary code at the mutation point is inverted. The mutation probability is 0.005 divided by the generation, which could improve the convergence rate in the early stage of optimization. Besides, the performance of involved individual would be indicated with the average result obtained by 10 independent BPNN models.
+
+Fig. 9 illustrates the optimization process, where the abscissa represents the generations and the ordinates represents the best objective of individuals in the current population. The optimization process involves 30 generations with 30 individuals per generation. The initial generation (generation 0) consists of the initial sensor layout and randomly generated layouts, while individuals in subsequent generations are obtained through selection, crossover, and mutation operators. It can be found that the best objective of the individuals in each generation is less than 3. The best objective of individuals in each generation is less than 3, indicating that these individuals outperform the initial sensor layout in terms of inversion performance and sensor number, signifying the optimization process is effective.
+
+Due to the inherent randomness in GA optimization, individuals may perform worse than those in previous generations, necessitating the selection of effective individuals with better performance than previous results, such as the best individuals in the 1st, 9th, 20th, and 23rd generations.
+
+As shown in Table 5, the inversion performance of these effective individuals is slightly better than the initial layout, with a 60 % reduction in the number of sensors. The initial sensor layout uses 60 sensors to collect temperature information and achieve good inversion performance. The optimal sensor layout uses 24 sensors to collect information with higher importance, achieving better inversion performance. This demonstrates that the optimal sensor layout can achieve better performance with fewer sensors, reducing observation costs.
+
+As shown in Fig. 10, the layouts of effective individuals in the 20th and 23rd generations are the same, indicating convergence in the optimization process. However, due to the randomness of the inversion model, there are slight differences in their performance. Compared to the initial sensor layout, the optimal sensor layout has two characteristics: (1) most sensors are distributed in the peripheral region of the wing, especially in the region close to trailing edge without HT path, where the temperatures are relatively high; (2) the remaining sensors gather in the edge region of the HT paths with large temperature gradients.
+
+## 5. Comparison model with POD-RF method
+
+## 5.1. RF-based temperature field inversion method
+
+The RF method can be used for classification and regression problems, and the TFI problem studied in this paper is a type of regression problem. Hence, the TFI model based on RF method is constructed to compare with the model based on BPNN. The principle of RF method involves selecting samples from the dataset, generating the decision trees (or regression trees for regression problems), and taking the average result of each tree to solve the regression problem.
+
+For the TFI problem, the sensor data $T _ {s} ^ {i}$ is used as the feature. To improve the generalization ability of the method, certain features are randomly selected from the dataset to construct regression trees. Starting from the root node, features that improve the accuracy are selected to form the child nodes, and features are not repeatedly chosen during this process. When all features are exhausted or no further accuracy improvement is possible, the regression tree reaches its maximum depth and terminates the splitting, indicating the completion of a tree.
+
+For an RF model with M regression trees, with the input of sensor data $\mathbf {T} _ {s} ,$ each tree produces an inversion result $\widehat {\mathbf {T}} ^ {i}$ . The final output is the average of all results:
+
+$$\widehat {\mathbf {T}} = \sum _ {m = 1} ^ {M} \widehat {\mathbf {T}} ^ {i} = \sum _ {m = 1} ^ {M} f _ {\theta} ^ {m} ( \mathbf {T} _ {s} )\tag{20}$$
+
+where f represents the mapping from $\mathbf {T} _ {s}$ to $\widehat {\mathbf {T}} ^ {i} ;$ ; θ denotes the parameters in the RF model; and m indicates the mapping of the m-th tree.
+
+While solving the regression problem, the RF method can evaluate the importance of features. Unlike the covariance or correlation coefficient methods, the RF method evaluates feature importance based on both inputs and outputs. The RF method evaluates the importance of variables via two significance, Mean Decrease Impurity (MDI) and Mean Decrease Accuracy (MDA). The MDI is derived from the total decrease in node impurity from splitting on the variable, averaged across all trees.
+
+Relative Error (%)
+
+Original Tu (K)
+
+Inverted Tu (K)
+
+(a) Distributions and error of $\mathbf {T _ {d}}$
+
+Relative Error (%)
+
+(c) Inversion results of $\mathbf {T} _ {\mathrm{d}}$
+
+(b) Distributions and error of $\mathbf {T} _ {\mathrm{u}}$ 
+(d) Inversion results of $\mathbf {T _ {u}}$
+
+(e) Inversion errors of $\mathbf {\dot {T} _ {d}}$
+
+(f) Inversion errors of $\mathbf {T _ {u}}$
+
+The MDA measures importance by observing prediction accuracy degradation when a variable is rearranged.
+
+During the RF model construction, the impurity decreases when the node of a regression tree is split. The MDI of variable X calculates the weighted decrease of impurity from splits along the variable X, and averages this quantity over all trees to indicate the contribution of this feature to model performance. The MDI importance of the i-th feature can be expressed as:
+
+$$\beta _ {i ( \mathrm{MDI} )} = \frac {1} {M} \sum _ {m = 1} ^ {M} R _ {m i}\tag{21}$$
+
+where $R _ {m i}$ is the MDI importance of the i-th feature on the m-th tree. Larger $\beta _ {i ( \mathrm{MDI} )}$ indicates greater influence of the feature on the inversion result. It should be noted that $R _ {m i}$ would be 0 if a feature is not used to split any nodes.
+
+The MDA method evaluates the influence on model performance by changing the order of each feature. For unimportant features, reordering has minimum influence on accuracy, whereas important features, reordering significantly reduces accuracy. The out-of-bag (OOB) data, part of the training set not used for the tree generation, is introduced to measure importance to avoid retraining. The basic error with the variable $\mathbf {T} _ {s}$ from OOB data is calculated first. Then, for the i-th feature, the values of variable $\mathbf {T} _ {s} ^ {( i )}$ are randomly permuted in the OOB observations. Finally, the MDA importance of the i-th feature is obtained by averaging the difference in OOB error before and after the permutation over all trees, which can be expressed as:
+
+$$\beta _ {i ( \mathrm{MDA} )} = \frac {1} {M} \sum _ {m = 1} ^ {M} \left[ \left( \mathbf {T} - f _ {\theta} ^ {m} \big ( \mathbf {T} _ {s} ^ {( i )} \big ) \right) ^ {2} - \left( \mathbf {T} - f _ {\theta} ^ {m} \big ( \mathbf {T} _ {s} \big ) \right) ^ {2} \right]\tag{22}$$
+
+where $\mathbf {T} _ {s}$ is the variable from OOB data of m-th tree; $\mathbf {T} _ {s} ^ {( i )}$ represents the variable with the value of i-th feature randomly permuted. Larger $\beta _ {i ( \mathrm{MDA} )}$ indicates the greater influence of the feature on the inversion result.
+
+The MDI method can quickly determine important features after training the RF model, albeit wasting OOB data. The MDA method, considering all training data, offers better generalization with higher computational cost. Therefore, the MDI method is used for rapid feature importance assessment, followed by MDA for detailed analysis.
+
+Relative Error (%)
+
+(a) Distributions and error of $\mathbf {T _ {\mathrm{d}}}$
+
+(c) Inversion results of $\mathbf {T _ {d}}$
+
+(e) Inversion errors of T
+
+## 5.2. The construction of POD-RF model
+
+For the RF method applied to regression process, the significant hyperparameters include the number of regression trees and the minimum leaf size, both influencing model performance and training time. Generally, more regression trees enhance model accuracy but increase training time. The minimum leaf size indicates the least number of observations on each leaf; if too large, the model becomes complex, and if too small, the model may overfit. It should be noted that this study uses the TreeBagger function in Matlab to construct the POD-RF model, with the output restricted to one-dimensional for the regressor. Hence, the dimensionality of output is reduced by POD method, and sub-models are constructed for each mode.
+
+(b) Distributions and error of $\mathbf {T _ {u}}$
+
+(d) Inversion results of $\mathbf {T} _ {\mathbf {u}}$
+
+(f) Inversion errors of $\mathbf {T} _ {\mathrm{u}}$
+
+## 5.2.1. The determination of regression trees
+
+To obtain the optimal number of trees, 5 cases are introduced with the tree numbers of 200, 400, 600, 800 and 1000. The minimum observations at a leaf node are set to 2, and the dimensionalities of input and output are 5 and 12. All the results are obtained by the average value of 10 independent repeated training runs. As shown in Table 6, the best results are bolded, and m- represents the mean of variables in 10 runs.
+
+As shown in Fig. 11(a), the computational cost increases approximately linearly with the number of regression trees. As shown in Fig. 11 (b), the m-MRE of $\mathbf {T _ {d}}$ is the best in Case 2, with other cases showing comparable results. The MRE distribution of Cases 5 is the most concentrated, indicating more robust results with more regression trees. The m-MRE of $\mathbf {T} _ {\mathbf {u}}$ is best in Case 1 and increases with the number of regression trees. For the MAE in Fig. 11(c), the means of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ are almost unchanged as the number of trees increases, while the variances decrease. In summary, for the TFI problem studied in this paper, 400 is optimal for the number of regression trees.
+
+(a) Box plots of RE
+
+(b) Box plots of AE
+
+## 5.2.2. The determination of minimum leaf size
+
+To analyze the influence of minimum leaf size, 4 cases are introduced with the minimum leaf size of $^ {2 ,}$ 4, 6 and $^ {8 ,}$ with regression trees of 400. Results from 10 independent repeated training runs are obtained in Table 7. The best results are bolded, and m- represents the mean of variables in 10 runs.
+
+As shown in Fig. 12, the computational cost decreases approximately linearly with the increase of minimum leaf size. The m-MREs of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ increase with the minimum leaf size, and the MRE distributions of $\mathbf {T} _ {\mathrm{d}}$ are more concentrated than that $\mathrm {o f T _ {u}}$ . The trends of MAEs are similar to MREs. Obviously, fewer minimum leaf sizes lead to better performance with RF method in this study. Therefore, the minimum leaf size is set to 2.
+
+## 5.2.3. The determination of data dimensionality
+
+One notable characteristic of the RF method is its ability to assess the importance of input features, which can guide dimension reduction and sensor layout optimization. However, the TFI models in previous sections are constructed with the data after dimensionality reduction, only capturing the importance of reduced data. Therefore, it is necessary to study the influence of dimensionality reduction on performance of POD-RF model and feature importance analysis.
+
+To compare with the POD-BPNN model, only input dimensionality is studied here, while the output still remains 12-dimensional as reduced by POD. The specific cases are shown in the Table 8. The inputs of Case 1 and 2 are the temperature data from the initial 60 sensors, and the input dimensionality of Case 1 is reduced to 5 via POD method. The input of Case 3 is the temperature data from all 1920 nodes. The inputs of Case 4 and 5 are the data of the first 30 critical nodes ranked by the importance based on the results of Case 3, besides, the input dimensionality of Case 4 is reduced to 5 via POD method. The results are obtained by the average of 10 independent repeated training runs.
+
+As shown in Fig. 13(a), mean training times of Cases 1–3 are 22.64 s, 53.19 s and 276.48 s, respectively, indicating the modeling cost rises with the increase of input dimensionality. For the BPNN method, the training time exceeds 1100 s with the input dimensionality of 60, far longer than 53.19 s for the RF method. In terms of MRE and MAE performance shown in Fig. 13(b) and (c), Case 2 and 3 perform similarly and outperform Case 1, indicating that the input dimensionality reduction significantly impacts performance of POD-RF model. Furthermore, a large number of features across 1920 nodes are unimportant, while a few key features can sustain accuracy with reduced computational cost.
+
+Mean training times of Cases 4 and 5 are 23.22 s and 45.59 s, respectively, and the inversion performance of Case 5 is significantly better than Case 4. This demonstrates that dimensionality reduction with POD for input data adversely affects inversion performance with RF method. Hence, the dimensionality of input data for POD-RF model in this paper will not be reduced. Additionally, comparing Cases 2, 3, and 5, the model constructed with the top 30 key nodes outperforms those with uniformly distributed 60 nodes and all 1920 nodes, indicating that features of low importance introduce significant noise in regression analysis, diminishing model accuracy.
+
+## 5.2.4. Sensor layout optimization
+
+As mentioned in Sections 5.1, the RF method can determine the importance of features, showing that a model constructed from the top 30 features achieves the best inversion results, with the m-MREs of 0.62 % and 1.14 ${\%} ,$ and the m-MAEs of 4.8 K and 10.84 K for $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ respectively. The distribution of importance based on RF method is shown in Fig. 14(a). Different from the layouts obtained with GA, the most importance features of POD-RF model are concentrated in the maximum temperature region of the leading edge and the minimum temperature region of the root. It can be also found that the nodes on HT paths have lower importance.
+
+To compare with the results of POD-BPNN-GA model, the first 24 features are selected to construct the POD-RF model, as shown in Fig. 14 (b). The inversion performance is that the m-MREs of 0.61 % and 1.2 %, and the m-MAEs of 4.66 K and 11.51 K for $\mathbf {T} _ {\mathrm{d}}$ and ${\bf {T}} _ {\mathrm {{u}}}$ , respectively. It can be found that the inversion accuracy of $\mathbf {T _ {d}}$ is slightly improved, while the inversion accuracy of $\mathbf {T} _ {\mathbf {u}}$ is decreased.
+
+## 6. Results and discussions
+
+## 6.1. Comparison of performance
+
+To investigate the influence of sensor layouts and inversion methods on the model performance, 10 cases are introduced to in this section. There are three sensor layouts, the initial layout, the optimal layout obtained by GA and the optimal layout obtained by RF. Besides BPNN and RF methods, the radial basis function neural network (RBFNN) and convolutional neural network (CNN) methods are also employed. The performance is summarized in Table 9.
+
+For training time, the RF method is significantly more efficient than the BPNN method, with more concentrated distributions. Comparing Cases 1 and 2, although having the same number of sensors, the training time of Case 2 is shorter than Case 1. This difference possibly due to the sensors optimized by RF method could not provide enough information for BPNN method to construct an accurate inversion model, leading to premature convergence. The training time of Case 4 is slightly shorter than Case $^ {3 ,}$ and Case 4 has better performance. This indicates that different inversion methods have varying sensitivities to features, and optimal performance can only be achieved by using the sensor layout appropriate for the specific inversion method.
+
+Original Tu (K)
+
+Inverted Tu (K)
+
+Relative Error (%)
+
+Relative Error (%)
+
+(c) Inversion results of $\mathbf {T _ {d}}$
+
+(b) Distributions and error of $\mathbf {T _ {u}}$ 
+(d) Inversion results of $\mathbf {T} _ {\mathrm{u}}$
+
+(e) Inversion errors of $\mathbf {T} _ {\mathrm{d}}$
+
+(f) Inversion errors of $\mathbf {\dot {T}} _ {\mathbf {u}}$
+
+The RBFNN method used in this paper includes two hidden layers with neurons of $^ {90 ,}$ which is the number of training samples. It can be found that the RBFNN method has the shortest training time, and its performance is comparable to RF method and lower than BPNN method. Besides, the results obtained using the sensor layout obtained by GA are better than the other two layouts.
+
+The CNN method used in this paper includes three convolutional layers with 64 filters of size 3, 1 and $^ {1 ,}$ respectively, and two fully connected layers with neurons of 128 and 256, respectively. The results show that CNN method can obtain better performance of $\mathbf {T} _ {\mathrm{u}} ,$ especially in absolute error, which indicates that the CNN method performs better in inversion of high temperature regions. Despite having the highest training cost, the performance of CNN method is still inferior to that of the BPNN method, potentially due to the complex model amplifying noise and overfitting. Additionally, the CNN method also obtains the best results with the input of sensor layout by GA.
+
+In summary, the enhanced POD-BPNN-GA model achieves accurate inversion of wing temperature field and optimization of sensor layout, and the optimal layout can also obtain the best performance for RBFNN and CNN methods.
+
+## 6.2. Performance of POD-BPNN-GA model
+
+The inversion results of Sample 1 in Case 1 (POD-BPNN-GA model) are shown in Fig. 15. The REs and AEs of all the nodes in 10 test sets are obtained, with the pink and green lines indicating the mean errors of $\mathbf {\ddot {T} _ {d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ respectively. It can be seen that there is minimum fluctuation of inversion error for different test sets, demonstrating that the method shows strong robustness with different inputs.
+
+Fig. 16 and Fig. 17 show the inversion performance POD-BPNN-GA model for test sets 1 and 2. Fig. 16 (a) and (b) characterize the performance of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ in distribution, including the original and inverted values, relative and absolute errors; Fig. 16(c) and (d) indicate the inversion results of each node with permutation of temperature in curve, including the original values, the reconstructed results by POD and the inverted results by BPNN; stems in Fig. 16 (e) and (f) indicate the AEs of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ with interval of 20 nodes, including the errors caused by the dimensionality reduction via POD method and the inversion via BPNN method.
+
+Relative Error (%)
+
+(b) Distributions and error of $\mathbf {T} _ {\mathfrak {u}}$
+
+(c) Inversion results of $\mathbf {T _ {d}}$
+
+(f) Inversion errors of $\mathbf {T} _ {\mathfrak {u}}$
+
+As shown in Fig. 16 (a) and (b), the maximum temperature is 426 K, the maximum AE is 1.2 K, and the maximum RE is 0.3 %. The regions with high errors in $\mathbf {T _ {d}}$ are concentrated in the middle of the wing, while for $\mathbf {T} _ {\mathbf {u}} ,$ , the regions with high errors are concentrated in the maximum and minimum temperature areas. As shown in Fig. 16 (c) to $\left( \mathrm {{f}} \right) ,$ it can be found that: (1) the error levels caused by POD and BPNN methods are consistent, with maximum AEs of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ being 0.2 K and 1 K, respectively; (2) the AE of $\mathbf {T _ {d}}$ decreases as the node temperature decreases; (3) the AE of $\mathbf {T} _ {\mathbf {u}}$ is negative at high-temperature nodes (above 400 $\mathrm{K} ) ,$ and positive at mid-temperature nodes (350–400 K).
+
+As shown and Fig. 17(a) and (b), the maximum temperature is 1500 K; the maximum AE is 6 K; the maximum RE is 0.4 %. The regions with high errors in $\mathbf {T _ {d}}$ are concentrated in the high temperature area, while for $\mathbf {T} _ {\mathrm{u}} ,$ the regions with high errors are concentrated in the leading edge and leeward area. As shown and Fig. 17(c) to $\mathbf {\eta} ( \mathbf {f} ) ,$ it can be found that: (1) the errors caused by POD method are slightly less than those by BPNN method, with maximum AEs of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ being 1.3 K and 4.4 K, respectively; (2) the AEs of $\mathbf {T} _ {\mathrm{d}}$ at mid-temperature nodes (950–1050 K) are higher than that at other nodes; (3) the AEs of $\mathbf {T} _ {\mathbf {u}}$ at hightemperature nodes (above 1300 K) are maximum.
+
+Comparing Fig. 16 with Fig. 17, it can be found that with the increase of temperature, the AE of $\mathbf {T _ {d}}$ increases while the RE decreases, with a significant rise in the proportion of high-error region; while the AE and RE of $\mathbf {T} _ {\mathbf {u}}$ increase, and the proportion of high-error region decreases.
+
+## 6.3. Performance of POD-RF model
+
+The inversion results of Sample 1 in Case 4 (POD-RF model) are shown in Fig. 18. The REs and AEs of all the nodes in 10 test sets are obtained, with the pink and green lines indicating the mean errors of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ respectively. Compared with Fig. 15, it can be found that the performance of the POD-RF model is significantly worse than the POD-BPNN-GA model. Particularly for test set 8, the MRE and MAE of $\mathbf {T} _ {\mathbf {u}}$ are
+
+4.17 % and 44.9 $\mathrm{K,}$ respectively.
+
+Fig. 19 and Fig. 20 show the inversion results of test sets 1 and 2, with the maximum absolute errors of 6.5 K and 45 K and the maximum relative errors of 1.2 % and 4 %. Comparing with the results in Section 6.2 (Fig. 16 and Fig. 17), the inversion accuracy of the POD-RF model is worse. There are some conclusions: (1) for test set 1, the regions with high errors of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ are concentrated in the high temperature areas, which are more uniform in Fig. 16 with Fig. 17; (2) for test set 1, the AEs of $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathbf {u}}$ are almost negative, indicating systematic errors by RF method; (3) for test set $^ {2 ,}$ the inversion result of $\mathbf {T} _ {\mathbf {u}}$ in Fig. 20(d) fluctuates severely with a maximum AE of 44.2 K. In summary, for the TFI problem of a 3D wing, the enhanced POD-BPNN-GA model achieve better performance than the POD-RF model with both low and high temperature conditions.
+
+## 7. Conclusions
+
+In this work, the TFI model based on POD-BPNN-GA method is constructed to invert the temperature field of a 3D wing with HT paths. The POD method is introduced to project the sample data into proper orthogonal modes, and the principal features are extracted to reduce the data dimensionality. The BPNN method is used to realize the inversion of temperature field, and the efficiency is improved with the reducedorder samples. A hybrid optimization approach based on GA is developed to optimize the sensors numbers and locations simultaneously, and the optimal layout obtains better performance with the sensors gathering to high temperature gradient region. Compared with models based on RF, RBFNN and CNN methods, the TFI model proposed in this paper obtains superior performance.
+
+The conclusions are as follows:
+
+(1) The POD method effectively converts high-dimensional temperature data into low-dimensional modal coefficients, simplifying analysis while retaining the principal features of data. The dimensionality of temperature field data in this paper is reduced from 1920 to 12, with an absolute error of less than 2.5 K and a relative error of less than 1 %.
+
+(2) For the initial layout with 60 sensors and the input dimensionality of $^ {5 ,}$ the performances of POD-BPNN model are m-MREs of 0.015 % and 0.068 %, m-MAEs of 0.103 K and 0.560 K for $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ respectively. The performances of POD-RF model are m-MREs of 2.535 % and 3.208 %, m-MAEs of 13.96 K and 20.35 K for $\mathbf {T} _ {\mathrm{d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ respectively.
+
+(3) The optimal layout obtained by GA includes 24 sensors gathering to high temperature and high gradient regions. For the RF method, the top 24 sensors ranked by importance are concentrated in the regions with maximum and minimum temperatures.
+
+(4) With the optimal parameters and sensors, the performances of POD-BPNN-GA model are m-MREs of 0.014 % and 0.063 $^ {\% ,}$ m-MAEs 0.091 K and 0.496 K for $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ respectively. The performances of POD-RF model are m-MREs of 0.601 % and 1.205 $^ {\% ,}$ m-MAEs of 4.600 K and 11.47 K for $\mathbf {T _ {d}}$ and $\mathbf {T} _ {\mathrm{u}} ,$ respectively.
+
+## CRediT authorship contribution statement
+
+Jia-Xin Hu: Writing – original draft, Visualization, Methodology, Investigation, Formal analysis, Conceptualization. Jian-Jun Gou: Writing – review & editing, Supervision, Funding acquisition. Chun-Lin Gong: Supervision, Resources, Project administration, Conceptualization.
+
+## Omitted Tables
+
+- [Table 1 omitted; saved to tables/table_001.md]
+- [Table 2 omitted; saved to tables/table_002.md]
+- [Table 3 omitted; saved to tables/table_003.md]
+- [Table 4 omitted; saved to tables/table_004.md]
+- [Table 5 omitted; saved to tables/table_005.md]
+- [Table 6 omitted; saved to tables/table_006.md]
+- [Table 7 omitted; saved to tables/table_007.md]
+- [Table 8 omitted; saved to tables/table_008.md]
+- [Table 9 omitted; saved to tables/table_009.md]

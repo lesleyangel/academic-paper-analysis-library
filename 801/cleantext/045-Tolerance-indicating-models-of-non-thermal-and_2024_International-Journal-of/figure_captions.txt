@@ -1,0 +1,51 @@
+Fig. 1. The high-speed vehicle and HT systems.
+
+Fig. 2. Topology optimization model.
+
+Fig. 3. The HT path and Temperature distributions.
+
+Fig. 4. Geometric and mesh models of the HT path with non-thermal damage.
+
+Fig. 5. Variations of Th, Tn with different Tf and β.
+
+Fig. 6. Distributions of Th with different Tf and β.
+
+Fig. 7. Distributions of thermal damages with different Tf and β.
+
+Fig. 8. Geometric and mesh models of the HT path with thermal damage.
+
+Fig. 9. Temperature distribution of the HT path with non-thermal damage.
+
+Fig. 10. The influences of damage on the thermal performance of HT paths.
+
+Fig. 11. Temperature distributions of HT paths based on the orthogonal design.
+
+Fig. 12. Numerical results of the samples.
+
+Fig. 13. The influences of damage on the mean thermal performance of HT paths.
+
+Fig. 14. First-order fittings of the normalized results of non-thermal damage. Fig. 15. Second-order fittings of the normalized results of non-thermal damage.
+
+Fig. 16. Temperature distributions of HT paths with different Tf and β.
+
+Fig. 17. . Second-order fittings of the normalized results of thermal damage.
+
+Fig. 18. Thermal performance and predictions of HT paths with non-thermal damage.
+
+Fig. 18. (continued).
+
+Fig. 19. Damage tolerances of samples.
+
+Fig. 20. Thermal performance and predictions of HT paths with thermal damage.
+
+Fig. 21. Relationships between volume fraction and damage tolerance.
+
+Fig. 6. Distributions of $T _ { \mathrm { h } }$ with different Tf and β.
+
+Fig. 7. Distributions of thermal damages with different $T _ { \mathrm { f } }$ and $\beta .$
+
+Fig. 14. First-order fittings of the normalized results of non-thermal damage.
+
+Fig. 15. Second-order fittings of the normalized results of non-thermal damage.
+
+Fig. 16. Temperature distributions of HT paths with different $T _ { \mathrm { f } }$ and $\beta .$

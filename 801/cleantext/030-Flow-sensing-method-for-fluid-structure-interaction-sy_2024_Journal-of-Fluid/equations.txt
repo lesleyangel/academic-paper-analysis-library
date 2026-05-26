@@ -1,0 +1,459 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (39.0, 642.88, 349.4, 664.19)]] https://doi.org/10.1016/j.jfluidstructs.2023.104023 Received 12 May 2023; Received in revised form 4 October 2023; Accepted 6 November 2023
+
+[confidence=0.92; source=equations; [page 3, bbox (62.93, 462.02, 129.54, 470.88)]] D = [D1, D2, ⋯, Dr]
+
+[confidence=0.92; source=equations; [page 3, bbox (62.93, 531.07, 89.43, 546.98)]] d = ∑ r
+
+[confidence=0.92; source=equations; [page 3, bbox (79.65, 549.23, 87.67, 554.67)]] i=1
+
+[confidence=0.92; source=equations; [page 3, bbox (62.93, 644.36, 509.91, 657.39)]] Di ≈[ξ1, ξ2, ⋯, ξm]ai + d (2)
+
+[confidence=0.92; source=equations; [page 4, bbox (62.93, 560.85, 509.91, 573.89)]] t = ψ(s) (3)
+
+[confidence=0.92; source=equations; [page 5, bbox (62.93, 182.6, 509.91, 195.63)] [ξs, as]] = fPOD(Ds) (4)
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (84.02, 297.95, 117.45, 315.6)]] ] = fPOD-1
+
+[confidence=0.57; needs_review; source=equations; [page 5, bbox (50.97, 404.69, 505.26, 418.26)]] In order to evaluate the reconstructed performance of the first-layer POD model for fluid, mean reconstructed error E1 f =
+
+[confidence=0.92; source=equations; [page 5, bbox (90.26, 456.2, 98.27, 461.64)]] j=1
+
+[confidence=0.57; needs_review; source=equations; [page 5, bbox (187.26, 489.22, 493.0, 504.05)]] T. The modeling region of the second-layer POD is obtained by S2 = [S21, S22, ⋯, S2 nf,2]
+
+[confidence=0.92; source=equations; [page 5, bbox (98.25, 504.24, 507.61, 518.52)]] T, which satisfies {c1,c2,⋯,cnf,2} = {i|i = 1,2,⋯,nf,E1 f,i > σ}. nf,2 is the modeling data dimension of the second-layer
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (62.93, 553.3, 123.03, 572.32)]] D2 f = [ Df,i,j -D1 f,i,j
+
+[confidence=0.92; source=equations; [page 5, bbox (128.24, 558.98, 509.91, 575.75)]] i=c1,c2,⋯,cnf,2,j=1,2,⋯,r (9)
+
+[confidence=0.92; source=equations; [page 6, bbox (79.43, 72.54, 95.83, 85.73)]] ′ = f′
+
+[confidence=0.92; source=equations; [page 6, bbox (71.26, 96.81, 94.01, 115.66)]] Ek f = 1 r
+
+[confidence=0.92; source=equations; [page 6, bbox (98.42, 112.47, 106.44, 117.91)]] j=1
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (71.26, 119.54, 137.77, 138.51)]] Dk+1 f = [ Dk f,i,j -Dk f,i,j
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (91.96, 47.25, 125.1, 64.9)]] ] = fPOD-k
+
+[confidence=0.92; source=equations; [page 6, bbox (142.98, 135.94, 200.01, 141.99)]] i=c1,c2,⋯,cnf,k,j=1,2,⋯,r
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (235.79, 166.69, 369.86, 181.64)]] ′] ∈Rnf,k\timesr and Ek f = [Ek f,1, Ek f,2, ⋯, Ek f,nf,k]
+
+[confidence=0.92; source=equations; [page 6, bbox (39.01, 195.04, 423.83, 210.04)]] kth-layer POD, and also represents the modeling data of the (k+1)th-layer POD. Sk+1 = [Sk+11 , Sk+12 , ⋯, Sk+1 nf,k+1]
+
+[confidence=0.92; source=equations; [page 6, bbox (39.0, 208.99, 507.6, 223.32)]] represents the modeling region of the (k+1)th-layer POD, which satisfies {c1,c2,⋯,cnf,k+1} = {i|i = 1,2,⋯,nf,k,Ek f,i > σ}. nf,k+1 is the
+
+[confidence=0.92; source=equations; [page 6, bbox (62.93, 375.47, 507.58, 388.5)]] af = fDNN(as) (13)
+
+[confidence=0.92; source=equations; [page 6, bbox (63.1, 495.2, 507.58, 508.24)]] ̂af = fDNN(̂as) (15)
+
+[confidence=0.92; source=equations; [page 7, bbox (63.44, 227.39, 509.91, 244.55)]] ∂t + e ⋅∇f + F ⋅∇f = Ω (18)
+
+[confidence=0.92; source=equations; [page 7, bbox (62.93, 287.25, 509.92, 300.29)]] fi(x + ei ⋅Δt, t + Δt) -fi(x, t) = Ωi(x, t) + Δt ⋅Fi(x, t)i = 0, 1, ⋯, m -1 (19)
+
+[confidence=0.92; source=equations; [page 7, bbox (62.93, 410.64, 509.91, 432.12)]] τ = 12 + υ c2 s ⋅Δt (21)
+
+[confidence=0.92; source=equations; [page 7, bbox (62.93, 476.5, 96.97, 487.83)]] f (eq) i = ρwi
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (62.93, 536.57, 106.17, 561.8)]] Fi = ( 1-12τ
+
+[confidence=0.92; source=equations; [page 7, bbox (62.93, 588.79, 89.03, 604.83)]] ρ = ∑ m-1
+
+[confidence=0.92; source=equations; [page 7, bbox (79.2, 606.95, 87.22, 612.39)]] i=0
+
+[confidence=0.92; source=equations; [page 7, bbox (62.93, 623.2, 93.45, 639.25)]] ρu = ∑ m-1
+
+[confidence=0.92; source=equations; [page 7, bbox (94.73, 625.69, 509.92, 644.55)]] eifi + 12 fΔt = ρu∗+ 12 fΔt (25)
+
+[confidence=0.92; source=equations; [page 8, bbox (62.93, 258.62, 509.91, 271.66)]] M ¨X(t) + C ˙X(t) + Fint(X) -Fext(t) = 0 (26)
+
+[confidence=0.92; source=equations; [page 8, bbox (62.93, 313.26, 112.68, 332.95)]] Fext(sl, t) = - ∫
+
+[confidence=0.92; source=equations; [page 8, bbox (118.54, 320.93, 509.92, 333.96)]] f′dv + Foth(sl, t) (27)
+
+[confidence=0.92; source=equations; [page 8, bbox (62.93, 514.46, 107.18, 530.37)]] u(X, t) = ∑
+
+[confidence=0.92; source=equations; [page 8, bbox (107.09, 518.85, 509.91, 531.88)]] u(x, t)δ(x -X)ΔxΔy (28)
+
+[confidence=0.92; source=equations; [page 8, bbox (62.93, 585.16, 509.92, 604.01)]] ρ(X, t) ⋅U(X, t) = ρ(X, t) ⋅u∗(X, t) + 12f′(X, t)Δt (29)
+
+[confidence=0.92; source=equations; [page 8, bbox (62.93, 646.05, 104.06, 661.95)]] f(x, t) = ∑
+
+[confidence=0.92; source=equations; [page 8, bbox (104.03, 650.43, 509.91, 663.46)]] f′(X, t)δ(x -X)Δs (30)
+
+[confidence=0.92; source=equations; [page 9, bbox (44.96, 313.37, 499.25, 325.17)]] Parameters ρs(kg /m3) b(m) l(m) E(Pa) ρf(kg /m3) u(m /s) υ(m2 /s)
+
+[confidence=0.92; source=equations; [page 9, bbox (62.93, 504.28, 509.91, 517.31)]] u(0, y) = u (31)
+
+[confidence=0.92; source=equations; [page 9, bbox (62.93, 574.1, 507.58, 593.36)]] u(0, y) = 1.5uy(6h -y) 9h2 (0 \ley \le3h) (32)
+
+[confidence=0.92; source=equations; [page 9, bbox (62.93, 624.9, 509.92, 646.02)]] K = EI ρf u2h3 (33)
+
+[confidence=0.92; source=equations; [page 9, bbox (62.93, 655.83, 91.01, 669.8)]] M = ρsb
+
+[confidence=0.92; source=equations; [page 10, bbox (62.93, 563.45, 93.89, 576.86)]] Re = u ⋅l
+
+[confidence=0.92; source=equations; [page 12, bbox (62.93, 618.21, 509.92, 631.49)]] Es = max(|P′ -P|) (36)
+
+[confidence=0.92; source=equations; [page 13, bbox (348.95, 74.24, 499.26, 87.57)]] j f(m /s) α TPOD(s)
+
+[confidence=0.92; source=equations; [page 20, bbox (348.95, 501.65, 499.26, 515.04)]] j f(m /s) α TPOD(s)
+
+[confidence=0.92; source=equations; [page 20, bbox (62.93, 577.28, 509.92, 590.55)]] e = ‖ V′ -V ‖2 (37)
+
+[confidence=0.57; needs_review; source=equations; [page 32, bbox (130.0, 450.15, 308.55, 461.5)]] 1. Compute the correlation matrix C: C=ddT, where C ∈Rn\timesn
+
+[confidence=0.57; needs_review; source=equations; [page 32, bbox (130.0, 585.97, 416.1, 596.66)]] 1. Compute the correlation matrix C∗: C∗= dTd, where C∗∈Rr\timesr. The size of C∗is different from C
+
+[confidence=0.92; source=equations; [page 32, bbox (130.0, 640.4, 363.54, 654.55)]] 4. Calculate the POD mode ξ∗= [ξ∗ 1,ξ∗ 2,...,ξ∗ m∗]: ξ∗ i = dq∗ i / ̅̅̅̅̅ λ∗ i √ , where ξ∗∈Rn\timesm∗
+
+[confidence=0.57; needs_review; source=equations; [page 32, bbox (130.0, 653.07, 407.89, 664.47)]] 5. Calculate the POD mode coefficients a∗= [a∗ 1, a∗ 2, ..., a∗ r ] corresponding to ξ∗: a∗ i = ξ∗Tdi, where
+
+[confidence=0.92; source=equations; [page 33, bbox (40.31, 49.31, 60.69, 62.35)]] = a∗
+
+[confidence=0.92; source=body_inline] \mathbf {D} = [ \mathbf {D} _ {1} , \mathbf {D} _ {2} , \cdots , \mathbf {D} _ {r} ]
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {i} ( i = 1 , 2 , \cdots , r )
+
+[confidence=0.92; source=body_inline] \overline {{\mathbf {d}}} = \sum _ {i = 1} ^ {r} \mathbf {D} _ {i} \int _ {\mathbf {\Omega}} r\tag{1}
+
+[confidence=0.92; source=body_inline] n \leq r \mathrm{or} n > r
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {i}
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {i} \approx [ \pmb {\xi} _ {1} , \pmb {\xi} _ {2} , \cdots , \pmb {\xi} _ {m} ] \mathbf {a} _ {i} + \mathbf {\overline {{d}}}\tag{2}
+
+[confidence=0.92; source=body_inline] \pmb {\xi} = [ \pmb {\xi} _ {1} , \pmb {\xi} _ {2} , \cdots , \pmb {\xi} _ {m} ] \in \mathbb {R} ^ {n \times m}
+
+[confidence=0.92; source=body_inline] \mathbf {a} _ {i} = \left[ \pmb {a} _ {i} ^ {1} , \pmb {a} _ {i} ^ {2} , \cdots , \pmb {a} _ {i} ^ {m} \right] ^ {\mathrm{T}} \in \mathbb {R} ^ {m \times 1}
+
+[confidence=0.92; source=body_inline] \mathbf {t} = \psi ( \mathbf {s} )\tag{3}
+
+[confidence=0.92; source=body_inline] \mathrm{Fig}
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {\mathrm{f}} = [ \mathbf {D} _ {\mathrm{f} , 1} , \mathbf {D} _ {\mathrm{f} , 2} , \cdots , \mathbf {D} _ {\mathrm{f} , r} ] = [ D _ {\mathrm{f} , i , j} ] n _ {\mathrm{f}} \times r
+
+[confidence=0.67; needs_review; source=body_inline] {\bf D} _ {\mathrm{s}} = [ {\bf D} _ {\mathrm{s} , 1} , {\bf D} _ {\mathrm{s} , 2} , \cdots
+
+[confidence=0.67; needs_review; source=body_inline] \mathbf {D} _ {\mathrm{s} , r} ] = [ D _ {\mathrm{s} , i , j} ] n _ {\mathrm{s}} \times r ,
+
+[confidence=0.92; source=body_inline] n _ {\mathrm{f}}
+
+[confidence=0.92; source=body_inline] n _ {s}
+
+[confidence=0.92; source=body_inline] f _ {\mathrm{POD}}
+
+[confidence=0.92; source=body_inline] f _ {\mathrm{multilayer-POD}}
+
+[confidence=0.92; source=body_inline] \pmb {\xi} _ {\mathrm{s}} = [ \pmb {\xi} _ {\mathrm{s} , 1} , \pmb {\xi} _ {\mathrm{s} , 2} , \cdots , \pmb {\xi} _ {\mathrm{s} , m _ {\mathrm{s}}} ] \in \mathbb {R} ^ {n _ {\mathrm{s}} \times m _ {\mathrm{s}}}
+
+[confidence=0.92; source=body_inline] \mathbf {a} _ {\mathrm{s}} = [ \mathbf {a} _ {\mathrm{s} , 1} , \mathbf {a} _ {\mathrm{s} , 2} , \cdots , \mathbf {a} _ {\mathrm{s} , r} ] \in \mathbb {R} ^ {m _ {\mathrm{s}} \times r}
+
+[confidence=0.92; source=body_inline] [ \xi _ {\mathrm{s}} , \mathbf {a} _ {\mathrm{s}} ] = f _ {\mathrm{POD}} ( \mathbf {D} _ {\mathrm{s}} )\tag{4}
+
+[confidence=0.92; source=body_inline] m _ {s}
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {\mathrm{s}}
+
+[confidence=0.92; source=body_inline] {\bf D} _ {\mathrm{s}} \approx {\bf D} _ {\mathrm{s}} ^ {'} = f _ {\mathrm{POD}} ^ {'} ( \pmb {\xi} _ {\mathrm{s}} , \mathbf {a} _ {\mathrm{s}} )\tag{5}
+
+[confidence=0.92; source=body_inline] {\bf \delta D} _ {\mathrm{s}} ^ {'}
+
+[confidence=0.92; source=body_inline] {\bf D} _ {\mathrm{s}}
+
+[confidence=0.92; source=body_inline] f _ {\mathrm{POD}} ^ {'}
+
+[confidence=0.92; source=body_inline] \mathrm{POD} f _ {\mathrm{POD-1}}
+
+[confidence=0.92; source=body_inline] \boldsymbol {\xi} _ {\mathrm{f}} ^ {1}
+
+[confidence=0.92; source=body_inline] \mathbf {a} _ {\mathrm{f}} ^ {1}
+
+[confidence=0.92; source=body_inline] \left[ \pmb {\xi} _ {\mathrm{f}} ^ {1} , \mathbf {a} _ {\mathrm{f}} ^ {1} \right] = f _ {\mathrm{POD-1}} \left( \mathbf {D} _ {\mathrm{f}} \right)\tag{6}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\boldsymbol {\mathfrak {E}} _ {\mathrm{f}} ^ {1} = [ \boldsymbol {\mathfrak {E}} _ {\mathrm{f} , 1} ^ {1} , \boldsymbol {\mathfrak {E}} _ {\mathrm{f} , 2} ^ {1} , \cdots , \boldsymbol {\mathfrak {E}} _ {\mathrm{f} , m _ {i , 1}} ^ {1} ] \in \mathbb {R} ^ {n _ {i} \times m _ {\mathrm{f} , 1}} , \mathbf {a} _ {\mathrm{f}} ^ {1} = [ \mathbf {a} _ {\mathrm{f} , 1} ^ {1} , \mathbf {a} _ {\mathrm{f} , 2} ^ {1} , \cdots , \mathbf {a} _ {\mathrm{f} , r} ^ {1} ] \in \mathbb {R} ^ {m _ {i , 1} \times r}} \end{array}
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {\mathrm{f}} ^ {1} {} ^ {'} = [ \mathbf {D} _ {\mathrm{f} , 1} ^ {1} {} ^ {'} , \mathbf {D} _ {\mathrm{f} , 2} ^ {1} {} ^ {'} , \cdots , \mathbf {D} _ {\mathrm{f} , r} ^ {1} ] \in \mathbb {R} ^ {n _ {\mathrm{f}} \times r}
+
+[confidence=0.92; source=body_inline] {\bf D} _ {\mathrm{f}} ^ {1 ^ {'}} = f _ {\mathrm{POD} - 1} ^ {'} \left( \xi _ {\mathrm{f}} ^ {1} , \mathbf {a} _ {\mathrm{f}} ^ {1} \right)\tag{7}
+
+[confidence=0.92; source=body_inline] \mathbf {E} _ {\mathrm{f}} ^ {1} \ =
+
+[confidence=0.92; source=body_inline] \lbrack E _ {\mathrm{f} , 1} ^ {1} , E _ {\mathrm{f} , 2} ^ {1} , \cdots , E _ {\mathrm{f} , n _ {\mathrm{f}}} ^ {1} \rbrack ^ {\mathrm{T}} \in \mathbb {R} ^ {n _ {\mathrm{f}} \times 1}
+
+[confidence=0.92; source=body_inline] \mathbf {E} _ {\mathrm{f}} ^ {1} = \frac {1} {r} \sum _ {j = 1} ^ {r} \left| \mathbf {D} _ {\mathrm{f} , j} - \mathbf {D} _ {\mathrm{f} , j} ^ {1} \right|\tag{8}
+
+[confidence=0.92; source=body_inline] \mathbf {S} ^ {1} = \left[ S _ {1} ^ {1} , S _ {2} ^ {1} , \cdots , S _ {n _ {t}} ^ {1} \right] ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] \mathbf {S} ^ {2} = \left[ S _ {1} ^ {2} , S _ {2} ^ {2} , \cdots , S _ {n _ {\mathrm{f} , 2}} ^ {2} \right] ^ {\mathrm{T}} =
+
+[confidence=0.92; source=body_inline] \big [ S _ {c 1} ^ {1} , S _ {c 2} ^ {1} , \cdots , S _ {c n _ {\mathrm{f.2}}} ^ {1} \big ] ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] \{c 1 , c 2 , \cdots , c n _ {\mathrm{f,2}} \} = \{i | i = 1 , 2 , \cdots , n _ {\mathrm{f}} , E _ {\mathrm{f} , i} ^ {1} > \sigma \} . n _ {\mathrm{f,2}}
+
+[confidence=0.92; source=body_inline] n _ {\mathrm{f} , 2} \leq n _ {\mathrm{f}}
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {\mathrm{f}} ^ {2} = [ \mathbf {D} _ {\mathrm{f} , 1} ^ {2} , \mathbf {D} _ {\mathrm{f} , 2} ^ {2} , \cdots , \mathbf {D} _ {\mathrm{f} , r} ^ {2} ] \in \mathbb {R} ^ {n _ {\mathrm{f} , 2} \times r}
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {\mathrm{f}} ^ {2} = \left[ D _ {\mathrm{f} , i , j} - D _ {\mathrm{f} , i , j} ^ {1} \right] _ {i = c 1 , c 2 , \cdots , c n _ {\mathrm{f} , 2} , j = 1 , 2 , \cdots , r}\tag{9}
+
+[confidence=0.92; source=body_inline] \mathrm{POD} f _ {\mathrm{POD-2}}
+
+[confidence=0.92; source=body_inline] ( k = 2 , 3 , \cdots , z )
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\displaystyle \Big [ \xi _ {t} ^ {k} , \mathbf {a} _ {t} ^ {k} \Big ] = f _ {\mathrm{POD-} k} \Big ( \mathbf {D} _ {t} ^ {k} \Big )} \\ {\displaystyle \mathbf {D} _ {t} ^ {k ^ {\prime}} = f _ {\mathrm{POD-} k} \Big ( \xi _ {t} ^ {k} , \mathbf {a} _ {t} ^ {k} \Big )} \\ {\displaystyle \mathbf {E} _ {t} ^ {k} = \frac {1} {r} \sum _ {j = 1} ^ {r} \Big | \mathbf {D} _ {t , j} ^ {k} - \mathbf {D} _ {t , j} ^ {k ^ {\prime}} \Big |} \\ {\displaystyle \mathbf {D} _ {t} ^ {k + 1} = \Big [ D _ {t , i , j} ^ {k} - D _ {t , i , j} ^ {k} \Big ] _ {i = c _ {1} , c _ {2} , . . . , c _ {n , k} , j = 1 , 2 , . . . , r}} \end{array} \right.\tag{10}
+
+[confidence=0.92; source=body_inline] \pmb {\xi} _ {\mathrm{f}} ^ {k} = [ \pmb {\xi} _ {\mathrm{f} , 1} ^ {k} , \pmb {\xi} _ {\mathrm{f} , 2} ^ {k} , \cdots , \pmb {\xi} _ {\mathrm{f} , m _ {\mathrm{f} , k}} ^ {k} ] \in \mathbb {R} ^ {n _ {\mathrm{f} , k} \times m _ {\mathrm{f} , k}}
+
+[confidence=0.92; source=body_inline] \mathbf {a} _ {\mathrm{f}} ^ {k} = [ \mathbf {a} _ {\mathrm{f,1}} ^ {k} , \mathbf {a} _ {\mathrm{f,2}} ^ {k} , \cdots , \mathbf {a} _ {\mathrm{f,\itr}} ^ {k} ] \in \mathbb {R} ^ {m _ {\mathrm {f , {k}}} \times r}
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {\mathrm{f}} ^ {k ^ {^ {\prime}}} = [ \mathbf {D} _ {\mathrm{f} , 1} ^ {k} , \mathbf {D} _ {\mathrm{f} , 2} ^ {k ^ {^ {\prime}}} , \cdots , \mathbf {D} _ {\mathrm{f} , r} ^ {k ^ {^ {\prime}}} ] \in \mathbb {R} ^ {n _ {\mathrm{f} , k} \times r}
+
+[confidence=0.92; source=body_inline] \mathbf {E} _ {\mathrm{f}} ^ {k} = [ E _ {\mathrm{f} , 1} ^ {k} , E _ {\mathrm{f} , 2} ^ {k} , \cdots , E _ {\mathrm{f} , n _ {\mathrm{f} , k}} ^ {k} ] ^ {\mathrm{T}} \in \mathbb {R} ^ {n _ {\mathrm{f} , k} \times 1}
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {\mathrm{f}} ^ {k + 1} = [ \mathbf {D} _ {\mathrm{f} , 1} ^ {k + 1} , \mathbf {D} _ {\mathrm{f} , 2} ^ {k + 1} , \cdots , \mathbf {D} _ {\mathrm{f} , r} ^ {k + 1} ] \in \mathbb {R} ^ {n _ {\mathrm{f} , k + 1} \times r}
+
+[confidence=0.92; source=body_inline] \mathbf {S} ^ {k + 1} = \left[ S _ {1} ^ {k + 1} , S _ {2} ^ {k + 1} , \cdots , S _ {n _ {t k + 1}} ^ {k + 1} \right] ^ {\mathrm{T}} = \left[ S _ {c 1} ^ {k} , S _ {c 2} ^ {k} , \cdots , S _ {c n _ {t k + 1}} ^ {k} \right] ^ {\mathrm{T}}
+
+[confidence=0.92; source=body_inline] \{c 1 , c 2 , \cdots , c n _ {\mathrm{f} , k + 1} \} = \{i | i = 1 , 2 , \cdots , n _ {\mathrm{f} , k} , E _ {\mathrm{f} , i} ^ {k} > \sigma \} . n _ {\mathrm{f} , k + 1}
+
+[confidence=0.92; source=body_inline] n _ {\mathrm{f} , k + 1} \leq n _ {\mathrm{f} , k}
+
+[confidence=0.92; source=body_inline] \mathbf {S} ^ {k + 1} = \mathbf {D} _ {\mathrm{f}} ^ {k + 1} = \varnothing
+
+[confidence=0.92; source=body_inline] \left[ \boldsymbol {\xi} _ {\mathrm{f}} , \mathbf {a} _ {\mathrm{f}} \right] = f _ {\mathrm{multilayer-POD}} \left( \mathbf {D} _ {\mathrm{f}} \right)\tag{11}
+
+[confidence=0.92; source=body_inline] f _ {\mathrm{multilayer-POD}} = \{f _ {\mathrm{POD-1}} , f _ {\mathrm{POD-2}} , \cdots , f _ {\mathrm{POD-2}} \} . \xi _ {\mathrm{f}} = \{\xi _ {\mathrm{f}} ^ {1} , \xi _ {\mathrm{f}} ^ {2} , \cdots , \xi _ {\mathrm{f}} ^ {z} \}
+
+[confidence=0.92; source=body_inline] \mathbf {a} _ {\mathrm{f}} = \{\mathbf {a} _ {\mathrm{f}} ^ {1} , \mathbf {a} _ {\mathrm{f}} ^ {2} , \cdots , \mathbf {a} _ {\mathrm{f}} ^ {z} \}
+
+[confidence=0.92; source=body_inline] \sigma ,
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {\mathrm{f}} \approx \mathbf {D} _ {\mathrm{f}} ^ {'} = f _ {\mathrm{multilayer-POD}} ^ {'} \left( \pmb {\xi} _ {\mathrm{f}} , \mathbf {a} _ {\mathrm{f}} \right)\tag{12}
+
+[confidence=0.92; source=body_inline] f _ {\mathrm{DNN}}
+
+[confidence=0.92; source=body_inline] {\bf a} _ {\mathrm{f}} = f _ {\mathrm{DNN}} ( {\bf a} _ {\mathrm{s}} )\tag{13}
+
+[confidence=0.92; source=body_inline] \mathbf {D} _ {\mathrm{s}} {\longleftrightarrow} _ {\dot {f} _ {\mathrm{POD}}} ^ {f _ {\mathrm{POD}}} \mathbf {a} _ {\mathrm{s}} \overset {f _ {\mathrm{DNN}}} {} \mathbf {a} _ {\mathrm{f}} {\longleftrightarrow} _ {\dot {f} _ {\mathrm{multilayer-POD}}} ^ {f _ {\mathrm{multilayer-POD}}} \mathbf {D} _ {\mathrm{f}}\tag{14}
+
+[confidence=0.92; source=body_inline] \widehat {\mathbf {D}} _ {\mathrm{s}}
+
+[confidence=0.92; source=body_inline] \widehat {\mathbf {a}} _ {\mathrm{s}}
+
+[confidence=0.92; source=body_inline] \widehat {\mathbf {a}} _ {\mathrm{f}}
+
+[confidence=0.92; source=body_inline] \widehat {\mathbf {a}} _ {\mathrm{f}} = f _ {\mathrm{DNN}} ( \widehat {\mathbf {a}} _ {\mathrm{s}} )\tag{15}
+
+[confidence=0.92; source=body_inline] \widehat {\mathbf {D}} _ {\mathrm{f}} ^ {1} , \widehat {\mathbf {D}} _ {\mathrm{f}} ^ {2} , \cdots , \widehat {\mathbf {D}} _ {\mathrm{f}} ^ {z}
+
+[confidence=0.92; source=body_inline] \widehat {\mathbf {D}} _ {\mathrm{f}} ^ {k ^ {^ {\prime}}} = f _ {\mathrm{POD} - k} ^ {^ {\prime}} \big ( \xi _ {\mathrm{f}} , \widehat {\mathbf {a}} _ {\mathrm{f}} \big )\tag{16}
+
+[confidence=0.92; source=body_inline] \widehat {\mathbf {D}} _ {\mathrm{f}}
+
+[confidence=0.92; source=body_inline] \widehat {{\mathbf {D}}} _ {\mathrm{f}} = \widehat {{\mathbf {D}}} _ {\mathrm{f}} ^ {1} \oplus \widehat {{\mathbf {D}}} _ {\mathrm{f}} ^ {2} \oplus \cdots \oplus \widehat {{\mathbf {D}}} _ {\mathrm{f}} ^ {z}\tag{17}
+
+[confidence=0.92; source=body_inline] \frac {\partial f} {\partial t} + \mathbf {e} \cdot \nabla f + \mathbf {F} \cdot \nabla f = \pmb {\Omega}\tag{18}
+
+[confidence=0.92; source=body_inline] f _ {i} ( \mathbf {x} + \mathbf {e} _ {i} \cdot {\boldsymbol {\Delta}} t , t + {\boldsymbol {\Delta}} t ) - f _ {i} ( \mathbf {x} , t ) = \Omega _ {i} ( \mathbf {x} , t ) + {\boldsymbol {\Delta}} t \cdot \mathbf {F} _ {i} ( \mathbf {x} , t ) i = 0 , 1 , \cdots , m - 1\tag{19}
+
+[confidence=0.92; source=body_inline] m = 9
+
+[confidence=0.92; source=body_inline] f _ {i} ( {\bf x} , t )
+
+[confidence=0.92; source=body_inline] \mathbf {e} _ {i}
+
+[confidence=0.92; source=body_inline] \mathbf {e} _ {i} , \mathbf {F} _ {i}
+
+[confidence=0.92; source=body_inline] \pmb {\Omega} _ {i}
+
+[confidence=0.92; source=body_inline] f _ {i}
+
+[confidence=0.92; source=body_inline] \Omega _ {i} = \frac {1} {\tau} \left( f _ {i} ^ {( e q )} - f _ {i} \right)\tag{20}
+
+[confidence=0.92; source=body_inline] \tau = \frac {1} {2} + \frac {\upsilon} {c _ {s} ^ {2} \cdot \Delta t}\tag{21}
+
+[confidence=0.92; source=body_inline] c _ {s}
+
+[confidence=0.92; source=body_inline] f _ {i} ^ {( e q )}
+
+[confidence=0.92; source=body_inline] f _ {i} ,
+
+[confidence=0.92; source=body_inline] f _ {i} ^ {( e q )} = \rho w _ {i} \left[ 1 + \frac {\mathbf {e} _ {i} \cdot \mathbf {u}} {c _ {s} ^ {2}} + \frac {\left( \mathbf {e} _ {i} \cdot \mathbf {u} \right) ^ {2}} {2 c _ {s} ^ {4}} - \frac {\mathbf {u} ^ {2}} {2 c _ {s} ^ {2}} \right]\tag{22}
+
+[confidence=0.92; source=body_inline] \rho
+
+[confidence=0.92; source=body_inline] w _ {i}
+
+[confidence=0.92; source=body_inline] \mathbf {F} _ {i}
+
+[confidence=0.92; source=body_inline] \mathbf {F} _ {i} = \left( 1 - \frac {1} {2 \tau} \right) \cdot w _ {i} \cdot \left[ \frac {\mathbf {e} _ {i} - \mathbf {u}} {c _ {s} ^ {2}} + \frac {\mathbf {e} _ {i} \cdot \mathbf {u}} {c _ {s} ^ {4}} \mathbf {e} _ {i} \right] \cdot \mathbf {f}\tag{23}
+
+[confidence=0.92; source=body_inline] \rho = \sum _ {i = 0} ^ {m - 1} f _ {i}\tag{24}
+
+[confidence=0.92; source=body_inline] \rho \mathbf {{u}} = \sum _ {i = 0} ^ {m - 1} \mathbf {{e}} _ {i} f _ {i} + \frac {1} {2} \mathbf {{f}} \Delta t = \rho \mathbf {{u}} ^ {*} + \frac {1} {2} \mathbf {{f}} \Delta t\tag{25}
+
+[confidence=0.92; source=body_inline] {\bf M} \ddot {\bf X} ( t ) + {\bf C} \dot {\bf X} ( t ) + {\bf F} _ {\mathrm{int}} ( {\bf X} ) - {\bf F} _ {\mathrm{ext}} ( t ) = 0\tag{26}
+
+[confidence=0.92; source=body_inline] \mathbf {F} _ {\mathrm{int}}
+
+[confidence=0.92; source=body_inline] \mathbf {X} , \mathbf {F} _ {\mathrm{ext}}
+
+[confidence=0.92; source=body_inline] {\bf F} _ {\mathrm{ext}} ( s _ {l} , t ) = - \int _ {\Pi _ {l}} {\bf f} d \nu + {\bf F} _ {\mathrm{oth}} ( s _ {l} , t )\tag{27}
+
+[confidence=0.92; source=body_inline] \Pi _ {l}
+
+[confidence=0.92; source=body_inline] \mathrm{Fig.~} 3 , \mathbf {f}
+
+[confidence=0.92; source=body_inline] \mathbf {F} _ {\mathrm{oth}}
+
+[confidence=0.92; source=body_inline] \mathbf {u} ( \mathbf {X} , t ) = \sum _ {\Pi} \mathbf {u} ( \mathbf {x} , t ) \delta ( \mathbf {x} - \mathbf {X} ) \Delta x \Delta y\tag{28}
+
+[confidence=0.92; source=body_inline] \Delta y
+
+[confidence=0.92; source=body_inline] \Delta x = \Delta y
+
+[confidence=0.92; source=body_inline] \rho ( \mathbf {X} , t ) \cdot \mathbf {U} ( \mathbf {X} , t ) = \rho ( \mathbf {X} , t ) \cdot \mathbf {u} ^ {*} ( \mathbf {X} , t ) + \frac {1} {2} \mathbf {f} ^ {'} ( \mathbf {X} , t ) \Delta t\tag{29}
+
+[confidence=0.92; source=body_inline] \rho ( {\mathbf {X}} , t )
+
+[confidence=0.92; source=body_inline] {\bf u} ^ {*} ( {\bf X} , t )
+
+[confidence=0.92; source=body_inline] \rho ( \mathbf {x} , t )
+
+[confidence=0.92; source=body_inline] \mathbf {u} ^ {*} ( \mathbf {x} , t )
+
+[confidence=0.92; source=body_inline] \mathbf {f} ^ {'} ( \mathbf {X} , t )
+
+[confidence=0.92; source=body_inline] \mathbf {f} ( \mathbf {x} , t ) = \sum _ {\Gamma} \mathbf {f} ^ {\prime} ( \mathbf {X} , t ) \delta ( \mathbf {x} - \mathbf {X} ) \Delta s\tag{30}
+
+[confidence=0.92; source=body_inline] \Delta s
+
+[confidence=0.92; source=body_inline] D = 0.10 \mathrm{m}
+
+[confidence=0.92; source=body_inline] u ( 0 , y ) = \overline {{u}}\tag{31}
+
+[confidence=0.92; source=body_inline] u ( 0 , y ) = 1.5 \overline {{u}} ^ {y} \frac {( 6 h - y )} {9 h ^ {2}} ( 0 \leq y \leq 3 h )\tag{32}
+
+[confidence=0.92; source=body_inline] K = \frac {E I} {\rho _ {f} \overline {{u}} ^ {2} h ^ {3}}\tag{33}
+
+[confidence=0.92; source=body_inline] M = \frac {\rho _ {s} b} {\rho _ {f} h}\tag{34}
+
+[confidence=0.92; source=body_inline] R e = \frac {\overline {{u}} \cdot l} {\upsilon}\tag{35}
+
+[confidence=0.92; source=body_inline] \rho _ {s}
+
+[confidence=0.92; source=body_inline] \rho _ {f}
+
+[confidence=0.92; source=body_inline] \Delta s = 0.02 l
+
+[confidence=0.92; source=body_inline] \pmb {t = 0.112 s}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{s}}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{s}} = \operatorname* {m a x} ( | \mathbf {P} ^ {'} - \mathbf {P} | )\tag{36}
+
+[confidence=0.92; source=body_inline] \mathbf {p} ^ {\prime}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{s}} \leq
+
+[confidence=0.92; source=body_inline] 1.0 \times 10 ^ {- 3} D
+
+[confidence=0.92; source=body_inline] 8.88 \times 10 ^ {- 4} D ,
+
+[confidence=0.92; source=body_inline] t = 0.112 s ,
+
+[confidence=0.92; source=body_inline] \mathbf {V} _ {x} ,
+
+[confidence=0.92; source=body_inline] \mathbf {V} _ {y} ,
+
+[confidence=0.92; source=body_inline] {\bf V} _ {x}
+
+[confidence=0.92; source=body_inline] \sigma = 0.02 \mathrm{m/s}
+
+[confidence=0.92; source=body_inline] \mathbf {E} _ {\mathrm{f}} ^ {1} > \sigma
+
+[confidence=0.92; source=body_inline] \mathbf {E} _ {\mathrm{f}} ^ {3}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\mathbf {E} _ {\mathrm{f}} ^ {3} \leq \sigma .} \end{array}
+
+[confidence=0.92; source=body_inline] \gamma _ {\mathrm{E}}
+
+[confidence=0.92; source=body_inline] \gamma _ {S}
+
+[confidence=0.92; source=body_inline] \widehat {E} _ {\mathrm{f}} ^ {j}
+
+[confidence=0.92; source=body_inline] \mathbf {E} _ {\mathrm{f}} ^ {j} ;
+
+[confidence=0.92; source=body_inline] \mathbf {E} _ {\mathrm{f}} ^ {j} > \sigma _ {\mathrm{i}}
+
+[confidence=0.92; source=body_inline] T _ {\mathrm{POD}}
+
+[confidence=0.92; source=body_inline] p _ {0}
+
+[confidence=0.92; source=body_inline] u _ {0}
+
+[confidence=0.92; source=body_inline] \mathrm{d} u _ {0} / \mathrm{d} t
+
+[confidence=0.92; source=body_inline] \mathbf {V} _ {x}
+
+[confidence=0.92; source=body_inline] \mathbf {V} _ {x} , \mathbf {V} _ {y} ,
+
+[confidence=0.92; source=body_inline] \mathbf {V} _ {x} , \mathbf {V} _ {y} , \mathbf {p} ,
+
+[confidence=0.92; source=body_inline] t = 1.196 ~ s
+
+[confidence=0.92; source=body_inline] e = \| \textbf {V} - \textbf {V} \| _ {2}\tag{37}
+
+[confidence=0.92; source=body_inline] \| \cdot \| _ {2}
+
+[confidence=0.92; source=body_inline] t _ {1} = 0.202 s , t _ {2} = 0.618 s
+
+[confidence=0.92; source=body_inline] t _ {3} = 1.322
+
+[confidence=0.92; source=body_inline] 1 \leq x / D \leq 20
+
+[confidence=0.92; source=body_inline] 0 \leq y / D \leq 4.1
+
+[confidence=0.92; source=body_inline] u _ {0} ,
+
+[confidence=0.92; source=body_inline] / \mathrm{d} t
+
+[confidence=0.67; needs_review; source=body_inline] ( t _ {1} = 2.970 s , t _ {2} = 4.682 s
+
+[confidence=0.92; source=body_inline] t _ {3} = 5.327
+
+[confidence=0.92; source=body_inline] t = 2.36 s
+
+[confidence=0.92; source=body_inline] 7.50 \times 10 ^ {- 4} h ,
+
+[confidence=0.92; source=body_inline] 1.0 \times 10 ^ {- 3} h
+
+[confidence=0.92; source=body_inline] t = 2.36 s ,
+
+[confidence=0.92; source=body_inline] 40 ^ {\mathrm{th}}
+
+[confidence=0.92; source=body_inline] \mathbf {V} _ {y}
+
+[confidence=0.92; source=body_inline] 8 \leq x / h \leq 72
+
+[confidence=0.92; source=body_inline] 0 \leq y / h \leq 3
+
+[confidence=0.92; source=body_inline] t _ {1} = 1.46 , t _ {2} = 4.73 s ,
+
+[confidence=0.92; source=body_inline] t _ {3} = 8.78
+
+[confidence=0.92; source=body_inline] 35 \leq x / h \leq 65
+
+[confidence=0.92; source=body_inline] 0 \leq y / h \leq 3 ,
+
+[confidence=0.67; needs_review; source=body_inline] ( t _ {1} = 10.250 s , t _ {2} =
+
+[confidence=0.67; needs_review; source=body_inline] t _ {3} = 20.963 ~ \mathrm{s} )
+
+[confidence=0.92; source=body_inline] 20 \leq x / h \leq 80
+
+[confidence=0.92; source=body_inline] \gamma = \gamma ^ {*}
+
+[confidence=0.92; source=body_inline] \pmb {m} = \pmb {m} ^ {*} , \pmb {\xi} = \pmb {\xi} ^ {*}

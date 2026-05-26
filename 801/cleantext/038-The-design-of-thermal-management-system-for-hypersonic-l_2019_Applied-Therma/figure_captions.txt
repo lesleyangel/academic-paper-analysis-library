@@ -1,0 +1,33 @@
+Fig. 1. The vehicle and trajectory.
+
+Fig. 2. Thermal equilibrium model.
+
+Fig. 3. Connection pattern of cooling channels.
+
+Fig. 4. Process of TMS design.
+
+Fig. 5. One-dimensional heat transfer analysis model.
+
+Fig. 7. The maximum temperature on the windward and leeward median lines.
+
+Fig. 6. The highest wall temperature.
+
+Fig. 8. The transient wall temperature along the trajectory.
+
+Fig. 9. The transient aerodynamic heat flux along the trajectory.
+
+Fig. 10. The heat, heat flux and local heat transfer coefficient of active cooling.
+
+Fig. 11. The aerodynamic heat and active cooled heat on median lines.
+
+Fig. 12. The partition of the vehicle surface.
+
+Fig. 13. The distribution of TPS concept.
+
+Fig. 14. The assumed active cooling system.
+
+Fig. 15. Capacity of active cooling network.
+
+Fig. 16. Coolant mass flow rate along with the temperature rise.
+
+Fig. 17. TPS weight and required coolant mass flow rate.

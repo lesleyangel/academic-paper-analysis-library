@@ -1,0 +1,41 @@
+Fig. 1. TEG for hypersonic vehicles.
+
+Fig. 2. Reconstruction of rough surfaces.
+
+Fig. 3. Geometric and mesh models of contact pairs.
+
+Fig. 4. Analysis method, boundary conditions and contact properties.
+
+Fig. 5. Geometric and mesh models of TEG.
+
+Fig. 6. Experimental measurement platform for ECR.
+
+Fig. 7. Stress cloud of rough region for TE legs.
+
+Fig. 8. Contact stress cloud of rough surfaces for TE legs. (For interpretation of the colors in the figure(s), the reader is referred to the web version of this article.)
+
+Fig. 9. Dimensionless real contact area varied with loading pressure.
+
+Fig. 10. Potential cloud of contact pairs under different gap mediums.
+
+Fig. 11. Potential cloud of rough surfaces for TE legs under air gap.
+
+Fig. 12. Current density cloud of rough surfaces for TE legs under air gap.
+
+Fig. 13. Potential and current density of rough surfaces for TE legs under silver-epoxy adhesive gap.
+
+Fig. 14. Variation of ECR with temperature under air gap.
+
+Fig. 15. Variation of ECR with loading pressure.
+
+Fig. 16. Temperature cloud of TEG under different gap mediums.
+
+Fig. 17. Potential cloud of TEG under different gap mediums.
+
+Fig. 18. Potential cloud of TEG under different loading pressures.
+
+Fig. 20. The maximum output power of TEG.
+
+Fig. 19. Internal electric resistances of TEG.
+
+Fig. 21. Relationship between the maximum output power and internal resistances of TEG.

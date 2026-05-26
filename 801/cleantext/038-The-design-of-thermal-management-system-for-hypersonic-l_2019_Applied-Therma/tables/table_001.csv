@@ -1,0 +1,15 @@
+"Nomenclature $x , y$ coordinate direction"
+,$A$,area
+Abbreviations,$M a$,Mach number
+ACN,,$T$,temperature
+HTC,active cooling network heat transfer coefficient,$Q$,heat flow
+TMS,thermal management system,"$T _ { b } , \ T _ { c } , \ T _ { w }$","temperature of the Tps bottom, the coolant, and the wall"
+TPS,thermal protection system,"$T _ { e }$ $T _ { r } , T ^ { * }$","temperature of the outer edge of boundary layer recovery temperature, reference temperature"
+,,$\triangle T$,temperature rise of coolant
+Symbols
+heat capacity $c$,,$G r e e k$,
+"$h _ { e q } , h _ { l }$",equivalent and local heat transfer coefficient,α,convective coefficient of aerodynamic heating
+$m _ { f }$ $q$,mass flow rate heat flux,$\varepsilon$,surface emissivity
+$q _ { a e r o }$,aerodynamic heat fl ux,"$\sigma$ $\phi ,$ $\phi _ { i n }$",Stefan-Boltzmann constant
+,,,aerodynamic heat and heat taken by ACN per unit area
+$q _ { i n }$,heat flux that is conducted into the TPs,,

@@ -1,0 +1,5 @@
+| Method | Efficiency | Accuracy |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  | $N _ { \mathrm { B M P P } }$ | $N _ { \mathrm { F E } }$ | P(0, 120) | $P _ { \mathrm { f } } ^ { \mathrm { U } } ( 0 , 1 2 0 )$ | $\varepsilon _ { \mathrm { f } } ^ { \mathrm { L } }$ | $\varepsilon _ { \mathrm { f } } ^ { \mathrm { U } }$ |
+| MCS |  | $3 0 0 \times 1 2 0 \times 2 \times 1 0 ^ { 6 }$ | $1 . 1 0 3 \times 1 0 ^ { - 3 }$ | $4 . 9 8 9 \times 1 0 ^ { - 3 }$ |  |  |
+| HABMPPT | 16.4 | 15903 | $\mathbf { 1 . 1 2 8 \times 1 0 ^ { - 3 } }$ | ${ \bf 5 . 1 3 4 \times 1 0 ^ { - 3 } }$ | 2.27% | 2.91 % |

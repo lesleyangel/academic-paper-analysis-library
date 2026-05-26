@@ -1,0 +1,59 @@
+Table 4.1 Grid independence study for the blunt-cone CFD.
+
+Table 4.2 Reconstruction accuracy at different masking ratios (replication count = 10).
+
+Table 4.5 Hyperparameters of the TFNO.
+
+Table 4.3 Reconstruction accuracy at different replication counts (masking ratio = 10%).
+
+Table 4.4 Reconstruction accuracy with different numbers of experimental samples.
+
+Table 4.6 Performance evaluation of the low-fidelity RF model on different datasets.
+
+Table 4.7 Model performance under different combinations of input types.
+
+Table 4.8 Reconstruction accuracy and effect of different low-fidelity fields.
+
+Table 4.9 Reconstruction accuracy of heat flux distributions across different methods.
+
+Table 4.10 Reconstruction accuracy of different output formulations.
+
+Table 4.11 Reconstruction accuracy of different modeling methods.
+
+Table 5.1 Reconstruction accuracy versus replication at a 10% masking ratio.
+
+Table 5.2 Reconstruction accuracy versus number of original samples.
+
+Table 5.3 TFNO hyperparameters.
+
+Table 5.4 Model performance under different historical input and methods.
+
+Table 5.5 Reconstruction accuracy under different methods.
+
+Table 4.1
+
+Table 4.2
+
+Table 4.3
+
+Table 4.4
+
+Table 4.6
+
+Table 4.7
+
+Table 4.8
+
+Table 4.9
+
+Table 4.10
+
+Table 4.11
+
+Table 5.1
+
+Table 5.2
+
+Table 5.4
+
+Table 5.5

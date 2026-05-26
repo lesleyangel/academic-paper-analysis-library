@@ -1,0 +1,293 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (42.63, 669.07, 200.1, 690.38)]] * Corresponding authors. E-mail address: chunnali@nwpu.edu.cn (C. Li)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 332.73, 716.91)]] https://doi.org/10.1016/j.ast.2025.110549 Received 24 March 2025; Received in revised form 15 June 2025; Accepted 25 June 2025
+
+[confidence=0.67; needs_review; source=equations; [page 2, bbox (205.85, 350.02, 232.53, 364.9)]] ) = γaT i bj
+
+[confidence=0.92; source=equations; [page 2, bbox (205.85, 319.18, 273.73, 333.22)]] ) = exp ( - γ ‖ ai - bj‖2 F
+
+[confidence=0.92; source=equations; [page 2, bbox (205.85, 328.93, 247.83, 343.86)]] ) = tanh ( γaT i bj
+
+[confidence=0.92; source=equations; [page 2, bbox (205.85, 340.27, 235.47, 355.15)]] ) = ( γaT i bj
+
+[confidence=0.92; source=equations; [page 6, bbox (37.59, 712.39, 290.98, 725.43)]] Y = f(X) (2.1)
+
+[confidence=0.92; source=equations; [page 6, bbox (306.59, 545.27, 532.51, 558.3)]] 2.2. KRR-based discontinuity-capturing reconstruction (KRR-DCR)
+
+[confidence=0.92; source=equations; [page 6, bbox (306.6, 624.5, 559.99, 637.72)]] X ≈Xʹ = YWT (2.2)
+
+[confidence=0.92; source=equations; [page 6, bbox (306.6, 723.43, 559.99, 737.64)]] X ≈Xʹ = Φ(Y, Y)WT nonlinear = ZWT nonlinear (2.3)
+
+[confidence=0.92; source=equations; [page 7, bbox (37.59, 612.43, 290.98, 628.76)]] Wnonlinear = XTZ ( ZTZ + λI )+ (2.5)
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 656.95, 559.99, 669.98)]] K(x, y) = 〈ϕ(x), ϕ(y)〉 (2.8)
+
+[confidence=0.92; source=equations; [page 7, bbox (43.03, 707.91, 290.98, 721.93)]] new = ZnewWT nonlinear = Φ(Ynew, Y)WT nonlinear (2.6)
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (38.95, 634.48, 154.09, 650.82)]] Z = Φ(A, B), where Zij = K ( ai, bj
+
+[confidence=0.67; needs_review; source=equations; [page 9, bbox (307.95, 606.93, 394.88, 629.86)]] p(i) Norm = p(i) -min ( p(i) test
+
+[confidence=0.92; source=equations; [page 9, bbox (367.77, 619.74, 410.87, 636.5)]] ) -min ( p(i) test
+
+[confidence=0.67; needs_review; source=equations; [page 10, bbox (218.23, 530.89, 273.29, 542.22)]] ( mean E =0.14%,
+
+[confidence=0.67; needs_review; source=equations; [page 10, bbox (307.62, 530.89, 362.68, 542.22)]] ( mean E =0.17%,
+
+[confidence=0.67; needs_review; source=equations; [page 10, bbox (220.13, 548.34, 271.31, 559.02)]] Emax=27.19%)
+
+[confidence=0.67; needs_review; source=equations; [page 10, bbox (309.63, 548.34, 360.81, 559.02)]] Emax=21.17%)
+
+[confidence=0.67; needs_review; source=equations; [page 10, bbox (399.03, 530.89, 454.09, 542.22)]] ( mean E =0.04%,
+
+[confidence=0.67; needs_review; source=equations; [page 10, bbox (403.19, 548.34, 449.84, 559.02)]] Emax=5.74%)
+
+[confidence=0.92; source=equations; [page 11, bbox (334.6, 326.98, 352.53, 343.74)]] ∑n k=1
+
+[confidence=0.92; source=equations; [page 11, bbox (306.6, 335.16, 332.4, 348.19)]] Emean =
+
+[confidence=0.92; source=equations; [page 11, bbox (333.13, 357.48, 366.9, 374.29)]] ∑n k=1max
+
+[confidence=0.92; source=equations; [page 11, bbox (307.96, 370.71, 330.93, 383.74)]] Emax =
+
+[confidence=0.92; source=equations; [page 11, bbox (306.6, 391.78, 330.4, 414.03)]] e(k) i = ⃒⃒⃒⃒
+
+[confidence=0.92; source=equations; [page 11, bbox (307.96, 525.23, 431.51, 547.41)]] Rrs = 1 -R = 1 -cov ( xrecons, xreal)
+
+[confidence=0.92; source=equations; [page 11, bbox (352.46, 326.98, 559.99, 353.63)]] ∑m i=1e(k) i nm (3.2)
+
+[confidence=0.67; needs_review; source=equations; [page 18, bbox (219.48, 463.89, 271.51, 474.54)]] (Emean=0.030%,
+
+[confidence=0.67; needs_review; source=equations; [page 18, bbox (308.12, 463.89, 363.95, 474.54)]] (Emean=0.007%,
+
+[confidence=0.67; needs_review; source=equations; [page 18, bbox (312.73, 477.5, 359.25, 488.15)]] Emax=4.42%)
+
+[confidence=0.67; needs_review; source=equations; [page 18, bbox (221.97, 478.45, 269.1, 488.15)]] Emax=38.29%)
+
+[confidence=0.67; needs_review; source=equations; [page 18, bbox (399.36, 463.89, 455.2, 474.54)]] (Emean=0.012%,
+
+[confidence=0.67; needs_review; source=equations; [page 18, bbox (403.98, 477.5, 450.5, 488.15)]] Emax=3.72%)
+
+[confidence=0.67; needs_review; source=equations; [page 18, bbox (306.31, 577.75, 343.14, 607.45)]] ̂s = ln ( T T∞
+
+[confidence=0.57; needs_review; source=equations; [page 18, bbox (306.59, 535.85, 560.0, 559.37)]] M∞= 0.755, α = 2.33∘. Then, the dimensionless entropy and vorticity in z-direction are calculated
+
+[confidence=0.57; needs_review; source=equations; [page 18, bbox (306.6, 613.98, 559.99, 637.44)]] where specific heat ratioγ = 1.4; T is the temperature and p is the pressure; subscript “∞” refers to freestream parameters
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (218.01, 248.61, 269.47, 259.14)]] (Emean=0.046%,
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (305.66, 248.61, 360.87, 259.15)]] (Emean=0.003%,
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (310.22, 262.07, 356.23, 272.6)]] Emax=3.38%)
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (220.47, 263.01, 267.07, 272.6)]] Emax=44.28%)
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (395.89, 248.61, 451.1, 259.15)]] (Emean=0.032%,
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (398.34, 262.07, 448.8, 272.6)]] Emax=18.67%)
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (219.48, 525.69, 271.51, 536.34)]] (Emean=0.029%,
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (308.12, 525.69, 363.95, 536.34)]] (Emean=0.006%,
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (312.73, 539.3, 359.25, 549.95)]] Emax=6.25%)
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (221.97, 540.24, 269.1, 549.95)]] Emax=28.62%)
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (399.36, 525.69, 455.2, 536.34)]] (Emean=0.010%,
+
+[confidence=0.67; needs_review; source=equations; [page 19, bbox (401.85, 539.3, 452.87, 549.95)]] Emax=10.19%)
+
+[confidence=0.92; source=equations; [page 23, bbox (80.5, 53.95, 114.37, 71.33)]] ‖ xi - ∑
+
+[confidence=0.92; source=equations; [page 23, bbox (69.28, 70.11, 77.56, 78.58)]] i=1
+
+[confidence=0.92; source=equations; [page 23, bbox (88.21, 70.8, 560.0, 94.38)]] wij = 1 (A2)
+
+[confidence=0.92; source=equations; [page 23, bbox (78.01, 132.81, 111.6, 151.09)]] ‖ yi - ∑
+
+[confidence=0.92; source=equations; [page 23, bbox (66.78, 149.03, 75.07, 157.5)]] i=1
+
+[confidence=0.57; needs_review; source=equations; [page 23, bbox (49.55, 472.72, 558.78, 485.79)]] The comparison of wall pressure coefficient on RAE2822 airfoil between CFD and experimental data at M∞= 0.734, α = 2.79◦and Re =6.5 \times 106
+
+[confidence=0.92; source=equations; [page 24, bbox (37.59, 319.4, 560.01, 343.32)]] k = ωc 2V (B1)
+
+[confidence=0.92; source=body_inline] ( \gamma = 0.5 )
+
+[confidence=0.92; source=body_inline] \left( \ \gamma = 0.5 , \ l = 3 \right)
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{mean}}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] R _ {\mathrm{rs}}
+
+[confidence=0.92; source=body_inline] \pmb {x} _ {i}
+
+[confidence=0.92; source=body_inline] \pmb {X} \in \mathbb {R} ^ {n \times m}
+
+[confidence=0.92; source=body_inline] \pmb {Y} = \pmb {f} ( \pmb {X} )\tag{2.1}
+
+[confidence=0.92; source=body_inline] \pmb {Y} {\in} \mathbb {R} ^ {n \times p}
+
+[confidence=0.92; source=body_inline] \pmb {W} \in \mathbb {R} ^ {p \times m}
+
+[confidence=0.92; source=body_inline] \pmb {X} \approx \pmb {X} ^ {\prime} = \pmb {Y} \pmb {W} ^ {T}\tag{2.2}
+
+[confidence=0.92; source=body_inline] \pmb {X} ^ {'} \in \mathbb {R} ^ {n \times m}
+
+[confidence=0.92; source=body_inline] W _ {\mathrm{nonlinear}}
+
+[confidence=0.92; source=body_inline] \pmb {W} _ {\mathrm{nonlinear}}
+
+[confidence=0.92; source=body_inline] \pmb {X} \approx \pmb {X} ^ {\prime} = \Phi ( \pmb {Y} , \pmb {Y} ) \pmb {W} _ {\mathrm{nonlinear}} ^ {T} = \pmb {Z} \pmb {W} _ {\mathrm{nonlinear}} ^ {T}\tag{2.3}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\Vert \textbf {\em X} - \pmb {Z} \pmb {W} _ {\mathrm{nonlinear}} ^ {T} \Vert _ {F} ^ {2} + \lambda \Vert \textbf {\em W} _ {\mathrm{nonlinear}} \ \Vert _ {F} ^ {2}} \end{array}\tag{2.4}
+
+[confidence=0.92; source=body_inline] \pmb {W} _ {\mathrm{nonlinear}} = \pmb {X} ^ {T} \pmb {Z} \big ( \pmb {Z} ^ {T} \pmb {Z} + \lambda \pmb {I} \big ) ^ {+}\tag{2.5}
+
+[confidence=0.92; source=body_inline] \scriptstyle I \in \mathbb {R} ^ {n \times n _ {\mathrm{i}}}
+
+[confidence=0.92; source=body_inline] ( \cdot ) ^ {+}
+
+[confidence=0.92; source=body_inline] \pmb {Y} _ {\mathrm{new}} \in \mathbb {R} ^ {k \times p}
+
+[confidence=0.92; source=body_inline] \pmb {X} _ {\mathrm{new}} ^ {\prime} \in \mathbb {R} ^ {k \times p}
+
+[confidence=0.92; source=body_inline] \pmb {X} _ {\mathrm{new}} = \pmb {Z} _ {\mathrm{new}} \pmb {W} _ {\mathrm{nonlinear}} ^ {T} = \Phi ( \pmb {Y} _ {\mathrm{new}} , \pmb {Y} ) \pmb {W} _ {\mathrm{nonlinear}} ^ {T}\tag{2.6}
+
+[confidence=0.92; source=body_inline] Z _ {\mathrm {{n e w}}}
+
+[confidence=0.92; source=body_inline] \phi ,
+
+[confidence=0.92; source=body_inline] \phi : \mathcal {X} \to \mathcal {H}\tag{2.7}
+
+[confidence=0.92; source=body_inline] K ( \cdot ) \mathrm{to}
+
+[confidence=0.92; source=body_inline] K ( x , y ) = \langle \phi ( x ) , \phi ( y ) \rangle\tag{2.8}
+
+[confidence=0.92; source=body_inline] \pmb {A} \in \mathbb {R} ^ {r \times d}
+
+[confidence=0.92; source=body_inline] \pmb {B} \in \mathbb {R} ^ {q \times d}
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.758
+
+[confidence=0.92; source=body_inline] \alpha = 4.17 ^{\circ}
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.755
+
+[confidence=0.92; source=body_inline] \alpha = 2.33 ^{\circ}
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.804
+
+[confidence=0.92; source=body_inline] \alpha = 2.05 ^{\circ}
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.827
+
+[confidence=0.92; source=body_inline] \alpha = 5.10 ^{\circ}
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.843
+
+[confidence=0.92; source=body_inline] \alpha = 5.55 ^{\circ}
+
+[confidence=0.92; source=body_inline] \pmb {Z} = \Phi ( \pmb {A} , \pmb {B} )
+
+[confidence=0.92; source=body_inline] Z _ {i j} = K ( a _ {i} , b _ {j} )
+
+[confidence=0.92; source=body_inline] Z _ {i j}
+
+[confidence=0.92; source=body_inline] \pmb {a} _ {i} \in \mathbb {R} ^ {d}
+
+[confidence=0.92; source=body_inline] \pmb {A} , \pmb {b} _ {j} \in \mathbb {R} ^ {d}
+
+[confidence=0.92; source=body_inline] \pmb {p} _ {\mathrm{Norm}} ^ {( i )} = \frac {\pmb {p} ^ {( i )} - \operatorname* {m i n} \left( \pmb {p} _ {\mathrm{test}} ^ {( i )} \right) \cdot \mathbf {1}} {\operatorname* {m a x} \left( \pmb {p} _ {\mathrm{test}} ^ {( i )} \right) - \operatorname* {m i n} \left( \pmb {p} _ {\mathrm{test}} ^ {( i )} \right)}\tag{3.1}
+
+[confidence=0.92; source=body_inline] p _ {\mathrm{Norm}}
+
+[confidence=0.92; source=body_inline] \pmb {P} _ {\mathrm{test}}
+
+[confidence=0.92; source=body_inline] \mathbf {\phi} _ {p _ {\mathrm{test}}} ;
+
+[confidence=0.92; source=body_inline] M _ {\infty} \in [ 0.734 , 0.85 ]
+
+[confidence=0.92; source=body_inline] \alpha \in [ 2 ^{\circ} , 6 ^{\circ} ]
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{mean}} = \frac {\sum _ {k = 1} ^ {n} \sum _ {i = 1} ^ {m} e _ {i} ^ {( k )}} {n m}\tag{3.2}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{max}} = \frac {\sum _ {k = 1} ^ {n} \operatorname* {m a x} _ {i \in [ 1 , m ]} ( e _ {i} ^ {( k )} )} {n}\tag{3.3}
+
+[confidence=0.92; source=body_inline] e _ {i} ^ {( k )} = \left| \frac {x _ {i} ^ {\mathrm{real}} - x _ {i} ^ {\mathrm{recons}}} {x _ {i} ^ {\mathrm{real}}} \right|\tag{3.4}
+
+[confidence=0.92; source=body_inline] e _ {i} ^ {( k )}
+
+[confidence=0.92; source=body_inline] R _ {\mathrm{rs}} = 1 - R = 1 - {\frac {\mathrm{cov} \bigl ( {\pmb x} ^ {\mathrm{recons}} , \ {\pmb x} ^ {\mathrm{real}} \bigr )} {\sigma _ {{\pmb x} ^ {\mathrm{recons}}} \sigma _ {{\pmb x} ^ {\mathrm{real}}}}}\tag{3.5}
+
+[confidence=0.92; source=body_inline] \gamma = 1 . \ E _ {\mathrm{mean}} , \ E _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] ^ {6 ,}
+
+[confidence=0.92; source=body_inline] ^ {5 ,}
+
+[confidence=0.92; source=body_inline] ^ {7 ,}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{mean}} , E _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] ^ {16 ,}
+
+[confidence=0.92; source=body_inline] \alpha = 4.169 ^{\circ}
+
+[confidence=0.92; source=body_inline] \gamma
+
+[confidence=0.92; source=body_inline] \mathbf {\Delta} \mathbf {W} _ {\mathrm{nonlinear}} ,
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{mean}} ,
+
+[confidence=0.92; source=body_inline] ^ {9 ,}
+
+[confidence=0.92; source=body_inline] 10 ^ {- 5}
+
+[confidence=0.92; source=body_inline] \lambda > 10 ^ {- 5} ,
+
+[confidence=0.92; source=body_inline] 10 ^ {- 5} . R _ {\mathrm{rs}}
+
+[confidence=0.92; source=body_inline] 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] \lambda {=} 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] 10 ^ {- 5} ,
+
+[confidence=0.92; source=body_inline] \gamma > 1.1 , E _ {\mathrm{mean}}
+
+[confidence=0.92; source=body_inline] \gamma {>} 1.4
+
+[confidence=0.92; source=body_inline] \gamma = 1.1
+
+[confidence=0.92; source=body_inline] n = 1
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.804 , \alpha = 2.05 ^{\circ}
+
+[confidence=0.92; source=body_inline] M _ {\infty}
+
+[confidence=0.92; source=body_inline] \alpha ,
+
+[confidence=0.92; source=body_inline] M _ {\infty} ,
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.843 ~ \mathrm{and} \alpha = 5.55 ^{\circ}
+
+[confidence=0.92; source=body_inline] E _ {\mathrm{max}} {=} 27.64
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.843 \mathrm{and} \alpha = 5.55 ^{\circ}
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.755 , \alpha = 2.33
+
+[confidence=0.92; source=body_inline] {\widehat {s}} = \ln \left( {\frac {T} {T _ {\infty}}} \right) - {\frac {\gamma - 1} {\gamma}} \ln \left( {\frac {p} {p _ {\infty}}} \right)\tag{3.6}
+
+[confidence=0.92; source=body_inline] \prime = 1.4 ; T
+
+[confidence=0.92; source=body_inline] \pmb {x} = 0.4 c . 0.8 c
+
+[confidence=0.92; source=body_inline] M _ {\infty} = 0.73 \mathrm{,}
+
+[confidence=0.92; source=body_inline] \alpha = 3.5 ^{\circ} , \mathrm{Re} = 3 ~ \times ~ 10 ^ {6}
+
+[confidence=0.92; source=body_inline] \lambda {=} 10 ^ {- 5}

@@ -1,0 +1,27 @@
+Fig. 1. XRD patterns of LSBC-T high-entropy textured ceramics soaking for 4, 8, 16 h (a) LSBC-T(⊥), (b) LSBC-T(‖).
+
+Fig. 2. BSE images of the LSBC-T textured ceramics (a) LSBC-T-4, (b) LSBC-T-8, (c) LSBC-T-16, (d) BSE of LSBC-T-8 with epitaxial layer for EDX line scanning analysis, (e) EDX line scan profile spectra.
+
+Fig. 3. EBSD maps and Polar figures of non-textured and textured LSBC-T-8 ceramics EBSD map of the non-textured ceramic, (b) EBSD map of the LSBC-T-8 ceramic, (c) Polar figures of non-textured ceramic, (d) Polar figures of the LSBC-T-8 ceramic.
+
+Fig. 4. TEM results of the LSBC-T-8 ceramic (a) BF-TEM image, (b) HAADF-STEM image, (c) SAED pattern along the [100] zone axis, (d) iDPC image of the A1, (e) iDPC image of the A2, (f) enlarged iDPC image of the selected area marked in (e), (g) contrast analysis of atomic column L1, (h) contrast analysis of atomic column L2, (i) enlarged image corresponding to E1 marked in (a), (j) HRTEM diagram of phase interface.
+
+Fig. 5. HAADF and EDX analysis results of the LSBC-T-8 ceramic (a) HAADF-STEM image, (b)-(h) Elemental EDX maps of Ca, Sr, Ba, La, Ti, O, and Bi, respectively, (i) Line EDX analysis of L3, (j) EDX spectra, (k) iDPC-STEM of Z1, (l) [TiO6] distortion.
+
+Fig. 6. TEM image of the phase interfaces and epitaxial layer in LSBC-T-8 ceramic (a) BF-TEM image, (b) enlarged TEM image of E1, (c) TEM of the phase interface, (d) TEM of grain boundaries, (e) enlarged TEM image of E3, (f) TEM of the epitaxial layer.
+
+Fig. 7. Schematic diagram of the microstructural evolution for the high-entropy textured ceramics (a) Template seeds orientated, (b) liquid-phase guided epitaxial growth, (c) Brick-wall textured structure.
+
+Fig. 8. Thermoelectric properties of LSBC-T textured ceramics (a) Seebeck coefficient (‖), (b) Seebeck coefficient (⊥), (c) electrical resistivity (‖), (c) electrical resistivity (⊥), (e) power factor (‖), (f) power factor (⊥).
+
+Fig. 9. Thermal conductivity and ZT of LSBC-T textured ceramics (a) κtotal (‖), (b) κtotal (⊥), (c) κe and κlat of LSBC-T (‖), (d) κe and κlat of LSBC-T (⊥),(e) ZT (‖), (f) ZT (⊥).
+
+Fig. 10. Comparison of ZT values in this work with reported data of high- entropy perovskite ABO3-based thermoelectric ceramics [28,29,31,32,41,48–50].
+
+Fig. 4. TEM results of the LSBC-T-8 ceramic (a) BF-TEM image, (b) HAADF-STEM image, (c) SAED pattern along the [10 0] zone axis, (d) iDPC image of the A1, (e) iDPC image of the A2, (f) enlarged iDPC image of the selected area marked in (e), (g) contrast analysis of atomic column L1, (h) contrast analysis of atomic column L2, (i) enlarged image corresponding to E1 marked in (a), (j) HRTEM diagram of phase interface.
+
+Fig. 5. HAADF and EDX analysis results of the LSBC-T-8 ceramic (a) HAADF-STEM image, (b)-(h) Elemental EDX maps of Ca, Sr, Ba, La, ${ \mathrm { T i } } , 0 ,$ and Bi, respectively, (i) Line EDX analysis of L3, (j) EDX spectra, (k) iDPC-STEM of Z1, (l) $[ \mathrm { T i O } _ { 6 } ]$ distortion.
+
+Fig. 9. Thermal conductivity and ZT of LSBC-T textured ceramics (a) $\kappa _ { \mathrm { t o t a l } }$ (‖), (b) $\kappa _ { \mathrm { t o t a l } }$ (⊥), (c) $\kappa _ { \mathrm { e } }$ and $\kappa _ { \mathrm { l a t } }$ of LSBC-T (‖), (d) $\kappa _ { \mathrm { e } }$ and $\kappa _ { \mathrm { l a t } }$ of LSBC-T (⊥),(e) ZT (‖), (f) $Z T \left( \perp \right)$
+
+Fig. 10. Comparison of ZT values in this work with reported data of highentropy perovskite $\mathbf { A B O _ { 3 } }$ -based thermoelectric ceramics [28,29,31,32,41,48–50].

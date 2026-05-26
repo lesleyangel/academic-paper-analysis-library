@@ -1,0 +1,631 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (42.63, 669.07, 216.4, 690.38)]] * Corresponding author. E-mail address: leonwood@nwpu.edu.cn (C. Gong)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 332.06, 716.91)]] https://doi.org/10.1016/j.ast.2024.109128 Received 23 May 2023; Received in revised form 16 August 2023; Accepted 5 April 2024
+
+[confidence=0.67; needs_review; source=equations; [page 2, bbox (307.95, 60.18, 418.69, 78.68)]] P p : minimize J = φ [ x(P)( t(P) f
+
+[confidence=0.92; source=equations; [page 2, bbox (325.82, 84.9, 468.96, 99.73)]] subject to ˙x = f(p)( x(p), u(p)) , p = 1, ⋯, P
+
+[confidence=0.92; source=equations; [page 2, bbox (358.53, 99.58, 482.62, 114.41)]] c \le c(p)( x(p), u(p)) \lec, p = 1, ⋯, P
+
+[confidence=0.92; source=equations; [page 2, bbox (306.6, 305.6, 370.4, 321.78)]] f(p)( x(p), u(p)) = f(p) 0
+
+[confidence=0.92; source=equations; [page 2, bbox (370.89, 305.6, 442.23, 320.44)]] ( x(p)) + B(p)u(p) + f(p)
+
+[confidence=0.67; needs_review; source=equations; [page 2, bbox (419.19, 60.18, 448.8, 76.94)]] )] + ∑ P
+
+[confidence=0.92; source=equations; [page 2, bbox (438.46, 79.59, 447.65, 85.03)]] p=1
+
+[confidence=0.92; source=equations; [page 2, bbox (306.6, 609.64, 560.02, 625.45)]] k(s,p),(s = 1,⋯,S(p)). Finally, N(s,p) d + 1 Legendre-Gauss-Radau (LGR) knot
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 70.44, 562.35, 83.72)]] D(s,p)X(s,p) = F(s,p) (9)
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (306.6, 104.8, 383.51, 123.3)]] X(s,p) = [ X(s,p) 0 , ⋯, X(s,p) N
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 145.98, 374.76, 167.82)]] F(s,p) = k(s,p)t(p) f -t(p) s 2
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (383.24, 159.62, 437.71, 178.12)]] f(s,p)( X(s,p) N-1, U(s,p) N-1
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (38.95, 169.54, 291.01, 205.45)]] ) \lec ( i = 1, ⋯, N(s,p) d ; s = 1, ⋯, S(p); p = 1, ⋯, P ) (5)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 192.33, 411.03, 213.09)]] D(s,p) ∈RN\times(N+1), D(s,p) ij = dlN j (τ) dτ
+
+[confidence=0.92; source=equations; [page 3, bbox (307.96, 251.46, 562.36, 278.99)]] P NLP : minimize J = Eq.(3) + Eq.(6) subject to Eq.(4), Eq.(5) and Eq.(9), for all (s, p) (10)
+
+[confidence=0.92; source=equations; [page 3, bbox (40.08, 260.1, 49.27, 265.54)]] p=1
+
+[confidence=0.92; source=equations; [page 3, bbox (116.62, 273.87, 135.14, 284.49)]] ∑ N(s,p) d -1
+
+[confidence=0.92; source=equations; [page 3, bbox (65.93, 276.09, 113.47, 297.93)]] ⎣k(s,p)t(p) f -t(p) s 2
+
+[confidence=0.92; source=equations; [page 3, bbox (40.08, 294.68, 49.27, 300.12)]] p=1
+
+[confidence=0.92; source=equations; [page 3, bbox (54.54, 294.68, 63.13, 300.12)]] s=1
+
+[confidence=0.92; source=equations; [page 3, bbox (121.44, 294.74, 130.32, 300.18)]] k=0
+
+[confidence=0.92; source=equations; [page 3, bbox (73.64, 400.59, 82.52, 406.03)]] k=0
+
+[confidence=0.92; source=equations; [page 3, bbox (38.95, 446.96, 155.42, 468.75)]] t(p) f -t(p) s 2 f(p)( x(p), u(p)) = t(p) f -t(p) s 2
+
+[confidence=0.92; source=equations; [page 3, bbox (171.16, 448.47, 242.5, 463.3)]] ( x(p)) + B(p)u(p) + f(p)
+
+[confidence=0.92; source=equations; [page 3, bbox (181.93, 477.55, 232.18, 489.21)]] (p)x(p) + B(p)u(p)
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (172.23, 502.33, 205.02, 521.0)]] ( t(p) f -t(p) s
+
+[confidence=0.92; source=equations; [page 3, bbox (274.45, 507.2, 324.7, 519.49)]] (p)̃x(p) + B(p)̃u(p)
+
+[confidence=0.92; source=equations; [page 3, bbox (139.63, 536.14, 243.41, 558.77)]] (p) s 2 [ A(p)x(p) + B(p)u(p)] + C(p)
+
+[confidence=0.92; source=equations; [page 3, bbox (113.27, 544.96, 119.41, 552.93)]] =
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (117.13, 624.9, 201.64, 647.56)]] ⎠≈t(s,p) f -t(s,p) s 2 ˙x(s,p)( t(s,p) j
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 631.66, 560.02, 644.83)]] ‖ u(p) 1:K-1 ‖2 = u(p) K (12)
+
+[confidence=0.92; source=equations; [page 3, bbox (40.42, 644.37, 49.3, 649.81)]] k=0
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (38.95, 661.58, 143.87, 684.24)]] = k(s,p)t(p) f -t(p) s 2 f(s,p)( X(s,p) j , U(s,p) j
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (144.34, 661.58, 222.99, 680.14)]] ) , ( j = 0, ⋯, N(s,p) d -1 )
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 686.15, 560.02, 699.31)]] ‖ u(p) 1:K-1 ‖2 \leu(p) K (13)
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (131.81, 98.22, 220.4, 116.72)]] {[ A(s,p) 0 X(s,p) 0 , ⋯, A(s,p) N-1X(s,p) N-1
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (230.12, 98.22, 320.41, 116.72)]] + [ B(s,p) 0 U(s,p) 0 , ⋯, B(s,p) N-1U(s,p) N-1
+
+[confidence=0.92; source=equations; [page 4, bbox (38.95, 99.75, 105.31, 115.44)]] D(s,p)X(s,p) = k(s,p)̃t
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (211.92, 129.06, 280.44, 147.56)]] + k(s,p)[ ζ(s,p) 0 , ⋯, ζ(s,p) N-1
+
+[confidence=0.92; source=equations; [page 4, bbox (357.9, 212.86, 560.02, 229.19)]] ∈RN(p) Z , N(p) Z = (n + m) ( Np + 1 ) + 2 (19)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.59, 215.97, 327.36, 227.69)]] Z(p) =
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (44.67, 243.81, 118.92, 262.37)]] (s,p) := X(s,p) ̅̅→ = [( X(s,p) 0
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (44.67, 263.94, 118.92, 282.49)]] (s,p) := U(s,p) ̅̅→ = [( U(s,p) 0
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 284.91, 562.36, 298.72)]] M(p) dif Z(p) = M(p) dif Z(p) + G(p) sys (20)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 308.61, 86.43, 324.01)]] D(s,p)X(s,p) ̅̅̅̅̅̅→ = D
+
+[confidence=0.92; source=equations; [page 4, bbox (43.37, 359.29, 98.61, 373.14)]] (s,p) = D(s,p) ⊗In
+
+[confidence=0.92; source=equations; [page 4, bbox (307.96, 363.91, 330.87, 375.65)]] M(p) dif =
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 402.61, 69.31, 418.01)]] F(s,p) ̅̅→ = A
+
+[confidence=0.92; source=equations; [page 4, bbox (307.96, 404.84, 330.87, 416.13)]] M(p) sys =
+
+[confidence=0.92; source=equations; [page 4, bbox (309.26, 445.2, 330.87, 456.61)]] G(p) sys =
+
+[confidence=0.92; source=equations; [page 4, bbox (44.67, 468.6, 83.32, 484.28)]] (s,p) = k(s,p)̃t
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (347.64, 497.51, 562.36, 513.85)]] ) Z = Gsys (21)
+
+[confidence=0.92; source=equations; [page 4, bbox (44.28, 523.99, 82.86, 539.67)]] (s,p) = k(s,p)̃t
+
+[confidence=0.92; source=equations; [page 4, bbox (359.49, 554.09, 437.68, 571.47)]] ⎥⎥⎦, Mdif =
+
+[confidence=0.92; source=equations; [page 4, bbox (316.97, 560.67, 330.65, 569.03)]] Z =
+
+[confidence=0.92; source=equations; [page 4, bbox (44.67, 581.64, 79.46, 595.11)]] (s,p) = k(s,p)
+
+[confidence=0.92; source=equations; [page 4, bbox (117.01, 581.7, 151.75, 595.11)]] (s,p) = k(s,p)
+
+[confidence=0.92; source=equations; [page 4, bbox (399.63, 603.13, 437.68, 629.98)]] ⎥⎥⎥⎥⎦ , Gsys =
+
+[confidence=0.92; source=equations; [page 4, bbox (307.96, 614.41, 330.65, 623.57)]] Msys =
+
+[confidence=0.92; source=equations; [page 4, bbox (314.19, 647.35, 355.43, 664.05)]] Nc = n ∑ P
+
+[confidence=0.92; source=equations; [page 4, bbox (356.77, 647.35, 457.19, 664.05)]] Np, NZ = ∑ P
+
+[confidence=0.92; source=equations; [page 4, bbox (345.09, 665.51, 354.28, 670.95)]] p=1
+
+[confidence=0.92; source=equations; [page 4, bbox (446.85, 665.51, 456.04, 670.95)]] p=1
+
+[confidence=0.92; source=equations; [page 4, bbox (160.5, 676.11, 202.02, 693.08)]] ⎦, Np = ∑ S(p)
+
+[confidence=0.92; source=equations; [page 4, bbox (43.37, 678.98, 58.8, 691.89)]] (p) =
+
+[confidence=0.92; source=equations; [page 4, bbox (110.32, 678.98, 125.76, 691.89)]] (p) =
+
+[confidence=0.92; source=equations; [page 4, bbox (191.96, 694.54, 200.56, 699.98)]] s=1
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 216.73, 293.35, 229.82)]] J = mT objZ (22)
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 334.65, 291.01, 347.68)]] Zref -Δ \leZ \leZref + Δ (25)
+
+[confidence=0.92; source=equations; [page 5, bbox (322.87, 350.85, 344.92, 359.21)]] = max
+
+[confidence=0.92; source=equations; [page 5, bbox (38.95, 455.21, 130.66, 465.89)]] P 1 : minimize J = mT objZ
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (97.11, 462.76, 178.08, 527.42)]] ) Z = Gsys Gend \leMendZ \leGend Gpath \leMpathZ \leGpath qT i Z ∈Q i, (i = 1, ⋯, Nc) Z \leZ \leZ
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 485.34, 372.96, 500.63)]] ρ(s,p) := 2maxK (s,p)
+
+[confidence=0.92; source=equations; [page 5, bbox (335.17, 492.75, 374.21, 510.52)]] ∫1-1 K (s,p)dτ
+
+[confidence=0.57; needs_review; source=equations; [page 5, bbox (38.95, 528.07, 285.85, 555.99)]] Assuming the solution of problem P 1 is Zopt, if ϵiter \le ⃒⃒Zopt - Zref
+
+[confidence=0.92; source=equations; [page 5, bbox (338.06, 689.26, 377.3, 702.85)]] (ˆs,p) d = Ndmin, ̂k
+
+[confidence=0.92; source=equations; [page 5, bbox (336.87, 726.85, 361.16, 739.64)]] (p) = ̂s;
+
+[confidence=0.92; source=equations; [page 5, bbox (347.41, 255.21, 426.82, 276.61)]] ) = 1X(s,p) opt (τ0) + ( D(s,p)
+
+[confidence=0.92; source=equations; [page 5, bbox (355.92, 346.78, 392.27, 361.03)]] X ⌢(s,p) opt (τ0) +
+
+[confidence=0.92; source=equations; [page 5, bbox (374.34, 488.55, 408.03, 500.88)]] , K (s,p) =
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (432.96, 488.97, 560.02, 512.84)]] ˜n (τ)2]2/3 (30)
+
+[confidence=0.92; source=equations; [page 5, bbox (312.61, 639.49, 434.52, 701.94)]] (ˆs,p) = k(s,p); 6: else 7: calculate ν; 8: for i = 1toN(s,p) K do 9: ̂s = ̂s + 1; 10: ̂N
+
+[confidence=0.92; source=equations; [page 5, bbox (338.06, 639.94, 399.75, 653.81)]] (ˆs,p) d = N(s,p) d + N(s,p) K , ̂k
+
+[confidence=0.57; needs_review; source=equations; [page 5, bbox (312.61, 688.87, 416.77, 739.64)]] (ˆs,p) = k(s,p)νi; 11: end for 12: end if 13: end for 14: ̂S
+
+[confidence=0.92; source=equations; [page 6, bbox (37.59, 504.65, 84.44, 525.59)]] N(s,p) K = ⌈ log10
+
+[confidence=0.92; source=equations; [page 6, bbox (37.59, 573.14, 86.44, 604.51)]] ( K (s,p))13dτ ∫1-1
+
+[confidence=0.92; source=equations; [page 6, bbox (88.78, 580.4, 106.36, 593.35)]] = i
+
+[confidence=0.92; source=equations; [page 6, bbox (37.59, 636.41, 79.63, 650.3)]] ν := Γf -Γs
+
+[confidence=0.92; source=equations; [page 6, bbox (38.95, 676.26, 136.85, 695.99)]] Γf = [ Γ1 ⋯ ΓN(s,p) K -11 ]T
+
+[confidence=0.67; needs_review; source=equations; [page 6, bbox (38.95, 695.31, 134.4, 715.04)]] Γs = [ -1 Γ1 ⋯ ΓN(s,p) K -1
+
+[confidence=0.57; needs_review; source=equations; [page 6, bbox (37.59, 467.08, 291.01, 481.56)]] byN(s,p) K . Otherwise, we need to divide this segment into N(s,p) K sub-
+
+[confidence=0.92; source=equations; [page 6, bbox (113.39, 576.6, 291.01, 595.26)]] , ( i = 1, ⋯, N(s,p) K -1 ) (32)
+
+[confidence=0.92; source=equations; [page 7, bbox (39.06, 54.96, 129.47, 65.64)]] P 2 : minimize J = mT objZ
+
+[confidence=0.92; source=equations; [page 7, bbox (95.98, 81.95, 178.19, 127.17)]] Gend \leMendZ \leGend Gpath \leMpathZ \leGpath qT i Z ∈Q i, (i = 1, ⋯, Nc) Z \leZ \leZ
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (39.06, 296.76, 184.29, 319.93)]] P 3 : minimize J = mT objZ + η‖ Z -Zref ‖2 subject to ( Mdif -Msys
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (97.23, 304.3, 179.44, 368.97)]] ) Z = Gsys Gend \leMendZ \leGend Gpath \leMpathZ \leGpath qT i Z ∈Q i, (i = 1, ⋯, Nc) Z \leZ \leZ
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (140.03, 62.51, 205.4, 77.83)]] ) Z -Gsys| \leδ|Gsys|
+
+[confidence=0.92; source=equations; [page 8, bbox (40.31, 80.59, 92.59, 121.44)]] dr de = sinγ D dθ de = cosγsinψ
+
+[confidence=0.92; source=equations; [page 8, bbox (39.23, 125.7, 93.95, 145.03)]] dϕ dt = cosγcosψ
+
+[confidence=0.92; source=equations; [page 8, bbox (40.71, 137.06, 83.92, 167.59)]] Dr dγ de = Lcosσ
+
+[confidence=0.92; source=equations; [page 8, bbox (45.98, 332.87, 130.19, 366.74)]] q = 0.5ρv2 \leqmax Q = kQρ0.5v3.15 \leQmax n = ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ L2 + D2 √ / m \lenmax
+
+[confidence=0.92; source=equations; [page 8, bbox (79.99, 172.83, 233.47, 192.48)]] v2D + rω2cosϕ(cosγcosϕ + sinγsinϕcosψ) v2D
+
+[confidence=0.92; source=equations; [page 8, bbox (39.86, 195.84, 217.94, 215.5)]] de = Lsinσ v2Dmcosγ + cosγsinψtanϕ rD + rω2sinψsinϕcosϕ v2Dcosγ -
+
+[confidence=0.92; source=equations; [page 8, bbox (44.9, 273.71, 291.02, 291.24)]] CD = CD0 + CD1α2 + CD2eCD3v (37)
+
+[confidence=0.92; source=equations; [page 9, bbox (315.61, 231.19, 562.36, 249.65)]] ˙v = -μr / ‖ r ‖3 + Tu / m -D / m (39)
+
+[confidence=0.92; source=equations; [page 9, bbox (306.6, 259.16, 560.0, 273.33)]] where r = [rx, ry, rz]T is the position, v = [vx, vy, vz]Tis the velocity, μ is
+
+[confidence=0.92; source=equations; [page 9, bbox (102.39, 637.2, 179.22, 656.3)]] r(m) θ(deg) 10-2
+
+[confidence=0.92; source=equations; [page 9, bbox (373.61, 637.2, 445.67, 656.3)]] r(m) ϕ(deg) 10-2
+
+[confidence=0.92; source=equations; [page 10, bbox (306.6, 632.32, 423.92, 642.96)]] vrel = v -ω \times r, ω = [ 00 w ]T
+
+[confidence=0.92; source=equations; [page 10, bbox (306.6, 582.57, 562.36, 595.61)]] D = 0.5ρv2 relCDSref (40)
+
+[confidence=0.57; needs_review; source=equations; [page 10, bbox (306.6, 602.35, 560.02, 626.5)]] where the Earth relative velocity vrel with the angular velocity w = 7.292115 \times 10-5rad /s is calculated as:
+
+[confidence=0.92; source=equations; [page 10, bbox (306.6, 666.02, 562.36, 679.05)]] ρ = ρ0exp[(r -Re) / β] (41)
+
+[confidence=0.92; source=equations; [page 11, bbox (90.14, 87.73, 423.64, 106.83)]] rx (m) ry (m) rz (m) vx (m/s) vy (m/s) vz (m/s) a(m) e 10-3
+
+[confidence=0.92; source=equations; [page 12, bbox (37.59, 123.62, 560.02, 143.37)]] Dq0 = D0⋅0 + D1:Nq = D1:Nq = 0 (42)
+
+[confidence=0.92; source=equations; [page 12, bbox (37.59, 171.89, 562.35, 184.92)]] qi = q0 = 0, i = 1, ⋯, N (43)
+
+[confidence=0.92; source=equations; [page 12, bbox (37.59, 223.19, 560.02, 236.22)]] D1 = D0 + D1:N1 = 0 (44)
+
+[confidence=0.92; source=equations; [page 12, bbox (37.59, 255.68, 560.02, 268.72)]] D-11:ND0 = -1 (45)
+
+[confidence=0.92; source=equations; [page 12, bbox (37.59, 299.37, 114.2, 308.53)]] DX = D0X0 + D1:NX1:N
+
+[confidence=0.92; source=equations; [page 12, bbox (69.73, 301.66, 562.35, 318.62)]] = F (46)
+
+[confidence=0.92; source=equations; [page 12, bbox (37.59, 332.12, 240.54, 346.69)]] and left-multiply both sides of Eq.(45) by D-11:N results in:
+
+[confidence=0.92; source=equations; [page 12, bbox (37.59, 348.2, 562.35, 361.24)]] X1:N = 1X0+D-11:NF (47)
+
+[confidence=0.92; source=equations; [page 12, bbox (37.59, 442.69, 130.77, 453.95)]] ˙x = ̂f 0(x, u) + ̂Bu + ̂f ε = ̂f 0
+
+[confidence=0.92; source=equations; [page 12, bbox (37.59, 553.81, 62.26, 562.61)]] f0(x) =
+
+[confidence=0.92; source=equations; [page 12, bbox (37.36, 644.23, 52.68, 655.49)]] ̂f ε =
+
+[confidence=0.92; source=equations; [page 12, bbox (117.92, 462.47, 177.08, 471.43)]] = f0(x) + Bu + fε
+
+[confidence=0.92; source=equations; [page 12, bbox (76.93, 635.21, 230.41, 654.87)]] v2D + rω2cosϕ(cosγcosϕ + sinγsinϕcosψ) v2D
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 113.13, 51.27, 121.5)]] B =
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 229.98, 51.72, 238.35)]] A =
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 328.43, 94.63, 343.06)]] a21 = - cosγsinψ
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 358.88, 93.38, 373.5)]] a31 = -cosγcosψ
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 389.68, 79.94, 403.89)]] a41 = -cosγ
+
+[confidence=0.92; source=equations; [page 13, bbox (37.59, 419.71, 107.43, 434.33)]] a51 = -cosγsinψtanϕ
+
+[confidence=0.92; source=equations; [page 13, bbox (178.07, 113.13, 209.86, 127.08)]] ∂α = -f0
+
+[confidence=0.92; source=equations; [page 13, bbox (67.92, 464.08, 562.36, 480.76)]] = 0 (54)
+
+[confidence=0.67; needs_review; source=equations; [page 13, bbox (216.17, 511.91, 564.69, 527.51)]] ) = k1λ + k2α + b (55)
+
+[confidence=0.67; needs_review; source=equations; [page 14, bbox (146.78, 498.59, 562.36, 523.62)]] ] , fε = -D m (56)
+
+[confidence=0.92; source=equations; [page 14, bbox (37.59, 586.23, 51.72, 594.6)]] A =
+
+[confidence=0.92; source=equations; [page 14, bbox (37.59, 657.08, 62.02, 666.26)]] a41 = μ
+
+[confidence=0.92; source=equations; [page 14, bbox (37.59, 688.83, 62.02, 698.07)]] a52 = μ
+
+[confidence=0.92; source=equations; [page 14, bbox (37.59, 721.31, 62.02, 730.49)]] a63 = μ
+
+[confidence=0.67; needs_review; source=equations; [page 14, bbox (114.69, 645.88, 189.16, 666.26)]] ) , a42 = a51 = μ 3rxry
+
+[confidence=0.92; source=equations; [page 14, bbox (121.38, 683.86, 189.84, 698.07)]] , a43 = a61 = μ 3rxrz
+
+[confidence=0.67; needs_review; source=equations; [page 14, bbox (114.69, 710.11, 188.99, 730.49)]] ) , a53 = a62 = μ 3rzry
+
+[confidence=0.92; source=equations; [page 15, bbox (38.95, 79.4, 562.35, 98.48)]] rf = Q̂r vf = Q̂v (58)
+
+[confidence=0.92; source=equations; [page 15, bbox (37.59, 140.46, 52.17, 148.83)]] Q =
+
+[confidence=0.92; source=equations; [page 15, bbox (37.59, 173.17, 84.14, 192.96)]] ̂r = a(1 -e2) 1 + ecosυ
+
+[confidence=0.92; source=equations; [page 15, bbox (107.83, 168.18, 172.52, 192.82)]] ⎦, ̂v = ̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅ μ a(1 -e2)
+
+[confidence=0.92; source=equations; [page 15, bbox (37.59, 332.14, 49.12, 340.11)]] ∑ N-1
+
+[confidence=0.92; source=equations; [page 15, bbox (50.46, 335.03, 96.33, 349.56)]] lN-1 k (1)u(S(1),1)
+
+[confidence=0.92; source=equations; [page 15, bbox (78.01, 336.52, 560.02, 349.55)]] k -u(S(1),1)(1) = 0 (60)
+
+[confidence=0.92; source=equations; [page 15, bbox (38.89, 350.3, 47.77, 355.74)]] k=0
+
+[confidence=0.92; source=body_inline] \mathscr {P} _ {0}
+
+[confidence=0.92; source=body_inline] \mathbf {u} \in \mathbb {R} ^ {m}
+
+[confidence=0.92; source=body_inline] \mathbf {f} ^ {( p )} : \mathbb {R} ^ {n + m + 1} {} \mathbb {R} ^ {n}
+
+[confidence=0.92; source=body_inline] \mathbf {c} ^ {( p )}
+
+[confidence=0.92; source=body_inline] \begin{array} {r c l} {\displaystyle \mathcal {P} _ {p} : \mathrm{minimize} J} & {=} & {\displaystyle \varphi \Big [ {\pmb x} ^ {( P )} \left( t _ {f} ^ {( P )} \right) \Big ] + \sum _ {p = 1} ^ {P} \int _ {t _ {s} ^ {( P )}} ^ {t _ {f} ^ {( P )}} L ^ {( p )} \big ( \mathbf {x} ^ {( p )} , \mathbf {u} ^ {( p )} \big ) \mathrm{d} t} \\ {\mathrm{subject~to~} \dot {\mathbf {x}}} & {=} & {\mathbf {f} ^ {( p )} \big ( \mathbf {x} ^ {( p )} , \mathbf {u} ^ {( p )} \big ) , p = 1 , \cdots , P} \\ {\displaystyle \qquad \pmb {\mathbb {c}}} & {\leq} & {\mathbf {c} ^ {( p )} \left( x ^ {( p )} , u ^ {( p )} \right) \leq \overline {{\mathbf {c}}} , p = 1 , \cdots , P} \\ {\displaystyle \qquad \quad \mathbf {b}} & {\leq} & {\mathbf {b} \Big [ \mathbf {x} ^ {( 1 )} \left( t _ {s f} ^ {( 1 )} \right) , t _ {s f} ^ {( 1 )} , \cdots , \mathbf {x} ^ {( P )} \left( t _ {s f} ^ {( P )} \right) , t _ {s f} ^ {( P )} \Big ] \leq \overline {{\mathbf {b}}}} \end{array}\tag{1}
+
+[confidence=0.92; source=body_inline] \mathbf {f} ^ {( p )}
+
+[confidence=0.92; source=body_inline] \mathbf {f} _ {0} ^ {( p )}
+
+[confidence=0.92; source=body_inline] \mathbf {B} ^ {( p )}
+
+[confidence=0.92; source=body_inline] \mathbf {f} _ {\varepsilon} ^ {( p )}
+
+[confidence=0.92; source=body_inline] \mathcal {P} _ {0}
+
+[confidence=0.92; source=body_inline] \mathbf {f} ^ {( p )} \left( \mathbf {x} ^ {( p )} , \mathbf {u} ^ {( p )} \right) = \mathbf {f} _ {0} ^ {( p )} \left( \mathbf {x} ^ {( p )} \right) + \mathbf {B} ^ {( p )} \mathbf {u} ^ {( p )} + \mathbf {f} _ {\varepsilon} ^ {( p )}\tag{2}
+
+[confidence=0.92; source=body_inline] ( \mathfrak {P} _ {p} )
+
+[confidence=0.92; source=body_inline] t _ {s} ^ {( p )}
+
+[confidence=0.92; source=body_inline] t _ {f} ^ {( p )}
+
+[confidence=0.92; source=body_inline] \mathfrak {P} _ {p}
+
+[confidence=0.92; source=body_inline] S ^ {( p )}
+
+[confidence=0.92; source=body_inline] ( \mathfrak {S} _ {:} ^ {( p )} )
+
+[confidence=0.92; source=body_inline] k ^ {( s , p )} , ( s = 1 , \cdots , S ^ {( p )} )
+
+[confidence=0.92; source=body_inline] N _ {d} ^ {( s , p )} + 1
+
+[confidence=0.92; source=body_inline] N _ {d} ^ {( s , p )}
+
+[confidence=0.92; source=body_inline] P _ {N - 1} ( \tau ) + P _ {N} ( \tau )
+
+[confidence=0.92; source=body_inline] P _ {N}
+
+[confidence=0.92; source=body_inline] [ - ~ 1 , 1 ]
+
+[confidence=0.92; source=body_inline] \{\mathbf {X} _ {i} ^ {( s , p )} \}
+
+[confidence=0.92; source=body_inline] \{\mathbf {U} _ {i} ^ {( s , p )} \}
+
+[confidence=0.92; source=body_inline] {\mathcal {P}} _ {0}
+
+[confidence=0.92; source=body_inline] \varphi \left[ \mathbf {X} ^ {( P )} \left( t _ {f} ^ {( P )} \right) \right] \Rightarrow \varphi \left( \mathbf {X} _ {f} ^ {\left( S ^ {( P )} , P \right)} \right)\tag{3}
+
+[confidence=0.92; source=body_inline] \mathbf {b} \leq \mathbf {b} \Big [ \mathbf {x} ^ {( 1 )} \Big ( t _ {s , f} ^ {( 1 )} \Big ) , t _ {s , f} ^ {( 1 )} , \cdots , \mathbf {x} ^ {( P )} \Big ( t _ {s , f} ^ {( P )} \Big ) , t _ {s , f} ^ {( P )} \Big ] \leq \overline {{\mathbf {b}}} \Rightarrow
+
+[confidence=0.92; source=body_inline] \mathbf {{b}} \leq \mathbf {{b}} \Big ( \mathbf {X} _ {s , f} ^ {\big ( S ^ {( 1 )} , 1 \big )} , t _ {s , f} ^ {\big ( S ^ {( 1 )} , 1 \big )} , \cdots , \mathbf {X} _ {s , f} ^ {\big ( S ^ {( P )} , P \big )} , t _ {s , f} ^ {\big ( S ^ {( P )} , P \big )} \Big ) \leq \overline {{\mathbf {b}}}\tag{4}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{\underline {{\mathsf{c}}} \leq \mathsf{c} ^ {( p )} \leq \bar {\mathbf {c}} \Rightarrow \underline {{\mathsf{c}}} \leq \mathsf{c} ^ {( s , p )} \Big ( \mathbf {X} _ {i} ^ {( s , p )} , \mathbf {U} _ {i} ^ {( s , p )} \Big ) \leq \bar {\mathbf {c}}}} \\ {{\Big ( i = 1 , \cdots , N _ {d} ^ {( s , p )} ; s = 1 , \cdots , S ^ {( p )} ; p = 1 , \cdots , P \Big )}} \end{array}\tag{5}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{\displaystyle \sum _ {p = 1} ^ {P} \int _ {t _ {s} ^ {( p )}} ^ {t _ {f} ^ {( p )}} L ^ {( p )} \left( \mathbf {x} ^ {( p )} , \mathbf {u} ^ {( p )} \right) \mathrm{d} t \Rightarrow}} \\ {{\displaystyle \sum _ {p = 1} ^ {P} \sum _ {s = 1} ^ {S ^ {( p )}} \left[ k ^ {( s , p )} \frac {t _ {f} ^ {( p )} - t _ {s} ^ {( p )}} {2} \sum _ {k = 0} ^ {N _ {d} ^ {( s , p )} - 1} \omega _ {k} L ^ {( s , p )} \left( \mathbf {X} _ {k} ^ {( s , p )} , \mathbf {U} _ {k} ^ {( s , p )} \right) \right]}} \end{array}\tag{6}
+
+[confidence=0.92; source=body_inline] l _ {k} ^ {N}
+
+[confidence=0.92; source=body_inline] \mathbf {x} ^ {( s , p )} ( \tau ) \approx \sum _ {k = 0} ^ {N _ {d} ^ {( s , p )}} l _ {k} ^ {N _ {d} ^ {( s , p )}} ( \tau ) \mathbf {X} _ {k} ^ {( s , p )}\tag{7}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\frac {t _ {j} ^ {( p )} - t _ {s} ^ {( p )}} {2} \mathbf {f} ^ {( p )} ( \mathbf {x} ^ {( p )} , \mathbf {u} ^ {( p )} ) =} & {\frac {t _ {j} ^ {( p )} - t _ {s} ^ {( p )}} {2} [ \mathbf {f} _ {0} ^ {( p )} ( \mathbf {x} ^ {( p )} ) + \mathbf {B} ^ {( p )} \mathbf {u} ^ {( p )} + \mathbf {f} _ {\varepsilon} ^ {( p )} ]} \\ {\approx} & {\frac {\tilde {t} _ {j} ^ {( p )} - \tilde {T} _ {s} ^ {( p )}} {2} [ \frac {\partial \tilde {t} _ {0} ^ {( p )}} {\partial \mathbf {x}} | \mathbf {x} ^ {( p )} \mathbf {x} ^ {( p )} + \mathbf {B} ^ {( p )} \mathbf {u} ^ {( p )} ] ] +} \\ & {\frac {\mathbf {f} _ {j} ^ {( p )} ( \tilde {\mathbf {x}} ^ {( p )} , \tilde {\mathbf {u}} ^ {( p )} )} {2} ( t _ {j} ^ {( p )} - t _ {s} ^ {( p )} ) - \frac {\tilde {t} _ {j} ^ {( p )} - \tilde {T} _ {s} ^ {( p )}} {2} [ \frac {\partial \mathbf {f} _ {0} ^ {( p )}} {\partial \mathbf {x}} | \mathbf {\Sigma} _ {\kappa ^ {( p )}} \mathbf {\tilde {x}} ^ {( p )} + \mathbf {B} ^ {( p )} \tilde {\mathbf {u}} ^ {( p )} ]} \\ & = \frac {\tilde {t} _ {j} ^ {( p )} - \tilde {T} _ {s} ^ {( p )}} {2} [ \mathbf {A} ^ {( p )} \mathbf {x} ^ {( p )} + \mathbf {B} ^ {( p )} \mathbf {u} ^ {( p )} ] + \mathbf {C} ^ {( p )} [ t _ j \end{array}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {{\displaystyle \sum _ {k = 0} ^ {N _ {d} ^ {( s , p )}} \left( {\bf X} _ {k} ^ {( s , p )} \frac {\mathrm{d} l _ {k} ^ {N _ {d} ^ {( s , p )}} ( \tau )} {\mathrm{d} \tau} \Bigg \vert _ {\tau _ {j} ^ {( s , p )}} \right) \approx \frac {t _ {f} ^ {( s , p )} - t _ {s} ^ {( s , p )}} {2} \dot {\bf x} ^ {( s , p )} \left( t _ {j} ^ {( s , p )} \right)} \ ~} \\ {{\displaystyle = k ^ {( s , p )} \frac {t _ {f} ^ {( p )} - t _ {s} ^ {( p )}} {2} {\bf f} ^ {( s , p )} \left( {\bf X} _ {j} ^ {( s , p )} , {\bf U} _ {j} ^ {( s , p )} \right) , \left( j = 0 , \cdots , N _ {d} ^ {( s , p )} - 1 \right)}} \end{array}\tag{8}
+
+[confidence=0.67; needs_review; source=body_inline] N _ {d} ^ {( s , p )} )
+
+[confidence=0.92; source=body_inline] \mathbf {D} ^ {( s , p )} \mathbf {X} ^ {( s , p )} = \mathbf {F} ^ {( s , p )}\tag{9}
+
+[confidence=0.92; source=body_inline] \mathbf {X} ^ {( s , p )} = \left[ \mathbf {X} _ {0} ^ {( s , p )} , \cdots , \mathbf {X} _ {N} ^ {( s , p )} \right] ^ {T}
+
+[confidence=0.92; source=body_inline] \mathbf {F} ^ {( s , p )} = k ^ {( s , p )} \frac {t _ {f} ^ {( p )} - t _ {s} ^ {( p )}} {2} \left[ \begin{array} {c} {\mathbf {f} ^ {( s , p )} \left( \mathbf {X} _ {0} ^ {( s , p )} , \mathbf {U} _ {0} ^ {( s , p )} \right) ^ {T}} \\ {\vdots} \\ {\mathbf {f} ^ {( s , p )} \left( \mathbf {X} _ {N - 1} ^ {( s , p )} , \mathbf {U} _ {N - 1} ^ {( s , p )} \right) ^ {T}} \end{array} \right]
+
+[confidence=0.92; source=body_inline] \mathbf {D} ^ {( s , p )} \in \mathbb {R} ^ {N \times ( N + 1 )} , D _ {i j} ^ {( s , p )} = \frac {\mathrm{d} l _ {j} ^ {N} ( \tau )} {\mathrm{d} \tau} \Bigg \vert _ {\tau _ {i} ^ {( s , p )}}
+
+[confidence=0.92; source=body_inline] \mathcal {P} _ {\mathrm{NLP}} \mathrm{:}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathcal {P} _ {\mathrm{NLP}} : ~ \mathrm{minimize}} & {J = \mathrm{Eq.} ( 3 ) + \mathrm{Eq.} ( 6 )} \\ {\mathrm{subjectto}} & {\mathrm{Eq.} ( 4 ) , \mathrm{Eq.} ( 5 ) ~ \mathrm{and}} \\ & {\mathrm{Eq.} ( 9 ) , \mathrm{forall} \left( s , p \right)} \end{array}\tag{10}
+
+[confidence=0.92; source=body_inline] \mathcal {P} _ {\mathrm{NLP}}
+
+[confidence=0.92; source=body_inline] \widetilde {t} _ {s , f} ^ {( p )} , \widetilde {\mathbf {x}} ^ {( p )}
+
+[confidence=0.92; source=body_inline] \widetilde {\mathbf {u}} ^ {\left( p \right)}
+
+[confidence=0.92; source=body_inline] \| \mathbf {u} _ {1 : K - 1} ^ {( p )} \| _ {2} = \mathbf {u} _ {K} ^ {( p )}\tag{12}
+
+[confidence=0.92; source=body_inline] \| \mathbf {u} _ {1 : K - 1} ^ {( p )} \| _ {2} \leq \mathbf {u} _ {K} ^ {( p )}\tag{13}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathbf {D} ^ {( s , p )} \mathbf {X} ^ {( s , p )} =} & {k ^ {( s , p )} \frac {\widetilde {t} _ {f} ^ {( p )} - \widetilde {t} _ {s} ^ {( p )}} {2} \left\{\left[ \mathbf {A} _ {0} ^ {( s , p )} \mathbf {X} _ {0} ^ {( s , p )} , \cdots , \mathbf {A} _ {N - 1} ^ {( s , p )} \mathbf {X} _ {N - 1} ^ {( s , p )} \right] ^ {T} + \left[ \mathbf {B} _ {0} ^ {( s , p )} \mathbf {U} _ {0} ^ {( s , p )} , \cdots , \mathbf {B} _ {N - 1} ^ {( s , p )} \mathbf {U} _ {N - 1} ^ {( s , p )} \right] ^ {T} \right\} +} \\ & {k ^ {( s , p )} \left[ \mathbf {C} _ {0} ^ {( s , p )} \left[ t _ {f} ^ {( p )} \right] , \cdots , \mathbf {C} _ {N - 1} ^ {( s , p )} \left[ t _ {f} ^ {( p )} \right] \right] ^ {T} + k ^ {( s , p )} \left[ \zeta _ {0} ^ {( s , p )} , \cdots , \zeta _ {N - 1} ^ {( s , p )} \right] ^ {T}} \end{array}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\overline {{\mathbf {X}}} ^ {\left( s , p \right)} : = \overline {{\mathbf {X} ^ {\left( s , p \right)}}} = \left[ \left( \mathbf {X} _ {0} ^ {\left( s , p \right)} \right) ^ {T} , \cdots , \left( \mathbf {X} _ {N} ^ {\left( s , p \right)} \right) ^ {T} \right] ^ {T}} \\ & {\overline {{\mathbf {U}}} ^ {\left( s , p \right)} : = \overline {{\mathbf {U} ^ {\left( s , p \right)}}} = \left[ \left( \mathbf {U} _ {0} ^ {\left( s , p \right)} \right) ^ {T} , \cdots , \left( \mathbf {U} _ {N} ^ {\left( s , p \right)} \right) ^ {T} \right] ^ {T}} \end{array}\tag{15}
+
+[confidence=0.92; source=body_inline] \overrightarrow {\mathbf {D} ^ {( s , p )} \mathbf {X} ^ {( s , p )}} = \overline {{\mathbf {D}}} ^ {( s , p )} \overline {{\mathbf {X}}} ^ {( s , p )}\tag{16}
+
+[confidence=0.92; source=body_inline] {\mathbf I} _ {n}
+
+[confidence=0.92; source=body_inline] \overline {{\mathbf {D}}} ^ {( s , p )} = \mathbf {D} ^ {( s , p )} \otimes \mathbf {I} _ {n}
+
+[confidence=0.92; source=body_inline] \overrightarrow {\mathbf {F} ^ {( s , p )}} = \overline {{\mathbf {A}}} ^ {( s , p )} \overline {{\mathbf {X}}} ^ {( s , p )} + \overline {{\mathbf {B}}} ^ {( s , p )} \overline {{\mathbf {U}}} ^ {( s , p )} + \overline {{\mathbf {C}}} ^ {( s , p )} \left[ t _ {f} ^ {( p )} \right] + \overline {{\xi}} ^ {( s , p )}\tag{17}
+
+[confidence=0.92; source=body_inline] \overline {{\mathbf {A}}} ^ {( s , p )} = k ^ {( s , p )} \frac {\widetilde {t} _ {f} ^ {( p )} - \widetilde {t} _ {s} ^ {( p )}} {2} \left[ \begin{array} {l l l l} {\mathbf {A} _ {0} ^ {( s , p )}} & & & {\mathbf {0}} \\ & {\ddots} & & {\vdots} \\ & & {\mathbf {A} _ {N - 1} ^ {( s , p )}} & {\mathbf {0}} \end{array} \right]
+
+[confidence=0.92; source=body_inline] \overline {{\mathbf {B}}} ^ {( s , p )} = k ^ {( s , p )} \frac {\widetilde {t} _ {f} ^ {( p )} - \widetilde {t} _ {s} ^ {( p )}} {2} \left[ \begin{array} {l l l l} {\mathbf {B} _ {0} ^ {( s , p )}} & & & {\mathbf {0}} \\ & {\ddots} & & {\vdots} \\ & & {\ddots} & & \\ & & {\mathbf {B} _ {N - 1} ^ {( s , p )}} & {\mathbf {0}} \end{array} \right]
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\overline {{\mathbf {C}}} ^ {( s , p )} = k ^ {( s , p )} \left[ \begin{array} {c} {\mathbf {C} _ {0} ^ {( p )}} \\ {\vdots} \\ {\mathbf {C} _ {N - 1} ^ {( p )}} \end{array} \right] , \overline {{\zeta}} ^ {( s , p )} = k ^ {( s , p )} \left[ \begin{array} {c} {\xi _ {0} ^ {( s , p )}} \\ {\vdots} \\ {\xi _ {N - 1} ^ {( s , p )}} \end{array} \right]} \end{array}
+
+[confidence=0.67; needs_review; source=body_inline] N _ {p + 1} ) \colon
+
+[confidence=0.92; source=body_inline] \overline {{\mathbf {X}}} ^ {( p )} = \left[ \begin{array} {l} {\overline {{\mathbf {X}}} ^ {( 1 , p )}} \\ {\vdots} \\ {\overline {{\mathbf {X}}} ^ {\left( {S} ^ {( p )} , p \right)}} \end{array} \right] , \overline {{\mathbf {U}}} ^ {( p )} = \left[ \begin{array} {l} {\overline {{\mathbf {U}}} ^ {( 1 , p )}} \\ {\vdots} \\ {\overline {{\mathbf {U}}} ^ {\left( {S} ^ {( p )} , p \right)}} \end{array} \right] , N _ {p} = \sum _ {s = 1} ^ {S ^ {( p )}} N _ {d} ^ {( s , p )}\tag{18}
+
+[confidence=0.92; source=body_inline] Z ^ {( p )}
+
+[confidence=0.92; source=body_inline] \mathfrak {P} _ {p} ;
+
+[confidence=0.92; source=body_inline] {\bf Z} ^ {( p )} = \left[ \begin{array} {c c c c c c c} {\overline {{\bf X}} ^ {( p )}} \\ {\overline {{\bf U}} ^ {( p )}} \\ {t _ {f} ^ {( p )}} \\ {t _ {s} ^ {( p )}} \end{array} \right] \in \mathbb {R} ^ {N _ {Z} ^ {( p )}} , N _ {Z} ^ {( p )} = ( n + m ) \big ( N _ {p} + 1 \big ) + 2\tag{19}
+
+[confidence=0.92; source=body_inline] \mathbf {M} _ {d i f} ^ {( p )} \mathbf {Z} ^ {( p )} = \mathbf {M} _ {d i f} ^ {( p )} \mathbf {Z} ^ {( p )} + \mathbf {G} _ {s y s} ^ {( p )}\tag{20}
+
+[confidence=0.92; source=body_inline] \mathbf {M} _ {d i f} ^ {\left( p \right)}
+
+[confidence=0.67; needs_review; source=body_inline] n {\cdot} N _ {p} \times N _ {Z} ^ {( p )} . )
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {{\mathbb M} _ {d \ell} ^ {( j )} =} & {\left[ \begin{array} {l l} {{\mathbb D} ^ {( 1 , p )}} & {0} \\ {\ddots} & {\vdots} \\ {{\mathbb D} ^ {( S ^ {j} , p )}} & {0} \end{array} \right]} \\ {{\mathbb M} _ {s s} ^ {( j )} =} & {\left[ \begin{array} {l l l} {{\mathbb {\overline {{A}}}} ^ {( 1 , p )}} & {\mathbf {\overline {{B}}} ^ {( 1 , p )}} & {{\mathbb {\overline {{C}}}} ^ {( 1 , p )}} \\ {\ddots} & {\ddots} & {\vdots} \\ {{\mathbb {\overline {{A}}}} ^ {( S ^ {j} , p )}} & {\mathbf {\nabla} {\mathbb {B}} ^ {( S ^ {j} , p )}} & {{\mathbb {\overline {{C}}}} ^ {( S ^ {j} , p )}} \end{array} \right]} \\ {{\mathbb G} _ {s s} ^ {( j )} =} & {\left[ \begin{array} {l} {{\mathbb {\overline {{\xi}}}} ^ {( 1 , p )}} \\ {\vdots} \\ {{\mathbb {\overline {{\xi}}}} ^ {( S ^ {j} , p )}} \end{array} \right]} \end{array}
+
+[confidence=0.92; source=body_inline] \big ( \mathbf {M} _ {d i f} - \mathbf {M} _ {s y s} \big ) \mathbf {Z} = \mathbf {G} _ {s y s}\tag{21}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathbf {Z} =} & {{} \left[ \begin{array} {l} {\mathbf {Z} ^ {( 1 )}} \\ {\vdots} \\ {\mathbf {Z} ^ {( P )}} \end{array} \right] , \qquad \mathbf {M} _ {d i f} =} & {{} \left[ \begin{array} {l l l l l l} {\mathbf {M} _ {d i f} ^ {( 1 )}} & {} & {} & {} & {} \\ {} & {\ddots} & {} & {} & {} \\ {} & {} & {\mathbf {M} _ {d i f} ^ {( P )}} \end{array} \right]} \end{array}
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array}{c} \begin{array} {c c l} {\displaystyle \mathbf {M} _ {s y s} =} & {\displaystyle [ \mathbf {M} _ {s y s} ^ {( 1 )}} & \\ & & {\ddots} \\ & & & {\displaystyle \mathbf {M} _ {s y s} ^ {( P )} ]} \\ {\displaystyle N _ {c} =} & {\displaystyle n \sum _ {p = 1} ^ {P} N _ {p} ,} \end{array} ] , ~ \mathbf {G} _ {s y s} = & {[ \begin{array} {l} {\displaystyle \mathbf {G} _ {s y s} ^ {( 1 )}} \\ {\vdots} \\ {\displaystyle \mathbf {G} _ {s y s} ^ {( P )}} \end{array} ]} \\ {\displaystyle N _ {Z} =} & {\displaystyle \sum _ {p = 1} ^ {P} N _ {Z} ^ {( p )}} \end{array}
+
+[confidence=0.92; source=body_inline] N _ {c}
+
+[confidence=0.92; source=body_inline] N _ {z}
+
+[confidence=0.92; source=body_inline] J = \mathbf {m} _ {o b j} ^ {T} \mathbf {Z}\tag{22}
+
+[confidence=0.92; source=body_inline] {\underline {{\mathbf {G}}}} _ {e n d} \leq \mathbf {M} _ {e n d} \mathbf {Z} \leq {\overline {{\mathbf {G}}}} _ {e n d}\tag{23}
+
+[confidence=0.92; source=body_inline] \underline {{\mathbf {G}}} _ {p a t h} \le \mathbf {M} _ {p a t h} \mathbf {Z} \le \overline {{\mathbf {G}}} _ {p a t h}\tag{24}
+
+[confidence=0.92; source=body_inline] \mathbf {\Delta} \Delta _ {\mathrm{x}} , \mathbf {\Delta} \Delta _ {\mathrm{u}} ,
+
+[confidence=0.92; source=body_inline] \mathbf {Z} _ {r e f}
+
+[confidence=0.92; source=body_inline] {\bf Z} _ {r e f} - \Delta \le {\bf Z} \le {\bf Z} _ {r e f} + \Delta\tag{25}
+
+[confidence=0.92; source=body_inline] {\bf q} _ {i} ^ {T} {\bf Z}
+
+[confidence=0.92; source=body_inline] \mathcal {Q} _ {i}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathcal {P} _ {1} : \mathrm{~minimize~}} & {J = \mathbf {m} _ {o b j} ^ {T} \mathbf {Z}} \\ {\mathrm{subjectto~}} & {\left( \mathbf {M} _ {d i f} - \mathbf {M} _ {s y s} \right) \mathbf {Z} = \mathbf {G} _ {s y s}} \\ & {\underline {{\mathbf {G}}} _ {e n d} \leq \mathbf {M} _ {e n d} \mathbf {Z} \leq \overline {{\mathbf {G}}} _ {e n d}} \\ & {\underline {{\mathbf {G}}} _ {p a t h} \leq \mathbf {M} _ {p a t h} \mathbf {Z} \leq \overline {{\mathbf {G}}} _ {p a t h}} \\ & {\mathbf {q} _ {i} ^ {T} \mathbf {Z} \in \mathcal {Q} _ {i} , ( i = 1 , \cdots , N _ {c} )} \\ & {\mathbf {Z} < \mathbf {Z} < \overline {{\mathbf {Z}}}} \end{array}\tag{27}
+
+[confidence=0.92; source=body_inline] \mathcal {P} _ {1}
+
+[confidence=0.92; source=body_inline] \mathbf {Z} _ {o p t :}
+
+[confidence=0.92; source=body_inline] \epsilon _ {\mathrm{iter}} \leq | \mathbf {Z} _ {o p t} -
+
+[confidence=0.92; source=body_inline] \left. {\mathbf {Z}} _ {r e f} \right| \le \epsilon ,
+
+[confidence=0.92; source=body_inline] {\bf Z} _ {r e f} = {\bf Z} _ {r e f} +
+
+[confidence=0.92; source=body_inline] \kappa ( \mathbf {Z} _ {o p t} - \mathbf {Z} _ {r e f} )
+
+[confidence=0.67; needs_review; source=body_inline] ( \epsilon _ {{\bf x}} , \epsilon _ {{\bf u}} ,
+
+[confidence=0.92; source=body_inline] S ^ {( : )} , N _ {d} ^ {( : , : )}
+
+[confidence=0.92; source=body_inline] k ^ {( : , : )}
+
+[confidence=0.92; source=body_inline] \mathbf {X} _ {o p t} ^ {( s , p )} , \mathbf {U} _ {o p t} ^ {( s , p )} , t _ {s , o p t} ^ {( p )}
+
+[confidence=0.92; source=body_inline] t _ {f , o p t} ^ {( p )} ,
+
+[confidence=0.92; source=body_inline] \mathbf {X} _ {r e f} ^ {( s . p )} , \ \mathbf {U} _ {r e f} ^ {( s . p )} , \ t _ {s , r e f} ^ {( p )}
+
+[confidence=0.92; source=body_inline] t _ {f , r e f} ^ {( p )}
+
+[confidence=0.92; source=body_inline] \mathbf {F} _ {L} ^ {( s , p )}
+
+[confidence=0.92; source=body_inline] \mathbf {D} ^ {( s , p )}
+
+[confidence=0.92; source=body_inline] \mathbf {X} _ {o p t} ^ {( s , p )} \left( \tau _ {1 : N _ {d} ^ {( s , p )}} \right) = \mathbf {1} \mathbf {X} _ {o p t} ^ {( s , p )} ( \tau _ {0} ) + \left( \mathbf {D} _ {1 : N _ {d} ^ {( s , p )} + 1} ^ {( s , p )} \right) ^ {- 1} \mathbf {F} _ {L} ^ {( s , p )}\tag{28}
+
+[confidence=0.92; source=body_inline] \varepsilon ^ {( s , p )}
+
+[confidence=0.92; source=body_inline] N _ {d} ^ {( s , p )} + 2
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {= \operatorname* {m a x} \Bigg \{\Bigg [ \widehat {\mathbf {X}} _ {o p t} ^ {( s , p )} ( \tau _ {0} ) + \Bigg ( \widehat {\mathbf {D}} _ {1 : N _ {d} ^ {( s , p )} + 1} ^ {( s , p )} \Bigg ) ^ {- 1} \widehat {\mathbf {F}} _ {L} ^ {( s , p )} - \widehat {\mathbf {X}} _ {o p t} ^ {( s , p )} \Big ( \tau _ {1 : N _ {d} ^ {( s , p )} + 1} \Big ) \Bigg ]} \\ & {\qquad \mathcal {O} \left[ \left[ \widehat {\mathbf {X}} _ {o p t} ^ {( s , p )} \right] \right] \Bigg \}} \end{array}\tag{29}
+
+[confidence=0.92; source=body_inline] \rho ^ {( s , p )} : = \frac {2 \operatorname* {m a x} \mathcal {H} ^ {( s , p )}} {\int _ {- 1} ^ {1} \mathcal {H} ^ {( s , p )} \mathrm{d} \tau} , \ \mathcal {H} ^ {( s , p )} = \frac {\left| \ddot {\mathbf {X}} _ {\tilde {n}} ^ {( s , p )} ( \tau ) \right|} {\left[ 1 + \dot {\mathbf {X}} _ {\tilde {n}} ^ {( s , p )} ( \tau ) ^ {2} \right] ^ {2 / 3}}\tag{30}
+
+[confidence=0.92; source=body_inline] \rho _ {\mathrm{max}} , {\mathrm{if}} \ \rho ^ {( s , p )} {\leqslant} \rho _ {\mathrm{may}}
+
+[confidence=0.92; source=body_inline] \varepsilon ^ {( : , p )}
+
+[confidence=0.92; source=body_inline] \rho ^ {( : p )}
+
+[confidence=0.92; source=body_inline] S ^ {( p )} , N _ {d} ^ {( : , p )} , k ^ {( : , p )} \ {\bf o f}
+
+[confidence=0.92; source=body_inline] ( \mathrm{i} . \mathrm{e} . , \rho _ {\mathrm{max}} , \varepsilon _ {\mathrm{max}} , N _ {d \mathrm{min}} ) ;
+
+[confidence=0.92; source=body_inline] \widehat {\boldsymbol {S}} ^ {( p )} , \widehat {N} _ {d} ^ {( : , p )} , \widehat {\boldsymbol {k}} ^ {( : , p )}
+
+[confidence=0.92; source=body_inline] \widehat s = 0 ;
+
+[confidence=0.92; source=body_inline] \mathbf {i f} \rho ^ {( s , p )} \leq \rho _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] \widehat {s} = \widehat {s} + 1 ;
+
+[confidence=0.92; source=body_inline] \widehat {\cal N} _ {d} ^ {( \widehat {s} , p )} = {\cal N} _ {d} ^ {( s , p )} + {\cal N} _ {K} ^ {( s , p )} , \widehat {k} ^ {( \widehat {s} , p )} = k ^ {( s , p )} ;
+
+[confidence=0.92; source=body_inline] i = 1 \tplus N _ {K} ^ {( s , p )}
+
+[confidence=0.92; source=body_inline] \widehat {N} _ {d} ^ {( \widehat {s} , p )} = N _ {d \operatorname* {m i n}} , \widehat {k} ^ {( \widehat {s} , p )} = k ^ {( s , p )} \nu _ {i} ;
+
+[confidence=0.92; source=body_inline] \widehat {\boldsymbol {s}} ^ {( p )} = \widehat {\boldsymbol {s}} ;
+
+[confidence=0.92; source=body_inline] {\bf x} _ {\tilde {n}}
+
+[confidence=0.92; source=body_inline] \mathsf{by} N _ {K} ^ {( s , p )}
+
+[confidence=0.92; source=body_inline] N _ {K} ^ {( s , p )}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] N _ {K} ^ {( s , p )} = \left\lceil \log _ {10} \frac {\varepsilon ^ {( s , p )}} {\varepsilon _ {\mathrm{max}}} \right\rceil\tag{31}
+
+[confidence=0.92; source=body_inline] N _ {K} ^ {\left( s , p \right)} - 1
+
+[confidence=0.92; source=body_inline] \frac {\int _ {- 1} ^ {\Gamma _ {i}} {\left( \mathcal {K} ^ {\left( s , p \right)} \right) ^ {\frac {1} {3}} \mathrm{d} \tau}} {\int _ {- 1} ^ {1} {\left( \mathcal {K} ^ {\left( s , p \right)} \right) ^ {\frac {1} {3}} \mathrm{d} \tau}} = \frac {i} {N _ {K} ^ {\left( s , p \right)}} , \left( i = 1 , \cdots , N _ {K} ^ {\left( s , p \right)} - 1 \right)\tag{32}
+
+[confidence=0.92; source=body_inline] \pmb {\nu} : = \frac {\mathbf {\Gamma} \Gamma _ {f} - \mathbf {\Gamma} \Gamma _ {s}} {2}\tag{33}
+
+[confidence=0.92; source=body_inline] \begin{array} {l l l} {\Gamma _ {f} = \Big [ \Gamma _ {1}} & {\cdots} & {\Gamma _ {N _ {K} ^ {\left( s , p \right)} - 1} \quad 1 \Big ] ^ {T} {} _ {s}} \\ {\Gamma _ {s} = \Big [ - 1} & {\Gamma _ {1}} & {\cdots} & {\Gamma _ {N _ {K} ^ {\left( s , p \right)} - 1} \Big ] ^ {T}} \end{array}
+
+[confidence=0.92; source=body_inline] \mathcal {P} _ {2}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathcal {P} _ {2} : \operatorname{minimize}} & {J = \mathbf {m} _ {o b} ^ {T} \mathbf {Z}} \\ {\mathrm{subjectto}} & {| \big ( \mathbf {M} _ {d i f} - \mathbf {M} _ {s s s} \big ) \mathbf {Z} - \mathbf {G} _ {s y s} | \leq \delta | \mathbf {G} _ {s y s} |} \\ & {\underline {{\mathbf {G} _ {e n d}}} \leq \mathbf {M} _ {e n d} \mathbf {Z} \leq \overline {{\mathbf {G}}} _ {e n d}} \\ & {\underline {{\mathbf {G} _ {p a t h}}} \leq \mathbf {M} _ {p a t h} \mathbf {Z} \leq \overline {{\mathbf {G}}} _ {p a t h}} \\ & {\mathbf {q} _ {i} ^ {T} \mathbf {Z} \in \mathcal {Q} _ {i} , ( i = 1 , \cdots , N _ {c} )} \\ & {\underline {{\mathbf {Z}}} < \mathbf {Z} < \overline {{\mathbf {Z}}}} \end{array}\tag{34}
+
+[confidence=0.92; source=body_inline] \mathcal {P} _ {3}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\mathcal {P} _ {3} : \mathrm{minimize}} & {J = \mathbf {m} _ {o b j} ^ {T} \mathbf {Z} + \eta \| \mathbf {Z} - \mathbf {Z} _ {r e f} \| _ {2}} \\ {\mathrm{subjectto}} & {\left( \mathbf {M} _ {d i f} - \mathbf {M} _ {s y s} \right) \mathbf {Z} = \mathbf {G} _ {s y s}} \\ & {\mathbf {\underline {{G}}} _ {e n d} \leq \mathbf {M} _ {e n d} \mathbf {Z} \leq \overline {{\mathbf {G}}} _ {e n d}} \\ & {\mathbf {\underline {{G}}} _ {p a t h} \leq \mathbf {M} _ {p a t h} \mathbf {Z} \leq \overline {{\mathbf {G}}} _ {p a t h}} \\ & {\mathbf {q} _ {i} ^ {T} \mathbf {Z} \in \mathcal {Q} _ {i} , \left( i = 1 , \cdots , N _ {c} \right)} \\ & {\mathbf {Z} \leq \mathbf {Z} \leq \overline {{\mathbf {Z}}}} \end{array}\tag{35}
+
+[confidence=0.92; source=body_inline] N _ {d \operatorname* {m i n}}
+
+[confidence=0.92; source=body_inline] \mathrm{dy}
+
+[confidence=0.92; source=body_inline] e = m \mu / r - m \nu ^ {2} / 2
+
+[confidence=0.92; source=body_inline] \phi
+
+[confidence=0.92; source=body_inline] \psi
+
+[confidence=0.92; source=body_inline] {\begin{array} {r l} {{\frac {\mathrm{d} r} {\mathrm{d} r}}} & {= {\frac {\mathrm{sin} \gamma} {D r}}} \\ {{\frac {\mathrm{d} \rho} {\mathrm{d} \rho}} =} & {{\frac {\mathrm{coving}} {D r}}} \\ {{\frac {\mathrm{d} \phi} {\mathrm{d} r}}} & {= {\frac {\mathrm{coving}} {D r}}} \\ {{\frac {\mathrm{d} \phi} {\mathrm{d} r}}} & {= {\frac {\mathrm{coving}} {D r}}} \\ {{\frac {\mathrm{d} \phi} {\mathrm{d} \rho}} =} & {{\frac {L \times \mathrm{ave}} {D ^ {2} D r}} + \left( {\frac {1} {r D}} - {\frac {\mu} {r ^ {2} + {\frac {3} {2}}}} \right) \mathrm{cov} +} \\ & {\quad 2 \rho \mathrm{covosion} \mu r \quad {\mathrm{ro}} ^ {\mathrm{cosc/ecosc/ecosc/}} + \mathrm{sin} \mathrm{sin} \mathrm{eacosc} {\psi}} \\ & {\quad {\frac {\mathrm{d} \rho} {\mathrm{d} \rho}} -} & {{\frac {L \times \mathrm{in} \sigma} {D ^ {2} D r}} + {\frac {\mathrm{cossing} \mathrm{sing} \mathrm{sing} \mathrm{cosc} {\psi}} {r D}} + {\frac {\mathrm{rosc/ecosc/}} {{\mathrm{sin} \sqrt {2}} \mathrm{roscosc} {\psi}}}} \\ {{\frac {\mathrm{d} \rho} {\mathrm{d} \rho}}} & {=} & {{\frac {\mathrm{7cing}} {D ^ {2} D r}} + {\frac {\mathrm{cossing} \mathrm{cosc/ecosc}} {r D}} + {\frac {\mathrm{rosc/ecosc/ect}} {{\mathrm{sin} \sqrt {2}} \mathrm{roscosc} {\psi}}}} \end{array}}\tag{36}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l} {{C _ {L} = C _ {L 0} + C _ {L 1} \alpha + C _ {L 2} e ^ {C _ {L 3} \nu}}} \\ {{C _ {D} = C _ {D 0} + C _ {D 1} \alpha ^ {2} + C _ {D 2} e ^ {C _ {D 3} \nu}}} \end{array} \right.\tag{37}
+
+[confidence=0.92; source=body_inline] \dot {\mathbf {\rho}} _ {Q} = 9.437 \times 10 ^ {- 5}
+
+[confidence=0.92; source=body_inline] C _ {L i} ,
+
+[confidence=0.92; source=body_inline] C _ {D i}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {q = 0.5 \rho \nu ^ {2} \leq q _ {\operatorname* {m a x}}} \\ {Q = k _ {Q} \rho ^ {0.5} \nu ^ {3.15} \leq Q _ {\operatorname* {m a x}}} \\ {n = \sqrt {L ^ {2} + D ^ {2}} \Big / m \leq n _ {\operatorname* {m a x}}} \end{array} \right.\tag{38}
+
+[confidence=0.92; source=body_inline] \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf {\Delta} \mathbf \Delta \mathbf {} \Delta \mathbf {} \Delta \mathbf \Delta \Delta \mathbf {} \Delta \mathbf {} \Delta \mathbf \Delta \Delta \mathbf {} \Delta \Delta \mathbf \Delta \Delta \mathbf \Delta \Delta \Delta \mathbf {} \Delta \mathbf \Delta \Delta \Delta \mathbf \Delta \Delta \Delta \mathbf \Delta \Delta \Delta \mathbf \Delta \Delta \Delta \Delta \mathbf \Delta \Delta \Delta \Delta \mathbf \Delta \Delta \Delta \Delta \Delta \Delta \Delta \Delta
+
+[confidence=0.92; source=body_inline] \epsilon _ {\theta , \phi , \gamma , \psi} =
+
+[confidence=0.92; source=body_inline] 4.4 \times 10 ^ {10} \mathrm{J}
+
+[confidence=0.92; source=body_inline] ^ {5 ,}
+
+[confidence=0.92; source=body_inline] \sigma ,
+
+[confidence=0.92; source=body_inline] \epsilon _ {\mathrm{iter}}
+
+[confidence=0.92; source=body_inline] 8 ~ ( N _ {d \operatorname* {m i n}} ~ = 4 )
+
+[confidence=0.92; source=body_inline] ^ {7 \ s ,}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\dot {\mathbf r} = \mathbf v} \\ {\dot {\mathbf v} = - \mu \mathbf r / \| \textbf {r} \| ^ {3} + T \mathbf u / m - \mathbf D / m} \end{array} \right.\tag{39}
+
+[confidence=0.92; source=body_inline] \mathbf {r} = [ r _ {x} , r _ {y} , r _ {z} ] ^ {T}
+
+[confidence=0.92; source=body_inline] \mathbf {v} = [ \nu _ {x} , \nu _ {y} , \nu _ {z} ] ^ {T} \mathrm{.}
+
+[confidence=0.92; source=body_inline] \mu
+
+[confidence=0.92; source=body_inline] \mathbf {u} = {[ u _ {x} , u _ {y} , u _ {z} ]} ^ {T}
+
+[confidence=0.92; source=body_inline] \mathbf {D} = 0.5 \rho \mathbf {v} _ {r e l} ^ {2} C _ {D} S _ {r e f}\tag{40}
+
+[confidence=0.92; source=body_inline] \mathbf {v} _ {r e l}
+
+[confidence=0.92; source=body_inline] w = 7.292115 \times 10 ^ {- 5} \mathrm{rad/s}
+
+[confidence=0.92; source=body_inline] \mathbf {v} _ {r e l} = \mathbf {v} - \pmb {\omega} \times \mathbf {r} , \pmb {\omega} = \left[ 0 \quad 0 \quad w \right] ^ {T}
+
+[confidence=0.92; source=body_inline] \rho = \rho _ {0} \mathrm{exp} [ \left( r - R _ {e} \right) / \beta ]\tag{41}
+
+[confidence=0.92; source=body_inline] \rho _ {0} = 1.225 \mathrm{kg} / \mathrm{m} ^ {3}
+
+[confidence=0.92; source=body_inline] R _ {e} \ =
+
+[confidence=0.92; source=body_inline] \beta = 7.2 \mathrm{km}
+
+[confidence=0.92; source=body_inline] 10 ^ {3}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\Delta _ {\nu _ {x , y , z}} = :} \end{array}
+
+[confidence=0.92; source=body_inline] / {\bf s} , {\bf \Delta} {\bf a} _ {\bf u} =
+
+[confidence=0.92; source=body_inline] 0.6 , \epsilon _ {r _ {x , y , z}} = 10 ^ {- 3} \mathrm{m} , \epsilon _ {\nu _ {x , y , z}} = 10 ^ {- 6} \mathrm{m/s} ,
+
+[confidence=0.92; source=body_inline] \epsilon _ {\mathbf {u}} = 10 ^ {- 8}
+
+[confidence=0.92; source=body_inline] {\beta} ( N _ {d \mathrm{min}} = 3 )

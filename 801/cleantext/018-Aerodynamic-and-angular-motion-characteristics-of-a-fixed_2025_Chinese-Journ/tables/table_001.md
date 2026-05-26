@@ -1,0 +1,14 @@
+| Algorithm 1 Numerical simulation using coupled CFD/RBD method. |
+| --- |
+| Input: Initial flight states |
+| Output: Flow field, aerodynamic forces and moments, flight states |
+| 1: Define the initial state of the projectile, $\begin{array} { r } { \pmb { S } _ { 0 } = \left[ u _ { 0 } \right. } \end{array}$ 0 0 0 0 0 0 0 0 0 0 0 v w p p q r f a f a  |
+| 2: Compute an initial steady-state solution considering only translational velocities |
+| 3: Progress through several dual-time step iterations considering the initial angular velocity, continuing until |
+| solution convergence, then output the initial flow field $x _ { 0 }$ and initial aerodynamic forces and moments, |
+| ${ \bf y } _ { 0 } = \left[ F _ { x 0 } F _ { y 0 } F _ { z 0 } M _ { \mathrm { f } x 0 } M _ { \mathrm { a c } 0 } M _ { y 0 } M _ { z 0 } \right]$ |
+| While $t \leq t _ { \mathrm { e n d } }$ do |
+| 4: Pass the forces and moments calculated by CFD, |
+| $\begin{array} { r } { \boldsymbol { y } \left( t \right) = \left[ F _ { x } ( t ) F _ { y } ( t ) F _ { z } ( t ) M _ { \mathrm { f x } } ( t ) M _ { \mathrm { a x } } ( t ) M _ { y } ( t ) M _ { z } ( t ) \right] } \end{array}$ , on to 7-DOF RBD equations |
+| 5: Calculate the state changes s using Eq. (1) to Eq. (4) |
+| 6: Advance the solution to time instant t 1 , yielding updated states s( 1) t  |

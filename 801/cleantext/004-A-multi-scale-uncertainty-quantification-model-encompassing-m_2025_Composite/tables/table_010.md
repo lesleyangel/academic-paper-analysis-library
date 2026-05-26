@@ -1,0 +1,20 @@
+| Category | Parameters | Symbols | Distribution | Mean() | Parameter(%) | Unit |
+| --- | --- | --- | --- | --- | --- | --- |
+| Geometric parameter | Length of UC1 | $a _ { p 1 }$ | Uniform | 0.900 | Range=±15 % | mm |
+|  | Half width of fi ber bundles in UC1 | $w _ { p 1 }$ | Uniform | 0.300 | $\mathrm { R a n g e } { = } \pm 1 5 \ \% \mu$ | mm |
+| Half gap of fi ber bundles in UC1 | $h _ { p 1 1 }$ | Uniform | 0.005 | Range=±15 % | mm |  |
+| Thickness of fiber bundles in UC1 | $h _ { p 2 1 }$ | Uniform | 0.100 | Range=±15 % | mm |  |
+| Layer gap of fi ber bundles in UC1 | $h _ { p 3 1 }$ | Uniform | 0.005 | Range=±15 % | mm |  |
+| Length of UC2 | $a _ { p 2 }$ | Uniform | 0.450 | Range=±15 % | mm |  |
+| Half width of fiber bundles in UC2 | $w _ { p 2 }$ | Uniform | 0.300 | Range=±15 % | mm |  |
+| Half gap of fiber bundles in UC2 | $h _ { p 1 2 }$ | Uniform | 0.005 | Range=±15 % | mm |  |
+| Thickness of fiber bundles in UC2 | $h _ { p 2 2 }$ | Uniform | 0.100 | Range=±15 % | mm |  |
+| Layer gap of fiber bundles in UC2 | $h _ { p 3 2 }$ | Uniform | 0.005 | Range=±15 % | mm |  |
+| Length of UC3 | $a _ { p 3 }$ | Uniform | 0.225 | Range=±15 % | mm |  |
+| Half width of fi ber bundles in UC3 | $w _ { p 3 }$ | Uniform | 0.300 | Range=±15 % | mm |  |
+| Half gap of fiber bundles in UC3 | $h _ { p 1 3 }$ | Uniform | 0.005 | Range=±15 % | mm |  |
+| Thickness of fi ber bundles in UC3 | $h _ { p 2 3 }$ | Uniform | 0.100 | Range=±15 % | mm |  |
+| Layer gap of fiber bundles in UC3 | $h _ { p 3 3 }$ | Uniform | 0.005 | Range=±15 % | mm |  |
+| Constituent | Matrix elastic modulus | $E _ { m }$ | Normal | 3.50 | σ = 2 % | GPa |
+| properties | Matrix Poisson's ratio | $\nu _ { m }$ | Normal | 0.35 | σ = 2 % | 1 |
+|  | Matrix coefficient of thermal expansion | $\alpha _ { m }$ | Normal | 50.00 | $\sigma = 2 ~ \% \mu$ | 1e-6/K |

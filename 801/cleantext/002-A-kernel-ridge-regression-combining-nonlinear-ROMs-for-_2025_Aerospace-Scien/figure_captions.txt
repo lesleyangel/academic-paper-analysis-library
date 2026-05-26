@@ -1,0 +1,111 @@
+Fig. 1. Procedure of the proposed flow-field reconstruction method.
+
+Fig. 2. Visualizations of different kernel functions.
+
+Fig. 3. Training and testing samples in the M∞-α parameter space.
+
+Fig. 4. Relative reconstruction error and Rrs of the KRR-DCR through different ML methods (cubic polynomial kernel, γ =1).
+
+Fig. 5. Relative reconstruction error and Rrs through different kernels.
+
+Fig. 6. Flow-field reconstruction result through linear kernel with d = 35 at M∞= 0.758 and α = 4.169∘.
+
+Fig. 7. Relative reconstruction error and Rrs under different degrees of the polynomial kernel (base-10 logarithmic coordinate).
+
+Fig. 8. Flow-field reconstruction through the quartic kernel with d = 17 at M∞= 0.758 and α = 4.169∘.
+
+Fig. 9. Relative reconstruction error and Rrs under different λ.
+
+Fig. 10. Relative reconstruction error and Rrs under different γ.
+
+Fig. 11. Wall pressure comparison by different methods for the reconstruction samples.
+
+Fig. 12. Comparison of the flow fields reconstructed by different methods at M∞= 0.755, α = 2.33∘.
+
+Fig. 13. Comparison of the flow fields reconstructed by different methods at M∞= 0.758, α = 4.17∘.
+
+Fig. 14. Comparison of the flow fields reconstructed by different methods at M∞= 0.804, α = 2.05∘.
+
+Fig. 15. Comparison of the flow fields reconstructed by different methods at M∞= 0.827, α = 5.10∘.
+
+Fig. 16. Comparison of the flow fields reconstructed by different methods at M∞= 0.843, α = 5.55∘.
+
+Fig. 17. Distribution of the additional samples.
+
+Fig. 18. Reconstruction results after supplementing 10 samples.
+
+Fig. 19. Entropy isolines of the flow field reconstructed by POD.
+
+Fig. 20. Entropy isolines of the flow field reconstructed by NPBM.
+
+Fig. 21. Entropy isolines of the flow field reconstructed by KRR-DCR.
+
+Fig. 22. Vorticity isolines of the flow field reconstructed by the POD.
+
+Fig. 23. Vorticity isolines of the flow field reconstructed by the NPBM.
+
+Fig. 24. Vorticity isolines of the flow field reconstructed by the KRR-DCR.
+
+Fig. 25. Location of monitoring line.
+
+Fig. 26. Variation of physical quantities along the monitoring line.
+
+Fig. 27. Variation of total temperature along the monitoring line.
+
+Fig. 28. Comparison of the modes of different methods.
+
+Fig. 29. The lift coefficients corresponding to the reconstruction samples.
+
+Fig. 30. Comparison of the flow fields reconstructed by different methods at times step=90.
+
+Fig. 31. Comparison of the flow fields reconstructed by different methods at times step=348.
+
+Fig. 32. Comparison of the flow fields reconstructed by different methods at times step=575.
+
+Fig. 33. The first two dimensions of manifold coordinates varying with time.
+
+Fig. 35. The selected characteristic locations.
+
+Fig. 34. The kernel values for the reconstruction sample at time step=348.
+
+Fig. 36. The corresponding KRR-DCR modes for each characteristic location.
+
+Fig. 37. The computational mesh for the RAE2822 airfoil (82,844 cells in total).
+
+Fig. 38. The comparison of wall Cp between CFD and experiment.
+
+Fig. 39. The computational mesh for the RAE2822 airfoil (82,844 cells in total).
+
+Fig. 40. Responses of the lift coefficients varying with time.
+
+Fig. 41. Fourier analysis of lift coefficients.
+
+Fig. 42. Mean surface pressure coefficient distributions.
+
+Fig. 43. Pressure RMS distributions on the upper surface.
+
+Fig. 3. Training and testing samples in the $\pmb { M } _ { \infty } \mathbf { - } \pmb { \alpha }$ parameter space.
+
+Fig. 4. Relative reconstruction error and $R _ { \mathrm { r s } }$ of the KRR-DCR through different ML methods (cubic polynomial kernel, $\gamma = 1 )$
+
+Fig. 5. Relative reconstruction error and $R _ { \mathrm { r s } }$ through different kernels.
+
+Fig. 6. Flow-field reconstruction result through linear kernel with d = 35 at $M _ { \infty } = 0 . 7 5 8$ and $\alpha = 4 . 1 6 9 ^ { \circ }$
+
+Fig. 7. Relative reconstruction error and $R _ { \mathrm { r s } }$ under different degrees of the polynomial kernel (base-10 logarithmic coordinate).
+
+Fig. 8. Flow-field reconstruction through the quartic kernel with $d = 1 7$ at $M _ { \infty } = 0 . 7 5 8$ and $\alpha = 4 . 1 6 9 ^ { \circ }$
+
+Fig. 9. Relative reconstruction error and $R _ { \mathrm { r s } }$ under different λ.
+
+Fig. 10. Relative reconstruction error and $R _ { \mathrm { r s } }$ under different $\gamma \cdot$
+
+Fig. 12. Comparison of the flow fields reconstructed by different methods at $M _ { \infty } = 0 . 7 5 5 , \alpha = 2 . 3 3 ^ { \circ } .$
+
+Fig. 13. Comparison of the flow fields reconstructed by different methods at $M _ { \infty } = 0 . 7 5 8 , \alpha = 4 . 1 7 ^ { \circ }$
+
+Fig. 14. Comparison of the flow fields reconstructed by different methods at $M _ { \infty } = 0 . 8 0 4 , \alpha = 2 . 0 5 ^ { \circ } .$
+
+Fig. 15. Comparison of the flow fields reconstructed by different methods at $M _ { \infty } = 0 . 8 2 7 , \alpha = 5 . 1 0 ^ { \circ } .$
+
+Fig. 16. Comparison of the flow fields reconstructed by different methods at $M _ { \infty } = 0 . 8 4 3 , \alpha = 5 . 5 5 ^ { \circ } .$

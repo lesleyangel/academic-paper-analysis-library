@@ -1,0 +1,99 @@
+Wang, J.
+
+Yu, X.
+
+Wang, et al., A guidance and control design with reduced information for a dual-spin stabilized projectile [J], Defence Techn. 33 (2024) 494–505, https://doi.org/10.1016/j.dt.2023.07.007. [2] J.
+
+Norris, A.
+
+Hameed, J.
+
+Economou, et al., A review of dual-spin projectile stability [J], Defence Techn. 16 (1) (2020) 1–9, https://doi.org/10.1016/j.dt.2019.06.003. [3] J.
+
+Karimi, M.R.
+
+Rajabi, S.H.
+
+Sadati, et al., Multidisciplinary design optimization of a dual-spin guided vehicle [J], Defence Techn. 37 (2023) 133–148, https://doi.org/ 10.1016/j.dt.2023.11.025. [4] Q.
+
+Chen, T.
+
+Hu, P.
+
+Liu, et al., The dynamic vortical flow behaviour on a coplanar canard configuration during large-amplitude-pitching [J], Aerosp. Sci. Technol. 112 (2021) 106553, https://doi.org/10.1016/j.ast.2021.106553. [5] T. Hu, Y. Zhao, P. Liu, et al., Investigation on lift characteristics of a double-delta wing pitching in various reduced frequencies [J], J. Aerospace Eng. 235 (14) (2021) 2081–2094, https://doi.org/10.1177/0954410021992201. [6] F.
+
+Askary, M.R Soltani, Effects of mach numbers on magnus induced surface pressure [J], Chin. J. Aeronautics 33 (12) (2020) 3058–3072, https://doi.org/ 10.1016/j.cja.2020.04.027. [7] K. Shi, M. Liu, Trajectory analysis of a dual-spin-stabilized projectile with fixed- canards for the precision guidance kit [J], J. Aerospace Eng. 236 (13) (2022) 2620–2632, https://doi.org/10.1177/09544100211064759. Table C1 Hyper-parameters of the LSTM network Hyper-parameter Value LSTM layer 200 Relu layer / Fully connected layer 1 200 Fully connected layer 2 200 Fully connected layer 3 200 Training algorithm Adam Initial learning rate 0.001 Training epochs 2000 Batch size 128 [8] X. Zhao, J. Shi, Z. Wang, et al., Nonlinear aerodynamic modeling and analysis on body of fixed canard dual-spin projectiles [C], in: International Conference on Mechanical System Dynamics, Singapore, Springer Nature Singapore, 2023, pp. 3759–3774, https://doi.org/10.1007/978-981-99-8048-2_263. [9] F.
+
+Seve, S.
+
+Theodoulis, P.
+
+Wernert, et al., Flight dynamics modeling of dual-spin guided projectiles [J], IEEE Trans. Aerosp. Electron. Syst. 53 (4) (2017) 1625–1641, https://doi.org/10.1109/TAES.2017.2667820. [10] F.
+
+Nicolosi, A. De Marco, V.
+
+Sabetta, et al., Roll performance assessment of a light aircraft: flight simulations and flight tests [J], Aerosp. Sci. Technol. 76 (2018) 471–483, https://doi.org/10.1016/j.ast.2018.01.041. [11] L. Yan, X. Chang, N. Wang, et al., Aerodynamic identification and control law design of a missile using machine learning [J], AIAA J. 61 (7) (2023) 2998–3018, https://doi.org/10.2514/1.J062801. [12] Z. Ernst, M. Drosendahl, B.E. Robertson, et al., Development of a trajectory-centric CFD-RBD framework for advanced multidisciplinary/multiphysics simulation [C], in: AIAA SCITECH 2022 Forum, 2022, p. 1793, https://doi.org/10.2514/6.2022- 1793. [13] Q.
+
+Wang, W.Q.
+
+Qian, D.
+
+Ding, A review of unsteady aerodynamic modeling of aircrafts at high angles of attack [J], Acta Aeronautica et Astronautica Sinica 37 (08) (2016) 2331–2347, https://doi.org/10.7527/S1000-6893.2016.0072 (in Chinese). [14] J.
+
+Kou, W.
+
+Zhang, Data-driven modeling for unsteady aerodynamics and aeroelasticity [J], Progress Aerospace Sci. 125 (2021) 100725, https://doi.org/ 10.1016/j.paerosci.2021.100725. [15] P.E. Andres, P.C. Paulete, On the application of surrogate regression models for aerodynamic coefficient prediction [J], Complex. Intell. Systems. 7 (2021) 1991–2021, https://doi.org/10.1007/s40747-021-00307-y. [16] N. Sahbon, M. Welcer, Comparison of two aerodynamic models for projectile trajectory simulation [J], Aerospace 11 (3) (2024) 189, https://doi.org/10.3390/ aerospace11030189. [17] J.L. Gresham, B.M. Simmons, J.W. Hopwood, et al., Spin aerodynamic modeling for a fixed-wing aircraft using flight data [J], J. Aircr. 61 (1) (2024) 128–139, https://doi.org/10.2514/1.C036835. [18] Q. Wang, K.F. He, W.Q. Qian, et al., Unsteady aerodynamics modeling for flight dynamics application [J], Acta Mechanica Sinica 28 (1) (2012) 14–23, https://doi. org/10.1007/s10409-012-0012-z. [19] P. Murphy, V. Klein, N. Frink, Unsteady aerodynamic modeling in roll for the NASA generic transport model [C], in: AIAA Atmospheric Flight Mechanics Conference, Minneapolis, Minnesota, US 4652, AIAA, 2012, https://doi.org/10.2514/6.2012- 4652. [20] N.P. Werter, R. D Breuker, M Abdalla, Continuous-time state-space unsteady aerodynamic modeling for efficient loads analysis [J], AIAA J. 56 (3) (2018) 905–916, https://doi.org/10.2514/1.J056068. [21] X.
+
+Peng, J.
+
+Zhang, Multi-fidelity nonlinear unsteady aerodynamic modeling and uncertainty estimation based on Hierarchical Kriging [J], Appl Math Model 122 (2023) 1–21, https://doi.org/10.1016/j.apm.2023.05.031. [22] T. Ben Asher, D.E Raveh, Aeroelastic system identification for flutter prediction via multi-output autoregressive modeling [J], J. Aircr. 61 (2) (2024) 470–484, https:// doi.org/10.2514/1.C037477. [23] G.
+
+Wang, Y.
+
+Xing, Y.
+
+Zhu, Aerodynamic modeling and flight trajectory simulation of spinning projectile [J], Acta Aeronautica et Astronautica Sinica 38 (1) (2017) 108–117, https://doi.org/10.7527/S1000-6893.2016.0169 (in Chinese). [24] K.R.
+
+Brouwer, J.J McNamara, Surrogate-based aeroelastic loads prediction in the presence of shock induced separation [J], J. Fluids. Struct. 93 (2020) 102838, https://doi.org/10.1016/j.jfluidstructs.2019.102838. [25] G. De Paula N C, F.D. Marques, W.A SILVA, Volterra kernels assessment via time- delay neural networks for nonlinear unsteady aerodynamic loading identification [J], AIAA J. 57 (4) (2019) 1725–1735, https://doi.org/10.2514/6.2018-1209. [26] L.
+
+Hu, J.
+
+Zhang, Y.
+
+Xiang, et al., Neural networks-based aerodynamic data modeling: a comprehensive review [J], IEEe Access. 8 (2020) 90805–90823, https://doi.org/10.1109/ACCESS.2020.2993562. [27] J.
+
+Zhao, L.
+
+Zeng, X.
+
+Shao, A novel prediction method for unsteady aerodynamic force on three-dimensional folding wing aircraft [J], Aerosp. Sci. Technol. 137 (2023) 108287, https://doi.org/10.1016/j.ast.2023.108287. [28] J.
+
+Zhang, Multi-kernel neural networks for nonlinear unsteady aerodynamic reduced-order modeling [J], Aerosp. Sci. Technol. 67 (2017) 309–326, https://doi.org/10.1016/j.ast.2017.04.017. [29] Y. Pan, X. An, Y. Lei, et al., An improved neural network for modeling airfoil’s unsteady aerodynamics in transonic flow [J], Phys. Fluids 36 (1) (2024), https:// doi.org/10.1063/5.0175690. [30] G.
+
+Baldan, A.
+
+Guardone, A deep neural network reduced order model for unsteady aerodynamics of pitching airfoils [J], Aerosp. Sci. Technol. (2024) 109345, https://doi.org/10.1016/j.ast.2024.109345. [31] A. Mohamed, D Wood, Deep learning predictions of unsteady aerodynamic loads on an airfoil model pitched over the entire operating range [J], Physics of Fluids 35 (5) (2023), https://doi.org/10.1063/5.0139907. [32] Z. Dou, C. Gao, W. Zhang, et al., Nonlinear aeroelastic prediction in transonic buffeting flow by deep neural network [J], AIAA Journal 61 (6) (2023) 2412–2429, https://doi.org/10.2514/1.J061946. [33] X. Wang, J. Kou, W. Zhang, Unsteady aerodynamic modeling based on fuzzy scalar radial basis function neural networks [J], J. Aerospace Eng. 233 (14) (2019) 5107–5121, https://doi.org/10.1177/0954410019836906. [34] S.A Bagherzadeh, Nonlinear aircraft system identification using artificial neural networks enhanced by empirical mode decomposition [J], Aerosp. Sci. Technol. 75 (2018) 155–171, https://doi.org/10.1016/j.ast.2018.01.004. [35] Y.
+
+Lyu, Y.
+
+Cao, W.
+
+Zhang, et al., Dynamic surface control design of post-stall maneuver under unsteady aerodynamics [J], Aerosp. Sci. Technol. 80 (2018) 269–280, https://doi.org/10.1016/j.ast.2018.06.037. [36] Y. Shi, Z.Q. Wang, Z.G. Wu, et al., Gust response analysis and verification of elastic aircraft based on nonlinear aerodynamic reduced-order model [J], Acta Aeronautica et Astronautica Sinica 43 (01) (2022) 335–354, https://doi.org/ 10.7527/S1000-6893.2021.25474 (in Chinese). [37] X.
+
+Jia, C.
+
+Gong, W.
+
+Ji, et al., Flow sensing method for fluid-structure interaction systems via multilayer proper orthogonal decomposition [J], J. Fluids. Struct. 124 (2024) 104023, https://doi.org/10.1016/j.jfluidstructs.2023.104023. [38] Z.
+
+Chen, L.
+
+Zhang, K.
+
+Li, et al., Machine-learning prediction of aerodynamic damping for buildings and structures undergoing flow-induced vibrations [J], J. Build. Eng. 63 (2023) 105374, https://doi.org/10.1016/j.jobe.2022.105374. [39] J. Wang, Y. Chen, Introduction to transfer learning: algorithms and practice [M], Springer Nature, 2023, https://doi.org/10.1007/978-981-19-7584-4. [40] Y.
+
+Liu, G.
+
+Wang, Z Ye, Dynamic mode extrapolation to improve the efficiency of dual time stepping method [J], J. Comput. Phys. 352 (2018) 190–212, https://doi. org/10.1016/j.jcp.2017.09.043. [41] G. Wang, Z. Zeng, Q. Suo, Trajectory simulation of a spinning projectile based on variable step size CFD/RBD method [C], in: Proceedings of the AIAA Atmospheric flight mechanics conference, Kissimmee, FL, US, AIAA, 2015, p. 0522, https://doi. org/10.2514/6.2015-0522. [42] B. Ma, G. Wang, J. Ren, et al., Near field sonic boom analysis with HUNS3D solver [C], in: Proceedings of the 55th AIAA aerospace sciences meeting, Grapevine, TX, US, AIAA, 2017, p. 0038, https://doi.org/10.2514/6.2017-0038. [43] M. Lazzara, M. Chevalier, M.
+
+Colombo, et al., Surrogate modelling for an aircraft dynamic landing loads simulation using an LSTM AutoEncoder-based dimensionality reduction approach [J], Aerospace Sci. Techn. 126 (2022) 107629, https://doi.org/10.1016/j.ast.2022.107629.

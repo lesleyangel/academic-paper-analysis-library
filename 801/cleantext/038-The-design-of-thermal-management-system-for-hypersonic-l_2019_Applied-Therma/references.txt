@@ -1,0 +1,89 @@
+[1] B. Behrens, M. Müller, Technologies for thermal protection systems applied on re- usable launcher, Acta Astronaut. 55 (3–9) (2004) 529–536.
+
+[2] F. Gori, S. Corasaniti, W.M. Worek, W.J. Minkowycz, Theoretical prediction of thermal conductivity for thermal protection systems, Appl. Therm. Eng. 49 (2012) 124–130.
+
+[3] Y. Rong, Y. Wei, R. Zhan, Research on thermal protection by opposing jet and transpiration for high speed vehicle, Aerosp. Sci. Technol. 48 (Supplement C) (2016) 322–327.
+
+[4] D.E. Myers, C.J. Martin, M.L. Blosser, Parametric Weight Comparison of Advanced Metallic, Ceramic Tile, and Ceramic Blanket Thermal Protection Systems, NASA Langley Technical Report Server, 2000.
+
+5. Conclusions In this paper, a design method of thermal management system (TMS) for reusable flight vehicles is developed. The system consists of a passive thermal protection system (TPS) and an active cooling network (ACN) with kerosene as coolant. Based on an equivalent heat equili- brium model, the TPS and ACN are designed in a coupled way. A parameter equivalent HTC, heq, is proposed to indicate the capacity of active cooling. The design process includes four steps, the calculation of aerodynamic heat, the determination of TPS concept distribution, the calculation of scales of TPS and ACN, and the final design of TMS after several iterations. A reusable launch vehicle of 30 m long with a certain trajectory is studied in this work. The influence of equivalent HTC (heq = 0–30 W/(m2 K)) and cold side temperature (Tb = 330, 367 and 440 K) on aerodynamic heat, TPS and ACN are studied. The results show some useful conclusions: (1) The aerodynamic heat flux and the proportion of heat taken by ACN increase, while the wall temperature decreases with the rise of equivalent HTC. (2) The higher equivalent HTC will result in lighter TPS while higher product of coolant mass flow rate and coolant temperature rise for ACN. (3) Increasing the constrained cold side temperature is very useful for the weight reduction of passive TPS, and it is more efficient with small equivalent HTC. The weight of TPS is reduced by 30.1%, 16.9%, 8.5%, 7.3%, 0.9%, 0% and 0% with Tb increasing from 330 to 440 K, for heq = 0, 0.1, 1, 2, 5, 10, 20, and 30 W/(m2·K), re- spectively. (4) The ACN can reduce the TPS weight, and it is more efficient with low cold side temperature. The weight of passive TPS is reduced by 40.0% and 14.1% with the equivalent HTC increases from 0 to 30 W/(m2·K) for Tb = 330 and Tb = 440, respectively. (5) The method proposed in this work can be used to design ACN for the whole vehicle, as well as specific regions like the head of fu- selage. For ACN of the vehicle head, the required mass flow rate decreases from 9.4 to 0.188 kg/s, 93.4 to 1.87 kg/s, 187 to 3.73 kg/ s, 462 to 9.25 kg/s, 910 to 18.2 kg/s, 1765 to 35.3 kg/s and 2565 to 51.3 kg/s, when the coolant temperature rise increases from 1 to 50 K for heq = 0.1, 1, 2, 5, 10, 20 and 30 W/(m2·K), respectively. However, for the whole vehicle, the mass flow rate will decrease from 30.6 to 0.612 kg/s, 305 to 6.12 kg/s, 608 to 12.15 kg/s, 1499 to 30.0 kg/s, 2926 to 58.5 kg/s, 5560 to 111 kg/s and 7945 to 159 kg/s, when the coolant temperature rise increases from 1 to 50 K for heq = 0.1, 1, 2, 5, 10, 20 and 30 W/(m2·K). Acknowledgments This study is supported by the National Natural Science Foundation of China (51806175).
+
+[5] A. Riccio, F. Raimondo, A. Sellitto, V. Carandente, R. Scigliano, D. Tescione, Optimum design of ablative thermal protection systems for atmospheric entry ve- hicles, Appl. Therm. Eng. 119 (2017) 541–552.
+
+[6] M. Rivier, J. Lachaud, P.M. Congedo, Ablative thermal protection system under uncertainties including pyrolysis gas composition, Aerosp. Sci. Technol. 84 (2019) 1059–1069.
+
+[7] N. Blet, S. Lips, V. Sartre, Heats pipes for temperature homogenization: A literature review, Appl. Therm. Eng. 118 (2017) 490–509.
+
+[8] L. Shen, J. Wang, Numerical investigation on the optimization of local transpiration cooling effectiveness, Appl. Therm. Eng. 127 (2017) 58–69.
+
+[9] P. Jiang, Z. Liao, Z. Huang, Y. Xiong, Y. Zhu, Influence of shock waves on supersonic transpiration cooling, Int. J. Heat Mass Transf. 129 (2019) 965–974.
+
+[10] R. Ding, J. Wang, F. He, G. Dong, L. Tang, Numerical investigation on the perfor- mances of porous matrix with transpiration and film cooling, Appl. Therm. Eng. 146 (2019) 422–431.
+
+[11] M. Cui, J. Mei, B.-W. Zhang, B.-B. Xu, L. Zhou, Y. Zhang, Inverse identification of boundary conditions in a scramjet combustor with a regenerative cooling system, Appl. Therm. Eng. 134 (2018) 555–563.
+
+[12] T. Jing, G. He, W. Li, F. Qin, X. Wei, Y. Liu, Z. Hou, Flow and thermal analyses of regenerative cooling in non-uniform channels for combustion chamber, Appl. Therm. Eng. 119 (2017) 89–97.
+
+[13] R. Savino, M. De Stefano Fumo, D. Paterna, M. Serpico, Aerothermodynamic study Hypersonic Systems and Technologies Conference, AIAA-2015-3606, 2015.
+
+[14] S. Liu, B. Zhang, Effects of active cooling on the metal thermal protection systems, Aerosp. Sci. Technol. 15 (7) (2011) 526–533.
+
+[15] R.J. Tobe, R.V. Grandhi, Hypersonic vehicle thermal protection system model op- timization and validation with vibration tests, Aerosp. Sci. Technol. 28 (1) (2013) 208–213.
+
+[16] Y. Ma, B. Xu, M. Chen, R. He, W. Wen, T. Cheng, D. Fang, Optimization design of built-up thermal protection system based on validation of corrugated core homo- genization, Appl. Therm. Eng. 115 (2017) 491–500.
+
+[17] H.P. Liu, W.Q. Liu, Thermal–structural analysis of the platelet heat-pipe-cooled leading edge of hypersonic vehicle, Acta Astronaut. 127 (2016) 13–19.
+
+[18] C.A. Steeves, M.Y. He, S.D. Kasen, L. Valdevit, H.N.G. Wadley, A.G. Evans, Feasibility of metallic structural heat pipes as sharp leading edges for hypersonic vehicles, J. Appl. Mech. 76 (3) (2009) pp. 031014–031014-9.
+
+[19] F. Falempin, M. Bouchez, T. Salmon, P. Lespade, V. Avrashkov, An innovative technology for fuel-cooled composite materials structure, in: 37th AIAA/ASME/ SAE/ASEE Joint Propulsion Conference and Exhibit, AIAA-2001-3703, 2001.
+
+[20] M. Bouchez, S. Beyer, S. Schmidt, PTAH-SOCAR fuel-cooled composite materials structure: 2011 Status, in: 17th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, AIAA-2011-2208, 2011.
+
+[21] M. Bouchez, N. Swiergiel, F. Pradat, A. Larbi, Challenge in robust design of com- posite architectured structures, in: 21st AIAA International Space Planes and Hypersonics Technologies Conference, AIAA-2017-2330, 2017.
+
+[22] A. Ulas, E. Boysan, Numerical analysis of regenerative cooling in liquid propellant rocket engines, Aerosp. Sci. Technol. 24 (1) (2013) 187–197.
+
+[23] G. Xie, C. Wang, T. Ji, B. Sunden, Investigation on thermal and thermomechanical performances of actively cooled corrugated sandwich structures, Appl. Therm. Eng. 103 (2016) 660–669.
+
+[24] C. Zhang, J. Qin, Q. Yang, S. Zhang, W. Bao, Design and heat transfer characteristics analysis of combined active and passive thermal protection system for hydrogen fueled scramjet, Int. J. Hydrogen Energy 40 (1) (2015) 675–682.
+
+[25] X. Li, Z. Wang, Exergy analysis of integrated TEG and regenerative cooling system for power generation from the scramjet cooling heat, Aerosp. Sci. Technol. 66 (Supplement C) (2017) 12–19.
+
+[26] Z.Y. Hou, G.Q. He, W.Q. Li, F. Qin, X.G. Wei, T.T. Jing, Numerical investigation on thermal behaviors of active-cooled strut in RBCC engine, Appl. Therm. Eng. 113 (2017) 822–830.
+
+[27] D. Yan, G. He, W. Li, D. Zhang, F. Qin, Thermal analysis of regenerative-cooled pylon in multi-mode rocket based combined cycle engine, Acta Astronaut. 148 (2018) 121–131.
+
+[28] C.L. Gong, B. Chen, L.X. Gu, Comparison study of RBCC powered suborbital reu- sable launch vehicle concepts, in: 20th AIAA International Space Planes and
+
+[29] C.L. Gong, J.J. Gou, J.X. Hu, F. Gao, A novel TE-material based thermal protection structure and its performance evaluation for hypersonic flight vehicles, Aerosp. Sci. Technol. 77 (2018) 458–470.
+
+[30] T. Jing, G. He, W. Li, D. Zhang, F. Qin, R. Li, Flow and thermal analyses of su- percritical hydrocarbon fuel in curved regenerative cooling channel around cavity in rocket based combined cycle engine, Appl. Therm. Eng. 145 (2018) 423–434.
+
+[31] S.K. Kim, H.S. Choi, Y. Kim, Thermodynamic modeling based on a generalized cubic equation of state for kerosene/LOx rocket combustion, Combust. Flame 159 (3) (2012) 1351–1365.
+
+[32] S. Li, Y. Wang, M. Dong, H. Pu, S. Jiao, Y. Shang, Experimental investigation on flow and heat transfer instabilities of RP-3 aviation kerosene in a vertical miniature tube under supercritical pressures, Appl. Therm. Eng. 149 (2019) 73–84.
+
+[33] R.P. Jiang, G.Z. Liu, X.W. Zhang, Thermal cracking of hydrocarbon aviation fuels in regenerative cooling microchannels, Energy Fuels 27 (5) (2013) 2563–2577.
+
+[34] L.J. Spadaccini, D.R. Sobel, H. Huang, Deposit formation and mitigation in aircraft fuels, J. Eng. Gas Turbines Power 123 (4) (1999) 741–746.
+
+[35] D. Knight, H. Yan, A.G. Panaras, A. Zheltovodov, Advances in CFD prediction of shock wave turbulent boundary layer interactions, Prog. Aerosp. Sci. 39 (2) (2003) 121–184.
+
+[36] D. Knight, J. Longo, D. Drikakis, D. Gaitonde, A. Lani, I. Nompelis, B. Reimann, L. Walpot, Assessment of CFD capability for prediction of hypersonic shock inter- actions, Progr. Aerospace Sci. 48 (Supplement C) (2012) 8–26.
+
+[37] C.D. Engel, S.C. Praharaj, MINIVER upgrade for the AVID system. Volume 1: LANMIN user's manual. I Lanmin Users Manual Nasa Cr, 1983.
+
+[38] J.N.M.E.V. Zoby, K. Sutton, Approximate convective-heating equations for hy- personic flows, J. Spacecraft Rockets 18 (1) (1981) 64.
+
+[39] M. Moore, J. Williams, Aerodynamic prediction rationale for analyses of hypersonic configurations, in: 27th Aerospace Sciences Meeting, AIAA-89-0525, 1989.
+
+[40] F.R.R.N.H. Kemp, Heat transfer to satellite vehicles re-entering the atmosphere, J. Jet Propulsion 27 (2) (1957) 132–137.
+
+[41] R. Borrelli, A. Riccio, D. Tescione, R. Gardi, G. Marino, Thermo-structural beha- viour of an UHTC made nose cap of a reentry vehicle, Acta Astronaut. 65 (3) (2009) 442–456.
+
+[42] G. Saccone, R. Gardi, D. Alfano, A. Ferrigno, A. Del Vecchio, Laboratory, on-ground and in-flight investigation of ultra high temperature ceramic composite materials, Aerosp. Sci. Technol. 58 (2016) 490–497.
+
+[43] C. Riley, W. Kleb, S. Alter, Aeroheating predictions for X-34 using an inviscid- boundary layer method, in: 36th AIAA Aerospace Sciences Meeting and Exhibit, AIAA-98-0880, 1998.
+
+[44] W. Kleb, W. Wood, P. Gnoffo, Computational aeroheating predictions for X-34, in: 36th AIAA Aerospace Sciences Meeting and Exhibit, AIAA-98-0879, 1998. of UHTC-based thermal protection systems, Aerosp. Sci. Technol. 9 (2) (2005) 151–160.

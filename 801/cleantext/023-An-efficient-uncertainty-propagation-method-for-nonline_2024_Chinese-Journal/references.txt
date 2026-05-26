@@ -1,0 +1,127 @@
+1. Parameters of the dynamic model for launch- vehicle trajectory. J 1:624 �10�3 xex (rad /s) 7:292 �10�5 xey (rad /s) 0 xez (rad /s) 0
+
+1. Luo YZ, Yang Z. A review of uncertainty propagation in orbital mechanics. Prog Aerosp Sci 2017;89:23–39.
+
+2. Fu C, Sinou JJ, Zhu WD, et al. A state-of-the-art review on uncertainty analysis of rotor systems. Mech Syst Signal Process 2023;183:109619.
+
+3. Faes M, Moens D. Recent trends in the modeling and quantification of non-probabilistic uncertainty. Arch Comput Meth Eng 2020;27(3):633–71.
+
+4. Beer M, Ferson S, Kreinovich V. Imprecise probabilities in engineering analyses. Mech Syst Signal Process 2013;37(1– 2):4–29.
+
+5. Shinozuka M. Monte Carlo solution of structural dynamics. Comput Struct 1972;2(5–6):855–74.
+
+6. Geller DK. Linear covariance techniques for orbital rendezvous analysis and autonomous onboard mission planning. J Guid Contr Dyn 2006;29(6):1404–14.
+
+7. Roberts J, Spanos P. Random vibration and statistical linearization. New York: Courier Corporation; 1990.
+
+8. Dos Santos KRM, Kougioumtzoglou IA, Spanos PD. Hilbert transform–based stochastic averaging technique for determining the survival probability of nonlinear oscillators. J Eng Mech 2019;145(10):4019079.
+
+9. Kougioumtzoglou IA, Spanos PD. Response and first-passage statistics of nonlinear oscillators via a numerical path integral approach. J Eng Mech 2013;139(9):1207–17.
+
+10. Zhu WQ. Nonlinear stochastic dynamics and control in Hamiltonian formulation. Appl Mech Rev 2006;59(4):230–48.
+
+11. Li J. Probability density evolution method: background, significance and recent developments. Probab Eng Mech 2016;44:111–7.
+
+12. Chen GH, Yang DX. A unified analysis framework of static and dynamic structural reliabilities based on direct probability integral method. Mech Syst Signal Process 2021;158:107783.
+
+13. Chen HS, Chen GH, Meng Z, et al. Stochastic dynamic analysis of nonlinear MDOF systems under combined Gaussian and Poisson noise excitation based on DPIM. Mech Syst Signal Process 2022;176:109163.
+
+14. Prabhakar A, Fisher J, Bhattacharya R. Polynomial chaos-based analysis of probabilistic uncertainty in hypersonic flight dynamics. J Guid Contr Dyn 2010;33(1):222–34.
+
+15. Xiong FF, Chen SS, Xiong Y. Dynamic system uncertainty propagation using polynomial chaos. Chin J Aeronaut 2014;27 (5):1156–70.
+
+16. Jiang ZM, Li J. A new reliability method combining Kriging and probability density evolution method. Int J Str Stab Dyn 2017;17 (10):1750113.
+
+17. Bai ZW, Song SF. Physics-informed neural network for first- passage reliability assessment of structural dynamic systems. Comput Struct 2023;289:107189.
+
+18. Das S, Tesfamariam S. Reliability assessment of stochastic dynamical systems using physics informed neural network based PDEM. Reliab Eng Syst Saf 2024;243:109849.
+
+19. Wan ZQ, Chen JB, Tao WF, et al. A feature mapping strategy of metamodelling for nonlinear stochastic dynamical systems with low to high-dimensional input uncertainties. Mech Syst Signal Process 2023;184:109656.
+
+20. Kong F, Spanos PD. Response spectral density determination for nonlinear systems endowed with fractional derivatives and subject to colored noise. Probab Eng Mech 2020;59:103023.
+
+21. Lei SM, Ge YJ, Li Q, et al. Frequency-domain method for non- stationary stochastic vibrations of train-bridge coupled system with time-varying characteristics. Mech Syst Signal Process 2023;183:109637.
+
+22. Julier S, Uhlmann J, Durrant-Whyte HF. A new method for the nonlinear transformation of means and covariances in filters and estimators. IEEE Trans Autom Contr 2000;45(3):477–82.
+
+23. Park RS, Scheeres DJ. Nonlinear mapping of Gaussian statistics: Theory and applications to spacecraft trajectory design. J Guid Contr Dyn 2006;29(6):1367–75.
+
+24. Terejanu G, Singla P, Singh T, et al. Uncertainty propagation for nonlinear dynamic systems using Gaussian mixture models. J Guid Contr Dyn 2008;31(6):1623–33.
+
+25. Ding C, Dang C, Valdebenito MA, et al. First-passage probability estimation of high-dimensional nonlinear stochastic dynamic systems by a fractional moments-based mixture distribution approach. Mech Syst Signal Process 2023;185:109775.
+
+26. Huang DW, Wu F, Zhang S, et al. A high-performance calculation scheme for stochastic dynamic problems. Mech Syst Signal Process 2023;189:110073. sin / ¼ ðx þ RoxÞxex þ ðy þ RoyÞxey þ ðz þ RozÞxez rxe ðB10Þ In addition, the flight height of the LV can also be obtained by using r and / as follows: h ¼ r � aebe ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi a2 esin2/ þ b2 ecos2/ q ðB11Þ � ðB12Þ � ðB13Þ Table B
+
+27. Weng YY, Lu ZH, Li PP, et al. Dynamic reliability analysis of structures under nonstationary stochastic excitations using tail- modified extreme value distribution. Mech Syst Signal Process 2023;198:110424.
+
+28. Elishakoff I, Elisseeff P, Glegg SAL. Nonprobabilistic, convex- theoretic modeling of scatter in material properties. AIAA J 1994;32(4):843–9.
+
+29. Zadeh LA. Fuzzy sets as a basis for a theory of possibility. Fuzzy Sets Syst 1999;100:9–34.
+
+30. Wu JL, Zhang YQ, Chen LP, et al. A Chebyshev interval method for nonlinear dynamic systems under uncertainty. Appl Math Model 2013;37(6):4578–91.
+
+31. Wu JL, Luo Z, Zhang YQ, et al. Interval uncertain method for multibody mechanical systems using Chebyshev inclusion functions. Int J Numer Meth Eng 2013;95(7):608–30.
+
+32. Li C, Chen BS, Peng HJ, et al. Sparse regression Chebyshev polynomial interval method for nonlinear dynamic systems under uncertainty. Appl Math Model 2017;51:505–25.
+
+33. Wang LQ, Chen ZT, Yang GL. A polynomial chaos expansion approach for nonlinear dynamic systems with interval uncertainty. Nonlinear Dyn 2020;101(4):2489–508.
+
+34. Wang LQ, Yang GL. An interval uncertainty propagation method using polynomial chaos expansion and its application in complicated multibody dynamic systems. Nonlinear Dyn 2021;105(1):837–58.
+
+35. Wei S, Chu FL, Ding H, et al. Dynamic analysis of uncertain spur gear systems. Mech Syst Signal Process 2021;150:107280.
+
+36. Fu C, Zheng ZL, Zhu WD, et al. Nonlinear vibrations of a rotor with support nonlinearities considering bounded uncertainties. Nonlinear Dyn 2022;110(3):2363–79.
+
+37. Jiang C, Zhang QF, Han X, et al. Multidimensional parallelepiped model—a new type of non-probabilistic convex model for structural uncertainty analysis. Num Meth Eng 2015;103(1):31–59.
+
+38. Ni BY, Jiang C, Han X. An improved multidimensional parallelepiped non-probabilistic model for structural uncertainty analysis. Appl Math Model 2016;40(7–8):4727–45.
+
+39. Ni BY, Jiang C, Huang ZL. Discussions on non-probabilistic convex modelling for uncertain problems. Appl Math Model 2018;59:54–85.
+
+40. Jiang C, Ni BY, Han X, et al. Non-probabilistic convex model process: a new method of time-variant uncertainty analysis and its application to structural dynamic reliability problems. Comput Meth Appl Mech Eng 2014;268:656–76.
+
+41. Jiang C, Li JW, Ni BY, et al. Some significant improvements for interval process model and non-random vibration analysis method. Comput Meth Appl Mech Eng 2019;357:112565.
+
+42. Jiang C, Liu NY, Ni BY. A Monte Carlo simulation method for non-random vibration analysis. Acta Mechanica 2017;228 (7):2631–53.
+
+43. Ni BY, Jiang C, Li JW, et al. Interval K-L expansion of interval process model for dynamic uncertainty analysis. J Sound Vib 2020;474:115254.
+
+44. Zhang LC, Li CN, Su H, et al. A novel linear uncertainty propagation method for nonlinear dynamics with interval process. Nonlinear Dyn 2023;111(5):4425–50.
+
+45. Faes MGR, Daub M, Marelli S, et al. Engineering analysis with probability boxes: a review on computational methods. Struct Saf 2021;93:102092.
+
+46. Scho¨ bi R, Sudret B. Global sensitivity analysis in the context of imprecise probabilities (p-boxes) using sparse polynomial chaos expansions. Reliab Eng Syst Saf 2019;187:129–41.
+
+47. Liu HB, Jiang C, Xiao Z. Efficient uncertainty propagation for parameterized p-box using sparse-decomposition-based polynomial chaos expansion. Mech Syst Signal Process 2020;138:106589.
+
+48. McKeand AM, Gorguluarslan RM, Choi SK. Stochastic analysis and validation under aleatory and epistemic uncertainties. Reliab Eng Syst Saf 2021;205:107258.
+
+49. Li JW, Jiang C. A novel imprecise stochastic process model for time-variant or dynamic uncertainty quantification. Chin J Aeronaut 2022;35(9):255–67.
+
+50. Faes MGR, Broggi M, Chen G, et al. Distribution-free P-box processes based on translation theory: definition and simulation. Probab Eng Mech 2022;69:103287.
+
+51. Faes M, Moens D. Imprecise random field analysis with parametrized kernel functions. Mech Syst Signal Process 2019;134:106334.
+
+52. Faes M, Valdebenito M, Moens D, et al. Bounding the first excursion probability of linear structures subjected to imprecise stochastic loading. Comput Struct 2020;239:106320.
+
+53. Faes MGR, Valdebenito MA, Yuan XK, et al. Augmented reliability analysis for estimating imprecise first excursion probabilities in stochastic linear dynamics. Adv Eng Softw 2021;155:102993.
+
+54. Faes MGR, Valdebenito MA, Moens D, et al. Operator norm theory as an efficient tool to propagate hybrid uncertainties and calculate imprecise probabilities. Mech Syst Signal Process 2021;152:107482.
+
+55. Enszer JA, Lin YD, Ferson S, et al. Probability bounds analysis for nonlinear dynamic process models. AlChE J 2011;57 (2):404–22.
+
+56. Ni PH, Jerez DJ, Fragkoulis VC, et al. Operator norm-based statistical linearization to bound the first excursion probability of nonlinear structures subjected to imprecise stochastic loading. ASCE-ASME J Risk Uncertainty Eng Syst, Part A: Civ Eng 2022;8(1):4021086.
+
+57. Wu JL, Luo Z, Zhang N, et al. A new uncertain analysis method and its application in vehicle dynamics. Mech Syst Signal Process 2015;50–51:659–75.
+
+58. Wu JL, Luo L, Zhu B, et al. Dynamic computation for rigid– flexible multibody systems with hybrid uncertainty of randomness and interval. Multibody Syst Dyn 2019;47(1):43–64.
+
+59. Taylor JH. Handbook for the direct statistical analysis of missile guidance systems via CADET (Covariance analysis describing function technique). Massachusetts: Analytic Sciences Corporation; 1975.
+
+60. Li QC, Fan YH, Xu HY, et al. A new approach for nonlinear transformation of means and covariances in direct statistical analysis of nonlinear systems. IEEE Access 2021;9:76738–49.
+
+61. Wu JL, Luo Z, Zhang N, et al. A new sampling scheme for developing metamodels with the zeros of Chebyshev polynomials. Eng Optim 2015;47(9):1264–88.
+
+62. Brevault L, Balesdent M. Uncertainty quantification for multidisciplinary launch vehicle design using model order reduction and spectral methods. Acta Astronaut 2021;187:295–314.
+
+63. Zheng X, Ma N, Gao CS, et al. Propagation mechanism analysis of navigation errors caused by initial state errors for long-range vehicles. Aerosp Sci Technol 2017;67:378–86.

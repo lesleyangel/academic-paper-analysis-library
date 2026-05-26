@@ -1,0 +1,5 @@
+Method,Eficiency,Accuracy
+,$N _ { \mathrm { B M P P } }$,$N _ { \mathrm { F E } }$,"$P _ { \mathrm { f } } ^ { \mathrm { L } } ( 7 , 1 0 )$","$P _ { \mathrm { f } } ^ { \mathrm { U } } ( 7 , 1 0 )$",$\varepsilon _ { \mathrm { f } } ^ { \mathrm { L } }$,$\varepsilon _ { \mathrm { f } } ^ { \mathrm { U } }$
+MCS,,$3 0 0 \times 1 0 0 \times 1 0 ^ { 7 }$,$1 . 1 6 3 \times 1 0 ^ { - 4 }$,$2 . 9 4 1 \times 1 0 ^ { - 3 }$,,
+TDHTRA-300,600,46246,$1 . 1 2 3 \times 1 0 ^ { - 4 }$,$2 . 9 5 0 \times 1 0 ^ { - 3 }$,3.44 %,0.31 %
+HABMPPT,8,944,$\mathbf { 1 . 1 2 0 \times 1 0 ^ { - 4 } }$,$\mathbf { 2 . 9 6 2 \times 1 0 ^ { - 3 } }$,3.70%,0.71 %

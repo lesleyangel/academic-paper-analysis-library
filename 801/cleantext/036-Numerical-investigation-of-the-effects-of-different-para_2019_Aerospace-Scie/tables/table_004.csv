@@ -1,0 +1,4 @@
+Mesh,Time step dt,Number of overall-grid $( \times 1 0 ^ { 6 } )$,The thrust coeficient $\overline { { C } } _ { t }$,The relative errors (%)
+Nominal,0.0005,48.6,0.4630,1.6
+0.0010,0.4555,-
+0.0015,0.4551,0.08

@@ -1,0 +1,11 @@
+| Physical quantity or Variable | Constraint | Value | Unit |
+| --- | --- | --- | --- |
+| Temperature | Maximum value | 550 | K |
+| Average temperature | Maximum value | 450 | K |
+| Stress | Maximum value | 225 | MPa |
+| Displacement | Maximum value | 27 | mm |
+| Angle | Lower and upper limits | [0.5, 14.5] | 。 |
+| Force width | Lower and upper limits | [0.5, 10] | mm |
+| Heat width | Lower and upper limits | [0.5, 10] | mm |
+| Width factor | Lower and upper limits | [0, 1] | / |
+| Height factor | Lower and upper limits | [0, 1] | / |

@@ -1,0 +1,99 @@
+[1] Qu F, Chen J, Sun Di, Bai J, Zuo G. A grid strategy for predicting the space plane’s hypersonic aerodynamic heating loads. Aerosp Sci Technol 2019;86:659–70.
+
+[2] Xiao H, He QJ. Aero-heating in hypersonic continuum and rarefied gas flows. Aerosp Sci Technol 2018;82-83:566–74.
+
+[3] Shahverdi H, Khalafi V. Bifurcation analysis of FG curved panels under simultaneous aerodynamic and thermal loads in hypersonic flow. Compos Struct 2016;146:84–94.
+
+[4] Uyanna O, Najafi H. Thermal protection systems for space vehicles: A review on technology development, current challenges and future prospects. Acta Astronaut 2020;176:341–56.
+
+[5] Blosser ML, Chen RR, Schmidt IH, Dorsey JT, Poteet CC, Bird RK. Advanced metallic thermal protection system development. 40th AIAA Aerosp Sci Meet Exhib 2002.
+
+[6] Pichon T, Barreteau R, Soyris P, Foucault A, Parenteau JM, Prel Y, et al. CMC thermal protection system for future reusable launch vehicles: Generic shingle technological maturation and tests. Acta Astronaut 2009;65(1-2):165–76.
+
+[7] Behrens B, Müller M. Technologies for thermal protection systems applied on re- usable launcher. Acta Astronaut 2004;55(3-9):529–36.
+
+[8] Glass DE. Ceramic matrix composite (CMC) thermal protection systems (TPS) and hot structures for hypersonic vehicles. 15th AIAA Int Sp Planes Hypersonic Syst Technol Conf 2008::1–36.
+
+[9] Lin K, Hu K, Gu D. Metallic integrated thermal protection structures inspired by the Norway spruce stem: Design, numerical simulation and selective laser melting fabrication. Opt Laser Technol 2019;115:9–19.
+
+[10] Wei K, Cheng X, Mo F, Wen W, Fang D. Design and analysis of integrated thermal protection system based on lightweight C/SiC pyramidal lattice core sandwich panel. Mater Des 2016;111:435–44.
+
+[11] Wang X, Wei K, Tao Y, Yang X, Zhou H, He R, et al. Thermal protection system integrating graded insulation materials and multilayer ceramic matrix composite cellular sandwich panels. Compos Struct 2019;209:523–34.
+
+[12] Li Y, Zhang Lu, He R, Ma Y, Zhang K, Bai X, et al. Integrated thermal protection system based on C/SiC composite corrugated core sandwich plane structure. Aerosp Sci Technol 2019;91:607–16.
+
+[13] Xu Y, Xu N, Zhang W, Zhu J. A multi-layer integrated thermal protection system with C/SiC composite and Ti alloy lattice sandwich. Compos Struct 2019;230:111507. https://doi.org/10.1016/j.compstruct.2019.111507.
+
+[14] Shi S, Wang Y, Yan Li, Sun P, Li M, Tang S. Coupled ablation and thermal behavior of an all-composite structurally integrated thermal protection system: Fabrication and modeling. Compos Struct 2020;251:112623. https://doi.org/10.1016/ j.compstruct.2020.112623.
+
+[15] Liu S, Zhang B. Effects of active cooling on the metal thermal protection systems. Aerosp Sci Technol 2011;15(7):526–33.
+
+[16] Rong Y, Wei Y, Zhan R. Research on thermal protection by opposing jet and transpiration for high speed vehicle. Aerosp Sci Technol 2016;48:322–7.
+
+[17] Ferrari L, Barbato M, Esser B, Petkov I, Kuhn M, Gianella S, et al. Sandwich structured ceramic matrix composites with periodic cellular ceramic cores: an active cooled thermal protection for space vehicles. Compos Struct 2016;154:61–8.
+
+[18] Lurie SA, Solyaev YO, Koshurina AA, Formalev VF, Dobryanskiy VN, Kachanov ML. Design of the corrugated-core sandwich panel with external active cooling system. Compos Struct 2018;188:278–86.
+
+[19] Xie J, Zhang R, Xie G, Manca O. Thermal and thermomechanical performance of actively cooled pyramidal sandwich panels. Int J Therm Sci 2019;139:118–28.
+
+[20] Savino R, De Stefano Fumo M, Paterna D, Serpico M. Aerothermodynamic study of UHTC-based thermal protection systems. Aerosp Sci Technol 2005;9(2):151–60.
+
+[21] Tobe RJ, Grandhi RV. Hypersonic vehicle thermal protection system model optimization and validation with vibration tests. Aerosp Sci Technol 2013;28 (1):208–13.
+
+[22] Szczepaniak R, Kozun G, Przybylek P, Komorek A, Krzyzak A, Woroniak G. The effect of the application of a powder additive of a phase change material on the ablative properties of a hybrid composite. Compos Struct 2021;256:113041. https://doi.org/10.1016/j.compstruct.2020.113041.
+
+[23] Kubota Y, Miyamoto O, Aoki T, Ishida Y, Ogasawara T, Umezu S. New thermal protection system using high-temperature carbon fibre-reinforced plastic sandwich panel. Acta Astronaut 2019;160:519–26.
+
+[24] Bell LE. Cooling, heating, generating power, and recovering waste heat with thermoelectric systems. Science 2008;321(5895):1457–61.
+
+[25] Piascik B, Vickers J, Lowry D, et al. Materials, structures, mechanical systems, and manufacturing roadmap. NASA TA 2012:12–22.
+
+[26] Zheng XF, Liu CX, Yan YY, Wang Q. A review of thermoelectrics research – Recent developments and potentials for sustainable and renewable energy applications. Renew Sustain Energy Rev 2014;32:486–503.
+
+[27] Patil DS, Arakerimath RR, Walke PV. Thermoelectric materials and heat exchangers for power generation – A review. Renew Sustain Energy Rev 2018;95:1–22.
+
+[28] Yang L, Chen Z-G, Dargusch MS, Zou J. High Performance Thermoelectric Materials: Progress and Their Applications. Adv Energy Mater 2018;8(6):1701797. https://doi.org/10.1002/aenm.v8.610.1002/aenm.201701797.
+
+[29] Xiao J, Yang T, Li P, Zhai P, Zhang Q. Thermal design and management for performance optimization of solar thermoelectric generator. Appl Energy 2012;93:33–8.
+
+[30] Chen L, Li J, Sun F, Wu C. Performance optimization of a two-stage semiconductor thermoelectric-generator. Appl Energy 2005;82(4):300–12.
+
+[31] Wang P, Wang KF, Wang BL, Cui YJ. Effective thermoelectric conversion properties of thermoelectric composites containing a crack/hole. Compos Struct 2018;191:180–9.
+
+[32] Arora R, Kaushik SC, Arora R. Thermodynamic modeling and multi-objective optimization of two stage thermoelectric generator in electrically series and parallel configuration. Appl Therm Eng 2016;103:1312–23.
+
+[33] Wang X-D, Huang Y-X, Cheng C-H, Ta-Wei Lin D, Kang C-H. A three-dimensional numerical modeling of thermoelectric device with consideration of coupling of temperature field and electric potential field. Energy 2012;47(1):488–97.
+
+[34] Meng J-H, Zhang X-X, Wang X-D. Dynamic response characteristics of thermoelectric generator predicted by a three-dimensional heat-electricity coupled model. J Power Sources 2014;245:262–9.
+
+[35] Cui YJ, Wang KF, Wang BL, Li JE, Zhou JY. A comprehensive analysis of delamination and thermoelectric performance of thermoelectric pn-junctions with temperature-dependent material properties. Compos Struct 2019;229:111484. https://doi.org/10.1016/j.compstruct.2019.111484.
+
+[36] Cheng K, Qin J, Jiang Y, Lv C, Zhang S, Bao W. Performance assessment of multi- stage thermoelectric generators on hypersonic vehicles at a large temperature difference. Appl Therm Eng 2018;130:1598–609.
+
+[37] Li X, Wang Z. Exergy analysis of integrated TEG and regenerative cooling system for power generation from the scramjet cooling heat. Aerosp Sci Technol 2017;66:12–9.
+
+[38] Gong C-L, Gou J-J, Hu J-X, Gao F. A novel TE-material based thermal protection structure and its performance evaluation for hypersonic flight vehicles. Aerosp Sci Technol 2018;77:458–70.
+
+[39] Gong C, Chen B, Gu L. Comparison study of RBCC powered suborbital reusable launch vehicle concepts. 20th AIAA Int. Sp. Planes Hypersonic Syst. Technol. Conf. 2015, AIAA American Institute of Aeronautics and Astronautics; 2015.
+
+[40] Chen Z-G, Han G, Yang L, Cheng L, Zou J. Nanostructured thermoelectric materials: Current research and future challenge. Prog Nat Sci Mater Int 2012;22 (6):535–49.
+
+[41] Nolas GS, Poon J, Kanatzidis M. Recent Developments in Bulk Thermoelectric Materials. MRS Bull 2006;31(3):199–205.
+
+[42] Minnich AJ, Dresselhaus MS, Ren ZF, Chen G. Bulk nanostructured thermoelectric materials: current research and future prospects. Energy Environ Sci 2009;2 (5):466. https://doi.org/10.1039/b822664b.
+
+[43] Snyder GJ, Christensen M, Nishibori E, Caillat T, Iversen BB. Disordered zinc in Zn4Sb3 with phonon-glass and electron-crystal thermoelectric properties. Nat Mater 2004;3(7):458–63.
+
+[44] Androulakis J, Lin C-H, Kong H-J, Uher C, Wu C-I, Hogan T, et al. Spinodal decomposition and nucleation and growth as a means to bulk nanostructured thermoelectrics: Enhanced performance in Pb1-xSn xTe-PbS. J Am Chem Soc 2007;129:9780–8.
+
+[45] Biswas K, He J, Blum ID, Wu C-I, Hogan TP, Seidman DN, et al. High-performance bulk thermoelectrics with all-scale hierarchical architectures. Nature 2012;489 (7416):414–8.
+
+[46] Hsu KF, Loo S, Guo F, Chen W, Dyck JS, Uher C, et al. Cubic AgPb(m)SbTe(2+m): bulk thermoelectric materials with high figure of merit. Science 2004;303:818–21.
+
+[47] Gou J-J, Ren X-J, Dai Y-J, Li S, Tao W-Q. Study of thermal contact resistance of rough surfaces based on the practical topography. Comput Fluids 2018;164:2–11.
+
+[48] Chen Z, Gao D, Shi J. Experimental and numerical study on melting of phase change materials in metal foams at pore scale. Int J Heat Mass Transf 2014;72:646–55.
+
+[49] Gou J-J, Gong C-L, Tao W-Q. Appropriate utilization of the unit cell method in thermal calculation of composites. Appl Therm Eng 2018;139:295–306.
+
+[50] Gou J-J, Gong C-L, Gu L-X, Li S, Tao W-Q. The unit cell method in predictions of thermal expansion properties of textile reinforced composites. Compos Struct 2018;195:99–117.

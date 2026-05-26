@@ -1,0 +1,9 @@
+| List of algorithm parameters. |  |  |
+| --- | --- | --- |
+| Parameter | Value | Parameter Value |
+| $K _ { P }$ | 500 | $\sigma _ { \psi } \ : ( ^ { \circ } )$ 0.2 |
+| $\sigma _ { r } ~ \mathrm { ( m ) }$ 100 | $\Delta t \mathrm { ~ } ( \mathrm { s } )$ | 1 |
+| $\sigma _ { \theta } \ : ( ^ { \circ } )$ $1 0 ^ { - 3 }$ | $T _ { r e f } ~ \mathrm { { ( s ) } }$ | 500 |
+| $\sigma _ { \phi } \ : ( ^ { \circ } )$ $1 0 ^ { - 3 }$ | $S _ { Y }$ | 0.01 |
+| $\sigma _ { v } \mathrm { ( m / s ) }$ 5 | $m _ { m i n }$ | 50 |
+| $\pmb { \sigma } _ { \gamma } \ ( ^ { \circ } )$ 0.2 | $t _ { m i n } \ \mathrm { ( s ) }$ | 80 |

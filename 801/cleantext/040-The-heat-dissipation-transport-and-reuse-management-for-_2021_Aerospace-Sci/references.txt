@@ -1,0 +1,115 @@
+[1] O. Tran, M. Heldmann, J. Fort, ECLSS Heat Sink for the NASP. 2nd International Aerospace Planes Conference, American Institute of Aeronautics and Astronau- tics, 1990.
+
+[2] S. Balland, V.F. Villace, J. Steelant, Thermal and Energy Management for Hy- personic Cruise Vehicles - Cycle Analysis. 20th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, American Institute of Aeronautics and Astronautics, 2015.
+
+[3] T. Schwanekamp, F. Meyer, T. Reimer, I. Petkov, A. Tröltzsch, M. Siggel, Sys- tem Studies on Active Thermal Protection of a Hypersonic Suborbital Passenger Transport Vehicle. 19th AIAA International Space Planes and Hypersonic Sys- tems and Technologies Conference, American Institute of Aeronautics and As- tronautics, 2014.
+
+4. For RC network, the coolant m f decreases and the trend slows down with the increasing coolant temperature rise. The re- quired m f of LH2 is much smaller than JET-A due to the larger specific heat capacity of LH2, and indicates that LH2 has stronger cooling ability. For LH2, the channel size has very lit- tle influence on the cooling performance, while for JET-A, the smaller channel size results into better cooling performance.
+
+[4] M.Y.M. Ahmed, N. Qin, Recent advances in the aerothermodynamics of spiked hypersonic vehicles, Prog. Aerosp. Sci. 47 (6) (2011) 425–449.
+
+[5] J. Huang, W-X. Yao, Heat reduction mechanism and aerodynamic optimization of combined non-ablative thermal protection system concept, Int. J. Heat Mass Transf. 152 (2020) 119549.
+
+[6] J. Huang, W-X. Yao, Parameter study on drag and heat reduction of a novel combinational spiked blunt body and rear opposing jet concept in hypersonic flows, Int. J. Heat Mass Transf. 150 (2020) 119236.
+
+7. For the TE-AFRSI concept and the cruising trajectory in this work, the largest TE conversion efficiency is 0.90%, the largest electric power supply per unit volume density is 14.2 × 10−6
+
+[7] L. Zhu, Y. Li, X. Chen, H. Li, W. Li, C. Li, Hypersonic flow characteristics and relevant structure thermal response induced by the novel combined spike- aerodome and lateral jet strategy, Aerosp. Sci. Technol. 95 (2019) 105459.
+
+[8] B. Behrens, M. Müller, Technologies for thermal protection systems applied on re-usable launcher, Acta Astronaut. 55 (3–9) (2004) 529–536.
+
+[9] Y. Rong, Y. Wei, R. Zhan, Research on thermal protection by opposing jet and transpiration for high speed vehicle, Aerosp. Sci. Technol. 48 (Supplement C) (2016) 322–327.
+
+[10] D.E. Myers, C.J. Martin, M.L. Blosser, Parametric Weight Comparison of Ad- vanced Metallic, Ceramic Tile, and Ceramic Blanket Thermal Protection Sys- tems, NASA Langley Technical Report Server, 2000.
+
+[11] Y. Li, L. Zhang, R. He, Y. Ma, K. Zhang, X. Bai, B. Xu, Y. Chen, Integrated thermal protection system based on C/SiC composite corrugated core sandwich plane structure, Aerosp. Sci. Technol. 91 (2019) 607–616.
+
+[12] C. Cao, R. Wang, X. Xing, W. Liu, H. Song, C. Huang, Performance improve- ment of integrated thermal protection system using shaped-stabilized compos- ite phase change material, Appl. Therm. Eng. 164 (2020) 114529.
+
+[13] C-L. Gong, J-J. Gou, J-X. Hu, F. Gao, A novel TE-material based thermal pro- tection structure and its performance evaluation for hypersonic flight vehicles, Aerosp. Sci. Technol. 77 (2018) 458–470.
+
+[14] N. Blet, S. Lips, V. Sartre, Heats pipes for temperature homogenization: a liter- ature review, Appl. Therm. Eng. 118 (2017) 490–509.
+
+[15] H. Liu, W. Liu, Thermal–structural analysis of the platelet heat-pipe-cooled leading edge of hypersonic vehicle, Acta Astronaut. 127 (2016) 13–19.
+
+[16] M. Cui, J. Mei, B-W. Zhang, B-B. Xu, L. Zhou, Y. Zhang, Inverse identification of boundary conditions in a scramjet combustor with a regenerative cooling system, Appl. Therm. Eng. 134 (2018) 555–563.
+
+[17] T. Jing, G. He, W. Li, F. Qin, X. Wei, Y. Liu, Z. Hou, Flow and thermal analyses of regenerative cooling in non-uniform channels for combustion chamber, Appl. Therm. Eng. 119 (2017) 89–97.
+
+[18] X. Sun, H. Meng, Y. Zheng, Asymmetric heating and buoyancy effects on heat transfer of hydrocarbon fuel in a horizontal square channel at supercritical pressures, Aerosp. Sci. Technol. 93 (2019) 105358.
+
+[19] X. Li, Z. Wang, Exergy analysis of integrated TEG and regenerative cooling sys- tem for power generation from the scramjet cooling heat, Aerosp. Sci. Technol. 66 (Supplement C) (2017) 12–19.
+
+[20] Y.G. Jiang, J. Qin, Y.X. Xu, S.L. Zhang, K. Chetehouna, N. Gascoin, W. Bao, The influences of the header geometry on hydrocarbon fuel flow distribution in compact parallel channels, Aerosp. Sci. Technol. 79 (2018) 318–327.
+
+[21] M. Leonardi, M. Pizzarelli, F. Nasuti, Analysis of thermal stratification impact on the design of cooling channels for liquid rocket engines, Int. J. Heat Mass Transf. 135 (2019) 811–821.
+
+[22] N. Perakis, O.J. Haidn, Inverse heat transfer method applied to capacitively cooled rocket thrust chambers, Int. J. Heat Mass Transf. 131 (2019) 150–166.
+
+[23] Z.Y. Hou, G.Q. He, W.Q. Li, F. Qin, X.G. Wei, T.T. Jing, Numerical investigation on thermal behaviors of active-cooled strut in RBCC engine, Appl. Therm. Eng. 113 (2017) 822–830.
+
+[24] D. Yan, G. He, W. Li, D. Zhang, F. Qin, Thermal analysis of regenerative-cooled pylon in multi-mode rocket based combined cycle engine, Acta Astronaut. 148 (2018) 121–131.
+
+[25] X. Yu, C. Wang, D. Yu, Configuration optimization of the tandem cooling- compression system for a novel precooled hypersonic airbreathing engine, En- ergy Convers. Manag. 197 (2019) 111827.
+
+[26] X. Yu, C. Wang, D. Yu, Minimization of entropy generation of a closed Brayton cycle based precooling-compression system for advanced hypersonic airbreath- ing engine, Energy Convers. Manag. 209 (2020) 112548.
+
+[27] Y.M. Chen, Z.P. Zou, C. Fu, A study on the similarity method for helium com- pressors, Aerosp. Sci. Technol. 90 (2019) 115–126.
+
+[28] G. Xie, C. Wang, T. Ji, B. Sunden, Investigation on thermal and thermome- chanical performances of actively cooled corrugated sandwich structures, Appl. Therm. Eng. 103 (2016) 660–669.
+
+[29] J-J. Gou, Y. Chang, Z-W. Yan, B. Chen, C-L. Gong, The design of thermal manage- ment system for hypersonic launch vehicles based on active cooling networks, Appl. Therm. Eng. 159 (2019) 113938.
+
+[30] C. Gayner, K.K. Kar, Recent advances in thermoelectric materials, Prog. Mater. Sci. 83 (Supplement C) (2016) 330–382. W·m3/kg, the largest electric power supply per unit weight is 9.56 W/kg, the largest electric power supply per unit area is 178.4 W/m and the largest electric power supply per unit areal density is 0.94×10−3 W·m2/kg.
+
+[31] F. Li, R. Zhai, Y. Wu, Z. Xu, X. Zhao, T. Zhu, Enhanced thermoelectric perfor- mance of n-type bismuth-telluride-based alloys via in alloying and hot defor- mation for mid-temperature power generation, J. Mater. 4 (3) (2018) 208–214.
+
+[32] K. Nithyanandam, R.L. Mahajan, Evaluation of metal foam based thermoelectric generators for automobile waste heat recovery, Int. J. Heat Mass Transf. 122 (2018) 877–883.
+
+[33] A. Riahi, A. Ben Haj Ali, A. Fadhel, A. Guizani, M. Balghouthi, Performance investigation of a concentrating photovoltaic thermal hybrid solar system com- bined with thermoelectric generators, Energy Convers. Manag. 205 (2020) 112377.
+
+[34] S. Addanki, D. Nedumaran, Simulation and fabrication of thermoelectric gener- ators for hand held electronic gadgets, Mater. Sci. Eng. B 251 (2019) 114453.
+
+[35] S. Lv, M. Liu, W. He, X. Li, W. Gong, S. Shen, Study of thermal insulation mate- rials influence on the performance of thermoelectric generators by creating a significant effective temperature difference, Energy Convers. Manag. 207 (2020) 112516.
+
+[36] K. Cheng, J. Qin, Y. Jiang, C. Lv, S. Zhang, W. Bao, Performance assessment of multi-stage thermoelectric generators on hypersonic vehicles at a large tem- perature difference, Appl. Therm. Eng. 130 (2018) 1598–1609.
+
+[37] W. Bou Nader, Thermoelectric generator optimization for hybrid electric vehi- cles, Appl. Therm. Eng. 167 (2020) 114761.
+
+[38] K.L. Cheng, J. Qin, H.C. Sun, C.L. Dang, S.L. Zhang, X.Y. Liu, W. Bao, Performance assessment of an integrated power generation and refrigeration system on hy- personic vehicles, Aerosp. Sci. Technol. 89 (2019) 192–203.
+
+[39] M. Zhang, Y. Tian, H. Xie, Z. Wu, Y. Wang, Influence of Thomson effect on the thermoelectric generator, Int. J. Heat Mass Transf. 137 (2019) 1183–1190.
+
+[40] Y.J. Cui, B.L. Wang, K.F. Wang, L. Zheng, Power output evaluation of a porous annular thermoelectric generator for waste heat harvesting, Int. J. Heat Mass Transf. 137 (2019) 979–989.
+
+[41] Y. Yang, S. Wang, Y. Zhu, Evaluation method for assessing heat transfer en- hancement effect on performance improvement of thermoelectric generator systems, Appl. Energy 263 (2020) 114688.
+
+[42] J. Liu, Y. Zhang, D. Zhang, S. Jiao, Z. Zhang, Z. Zhou, Model development and performance evaluation of thermoelectric generator with radiative cooling heat sink, Energy Convers. Manag. 216 (2020) 112923.
+
+[43] P. Wang, K.F. Wang, B.L. Wang, Y.J. Cui, Modeling of thermoelectric generators with effects of side surface heat convection and temperature dependence of material properties, Int. J. Heat Mass Transf. 133 (2019) 1145–1153.
+
+[44] M.L.H. Thomas, J. Bruno, Arno R. Laesecke, Eric W. Lemmon, Mark O. McLinden, Stephanie L. Outcalt, Richard A. Perkins, Beverly L. Smith, Jason A. Widegren, Thermodynamic, Transport, and Chemical Properties of Reference JP-8, NIST In- teragency/Internal Report (NISTIR)- 6659, 2010.
+
+[45] R.D. McCarty, Hydrogen Technological Survey-Thermophysical Properties, NASA SP-3089, 1975.
+
+[46] V. Fernandez Villace, J. Steelant, The Thermal Paradox of Hypersonic Cruisers. 20th AIAA International Space Planes and Hypersonic Systems and Technolo- gies Conference, American Institute of Aeronautics and Astronautics, 2015.
+
+[47] L.J. Spadaccini, D.R. Sobel, H. Huang, Deposit formation and mitigation in air- craft fuels, J. Eng. Gas Turbines Power 123 (4) (1999) 741–746.
+
+[48] N.H. Kemp, F.R. Riddell, Heat transfer to satellite vehicles re-entering the atmo- sphere, Jet Propuls. 27 (2) (1957) 132–137.
+
+[49] M. Moore, J. Williams, Aerodynamic Prediction Rationale for Analyses of Hy- personic Configurations. 27th Aerospace Sciences Meeting, American Institute of Aeronautics and Astronautics, 1989.
+
+[50] D. Mui, H.M. Clancy, Development of a protective ceramic coating for shut- tle orbiter advanced flexible reusable surface insulation, Ceram. Eng. Sci. Proc. 6 (7-8) (1985) 793–805.
+
+[51] H-J. Wu, W-T. Yen, High thermoelectric performance in Cu-doped Bi2Te3 with carrier-type transition, Acta Mater. 157 (2018) 33–41.
+
+[52] G.J. Snyder, M. Christensen, E. Nishibori, T. Caillat, B.B. Iversen, Disordered zinc in Zn4Sb3 with phonon-glass and electron-crystal thermoelectric properties, Nat. Mater. 3 (7) (2004) 458–463.
+
+[53] J.R. Sootsman, J. He, V.P. Dravid, S. Ballikaya, D. Vermeulen, C. Uher, M.G. Kanatzidis, Microstructure and thermoelectric properties of mechanically ro- bust PbTe-Si eutectic composites, Chem. Mater. 22 (3) (2010) 869–875.
+
+[54] J-J. Gou, C-L. Gong, W-Q. Tao, Appropriate utilization of the unit cell method in thermal calculation of composites, Appl. Therm. Eng. 139 (2018) 295–306.
+
+[55] S.M. Yang, W.Q. Tao, Heat Transfer, Higher Education Press, 2006.
+
+[56] W.L. Kleb, W.A. Wood, P.A. Gnoffo, S.J. Alter, Computational aeroheating predic- tions for X-34, J. Spacecr. Rockets 36 (2) (1999) 179–188.

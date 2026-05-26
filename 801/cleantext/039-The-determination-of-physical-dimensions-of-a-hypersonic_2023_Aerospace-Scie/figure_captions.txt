@@ -1,0 +1,45 @@
+Fig. 1. The hypersonic vehicle and its intake system. (For interpretation of the colors in the figure(s), the reader is referred to the web version of this article.)
+
+Fig. 2. Configurational parameters of the intake system.
+
+Fig. 3. Geometric model and meshed model of CI for mode analysis.
+
+Fig. 4. Computational region, mesh and information transfer.
+
+Fig. 5. Pressure coefficient on the upper and lower walls (comparison with Refs. [22,32]).
+
+Fig. 6. Displacement variation along with dynamic pressure (comparison with Refs. [23,34]).
+
+Fig. 7. Mode shape of CI under CoA.
+
+Fig. 8. Mode shape of CI under CoB.
+
+Fig. 9. Natural frequencies of different panel thicknesses for CI, CII and CIII.
+
+Fig. 10. The panel stiffness along with panel thickness.
+
+Fig. 11. Displacement contours under aerodynamic force.
+
+Fig. 12. Pressure and velocity fields under CI vibration with 100 Hz and different amplitudes.
+
+Fig. 13. Total pressure recovery and mass flow coefficients along with time (CI vi- bration with frequency of 100 Hz and amplitude of 50 mm).
+
+Fig. 14. Average values and fluctuation ranges of total pressure recovery and flow coefficients.
+
+Fig. 15. Pressure and velocity fields under CI vibration with 0.05 m amplitude and different frequencies.
+
+Fig. 16. Average values and fluctuation ranges of total pressure recovery and mass flow coefficients under different vibration frequencies.
+
+Fig. 17. The displacement of CI in spatial, time and frequency domains with different panel thicknesses.
+
+Fig. 18. The displacement of CII in spatial, time and frequency domains with different panel thicknesses.
+
+Fig. 19. The displacement of CIII in spatial, time and frequency domains with different panel thicknesses.
+
+Fig. 20. The pressure and velocity fields under fluid-structural coupling conditions.
+
+Fig. 21. Natural and operational frequencies with different panel thicknesses.
+
+Fig. 22. The design path of compression system.
+
+Fig. 13. Total pressure recovery and mass flow coefficients along with time (CI vibration with frequency of 100 Hz and amplitude of 50 mm).

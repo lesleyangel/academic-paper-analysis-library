@@ -1,0 +1,95 @@
+[1] X.F. Ma, P.X. Jiang, Y.H. Zhu, Dynamic simulation and analysis of transient characteristics of a thermal-to-electrical conversion system based on supercritical CO2 Brayton cycle in hypersonic vehicles, Appl. Energy 359 (2024).
+
+[2] J.J. Gou, Z.W. Yan, J.X. Hu, G. Gao, C.L. Gong, The heat dissipation, transport and reuse management for hypersonic vehicles based on regenerative cooling and thermoelectric conversion, Aerosp. Sci. Technol. 108 (2021).
+
+[3] W.Z. Yang, X.Y. Zhang, Y. Cui, Z.T. Chen, Thermal and fracture analysis of collinear interface cracks in graded coating systems under ramp-type heating, Int. J. Heat Mass Transf. 216 (2023).
+
+[4] V.T. Le, N.S. Ha, N.S. Goo, Advanced sandwich structures for thermal protection systems in hypersonic vehicles: A review, Compos. Pt. B-Eng. 226 (2021).
+
+[5] G. Gao, D. Li, J.J. Gou, C.L. Gong, S.M. Li, A study of interfacial electrical contact resistances of thermoelectric generators for hypersonic vehicles by experimental measurements and two-scale numerical simulations, Aerosp. Sci. Technol. 131 (2022) 107966.
+
+[6] G. Gao, J.J. Gou, C.L. Gong, J.X. Hu, R.C. Gao, A novel mechanical-thermal- electrical thermal protection system concept and its multi-scale performance evaluation for hypersonic launch vehicles, Compos. Struct. 268 (2021) 113962.
+
+[7] K.L. Cheng, J. Qin, D. Zhang, W. Bao, W.X. Jing, Performance evaluation for a combined power generation system of closed-Brayton-cycle and thermoelectric generator with finite cold source at room temperature on hypersonic vehicles, Energy 254 (2022).
+
+[8] K.L. Cheng, J. Qin, Y.G. Jiang, C.W. Lv, S.L. Zhang, W. Bao, Performance assessment of multi-stage thermoelectric generators on hypersonic vehicles at a large temperature difference, Appl. Therm. Eng. 130 (2018) 1598–1609.
+
+[9] W.J. Song, F.F. Bai, M.B. Chen, S.L. Lin, Z.P. Feng, Y.L. Li, Thermal management of standby battery for outdoor base station based on the semiconductor thermoelectric device and phase change materials, Appl. Therm. Eng. 137 (2018) 203–217.
+
+[10] S. Lan, R. Stobart, X.N. Wang, Matching and optimization for a thermoelectric generator applied in an extended-range electric vehicle for waste heat recovery, Appl. Energy 313 (2022).
+
+[11] B. Orr, A. Akbarzadeh, M. Mochizuki, R. Singh, A review of car waste heat recovery systems utilising thermoelectric generators and heat pipes, Appl. Therm. Eng. 101 (2016) 490–495.
+
+[12] J. Wei, J.W. Hui, T.T. Wang, Y. Wang, Y.P. Guo, S.Q. Zhang, Y.B. Zhang, X.Y. Qiao, A thermoelectric energy harvesting system for pavements with a fin cooling structure, Sustain. Energ. Fuels 7 (1) (2022) 248–262.
+
+[13] K. Li, G. Garrison, M. Moore, Y. Zhu, C. Liu, R. Horne, S. Petty, An expandable thermoelectric power generator and the experimental studies on power output, Int. J. Heat Mass Transf. 160 (2020).
+
+[14] H. Jing, Q.P. Xiang, R.D. Ze, X.X. Chen, J. Li, J.C. Liao, S.Q. Bai, A skutterudite thermoelectric module with high aspect ratio applied to milliwatt radioisotope thermoelectric generator, Appl. Energy 350 (2023).
+
+[15] W. Yang, H.P. Xie, L.C. Sun, C. Ju, B.X. Li, C.B. Li, H.Y. Zhang, H.T. Liu, An experimental investigation on the performance of TEGs with a compact heat exchanger design towards low-grade thermal energy recovery, Appl. Therm. Eng. 194 (2021).
+
+[16] M. Bhattacharya, M. Ranjan, N. Kumar, T. Maiti, Performance analysis and optimization of a SnSe-Based thermoelectric generator, Acs Appl. Energ. Mater. 4 (8) (2021) 8211–8219.
+
+[17] Y.J. Cui, B.L. Wang, K.F. Wang, L. Zheng, Power output evaluation of a porous annular thermoelectric generator for waste heat harvesting, Int. J. Heat Mass Transf. 137 (2019) 979–989.
+
+[18] A. Nozariasbmarz, H. Collins, K. Dsouza, M.H. Polash, M. Hosseini, M. Hyland, J. Liu, A. Malhotra, F.M. Ortiz, F. Mohaddes, V.P. Ramesh, Y. Sargolzaeiaval, N. Snouwaert, M.C. Ozturk, D. Vashaee, Review of wearable thermoelectric energy harvesting: From body temperature to electronic systems, Appl. Energy 258 (2020).
+
+[19] H.X. Wei, J. Zhang, Y. Han, D.Y. Xu, Soft-covered wearable thermoelectric device for body heat harvesting and on-skin cooling, Appl. Energy 326 (2022).
+
+[20] C.N. Kim, Development of a numerical method for the performance analysis of thermoelectric generators with thermal and electric contact resistance, Appl. Therm. Eng. 130 (2018) 408–417.
+
+[21] Y. Li, Y. Shi, D. Luo, X. Wang, Y. Yan, Impacts of distributed thermal and electric contact resistance on performance and geometric optimization of thermoelectric generators, Appl. Therm. Eng. 246 (2024).
+
+[22] J. Liu, C. Ma, S. Wang, S. Wang, B. Yang, Thermal contact resistance between bearing inner ring and shaft journal, Int. J. Therm. Sci. 138 (2019) 521–535.
+
+[23] Z.X. Wan, H.P. Wang, M. Wang, B.E. Carlson, D.R. Sigler, Numerical simulation of resistance spot welding of Al to zinc-coated steel with improved representation of contact interactions, Int. J. Heat Mass Transf. 101 (2016) 749–763.
+
+[24] X.J. Ren, Q.F. Tang, H. Zhang, J.R. Zhang, M. Du, W.Q. Tao, Numerical study on the effect of thermal pad on enhancing interfacial heat transfer considering thermal contact resistance, Case Stud. Therm. Eng. 49 (2023).
+
+[25] A. Majumdar, C.L. Tien, Fractal characterization and simulation of rough surfaces, J. Tribol. 136 (2) (1990) 313–327.
+
+[26] H.A. Sherif, Parameters affecting contact stiffness of nominally flat surfaces, Wear 145 (1) (1991) 113–121.
+
+[27] T.F. Cui, Q. Li, Y.M. Xuan, Characterization and application of engineered regular rough surfaces in thermal contact resistance, Appl. Therm. Eng. 71 (1) (2014) 400–409.
+
+[28] P.G. Siddappa, A. Tariq, Contact area and thermal conductance estimation based on the actual surface roughness measurement, Tribol. Int. 148 (2020).
+
+[29] X.J. Ren, H. Ding, Y.J. Dai, J.Y. Tu, X. Chen, J.Y. He, W.Q. Tao, Experimental study on thermal contact resistance of carbon fiber reinforced silicon carbide composite with 3D needled preform (3DN C/SiC), Int. Commun. Heat Mass Transf. 124 (2021).
+
+[30] G. Gao, S.Y. Chen, L.Q. Ai, N. Liu, J.J. Gou, C.L. Gong, A thermal contact model encompassing near-field effects of multi-interface TEGs in hypersonic conditions, Int. J. Heat Mass Transf. 216 (2023) 124543.
+
+[31] J.J. Gou, X.J. Ren, Y.J. Dai, S.G. Li, W.Q. Tao, Study of thermal contact resistance of rough surfaces based on the practical topography, Comput. Fluids 164 (2018) 2–11.
+
+[32] Y.H. Li, F. Shen, M.A. Guler, L.L. Ke, A rough surface electrical contact model considering the interaction between asperities, Tribol. Int. 190 (2023).
+
+[33] J. Han, J. Zhu, W. Zheng, G. Wang, Influence of metal forming parameters on surface roughness and establishment of surface roughness prediction model, Int. J. Mech. Sci. 163 (2019).
+
+[34] Y. Liu, Q.Y. Meng, X.X. Yan, S.Y. Zhao, J.Y. Han, Research on the solution method for thermal contact conductance between circular-arc contact surfaces based on fractal theory, Int. J. Heat Mass Transf. 145 (2019).
+
+[35] W. Zhang, G. Meng, X. Wei, Z. Peng, Slip flow and heat transfer in microbearings with fractal surface topographies, Int. J. Heat Mass Transf. 55 (23–24) (2012) 7223–7233.
+
+[36] C. Wang, Q.Y. Lin, Z.K. Pan, J. Hong, Y.C. Zhou, Thermal contact analysis of Flip- Chip package considering microscopic contacts of double-layer thermal interface materials, Appl. Energy 356 (2024) 122453.
+
+[37] Y. Lu, S.L. Shi, H.Q. Wang, Z.J. Tian, Q. Ye, H.Y. Niu, Thermal characteristics of cement microparticle-stabilized aqueous foam for sealing high-temperature mining fractures, Int. J. Heat Mass Transf. 131 (2019) 594–603.
+
+[38] Y.Q. Xian, P. Zhang, S.P. Zhai, P. Yuan, D.G. Yang, Experimental characterization methods for thermal contact resistance: A review, Appl. Therm. Eng. 130 (2018) 1530–1548.
+
+[39] M. Hao, T.S. Fisher, High-throughput transient thermal interface testing method using time-domain thermal response, Int. J. Heat Mass Transf. 127 (2018) 228–233.
+
+[40] Y.J. Dai, J.J. Gou, X.J. Ren, F. Bai, W.Z. Fang, W.Q. Tao, A test-validated prediction model of thermal contact resistance for Ti-6Al-4V alloy, Appl. Energy 228 (2018) 1601–1617.
+
+[41] P. Misra, J. Nagaraju, Test facility for simultaneous measurement of electrical and thermal contact resistance, Rev. Sci. Instrum. 75 (8) (2004) 2625–2630.
+
+[42] K. Karthick, S. Suresh, H. Singh, G.C. Joy, R. Dhanuskodi, Theoretical and experimental evaluation of thermal interface materials and other influencing parameters for thermoelectric generator system, Renew. Energy 134 (2019) 25–43.
+
+[43] Y. Li, Y. Shi, X.H. Wang, D. Luo, Y.Y. Yan, Thermal and electrical contact resistances of thermoelectric generator: Experimental study and artificial neural network modelling, Appl. Therm. Eng. 225 (2023).
+
+[44] G. Gao, D. Li, J.J. Gou, C.L. Gong, S.M. Li, The quantitative study of interfacial contact effects in TEGs by real-topology-based simulations and novel indirect tests, Int. J. Heat Mass Transf. 201 (2023) 123579.
+
+[45] M.H. Ge, Z.W. Xuan, C.Y. Zhao, D. Luo, Y.L. Wang, Y.Z. Li, Y.L. Zhao, Thermoelectric performance and mechanical analysis of inner-arc type leg applied in solar thermoelectric generator, Sol. Energy 263 (2023).
+
+[46] Y. Liu, Y. Zhang, Q. Xiang, F. Hao, Q. An, H. Chen, Comprehensive modeling and parametric analysis of Multi-Mission Radioisotope Thermoelectric Generator, Appl. Therm. Eng. 219 (2023) 119447.
+
+[47] W. Yan, K. Komvopoulos, Contact analysis of elastic-plastic fractal surfaces, J. Appl. Phys. 84 (7) (1998) 3617–3624.
+
+[48] A. Majumdar, B. Bhushan, Fractal model of elastic-plastic contact between rough surfaces, J. Tribol. 113 (1) (1991) 1–11.

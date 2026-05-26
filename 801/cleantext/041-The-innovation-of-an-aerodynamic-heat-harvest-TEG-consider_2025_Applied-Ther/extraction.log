@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-innovation-of-an-aerodynamic-heat-harvest-TEG-consider_2025_Applied-Ther.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\041-The-innovation-of-an-aerodynamic-heat-harvest-TEG-consider_2025_Applied-Ther",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\The-innovation-of-an-aerodynamic-heat-harvest-TEG-consider_2025_Applied-Ther.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\041-The-innovation-of-an-aerodynamic-heat-harvest-TEG-consider_2025_Applied-Ther",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 184.2,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\041-The-innovation-of-an-aerodynamic-heat-harvest-TEG-consider_2025_Applied-Ther\nbody_chars=46564 references=48 tables=14\nnoise_flags=many_figure_caption_markers\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T04:33:40"
+}

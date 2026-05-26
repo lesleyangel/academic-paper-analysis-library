@@ -1,0 +1,405 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (42.63, 669.07, 214.35, 690.38)]] * Corresponding author. E-mail address: wuweinan@nwpu.edu.cn (W. Wu)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 346.85, 716.91)]] https://doi.org/10.1016/j.isatra.2023.09.021 Received 18 May 2022; Received in revised form 19 June 2023; Accepted 18 September 2023
+
+[confidence=0.67; needs_review; source=equations; [page 2, bbox (306.6, 81.95, 354.86, 100.81)]] ε = {xg, yg, zg
+
+[confidence=0.67; needs_review; source=equations; [page 2, bbox (317.93, 410.86, 333.84, 419.39)]] = (τ
+
+[confidence=0.92; source=equations; [page 3, bbox (314.99, 229.35, 562.35, 257.43)]] ˙x = Vucosγcosψ ˙y = Vucosγsinψ ˙z = -Vusinγ (1)
+
+[confidence=0.92; source=equations; [page 4, bbox (45.98, 54.68, 100.24, 83.5)]] ˙x = Vucosγccosψ ˙y = Vucosγcsinψ ˙z = -Vusinγc
+
+[confidence=0.92; source=equations; [page 4, bbox (45.98, 83.25, 95.23, 93.02)]] ˙ψ = gtanϕc/Vu
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (37.59, 554.71, 163.35, 573.52)]] error is represented as ε = {xg, yg, zg
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (306.6, 127.02, 452.58, 143.84)]] flight route at angle χ∞∈(0, π/2]; (2) ⃒⃒ewy
+
+[confidence=0.92; source=equations; [page 5, bbox (314.99, 341.37, 383.03, 371.18)]] xh(t) = ρhcosγh + xch yh(t) = ρhsinγh + ych zh(t) = μγh + zch
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 530.52, 293.34, 543.56)]] Ps(a, w) = {s = a + ςw} (3)
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (306.6, 197.04, 483.47, 214.99)]] Pc = (c, ρ, λ) = {r = c + λρ(cosφ, sinφ, 0)T, φ ∈ [ 0, π
+
+[confidence=0.92; source=equations; [page 6, bbox (45.98, 693.78, 79.27, 708.5)]] ξθ = ξθ ∞2
+
+[confidence=0.92; source=equations; [page 6, bbox (45.98, 715.78, 80.69, 730.49)]] ξϕ = ξϕ ∞2
+
+[confidence=0.92; source=equations; [page 7, bbox (314.99, 82.69, 380.3, 122.97)]] ˙x = vx ˙y = vy ˙h = -˙z = vh ˙v = ˙Vu = (vc -v) /
+
+[confidence=0.92; source=equations; [page 7, bbox (314.99, 113.79, 386.0, 144.93)]] τv ˙γ = (γc -γ) /τγ ˙ψ = (ψc -ψ)/τψ
+
+[confidence=0.92; source=equations; [page 7, bbox (313.91, 235.42, 403.12, 247.63)]] ˙η = TA-1(μc -μ) + ˙ω -¨rr
+
+[confidence=0.92; source=equations; [page 7, bbox (45.98, 256.51, 79.78, 270.93)]] θd = ξθ ∞2
+
+[confidence=0.92; source=equations; [page 7, bbox (75.63, 261.48, 189.99, 275.51)]] πarctan2(dθ, kh) + arctan2(ϖμ, ρh)
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (127.96, 277.03, 250.06, 292.66)]] ) + arctan2(ym -ych, xm -xch) -ϖ π
+
+[confidence=0.92; source=equations; [page 7, bbox (45.98, 278.51, 81.54, 293.39)]] ϕd = ξϕ ∞2
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 284.74, 320.1, 293.11)]] T =
+
+[confidence=0.57; needs_review; source=equations; [page 7, bbox (37.59, 303.75, 291.0, 327.22)]] where ϖ denotes the direction of the helical path; when the helix path springs upward ϖ = 1, otherwise, ϖ = - 1.
+
+[confidence=0.92; source=equations; [page 7, bbox (48.76, 602.73, 293.34, 621.74)]] ⃦⃦⃦r(t) -rr(t) ⃦⃦⃦= 0 (8)
+
+[confidence=0.92; source=equations; [page 7, bbox (307.96, 615.32, 398.22, 626.24)]] ˙L1 = sT[ ˙ω -Ks -D sgn(s)]
+
+[confidence=0.92; source=equations; [page 7, bbox (317.25, 659.25, 347.04, 668.42)]] \le-sTKs
+
+[confidence=0.92; source=equations; [page 7, bbox (45.98, 695.69, 118.29, 724.03)]] vx = Vucosγcosψ + ωx vy = Vucosγsinψ + ωy vh = Vusinγ + ωh
+
+[confidence=0.92; source=equations; [page 7, bbox (37.59, 730.96, 288.69, 745.24)]] where v = Vu = (vx, vy, vh)T is the velocity of MAV, v = Vu = ‖Vu‖; ω =
+
+[confidence=0.57; needs_review; source=equations; [page 7, bbox (306.59, 51.95, 509.77, 76.86)]] (ωx, ωy, ωh)T represents the velocity of wind disturbance. Subsequently, Eqs. (2)-(3) can be reformulated as:
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 153.32, 558.62, 167.43)]] where (˙v, ˙γ, ˙ψ)T represents the variations of (v, γ, ψ)T; θ = (τv, τγ, τψ)T
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (318.56, 186.65, 558.8, 200.68)]] Let ξ = r -rr, η = v - ˙rr, μ = (v, γ, ψ)T, μc = (vc, γc, ψc)T (vc, γc and ψc
+
+[confidence=0.57; needs_review; source=equations; [page 7, bbox (306.6, 255.28, 545.06, 268.45)]] where A = diag(τv, τγ, τχ) ((τv, τγ, τψ) are the autopilot parameters);
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 324.73, 562.36, 337.76)]] s = ˙ξ + Λξ (12)
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 344.23, 485.66, 357.4)]] where Λ = diag(λ1,λ2,λ3),λi > 0(i = 1,2,3); then
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 361.47, 560.02, 374.5)]] ˙s = ¨ξ + Λ˙ξ = ˙η + Λη (13)
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 393.82, 562.36, 406.98)]] μc = μ + AT-1(¨rr -Λη -Ks -D sgn(s)) (14)
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 500.46, 562.36, 519.32)]] L1 = 12sTs (15)
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 542.07, 562.36, 555.29)]] ˙L1 = sT ˙s = sT(˙η + Λη) (16)
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 577.52, 562.36, 590.55)]] ˙η = ˙ω -Λη -Ks -D sgn(s) (17)
+
+[confidence=0.92; source=equations; [page 7, bbox (317.25, 628.07, 412.23, 639.87)]] = -sTKs + sT ˙ω -DsTsgn(s)
+
+[confidence=0.92; source=equations; [page 7, bbox (317.25, 644.91, 419.06, 655.59)]] \le-sTKs + ‖s‖1‖ ˙ω‖∞-D‖s‖1
+
+[confidence=0.92; source=equations; [page 7, bbox (373.21, 683.99, 473.36, 698.01)]] q = 1, then aTb \le‖a‖p‖b‖q
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (90.82, 214.82, 106.79, 223.35)]] = (τ
+
+[confidence=0.92; source=equations; [page 8, bbox (37.7, 308.67, 74.33, 320.46)]] μc = μ + Λ
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (61.85, 330.37, 103.66, 344.68)]] ⌢= diag(θ
+
+[confidence=0.92; source=equations; [page 8, bbox (37.7, 382.5, 197.17, 395.67)]] where P = diag(p1,p2,p3),pi > 0(i = 1,2,3)
+
+[confidence=0.92; source=equations; [page 8, bbox (37.7, 458.79, 81.16, 477.65)]] L2 = L1 + 12 ̃θ
+
+[confidence=0.92; source=equations; [page 8, bbox (37.7, 485.59, 97.36, 500.02)]] where ̃θ = θ - θ ⌢
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (37.7, 511.46, 90.09, 529.46)]] ˙L2 = sT( TΛ-1Λ
+
+[confidence=0.92; source=equations; [page 8, bbox (37.7, 556.64, 153.33, 568.07)]] ˙L2 = sT( -Ks + ˙ω -D sgn(s)) + ̃θ
+
+[confidence=0.92; source=equations; [page 8, bbox (39.06, 624.28, 92.44, 635.7)]] ˙L2 \le-sTKs + ̃θ
+
+[confidence=0.92; source=equations; [page 8, bbox (475.6, 64.38, 530.05, 80.15)]] that ˙̃θ = - ˙θ ⌢˙
+
+[confidence=0.92; source=equations; [page 8, bbox (318.67, 65.72, 469.84, 80.15)]] It is evident from the equation ̃θ = θ - θ ⌢
+
+[confidence=0.92; source=equations; [page 8, bbox (306.71, 121.86, 466.64, 139.76)]] quently, ∞> - ∫∞ 0 ˙L2(t)dt = ∫∞ 0 sTKsdt \geλk
+
+[confidence=0.92; source=equations; [page 8, bbox (37.7, 239.24, 291.13, 252.27)]] Ω = T-1(¨rr -Λη -Ks -D sgn(s)) (19)
+
+[confidence=0.92; source=equations; [page 8, bbox (37.7, 270.74, 291.13, 283.9)]] μc = μ + ΛΩ (20)
+
+[confidence=0.92; source=equations; [page 8, bbox (47.79, 363.0, 293.46, 376.03)]] = -Pdiag(Ω)TTs (22)
+
+[confidence=0.92; source=equations; [page 8, bbox (80.96, 460.32, 293.46, 473.71)]] TA-1P-1̃θ (23)
+
+[confidence=0.92; source=equations; [page 8, bbox (166.68, 515.77, 291.13, 530.18)]] TΛ-1P-1 ˙̃θ (24)
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (223.88, 550.07, 291.13, 568.78)]] ⌢-I ) Ω (25)
+
+[confidence=0.67; needs_review; source=equations; [page 8, bbox (162.93, 617.7, 249.99, 634.91)]] ⌢-I ) Ω \le-sTKs + ̃θ
+
+[confidence=0.92; source=equations; [page 8, bbox (249.79, 622.01, 564.81, 636.02)]] TΛ-1P-1 ˙̃θ + sTTdiag(Ω)Λ-1̃θ (26)
+
+[confidence=0.57; needs_review; source=equations; [page 8, bbox (43.71, 716.17, 553.66, 726.6)]] Case 1 Initial position (m) Target position (m) Minimum turning radius (m) Cruise velocity (m/s)
+
+[confidence=0.92; source=equations; [page 9, bbox (43.6, 297.21, 216.07, 316.32)]] Test 17 m/s 2100 Lu = Lv = 200, Lw = 50
+
+[confidence=0.92; source=equations; [page 9, bbox (236.18, 297.21, 281.95, 307.76)]] σu = σv = 1.06
+
+[confidence=0.92; source=equations; [page 9, bbox (43.6, 314.33, 216.07, 333.44)]] Test 210 m/s 2100 Lu = Lv = 200, Lw = 50
+
+[confidence=0.92; source=equations; [page 9, bbox (236.18, 314.33, 283.82, 324.88)]] σu = σv = 1.06
+
+[confidence=0.92; source=equations; [page 9, bbox (312.61, 275.5, 549.1, 294.48)]] Case 1- extension korbit = 2 korbit = 3 korbit = 4 korbit = 5 korbit = 6 korbit = 7
+
+[confidence=0.92; source=equations; [page 10, bbox (38.95, 403.97, 69.02, 419.88)]] Tc = ∑ t=T
+
+[confidence=0.92; source=equations; [page 10, bbox (59.19, 422.13, 67.21, 427.57)]] t=0
+
+[confidence=0.92; source=equations; [page 10, bbox (38.95, 428.91, 69.02, 444.82)]] Te = ∑ t=T
+
+[confidence=0.92; source=equations; [page 10, bbox (59.19, 447.07, 67.21, 452.51)]] t=0
+
+[confidence=0.92; source=equations; [page 10, bbox (37.59, 461.08, 293.35, 474.11)]] ξ = ΓTc + (1 -Γ)Te (28)
+
+[confidence=0.57; needs_review; source=equations; [page 10, bbox (342.2, 651.49, 547.59, 679.03)]] control method Take- off (m) Cruising (m) Landing (m) (Average transient time of participant controllers)
+
+[confidence=0.92; source=body_inline] \mathrm{UAV} ,
+
+[confidence=0.92; source=body_inline] ^ {4 ,}
+
+[confidence=0.92; source=body_inline] V _ {u} ,
+
+[confidence=0.92; source=body_inline] \psi ,
+
+[confidence=0.92; source=body_inline] \gamma
+
+[confidence=0.92; source=body_inline] [ x ( k ) , y ( k ) , z ( k ) ] ^ {T}
+
+[confidence=0.92; source=body_inline] \phi ,
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\dot {x} = V _ {u} c o s \gamma c o s \psi} \\ {\dot {y} = V _ {u} c o s \gamma s i n \psi} \\ {\dot {z} = - V _ {u} s i n \gamma} \end{array} \right.\tag{1}
+
+[confidence=0.92; source=body_inline] V _ {u}
+
+[confidence=0.92; source=body_inline] \dot {\psi} = g t a n \phi / V _ {u}
+
+[confidence=0.92; source=body_inline] \gamma ^ {c}
+
+[confidence=0.92; source=body_inline] \phi ^ {c}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\dot {x} = V _ {u} c o s \gamma ^ {c} c o s \psi} \\ {\dot {y} = V _ {u} c o s \gamma ^ {c} s i n \psi} \\ {\dot {z} = - V _ {u} s i n \gamma ^ {c}} \\ {\dot {\psi} = g t a n \phi ^ {c} / V _ {u}} \end{array} \right.\tag{2}
+
+[confidence=0.92; source=body_inline] \overline {{\phi}}
+
+[confidence=0.92; source=body_inline] \bar {\gamma}
+
+[confidence=0.92; source=body_inline] \vert \phi ^ {c} \vert \le \overline {{{\phi}}}
+
+[confidence=0.92; source=body_inline] | \gamma ^ {c} | \leq \overline {{\gamma}}
+
+[confidence=0.67; needs_review; source=body_inline] = \left\{x _ {g} , y _ {g} , z _ {g} \right\} ^ {T} , ( x _ {g} , y _ {g} , z _ {g}
+
+[confidence=0.92; source=body_inline] ^ {6 ,}
+
+[confidence=0.67; needs_review; source=body_inline] [ x _ {p} , y _ {p} ,
+
+[confidence=0.67; needs_review; source=body_inline] z _ {p} ]
+
+[confidence=0.92; source=body_inline] [ \chi , h _ {d} , \nu _ {a} ]
+
+[confidence=0.92; source=body_inline] P _ {s} ( \pmb {a} , \pmb {w} ) = \{s = \pmb {a} + \varsigma \pmb {w} \}\tag{3}
+
+[confidence=0.92; source=body_inline] P _ {s} ( \pmb {a} , \pmb {w} )
+
+[confidence=0.92; source=body_inline] ( 1 ) \left| e _ {w y} \right|
+
+[confidence=0.67; needs_review; source=body_inline] \chi ^ {\infty} \in \left( 0 , \pi / 2 \right] ; \left( 2 \right) \left| e _ {w y} \right|
+
+[confidence=0.92; source=body_inline] 0 ; \chi ^ {\infty}
+
+[confidence=0.67; needs_review; source=body_inline] \mathbf {\psi} _ {P _ {c}} = ( \mathbf {c} , \rho , \lambda ) = \left. r = c + \lambda \rho ( c o s \varphi , s i n \varphi , 0 ) ^ {T} , \varphi \in \left[ 0 , \frac {\pi} {2} \right) \right.\tag{4}
+
+[confidence=0.92; source=body_inline] \pmb {c} = \left( c _ {n} , c _ {e} , c _ {d} \right) ^ {T}
+
+[confidence=0.92; source=body_inline] P _ {c ; \rho}
+
+[confidence=0.92; source=body_inline] \lambda \in \{- 1 , 1 \}
+
+[confidence=0.92; source=body_inline] P _ {c}
+
+[confidence=0.92; source=body_inline] P _ {c} ,
+
+[confidence=0.92; source=body_inline] h ^ {c} = - ~ c _ {d}
+
+[confidence=0.92; source=body_inline] ^ {3 ,}
+
+[confidence=0.92; source=body_inline] \cdot \rho
+
+[confidence=0.92; source=body_inline] \chi ^ {0}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {x ^ {h} ( t ) = \rho _ {h} c o s \gamma _ {h} + x _ {c h}} \\ {y ^ {h} ( t ) = \rho _ {h} s i n \gamma _ {h} + y _ {c h}} \\ {z ^ {h} ( t ) = \mu \gamma _ {h} + z _ {c h}} \end{array} \right.\tag{5}
+
+[confidence=0.92; source=body_inline] \rho _ {h}
+
+[confidence=0.92; source=body_inline] \mu
+
+[confidence=0.92; source=body_inline] [ x _ {c h} , y _ {c h} , z _ {c h} ]
+
+[confidence=0.92; source=body_inline] [ x ^ {h} ( t ) , y ^ {h} ( t ) , z ^ {h} ( t ) ]
+
+[confidence=0.92; source=body_inline] \gamma _ {h}
+
+[confidence=0.92; source=body_inline] S _ {M} = \left[ x _ {m} , y _ {m} , z _ {m} \right]
+
+[confidence=0.92; source=body_inline] S _ {1} , S _ {2} , S _ {3}
+
+[confidence=0.92; source=body_inline] S _ {0} , S _ {M 0}
+
+[confidence=0.92; source=body_inline] S _ {1}
+
+[confidence=0.92; source=body_inline] s _ {M}
+
+[confidence=0.92; source=body_inline] d _ {\phi}
+
+[confidence=0.92; source=body_inline] S _ {M 0}
+
+[confidence=0.92; source=body_inline] d _ {\theta}
+
+[confidence=0.92; source=body_inline] \xi _ {\phi _ {c}}
+
+[confidence=0.92; source=body_inline] \xi _ {\phi _ {0}}
+
+[confidence=0.92; source=body_inline] ^ {7 ,}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\displaystyle \xi _ {\theta} = \xi _ {\theta} \infty \frac {2} {\pi} a r c t a n 2 ( d _ {\theta} , k _ {h} )} \\ {\displaystyle \xi _ {\phi} = \xi _ {\phi} \infty \frac {2} {\pi} a r c t a n 2 \big ( d _ {\phi} , k _ {h} \big )} \end{array} \right.\tag{6}
+
+[confidence=0.92; source=body_inline] \xi _ {\theta} , \xi _ {\phi}
+
+[confidence=0.92; source=body_inline] \xi ^ {\infty}
+
+[confidence=0.92; source=body_inline] \xi ^ {\infty} \in \{\pi / 3 , \pi / 2 \} ; d _ {\theta} , d _ {\phi}
+
+[confidence=0.92; source=body_inline] k _ {h} ,
+
+[confidence=0.92; source=body_inline] k _ {p a t h}
+
+[confidence=0.92; source=body_inline] k _ {c i r c l e} ,
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\theta _ {d} = \xi _ {\theta} \displaystyle {\cfrac {\alpha} {\pi}} \frac {2} {\pi} a r c t a n 2 ( d _ {\theta} , k _ {h} ) + a r c t a n 2 ( \varpi \mu , \rho _ {h} )} \\ {\displaystyle {\phi _ {d} = \xi _ {\phi} \displaystyle {\cfrac {\alpha} {\pi}} \frac {2} {\pi} a r c t a n 2 \big ( d _ {\phi} , k _ {h} \big ) + a r c t a n 2 \big ( y _ {m} - y _ {c h} , x _ {m} - x _ {c h} \big ) - \varpi \pi \gamma / 2}} \end{array} \right.\tag{7}
+
+[confidence=0.92; source=body_inline] \varpi = 1
+
+[confidence=0.92; source=body_inline] \varpi = - 1
+
+[confidence=0.92; source=body_inline] \boldsymbol {r} = ( x , y , h ) ^ {T} , \boldsymbol {r} _ {r} = ( x _ {r} , y _ {r} , h _ {r} ) ^ {T}
+
+[confidence=0.92; source=body_inline] \operatorname* {l i m} _ {t \infty} \Big \| r ( t ) - r _ {r} ( t ) \Big \| = 0\tag{8}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l} {{\nu _ {x} = V _ {u} c o s \gamma c o s \psi + \omega _ {x}}} \\ {{\nu _ {y} = V _ {u} c o s \gamma s i n \psi + \omega _ {y}}} \\ {{\nu _ {h} = V _ {u} s i n \gamma + \omega _ {h}}} \end{array} \right.\tag{9}
+
+[confidence=0.92; source=body_inline] \pmb {\nu} = V _ {u} = ( \nu _ {x} , \nu _ {y} , \nu _ {h} ) ^ {T}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\nu = V _ {u} = \| V _ {u} \| ; \pmb {\omega} =} \end{array}
+
+[confidence=0.92; source=body_inline] ( \omega _ {x} , \omega _ {y} , \omega _ {h} ) ^ {T}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\dot {x} = \nu _ {x}} \\ {\dot {y} = \nu _ {y}} \\ {\dot {h} = - \dot {z} = \nu _ {h}} \\ {\dot {v} = \dot {V} _ {u} = ( v ^ {c} - \nu ) \Big / \tau _ {\nu}} \\ {\dot {\gamma} = ( \gamma ^ {c} - \gamma ) / \tau _ {\nu}} \\ {\dot {\psi} = ( \psi ^ {c} - \psi ) / \tau _ {\psi}} \end{array} \right.\tag{10}
+
+[confidence=0.92; source=body_inline] \left( \dot {\nu} , \dot {\gamma} , \dot {\psi} \right) ^ {T}
+
+[confidence=0.92; source=body_inline] ( \nu , \gamma , \psi ) ^ {T} ; \pmb \theta = ( \tau _ {\nu} , \tau _ {\gamma} , \tau _ {\psi} ) ^ {T}
+
+[confidence=0.92; source=body_inline] \pmb {\theta} _ {0}
+
+[confidence=0.67; needs_review; source=body_inline] \boldsymbol {\xi} = \boldsymbol {r} - \boldsymbol {r} _ {r} , \eta = \boldsymbol {\nu} - \dot {\boldsymbol {r}} _ {r} , \mu = \left( \boldsymbol {\nu} , \gamma , \psi \right) ^ {T} , \mu ^ {c} = \left( \boldsymbol {\nu} ^ {c} , \gamma ^ {c} , \psi ^ {c} \right) ^ {T} ( \nu ^ {c} , \gamma ^ {c}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\dot {\pmb {\xi}} = \pmb {\eta}} \\ {\dot {\pmb \eta} = \pmb {T} \pmb {A} ^ {- 1} ( {\pmb \mu} ^ {c} - {\pmb \mu} ) + \dot {\pmb \omega} - \ddot {\pmb r} _ {r}} \end{array} \right.\tag{11}
+
+[confidence=0.67; needs_review; source=body_inline] A = d i a g ( \tau _ {\nu} , \tau _ {\gamma} , \tau _ {\chi} ) ( ( \tau _ {\nu} , \tau _ {\gamma} , \tau _ {\psi} )
+
+[confidence=0.92; source=body_inline] \pmb {T} = \left[ \begin{array} {c c c} {c o s \gamma c o s \psi} & {- \nu s i n \gamma c o s \psi} & {- \nu c o s \gamma s i n \psi} \\ {c o s \gamma s i n \psi} & {- \nu s i n \gamma s i n \psi} & {\nu c o s \gamma c o s \psi} \\ {s i n \gamma} & {\nu c o s \gamma} & {0} \end{array} \right]
+
+[confidence=0.92; source=body_inline] {\pmb s} = \dot {\pmb \xi} + {\pmb A} {\pmb \xi}\tag{12}
+
+[confidence=0.92; source=body_inline] \dot {\pmb {s}} = \ddot {\pmb {\xi}} + {\pmb {\Lambda}} \dot {\pmb {\xi}} = \dot {\pmb {\eta}} + {\pmb {\Lambda}} \pmb {\eta}\tag{13}
+
+[confidence=0.92; source=body_inline] \pmb {\mu} ^ {c} = \pmb {\mu} + \pmb {A} \pmb {T} ^ {- 1} ( \ddot {\pmb {r}} _ {r} - \pmb {A} \pmb {\eta} - \pmb {K} \pmb {s} - D \mathrm{sgn} ( \pmb {s} ) )\tag{14}
+
+[confidence=0.92; source=body_inline] K = d i a g ( k _ {1} , k _ {2} , k _ {3} ) , k _ {i} > 0 ( i = 1 , 2 , 3 )
+
+[confidence=0.92; source=body_inline] \| \dot {\omega} \| _ {\infty} ,
+
+[confidence=0.92; source=body_inline] \mathbf {i s} , \| \dot {\boldsymbol {\omega}} \| _ {\infty} \leq D
+
+[confidence=0.92; source=body_inline] L _ {1} = \frac {1} {2} \boldsymbol {s} ^ {T} \boldsymbol {s}\tag{15}
+
+[confidence=0.92; source=body_inline] \dot {L} _ {1} = s ^ {T} \dot {s} = s ^ {T} ( \dot {\pmb {\eta}} + {\pmb {\cal A}} \pmb {\eta} )\tag{16}
+
+[confidence=0.92; source=body_inline] \dot {\pmb {\eta}} = \dot {\pmb {\omega}} - \pmb {A} \pmb {\eta} - \pmb {K} \pmb {s} - D \operatorname{sgn} ( \pmb {s} )\tag{17}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\dot {L} _ {1} = s ^ {T} [ \dot {\pmb {\omega}} - \pmb {K} s - D \mathrm{sgn} ( s ) ]} \\ & {\quad = - s ^ {T} \pmb {K} s + s ^ {T} \dot {\pmb {\omega}} - D s ^ {T} \mathrm{sgn} ( s )} \\ & {\quad \le - s ^ {T} \pmb {K} s + \| \pmb {s} \| _ {1} \| \dot {\pmb {\omega}} \| _ {\infty} - D \| s \| _ {1}} \\ & {\quad \le - s ^ {T} \pmb {K} s} \end{array}\tag{18}
+
+[confidence=0.92; source=body_inline] \forall \pmb {a} \in \mathbb {R} ^ {n} \forall \pmb {b} \in \mathbb {R} ^ {n}
+
+[confidence=0.92; source=body_inline] 1 \leq p \leq \infty , 1 / p + 1 / q = 1
+
+[confidence=0.92; source=body_inline] ^ T {\pmb {b}} \leq \| {\pmb {a}} \| _ {p} \| {\pmb {b}} \| _ {q}
+
+[confidence=0.92; source=body_inline] \dot {L} _ {1}
+
+[confidence=0.92; source=body_inline] \dot {\pmb {\xi}} = -
+
+[confidence=0.92; source=body_inline] \pmb {\varDelta} \xi ,
+
+[confidence=0.92; source=body_inline] \pmb {\xi} = e x p ( - \pmb {\Lambda} t )
+
+[confidence=0.92; source=body_inline] t \to \infty , \xi \to \infty ,
+
+[confidence=0.92; source=body_inline] \theta ,
+
+[confidence=0.92; source=body_inline] \widehat {\pmb {\theta}} ^ {\prime} = ( \widehat {\tau} _ {\nu} , \widehat {\tau} _ {\gamma} , \widehat {\tau} _ {\psi} ) ^ {T}
+
+[confidence=0.92; source=body_inline] \pmb {\Omega} = \pmb {T} ^ {- 1} ( \ddot {r} _ {r} - \pmb {A} \pmb {\eta} - \pmb {K} \pmb {s} - D \operatorname{sgn} ( \pmb {s} ) )\tag{19}
+
+[confidence=0.92; source=body_inline] \pmb {\mu} ^ {c} = \pmb {\mu} + \pmb {\Lambda} \pmb {\Omega}\tag{20}
+
+[confidence=0.92; source=body_inline] \widehat {\pmb {\theta}}
+
+[confidence=0.92; source=body_inline] {\pmb {\mu}} ^ {c} = {\pmb {\mu}} + \widehat {A} \pmb {\Omega}\tag{21}
+
+[confidence=0.92; source=body_inline] {\widehat {\pmb {A}}} \ = d i a g ( {\widehat {\pmb {\theta}}} \ ) ;
+
+[confidence=0.92; source=body_inline] \dot {\widehat {\pmb {\theta}}} ^ {\dot {\prime}} = - {\pmb {P}} d i a g ( {\pmb {\Omega}} ) {\pmb {T}} ^ {T} s\tag{22}
+
+[confidence=0.92; source=body_inline] P = d i a g ( p _ {1} , p _ {2} , p _ {3} ) , p _ {i} > 0 ( i = 1 , 2 , 3 )
+
+[confidence=0.92; source=body_inline] r _ {r} ,
+
+[confidence=0.92; source=body_inline] L _ {2} = L _ {1} + \frac {1} {2} \widetilde {\pmb {\theta}} ^ {T} A ^ {- 1} {\pmb {P}} ^ {- 1} \widetilde {\pmb {\theta}}\tag{23}
+
+[confidence=0.92; source=body_inline] \widetilde {{\pmb \theta}} = {\pmb \theta} - \widehat {\pmb \theta}
+
+[confidence=0.92; source=body_inline] \dot {L} _ {2} = s ^ {T} \Big ( T {\sl A} ^ {- 1} \widehat {\cal A} ~ \pmb {\mathscr {Q}} + \dot {\pmb {\omega}} - \ddot {r} _ {r} + {\cal A} \eta \Big ) + \widetilde {\pmb {\theta}} ^ {T} {\cal A} ^ {- 1} P ^ {- 1} \dot {\widetilde {\pmb {\theta}}}\tag{24}
+
+[confidence=0.92; source=body_inline] \dot {L} _ {2} = s ^ {T} ( - K s + \dot {\omega} - D s \mathrm{gn} ( s ) ) + \widetilde {\pmb {\theta}} ^ {T} {\cal A} ^ {- 1} {\cal P} ^ {- 1} \dot {\widetilde {\pmb {\theta}}} + s ^ {T} T \Big ( {\cal A} ^ {- 1} \widehat {\pmb {A}} - I \Big ) \Omega
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} {\dot {L} _ {2} \leq - s ^ {T} K s + \widetilde {\theta} ^ {T} A ^ {- 1} P ^ {- 1} \dot {\widetilde {\theta}} + s ^ {T} T \Big ( A ^ {- 1} \widehat {A} - I \Big ) \mathcal {Q}} & {\leq - s ^ {T} K s + \widetilde {\theta} ^ {T} A ^ {- 1} P ^ {- 1} \dot {\widetilde {\theta}} + s ^ {T} T d i a g ( \varOmega ) A ^ {- 1} \widetilde {\theta}} \end{array}\tag{25}
+
+[confidence=0.92; source=body_inline] \widetilde {{\pmb \theta}} = {\pmb \theta} - \widehat {{\pmb \theta}}
+
+[confidence=0.92; source=body_inline] \dot {\tilde {\theta}} = - \stackrel {\cdot} {\theta}
+
+[confidence=0.92; source=body_inline] \dot {L} _ {2} \leq - s ^ {T} K s
+
+[confidence=0.92; source=body_inline] L _ {2}
+
+[confidence=0.92; source=body_inline] \dot {L} _ {2}
+
+[confidence=0.92; source=body_inline] \dot {L} _ {2} \leq 0 ,
+
+[confidence=0.92; source=body_inline] V _ {2} ( t )
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\int _ {0} ^ {\infty} \dot {L} _ {2} ( t ) d t = L _ {2} ( 0 ) - L _ {2} ( \infty ) < \infty ;} \end{array}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\infty \mathrm{~>~-~} \int _ {0} ^ {\infty} \dot {L} _ {2} ( t ) d t = \int _ {0} ^ {\infty} s ^ {T} K s d t \mathrm{\ge~} \lambda _ {k} \int _ {0} ^ {\infty} s ^ {T} s d t} \end{array}
+
+[confidence=0.92; source=body_inline] \lambda _ {k}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\int _ {0} ^ {\infty} \| s \| _ {2} ^ {2} d t < \infty ,} \end{array}
+
+[confidence=0.92; source=body_inline] l i m _ {t \infty} s = \circ ,
+
+[confidence=0.92; source=body_inline] ^ {27}
+
+[confidence=0.92; source=body_inline] k _ {o r b i t}
+
+[confidence=0.92; source=body_inline] {\mathrm{NLGL}} ,
+
+[confidence=0.92; source=body_inline] T c = \sum _ {t = 0} ^ {t = T} u ^ {2} ( t )
+
+[confidence=0.92; source=body_inline] T e = \sum _ {t = 0} ^ {t = T} | d ( t ) |\tag{27}
+
+[confidence=0.92; source=body_inline] \xi = T \overline {{T}} c + ( 1 - T ) \overline {{T}} e\tag{28}

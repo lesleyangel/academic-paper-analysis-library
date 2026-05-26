@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-integrated-optimization-method-of-multi-hierarchy-va_2024_Aerospace-Scien.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\025-An-integrated-optimization-method-of-multi-hierarchy-va_2024_Aerospace-Scien",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\An-integrated-optimization-method-of-multi-hierarchy-va_2024_Aerospace-Scien.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\025-An-integrated-optimization-method-of-multi-hierarchy-va_2024_Aerospace-Scien",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 156.05,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\025-An-integrated-optimization-method-of-multi-hierarchy-va_2024_Aerospace-Scien\nbody_chars=45817 references=38 tables=0\nnoise_flags=many_figure_caption_markers\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T03:46:48"
+}

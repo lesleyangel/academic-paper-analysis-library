@@ -1,0 +1,4 @@
+|  | Material | Elastic modulus | Poisson's ratio | Expansion coefficient | Densities |
+| --- | --- | --- | --- | --- | --- |
+| Heat proof shell | Heat insulation material | 1GPa | 0.33 | $1 \times 1 0 ^ { - 5 }$ ${ \displaystyle ( 1 / \mathbb { K } ) }$ | $3 \times 1 0 ^ { 3 }$ $( \mathrm { { k g / m ^ { 3 } } } )$ |
+| Internal structure | Aluminum alloy material | 71 GPa (100°℃) 68GPa (150°℃) 66GPa (175℃) | 0.33 | $2 . 4 \times 1 0 ^ { - 5 }$ (1/K) | $2 . 7 \times$ ${ { 1 0 } ^ { 3 } }$ (kg/m³) |

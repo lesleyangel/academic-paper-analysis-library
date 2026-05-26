@@ -1,0 +1,35 @@
+Fig. 1. The hypersonic vehicle: (a) the flight schematic and (b) the management system of aerodynamic heat.
+
+Fig. 2. Surface subregions of the vehicle.
+
+Fig. 3. The physical properties of the coolant: (a) Liquid hydrogen (b) JET-A 3638.
+
+Fig. 4. The CFD model of the coolant convection (AFRSI-RC network).
+
+Fig. 5. The TE-AFRSI concept, unit cell, geometric model and meshed model.
+
+Fig. 6. The wall temperature and aerodynamic heat.
+
+Fig. 7. Temperature on leeward and windward median lines. (For interpretation of the colors in the figure(s), the reader is referred to the web version of this article.)
+
+Fig. 8. Aerodynamic heat and take-away heat on leeward and windward median lines.
+
+Fig. 9. Passive TPS concept for each surface subregion.
+
+Fig. 10. Assumed RC network and coolant mass flow rate.
+
+Fig. 11. Scales of TPS and RC network along with the equivalent heat transfer coefficient.
+
+Fig. 13. Temperature fields of coolant convection.
+
+Fig. 12. The verification of grid independence.
+
+Fig. 14. Temperature on TPS bottom lines.
+
+Fig. 15. Coolant temperature at the outlet.
+
+Fig. 16. Determination of the coolant mass flow rate (CFD and Eq. (4) results).
+
+Fig. 17. Temperature and electric potential fields for the optimized TE-AFRSI concept.
+
+Fig. 18. The design roadmap of TM system.

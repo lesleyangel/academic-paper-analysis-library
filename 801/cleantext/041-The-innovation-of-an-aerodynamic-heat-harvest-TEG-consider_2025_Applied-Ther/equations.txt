@@ -1,0 +1,225 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 161.02, 426.05, 200.25)]] The innovation of an aerodynamic-heat-harvest TEG considering multi-interface contact effect for a high-speed flight vehicle
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 206.22, 463.46, 223.92)]] Shi-Yuan Chen a, Hai-Peng Chen b, Ge Gao a, Chun-Lin Gong a, Yang Wu c, Jian-Jun Gou a,*
+
+[confidence=0.92; source=equations; [page 1, bbox (42.63, 669.07, 202.04, 690.38)]] * Corresponding author. E-mail address: jj.gou@nwpu.edu.cn (J.-J. Gou)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 346.33, 716.91)]] https://doi.org/10.1016/j.applthermaleng.2024.124687 Received 8 July 2024; Received in revised form 23 September 2024; Accepted 18 October 2024
+
+[confidence=0.92; source=equations; [page 4, bbox (378.76, 76.22, 414.77, 103.77)]] Specific heat capacity (J/(kg⋅K))
+
+[confidence=0.92; source=equations; [page 4, bbox (441.69, 76.22, 476.89, 103.77)]] Thermal conductivity (W/(m⋅K))
+
+[confidence=0.92; source=equations; [page 4, bbox (52.39, 165.94, 529.31, 185.46)]] Silver-epoxy adhesive 2.3 / / 0.34.50 \times 10-5504 / 108
+
+[confidence=0.92; source=equations; [page 4, bbox (166.28, 225.04, 201.48, 252.59)]] Thermal conductivity (W/(m⋅K))
+
+[confidence=0.92; source=equations; [page 4, bbox (92.24, 255.32, 277.25, 265.74)]] N-type P-type N-type P-type N-type P-type
+
+[confidence=0.92; source=equations; [page 5, bbox (274.67, 272.49, 328.82, 300.04)]] Equivalent thermal conductivity (W/(m⋅K))
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (346.73, 605.93, 396.25, 629.84)]] z(x, y) = L0(G L0
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (372.53, 635.63, 430.93, 660.17)]] 2πγn 0(x2 + y2)1/2) L0
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (421.62, 605.58, 459.07, 629.84)]] M )1/2⋅ ∑ M
+
+[confidence=0.92; source=equations; [page 5, bbox (447.82, 623.15, 458.74, 631.62)]] m=1
+
+[confidence=0.92; source=equations; [page 5, bbox (462.61, 623.15, 472.27, 631.62)]] n=0
+
+[confidence=0.92; source=equations; [page 5, bbox (430.92, 636.26, 520.67, 660.17)]] ⋅cos[tan-1(y x) -πm M ] + φm,n
+
+[confidence=0.92; source=equations; [page 7, bbox (85.15, 423.49, 125.64, 442.02)]] ∂z + fx = 0
+
+[confidence=0.92; source=equations; [page 7, bbox (85.15, 447.58, 125.36, 466.06)]] ∂z + fy = 0
+
+[confidence=0.92; source=equations; [page 7, bbox (85.89, 471.62, 124.96, 490.15)]] ∂z + fz = 0
+
+[confidence=0.92; source=equations; [page 7, bbox (69.68, 533.36, 94.97, 551.8)]] εx = ∂u
+
+[confidence=0.92; source=equations; [page 7, bbox (86.97, 533.36, 123.19, 557.28)]] ∂x; εy = ∂v
+
+[confidence=0.92; source=equations; [page 7, bbox (115.6, 533.36, 153.05, 557.28)]] ∂y; εz = ∂w
+
+[confidence=0.92; source=equations; [page 7, bbox (38.95, 557.34, 65.82, 576.46)]] γyz = ∂v
+
+[confidence=0.92; source=equations; [page 7, bbox (76.25, 557.34, 115.83, 581.26)]] ∂y; γxz = ∂u
+
+[confidence=0.92; source=equations; [page 7, bbox (126.2, 557.34, 166.12, 581.26)]] ∂x; γxy = ∂u
+
+[confidence=0.92; source=equations; [page 7, bbox (37.59, 625.54, 288.67, 639.56)]] dσij = De ijkl⋅dεe kl (4)
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (312.83, 447.62, 355.02, 467.98)]] ∂t = div( λ cp
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (356.88, 449.51, 557.68, 462.54)]] gradT) + (jψ + j2/k) (6)
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (313.17, 474.97, 353.85, 498.88)]] ∂t = div(k
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (350.02, 480.35, 557.68, 498.88)]] ε gradU) + kSΔT (7)
+
+[confidence=0.92; source=equations; [page 7, bbox (357.56, 579.73, 377.43, 596.64)]] = ∑ n
+
+[confidence=0.92; source=equations; [page 7, bbox (306.6, 580.07, 354.79, 603.99)]] TCR = ΔT qc + qr
+
+[confidence=0.92; source=equations; [page 7, bbox (367.54, 597.36, 375.82, 605.83)]] i=1
+
+[confidence=0.92; source=equations; [page 7, bbox (37.59, 646.51, 288.67, 661.22)]] dσij = Dep ijkl⋅dεkl = (De ijkl -Dp ijkl)dεkl (5)
+
+[confidence=0.67; needs_review; source=equations; [page 7, bbox (306.6, 656.99, 557.68, 682.85)]] hi = {hcc(di = 0) hmc + hr(di ∕= 0) (9)
+
+[confidence=0.92; source=equations; [page 8, bbox (306.6, 643.34, 338.08, 661.82)]] λeq = deq
+
+[confidence=0.92; source=equations; [page 8, bbox (37.59, 675.66, 288.68, 699.57)]] hT r = qT r (T + ΔT) -(T -ΔT) = qT r (10)
+
+[confidence=0.92; source=equations; [page 8, bbox (306.59, 458.64, 557.69, 482.55)]] ECR = ΔU j (11)
+
+[confidence=0.92; source=equations; [page 8, bbox (306.6, 671.97, 338.42, 690.45)]] keq = deq
+
+[confidence=0.92; source=equations; [page 11, bbox (306.59, 67.12, 557.68, 80.15)]] q = λgradT (14)
+
+[confidence=0.92; source=body_inline] \mathrm{Pb} _ {0.55} \mathrm{Te} _ {0.45} ,
+
+[confidence=0.92; source=body_inline] \mathrm{Pb} _ {0.55} \mathrm{Te} _ {0.45}
+
+[confidence=0.92; source=body_inline] ^ {6 ,}
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array} {c} {{\displaystyle z ( x , y ) = L _ {0} ( \frac {G} {L _ {0}} ) ^ {D _ {f} - 2} \cdot ( \frac {\ln \gamma _ {0}} {M} ) ^ {1 / 2} \cdot \sum _ {m = 1} ^ {M} \sum _ {n = 0} ^ {n _ {\mathrm{max}}} \gamma ^ {( D _ {f} - 3 ) n}}} \\ {{\displaystyle \times \left\{\cos \varphi _ {m , n} - \cos \left\{\frac {2 \pi \gamma _ {0} ^ {n} ( x ^ {2} + y ^ {2} ) ^ {1 / 2} )} {L _ {0}} \cdot \cos [ \tan ^ {- 1} ( \frac {y} {x} ) - \frac {\pi m} {M} ] + \varphi _ {m , n} \right\} \right\}}} \end{array}\tag{1}
+
+[confidence=0.92; source=body_inline] D _ {f} ( 2 < D _ {f} < 3 )
+
+[confidence=0.67; needs_review; source=body_inline] \vartheta ( \vartheta =
+
+[confidence=0.92; source=body_inline] \varphi _ {m , n} ( 0 < \varphi _ {m , n} < 2 \pi )
+
+[confidence=0.92; source=body_inline] ( D _ {f} = 2.16 , L _ {0} = 90 \mu \mathrm{m} )
+
+[confidence=0.92; source=body_inline] ( D _ {f} = 2.2 , L _ {0} = 90 ~ \mu \mathrm{m} )
+
+[confidence=0.92; source=body_inline] \cfrac {\partial \sigma _ {x}} {\partial x} + \cfrac {\partial \tau _ {y x}} {\partial y} + \cfrac {\partial \tau _ {z x}} {\partial z} + f _ {x} = 0
+
+[confidence=0.92; source=body_inline] \frac {\partial \tau _ {x y}} {\partial x} + \frac {\partial \sigma _ {y}} {\partial y} + \frac {\partial \tau _ {z y}} {\partial z} + f _ {y} = 0\tag{2}
+
+[confidence=0.92; source=body_inline] \frac {\partial \tau _ {x z}} {\partial x} + \frac {\partial \tau _ {y z}} {\partial y} + \frac {\partial \sigma _ {z}} {\partial z} + f _ {z} = 0\tag{3}
+
+[confidence=0.92; source=body_inline] \sigma _ {i} ( i = x , y , z )
+
+[confidence=0.92; source=body_inline] \tau _ {i j}
+
+[confidence=0.92; source=body_inline] \begin{array} {c} {\displaystyle \varepsilon _ {x} = \frac {\partial u} {\partial x} ; \varepsilon _ {y} = \frac {\partial \nu} {\partial y} ; \varepsilon _ {z} = \frac {\partial w} {\partial z}} \\ {\displaystyle \gamma _ {y z} = \frac {\partial \nu} {\partial z} + \frac {\partial w} {\partial y} ; \gamma _ {x z} = \frac {\partial u} {\partial z} + \frac {\partial w} {\partial x} ; \gamma _ {x y} = \frac {\partial u} {\partial y} + \frac {\partial \nu} {\partial x}} \end{array}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {i} ( i = x , y , z )
+
+[confidence=0.92; source=body_inline] \gamma _ {i j}
+
+[confidence=0.92; source=body_inline] d \sigma _ {i j} = D _ {i j k l} ^ {e} {\cdot} d \varepsilon _ {k l} ^ {e}\tag{4}
+
+[confidence=0.92; source=body_inline] d \sigma _ {i j} = D _ {i j k l} ^ {e p} \cdot d \varepsilon _ {k l} = ( D _ {i j k l} ^ {e} - D _ {i j k l} ^ {p} ) d \varepsilon _ {k l}\tag{5}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {k l} ^ {e}
+
+[confidence=0.92; source=body_inline] D _ {i j k l} ^ {e}
+
+[confidence=0.92; source=body_inline] D _ {i j k l} ^ {p}
+
+[confidence=0.92; source=body_inline] \frac {\partial ( \rho T )} {\partial t} = d i \nu ( \frac {\lambda} {c _ {p}} g r a d T ) + ( j \psi + j ^ {2} / k )\tag{6}
+
+[confidence=0.92; source=body_inline] \frac {\partial ( \rho U )} {\partial t} = d i \nu ( \frac {k} {\varepsilon} g r a d U ) + k S \Delta T\tag{7}
+
+[confidence=0.92; source=body_inline] \mathrm{TCR} = \frac {\Delta T} {q _ {c} + q _ {r}} = \sum _ {i = 1} ^ {n} \frac {1} {h _ {i}}\tag{8}
+
+[confidence=0.92; source=body_inline] \Delta T
+
+[confidence=0.92; source=body_inline] q _ {c}
+
+[confidence=0.92; source=body_inline] q _ {r}
+
+[confidence=0.92; source=body_inline] h _ {i}
+
+[confidence=0.67; needs_review; source=body_inline] h _ {i} = \left\{\begin{array} {c} {{h _ {c c} ( d _ {i} = 0 )}} \\ {{h _ {m c} + h _ {r} ( d _ {i} \neq 0 )}} \end{array} \right.\tag{9}
+
+[confidence=0.92; source=body_inline] d _ {i}
+
+[confidence=0.92; source=body_inline] h _ {c c}
+
+[confidence=0.92; source=body_inline] h _ {m c}
+
+[confidence=0.92; source=body_inline] h _ {r}
+
+[confidence=0.92; source=body_inline] \times ~ 10 ^ {10} ~ \mathrm {W / ( m ^ {2} {\cdot} K )}
+
+[confidence=0.92; source=body_inline] h _ {r} ^ {T} = \frac {q _ {r} ^ {T}} {\left( T + \Delta T \right) - \left( T - \Delta T \right)} = q _ {r} ^ {T}\tag{10}
+
+[confidence=0.92; source=body_inline] \mathrm{ECR} = {\frac {\Delta U} {j}}\tag{11}
+
+[confidence=0.92; source=body_inline] \Delta U
+
+[confidence=0.92; source=body_inline] \lambda _ {e q} = \frac {d _ {e q}} {\mathrm{TCR}}\tag{12}
+
+[confidence=0.92; source=body_inline] k _ {e q} = \frac {d _ {e q}} {\mathrm{ECR}}\tag{13}
+
+[confidence=0.92; source=body_inline] d _ {e q}
+
+[confidence=0.92; source=body_inline] ( 30 < \mathbf {y} + < 300 )
+
+[confidence=0.92; source=body_inline] T _ {0} 1
+
+[confidence=0.92; source=body_inline] T _ {0} 2
+
+[confidence=0.92; source=body_inline] P _ {0} 1
+
+[confidence=0.92; source=body_inline] P _ {0} 2
+
+[confidence=0.92; source=body_inline] P _ {0} 3 ,
+
+[confidence=0.92; source=body_inline] q = \lambda g r a d T\tag{14}
+
+[confidence=0.92; source=body_inline] ^ {7}
+
+[confidence=0.92; source=body_inline] \phantom - 8.0 \times 10 ^ {- 3} \mathrm{to} - 10.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] w _ {c}
+
+[confidence=0.92; source=body_inline] - 9.0 \times 10 ^ {- 3} \mathrm{t} 0-11.0 \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] 12.63 \times 10 ^ {- 4} \mathrm{~to~} 2.920 \times 10 ^ {- 4} \mathrm {~ ( K {\cdot} m ^ {2} ) / W}
+
+[confidence=0.92; source=body_inline] \mathrm {f r o m ~ 6.571 ~ \times ~ 10 ^ {- 4} ~ t o ~ 2.106 ~ \times ~ 10 ^ {- 4} ~ ( K {\cdot} m ^ {2} ) / W}
+
+[confidence=0.92; source=body_inline] 3.377 \times 10 ^ {- 5} \mathrm{to} 2.485 \times 10 ^ {- 5} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 1.720 \times {{10} ^ {- 8}}
+
+[confidence=0.92; source=body_inline] \times 10 ^ {- 8} \Omega {\cdot} \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] 8.151 \times 10 ^ {- 10}
+
+[confidence=0.92; source=body_inline] \times 10 ^ {- 10} \Omega {\cdot} \mathrm{m} ^ {2}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {66} E} P ^ {\prime}
+
+[confidence=0.92; source=body_inline] \mathrm {_ {d f}} \cdots \mathrm{E} - N ^ {\prime}
+
+[confidence=0.92; source=body_inline] \mathrm {^ {66}}
+
+[confidence=0.92; source=body_inline] T _ {E 1}
+
+[confidence=0.92; source=body_inline] T _ {E 2}
+
+[confidence=0.92; source=body_inline] ^ {\% ,}
+
+[confidence=0.92; source=body_inline] T _ {S 1}
+
+[confidence=0.92; source=body_inline] T _ {S 2}
+
+[confidence=0.92; source=body_inline] 12.63 \times {{10} ^ {- 4}}
+
+[confidence=0.92; source=body_inline] 2.920 \times 10 ^ {- 4} , 6.571 \times 10 ^ {- 4} {\mathrm{to}} 2.106 \times 10 ^ {- 4}
+
+[confidence=0.92; source=body_inline] 3.377 \times 10 ^ {- 5}
+
+[confidence=0.92; source=body_inline] 2.485 \times 10 ^ {- 5} ( \mathrm{K} {\cdot} \mathrm{m} ^ {2} ) / \mathrm{W}
+
+[confidence=0.92; source=body_inline] 17.20 \times 10 ^ {- 8}
+
+[confidence=0.92; source=body_inline] 4.348 \times 10 ^ {- 8} , 8.151 \times 10 ^ {- 10} \mathrm {{t o}} 6.919 \times 10 ^ {- 10} \mathrm {{\Omega}} \Omega {\cdot} \mathrm {{m}} ^ {2}

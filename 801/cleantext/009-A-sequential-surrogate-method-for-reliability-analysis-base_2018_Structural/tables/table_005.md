@@ -1,0 +1,6 @@
+| Methods | $P _ { f }$ | Relative Error (%) | Number of LSF evaluations |
+| --- | --- | --- | --- |
+| FORM | $1 . 8 9 1 \times 1 0 ^ { - 2 }$ | 44.070 | 15 |
+| SORM | $2 . 6 7 2 \times 1 0 ^ { - 2 }$ | 20.970 | 20 |
+| SSRM | $3 . 3 8 1 \times 1 0 ^ { - 2 }$ | 0.000 | 12 |
+| $\mathsf { M C S } ( \mathsf { C O V } = 0 . 5 3 \% )$ | $3 . 3 8 1 \times 1 0 ^ { - 2 }$ | 0.000 | $1 \times 1 0 ^ { 6 }$ |

@@ -1,0 +1,59 @@
+[1] Terasaki I. Transport properties and electronic states of the thermoelectric oxide NaCo2O
+
+[2] Yin LH, Ang R, Li LJ, Zhao BC, Fu YK, Zhu XB, Yang ZR, Song WH, Sun YP. Thermoelectric properties of sol–gel derived cobaltite Bi2Ca2.4Co2Oy. Phys B 2011;406:2914–8.
+
+3. Inorg Chem 2008;47:8429–36.
+
+[3] Wang Y, Sui Y, Cheng JG, Wang XJ, Su WH, Liu XY, Fan HJ. Doping-induced metal- insulator transition and the thermal transport properties in Ca3-xYxCo4O
+
+4. Phys B 2003;328:63–7.
+
+[4] Li CH, Guo DL, Li KJ, Shao B, Chen DM, Ma YL, Sun JC. Excellent thermoelectricity performance of p-type SnSe along b axis. Phys B 2018;530:264–9.
+
+[5] Boyle C, Liang L, Chen Y, Prucz J, Cakmak E, Watkins TR, Lara-Curzio E, Song XY. Competing dopants grain boundary segregation and resultant seebeck coefficient and power factor enhancement of thermoelectric calcium cobaltite ceramics. Ceram Int 2017;43:11523–8.
+
+[6] Ohta H, Sugiura K, Koumoto K. Recent progress in oxide thermoelectric materials: p-type Ca3Co4O9 and n-type SrTiO
+
+[7] Fergus JW. Oxide materials for high temperature thermoelectric energy conversion. J Eur Ceram Soc 2012;32:525–40.
+
+[8] Kahraman F, Madre MA, Rasekh S, Salvador C, Bosque P, Torre MA, Diez JC, Sotelo A. Enhancement of mechanical and thermoelectric properties of Ca3Co4O9 by Ag addition. J Eur Ceram Soc 2015;43:3835–41.
+
+[9] Nong NV, Liu CJ, Ohtaki M. High-temperature thermoelectric properties of late rare earth-doped Ca3Co4O9+δ. J Alloy Compd 2011;509:977–81.
+
+9. J Phys Chem C 2010;114:5174–81.
+
+[10] Nong NV, Ohtaki M. Power factors of late rare earth-doped Ca3Co2O6 oxides. Solid State Commun 2006;139:232–4.
+
+[11] Li HZ, Li RP, Liu JH, Huang MJ. Convergence of valence bands for high thermo- electric performance for p-type InN. Phys B 2015;479:1–5.
+
+[12] Chen S, Cai KF, Zhao WY. The effect of Te doping on the electronic structure and thermoelectric properties of SnSe. Phys B 2012;407:4154–9.
+
+[13] Yang HX, Nie CJ, Shi YG, Yu HC, Ding S, Liu YL, Wu D, Wang NL, Li JQ. Structural phase transitions and sodium ordering in Na0.5CoO2: a combined electron diffrac- tion and Raman spectroscopy study. Solid State Commun 2005;134:403–8.
+
+[14] Qin MJ, Gao F, Wang M, Zhang CC, Zhang QQ, Wang L. Fabrication and high- temperature thermoelectric properties of Ti-doped Sr0.9La0.1TiO3 ceramics. Ceram Int 2016;42:16644–9.
+
+[15] Qin MJ, Gao F, Wang M, Wang L, Dong GG, Huang XX. Microstructure and en- hanced seebeck coefficient of textured Sr3Ti2O7 ceramics prepared by RTGG method. Ceram Int 2016;42:13748–54.
+
+[16] Kumar RS, Rekhi S, Prabhakaran D, Somayazulu M, Kim E, Cook JD, Stemmler T, Boothroyd AT, Chance MR, Cornelius AL. Structural studies on Na0.75CoO2 ther- moelectric material at high pressures. Solid State Commun 2009;149:1712–6.
+
+[17] Su LS, Gan YX, Zhang LH. Thermoelectricity of nano composites containing TiO2- CoO coaxial nano cables. Scr Mater 2011;64:745–8.
+
+[18] Dahshan A, Hegazy HH, Aly KA, Sharma Pankaj. Semiconducting Ge-Se-Sb-Ag chalcogenides as prospective materials for thermoelectric applications. Phys B 2017;526:117–21.
+
+[19] Wu JM, Chen LJ, Yang XB, Zhao YJ. Tuning p/n conductivity in wurtzite transition metal monoxide: role of native defects in CoO and MnO. Phys Lett A 2014;378:2635–9.
+
+[20] Gong CL, Dong GG, Hu JX, Chen YS, Qin MJ, Yang SJ, Gao F. Effect of reducing annealing on the microstructure and thermoelectric properties of La-Bi co-doped SrTiO3 ceramics. J Mater Electron 2017;28:14893–900.
+
+[21] Yang WC, Zhang HC, Tao JQ, Zhang DD, Zhang DW, Wang ZH, Tang GD. Optimization of the spin entropy by incorporating magnetic ion in a misfit-layered calcium cobaltite. Ceram Int 2016;42:9744–8.
+
+[22] Zhang FP, Liang L, Lu QM, Li TX, Zhang X, Zhang JX, Xiao YS. Preparation and thermoelectric transport properties of Ba-, La- and Ag-doped Ca3Co4O9oxide ma- terials. J Rare Earths 2013;31:778–83.
+
+[23] Zhou YC, Wang CL, Su WB, Liu J, Wang HC, Li JC, Li Y, Zhai JZ, Zhang YC, Mei LM. Electrical properties of Dy3+/Na+ Co-doped oxide thermoelectric [Ca1-x(Na1/2Dy1/ Carrier concentration (1/ cm3) Mobility (cm2/V/S) Ca-Co-O thermoelectric ceramics with negative Seebeck coefficient were prepared by sintering and annealing in reducing atmosphere. The samples possess the n-type semi-conductive characteristics. The carrier concentration and the carrier mobility increase dramatically after samples were annealed in reducing atmosphere. Ag nanoparticles can increase carrier concentration and decrease the carrier mobility. With increasing temperature, the electrical resistivity of CALC/Ag increases from 0.0663 mΩ·cm to 0.2974 mΩ·cm, the Seebeck coefficient varies from −24.9 μV/K to −56.3 μV/K, which should be ascribed to the change in carrier concentration and oxygen vacancy. The large PF value of 1.536 mW/m·K2 at 623 K and the maximum ZT value of 0.39 is ob- tained at 823 K, which makes CALC/Ag compound a good candidate material used for n-type thermoelectric applications. This work was supported by the National Natural Science Foundation of China (No. 51672219), Foundation of National High Technology Research and Development Program (No. 2015AA0172), Fundamental Research Fund for the Central Universities (No. G2016KY0302), the “111” Project (No. B08040), and the Research Foundation of the State Key Laboratory of Solidification Processing (NWPU), China (No. 137-QP-2015). 2)(x)]MnO3 ceramics. J Alloy Compd 2016;680:129–32.
+
+[24] Brockway L, Vasiraju V, Sunkara MK, Vaddiraju S. Engineering efficient thermo- electrics from large-scale assemblies of doped ZnO nanowires: nanoscale effects and resonant-level scattering. ACS Appl Mater Interface 2014;6:14923–30.
+
+[25] Yamashita O, Tomiyoshi S. Bismuth telluride compounds with high thermoelectric figures of merit. J Appl Phys 2003;93:368–74.
+
+[26] Song JY, Zhao BC, Huang YN, Qin YF, Song WH, Sun YP. Tuning of conductive type and magnetic properties of Ca3Co2O6 ceramics through Pb-doping. J Am Ceram Soc 2017;100:3589–98.
+
+[27] Faleev SV, Leonard F. Theory of enhancement of thermoelectric properties of ma- terials with nanoinclusions. Phys Rev B 2008;77:214–304.

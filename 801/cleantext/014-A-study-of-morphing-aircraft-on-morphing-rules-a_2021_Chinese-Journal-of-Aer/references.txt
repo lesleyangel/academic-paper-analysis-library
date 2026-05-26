@@ -1,0 +1,83 @@
+1. Wang XG, Chen Q, Wang ZY. Multi-task trajectory design and simulation for long-range swing-wing cruise missile. J Ballist 2018; 30(3): 13–24 [Chinese].
+
+2. Lyu JC, Dong YF, Chen YK. Rules of the optimal variable sweep wing in low and medium height. J Flight Dynam 2016; 32(2): 24–7 [Chinese].
+
+3. Ajaj RM, Beaverstock CS, Friswell MI. Morphing aircraft: The need for a new design philosophy. J Aerosp Sci Technol 2016;49:154–66.
+
+4. Weisshaar TA. Morphing aircraft systems: historical perspectives and future challenges. J Aircr 2013;50(2):337–53.
+
+5. Yang GT, Tang SJ, Zhao LD, et al. Dynamic modeling and response of a morphing UAV with variable sweep and variable span. Acta Armament 2014; 35(1): 102–7 [Chinese].
+
+6. Manie F, Rehbach C. Study of a variable sweep wing in sub or transonic flow. 11th international council of the aeronautical sciences; 1979.
+
+7. Oliviu SG, Koreanschi A, Botez RM. A new non-linear vortex lattice method: Applications to wing aerodynamic optimizations. Chin J Aeronaut 2016;29(5):1178–95.
+
+8. Koreanschi A, Gabor OS, Acotto J, et al. Optimization and design of an aircraft’s morphing wing-tip demonstrator for drag reduc- tion at low speed, Part I- Aerodynamic optimization using genetic, bee colony and gradient descent algorithms. Chin J Aeronaut 2017;30(1):149–63.
+
+9. Koreanschi A, Gabor OS, Acotto J, et al. Optimization and design of an aircraft’s morphing wing-tip demonstrator for drag reduc- tion at low speeds, Part II- Experimental validation using Infra- Red transition measurement from wind tunnel tests. Chin J Aeronaut 2017;30(1):170–80.
+
+10. Ren H, Zhiping Q. Transient aeroelastic responses and flutter analysis of a variable-span wing during the morphing process. Chin J Aeronaut 2013;26(6):81–9.
+
+11. Zhang GP, Duan CY. Study on aerodynamic characteristics of tactical missile with morphing wings. Flight Dynam 2011; 29(1): 54–8 [Chinese].
+
+12. Chen Q, Yin WL, Bai P. System design and characteristics analysis of a variable-sweep and variable-span wing-body. Acta Aeronaut Astronaut Sin 2010; 31(3): 506–13 [Chinese].
+
+13. Chen YK, Dong YF, Peng JJ. Analysis for drag characteristic of variable swept wing-body. Flight Dynam 2014; 32(4): 308–11 [Chinese].
+
+14. Huang MH, Tang QG, Zhang QB, et al. Morphing swept wing tactical missile conceptual design and optimization trajectory of hypersonic vehicle. Tact Missile Technol 2016; 5(2): 10–24 [Chinese]. (1) The computational cost can be greatly reduced by using the MFK model in comparison with traditional trajec- tory planning by reducing 86% of the computing time. (2) The morphing of the aircraft along the trajectory is monotonous in each task stage, which demonstrates that morphing rules are suitable for structure organization. (3) The proposed method provides a potentially-efficient way for studying morphing rules along trajectory of morphing aircraft.
+
+15. Yong EM, Chen L, Tang GJ. Review for numerical methods of spacecraft trajectory optimization. J Astronaut 2008; 29(2): 397– 406 [Chinese].
+
+16. Guo X, Zhu M. Direct trajectory optimization based on a mapped Chebyshev pseudospectral method. Chin J Aeronaut 2013;26 (2):401–12.
+
+17. Huntington GT, Benson D, Rao AV. A comparison of accuracy and computational efficiency of three pseudospectral methods. AIAA guidance, navigation and control conference and exhibit. Reston: AIAA; 2007.
+
+18. Huang GQ, Lu YP, Nan Y. A survey of numerical algorithms for trajectory optimization of flight vehicles. Sci. China Technol. Sci. 2012;55(9):2538–60.
+
+19. Nan Y, Chen SL, Yan H. A common numerical calculation method of optimizing the trajectories of space vehicles. Flight Dynam 1996; 14(3): 20–6 [Chinese].
+
+20. Kim JJ, Lee JJ. Trajectory optimization by particle swarm optimization in motion planning. Adv Intell Syst Comput 2015;1089:299–305.
+
+21. Li WM, Sun RS, Wu JJ. Optimization of glide trajectory for aerial bomb with morphing swept wing. J Ballist 2012; 24(2): 6–9 [Chinese].
+
+22. Zhao R, Sun RS, Shen JP. The optimization design of glide trajectory for guide bomb with morphing swept wings. J Aerosp Control 2014; 32(1):16–20 [Chinese].
+
+23. Guo J, Tang SJ, Li X. Optimum design of the project trajectory based on an improved particle swarm optimization. Trans Beijing Inst Technol 2010; 30(6):682–92 [Chinese].
+
+24. Zhao J, Zhou R. Reentry trajectory optimization for hypersonic vehicle satisfying complex constraints. Chin J Aeronaut 2013;26 (6):1544–53.
+
+25. Darby CL, Hager WW, Rao AV. Direct trajectory optimization using a variable low-order adaptive pseudospectral method. J Spacecr Rockets 2011;48(3):433–45.
+
+26. Zhao R, Sun RS. Method rapid trajectory optimization for missile with morphing swept wings. J Sichuan Ordnance 2014; (3): 41–4 [Chinese].
+
+27. NASA. Aircrew weapons delivery manual (nonnuclear) B-52/ AGM-158 JASSM. 3rd ed. Washington, D.C.: NASA; 2006. p. 3– 7.
+
+28. Song C, Yang X, Song W. Multi-infill strategy for Kriging models used in variable fidelity optimization. Chin J Aeronaut 2018;31 (3):448–56.
+
+29. Toal J. Some considerations regarding the use of multi-fidelity Kriging in the construction of surrogate models. J Struct Multidiscip Optim 2015;51(6):1223–45.
+
+30. Zahir MK, Zhenghong G. Variable-fidelity optimization with design space reduction. Chin J Aeronaut 2013;26(4):14–22.
+
+31. Huang L, Gao Z, Zhang D. Research on multi-fidelity aerody- namic optimization methods. Chin J Aeronaut 2013;26(2):279–86.
+
+32. Hu J, Zhou Q, Jiang P, et al. An adaptive sampling method for variable-fidelity surrogate models using improved hierarchical kriging. Eng Optim 2017;3:1–19.
+
+33. Yin S, Zhu M, Liang H. Multi-disciplinary design optimization with variable complexity modeling for a stratosphere airship. Chin J Aeronaut 2019;32(5):191–202.
+
+34. Koziel S, Tesfahunegn Y, Leifsson L. Variable-fidelity CFD models and co-Kriging for expedited multi-objective aerodynamic design optimization. Eng Comput 2016;33(8):2320–38.
+
+35. Le G. Multi-fidelity Gaussian process regression for computer experiments [dissertation]. Autres: Universite´ Paris-Diderot - Paris VII; 2013.
+
+36. Han ZH. Kriging surrugate model and its application to design optimization: a review of recent progress. Acta Aeronaut Astro- naut Sin 2016; 37(11): 3197–225 [Chinese].
+
+37. Han ZH, Xu CZ, Zhang L, et al. Efficient aerodynamic shape optimization using variable-fidelity surrogate models and multi- level computational grids. Chin J Aeronaut 2020;33(1):31–47.
+
+38. Zhang KS, Han ZH, Gao ZJ, et al. Constraint aggregation for large number of constraints in wing surrogate-based optimization. Struct Multidiscip Optim 2019;59(2):421–38.
+
+39. Li CN, Zhang YK, LI C N, et al. An efficient adaptive global optimization method suitable for aerodynamic optimization. Acta Aeronaut Astronaut Sin 2020; 41(3):623352 [Chinese].
+
+40. Krige DG. A statistical approach to some basic mine valuation problems on the witwatersrand. J South Afr Inst Min Metall 1951;52(6):119–39.
+
+41. Li CN. Adaptive optimization methodology based on Kriging modeling and a trust region method. Chin J Aeronaut 2019;32 (2):281–95.
+
+42. Bouhlel MA, Hwang JT, Bartoli N, et al. A Python surrogate modeling framework with derivatives. Adv Eng Softw 2019;3 (5):965–78.

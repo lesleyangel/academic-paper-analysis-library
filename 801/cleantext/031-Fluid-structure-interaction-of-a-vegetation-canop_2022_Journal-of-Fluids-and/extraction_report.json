@@ -1,0 +1,3180 @@
+{
+  "body_chars": 79247,
+  "body_words_estimate": 12985,
+  "noise_flags": [],
+  "engines": {
+    "pymupdf": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 312,
+      "pages": 23,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "docling": {
+      "available": false,
+      "succeeded": false,
+      "error": "No module named 'docling'",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "grobid": {
+      "available": false,
+      "succeeded": false,
+      "error": "No GROBID URL provided.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "mineru": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 98350,
+      "references": 0,
+      "tables": 0
+    },
+    "marker": {
+      "available": false,
+      "succeeded": false,
+      "error": "Marker CLI not found.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    }
+  },
+  "chosen_sources": {
+    "abstract": "",
+    "body": "mineru",
+    "references": "pymupdf_bbox_or_body_tail"
+  },
+  "audit": {
+    "quality_score": 1.0,
+    "needs_manual_review": false,
+    "issues_before_repair": [
+      {
+        "code": "references_inside_body",
+        "severity": "high",
+        "message": "Back matter heading was detected inside clean body."
+      },
+      {
+        "code": "publisher_noise",
+        "severity": "medium",
+        "message": "Publisher header/footer boilerplate remains in body text."
+      },
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      }
+    ],
+    "issues_after_repair": [
+      {
+        "code": "low_confidence_formulas",
+        "severity": "medium",
+        "message": "4 formula(s) need manual review."
+      }
+    ],
+    "repairs_applied": [
+      {
+        "action": "strip_back_matter",
+        "message": "Removed back matter from clean body and parsed reference-like tail entries.",
+        "after": 88553
+      },
+      {
+        "action": "trim_front_matter_to_main_body",
+        "message": "Trimmed title/authors/abstract/front matter before main body heading: ## 1. Introduction",
+        "before": 88553,
+        "after": 86406
+      },
+      {
+        "action": "move_figure_captions",
+        "message": "Moved figure captions out of clean body.",
+        "after": 14
+      },
+      {
+        "action": "move_table_captions",
+        "message": "Moved table captions out of clean body.",
+        "after": 1
+      },
+      {
+        "action": "move_table_like_blocks",
+        "message": "Moved table-like blocks out of clean body.",
+        "after": 1
+      },
+      {
+        "action": "normalize_inline_body_formulas",
+        "message": "Normalized inline/display math spans inside clean body.",
+        "after": 128
+      },
+      {
+        "action": "drop_false_positive_equations",
+        "message": "Dropped equation candidates that looked like prose/table labels rather than formulas.",
+        "after": 40
+      },
+      {
+        "action": "normalize_formula_text",
+        "message": "Normalized formula spacing, common OCR symbols, and simple LaTeX temperature/unit forms.",
+        "after": 134
+      }
+    ],
+    "candidate_scores": {
+      "mineru": {
+        "score": 1.0,
+        "chars": 80302,
+        "words_estimate": 13025,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 4,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": false,
+        "garbage_ratio": 0.0008,
+        "section_heading_count": 14
+      },
+      "pymupdf_bbox": {
+        "score": 0.75,
+        "chars": 72208,
+        "words_estimate": 11794,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 5,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": true,
+        "garbage_ratio": 0.0018,
+        "section_heading_count": 16
+      }
+    },
+    "final_body_metrics": {
+      "score": 1.0,
+      "chars": 79247,
+      "words_estimate": 12985,
+      "references_inside_body": false,
+      "publisher_noise_hits": 0,
+      "mojibake_hits": 0,
+      "caption_paragraph_starts": 4,
+      "table_like_paragraphs": 0,
+      "duplicate_paragraphs": 0,
+      "starts_with_continuation_fragment": false,
+      "garbage_ratio": 0.0008,
+      "section_heading_count": 14
+    },
+    "body_purification": {
+      "main_body_start_found": true,
+      "main_body_start_heading": "## 1. Introduction",
+      "front_matter_removed_chars": 2147,
+      "starts_with": "## 1. Introduction",
+      "section_sequence": {
+        "top_level_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "missing_top_level_numbers": [],
+        "non_monotonic": false,
+        "headings": [
+          "## 1. Introduction",
+          "## 2. Mathematical model",
+          "## 2.1. Lattice Boltzmann method",
+          "## 2.2. Finite element method",
+          "## 2.3. Immersed boundary method",
+          "## 2.4. fluid–structure coupling",
+          "## 3. Numerical settings and parameter space",
+          "## 4. Results and discussion",
+          "## 4.1. Dynamic behaviors of vegetation canopy",
+          "## 4.2. Vortical structures in different vegetation behaviors",
+          "## 4.3. The influence of canopy density on mixing layer instability",
+          "## 4.4. Lock in effect",
+          "## 4.5. Discussion on the effects of other parameters",
+          "## 5. Conclusions"
+        ]
+      }
+    },
+    "formula_audit": {
+      "input_equations_count": 55,
+      "output_equations_count": 169,
+      "inline_formula_count": 154,
+      "dropped_false_positive_count": 40,
+      "low_confidence_count": 4,
+      "formulas": [
+        {
+          "id": "equation_002",
+          "source": "equations",
+          "meta": "[page 3, bbox (63.46, 410.35, 505.9, 432.93)]",
+          "original": "∂f ∂t + e · ∇xf + F · ∇ef = Ωf (1)",
+          "normalized": "∂f ∂t + e · ∇xf + F · ∇ef = Ωf (1)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_003",
+          "source": "equations",
+          "meta": "[page 3, bbox (62.27, 482.75, 91.99, 498.47)]",
+          "original": "Ωf = 1",
+          "normalized": "Ωf = 1",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_004",
+          "source": "equations",
+          "meta": "[page 3, bbox (87.0, 483.74, 133.73, 504.7)]",
+          "original": "τ ( f (eq) −f )",
+          "normalized": "τ ( f (eq) -f )",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_006",
+          "source": "equations",
+          "meta": "[page 3, bbox (62.27, 533.91, 109.7, 549.84)]",
+          "original": "υ = ( τ −1",
+          "normalized": "υ = ( τ -1",
+          "confidence": 0.67,
+          "needs_review": true,
+          "issues": [
+            "unbalanced_delimiters"
+          ],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_008",
+          "source": "equations",
+          "meta": "[page 3, bbox (62.27, 603.37, 106.52, 616.27)]",
+          "original": "f (eq) α = ρwα",
+          "normalized": "f (eq) α = ρwα",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_010",
+          "source": "equations",
+          "meta": "[page 3, bbox (62.27, 672.27, 89.76, 689.05)]",
+          "original": "Fα = (",
+          "normalized": "Fα = (",
+          "confidence": 0.67,
+          "needs_review": true,
+          "issues": [
+            "unbalanced_delimiters"
+          ],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_012",
+          "source": "equations",
+          "meta": "[page 4, bbox (62.27, 70.32, 93.97, 81.91)]",
+          "original": "ρ = ∑",
+          "normalized": "ρ = ∑",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_014",
+          "source": "equations",
+          "meta": "[page 4, bbox (128.39, 95.77, 192.7, 117.27)]",
+          "original": "2 f δt = ρv∗+ 1",
+          "normalized": "2 f δt = ρv∗+ 1",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_015",
+          "source": "equations",
+          "meta": "[page 4, bbox (62.27, 99.11, 98.53, 110.71)]",
+          "original": "ρv = ∑",
+          "normalized": "ρv = ∑",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_017",
+          "source": "equations",
+          "meta": "[page 4, bbox (62.27, 206.83, 505.9, 220.49)]",
+          "original": "M ¨U (t) + F int (U) −F ext (t) = 0 (8)",
+          "normalized": "M ¨U (t) + F int (U) -F ext (t) = 0 (8)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_020",
+          "source": "equations",
+          "meta": "[page 4, bbox (142.49, 474.55, 505.9, 497.22)]",
+          "original": "Ω φ(x)˜δ(x −X)∆x∆y∆z (11)",
+          "normalized": "Ω φ(x)˜δ(x -X)∆x∆y∆z (11)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_021",
+          "source": "equations",
+          "meta": "[page 4, bbox (142.18, 501.2, 505.9, 523.88)]",
+          "original": "Γ Φ(X)˜δ(x −X)ϵ∆q∆r∆s (12)",
+          "normalized": "Γ Φ(X)˜δ(x -X)ϵ∆q∆r∆s (12)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_022",
+          "source": "equations",
+          "meta": "[page 4, bbox (62.27, 598.33, 505.9, 608.51)]",
+          "original": "v (X, t) = Π (v (x, t)) (13)",
+          "normalized": "v (X, t) = Π (v (x, t)) (13)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_023",
+          "source": "equations",
+          "meta": "[page 4, bbox (62.27, 642.97, 505.9, 653.16)]",
+          "original": "V (X, t) = v (X, t) (14)",
+          "normalized": "V (X, t) = v (X, t) (14)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_025",
+          "source": "equations",
+          "meta": "[page 4, bbox (62.27, 674.97, 215.09, 697.79)]",
+          "original": "Π[ρ(x, t)]V(X, t) = Π [ ρv∗(x, t)] + ∆t",
+          "normalized": "Π[ρ(x, t)]V(X, t) = Π [ ρv∗(x, t)] + ∆t",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_028",
+          "source": "equations",
+          "meta": "[page 5, bbox (62.27, 202.63, 147.79, 222.92)]",
+          "original": "f (x, t) = Ψ [ f ′ (X, t) ]",
+          "normalized": "f (x, t) = Ψ [ f ′ (X, t) ]",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_031",
+          "source": "equations",
+          "meta": "[page 5, bbox (62.27, 353.38, 505.9, 367.41)]",
+          "original": "˜U = ωU + (1 −ω) ˜U k−1 (17)",
+          "normalized": "˜U = ωU + (1 -ω) ˜U k-1 (17)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_032",
+          "source": "equations",
+          "meta": "[page 5, bbox (62.27, 421.87, 185.57, 442.67)]",
+          "original": "ωk = −ωk−1 ( rk−1)T ( rk −rk−1)",
+          "normalized": "ωk = -ωk-1 ( rk-1)T ( rk -rk-1)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_033",
+          "source": "equations",
+          "meta": "[page 5, bbox (125.32, 434.3, 505.9, 456.54)]",
+          "original": "⏐⏐rk −rk−1⏐⏐2 (18)",
+          "normalized": "⏐⏐rk -rk-1⏐⏐2 (18)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_034",
+          "source": "equations",
+          "meta": "[page 5, bbox (62.27, 473.8, 505.9, 487.75)]",
+          "original": "rk = U k −˜U k−1 (19)",
+          "normalized": "rk = U k -˜U k-1 (19)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_035",
+          "source": "equations",
+          "meta": "[page 5, bbox (62.27, 645.76, 155.33, 662.45)]",
+          "original": "u(0, y) = 1.5uy(2H −y)",
+          "normalized": "u(0, y) = 1.5uy(2H -y)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_037",
+          "source": "equations",
+          "meta": "[page 6, bbox (62.27, 208.32, 96.85, 224.25)]",
+          "original": "M = ρsb",
+          "normalized": "M = ρsb",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_038",
+          "source": "equations",
+          "meta": "[page 6, bbox (84.02, 209.31, 147.21, 232.22)]",
+          "original": "ρf h, K = EI",
+          "normalized": "ρf h, K = EI",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_040",
+          "source": "equations",
+          "meta": "[page 6, bbox (62.27, 378.0, 505.9, 389.52)]",
+          "original": "Ki = 5 × 10−3+(2(i−1)/9), i = 0 ∼11 (22)",
+          "normalized": "Ki = 5 \\times 10-3+(2(i-1)/9), i = 0 ∼11 (22)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_041",
+          "source": "equations",
+          "meta": "[page 6, bbox (62.27, 433.52, 505.9, 443.64)]",
+          "original": "Φ = b/∆S (23)",
+          "normalized": "Φ = b/∆S (23)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_042",
+          "source": "equations",
+          "meta": "[page 6, bbox (62.27, 475.78, 505.9, 487.29)]",
+          "original": "Φj = j × 10−2, j = 0 ∼10 (24)",
+          "normalized": "Φj = j \\times 10-2, j = 0 ∼10 (24)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_044",
+          "source": "equations",
+          "meta": "[page 16, bbox (88.03, 601.71, 122.08, 624.93)]",
+          "original": "u = k2 i 2π",
+          "normalized": "u = k2 i 2π",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_045",
+          "source": "equations",
+          "meta": "[page 16, bbox (62.27, 603.34, 96.76, 620.18)]",
+          "original": "f v ni = fnih",
+          "normalized": "f v ni = fnih",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_046",
+          "source": "equations",
+          "meta": "[page 16, bbox (133.33, 608.16, 505.9, 624.93)]",
+          "original": "M , with cos ki cosh ki + 1 = 0 (25)",
+          "normalized": "M , with cos ki cosh ki + 1 = 0 (25)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_048",
+          "source": "equations",
+          "meta": "[page 16, bbox (62.27, 669.69, 94.38, 692.9)]",
+          "original": "f f ni = k2 i 2π",
+          "normalized": "f f ni = k2 i 2π",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_050",
+          "source": "equations",
+          "meta": "[page 17, bbox (62.27, 326.71, 96.3, 337.62)]",
+          "original": "fKH = Stn",
+          "normalized": "fKH = Stn",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_051",
+          "source": "equations",
+          "meta": "[page 17, bbox (62.27, 348.58, 101.07, 366.66)]",
+          "original": "θ = ∫+∞",
+          "normalized": "θ = ∫+∞",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": []
+        },
+        {
+          "id": "equation_054",
+          "source": "equations",
+          "meta": "[page 19, bbox (62.27, 620.08, 505.9, 637.28)]",
+          "original": "FB = ( ρf −ρs ) ghb = ρf gh (b −Mh) (29)",
+          "normalized": "FB = ( ρf -ρs ) ghb = ρf gh (b -Mh) (29)",
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "repairs": [
+            "unicode_math_symbol_normalized"
+          ]
+        },
+        {
+          "id": "equation_055",
+          "source": "equations",
+          "meta": "[page 21, bbox (107.17, 416.91, 437.09, 425.64)]",
+          "original": "Fig. A.1. Results of the grid independence test for different grid resolutions (NIBM = 30, 40, 50 and 60).",
+          "normalized": "Fig. A.1. Results of the grid independence test for different grid resolutions (NIBM = 30, 40, 50 and 60)",
+          "confidence": 0.57,
+          "needs_review": true,
+          "issues": [
+            "text_heavy"
+          ],
+          "drop": false,
+          "repairs": [
+            "unit_expression_repaired"
+          ]
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\frac { \\partial f } { \\partial t } + \\pmb { e } \\cdot \\nabla _ { \\pmb { x } } f + \\pmb { F } \\cdot \\nabla _ { \\pmb { e } } f = \\Omega _ { f }\\tag{1}\n",
+          "normalized": "\\frac {\\partial f} {\\partial t} + \\pmb {e} \\cdot \\nabla _ {\\pmb {x}} f + \\pmb {F} \\cdot \\nabla _ {\\pmb {e}} f = \\Omega _ {f}\\tag{1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_002"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varOmega _ { f }",
+          "normalized": "\\varOmega _ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_004"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varOmega _ { f }",
+          "normalized": "\\varOmega _ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_005"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\varOmega _ { f } = \\frac { 1 } { \\tau } \\left( f ^ { ( e q ) } - f \\right) \\tag{2}\n",
+          "normalized": "\\varOmega _ {f} = \\frac {1} {\\tau} \\left( f ^ {( e q )} - f \\right) \\tag{2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_006"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f ^ { ( e q ) }",
+          "normalized": "f ^ {( e q )}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_007"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\upsilon _ { \\star }",
+          "normalized": "\\upsilon _ {\\star}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_009"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\upsilon = \\left( \\tau - \\frac { 1 } { 2 } \\right) c _ { s } ^ { 2 }\\tag{3}\n",
+          "normalized": "\\upsilon = \\left( \\tau - \\frac {1} {2} \\right) c _ {s} ^ {2}\\tag{3}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_010"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "c _ { s }",
+          "normalized": "c _ {s}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_011"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\alpha ,",
+          "normalized": "\\alpha ,",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_012"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f ^ { ( e q ) }",
+          "normalized": "f ^ {( e q )}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_013"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nf _ { \\alpha } ^ { ( e q ) } = \\rho w _ { \\alpha } \\left[ 1 + \\frac { { \\pmb e } _ { \\alpha } \\cdot { \\pmb v } } { c _ { s } ^ { 2 } } + \\frac { ( { \\pmb e } _ { \\alpha } \\cdot { \\pmb v } ) ^ { 2 } } { 2 c _ { s } ^ { 4 } } - \\frac { { \\pmb v } ^ { 2 } } { 2 c _ { s } ^ { 2 } } \\right]\\tag{4}\n",
+          "normalized": "f _ {\\alpha} ^ {( e q )} = \\rho w _ {\\alpha} \\left[ 1 + \\frac {{\\pmb e} _ {\\alpha} \\cdot {\\pmb v}} {c _ {s} ^ {2}} + \\frac {( {\\pmb e} _ {\\alpha} \\cdot {\\pmb v} ) ^ {2}} {2 c _ {s} ^ {4}} - \\frac {{\\pmb v} ^ {2}} {2 c _ {s} ^ {2}} \\right]\\tag{4}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_014"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho",
+          "normalized": "\\rho",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_015"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\pmb { e } _ { \\alpha }",
+          "normalized": "\\pmb {e} _ {\\alpha}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_016"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "w _ { \\alpha }",
+          "normalized": "w _ {\\alpha}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_017"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nF _ { \\alpha } = \\left( 1 - \\frac { 1 } { 2 \\tau } \\right) w _ { \\alpha } \\left[ \\frac { { \\pmb e } _ { \\alpha } - { \\pmb v } } { c _ { s } ^ { 2 } } + \\frac { { \\pmb e } _ { \\alpha } \\cdot { \\pmb v } } { c _ { s } ^ { 4 } } { \\pmb e } _ { \\alpha } \\right] \\cdot { \\pmb f }\\tag{5}\n",
+          "normalized": "F _ {\\alpha} = \\left( 1 - \\frac {1} {2 \\tau} \\right) w _ {\\alpha} \\left[ \\frac {{\\pmb e} _ {\\alpha} - {\\pmb v}} {c _ {s} ^ {2}} + \\frac {{\\pmb e} _ {\\alpha} \\cdot {\\pmb v}} {c _ {s} ^ {4}} {\\pmb e} _ {\\alpha} \\right] \\cdot {\\pmb f}\\tag{5}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_018"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\begin{array} { l } { \\displaystyle \\rho = \\sum _ { \\alpha } f _ { \\alpha } } \\\\ { \\displaystyle \\rho \\pmb { v } = \\sum _ { \\alpha } \\pmb { e } _ { \\alpha } f _ { \\alpha } + \\frac { 1 } { 2 } \\pmb { f } \\delta t = \\rho \\pmb { v } ^ { \\ast } + \\frac { 1 } { 2 } \\pmb { f } \\delta t } \\end{array}\\tag{6}\n",
+          "normalized": "\\begin{array} {l} {\\displaystyle \\rho = \\sum _ {\\alpha} f _ {\\alpha}} \\\\ {\\displaystyle \\rho \\pmb {v} = \\sum _ {\\alpha} \\pmb {e} _ {\\alpha} f _ {\\alpha} + \\frac {1} {2} \\pmb {f} \\delta t = \\rho \\pmb {v} ^ {\\ast} + \\frac {1} {2} \\pmb {f} \\delta t} \\end{array}\\tag{6}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_019"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "v ^ { * }",
+          "normalized": "v ^ {*}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_020"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n{ \\pmb M } { \\ddot { \\pmb U } } \\left( t \\right) + { \\pmb F } _ { i n t } \\left( { \\pmb U } \\right) - { \\pmb F } _ { e x t } \\left( t \\right) = 0\\tag{8}\n",
+          "normalized": "{\\pmb M} {\\ddot {\\pmb U}} \\left( t \\right) + {\\pmb F} _ {i n t} \\left( {\\pmb U} \\right) - {\\pmb F} _ {e x t} \\left( t \\right) = 0\\tag{8}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_021"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "F _ { i n t }",
+          "normalized": "F _ {i n t}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_023"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\pmb { F } _ { e x t }",
+          "normalized": "\\pmb {F} _ {e x t}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_024"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\pmb { F } _ { e x t }",
+          "normalized": "\\pmb {F} _ {e x t}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_025"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\boldsymbol { F } _ { e x t } = - \\sum _ { m } \\int _ { V _ { m } } \\boldsymbol { N } ^ { T } \\mathbf { f } ^ { \\prime } d V\\tag{9}\n",
+          "normalized": "\\boldsymbol {F} _ {e x t} = - \\sum _ {m} \\int _ {V _ {m}} \\boldsymbol {N} ^ {T} \\mathbf {f} ^ {\\prime} d V\\tag{9}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_026"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "V _ { m }",
+          "normalized": "V _ {m}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_027"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\pmb { f } ^ { \\prime }",
+          "normalized": "\\pmb {f} ^ {\\prime}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_028"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "- \\beta",
+          "normalized": "- \\beta",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_029"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\left[ { \\pmb { K } } _ { T , t + \\Delta t } ^ { i } + c _ { 0 } { \\pmb { M } } \\right] \\Delta { \\pmb { U } } ^ { i + 1 } = { \\pmb { F } } _ { e x t , t + \\Delta t } - { \\pmb { F } } _ { i n t , t + \\Delta t } ^ { i } - { \\pmb { M } } \\left[ c _ { 0 } \\left( { \\pmb { U } } _ { t + \\Delta t } ^ { i } - { \\pmb { U } } _ { t } \\right) - c _ { 1 } { \\dot { \\pmb { U } } } _ { t } - c _ { 2 } { \\ddot { \\pmb { U } } } _ { t } \\right] .\\tag{10}\n",
+          "normalized": "\\left[ {\\pmb {K}} _ {T , t + \\Delta t} ^ {i} + c _ {0} {\\pmb {M}} \\right] \\Delta {\\pmb {U}} ^ {i + 1} = {\\pmb {F}} _ {e x t , t + \\Delta t} - {\\pmb {F}} _ {i n t , t + \\Delta t} ^ {i} - {\\pmb {M}} \\left[ c _ {0} \\left( {\\pmb {U}} _ {t + \\Delta t} ^ {i} - {\\pmb {U}} _ {t} \\right) - c _ {1} {\\dot {\\pmb {U}}} _ {t} - c _ {2} {\\ddot {\\pmb {U}}} _ {t} \\right] .\\tag{10}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_030"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "- \\beta",
+          "normalized": "- \\beta",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_032"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "{ \\pmb K } _ { T }",
+          "normalized": "{\\pmb K} _ {T}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_033"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "c _ { 0 } \\sim c _ { 2 }",
+          "normalized": "c _ {0} \\sim c _ {2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_034"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "- \\beta",
+          "normalized": "- \\beta",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_035"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\psi",
+          "normalized": "\\psi",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_036"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\begin{array} { l } { { \\displaystyle \\phi ( { \\pmb X } ) = \\pi [ \\phi ( { \\pmb x } ) ] = \\sum _ { \\varOmega } \\phi ( { \\pmb x } ) \\tilde { \\delta } ( { \\pmb x } - { \\pmb X } ) \\Delta x \\varDelta y \\varDelta z } } \\\\ { { \\displaystyle \\phi ( { \\pmb x } ) = \\varPsi [ \\phi ( { \\pmb X } ) ] = \\sum _ { \\varGamma } \\phi ( { \\pmb X } ) \\tilde { \\delta } ( { \\pmb x } - { \\pmb X } ) \\epsilon \\varDelta q \\varDelta r \\varDelta s } } \\end{array}\\tag{11}\n",
+          "normalized": "\\begin{array} {l} {{\\displaystyle \\phi ( {\\pmb X} ) = \\pi [ \\phi ( {\\pmb x} ) ] = \\sum _ {\\varOmega} \\phi ( {\\pmb x} ) \\tilde {\\delta} ( {\\pmb x} - {\\pmb X} ) \\Delta x \\varDelta y \\varDelta z}} \\\\ {{\\displaystyle \\phi ( {\\pmb x} ) = \\varPsi [ \\phi ( {\\pmb X} ) ] = \\sum _ {\\varGamma} \\phi ( {\\pmb X} ) \\tilde {\\delta} ( {\\pmb x} - {\\pmb X} ) \\epsilon \\varDelta q \\varDelta r \\varDelta s}} \\end{array}\\tag{11}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_037"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\phi",
+          "normalized": "\\phi",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_038"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\pmb { x } = ( x , y , z )",
+          "normalized": "\\pmb {x} = ( x , y , z )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_040"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\pmb { X } = ( q , r , s )",
+          "normalized": "\\pmb {X} = ( q , r , s )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_041"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n{ \\pmb v } \\left( { \\pmb X } , t \\right) = \\varPi \\left( { \\pmb v } \\left( { \\pmb x } , t \\right) \\right)\\tag{13}\n",
+          "normalized": "{\\pmb v} \\left( {\\pmb X} , t \\right) = \\varPi \\left( {\\pmb v} \\left( {\\pmb x} , t \\right) \\right)\\tag{13}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_043"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\pmb { V } \\left( \\pmb { X } , t \\right) = \\pmb { v } \\left( \\pmb { X } , t \\right)\\tag{14}\n",
+          "normalized": "\\pmb {V} \\left( \\pmb {X} , t \\right) = \\pmb {v} \\left( \\pmb {X} , t \\right)\\tag{14}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_044"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\pi [ \\rho ( { \\pmb x } , t ) ] { \\pmb V } ( { \\pmb X } , t ) = \\pi \\left[ \\rho { \\pmb v } ^ { \\ast } ( { \\pmb x } , t ) \\right] + \\frac { \\Delta t } { 2 } { \\pmb f } ^ { \\prime } ( { \\pmb X } , t )\\tag{15}\n",
+          "normalized": "\\pi [ \\rho ( {\\pmb x} , t ) ] {\\pmb V} ( {\\pmb X} , t ) = \\pi \\left[ \\rho {\\pmb v} ^ {\\ast} ( {\\pmb x} , t ) \\right] + \\frac {\\Delta t} {2} {\\pmb f} ^ {\\prime} ( {\\pmb X} , t )\\tag{15}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_045"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\pmb { f } ^ { \\prime }",
+          "normalized": "\\pmb {f} ^ {\\prime}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_046"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n{ \\pmb f } \\left( { \\pmb x } , t \\right) = \\psi \\left[ { \\pmb f } ^ { \\prime } \\left( { \\pmb X } , t \\right) \\right]\\tag{16}\n",
+          "normalized": "{\\pmb f} \\left( {\\pmb x} , t \\right) = \\psi \\left[ {\\pmb f} ^ {\\prime} \\left( {\\pmb X} , t \\right) \\right]\\tag{16}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_047"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\tilde { \\pmb { U } } = \\omega \\pmb { U } + ( 1 - \\omega ) \\tilde { \\pmb { U } } ^ { k - 1 }\\tag{17}\n",
+          "normalized": "\\tilde {\\pmb {U}} = \\omega \\pmb {U} + ( 1 - \\omega ) \\tilde {\\pmb {U}} ^ {k - 1}\\tag{17}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_048"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\omega",
+          "normalized": "\\omega",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_049"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\tilde { \\pmb { U } } ^ { k - 1 }",
+          "normalized": "\\tilde {\\pmb {U}} ^ {k - 1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_051"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varDelta ^ { 2 }",
+          "normalized": "\\varDelta ^ {2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_052"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n{ \\boldsymbol { \\omega } } ^ { k } = - { \\boldsymbol { \\omega } } ^ { k - 1 } { \\frac { \\left( { \\pmb { r } } ^ { k - 1 } \\right) ^ { T } \\left( { \\pmb { r } } ^ { k } - { \\pmb { r } } ^ { k - 1 } \\right) } { \\left| { \\pmb { r } } ^ { k } - { \\pmb { r } } ^ { k - 1 } \\right| ^ { 2 } } }\\tag{18}\n",
+          "normalized": "{\\boldsymbol {\\omega}} ^ {k} = - {\\boldsymbol {\\omega}} ^ {k - 1} {\\frac {\\left( {\\pmb {r}} ^ {k - 1} \\right) ^ {T} \\left( {\\pmb {r}} ^ {k} - {\\pmb {r}} ^ {k - 1} \\right)} {\\left| {\\pmb {r}} ^ {k} - {\\pmb {r}} ^ {k - 1} \\right| ^ {2}}}\\tag{18}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_053"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "r ^ { k }",
+          "normalized": "r ^ {k}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_054"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\pmb { r } ^ { k } = \\pmb { U } ^ { k } - \\tilde { \\pmb { U } } ^ { k - 1 }\\tag{19}\n",
+          "normalized": "\\pmb {r} ^ {k} = \\pmb {U} ^ {k} - \\tilde {\\pmb {U}} ^ {k - 1}\\tag{19}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_055"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "H = 3 h",
+          "normalized": "H = 3 h",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_056"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "L _ { c } = 6 4 h",
+          "normalized": "L _ {c} = 64 h",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_057"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "L _ { t } = 1 0 4 h",
+          "normalized": "L _ {t} = 104 h",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_058"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nu ( 0 , y ) = 1 . 5 \\overline { { u } } \\frac { y ( 2 H - y ) } { H ^ { 2 } }\\tag{20}\n",
+          "normalized": "u ( 0 , y ) = 1.5 \\overline {{u}} \\frac {y ( 2 H - y )} {H ^ {2}}\\tag{20}",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_059"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nM = \\frac { \\rho _ { s } b } { \\rho _ { f } h } , K = \\frac { E I } { \\rho _ { f } \\overline { { u } } ^ { 2 } h ^ { 3 } }\\tag{21}\n",
+          "normalized": "M = \\frac {\\rho _ {s} b} {\\rho _ {f} h} , K = \\frac {E I} {\\rho _ {f} \\overline {{u}} ^ {2} h ^ {3}}\\tag{21}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_060"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho _ { f }",
+          "normalized": "\\rho _ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_061"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho _ { s }",
+          "normalized": "\\rho _ {s}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_062"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "M = 1 . 0",
+          "normalized": "M = 1.0",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_063"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "M = 1 . 0",
+          "normalized": "M = 1.0",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_064"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho _ { f } = 1 . 2 9 \\mathrm { k g } / \\mathrm { m } ^ { 3 }",
+          "normalized": "\\rho _ {f} = 1.29 \\mathrm{kg} / \\mathrm{m} ^ {3}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_065"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho _ { s } = 6 4 . 5 ~ \\mathrm { k g } / \\mathrm { m } ^ { 3 }",
+          "normalized": "\\rho _ {s} = 64.5 ~ \\mathrm{kg} / \\mathrm{m} ^ {3}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_066"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho _ { s } = 6 5 . 0 ~ \\mathrm { k g } / \\mathrm { m } ^ { 3 }",
+          "normalized": "\\rho _ {s} = 65.0 ~ \\mathrm{kg} / \\mathrm{m} ^ {3}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_067"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "h = 0 . 3",
+          "normalized": "h = 0.3",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_068"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "b = 0 . 0 0 6 \\textrm { m }",
+          "normalized": "b = 0.006 \\textrm {m}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_069"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nK i = 5 \\times 1 0 ^ { - 3 + ( 2 ( i - 1 ) / 9 ) } , i = 0 \\sim 1 1\\tag{22}\n",
+          "normalized": "K i = 5 \\times 10 ^ {- 3 + ( 2 ( i - 1 ) / 9 )} , i = 0 \\sim 11\\tag{22}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_072"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\varPhi = b / \\varDelta S\\tag{23}\n",
+          "normalized": "\\varPhi = b / \\varDelta S\\tag{23}",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_073"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\phi j = j \\times 1 0 ^ { - 2 } , \\quad j = 0 \\sim 1 0\\tag{24}\n",
+          "normalized": "\\phi j = j \\times 10 ^ {- 2} , \\quad j = 0 \\sim 10\\tag{24}",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_074"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "n = L _ { c } / \\Delta S + 1 = L _ { c } \\phi / b + 1",
+          "normalized": "n = L _ {c} / \\Delta S + 1 = L _ {c} \\phi / b + 1",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_075"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varPhi = 0 \\left( \\mathrm { o r } j = 0 \\right)",
+          "normalized": "\\varPhi = 0 \\left( \\mathrm{or} j = 0 \\right)",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_076"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( \\varDelta x = 0 . 0 2 h )",
+          "normalized": "( \\varDelta x = 0.02 h )",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_077"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\theta _ { t i p } = \\arctan \\left( \\delta _ { x } / \\left( h + \\delta _ { y } \\right) \\right)",
+          "normalized": "\\theta _ {t i p} = \\arctan \\left( \\delta _ {x} / \\left( h + \\delta _ {y} \\right) \\right)",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_078"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\delta _ { x }",
+          "normalized": "\\delta _ {x}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_079"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\delta _ { y }",
+          "normalized": "\\delta _ {y}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_080"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( \\phi 1 \\sim \\phi 9 )",
+          "normalized": "( \\phi 1 \\sim \\phi 9 )",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_083"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "u _ { y }",
+          "normalized": "u _ {y}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_085"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\overline { { C } } _ { D } = \\left( \\operatorname* { m a x } \\left( C _ { D } \\right) + \\operatorname* { m i n } \\left( C _ { D } \\right) \\right) / 2",
+          "normalized": "\\overline {{C}} _ {D} = \\left( \\operatorname* {m a x} \\left( C _ {D} \\right) + \\operatorname* {m i n} \\left( C _ {D} \\right) \\right) / 2",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_086"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "C _ { D } ^ { \\prime } = \\operatorname* { m a x } { ( C _ { D } ) } - \\operatorname* { m i n } { ( C _ { D } ) }",
+          "normalized": "C _ {D} ^ {\\prime} = \\operatorname* {m a x} {( C _ {D} )} - \\operatorname* {m i n} {( C _ {D} )}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_087"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "C _ { D } = F _ { D } / \\left( 1 / 2 \\rho _ { f } \\overline { { u } } ^ { 2 } h \\right)",
+          "normalized": "C _ {D} = F _ {D} / \\left( 1 / 2 \\rho _ {f} \\overline {{u}} ^ {2} h \\right)",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_088"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "F _ { D }",
+          "normalized": "F _ {D}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_089"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "C _ { D } ^ { \\prime }",
+          "normalized": "C _ {D} ^ {\\prime}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_090"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\overline { { C } } _ { D }",
+          "normalized": "\\overline {{C}} _ {D}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_091"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\overline { { \\theta } } _ { t i p } = \\left( \\operatorname* { m a x } \\left( \\theta _ { t i p } \\right) + \\operatorname* { m i n } \\left( \\theta _ { t i p } \\right) \\right) / 2",
+          "normalized": "\\overline {{\\theta}} _ {t i p} = \\left( \\operatorname* {m a x} \\left( \\theta _ {t i p} \\right) + \\operatorname* {m i n} \\left( \\theta _ {t i p} \\right) \\right) / 2",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_092"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\theta _ { t i p } ^ { \\prime } = \\operatorname* { m a x } \\left( \\theta _ { t i p } \\right) - \\operatorname* { m i n } \\left( \\theta _ { t i p } \\right)",
+          "normalized": "\\theta _ {t i p} ^ {\\prime} = \\operatorname* {m a x} \\left( \\theta _ {t i p} \\right) - \\operatorname* {m i n} \\left( \\theta _ {t i p} \\right)",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_093"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( \\phi 1 \\sim \\phi 7 )",
+          "normalized": "( \\phi 1 \\sim \\phi 7 )",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_094"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "u _ { x }",
+          "normalized": "u _ {x}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_095"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\partial u _ { x } / \\partial y",
+          "normalized": "\\partial u _ {x} / \\partial y",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_096"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "x = 2 6 . 0",
+          "normalized": "x = 26.0",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_097"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\partial u _ { x } / \\partial y",
+          "normalized": "\\partial u _ {x} / \\partial y",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_099"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( y = h )",
+          "normalized": "( y = h )",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_100"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "u _ { x }",
+          "normalized": "u _ {x}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_101"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( y = 3 h )",
+          "normalized": "( y = 3 h )",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_102"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\partial u _ { x } / \\partial y",
+          "normalized": "\\partial u _ {x} / \\partial y",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_103"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( y = h )",
+          "normalized": "( y = h )",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_104"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( y = 3 h )",
+          "normalized": "( y = 3 h )",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_105"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\partial u _ { x } / \\partial y",
+          "normalized": "\\partial u _ {x} / \\partial y",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_106"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\partial u _ { x } / \\partial y )",
+          "normalized": "\\partial u _ {x} / \\partial y )",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.67,
+          "needs_review": true,
+          "issues": [
+            "unbalanced_delimiters"
+          ],
+          "drop": false,
+          "id": "body_inline_107"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( \\phi 0 \\sim \\phi 1 0 )",
+          "normalized": "( \\phi 0 \\sim \\phi 10 )",
+          "repairs": [
+            "overspaced_digits_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_108"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nf _ { n i } ^ { v } = \\frac { f _ { n i } h } { \\overline { { u } } } = \\frac { k _ { i } ^ { 2 } } { 2 \\pi } \\sqrt { \\frac { K } { M } } , \\mathrm { w i t h ~ } \\cos k _ { i } \\cosh k _ { i } + 1 = 0\\tag{25}\n",
+          "normalized": "f _ {n i} ^ {v} = \\frac {f _ {n i} h} {\\overline {{u}}} = \\frac {k _ {i} ^ {2}} {2 \\pi} \\sqrt {\\frac {K} {M}} , \\mathrm{with~} \\cos k _ {i} \\cosh k _ {i} + 1 = 0\\tag{25}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_111"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n i }",
+          "normalized": "f _ {n i}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_112"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "k _ { 1 } = 1 . 8 7 5",
+          "normalized": "k _ {1} = 1.875",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_113"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "k _ { 2 } = 4 . 6 9 4",
+          "normalized": "k _ {2} = 4.694",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_114"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nf _ { n i } ^ { f } = \\frac { k _ { i } ^ { 2 } } { 2 \\pi } \\sqrt { \\frac { K } { M + C _ { m } \\cdot \\pi / 4 } } \\nonumber\\tag{26}\n",
+          "normalized": "f _ {n i} ^ {f} = \\frac {k _ {i} ^ {2}} {2 \\pi} \\sqrt {\\frac {K} {M + C _ {m} \\cdot \\pi / 4}} \\nonumber\\tag{26}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_115"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "C _ { m } = 1 . 0",
+          "normalized": "C _ {m} = 1.0",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_116"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "C _ { m }",
+          "normalized": "C _ {m}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_117"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "C _ { m }",
+          "normalized": "C _ {m}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_119"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "C _ { m } = 1 . 0",
+          "normalized": "C _ {m} = 1.0",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_120"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 2 } ^ { v }",
+          "normalized": "f _ {n 2} ^ {v}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_121"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 2 } ^ { f } .",
+          "normalized": "f _ {n 2} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired",
+            "unit_expression_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_122"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { v }",
+          "normalized": "f _ {n 1} ^ {v}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_123"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { f }",
+          "normalized": "f _ {n 1} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_124"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { v }",
+          "normalized": "f _ {n 1} ^ {v}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_125"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { f }",
+          "normalized": "f _ {n 1} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_126"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\begin{array} { l } { f _ { K H } = { S t _ { n } } \\displaystyle \\frac { \\overline { { u } } } { \\theta } } \\\\ { \\displaystyle \\theta = { \\int _ { - \\infty } ^ { + \\infty } { \\left[ \\frac { 1 } { 4 } - \\left( \\frac { u - \\overline { { u } } } { \\varDelta u } \\right) ^ { 2 } \\right] d y } } } \\end{array}\\tag{27}\n",
+          "normalized": "\\begin{array} {l} {f _ {K H} = {S t _ {n}} \\displaystyle \\frac {\\overline {{u}}} {\\theta}} \\\\ {\\displaystyle \\theta = {\\int _ {- \\infty} ^ {+ \\infty} {\\left[ \\frac {1} {4} - \\left( \\frac {u - \\overline {{u}}} {\\varDelta u} \\right) ^ {2} \\right] d y}}} \\end{array}\\tag{27}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_127"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "S t _ { n } = 0 . 0 3 2",
+          "normalized": "S t _ {n} = 0.032",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_128"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "u _ { 1 }",
+          "normalized": "u _ {1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_129"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "u _ { 2 }",
+          "normalized": "u _ {2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_130"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\overline { { u } } \\ : = \\ : \\left( u _ { 1 } + u _ { 2 } \\right) / 2",
+          "normalized": "\\overline {{u}} \\ : = \\ : \\left( u _ {1} + u _ {2} \\right) / 2",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_131"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varDelta u \\ = \\ u _ { 2 } \\ - \\ u _ { 1 }",
+          "normalized": "\\varDelta u \\ = \\ u _ {2} \\ - \\ u _ {1}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_132"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "u _ { 2 }",
+          "normalized": "u _ {2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_133"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { v }",
+          "normalized": "f _ {n 1} ^ {v}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_134"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { v }",
+          "normalized": "f _ {n 1} ^ {v}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_136"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 2 } ^ { v }",
+          "normalized": "f _ {n 2} ^ {v}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_137"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { f }",
+          "normalized": "f _ {n 1} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_138"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 2 } ^ { f } .",
+          "normalized": "f _ {n 2} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired",
+            "unit_expression_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_139"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { f }",
+          "normalized": "f _ {n 1} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_140"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { f }",
+          "normalized": "f _ {n 1} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_141"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { f }",
+          "normalized": "f _ {n 1} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_142"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 1 } ^ { f }",
+          "normalized": "f _ {n 1} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_143"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 2 } ^ { v }",
+          "normalized": "f _ {n 2} ^ {v}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_144"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f _ { n 2 } ^ { f }",
+          "normalized": "f _ {n 2} ^ {f}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_145"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "M = 1 . 0",
+          "normalized": "M = 1.0",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_146"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "0 { \\sim } O ( 1 0 ^ { 5 } )",
+          "normalized": "0 {\\sim} O ( 10 ^ {5} )",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_147"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nF _ { B } = \\left( \\rho _ { f } - \\rho _ { s } \\right) g h b = \\rho _ { f } g h \\left( b - M h \\right)\\tag{29}\n",
+          "normalized": "F _ {B} = \\left( \\rho _ {f} - \\rho _ {s} \\right) g h b = \\rho _ {f} g h \\left( b - M h \\right)\\tag{29}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_148"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "F _ { B }",
+          "normalized": "F _ {B}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_150"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "F _ { B } = 0",
+          "normalized": "F _ {B} = 0",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_151"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "M ^ { * } = b / h = 0 . 0 2",
+          "normalized": "M ^ {*} = b / h = 0.02",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_152"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "M = 1 . 0 > M ^ { * }",
+          "normalized": "M = 1.0 > M ^ {*}",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_153"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( N _ { I B M } = 3 0 , 4 0 , 5 0 \\ \\mathrm { a n d } \\ 6 0 )",
+          "normalized": "( N _ {I B M} = 30 , 40 , 50 \\ \\mathrm{and} \\ 60 )",
+          "repairs": [
+            "overspaced_digits_repaired",
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_154"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "equation_001",
+          "source": "equations",
+          "meta": "[page 1, bbox (38.36, 627.3, 475.4, 656.44)]",
+          "original": "∗Corresponding author. E-mail addresses: fangzhe@mail.nwpu.edu.cn (Z. Fang), leonwood@nwpu.edu.cn (C. Gong), alistair.revell@manchester.ac.uk (A. Revell), joseph.oconnor@manchester.ac.uk (J. O’Connor).",
+          "normalized": "∗Corresponding author. E-mail addresses: fangzhe@mail.nwpu.edu.cn (Z. Fang), leonwood@nwpu.edu.cn (C. Gong), alistair.revell@manchester.ac.uk (A. Revell), joseph.oconnor@manchester.ac.uk (J. O’Connor)",
+          "confidence": 0.0,
+          "needs_review": true,
+          "issues": [
+            "table_or_axis_label",
+            "text_heavy"
+          ],
+          "drop": true,
+          "repairs": [
+            "unit_expression_repaired"
+          ]
+        },
+        {
+          "id": "equation_005",
+          "source": "equations",
+          "meta": "[page 3, bbox (494.97, 489.31, 505.9, 497.6)]",
+          "original": "(2)",
+          "normalized": "(2)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_007",
+          "source": "equations",
+          "meta": "[page 3, bbox (118.91, 539.55, 505.9, 551.74)]",
+          "original": "c2 s (3)",
+          "normalized": "c2 s (3)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_009",
+          "source": "equations",
+          "meta": "[page 3, bbox (494.97, 605.94, 505.9, 614.23)]",
+          "original": "(4)",
+          "normalized": "(4)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_011",
+          "source": "equations",
+          "meta": "[page 3, bbox (214.09, 672.27, 505.9, 688.12)]",
+          "original": "] · f (5)",
+          "normalized": "] · f (5)",
+          "confidence": 0.17,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal",
+            "unbalanced_delimiters"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_013",
+          "source": "equations",
+          "meta": "[page 4, bbox (85.2, 73.54, 505.9, 92.4)]",
+          "original": "α fα (6)",
+          "normalized": "α fα (6)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_016",
+          "source": "equations",
+          "meta": "[page 4, bbox (187.9, 101.34, 505.9, 117.27)]",
+          "original": "2 f δt (7)",
+          "normalized": "2 f δt (7)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_018",
+          "source": "equations",
+          "meta": "[page 4, bbox (112.91, 262.85, 117.96, 272.41)]",
+          "original": "∫",
+          "normalized": "∫",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_019",
+          "source": "equations",
+          "meta": "[page 4, bbox (117.96, 266.07, 505.9, 287.17)]",
+          "original": "Vm N T f ′dV (9)",
+          "normalized": "Vm N T f ′dV (9)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_024",
+          "source": "equations",
+          "meta": "[page 4, bbox (50.31, 661.69, 420.49, 669.97)]",
+          "original": "Substituting Eqs. (13) and (14) into Eq. (7) and converting Eq. (7) into the Lagrangian frame as:",
+          "normalized": "Substituting Eqs. (13) and (14) into Eq. (7) and converting Eq. (7) into the Lagrangian frame as:",
+          "confidence": 0.0,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal",
+            "text_heavy",
+            "equation_reference_sentence"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_026",
+          "source": "equations",
+          "meta": "[page 4, bbox (207.93, 679.22, 505.9, 697.34)]",
+          "original": "2 f ′(X, t) (15)",
+          "normalized": "2 f ′(X, t) (15)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_027",
+          "source": "equations",
+          "meta": "[page 5, bbox (38.36, 176.33, 505.9, 199.09)]",
+          "original": "Solving Eq. (15) to obtain the corrective force density f ′ and then transforming it into the fluid mesh by spreading operator Ψ as:",
+          "normalized": "Solving Eq. (15) to obtain the corrective force density f ′ and then transforming it into the fluid mesh by spreading operator Ψ as:",
+          "confidence": 0.0,
+          "needs_review": true,
+          "issues": [
+            "table_or_axis_label",
+            "no_math_signal",
+            "text_heavy",
+            "equation_reference_sentence"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_029",
+          "source": "equations",
+          "meta": "[page 5, bbox (490.17, 207.54, 505.9, 215.83)]",
+          "original": "(16)",
+          "normalized": "(16)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_030",
+          "source": "equations",
+          "meta": "[page 5, bbox (50.31, 223.12, 422.43, 232.55)]",
+          "original": "Finally, the obtained force density f (x, t) is taken back into the Eq. (7) to update the flow field.",
+          "normalized": "Finally, the obtained force density f (x, t) is taken back into the Eq. (7) to update the flow field",
+          "confidence": 0.0,
+          "needs_review": true,
+          "issues": [
+            "table_or_axis_label",
+            "no_math_signal",
+            "text_heavy",
+            "equation_reference_sentence"
+          ],
+          "drop": true,
+          "repairs": [
+            "unit_expression_repaired"
+          ]
+        },
+        {
+          "id": "equation_036",
+          "source": "equations",
+          "meta": "[page 5, bbox (131.26, 654.07, 505.9, 669.01)]",
+          "original": "H2 (20)",
+          "normalized": "H2 (20)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_039",
+          "source": "equations",
+          "meta": "[page 6, bbox (131.22, 215.88, 505.9, 233.46)]",
+          "original": "ρf u2h3 (21)",
+          "normalized": "ρf u2h3 (21)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_043",
+          "source": "equations",
+          "meta": "[page 16, bbox (124.21, 600.57, 132.14, 610.14)]",
+          "original": "√",
+          "normalized": "√",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_047",
+          "source": "equations",
+          "meta": "[page 16, bbox (96.52, 666.63, 104.45, 676.19)]",
+          "original": "√",
+          "normalized": "√",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_049",
+          "source": "equations",
+          "meta": "[page 16, bbox (490.17, 677.88, 505.9, 686.17)]",
+          "original": "(26)",
+          "normalized": "(26)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_052",
+          "source": "equations",
+          "meta": "[page 17, bbox (490.17, 328.47, 505.9, 336.75)]",
+          "original": "(27)",
+          "normalized": "(27)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "id": "equation_053",
+          "source": "equations",
+          "meta": "[page 17, bbox (175.43, 358.29, 505.9, 366.58)]",
+          "original": "dy (28)",
+          "normalized": "dy (28)",
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "repairs": []
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mathbf { a }",
+          "normalized": "\\mathbf {a}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_001"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "t . f",
+          "normalized": "t . f",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_003"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "f ,",
+          "normalized": "f ,",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_008"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\ddot { \\pmb { U } }",
+          "normalized": "\\ddot {\\pmb {U}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_022"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varDelta t",
+          "normalized": "\\varDelta t",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_031"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varPhi",
+          "normalized": "\\varPhi",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_039"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varGamma",
+          "normalized": "\\varGamma",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_042"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\tilde { \\pmb { U } }",
+          "normalized": "\\tilde {\\pmb {U}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_050"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "O ( 0 . 1 ) ",
+          "normalized": "O ( 0.1 )",
+          "repairs": [
+            "overspaced_numbers_or_operators_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_070"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "K \\ ( K 0 \\sim K 1 1 )",
+          "normalized": "K \\ ( K 0 \\sim K 11 )",
+          "repairs": [
+            "overspaced_digits_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_071"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( K 0 \\sim K 1 1 )",
+          "normalized": "( K 0 \\sim K 11 )",
+          "repairs": [
+            "overspaced_digits_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_081"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( K 2 \\sim K 9 )",
+          "normalized": "( K 2 \\sim K 9 )",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_082"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( K 9 \\sim K 1 0 )",
+          "normalized": "( K 9 \\sim K 10 )",
+          "repairs": [
+            "overspaced_digits_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_084"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\Phi ,",
+          "normalized": "\\Phi ,",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_098"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( K 1 \\sim K 5 )",
+          "normalized": "( K 1 \\sim K 5 )",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_109"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( K 6 \\sim K 1 0 )",
+          "normalized": "( K 6 \\sim K 10 )",
+          "repairs": [
+            "overspaced_digits_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_110"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\varPhi .",
+          "normalized": "\\varPhi",
+          "repairs": [
+            "unit_expression_repaired"
+          ],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_118"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\Phi 7",
+          "normalized": "\\Phi 7",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_135"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "g",
+          "normalized": "g",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_149"
+        }
+      ]
+    },
+    "section_headings_detected": [
+      "## 1. Introduction",
+      "## 2. Mathematical model",
+      "## 2.1. Lattice Boltzmann method",
+      "## 2.2. Finite element method",
+      "## 2.3. Immersed boundary method",
+      "## 2.4. fluid–structure coupling",
+      "## 3. Numerical settings and parameter space",
+      "## 4. Results and discussion",
+      "## 4.1. Dynamic behaviors of vegetation canopy",
+      "## 4.2. Vortical structures in different vegetation behaviors",
+      "## 4.3. The influence of canopy density on mixing layer instability",
+      "## 4.4. Lock in effect",
+      "## 4.5. Discussion on the effects of other parameters",
+      "## 5. Conclusions"
+    ],
+    "final_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    }
+  },
+  "header_footer_repeated_count": 2,
+  "header_footer_removed_count": 47,
+  "tables_count": 1,
+  "figure_captions_count": 18,
+  "table_captions_count": 1,
+  "equations_count": 139,
+  "references_count": 52,
+  "scanned_pdf_detected": false,
+  "ocr_fallback_needed": false
+}

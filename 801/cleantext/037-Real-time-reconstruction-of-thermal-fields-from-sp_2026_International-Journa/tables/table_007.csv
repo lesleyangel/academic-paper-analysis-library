@@ -1,0 +1,9 @@
+Input type,Overall accuracy,Reconstruction accuracy
+$R{2r}$,RMSE/(kW/ $m^{$,Relative error/ %,$R^{2}$,RMSE/(kW/ $m^{,Relative error/ %
+Discrete measurements,0.993,1.274,5.718,0.661,7.605,27.508
+Discrete measurements + flight states,0.993,1.225,4.157,0.853,5.108,15.927
+Discrete measurements + CFD predictions,0.993,1.304,5.110,0.845,5.237,18.042
+Discrete measurements + engineering predictions,0.947,3.408,17.397,0.737,5.956,26.160
+Discrete measurements + flight states + CFD predictions,1.000,0.165,0.638,0.993,1.209,1.967
+Discrete measurements + flight states + engineering predictions,0.997,0.812 1.720,1.602 7.366,0.771,5.430 2.236,18.791 15.339
+Discrete measurements + flight states + engineering predictions + CFD predictions,0.987,0.967

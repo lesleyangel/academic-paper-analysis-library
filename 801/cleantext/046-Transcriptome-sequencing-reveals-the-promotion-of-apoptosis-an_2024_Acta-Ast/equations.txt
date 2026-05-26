@@ -1,0 +1,25 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (40.42, 659.04, 333.57, 690.38)]] * Corresponding author. ** Corresponding author. E-mail addresses: huyanting@nwpu.edu.cn (T. Huyan), jj.gou@nwpu.edu.cn (J.-J. Gou)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 355.13, 716.91)]] https://doi.org/10.1016/j.actaastro.2024.03.056 Received 22 August 2023; Received in revised form 24 February 2024; Accepted 28 March 2024
+
+[confidence=0.67; needs_review; source=body_inline] ( \mathsf{CA} \mathsf{S} ,
+
+[confidence=0.92; source=body_inline] 37~^{\circ}\mathrm{C}
+
+[confidence=0.92; source=body_inline] \mathrm{CO} _ {2}
+
+[confidence=0.67; needs_review; source=body_inline] \mathrm{W} \times 35 \mathrm{H} \mathrm{mm} )
+
+[confidence=0.92; source=body_inline] \mathrm{mm} ^ {2}
+
+[confidence=0.92; source=body_inline] \times 10 ^ {7}
+
+[confidence=0.92; source=body_inline] 2 \times {10} ^ {4}
+
+[confidence=0.92; source=body_inline] \mathsf{a} \mathrm{CO} _ {2}
+
+[confidence=0.92; source=body_inline] 2 ^ {- \Delta \Delta \mathrm{Ct}}
+
+[confidence=0.92; source=body_inline] p < 0.05
+
+[confidence=0.92; source=body_inline] p < 0.01

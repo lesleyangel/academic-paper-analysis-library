@@ -1,0 +1,267 @@
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (42.63, 669.07, 214.3, 690.38)]] * Corresponding author. E-mail address: leonwood@nwpu.edu.cn (C. Gong)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 326.84, 716.91)]] https://doi.org/10.1016/j.ast.2025.110685 Received 23 April 2025; Received in revised form 26 June 2025; Accepted 21 July 2025
+
+[confidence=0.92; source=equations; [page 3, bbox (314.98, 340.19, 339.73, 353.43)]] Y1 = f1
+
+[confidence=0.92; source=equations; [page 3, bbox (314.99, 350.62, 339.73, 363.84)]] Y2 = f2
+
+[confidence=0.92; source=equations; [page 3, bbox (317.37, 363.94, 354.28, 383.0)]] ⋮ Yt = ft(Dt)
+
+[confidence=0.92; source=equations; [page 3, bbox (314.99, 589.24, 352.12, 631.2)]] Y1 = f1(D) Y2 = f2(D) ⋮ Yt = ft(D)
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 652.64, 349.19, 665.67)]] where, D =
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (37.59, 706.94, 218.43, 724.43)]] subsequently constructed. where, Yi = [ Yi 1,Yi 2,⋯,Yi r
+
+[confidence=0.92; source=equations; [page 3, bbox (306.6, 427.15, 560.01, 443.49)]] Di = EiYi = Yi[ pi, ∅c] .. (2)
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (306.6, 449.72, 444.8, 471.39)]] where, Di ∈Rni\timesr; Ei = [ epi 1, epi 2, ⋯, epi ni
+
+[confidence=0.92; source=equations; [page 3, bbox (456.09, 455.03, 560.0, 471.0)]] ∈Rni\timesNi,epi k(k = 1, 2, ⋯, ni) is
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 445.98, 51.94, 459.2)]] Ji =
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 514.23, 291.01, 527.45)]] Yi = JiX. (5)
+
+[confidence=0.92; source=equations; [page 4, bbox (44.9, 562.61, 291.01, 580.97)]] rank ( Yi) \gerank ( Ji) + rank(X) -l . (6)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 608.46, 291.01, 624.8)]] rank ( Yi) = rank ( Ji) \lel. (7)
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 691.12, 291.01, 707.45)]] rank ( Yi) = l. (8)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.59, 187.99, 560.01, 201.02)]] Y = JX. (9)
+
+[confidence=0.92; source=equations; [page 4, bbox (367.2, 218.92, 390.85, 236.36)]] ⎥⎥⎦, J =
+
+[confidence=0.92; source=equations; [page 4, bbox (306.59, 222.4, 347.94, 235.43)]] where, Y =
+
+[confidence=0.92; source=equations; [page 4, bbox (306.6, 471.94, 560.02, 488.3)]] ni \gerank ( Di) = rank ( Yi) . (13)
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 418.25, 560.02, 432.23)]] Ai = φi(D). (17)
+
+[confidence=0.92; source=equations; [page 5, bbox (356.48, 461.45, 560.02, 476.91)]] i + Φi⋅φi(D). (18)
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 463.04, 356.5, 476.26)]] Yi = fi(D) = Y
+
+[confidence=0.92; source=equations; [page 5, bbox (314.99, 526.25, 356.09, 571.76)]] A1ʹ = φ1(D) A2ʹ = φ2(D) ⋮ Atʹ = φt(D)
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 553.92, 88.45, 567.25)]] Yi ≈Φi⋅Ai + Y
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (37.59, 571.16, 134.57, 591.19)]] where, Φi = [ Φi 1, Φi 2, ⋯Φi mi
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (37.59, 588.33, 199.32, 605.83)]] of the first mi POD modes; Ai = [ Ai 1, Ai 2, ⋯, Ai r
+
+[confidence=0.92; source=equations; [page 5, bbox (314.99, 614.75, 340.91, 629.84)]] Y1ʹ = Y
+
+[confidence=0.92; source=equations; [page 5, bbox (277.85, 616.78, 290.0, 629.81)]] i =
+
+[confidence=0.92; source=equations; [page 5, bbox (314.99, 624.33, 340.91, 639.42)]] Y2ʹ = Y
+
+[confidence=0.57; needs_review; source=equations; [page 5, bbox (42.07, 628.98, 291.0, 645.97)]] ∑r j=1Yi j. Generally, the value of mi is much smaller than Ni, and it can
+
+[confidence=0.92; source=equations; [page 5, bbox (314.99, 639.53, 339.72, 658.53)]] ⋮ Ytʹ = Y
+
+[confidence=0.92; source=equations; [page 5, bbox (37.59, 695.67, 58.01, 719.59)]] ei = 1 r
+
+[confidence=0.92; source=equations; [page 5, bbox (306.6, 707.73, 331.04, 722.82)]] Yiʹ = Y
+
+[confidence=0.92; source=equations; [page 5, bbox (69.51, 708.25, 77.83, 716.72)]] j=1
+
+[confidence=0.92; source=equations; [page 6, bbox (38.95, 410.33, 291.01, 433.59)]] findp ming(p) = β1⋅g1(p) + β2⋅g2(p) + ⋯+ βt⋅gt(p). (22)
+
+[confidence=0.92; source=equations; [page 6, bbox (37.59, 449.1, 169.11, 466.2)]] source sensor locations.gi = ∑r j=1‖ Yi j
+
+[confidence=0.92; source=equations; [page 6, bbox (37.59, 500.19, 105.46, 527.82)]] βi = 1 ∑r j=1
+
+[confidence=0.92; source=body_inline] \left\{\mathbf {y} ^ {1} , \mathbf {y} ^ {2} , \cdots , \mathbf {y} ^ {t} \right\}
+
+[confidence=0.92; source=body_inline] \mathbf {x} = [ x _ {1} , x _ {2} , \cdots , x _ {l} ]
+
+[confidence=0.92; source=body_inline] \mathbf {X} \in \mathbb {R} ^ {l \times r} ( r {>} l )
+
+[confidence=0.67; needs_review; source=body_inline] \mathbf {Y} ^ {i} = [ \mathbf {Y} _ {1} ^ {i} , \mathbf {Y} _ {2} ^ {i} , \cdots , \mathbf {Y} _ {r} ^ {i} ] \in \mathbb {R} ^ {N _ {i} \times r} ( i = 1 , 2 , \cdots
+
+[confidence=0.92; source=body_inline] N _ {i}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\mathbf {Y} ^ {1} = f _ {1} \left( \mathbf {D} ^ {1} \right)} \\ {\mathbf {Y} ^ {2} = f _ {2} \left( \mathbf {D} ^ {2} \right)} \\ {\quad \quad \vdots} \\ {\mathbf {Y} ^ {t} = f _ {t} ( \mathbf {D} ^ {t} )} \end{array} \right. .\tag{1}
+
+[confidence=0.92; source=body_inline] f _ {i}
+
+[confidence=0.92; source=body_inline] \mathbf {D} ^ {i}
+
+[confidence=0.92; source=body_inline] \mathbf {Y} ^ {i}
+
+[confidence=0.92; source=body_inline] p ^ {i} ,
+
+[confidence=0.92; source=body_inline] \mathbf {D} ^ {i} = \mathbf {E} ^ {i} \mathbf {Y} ^ {i} = \mathbf {Y} ^ {i} \left[ \mathbf {p} ^ {i} , \boldsymbol {\otimes} ^ {c} \right] . .\tag{2}
+
+[confidence=0.92; source=body_inline] \mathbf {D} ^ {i} \in \mathbb {R} ^ {n _ {i} \times r} ; \mathbf {E} ^ {i} = \left[ \mathbf {e} _ {p _ {1} ^ {i}} , \mathbf {e} _ {p _ {2} ^ {i}} , \cdots , \mathbf {e} _ {p _ {n _ {i}} ^ {i}} \right] ^ {\mathrm{T}} \in \mathbb {R} ^ {n _ {i} \times N _ {i}} , \mathbf {e} _ {p _ {k} ^ {i}} ( k = 1 , 2 , \cdots , n _ {i} )
+
+[confidence=0.92; source=body_inline] p _ {k} ^ {i}
+
+[confidence=0.92; source=body_inline] \pmb {\mathrm{p}} ^ {i} = \left\{p _ {1} ^ {i} , p _ {2} ^ {i} , \cdots , p _ {n _ {i}} ^ {i} \right\}
+
+[confidence=0.92; source=body_inline] 1 \leq p _ {k} ^ {i} \leq N _ {i}
+
+[confidence=0.67; needs_review; source=body_inline] \vert \mathbf {p} ^ {i} \vert = n _ {i} \ ( \vert \mathbf {p} ^ {i} \vert
+
+[confidence=0.67; needs_review; source=body_inline] \mathbf {p} ^ {i} )
+
+[confidence=0.92; source=body_inline] \mathbf {p} ^ {i}
+
+[confidence=0.67; needs_review; source=body_inline] \left[ p _ {1} ^ {i} , p _ {2} ^ {i} , \cdots , \right
+
+[confidence=0.67; needs_review; source=body_inline] p _ {n _ {i}} ^ {i} \Big ]
+
+[confidence=0.67; needs_review; source=body_inline] \left\{{\mathbf {Y}} ^ {1} = f _ {1} ( {\mathbf {D}} ) \right.\tag{3}
+
+[confidence=0.92; source=body_inline] \mathbf {D} = {\left[ \begin{array} {l} {\mathbf {D} ^ {1}} \\ {\mathbf {D} ^ {2}} \\ {\vdots} \\ {\mathbf {D} ^ {t}} \end{array} \right]} \in \mathbb {R} ^ {n \times r}
+
+[confidence=0.92; source=body_inline] n = n _ {1} + n _ {2} + \cdots + n _ {t}
+
+[confidence=0.92; source=body_inline] \mathbf {p} = \left[ \mathbf {p} ^ {1} , \mathbf {p} ^ {2} , \cdots , \mathbf {p} ^ {t} \right] \in \mathbb {R} ^ {1 \times n} ( n {=} n _ {1} {+} n _ {2} {+} \cdots {+} n _ {t} )
+
+[confidence=0.92; source=body_inline] \mathbf {y} ^ {i} ,
+
+[confidence=0.92; source=body_inline] \mathbb {R} ^ {l} \to \mathbb {R} ^ {N _ {i}}
+
+[confidence=0.92; source=body_inline] \mathbf {\dot {N}} _ {i}
+
+[confidence=0.67; needs_review; source=body_inline] y _ {1} ^ {i} ( x _ {1} , x _ {2} , \cdots , x _ {l} ) , . . . , y _ {N _ {i}} ^ {i} ( x _ {1} , x _ {2} , \cdots ,
+
+[confidence=0.67; needs_review; source=body_inline] x _ {l} )
+
+[confidence=0.92; source=body_inline] \mathbf {J} ^ {i} \in \mathbb {R} ^ {N _ {i} \times l}
+
+[confidence=0.92; source=body_inline] \mathbf {J} ^ {i} = \left( \begin{array} {c c c c} {\displaystyle \frac {\partial y _ {1} ^ {i}} {\partial x _ {1}}} & {\displaystyle \frac {\partial y _ {1} ^ {i}} {\partial x _ {2}}} & {\cdots} & {\displaystyle \frac {\partial y _ {1} ^ {i}} {\partial x _ {l}}} \\ {\displaystyle \frac {\partial y _ {2} ^ {i}} {\partial x _ {1}}} & {\displaystyle \frac {\partial y _ {2} ^ {i}} {\partial x _ {2}}} & {\cdots} & {\displaystyle \frac {\partial y _ {2} ^ {i}} {\partial x _ {l}}} \\ {\vdots} & {\vdots} & {\vdots} & {\vdots} \\ {\displaystyle \frac {\partial y _ {N _ {i}} ^ {i}} {\partial x _ {1}}} & {\displaystyle \frac {\partial y _ {N _ {i}} ^ {i}} {\partial x _ {2}}} & {\cdots} & {\displaystyle \frac {\partial y _ {N _ {i}} ^ {i}} {\partial x _ {l}}} \end{array} \right) .\tag{4}
+
+[confidence=0.92; source=body_inline] \mathbf {Y} ^ {i} = \mathbf {J} ^ {i} \mathbf {X} .\tag{5}
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array}{c} \{\operatorname{rank} ( \mathbf {Y} ^ {i} ) \leq \operatorname* {m i n} ( \operatorname{rank} ( \mathbf {J} ^ {i} ) , \operatorname{rank} ( \mathbf {X} ) ) \\ {\operatorname{rank} ( \mathbf {Y} ^ {i} ) \geq \operatorname{rank} ( \mathbf {J} ^ {i} ) + \operatorname{rank} ( \mathbf {X} ) - l} \end{array} . \tag{6}
+
+[confidence=0.92; source=body_inline] \operatorname{rank} \left( \mathbf {Y} ^ {i} \right) = \operatorname{rank} \left( \mathbf {J} ^ {i} \right) \leq l .\tag{7}
+
+[confidence=0.92; source=body_inline] \forall \mathbf {Y} _ {j} ^ {i} \in \mathbf {Y} ^ {i} ;
+
+[confidence=0.92; source=body_inline] \mathbf {X} _ {j} \in \mathbf {X}
+
+[confidence=0.92; source=body_inline] \mathbf {Y} _ {j} ^ {i} ,
+
+[confidence=0.92; source=body_inline] \left( \mathbf {J} ^ {i} \right) = l
+
+[confidence=0.92; source=body_inline] \operatorname{rank} ( \mathbf {Y} ^ {i} ) = l .\tag{8}
+
+[confidence=0.92; source=body_inline] \mathbf {Y} = \mathbf {J} \mathbf {X} .\tag{9}
+
+[confidence=0.92; source=body_inline] {\mathrm{where,~}} \mathbf {Y} = {\left[ \begin{array} {l} {\mathbf {Y} ^ {1}} \\ {\mathbf {Y} ^ {2}} \\ {\vdots} \\ {\mathbf {Y} ^ {t}} \end{array} \right]} , \mathbf {J} = {\left[ \begin{array} {l} {\mathbf {J} ^ {1}} \\ {\mathbf {J} ^ {2}} \\ {\vdots} \\ {\mathbf {J} ^ {t}} \end{array} \right]}
+
+[confidence=0.92; source=body_inline] \operatorname{rank} ( \mathbf {Y} ^ {i} ) \leq \operatorname{rank} ( \mathbf {Y} ) \leq l .\tag{10}
+
+[confidence=0.92; source=body_inline] \mathbf {\partial} ( \mathbf {Y} ) =
+
+[confidence=0.92; source=body_inline] ( \mathbf {Y} ^ {i} ) = l
+
+[confidence=0.92; source=body_inline] n _ {i} ,
+
+[confidence=0.92; source=body_inline] \operatorname{rank} \left( \mathbf {D} ^ {i} \right) \leq \operatorname* {m i n} \left( n _ {i} , \operatorname{rank} \left( \mathbf {Y} ^ {i} \right) \right) .\tag{11}
+
+[confidence=0.92; source=body_inline] \ell \colon \mathbb {R} ^ {N _ {i}} \to \mathbb {R} ^ {n _ {i}}
+
+[confidence=0.92; source=body_inline] \in \mathbf {D} ^ {i} ,
+
+[confidence=0.92; source=body_inline] \mathbf {Y} _ {j} ^ {i} \in \mathbf {Y} ^ {i}
+
+[confidence=0.92; source=body_inline] \operatorname{rank} \left( \mathbf {D} ^ {i} \right) \geq \operatorname{rank} \left( \mathbf {Y} ^ {i} \right) .\tag{12}
+
+[confidence=0.92; source=body_inline] n _ {i} \geq \mathrm{rank} \big ( \mathbf {D} ^ {i} \big ) = \mathrm{rank} \big ( \mathbf {Y} ^ {i} \big ) .\tag{13}
+
+[confidence=0.92; source=body_inline] n _ {i} = \mathrm{rank} \left( \mathbf {D} ^ {i} \right)
+
+[confidence=0.92; source=body_inline] \mathbf {i . e . ,} n = \mathbf {r a n k} ( \mathbf {Y} )
+
+[confidence=0.92; source=body_inline] m _ {i}
+
+[confidence=0.92; source=body_inline] \mathbf {Y} ^ {i} \approx \mathbf {\Phi} \mathbf {\Phi} ^ {i} \mathbf {\cdot} \mathbf {A} ^ {i} + \overline {{\mathbf {Y}}} ^ {i} .\tag{14}
+
+[confidence=0.92; source=body_inline] \Phi ^ {i} = \left\lceil \Phi _ {1} ^ {i} , \Phi _ {2} ^ {i} , \cdots \Phi _ {m _ {i}} ^ {i} \right\rceil \in \mathbb {R} ^ {N _ {i} \times m _ {i}}
+
+[confidence=0.92; source=body_inline] \mathbf {A} ^ {i} = \left[ \mathbf {A} _ {1} ^ {i} , \mathbf {A} _ {2} ^ {i} , \cdots , \mathbf {A} _ {r} ^ {i} \right] \in \mathbb {R} ^ {m _ {i} \times r}
+
+[confidence=0.92; source=body_inline] \mathbf {A} _ {j} ^ {i} \in \mathbb {R} ^ {m _ {i} \times 1}
+
+[confidence=0.92; source=body_inline] \overline {{\mathbf {Y}}} ^ {i}
+
+[confidence=0.92; source=body_inline] \overline {{\mathbf {Y}}} ^ {i} =
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\frac {1} {r} \sum _ {j = 1} ^ {r} \mathbf {Y} _ {j} ^ {i} .} \end{array}
+
+[confidence=0.92; source=body_inline] e ^ {i}
+
+[confidence=0.92; source=body_inline] \mathbf {Y} _ {\mathrm{~:~}} ^ {i}
+
+[confidence=0.92; source=body_inline] e ^ {i} = \frac {1} {r} {\sum _ {j = 1} ^ {r}} \frac {\parallel \Phi ^ {i} {\cdot} \mathbf {A} _ {j} ^ {i} + \overline {{\mathbf {Y}}} ^ {i} - \mathbf {Y} _ {j} ^ {i} \parallel _ {1}} {\operatorname* {m a x} \left( {\mathbf {Y} _ {j} ^ {i}} \right) - \operatorname* {m i n} \left( {\mathbf {Y} _ {j} ^ {i}} \right)} .\tag{15}
+
+[confidence=0.92; source=body_inline] \| \cdot \| _ {1}
+
+[confidence=0.92; source=body_inline] e _ {0} ^ {i} ,
+
+[confidence=0.92; source=body_inline] e ^ {i} \leq e _ {0} ^ {i} .\tag{16}
+
+[confidence=0.92; source=body_inline] e _ {0} ^ {i}
+
+[confidence=0.92; source=body_inline] N ^ {i} \times 10 ^ {- 3}
+
+[confidence=0.92; source=body_inline] \mathbf {A} ^ {i} = \varphi _ {i} ( \mathbf {D} ) .\tag{17}
+
+[confidence=0.92; source=body_inline] \mathbf {Y} ^ {i} = f _ {i} ( \mathbf {D} ) = \overline {{\mathbf {Y}}} ^ {i} + \Phi ^ {i} \mathbf {\cdot} \boldsymbol {\varphi} _ {i} ( \mathbf {D} ) .\tag{18}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\mathbf {A} ^ {1 ^ {\prime}} = \varphi _ {1} ( \mathbf {D} )} \\ {\mathbf {A} ^ {2 ^ {\prime}} = \varphi _ {2} ( \mathbf {D} )} \\ {\vdots} \\ {\mathbf {A} ^ {t ^ {\prime}} = \varphi _ {t} ( \mathbf {D} )} \end{array} \right. .\tag{19}
+
+[confidence=0.92; source=body_inline] \mathbf {A} ^ {i}
+
+[confidence=0.67; needs_review; source=body_inline] \left\{\begin{array} {l l} {\mathbf {Y} ^ {1 ^ {\prime}} = \overline {{\mathbf {Y}}} ^ {1} + \boldsymbol {\Phi} ^ {1} {\cdot} \boldsymbol {\mathbf {A}} ^ {1 ^ {\prime}}} \\ {\mathbf {Y} ^ {2 ^ {\prime}} = \overline {{\mathbf {Y}}} ^ {2} + \boldsymbol {\Phi} ^ {2} {\cdot} \boldsymbol {\mathbf {A}} ^ {2 ^ {\prime}}} \\ {\vdots} \\ {\mathbf {Y} ^ {t ^ {\prime}} = \overline {{\mathbf {Y}}} ^ {t} + \boldsymbol {\Phi} ^ {t} {\cdot} \boldsymbol {\mathbf {A}} ^ {t ^ {\prime}}} \end{array} \right. .\tag{20}
+
+[confidence=0.92; source=body_inline] \mathbf {Y} ^ {i ^ {\prime}}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {\mathbf {Y} ^ {i ^ {\prime}} = \overline {{\mathbf {Y}}} ^ {t} + \mathbf {\Phi} \mathbf {\Phi} ^ {t} \cdot \boldsymbol {\varphi} _ {i} \left( \left[ \begin{array} {c} {\mathbf {Y} ^ {1} \left[ \mathbf {p} ^ {1} , \boldsymbol {\mathcal {O}} ^ {c} \right]} \\ {\mathbf {Y} ^ {2} \left[ \mathbf {p} ^ {2} , \boldsymbol {\mathcal {O}} ^ {c} \right]} \\ {\vdots} \\ {\mathbf {Y} ^ {t} [ \mathbf {p} ^ {t} , \boldsymbol {\mathcal {O}} ^ {c} ]} \end{array} \right] \right) .} \end{array}\tag{21}
+
+[confidence=0.92; source=body_inline] \displaystyle {\operatorname* {f i n d} _ {\mathbf {\theta}}} \\ \mathbf {m i n} g ( \mathbf {p} ) = \beta _ {1} {\cdot} g _ {1} ( \mathbf {p} ) + \beta _ {2} {\cdot} g _ {2} ( \mathbf {p} ) + \cdots + \beta _ {t} {\cdot} g _ {t} ( \mathbf {p} ) .\tag{22}
+
+[confidence=0.92; source=body_inline] \begin{array} {r} {g _ {i} = \sum _ {j = 1} ^ {r} \Vert \textbf {Y} _ {j} ^ {i ^ {\prime}} - \mathbf {Y} _ {j} ^ {i} \Vert _ {1}} \end{array}
+
+[confidence=0.92; source=body_inline] \beta _ {i}
+
+[confidence=0.92; source=body_inline] g _ {i} ,
+
+[confidence=0.92; source=body_inline] \beta _ {i} = \frac {1} {\sum _ {j = 1} ^ {r} \left( \operatorname* {m a x} \left( \mathbf {Y} _ {j} ^ {i} \right) - \operatorname* {m i n} \left( \mathbf {Y} _ {j} ^ {i} \right) \right)} .\tag{23}
+
+[confidence=0.67; needs_review; source=body_inline] \mathbf {P} \in \mathbb {R} ^ {s \times n} \ ( \{
+
+[confidence=0.92; source=body_inline] \boldsymbol {\mathbf {p}} ^ {*}
+
+[confidence=0.92; source=body_inline] \alpha ,
+
+[confidence=0.92; source=body_inline] {\mathbf {P}} \in \mathbb {R} ^ {17125 \times 300}
+
+[confidence=0.92; source=body_inline] \mathbf {q} \in \mathbb {R} ^ {17125 \times 300}
+
+[confidence=0.92; source=body_inline] r _ {\mathrm{modeling}}
+
+[confidence=0.92; source=body_inline] r _ {\mathrm{test}} ,
+
+[confidence=0.92; source=body_inline] F _ {S} ,
+
+[confidence=0.92; source=body_inline] F _ {\mathrm{C}} ,
+
+[confidence=0.92; source=body_inline] s _ {\mathrm{P}} ,
+
+[confidence=0.92; source=body_inline] S _ {\mathrm{I}} ,
+
+[confidence=0.92; source=body_inline] S _ {\mathrm {{M}}}
+
+[confidence=0.92; source=body_inline] ^ {8 ,}
+
+[confidence=0.92; source=body_inline] k _ {i}
+
+[confidence=0.92; source=body_inline] ( \sigma ~ = ~ 0.0 \% )

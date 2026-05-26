@@ -1,0 +1,207 @@
+[confidence=0.92; source=equations; [page 1, bbox (37.59, 205.75, 416.62, 223.92)]] Jian-Jun Gou a,*, Shu-Zhen Jia b, Hai-Tao Tian b, Jia-Xin Hu a, Chun-Lin Gong a,*
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (42.63, 669.07, 336.59, 690.38)]] * Corresponding authors. E-mail addresses: jj.gou@nwpu.edu.cn (J.-J. Gou), leonwood@nwpu.edu.cn (C.-L. Gong)
+
+[confidence=0.57; needs_review; source=equations; [page 1, bbox (37.59, 695.66, 341.98, 716.91)]] https://doi.org/10.1016/j.ast.2024.109115 Received 28 January 2024; Received in revised form 21 March 2024; Accepted 3 April 2024
+
+[confidence=0.92; source=equations; [page 2, bbox (309.26, 711.87, 391.03, 721.03)]] XTj ∈{0, 1} j = 1, ⋯, n
+
+[confidence=0.92; source=equations; [page 2, bbox (310.57, 697.64, 434.11, 706.5)]] S.T. gi(XT, XS) < gimax i = 1, ⋯, d
+
+[confidence=0.67; needs_review; source=equations; [page 2, bbox (364.42, 719.86, 409.91, 734.69)]] ] j = 1, ⋯, n
+
+[confidence=0.92; source=equations; [page 3, bbox (41.61, 498.59, 177.41, 507.45)]] S.T. gi(XT, XA, XS) < gimax i = 1, ⋯, d
+
+[confidence=0.92; source=equations; [page 3, bbox (40.25, 512.82, 122.08, 521.98)]] XTj ∈{0, 1} j = 1, ⋯, n
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (97.17, 520.81, 142.6, 535.64)]] ] j = 1, ⋯, n
+
+[confidence=0.67; needs_review; source=equations; [page 3, bbox (95.41, 535.15, 140.9, 549.99)]] ] j = 1, ⋯, n
+
+[confidence=0.92; source=equations; [page 4, bbox (307.96, 247.55, 337.12, 264.25)]] g1 = ∑ d
+
+[confidence=0.92; source=equations; [page 4, bbox (327.29, 265.66, 335.31, 271.1)]] i=1
+
+[confidence=0.92; source=equations; [page 4, bbox (37.59, 303.17, 293.34, 322.42)]] F(Zi) = 2 -SP + 2(SP -1) Zi -1 N -1 (4)
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (93.09, 452.1, 200.6, 468.5)]] ) = M(XT, Xa, XS) + rp⋅f(gi)⋅ ∑ d
+
+[confidence=0.92; source=equations; [page 4, bbox (190.83, 470.2, 198.85, 475.64)]] i=1
+
+[confidence=0.92; source=equations; [page 4, bbox (38.95, 481.98, 144.59, 491.82)]] gi = gi(XT, Xa, XS) = gimax -[g]i
+
+[confidence=0.92; source=equations; [page 4, bbox (38.95, 505.33, 62.72, 514.2)]] f(gi) =
+
+[confidence=0.92; source=equations; [page 4, bbox (307.96, 75.55, 392.96, 91.95)]] Min M(XT, XA, XS) = ∑ d
+
+[confidence=0.92; source=equations; [page 4, bbox (383.19, 93.71, 391.21, 99.15)]] i=1
+
+[confidence=0.92; source=equations; [page 4, bbox (310.57, 105.46, 446.87, 114.34)]] S.T. σi(XT, XA, XS) < σimax i = 1, ⋯, d
+
+[confidence=0.92; source=equations; [page 4, bbox (307.96, 121.41, 418.07, 130.27)]] ui(XT, XA, XS) < umax i = 1, ⋯, d
+
+[confidence=0.92; source=equations; [page 4, bbox (309.26, 137.23, 391.03, 146.39)]] XTj ∈{0, 1} j = 1, ⋯, n
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (366.12, 146.81, 411.61, 161.64)]] ] j = 1, ⋯, n
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (364.42, 162.74, 409.91, 177.57)]] ] j = 1, ⋯, n
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (307.96, 196.64, 452.41, 215.67)]] Min M(XT, XA, XS) = ΔCδ y = ( Cδ yrigid -Cδ y
+
+[confidence=0.92; source=equations; [page 4, bbox (310.57, 221.28, 446.87, 230.17)]] S.T. σi(XT, XA, XS) < σimax i = 1, ⋯, d
+
+[confidence=0.92; source=equations; [page 4, bbox (307.96, 234.85, 418.07, 243.71)]] ui(XT, XA, XS) < umax i = 1, ⋯, d
+
+[confidence=0.92; source=equations; [page 4, bbox (309.26, 275.05, 391.03, 284.21)]] XTj ∈{0, 1} j = 1, ⋯, n
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (366.12, 282.3, 411.61, 297.14)]] ] j = 1, ⋯, n
+
+[confidence=0.67; needs_review; source=equations; [page 4, bbox (364.42, 295.85, 409.91, 310.68)]] ] j = 1, ⋯, n
+
+[confidence=0.92; source=equations; [page 5, bbox (86.17, 344.44, 124.8, 358.39)]] ∂z + fx = 0
+
+[confidence=0.92; source=equations; [page 5, bbox (86.12, 368.19, 124.8, 382.2)]] ∂z + fy = 0
+
+[confidence=0.92; source=equations; [page 5, bbox (85.32, 392.0, 123.95, 406.01)]] ∂z + fz = 0
+
+[confidence=0.92; source=equations; [page 5, bbox (38.95, 410.41, 65.89, 424.98)]] εxx = ∂u
+
+[confidence=0.92; source=equations; [page 5, bbox (58.34, 410.41, 95.83, 429.82)]] ∂x; εyy = ∂v
+
+[confidence=0.92; source=equations; [page 5, bbox (88.55, 410.41, 127.04, 429.82)]] ∂y; εzz = ∂w
+
+[confidence=0.92; source=equations; [page 5, bbox (38.95, 434.22, 65.84, 449.53)]] γxy = ∂u
+
+[confidence=0.92; source=equations; [page 5, bbox (75.46, 434.22, 112.45, 453.63)]] ∂x; γyz = ∂v
+
+[confidence=0.92; source=equations; [page 5, bbox (38.95, 61.09, 225.15, 76.41)]] Aj′ = XAj′ + α⋅j, Aj′ ∈ [α⋅j -0.5⋅α + α0, α⋅j + 0.5⋅α -α0]
+
+[confidence=0.92; source=equations; [page 5, bbox (38.95, 63.94, 293.34, 87.71)]] XAj = XAj′ + 0.5⋅α, XAj ∈ [α0, α -α0] (8)
+
+[confidence=0.92; source=equations; [page 5, bbox (122.97, 434.22, 161.25, 453.63)]] ∂y; γxz = ∂u
+
+[confidence=0.67; needs_review; source=equations; [page 5, bbox (306.6, 451.59, 354.9, 466.91)]] {W} = [D] {Cp
+
+[confidence=0.92; source=body_inline] \mathbf {\ddot {\rho}} 0 ^ {\prime \prime} \mathbf {\Lambda} _ {} 0 \mathbf {r \Lambda} ^ {\cdots 1 ^ {\prime \prime}}
+
+[confidence=0.92; source=body_inline] {} ^ {\mathrm{6}} {} ^ {\mathrm{6}}
+
+[confidence=0.92; source=body_inline] \mathrm{i.e.,}
+
+[confidence=0.92; source=body_inline] \gamma ,
+
+[confidence=0.92; source=body_inline] \beta
+
+[confidence=0.92; source=body_inline] > \alpha
+
+[confidence=0.92; source=body_inline] \gamma < \alpha
+
+[confidence=0.92; source=body_inline] X _ {T} , X _ {S}
+
+[confidence=0.92; source=body_inline] \mathrm{S.T.} \quad g _ {i} ( X _ {T} , X _ {S} ) < g _ {i \mathrm{max}} \quad i = 1 , \cdots , d\tag{1}
+
+[confidence=0.92; source=body_inline] X _ {T j} \in \{0 , 1 \} \quad j = 1 , \cdots , n
+
+[confidence=0.92; source=body_inline] X _ {S j} \in \left[ L B _ {S j} , U B _ {S j} \right] \quad j = 1 , \cdots , n
+
+[confidence=0.92; source=body_inline] X _ {T}
+
+[confidence=0.92; source=body_inline] X _ {S}
+
+[confidence=0.92; source=body_inline] M ( X _ {T} , X _ {S} )
+
+[confidence=0.92; source=body_inline] g _ {i} ( X _ {T} , X _ {S} )
+
+[confidence=0.92; source=body_inline] g _ {\mathrm{imax}}
+
+[confidence=0.92; source=body_inline] X _ {T j}
+
+[confidence=0.92; source=body_inline] X _ {S j}
+
+[confidence=0.92; source=body_inline] L B _ {S j}
+
+[confidence=0.92; source=body_inline] U B _ {S j}
+
+[confidence=0.92; source=body_inline] X _ {S j} ,
+
+[confidence=0.67; needs_review; source=body_inline] \gamma )
+
+[confidence=0.92; source=body_inline] X _ {T} , X _ {A} , X _ {S}
+
+[confidence=0.92; source=body_inline] \begin{array} {l} {\mathrm{Min~} \ M ( X _ {T} , X _ {A} , X _ {S} )} \\ {\mathrm{S.T.} \quad g _ {i} ( X _ {T} , X _ {A} , X _ {S} ) < g _ {i \mathrm{max}} \quad i = 1 , \cdots , d} \\ {\quad X _ {T j} \in \{0 , 1 \} \quad j = 1 , \cdots , n} \\ {\quad X _ {A j} \in \left[ L B _ {A j} , U B _ {A j} \right] \quad j = 1 , \cdots , n} \\ {\quad X _ {S j} \in \left[ L B _ {S j} , U B _ {S j} \right] \quad j = 1 , \cdots , n} \end{array}\tag{2}
+
+[confidence=0.92; source=body_inline] X _ {A}
+
+[confidence=0.92; source=body_inline] 3 ; X _ {A j}
+
+[confidence=0.92; source=body_inline] L B _ {A j}
+
+[confidence=0.92; source=body_inline] U B _ {A j}
+
+[confidence=0.92; source=body_inline] X _ {A j} ,
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {X _ {T 1} , X _ {T 2} , \cdots , X _ {T n} | X _ {A 1} , X _ {A 2} , \cdots , X _ {A n} | X _ {S 1} , X _ {S 2} , \cdots , X _ {S n}} \\ & {X _ {T i} \in \{0 , 1 \} , X _ {A i} = \{b _ {i 1} , b _ {i 2} , \cdots , b _ {i n} \} , X _ {S i} = \{c _ {i 1} , c _ {i 2} , \cdots , c _ {i m} \}} \\ & {b _ {i j} \in \{0 , 1 \} , i = 1 , 2 , \cdots n , j = 1 , 2 , \cdots m} \\ & {c _ {i j} \in \{0 , 1 \} , i = 1 , 2 , \cdots n , j = 1 , 2 , \cdots m} \end{array}\tag{3}
+
+[confidence=0.92; source=body_inline] b _ {i j}
+
+[confidence=0.92; source=body_inline] c _ {i j}
+
+[confidence=0.92; source=body_inline] F ( Z _ {i} ) = 2 - S P + 2 ( S P - 1 ) \frac {Z _ {i} - 1} {N - 1}\tag{4}
+
+[confidence=0.67; needs_review; source=body_inline] \begin{array} {l l} {\displaystyle M _ {r} \big ( X _ {T} , X _ {a} , X _ {S} , r _ {p} \big ) = M ( X _ {T} , X _ {a} , X _ {S} ) + r _ {p} \cdot f ( g _ {i} ) \cdot \sum _ {i = 1} ^ {d} {g _ {i}} ^ {2}} \\ {\displaystyle g _ {i} = g _ {i} ( X _ {T} , X _ {a} , X _ {S} ) = g _ {i \mathrm{max}} - [ g ] _ {i}} \\ {\displaystyle f ( g _ {i} ) = \left\{\begin{array} {l l} {0 , \ g _ {i} ( X _ {T} , X _ {a} , X _ {S} ) \le 0} \\ {1 , \ g _ {i} ( X _ {T} , X _ {a} , X _ {S} ) > 0} \end{array} \right.} \end{array}\tag{5}
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {\mathrm{Sur~} \mathbb {K} [ \mathcal {K} , \mathcal {K} , \mathcal {K} , \mathcal {K} ] = \sum _ {j \in \mathcal {N} _ {j}} ^ {\infty} \mathcal {K} \mathcal {K} \mathcal {K} , \mathcal {K} \mathcal {K} ,} \\ & {\leq \sum _ {j \in \mathcal {N} _ {j}} ^ {\infty} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j}} \\ & {\leq \sum _ {j \in \mathcal {N} _ {j}} ^ {\infty} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j}} \\ & {\leq \mathbb {E} _ {j , j} ^ {\infty} \left( \mathbb {E} _ {j , j} ^ {\infty} \right) ^ {2} = \mathrm{i} - \mathrm{i} - \mathrm{i} - \mathrm{i} - \mathrm{E} _ {j , j}} \\ & {\mathcal {K} _ {j , j} \mathcal {K} _ {j , j}} \\ & {\leq \left( \mathbb {E} _ {j , j} ^ {\infty} \right) ^ {2} = \mathrm{i} - \mathrm{i} - \mathrm{i} - \mathrm{E} _ {j , j}} \\ & {\mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} - 1 - \mathrm{i} - \mathrm{E} _ {j , j} ^ {\infty}} \\ & {\qquad \quad + \mathrm{i} - \mathrm{i} \frac {\partial} {\partial x} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j}} \\ & \qquad \quad + \mathrm{i} \frac {\partial} {\partial x} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ {j , j} \mathcal {K} _ j \end{array}\tag{7}
+
+[confidence=0.92; source=body_inline] \Delta C _ {y} ^ {\delta} , C _ {y} ^ {\delta} r i g i d a n d C _ {y} ^ {\delta}
+
+[confidence=0.92; source=body_inline] \sigma _ {\mathrm{imax}}
+
+[confidence=0.92; source=body_inline] u _ {\mathrm{max}}
+
+[confidence=0.92; source=body_inline] m _ {s}
+
+[confidence=0.92; source=body_inline] X _ {A j}
+
+[confidence=0.92; source=body_inline] X _ {A j} ^ {\phantom {'}}
+
+[confidence=0.92; source=body_inline] A _ {j} ^ {'} ,
+
+[confidence=0.92; source=body_inline] \begin{array} {r l} & {X _ {A j} ^ {'} \in \left[ - \ b 0.5 {\cdot} \alpha + \alpha ^ {0} , \ 0.5 {\cdot} \alpha - \alpha ^ {0} \right]} \\ & {A _ {j} ^ {'} = X _ {A j} ^ {'} + \alpha {\cdot} j , A _ {j} ^ {'} \in \left[ \alpha {\cdot} j - 0.5 {\cdot} \alpha + \alpha ^ {0} , \ \alpha {\cdot} j + 0.5 {\cdot} \alpha - \alpha ^ {0} \right]} \\ & {X _ {A j} = X _ {A j} ^ {'} + 0.5 {\cdot} \alpha , X _ {A j} \in \left[ \alpha ^ {0} , \ \alpha - \alpha ^ {0} \right]} \end{array}\tag{8}
+
+[confidence=0.92; source=body_inline] \alpha ^ {0}
+
+[confidence=0.92; source=body_inline] 0.5 ^{\circ}
+
+[confidence=0.92; source=body_inline] A _ {j} ^ {'}
+
+[confidence=0.92; source=body_inline] \sigma _ {i \operatorname* {m a x}} , u _ {\operatorname* {m a x}}
+
+[confidence=0.92; source=body_inline] ^ {27}
+
+[confidence=0.92; source=body_inline] _ {15 ^{\circ}}
+
+[confidence=0.92; source=body_inline] {\begin{array} {r l} & {{\frac {\partial \sigma _ {x x}} {\partial x}} + {\frac {\partial \sigma _ {x x}} {\partial y}} + {\frac {\partial \sigma _ {x x}} {\partial z}} + f _ {x} = 0} \\ & {{\frac {\partial \sigma _ {x y}} {\partial x}} + {\frac {\partial \sigma _ {y y}} {\partial y}} + {\frac {\partial \tau _ {x y}} {\partial z}} + f _ {y} = 0} \\ & {{\frac {\partial \tau _ {x z}} {\partial x}} + {\frac {\partial \tau _ {x z}} {\partial y}} + {\frac {\partial \sigma _ {z z}} {\partial z}} + f _ {z} = 0} \\ & {\varepsilon _ {x x} = {\frac {\partial u} {\partial x}} ; \varepsilon _ {y y} = {\frac {\partial \nu} {\partial y}} ; \varepsilon _ {z z} = {\frac {\partial w} {\partial z}}} \\ & {\gamma _ {x y} = {\frac {\partial u} {\partial y}} + {\frac {\partial \nu} {\partial x}} ; \gamma _ {x z} = {\frac {\partial \nu} {\partial z}} + {\frac {\partial w} {\partial y}} ; \gamma _ {x z} = {\frac {\partial u} {\partial z}} + {\frac {\partial w} {\partial x}}} \end{array}}\tag{9}
+
+[confidence=0.92; source=body_inline] f _ {x} , f _ {y}
+
+[confidence=0.92; source=body_inline] f _ {z}
+
+[confidence=0.92; source=body_inline] z {\mathrm{~di}}
+
+[confidence=0.92; source=body_inline] \sigma _ {x x} , \sigma _ {y y}
+
+[confidence=0.92; source=body_inline] \sigma _ {z z}
+
+[confidence=0.92; source=body_inline] \tau _ {x y \cdots} \tau _ {y z}
+
+[confidence=0.92; source=body_inline] \varepsilon _ {x x} , \varepsilon _ {y y}
+
+[confidence=0.92; source=body_inline] \gamma _ {x y} . . . \gamma _ {y z}
+
+[confidence=0.92; source=body_inline] {\bf k g} / {\bf m} ^ {3} ;
+
+[confidence=0.92; source=body_inline] ^ {4 ,}
+
+[confidence=0.92; source=body_inline] \{W \} = [ D ] \{C _ {p} \}\tag{10}
+
+[confidence=0.92; source=body_inline] \{C _ {p} \}

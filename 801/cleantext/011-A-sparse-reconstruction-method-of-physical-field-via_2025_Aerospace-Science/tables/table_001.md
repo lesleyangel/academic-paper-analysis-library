@@ -1,0 +1,23 @@
+| $\boldsymbol { \mathsf { p } } ^ { * }$ optimum sensor locations |  |  |
+| --- | --- | --- |
+| Nomenclature | q | heat flux filed data (W/m²) |
+| A mode coefficients | r | sample size |
+| D | sparse measurements | size of modeling sets $r _ { \mathrm { m o d e l i n g } }$ |
+| E reconstructed error |  | $r _ { \mathrm { t e s t } }$ size of test samples |
+| e POD reconstruction error | $S _ { \mathrm { I } }$ | maximum generations |
+| $e _ { 0 }$ error threshold |  | $s _ { \mathrm { M } }$ maximum allowed stagnation iterations |
+| $F$ | function from x to y | $S _ { \mathrm { P } }$ population size |
+| $F _ { \mathrm { C } }$ crossover probability | t | number of physical fi elds |
+| $F _ { S }$ scaling factor | X | multiple flow conditions |
+| f | sparse reconstruction model | X flow conditions |
+| g | objective function | x parameter in flow conditions |
+| H altitude (km) |  | Y mean of physical field data |
+| J | Jacobian matrix | Y database of physical field |
+| k | energy proportion of mode | y physical field |
+| 1 | number of parameters in flow conditions | a angle of attack (°) |
+| m | number of POD modes | β weight of objective function |
+| Ma | Mach number | Φ POD modes |
+| N | dimension of physical field data | φ RBFNN model |
+| n | number of sensors | l sparse reconstruction system |
+| P | pressure filed data (Pa) | σ noise level |
+| P sensor locations |  |  |

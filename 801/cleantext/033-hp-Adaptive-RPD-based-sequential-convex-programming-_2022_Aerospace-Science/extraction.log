@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\033-hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science-.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\033-hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 197.22,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\033-hp-Adaptive-RPD-based-sequential-convex-programming-_2022_Aerospace-Science\nbody_chars=54990 references=37 tables=5\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T04:12:03"
+}

@@ -1,0 +1,10 @@
+,UC,$P _ { 1 }$,$P _ { 2 }$,$P _ { 3 }$,$P _ { 4 }$,$P _ { 5 }$,$P _ { 6 }$
+UD,UC1,Unif.,Unif.,Unif.,Unif.,Unif.,Unif.
+,UC2,Unif.,Unif.,Unif.,Unif.,Unif.,Unif.
+,UC3,Unif.,Unif.,Unif.,Unif.,Unif.,Unif.
+,UC4,Unif.,Unif.,Unif.,Non-unif.,Unif.,Unif.
+Plain woven,UC1,Unif.,Unif.,Unif.,Unif.,Non-unif.,Non-unif.
+,UC2,Unif.,Unif.,Unif.,Unif.,Non-unif.,Non-unif.
+,UC3,Unif.,Non-unif.,Unif.,Non-unif.,Non-unif.,Non-unif.
+Satin woven,UC1,Non-unif.,Non-unif.,Non-unif.,Non-unif.,Non-unif.,Non-unif.
+,UC2,Non-unif.,Non-unif.,Non-unif.,Non-unif.,Non-unif.,Non-unif.

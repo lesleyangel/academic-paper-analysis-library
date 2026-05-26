@@ -1,0 +1,268 @@
+## 1. Introduction
+
+For a high-speed vehicle like hypersonic one, the surface temperature may reach a value of 1600 °C or even higher [1,2] in a very short time of hundreds of seconds. Under this condition, a reliable and efficient thermal protection system (TPS) is required, and the thermal characteristics of relevant TPS composites should be deeply studied.
+
+The effective thermal properties of composites can be efficiently calculated by a representative volume element (RVE) model. According to the structure of composites, there are two types of RVE can be formulated. For composites with random phase distributions such as needled composites (randomly distributed short fibers) [3,4], fiber layers in proton exchange membrane fuel cell (randomly distributed short fibers and pores) [5–8], porous materials (random pores) [9–11], granular composite (random reinforcing granula) [12] and thermal barrier coatings (random pores) [13,14], the RVE is formulated based on statistical parameters (e.g., phase volume fraction) of the composite structure. Due to the structure stochasticity, such RVE is an approximate rather than accurate model.
+
+For another type of composite with certain geometric symmetries such as textile reinforced composites [15–26] and idealized foam materials [27–30], the RVE can be formulated based on structure symmetries. Such RVE is the so-called unit cell (UC). In composites, any complex symmetric structures can be decomposed into three types of symmetric structures: translation along an axis, reflection about a plane and rotation about an axis for a certain angle (mainly 180°) [31]. The translational symmetry is always used to formulate a full UC first, and the other two symmetries can then be used to reduce the UC size. Each UC needs corresponding boundary condition (BC) to represent the macro structure. The derivation of BC should be based on rigorous mathematical and thermo-physical considerations [32]. In most above Refs. [15–19,22,23], only translational symmetries are employed to formulate unit cells, and the periodic relative temperature or periodic temperature gradient are the appropriate BC for such unit cells. In the authors’ works about plain woven [20], satin woven [32,33], threedimensional four-directional braided (3D4d) [34] composites, the reflectional and 180° rotational symmetries are used to formulate unit cells, and the results show that such two symmetries will reduce the UC size while lead to more complicated BC.
+
+Compare with the RVE of randomly structured composites, a UC model for symmetrically structured composites can be theoretically accurate in representing the macro composite; however, the formulation of an accurate UC is relatively complicated. In general, it involves construction of geometric configuration and derivation of BC, and the process is closely related to the structure symmetries and macro thermal condition (heat flux/temperature gradient field) of the composite. At present, the complex coupling relation between these four factors needs further studies, mainly in two aspects. First, in previous literatures, the utilization of different combination of symmetries (expressed as UC formulation path in this work) means different configurations and different BC of the UC; however, sometimes different symmetries may formulate the same geometric configuration and meanwhile the derived BC are still different; this brings about some confusions in simulations and needs to be clarified. Second, the typical uniform temperature BC (UBC) is very easy to apply, good for convergence, and thus preferred by many simulations; however, sometimes it is used without rigorous mathematical derivations or physical considerations because the researchers pay more attention on other issues [24,35,36]; in this paper the application scope of UBC will be determined and the authors hope it could be a good supplement to those previous works.
+
+In this work, three typical composites, the unidirectional (UD) fiber reinforced, plain woven and 3D4d braided composites are studied. Such three composites can represent fiber yarns, 2D woven, 3D braided composites, respectively. For each composite, one UC is formulated by two different paths. Then based on corresponding calculations and analysis, the influence of formulation path on UC formulation is clarified and the application scope of UBC is determined.
+
+## 2. Constitutive equations
+
+For a thermal conduction problem, $\mathrm{e.g.,}$ the calculation of effective thermal conductivities of composites, the constitutive relation between macro heat flux and temperature gradient is shown in Eq. (1).
+
+$$q _ {i} ^ {0} = - \lambda ^ {0} \nabla T _ {i} ^ {0} , i = x , y , z\tag{1}$$
+
+where $q _ {i} ^ {0}$ is the macro (global) heat flux, λ0 is the effective thermal conductivity, $\nabla T _ {i} ^ {0}$ is the macro temperature gradient, and i is the component direction. For a specific case, if one of $\cdot _ {q _ {i} ^ {0}}$ and $\nabla T _ {i} ^ {0}$ is given as boundary conditions, the other one will be obtained by solving heat differential equation and appropriate post-processing, and the effective thermal conductivities λ0 can then be calculated based on Eq. (1).
+
+## 3. Two formulation paths of the unit cell
+
+As discussed above, the unit cell is established based on three types of structure symmetries, i.e., translation along an axis, reflection about a plane and 180° rotation about an axis. For a specific composite, a path with certain combination of symmetries can formulate a certain UC. However, sometimes different formulation paths will build up the same UC configuration. In order to study its influence, typical paths should be discussed first for UD, plain woven and 3D4d braided composites. It should be noted that these three types of composites are studied because: first, UD composite is relevant to all textile reinforced composites since the textile fiber yarn is a sort of UD composite; second, the plain woven composite is a typical 2D woven composite with laminar structures, while 3D4d braided composite is the representative of 3D braided composite; third, the formulation paths (see later subsections) of UC for these composites involves all types of structure symmetries and their combinations.
+
+Figs. 1–3 show different paths from composite to unit cells for UD, plain woven and 3D4d braided composite, respectively. It has to be stated that all the three composites are anisotropic while transverseisotropic, and thus the UC formulation can be discussed in transverse direction and axial direction, respectively.
+
+## 3.1. UD composite
+
+Fig. 1(a) is the unit cell formulation in transverse $( x \cdot , y - )$ direction, while the lower Fig. 1(b) is the axial (z-) direction. UC1 of black lines, UC2 with blue background, and UC3 with white background are three unit cells of reducing size. The right part of Fig. 1(a) lists three paths from composite to each unit cell. It should be noted that UC3 is the smallest UC that can be formulated by translational symmetries, and it will be used to conduct the simulation in this work. UC3 can be formulated based on three paths, Path a: translational symmetries along xand y-direction by periodic lengths of (a, b); Path b: translational symmetries along x- and y-direction by periodic lengths of (2a, 2b), and additional reflectional symmetries about ${P _ {x}} ^ {1}$ and ${P _ {y}} ^ {1}$ (indicated in structure of UC2); Path c: translational symmetries along x- and y-direction by periodic lengths of (4a, 4b), additional reflectional symmetries about ${P _ {x}} ^ {0}$ and ${P _ {y}} ^ {0}$ (indicated in structure of UC1), and further reflectional symmetries about ${P _ {x}} ^ {1}$ and ${P _ {y}} ^ {1}$ (indicated in structure of UC2).
+
+In the axial direction as shown in Fig. 1(b), the structure has translational symmetries of arbitrary periodic lengths, which means that the UC can have an arbitrary height. UC1, UC2 and UC3 can be formulated by translational symmetries directly, and at the same time, there are corresponding reflectional symmetries between them. The three formulation paths are very similar to that listed in Fig. 1(a). To be summarized for UD composites, UC3 has three paths (Path a, b and c).
+
+Three formulation paths
+
+(a) Transverse direction
+
+(b) Axial direction
+
+## 3.2. Plain woven composite
+
+Fig. 2 shows the formulation paths from plain woven composites to multi-size unit cells. Plain woven composite has typical laminated structure. Fig. 2(a) is the transverse (x-, y-) direction while Fig. 2(b) is the axial direction. As shown in Fig. 2(b), the mainly difference with that of UD composite is in the axial direction: UC1, UC2 and UC3 can only be formulated by one path, i.e., translational symmetries by certain periodic length, and the length must be multiples of a single laminate (height of UC3). To be summarized for plain woven composites, UC3 has three paths (Path a, b and c), and no reflectional symmetries exist in axial direction.
+
+## 3.3. Three-dimensional four-directional braided composite
+
+Fig. 3 shows the formulation paths from 3D4d braided composites to multi-size unit cells. Compared with the plain woven composite, the structure of 3D4d braided composite is more complex and has totally different formulation paths. As shown in the upper right part of Fig. 3, the mainly difference is in the transverse direction, between UC1, UC2 and UC3, there are 180° rotational symmetries rather than reflectional ones. For the axial (z-) direction, 3D4d braided composite has the same situation with plain woven composite. To be summarized for 3D4d braided composites, UC3 has three paths (Path a, b, c), and no reflectional symmetries exist in all directions.
+
+In fact, for the axial (z-) direction of 3D4d composite, one can also
+
+## Three formulation paths
+
+Path b
+
+$$( P _ {x} ^ {1} , P _ {y} ^ {1} )$$
+
+$$( \pmb {P} _ {x} ^ {0} , \pmb {P} _ {y} ^ {0} )$$
+
+$$( P _ {x} ^ {1} , P _ {y} ^ {1} )$$
+
+(a) Transverse direction 
+(b) Axial direction
+
+Path a Tran. (z: h) Path b Tran. (z: 2h) Path c Tran. (z: 4h)
+
+formulate UC1 based on some 180° rotational symmetries indicated in UC2 structure, and UC2 can also be formulated based on that of UC1. In this work such paths are not considered for the case of paper length, and only the translational symmetry is considered in z-direction.
+
+## 3.4. Path summary and unit cell models
+
+The formulation paths from composites to UC3 are summarized in Table 1. The dimension of all the UC3 is assumed to be $a \times b \times h$ . In later discussions, it is used to conduct the example calculation for each composite. UC3 can be formulated by three paths: Path ${\bf a} ,$ the one based on translational symmetries only; Path b and c, the combination of translational and other two types of symmetries. In this work, both Path a and Path b are considered to derive two types of boundary conditions, BCa and BCb. It leads to a confusion that one UC can have two different boundary conditions. Therefore, in later sections, BCa is used to conduct corresponding calculations, and the numerical results on boundaries are compared with BCb and the confusion is thus clarified.
+
+Fig. 4 shows the UC3 models for UD, plain woven and 3D4d braided composites, respectively. The 1 red region is the fibers or fiber yarns while the blue region is the matrix. The right lower diagram is the schematic of formulation Path a, which is based on three translational symmetries along $x \cdot , y \cdot ,$ and z-axis. All the UC models can be simplified as a cube with dimension of $a \times b \times h ,$ which specifically are $1 \times 1.732 \times 0.25 \mathrm{mm}$ $1.92 \times 1.92 \times 0.34$ mm and 2.49 × 2.49 × 4.318 mm for UD, plain woven and 3D4d braided composites, respectively. For plain woven composite, the cross section and the axis of fiber yarns are defined by cosine functions and similar configurations can be found in [20]. For a 3D4d unit cell, according to the discussion in [21], its geometric configuration is closely related to two parameters, i.e., the interior braiding angle (the angle between fiber yarns and z-axis), and the fiber volume fraction which are 30° and 0.5 in this work, respectively. Also, the elliptical cross-sectional fiber yarns are adopted in the model establishment.
+
+## 4. Boundary conditions from different paths
+
+## 4.1. Macro thermal stimuli
+
+For reflectional and 180° rotational symmetric structures, the direction of macro heat flux will influence the derivation of BC. In this work if the macro heat flux is parallel to the reflection plane or the 180° rotation axis, it will be defined as symmetric thermal stimulus (STS), while if perpendicular it will be antisymmetric one (ATS). Under STS and ATS, for reflectional and 180° rotational symmetric structures, the relative temperature relations between symmetric nodes (M and M’) are summarized as two equations, Eq. (2) and Eq. (3), respectively:
+
+$$\mathrm{STS} {:} T _ {M} - T _ {O} = T _ {M ^ {'}} - T _ {O ^ {'}}$$
+
+$$\mathrm{ATS} {\cdot} T _ {M} - T _ {O} = T _ {O} - T _ {M ^ {'}}\tag{2}$$
+
+(3)
+
+where O is the reference node and $O ^ {\prime}$ is its symmetric node. The two equations are confirmed by corresponding calculations, and the physical meanings are stated in [32]. When M comes to a boundary, the STS and ATS equations can be used to derive BC of unit cells. It should be noted that for translational symmetric structures, all the macro heat flux will have STS expression, and Eq. (2) can be used to derive relevant BC.
+
+In this work, the boundary planes of UC3 are expressed as $P _ {1} - P _ {6}$ as shown in Fig. 5. The structure symmetries used in the formulation of each boundary plane (Path b) are summarized in Table 2. The BC of each plane are derived based on the periodic BC of UC2 and the relevant symmetries listed in Table 2. As discussed above, for reflectional and 180° rotational symmetries, the macro heat flux ${( q _ {x} ^ {0} , q _ {y} ^ {0}}$ and ${q _ {z}} ^ {0} )$ should be considered as STS or ATS by its relative relations to symmetric planes or axes. In Table 2, for each boundary plane, ${q _ {x}} ^ {0} , {q _ {y}} ^ {0}$ and ${q _ {z}} ^ {0}$ are listed as STS or ATS, and it is very important for the BC derivation of corresponding planes. Take $P _ {1}$ of UD composites as an instance, during the Path b formulation of UC3, $P _ {1}$ is relevant to a translational symmetry along x-axis and a further reflectional symmetry about plane ${P _ {x}} ^ {0}$ which is perpendicular to x-axis. Under this condition, the macro heat fluxes ${q _ {x}} ^ {0} , {q _ {y}} ^ {\bar {0}}$ and ${q _ {z}} ^ {0}$ which are perpendicular, parallel and parallel to $P _ {x} ^ {0} ,$ respectively, can be considered as ATS, STS and STS, respectively. It should be noted that for translational symmetric structures, no matter the macro heat flux is perpendicular or parallel to the translational axis, the relative temperature relations between symmetric nodes satisfy periodic distribution.
+
+Structure symmetries for each boundary plane (formulation Path b).
+
+For UC3, the boundary conditions derived base on Path a and b can be expressed as BCa and BCb, respectively. BCa is derived by translational symmetries, and should be the periodic ${\mathrm{BC}} ,$ while BCb is that derived based on the periodic one for UC2 with additional reflectional or 180° rotational symmetries. BCa has a well-known expression, thus the key point of next subsections is to derive BCb for each composite.
+
+## 4.2. Boundary conditions from Path a
+
+For three types of composites, the periodic BCa has the expression as shown in Eq. (4). The relative temperature relations of corresponding nodes are in periodic distributions. The $\nabla T _ {x} ^ {0} , \nabla T _ {y} ^ {0}$ and $\nabla T _ {z} ^ {0}$ in equations are the macro temperature gradients in $x \mathrm{,~} y -$ and z-direction, respectively. Eq. (4-1) is the BC of nodes on boundary planes excluding those on edges and vertices, this is because during the applying of such BC, the nodes on edges and vertices are always over constrained: the nodes on a specific edge will be constrained by BC equations of the two adjacent planes, and the nodes on a specific vertex will be constrained by BC equations of the three adjacent edges. In commercial software like ANSYS or ABAQUS, such redundant constraints will stop the program running. Therefore, the BC of edges and vertices should be derived and imposed on separately. Eqs. (4-2) and (4-3) are the boundary conditions of edges and vertices, respectively, and they can be derived based on Eq. (4-1). The edges and vertices are indicated by numbers with black and white circles, respectively, as shown in Fig. 5. Eq. (4) will be used to conduct relevant simulations.
+
+Planes:
+
+$$P _ {1} - P _ {2} \colon T _ {( 0 , y _ {1} , z _ {1} )} - T _ {( a , y _ {1} , z _ {1} )} = a \nabla T _ {x} ^ {0}$$
+
+$$P _ {3} - P _ {4} \colon T _ {( x _ {1} , 0 , z _ {1} )} - T _ {( x _ {1} , b , z _ {1} )} = b \nabla T _ {y} ^ {0}$$
+
+$$P _ {5} - P _ {6} \colon T _ {( x _ {1} , y _ {1} , 0 )} - T _ {( x _ {1} , y _ {1} , h )} = h \nabla T _ {z} ^ {0}\tag{4-1}$$
+
+Edges:
+
+$$\begin{array} {r l} & {9-17 : \ T _ {( 0 , 0 , z ]} - T _ {( 0 , 0 , z ]} = 0 \nabla T _ {\mathfrak {a}} ^ {0}} \\ & {9-11 : \ T _ {( 0 , 0 , z ]} - T _ {( 0 , 0 , z ]} = b \nabla T _ {\mathfrak {a}} ^ {0}} \\ & {9-14 : \ T _ {( 0 , 0 , z ]} - T _ {( 0 , 0 , z ]} = a \nabla T _ {\mathfrak {a}} ^ {0} + b \nabla T _ {\mathfrak {a}} ^ {0}} \\ & {10-16 : T _ {( 0 , 1 , 0 )} - T _ {( 0 , 1 , 0 )} = a \nabla T _ {\mathfrak {a}} ^ {0}} \\ & {10-12 : \ T _ {( 0 , 1 , 0 )} - T _ {( 0 , 0 , 1 )} = h \nabla T _ {\mathfrak {a}} ^ {0}} \\ & {10-18 : T _ {( 0 , 1 , 0 )} - T _ {( 0 , 1 , 1 )} = a \nabla T _ {\mathfrak {a}} ^ {0} + b \nabla T _ {\mathfrak {a}} ^ {0}} \\ & {19-13 : T _ {( x _ {1 , 0 , 0} )} - T _ {( x _ {1 , 0 , 0} )} = b \nabla T _ {\mathfrak {a}} ^ {0}} \\ & {19-20 : T _ {( x _ {1 , 0 , 0} ) - T _ {( x _ {1 , 0 , 1} )}} = h \nabla T _ {\mathfrak {a}} ^ {0}} \\ & {19-15 : T _ {( x _ {1 , 0 , 0} ) - T _ {( x _ {1 , 1 , 0} )}} = b \nabla T _ {\mathfrak {a}} ^ {0} + b \nabla T _ {\mathfrak {a}} ^ {0}} \end{array}\tag{4-2}$$
+
+Vertices:
+
+$$1-2 \colon T _ {( 0 , 0 , 0 )} - T _ {( a , 0 , 0 )} = a \nabla T _ {x} ^ {0}$$
+
+$$1-3 \colon T _ {( 0 , 0 , 0 )} - T _ {( a , b , 0 )} = a \nabla T _ {x} ^ {0} + b \nabla T _ {y} ^ {0}$$
+
+$$T _ {( 0 , 0 , 0 )} - T _ {( 0 , b , 0 )} = b \nabla T _ {y} ^ {0}$$
+
+$$1-5 \colon T _ {( 0 , 0 , 0 )} - T _ {( 0 , 0 , h )} = h \nabla T _ {z} ^ {0}$$
+
+$$1-6 \colon T _ {( 0 , 0 , 0 )} - T _ {( a , 0 , h )} = a \nabla T _ {x} ^ {0} + h \nabla T _ {z} ^ {0}$$
+
+$$1-7 \colon T _ {( 0 , 0 , 0 )} - T _ {( a , b , h )} = a \nabla T _ {x} ^ {0} + b \nabla T _ {y} ^ {0} + h \nabla T _ {z} ^ {0}$$
+
+$$1-8 \colon T _ {( 0 , 0 , 0 )} - T _ {( 0 , b , h )} = b \nabla T _ {y} ^ {0} + h \nabla T _ {z} ^ {0}\tag{4-3}$$
+
+## 4.3. Boundary conditions from Path b
+
+The second formulation Path b will lead to totally different boundary conditions, BCb. Before the derivation of BCb, the periodic BC for UC2 should be stated first as shown in Eq. (5). BCb can then be derived based on Eq. (5) and relevant structure symmetries indicated in UC2.
+
+The derivation processes for UD, plain woven and 3D four-directional braided composites are listed in Tables 3–5, respectively. The derived BCb of UD, plain woven and 3D4d braided composites are shown in Eqs. (6)–(8), respectively. It should be noted that the BC described in Eqs. (5)–(8) will not be directly used in calculations, thus the constraint equations on edges and vertices are not displayed. In all the equations, the subscript represents the coordinate of node. $x _ {1} , y _ {1}$ and z1 mean the coordinates of nodes on a specific plane or edge; a, b and h are lengths of unit cell in x-, y- and z- direction, respectively.
+
+$$P _ {1} - P _ {2} \colon T _ {( 0 , y _ {1} , z _ {1} )} - T _ {( 2 a , y _ {1} , z _ {1} )} = 2 a \nabla T _ {x} ^ {0}$$
+
+$$P _ {3} - P _ {4} \colon T _ {( x _ {1} , 0 , z _ {1} )} - T _ {( x _ {1} , 2 b , z _ {1} )} = 2 b \nabla T _ {y} ^ {0}$$
+
+$$P _ {5} - P _ {6} \colon T _ {( x _ {1} , y _ {1} , 0 )} - T _ {( x _ {1} , y _ {1} , 2 h )} = 2 h \nabla T _ {z} ^ {0}\tag{5}$$
+
+Boundary conditions for UD composites:
+
+$$\mathrm{Under} q _ {x} ^ {0} ; P _ {1} ; \ : T _ {( 0 , y _ {1} , z _ {1} )} - T _ {( 0 , 0 , 0 )} = 0 P _ {2} ; \ : T _ {( a , y _ {1} , z _ {1} )} - T _ {( 0 , 0 , 0 )} = - a \nabla T _ {x} ^ {0}\tag{6-1}$$
+
+$$\mathrm{Under} q _ {y} ^ {0} ; P _ {3} ; \ : T _ {( x _ {1} , 0 , z _ {1} )} - T _ {( 0 , 0 , 0 )} = 0 P _ {4} ; \ : T _ {( x _ {1} , b , z _ {1} )} - T _ {( 0 , 0 , 0 )} = - b \nabla T _ {y} ^ {0}\tag{6-2}$$
+
+$$\mathrm{Under} q _ {z} ^ {0} ; P _ {5} ; \ d _ {( x _ {1} , y _ {1} , 0 )} - T _ {( 0 , 0 , 0 )} = 0 P _ {6} ; \ T _ {( x _ {1} , y _ {1} , h )} - T _ {( 0 , 0 , 0 )} = - h \nabla T _ {z} ^ {0}\tag{6-3}$$
+
+For plain woven composites:
+
+$$\begin{array} {l} {{\mathrm{Under} \ q _ {x} ^ {0} ; P _ {\mathrm{1}} ; T _ {( 0 , y _ {\mathrm{1}} , z _ {\mathrm{1}} )} - T _ {( 0 , 0 , 0 )} = 0 P _ {\mathrm{2}} ; \ T _ {( a , y _ {\mathrm{1}} , z _ {\mathrm{1}} )} - T _ {( 0 , 0 , 0 )} = - a \nabla T _ {x} ^ {0} P _ {5} - P _ {6}}} \\ {{\mathrm{:} \ T _ {( x _ {\mathrm{1}} , y _ {\mathrm{1}} , 0 )} - T _ {( x _ {\mathrm{1}} , y _ {\mathrm{1}} , h )} = 0}} \end{array}\tag{7-1}$$
+
+$$\mathrm{Under} q _ {y} ^ {0} ; P _ {3} ; T _ {( x _ {1} , 0 , z _ {1} )} - T _ {( 0 , 0 , 0 )} = 0 P _ {4} ; T _ {( x _ {1} , b , z _ {1} )} - T _ {( 0 , 0 , 0 )} = - b \nabla T _ {y} ^ {0} P _ {5} - P _ {6}$$
+
+$$: T _ {( x _ {1} , y _ {1} , 0 )} - T _ {( x _ {1} , y _ {1} , h )} = 0$$
+
+Under :qz 0 $P _ {5} - P _ {6} \colon T _ {( x _ {1} , y _ {1} , 0 )} - T _ {( x _ {1} , y _ {1} , h )} = h \nabla T _ {z} ^ {0}$
+
+(7-2)
+
+(7-3)
+
+For 3D four-directional braided composites:
+
+$$\begin{array} {r l} & {\mathrm{Under} q _ {x} ^ {0} \colon P _ {\mathbf 1} \colon T _ {( 0 , y _ {1} , z _ {1} )} + T _ {( 0 , y _ {1} , h - z _ {1} )} - 2 T _ {( 0 , 0 , 0 )} = 0 P _ {2} \colon T _ {( a , y _ {1} , z _ {1} )} + T _ {( a , y _ {1} , h - z _ {1} )}} \\ & {\qquad - 2 T _ {( 0 , 0 , 0 )} = - 2 a \nabla T _ {x} ^ {0} P _ {3}} \\ & {\qquad : T _ {( x _ {1} , 0 , z _ {1} )} - T _ {( x _ {1} , 0 , h - z _ {1} )} = 0 P _ {4}} \\ & {\qquad : T _ {( x _ {1} , b , z _ {1} )} - T _ {( x _ {1} , b , h - z _ {1} )} = 0 P _ {5} - P _ {6}} \\ & {\qquad : T _ {( x _ {1} , y _ {1} , 0 )} - T _ {( x _ {1} , y _ {1} , h )} = 0} \end{array}$$
+
+Under $\begin{array} {r l} {q _ {y} ^ {0} ; \} & {{} P _ {1} ; \ T _ {( 0 , y _ {1} , z _ {1} )} - T _ {( 0 , y _ {1} , h - z _ {1} )} = 0} \end{array}$
+
+$$P _ {2} \colon T _ {( a , y _ {1} , z _ {1} )} - T _ {( a , y _ {1} , h - z _ {1} )} = 0\tag{8-1}$$
+
+$$P _ {3} \colon T _ {( x _ {1} , 0 , z _ {1} )} + T _ {( x _ {1} , 0 , h - z _ {1} )} - 2 T _ {( 0 , 0 , 0 )} = 0$$
+
+$$P _ {4} \colon T _ {( x _ {1} , b , z _ {1} )} + T _ {( x _ {1} , b , h - z _ {1} )} - 2 T _ {( 0 , 0 , 0 )} = - 2 b \nabla T _ {y} ^ {0}$$
+
+$$P _ {5} - P _ {6} \colon T _ {( x _ {1} , y _ {1} , 0 )} - T _ {( x _ {1} , y _ {1} , h )} = 0\tag{8-2}$$
+
+$$\begin{array} {r l} & {\mathrm{Under} q _ {z} ^ {0} \colon P _ {\mathbf {l}} \colon T _ {( 0 , y _ {1} , z _ {1} )} + T _ {( 0 , y _ {1} , h - z _ {1} )} - 2 T _ {( 0 , 0 , 0 )} = - h \nabla T _ {z} ^ {0} P _ {2}} \\ & {\qquad \quad : T _ {( a , y _ {1} , z _ {1} )} + T _ {( a , y _ {1} , h - z _ {1} )} - 2 T _ {( 0 , 0 , 0 )} = - h \nabla T _ {z} ^ {0} P _ {3}} \\ & {\qquad \quad : T _ {( x _ {1} , 0 , z _ {1} )} + T _ {( x _ {1} , 0 , h - z _ {1} )} - 2 T _ {( 0 , 0 , 0 )} = - h \nabla T _ {z} ^ {0} P _ {4}} \\ & {\qquad \quad : T _ {( x _ {1} , b , z _ {1} )} + T _ {( x _ {1} , b , h - z _ {1} )} - 2 T _ {( 0 , 0 , 0 )}} \\ & {\qquad \quad = - h \nabla T _ {z} ^ {0} P _ {5} - P _ {6} \colon T _ {( x _ {1} , y _ {1} , 0 )} - T _ {( x _ {1} , y _ {1} , h )} = h \nabla T _ {z} ^ {0}} \end{array}\tag{8-3}$$
+
+It should be noted that BC in Eqs. (4) and (5) can be used to simulate heat conductions in three directions ${( q _ {x}} ^ {0} , {q _ {y}} ^ {0}$ and ${q _ {z}} ^ {0} )$ at the same time, however, that in Eqs. (6)–(8) are derived in three directions separately.
+
+This is because for translational symmetries, the macro heat flux in all directions can be considered as the same stimulus (STS), and Eq. (2) can be used to derive BC under all conditions $( q _ {x} ^ {\phantom {} 0} , \ q _ {y} ^ {\phantom {} 0}$ and ${q _ {z}} ^ {0} )$ , thus a unified form can be obtained; while for reflectional and 180° rotational symmetries, the different direction of macro heat flux will lead to totally different Eqs. (2) or (3), thus the BC should be derived in three conditions, separately. This indicates that under a 3D heat conduction problem, only the UC that formulated and the BC that derived by translational symmetries are available; for 2D problems, the UC that formulated by reflectional or 180° rotational symmetries are also available under certain conditions, i.e., when the heat flux components are the same stimulus.
+
+The derivation process listed in Tables 3–5 should be described in more details, take case ${q _ {x}} ^ {0}$ in Table 3 as an instance: for $P _ {1}$ and $P _ {2}$ the macro heat flux can be considered as ATS (see Table 2), then BC of $P _ {1}$ and $P _ {2}$ can be derived based on Eq. (5) and Eq. (3) (ATS); for $P _ {3} \sim P _ {6}$ the macro heat flux can be considered as STS (see Table 2), then BC of $P _ {3} - P _ {6}$ can be derived based on Eq. (5) and Eq. (2) (STS); finally, the BCb of UC3 under ${q _ {x}} ^ {0}$ can be derived as shown in Eq. (6-1). Similar processes can be found for cases of ${q _ {y}} ^ {0}$ and ${q _ {z}} ^ {0}$ , and also for other two types of composites in Tables 4 and 5. The detailed BC derivation (from Eqs. (5) and $( 2 ) \mathrm{or} ( 3 )$ to Eqs. (6)-(8)) can be described by the case $P _ {1}$ with ${q _ {x}} ^ {0}$ of UD composite (see Table 3):
+
+UC3 is formulated based on UC2, and $P _ {1} = ( 0 , y , z )$ is formulated by reflectional transformation about ${P _ {x}} ^ {1} = ( a , y , z )$ (see Fig. 1). M is an arbitrary node on $P _ {1} , M ^ {\prime}$ is the node that reflectional symmetric to M, then we can have coordinates of $M = ( 0 , y _ {1} , z _ {1} )$ and $\begin{array} {r} {M ^ {\prime} = ( 2 a , y _ {1} , z _ {1} ) .} \end{array}$ Node $O = ( 0 , 0 , 0 )$ is assumed to be the reference node, and its symmetric node is $O = ( 2 a , 0 , 0 )$ .
+
+The macro heat flux can be considered as ATS (see Table 2), thus Eq. (3) can be used to derive BC. Express M, M′, O, and O′ by coordinates, Eq. (3) becomes:
+
+$$T _ {( 0 , y _ {1} , z _ {1} )} - T _ {( 0 , 0 , 0 )} = T _ {( 2 a , 0 , 0 )} - T _ {( 2 a , y _ {1} , z _ {1} )}\tag{9}$$
+
+According to the BC of UC2 $( P _ {1} - P _ {2}$ in Eq. (5)), Eq. (9) can be further derived as:
+
+$$T _ {( 0 , y _ {1} , z _ {1} )} - T _ {( 0 , 0 , 0 )} = 0\tag{10}$$
+
+Summary of boundary conditions derived from Path b.
+
+It is clear that Eq. (10) has the same expression as the first equation of Eq. (7-1). The other derivations listed in Tables 3–5 have the similar process, and will be omitted here. However, the reflection planes, rotation axes and translation axes relevant to each boundary should be stated here: for UD composite $( \mathrm{Eq.~} ( 6 ) ) , P _ {1}$ and $P _ {2}$ correspond to reflection plane $P _ {x} {} ^ {1} = ( a , y , z ) , P _ {3}$ and $P _ {4}$ correspond to reflection plane ${P _ {y}} ^ {1} = ( x , b , z )$ , while $P _ {5}$ and $P _ {6}$ correspond to reflection plane $P _ {z} ^ {\ 1} = ( x ,$ $y , h )$ (see Fig. 1); for plain woven composite (Eq. (7)), $P _ {1}$ and $P _ {2}$ correspond to reflection plane $P _ {x} {} ^ {1} = ( a , y , z ) , P _ {3}$ and $P _ {4}$ correspond to reflection plane $P _ {y} ^ {\ 1} = ( x , b , z ) ;$ , while $P _ {5}$ and $P _ {6}$ correspond to translation z-axis (see Fig. 2); for 3D4d composite $( \mathrm{Eq.} ( 8 ) ) , P _ {1}$ and $P _ {2}$ correspond to rotation axis $L y ^ {1} = ( a , y , h / 2 ) , P _ {3}$ and $P _ {4}$ correspond to rotation axis $L x ^ {1} = ( x , b ,$ h/2), while $P _ {5}$ and $P _ {6}$ correspond to translation z-axis (see Fig. 3).
+
+The characteristics of BCb as shown in Eqs. (6)-(8) are summarized in Table 6. For UD composites, as indicated in Eq. (6-1), under ${q _ {x}} ^ {0}$ , the boundary planes in x-direction should have uniform temperature BC (UBC) while the boundary planes in y- and z-direction are adiabatic ones, and the same situation can be found for the cases of ${q _ {y}} ^ {0}$ and ${q _ {z}} ^ {0}$ For plain woven composite, as indicated in Eq. (7-1), under ${q _ {x}} ^ {0}$ and ${q _ {y}} ^ {0} ,$ the boundary planes in x-direction should have UBC, while the boundary planes in y-direction are adiabatic and that in z-direction are periodic ones; under ${q _ {z}} ^ {0} ;$ , boundary planes in z-direction are periodic while in x- and y-direction are adiabatic BC. For 3D4d braided composites, as indicated in $\operatorname{Eq.}$ (8), for all the boundary planes in x- and ydirection, the upper part and the lower part should have constraint relations, while the boundary planes in z-direction are periodic conditions. According to Tables 2 and $^ {6 ,}$ one can find that: 1st. reflectional symmetries will lead to uniform temperature distributions on the boundary planes; 2nd. the 180° rotational symmetries will bring about constraint relations between two corresponding halves (lower and upper, left and right, etc.) of a single boundary plane.
+
+In this paper, the periodic BCa (Eq. (4)) are used to conduct the calculation, and the results on boundary planes will be compared with the temperature fields constrained by BCb (Eqs. (6)-(8)). If the numerical results satisfy the descriptions of BCb, it can be concluded that a UC can have different BC but will obtain the unique results. It means that for such a UC, the specific formulation path is not important provided that its BC is derived rigorously.
+
+## 5. Model discretization
+
+Fig. 6 is the meshed models for UD, plain woven and 3D4d braided composites. ANSYS Mechanical is used to conduct the calculation. The element is the 3D thermal solid element SOLID70 which is a hexahedron with 8 nodes. For UD, plain woven and 3D4d braided composites, the model has 21,580 elements and 24,607 nodes, 704,747 elements and 236,906 nodes, and 3,030,525 elements and 4,049,794 nodes, respectively. It also should be noted that the numerical results obtained in this work are independent of mesh size.
+
+In order to apply the periodic BC, the corresponding boundary planes should be meshed identically. As shown in the right lower diagram of Fig. 6, for unit cells established in this work, the symmetric planes are $P _ {1}$ and $P _ {2} , P _ {3}$ and $P _ {4} ,$ and $P _ {5}$ and $P _ {6}$
+
+## 6. Results and discussions
+
+## 6.1. UD composites
+
+Fig. 7 (a), (b) and (c) are temperature fields obtained under macro heat flux in $x \mathrm{,~} y -$ and z-direction $( {q _ {x}} ^ {0} , \ q _ {y} ^ {\ 0} , \ q _ {z} ^ {\ 0} ) ;$ , respectively. In the calculation, the temperature of reference node (0, 0, 0) is assumed to be $^ {0 ,}$ and the macro temperature gradient is 20. The fields on boundary planes in calculation directions, e.g., planes $x = 0$ and $x = a$ for the case of ${q _ {x}} ^ {0} ,$ are displayed separately. As shown in Fig. 7, all the boundary planes have uniform temperature distributions as described in Eq. (6) and as summarized in Table 6. It means that the BC used in the simulation is derived by Path a (translational symmetries), while at the same time the results on boundaries satisfy the conditions that derived by Path b (the combination of translational and reflectional symmetries). Therefore, for UD composite, a UC can have different formulation paths and different boundary conditions, while unique numerical results.
+
+## 6.2. Plain woven composites
+
+Fig. 8 (a), (b) and (c) are the temperature fields of plain woven composite under ${q _ {x}} ^ {0} , {q _ {y}} ^ {0} , {q _ {z}} ^ {0} ;$ , respectively. The temperature of the reference node (0, 0, 0) is 0, and the macro temperature gradient is 20. The fields on boundary planes in calculation directions are displayed, separately. As shown in Fig. 8 (a) and (b), the temperature on boundary planes $P _ {1} - P _ {4}$ are uniform as summarized in Table 6. However, as shown in Fig. 8(c) the boundary planes $P _ {5}$ and $P _ {6}$ have non-uniform temperature fields. This phenomenon is very closely related to the formulation path of those boundary planes as summarized in Table 2, i.e., $P _ {1} - P _ {4}$ can be formulated by the combination of translational and reflectional symmetries, while $P _ {5}$ and $P _ {6}$ can only be formulated by translational symmetries.
+
+As shown in Fig. 8(c), if the temperature fields on $P _ {5}$ and $P _ {6}$ are investigated, one can find further reflectional symmetric and 180° rotational symmetric fields. The black dashed lines represent reflection planes (perpendicular to paper) while the black circle indicates 180° rotation axis (perpendicular to paper). It worth noting that these boundary results imply corresponding structure symmetries in the UC structure as shown in Fig. 9. In Fig. 9, the matrix is not shown to display the fiber yarns clear, the two blue planes are reflection planes, and the black line is the rotation axis, and such structure symmetries can be used to further formulate unit cells with smaller size.
+
+(b) ${q _ {y}} ^ {0}$
+
+## 6.3. 3D four-directional braided composites
+
+Fig. 10(a), (b) and (c) are the temperature fields of 3D4d braided composites under ${q _ {x}} ^ {0} , \ q _ {y} ^ {\ 0} , \ q _ {z} ^ {\ 0} ;$ , respectively. The fields on boundary planes in calculation directions are displayed. All the boundary planes
+
+(b) ${q _ {y}} ^ {0}$
+
+$$P _ {1} \sim P _ {4} ;$$
+
+$$P _ {5} \sim P _ {6} {\mathrm{:}}$$
+
+$$P _ {1} \sim P _ {4} ;$$
+
+$$P _ {5} \sim P _ {6} {\mathrm{:}}$$
+
+$\left( P _ {1} - P _ {6} \right)$ of 3D4d braided composites have non-uniform temperature fields since the formulation path of these boundary planes are combinations of translational and $180 ^{\circ}$ rotational symmetries, rather than reflectional ones. Compare the results on $P _ {1}$ and $P _ {2} ,$ translational symmetric (periodic) relations between corresponding locations can be found. The same situation can be found on $P _ {3}$ and $P _ {4} ,$ and $P _ {5}$ and $P _ {6}$
+
+If the boundary temperature fields are further investigated, 180° rotational symmetric fields can be found. The black point in boundary planes indicates the rotation axis (perpendicular to the paper). Temperature fields on $P _ {1} \& P _ {2}$ and $P _ {3} \& P _ {4}$ imply $\boldsymbol {180 ^{\circ}}$ rotational symmetries about axis $X _ {1}$ and $Y _ {1} ,$ respectively, while that on $P _ {5}$ and $P _ {6}$ indicate symmetries about $Z _ {1}$ and further $Z _ {2}$ Fig. 11 shows the 180° rotational symmetries in the structure of the present UC. The radius of fiber bundles is smaller than that in Fig. 4 to display its orientation clear. The thick red lines are the fiber yarns while the blue lines are the rotation axes. In the right four diagrams of Fig. 11, one specific fiber bundle $L _ {1}$ and its symmetric bundles are used to clarify the structure symmetries. It is clear shown that $L _ {1}$ and $L _ {1} {} ^ {\prime}$ are 180° symmetric to each other about $X _ {1} , L _ {1}$ and ${L _ {1}} ^ {\prime \prime}$ are symmetric about $Y _ {1} ,$ , and $L _ {1}$ and ${L _ {1}} ^ {\prime \prime \prime}$ are symmetric about $Z _ {1 :}$ , while ${L _ {1}} ^ {\prime \prime \prime}$ and ${L _ {1}} ^ {\prime \prime \prime \prime}$ are 180° symmetric about $Z _ {2}$ Also, all these structure symmetries can be used to further formulate unit cells with smaller size.
+
+From Figs. 9(c), 10(a)–(c) one can notice that the nonuniformity on the non-isothermal boundary planes is relatively small: for z-plane of plain woven, transverse (x-, y-) planes of 3D4d, and z-plane of 3D4d braided composites are on the orders of about 1%, 6% and 2% of the global temperature scales, respectively. This means that even if rigorously wrong, the UBC can be a good and easy approximation for some problems. However, the error is dependent on several factors, e.g., the difference of thermal conductivities between fiber yarns and matrix. An additional case of 3D4d braided composite is calculated by increasing thermal conductivities (both transverse and axial) of fibers 10 times (no change of matrix), and the finally calculated nonuniformity on transverse planes increases to 13%. Therefore, it is essential to evaluate possible errors before the utilization of UBC.
+
+## 6.4. Summary
+
+First of all, according to the above discussions in this section we can obtain a conclusion: a UC can be formulated by different paths and can have different BC, whereas the numerical results are unique. For such a unit cell, the specific formulation path is not concerned provided that the BC is derived rigorously. Thus, one can choose a formulation path and derive corresponding BC that appropriate for his own work.
+
+Secondly, the temperature on all the boundary planes $( P _ {1} - P _ {6} )$ of UD and the x- and $y -$ boundary planes $( P _ {1} - P _ {4} )$ of plain woven composite have the same distribution with UBC, which means that for such boundary planes the UBC is fortunately correct. However, the results on z- boundary planes $( P _ {5}$ and $P _ {6} )$ of plain woven and all boundary planes $\left( P _ {1} - P _ {6} \right)$ of 3D4d braided composites have totally different distributions with UBC, which means that for such boundary planes of such unit cells, UBC is incorrect. If Path b for $P _ {1} - P _ {6}$ of UD composite and $P _ {1} - P _ {4}$ of plain woven composite is re-examined, one can find reflectional symmetries (see Table 2). So, it can be concluded that UBC is correct for boundaries that can be formulated based on reflectional symmetries, while inappropriate for others. This gives researchers a criterion of whether UBC is appropriate for their models, especially for the situation that complex boundary conditions are difficult to apply.
+
+## 7. Conclusions
+
+In this work, the utilization of unit cell method in thermal calculation of composites is studied and two issues, i.e., the confusion of one unit cell configuration with different boundary conditions and the application scope of uniform temperature boundary condition are clarified. Three types of composites, unidirectional fiber reinforced, plain woven and three-dimensional four-directional braided composites are studied. For each composite, one unit cell is formulated, and two types of boundary conditions are derived based on two different formulation paths: Path a of translational symmetries, and Path b of combinations of translational with reflectional or rotational symmetries. The numerical results show some conclusions:
+
+1. A unit cell can be formulated by different paths and can have different boundary conditions, whereas the numerical results are unique. For such a unit cell, the specific formulation path is not concerned provided that the boundary condition is derived rigorously. Thus, one can choose a formulation path and derive corresponding boundary conditions that appropriate for his own work.
+
+2. For unit cells and boundaries that can be formulated by reflectional symmetries, the widely used uniform temperature boundary condition (UBC) is correct, while for unit cells that can only be formulated by translational symmetries or $180 ^{\circ}$ rotational ones, it is inappropriate. For UD composites, UBC is correct for thermal calculations in all directions; for plain woven composites, it is correct in x- and y-direction while inappropriate in z-direction; for three-dimensional four-directional braided composites, it is inappropriate for all directional thermal calculations. For some problems, the UBC can be a good and easy approximation since the temperature nonuniformity could be relatively small, however, it is essential to evaluate possible errors first.
+
+3. The calculated temperature fields on boundary planes always indicate further structure symmetries that can be used to formulate unit cells with smaller size.
+
+$P _ {1} \sim P _ {6} {:}$ : Transl. $\mathbf {+ 180} ^{\circ}$ Rot. 
+(a) ${\{q _ {x}} ^ {0} \}$
+
+$$P _ {1} \sim P _ {6} \mathrm {{:}}$$
+
+## Omitted Tables
+
+- [Table 1 omitted; saved to tables/table_001.md]
+- [Table 2 omitted; saved to tables/table_002.md]
+- [Table 3 omitted; saved to tables/table_003.md]
+- [Table 4 omitted; saved to tables/table_004.md]
+- [Table 5 omitted; saved to tables/table_005.md]
+- [Table 6 omitted; saved to tables/table_006.md]
+- [Table 7 omitted; saved to tables/table_007.md]
+- [Table 8 omitted; saved to tables/table_008.md]

@@ -1,0 +1,646 @@
+{
+  "body_chars": 25244,
+  "body_words_estimate": 3952,
+  "noise_flags": [],
+  "engines": {
+    "pymupdf": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 106,
+      "pages": 8,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "docling": {
+      "available": false,
+      "succeeded": false,
+      "error": "No module named 'docling'",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "grobid": {
+      "available": false,
+      "succeeded": false,
+      "error": "No GROBID URL provided.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    },
+    "mineru": {
+      "available": true,
+      "succeeded": true,
+      "error": "",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 36707,
+      "references": 0,
+      "tables": 0
+    },
+    "marker": {
+      "available": false,
+      "succeeded": false,
+      "error": "Marker CLI not found.",
+      "warnings": [],
+      "blocks": 0,
+      "pages": 0,
+      "body_chars": 0,
+      "references": 0,
+      "tables": 0
+    }
+  },
+  "chosen_sources": {
+    "abstract": "",
+    "body": "mineru",
+    "references": "pymupdf_bbox_or_body_tail"
+  },
+  "audit": {
+    "quality_score": 1.0,
+    "needs_manual_review": false,
+    "issues_before_repair": [
+      {
+        "code": "references_inside_body",
+        "severity": "high",
+        "message": "Back matter heading was detected inside clean body."
+      },
+      {
+        "code": "publisher_noise",
+        "severity": "medium",
+        "message": "Publisher header/footer boilerplate remains in body text."
+      },
+      {
+        "code": "caption_pollution",
+        "severity": "medium",
+        "message": "Many figure/table caption paragraphs remain in body text."
+      }
+    ],
+    "issues_after_repair": [],
+    "repairs_applied": [
+      {
+        "action": "strip_back_matter",
+        "message": "Removed back matter from clean body and parsed reference-like tail entries.",
+        "after": 30554
+      },
+      {
+        "action": "trim_front_matter_to_main_body",
+        "message": "Trimmed title/authors/abstract/front matter before main body heading: ## 1. Introduction",
+        "before": 30554,
+        "after": 28178
+      },
+      {
+        "action": "move_figure_captions",
+        "message": "Moved figure captions out of clean body.",
+        "after": 11
+      },
+      {
+        "action": "normalize_inline_body_formulas",
+        "message": "Normalized inline/display math spans inside clean body.",
+        "after": 24
+      },
+      {
+        "action": "drop_false_positive_equations",
+        "message": "Dropped equation candidates that looked like prose/table labels rather than formulas.",
+        "after": 2
+      },
+      {
+        "action": "normalize_formula_text",
+        "message": "Normalized formula spacing, common OCR symbols, and simple LaTeX temperature/unit forms.",
+        "after": 24
+      },
+      {
+        "action": "sort_numbered_references",
+        "message": "Sorted bracket-numbered references after extraction order appeared scrambled.",
+        "before": 31,
+        "after": 31
+      }
+    ],
+    "candidate_scores": {
+      "mineru": {
+        "score": 1.0,
+        "chars": 25603,
+        "words_estimate": 3977,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 2,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": false,
+        "garbage_ratio": 0.0009,
+        "section_heading_count": 11
+      },
+      "pymupdf_bbox": {
+        "score": 1.0,
+        "chars": 23969,
+        "words_estimate": 3830,
+        "references_inside_body": false,
+        "publisher_noise_hits": 0,
+        "mojibake_hits": 0,
+        "caption_paragraph_starts": 2,
+        "table_like_paragraphs": 0,
+        "duplicate_paragraphs": 0,
+        "starts_with_continuation_fragment": false,
+        "garbage_ratio": 0.0054,
+        "section_heading_count": 12
+      }
+    },
+    "final_body_metrics": {
+      "score": 1.0,
+      "chars": 25244,
+      "words_estimate": 3952,
+      "references_inside_body": false,
+      "publisher_noise_hits": 0,
+      "mojibake_hits": 0,
+      "caption_paragraph_starts": 2,
+      "table_like_paragraphs": 0,
+      "duplicate_paragraphs": 0,
+      "starts_with_continuation_fragment": false,
+      "garbage_ratio": 0.0009,
+      "section_heading_count": 11
+    },
+    "body_purification": {
+      "main_body_start_found": true,
+      "main_body_start_heading": "## 1. Introduction",
+      "front_matter_removed_chars": 2376,
+      "starts_with": "## 1. Introduction",
+      "section_sequence": {
+        "top_level_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "missing_top_level_numbers": [],
+        "non_monotonic": false,
+        "headings": [
+          "## 1. Introduction",
+          "## 2. Design of the novel solar radiant heating test",
+          "## 2.1. Apparatus",
+          "## 2.2. Experimental procedure",
+          "## 3. Formulations of the coupled temperature-diffusionexpansion problem",
+          "## 3.1. Energy conservation equation",
+          "## 3.2. Mass transforming relationship",
+          "## 3.3. Formulations for thermochemical expansion",
+          "## 3.4. Gas diffusion equation",
+          "## 4. Results and discussion",
+          "## 5. Conclusions"
+        ]
+      }
+    },
+    "formula_audit": {
+      "input_equations_count": 1,
+      "output_equations_count": 27,
+      "inline_formula_count": 28,
+      "dropped_false_positive_count": 2,
+      "low_confidence_count": 0,
+      "formulas": [
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "4 \\ : \\mathrm { M W } / \\mathrm { m } ^ { 2 }",
+          "normalized": "4 \\ : \\mathrm{MW} / \\mathrm{m} ^ {2}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_001"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\nabla \\cdot q _ { \\mathrm { w } } \\vec { i } + \\rho _ { s } C _ { \\mathrm { p s } } \\frac { \\partial T } { \\partial t } = \\nabla \\cdot \\left( k \\frac { \\partial T } { \\partial x } \\vec { i } \\right) - \\rho _ { \\mathrm { g } } C _ { \\mathrm { p g } } \\vec { \\nu } _ { \\mathrm { g } } \\cdot \\nabla T - Q \\rho _ { s } \\frac { d c } { d t }\\tag{ð1Þ}\n",
+          "normalized": "\\nabla \\cdot q _ {\\mathrm{w}} \\vec {i} + \\rho _ {s} C _ {\\mathrm{ps}} \\frac {\\partial T} {\\partial t} = \\nabla \\cdot \\left( k \\frac {\\partial T} {\\partial x} \\vec {i} \\right) - \\rho _ {\\mathrm{g}} C _ {\\mathrm{pg}} \\vec {\\nu} _ {\\mathrm{g}} \\cdot \\nabla T - Q \\rho _ {s} \\frac {d c} {d t}\\tag{ð1Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_002"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "q _ { \\mathrm { w } }",
+          "normalized": "q _ {\\mathrm{w}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_003"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\therefore C _ { \\mathfrak { p } }",
+          "normalized": "\\therefore C _ {\\mathfrak {p}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_004"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\vec { \\upsilon } _ { \\mathrm { g } }",
+          "normalized": "\\vec {\\upsilon} _ {\\mathrm{g}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_005"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\mu",
+          "normalized": "\\mu",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_006"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\vec { \\upsilon } _ { \\mathrm { g } } = - \\frac { \\lambda } { \\mu } \\frac { \\partial p } { \\partial x } \\vec { i }\\tag{ð2Þ}\n",
+          "normalized": "\\vec {\\upsilon} _ {\\mathrm{g}} = - \\frac {\\lambda} {\\mu} \\frac {\\partial p} {\\partial x} \\vec {i}\\tag{ð2Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_007"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\frac { d c } { d t } = - A _ { 0 } c ^ { n } \\exp \\left( - \\frac { E _ { \\mathrm { a } } } { R T } \\right)\\tag{ð3Þ}\n",
+          "normalized": "\\frac {d c} {d t} = - A _ {0} c ^ {n} \\exp \\left( - \\frac {E _ {\\mathrm{a}}} {R T} \\right)\\tag{ð3Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_009"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "A _ { 0 } , n ,",
+          "normalized": "A _ {0} , n ,",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_010"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "E _ { \\mathrm { a } }",
+          "normalized": "E _ {\\mathrm{a}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_011"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\rho _ { \\mathsf { p } } { \\frac { \\partial \\varphi _ { \\mathsf { p } } } { \\partial t } } = { \\frac { d c } { d t } }\\tag{ð4Þ}\n",
+          "normalized": "\\rho _ {\\mathsf{p}} {\\frac {\\partial \\varphi _ {\\mathsf{p}}} {\\partial t}} = {\\frac {d c} {d t}}\\tag{ð4Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_012"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\rho _ { \\mathrm { c } } \\frac { \\partial \\varphi _ { \\mathrm { c } } } { \\partial t } = - \\frac { d c } { d t } ( 1 - \\Gamma ^ { \\mathrm { p } } )\\tag{ð5Þ}\n",
+          "normalized": "\\rho _ {\\mathrm{c}} \\frac {\\partial \\varphi _ {\\mathrm{c}}} {\\partial t} = - \\frac {d c} {d t} ( 1 - \\Gamma ^ {\\mathrm{p}} )\\tag{ð5Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_013"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\varphi _ { \\mathrm { g } } = 1 - \\varphi _ { \\mathrm { f } } - \\varphi _ { \\mathrm { p } } - \\varphi _ { \\mathrm { c } }\\tag{ð6Þ}\n",
+          "normalized": "\\varphi _ {\\mathrm{g}} = 1 - \\varphi _ {\\mathrm{f}} - \\varphi _ {\\mathrm{p}} - \\varphi _ {\\mathrm{c}}\\tag{ð6Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_014"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\rho , \\varphi",
+          "normalized": "\\rho , \\varphi",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_015"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\Gamma ^ { \\mathfrak { p } }",
+          "normalized": "\\Gamma ^ {\\mathfrak {p}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_016"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\rho = \\rho _ { \\mathrm { f } } \\varphi _ { \\mathrm { f } } + \\rho _ { \\mathrm { p } } \\varphi _ { \\mathrm { p } } + \\rho _ { \\mathrm { c } } \\varphi _ { \\mathrm { c } }\\tag{ð7Þ}\n",
+          "normalized": "\\rho = \\rho _ {\\mathrm{f}} \\varphi _ {\\mathrm{f}} + \\rho _ {\\mathrm{p}} \\varphi _ {\\mathrm{p}} + \\rho _ {\\mathrm{c}} \\varphi _ {\\mathrm{c}}\\tag{ð7Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_017"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "h _ { 0 } .",
+          "normalized": "h _ {0}",
+          "repairs": [
+            "latex_spacing_repaired",
+            "unit_expression_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_018"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\frac { 1 } { h _ { 0 } } \\frac { \\partial h } { \\partial t } = [ \\beta _ { \\mathrm { v i r g } } ( 1 - c ) + \\beta _ { \\mathrm { c h a r } } c ] \\frac { \\partial T } { \\partial t } + \\frac { \\xi } { m _ { 0 } } \\frac { \\partial m } { \\partial t }\\tag{ð8Þ}\n",
+          "normalized": "\\frac {1} {h _ {0}} \\frac {\\partial h} {\\partial t} = [ \\beta _ {\\mathrm{virg}} ( 1 - c ) + \\beta _ {\\mathrm{char}} c ] \\frac {\\partial T} {\\partial t} + \\frac {\\xi} {m _ {0}} \\frac {\\partial m} {\\partial t}\\tag{ð8Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_019"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\beta _ { \\mathrm { v i r g } }",
+          "normalized": "\\beta _ {\\mathrm{virg}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_020"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\\beta _ { \\mathrm { c h a r } }",
+          "normalized": "\\beta _ {\\mathrm{char}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_021"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( 8 ) , m _ { 0 }",
+          "normalized": "( 8 ) , m _ {0}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_022"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\nm = c m _ { 0 } + ( 1 - c ) m _ { \\mathrm { f i n a l } }\\tag{ð9Þ}\n",
+          "normalized": "m = c m _ {0} + ( 1 - c ) m _ {\\mathrm{final}}\\tag{ð9Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_023"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "m _ { \\mathrm { f i n a l } }",
+          "normalized": "m _ {\\mathrm{final}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_024"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "t + \\Delta t ,",
+          "normalized": "t + \\Delta t ,",
+          "repairs": [],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_025"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "T _ { i ^ { \\prime } } ^ { 0 } ,",
+          "normalized": "T _ {i ^ {\\prime}} ^ {0} ,",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_026"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "\n\\frac { \\partial m _ { \\mathrm { g } } } { \\partial t } = \\frac { \\partial m _ { \\mathrm { p g } } } { \\partial t } - \\nabla \\cdot ( \\rho _ { \\mathrm { g } } \\vec { \\upsilon } _ { \\mathrm { g } } )\\tag{ð10Þ}\n",
+          "normalized": "\\frac {\\partial m _ {\\mathrm{g}}} {\\partial t} = \\frac {\\partial m _ {\\mathrm{pg}}} {\\partial t} - \\nabla \\cdot ( \\rho _ {\\mathrm{g}} \\vec {\\upsilon} _ {\\mathrm{g}} )\\tag{ð10Þ}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_027"
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "m _ { \\mathrm { p g } }",
+          "normalized": "m _ {\\mathrm{pg}}",
+          "repairs": [
+            "latex_spacing_repaired"
+          ],
+          "confidence": 0.92,
+          "needs_review": false,
+          "issues": [],
+          "drop": false,
+          "id": "body_inline_028"
+        }
+      ],
+      "dropped": [
+        {
+          "id": "equation_001",
+          "source": "equations",
+          "meta": "[page 4, bbox (42.52, 641.9, 293.59, 660.47)]",
+          "original": "It should be noted that the density of gas phase is ignored in Eq. (7).",
+          "normalized": "It should be noted that the density of gas phase is ignored in Eq. (7)",
+          "confidence": 0.0,
+          "needs_review": true,
+          "issues": [
+            "table_or_axis_label",
+            "no_math_signal",
+            "text_heavy",
+            "equation_reference_sentence"
+          ],
+          "drop": true,
+          "repairs": [
+            "unit_expression_repaired"
+          ]
+        },
+        {
+          "source": "body_inline",
+          "meta": "",
+          "original": "( 1 ) ,",
+          "normalized": "( 1 ) ,",
+          "repairs": [],
+          "confidence": 0.42,
+          "needs_review": true,
+          "issues": [
+            "no_math_signal"
+          ],
+          "drop": true,
+          "id": "body_inline_008"
+        }
+      ]
+    },
+    "section_headings_detected": [
+      "## 1. Introduction",
+      "## 2. Design of the novel solar radiant heating test",
+      "## 2.1. Apparatus",
+      "## 2.2. Experimental procedure",
+      "## 3. Formulations of the coupled temperature-diffusionexpansion problem",
+      "## 3.1. Energy conservation equation",
+      "## 3.2. Mass transforming relationship",
+      "## 3.3. Formulations for thermochemical expansion",
+      "## 3.4. Gas diffusion equation",
+      "## 4. Results and discussion",
+      "## 5. Conclusions"
+    ],
+    "final_sources": {
+      "abstract": "",
+      "body": "mineru",
+      "references": "pymupdf_bbox_or_body_tail"
+    }
+  },
+  "header_footer_repeated_count": 2,
+  "header_footer_removed_count": 9,
+  "tables_count": 0,
+  "figure_captions_count": 11,
+  "table_captions_count": 0,
+  "equations_count": 27,
+  "references_count": 31,
+  "scanned_pdf_detected": false,
+  "ocr_fallback_needed": false
+}

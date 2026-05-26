@@ -1,0 +1,10 @@
+Input,Input analys,$R ^ { 2 }$,RMSE /(kW/m2),Relative error/%
+States,Wall temperature,States,Wall temperature
+√,√,TCN,CNN,0.9993,31.330,1.397
+√,,TCN,,0.994,84.440,2.919
+,,,CNN,-0.186,1179.851,44.113
+,,TCN,FCL,0.921,331.270,8.961
+,,FCL,CNN,0.797,517.563,16.261
+-√√√V√,,LSTM,CNN,0.991,101.170,3.371
+,-VVVV√V,GRU,CNN,0.989,114.188,4.302
+,,RNN,CNN,0.980,151.998,5.956

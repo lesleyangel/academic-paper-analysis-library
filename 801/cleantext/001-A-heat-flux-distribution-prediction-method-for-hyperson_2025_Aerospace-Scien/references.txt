@@ -1,0 +1,73 @@
+[1] Z. Wang, S.F. Song, X. Wang, et al., Summary and prospect of data-driven aerothermal modeling prediction methods[J], Phys. Gases 9 (4) (2024) 39–55.
+
+[2] Y. Yang, Y. Xue, W. Zhao, et al., Fast flow field prediction of three-dimensional hypersonic vehicles using an improved gaussian process regression algorithm[J], Phys. Fluids 36 (1) (2024).
+
+[3] C. Nie, J. Huang, X. Wang, et al., Fast aeroheating prediction method for complex shape vehicles based on proper orthogonal decomposition[J], Acta Aerodynamica Sinica 35 (6) (2017) 760–765.
+
+[4] J. Zhang, C. Nie, Cai Jinsheng, et al., A reduced-order model for fast predicting ionized flows of hypersonic vehicles along flight trajectory[J], Chin. J. Aeronaut. 37 (1) (2024) 89–105.
+
+[5] X. Chen, W.A Fan, Machine learning rapid prediction of the aerothermodynamic environment for near-space hypersonic unmanned aircraft[J], Tsinghua Sci. Technol. 30 (2) (2024) 682–694.
+
+[6] E.R. Dreyer, B.J. Grier, J.J. McNamara, et al., Rapid steady-state hypersonic aerothermodynamic loads prediction using reduced fidelity models[J], J. Aircr. 58 (3) (2021) 663–676.
+
+[7] Z.C. Zhang, T.Y. Gao, L. Zhang, et al., Aeroheating agent model based on radial basis function neural network[J], Acta Aeronautica et Astronautica Sinica 42 (4) (2021) 524167.
+
+[8] W. Li, W. Zhao, G. Dai, et al., A deep learning approach for wall heat flux prediction across various wall temperatures[J], Aerosp. Sci. Technol. 158 (2025) 109934.
+
+[9] Z. Wang, Z. Wang, X. Wang, et al., A data-driven aeroheating prediction model[J], Acta Aerodynamica Sinica 41 (5) (2023) 12–19.
+
+[10] Y. Yang, S. Yao, Y. Xue, et al., A variable fidelity approach for predicting aerodynamic wall quantities of hypersonic vehicles using the ConvNeXt encoder- decoder framework[J], Aerosp. Sci. Technol. 155 (2024) 109605.
+
+[11] G. Dai, W. Zhao, S. Yao, et al., Machine learning strategy for wall heat flux prediction in aerodynamic heating[J], J. Thermophys. Heat. Trans. 37 (2) (2023) 424–434.
+
+[12] G. Dai, W. Zhao, S. Yao, et al., Deep-learning strategy based on convolutional neural network for wall heat flux prediction[J], AIAA J. 61 (11) (2023) 4772–4782.
+
+[13] W. Yao, R.K Jaiman, Feedback control of unstable flow and vortex-induced vibration using the eigensystem realization algorithm[J], J. Fluid. Mech. 827 (2017) 394–414.
+
+[14] Righi M., Düzel S., Anderegg D., et al. ROM-based uncertainties quantification of flutter speed prediction of the BSCW wing[C], AIAA Scitech 2022 Forum. 2022: 0179.
+
+[15] C. Ruiz, J.´A. Acosta, A. Ollero, Aerodynamic reduced-order Volterra model of an ornithopter under high-amplitude flapping[J], Aerosp. Sci. Technol. 121 (2022) 107331.
+
+[16] V. Raul, L. Leifsson, Surrogate-based aerodynamic shape optimization for delaying airfoil dynamic stall using Kriging regression and infill criteria[J], Aerosp. Sci. Technol. 111 (2021) 106555.
+
+[17] Y. Pan, X. An, Y. Lei, et al., An improved neural network for modeling airfoil’s unsteady aerodynamics in transonic flow[J], Phys. Fluids 36 (1) (2024).
+
+[18] X. Yu, T. Wu, Simulation of unsteady flow around bluff bodies using knowledge- enhanced convolutional neural network[J], J. Wind Eng. Industr. Aerodyn. 236 (2023) 105405.
+
+[19] J. Nash, Q. Sun, D. Xu, et al., Data-based prediction of unsteady aerodynamic forces induced by free-stream turbulence[J], J. Aerosp. Eng. 35 (6) (2022) 04022097.
+
+[20] B. Zhang, J. Han, T. Zhang, et al., Unsteady aerodynamic identification based on recurrent neural networks[J], J. Vibroeng. 23 (2) (2021) 449–458.
+
+[21] Y. Dai, R. Haoran, W.U. You, et al., Stall flutter prediction based on multi-layer GRU neural network[J], Chin. J. Aeronaut. 36 (1) (2023) 75–90.
+
+[22] R. Zahn, C. Breitsamter, Airfoil buffet aerodynamics at plunge and pitch excitation based on long short-term memory neural network prediction[J], CEAS. Aeronaut. J. (2021) 1–11.
+
+[23] X. Guo, Y. Yao, Q. Tang, et al., Multimodel ensemble estimation of landsat-like global terrestrial latent heat flux using a generalized deep CNN-LSTM integration algorithm[J], Agric. For. Meteorol. 349 (2024) 109962.
+
+[24] Y. Li, J. Chang, Z. Wang, et al., An efficient deep learning framework to reconstruct the flow field sequences of the supersonic cascade channel[J], Phys. Fluids 33 (5) (2021).
+
+[25] Massegur D., Clifford D., Da Ronch A., et al. Comparing reduced order model forms for nonlinear dynamical systems[C], 33rd Congress of the International Council of the Aeronautical Sciences. 2022.
+
+[26] Y. Wang, N. Wang, Q. Ren, Predicting surface heat flux on complex systems via Conv-LSTM[J], Case Stud. Thermal Eng. 33 (2022) 101927.
+
+[27] J. Kou, W. Zhang, Data-driven modeling for unsteady aerodynamics and aeroelasticity[J], Progress Aerospace Sci. 125 (2021) 100725.
+
+[28] J. Anderson, EBOOK: Fundamentals of Aerodynamics (SI units)[M], McGraw hill, 2011.
+
+[29] M.A. Patterson, A.V Rao, GPOPS-II: a MATLAB software for solving multiple-phase optimal control problems using hp-adaptive gaussian quadrature collocation methods and sparse nonlinear programming[J], ACM Transac. Mathem. Softw. (TOMS) 41 (1) (2014) 1–37.
+
+[30] Y.C. Liang, H.P. Lee, S.P. Lim, et al., Proper orthogonal decomposition and its applications—Part I: theory[J], J. Sound. Vib. 252 (3) (2002) 527–544.
+
+[31] A. Chatterjee, An introduction to the proper orthogonal decomposition[J], Curr. Sci. (2000) 808–817.
+
+[32] Bai S., Kolter J.Z., Koltun V. An empirical evaluation of generic convolutional and recurrent networks for sequence modeling[J]. arXiv preprint arXiv:1803.01271, 2018.
+
+[33] L.E. Van Dyck, R. Kwitt, S.J. Denzler, et al., Comparing object recognition in humans and deep convolutional neural networks—An eye tracking study[J], Front. Neurosci. 15 (2021) 750639.
+
+[34] T. Nakamura, Y. Kamimura, H. Igawa, et al., Inverse analysis for transient thermal load identification and application to aerodynamic heating on atmospheric reentry capsule[J], Aerosp. Sci. Technol. 38 (2014) 48–55.
+
+[35] W. Huang, C. Gong, C. Li, et al., Real-time data-driven inverse heat conduction method for a reentry flight vehicle based on the random forest algorithm[J], J. Aerosp. Eng. 37 (1) (2024) 04023091.
+
+[36] P. Duda, T. Nakamura, Identification of the transient temperature and stress distribution in an atmospheric reentry capsule assuming temperature-dependent material properties[J], Aerosp. Sci. Technol. 67 (2017) 265–272.
+
+[37] Y. Gal, Z. Ghahramani, Dropout as a bayesian approximation: representing model uncertainty in deep learning[C], in: International Conference on machine learning, PMLR, 2016, pp. 1050–1059. Wenyu Huang: Writing – original draft, Visualization, Validation, Software, Methodology, Data curation, Conceptualization. Chunna Li: Writing – review & editing, Supervision, Project administration. Chunlin Gong: Writing – review & editing. Xiaowei Wang: Funding acquisition. No potential conflict of interest was reported by the author(s).

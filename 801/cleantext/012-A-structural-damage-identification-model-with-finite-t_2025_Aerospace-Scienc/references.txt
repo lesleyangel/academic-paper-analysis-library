@@ -1,0 +1,87 @@
+[1] H. Rocha, C. Semprimoschnig, P.N. Jo˜ao, Sensors for process and structural health monitoring of aerospace composites: a review, Eng. Struct. 237 (2021) 112231.
+
+[2] Hu Jia-Xin, Ai Li-Qiang, Liu Nan, Gou Jian-Jun, Gong Chun-Lin, Tolerance indicating models of non-thermal and thermal damages for a heat transport system, Int. J. Heat. Mass Transf. 224 (2024) 125360.
+
+[3] A. Rytter, M. Krawczuk, P.H. Kirkegaard, Experimental and numerical study of damaged cantilever, J. Eng. Mech. 126 (1) (2000) 60–65.
+
+[4] D.Y. Gao, Z.J. Wu, L. Yang, et al., Structural health monitoring for long-term aircraft storage tanks under cryogenic temperature, Aerosp. Sci. Technol. 92 (2019) 881–891.
+
+[5] Nakatani Scott, Timothy Sands, Simulation of spacecraft damage tolerance and adaptive controls, in: 2014 IEEE Aerospace Conference, 2014.
+
+[6] Nicholas Cholevas ad Konstantinos, N. Anyfantis, Crack identification in solid rocket motors through the Neyman-Peason detection theory, AIAA J. 5 (2023) 61.
+
+[7] Gou Jian-Jun, Jia Shu-Zhen, Tian Hai-Tao, Hu Jia-Xin, Gong Chun-Lin, An integrated optimization method of multi-hierarchy variables for rudder structures with radial force transfer paths, Aerosp. Sci. Technol. 148 (2024) 109115.
+
+[8] S.P. Chandra, S.V. Nimje, S. Roy, Strain based structural health monitoring of stiffened composite plate, Mater. Today: Proceed. 72 (2023) 1631–1636.
+
+[9] Gou Jian-Jun, Jia Shu-Zhen, Li Jin-Xing, Xiao Shuang, Gong Chun-Lin, The determination of physical dimensions of a hypersonic three-stage compression system considering panel vibration effects, Aerosp. Sci. Technol. 140 (2023) 108431.
+
+[10] E. Esu Obukho, Wang Ying, K. Chryssanthopoulos Marios, Local vibration mode pairs for damage identification in axisymmetric tubular structures, J. Sound. Vib. 494 (2020) 115845.
+
+[11] C. Peng, C. Bei, Influence of the blade size on the dynamic characteristic damage identification of wind turbine blades, Nonlinear Eng. 12 (2023) 20220261.
+
+[12] M. Masoumi, M.R. Ashory, Damage identification from uniform load surface using continuous and stationary wavelet transforms, Latin Am. J. Solids Struct. 11 (5) (2014) 738–754.
+
+[13] M. Motlagh, A. Bahar, O. Bahar, Damage detection in a 3D wind turbine tower by using extensive multilevel 2D wavelet decomposition and heat map, including soil- structure interaction, Structures 31 (2021) 842–861.
+
+[14] C.A. Ahmet, Y.O. Fatih, K. Volkan, Automated model updating of multiple cracked cantilever beams for damage detection, J. Constr. Steel. Res. 138 (2017) 499–512.
+
+[15] M. Gunaydin, S. Adanur, A.C. Altunisik, et al., Dynamic characteristics monitoring changes of damaged and retrofitted RC buildings, Exp. Tech. 46 (3) (2022) 457–484.
+
+[16] R.Z. Cui, Z.F. Wang, Z.G. Song, Damage identification of rotating blades based on fuzzy C-means and frequency response function curvature methods, Int. J. Aerospace Eng. (2023) 011397.
+
+[17] Timothy Sands, Optimization provenance of whiplash compensation for flexible space robotics, Aerospace 6 (9) (2019) 93.
+
+[18] N. Cholevas, K.N. Anyfantis, G. Mussbach, et al., Crack identification in solid rocket motors through the Neyman-Pearson detection theory, AIAA J. 61 (5) (2023) 2241–2254.
+
+[19] P. Hajela, F.J. Soeiro, Structural damage detection based on static and modal analysis, AIAA J. 6 (28) (1990) 1110–1115.
+
+[20] Dimitrios P Milanoski, Loutas, et al., Strain-based health indicators for the structural health monitoring of stiffened composite panels, J. Intell. Mater. Syst. Struct. 32 (3) (2021) 255–266.
+
+[21] S.P. Chandra, S.V. Nimje, S. Roy, Strain based structural health monitoring of stiffened composite plate, Mater Today: Proc. 72 (2023) 1631–1636.
+
+[22] Young-Jin Cha, Rahmat Ali, John Lewis and, et al., Deep learning-based structural health monitoring, Autom. Constr. 161 (2024) 105328.
+
+[23] A. Sofi, J. Regita, B. Rane, et al., Structural health monitoring using wireless smart sensor network-an overview, Mech. Syst. Signal. Process. 163 (2022) 108113.
+
+[24] L. Mainini, K. Willcox, A surrogate modeling approach to support real-time structural assessment and decision-making, in: Aiaa Multidisciplinary Design Optimization Conference, 2014.
+
+[25] Y.M. YE, Q. Yang, F. Yang, et al., Digital twin for the structural health management of reusable spacecraft: a case study, Eng. Fracture Mech. 234 (2020) 107076.
+
+[26] Anna Arcaro, Bozhou Zhuang, Bora Gencturk and, et al., Damage detection and localization in sealed spent nuclear fuel dry storage canisters using multi-task machine learning classifiers, Reliab. Eng. Syst. Safety 252 (2024) 110446.
+
+[27] C. Yang, L. Yang, W. Guo, et al., Deep learning based structural damage identification for the strain field of a subway bolster, Alexandria Eng. J. 81 (2023) 264–283.
+
+[28] M.S. Barkhordari, D.J. Armaghani, P.G. Asteris, Structural damage identification using ensemble deep convolutional neural network models, Computer Model. Eng. Sci. 134 (2) (2023) 835–855.
+
+[29] X.J. Guan, Z. Jia, X.L. Wan, et al., Intelligent damage detection for aircraft engine with context encoder neural networks, J. Aerospace Inf. Syst. 18 (11) (2021) 803–812.
+
+[30] Singh Abhaya Pal, Romanov Dmytro, Misimi Ekrem, Mason Alex, Curve fitting- based deformation tracking for vision-based robotic applications, Int. J. Mech. Eng. Robot. Res. 13 (2) (2024) 190–195.
+
+[31] Q. Tang, J. Zhou, J. Xin, et al., Autoregressive model-based structural damage identification and localization using convolutional neural networks, KSCE J. Civil Eng. 24 (7) (2020) 2173–2185.
+
+[32] Wenchao Zhang, Chenhui Su, Yanling Zhang and, et al., Damage identification of honeycomb sandwich structures based on Lamb waves and 1D-CNN, Mater. Today Commun. 40 (2024) 109717.
+
+[33] H.B. Shang, C. Sun, J.X. Liu, et al., Deep learning-based borescope image processing for aero-engine blade in-situ damage detection, Aerosp. Sci. Technol. (2022) 107473.
+
+[34] P. Iannelli, F. Angeletti, P. Gasbarri, et al., Deep learning-based structural Health monitoring for damage detection on a large space antenna, Acta Astronaut. 193 (2022) 635–643.
+
+[35] Yonghui Lu, Liqun Tang, Zejia Liu and, et al., Unsupervised quantitative structural damage identification method based on BiLSTM networks and probability distribution model, J. Sound. Vib. 590 (2024) 118597.
+
+[36] Xingxian Bao, Jianghao Li, Meng Liu and, et al., Damage identification for thermoplastic composite pipes using transformer neural network and variational mode decomposition, Ocean Eng. 311 (2024) 118852.
+
+[37] Houwald Benedict von, A. Ali Sarhadi, Eitzinger Christian, et al., Layer-by-layer reconstruction of fatigue damages in composites from thermal images by a residual U-net, Compos. Sci. Technol. 255 (2024) 110712.
+
+[38] Timothy Sands, Deterministic Artificial Intelligence, IntechOpen, 2020.
+
+[39] Timothy Sands, Development of deterministic artificial intelligence for unmanned underwater vehicles (UUV), J. Mar. Sci. Eng. 8 (8) (2020) 578.
+
+[40] Wilt Evan, Timothy Sands, Microsatellite uncertainty control using deterministic artificial intelligence, Sensors 22 (22) (2022) 8723.
+
+[41] C. Wang, L. Yang, W. Guo, et al., Deep learning based structural damage identification for the strain field of a subway bolster, Alexandria Eng. J. 81 (2023) 264–283.
+
+[42] Y.Q. Wang, K. Risch Timothy, H. Koo Joseph, Assessment of a one-dimensional finite element charring ablation material response model for phenolic-impregnated carbon ablator, Aerosp. Sci. Technol. 91 (2019) 301–309.
+
+[43] S.B. SHI, B. LEI, M.Y. LI, et al., Thermal decomposition behavior of a thermal protection coating composite with silicone rubber: experiment and modeling, Prog. Org. Coat. 143 (2020) 105609.
+
+[44] S.N. Lophaven, H.B. Nielsen, Jscob S., "DACE A MATLAB kriging toolbox", 2002.

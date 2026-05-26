@@ -1,0 +1,502 @@
+## 1. Introduction
+
+The dynamic response evaluation of nonlinear systems is critical in most engineering problems. Due to the unavoidable uncertainty in practical applications, evaluating the response solely under deterministic and precise conditions is inadequate. Therefore, the Uncertainty Propagation (UP) in nonlinear dynamics has become a research focus in recent years.1,2 The task of the UP analysis is to calculate the uncertainty characteristics of system responses based on the quantification models of input uncertainties. Different sources of uncertainties are generally represented by different models. Aleatory uncertainties, arising from the inherent physical randomness of systems and excitations, can be represented by the probabilistic model, when sufficient and precise data are available. However, the uncertainties resulting from limited or poor-quality data, termed imprecision (a form of epistemic uncertainties), have to be represented by non-probabilistic models.3 When aleatory uncertainties and imprecision appear together and result in imprecise probabilistic information, both probabilistic and non-probabilistic models are inapplicable. In such instances, imprecise probabilities4 serve as suitable models for representation. Under these different types of uncertainty models, the corresponding UP analyses for dynamical systems have also been investigated.
+
+Under the probabilistic model, uncertainties are quantified using precise probability distributions, and the uncertain systems can be formulated as nonlinear stochastic dynamics. In this field, a great number of classical analysis methods have been developed, such as the Monte Carlo (MC) method,5 local linearization method,6 stochastic linearization method,7 stochastic average method,8 path-integration method,9 Hamiltonian formulation10 and so on. Recently, the integration methods based on probability conservation, including probability density evolution method11 and direct probability integral method,12,13 have become a focus. Several surrogatemodel-based methods have also been investigated, including Polynomial chaos expansion,14,15 Kriging,16 and artificial neutral networks,17,18 as well as dimension reduction approaches19 for high-dimensional surrogate-modelling. Frequency-domain methods20,21 have also been recognized as powerful tools for stochastic-dynamic analyses. Some other methods have proven effective in specific fields; for instance, the unscented transformation, state transition tensors,23 and Gaussian mixture models24 have been widely applied in flight mechanics. Moreover, numerous novel methods25–27 h ave been successively developed. Although these probabilistic methods have achieved success in solving various UP problems, they still face the challenge that collecting sufficient information for constructing precise probability distributions of uncertainties may not always be possible.
+
+Non-probabilistic models3,28,29 can operate effectively without relying on probabilistic information. The convex model,2 8 in particular, is the most well-known and is widely applied in the study of nonlinear dynamics. Wu et al.30,31 introduced the Chebyshev interval method for UP analysis of nonlinear dynamics. Then, Li et al.32 proposed a sparse regression method to improve the efficiency of the Chebyshev method. Wang et al.33,34 developed a Legendre-polynomial-based method to propagate interval uncertainties in nonlinear dynamics. These methods have been applied to a number of lated or time-varying uncertainties, which commonly exist in dynamical systems. Therefore, to quantify the correlation of intervals, several improved convex models37–39 have been proposed. For time-varying intervals, Jiang et al. proposed a novel quantification model, namely the interval process. Based on the interval process, various methods have been presented for UP analyses of linear systems.41 Subsequently, for nonlinear systems, an MC-simulation method,42 the Karhunen-Loe\` ve expansion method,43 and a linearization method44 have been gradually proposed.
+
+Imprecise probabilistic information is also common in practice, where imprecise probabilities are considered a more appropriate quantification model. The P-box45 may serve as a popular representative of imprecise probabilities. The Pbox has been investigated in numerous static uncertainty analysis problem s;46–48 however, it has only recently gained interest for dynamical problems. The quantification models of dynamical uncertainties have been investigated by using the P-box model. Li49 and Faes50 et al. proposed the definitions of parametric and distribution-free (non-parametric) P-box processes, respectively, to describe time-varying uncertainties. Meanwhile, several UP methods have been proposed for dynamical problems. Faes and Moens51 studied imprecise random fields with parametrized kernel functions in linear dynamics. The authors also developed analysis methods for estimating the imprecise first excursion probabilities in linear dynamics.52,53 Faes et al.54 further proposed an operator-norm-based method to calculate the imprecise probabilities. However, these methods are only valid for linear dynamics. For nonlinear dynamics, very few approaches have been developed. Enszer et al.55 applied the Taylor expansion model to calculate the probability bounds for nonlinear dynamics. Ni et al.56 proposed an operator norm-based statistical linearization method for bounding the first excursion probability of nonlinear structures. However, it should be noted that all of the aforementioned methods have only considered the parametric P-boxes or processes. Because it is not always possible to obtain a complete parametric description of P-boxes, distribution-free Pbox problems are also considered significant. However, in this field, only Faes et al.50 suggested a propagation method when defining the distribution-free P-box process, and this technique is only suitable for linear dynamics. There is still a lack of appropriate UP approaches for nonlinear problems with distribution-free P-box processes.
+
+In this work, the nonlinear dynamics with distribution-free P-box processes is investigated and an efficient UP method for the nonlinear dynamics is proposed. The major contributions of this work are as follows:
+
+(1) The UP problem of nonlinear dynamics with distribution-free P-box processes is first proposed and defined. This problem is critical, as the precise probabilistic information of excitations of nonlinear dynamics is always challenging to obtain in practical engineering.
+
+(2) A novel UP method is developed. The P-box analyses of excitations and stochastic analyses of nonlinear systems are decoupled by using the Covariance Analysis Describing Equation Technique (CADET). This significantly improves the efficiency of the UP analysis. Based on the method, the bounds of the means and covariances of the system responses, as well as their probability bounds, can be obtained.
+
+(3) The Chebyshev method is introduced to non-intrusively solve the interval analyses in the UP procedure and further improve the UP analysis efficiency.
+
+The rest of this paper is organized as follows. In Section 2, several issues about nonlinear dynamics with distribution-free P-box processes are discussed. Section 3 introduces the proposed UP method in detail. The proposed method is tested by using two numerical examples and a Launch-Vehicle (LV) ascent-trajectory problem in Section 4. Finally, the conclusions are presented in Section 5.
+
+## 2. Nonlinear dynamics with distribution-free P-box processes
+
+Consider an N-degree-of-freedom nonlinear dynamic with an M dimensional time-varying uncertain excitation. This can be mathematically expressed as follows:
+
+$${\dot {\boldsymbol {X}}} ( t ) = {\boldsymbol {f}} ( {\boldsymbol {X}} , t ) + {\boldsymbol {B}} ( t ) {\boldsymbol {W}} ( t )\tag{1}$$
+
+where $W ( t ) = [ W _ {1} ( t ) , \ W _ {2} ( t ) , \ \dots , \ W _ {M} ( t ) ] ^ {\mathrm{T}}$ denotes the ð Þ ¼ ½ ð Þ ð Þ ð ÞM dimensional vector comprising the stochastic excitations; $X ( t ) = [ X _ {1} ( t ) , \ X _ {2} ( t ) , \ \dots , \ X _ {N} ( t ) ] ^ {\mathrm{T}}$ , denotes the N-dimensional ð Þ ¼ ½ ð Þ ð Þ ð Þvector comprising the state variables of the system; $\pmb {f} ( \cdot ) = [ f _ {1} ( \cdot ) , f _ {2} ( \cdot ) , . . . , f _ {N} ( \cdot ) ] ^ {\mathrm{T}}$ , denotes the nonlinear vecð  Þ ¼ ½ ð  Þ ð  Þ ð  Þtor function that describes the system; and $\mathbf {} B ( t )$ denotes the ð ÞN by M input matrix. Under the probabilistic model, the time-varying uncertain excitations, i.e., $W _ {m} ( t ) ~ ( m = 1 , 2$ ð ÞM), can be described as stochastic processes. However, in practical engineering cases, it may not always be possible to obtain precise probabilistic information about these excitations. To address this issue, the P-box process was proposed to quantify the time-varying excitations with imprecise probabilistic information. The detailed concept of the P-box process will be introduced in the following subsection.
+
+## 2.1. Definition of distribution-free P-box processes
+
+Before introducing the P-box process, the basic definition of static P-box is given first. A P-box variable $W _ {1} ^ {\mathrm{P.B.}}$ :, with the superscript P.B. denoting the P-box, is described by the two Cumulative-Distribution-Function (CDF) bounds, i.e., a lower CDF $F _ {W _ {1}} ^ {\mathrm{L}} ( \cdot )$ and an upper CDF $F _ {W _ {1}} ^ {\mathrm{U}} ( \cdot )$ , as follows:
+
+(a) Parametric P-box
+
+(b) Distribution-free P-box 
+Fig. 1 Visual depiction of the P-box.
+
+$$F _ {W _ {1}} ^ {\mathrm{L}} ( \omega ) \leqslant F _ {W _ {1}} ( \omega ) \leqslant F _ {W _ {1}} ^ {\mathrm{U}} ( \omega )\tag{2}$$
+
+where $F _ {W _ {1}} ( \cdot )$ denotes a possible CDF realization of the imprecise CDF bounded by $F _ {W _ {1}} ^ {\mathrm{L}} ( \cdot )$ and $F _ {W _ {1}} ^ {\mathrm{U}} ( \cdot )$ . Therefore, the P-box variable $W _ {1} ^ {\mathrm {{P . B .}}}$ could be denoted by its CDF bounds as $[ F _ {W _ {1}} ^ {\mathrm{L}} , \ F _ {W _ {1}} ^ {\mathrm{U}} ]$ , with all P-boxes that appear later in the text denoted in a similar fashion.
+
+P-box variables are typically categorized as parametric P-box and distribution-free (non-parameterized) P-box, as shown in Fig. 1(a) and (b), respectively. The distribution type of a parametric P-box is known; however, the distribution parameters are imprecise. The distribution-free P-box lacks precise information in terms of both the distribution type and parameters. This work focuses on the distribution-free type of P-box variables, as it is common, in practical engineering, that a complete parametric description of the distributions of probability bounds cannot be obtained.
+
+When a distribution-free P-box is time-varying, it will become a distribution-free P-box process whose CDFs are distribution-free P-boxes at all times, as shown in Fig. 2. A study50 recently proposed a mathematical definition based on translation theory:
+
+$$W _ {1} ^ {\mathrm{P.B.}} ( t ) = \left[ \Big ( F _ {W _ {1}} ^ {\mathrm{L}} \Big ) ^ {- 1} , \Big ( F _ {W _ {1}} ^ {\mathrm{U}} \Big ) ^ {- 1} \right] {} ^{\circ} \phi ( N ( t ) )\tag{3}$$
+
+where  denotes the operator of composite mapping, $[ F _ {W _ {1}} ^ {\mathrm{L}} , \ F _ {W _ {1}} ^ {\mathrm{U}} ]$ denotes a distribution-free P-box, N t denotes a Gaussian stochastic process with zero mean and unit variance, and U denotes the standard normal CDF. The expression ð  Þpresented in Eq. (3) defines the CDF bounds of the imprecise stochastic process at any time by $[ F _ {W _ {1}} ^ {\mathrm{L}} , \ F _ {W _ {1}} ^ {\mathrm{U}} ]$ and the timecorrelation structure by $N ( t )$
+
+Fig. 2 Visual depiction of the P-box process.
+
+ð ÞAs shown in Fig. 2, the sample trajectories of a distributionfree P-box process $W _ {1} ^ {\mathrm{P.B.}} ( t )$ are no longer precise functions over ð Þtime, but interval-valued functions. Accordingly, the mean and variance of $W _ {1} ^ {\mathrm{P.B.}} ( t )$ , denoted by $\mu _ {W} ^ {\mathrm{I}} ( t )$ and $\left( \sigma _ {W} ^ {2} \right) ^ {\mathrm{I}} ( t )$ , respectively, are both interval-valued functions over time, with the superscript I denoting the interval. If $N ( t )$ in Eq. (3) is a stationary Gaussian process, $\mu _ {W} ^ {\mathrm{I}} ( t )$ and $\left( \sigma _ {W} ^ {2} \right) ^ {\mathrm{I}} \left( t \right)$ will become constant intervals as denoted by $\mu _ {W} ^ {\mathrm{I}}$ and $\left( \sigma _ {W} ^ {2} \right) ^ {\mathrm{I}}$ , respectively. This can be mathematically expressed as follows:
+
+$$\begin{array}{c} \{\begin{array} {l l} {\mu _ {W} ^ {\mathrm{I}} = [ \begin{array} {c} {\mathrm{min}} \\ {\mathrm{min}} \end{array} ] \mathrm{mean} ( F _ {W _ {1}} ) , \quad \begin{array} {c} {\mathrm{max}} \\ {F _ {W _ {1}} \in [ F _ {W _ {1}} ^ {\mathrm{L}} , F _ {W _ {1}} ^ {\mathrm{U}} ]} \end{array} ]} \\ {( \sigma _ {W} ^ {2} ) ^ {\mathrm{I}} = [ \begin{array} {c} {\mathrm{min}} \\ {\mathrm{~min}} \end{array} ] \quad \nu a r ( F _ {W _ {1}} ) , \quad \quad \mathrm{max}} \\ {F _ {W _ {1}} \in [ F _ {W _ {1}} ^ {\mathrm{L}} , F _ {W _ {1}} ^ {\mathrm{U}} ]} \end{array} ] \end{array} \tag{4}$$
+
+where $\mathrm {{m e a n} ( \cdot )}$ and $\nu a r ( \cdot )$ denote the operators for calculating ðÞ ðÞthe mean and variance of the given CDF realization $F _ {W _ {1}}$ respectively, which can be expressed as follows:
+
+$$\begin{array} {r} {\left\{\begin{array} {c} {\mathrm{mean} ( F _ {W _ {1}} ) = \int _ {- \infty} ^ {\infty} {( F _ {W _ {1}} ) ^ {- 10} \Phi ( \eta ) d ( \varPhi ( \eta ) )}} \\ {\nu a r ( F _ {W _ {1}} ) = \int _ {- \infty} ^ {\infty} {\left( ( F _ {W _ {1}} ) ^ {- 10} \varPhi ( \eta ) - \mathrm{mean} ( F _ {W _ {1}} ) \right) ^ {2} d ( \varPhi ( \eta ) )}} \end{array} \right.} \end{array}\tag{5}$$
+
+where g denotes the integration variable.
+
+## 2.2. Uncertainty propagation problems under P-box processes
+
+If only the CDF-bound information of the excitations for the nonlinear system presented in Eq. (1) are available, they can be described as distribution-free P-box processes, as follows:
+
+$$W ^ {\mathrm{P.B.}} ( t ) = \left[ W _ {1} ^ {\mathrm{P.B.}} ( t ) , W _ {2} ^ {\mathrm{P.B.}} ( t ) , \ldots , W _ {M} ^ {\mathrm{P.B.}} ( t ) \right] ^ {\mathrm{T}}\tag{6}$$
+
+To define $W _ {m} ^ {\mathrm{P.B.}} ( t ) \ ( m = 1 , 2 , . . . , M )$ based on Eq. (3), M ð Þstatic P-boxes are given as $[ F _ {W _ {m}} ^ {\mathrm{L}} , ~ F _ {W _ {m}} ^ {\mathrm{U}} ] ~ ( m ~ = ~ 1 , ~ 2 , ~ . . . , ~ M )$ ½ For simplicity, the M P-boxes are represented in vector form $[ F _ {W} ^ {\mathrm{L}} , F _ {W} ^ {\mathrm{U}} ] ;$ where $\pmb {F} _ {W} ^ {\mathrm{L}} = \left\lceil \pmb {F} _ {W _ {1}} ^ {\mathrm{L}} , \frac {} {} \frac {} {} F _ {W _ {2}} ^ {\mathrm{L}} , \frac {} {} \dots , \frac {} {} \frac {} {} F _ {W _ {M}} ^ {\mathrm{L}} \right\rceil ^ {\mathrm{T}}$ and $\pmb {F} _ {W} ^ {\mathrm{U}} = \left\lceil \boldsymbol {F} _ {W _ {1}} ^ {\mathrm{U}} , \ \boldsymbol {F} _ {W _ {2}} ^ {\mathrm{U}} , \ \dots , \ \boldsymbol {F} _ {W _ {M}} ^ {\mathrm{U}} \right\rceil ^ {\mathrm{T}}$
+
+Under $W ^ {\mathrm{P.B.}} ( t )$ , the nonlinear dynamical system can be ð Þexpressed as follows:
+
+$$\dot {\boldsymbol {X}} ^ {\mathrm{P.B.}} ( t ) = f ( \boldsymbol {X} ^ {\mathrm{P.B.}} ( t ) , t ) + \boldsymbol {B} ( t ) \boldsymbol {W} ^ {\mathrm{P.B.}} ( t )\tag{7}$$
+
+The responses of the nonlinear system $X ^ {\mathrm{P.B.}} ( t )$ also become Pð Þbox processes. Therefore, the main objective of the UP analysis is to obtain the CDF bounds of the responses, denoted by $[ F _ {X} ^ {\mathrm{L}} , ~ F _ {X} ^ {\mathrm{U}} ]$ , at any time instant t. This can be mathematically ½ expressed as follows:
+
+$$\left\{\begin{array} {l l} {F _ {X} ^ {\mathrm{L}} ( {\boldsymbol {\mathbf {\mathit {x}}}} | t ) = \underset {F _ {W} \in \left[ F _ {W} ^ {\mathrm{L}} , F _ {W} ^ {\mathrm{U}} \right]} {\operatorname* {m i n}} F _ {X} ( {\boldsymbol {\mathbf {\mathit {x}}}} | F _ {W} , t )} \\ {F _ {X} ^ {\mathrm{U}} ( {\boldsymbol {\mathbf {\mathit {x}}}} | t ) = \underset {F _ {W} \in \left[ F _ {W} ^ {\mathrm{L}} , F _ {W} ^ {\mathrm{U}} \right]} {\operatorname* {m a x}} F _ {X} ( {\boldsymbol {\mathbf {\mathit {x}}}} | F _ {W} , t )} \end{array} \right.\tag{8}$$
+
+where $F _ {W}$ represents the realizations of the P-boxes $[ F _ {W} ^ {\mathrm{L}} , \ F _ {W} ^ {\mathrm{U}} ]$ that define the P-box processes $W ^ {\mathrm{P.B.}} ( t )$ ½ . Meanwhile, the evalð Þuation of failure probability bounds is considered an important task. When the first-passage problem25 is considered, this can be mathematically expressed as follows:
+
+$$\left\{\begin{array} {l l} {P ^ {\mathrm{L}} = \underset {F _ {W} \in \left[ F _ {W} ^ {\mathrm{L}} , F _ {W} ^ {\mathrm{U}} \right]} {\mathrm{min}} \operatorname* {P r} \left\{\underset {t \in [ 0 , T ]} {\operatorname* {m a x}} \left( | X ( t | F _ {W} ) | \right) > \delta \right\}} \\ {P ^ {\mathrm{U}} = \underset {F _ {W} \in \left[ F _ {W} ^ {\mathrm{L}} , F _ {W} ^ {\mathrm{U}} \right]} {\mathrm{max}} \operatorname* {P r} \left\{\underset {t \in [ 0 , T ]} {\operatorname* {m a x}} \left( | X ( t | F _ {W} ) | \right) > \delta \right\}} \end{array} \right.\tag{9}$$
+
+where $P ^ {\mathrm{L}}$ and $P ^ {\mathrm{U}}$ denote the lower and upper bounds of the first-passage probability, respectively; $\operatorname* {P r} \{\cdot \}$ denotes the probfgability operator; denotes the absolute value operator; T j  jdenotes the time duration; $X ( t | F _ {W} )$ denotes the system ð jresponse of concern, corresponding to $F _ {W} ; \delta$ denotes the given threshold that limits the bounds of the safe domain.
+
+In most engineering cases, the means and standard deviations of the system responses have received more attention. Based on the property presented in Eq. (4), the means and standard deviations of $X ^ {\mathrm{P.B.}} ( t )$ can serve as intervals and be denoted as follows:
+
+$$\left\{\begin{array} {l l} {\pmb {\mu} _ {X} ^ {\mathrm{I}} ( t ) = \left[ \pmb {\mu} _ {X} ^ {\mathrm{L}} ( t ) , \pmb {\mu} _ {X} ^ {\mathrm{U}} ( t ) \right]} \\ {\pmb {\sigma} _ {X} ^ {\mathrm{I}} ( t ) = \left[ \pmb {\sigma} _ {X} ^ {\mathrm{L}} ( t ) , \pmb {\sigma} _ {X} ^ {\mathrm{U}} ( t ) \right]} \end{array} \right.\tag{10}$$
+
+Therefore, another objective of the UP analysis involves calculating the lower and upper bounds of the mean and standard deviation of the responses,57 i.e., $\pmb {\mu} _ {X} ^ {\mathrm{L}} ( t ) , \pmb {\mu} _ {X} ^ {\mathrm{U}} ( t ) , \pmb {\sigma} _ {X} ^ {\mathrm{L}} ( t )$ , and ${\pmb \sigma} _ {X} ^ {\mathrm{U}} ( t )$ . Because the means and standard deviations of the r ð Þresponses are always dependent, the error bars58 can be used to evaluate the overall uncertain extent of the responses. The lower-and-upper-bound intervals of the error bars, i.e., eIL and $e _ {\mathrm{U}} ^ {\mathrm{I}}$ , for P-box problems, can be expressed as follows:
+
+$$\left\{\begin{array} {l l} {e _ {\mathrm{L}} ^ {\mathrm{I}} ( t ) = \pmb {\mu} _ {X} ^ {\mathrm{I}} ( t ) - \pmb {\sigma} _ {X} ^ {\mathrm{I}} ( t )} \\ {e _ {\mathrm{U}} ^ {\mathrm{I}} ( t ) = \pmb {\mu} _ {X} ^ {\mathrm{I}} ( t ) + \pmb {\sigma} _ {X} ^ {\mathrm{I}} ( t )} \end{array} \right.\tag{11}$$
+
+The minimum value of the lower bounds $e _ {\mathrm{L}} ^ {\mathrm{L}}$ and the maximum value of the upper bounds $e _ {\mathrm{U}} ^ {\mathrm{U}}$ can be selected to quantify the error bars as follows:
+
+$$\left\{\begin{array} {l l} {e _ {\mathrm{L}} ^ {\mathrm{L}} ( t ) = \displaystyle \operatorname* {m i n} _ {F _ {W} \in \left[ F _ {W} ^ {\mathrm{L}} , F _ {W} ^ {\mathrm{U}} \right]} e _ {\mathrm{L}} ^ {\mathrm{I}} ( t | F _ {W} )} \\ {e _ {\mathrm{U}} ^ {\mathrm{U}} ( t ) = \displaystyle \operatorname* {m a x} _ {F _ {W} \in \left[ F _ {W} ^ {\mathrm{L}} , F _ {W} ^ {\mathrm{U}} \right]} e _ {\mathrm{U}} ^ {\mathrm{I}} ( t | F _ {W} )} \end{array} \right.\tag{12}$$
+
+The essence of the problems presented in Eq. (8), Eq. (9), and Eq. (12) is to find the realizations that result in the bounds of the probabilistic characteristics of the system responses, within the given P-boxes $[ F _ {W} ^ {\mathrm{L}} , \ F _ {W} ^ {\mathrm{U}} ]$
+
+½ In some studies, these realizations for linear systems are searched by using an optimization technique.50 However, for nonlinear dynamics, the methods based on optimizations have the following shortages. First, finding the global optimum is difficult, especially, when the stochastic analysis of nonlinear systems is complex. Second, the optimization has to be performed at many (even all) time nodes within the entire time span. Third, for multi-dimensional P-box processes, constructing the optimization problem has been shown to be difficult. Therefore, there is an urgent need to obtain an efficient method to achieve the UP analysis of nonlinear dynamics with distribution-free P-box processes.
+
+## 3. Proposed method
+
+In this section, a novel method is proposed to efficiently analyze the UP problems presented in Section 2.2, based on the CADET and the Chebyshev method, which will be introduced in the following subsections.
+
+## 3.1. Transcription of P-box dynamics using CADET
+
+First, the P-box problem presented in Eq. (7) is transformed into an interval problem by using the CADET.
+
+In the CADET, the nonlinear function f of the stochasð  Þtic system presented in Eq. (1) is approximated by using the linear equation based on the statistical linearization:59
+
+$$f ( X , t ) \approx N _ {\mu} \pmb {\mu} _ {X} + N _ {R} \pmb {R}\tag{13}$$
+
+where $\pmb {\mu} _ {X}$ denotes the N-dimensional mean vector of X, i.e., $\pmb {\mu} _ {X} = E ( X )$ , R denotes the N-dimensional random-part vector l ¼ ð Þof X, i.e., $\pmb {R} = \pmb {X} - \pmb {\mu} _ {X}$ , and $N _ {\mu}$ and $N _ {R}$ represent the corre-¼  lsponding N by N real linear-coefficient matrices. In a probabilistic sense, the optimal $N _ {\mu}$ and $N _ {R}$ that provide a minimum variance approximation can be, respectively, expressed as follows:60
+
+$$\left\{\begin{array} {c} {{N _ {\mu} {\pmb \mu} _ {X} = \int _ {- \infty} ^ {\infty} f ( {\pmb x} , t ) d ( {\pmb F} _ {X} ( {\pmb x} ) )}} \\ {{N _ {R} = \int _ {- \infty} ^ {\infty} f ( {\pmb x} , t ) {\pmb R} ^ {\mathrm{T}} d ( {\pmb F} _ {X} ( {\pmb x} ) ) \cdot {\pmb P} _ {X} ^ {- 1}}} \end{array} \right.\tag{14}$$
+
+where $P _ {X}$ denotes the N by N covariance matrix of X, i.e., $\pmb {P} _ {X} = E ( \pmb {R} \pmb {R} ^ {\mathrm{T}} )$ , and $F _ {X} ( \cdot )$ denotes the joint CDF of X. Subse-¼ ð Þ ðÞquently, when the excitation $W ( t )$ consists of white noise proð Þcesses, the nonlinear Ordinary Differential Equations (ODEs) governing the propagation of the mean vector $\pmb {\mu} _ {X}$ and covariance matrix $P _ {X}$ lfor the system responses can be established as follows:59
+
+$$\left\{\begin{array} {c} {\dot {\pmb {\mu}} _ {X} = {N _ {\mu} \pmb {\mu}} _ {X} + {\pmb {B}} {\pmb \mu} _ {W}} \\ {\dot {\pmb P} _ {X} = {N _ {R} \pmb P} _ {X} + {\pmb P} _ {X} {N _ {R}} + {\pmb B} {\pmb P} _ {W} {\pmb B} ^ {\mathrm{T}}} \end{array} \right.\tag{15}$$
+
+where ${\pmb \mu} _ {W}$ denotes the mean vector of the excitations, i.e., $\pmb {\mu} _ {W} = E ( W )$ , and $P _ {W}$ denotes the covariance matrix of the excitations, i.e., $\pmb {P} _ {W} = E \big [ ( \pmb {W} - \pmb {\mu} _ {W} ) ( \pmb {W} - \pmb {\mu} _ {W} ) ^ {\operatorname{T}} \big ]$ . Of note, because ¼ ½ð  l Þð  l Þ the joint CDF of X in Eq. (14), i.e., FX , for calculating $N _ {\mu}$ and $N _ {R}$ ðÞis unknown, the ODEs in Eq. (15) cannot be solved directly. To address this issue, a crucial Gaussian assumption,59 i.e., the responses are previously assumed to be jointly normal, is introduced. This Gaussian assumption follows from the central limit theorem and has been verified to be valid in practice.60 Based on this assumption, $F _ {X} ( \cdot )$ can be described by using only its mean vector $\pmb {\mu} _ {X}$ ðÞand covariance matrix $P _ {X}$
+
+$$F _ {X} ( \mathbf {x} , t ) \approx \pmb {\varPhi} _ {X} ( \mathbf {x} , t | \pmb {\mu} _ {X} , \pmb {P} _ {X} )\tag{16}$$
+
+where $\pmb {\phi} _ {X} ( \cdot | \pmb {\mu} _ {X} , \pmb {P} _ {X} )$ represents the normal distribution func-U ðjl Þtion with the mean vector $\pmb {\mu} _ {X}$ and covariance matrix $P _ {X}$ By lsubstituting Eq. (16) into Eq. (14), $N _ {\mu} \pmb {\mu} _ {X}$ and $N _ {R}$ can both be described as functions of $\pmb {\mu} _ {X}$ and $P _ {X}$ l. After that, the ODEs in lEq. (15) can be fully defined as equations of $\pmb {\mu} _ {X}$ and $P _ {X}$ . With the given initial values of $\pmb {\mu} _ {X}$ and $P _ {X} ,$ lthe ODEs can be solved lby using any numerical method. The detailed method used to solve the CADET Eq. (15) is provided in the Ref. 59
+
+For Eq. (7), according to the property expressed in Eq. (4), the components of the mean vector and covariance matrix of $W ^ {\mathrm{P.B.}} ( t )$ become intervals. The interval-valued mean vector and covariance matrix of $W ^ {\mathrm{P.B.}} ( t )$ are denoted as $\pmb {\mu} _ {W} ^ {\mathrm{I}}$ and $\pmb {P} _ {W} ^ {\mathrm{I}}$ respectively. By substituting $\pmb {\mu} _ {W} ^ {\mathrm{I}}$ and $\pmb {P} _ {\pmb {W}} ^ {\mathrm{I}}$ into Eq. (15), Eq. l(15) can be transformed into ODEs under interval parameters:
+
+$$\left\{\begin{array} {c} {\dot {\pmb {\mu}} _ {X} ^ {\mathrm{I}} = \pmb {N} _ {\mu} ^ {\mathrm{I}} \pmb {\mu} _ {X} ^ {\mathrm{I}} + \pmb {B} \pmb {\mu} _ {W} ^ {\mathrm{I}}} \\ {\dot {\pmb {P}} _ {X} ^ {\mathrm{I}} = \pmb {N} _ {R} ^ {\mathrm{I}} \pmb {P} _ {X} ^ {\mathrm{I}} + \pmb {P} _ {X} ^ {\mathrm{I}} \pmb {N} _ {R} ^ {\mathrm{I}} + \pmb {B} \pmb {P} _ {W} ^ {\mathrm{I}} \pmb {B} ^ {\mathrm{I}}} \end{array} \right.\tag{17}$$
+
+where $\pmb {\mu} _ {X} ^ {\mathrm{I}}$ and $P _ {X} ^ {\mathrm{I}}$ denote the interval-valued mean vector and covariance matrix of the system responses, respectively, corresponding to $\pmb {\mu} _ {W} ^ {\mathrm{I}}$ and $P _ {W} ^ {\mathrm{I}} ; N _ {\mu} ^ {\mathrm{I}}$ and $N _ {R} ^ {\mathrm{f}}$ also become intervals as they are both functions of $\pmb {\mu} _ {X} ^ {\mathrm{I}}$ and $\pmb {P} _ {X} ^ {\mathrm{I}}$
+
+lEq. (17) provides the interval bounds of the mean and variance of the system responses $X ^ {\mathrm{P.B.}} ( t )$ , which are essential for ð Þachieving the UP analysis presented in Section 2.2. However, before solving Eq. (17), it is necessary to determine the bounds of the interval inputs, i.e., $\{\pmb {\mu} _ {W} ^ {\mathrm{I}} , \pmb {P} _ {W} ^ {\mathrm{I}} \}$ . Meanwhile, an efficient fl galgorithm is needed to solve the ODEs under these interval parameters. The methods for addressing these two issues will be introduced in Sections 3.2 and 3.3.
+
+3.2. Domain analysis for mean and variance of the input P-box processes
+
+In this subsection, the method for calculating $\{{\pmb \mu} _ {W} ^ {\mathrm{I}} , \ {\pmb P} _ {W} ^ {\mathrm{I}} \}$ is fl gintroduced. In this work, the stochastic excitations are assumed to be mutually independent. Therefore, $\pmb {P _ {W}} = \mathrm{diag} ( \sigma _ {W _ {1}} ^ {2} , \ \sigma _ {W _ {2}} ^ {2} , \ \dots , \ \sigma _ {W _ {M}} ^ {2} )$ , where $\sigma _ {W _ {1}} ^ {2} , ~ \sigma _ {W _ {2}} ^ {2} , ~ . ~ . ~ . ,$ and $\sigma _ {W _ {M}} ^ {2}$ represent the variances of the excitations. For simplicity, these variances are expressed as a vector $\pmb {\sigma} _ {W} ^ {2} = \left[ \sigma _ {W _ {1}} ^ {2} , \ \sigma _ {W _ {2}} ^ {2} , \ \dots , \ \sigma _ {W _ {M}} ^ {2} \right] ^ {\mathrm{T}}$ . For $W ^ {\mathrm{P.B.}} ( t )$ , the values of its variance vector are intervals and can be denoted by $\left( \pmb {\sigma} _ {W} ^ {2} \right) ^ {\operatorname{I}}$ The calculation of $\{\pmb {\mu} _ {W} ^ {\mathrm{I}} , \pmb {P} _ {W} ^ {\mathrm{I}} \}$ is accordingly simplified to that of $\{\pmb {\mu} _ {W} ^ {\mathrm{I}} , \ \left( \pmb {\sigma} _ {W} ^ {2} \right) ^ {\mathrm{I}} \}$ . For each component of $W ^ {\mathrm{P.B.}} ( t )$ , i.e., $W _ {m} ^ {\mathrm{P.B.}} ( t ) \ ( m = 1 , 2 , . . . , M )$ , its bounds of the mean and variance are denoted by $\mu _ {W _ {m}} ^ {\mathrm{I}}$ and $\big ( \sigma _ {W _ {m}} ^ {2} \big ) ^ {\mathrm{I}} ;$ , respectively. Because $W _ {m} ^ {\mathbf {P} . \mathbf {B} .} ( t )$ is defined based on the given P-box $[ F _ {W _ {m}} ^ {\mathrm{L}} , \ F _ {W _ {m}} ^ {\mathrm{U}} ]$ using Eq. (3), $\mu _ {W _ {m}} ^ {\mathrm{I}}$ and $\big ( \sigma _ {W _ {m}} ^ {2} \big ) ^ {\mathrm{I}}$ can be calculated by substituting $[ F _ {W _ {m}} ^ {\mathrm{L}} , \ F _ {W _ {m}} ^ {\mathrm{U}} ]$ into Eq. (4), which can be expressed as follows:
+
+$$\left( \mu _ {W _ {m}} ^ {\mathrm{I}} = \left[ \operatorname* {m i n} _ {{F _ {W _ {m}} \in \left[ F _ {W _ {m}} ^ {\mathrm{L}} , F _ {W _ {m}} ^ {\mathrm{U}} \right]}} \operatorname* {m e a n} ( F _ {W _ {m}} ) , \operatorname* {m a x} _ {{F _ {W _ {m}} \in \left[ F _ {W _ {m}} ^ {\mathrm{L}} , F _ {W _ {m}} ^ {\mathrm{U}} \right]}} \operatorname* {m e a n} ( F _ {W _ {m}} ) \right] \right$$
+
+$$\textbf {\ :} \left( \sigma _ {W _ {m}} ^ {2} \right) ^ {\mathrm{I}} = \left[ \operatorname* {m i n} _ {F _ {W _ {m}} \in \left[ F _ {W _ {m}} ^ {\mathrm{L}} , F _ {W _ {m}} ^ {\mathrm{U}} \right]} {\nu a r ( F _ {W _ {m}} )} , \operatorname* {m a x} _ {F _ {W _ {m}} \in \left[ F _ {W _ {m}} ^ {\mathrm{L}} , F _ {W _ {m}} ^ {\mathrm{U}} \right]} {\nu a r ( F _ {W _ {m}} )} \right]\tag{18}$$
+
+The goal of solving the above minimization-andmaximization problems is to find the realizations that result in the bounds of its mean and variance within $[ F _ {W _ {m}} ^ {\mathrm{L}} , \ F _ {W _ {m}} ^ {\mathrm{U}} ]$ ½ Therefore, introducing a method to generate CDF realizations of the P-box, is the primary work for solving the optimizations. In this work, a discretization-based method is used, which is described in the following subsections.
+
+## 3.2.1. Generation of P-box realizations by discretization technique
+
+To generate the CDF realizations of the P-box $[ F _ {W _ {m}} ^ {\mathrm{L}} , F _ {W _ {m}} ^ {\mathrm{U}} ]$ , its support interval is equally discretized to obtain $N _ {\mathrm{s}}$ grid points,
+
+denoted by $\pmb {\omega} _ {\mathrm{s}} = [ \omega _ {1} , \omega _ {2} , \cdots , \omega _ {N _ {s}} ] ^ {\mathrm{T}}$ , as shown in Fig. 3. Then, an $N _ {\mathrm{s}}$ x ¼ ½    -dimensional interval domain is obtained, as follows:
+
+$${\pmb F} _ {{\pmb W} _ {m}} ^ {\mathrm{l}} = \left[ F _ {{\pmb W} _ {m}} ^ {\mathrm{L}} ( {\pmb \omega} _ {\mathrm{s}} ) , F _ {{\pmb W} _ {m}} ^ {\mathrm{U}} ( {\pmb \omega} _ {\mathrm{s}} ) \right] \in \mathbb {I R} \ominus ^ {N _ {\mathrm{s}}}\tag{19}$$
+
+A set of samples is subsequently collected within $F _ {W _ {m}} ^ {\mathrm{I}} ,$ denoted by $\pmb {F} _ {\mathrm{s}} \in \pmb {F} _ {W _ {m}} ^ {\mathrm{I}}$ , which contains $N _ {\mathrm{s}}$ elements. Based on $F _ {\mathrm{s}}$ and ${\pmb \omega} _ {\mathrm{s}}$ , a realization of $[ F _ {W _ {m}} ^ {\mathrm{L}} , \ F _ {W _ {m}} ^ {\mathrm{U}} ]$ and its inverse, denoted by $F _ {W _ {m}} ( \omega )$ and $\left( F _ {W _ {m}} \right) ^ {- 1} ( F )$ , respectively, can be generated by ð Þ ð Þ ð Þthe following interpolations:
+
+$$\left\{\begin{array} {c} {F _ {W _ {m}} ( \omega ) = \mathrm{interp} ( \omega | \omega _ {\mathrm{s}} , F _ {\mathrm{s}} )} \\ {( F _ {W _ {m}} ) ^ {- 1} ( F ) = \mathrm{interp} ( F | F _ {\mathrm{s}} , \omega _ {\mathrm{s}} )} \end{array} \right.\tag{20}$$
+
+where interp denotes an interpolation operator. An examð  Þple of the realization generation is illustrated in Fig. 3. It should be noted that if Eq. (21) is not satisfied, the sample vector ${\boldsymbol {F}} _ {\mathrm{s}}$ leads to an infeasible realization that is not monotonic, as shown in Fig. 3.
+
+$$C F _ {\mathrm{s}} \leqslant \mathbf {0}\tag{21}$$
+
+where
+
+$$\mathbf {C} = \left[ \begin{array} {l l l l l} {1} & {- 1} & {0} & {\cdots} & {0} \\ {} & {} & {} & {} & {} \\ {0} & {1} & {- 1} & {\ddots} & {\vdots} \\ {} & {\ddots} & {\ddots} & {\ddots} & {} \\ {} & {} & {} & {} & {} \\ {0} & {\cdots} & {0} & {1} & {- 1} \end{array} \right] _ {( ( N _ {\mathrm{s}} - 1 ) \times N _ {\mathrm{s}} )}\tag{22}$$
+
+Based on the above discretization, a continuous CDF realization is parameterized into $N _ {\mathrm{s}}$ variables that satisfy Eq. (21) within $\pmb {F} _ {W _ {m}} ^ {\mathrm{I}}$
+
+## 3.2.2. Domain analysis for mean and variance
+
+According to the discretization procedure in Section 3.2.1, the optimizations presented in Eq. (18) can be transformed into optimization problems with Ns variables. For example, the minimization of the mean is expressed as follows:
+
+$$\begin{array} {c} {{\operatorname* {m i n} \quad \mathrm{mean} ( F _ {W _ {m}} )}} \\ {{F _ {\mathrm{s}} \in F _ {{W _ {m}}} ^ {\mathrm{I}}}} \\ {{\mathrm{s.t.} \quad C F _ {\mathrm{s}} \leqslant {\bf 0}}} \end{array}\tag{23}$$
+
+Fig. 3 Illustration of P-box discretization for the generation of realizations.
+
+These $N _ {\mathrm{s}}$ dimensional optimizations can be easily solved. However, from $\operatorname{Eq.} \ ( 5 )$ , it is obvious that the calculations of mean and variance are not independent. As a result, the mean and variance cannot be minimized or maximized simultaneously. Specifically, several multi-objective problems need to be solved and can be expressed as follows:
+
+$$\begin{array}{c} \left\{\begin{array} {c} \displaystyle {\begin{array} {c} {{\mathrm{min}} \quad {\mathrm{[mean} ( F _ {W _ {m}} ) , \mathrm{var} ( F _ {W _ {m}} ) ]} \\ {F _ {s} \in F _ {W _ {m}} ^ {1}} \\ {{\mathrm{min}} \quad {\mathrm{[-mean} ( F _ {W _ {m}} ) , \mathrm{var} ( F _ {W _ {m}} ) ]} \end{array}}}} \\ {{\displaystyle {\begin{array} {c} {{\mathrm{min}} \quad {\mathrm{[mean} ( F _ {W _ {m}} ) , \mathrm{-var} ( F _ {W _ {m}} ) ]}} \\ {{\mathrm{~}}} \\ {{\mathrm{~}}} \\ {{\mathrm{~} \mathrm {f _ {s}} \in F _ {W _ {m}} ^ {1}}} \end{array}}} \\ {{\displaystyle {\mathrm{min}} \quad {\mathrm{[-mean} ( F _ {W _ {m}} ) , \mathrm{-var} ( F _ {W _ {m}} ) ]}}} \\ {{\displaystyle {\mathrm {f _ {s}} \in F _ {W _ {m}} ^ {1}} \quad {\mathrm{[-mean} ( F _ {W _ {m}} ) , \mathrm{-var} ( F _ {W _ {m}} ) ]}}} \\ {{\mathrm{~}}} \\ {{\mathrm{~} \mathrm{~} {\quad} \mathrm{~} {\quad} \mathrm{~} {\quad} \mathrm{~} {\quad} \mathrm{~} {\quad} \mathrm{~} {\quad} \mathrm{~} {\quad} \mathrm{~} {\quad} \mathrm{~} {\quad} \mathrm{~} {\quad} \mathrm{~}} \\ {{\mathrm{~}}} \\ {{\mathrm{~}}} \\ {{\mathrm{~}} \quad {\mathrm{~} \mathrm{~s.t.} \quad {\mathrm{~}} C F _ {s} \leqslant {\bf 0}}} \end{array}}} \end{array} \right.\tag{24}$$
+
+The non-dominated solutions of these multi-objective problems will form the boundary of the 2-dimensional domain of mean and variance for a P-box. The interval box directly generated by $\mu _ {W _ {m}} ^ {\mathrm{I}} \otimes \left( \sigma _ {W _ {m}} ^ {2} \right) ^ {\mathrm{I}}$ , with denoting the tensor product, is not the actual boundary. This will be validated and visualized in several cases at the end of this subsection.
+
+These multi-objective optimizations can be solved by certain heuristic multi-objective optimization algorithms. However, to avoid the randomness of heuristic algorithms, a sampling-based approach is applied, in this work, to calculate the boundary of the domain of mean and variance. The uniformly distributed samples within $\boldsymbol {F} _ {W _ {m}} ^ {\mathrm{L}}$ are collected and the samples that do not satisfy Eq. (21) are removed. Then, the sample set is expressed as follows:
+
+$$\left\{F _ {s} ^ {( k )} \big | F _ {s} ^ {( k )} \in {F} _ {W _ {m}} ^ {\mathbb {I}} , C F _ {s} ^ {( k )} \leqslant \mathbf {0} , k = 1 , 2 , \ldots , {N} _ {\mathrm{R} _ {m}} \right\}\tag{25}$$
+
+where $N _ {\mathrm{R} _ {m}}$ denotes the number of feasible samples that satisfy Eq. (21). Based on $F _ {\mathrm{s}} ^ {( k )} ( k = 1 , 2 , . . . , N _ {\mathrm{R} _ {m}} )$ , CDF realizations of the P-box can be generated by performing the interpolation presented in Eq. (20). Then, they are collected in the following set:
+
+$$\left\{{F} _ {W _ {m}} ^ {( k )} ( \omega ) \Big | {F} _ {W _ {m}} ^ {( k )} ( \omega ) = \mathrm{interp} \big ( \omega \vert \omega _ {\mathrm{s}} , {F} _ {\mathrm{s}} ^ {( k )} \big ) , k = 1 , 2 , \ldots , {N} _ {\mathrm{R} _ {m}} \right\}\tag{26}$$
+
+For the kth realization $F _ {W _ {m}} ^ {( k )} ( \cdot )$ , the corresponding mean $\mu _ {W _ {m}} ^ {( k )}$ and variance ${( \sigma _ {W _ {m}} ^ {2} )} ^ {( k )}$ can be calculated by the integration presented in Eq. (5), as follows:
+
+$$\left\{\begin{array} {c} {\mu _ {W _ {m}} ^ {( k )} = \int _ {- \infty} ^ {\infty} \Big ( F _ {W _ {m}} ^ {( k )} \Big ) ^ {- 1} \mathfrak {o} ( \eta ) d ( \Phi ( \eta ) )} \\ {\big ( \sigma _ {W _ {m}} ^ {2} \big ) ^ {( k )} = \int _ {- \infty} ^ {\infty} \bigg ( \Big ( F _ {W _ {m}} ^ {( k )} \Big ) ^ {- 1} \mathfrak {o} ( \eta ) - \mu _ {W _ {m}} ^ {( k )} \Big ) ^ {2} d ( \Phi ( \eta ) )} \end{array} \right.\tag{27}$$
+
+where g denotes the integration variable. By calculating Eq. (27) from $k = 1$ to $N _ {\mathbf {R} _ {m}}$ , the sample set of the mean and variance of $W _ {m} ^ {\mathrm{P.B.}} ( t )$ , denoted by $C _ {W _ {m}}$ , can be obtained as follows:
+
+$$\begin{array} {c} {{C _ {W _ {m}} = \Big \{\mu _ {W _ {m}} ^ {( k )} , \big ( \sigma _ {W _ {m}} ^ {2} \big ) ^ {( k )} | k = 1 , 2 , . . . , N _ {\mathrm{R} _ {m}} \Big \} ,}} \\ {{m = 1 , 2 , . . . , M}} \end{array}\tag{28}$$
+
+The interval bounds, i.e., $\mu _ {W _ {m}} ^ {\mathrm{I}} = [ \mu _ {W _ {m}} ^ {\mathrm{L}} , \ \mu _ {W _ {m}} ^ {\mathrm{U}} ]$ and $\bigl ( \sigma _ {W _ {m}} ^ {2} \bigr ) ^ {\mathrm{I}} = \bigl [ \bigl ( \sigma _ {W _ {m}} ^ {2} \bigr ) ^ {\mathrm{L}} , \ \bigl ( \sigma _ {W _ {m}} ^ {2} \bigr ) ^ {\mathrm{U}} \bigr ] ,$ , can also be easily determined by ð Þ ¼ ½ð Þ ð Þ finding the minimum and maximum of the mean and variance, respectively, within these samples. Accordingly, the interval domain $\mu _ {W _ {m}} ^ {\mathrm{I}} \otimes \left( \sigma _ {W _ {m}} ^ {2} \right) ^ {\mathrm{I}}$ , denoted by $I _ {W _ {m}}$ , is also obtained. The ð Þentire procedure for constructing $C _ {W _ {m}}$ and $\pmb {I _ {W _ {m}}}$ is illustrated in Fig. 4.
+
+Fig. 4 Flowchart of domain analysis for mean and variance.
+
+By applying the above procedure to the M P-box processes, the domains $\pmb {I _ {W _ {m}}}$ and $C _ {W _ {m}} \ ( m \ = \ 1 , \ 2 , \ . \ . . ,$ M) are obtained. Then, the entire hypercube interval domain of the M means and M variances is constructed as follows:
+
+$$\pmb {I} _ {\mathbb {W}} = \pmb {I} _ {W _ {1}} \otimes \pmb {I} _ {W _ {2}} \otimes \cdots \otimes \pmb {I} _ {W _ {M}} \in \mathbb {I} \mathbb {R} \Theta ^ {2 M}\tag{29}$$
+
+The complete sample set of M means and M variances are constructed by the orthogonal combinations of the samples in $C _ {W _ {m}} \ ( m = 1 , 2 , . . . , M )$ as follows:
+
+$$\begin{array} {c} {{C _ {W} = C _ {W _ {1}} \otimes C _ {W _ {2}} \otimes \cdot \cdot \cdot \otimes C _ {W _ {M}}}} \\ {{= \left\{\pmb {\mu} _ {W \mathrm{s}} ^ {( k )} , \left( \pmb {\sigma} _ {W \mathrm{s}} ^ {2} \right) ^ {( k )} | k = 1 , 2 , \ldots , N _ {\mathrm{C}} \right\}}} \end{array}\tag{30}$$
+
+where
+
+$$\left\{\begin{array} {c} {\pmb {\mu} _ {W \mathrm{s}} ^ {( k )} = \left[ \pmb {\mu} _ {W _ {1}} ^ {( k )} , \pmb {\mu} _ {W _ {2}} ^ {( k )} , \pmb {\mathrm{...}} , \pmb {\mu} _ {W _ {M}} ^ {( k )} \right] ^ {\mathrm{T}}} \\ {\left( \pmb {\sigma} _ {W \mathrm{s}} ^ {2} \right) ^ {( k )} = \left[ \left( \pmb {\sigma} _ {W _ {1}} ^ {2} \right) ^ {( k )} , \left( \pmb {\sigma} _ {W _ {2}} ^ {2} \right) ^ {( k )} , \pmb {\mathrm{...}} , \left( \pmb {\sigma} _ {W _ {M}} ^ {2} \right) ^ {( k )} \right] ^ {\mathrm{T}}} \\ {N _ {C} = N _ {\mathrm{R} _ {1}} \times N _ {\mathrm{R} _ {2}} \ldots \times N _ {\mathrm{R} _ {M}}} \end{array} \right.\tag{31}$$
+
+where $\pmb {\mu} _ {W \mathrm{s}} ^ {( k )}$ and $\big ( \pmb {\sigma} _ {W \mathrm{s}} ^ {2} \big ) ^ {( k )}$ denote the vectors consisting of the kth l ðr Þset of samples of M means and variances, respectively; their mth $( m = 1 , 2 , . . . , M )$ component, i.e., $\mu _ {W _ {m}} ^ {( k )}$ and ${( \sigma _ {W _ {m}} ^ {2} )} ^ {( k )}$ , is from $C _ {W _ {n}}$ as presented in Eq. (28); NC denotes the total number of the samples within $C _ {W}$ , and $N _ {\mathrm{R} _ {m}}$ is the sample number of $C _ {W _ {m}}$
+
+To demonstrate the domains of the mean and variance intuitively, four representative cases of the distribution-free P-box are collected and summarized in Table 1, with $W _ {1} ^ {\mathrm{P.B.}} , W _ {2} ^ {\mathrm{P.B}}$ : , and $W _ {3} ^ {\mathrm {{P . B .}}}$ obtained from the literature.50 The corresponding Pboxes are presented in Fig. 5(a), Fig. 6(a), Fig. 7(a), and
+
+Fig. 8(a). These P-boxes are discretized into 500 slices, i.e., $N _ {\mathrm{s}} = 500$ , and 3 uniformly distributed samples are collected ¼in each dimension. Then, the corresponding domains are presented in Fig. 5(b), Fig. 6(b), Fig. 7(b), and Fig. 8(b). As mentioned above, the actual domain of the mean and variance, i.e., $C _ {W _ {m}}$ , is a convex subset of the hypercube $\pmb {I _ {W _ {m}}}$ , which is due to the interdependence between the mean and variance. Accordingly, the uncertain ODEs presented in Eq. (17) have to be solved based on the convex set $C _ {W _ {m}}$ , and the method for solving this problem will be introduced in the following subsection.
+
+## 3.3. Chebyshev-polynomial-based method for interval ODEs
+
+After determining the domain of the means and variances of the excitations, the interval nonlinear ODEs presented in Eq. (17) are completely defined. The Chebyshev method30 has been proven to perform well in solving nonlinear dynamics under interval uncertainties. Therefore, this method is applied and modified to solve the interval ODEs, addressing the irregular convex domain $C _ {W}$ presented in Eq. (30).
+
+For notational convenience, $\{\pmb {\mu} _ {X} , \pmb {P} _ {X} \}$ is denoted by y and $\{{\pmb \mu} _ {W} , \pmb {P} _ {W} \}$ fl gis denoted by z. For mutually independent excitations, z represents $\{\pmb {\mu} _ {W} , \ \pmb {\sigma} _ {W} ^ {2} \} \in \mathbb {R} ^ {2 M}$ which is $\mathrm {~ \textbf ~ {~ a ~} ~} \ : 2 \ : \ : \ : M -$ fl r g 2dimensional vector including M means and M variances. Then, the solution of CADET equations (15) can be expressed as follows:
+
+$$\mathbf {\boldsymbol {y}} ( z | t ) = \{\mathbf {\boldsymbol {y}} | \dot {\mathbf {\boldsymbol {y}}} = f _ {\mathrm{CADET}} ( \mathbf {\boldsymbol {y}} , z , t ) \}\tag{32}$$
+
+where $f _ {\mathrm{CADET}} ( \cdot )$ denotes the vector function on the right-hand ðÞside of Eq. (15). y z t can be regarded as the vector function ð j Þwith respect to z. At a certain time instant t, any component of the vector function $y ( z | t )$ , denoted by $y ( z | t ) \in y ( z | t )$ , can ð j Þ ð j Þ 2 ð j Þbe approximated by using the Chebyshev polynomial, denoted by $p _ {y ( t )} ( z )$ , which can be generally expressed as follows:30
+
+$$y ( z | t ) \approx p _ {y ( t )} ( z ) = \sum _ {\substack {0 < i _ {1} + i _ {2} + \cdots + i _ {2 M} < d}} c _ {i _ {1} , i _ {2} , \ldots , i _ {2 M}} C _ {i _ {1} , i _ {2} , \ldots , i _ {2 M}} ( z ) ,\tag{33}$$
+
+where d denotes the order of the Chebyshev polynomials, $C _ {i _ {1} , i _ {2} , \dots , i _ {2 M}} ( \cdot )$ represents a 2M-dimensional Chebyshev polynomial basis, as expressed in Eq. (34), and $c _ {i _ {1} , i _ {2} , \dots , i _ {2 M}}$ represents the corresponding coefficient of the polynomial.
+
+$$C _ {i _ {1} , i _ {2} , . . . , i _ {2 M}} ( \mathbf {z} ) = \cos \left( i _ {1} \theta _ {1} \right) \cos \left( i _ {2} \theta _ {2} \right) \cdot \cdot \cdot \cos \left( i _ {2 M} \theta _ {2 M} \right)\tag{34}$$
+
+where $[ \theta _ {1} , \theta _ {2} , . . . , \theta _ {2 M} ] ^ {\mathrm{T}}$ , also denoted by , is transformed ½ from z with a given range $[ z ^ {\mathrm{L}} , z ^ {\mathrm{U}} ]$ has follows:
+
+(a) P-box
+
+(b) Domain of $\mu _ {W _ {1}}$ and $\sigma _ {{} _ {W _ {1}}} ^ {2}$
+
+Fig. 5 Case 1 of P-box and corresponding domains of mean and variance. 
+(a) P-box
+
+(b) Domain of $\mu _ {W _ {2}}$ and $\sigma _ {W _ {2}} ^ {2}$
+
+Fig. 6 Case 2 of P-box and corresponding domains of mean and variance. 
+(a) P-box
+
+(b) Domain of $\mu _ {{\boldsymbol {W}} _ {3}}$ and $\sigma _ {{\scriptscriptstyle W _ {3}}} ^ {2}$ 
+Fig. 7 Case 3 of P-box and corresponding domains of mean and variance.
+
+$$\pmb \theta = \operatorname{arccos} \left( \frac {2 z - ( z ^ {\operatorname{L}} + z ^ {\operatorname{U}} )} {z ^ {\operatorname{U}} - z ^ {\operatorname{L}}} \right)\tag{35}$$
+
+36
+
+As discussed in Section 3.2.2, for Eq. $( 17 ) , [ \pmb {z} ^ {\mathrm{L}} , \pmb {z} ^ {\mathrm{U}} ]$ has been determined as $I _ {W}$ ½ presented in Eq. (29). Then, the coefficients $c _ {i _ {1} , i _ {2} , \dots , i _ {2 M}}$ can be determined by using the Chebyshev Collocation Method (CCM). The details regarding CCM are discussed in the literature.61 To use CCM, the $N _ {\mathfrak {p}}$ interpolation points of z need to be selected within the hypercube domain $I _ {W}$ as follows:
+
+$$\left\{\mathfrak {z} _ {\mathfrak {p}} ^ {( k )} \in I _ {W} \big | k = 1 , 2 , \ldots , N _ {\mathfrak {p}} \right\}$$
+
+where $z _ {\mathfrak {p}} ^ {( k )}$ denotes the kth set of interpolation points of z. As discussed in the literature,61 the interpolation point number $N _ {\mathfrak {p}}$ can be determined as follows:
+
+$$N _ {\mathfrak {p}} = {\frac {2 ( 2 M + d ) !} {( 2 M ) ! d !}}\tag{37}$$
+
+(a) P-box
+
+(b) Domain of $\mu _ {W _ {4}}$ and $\sigma _ {W _ {4}} ^ {2}$ 
+Fig. 8 Case 4 of P-box and corresponding domains of mean and variance.
+
+The procedure for collecting $N _ {\mathfrak {p}}$ interpolation points using CCM is also detailed in the literature.61 Then, at each set of interpolation points presented in Eq. (36), the ODEs presented in Eq. (15) can be solved, which can be expressed as follows:
+
+$$\left\{\begin{array} {c} {y _ {\mathrm{p}} ^ {( 1 )} ( t ) = \left\{y _ {\mathrm{p}} ^ {( 1 )} \Big | \dot {y} _ {\mathrm{p}} ^ {( 1 )} = f _ {\mathrm{CADET}} \Big ( y _ {\mathrm{p}} ^ {( 1 )} , z _ {\mathrm{p}} ^ {( 1 )} , t \Big ) \right\}} \\ {y _ {\mathrm{p}} ^ {( 2 )} ( t ) = \left\{y _ {\mathrm{p}} ^ {( 2 )} \Big | \dot {y} _ {\mathrm{p}} ^ {( 2 )} = f _ {\mathrm{CADET}} \Big ( y _ {\mathrm{p}} ^ {( 2 )} , z _ {\mathrm{p}} ^ {( 2 )} , t \Big ) \right\}} \\ {\vdots} \\ {y _ {\mathrm{p}} ^ {\left( N _ {\mathrm{p}} \right)} ( t ) = \left\{y _ {\mathrm{p}} ^ {\left( N _ {\mathrm{p}} \right)} \Big | \dot {y} _ {\mathrm{p}} ^ {\left( N _ {\mathrm{p}} \right)} = f _ {\mathrm{CADET}} \Big ( y _ {\mathrm{p}} ^ {\left( N _ {\mathrm{p}} \right)} , z _ {\mathrm{p}} ^ {\left( N _ {\mathrm{p}} \right)} , t \Big ) \right\}} \end{array} \right.\tag{38}$$
+
+where ${\bf y} _ {\mathrm{p}} ^ {( k )} ( t ) \ : ( k = 1 , 2 , . . . , N _ {\mathrm{p}} )$ denotes the solved interpolation samples of y corresponding to $z _ {\mathfrak {p}} ^ {( k )}$ at time instant t, with the component denoted by $y _ {\mathfrak {p}} ^ {( k )} ( t ) \in y _ {\mathfrak {p}} ^ {( k )} ( t )$ . Based on $y _ {\mathfrak {p}} ^ {( k )} ( t )$ and $z _ {\mathrm{p}} ^ {( k )} ( k = 1 , \ 2 , \ . . . , \ N _ {\mathrm{p}} )$ , the polynomial coefficient $c _ {i _ {1} , i _ {2} , \dots , i _ {2 M}}$ presented in Eq. (33) can be determined using CCM. Then, the Chebyshev-polynomial approximation $p _ {y ( t )} ( z )$ is constructed.
+
+Þð ÞBased on $p _ {y ( t )} ( z )$ , the value of $y ( t )$ corresponding to any ð Þgiven z can be calculated without calling the CADET equations. As discussed in Section $3.2.2 , z \ : ( = \{{\pmb {\mu}} _ {W} , \ : {\pmb \sigma} _ {W} ^ {2} \} )$ are enveloped in a convex set $C _ {W} ,$ fl r g, and the samples of z within $C _ {W}$ have been generated as presented in Eq. (30). The values of $y ( t )$ corresponding to all samples of z collected in $C _ {W} ,$ ð Þ can be calculated by using $p _ {y ( t )} ( z )$ . Subsequently, the bounds, denoted by $y ^ {\mathrm{I}} ( t )$ , can be obtained by finding the minimums and maxið Þmums. This is the so-called scanning method, which can be expressed as follows:
+
+$$y ^ {\mathrm{I}} ( t ) = \Biggl [ \underset {k = 1 , 2 , \ldots , N _ {C}} {\operatorname* {m i n}} p _ {y ( t )} \biggl ( \Bigl \{\pmb {\mu} _ {W \mathrm{s}} ^ {( k )} , \bigl ( \pmb {\sigma} _ {W \mathrm{s}} ^ {2} \bigr ) ^ {( k )} \Bigr \} \biggr ) ,\tag{39}$$
+
+where $\{\pmb {\mu} _ {W \mathrm{s}} ^ {( k )} , \left( \pmb {\sigma} _ {W \mathrm{s}} ^ {2} \right) ^ {( k )} \}$ is the kth set of samples within $C _ {W}$ , and $N _ {C}$ fl ðr Þ gis the total sample number of $C _ {W}$ as presented in Eq. (30) and Eq. (31).
+
+Because $y ( t )$ can represent any component of $y ( t )$ $( = \{\pmb {\mu} _ {X} ( t ) , \pmb {P} _ {X} ( t ) \} )$ , the bounds of $\{\pmb {\mu} _ {X} ^ {\mathrm{I}} ( t ) , \pmb {P} _ {X} ^ {\mathrm{I}} ( t ) \}$ can be ¼ fl ð Þ ð Þg fl ð Þ ð Þgobtained by performing the procedure outlined from Eq. (33) to Eq. (39) for each component of $\{\pmb {\mu} _ {X} ( t ) , \pmb {P} _ {X} ( t ) \}$ . Of note, fl ð Þ ð ÞgEq. (38) only needs to be solved once to generate interpolation samples for all components of $\pmb {\mu} _ {X} ( t )$ and $P _ {X} ( t )$ . Therefore, the l ð Þ ð Þnumber of solving the CADET function is only equal to the number of interpolation points $N _ {\mathfrak {p}}$ presented in Eq. (37).
+
+## 3.4. Uncertainty propagation and a P-box Gaussian assumption
+
+Because the bounds of $\pmb {\mu} _ {X} ^ {\mathrm{I}} ( t )$ and $P _ {X} ^ {\mathrm{I}} ( t )$ have been obtained, the l ð Þ ð Þbounds of error bars, at time instant $t ,$ can be easily determined as follows:
+
+$$\left\{\begin{array} {l l} {e _ {\mathrm{L}} ^ {\mathrm{L}} ( t ) = \qquad \mathrm{min}} & {\big ( \pmb {\mu} _ {X} - \sqrt {\mathrm{diag} ( \pmb {P} _ {X} )} \big )} \\ {e _ {\mathrm{U}} ^ {\mathrm{U}} ( t ) = \qquad \mathrm{max}} & {\big ( \pmb {\mu} _ {X} + \sqrt {\mathrm{diag} ( \pmb {P} _ {X} )} \big )} \\ {\qquad \mu _ {X} , \pmb {P} _ {X} \in \left\{\mu _ {X} ^ {\mathrm{I}} ( t ) , \pmb {P} _ {X} ^ {\mathrm{I}} ( t ) \right\}} \end{array} \right.\tag{40}$$
+
+As discussed in Section 3.1, when solving the basic CADET in Eq. (15), the Gaussian assumption presented in Eq. (16) is utilized. This assumption is also meaningful for evaluating the CDF bounds of system responses $X ^ {\mathrm{P.B.}} ( t )$ . Because the ð Þresponses are assumed to be Gaussian processes, their distribution function is quantified based on $\pmb {\mu} _ {X}$ and $P _ {X}$ . When $\pmb {\mu} _ {X} ^ {\mathrm{I}}$ and $P _ {X} ^ {\mathrm{I}}$ are interval values, at any time instant $t ,$ the distribution of $\mathrm{X} ^ {\mathrm{P.B.}} ( t )$ is normal but the mean and variance are intervals. Hence, $X ^ {\mathrm{P.B.}} ( t )$ can be characterized as time-varying parametð Þric Gaussian P-boxes, also referred to as parametric Gaussian P-box processes. Therefore, the Gaussian assumption for basic CADET can be extended to the P-box form. Regardless of the distribution-free P-box processes of excitation $W ^ {\mathrm{P.B.}} ( t )$ , the system responses $X ^ {\mathrm{P.B.}} ( t )$ can be approximated by the parametric ð ÞGaussian P-box processes. This can be expressed mathematically as follows:
+
+$$\left\{\begin{array} {l l} {F _ {X} ^ {\mathrm{L}} ( {\pmb x} , t ) \approx \underset {\mu _ {X} , P _ {X} \in \left\{\mu _ {X} ^ {( {t} )} , P _ {X} ^ {\mathrm{I}} ( t ) \right\}} {\operatorname* {m i n}} \pmb {\phi} _ {X} ( {\pmb x} , t | \pmb {\mu} _ {X} , P _ {X} )} \\ {F _ {X} ^ {\mathrm{U}} ( {\pmb x} , t ) \approx \underset {\mu _ {X} , P _ {X} \in \left\{\mu _ {X} ^ {( {t} )} , P _ {X} ^ {\mathrm{I}} ( t ) \right\}} {\operatorname* {m a x}} \pmb {\phi} _ {X} ( {\pmb x} , t | \pmb {\mu} _ {X} , P _ {X} )} \end{array} \right.\tag{41}$$
+
+The P-box Gaussian assumption and the CADET method have the same applicable conditions for nonlinear systems. Based on Eq. (41), it is possible to evaluate the CDF bounds of the responses.
+
+Notably, although the proposed method can provide both the CDF bounds and error-bar bounds of the system responses, its main task is to calculate the error-bar bounds. The bounds of the first-passage probability presented in Eq. (9) cannot be determined as the auto-correlations of system responses, which are essential for the evaluation of the firstpassage probability, cannot be provided by the CADET method. This issue deserves further investigation in the future.
+
+Fig. 9 Flowchart of the proposed uncertainty propagation method.
+
+## 3.5. Entire procedure of proposed method
+
+Based on the aforementioned approaches, it is possible to efficiently solve the nonlinear dynamics with distribution-free Pbox processes. The entire procedure is concluded in the this subsection, with the corresponding flowchart presented in Fig. 9.
+
+Step 1. Problem definition: As discussed in section 2, the nonlinear dynamical system with the M dimensional
+
+$W ^ {\mathrm{P.B.}} ( t )$ is defined as Eq. $( 7 ) . W ^ {\mathrm{P.B.}} ( t )$ is defined by the M static P-boxes, denoted as $[ F _ {W} ^ {\mathrm{L}} , \ F _ {W} ^ {\mathrm{U}} ]$ , based on Eq. (3). The corre-½ sponding UP problems are defined as Eq. (8) and Eq. (12).
+
+Step 2. Problem transcription by the CADET: As discussed in Section 3.1, the CADET equations, involving interval parameters $\{\pmb {\mu} _ {W} ^ {\mathrm{I}} , \pmb {P} _ {W} ^ {\mathrm{I}} \}$ , are established as presented in Eq. fl g(17). Therefore, the original P-box problem stated in Eq. (7) has been transformed into the corresponding interval problem as given by Eq. (17).
+
+Step 3. Domain analysis of $\{\pmb {\mu} _ {W} ^ {\mathrm{I}} , \pmb {P} _ {W} ^ {\mathrm{I}} \}$ : As discussed in subsection 3.2, the domain of $\{\pmb {\mu} _ {W} ^ {\mathrm{I}} , \pmb {P} _ {W} ^ {\mathrm{I}} \}$ is analyzed, by the following steps.
+
+(1) As discussed in subsection 3.2.2, the CDF realization set of $[ F _ {W} ^ {\mathrm{L}} , \ F _ {W} ^ {\mathrm{U}} ]$ is generated using the discretization technique, which is denoted as $\{F _ {W _ {m}} ^ {( k )} ( \cdot ) | k = 1 , 2 , \ldots , N _ {\mathrm{R} _ {m}} \}$ $( m = 1 , 2 , . . . , M )$ and presented in Eq. (26) in detail.
+
+(2) The means and variances corresponding to each $F _ {W _ {m}} ^ {( k )} ( \cdot )$ ðÞare calculated by the integration presented in Eq. (27), from k = 1 to $N _ {\mathbf {R} _ {m}}$ and $m = 1$ to M. Then, the convex sample set $C _ {W}$ presented in Eq. (30) and the corresponding hypercube IW presented in Eq. (29) are constructed.
+
+Step 4. Chebyshev method for solving interval ODEs: The numerical ODE method and the corresponding discrete time series $\{t _ {j} | j = 1 , 2 , \ldots , N _ {t} \}$ are defined, and $j \ = \ 1 . \ \{\pmb \mu _ {X} , \ \pmb P _ {X} \}$ and $\left\{\pmb {\mu} _ {W} , \pmb {\sigma} _ {W} ^ {2} \right\}$ g flare collect in the vectors, denoted as y and $z ,$ fl rrespectively.
+
+(1) As discussed in subsection 3.3, the order of Chebyshev polynomial d is defined, and the required number of interpolation points $N _ {\mathfrak {p}}$ is determined by using Eq. (37). The $N _ {\mathfrak {p}}$ sets of interpolation points of z, denoted as $\{\mathfrak {z} _ {\mathfrak {p}} ^ {( k )} | k = 1 , 2 , \ldots , N _ {\mathfrak {p}} \}$ , are obtained by using the f j ¼ gCCM within the hypercube $I _ {W} ,$ , as presented in $\operatorname{Eq}$ . (36).
+
+(2) The CADET equations corresponding to $z _ {\mathfrak {p}} ^ {( k )}$ , presented in Eq. (38), are solved by the numerical method. Then, the corresponding $N _ {\mathfrak {p}}$ sets of interpolation samples of y at each discrete time instant, denoted by $\{\mathbf {y} _ {\mathsf{p}} ^ {( k )} ( t _ {j} ) | j = 1 , 2 , \ldots , N _ {t} , k = 1 , 2 , \ldots , N _ {\mathsf{p}} \}$ are obtained.
+
+(3) At time instant $t _ {j} ,$ the Chebyshev-polynomial approximations of each component of y, presented in Eq. (33), are constructed based on $z _ {\mathfrak {p}} ^ {( k )}$ and $y _ {\mathrm{p}} ^ {( k )} ( t _ {j} ) \ ( k = 1 , 2$ . . ., $N _ {\mathfrak {p}} )$ by using the CCM.
+
+(4) The values of y corresponding to all samples of z collected in $C _ {W}$ , are calculated by using the Chebyshevpolynomial approximations. Subsequently, the bounds of $\{\pmb {\mu} _ {X} ^ {\mathrm{I}} ( t _ {j} ) , \pmb {P} _ {X} ^ {\mathrm{I}} ( t _ {j} ) \}$ are obtained based on Eq. (39).
+
+Step 5. Uncertainty propagation: At time instant $t _ {j} ,$ the bounds of error bars, denoted as $e _ {\mathrm{L}} ^ {\mathrm{L}} ( t _ {j} )$ and $e _ {\mathrm{U}} ^ {\mathrm{U}} ( t _ {j} )$ , are found by Eq. (40). Then, the system responses $X ^ {\mathrm{P.B.}} ( t )$ are assumed ð Þto be parametric Gaussian P-box processes, and the CDF bounds of the system responses, denoted as $F _ {X} ^ {\mathrm{L}} ( x , t _ {j} )$ and $F _ {X} ^ {\mathrm{U}} ( x , t _ {j} )$ , are approximated by Eq. (41). Let $j = j + 1$
+
+ð ÞStep 6. If $j < N _ {t} ,$ , return to step 4.3, otherwise, $e _ {\mathrm{L}} ^ {\mathrm{L}} ( t )$ and $e _ {\mathrm{U}} ^ {\mathrm{U}} ( t )$ , as well as $F _ {X} ^ {\mathrm{L}} ( x , t )$ and $F _ {X} ^ {\mathrm{U}} ( x , t )$ , at each discrete instant $t _ {j} ( j = 1 , 2 , . . . , N _ {t} )$ , are outputted.
+
+Notably, the precision of the proposed transformation is governed by the inherent nonlinearity of the system. Once the nonlinear system is determined, the precision of the transformation presented in Section 3.1 cannot be significantly improved. The required computational cost increases as the number of excitation dimensions M increases. Moreover, the CADET is established based on a precondition that excitations are white noise processes; therefore, the uncertainties of time correlation for the excitations are not considered. However, the method is still meaningful as white noise with imprecise distribution information has also been commonly used in practical engineering.
+
+## 4. Tests and setup
+
+In this section, two numerical tests and an engineering application are implemented to demonstrate the effectiveness of the proposed method. The Runge–Kutta (RK) method is used to solve the ODEs. The order of the Chebyshev polynomials d is defined as 2. In subsection 3.3.2, N has been set to 500.
+
+To test the accuracy of the method, the reference solutions are obtained by using an MC-based approach. The CDF realizations of the P-box have been collected, as presented in Eq. (26). Then, for each realization, MC simulations are performed to calculate the corresponding CDF and statistical moments of the system response. Finally, the sets of CDF realizations and statistical-moment samples for the system response can be obtained, and the reference solutions of the CDF and errorbar bounds can also be found within these sets. The detailed procedure of the MC-based approach is provided in Appendix ${\mathrm{A}}$ In the following test cases, 10000-time MC simulations are performed for each CDF realization.
+
+All the computations are performed using a personal computer with 16 GB of RAM and an Intel(R) Core(TM) i7- 9750H @ 2.60 GHz CPU.
+
+The P-box-process excitations considered in these test cases will be defined based on the four basic P-box processes. These basic P-box processes are constructed based on the P-boxes presented in Table 1 of Section 3.2.2, i.e., $\begin{array} {r} {W _ {1} ^ {\mathrm{P.B.}} , \ W _ {2} ^ {\mathrm{P.B.}} , \ W _ {3} ^ {\mathrm{P.B.}}} \end{array}$ , and ${W} _ {4} ^ {\mathrm{P.B}}$ , by using Eq. (3) as follows:
+
+$$\begin{array} {r} {W _ {i} ^ {\mathrm{P.B.}} ( t ) = \left[ \left( F _ {W _ {i}} ^ {\mathrm{L}} \right) ^ {- 1} , \left( F _ {W _ {i}} ^ {\mathrm{U}} \right) ^ {- 1} \right] ^{\circ} \phi ( N _ {0} ( t ) ) ,} \\ {i = 1 , 2 , 3 , 4 \qquad} \end{array}\tag{42}$$
+
+where the subscript i represents the case ID in Table 1, and $N _ {0} ( t )$ denotes a standard white Gaussian noise process. Thereð Þfore, the excitations, in the following test cases, are considered as white noise with imprecise distribution information. The example of one sample trajectory of $N _ {0} ( t )$ , denoted by $n _ {0} ( t )$ is shown in Fig. 10(a). Based on $n _ {0} ( t )$ ð Þ ð Þ, sample trajectories of ð Þthese basic P-box processes are generated, which are denoted by x1 t , x2 t , x3 t , and $\omega _ {4} ( t )$ , respectively, as shown in ð Þ ð Þ ð ÞFig. 10(b)–(e), respectively.
+
+It should be noted that the P-box for constructing ${\cal W} _ {4} ^ {\mathrm{P.B.}}$ i.e., $[ F _ {W _ {4}} ^ {\mathrm{L}} , \ F _ {W _ {4}} ^ {\mathrm{U}} ]$ , has skewed distributions. The skewness of $F _ {W _ {4}} ^ {\mathrm{U}}$ is greater than $^ {4 ,}$ which is set to test the Gaussian assumption.
+
+## 4.1. Numerical tests
+
+## 4.1.1. Duffing oscillator analysis
+
+First, a single-degree-of-freedom duffing oscillator system is modeled as follows:
+
+$$m {\ddot {x}} ( t ) + c {\dot {x}} ( t ) + k {\Big (} x ( t ) + \varepsilon ( x ( t ) ) ^ {3} {\Big )} = u ( t )\tag{43}$$
+
+where ${\ddot {x}} , {\dot {x}} ,$ and x denote the acceleration, velocity, and displacement of the system, respectively; $u ( t )$ denote the excitað Þtion of the system. m is equal to 1 kg, c, k, and e, are equal to $0.5 \pi , 4 \pi ^ {2}$ , and 1, respectively. The initial condition is given as $\left[ \dot {x} ( t _ {0} ) , x ( t _ {0} ) \right] ^ {\mathrm{T}} = \left[ 0 , 0 \right] ^ {\mathrm{T}}$
+
+(a) n0(t) 
+(b) ω1(t) = [(F)−1, (Fν)−1]ϕ(n0(t)
+
+(d) $\omega _ {3} ( t ) = [ ( F _ {\scriptscriptstyle W _ {3}} ^ {\mathrm{L}} ) ^ {- 1} , ( F _ {\scriptscriptstyle W _ {3}} ^ {\mathrm{U}} ) ^ {- 1} ] \circ \varPhi ( n _ {0} ( t ) )$
+
+(c) ω2(t) = [(F)−1,(ν)−1]φ(n0(t)) 
+(e) ω4(t) = [()−1, (Fν)−1]φ(n0(t) 
+Fig. 10 One of the sample trajectories for basic P-box processes.
+
+Under an uncertain excitation, $U ^ {\mathrm{P.B.}} ( t )$ is described as a ð Þdistribution-free P-box process, and the problem is expressed as follows:
+
+$$\left\{\begin{array} {l l} {\dot {V} ^ {\mathrm{P.B.}} ( t ) = \frac {1} {m} \left[ - c V ^ {\mathrm{P.B.}} ( t ) - k \Big ( X ^ {\mathrm{P.B.}} ( t ) + \varepsilon \big ( X ^ {\mathrm{P.B.}} ( t ) \big ) ^ {3} \Big ) \right]} \\ {\qquad \quad + \frac {1} {m} U ^ {\mathrm{P.B.}} ( t )} \\ {\dot {X} ^ {\mathrm{P.B.}} ( t ) = V ^ {\mathrm{P.B.}} ( t )} \end{array} \right.\tag{44}$$
+
+where $V ^ {\mathbf {P . B .}} ( t )$ and $X ^ {\mathrm{P.B.}} ( t )$ denote the velocity and displaceð Þ ð Þment described as P-box processes, respectively. Four cases of ${U} ^ {\mathrm{P.B.}} ( t )$ , as shown in Table 2, are produced based on the linð Þear transformations of the basic P-box processes defined by Eq. (42) to assess the proposed method.
+
+The problem is solved in the period of 0–5 s. The variablestep RK solver is applied with a relative error tolerance smaller than $1 \times 10 ^ {- 6}$ . The error bars of $V ^ {\mathrm{P.B.}} ( t )$ and the approximated  ð ÞCDF bounds at 5 s of the four cases are shown in Figs. 11–14, and the reference solutions are also presented. To further examine the error of the proposed method, compared to the reference solutions, the relative errors of the calculated error bars and CDF bounds, denoted by $\varepsilon _ {\mathrm{e.b.}}$ and $\varepsilon _ {F}$ respectively, are evaluated as follows:
+
+$$\left\{\begin{array} {c} {\varepsilon _ {\mathrm{e.b.}} = \mathrm{mean} _ {10} \left[ \frac {1} {N _ {1}} \sum _ {i = 1} ^ {N _ {1}} \sqrt {\left( \frac {e ( t _ {i} ) - e _ {\mathrm{ref}} ( t _ {i} )} {e _ {\mathrm{ref}} ( t _ {i} )} \right) ^ {2}} \right]} \\ {\varepsilon _ {F} = \mathrm{mean} _ {10} \left[ \frac {1} {N _ {2}} \sum _ {i = 1} ^ {N _ {2}} \sqrt {\left( F ( x _ {i} ) - F _ {\mathrm{ref}} ( x _ {i} ) \right) ^ {2}} \right]} \end{array} \right.\tag{45}$$
+
+where $N _ {1}$ denotes the number of discrete instants of the reference solution and is equal to 10, e t and $e _ {\mathrm{ref}} ( t _ {i} )$ denote the ð Þlower and upper bounds of the error bars at $t _ {i}$ ð Þfor the proposed method and MC-based method, respectively; and $N _ {2}$ denotes the amount of discretization of the CDF, which is 10000, $F ( x _ {i} )$ and $F _ {\mathrm{ref}} ( x _ {i} )$ denote the value of CDF bounds at $x _ {i}$ for ð Þ ð Þthe proposed method and MC-based method. mean $. _ {10} [ \cdot ]$ indi-½cates that the errors are evaluated by the mean of 10-time repetitions.
+
+The relative errors of $e _ {\mathrm{U}} ^ {\mathrm{U}} ( t )$ and $e _ {\mathrm{L}} ^ {\mathrm{L}} ( t )$ of $V ^ {\mathrm{P.B.}} ( t ) ,$ , and the ð Þ ðerrors of the CDF bounds at 5 s, i.e., $F _ {V} ^ {\mathrm{U}} ( \nu , 5 )$ and $F _ {V} ^ {\mathrm{L}} ( \nu , 5 )$ ð Þ ð Þare calculated, as shown in Table 3. Of note, all errors are less than 2%. Therefore, in terms of precision, the proposed method performs well in these cases. The proposed method only requires about 0.06% of the time to obtain the reference solutions. Finally, the CDF bounds of $V ^ {\mathrm{P.B.}} ( t ) ~ \mathrm{at} ~ 5 ~ \mathrm{s}$ , presented ð Þin Fig. 11(b), Fig. 12(b), Fig. 13(b), and Fig. 14(b), show that the responses are approximate parametric Gaussian P-box processes. This also holds for Case 4, with very skewed distributions.
+
+The precision of the proposed method under different nonlinearities is also investigated in this example. The proposed method is tested in the duffing oscillator analysis based on the different values of the coefficient of the cubic term $( \varepsilon = 1 , 2 , 5 , 10 , 20$ , and 50) for Case 1. The relative errors during the calculation of $V ^ {\mathrm{P.B.}} ( t )$ are presented in Table 4, and the ð Þresults show that the error of the proposed method does not vary significantly when the nonlinearity of the problems changes.
+
+## 4.1.2. Vehicle ride analysis
+
+In the second example, a two-degree-of-freedom quarter-car model30,32,33 presented in Eq. (46) is analyzed, and the corresponding schematic is shown in Fig. 15.
+
+$$\left\{\begin{array} {l l} {\dot {x} _ {\mathrm{s}} = \nu _ {\mathrm{s}}} \\ {\dot {x} _ {\mathrm{u}} = \nu _ {\mathrm{u}}} \\ {\dot {\nu} _ {\mathrm{s}} = - \frac {1} {m _ {\mathrm{s}}} \Big ( c _ {\mathrm{s}} \big ( \nu _ {\mathrm{s}} - \nu _ {\mathrm{u}} \big ) + k _ {\mathrm{s}} \big ( x _ {\mathrm{s}} - x _ {\mathrm{u}} \big ) + K _ {\mathrm{s}} \big ( x _ {\mathrm{s}} - x _ {\mathrm{u}} \big ) ^ {3} \Big )} \\ {\dot {\nu} _ {\mathrm{u}} = \frac {1} {m _ {\mathrm{u}}} c _ {\mathrm{s}} \big ( \nu _ {\mathrm{s}} - \nu _ {\mathrm{u}} \big ) + k _ {\mathrm{s}} \big ( x _ {\mathrm{s}} - x _ {\mathrm{u}} \big ) + K _ {\mathrm{s}} \big ( x _ {\mathrm{s}} - x _ {\mathrm{u}} \big ) ^ {3}} \\ {+ k _ {\mathrm{t}} \big ( x _ {\mathrm{r}} - x _ {\mathrm{u}} \big ) + K _ {\mathrm{t}} \big ( x _ {\mathrm{r}} - x _ {\mathrm{u}} \big ) ^ {3}} \end{array} \right.\tag{46}$$
+
+(a) Variation in error bar of $V ^ {\mathrm{P.B.}}$ . with time.
+
+(b) Approximation of P-box of $V ^ {\mathrm{P.B}}$ at $5 \ : \mathfrak {s}$ s. 
+Fig. 11 Results of a duffing oscillator analysis for Case 1.
+
+where $x _ {s}$ and $\nu _ {\mathrm{s}}$ denote the sprung displacement and velocity, respectively; $x _ {\mathrm{u}}$ and $\nu _ {\mathrm{u}}$ denote the unsprung displacement and velocity, respectively, the initial condition is given as $[ x _ {\mathrm{s}} ( t _ {0} ) , x _ {\mathrm{u}} ( t _ {0} ) , \boldsymbol {\nu} _ {\mathrm{s}} ( t _ {0} ) , \boldsymbol {\nu} _ {\mathrm{u}} ( t _ {0} ) ] ^ {\mathrm{T}} ~ = ~ [ 0 , 0 , 0 , 0 ] ^ {\mathrm{T}}$ , the sprung mass $m _ {\mathrm{s}}$ ð Þ ð Þ ð Þ ðand unsprung mass $m _ {\mathrm{u}}$ ½ are equal to 400 $\mathrm{kg}$ and 60 kg, respectively, the suspension damping rate $c _ {\mathrm{s}}$ is equal to 1000, the linear stiffness characteristics of the suspension and tire, $k _ {\mathrm{s}}$ and $k _ {\mathrm{t}}$ , are equal to $1.5 \times 10 ^ {4}$ and $2 \times 10 ^ {5}$ , respectively,  and the cubic stiffness characteristics of the suspension and tire, $K _ {\mathrm{s}}$ and $K _ {\mathrm{t}}$ , are equal to $1.5 \times 10 ^ {6}$ and $2 \times 10 ^ {7}$ , respectively.
+
+ It is supposed that the vehicle drives through a standard triangular roadblock at a speed $\nu = 10 \mathrm{m/s}$ . Then, $x _ {\mathrm{r}}$ is computed as follows:
+
+$$x _ {\mathrm{r}} = \left\{\begin{array} {l l} {6 t ,} & {0 \leqslant t < 0.02} \\ {0.24-6 t ,} & {0.02 \leqslant t < 0.04} \\ {0 ,} & {t \geqslant 0.04} \end{array} \right.\tag{47}$$
+
+Afterward, the standard triangular roadblock is considered to be rough. Under the distribution-free P-box process model, due to additional roughness $W ^ {\mathrm{P.B.}} ( t ) , x _ {\mathrm{r}} ( t )$ is transformed into a P-box process $X _ {\mathrm{r}} ^ {\mathrm{P.B.}} ( t )$ as follows:
+
+$$X _ {\mathrm{r}} ^ {\mathrm{P.B.}} ( t ) = x _ {\mathrm{r}} ( t ) + W ^ {\mathrm{P.B.}} ( t )\tag{48}$$
+
+Four cases of $W ^ {\mathbf {P} . \mathbf {B} .} ( t )$ , as shown in Table 5, are obtained by ð Þusing the linear transformations of the basic P-box processes defined by Eq. (42) to assess the proposed method.
+
+Subsequently, after neglecting the effect of $W ^ {\mathrm{P.B.}} ( t )$ on the ð Þthree-order term, the problem of nonlinear dynamics with the P-box process can be defined as follows:
+
+$$\begin{array} {r} {\left\{\begin{array} {l l} {\dot {X} _ {\mathrm{s}} ^ {\mathrm{P.B.}} ( t ) = V _ {\mathrm{s}} ^ {\mathrm{P.B.}} ( t )} \\ {\dot {X} _ {\mathrm{u}} ^ {\mathrm{P.B.}} ( t ) = V _ {\mathrm{u}} ^ {\mathrm{P.B.}} ( t )} \\ {\dot {V} _ {\mathrm{s}} ^ {\mathrm{P.B.}} ( t ) = f _ {s}} \\ {\dot {V} _ {\mathrm{u}} ^ {\mathrm{P.B.}} ( t ) = f _ {\mathrm{u}} + \frac {k _ {\mathrm{t}}} {m _ {\mathrm{u}}} W ^ {\mathrm{P.B.}} ( t )} \end{array} \right.} \end{array}\tag{49}$$
+
+where, $f _ {\mathrm{s}}$ and $f _ {\mathrm{u}}$ denote the nonlinear functions of $\nu _ {\mathrm{s}}$ and $v _ {\mathrm{u}}$ in Eq. (46), respectively.
+
+The problem is solved in a period of 0–1 s, and a variablestep RK solver is applied with a relative error tolerance smaller than $1 \times 10 ^ {- 4}$ . The error bars of $X _ {\mathrm{s}} ^ {\mathrm{P.B.}} ( t )$ and their approxi- ð Þmated CDF bounds at 0.3 s for the four cases are shown in Fig. 16 to Fig. 19. The relative errors of $e _ {\mathrm{U}} ^ {\mathrm{U}} ( t )$ and $e _ {\mathrm{L}} ^ {\mathrm{L}} ( t )$ of $X _ {\mathrm{s}} ^ {\mathrm{P.B.}} ( t ) ,$ , as well as the errors of the CDF bounds at 0.3 s, i.e., $F _ {X _ {\mathrm{s}}} ^ {\mathrm{U}} ( x _ {\mathrm{s}} , 0.3 )$ , and $F _ {X _ {\mathrm{s}}} ^ {\mathrm{L}} ( x _ {\mathrm{s}} , 0.3 )$ , are calculated, as shown in Table 6. Of note, all error values are less than 1.2%. This indicates that the proposed method demonstrated good precision. Nevertheless, the proposed method requires less than 0.07% of the time required for obtaining the reference solutions. This shows that the proposed method is more efficient in terms of computational time. Finally, the responses are approximate parametric Gaussian P-box processes as shown in Fig. 16(b), Fig. 17(b), Fig. 18(b), and Fig. 19(b). Although, for Case 4, the relative error of $F _ {X _ {\mathrm{s}}} ^ {\mathrm{U}} ( x _ {\mathrm{s}} , 0.3 )$ is close to 2%, the Gaussian assumption provides a satisfactory accuracy of the error bars in this case.
+
+## 4.2. Application in uncertainty propagation of LV ascent trajectory
+
+The concept of the LV-flight-dynamic model is illustrated in Fig. 20. The corresponding three-degree-of-freedom dynamic equations are expressed in a vector form presented in Eq. (50), which describes the motion of the center of mass of an LV.
+
+$$\begin{array} {r} {\left\{\dot {\boldsymbol {\nu}} = \frac {1} {m _ {\mathrm{LV}}} \big ( \pmb {G} + \pmb {R} + \pmb {P} + \pmb {F} _ {\mathrm{c}} \big ) \right.} \\ {\left. \dot {\boldsymbol {r}} = \pmb {\nu} \right.} \end{array}\tag{50}$$
+
+where $\mathbf {\boldsymbol {p}} = \left[ \nu _ {x} , ~ \nu _ {y} , ~ \nu _ {z} \right] ^ {\mathrm {{T}}}$ denotes the velocity vector of the $\mathrm{LV} ,$ $\boldsymbol {r} = \left[ x , y , z \right] ^ {\mathrm{T}}$ denotes the position vector of the center of mass ¼ ½of the $\mathrm{LV} , m _ {\mathrm{LV}}$ denotes the mass of the LV, and G, R, $P ,$ and $F _ {\mathrm{c}}$ signify gravity, aerodynamic force, propulsion, and control force on the LV, respectively. The detailed expansion of the model is presented in Appendix A.
+
+In practical engineering, the values of the aforementioned forces cannot be obtained analytically and are always provided in the form of complex discrete tables. Therefore, the dynamic model is usually too complex to be modified arbitrarily and the calculation of LV trajectory is generally regarded as a blackbox problem.
+
+(b) Approximation of P-box of $V ^ {\mathrm{P.B.}}$ at 5 s. 
+Fig. 12 Results of duffing oscillator analysis for Case 2.
+
+(b) Approximation of P-box of $V ^ {\mathrm{P.B.}}$ at 5 s. 
+Fig. 13 Results of duffing oscillator analysis for Case 3.
+
+(b) Approximation of P-box of $V ^ {\mathrm{P.B.}}$ at 5 s. 
+Fig. 14 Results of a duffing oscillator analysis for Case 4.
+
+## 4.2.1. Uncertainty propagation problems
+
+Consider a three-stage LV, with the basic parameters of this LV presented in Table 7 and other necessary parameters presented in Appendix B. The flight-program angle and control program formulated for flying the LV, according to a certain trajectory, are presented in Eq. (51). Based on these parameters, the baseline trajectory is simulated, as shown in Fig. 21.
+
+$$\varphi _ {\mathrm{PR}} ( t ) = \left\{\begin{array} {l l} {\frac {\pi} {2} ,} & {0 \mathrm{s} \leqslant t < 10 \mathrm{s}} \\ {\frac {\pi} {2} + \left( \frac {\pi} {2} - \frac {\pi} {60} \right) \Big [ \big ( \frac {t - 10} {150} \big ) ^ {2} - 2 \big ( \frac {t - 10} {150} \big ) \Big ] ,} & {10 \mathrm{s} \leqslant t < 160 \mathrm{s}} \\ {\frac {\pi} {60} ,} & {t > 160 \mathrm{s}} \end{array} \right.\tag{51}$$
+
+The actual flight of the LV will usually be affected by various uncertainties.62,63 Among these uncertainties, the most common time-varying uncertainty is the atmospheric environment. At an earlier phase of design, because precise atmosphere information is usually unavailable, the P-box process model is chosen to describe the uncertainties.
+
+Let $\pmb {x} = \left[ \pmb {v} ^ {\mathrm{T}} , \pmb {r} ^ {\mathrm{T}} \right] ^ {\mathrm{T}}$ , then, the dynamic model presented in Eq. ¼ ½ (50) is expressed as follows:
+
+$$\dot {{\boldsymbol {x}}} = {\boldsymbol {f}} ( {\boldsymbol {x}} , t )\tag{52}$$
+
+where $f ( \cdot )$ denotes the nonlinear vector function presented in ð  ÞEq. (50), and t denotes the flight time. The wind causes additional acceleration due to the variations in aerodynamic forces. Therefore, the problem is formulated as follows:
+
+$$\begin{array} {r l} & {\dot {\boldsymbol {X}} ^ {\mathrm{P.B.}} ( t ) = f ( \boldsymbol {X} ^ {\mathrm{P.B.}} ( t ) , t )} \\ & {\qquad + \pmb {B} ( t ) \left[ W _ {x} ^ {\mathrm{P.B.}} ( t ) , W _ {y} ^ {\mathrm{P.B.}} ( t ) , W _ {z} ^ {\mathrm{P.B.}} ( t ) , 0 , 0 , 0 \right] ^ {\mathrm{T}}} \end{array}\tag{53}$$
+
+where $X ^ {\mathrm{P.B.}} = \left( \left[ V _ {x} ^ {\mathrm{P.B.}} , V _ {y} ^ {\mathrm{P.B.}} , V _ {z} ^ {\mathrm{P.B.}} , X ^ {\mathrm{P.B.}} , Y ^ {\mathrm{P.B.}} , Z ^ {\mathrm{P.B.}} \right] ^ {\mathrm{T}} \right)$ denote the vector comprising the LV velocities and positions, which is described as P-box processes, $W _ {x} ^ {\mathrm{P.B.}} ( t ) , \quad W _ {y} ^ {\mathrm{P.B.}} ( t )$ , and $W _ {z} ^ {\mathbf {P} . \mathbf {B} .} ( t )$ denote the additional accelerations in the three degrees of freedom described by the distribution-free P-box processes. Based on the linear transformations of the basic P-box processes defined by Eq. (42), $W _ {x} ^ {\mathrm{P.B.}} ( t ) , \ W _ {y} ^ {\mathrm{P.B.}} ( t )$ , and $W _ {z} ^ {\mathrm{P.B.}} ( t )$ are defined as follows:
+
+Fig. 15 Schematic of a quarter-car model with two degrees of freedom and roughness of road.
+
+$$\left\{\begin{array} {l l} {W _ {x} ^ {\mathrm{P.B.}} ( t ) = 2 \times 10 ^ {- 2} W _ {1} ^ {\mathrm{P.B.}} ( t ) - 1 \times 10 ^ {- 2}} \\ {W _ {y} ^ {\mathrm{P.B.}} ( t ) = 2 \times 10 ^ {- 2} W _ {2} ^ {\mathrm{P.B.}} ( t ) - 1 \times 10 ^ {- 2}} \\ {W _ {z} ^ {\mathrm{P.B.}} ( t ) = 7.5 \times 10 ^ {- 3} W _ {3} ^ {\mathrm{P.B.}} ( t )} \end{array} \right.\tag{54}$$
+
+B t as the input matrix is expressed as follows:
+
+$$B _ {( 6 \times 3 )} ( t ) = \left[ {\begin{array} {l} {{Q _ {( 3 \times 3 )}}} \\ {{{Q _ {( 3 \times 3 )}}}} \end{array}} \right] , \quad Q _ {( 3 \times 3 )} = \mathrm{diag} \Bigl ( c {\frac {q} {m _ {\mathrm{LV}}}} \Bigr )\tag{55}$$
+
+where $q$ denotes the dynamic pressure, and c denotes a constant coefficient equal to 8.785 m2.
+
+## 4.2.2. Results and discussion
+
+The problem is solved in a period of 0–187 s. The variable-step RK solver is applied with a relative error tolerance smaller than $1 \times 10 ^ {- 3}$ . The error bars of $V _ {z} ^ {\mathbf {P . B .}} ( t )$ and $Z ^ {\mathrm{P.B.}} ( t )$ , as well  ðas their approximated CDF bounds at $32.7 \mathrm{~s~}$ ð Þwith maximum dynamic pressure, are shown in Fig. 22 and Fig. 23. The relative errors of $e _ {\mathrm{U}} ^ {\mathrm{U}} ( t )$ and $e _ {\mathrm{L}} ^ {\mathrm{L}} ( t )$ for $V _ {z} ^ {\mathbf {P . B .}} ( t )$ and $Z ^ {\mathrm{P.B.}} ( t )$ , as well as
+
+(a) Variation in error bar of $X _ {s} ^ {P . B .}$ with time.
+
+(b) Approximation of P-box of $X _ {s} ^ {P . B .}$ at 0.3 s.
+
+Fig. 17 Results of vehicle ride analysis for Case 2. 
+(b) Approximation of P-box of $X _ {s} ^ {P . B .}$ at 0.3 s.
+
+(b) Approximation of P-box of $X _ {s} ^ {P . B .}$ at 0.3 s. 
+Fig. 18 Results of vehicle ride analysis for Case 3.
+
+Fig. 19 Results of vehicle ride analysis for Case 4. 
+Fig. 20 Concept of the launch-vehicle-flight-dynamic model.
+
+the CDF bounds at 32.7 s, i.e., $F _ {V _ {z}} ^ {\mathrm{U}} ( v _ {z} , 32.7 ) , \ F _ {V _ {z}} ^ {\mathrm{L}} ( v _ {z} , 32.7 )$ $F _ {Z} ^ {\mathrm{U}} ( z , 32.7 )$ , and $F _ {Z} ^ {\mathrm{L}} ( z , 32.7 )$ , are calculated, as shown in ð Þ ð ÞTable 8. It can be observed that all errors are less than 3%, which satisfies the standards for the majority of practical engineering applications. The proposed method saves about 99.81% computational time compared to the MC-based approach. This shows that the proposed method is capable of handling the engineering black-box problem with satisfactory precision. Moreover, the response of this practical engineering system, i.e., the position and velocity of the LV, are still approximate parametric Gaussian P-box processes, as shown in Fig. 22(b) and Fig. 23(b).
+
+Eventually, the entire LV trajectory under distribution-free P-box processes can be presented in the form of error bars, as shown in Fig. 24. The results efficiently obtained by the proposed method will provide valuable guidance for trajectory design under imprecision probabilistic information.
+
+## 5. Conclusions
+
+This work defines the Uncertainty Propagation (UP) problem of nonlinear dynamics with distribution-free P-box processes. This problem is meaningful for engineering applications, where only imprecise probabilistic information of dynamic excitations is available. Then, a novel method is presented to efficiently solve the UP problem.
+
+(1) The proposed UP analysis method decouples the analyses of distribution-free P-box and stochastic analyses of nonlinear systems. As a result, a large portion of the computational cost is significantly reduced. Moreover, an extended Gaussian assumption in P-box form is considered, i.e., the system responses are approximately parametric Gaussian P-box processes. This assumption makes it possible to evaluate the CDF bounds of the response by only obtaining the interval bounds of means and variances.
+
+(2) The tests performed in this work verify the accuracy of the proposed method. The calculation of error bars shows that compared to the reference solutions, the relative errors of the proposed method are typically less than 1%. The evaluation of CDF bounds shows that the proposed method reaches the relative errors of less than 3%. The Gaussian assumption is therefore effective in providing the error bars with satisfactory precision. In addition, the error of probability-bound evaluation based on the assumption is also acceptable.
+
+(3) Based on the efficiency of the Chebyshev method for solving interval ODEs, the proposed method only required less than 0.2% calculation time of the reference solutions.
+
+Fig. 21 Baseline trajectory of launch vehicle.
+
+(a) Variation in the error bar of $V _ {s} ^ {P . B .}$ with time.
+
+(b) Approximation of the P-box of $V _ {s} ^ {P . B .}$ at 32.7 s. 
+Fig. 22 Results of launch-vehicle trajectory analysis of $V _ {z} ^ {\mathbf {P . B .}} ( t )$
+
+(a) Variation in error bar of $Z ^ {\mathrm{P.B.}}$ with time.
+
+(b) Approximation of P-box of $Z ^ {\mathrm{P.B.}}$ at 32.7 s. 
+Fig. 23 Results of launch-vehicle trajectory analysis of $Z ^ {\mathrm{P.B.}} ( t )$
+
+(4) The capacity of the method in solving complex blackbox problems is demonstrated by the engineering application of the LV trajectory.

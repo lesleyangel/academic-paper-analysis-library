@@ -1,0 +1,20 @@
+{
+  "pdf": "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-study-of-interfacial-electrical-contact-resistances-of-th_2022_Aerospace-S.pdf",
+  "out_dir": "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\013-A-study-of-interfacial-electrical-contact-resistances-of-th_2022_Aerospace-S",
+  "command": [
+    "C:\\Users\\90793\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.exe",
+    "C:\\Users\\90793\\.codex\\skills\\academic-pdf-cleantext\\scripts\\extract_academic_pdf.py",
+    "F:\\code\\学术期刊蒸馏器\\801\\论文\\A-study-of-interfacial-electrical-contact-resistances-of-th_2022_Aerospace-S.pdf",
+    "--out",
+    "F:\\code\\学术期刊蒸馏器\\801\\cleantext\\013-A-study-of-interfacial-electrical-contact-resistances-of-th_2022_Aerospace-S",
+    "--mineru-backend",
+    "pipeline",
+    "--mineru-model-source",
+    "modelscope"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 211.88,
+  "stdout": "Wrote F:\\code\\学术期刊蒸馏器\\801\\cleantext\\013-A-study-of-interfacial-electrical-contact-resistances-of-th_2022_Aerospace-S\nbody_chars=62079 references=48 tables=5\nnoise_flags=many_figure_caption_markers\n",
+  "stderr": "",
+  "finished_at": "2026-05-27T02:46:17"
+}

@@ -1,0 +1,43 @@
+Fig. 1. Schematic diagram for sparse reconstruction of physical field data using multi-source sensor measurements.
+
+Fig. 2. Procedure of determining the minimum number of the multi-source sensors.
+
+Fig. 3. Modeling process of the sparse reconstruction model using POD-RBFNN.
+
+Fig. 4. The architecture of RBFNN with n inputs and m outputs.
+
+Fig. 5. Flowchart of multi-source sensor location optimization.
+
+Fig. 6. Schematic diagram and dimensional specifications of the reentry capsule.
+
+Fig. 7. Dominant POD modes of pressure on the surfaces of the reentry capsule; the unit is Pa.
+
+Fig. 8. Dominant POD modes of heat flux on the surfaces of the reentry capsule; the unit is W/m2.
+
+Fig. 9. POD reconstruction error via the number of modes: (a) pressure and (b) heat flux.
+
+Fig. 10. Comparison of reconstruction errors between single-source and multi-source sensors: (a) pressure and (b) heat flux. (Here, n donates the number of single- source sensors in the single-source reconstruction method and multi-source sensors in the proposed method, respectively).
+
+Fig. 11. The optimum multi-source sensor locations obtained from 10 optimizations.
+
+Fig. 12. Sparse reconstruction results of the test sample with the worst reconstruction accuracy(Ma = 8.0617, α = − 24.75∘, H = 45.981km).
+
+Fig. 13. Sparse reconstruction results of the test sample with the best reconstruction accuracy (Ma = 8.9746, α = − 22.97∘, H = 48.594km).
+
+Fig. 14. Schematic of sensor redundancy mechanism.
+
+Fig. 15. Comparison of reconstruction errors with different noise levels between single-source and multi-source sensors.
+
+Fig. 16. Sparse reconstruction results of the test sample with different noise level (Ma = 7.6124, α = − 21.55∘, H = 45.9278km).
+
+Fig. 17. Results of the grid independence test: (a) surface pressure-coefficients at position Z = 0mand (b) surface heat flux at position Z = 0m.
+
+Fig. 8. Dominant POD modes of heat flux on the surfaces of the reentry capsule; the unit is $\mathrm { { w / m ^ { 2 } } } .$
+
+Fig. 10. Comparison of reconstruction errors between single-source and multi-source sensors: (a) pressure and (b) heat flux. (Here, n donates the number of singlesource sensors in the single-source reconstruction method and multi-source sensors in the proposed method, respectively).
+
+Fig. 12. Sparse reconstruction results of the test sample with the worst reconstruction accuracy(Ma = 8.0617, α = − 24.75∘ , H = 45.981km).
+
+Fig. 13. Sparse reconstruction results of the test sample with the best reconstruction accuracy (Ma = 8.9746, α = − 22.97∘ , H = 48.594km).
+
+Fig. 16. Sparse reconstruction results of the test sample with different noise level (Ma = 7.6124, α = − 21.55∘ , H = 45.9278km).

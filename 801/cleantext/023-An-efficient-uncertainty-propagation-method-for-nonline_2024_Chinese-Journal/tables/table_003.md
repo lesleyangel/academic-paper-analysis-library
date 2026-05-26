@@ -1,0 +1,9 @@
+| Characteristic | Value |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| Case 1 | Case 2 | Case 3 | Case 4 |  |  |
+| Errors relative to the reference solutions (%) | $e _ { \mathrm { U } } ^ { \mathrm { U } } ( t ) ~ \mathrm { o f } ~ V ^ { \mathrm { P . B . } } ( t )$ | 1.32 | 1.20 | 1.34 | 0.91 |
+| $e _ { \mathrm { L } } ^ { \mathrm { L } } ( t ) ~ \mathrm { o f } ~ V ^ { \mathrm { P . B . } } ( t )$ | 0.81 | 0.55 | 1.32 | 0.75 |  |
+| $F _ { V } ^ { \mathrm { U } } ( \nu , 5 )$ | 0.25 | 0.26 | 1.48 | 0.56 |  |
+| $F _ { V } ^ { \mathrm { L } } ( \nu , 5 )$ | 0.31 | 0.25 | 1.65 | 0.38 |  |
+| Computation time (s) | Reference solutions> $1 . 2 5 \times 1 0 ^ { 5 }$ |  |  |  |  |
+| Proposed method | 75.50 | 72.84 | 74.05 | 71.61 |  |

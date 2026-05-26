@@ -1,0 +1,3 @@
+| Interfacial clearance medium | T01 (K) | T02 (K) | P01 (MPa) |
+| --- | --- | --- | --- |
+| Air, silver-epoxy | 400 to 700 | 300 | 0.01 to 0.10 |

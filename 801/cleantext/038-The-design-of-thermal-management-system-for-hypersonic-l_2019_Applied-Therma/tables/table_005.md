@@ -1,0 +1,13 @@
+| Symbols | Surface regions of vehicle | Area (m2) |
+| --- | --- | --- |
+| $L _ { F } , L _ { C }$ | Leading edge of fuselage and cowl | 3.2,8.0 |
+| Lw-L, Lw.w | Leeward and windward of wings leading edge | 21.7, 21.9 |
+| $L _ { T - b } \ L _ { T - O }$ | Inside and outside of tail wing leading edge | 7.1, 7.4 |
+| $F _ { I - L } , . . . , F _ { V - L }$ | Surface part $\mathrm { I } , . . . ,$ V of leeward of fuselage | 17.3, 27.7, 38.4, 69.3, 26.0 |
+| $F _ { I \mathrm { - } S } , . . . , F _ { V \mathrm { - } S }$ | Surface part I, …., VI of side of fuselage | 5.3, 22.8, 45.5, 53.9, 7.0 |
+| $C _ { b } \ C _ { I b } \ C _ { I I I }$ | Compression surface parts I, II and III | 15.7, 10.6, 19.9 |
+| $P _ { I \mathcal { S } } , P _ { I I \mathcal { S } }$ | Side surface parts I and I of propulsion system | 23.3,35.2 |
+| $P _ { I - W } , P _ { I I - W }$ | Windward surface parts I and II of propulsion system | 60.8, 19.4 |
+| $W _ { L } , \ W _ { W }$ | Leeward and windward of wings | 117.4, 121.5 |
+| $T _ { b } ~ T _ { O }$ | Inside and outside surface of tail wings | 27.6, 28.6 |
+| Total |  | 862.5 |

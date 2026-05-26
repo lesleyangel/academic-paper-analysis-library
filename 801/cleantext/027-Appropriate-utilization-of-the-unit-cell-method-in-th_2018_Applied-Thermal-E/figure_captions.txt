@@ -1,0 +1,21 @@
+Fig. 1. Paths from UD composite to unit cells.
+
+Fig. 2. Paths from plain woven composite to unit cells.
+
+Fig. 3. Paths from 3D four-directional braided composite to unit cells.
+
+Fig. 4. Unit cell models for three types of composites.
+
+Fig. 5. Boundaries of the unit cell.
+
+Fig. 6. Meshed models.
+
+Fig. 7. Temperature fields of UD composites.
+
+Fig. 8. Temperature fields of plain woven composites.
+
+Fig. 9. Further structure symmetries in plain woven composites.
+
+Fig. 10. Temperature fields of 3D four-directional braided composites.
+
+Fig. 11. Further structure symmetries in 3D four-directional braided composites.

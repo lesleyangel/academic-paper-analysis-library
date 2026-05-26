@@ -1,0 +1,145 @@
+[confidence=0.92; source=equations; [page 2, bbox (306.3, 257.6, 557.66, 270.32)]] ⎯ → ⎯⎯⎯⎯⎯ + + Ca Co O CaO CoO O 264 (g) 3261299 K 2 (2)
+
+[confidence=0.92; source=equations; [page 4, bbox (306.08, 597.17, 557.66, 616.32)]] = + ′ + O V e O 212 O x O ·· 2 (6)
+
+[confidence=0.92; source=equations; [page 5, bbox (43.6, 419.59, 219.55, 443.38)]] Composition TE Type ρ(mΩ·cm) S(μV/K) PF (mW/ m·K2)
+
+[confidence=0.92; source=equations; [page 6, bbox (250.58, 84.09, 280.28, 99.03)]] Mobility (cm2/V/S)
+
+[confidence=0.92; source=body_inline] \mathrm {C a C o _ {2} O _ {4} , C a _ {2} C o _ {2} O _ {5} ,}
+
+[confidence=0.92; source=body_inline] \mathrm {C a _ {3} C o _ {4} O _ {9} \ ( C a _ {9} C o _ {12} O _ {28} )}
+
+[confidence=0.92; source=body_inline] \mathrm{Ca} _ {3} \mathrm{Co} _ {2} \mathrm{O} _ {6}
+
+[confidence=0.92; source=body_inline] \mathrm {C a _ {3} C o _ {4} O _ {9}}
+
+[confidence=0.92; source=body_inline] \mathrm{Ca} _ {2} \mathrm{CoO} _ {3}
+
+[confidence=0.92; source=body_inline] \mathrm{CoO} _ {2}
+
+[confidence=0.92; source=body_inline] {\mathsf{Co}} _ {2} {\mathsf{O}} _ {6} {} ^ {6}
+
+[confidence=0.92; source=body_inline] \mathrm{Ca} ^ {2 +}
+
+[confidence=0.92; source=body_inline] _ {\mathrm{Ca-Co-O}}
+
+[confidence=0.92; source=body_inline] \mathrm{CaMnO} _ {3} , \mathrm{SrTiO} _ {3} ,
+
+[confidence=0.92; source=body_inline] \mathrm{SrTiO} _ {3}
+
+[confidence=0.92; source=body_inline] \left( \mathbf {x} \ > \ 20 \right)
+
+[confidence=0.92; source=body_inline] \mathrm {C a _ {2.55} A g _ {0.3} L a _ {0.15} C o _ {4} O _ {9}} / x
+
+[confidence=0.92; source=body_inline] {\sf A g} \left( x = 0 , 10 \right)
+
+[confidence=0.92; source=body_inline] \mathrm {C a C O _ {3} \ ( 99.5 \% ) , \ C o _ {2} O _ {3} \ ( 99.7 \% ) , \ A g N O _ {3} , \ L a _ {2} O _ {3} ,}
+
+[confidence=0.92; source=body_inline] ( \mathsf{Ar} + \mathsf{C} )
+
+[confidence=0.92; source=body_inline] ( C _ {p} )
+
+[confidence=0.92; source=body_inline] ( S ^ {2} \mathrm{T} ) / ( \rho \kappa )
+
+[confidence=0.92; source=body_inline] \mathrm {C a _ {3} C o _ {4} O _ {9}} ,
+
+[confidence=0.92; source=body_inline] \mathrm {C a _ {3} C o _ {2} O _ {6} , \ C a O ,}
+
+[confidence=0.92; source=body_inline] \mathrm {C a _ {3} C o _ {4} O _ {9} , ~ C a _ {3} C o _ {2} O _ {6} , ~ C o O _ {7}}
+
+[confidence=0.92; source=body_inline] \mathrm{Ca} _ {3} \mathrm{Co} _ {2} \mathrm{O} _ {6} , \mathrm{CoO} ,
+
+[confidence=0.92; source=body_inline] \mathrm{CaO} ,
+
+[confidence=0.92; source=body_inline] _ \mathrm{Ca-Co-O}
+
+[confidence=0.92; source=body_inline] \mathrm{Ca} _ {3} \mathrm{Co} _ {4} \mathrm{O} _ {9}
+
+[confidence=0.92; source=body_inline] \mathrm {{c o o .}}
+
+[confidence=0.92; source=body_inline] \mathsf{CoO}
+
+[confidence=0.92; source=body_inline] C a _ {3} C o _ {4} O _ {9} \xrightarrow {1199 \mathrm{~K~}} C a _ {3} C o _ {2} O _ {6} + 2 C o O + O _ {2} ( \mathrm{g} )\tag{1}
+
+[confidence=0.92; source=body_inline] 2 C a _ {3} C o _ {2} O _ {6} {\xrightarrow {1299 \mathrm{~K}}} 6 C a O + 4 C o O + O _ {2} ( \mathrm{g} )\tag{2}
+
+[confidence=0.92; source=body_inline] \mathbf {C A L C} / \mathbf {A g}
+
+[confidence=0.92; source=body_inline] ( \sim 5 \mu \mathrm{m} )
+
+[confidence=0.92; source=body_inline] ( \sim 2 \mu \mathrm{m} )
+
+[confidence=0.92; source=body_inline] \mathsf{CALC} / \mathsf{Ag}
+
+[confidence=0.92; source=body_inline] \mathrm{i} s 5.19 \mathrm{g} / \mathrm{cm} ^ {3}
+
+[confidence=0.92; source=body_inline] 5.47 \mathrm{g} / \mathrm{cm} ^ {3}
+
+[confidence=0.92; source=body_inline] {2 p} _ {3 / 2}
+
+[confidence=0.92; source=body_inline] 3 p _ {1 / 2}
+
+[confidence=0.92; source=body_inline] {\mathsf{Co}} ^ {2 +}
+
+[confidence=0.92; source=body_inline] ( V _ {O} ^ {\cdots} )
+
+[confidence=0.92; source=body_inline] \mathbb {A} \mathbb {r} + \mathbb {C}
+
+[confidence=0.92; source=body_inline] \mathrm{Ar} + \mathrm{C}
+
+[confidence=0.92; source=body_inline] {\cal O} _ {2} ( g a s ) \stackrel {+ e ^ -} {\longrightarrow} {\cal O} _ {2} ^ - \stackrel {+ e ^ -} {\longrightarrow} {\cal O} _ {2} ^ {2 -} 2 {\cal O} ^ {1} \stackrel {+ 2 \mathrm{e} ^ -} {\longrightarrow} 2 {\cal O} ^ {2 -} ( \mathrm{lattice} )\tag{3}
+
+[confidence=0.92; source=body_inline] ^ {( 3 ) ,}
+
+[confidence=0.92; source=body_inline] 0 ^ {2 \cdot}
+
+[confidence=0.92; source=body_inline] C o O _ {6}
+
+[confidence=0.92; source=body_inline] V _ {O} ^ {\cdots}
+
+[confidence=0.92; source=body_inline] V _ {O} ^ {\ast}
+
+[confidence=0.92; source=body_inline] \textstyle \mathbf {A r} + \mathbf {C} ,
+
+[confidence=0.92; source=body_inline] \mathbf {o f} \mathrm{~-} 56.3 \mu \mathrm{V/K}
+
+[confidence=0.92; source=body_inline] \mathrm{La} ^ {3 +}
+
+[confidence=0.92; source=body_inline] ( \mathrm {{V} _ {{C a}} ^ {\prime \prime} ) ,}
+
+[confidence=0.92; source=body_inline] {\mathrm{CoO}} _ {2}
+
+[confidence=0.92; source=body_inline] C a _ {3} C o _ {4} O _ {9} {\xrightarrow {L a _ {2} O _ {3}}} 2 L a _ {C a} ^ {.} + V _ {C a} ^ {\prime \prime} + 9 O _ {O} ^ {x} + 4 C o _ {C o} ^ {x}\tag{4}
+
+[confidence=0.92; source=body_inline] 2 C o _ {C o} ^ {x} + O _ {O} ^ {x} {\xrightarrow {\mathrm{reduction}}} 2 C o _ {C o} ^ {\prime} + V _ {O} ^ {\cdot} + {\frac {1} {2}} O _ {2}\tag{5}
+
+[confidence=0.92; source=body_inline] O _ {O} ^ {x} = V _ {O} ^ {. . .} + 2 e ^ {\prime} + {\frac {1} {2}} O _ {2}\tag{6}
+
+[confidence=0.92; source=body_inline] S ^ {2} / {\rho} ,
+
+[confidence=0.92; source=body_inline] \mathrm {{m W / m}} {\cdot} \mathrm {{K}} ^ {2}
+
+[confidence=0.92; source=body_inline] 1.6-4.5
+
+[confidence=0.92; source=body_inline] \mathrm {C a _ {3} C o _ {4} O _ {9} / A g}
+
+[confidence=0.92; source=body_inline] \mathrm {C a _ {2.8} L u _ {0.2} C o _ {4} O _ {9}}
+
+[confidence=0.92; source=body_inline] \mathrm{Sr} _ {0.9} \mathrm{La} _ {0.1} \mathrm{TiO} _ {3}
+
+[confidence=0.92; source=body_inline] [ \mathrm {C a _ {0.95} ( D y _ {1 / 2} N a _ {1 / 2} ) _ {0.05}} ] \mathrm{MnO} _ {3} \ [ 23 ]
+
+[confidence=0.92; source=body_inline] \mathrm{Zn} _ {97} \mathrm{Al} _ {2} \mathrm{GaO} _ {100}
+
+[confidence=0.92; source=body_inline] \mathrm{Bi} _ {2} ( \mathrm{Te} _ {0.94} S \mathrm{e} _ {0.06} ) _ {3}
+
+[confidence=0.92; source=body_inline] \mathrm{Ca} _ {3 - x} \ \mathrm{Pb} _ {x} \mathrm{Co} _ {2} \mathrm{O} _ {6}
+
+[confidence=0.92; source=body_inline] ( x = 0-0.3 )
+
+[confidence=0.92; source=body_inline] 2.1-3.5 \mathrm{W} / \mathrm{mK} ^ {- 1}
+
+[confidence=0.92; source=body_inline] 3.5-4.75 \mathrm {W / m K ^ {- 1}}
+
+[confidence=0.92; source=body_inline] {\mathrm{CALC}} ,
