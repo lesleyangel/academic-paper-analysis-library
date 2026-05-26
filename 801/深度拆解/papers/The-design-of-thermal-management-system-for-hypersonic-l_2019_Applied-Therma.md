@@ -4,6 +4,16 @@
 
 本文拆解基于 `801/文本/txt/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.txt` 的全文抽取，并参考 `801/文本/metadata/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.json` 的目录与期刊信息。由于 txt 来自双栏 PDF，存在公式缺符号、图表说明与正文串栏、表格数值分列不完整等问题。涉及车辆外形、温度/热流分布图、TPS 分区图、主动冷却网络示意与 Fig. 17 曲线判读处均标注“需要 PDF 图像复核”。本文重点拆解学术说服机制：为什么 passive TPS 和 active cooling network 不能分开设计，等效热平衡模型如何构成 coupled design 的核心。
 
+<!-- REAUDIT-INTEGRATED-2026-05-26:STATUS START -->
+### 复核补充：抽取边界与合并状态
+
+- 增补内容已并入原有主章节，不再作为独立追加章。
+- 正文词频只统计正文主章节：Introduction, Results and discussions, Conclusions。
+- 排除范围：摘要、References、图题/表题、页眉页脚、版权信息、期刊首页信息、旧分析文字。
+- 正文切分告警：
+- 无明显正文切分告警。
+<!-- REAUDIT-INTEGRATED-2026-05-26:STATUS END -->
+
 ## 1. 基本信息与论文身份
 
 - 题名：The design of thermal management system for hypersonic launch vehicles based on active cooling networks。
@@ -28,6 +38,17 @@
 摘要中的核心结果是方向性关系：随着主动冷却增强，passive TPS weight decreases，而 coolant mass flow rate increases。这不是单纯的性能提升，而是设计权衡：减少结构热防护重量需要付出更高冷却容量和燃料流量代价。
 
 本文最值得抓住的核心不是“主动冷却有效”，而是“heq 把全局热管理能力变成可扫参、可约束、可画设计区间的总体参数”。这让原本复杂的局部冷却通道、壁温、热流、TPS 厚度和燃料流量被压缩成一套可用于早期设计的路线图。
+
+<!-- REAUDIT-INTEGRATED-2026-05-26:ABSTRACT START -->
+### 复核补充：摘要原文定位与中文译文
+
+- 摘要抽取状态：成功。
+- 完整英文摘要原文不在公开报告正文中展开；本地完整摘录见 `801/深度拆解/extracted_evidence/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.md`。
+
+中文译文：
+
+> 本文提出了一种高超声速飞行器热管理系统（TMS）的设计方法。该系统由被动热保护系统（TPS）和采用煤油冷却剂的主动冷却网络（ACN）组成。在以往的大多数研究中，被动式TPS和ACN总是分开设计，从而导致结果过于保守，偏离实际工程条件。目前的工作提出了一种耦合设计方法，该方法包括气动热计算、被动TPS概念分布的确定、TPS和ACN尺度的计算以及迭代设计。耦合设计基于两个关键实现，主动冷却通过等效热平衡模型耦合到TPS中的气动加热和传热，主动冷却的总体能力由等效传热系数表示。模型和系数分别作为整个过程的理论依据和等效参数。可重复使用运载火箭的TMS是在典型轨迹下建立的。研究了等效传热系数对气动加热、被动TPS和ACN的影响。结果表明，随着主动冷却的增强，被动TPS的重量减少，而冷却剂质量流量增加。
+<!-- REAUDIT-INTEGRATED-2026-05-26:ABSTRACT END -->
 
 ## 3. 选题层深拆
 
@@ -82,6 +103,16 @@ Introduction 的文献组织按热防护技术路线展开。第一类是 passiv
 
 这条链很闭合，尤其是从 Eq. (1) 到 Eq. (3) 的转折：从被动热平衡 `qaero = radiation + qin` 转到主动冷却等效取热 `qin = heq(Tw - Tc)`，将 gap 直接落到模型。
 
+<!-- REAUDIT-INTEGRATED-2026-05-26:LOGIC START -->
+### 复核补充：问题-方法-增量闭环
+
+- 提出的问题：需结合 Introduction 首段复核。
+- 已有研究不足/GAP：However, for the whole vehicle, the mass flow rate will decrease from 30.6 to 0.612 kg/s, 305 to 6.12 kg/s, 608 to 12.15 kg/s, 1499 to 30.0 kg/s, 2926 to 58.5 kg/s, 5560 to 111 kg/s and 7945 to 159 kg/s, when the coolant temperature rise increases from 1 to 50 K for heq = 0.1, 1, 2, 5, 10, 20 and 30 W/(m2·K).
+- 本文解决方式：In this paper, a design method of thermal management system (TMS) for hypersonic vehicles is developed. A coupled design method is developed in present work, and the process includes calculation of aerodynamic heat, determination of passive TPS concept distribution, computation of TPS and ACN scales, and iterative design. The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in TPS by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
+- 学术或工程增量：需结合 Results/Conclusion 的量化结果复核。
+- 逻辑复核重点：看 Introduction 的 gap 是否被 Method 的输入输出接住，Results 的评价指标是否回应该 gap，Conclusion 是否只回收已有证据支持的 claim。
+<!-- REAUDIT-INTEGRATED-2026-05-26:LOGIC END -->
+
 ## 8. 方法/理论/模型细拆
 
 方法分为五步。第一，定义车辆外形和典型轨迹：约 30 m 长、翼展 15 m，飞行速度从 0 到 Mach 8，最高高度约 60 km，轨迹分为 Ascent 和 Return。第二，计算气动热：基于工程算法，低 Mach 区段用插值，边界层外采用理想气体/等熵关系，边界层内采用 reference temperature 方法。第三，建立等效热平衡模型：表面满足气动对流输入、辐射散出和传入 TPS/ACN 的热通量平衡。
@@ -128,32 +159,49 @@ Introduction 的文献组织按热防护技术路线展开。第一类是 passiv
 
 标题命名非常功能化，例如 “Thermal conditions”“Passive TPS”“Active cooling network”。每个结果小节对应一个设计输出，使读者能沿“热环境 -> 防热重量 -> 冷却容量 -> 综合 heq 影响”顺序理解。
 
-<!-- AUTO-AUGMENT:SECTION-ANALYSIS START -->
+<!-- REAUDIT-INTEGRATED-2026-05-26:STRUCTURE START -->
+### 复核补充：严格章节树与章节名功能
 
-### 11.x 章节结构与章节名分析（补充）
+严格章节树：
 
-> 自动分析说明：以下基于 `801/文本/txt/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+- L2 p.1: Introduction（背景定位/文献缺口）
+- L2 p.3: The vehicle and its trajectory（对象/模块/过渡章节）
+- L2 p.3: Methodology of TMS design（方法/模型/算法）
+  - L3 p.3: Equivalent thermal equilibrium model and HTC（方法/模型/算法）
+  - L3 p.4: Calculation of aerodynamic heat（对象/模块/过渡章节）
+  - L3 p.4: Process of TMS design（对象/模块/过渡章节）
+  - L3 p.6: TPS concept database（对象/模块/过渡章节）
+- L2 p.6: Results and discussions（结果/验证/讨论）
+  - L3 p.6: Thermal conditions（对象/模块/过渡章节）
+  - L3 p.8: Heat transferred by active cooling（对象/模块/过渡章节）
+  - L3 p.9: Passive TPS（对象/模块/过渡章节）
+  - L3 p.12: Active cooling network（对象/模块/过渡章节）
+  - L3 p.13: Influence of equivalent HTC（对象/模块/过渡章节）
+- L2 p.13: Conclusions（结论/贡献回收）
+- L2 p.13: Acknowledgments（尾部材料）
+- L2 p.13: References（尾部材料）
 
-- 识别到的章节/小节数量：8
-- 结构类型判断：非严格 IMRaD，更像按模型、机制或结果模块组织。
-- 标题并列性：同级标题并列性一般，更偏按内容对象自然展开。
-- 章节名主要风格：描述型, 方法/模型型
-- 标题信息量判断：若标题含具体变量、机制、效应、验证对象，信息量较高；若只写 `Results` / `Discussion`，则更依赖正文推进。
+章节名功能表：
 
-| 章节/小节名 | 标题类型 | 章节功能 | 信息量 | 是否可模仿 | 改写建议 |
-| --- | --- | --- | --- | --- | --- |
-| 3 Methodology of TMS design | 方法/模型型 | 交代模型、公式、算法、参数或求解流程 | 中 | 是 | 可加入核心变量或机制词增强信息量 |
-| 3.1 Equivalent thermal equilibrium model and HTC | 方法/模型型 | 交代模型、公式、算法、参数或求解流程 | 高 | 是 | 保留具体变量/对象 |
-| 440 K in this work, respectively, while the coking of autoxidation re-     leading edge, such an engineering-based method may have lower ac- | 方法/模型型 | 交代模型、公式、算法、参数或求解流程 | 高 | 是 | 保留具体变量/对象 |
-| 3.2 Calculation of aerodynamic heat | 描述型 | 描述章节内容，信息量取决于标题具体程度 | 中 | 是 | 可加入核心变量或机制词增强信息量 |
-| 1366 K for SA-HC and SA-HC2, 1478 K for TABI and AMHC, 1644 K for | 描述型 | 描述章节内容，信息量取决于标题具体程度 | 高 | 是 | 保留具体变量/对象 |
-| 4.2 Heat transferred by active cooling | 描述型 | 描述章节内容，信息量取决于标题具体程度 | 高 | 是 | 保留具体变量/对象 |
-| 4.3 Passive TPS | 描述型 | 描述章节内容，信息量取决于标题具体程度 | 中 | 是 | 可加入核心变量或机制词增强信息量 |
-| 4.4 Active cooling network | 描述型 | 描述章节内容，信息量取决于标题具体程度 | 中 | 是 | 可加入核心变量或机制词增强信息量 |
-
-写作启发：章节名不要只是目录标签，而应承担“读者导航”功能。若本文标题已经暴露变量或机制，可学习其标题信息密度；若标题偏泛，则在自己的论文中可把核心对象、作用变量或验证任务写进小节名。
-
-<!-- AUTO-AUGMENT:SECTION-ANALYSIS END -->
+| 章节/小节名 | 页码 | 层级 | 功能判断 |
+| --- | ---: | ---: | --- |
+| Introduction | 1 | 2 | 背景定位/文献缺口 |
+| The vehicle and its trajectory | 3 | 2 | 对象/模块/过渡章节 |
+| Methodology of TMS design | 3 | 2 | 方法/模型/算法 |
+| Equivalent thermal equilibrium model and HTC | 3 | 3 | 方法/模型/算法 |
+| Calculation of aerodynamic heat | 4 | 3 | 对象/模块/过渡章节 |
+| Process of TMS design | 4 | 3 | 对象/模块/过渡章节 |
+| TPS concept database | 6 | 3 | 对象/模块/过渡章节 |
+| Results and discussions | 6 | 2 | 结果/验证/讨论 |
+| Thermal conditions | 6 | 3 | 对象/模块/过渡章节 |
+| Heat transferred by active cooling | 8 | 3 | 对象/模块/过渡章节 |
+| Passive TPS | 9 | 3 | 对象/模块/过渡章节 |
+| Active cooling network | 12 | 3 | 对象/模块/过渡章节 |
+| Influence of equivalent HTC | 13 | 3 | 对象/模块/过渡章节 |
+| Conclusions | 13 | 2 | 结论/贡献回收 |
+| Acknowledgments | 13 | 2 | 尾部材料 |
+| References | 13 | 2 | 尾部材料 |
+<!-- REAUDIT-INTEGRATED-2026-05-26:STRUCTURE END -->
 
 ## 12. 段落功能与叙事节奏
 
@@ -171,53 +219,28 @@ Introduction 第一段快速抬高工程背景：高飞行速度带来 severe ae
 
 claim 控制相对稳健，很多地方说明“preliminary design”“real engineering design provides constraints”。但对 heq 的有效性表述较强，若写自己的论文，最好进一步补充 heq 与实际冷却通道 CFD 或实验之间的桥接验证。
 
-<!-- AUTO-AUGMENT:LANGUAGE-FREQUENCY START -->
+<!-- REAUDIT-INTEGRATED-2026-05-26:LANGUAGE START -->
+### 复核补充：正文词频、词类、语态与时态
 
-### 13.x 词频、词类与语法统计（补充）
+统计口径：仅正文主章节；不含摘要、References、图表题注、页眉页脚、版权/期刊信息和任何分析报告文本。
 
-> 自动分析说明：以下为基于 TXT 的启发式统计，适合发现语言习惯；它不是严格 NLP 词性标注。公式符号、作者信息、参考文献和 PDF 断行可能影响个别词频，使用时应结合正文语境判断。
+- 正文统计字符数：23763
+- 高频词：tps(62)；heat(58)；temperature(39)；acn(38)；cooling(32)；aerodynamic(31)；coolant(30)；vehicle(26)；system(25)；heq(23)；active(21)；passive(21)；flow(21)；design(20)；equivalent(20)；fuel(20)；thermal(19)；surface(19)；rate(18)；work(17)
+- 高频名词化/学术名词：temperature(39)；protection(7)；capacity(6)；propulsion(6)；high-temperature(5)；distribution(5)；insulation(5)；convection(5)；density(5)；proportion(5)；management(4)；calculation(4)；influence(4)；addition(4)；dissipation(3)
+- 高频学术动词：developed(10)；indicate(3)；indicated(1)；develop(1)；analyzed(1)；evaluated(1)；reveal(1)
+- 高频形容词：aerodynamic(31)；coolant(30)；active(21)；passive(21)；equivalent(20)；thermal(19)；regenerative(8)；reusable(7)；metallic(7)；coefficient(6)；temporary(6)；efficient(5)；specific(5)；management(4)；ceramic(4)
+- 高频副词：especially(3)；mainly(2)；averagely(2)；finally(2)；separately(1)；obviously(1)；purely(1)；widely(1)；similarly(1)；sharply(1)；closely(1)；perfectly(1)；jointly(1)；directly(1)
+- 高频二词短语：aerodynamic heat(21)；flow rate(18)；passive tps(17)；active cooling(16)；mass flow(14)；equivalent htc(14)；heat flux(11)；aerodynamic heating(9)；tps acn(9)；fuel tank(9)；regenerative cooling(8)；temperature rise(8)
+- 高频三词短语：mass flow rate(14)；cold side temperature(7)；average maximum heq(6)；maximum heq rising(6)；active cooling network(5)；passive tps acn(5)；coolant mass flow(5)；aerodynamic heat flux(5)；regenerative cooling system(5)；coolant temperature rise(5)；thermal management system(4)；thermal protection system(4)
+- 被动语态估计：56；`we + 动作动词` 主动句估计：0
+- 一般现在时线索：113；一般过去时线索：153；现在完成时线索：0；情态动词线索：36
 
-**词频总览**
+分章节正文词频：
 
-- Top 高频词：tps(117)；heat(110)；temperature(108)；cooling(75)；thermal(69)；vehicle(68)；acn(66)；aerodynamic(54)；design(50)；coolant(50)；active(48)；passive(41)；work(41)；respectively(41)；flow(41)；equivalent(40)；system(39)；surface(37)；heq(37)；htc(35)
-- 高频学术名词：temperature(108)；system(39)；capacity(23)；protection(20)；results(19)；analysis(18)；method(16)；structure(16)；distribution(16)；scale(14)；conditions(13)；influence(13)；model(12)；condition(12)；calculation(11)；parameters(9)
-- 高频学术动词：shown(30)；shows(18)；developed(13)；indicate(9)；show(5)；proposed(5)；evaluated(3)；indicates(3)；compared(1)；reveal(1)；develop(1)；simulate(1)
-- 高频形容词：thermal(69)；aerodynamic(54)；coolant(50)；active(48)；passive(41)；equivalent(40)；local(16)；hypersonic(15)；boundary(15)；regenerative(13)；specific(13)；numerical(12)；metallic(12)；coefficient(9)；ceramic(9)；different(9)
-- 高频副词/连接副词：respectively(41)；however(12)；finally(8)；therefore(5)；mainly(4)；especially(3)；widely(2)；directly(2)；similarly(2)；tively(2)；closely(2)；averagely(2)；spectively(2)；separately(1)；obviously(1)；purely(1)
-- 高频二词短语：active cooling(38)；aerodynamic heat(35)；passive tps(34)；flow rate(30)；equivalent htc(26)；mass flow(26)；heat flux(24)；thermal protection(20)；tps acn(17)；wall temperature(17)；temperature rise(17)；leading edge(17)；applied thermal(15)；thermal engineering(15)；heat transfer(15)；whole vehicle(15)
-- 高频三词短语：mass flow rate(26)；applied thermal engineering(15)；gou applied thermal(13)；coolant mass flow(11)；appl therm eng(10)；passive tps acn(9)；aerodynamic heat flux(9)；thermal protection system(8)；cold side temperature(8)；aerosp sci technol(8)；active cooling network(7)；thermal management system(6)
-
-**主动、被动与句法**
-
-- 被动语态估计次数：168
-- `we + 动作动词` 主动句估计次数：0
-- 名词化表达估计次数：538
-- 语态判断：被动语态明显多于 we 主动句，说明作者倾向把实验、求解和结果写成客观过程。
-- 句法习惯：若高频名词化和被动语态较多，说明文章倾向把研究过程写成“模型/结果/参数”的客观链条；若 `we` 主动句较多，则更强调作者的框架构建和贡献动作。
-
-**时态与情态**
-
-- 一般现在时线索：312
-- 一般过去时线索：40
-- 现在完成时线索：2
-- 情态动词线索：100
-- 时态判断：一般现在时最突出，适合图表说明、模型定义和领域事实；过去时用于本文操作或已完成结果；现在完成时主要连接已有研究。
-- 写作启发：Introduction 和图表说明通常适合现在时；本文实验、仿真、参数识别适合过去时；已有研究综述常用现在完成时；外推、局限和未来工作要用 may/could/should 控制强度。
-
-**章节词频分布**
-
-- Abstract/首页：tps(51)；heat(47)；cooling(34)；thermal(28)；aerodynamic(27)；vehicle(26)；temperature(26)；design(23)
-- 440 K in this work, respectively, while the coking of autoxidation re-     leading edge, such an engineering-based method may have lower ac-：tps(4)；tms(3)；acn(3)；passive(3)；occurs(2)；design(2)；vehicle(2)；temperature(2)
-- 3.2. Calculation of aerodynamic heat：temperature(31)；tps(16)；concept(13)；heat(12)；based(9)；vehicle(9)；shown(8)；concepts(8)
-- 1366 K for SA-HC and SA-HC2, 1478 K for TABI and AMHC, 1644 K for：temperature(49)；heat(48)；tps(46)；acn(36)；cooling(35)；thermal(34)；respectively(32)；vehicle(31)
-
-**可复用观察**
-
-- 高频名词若集中在研究对象、模型变量和机制词上，说明论文语言服务核心贡献；若高频词过散，读者会难以抓住主线。
-- 高频动词中 `show/demonstrate/validate` 偏结果证明，`suggest/indicate` 偏机制解释，`propose/develop/formulate` 偏方法贡献。拆论文时应看这些动词是否与证据强度匹配。
-- 形容词和副词要检查证据支撑：`significant/substantial/robust` 需要量化或多条件验证；`potentially/approximately/likely` 则说明作者在主动控制 claim 边界。
-
-<!-- AUTO-AUGMENT:LANGUAGE-FREQUENCY END -->
+- Introduction: tps(30)；heat(28)；cooling(21)；aerodynamic(16)；thermal(13)；active(13)；technology(13)；system(12)
+- Results and discussions: heat(25)；temperature(24)；tps(22)；acn(22)；fuel(18)；heq(17)；vehicle(16)；surface(15)
+- Conclusions: tps(10)；acn(9)；equivalent(7)；temperature(7)；htc(6)；coolant(5)；heat(5)；heq(5)
+<!-- REAUDIT-INTEGRATED-2026-05-26:LANGUAGE END -->
 
 ## 14. 常用词、句式与可复用表达提取
 
@@ -231,6 +254,61 @@ claim 控制相对稳健，很多地方说明“preliminary design”“real eng
 
 可复用讨论句式：`Under real design constraints, the curves can be referenced to determine the feasible design zone.` 适合将参数扫描结果转成设计指南。
 
+<!-- REAUDIT-INTEGRATED-2026-05-26:SENTENCES START -->
+### 复核补充：多句型库
+
+以下句型来自该论文的摘要、引言和结论，不从分析报告或 References 中抽取。
+
+#### 背景/问题定位句
+- 原句：The high flight speed of hypersonic aerospace vehicles leads to severe aerodynamic heating (e.g., higher than 1800 K [1–3]) and brings great challenges for thermal management system (TMS).
+  可迁移模板：The high flight speed of hypersonic aerospace vehicles leads to severe aerodynamic heating (e.g., higher than METHOD [X–X]) and brings great challenges for thermal management system (METHOD).
+- 原句：The film cooling means a coolant film will be formed on the high-temperature surface to prevent the aerodynamic heating; however, the technology requires additional coolant consumption.
+  可迁移模板：The film cooling means a coolant film will be formed on the high-temperature surface to prevent the aerodynamic heating; however, the technology requires additional coolant consumption.
+#### Gap/转折句
+- 原句：For TPS based on ablative technology, part of the aerodynamic heat will be dissipated by the ablation of relevant materials; such a TPS is widely used in external thermal protection of reentry vehicles and also rocket combustion chambers [13–16]; however, it is not appropriate to reusable vehicles due to its changing configuration during the flight mission.
+  可迁移模板：For METHOD based on ablative technology, part of the aerodynamic heat will be dissipated by the ablation of relevant materials; such a METHOD is widely used in external thermal protection of reentry vehicles and also rocket combustion chambers [X–X]; however, it is not appropriate to reusable vehicles due to its changing configuration during the flight mission.
+- 原句：The film cooling means a coolant film will be formed on the high-temperature surface to prevent the aerodynamic heating; however, the technology requires additional coolant consumption.
+  可迁移模板：The film cooling means a coolant film will be formed on the high-temperature surface to prevent the aerodynamic heating; however, the technology requires additional coolant consumption.
+- 原句：However, most previous In this paper, a design method of thermal management system (TMS) for reusable flight vehicles is developed.
+  可迁移模板：However, most previous In this paper, a design method of thermal management system (METHOD) for reusable flight vehicles is developed.
+- 原句：However, for the whole vehicle, the mass flow rate will decrease from 30.6 to 0.612 kg/s, 305 to 6.12 kg/s, 608 to 12.15 kg/s, 1499 to 30.0 kg/s, 2926 to 58.5 kg/s, 5560 to 111 kg/s and 7945 to 159 kg/s, when the coolant temperature rise increases from 1 to 50 K for heq = 0.1, 1, 2, 5, 10, 20 and 30 W/(m2·K).
+  可迁移模板：However, for the whole vehicle, the mass flow rate will decrease from Xto Xkg/s, Xto Xkg/s, Xto Xkg/s, Xto Xkg/s, Xto Xkg/s, Xto Xkg/s and Xto Xkg/s, when the coolant temperature rise increases from Xto METHOD for heq = X, X, X, X, X, Xand METHOD/(m2·K).
+#### 方法提出句
+- 原句：In this paper, a design method of thermal management system (TMS) for hypersonic vehicles is developed.
+  可迁移模板：In this paper, a design method of thermal management system (METHOD) for hypersonic vehicles is developed.
+- 原句：A coupled design method is developed in present work, and the process includes calculation of aerodynamic heat, determination of passive TPS concept distribution, computation of TPS and ACN scales, and iterative design.
+  可迁移模板：A coupled design method is developed in present work, and the process includes calculation of aerodynamic heat, determination of passive METHOD concept distribution, computation of METHOD and METHOD scales, and iterative design.
+- 原句：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in TPS by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
+  可迁移模板：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in METHOD by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
+- 原句：The model and the coefficient act as the rationale and the equivalent parameter of the whole process, respectively.
+  可迁移模板：The model and the coefficient act as the rationale and the equivalent parameter of the whole process, respectively.
+- 原句：In this work, the TPS concepts are mainly those developed in Space Shuttle engineering by NASA [4], which consists of three types, i.e., flexible ceramic blankets ⁎ Corresponding author.
+  可迁移模板：In this work, the METHOD concepts are mainly those developed in Space Shuttle engineering by METHOD [X], which consists of three types, i.e., flexible ceramic blankets ⁎ Corresponding author.
+#### 结果呈现句
+- 原句：In most previous studies, the passive TPS and ACN are always designed separately and thus leads to over-conservative results that deviating from real engineering conditions.
+  可迁移模板：In most previous studies, the passive METHOD and METHOD are always designed separately and thus leads to over-conservative results that deviating from real engineering conditions.
+- 原句：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in TPS by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
+  可迁移模板：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in METHOD by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
+- 原句：The results show that the weight of passive TPS decreases, while the coolant mass flow rate increases with the enhancement of active cooling.
+  可迁移模板：The results show that the weight of passive METHOD decreases, while the coolant mass flow rate increases with the enhancement of active cooling.
+- 原句：In most previous studies, the passive TPS and ACN are always designed separately and thus leads to over-conservative results that deviating from real engineering conditions.
+  可迁移模板：In most previous studies, the passive METHOD and METHOD are always designed separately and thus leads to over-conservative results that deviating from real engineering conditions.
+- 原句：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in TPS by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
+  可迁移模板：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in METHOD by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
+#### 贡献/增量句
+- 原句：The TMS of a reusable launch vehicle is established under a typical trajectory.
+  可迁移模板：The METHOD of a reusable launch vehicle is established under a typical trajectory.
+- 原句：The TMS of a reusable launch vehicle is established under a typical trajectory.
+  可迁移模板：The METHOD of a reusable launch vehicle is established under a typical trajectory.
+#### 限制/边界句
+- 原句：The well designed TMS should be able to manage the transfer process, and control the dissipation and even the reuse of aerodynamic heat in an efficient way.
+  可迁移模板：The well designed METHOD should be able to manage the transfer process, and control the dissipation and even the reuse of aerodynamic heat in an efficient way.
+- 原句：The design key for such a TPS is to obtain optimum distribution of concepts (allowable temperature should be higher than the aerodynamic heated wall temperature) and scales (size and weight) of concept (larger heat load needs larger thickness of insulation layer).
+  可迁移模板：The design key for such a METHOD is to obtain optimum distribution of concepts (allowable temperature should be higher than the aerodynamic heated wall temperature) and scales (size and weight) of concept (larger heat load needs larger thickness of insulation layer).
+- 原句：Sometimes, especially for hypersonic vehicles, the size and the weight of such a purely passive TPS could be unacceptable.
+  可迁移模板：Sometimes, especially for hypersonic vehicles, the size and the weight of such a purely passive METHOD could be unacceptable.
+<!-- REAUDIT-INTEGRATED-2026-05-26:SENTENCES END -->
+
 ## 15. 引用策略与文献使用
 
 作者引用策略围绕技术谱系和应用边界展开。先引用高超声速热环境和 TPS 背景文献，建立问题重要性；再引用 NASA/Space Shuttle TPS 概念，说明被动 TPS 概念库来源；随后引用烧蚀、热管、气膜冷却、再生冷却等主动技术，逐类评价为何本文选择 coolant convection。
@@ -238,6 +316,43 @@ claim 控制相对稳健，很多地方说明“preliminary design”“real eng
 对前人的评价不是简单否定，而是“局部有效、全车不足”。例如烧蚀适合再入或燃烧室但不适合可重复使用外形；热管适合 leading edge 但不适合大面积；已有再生冷却多用于燃烧室和喷管，缺少 whole vehicle TMS 视角。这种引用策略能避免把 gap 写成虚假空白。
 
 此外，作者引用自己或团队相近车辆/方法文献来支撑车辆外形和计算方法。这在工程设计论文中可接受，但也意味着方法的独立外部验证偏弱。
+
+<!-- REAUDIT-INTEGRATED-2026-05-26:CITATIONS START -->
+### 复核补充：引文密度、References 与 gap 构造
+
+- 全文引文簇数量估计：75
+- Introduction 引文簇数量估计：13
+- References 条目数：45
+- 可识别年份条目数：50
+- 2021 年及以后文献数：0
+- 2010 年前经典文献数：15
+- 同刊引用数（按 subject 粗匹配）：1
+- 高频来源期刊：Applied Thermal Engineering(1)
+- 引文簇样例：[4], [19], [5,6], [7], [11,12], [20,21], [22], [14], [23], [17,18], [24], [25]
+
+带引文的 gap/转折句样例：
+
+- The high flight speed of hypersonic aerospace vehicles leads to severe aerodynamic heating (e.g., higher than 1800 K [1–3]) and brings great challenges for thermal management system (TMS).
+- For TPS based on ablative technology, part of the aerodynamic heat will be dissipated by the ablation of relevant materials; such a TPS is widely used in external thermal protection of reentry vehicles and also rocket combustion chambers [13–16]; however, it is not appropriate to reusable vehicles due to its changing configuration during the flight mission.
+- The heat pipe can transfer aerodynamic heat from high-temperature region to low-temperature region in a short time; it is popular in thermal protection of critical components like vehicle leading edges [17,18]; however, the heat pipe only transfers heat from dangerous region to safety region, and the final heat dissipation has to resort to surface radiation or other additional measures, thus such heat-pipe-cooled thermal protection technology is not suitable for surfaces of large area.
+
+References 解析样例（前 8 条）：
+
+- 5. Conclusions
+In this paper, a design method of thermal management system (TMS) for reusable flight vehicles is developed. The system consists of a passive thermal protection system (TPS) and an active cooling network (ACN) with kerosene as coolant. Based on an equivalent heat equilibrium model, the TPS and ACN are designed in a coupled way. A parameter equivalent HTC, heq, is proposed to indicate the capacity of active cooling. The design process includes four steps, the calculation of aerodynamic heat, the determination of TPS concept distribution, the calculation of scales of TPS and ACN, and the final design of TMS after several iterations. A reusable launch vehicle of 30 m long with a certain trajectory is studied in this work. The influence of equivalent HTC
+(heq = 0–30 W/(m2 K)) and cold side temperature (Tb = 330, 367 and 440 K) on aerodynamic heat, TPS and ACN are studied. The results show some useful conclusions:
+(1) The aerodynamic heat flux and the proportion of heat taken by ACN increase, while the wall temperature decreases with the rise of equivalent HTC. (2) The higher equivalent HTC will result in lighter TPS while higher product of coolant mass flow rate and coolant temperature rise for ACN. (3) Increasing the constrained cold side temperature is very useful for the weight reduction of passive TPS, and it is more efficient with small equivalent HTC. The weight of TPS is reduced by 30.1%, 16.9%, 8.5%, 7.3%, 0.9%, 0% and 0% with Tb increasing from 330 to 440 K, for heq = 0, 0.1, 1, 2, 5, 10, 20, and 30 W/(m2·K), respectively. (4) The ACN can reduce the TPS weight, and it is more efficient with low cold side temperature. The weight of passive TPS is reduced by 40.0% and 14.1% with the equivalent HTC increases from 0 to 30 W/(m2·K) for Tb = 330 and Tb = 440, respectively. (5) The method proposed in this work can be used to design ACN for the whole vehicle, as well as specific regions like the head of fuselage. For ACN of the vehicle head, the required mass flow rate decreases from 9.4 to 0.188 kg/s, 93.4 to 1.87 kg/s, 187 to 3.73 kg/ s, 462 to 9.25 kg/s, 910 to 18.2 kg/s, 1765 to 35.3 kg/s and 2565 to 51.3 kg/s, when the coolant temperature rise increases from 1 to 50 K for heq = 0.1, 1, 2, 5, 10, 20 and 30 W/(m2·K), respectively. However, for the whole vehicle, the mass flow rate will decrease from 30.6 to 0.612 kg/s, 305 to 6.12 kg/s, 608 to 12.15 kg/s, 1499 to 30.0 kg/s, 2926 to 58.5 kg/s, 5560 to 111 kg/s and 7945 to 159 kg/s, when the coolant temperature rise increases from 1 to 50 K for heq = 0.1, 1, 2, 5, 10, 20 and 30 W/(m2·K).
+Acknowledgments
+This study is supported by the National Natural Science Foundation of China (51806175).
+References
+- [1] B. Behrens, M. Müller, Technologies for thermal protection systems applied on reusable launcher, Acta Astronaut. 55 (3–9) (2004) 529–536.
+- [2] F. Gori, S. Corasaniti, W.M. Worek, W.J. Minkowycz, Theoretical prediction of thermal conductivity for thermal protection systems, Appl. Therm. Eng. 49 (2012) 124–130.
+- [3] Y. Rong, Y. Wei, R. Zhan, Research on thermal protection by opposing jet and transpiration for high speed vehicle, Aerosp. Sci. Technol. 48 (Supplement C) (2016) 322–327.
+- [4] D.E. Myers, C.J. Martin, M.L. Blosser, Parametric Weight Comparison of Advanced Metallic, Ceramic Tile, and Ceramic Blanket Thermal Protection Systems, NASA Langley Technical Report Server, 2000.
+- [5] A. Riccio, F. Raimondo, A. Sellitto, V. Carandente, R. Scigliano, D. Tescione, Optimum design of ablative thermal protection systems for atmospheric entry vehicles, Appl. Therm. Eng. 119 (2017) 541–552.
+- [6] M. Rivier, J. Lachaud, P.M. Congedo, Ablative thermal protection system under uncertainties including pyrolysis gas composition, Aerosp. Sci. Technol. 84 (2019) 1059–1069.
+- [7] N. Blet, S. Lips, V. Sartre, Heats pipes for temperature homogenization: A literature review, Appl. Therm. Eng. 118 (2017) 490–509.
+<!-- REAUDIT-INTEGRATED-2026-05-26:CITATIONS END -->
 
 ## 16. 审稿人视角风险
 
@@ -269,199 +384,3 @@ claim 控制相对稳健，很多地方说明“preliminary design”“real eng
 ## 19. 最终浓缩
 
 这篇论文的核心是把高超声速运载器 TMS 从“被动 TPS + 后置主动冷却”的分离式设计，改写为基于等效热平衡模型和等效 HTC 的耦合设计。heq 是全文的枢纽：它把 ACN 容量引入气动热计算、TPS 尺度和冷却剂流量估算，使设计者能看到 TPS weight 降低与 coolant mass flow rate 增加之间的权衡。最值得学习的是它如何用一个简单等效参数支撑整套工程设计流程；最需要复核的是 heq 与真实冷却网络之间的物理对应、各图表曲线细节和全车 ACN 可实现性。
-
-<!-- REAUDIT-2026-05-26 START -->
-
-## 20. 复核增强：严格抽取、翻译、引文与句型
-
-> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.txt` 与 `801/文本/metadata/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
-
-### 20.1 严格章节树（按 PDF/metadata TOC）
-
-- L2 p.1: Introduction （背景/领域定位）
-- L2 p.3: The vehicle and its trajectory （对象/问题/模块）
-- L2 p.3: Methodology of TMS design （方法/模型）
-  - L3 p.3: Equivalent thermal equilibrium model and HTC （方法/模型）
-  - L3 p.4: Calculation of aerodynamic heat （对象/问题/模块）
-  - L3 p.4: Process of TMS design （对象/问题/模块）
-  - L3 p.6: TPS concept database （对象/问题/模块）
-- L2 p.6: Results and discussions （结果/讨论/验证）
-  - L3 p.6: Thermal conditions （对象/问题/模块）
-  - L3 p.8: Heat transferred by active cooling （对象/问题/模块）
-  - L3 p.9: Passive TPS （对象/问题/模块）
-  - L3 p.12: Active cooling network （对象/问题/模块）
-  - L3 p.13: Influence of equivalent HTC （对象/问题/模块）
-- L2 p.13: Conclusions （结论）
-- L2 p.13: Acknowledgments （对象/问题/模块）
-- L2 p.13: References （参考文献）
-
-### 20.2 章节名功能分析
-
-| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
-| --- | ---: | ---: | --- | --- |
-| Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| The vehicle and its trajectory | 3 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Methodology of TMS design | 3 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Equivalent thermal equilibrium model and HTC | 3 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Calculation of aerodynamic heat | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Process of TMS design | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| TPS concept database | 6 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Results and discussions | 6 | 2 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Thermal conditions | 6 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Heat transferred by active cooling | 8 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Passive TPS | 9 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Active cooling network | 12 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Influence of equivalent HTC | 13 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Conclusions | 13 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Acknowledgments | 13 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| References | 13 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
-
-### 20.3 摘要完整摘录（本地证据）
-
-抽取状态：成功
-
-> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
-
-### 20.4 摘要中文翻译
-
-> 本文提出了一种高超声速飞行器热管理系统（TMS）的设计方法。该系统由被动热保护系统（TPS）和采用煤油冷却剂的主动冷却网络（ACN）组成。在以往的大多数研究中，被动式TPS和ACN总是分开设计，从而导致结果过于保守，偏离实际工程条件。目前的工作提出了一种耦合设计方法，该方法包括气动热计算、被动TPS概念分布的确定、TPS和ACN尺度的计算以及迭代设计。耦合设计基于两个关键实现，主动冷却通过等效热平衡模型耦合到TPS中的气动加热和传热，主动冷却的总体能力由等效传热系数表示。模型和系数分别作为整个过程的理论依据和等效参数。可重复使用运载火箭的TMS是在典型轨迹下建立的。研究了等效传热系数对气动加热、被动TPS和ACN的影响。结果表明，随着主动冷却的增强，被动TPS的重量减少，而冷却剂质量流量增加。
-
-### 20.5 结论完整摘录（本地证据）
-
-结论章节识别：Conclusions；状态：独立结论章节
-
-> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/The-design-of-thermal-management-system-for-hypersonic-l_2019_Applied-Therma.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
-
-### 20.6 结论中文翻译
-
-> 本文提出了一种可重复使用飞行器热管理系统（TMS）的设计方法。该系统由被动热保护系统（TPS）和以煤油为冷却剂的主动冷却网络（ACN）组成。基于等效热平衡模型，TPS和ACN采用耦合方式设计。提出了等效HTC参数heq来指示主动冷却的能力。设计过程包括气动热计算、TPS概念分布确定、TPS和ACN尺度计算以及经过多次迭代后TMS的最终设计四个步骤。本文研究了一种长30 m、具有一定弹道的可重复使用运载火箭。同等HTC的影响
-> 
-> J.-J。苟等人。应用热工159(2019)113938
-> 
-> 基于 UHTC 的热保护系统 Aerosp。科学。技术。 9（2）（2005）151-160。 [14] S. Liu，B.Zhang，主动冷却对金属热防护系统的影响，Aerosp。科学。技术。 15（7）（2011）526-533。 [15] R.J.托比，R.V. Grandhi，高超音速车辆热保护系统模型优化和振动测试验证，Aerosp。科学。技术。 28（1）（2013）208-213。 [16]马勇、徐斌、陈明、何荣、温文、程德.
-> 
-> 方，基于波纹芯均质化验证的组合式热防护系统优化设计，应用。热。工程师。 115（2017）491-500。 [17] H.P.刘文琪刘，高超音速飞行器片状热管冷却前缘的热结构分析，Acta Astronaut。 127（2016）13-19。 [18] C.A.斯蒂夫斯，M.Y.他，S.D.卡森，L.瓦尔德维特，H.N.G. Wadley，A.G. Evans，金属结构热管作为高超音速飞行器锋利前缘的可行性，J. Appl。机甲。 76 (3) (2009) 第 031014–031014-9 页。 [19] F. Falempin, M. Bouchez, T. Salmon, P. Lespade, V. Avrashkov，燃油冷却复合材料结构创新技术，见：第 37 届 AIAA/ASME/SAE/ASEE 联合推进会议暨展览，AIAA-2001-3703，2001。 [20] M. Bouchez，S. Beyer，S. Schmidt， PTAH-SOCAR 燃油冷却复合材料结构：2011 年状态，见：第 17 届 AIAA 国际航天飞机和高超音速系统与技术会议，AIAA-2011-2208，2011。 [21] M. Bouchez、N. Swiergiel、F. Pradat、A. Larbi，复合材料结构结构稳健设计挑战，见：第 21 届 AIAA 国际航天飞机和高超音速技术会议， AIAA-2017-2330，2017。 [22] A. Ulas，E. Boysan，液体推进剂火箭发动机再生冷却的数值分析，Aerosp。科学。技术。 24（1）（2013）187-197。 [23] 谢国强，王成，季涛，B.
-> 
-> Sunden，主动冷却波纹夹层结构的热和热机械性能研究，应用。热。工程师。 103（2016）660-669。 [24] 张成，秦建，杨强，张世，包伟，氢燃料超燃冲压发动机主被动组合热防护系统设计及传热特性分析，国际航空航天大学，2017 J.氢能源40（1）（2015）675–682。 [25] X. Li，Z. Wang，用于超燃冲压发动机冷却热发电的集成 TEG 和再生冷却系统的火用分析，Aerosp。科学。技术。 66（补充C）（2017）12-19。 [26] Z.Y.侯国庆他，W.Q.李凤琴，X.G.魏同堂，RBCC发动机主动冷却支柱热行为数值研究，应用。热。工程师。 113（2017）822-830。 [27] 严大，贺刚，李伟，张大，秦凤，多模式火箭联合循环发动机再生冷却挂架热分析，宇航员学报。 148（2018）121-131。 [28] C.L.龚斌陈，L.X.顾，RBCC 动力亚轨道可重复使用运载火箭概念的比较研究，载于：第 20 届 AIAA 国际航天飞机和
-> 
-> 高超声速系统和技术会议，AIAA-2015-3606，2015。 [29] C.L.龚俊杰苟，胡建新，高峰，一种基于TE材料的新型高超声速飞行器热防护结构及其性能评估，Aerosp。科学。技术。 77（2018）458-470。 [30] 敬涛，何国伟，
-> 
-> 李，张大，秦凤，李瑞，火箭联合循环发动机腔体弯曲再生冷却通道中超临界碳氢燃料的流动与热分析，应用。热。工程师。 145（2018）423-434。 [31] S.K.金，H.S. Choi, Y. Kim，基于煤油/液氧火箭燃烧广义三次状态方程的热力学模型，《燃烧》。火焰 159 (3) (2012) 1351–1365。 [32] 李树，王勇，董明，浦华，焦世，尚勇，超临界压力下立式微型管内RP-3航空煤油流动与传热不稳定性实验研究，应用热。工程师。 149（2019）73-84。 [33] 江荣平，G.Z.刘X.W.张，再生冷却微通道中碳氢航空燃料的热裂解，能源燃料 27 (5) (2013) 2563–2577。 [34]L.J.斯帕达奇尼，D.R. Sobel, H. Huang，飞机燃料中沉积物的形成和缓解，J. Eng。燃气轮机动力 123 (4) (1999) 741–746。 [35] D. Knight，H. Yan，A.G. Panaras，A. Zheltovodov，冲击波湍流边界层相互作用的 CFD 预测进展，Prog。气溶胶。科学。 39（2）（2003）121-184。 [36] D. Knight、J. Longo、D. Drikakis、D. Gaitonde、A. Lani、I. Nompelis、B. Reimann、L. Walpot，预测高超声速激波相互作用的 CFD 能力评估，Progr。航空航天科学。 48（补充C）（2012）8-26。 [37] C.D.恩格尔，S.C.
-> 
-> Praharaj，AVID 系统的 MINIVER 升级。第一卷：LANMIN 用户手册。 I Lanmin 用户手册 Nasa Cr，1983。 [38] J.N.M.E.V. Zoby, K. Sutton，高超声速流的近似对流加热方程，J. Spacecraft Rockets 18 (1) (1981) 64。 [39] M. Moore, J. Williams，高超声速构型分析的空气动力学预测原理，见：第 27 届航空航天科学会议，AIAA-89-0525，1989。 [40] F.R.R.N.H. Kemp，重新进入大气层的卫星飞行器的传热，J. Jet Propulsion 27 (2) (1957) 132–137。 [41] R. Borrelli、A. Riccio、D. Tescione、R. Gardi、G. Marino，UHTC 制造的再入飞行器鼻盖的热结构行为，Acta Astronaut。 65（3）（2009）442-456。 [42] G. Saccone、R. Gardi、D. Alfano、A. Ferrigno、A. Del Vecchio，实验室，超高温陶瓷复合材料的地面和飞行研究，Aerosp。科学。技术。 58（2016）490-497。 [43] C. Riley、W. Kleb、S. Alter，使用无粘边界层方法对 X-34 进行气动加热预测，见：第 36 届 AIAA 航空航天科学会议和展览，AIAA-98-0880，1998。 [44] W. Kleb、W. Wood、P. Gnoffo，X-34 的计算气动加热预测，见：第 36 届 AIAA 航空航天科学会议和展览，AIAA-98-0879，1998 年。
-
-### 20.7 论文逻辑脉络复核
-
-- 提出的问题：需结合 Introduction 首段复核。
-- 旧方法/已有研究不足：However, for the whole vehicle, the mass flow rate will decrease from 30.6 to 0.612 kg/s, 305 to 6.12 kg/s, 608 to 12.15 kg/s, 1499 to 30.0 kg/s, 2926 to 58.5 kg/s, 5560 to 111 kg/s and 7945 to 159 kg/s, when the coolant temperature rise increases from 1 to 50 K for heq = 0.1, 1, 2, 5, 10, 20 and 30 W/(m2·K).
-- 本文解决方式：In this paper, a design method of thermal management system (TMS) for hypersonic vehicles is developed. A coupled design method is developed in present work, and the process includes calculation of aerodynamic heat, determination of passive TPS concept distribution, computation of TPS and ACN scales, and iterative design. The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in TPS by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
-- 学术/工程增量：需结合 Results/Conclusion 的量化结果复核。
-- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
-
-### 20.8 引文分析补全
-
-- 全文引用簇数量（估计）：75
-- Introduction 引用簇数量（估计）：13
-- References 条目数（解析）：45
-- 可识别年份条目数：50
-- 近五年/近年文献（2021+）数量：0
-- 经典文献（2010年前）数量：15
-- 同刊引用数量（按 subject 粗略匹配）：1
-- 高频来源期刊（粗略）：Applied Thermal Engineering(1)
-- 引用簇样例：[4], [19], [5,6], [7], [11,12], [20,21], [22], [14], [23], [17,18], [24], [25]
-
-带引用的 gap/转折句样例：
-
-- The high flight speed of hypersonic aerospace vehicles leads to severe aerodynamic heating (e.g., higher than 1800 K [1–3]) and brings great challenges for thermal management system (TMS).
-- For TPS based on ablative technology, part of the aerodynamic heat will be dissipated by the ablation of relevant materials; such a TPS is widely used in external thermal protection of reentry vehicles and also rocket combustion chambers [13–16]; however, it is not appropriate to reusable vehicles due to its changing configuration during the flight mission.
-- The heat pipe can transfer aerodynamic heat from high-temperature region to low-temperature region in a short time; it is popular in thermal protection of critical components like vehicle leading edges [17,18]; however, the heat pipe only transfers heat from dangerous region to safety region, and the final heat dissipation has to resort to surface radiation or other additional measures, thus such heat-pipe-cooled thermal protection technology is not suitable for surfaces of large area.
-
-References 解析样例（前12条）：
-
-- 5. Conclusions
-In this paper, a design method of thermal management system (TMS) for reusable flight vehicles is developed. The system consists of a passive thermal protection system (TPS) and an active cooling network (ACN) with kerosene as coolant. Based on an equivalent heat equilibrium model, the TPS and ACN are designed in a coupled way. A parameter equivalent HTC, heq, is proposed to indicate the capacity of active cooling. The design process includes four steps, the calculation of aerodynamic heat, the determination of TPS concept distribution, the calculation of scales of TPS and ACN, and the final design of TMS after several iterations. A reusable launch vehicle of 30 m long with a certain trajectory is studied in this work. The influence of equivalent HTC
-(heq = 0–30 W/(m2 K)) and cold side temperature (Tb = 330, 367 and 440 K) on aerodynamic heat, TPS and ACN are studied. The results show some useful conclusions:
-(1) The aerodynamic heat flux and the proportion of heat taken by ACN increase, while the wall temperature decreases with the rise of equivalent HTC. (2) The higher equivalent HTC will result in lighter TPS while higher product of coolant mass flow rate and coolant temperature rise for ACN. (3) Increasing the constrained cold side temperature is very useful for the weight reduction of passive TPS, and it is more efficient with small equivalent HTC. The weight of TPS is reduced by 30.1%, 16.9%, 8.5%, 7.3%, 0.9%, 0% and 0% with Tb increasing from 330 to 440 K, for heq = 0, 0.1, 1, 2, 5, 10, 20, and 30 W/(m2·K), respectively. (4) The ACN can reduce the TPS weight, and it is more efficient with low cold side temperature. The weight of passive TPS is reduced by 40.0% and 14.1% with the equivalent HTC increases from 0 to 30 W/(m2·K) for Tb = 330 and Tb = 440, respectively. (5) The method proposed in this work can be used to design ACN for the whole vehicle, as well as specific regions like the head of fuselage. For ACN of the vehicle head, the required mass flow rate decreases from 9.4 to 0.188 kg/s, 93.4 to 1.87 kg/s, 187 to 3.73 kg/ s, 462 to 9.25 kg/s, 910 to 18.2 kg/s, 1765 to 35.3 kg/s and 2565 to 51.3 kg/s, when the coolant temperature rise increases from 1 to 50 K for heq = 0.1, 1, 2, 5, 10, 20 and 30 W/(m2·K), respectively. However, for the whole vehicle, the mass flow rate will decrease from 30.6 to 0.612 kg/s, 305 to 6.12 kg/s, 608 to 12.15 kg/s, 1499 to 30.0 kg/s, 2926 to 58.5 kg/s, 5560 to 111 kg/s and 7945 to 159 kg/s, when the coolant temperature rise increases from 1 to 50 K for heq = 0.1, 1, 2, 5, 10, 20 and 30 W/(m2·K).
-Acknowledgments
-This study is supported by the National Natural Science Foundation of China (51806175).
-References
-- [1] B. Behrens, M. Müller, Technologies for thermal protection systems applied on reusable launcher, Acta Astronaut. 55 (3–9) (2004) 529–536.
-- [2] F. Gori, S. Corasaniti, W.M. Worek, W.J. Minkowycz, Theoretical prediction of thermal conductivity for thermal protection systems, Appl. Therm. Eng. 49 (2012) 124–130.
-- [3] Y. Rong, Y. Wei, R. Zhan, Research on thermal protection by opposing jet and transpiration for high speed vehicle, Aerosp. Sci. Technol. 48 (Supplement C) (2016) 322–327.
-- [4] D.E. Myers, C.J. Martin, M.L. Blosser, Parametric Weight Comparison of Advanced Metallic, Ceramic Tile, and Ceramic Blanket Thermal Protection Systems, NASA Langley Technical Report Server, 2000.
-- [5] A. Riccio, F. Raimondo, A. Sellitto, V. Carandente, R. Scigliano, D. Tescione, Optimum design of ablative thermal protection systems for atmospheric entry vehicles, Appl. Therm. Eng. 119 (2017) 541–552.
-- [6] M. Rivier, J. Lachaud, P.M. Congedo, Ablative thermal protection system under uncertainties including pyrolysis gas composition, Aerosp. Sci. Technol. 84 (2019) 1059–1069.
-- [7] N. Blet, S. Lips, V. Sartre, Heats pipes for temperature homogenization: A literature review, Appl. Therm. Eng. 118 (2017) 490–509.
-- [8] L. Shen, J. Wang, Numerical investigation on the optimization of local transpiration cooling effectiveness, Appl. Therm. Eng. 127 (2017) 58–69.
-- [9] P. Jiang, Z. Liao, Z. Huang, Y. Xiong, Y. Zhu, Influence of shock waves on supersonic transpiration cooling, Int. J. Heat Mass Transf. 129 (2019) 965–974.
-- [10] R. Ding, J. Wang, F. He, G. Dong, L. Tang, Numerical investigation on the performances of porous matrix with transpiration and film cooling, Appl. Therm. Eng. 146 (2019) 422–431.
-- [11] M. Cui, J. Mei, B.-W. Zhang, B.-B. Xu, L. Zhou, Y. Zhang, Inverse identification of boundary conditions in a scramjet combustor with a regenerative cooling system, Appl. Therm. Eng. 134 (2018) 555–563.
-
-### 20.9 常用词、词类、语态与时态
-
-- 高频词：tps(33)；heat(28)；cooling(22)；thermal(19)；aerodynamic(16)；active(15)；system(14)；passive(12)；coolant(12)；technology(12)；design(10)；acn(10)；developed(10)；vehicle(9)；tms(9)；transfer(8)；temperature(8)；equivalent(7)；hypersonic(6)；vehicles(6)
-- 高频名词化/学术名词：temperature(8)；protection(6)；management(5)；high-temperature(5)；capacity(4)；convection(4)；insulation(3)；structure(3)；dissipation(3)；combustion(3)；direction(2)；france(2)；utilization(2)；extraction(1)；astronautics(1)
-- 高频学术动词：developed(10)；indicate(1)；indicated(1)；develop(1)
-- 高频形容词：thermal(19)；aerodynamic(16)；active(15)；passive(12)；coolant(12)；equivalent(7)；hypersonic(6)；management(5)；coefficient(5)；additional(3)；regenerative(3)；available(2)；previous(2)；reusable(2)；typical(2)
-- 高频副词：separately(1)；respectively(1)；obviously(1)；especially(1)；purely(1)；mainly(1)；widely(1)；only(1)
-- 高频二词短语：active cooling(12)；aerodynamic heat(10)；passive tps(9)；thermal protection(6)；thermal management(5)；management system(5)；tps acn(5)；aerodynamic heating(5)；heat transfer(5)；cooling technology(4)；applied thermal(3)；thermal engineering(3)
-- 高频三词短语：thermal management system(5)；applied thermal engineering(3)；passive tps acn(3)；thermal protection system(3)；active cooling network(3)；heat transfer coefficient(3)；design thermal management(2)；tps acn developed(2)；hypersonic launch vehicle(2)；equivalent thermal equilibrium(2)；management system tms(2)；cooling network acn(2)
-- 被动语态估计：24；`we + 动作动词` 主动句估计：0
-- 一般现在时线索：34；一般过去时线索：72；现在完成时线索：0；情态动词线索：7
-
-章节词频：
-
-- Abstract: tps(7)；passive(5)；design(4)；active(4)；cooling(4)；acn(4)；heat(4)；equivalent(4)
-- Introduction: tps(30)；heat(28)；cooling(21)；aerodynamic(16)；thermal(15)；active(13)；technology(13)；system(12)
-- Conclusion: tps(10)；acn(9)；equivalent(7)；temperature(7)；htc(6)；coolant(5)；heat(5)；heq(5)
-
-### 20.10 句型库扩充（每类多句）
-
-#### 背景句
-- 原句/结构：The heat pipe can transfer aerodynamic heat from high-temperature region to low-temperature region in a short time; it is popular in thermal protection of critical components like vehicle leading edges [17,18]; however, the heat pipe only transfers heat from dangerous region to safety region, and the final heat dissipation has to resort to surface radiation or other additional measures, thus such heat-pipe-cooled thermal protection technology is not suitable for surfaces of large area.
-  可迁移模板：The heat pipe can transfer aerodynamic heat from high-temperature region to low-temperature region in a short time; it is popular in thermal protection of critical components like vehicle leading edges [X,X]; however, the heat pipe only transfers heat from dangerous region to safety region, and the final heat dissipation has to resort to surface radiation or other additional measures, thus such heat-pipe-cooled thermal protection technology is not suitable for surfaces of large area.
-- 原句/结构：The film cooling means a coolant film will be formed on the high-temperature surface to prevent the aerodynamic heating; however, the technology requires additional coolant consumption.
-  可迁移模板：The film cooling means a coolant film will be formed on the high-temperature surface to prevent the aerodynamic heating; however, the technology requires additional coolant consumption.
-#### Gap句
-- 原句/结构：The high flight speed of hypersonic aerospace vehicles leads to severe aerodynamic heating (e.g., higher than 1800 K [1–3]) and brings great challenges for thermal management system (TMS).
-  可迁移模板：The high flight speed of hypersonic aerospace vehicles leads to severe aerodynamic heating (e.g., higher than METHOD [X–X]) and brings great challenges for thermal management system (METHOD).
-- 原句/结构：For TPS based on ablative technology, part of the aerodynamic heat will be dissipated by the ablation of relevant materials; such a TPS is widely used in external thermal protection of reentry vehicles and also rocket combustion chambers [13–16]; however, it is not appropriate to reusable vehicles due to its changing configuration during the flight mission.
-  可迁移模板：For METHOD based on ablative technology, part of the aerodynamic heat will be dissipated by the ablation of relevant materials; such a METHOD is widely used in external thermal protection of reentry vehicles and also rocket combustion chambers [X–X]; however, it is not appropriate to reusable vehicles due to its changing configuration during the flight mission.
-- 原句/结构：The heat pipe can transfer aerodynamic heat from high-temperature region to low-temperature region in a short time; it is popular in thermal protection of critical components like vehicle leading edges [17,18]; however, the heat pipe only transfers heat from dangerous region to safety region, and the final heat dissipation has to resort to surface radiation or other additional measures, thus such heat-pipe-cooled thermal protection technology is not suitable for surfaces of large area.
-  可迁移模板：The heat pipe can transfer aerodynamic heat from high-temperature region to low-temperature region in a short time; it is popular in thermal protection of critical components like vehicle leading edges [X,X]; however, the heat pipe only transfers heat from dangerous region to safety region, and the final heat dissipation has to resort to surface radiation or other additional measures, thus such heat-pipe-cooled thermal protection technology is not suitable for surfaces of large area.
-#### 方法句
-- 原句/结构：In this paper, a design method of thermal management system (TMS) for hypersonic vehicles is developed.
-  可迁移模板：In this paper, a design method of thermal management system (METHOD) for hypersonic vehicles is developed.
-- 原句/结构：A coupled design method is developed in present work, and the process includes calculation of aerodynamic heat, determination of passive TPS concept distribution, computation of TPS and ACN scales, and iterative design.
-  可迁移模板：A coupled design method is developed in present work, and the process includes calculation of aerodynamic heat, determination of passive METHOD concept distribution, computation of METHOD and METHOD scales, and iterative design.
-- 原句/结构：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in TPS by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
-  可迁移模板：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in METHOD by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
-#### 结果句
-- 原句/结构：In most previous studies, the passive TPS and ACN are always designed separately and thus leads to over-conservative results that deviating from real engineering conditions.
-  可迁移模板：In most previous studies, the passive METHOD and METHOD are always designed separately and thus leads to over-conservative results that deviating from real engineering conditions.
-- 原句/结构：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in TPS by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
-  可迁移模板：The coupled design is realized based on two keys, the active cooling is coupled in aerodynamic heating and heat transfer in METHOD by an equivalent thermal equilibrium model, and the overall capacity of active cooling is indicated by an equivalent heat transfer coefficient.
-- 原句/结构：The results show that the weight of passive TPS decreases, while the coolant mass flow rate increases with the enhancement of active cooling.
-  可迁移模板：The results show that the weight of passive METHOD decreases, while the coolant mass flow rate increases with the enhancement of active cooling.
-#### 贡献句
-- 原句/结构：The TMS of a reusable launch vehicle is established under a typical trajectory.
-  可迁移模板：The METHOD of a reusable launch vehicle is established under a typical trajectory.
-- 原句/结构：The TMS of a reusable launch vehicle is established under a typical trajectory.
-  可迁移模板：The METHOD of a reusable launch vehicle is established under a typical trajectory.
-#### 限制/边界句
-- 原句/结构：The well designed TMS should be able to manage the transfer process, and control the dissipation and even the reuse of aerodynamic heat in an efficient way.
-  可迁移模板：The well designed METHOD should be able to manage the transfer process, and control the dissipation and even the reuse of aerodynamic heat in an efficient way.
-- 原句/结构：The design key for such a TPS is to obtain optimum distribution of concepts (allowable temperature should be higher than the aerodynamic heated wall temperature) and scales (size and weight) of concept (larger heat load needs larger thickness of insulation layer).
-  可迁移模板：The design key for such a METHOD is to obtain optimum distribution of concepts (allowable temperature should be higher than the aerodynamic heated wall temperature) and scales (size and weight) of concept (larger heat load needs larger thickness of insulation layer).
-- 原句/结构：Sometimes, especially for hypersonic vehicles, the size and the weight of such a purely passive TPS could be unacceptable.
-  可迁移模板：Sometimes, especially for hypersonic vehicles, the size and the weight of such a purely passive METHOD could be unacceptable.
-
-### 20.11 抽取失败与人工复核提示
-
-- 摘要抽取：正常
-- 结论抽取：正常
-- 引文解析：正常
-- 章节树：正常
-- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
-
-<!-- REAUDIT-2026-05-26 END -->

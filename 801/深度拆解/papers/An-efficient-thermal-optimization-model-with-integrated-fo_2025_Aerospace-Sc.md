@@ -2,6 +2,16 @@
 
 本文依据 `801/文本/txt/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.txt` 的全文抽取进行拆解。抽取文本包含摘要、结构路径设计、变量分层、遗传算法、RBF 代理筛选、算例边界条件、约束、质量/气动弹性影响优化结果和结论。部分路径图、温度/应力/位移云图、拓扑演化图需要依赖 PDF 视觉检查，本文均标注“需要 PDF 图像复核”。
 
+<!-- REAUDIT-INTEGRATED-2026-05-26:STATUS START -->
+### 复核补充：抽取边界与合并状态
+
+- 增补内容已并入原有主章节，不再作为独立追加章。
+- 正文词频只统计正文主章节：1 Introduction, 2 The integrated heat-force path and fully decomposed variable hierarchies, 3 Hybrid genetic optimization algorithm and population reduction method, 4 The ground path and optimization model, 5 Results and discussions, 6 Conclusions。
+- 排除范围：摘要、References、图题/表题、页眉页脚、版权信息、期刊首页信息、旧分析文字。
+- 正文切分告警：
+- 无明显正文切分告警。
+<!-- REAUDIT-INTEGRATED-2026-05-26:STATUS END -->
+
 ## 1. 基本信息与论文身份
 
 - 题名：An efficient thermal optimization model with integrated force paths, fully-decomposed hierarchies and hybrid genetic operations for a flight wing
@@ -21,6 +31,19 @@
 4. 通过二进制/Gray 编码混合遗传操作和 RBF 代理预筛选，最终实现质量降低 35.7%、气动弹性影响降低 19.3%。
 
 核心定位：它是一篇“路径结构 + 变量编码 + 优化效率”的方法论文，目标是让热-力集成路径在实际翼结构优化中更轻、更可算。
+
+<!-- REAUDIT-INTEGRATED-2026-05-26:ABSTRACT START -->
+### 复核补充：摘要原文定位与中文译文
+
+- 摘要抽取状态：成功。
+- 完整英文摘要原文不在公开报告正文中展开；本地完整摘录见 `801/深度拆解/extracted_evidence/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.md`。
+
+中文译文：
+
+> 热系统轻量化是高速车辆的关键问题，而热力传递路径的集成优化是最有前途的技术之一。然而，不一致的传输路径和多层次变量导致了复杂且耗时的优化问题。在这项工作中，为高速机翼预先设计了在力网两侧具有I型力路径和矩形热传输路径的集成路径。为了形成大的优化空间，将变量充分分解为拓扑、角度、热宽度、力宽度、宽度因子和高度因子六个层次，并补充二、三、五层次模型来验证其对优化性能的增强效果。由于多个层次之间错综复杂的相关性，提出了一种基于遗传算法的混合策略来代替传统的顺序策略，其中采用二进制编码方案来统一描述离散变量和连续变量，并在遗传优化过程中同时操作不同层次的选择、交叉和变异。
+>
+> 针对多变量层次导致的种群规模过大和优化成本高等问题，基于RBF神经网络代理模型对个体的预评价和筛选，构建了一种有效损失有限的种群缩减方法。最后以最小质量和最小气动弹性影响量为目标对机翼进行了优化，分别达到了35.7%和19.3%的大幅目标降低，验证了模型的有效性。
+<!-- REAUDIT-INTEGRATED-2026-05-26:ABSTRACT END -->
 
 ## 3. 选题层深拆
 
@@ -87,6 +110,16 @@
 9. 与 force-only 路径相比，集成路径还能通过减少隔热需求降低系统总质量。
 
 这条链条用“路径设计合理性 + 变量层级必要性 + 算法效率 + 工程结果”构成闭环。
+
+<!-- REAUDIT-INTEGRATED-2026-05-26:LOGIC START -->
+### 复核补充：问题-方法-增量闭环
+
+- 提出的问题：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
+- 已有研究不足/GAP：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem. To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model. However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
+- 本文解决方式：In order to form a great optimization space, the variable is fully decomposed into six hierarchies of topology, angle, heat width, force width, width factor and height factor, and the two-, threeand five-hierarchy models are supplemented to verify its enhancing effect on the optimization perfor mance. Due to the intricate relevance among multiple hierarchies, a hybrid strategy based on the genetic al gorithm is developed instead of the conventional sequential strategy, in which a binary coding scheme is adopted to uniformly describe the discrete and continuous variables, and the selection, crossover and mutation of different hierarchies are operated simultaneously during the genetic optimization. To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
+- 学术或工程增量：需结合 Results/Conclusion 的量化结果复核。
+- 逻辑复核重点：看 Introduction 的 gap 是否被 Method 的输入输出接住，Results 的评价指标是否回应该 gap，Conclusion 是否只回收已有证据支持的 claim。
+<!-- REAUDIT-INTEGRATED-2026-05-26:LOGIC END -->
 
 ## 8. 方法/理论/模型细拆
 
@@ -160,28 +193,71 @@
 
 篇章布局偏“工程方法论文”：方法介绍较长，算例和结果占据主体。其中特别重视对比实验，包括种群策略对比、层级数量对比、force-only 与 integrated 对比。
 
-<!-- AUTO-AUGMENT:SECTION-ANALYSIS START -->
+<!-- REAUDIT-INTEGRATED-2026-05-26:STRUCTURE START -->
+### 复核补充：严格章节树与章节名功能
 
-### 11.x 章节结构与章节名分析（补充）
+严格章节树：
 
-> 自动分析说明：以下基于 `801/文本/txt/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+- L2 p.1: 1 Introduction（背景定位/文献缺口）
+- L2 p.2: 2 The integrated heat-force path and fully decomposed variable hierarchies（对象/模块/过渡章节）
+- L2 p.4: 3 Hybrid genetic optimization algorithm and population reduction method（方法/模型/算法）
+  - L3 p.4: 3.1 Unified chromosome encoding of discrete and continuous variables（对象/模块/过渡章节）
+  - L3 p.4: 3.2 Hybrid genetic operators of multi-hierarchy variables（对象/模块/过渡章节）
+  - L3 p.6: 3.3 The population size reduction method（方法/模型/算法）
+  - L3 p.6: 3.4 The optimization process（对象/模块/过渡章节）
+- L2 p.7: 4 The ground path and optimization model（方法/模型/算法）
+  - L3 p.7: 4.1 The ground path and numerical models（方法/模型/算法）
+    - L4 p.7: 4.1.1 Ground path and mesh（对象/模块/过渡章节）
+    - L4 p.7: 4.1.2 Governing equations（对象/模块/过渡章节）
+    - L4 p.7: 4.1.3 Boundary conditions（对象/模块/过渡章节）
+  - L3 p.7: 4.2 Mathematical description of optimization model（方法/模型/算法）
+- L2 p.9: 5 Results and discussions（结果/验证/讨论）
+  - L3 p.9: 5.1 The path mass minimum problem（问题定义）
+    - L4 p.9: 5.1.1 The force-only path optimization（对象/模块/过渡章节）
+    - L4 p.11: 5.1.2 The heat-force integrated path optimization（对象/模块/过渡章节）
+  - L3 p.13: 5.2 The aeroelastic influence quantity minimum problem（问题定义）
+    - L4 p.13: 5.2.1 The force-only path optimization（对象/模块/过渡章节）
+    - L4 p.13: 5.2.2 The heat-force integrated path optimization（对象/模块/过渡章节）
+  - L3 p.14: 5.3 Effectiveness of integrated path optimization（对象/模块/过渡章节）
+- L2 p.15: 6 Conclusions（结论/贡献回收）
+- L2 p.16: CRediT authorship contribution statement（尾部材料）
+- L2 p.16: Declaration of competing interest（尾部材料）
+- L2 p.16: Acknowledgments（尾部材料）
+- L2 p.16: Data availability（尾部材料）
+- L2 p.16: References（尾部材料）
 
-- 识别到的章节/小节数量：4
-- 结构类型判断：非严格 IMRaD，更像按模型、机制或结果模块组织。
-- 标题并列性：同级标题并列性一般，更偏按内容对象自然展开。
-- 章节名主要风格：描述型, 方法/模型型, 结论/展望型
-- 标题信息量判断：若标题含具体变量、机制、效应、验证对象，信息量较高；若只写 `Results` / `Discussion`，则更依赖正文推进。
+章节名功能表：
 
-| 章节/小节名 | 标题类型 | 章节功能 | 信息量 | 是否可模仿 | 改写建议 |
-| --- | --- | --- | --- | --- | --- |
-| 3.1 Unified chromosome encoding of discrete and continuous variables | 描述型 | 描述章节内容，信息量取决于标题具体程度 | 高 | 是 | 保留具体变量/对象 |
-| 4.1 The ground path and numerical models | 方法/模型型 | 交代模型、公式、算法、参数或求解流程 | 高 | 是 | 保留具体变量/对象 |
-| 4.1.2 Governing equations                                            Take the six-hierarchy model for instance, the mathematical model | 方法/模型型 | 交代模型、公式、算法、参数或求解流程 | 高 | 是 | 保留具体变量/对象 |
-| 6 Conclusions | 结论/展望型 | 收束贡献、边界和未来工作 | 中 | 是 | 可加入核心变量或机制词增强信息量 |
-
-写作启发：章节名不要只是目录标签，而应承担“读者导航”功能。若本文标题已经暴露变量或机制，可学习其标题信息密度；若标题偏泛，则在自己的论文中可把核心对象、作用变量或验证任务写进小节名。
-
-<!-- AUTO-AUGMENT:SECTION-ANALYSIS END -->
+| 章节/小节名 | 页码 | 层级 | 功能判断 |
+| --- | ---: | ---: | --- |
+| 1 Introduction | 1 | 2 | 背景定位/文献缺口 |
+| 2 The integrated heat-force path and fully decomposed variable hierarchies | 2 | 2 | 对象/模块/过渡章节 |
+| 3 Hybrid genetic optimization algorithm and population reduction method | 4 | 2 | 方法/模型/算法 |
+| 3.1 Unified chromosome encoding of discrete and continuous variables | 4 | 3 | 对象/模块/过渡章节 |
+| 3.2 Hybrid genetic operators of multi-hierarchy variables | 4 | 3 | 对象/模块/过渡章节 |
+| 3.3 The population size reduction method | 6 | 3 | 方法/模型/算法 |
+| 3.4 The optimization process | 6 | 3 | 对象/模块/过渡章节 |
+| 4 The ground path and optimization model | 7 | 2 | 方法/模型/算法 |
+| 4.1 The ground path and numerical models | 7 | 3 | 方法/模型/算法 |
+| 4.1.1 Ground path and mesh | 7 | 4 | 对象/模块/过渡章节 |
+| 4.1.2 Governing equations | 7 | 4 | 对象/模块/过渡章节 |
+| 4.1.3 Boundary conditions | 7 | 4 | 对象/模块/过渡章节 |
+| 4.2 Mathematical description of optimization model | 7 | 3 | 方法/模型/算法 |
+| 5 Results and discussions | 9 | 2 | 结果/验证/讨论 |
+| 5.1 The path mass minimum problem | 9 | 3 | 问题定义 |
+| 5.1.1 The force-only path optimization | 9 | 4 | 对象/模块/过渡章节 |
+| 5.1.2 The heat-force integrated path optimization | 11 | 4 | 对象/模块/过渡章节 |
+| 5.2 The aeroelastic influence quantity minimum problem | 13 | 3 | 问题定义 |
+| 5.2.1 The force-only path optimization | 13 | 4 | 对象/模块/过渡章节 |
+| 5.2.2 The heat-force integrated path optimization | 13 | 4 | 对象/模块/过渡章节 |
+| 5.3 Effectiveness of integrated path optimization | 14 | 3 | 对象/模块/过渡章节 |
+| 6 Conclusions | 15 | 2 | 结论/贡献回收 |
+| CRediT authorship contribution statement | 16 | 2 | 尾部材料 |
+| Declaration of competing interest | 16 | 2 | 尾部材料 |
+| Acknowledgments | 16 | 2 | 尾部材料 |
+| Data availability | 16 | 2 | 尾部材料 |
+| References | 16 | 2 | 尾部材料 |
+<!-- REAUDIT-INTEGRATED-2026-05-26:STRUCTURE END -->
 
 ## 12. 段落功能与叙事节奏
 
@@ -202,53 +278,31 @@
 - 对算法步骤使用过程性动词，如 encode, select, crossover, mutate, screen, analyze。
 - 对路径结构使用强名词化表达，如 force path, heat transport path, integrated heat-force path。
 
-<!-- AUTO-AUGMENT:LANGUAGE-FREQUENCY START -->
+<!-- REAUDIT-INTEGRATED-2026-05-26:LANGUAGE START -->
+### 复核补充：正文词频、词类、语态与时态
 
-### 13.x 词频、词类与语法统计（补充）
+统计口径：仅正文主章节；不含摘要、References、图表题注、页眉页脚、版权/期刊信息和任何分析报告文本。
 
-> 自动分析说明：以下为基于 TXT 的启发式统计，适合发现语言习惯；它不是严格 NLP 词性标注。公式符号、作者信息、参考文献和 PDF 断行可能影响个别词频，使用时应结合正文语境判断。
+- 正文统计字符数：41867
+- 高频词：path(117)；optimization(83)；heat(68)；width(52)；variables(38)；force(37)；mass(37)；thermal(36)；model(36)；population(31)；factor(30)；work(29)；variable(29)；paths(27)；individuals(27)；integrated(25)；hierarchies(25)；angle(22)；value(22)；generation(22)
+- 高频名词化/学术名词：optimization(83)；population(31)；generation(22)；reduction(21)；temperature(18)；influence(17)；quantity(16)；fitness(13)；insulation(13)；function(10)；effectiveness(9)；pressure(9)；relevance(8)；conductivity(7)；mutation(7)
+- 高频学术动词：optimized(6)；developed(5)；constructed(4)；reveal(4)；indicate(3)；indicated(3)；compared(3)；optimize(2)；provide(2)；achieved(2)；predicted(2)；evaluated(1)；evaluate(1)；presented(1)
+- 高频形容词：thermal(36)；variable(29)；aerodynamic(19)；individual(16)；aeroelastic(15)；genetic(14)；different(14)；continuous(9)；total(9)；optimal(8)；objective(7)；displacement(7)；effective(6)；original(6)；essential(5)
+- 高频副词：force-only(13)；especially(7)；finally(7)；fully(5)；simultaneously(5)；widely(5)；usually(3)；uniformly(3)；effectively(3)；separately(2)；closely(2)；relatively(2)；radiatively(2)；tively(2)；extremely(1)
+- 高频二词短语：height factor(16)；integrated path(15)；width factor(14)；aeroelastic influence(14)；heat width(13)；influence quantity(13)；force width(12)；factor height(12)；insulation layer(12)；path optimization(11)；heat transport(10)；force path(10)
+- 高频三词短语：aeroelastic influence quantity(13)；width factor height(12)；angle force width(8)；force width heat(8)；minimum aeroelastic influence(7)；thermal insulation layer(7)；lower upper limits(7)；heat transport path(5)；heat-force integrated path(5)；integrated path optimization(5)；variable fully decomposed(4)；fully decomposed six(4)
+- 被动语态估计：155；`we + 动作动词` 主动句估计：0
+- 一般现在时线索：276；一般过去时线索：355；现在完成时线索：0；情态动词线索：42
 
-**词频总览**
+分章节正文词频：
 
-- Top 高频词：path(165)；optimization(123)；heat(90)；width(67)；thermal(65)；respectively(59)；mass(54)；model(51)；force(50)；paths(47)；generation(45)；integrated(42)；variables(41)；population(39)；variable(38)；factor(38)；reduction(33)；work(32)；individuals(32)；shown(32)
-- 高频学术名词：optimization(123)；model(51)；generation(45)；population(39)；reduction(33)；temperature(31)；analysis(28)；influence(22)；quantity(21)；method(19)；insulation(19)；science(18)；stress(16)；conductivity(16)；results(15)；system(14)
-- 高频学术动词：shown(32)；indicates(18)；show(17)；shows(15)；reveal(11)；indicate(9)；compared(5)；developed(5)；proposed(4)；predicted(2)；evaluated(1)；evaluate(1)；solve(1)；solved(1)；simulate(1)
-- 高频形容词：thermal(65)；variable(38)；aeroelastic(23)；high(21)；individual(21)；aerodynamic(20)；different(19)；genetic(17)；optimal(17)；effective(14)；hypersonic(14)；numerical(12)；displacement(12)；reveal(11)；local(10)；total(10)
-- 高频副词/连接副词：respectively(59)；force-only(20)；however(9)；finally(8)；fully(7)；especially(7)；simultaneously(5)；widely(5)；uniformly(4)；tively(4)；usually(3)；effectively(3)；generally(2)；highly(2)；separately(2)；closely(2)
-- 高频二词短语：integrated path(25)；width factor(19)；height factor(18)；aerospace science(17)；science technology(17)；aeroelastic influence(17)；force width(16)；heat width(15)；influence quantity(15)；thermal conductivity(15)；gou aerospace(15)；insulation layer(15)；generation increases(15)；path optimization(14)；xwh xwf(14)；force path(13)
-- 高频三词短语：aerospace science technology(17)；gou aerospace science(15)；aeroelastic influence quantity(14)；xwh xwf xhf(13)；width width factor(10)；angle force width(10)；width heat width(10)；width factor height(9)；factor height factor(9)；thermal insulation layer(9)；force width heat(9)；minimum aeroelastic influence(7)
-
-**主动、被动与句法**
-
-- 被动语态估计次数：172
-- `we + 动作动词` 主动句估计次数：0
-- 名词化表达估计次数：790
-- 语态判断：被动语态明显多于 we 主动句，说明作者倾向把实验、求解和结果写成客观过程。
-- 句法习惯：若高频名词化和被动语态较多，说明文章倾向把研究过程写成“模型/结果/参数”的客观链条；若 `we` 主动句较多，则更强调作者的框架构建和贡献动作。
-
-**时态与情态**
-
-- 一般现在时线索：359
-- 一般过去时线索：35
-- 现在完成时线索：1
-- 情态动词线索：55
-- 时态判断：一般现在时最突出，适合图表说明、模型定义和领域事实；过去时用于本文操作或已完成结果；现在完成时主要连接已有研究。
-- 写作启发：Introduction 和图表说明通常适合现在时；本文实验、仿真、参数识别适合过去时；已有研究综述常用现在完成时；外推、局限和未来工作要用 may/could/should 控制强度。
-
-**章节词频分布**
-
-- Abstract/首页：path(62)；optimization(45)；heat(40)；width(33)；force(24)；hierarchies(21)；variable(21)；thermal(18)
-- 3.1. Unified chromosome encoding of discrete and continuous variables：population(19)；individuals(18)；individual(16)；fitness(13)；path(13)；model(13)；crossover(12)；variables(12)
-- 4.1. The ground path and numerical models：heat(13)；path(12)；aerodynamic(12)；wing(10)；thermal(9)；insulation(8)；layer(8)；force(7)
-- 4.1.2. Governing equations                                            Take the six-hierarchy model for instance, the mathematical model：path(77)；optimization(64)；mass(46)；generation(45)；respectively(34)；thermal(32)；paths(31)；heat(30)
-
-**可复用观察**
-
-- 高频名词若集中在研究对象、模型变量和机制词上，说明论文语言服务核心贡献；若高频词过散，读者会难以抓住主线。
-- 高频动词中 `show/demonstrate/validate` 偏结果证明，`suggest/indicate` 偏机制解释，`propose/develop/formulate` 偏方法贡献。拆论文时应看这些动词是否与证据强度匹配。
-- 形容词和副词要检查证据支撑：`significant/substantial/robust` 需要量化或多条件验证；`potentially/approximately/likely` 则说明作者在主动控制 claim 边界。
-
-<!-- AUTO-AUGMENT:LANGUAGE-FREQUENCY END -->
+- 1 Introduction: optimization(27)；heat(23)；path(23)；thermal(13)；hierarchies(10)；vehicles(8)；cooling(8)；variables(8)
+- 2 The integrated heat-force path and fully decomposed variable hierarchies: path(22)；width(15)；heat(13)；optimization(12)；force(9)；variable(9)；height(7)；hierarchies(6)
+- 3 Hybrid genetic optimization algorithm and population reduction method: population(19)；individuals(18)；width(17)；variables(14)；fitness(13)；individual(13)；model(12)；crossover(11)
+- 4 The ground path and optimization model: path(20)；heat(18)；thermal(12)；force(11)；aerodynamic(11)；temperature(11)；maximum(10)；width(9)
+- 5 Results and discussions: path(29)；optimization(22)；generation(22)；mass(14)；paths(13)；increases(11)；reduction(10)；force-only(9)
+- 6 Conclusions: path(12)；optimization(9)；mass(9)；quantity(7)；minimum(6)；aeroelastic(6)；influence(6)；integrated(4)
+<!-- REAUDIT-INTEGRATED-2026-05-26:LANGUAGE END -->
 
 ## 14. 常用词、句式与可复用表达提取
 
@@ -278,6 +332,65 @@
 - “热路径和力路径的一体化不是简单并置，而是让导热能力与承载能力共享结构体积。”
 - “变量层级拆分的意义在于把优化器看不见的工程结构逻辑显式编码进染色体。”
 
+<!-- REAUDIT-INTEGRATED-2026-05-26:SENTENCES START -->
+### 复核补充：多句型库
+
+以下句型来自该论文的摘要、引言和结论，不从分析报告或 References 中抽取。
+
+#### 背景/问题定位句
+- 原句：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
+  可迁移模板：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
+- 原句：A large number of gray elements with median values will be created in such optimization process, thus very complex post-processing is essential.
+  可迁移模板：A large number of gray elements with median values will be created in such optimization process, thus very complex post-processing is essential.
+- 原句：Thus, a fast and effective genetic optimization algorithm with well individual screening and population size reduction strategy is essential.
+  可迁移模板：Thus, a fast and effective genetic optimization algorithm with well individual screening and population size reduction strategy is essential.
+#### Gap/转折句
+- 原句：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
+  可迁移模板：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
+- 原句：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
+  可迁移模板：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by METHOD neural network surrogate model.
+- 原句：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
+  可迁移模板：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
+- 原句：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
+  可迁移模板：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by METHOD neural network surrogate model.
+- 原句：However, the high den sity and low service temperature of above metal-based composites lead to their limited application in flight vehicles.
+  可迁移模板：However, the high den sity and low service temperature of above metal-based composites lead to their limited application in flight vehicles.
+#### 方法提出句
+- 原句：In order to form a great optimization space, the variable is fully decomposed into six hierarchies of topology, angle, heat width, force width, width factor and height factor, and the two-, threeand five-hierarchy models are supplemented to verify its enhancing effect on the optimization perfor mance.
+  可迁移模板：In order to form a great optimization space, the variable is fully decomposed into six hierarchies of topology, angle, heat width, force width, width factor and height factor, and the two-, threeand five-hierarchy models are supplemented to verify its enhancing effect on the optimization perfor mance.
+- 原句：Due to the intricate relevance among multiple hierarchies, a hybrid strategy based on the genetic al gorithm is developed instead of the conventional sequential strategy, in which a binary coding scheme is adopted to uniformly describe the discrete and continuous variables, and the selection, crossover and mutation of different hierarchies are operated simultaneously during the genetic optimization.
+  可迁移模板：Due to the intricate relevance among multiple hierarchies, a hybrid strategy based on the genetic al gorithm is developed instead of the conventional sequential strategy, in which a binary coding scheme is adopted to uniformly describe the discrete and continuous variables, and the selection, crossover and mutation of different hierarchies are operated simultaneously during the genetic optimization.
+- 原句：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
+  可迁移模板：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by METHOD neural network surrogate model.
+- 原句：Finally, the wing is optimized with objectives of the minimum mass and minimum aeroelastic influence quantity, and the model effectiveness is verified by the great objective reductions of 35.7 % and 19.3 %, respectively.
+  可迁移模板：Finally, the wing is optimized with objectives of the minimum mass and minimum aeroelastic influence quantity, and the model effectiveness is verified by the great objective reductions of X and X, respectively.
+- 原句：In order to form a great optimization space, the variable is fully decomposed into six hierarchies of topology, angle, heat width, force width, width factor and height factor, and the two-, threeand five-hierarchy models are supplemented to verify its enhancing effect on the optimization perfor mance.
+  可迁移模板：In order to form a great optimization space, the variable is fully decomposed into six hierarchies of topology, angle, heat width, force width, width factor and height factor, and the two-, threeand five-hierarchy models are supplemented to verify its enhancing effect on the optimization perfor mance.
+#### 结果呈现句
+- 原句：For the continuous opti mization [35–38], a density-like variable with value between 0 and 1 is used to represent the path presence or absence, and the value close to 1 indicates the presence while close to 0 indicates the absence.
+  可迁移模板：For the continuous opti mization [X–X], a density-like variable with value between Xand Xis used to represent the path presence or absence, and the value close to Xindicates the presence while close to Xindicates the absence.
+- 原句：After the topology optimization, the optimization of additional hierarchies, e.g., the path profile size and shape should be further conducted to obtain better results.
+  可迁移模板：After the topology optimization, the optimization of additional hierarchies, e.g., the path profile size and shape should be further conducted to obtain better results.
+- 原句：However, the population should contain plentiful enough individuals to acquire optimal results, thus the population size is always large and leads to enormous computational cost, especially for problems with variables of multiple hierarchies.
+  可迁移模板：However, the population should contain plentiful enough individuals to acquire optimal results, thus the population size is always large and leads to enormous computational cost, especially for problems with variables of multiple hierarchies.
+- 原句：Some conclusions are obtained: (1) The fully-decomposed variable hierarchy results into great opti mization performance.
+  可迁移模板：Some conclusions are obtained: (X) The fully-decomposed variable hierarchy results into great opti mization performance.
+#### 贡献/增量句
+- 原句：For high-speed flight vehicles, the integrated heat-force design can improve the path effi ciency and reduce the system mass in theory.
+  可迁移模板：For high-speed flight vehicles, the integrated heat-force design can improve the path effi ciency and reduce the system mass in theory.
+#### 限制/边界句
+- 原句：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
+  可迁移模板：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by METHOD neural network surrogate model.
+- 原句：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
+  可迁移模板：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
+- 原句：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
+  可迁移模板：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by METHOD neural network surrogate model.
+- 原句：However, the high den sity and low service temperature of above metal-based composites lead to their limited application in flight vehicles.
+  可迁移模板：However, the high den sity and low service temperature of above metal-based composites lead to their limited application in flight vehicles.
+- 原句：However, the heat and force path are closely dependent on aerodynamic heat and pressure distributions, respectively, thus the efficient integrated path should be obtained based on massive calculations and corresponding optimizations.
+  可迁移模板：However, the heat and force path are closely dependent on aerodynamic heat and pressure distributions, respectively, thus the efficient integrated path should be obtained based on massive calculations and corresponding optimizations.
+<!-- REAUDIT-INTEGRATED-2026-05-26:SENTENCES END -->
+
 ## 15. 引用策略与文献使用
 
 本文引用策略围绕三个支撑点展开：
@@ -287,6 +400,36 @@
 3. 优化算法文献：证明 GA、Gray 编码、代理模型和多层级变量处理有方法基础。
 
 引用的主要功能不是铺陈全部历史，而是为本文的三个关键词提供合法性：integrated path 为什么需要，fully-decomposed hierarchy 为什么合理，hybrid genetic operation 为什么可行。
+
+<!-- REAUDIT-INTEGRATED-2026-05-26:CITATIONS START -->
+### 复核补充：引文密度、References 与 gap 构造
+
+- 全文引文簇数量估计：62
+- Introduction 引文簇数量估计：18
+- References 条目数：46
+- 可识别年份条目数：45
+- 2021 年及以后文献数：15
+- 2010 年前经典文献数：12
+- 同刊引用数（按 subject 粗匹配）：1
+- 高频来源期刊：Aerospace Science and Technology(1)
+- 引文簇样例：[1], [2,3], [4], [5], [6,7], [8,9], [10], [14], [15,16], [17,18], [19], [23,24]
+
+带引文的 gap/转折句样例：
+
+- Such Ground path method is widely used in the optimization of beam- and truss-type force-bearing struc tures [39,40], while the application in heat path and heat-force inte grated path is very limited.
+- However, the mutual influence among different hierarchies of variables is not considered in such sequential optimization method, and the so-called hybrid optimization method is a more effective alternate [41,42].
+
+References 解析样例（前 8 条）：
+
+- [1] J. Liu, X. Zhou, H. xin, High-Si reinforced Al matrix composites prepared by powder semi-solid squeeze, J. Alloys Compd. 726 (2017) 772–778.
+- [2] J. Xie, J. Ma, M. Liao, W. Guo, L. Huang, P. Gao, H. Xiao, Reinforcement of thermally-conductive SiC/Al composite with 3D-interpenetrated network structure by various SiC foam ceramic skeletons, Ceram. Int. 47 (2021) 30869–30879.
+- [3] Z. Zhang, Z. Wei, Z. Li, B. Hou, R. Xue, H. Xia, Z. Shi, SiC honeycomb reinforced Al matrix composite with improved tribological performance, Ceram. Int. 47 (2021) 23376–23385.
+- [4] C. Yan, W. Lifeng, R. Jianyue, Multi-functional SiC/Al composites for aerospace applications, Chin. J. Aeronaut. 21 (2008) 578–584.
+- [5] Z. Shen, G. Ji, J.-F. Silvain, From 1D to 2D arrangements of graphite flakes in an aluminium matrix composite: impact on thermal properties, Scr. Mater. 183 (2020) 86–90.
+- [6] C. Zhang, R. Wang, Z. Cai, C. Peng, Y. Feng, L. Zhang, Effects of dual-layer coatings on microstructure and thermal conductivity of diamond/Cu composites prepared by vacuum hot pressing, Surf. Coat. Technol. 277 (2015) 299–307.
+- [7] E.A. Ekimov, N.V. Suetin, A.F. Popovich, V.G. Ralchenko, Thermal conductivity of diamond composites sintered under high pressures, Diam. Relat. Mater. 17 (2008) 838–843.
+- [8] Q. Cui, C. Chen, C. Yu, T. Lu, H. Long, S. Yan, A.A. Volinsky, J. Hao, Effect of molybdenum particles on thermal and mechanical properties of graphite flake/ copper composites, Carbon. N. Y. 161 (2020) 169–180.
+<!-- REAUDIT-INTEGRATED-2026-05-26:CITATIONS END -->
 
 ## 16. 审稿人视角风险
 
@@ -332,209 +475,3 @@
 ## 19. 最终浓缩
 
 本文提出一种高速飞行翼热-力集成路径优化模型：以 I 型力路径和两侧矩形热路径为基础，将路径拓扑、角度、热宽、力宽、宽度因子和高度因子分解为多层级变量，并用二进制/Gray 混合遗传算法和 RBF 代理预筛选提升搜索效率。算例显示，充分变量分解优于二层级/三层级设计，代理筛选可在几乎不损失质量结果的情况下减少约 50% 仿真量。最终集成路径相对首个合格路径质量降低 35.7%，气动弹性影响降低 19.3%，并相对 force-only 方案减少额外隔热需求。论文的核心价值是把热路径与力路径的一体化设计变成一个可编码、可优化、可验证的工程流程。
-
-<!-- REAUDIT-2026-05-26 START -->
-
-## 20. 复核增强：严格抽取、翻译、引文与句型
-
-> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.txt` 与 `801/文本/metadata/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
-
-### 20.1 严格章节树（按 PDF/metadata TOC）
-
-- L2 p.1: 1 Introduction （背景/领域定位）
-- L2 p.2: 2 The integrated heat-force path and fully decomposed variable hierarchies （对象/问题/模块）
-- L2 p.4: 3 Hybrid genetic optimization algorithm and population reduction method （方法/模型）
-  - L3 p.4: 3.1 Unified chromosome encoding of discrete and continuous variables （对象/问题/模块）
-  - L3 p.4: 3.2 Hybrid genetic operators of multi-hierarchy variables （对象/问题/模块）
-  - L3 p.6: 3.3 The population size reduction method （方法/模型）
-  - L3 p.6: 3.4 The optimization process （对象/问题/模块）
-- L2 p.7: 4 The ground path and optimization model （方法/模型）
-  - L3 p.7: 4.1 The ground path and numerical models （方法/模型）
-    - L4 p.7: 4.1.1 Ground path and mesh （对象/问题/模块）
-    - L4 p.7: 4.1.2 Governing equations （对象/问题/模块）
-    - L4 p.7: 4.1.3 Boundary conditions （对象/问题/模块）
-  - L3 p.7: 4.2 Mathematical description of optimization model （方法/模型）
-- L2 p.9: 5 Results and discussions （结果/讨论/验证）
-  - L3 p.9: 5.1 The path mass minimum problem （对象/问题/模块）
-    - L4 p.9: 5.1.1 The force-only path optimization （对象/问题/模块）
-    - L4 p.11: 5.1.2 The heat-force integrated path optimization （对象/问题/模块）
-  - L3 p.13: 5.2 The aeroelastic influence quantity minimum problem （对象/问题/模块）
-    - L4 p.13: 5.2.1 The force-only path optimization （对象/问题/模块）
-    - L4 p.13: 5.2.2 The heat-force integrated path optimization （对象/问题/模块）
-  - L3 p.14: 5.3 Effectiveness of integrated path optimization （对象/问题/模块）
-- L2 p.15: 6 Conclusions （结论）
-- L2 p.16: CRediT authorship contribution statement （对象/问题/模块）
-- L2 p.16: Declaration of competing interest （对象/问题/模块）
-- L2 p.16: Acknowledgments （对象/问题/模块）
-- L2 p.16: Data availability （对象/问题/模块）
-- L2 p.16: References （参考文献）
-
-### 20.2 章节名功能分析
-
-| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
-| --- | ---: | ---: | --- | --- |
-| 1 Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 2 The integrated heat-force path and fully decomposed variable hierarchies | 2 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3 Hybrid genetic optimization algorithm and population reduction method | 4 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3.1 Unified chromosome encoding of discrete and continuous variables | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3.2 Hybrid genetic operators of multi-hierarchy variables | 4 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3.3 The population size reduction method | 6 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3.4 The optimization process | 6 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 4 The ground path and optimization model | 7 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 4.1 The ground path and numerical models | 7 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 4.1.1 Ground path and mesh | 7 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 4.1.2 Governing equations | 7 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 4.1.3 Boundary conditions | 7 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 4.2 Mathematical description of optimization model | 7 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 5 Results and discussions | 9 | 2 | 结果/讨论/验证 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 5.1 The path mass minimum problem | 9 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 5.1.1 The force-only path optimization | 9 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 5.1.2 The heat-force integrated path optimization | 11 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 5.2 The aeroelastic influence quantity minimum problem | 13 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 5.2.1 The force-only path optimization | 13 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 5.2.2 The heat-force integrated path optimization | 13 | 4 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 5.3 Effectiveness of integrated path optimization | 14 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 6 Conclusions | 15 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| CRediT authorship contribution statement | 16 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Declaration of competing interest | 16 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Acknowledgments | 16 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Data availability | 16 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| References | 16 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
-
-### 20.3 摘要完整摘录（本地证据）
-
-抽取状态：成功
-
-> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
-
-### 20.4 摘要中文翻译
-
-> 热系统轻量化是高速车辆的关键问题，而热力传递路径的集成优化是最有前途的技术之一。然而，不一致的传输路径和多层次变量导致了复杂且耗时的优化问题。在这项工作中，为高速机翼预先设计了在力网两侧具有I型力路径和矩形热传输路径的集成路径。为了形成大的优化空间，将变量充分分解为拓扑、角度、热宽度、力宽度、宽度因子和高度因子六个层次，并补充二、三、五层次模型来验证其对优化性能的增强效果。由于多个层次之间错综复杂的相关性，提出了一种基于遗传算法的混合策略来代替传统的顺序策略，其中采用二进制编码方案来统一描述离散变量和连续变量，并在遗传优化过程中同时操作不同层次的选择、交叉和变异。
-> 
-> 针对多变量层次导致的种群规模过大和优化成本高等问题，基于RBF神经网络代理模型对个体的预评价和筛选，构建了一种有效损失有限的种群缩减方法。最后以最小质量和最小气动弹性影响量为目标对机翼进行了优化，分别达到了35.7%和19.3%的大幅目标降低，验证了模型的有效性。
-
-### 20.5 结论完整摘录（本地证据）
-
-结论章节识别：6 Conclusions；状态：独立结论章节
-
-> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/An-efficient-thermal-optimization-model-with-integrated-fo_2025_Aerospace-Sc.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
-
-### 20.6 结论中文翻译
-
-> 在这项工作中，为高速车辆的径向梁翼开发了热力集成路径优化模型。将路径变量充分分解为拓扑、角度、热宽度、力宽度、宽度因子和高度因子6个层次，形成很大的优化空间，并提出基于遗传算法的混合策略考虑复杂的相关性，对多层次变量进行同时优化。采用RBF神经网络来减少种群规模和优化成本。然后以最小质量和最小气动弹性影响量为目标优化集成热力系统。得到一些结论：
-> 
-> (1) 完全分解的变量层次结构带来了很好的优化效果
-> 
-> 米化性能。五层模型与两层、三层模型相比质量减少分别为31.6%和15.6%；五层模型气动弹性影响量较二层、三层模型分别减少了11.6%和6.1%。
-> 
-> (2)混合优化策略有效考虑了不同层次之间的复杂关联性；通过基于 RBF 神经网络开发的种群缩减方法，多层次变量的优化成本大大降低 (50%)，而有效性折衷有限 (0.2%)。 (3) 对于不考虑气动热效应的纯力路径，最小质量优化后的路径质量为0.647 kg，与地面路径和第一合格路径相比，相对质量减少分别为71.5%和68.4%；最小气动弹性影响量优化后最终气动弹性影响量为5.85%，相对第一条合格路径减少了37.6%。 (4) 对于热力积分路径，预留了9条质量为1.80 kg的路径，在最小质量优化中，与地面和第1条合格路径相比，相对质量减少分别为42.7%和35.7%；气动弹性
-> 
-> 最小气动弹性影响量优化中影响量较第一条合格路径减少了19.3%。 (5) 与仅力路径相比，通过积分热力路径获得的总质量绝对减少了 0.08 至 1.54 kg，相对减少了 4.1% 至 45.3%。
-
-### 20.7 论文逻辑脉络复核
-
-- 提出的问题：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
-- 旧方法/已有研究不足：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem. To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model. However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
-- 本文解决方式：In order to form a great optimization space, the variable is fully decomposed into six hierarchies of topology, angle, heat width, force width, width factor and height factor, and the two-, three- and five-hierarchy models are supplemented to verify its enhancing effect on the optimization perfor mance. Due to the intricate relevance among multiple hierarchies, a hybrid strategy based on the genetic al gorithm is developed instead of the conventional sequential strategy, in which a binary coding scheme is adopted to uniformly describe the discrete and continuous variables, and the selection, crossover and mutation of different hierarchies are operated simultaneously during the genetic optimization. To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
-- 学术/工程增量：需结合 Results/Conclusion 的量化结果复核。
-- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
-
-### 20.8 引文分析补全
-
-- 全文引用簇数量（估计）：62
-- Introduction 引用簇数量（估计）：18
-- References 条目数（解析）：46
-- 可识别年份条目数：45
-- 近五年/近年文献（2021+）数量：15
-- 经典文献（2010年前）数量：12
-- 同刊引用数量（按 subject 粗略匹配）：1
-- 高频来源期刊（粗略）：Aerospace Science and Technology(1)
-- 引用簇样例：[1], [2,3], [4], [5], [6,7], [8,9], [10], [14], [15,16], [17,18], [19], [23,24]
-
-带引用的 gap/转折句样例：
-
-- Such Ground path method is widely used in the optimization of beam- and truss-type force-bearing struc tures [39,40], while the application in heat path and heat-force inte grated path is very limited.
-- However, the mutual influence among different hierarchies of variables is not considered in such sequential optimization method, and the so-called hybrid optimization method is a more effective alternate [41,42].
-
-References 解析样例（前12条）：
-
-- [1] J. Liu, X. Zhou, H. xin, High-Si reinforced Al matrix composites prepared by powder semi-solid squeeze, J. Alloys Compd. 726 (2017) 772–778.
-- [2] J. Xie, J. Ma, M. Liao, W. Guo, L. Huang, P. Gao, H. Xiao, Reinforcement of thermally-conductive SiC/Al composite with 3D-interpenetrated network structure by various SiC foam ceramic skeletons, Ceram. Int. 47 (2021) 30869–30879.
-- [3] Z. Zhang, Z. Wei, Z. Li, B. Hou, R. Xue, H. Xia, Z. Shi, SiC honeycomb reinforced Al matrix composite with improved tribological performance, Ceram. Int. 47 (2021) 23376–23385.
-- [4] C. Yan, W. Lifeng, R. Jianyue, Multi-functional SiC/Al composites for aerospace applications, Chin. J. Aeronaut. 21 (2008) 578–584.
-- [5] Z. Shen, G. Ji, J.-F. Silvain, From 1D to 2D arrangements of graphite flakes in an aluminium matrix composite: impact on thermal properties, Scr. Mater. 183 (2020) 86–90.
-- [6] C. Zhang, R. Wang, Z. Cai, C. Peng, Y. Feng, L. Zhang, Effects of dual-layer coatings on microstructure and thermal conductivity of diamond/Cu composites prepared by vacuum hot pressing, Surf. Coat. Technol. 277 (2015) 299–307.
-- [7] E.A. Ekimov, N.V. Suetin, A.F. Popovich, V.G. Ralchenko, Thermal conductivity of diamond composites sintered under high pressures, Diam. Relat. Mater. 17 (2008) 838–843.
-- [8] Q. Cui, C. Chen, C. Yu, T. Lu, H. Long, S. Yan, A.A. Volinsky, J. Hao, Effect of molybdenum particles on thermal and mechanical properties of graphite flake/ copper composites, Carbon. N. Y. 161 (2020) 169–180.
-- [9] B. Liu, D.Q. Zhang, X.F. Li, X.H. Guo, J. Shi, Z.J. Liu, Q.G. Guo, The microstructures and properties of graphite flake/copper composites with high volume fractions of graphite flake, New Carbon Mater. 35 (2020) 58–65.
-- [10] T. Schwanekamp, System studies on active thermal protection of a hypersonic suborbital passenger transport vehicle, in: Proceedings of the 19th AIAA International Space Planes and Hypersonic Systems and Technologies Conference, Atlanta, GA,
-- 2014. June 16-20.
-- [11] X.-S. Liu, Q.-G. Fu, H. Wang, Q. Song, Microstructure, thermophysical property and ablation behavior of high thermal conductivity carbon/carbon composites after heat-treatment, Chin. J. Aeronaut. 33 (2020) 1541–1548.
-
-### 20.9 常用词、词类、语态与时态
-
-- 高频词：path(165)；optimization(115)；heat(87)；width(67)；fig(67)；respectively(59)；mass(53)；thermal(52)；force(50)；paths(47)；generation(45)；integrated(42)；variables(41)；population(39)；variable(38)；factor(38)；reduction(33)；work(32)；individuals(32)；temperature(31)
-- 高频名词化/学术名词：optimization(115)；generation(45)；population(39)；reduction(33)；temperature(31)；influence(22)；quantity(21)；insulation(19)；science(18)；fitness(13)；displacement(12)；conductivity(11)；mutation(10)；function(10)；effectiveness(9)
-- 高频学术动词：reveal(11)；indicate(9)；optimized(7)；developed(5)；indicated(5)；compared(5)；optimize(2)；predicted(2)；presented(1)
-- 高频形容词：thermal(52)；variable(38)；aeroelastic(23)；individual(21)；aerodynamic(20)；genetic(17)；optimal(17)；table(12)；displacement(12)；reveal(11)；total(10)；original(10)；continuous(9)；objective(8)；specific(8)
-- 高频副词：respectively(59)；force-only(20)；finally(8)；fully(7)；especially(7)；simultaneously(5)；only(5)；widely(5)；uniformly(4)；tively(4)；usually(3)；effectively(3)；highly(2)；separately(2)；closely(2)
-- 高频二词短语：integrated path(25)；width factor(19)；height factor(18)；aerospace science(17)；science technology(17)；aeroelastic influence(17)；force width(16)；heat width(15)；influence quantity(15)；page gou(15)；gou aerospace(15)；insulation layer(15)
-- 高频三词短语：aerospace science technology(17)；page gou aerospace(15)；gou aerospace science(15)；aeroelastic influence quantity(14)；xwh xwf xhf(13)；science technology fig(11)；width width factor(10)；angle force width(10)；width heat width(10)；width factor height(9)；factor height factor(9)；thermal insulation layer(9)
-- 被动语态估计：154；`we + 动作动词` 主动句估计：0
-- 一般现在时线索：350；一般过去时线索：456；现在完成时线索：1；情态动词线索：55
-
-章节词频：
-
-- Abstract: optimization(6)；path(4)；hierarchies(4)；force(3)；width(3)；high-speed(2)；transfer(2)；variables(2)
-- Introduction: optimization(27)；heat(23)；path(23)；thermal(13)；hierarchies(10)；thus(9)；vehicles(8)；cooling(8)
-- Conclusion: path(12)；optimization(9)；mass(9)；quantity(7)；minimum(6)；aeroelastic(6)；influence(6)；integrated(4)
-
-### 20.10 句型库扩充（每类多句）
-
-#### 背景句
-- 原句/结构：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
-  可迁移模板：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
-- 原句/结构：A large number of gray elements with median values will be created in such optimization process, thus very complex post-processing is essential.
-  可迁移模板：A large number of gray elements with median values will be created in such optimization process, thus very complex post-processing is essential.
-- 原句/结构：Thus, a fast and effective genetic optimization algorithm with well individual screening and population size reduction strategy is essential.
-  可迁移模板：Thus, a fast and effective genetic optimization algorithm with well individual screening and population size reduction strategy is essential.
-#### Gap句
-- 原句/结构：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
-  可迁移模板：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
-- 原句/结构：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
-  可迁移模板：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by METHOD neural network surrogate model.
-- 原句/结构：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
-  可迁移模板：However, the inconsistent transfer paths and multi-hierarchy variables lead to a complex and time-consuming optimization problem.
-#### 方法句
-- 原句/结构：In order to form a great optimization space, the variable is fully decomposed into six hierarchies of topology, angle, heat width, force width, width factor and height factor, and the two-, three- and five-hierarchy models are supplemented to verify its enhancing effect on the optimization perfor mance.
-  可迁移模板：In order to form a great optimization space, the variable is fully decomposed into six hierarchies of topology, angle, heat width, force width, width factor and height factor, and the two-, three- and five-hierarchy models are supplemented to verify its enhancing effect on the optimization perfor mance.
-- 原句/结构：Due to the intricate relevance among multiple hierarchies, a hybrid strategy based on the genetic al gorithm is developed instead of the conventional sequential strategy, in which a binary coding scheme is adopted to uniformly describe the discrete and continuous variables, and the selection, crossover and mutation of different hierarchies are operated simultaneously during the genetic optimization.
-  可迁移模板：Due to the intricate relevance among multiple hierarchies, a hybrid strategy based on the genetic al gorithm is developed instead of the conventional sequential strategy, in which a binary coding scheme is adopted to uniformly describe the discrete and continuous variables, and the selection, crossover and mutation of different hierarchies are operated simultaneously during the genetic optimization.
-- 原句/结构：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
-  可迁移模板：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by METHOD neural network surrogate model.
-#### 结果句
-- 原句/结构：For the continuous opti mization [35–38], a density-like variable with value between 0 and 1 is used to represent the path presence or absence, and the value close to 1 indicates the presence while close to 0 indicates the absence.
-  可迁移模板：For the continuous opti mization [X–X], a density-like variable with value between Xand Xis used to represent the path presence or absence, and the value close to Xindicates the presence while close to Xindicates the absence.
-- 原句/结构：After the topology optimization, the optimization of additional hierarchies, e.g., the path profile size and shape should be further conducted to obtain better results.
-  可迁移模板：After the topology optimization, the optimization of additional hierarchies, e.g., the path profile size and shape should be further conducted to obtain better results.
-- 原句/结构：However, the population should contain plentiful enough individuals to acquire optimal results, thus the population size is always large and leads to enormous computational cost, especially for problems with variables of multiple hierarchies.
-  可迁移模板：However, the population should contain plentiful enough individuals to acquire optimal results, thus the population size is always large and leads to enormous computational cost, especially for problems with variables of multiple hierarchies.
-#### 贡献句
-- 未在抽取文本中稳定识别，需人工从对应章节补充。
-#### 限制/边界句
-- 原句/结构：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
-  可迁移模板：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by METHOD neural network surrogate model.
-- 原句/结构：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
-  可迁移模板：The surface thermal radiation can only dissipate part of the heat, and it is essential to manage the considerable heat that enters the airframe, especially the heat in high-temperature regions that needs to be transported to low-temperature regions within a very short time.
-- 原句/结构：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by RBF neural network surrogate model.
-  可迁移模板：To address the excessive population size and high optimization cost caused by multiple variable hierarchies, an efficient population reduction method with limited effectiveness loss is constructed based on the individual pre-evaluation and screening by METHOD neural network surrogate model.
-
-### 20.11 抽取失败与人工复核提示
-
-- 摘要抽取：正常
-- 结论抽取：正常
-- 引文解析：正常
-- 章节树：正常
-- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
-
-<!-- REAUDIT-2026-05-26 END -->

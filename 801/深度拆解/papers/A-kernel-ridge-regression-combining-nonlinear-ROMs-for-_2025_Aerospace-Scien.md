@@ -4,6 +4,16 @@
 
 本文拆解基于 `801/文本/txt/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.txt`。该 PDF 为双栏排版，txt 抽取中图、表、正文和附录偶有串栏，尤其是 Fig. 12-36 等流场云图、等值线与模态图需要 PDF 图像复核。以下分析主要依据摘要、Introduction、Methodology、Results、Conclusion、图表标题和可识别结果段落。
 
+<!-- REAUDIT-INTEGRATED-2026-05-26:STATUS START -->
+### 复核补充：抽取边界与合并状态
+
+- 增补内容已并入原有主章节，不再作为独立追加章。
+- 正文词频只统计正文主章节：1 Introduction, 2 Methodology, 3 Method validation and parameter analysis, 4 Conclusion。
+- 排除范围：摘要、References、图题/表题、页眉页脚、版权信息、期刊首页信息、旧分析文字。
+- 正文切分告警：
+- 无明显正文切分告警。
+<!-- REAUDIT-INTEGRATED-2026-05-26:STATUS END -->
+
 ## 1. 基本信息与论文身份
 
 - 题名：A kernel ridge regression combining nonlinear ROMs for accurate flow-field reconstruction with discontinuities。
@@ -21,6 +31,19 @@
 摘要的说服顺序是：先承认 manifold learning 能捕捉全局非线性流场特征；再指出 back reconstruction 会在 discontinuities 区域产生误差；随后引入 POD 启发下的“系数 + 模态”重构思路；最后用 RAE2822 跨声速流场对比 POD 和已有方法，强调 KRR 模态更能捕捉局部间断。
 
 这篇文章的关键不是“降维”，而是“非线性降维后的反问题”。作者抓住了很多 ROM 论文容易绕过的环节：低维坐标好看，不等于高维流场重构准确；尤其对激波来说，位置错一点就会造成局部大误差。
+
+<!-- REAUDIT-INTEGRATED-2026-05-26:ABSTRACT START -->
+### 复核补充：摘要原文定位与中文译文
+
+- 摘要抽取状态：成功。
+- 完整英文摘要原文不在公开报告正文中展开；本地完整摘录见 `801/深度拆解/extracted_evidence/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.md`。
+
+中文译文：
+
+> 流形学习（ML）是最具代表性的非线性降阶模型（ROM）之一，可以有效捕获整个流场的非线性流动特性。然而，从低维流形坐标到高维流场的重建往往会引入相当大的重建误差，导致在具有非线性流结构的位置，尤其是具有不连续性的区域重建不准确。为了解决这一挑战，提出了一种基于非线性ROM的新型重建方法，以提高重建不连续流场的精度。受本征正交分解（POD）的启发，我们引入核函数来获取非线性核空间中的模态系数，并执行岭回归来构造一组有效捕获流场中存在的不连续特征的模态。然后，我们结合这些系数和模式来实现具有不连续性的流场的精确重建。通过重建 RAE2822 机翼上的跨音速流场，验证了所提出的流场重建方法。对比结果表明，该方法比现有方法能够获得更好的重建精度。
+>
+> 与 POD 相比，通过核岭回归 (KRR) 获得的模式似乎更精确地捕获局部不连续性。这项工作为提高非线性 ROM 在不连续流场建模中的准确性提供了一种有效且高度可解释的方法。
+<!-- REAUDIT-INTEGRATED-2026-05-26:ABSTRACT END -->
 
 ## 3. 选题层深拆
 
@@ -68,6 +91,16 @@ gap 的制造方式很清楚：POD/DMD 过平滑 → ML 能降维但无显式逆
 
 最薄弱的环节是推广性：验证对象集中在翼型跨声速流场，是否适用于复杂三维构型、大分离、强激波干扰或不同网格拓扑，需要进一步证明。
 
+<!-- REAUDIT-INTEGRATED-2026-05-26:LOGIC START -->
+### 复核补充：问题-方法-增量闭环
+
+- 提出的问题：These discontinuities significantly impact the overall flow behavior and per formance, demanding high-fidelity simulation tools. Therefore, the development of reduced-order models (ROMs) has been motivated in recent years, aiming to capture the essential characteristics of the flow fields using a significantlyreduced number of dimensions.
+- 已有研究不足/GAP：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities. However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
+- 本文解决方式：Manifold learning (ML), one of the most representative nonlinear reduced-order models (ROMs), can effectively capture the nonlinear flow characteristics of the entire flow fields. To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities. Inspired by the proper orthogonal decomposition (POD), we introduce a kernel function to obtain the mode coefficients in the nonlinear kernel space, and perform ridge regression to construct a set of modes that effectively capture the discontinuity features present in the flow fields.
+- 学术或工程增量：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities. Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches. This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields.
+- 逻辑复核重点：看 Introduction 的 gap 是否被 Method 的输入输出接住，Results 的评价指标是否回应该 gap，Conclusion 是否只回收已有证据支持的 claim。
+<!-- REAUDIT-INTEGRATED-2026-05-26:LOGIC END -->
+
 ## 8. 方法/理论/模型细拆
 
 KRR-DCR 方法可以拆成三层。第一层是 manifold learning：将 n 个 CFD 流场样本向量化成矩阵 X，通过 LLE 或 ISOMAP 得到低维坐标 Y。第二层是非线性重构：受 POD 启发，作者不直接用邻居线性组合，而是在 kernel inner product space 中计算重构系数 Z，并求解一个带 L2 正则的 ridge regression 目标，得到非线性 mode matrix。第三层是新样本重构：新样本的 manifold coordinates 与训练样本之间计算 kernel matrix，再乘以学得的 modes 恢复高维流场。
@@ -112,28 +145,59 @@ KRR-DCR 方法可以拆成三层。第一层是 manifold learning：将 n 个 CF
 
 标题命名偏方法型和验证型。最值得模仿的是 “KRR-based discontinuity-capturing reconstruction (KRR-DCR)” 这种标题，它直接把方法机制和目标写出来。较弱的是 “Flow-field reconstruction” 偏泛，可改成 “Accuracy and discontinuity preservation in RAE2822 reconstruction”。
 
-<!-- AUTO-AUGMENT:SECTION-ANALYSIS START -->
+<!-- REAUDIT-INTEGRATED-2026-05-26:STRUCTURE START -->
+### 复核补充：严格章节树与章节名功能
 
-### 11.x 章节结构与章节名分析（补充）
+严格章节树：
 
-> 自动分析说明：以下基于 `801/文本/txt/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.txt` 的章节标题抽取与标题关键词判断生成；PDF 抽取可能漏掉跨行小标题，最终章节名仍建议结合原 PDF 目录和版面核查。
+- L2 p.1: 1 Introduction（背景定位/文献缺口）
+- L2 p.5: 2 Methodology（方法/模型/算法）
+  - L3 p.6: 2.1 Dimensionality reduction based on ML（对象/模块/过渡章节）
+  - L3 p.6: 2.2 KRR-based discontinuity-capturing reconstruction (KRR-DCR)（对象/模块/过渡章节）
+  - L3 p.7: 2.3 Kernel method（方法/模型/算法）
+- L2 p.8: 3 Method validation and parameter analysis（方法/模型/算法）
+  - L3 p.10: 3.1 Dataset generation and accuracy evaluation criterion（对象/模块/过渡章节）
+  - L3 p.11: 3.2 Flow-field reconstruction（对象/模块/过渡章节）
+  - L3 p.14: 3.3 Parametric analysis of λ and γ（对象/模块/过渡章节）
+  - L3 p.14: 3.4 Comparison with commonly-used reconstruction methods（方法/模型/算法）
+  - L3 p.21: 3.5 Applicability to time-dependent problems（问题定义）
+- L2 p.22: 4 Conclusion（结论/贡献回收）
+- L2 p.22: CRediT authorship contribution statement（尾部材料）
+- L2 p.22: Declaration of competing interest（尾部材料）
+- L2 p.22: Acknowledgements（尾部材料）
+- L2 p.22: Appendix A The main process of the ISOMAP and LLE（尾部材料）
+- L2 p.23: Appendix B The CFD solver settings and the accuracy verification（尾部材料）
+  - L3 p.23: 1) Steady transonic flow around RAE2822（对象/模块/过渡章节）
+  - L3 p.23: 2) Unsteady transonic buffet flow around OAT15A（对象/模块/过渡章节）
+- L2 p.25: Data availability（尾部材料）
+- L2 p.25: References（尾部材料）
 
-- 识别到的章节/小节数量：4
-- 结构类型判断：非严格 IMRaD，更像按模型、机制或结果模块组织。
-- 标题并列性：同级标题并列性一般，更偏按内容对象自然展开。
-- 章节名主要风格：描述型, 方法/模型型, 结论/展望型
-- 标题信息量判断：若标题含具体变量、机制、效应、验证对象，信息量较高；若只写 `Results` / `Discussion`，则更依赖正文推进。
+章节名功能表：
 
-| 章节/小节名 | 标题类型 | 章节功能 | 信息量 | 是否可模仿 | 改写建议 |
-| --- | --- | --- | --- | --- | --- |
-| 2.2 KRR-based discontinuity-capturing reconstruction (KRR-DCR) | 描述型 | 描述章节内容，信息量取决于标题具体程度 | 中 | 是 | 可加入核心变量或机制词增强信息量 |
-| 2.3 Kernel method   Then, we use ridge regression to solve Wnonlinear by minimizing the | 方法/模型型 | 交代模型、公式、算法、参数或求解流程 | 高 | 是 | 保留具体变量/对象 |
-| 3.2 Flow-field reconstruction | 描述型 | 描述章节内容，信息量取决于标题具体程度 | 中 | 是 | 可加入核心变量或机制词增强信息量 |
-| 4 Conclusion | 结论/展望型 | 收束贡献、边界和未来工作 | 中 | 是 | 可加入核心变量或机制词增强信息量 |
-
-写作启发：章节名不要只是目录标签，而应承担“读者导航”功能。若本文标题已经暴露变量或机制，可学习其标题信息密度；若标题偏泛，则在自己的论文中可把核心对象、作用变量或验证任务写进小节名。
-
-<!-- AUTO-AUGMENT:SECTION-ANALYSIS END -->
+| 章节/小节名 | 页码 | 层级 | 功能判断 |
+| --- | ---: | ---: | --- |
+| 1 Introduction | 1 | 2 | 背景定位/文献缺口 |
+| 2 Methodology | 5 | 2 | 方法/模型/算法 |
+| 2.1 Dimensionality reduction based on ML | 6 | 3 | 对象/模块/过渡章节 |
+| 2.2 KRR-based discontinuity-capturing reconstruction (KRR-DCR) | 6 | 3 | 对象/模块/过渡章节 |
+| 2.3 Kernel method | 7 | 3 | 方法/模型/算法 |
+| 3 Method validation and parameter analysis | 8 | 2 | 方法/模型/算法 |
+| 3.1 Dataset generation and accuracy evaluation criterion | 10 | 3 | 对象/模块/过渡章节 |
+| 3.2 Flow-field reconstruction | 11 | 3 | 对象/模块/过渡章节 |
+| 3.3 Parametric analysis of λ and γ | 14 | 3 | 对象/模块/过渡章节 |
+| 3.4 Comparison with commonly-used reconstruction methods | 14 | 3 | 方法/模型/算法 |
+| 3.5 Applicability to time-dependent problems | 21 | 3 | 问题定义 |
+| 4 Conclusion | 22 | 2 | 结论/贡献回收 |
+| CRediT authorship contribution statement | 22 | 2 | 尾部材料 |
+| Declaration of competing interest | 22 | 2 | 尾部材料 |
+| Acknowledgements | 22 | 2 | 尾部材料 |
+| Appendix A The main process of the ISOMAP and LLE | 22 | 2 | 尾部材料 |
+| Appendix B The CFD solver settings and the accuracy verification | 23 | 2 | 尾部材料 |
+| 1) Steady transonic flow around RAE2822 | 23 | 3 | 对象/模块/过渡章节 |
+| 2) Unsteady transonic buffet flow around OAT15A | 23 | 3 | 对象/模块/过渡章节 |
+| Data availability | 25 | 2 | 尾部材料 |
+| References | 25 | 2 | 尾部材料 |
+<!-- REAUDIT-INTEGRATED-2026-05-26:STRUCTURE END -->
 
 ## 12. 段落功能与叙事节奏
 
@@ -151,51 +215,29 @@ Introduction 节奏是逐层收窄：从 CFD 昂贵和 ROM 必要性，到 linea
 
 名词化很明显：dimensionality reduction、reconstruction accuracy、kernel function、regularization coefficient、physical consistency。形容词集中在 nonlinear、low-dimensional、high-dimensional、discontinuous、local、global、accurate。
 
-<!-- AUTO-AUGMENT:LANGUAGE-FREQUENCY START -->
+<!-- REAUDIT-INTEGRATED-2026-05-26:LANGUAGE START -->
+### 复核补充：正文词频、词类、语态与时态
 
-### 13.x 词频、词类与语法统计（补充）
+统计口径：仅正文主章节；不含摘要、References、图表题注、页眉页脚、版权/期刊信息和任何分析报告文本。
 
-> 自动分析说明：以下为基于 TXT 的启发式统计，适合发现语言习惯；它不是严格 NLP 词性标注。公式符号、作者信息、参考文献和 PDF 断行可能影响个别词频，使用时应结合正文语境判断。
+- 正文统计字符数：13210
+- 高频词：flow(50)；fields(42)；reconstruction(26)；nonlinear(19)；manifold(18)；discontinuities(17)；method(16)；samples(14)；methods(12)；modes(11)；kernel(11)；roms(10)；high-dimensional(10)；low-dimensional(9)；linear(9)；pod(9)；accurate(8)；transonic(8)；modeling(8)；prediction(7)
+- 高频名词化/学术名词：reconstruction(26)；prediction(7)；capture(7)；dimensionality(6)；reduction(6)；regression(4)；pressure(4)；decomposition(3)；discontinuity(3)；combination(3)；relationship(3)；section(3)；optimization(2)；characteristics(2)；location(2)
+- 高频学术动词：achieve(6)；developed(4)；constructed(3)；construct(2)；identify(2)；compared(2)；validate(2)；presented(2)；validated(1)；demonstrate(1)；predict(1)；indicated(1)；demonstrated(1)；optimize(1)；provide(1)
+- 高频形容词：high-dimensional(10)；low-dimensional(9)；transonic(8)；original(6)；local(5)；computational(4)；significant(3)；traditional(2)；orthogonal(2)；representative(2)；discontinuous(2)；polynomial(2)；global(2)；physical(2)；crucial(1)
+- 高频副词：especially(3)；particularly(2)；effectively(2)；accurately(2)；significantly(1)；rapidly(1)；typically(1)；precisely(1)；highly(1)；widely(1)；poorly(1)；simultaneously(1)；firstly(1)；currently(1)；lastly(1)
+- 高频二词短语：flow fields(41)；fields discontinuities(9)；high-dimensional flow(7)；manifold coordinates(7)；reconstruction method(6)；low-dimensional manifold(6)；dimensionality reduction(6)；transonic flow(5)；nonlinear flow(4)；nonlinear roms(4)；ridge regression(4)；krr-dcr method(4)
+- 高频三词短语：flow fields discontinuities(9)；high-dimensional flow fields(7)；transonic flow fields(4)；original high-dimensional flow(3)；flow fields particularly(2)；reduced-order models roms(2)；proper orthogonal decomposition(2)；orthogonal decomposition pod(2)；manifold coordinates high-dimensional(2)；coordinates high-dimensional flow(2)；novel reconstruction method(2)；fields discontinuities inspired(2)
+- 被动语态估计：41；`we + 动作动词` 主动句估计：2
+- 一般现在时线索：62；一般过去时线索：102；现在完成时线索：0；情态动词线索：10
 
-**词频总览**
+分章节正文词频：
 
-- Top 高频词：flow(134)；reconstruction(116)；fields(90)；kernel(82)；samples(66)；krr-dcr(65)；manifold(54)；method(48)；nonlinear(47)；modes(47)；discontinuities(45)；methods(45)；pod(39)；reconstructed(38)；sample(36)；accuracy(35)；org(35)；different(35)；flow-field(34)；science(33)
-- 高频学术名词：reconstruction(116)；fields(90)；method(48)；analysis(36)；science(33)；field(32)；comparison(27)；pressure(25)；dimensionality(23)；reduction(23)；discontinuity(19)；capture(18)；function(16)；decomposition(14)；information(14)；model(13)
-- 高频学术动词：shown(30)；capture(18)；proposed(15)；compared(13)；indicates(11)；shows(7)；show(5)；solve(4)；demonstrate(4)；developed(4)；validate(3)；compare(2)；demonstrated(2)；evaluate(1)；predict(1)；validated(1)
-- 高频形容词：local(48)；nonlinear(47)；different(35)；global(34)；linear(28)；significant(24)；experimental(18)；physical(18)；transonic(17)；polynomial(16)；original(15)；dynamic(14)；low-dimensional(14)；coefficient(14)；high-dimensional(13)；discontinuous(12)
-- 高频副词/连接副词：however(19)；significantly(16)；accurately(9)；effectively(8)；therefore(7)；precisely(5)；respectively(5)；globally(4)；generally(4)；locally(4)；gradually(4)；especially(3)；poly(3)；randomly(3)；additionally(3)；consequently(2)
-- 高频二词短语：flow fields(81)；aerospace science(27)；science technology(27)；wang aerospace(25)；reconstruction accuracy(20)；dimensionality reduction(20)；flow field(20)；different methods(19)；flow-field reconstruction(18)；manifold coordinates(17)；kernel function(13)；reconstruction error(13)；fields reconstructed(13)；training samples(12)；krr-dcr method(11)；fields discontinuities(10)
-- 高频三词短语：aerospace science technology(27)；wang aerospace science(25)；flow fields reconstructed(13)；relative reconstruction error(10)；flow fields discontinuities(9)；comparison flow fields(8)；fields reconstructed different(8)；reconstructed different methods(8)；high-dimensional flow fields(7)；flow field reconstructed(7)；proper orthogonal decomposition(6)；reconstruction error rrs(6)
-
-**主动、被动与句法**
-
-- 被动语态估计次数：110
-- `we + 动作动词` 主动句估计次数：7
-- 名词化表达估计次数：842
-- 语态判断：被动语态明显多于 we 主动句，说明作者倾向把实验、求解和结果写成客观过程。
-- 句法习惯：若高频名词化和被动语态较多，说明文章倾向把研究过程写成“模型/结果/参数”的客观链条；若 `we` 主动句较多，则更强调作者的框架构建和贡献动作。
-
-**时态与情态**
-
-- 一般现在时线索：247
-- 一般过去时线索：45
-- 现在完成时线索：9
-- 情态动词线索：47
-- 时态判断：一般现在时最突出，适合图表说明、模型定义和领域事实；过去时用于本文操作或已完成结果；现在完成时主要连接已有研究。
-- 写作启发：Introduction 和图表说明通常适合现在时；本文实验、仿真、参数识别适合过去时；已有研究综述常用现在完成时；外推、局限和未来工作要用 may/could/should 控制强度。
-
-**章节词频分布**
-
-- Abstract/首页：flow(114)；reconstruction(113)；fields(87)；kernel(82)；krr-dcr(64)；samples(60)；modes(47)；discontinuities(45)
-- 4. Conclusion：org(34)；flow(20)；manifold(15)；decomposition(11)；science(10)；data(9)；experimental(9)；phys(9)
-
-**可复用观察**
-
-- 高频名词若集中在研究对象、模型变量和机制词上，说明论文语言服务核心贡献；若高频词过散，读者会难以抓住主线。
-- 高频动词中 `show/demonstrate/validate` 偏结果证明，`suggest/indicate` 偏机制解释，`propose/develop/formulate` 偏方法贡献。拆论文时应看这些动词是否与证据强度匹配。
-- 形容词和副词要检查证据支撑：`significant/substantial/robust` 需要量化或多条件验证；`potentially/approximately/likely` 则说明作者在主动控制 claim 边界。
-
-<!-- AUTO-AUGMENT:LANGUAGE-FREQUENCY END -->
+- 1 Introduction: flow(34)；fields(28)；discontinuities(16)；nonlinear(16)；reconstruction(15)；manifold(13)；roms(10)；kernel(10)
+- 2 Methodology: flow(8)；fields(8)；manifold(5)；dimensionality(4)；reduction(4)；original(4)；low-dimensional(3)；nonlinear(3)
+- 3 Method validation and parameter analysis: samples(9)；flow(7)；reconstruction(7)；krr-dcr(5)；method(5)；fields(5)；transonic(4)；testing(4)
+- 4 Conclusion: reconstruction(2)；new(1)；method(1)；krr-dcr(1)；enhance(1)；accuracy(1)；flow(1)；fields(1)
+<!-- REAUDIT-INTEGRATED-2026-05-26:LANGUAGE END -->
 
 ## 14. 常用词、句式与可复用表达提取
 
@@ -209,6 +251,65 @@ Introduction 节奏是逐层收窄：从 CFD 昂贵和 ROM 必要性，到 linea
 
 可复用结果句：`The proposed method improves not only the global reconstruction error but also the local physical consistency near discontinuities.`
 
+<!-- REAUDIT-INTEGRATED-2026-05-26:SENTENCES START -->
+### 复核补充：多句型库
+
+以下句型来自该论文的摘要、引言和结论，不从分析报告或 References 中抽取。
+
+#### 背景/问题定位句
+- 原句：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
+  可迁移模板：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
+- 原句：Therefore, the development of reduced-order models (ROMs) has been motivated in recent years, aiming to capture the essential characteristics of the flow fields using a significantlyreduced number of dimensions.
+  可迁移模板：Therefore, the development of reduced-order models (ROMs) has been motivated in recent years, aiming to capture the essential characteristics of the flow fields using a significantlyreduced number of dimensions.
+- 原句：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
+  可迁移模板：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
+#### Gap/转折句
+- 原句：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
+  可迁移模板：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
+- 原句：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
+  可迁移模板：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
+- 原句：However, since the sharp gradients and nonlinear nature of discontinuities are poorly approximated by the smooth modes from POD or DMD, these POD-based or DMD-based methods often struggle to accurately capture the discontinuities in the flow fields.
+  可迁移模板：However, since the sharp gradients and nonlinear nature of discontinuities are poorly approximated by the smooth modes from METHOD or METHOD, these METHOD-based or METHOD-based methods often struggle to accurately capture the discontinuities in the flow fields.
+- 原句：However, when there are significant differences in the intensity and position of discontinuities between neighbors, this method tends to result in large deviations in the discontinuity positions and significant errors in the reconstructed flow fields.
+  可迁移模板：However, when there are significant differences in the intensity and position of discontinuities between neighbors, this method tends to result in large deviations in the discontinuity positions and significant errors in the reconstructed flow fields.
+- 原句：Currently, few studies have been focused on the reconstruction methods between the low-dimensional manifold coordinates of flow W.
+  可迁移模板：Currently, few studies have been focused on the reconstruction methods between the low-dimensional manifold coordinates of flow W.
+#### 方法提出句
+- 原句：Manifold learning (ML), one of the most representative nonlinear reduced-order models (ROMs), can effectively capture the nonlinear flow characteristics of the entire flow fields.
+  可迁移模板：Manifold learning (METHOD), one of the most representative nonlinear reduced-order models (ROMs), can effectively capture the nonlinear flow characteristics of the entire flow fields.
+- 原句：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
+  可迁移模板：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
+- 原句：Inspired by the proper orthogonal decomposition (POD), we introduce a kernel function to obtain the mode coefficients in the nonlinear kernel space, and perform ridge regression to construct a set of modes that effectively capture the discontinuity features present in the flow fields.
+  可迁移模板：Inspired by the proper orthogonal decomposition (METHOD), we introduce a kernel function to obtain the mode coefficients in the nonlinear kernel space, and perform ridge regression to construct a set of modes that effectively capture the discontinuity features present in the flow fields.
+- 原句：The proposed flow-field reconstruction method is validated through the reconstruction of transonic flow fields over the RAE2822 airfoil.
+  可迁移模板：the proposed METHOD is validated through the reconstruction of transonic flow fields over the RAE2822 airfoil.
+- 原句：Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches.
+  可迁移模板：Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches.
+#### 结果呈现句
+- 原句：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities.
+  可迁移模板：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities.
+- 原句：Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches.
+  可迁移模板：Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches.
+- 原句：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities.
+  可迁移模板：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities.
+- 原句：Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches.
+  可迁移模板：Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches.
+- 原句：It replaces the Euclidean distance used in MDS with the geodesic distance, allowing it to achieve a low-dimensional manifold from high-dimensional nonlinear data while simultaneously preserving both local linear structures and global nonlinear structures.
+  可迁移模板：It replaces the Euclidean distance used in METHOD with the geodesic distance, allowing it to achieve a low-dimensional manifold from high-dimensional nonlinear data while simultaneously preserving both local linear structures and global nonlinear structures.
+#### 贡献/增量句
+- 原句：This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields.
+  可迁移模板：This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields.
+- 原句：In comparison with full-order CFD simulations, the ROMs can lead to substantial improvements in computational efficiency.
+  可迁移模板：In comparison with full-order METHOD simulations, the ROMs can lead to substantial improvements in computational efficiency.
+- 原句：This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields. studies, POD and DMD have been widely applied to flow-field modeling [10,21,25,28,36], prediction [12,23,33,36] and analysis [16,18,20,24, 32,34].
+  可迁移模板：This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields. studies, METHOD and METHOD have been widely applied to flow-field modeling [X,X,X,X,X], prediction [X,X,X,X] and analysis [X,X,X,X, X,X].
+- 原句：Unlike POD and DMD, the MLs do not provide an explicit mapping relationship between the low-dimensional manifold coordinates and the high-dimensional flow fields.
+  可迁移模板：Unlike METHOD and METHOD, the MLs do not provide an explicit mapping relationship between the low-dimensional manifold coordinates and the high-dimensional flow fields.
+#### 限制/边界句
+- 原句：The paper is organized as follows: in Section 2, the developed reconstruction method is introduced in detail; then the method valida tion on transonic flow fields around RAE2822 airfoil, the key parameters analysis and the comparison with commonly-used methods are carried out in Section 3; In Section 4, we draw the conclusions.
+  可迁移模板：The paper is organized as follows: in Section X, the developed reconstruction method is introduced in detail; then the method valida tion on transonic flow fields around RAE2822 airfoil, the key parameters analysis and the comparison with commonly-used methods are carried out in Section X; In Section X, we draw the conclusions.
+<!-- REAUDIT-INTEGRATED-2026-05-26:SENTENCES END -->
+
 ## 15. 引用策略与文献使用
 
 引用策略以“方法谱系”组织，而不是按时间罗列。第一组是 POD/DMD 和线性 ROM；第二组是处理非线性流场的 local/weighted/combinatorial 方法；第三组是 manifold learning 的 ISOMAP/LLE；第四组是 NPBM 等 reconstruction algorithms；第五组是实验/数值验证对象，如 RAE2822 和 OAT15A。
@@ -216,6 +317,35 @@ Introduction 节奏是逐层收窄：从 CFD 昂贵和 ROM 必要性，到 linea
 作者对前人姿态比较审慎：对 POD/DMD 不是否定，而是说 smooth modes 难以逼近 sharp gradients；对 ML 是承认优势，但指出“no explicit mapping”；对 NPBM 是承认常用性，但指出邻域线性假设在间断差异大时不足。
 
 引用风险是近年 autoencoder、operator learning、kernel pre-image、Gaussian process decoder 等可能同样处理非线性反映射，若没有覆盖，审稿人可能认为文献版图还不完整。
+
+<!-- REAUDIT-INTEGRATED-2026-05-26:CITATIONS START -->
+### 复核补充：引文密度、References 与 gap 构造
+
+- 全文引文簇数量估计：61
+- Introduction 引文簇数量估计：20
+- References 条目数：42
+- 可识别年份条目数：56
+- 2021 年及以后文献数：31
+- 2010 年前经典文献数：14
+- 同刊引用数（按 subject 粗匹配）：2
+- 高频来源期刊：Aerospace Science and Technology(2)
+- 引文簇样例：[10,21,25,28,36], [12,23,33,36], [14], [2,5], [15], [30], [26], [1], [27], [31], [29], [7]
+
+带引文的 gap/转折句样例：
+
+- 未稳定识别带引文的 gap 转折句；需要回到 Introduction 人工核对。
+
+References 解析样例（前 8 条）：
+
+- [1] G. Berkooz, P. Holmes, J.L. Lumley, The proper orthogonal decomposition in the analysis of turbulent flows, Annu. Rev. Fluid Mech 25 (1993) 539–575, https://doi. org/10.1146/annurev.fl.25.010193.002543.
+- [2] C. Cao, C. Nie, S. Pan, J. Cai, K. Qu, A constrained reduced-order method for fast prediction of steady hypersonic flows, Aerosp. Sci. Technol 91 (2019) 679–690, https://doi.org/10.1016/j.ast.2019.07.016.
+- [3] P. Cook, M. Firmin, M. McDonald, AGARD Report AR 138, 1979.
+- [4] K. Decker, N. Iyengar, C. Perron, D. Rajaram, D. Mavris, Nonlinear multi-fidelity reduced order modeling method using manifold alignment, in: AIAA AVIATION 2021 FORUM, 2021, https://doi.org/10.2514/6.2021-3050.
+- [5] M. Dellacasagrande, D. Barsi, P. Bagnerini, D. Lengani, D. Simoni, Identification of coexisting dynamics in boundary layer flows through proper orthogonal decomposition with weighting matrices, Meccanica 56 (2021) 2197–2217, https:// doi.org/10.1007/s11012-021-01367-7.
+- [6] A. Ehlert, C.N. Nayeri, M. Morzynski, B.R. Noack, Locally Linear Embedding For Transient Cylinder Wakes [WWW Document], arXiv.org,
+- 2019. URL, https://arxiv. org/abs/1906.07822v1. accessed 2.14.25.
+- [7] E. Farzamnik, A. Ianiro, S. Discetti, N. Deng, K. Oberleithner, B.R. Noack, V. Guerrero, From snapshots to manifolds – a tale of shear flows, J. Fluid Mech 955 (2023) A34, https://doi.org/10.1017/jfm.2022.
+<!-- REAUDIT-INTEGRATED-2026-05-26:CITATIONS END -->
 
 ## 16. 审稿人视角风险
 
@@ -249,188 +379,3 @@ Introduction 节奏是逐层收窄：从 CFD 昂贵和 ROM 必要性，到 linea
 最大风险是：验证场景和方法可扩展性仍有限，尤其是三维复杂流、超大样本和时间连续性问题。
 
 可迁移的三件事：一是围绕方法链条中的薄弱环节选题；二是用全局误差 + 局部误差 + 物理一致性组织证据；三是通过 modes/kernel weights 可视化增强可解释性。
-
-<!-- REAUDIT-2026-05-26 START -->
-
-## 20. 复核增强：严格抽取、翻译、引文与句型
-
-> 本区块由 `tools/upgrade_801_deep_analysis.py` 基于 `801/文本/txt/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.txt` 与 `801/文本/metadata/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.json` 重新抽取生成；用于修正旧报告中章节未全、引文缺失、摘要/结论未完整摘录的问题。双栏 PDF 抽取仍可能存在断行，引用和公式编号以 PDF 版面为最终准绳。
-
-### 20.1 严格章节树（按 PDF/metadata TOC）
-
-- L2 p.1: 1 Introduction （背景/领域定位）
-- L2 p.5: 2 Methodology （方法/模型）
-  - L3 p.6: 2.1 Dimensionality reduction based on ML （对象/问题/模块）
-  - L3 p.6: 2.2 KRR-based discontinuity-capturing reconstruction (KRR-DCR) （对象/问题/模块）
-  - L3 p.7: 2.3 Kernel method （方法/模型）
-- L2 p.8: 3 Method validation and parameter analysis （方法/模型）
-  - L3 p.10: 3.1 Dataset generation and accuracy evaluation criterion （对象/问题/模块）
-  - L3 p.11: 3.2 Flow-field reconstruction （对象/问题/模块）
-  - L3 p.14: 3.3 Parametric analysis of λ and γ （对象/问题/模块）
-  - L3 p.14: 3.4 Comparison with commonly-used reconstruction methods （方法/模型）
-  - L3 p.21: 3.5 Applicability to time-dependent problems （对象/问题/模块）
-- L2 p.22: 4 Conclusion （结论）
-- L2 p.22: CRediT authorship contribution statement （对象/问题/模块）
-- L2 p.22: Declaration of competing interest （对象/问题/模块）
-- L2 p.22: Acknowledgements （对象/问题/模块）
-- L2 p.22: Appendix A The main process of the ISOMAP and LLE （附录）
-- L2 p.23: Appendix B The CFD solver settings and the accuracy verification （附录）
-  - L3 p.23: 1) Steady transonic flow around RAE2822 （对象/问题/模块）
-  - L3 p.23: 2) Unsteady transonic buffet flow around OAT15A （对象/问题/模块）
-- L2 p.25: Data availability （对象/问题/模块）
-- L2 p.25: References （参考文献）
-
-### 20.2 章节名功能分析
-
-| 章节/小节名 | 页码 | 层级 | 类型 | 复核说明 |
-| --- | ---: | ---: | --- | --- |
-| 1 Introduction | 1 | 2 | 背景/领域定位 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 2 Methodology | 5 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 2.1 Dimensionality reduction based on ML | 6 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 2.2 KRR-based discontinuity-capturing reconstruction (KRR-DCR) | 6 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 2.3 Kernel method | 7 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3 Method validation and parameter analysis | 8 | 2 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3.1 Dataset generation and accuracy evaluation criterion | 10 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3.2 Flow-field reconstruction | 11 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3.3 Parametric analysis of λ and γ | 14 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3.4 Comparison with commonly-used reconstruction methods | 14 | 3 | 方法/模型 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 3.5 Applicability to time-dependent problems | 21 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 4 Conclusion | 22 | 2 | 结论 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| CRediT authorship contribution statement | 22 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Declaration of competing interest | 22 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Acknowledgements | 22 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Appendix A The main process of the ISOMAP and LLE | 22 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Appendix B The CFD solver settings and the accuracy verification | 23 | 2 | 附录 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 1) Steady transonic flow around RAE2822 | 23 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| 2) Unsteady transonic buffet flow around OAT15A | 23 | 3 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| Data availability | 25 | 2 | 对象/问题/模块 | 来自 metadata TOC，正式分析按此章节点名复核 |
-| References | 25 | 2 | 参考文献 | 来自 metadata TOC，正式分析按此章节点名复核 |
-
-### 20.3 摘要完整摘录（本地证据）
-
-抽取状态：成功
-
-> 公开库不直接展示完整英文摘要原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.json` 的 `abstract` 字段，以及 `801/深度拆解/local_full_reports/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
-
-### 20.4 摘要中文翻译
-
-> 流形学习（ML）是最具代表性的非线性降阶模型（ROM）之一，可以有效捕获整个流场的非线性流动特性。然而，从低维流形坐标到高维流场的重建往往会引入相当大的重建误差，导致在具有非线性流结构的位置，尤其是具有不连续性的区域重建不准确。为了解决这一挑战，提出了一种基于非线性ROM的新型重建方法，以提高重建不连续流场的精度。受本征正交分解（POD）的启发，我们引入核函数来获取非线性核空间中的模态系数，并执行岭回归来构造一组有效捕获流场中存在的不连续特征的模态。然后，我们结合这些系数和模式来实现具有不连续性的流场的精确重建。通过重建 RAE2822 机翼上的跨音速流场，验证了所提出的流场重建方法。对比结果表明，该方法比现有方法能够获得更好的重建精度。
-> 
-> 与 POD 相比，通过核岭回归 (KRR) 获得的模式似乎更精确地捕获局部不连续性。这项工作为提高非线性 ROM 在不连续流场建模中的准确性提供了一种有效且高度可解释的方法。
-
-### 20.5 结论完整摘录（本地证据）
-
-结论章节识别：4 Conclusion；状态：独立结论章节
-
-> 公开库不直接展示完整英文结论原文；完整摘录保存在本地忽略目录 `801/深度拆解/extracted_evidence/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.json` 的 `conclusion` 字段，以及 `801/深度拆解/local_full_reports/A-kernel-ridge-regression-combining-nonlinear-ROMs-for-_2025_Aerospace-Scien.md`。本节保留抽取状态、中文译文和分析内容，便于公开阅读与本地复核。
-
-### 20.6 结论中文翻译
-
-> 本文提出了一种新的重建方法KRR-DCR来提高不连续流场的重建精度。主要结论如下：
-
-### 20.7 论文逻辑脉络复核
-
-- 提出的问题：These discontinuities significantly impact the overall flow behavior and per formance, demanding high-fidelity simulation tools. Therefore, the development of reduced-order models (ROMs) has been motivated in recent years, aiming to capture the essential characteristics of the flow fields using a significantlyreduced number of dimensions.
-- 旧方法/已有研究不足：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities. However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
-- 本文解决方式：Manifold learning (ML), one of the most representative nonlinear reduced-order models (ROMs), can effectively capture the nonlinear flow characteristics of the entire flow fields. To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities. Inspired by the proper orthogonal decomposition (POD), we introduce a kernel function to obtain the mode coefficients in the nonlinear kernel space, and perform ridge regression to construct a set of modes that effectively capture the discontinuity features present in the flow fields.
-- 学术/工程增量：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities. Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches. This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields.
-- 复核判断：正式阅读时应检查 Introduction 的 gap 是否与 Method 的输入输出、Results 的评价指标和 Conclusion 的 claim 完全闭合；若摘要中的强 claim 没有在结果图表或结论中回收，应在审稿风险中标注。
-
-### 20.8 引文分析补全
-
-- 全文引用簇数量（估计）：61
-- Introduction 引用簇数量（估计）：20
-- References 条目数（解析）：42
-- 可识别年份条目数：56
-- 近五年/近年文献（2021+）数量：31
-- 经典文献（2010年前）数量：14
-- 同刊引用数量（按 subject 粗略匹配）：2
-- 高频来源期刊（粗略）：Aerospace Science and Technology(2)
-- 引用簇样例：[10,21,25,28,36], [12,23,33,36], [14], [2,5], [15], [30], [26], [1], [27], [31], [29], [7]
-
-带引用的 gap/转折句样例：
-
-- 未在 Introduction 中自动识别到带引用的 gap 句；需人工复核文献转折段。
-
-References 解析样例（前12条）：
-
-- [1] G. Berkooz, P. Holmes, J.L. Lumley, The proper orthogonal decomposition in the analysis of turbulent flows, Annu. Rev. Fluid Mech 25 (1993) 539–575, https://doi. org/10.1146/annurev.fl.25.010193.002543.
-- [2] C. Cao, C. Nie, S. Pan, J. Cai, K. Qu, A constrained reduced-order method for fast prediction of steady hypersonic flows, Aerosp. Sci. Technol 91 (2019) 679–690, https://doi.org/10.1016/j.ast.2019.07.016.
-- [3] P. Cook, M. Firmin, M. McDonald, AGARD Report AR 138, 1979.
-- [4] K. Decker, N. Iyengar, C. Perron, D. Rajaram, D. Mavris, Nonlinear multi-fidelity reduced order modeling method using manifold alignment, in: AIAA AVIATION 2021 FORUM, 2021, https://doi.org/10.2514/6.2021-3050.
-- [5] M. Dellacasagrande, D. Barsi, P. Bagnerini, D. Lengani, D. Simoni, Identification of coexisting dynamics in boundary layer flows through proper orthogonal decomposition with weighting matrices, Meccanica 56 (2021) 2197–2217, https:// doi.org/10.1007/s11012-021-01367-7.
-- [6] A. Ehlert, C.N. Nayeri, M. Morzynski, B.R. Noack, Locally Linear Embedding For Transient Cylinder Wakes [WWW Document], arXiv.org,
-- 2019. URL, https://arxiv. org/abs/1906.07822v1. accessed 2.14.25.
-- [7] E. Farzamnik, A. Ianiro, S. Discetti, N. Deng, K. Oberleithner, B.R. Noack, V. Guerrero, From snapshots to manifolds – a tale of shear flows, J. Fluid Mech 955 (2023) A34, https://doi.org/10.1017/jfm.2022.
-- 1039.
-W. Wang et al. Aerospace Science and Technology 166 (2025) 110549
-The comparison of CFD-computed mean surface pressure coefficient distributions and upper-surface pressure root mean square (RMS) distribu tions with experimental measurements are presented in Fig. 42 and Fig.
-- 43. The CFD-computed mean pressure coefficient exhibits certain deviations from experimental data in the shock oscillation region, while the pressure RMS distributions appear slightly aft-shifted compared to measurements. However, its amplitude remains essentially consistent with experimental values.
-Fig.
-- 43. Pressure RMS distributions on the upper surface.
-- [8] R.W. Floyd, Algorithm 97: shortest path, Commun ACM 5 (1962) 345, https://doi. org/10.1145/367766.368168.
-
-### 20.9 常用词、词类、语态与时态
-
-- 高频词：flow(120)；reconstruction(115)；fields(89)；fig(89)；kernel(82)；samples(66)；krr-dcr(65)；manifold(49)；modes(47)；discontinuities(45)；nonlinear(41)；pod(39)；reconstructed(38)；sample(36)；accuracy(35)；flow-field(34)；emean(32)；all(31)；emax(30)；field(28)
-- 高频名词化/学术名词：reconstruction(115)；science(27)；pressure(24)；dimensionality(20)；discontinuity(19)；reduction(19)；capture(18)；characteristics(16)；function(16)；information(13)；location(10)；section(10)；vorticity(9)；variation(9)；prediction(8)
-- 高频学术动词：compared(13)；presented(7)；demonstrate(4)；developed(4)；validate(3)；demonstrated(2)；compare(2)；validated(1)；predict(1)；indicated(1)；optimize(1)；propose(1)；indicate(1)；derived(1)
-- 高频形容词：local(23)；physical(18)；polynomial(16)；global(15)；original(15)；transonic(14)；low-dimensional(14)；coefficient(14)；high-dimensional(13)；discontinuous(12)；significant(12)；relative(12)；computational(9)；total(8)；temporal(8)
-- 高频副词：accurately(9)；effectively(8)；significantly(8)；precisely(5)；respectively(5)；only(4)；gradually(4)；especially(3)；poly(3)；randomly(3)；additionally(3)；particularly(2)；rapidly(2)；generally(2)；directly(2)
-- 高频二词短语：flow fields(80)；aerospace science(26)；science technology(26)；page wang(24)；wang aerospace(24)；reconstruction accuracy(20)；flow field(19)；flow-field reconstruction(18)；manifold coordinates(17)；technology fig(17)；dimensionality reduction(17)；kernel function(13)
-- 高频三词短语：aerospace science technology(26)；page wang aerospace(24)；wang aerospace science(24)；science technology fig(17)；flow fields reconstructed(13)；relative reconstruction error(10)；flow fields discontinuities(9)；fig comparison flow(8)；comparison flow fields(8)；high-dimensional flow fields(7)；flow field reconstructed(7)；reconstruction error rrs(6)
-- 被动语态估计：97；`we + 动作动词` 主动句估计：5
-- 一般现在时线索：251；一般过去时线索：289；现在完成时线索：2；情态动词线索：47
-
-章节词频：
-
-- Abstract: flow(9)；fields(7)；reconstruction(7)；nonlinear(6)；discontinuities(4)；roms(3)；capture(3)；accuracy(3)
-- Introduction: flow(34)；fields(28)；discontinuities(16)；nonlinear(16)；reconstruction(15)；manifold(13)；roms(10)；kernel(10)
-- Conclusion: reconstruction(2)；new(1)；krr-dcr(1)；enhance(1)；accuracy(1)；flow(1)；fields(1)；disconti(1)
-
-### 20.10 句型库扩充（每类多句）
-
-#### 背景句
-- 原句/结构：Therefore, the development of reduced-order models (ROMs) has been motivated in recent years, aiming to capture the essential characteristics of the flow fields using a significantlyreduced number of dimensions.
-  可迁移模板：Therefore, the development of reduced-order models (ROMs) has been motivated in recent years, aiming to capture the essential characteristics of the flow fields using a significantlyreduced number of dimensions.
-#### Gap句
-- 原句/结构：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
-  可迁移模板：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
-- 原句/结构：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
-  可迁移模板：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
-- 原句/结构：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
-  可迁移模板：However, the reconstruction from lowdimensional manifold coordinates to high-dimensional flow fields often introduces considerable reconstruction errors, leading to inaccurate reconstruction in the location with nonlinear flow structures, especially the region with discontinuities.
-#### 方法句
-- 原句/结构：Manifold learning (ML), one of the most representative nonlinear reduced-order models (ROMs), can effectively capture the nonlinear flow characteristics of the entire flow fields.
-  可迁移模板：Manifold learning (METHOD), one of the most representative nonlinear reduced-order models (ROMs), can effectively capture the nonlinear flow characteristics of the entire flow fields.
-- 原句/结构：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
-  可迁移模板：To address this challenge, a novel reconstruction method based on nonlinear ROMs is proposed to enhance the accuracy of reconstructing flow fields with discontinuities.
-- 原句/结构：Inspired by the proper orthogonal decomposition (POD), we introduce a kernel function to obtain the mode coefficients in the nonlinear kernel space, and perform ridge regression to construct a set of modes that effectively capture the discontinuity features present in the flow fields.
-  可迁移模板：Inspired by the proper orthogonal decomposition (METHOD), we introduce a kernel function to obtain the mode coefficients in the nonlinear kernel space, and perform ridge regression to construct a set of modes that effectively capture the discontinuity features present in the flow fields.
-#### 结果句
-- 原句/结构：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities.
-  可迁移模板：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities.
-- 原句/结构：Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches.
-  可迁移模板：Comparison results demonstrate that the method can achieve better reconstruction accuracy than the existing approaches.
-- 原句/结构：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities.
-  可迁移模板：Then, we combine these coefficients and modes to achieve accurate recon struction of flow fields with discontinuities.
-#### 贡献句
-- 原句/结构：This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields.
-  可迁移模板：This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields.
-- 原句/结构：This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields. studies, POD and DMD have been widely applied to flow-field modeling [10,21,25,28,36], prediction [12,23,33,36] and analysis [16,18,20,24, 32,34].
-  可迁移模板：This work provides an effective and highly interpretable approach for enhancing the accuracy of nonlinear ROMs in the modeling of discontinuous flow fields. studies, METHOD and METHOD have been widely applied to flow-field modeling [X,X,X,X,X], prediction [X,X,X,X] and analysis [X,X,X,X, X,X].
-- 原句/结构：Unlike POD and DMD, the MLs do not provide an explicit mapping relationship between the low-dimensional manifold coordinates and the high-dimensional flow fields.
-  可迁移模板：Unlike METHOD and METHOD, the MLs do not provide an explicit mapping relationship between the low-dimensional manifold coordinates and the high-dimensional flow fields.
-#### 限制/边界句
-- 原句/结构：The paper is organized as follows: in Section 2, the developed reconstruction method is introduced in detail; then the method valida tion on transonic flow fields around RAE2822 airfoil, the key parameters analysis and the comparison with commonly-used methods are carried out in Section 3; In Section 4, we draw the conclusions.
-  可迁移模板：The paper is organized as follows: in Section X, the developed reconstruction method is introduced in detail; then the method valida tion on transonic flow fields around RAE2822 airfoil, the key parameters analysis and the comparison with commonly-used methods are carried out in Section X; In Section X, we draw the conclusions.
-
-### 20.11 抽取失败与人工复核提示
-
-- 摘要抽取：正常
-- 结论抽取：正常
-- 引文解析：正常
-- 章节树：正常
-- 路径复核：本次增强区统一使用 `801/文本/txt` 与 `801/文本/metadata` 作为可追溯来源。
-
-<!-- REAUDIT-2026-05-26 END -->

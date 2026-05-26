@@ -1130,6 +1130,11 @@ def replace_block(original: str, block: str) -> str:
 
 
 def main() -> None:
+    from integrate_801_reaudit_into_reports import main as integrated_main
+
+    integrated_main()
+    return
+
     parser = argparse.ArgumentParser(description="Upgrade 801 deep analysis reports with strict extracted evidence.")
     parser.add_argument("--translate", action="store_true", help="Use public Google Translate endpoint for abstract/conclusion draft translations.")
     parser.add_argument("--limit", type=int, default=0, help="Process only the first N papers for smoke testing.")
